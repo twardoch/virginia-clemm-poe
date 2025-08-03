@@ -3,14 +3,6 @@
 # Virginia Clemm Poe - Implementation Tasks
 
 ## High Priority - Bot Info Enhancement
-- [ ] Add bot_info field to PoeModel with creator, description, description_extra fields
-- [ ] Add initial_points_cost field to pricing model
-- [ ] Update scraper to capture bot info card data including initial points cost
-- [ ] Add view more button click handling to expand bot descriptions
-- [ ] Extract creator handle from UserHandle_creatorHandle class
-- [ ] Extract description from BotDescriptionDisclaimerSection_text div
-- [ ] Extract description_extra from BotDescriptionDisclaimerSection_disclaimerText paragraph
-- [ ] Add fallback selectors for bot info extraction
 - [ ] Test bot info extraction on multiple bot types
 
 ## Testing Infrastructure

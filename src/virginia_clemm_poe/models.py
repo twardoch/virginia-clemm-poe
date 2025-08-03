@@ -3,7 +3,7 @@
 """Pydantic models for Virginia Clemm Poe."""
 
 from datetime import datetime
-from typing import Any, Dict, List, Optional
+from typing import Any
 
 from pydantic import BaseModel, Field
 
@@ -11,8 +11,8 @@ from pydantic import BaseModel, Field
 class Architecture(BaseModel):
     """Model architecture information."""
     
-    input_modalities: List[str]
-    output_modalities: List[str]
+    input_modalities: list[str]
+    output_modalities: list[str]
     modality: str
 
 
@@ -20,19 +20,22 @@ class PricingDetails(BaseModel):
     """Detailed pricing information."""
     
     # Standard pricing fields
-    input_text: Optional[str] = Field(None, alias="Input (text)")
-    input_image: Optional[str] = Field(None, alias="Input (image)")
-    bot_message: Optional[str] = Field(None, alias="Bot message")
-    chat_history: Optional[str] = Field(None, alias="Chat history")
-    chat_history_cache_discount: Optional[str] = Field(None, alias="Chat history cache discount")
+    input_text: str | None = Field(None, alias="Input (text)")
+    input_image: str | None = Field(None, alias="Input (image)")
+    bot_message: str | None = Field(None, alias="Bot message")
+    chat_history: str | None = Field(None, alias="Chat history")
+    chat_history_cache_discount: str | None = Field(None, alias="Chat history cache discount")
     
     # Alternative pricing fields
-    total_cost: Optional[str] = Field(None, alias="Total cost")
-    image_output: Optional[str] = Field(None, alias="Image Output")
-    video_output: Optional[str] = Field(None, alias="Video Output")
-    text_input: Optional[str] = Field(None, alias="Text input")
-    per_message: Optional[str] = Field(None, alias="Per Message")
-    finetuning: Optional[str] = Field(None, alias="Finetuning")
+    total_cost: str | None = Field(None, alias="Total cost")
+    image_output: str | None = Field(None, alias="Image Output")
+    video_output: str | None = Field(None, alias="Video Output")
+    text_input: str | None = Field(None, alias="Text input")
+    per_message: str | None = Field(None, alias="Per Message")
+    finetuning: str | None = Field(None, alias="Finetuning")
+    
+    # Initial points cost from bot info card
+    initial_points_cost: str | None = None
     
     # Allow extra fields for future compatibility
     class Config:
@@ -47,6 +50,14 @@ class Pricing(BaseModel):
     details: PricingDetails
 
 
+class BotInfo(BaseModel):
+    """Bot information from Poe.com bot info card."""
+    
+    creator: str | None = None  # e.g., "@openai"
+    description: str | None = None  # Main bot description
+    description_extra: str | None = None  # Additional disclaimer text
+
+
 class PoeModel(BaseModel):
     """Complete Poe model representation."""
     
@@ -54,12 +65,13 @@ class PoeModel(BaseModel):
     object: str = "model"
     created: int
     owned_by: str
-    permission: List[Any] = Field(default_factory=list)
+    permission: list[Any] = Field(default_factory=list)
     root: str
-    parent: Optional[str] = None
+    parent: str | None = None
     architecture: Architecture
-    pricing: Optional[Pricing] = None
-    pricing_error: Optional[str] = None
+    pricing: Pricing | None = None
+    pricing_error: str | None = None
+    bot_info: BotInfo | None = None
     
     def has_pricing(self) -> bool:
         """Check if model has pricing information."""
@@ -69,7 +81,7 @@ class PoeModel(BaseModel):
         """Check if model needs pricing update."""
         return self.pricing is None or self.pricing_error is not None
     
-    def get_primary_cost(self) -> Optional[str]:
+    def get_primary_cost(self) -> str | None:
         """Get the primary cost information for display."""
         if not self.pricing:
             return None
@@ -92,7 +104,7 @@ class PoeModel(BaseModel):
             return details.finetuning
         else:
             # If none of the known fields, try to get first available field
-            for key, value in details.dict(exclude_none=True).items():
+            for _key, value in details.dict(exclude_none=True).items():
                 if value and isinstance(value, str):
                     return value
         return None
@@ -102,13 +114,13 @@ class ModelCollection(BaseModel):
     """Collection of Poe models."""
     
     object: str = "list"
-    data: List[PoeModel]
+    data: list[PoeModel]
     
-    def get_by_id(self, model_id: str) -> Optional[PoeModel]:
+    def get_by_id(self, model_id: str) -> PoeModel | None:
         """Get model by ID."""
         return next((m for m in self.data if m.id == model_id), None)
     
-    def search(self, query: str) -> List[PoeModel]:
+    def search(self, query: str) -> list[PoeModel]:
         """Search models by ID or name (case-insensitive)."""
         query_lower = query.lower()
         return [

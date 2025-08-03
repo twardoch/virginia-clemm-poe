@@ -6,10 +6,8 @@ import asyncio
 import os
 import subprocess
 import sys
-from typing import Optional
 
 import fire
-from loguru import logger
 from rich import print as rprint
 from rich.console import Console
 from rich.table import Table
@@ -63,9 +61,10 @@ class CLI:
     
     def update(
         self,
+        info: bool = False,
         pricing: bool = False,
-        all: bool = False,
-        api_key: Optional[str] = None,
+        all: bool = True,
+        api_key: str | None = None,
         force: bool = False,
         debug_port: int = 9222,
         verbose: bool = False
@@ -73,8 +72,9 @@ class CLI:
         """Update model data.
         
         Args:
-            pricing: Update pricing information (requires web scraping)
-            all: Update all data (equivalent to --pricing)
+            info: Update only bot info (creator, description)
+            pricing: Update only pricing information
+            all: Update both info and pricing (default: True)
             api_key: Override POE_API_KEY environment variable
             force: Force update even if data exists
             debug_port: Chrome debug port (default: 9222)
@@ -89,28 +89,50 @@ class CLI:
             sys.exit(1)
         
         # Determine what to update
+        # If user explicitly sets --info or --pricing, disable --all
+        if info or pricing:
+            all = False
+        
+        update_info = info or all
         update_pricing = pricing or all
         
-        if not update_pricing:
-            rprint("[yellow]No update mode specified. Use --pricing or --all[/yellow]")
+        if not update_info and not update_pricing:
+            rprint("[yellow]No update mode selected.[/yellow]")
             rprint("Available options:")
-            rprint("  --pricing  Update pricing information (web scraping)")
-            rprint("  --all      Update all data")
+            rprint("  --info     Update bot info (creator, description)")
+            rprint("  --pricing  Update pricing information")
+            rprint("  --all      Update both (default)")
             return
+        
+        # Show what will be updated
+        if all:
+            rprint("[green]Updating all data (bot info + pricing)...[/green]")
+        else:
+            updates = []
+            if update_info:
+                updates.append("bot info")
+            if update_pricing:
+                updates.append("pricing")
+            rprint(f"[green]Updating {' and '.join(updates)}...[/green]")
         
         # Run update
         async def run_update():
             updater = ModelUpdater(api_key, debug_port=debug_port, verbose=verbose)
-            await updater.update_all(force=force)
+            await updater.update_all(
+                force=force, 
+                update_info=update_info,
+                update_pricing=update_pricing
+            )
         
         asyncio.run(run_update())
     
-    def search(self, query: str, show_pricing: bool = True):
+    def search(self, query: str, show_pricing: bool = True, show_bot_info: bool = False):
         """Search for models by ID or name.
         
         Args:
             query: Search query (matches ID or name)
             show_pricing: Show pricing information if available
+            show_bot_info: Show bot info (creator, description)
         """
         if not DATA_FILE_PATH.exists():
             rprint("[yellow]No model data found. Run 'virginia-clemm-poe update' first.[/yellow]")
@@ -129,6 +151,9 @@ class CLI:
         table.add_column("Input", style="blue")
         table.add_column("Output", style="blue")
         
+        if show_bot_info:
+            table.add_column("Creator", style="magenta")
+        
         if show_pricing:
             table.add_column("Pricing", style="yellow")
             table.add_column("Updated", style="dim")
@@ -141,10 +166,19 @@ class CLI:
                 ", ".join(model.architecture.output_modalities),
             ]
             
+            if show_bot_info:
+                creator = model.bot_info.creator if model.bot_info else "[dim]-[/dim]"
+                row.append(creator)
+            
             if show_pricing:
                 if model.pricing:
                     primary_cost = model.get_primary_cost()
                     pricing_info = primary_cost if primary_cost else "[dim]No cost info[/dim]"
+                    
+                    # Include initial points cost if available
+                    if model.pricing.details.initial_points_cost:
+                        pricing_info = f"{model.pricing.details.initial_points_cost} | {pricing_info}"
+                    
                     updated = model.pricing.checked_at.strftime("%Y-%m-%d")
                     row.extend([pricing_info, updated])
                 elif model.pricing_error:
@@ -156,8 +190,17 @@ class CLI:
         
         console.print(table)
         rprint(f"\n[green]Found {len(models)} models[/green]")
+        
+        # Show detailed bot info if requested and only one model found
+        if show_bot_info and len(models) == 1 and models[0].bot_info:
+            bot_info = models[0].bot_info
+            rprint("\n[bold]Bot Information:[/bold]")
+            if bot_info.description:
+                rprint(f"[blue]Description:[/blue] {bot_info.description}")
+            if bot_info.description_extra:
+                rprint(f"[dim]Details:[/dim] {bot_info.description_extra}")
     
-    def list(self, with_pricing: bool = False, limit: Optional[int] = None):
+    def list(self, with_pricing: bool = False, limit: int | None = None):
         """List all available models.
         
         Args:
@@ -168,10 +211,7 @@ class CLI:
             rprint("[yellow]No model data found. Run 'virginia-clemm-poe update' first.[/yellow]")
             return
         
-        if with_pricing:
-            models = api.get_models_with_pricing()
-        else:
-            models = api.get_all_models()
+        models = api.get_models_with_pricing() if with_pricing else api.get_all_models()
         
         if limit:
             models = models[:limit]

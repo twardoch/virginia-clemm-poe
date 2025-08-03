@@ -6,8 +6,7 @@ import asyncio
 import json
 import re
 from datetime import datetime
-from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any
 
 import httpx
 from bs4 import BeautifulSoup
@@ -24,7 +23,7 @@ from .config import (
     POE_BASE_URL,
     TABLE_TIMEOUT_MS,
 )
-from .models import ModelCollection, Pricing, PricingDetails, PoeModel
+from .models import BotInfo, ModelCollection, PoeModel, Pricing, PricingDetails
 
 
 class ModelUpdater:
@@ -40,7 +39,7 @@ class ModelUpdater:
             logger.remove()
             logger.add(lambda msg: print(msg), level="DEBUG")
     
-    async def fetch_models_from_api(self) -> Dict[str, Any]:
+    async def fetch_models_from_api(self) -> dict[str, Any]:
         """Fetch models from Poe API."""
         headers = {"Authorization": f"Bearer {self.api_key}"}
         
@@ -56,14 +55,14 @@ class ModelUpdater:
                 logger.error(f"Failed to fetch models from API: {e}")
                 raise
     
-    def parse_pricing_table(self, html: str) -> Dict[str, Optional[Any]]:
+    def parse_pricing_table(self, html: str) -> dict[str, Any | None]:
         """Parse pricing table HTML into structured data."""
         soup = BeautifulSoup(html, "html.parser")
         table = soup.find("table")
         if table is None:
             raise ValueError("No table found in the provided HTML.")
 
-        data: Dict[str, Optional[Any]] = {}
+        data: dict[str, Any | None] = {}
         for row in table.find_all("tr"):
             cells = row.find_all(["th", "td"])
             if not cells or all(cell.name == "th" for cell in cells):
@@ -81,20 +80,132 @@ class ModelUpdater:
                 data[key] = values
         return data
     
-    async def scrape_model_pricing(self, model_id: str, page: Page) -> Tuple[Optional[Dict[str, Any]], Optional[str]]:
-        """Scrape pricing data for a single model."""
+    async def scrape_model_info(self, model_id: str, page: Page) -> tuple[dict[str, Any] | None, BotInfo | None, str | None]:
+        """Scrape pricing and bot info data for a single model."""
         url = POE_BASE_URL.format(id=model_id)
         
         try:
             await page.goto(url, wait_until="networkidle", timeout=LOAD_TIMEOUT_MS)
             await asyncio.sleep(PAUSE_SECONDS)
             
+            # Initialize bot info
+            bot_info = BotInfo()
+            
+            # Extract initial points cost with fallback selectors
+            initial_points_cost = None
+            initial_points_selectors = [
+                ".BotInfoCardHeader_initialPointsCost__oIIcI span",
+                "[class*='initialPointsCost'] span",
+                "[class*='BotInfoCardHeader_initialPointsCost'] span",
+                ".BotInfoCardHeader_initialPointsCost__oIIcI",
+                "[class*='initialPointsCost']"
+            ]
+            
+            for selector in initial_points_selectors:
+                try:
+                    elem = await page.query_selector(selector)
+                    if elem:
+                        text = await elem.text_content()
+                        if text and ("point" in text.lower() or "+" in text):
+                            initial_points_cost = text.strip()
+                            logger.debug(f"Found initial points cost with selector '{selector}': {initial_points_cost}")
+                            break
+                except Exception as e:
+                    logger.debug(f"Selector '{selector}' failed: {e}")
+                    continue
+            
+            # Extract creator handle with fallback selectors
+            creator_selectors = [
+                ".UserHandle_creatorHandle__aNMAK",
+                "[class*='creatorHandle']",
+                "[class*='UserHandle_creatorHandle']",
+                ".BotInfoCardHeader_operatedBy__G5WAP a[href^='/']",
+                "a[href^='/@']"
+            ]
+            
+            for selector in creator_selectors:
+                try:
+                    elem = await page.query_selector(selector)
+                    if elem:
+                        text = await elem.text_content()
+                        if text and text.strip():
+                            bot_info.creator = text.strip()
+                            logger.debug(f"Found creator with selector '{selector}': {bot_info.creator}")
+                            break
+                except Exception as e:
+                    logger.debug(f"Creator selector '{selector}' failed: {e}")
+                    continue
+            
+            # Click "View more" button if present to expand description with fallback selectors
+            view_more_selectors = [
+                ".BotDescriptionDisclaimerSection_expander__DkmQX",
+                "[class*='expander']",
+                "button:has-text('View more')",
+                "[aria-expanded='false']"
+            ]
+            
+            for selector in view_more_selectors:
+                try:
+                    elem = await page.query_selector(selector)
+                    if elem:
+                        logger.debug(f"Found 'View more' button with selector '{selector}', clicking...")
+                        await elem.click()
+                        await asyncio.sleep(0.5)  # Wait for expansion
+                        break
+                except Exception as e:
+                    logger.debug(f"View more selector '{selector}' failed: {e}")
+                    continue
+            
+            # Extract description with fallback selectors
+            description_selectors = [
+                ".BotDescriptionDisclaimerSection_text__sIeXQ span",
+                "[class*='BotDescriptionDisclaimerSection_text'] span",
+                ".BotDescriptionDisclaimerSection_text__sIeXQ",
+                "[class*='BotDescriptionDisclaimerSection_text']",
+                "[aria-expanded='true'] span"
+            ]
+            
+            for selector in description_selectors:
+                try:
+                    elem = await page.query_selector(selector)
+                    if elem:
+                        text = await elem.text_content()
+                        if text and text.strip() and len(text.strip()) > 10:
+                            bot_info.description = text.strip()
+                            logger.debug(f"Found description with selector '{selector}': {bot_info.description[:50]}...")
+                            break
+                except Exception as e:
+                    logger.debug(f"Description selector '{selector}' failed: {e}")
+                    continue
+            
+            # Extract description_extra (disclaimer text) with fallback selectors
+            disclaimer_selectors = [
+                ".BotDescriptionDisclaimerSection_disclaimerText__yEe8h",
+                "[class*='disclaimerText']",
+                "[class*='BotDescriptionDisclaimerSection_disclaimerText']",
+                "p:has-text('Powered by')",
+                "p:has(a[href*='privacy_center'])"
+            ]
+            
+            for selector in disclaimer_selectors:
+                try:
+                    elem = await page.query_selector(selector)
+                    if elem:
+                        text = await elem.text_content()
+                        if text and text.strip() and ("Powered by" in text or "Learn more" in text):
+                            bot_info.description_extra = text.strip()
+                            logger.debug(f"Found description_extra with selector '{selector}': {bot_info.description_extra[:50]}...")
+                            break
+                except Exception as e:
+                    logger.debug(f"Disclaimer selector '{selector}' failed: {e}")
+                    continue
+            
             # Look for the action bar containing the Rates button
             action_bar = await page.query_selector(".BotInfoCardActionBar_actionBar__5_Gnq")
             
             if not action_bar:
                 logger.debug(f"No action bar found for {model_id}")
-                return None, "No action bar found on page"
+                return None, bot_info, "No action bar found on page"
             
             # Find the Rates button
             rates_button = await action_bar.query_selector("button:has-text('Rates')")
@@ -104,7 +215,7 @@ class ModelUpdater:
             
             if not rates_button:
                 logger.debug(f"No 'Rates' button found for {model_id}")
-                return None, "No Rates button found"
+                return None, bot_info, "No Rates button found"
                 
             logger.debug(f"Found Rates button for {model_id}, clicking...")
             await rates_button.click()
@@ -146,12 +257,16 @@ class ModelUpdater:
             
             if not table_html:
                 logger.debug(f"No table found for {model_id}")
-                return None, "No pricing table found in dialog"
+                return None, bot_info, "No pricing table found in dialog"
             
             if not table_html.strip().startswith("<table"):
                 table_html = f"<table>{table_html}</table>"
                 
             pricing = self.parse_pricing_table(table_html)
+            
+            # Add initial points cost to pricing if we found it
+            if initial_points_cost:
+                pricing["initial_points_cost"] = initial_points_cost
             
             # Close the modal
             try:
@@ -160,22 +275,28 @@ class ModelUpdater:
             except Exception:
                 pass
                 
-            return pricing, None
+            return pricing, bot_info, None
             
-        except asyncio.TimeoutError:
+        except TimeoutError:
             logger.error(f"Timeout while scraping {model_id}")
-            return None, "Timeout waiting for page elements"
+            return None, bot_info, "Timeout waiting for page elements"
         except Exception as e:
             logger.error(f"Error while scraping {model_id}: {e}")
-            return None, f"Error: {str(e)}"
+            return None, bot_info, f"Error: {str(e)}"
     
-    async def sync_models(self, force: bool = False) -> ModelCollection:
-        """Sync models with API and update pricing data."""
+    async def sync_models(self, force: bool = False, update_info: bool = True, update_pricing: bool = True) -> ModelCollection:
+        """Sync models with API and update pricing/info data.
+        
+        Args:
+            force: Force update even if data exists
+            update_info: Update bot info (creator, description)
+            update_pricing: Update pricing information
+        """
         # Load existing data
         existing_collection = None
         if DATA_FILE_PATH.exists() and not force:
             try:
-                with open(DATA_FILE_PATH, "r") as f:
+                with open(DATA_FILE_PATH) as f:
                     data = json.load(f)
                 existing_collection = ModelCollection(**data)
                 logger.info(f"Loaded {len(existing_collection.data)} existing models")
@@ -199,12 +320,14 @@ class ModelUpdater:
             api_model_ids.add(api_model.id)
             
             if api_model.id in existing_lookup:
-                # Preserve pricing data from existing model
+                # Preserve pricing and bot info data from existing model
                 existing = existing_lookup[api_model.id]
                 if existing.pricing:
                     api_model.pricing = existing.pricing
                 if existing.pricing_error:
                     api_model.pricing_error = existing.pricing_error
+                if existing.bot_info:
+                    api_model.bot_info = existing.bot_info
             
             merged_models.append(api_model)
         
@@ -220,16 +343,33 @@ class ModelUpdater:
         # Create collection
         collection = ModelCollection(object=api_data["object"], data=merged_models)
         
-        # Update pricing for models that need it
-        models_to_update = [m for m in collection.data if m.needs_pricing_update() or force]
+        # Check if we need to do any web scraping
+        if not update_info and not update_pricing:
+            logger.info("No updates requested")
+            return collection
+        
+        # Determine which models to update
+        models_to_update = []
+        
+        for model in collection.data:
+            needs_update = False
+            
+            if update_pricing and (model.needs_pricing_update() or force):
+                needs_update = True
+            
+            if update_info and (not model.bot_info or force):
+                needs_update = True
+            
+            if needs_update:
+                models_to_update.append(model)
         
         if not models_to_update:
-            logger.info("No models need pricing updates")
+            logger.info("No models need updates")
             return collection
         
         logger.info(f"Found {len(models_to_update)} models to update")
         
-        # Connect browser and update pricing
+        # Connect browser and update data
         await self.browser_manager.connect()
         page = await self.browser_manager.new_page()
         
@@ -244,19 +384,29 @@ class ModelUpdater:
                 for model in models_to_update:
                     progress.update(task, description=f"Updating {model.id}...")
                     
-                    pricing_data, error = await self.scrape_model_pricing(model.id, page)
+                    pricing_data, bot_info, error = await self.scrape_model_info(model.id, page)
                     
-                    if pricing_data:
-                        model.pricing = Pricing(
-                            checked_at=datetime.utcnow(),
-                            details=PricingDetails(**pricing_data)
-                        )
-                        model.pricing_error = None
-                        logger.info(f"✓ Updated pricing for {model.id}")
-                    else:
-                        model.pricing_error = error or "Unknown error"
-                        model.pricing = None
-                        logger.warning(f"✗ No pricing found for {model.id}: {error}")
+                    # Update pricing if requested
+                    if update_pricing:
+                        if pricing_data:
+                            model.pricing = Pricing(
+                                checked_at=datetime.utcnow(),
+                                details=PricingDetails(**pricing_data)
+                            )
+                            model.pricing_error = None
+                            logger.info(f"✓ Updated pricing for {model.id}")
+                        else:
+                            model.pricing_error = error or "Unknown error"
+                            model.pricing = None
+                            logger.warning(f"✗ No pricing found for {model.id}: {error}")
+                    
+                    # Update bot info if requested
+                    if update_info:
+                        if bot_info and (bot_info.creator or bot_info.description or bot_info.description_extra):
+                            model.bot_info = bot_info
+                            logger.info(f"✓ Updated bot info for {model.id}")
+                        else:
+                            logger.warning(f"✗ No bot info found for {model.id}")
                     
                     progress.advance(task)
             
@@ -266,9 +416,19 @@ class ModelUpdater:
         
         return collection
     
-    async def update_all(self, force: bool = False) -> None:
-        """Update all model data and save to file."""
-        collection = await self.sync_models(force=force)
+    async def update_all(self, force: bool = False, update_info: bool = True, update_pricing: bool = True) -> None:
+        """Update model data and save to file.
+        
+        Args:
+            force: Force update even if data exists
+            update_info: Update bot info (creator, description)
+            update_pricing: Update pricing information
+        """
+        collection = await self.sync_models(
+            force=force,
+            update_info=update_info,
+            update_pricing=update_pricing
+        )
         
         # Ensure data directory exists
         DATA_FILE_PATH.parent.mkdir(parents=True, exist_ok=True)
