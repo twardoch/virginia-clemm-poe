@@ -19,7 +19,7 @@ This link points to the data file that is updated by the `virginia-clemm-poe` CL
 - **Pricing Information**: Automatically scrapes and syncs pricing data for all available models
 - **Pydantic Models**: Fully typed data models for easy integration
 - **CLI Interface**: Fire-based CLI for updating data and searching models
-- **Browser Setup**: Automated setup for web scraping dependencies
+- **Browser Automation**: Powered by PlaywrightAuthor for reliable web scraping
 
 ## [∞](#installation) Installation
 
@@ -169,7 +169,7 @@ Flexible pricing details supporting various cost structures:
 
 ### [∞](#setup) setup
 
-Set up browser for web scraping (installs Chrome for Testing if needed).
+Set up browser for web scraping (handled automatically by PlaywrightAuthor).
 
 ```bash
 virginia-clemm-poe setup
@@ -224,7 +224,7 @@ Options:
 ## [∞](#requirements) Requirements
 
 - Python 3.12+
-- Chrome or Chromium browser (for pricing data scraping)
+- Chrome or Chromium browser (automatically managed by PlaywrightAuthor)
 - Poe API key (set as `POE_API_KEY` environment variable)
 
 ## [∞](#data-storage) Data Storage
@@ -272,7 +272,7 @@ This package uses:
 
 - `uv` for dependency management
 - `httpx` for API requests
-- `playwright` for web scraping
+- `playwrightauthor` for browser automation
 - `pydantic` for data models
 - `fire` for CLI interface
 - `rich` for terminal UI

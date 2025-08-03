@@ -2,7 +2,6 @@
 
 """Utility functions for Virginia Clemm Poe."""
 
-import json
 from datetime import datetime
 from typing import Any
 

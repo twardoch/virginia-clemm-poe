@@ -16,7 +16,7 @@ Virginia Clemm Poe is a companion tool for Poe.com's API (introduced August 25, 
 - **Pricing Information**: Automatically scrapes and syncs pricing data for all available models
 - **Pydantic Models**: Fully typed data models for easy integration
 - **CLI Interface**: Fire-based CLI for updating data and searching models
-- **Browser Setup**: Automated setup for web scraping dependencies
+- **Browser Automation**: Uses external PlaywrightAuthor package for reliable web scraping
 
 ## 3. Installation
 
@@ -72,7 +72,7 @@ Model data includes:
 ## 6. Requirements
 
 - Python 3.12+
-- Chrome or Chromium browser (for pricing data scraping)
+- Chrome or Chromium browser (automatically managed by PlaywrightAuthor)
 - Poe API key (set as `POE_API_KEY` environment variable)
 
 ## 7. Development
@@ -80,7 +80,7 @@ Model data includes:
 This package uses:
 - `uv` for dependency management
 - `httpx` for API requests
-- `playwright` for web scraping
+- `playwrightauthor` for browser automation (external package)
 - `pydantic` for data models
 - `fire` for CLI interface
 - `rich` for terminal UI
@@ -103,11 +103,13 @@ POE_API_KEY=your_key ./old/poe_models_updater.py --verbose
 ```
 
 
-1. **Chrome/Chromium Required**: The scraper requires Chrome or Chromium to be installed for web scraping via Chrome DevTools Protocol (CDP).
+1. **Chrome/Chromium Required**: The scraper requires Chrome or Chromium to be installed for web scraping via Chrome DevTools Protocol (CDP). This is now handled automatically by PlaywrightAuthor.
 
 2. **API Key**: Requires a Poe API key set as `POE_API_KEY` environment variable.
 
 3. **File Locations**: The old code is currently in the `old/` folder
+
+4. **PlaywrightAuthor**: This package now uses the external PlaywrightAuthor package located at `external/playwrightauthor/` for all browser management functionality.
 
 # Software Development Rules
 
@@ -312,3 +314,37 @@ When I say "/plan [requirement]", you must:
 - `/work` - Enter continuous work mode to implement plans
 - You may use these commands autonomously when appropriate
 
+**TLDR: `virginia-clemm-poe`**
+
+This repository contains the source code for `virginia-clemm-poe`, a Python package designed to provide programmatic access to a comprehensive dataset of AI models available on Poe.com. Its primary function is to act as a companion tool to the official Poe API by fetching, maintaining, and enriching model data, with a special focus on scraping and storing detailed pricing information, which is not available through the API alone.
+
+**Core Functionality:**
+
+1.  **Data Aggregation:** It fetches the list of all available models from the Poe.com API.
+2.  **Web Scraping:** It uses `playwright` to control a headless Chrome/Chromium browser to navigate to each model's page on Poe.com and scrape detailed information that isn't in the API response. This includes:
+    *   **Pricing Data:** Captures the cost for various operations (e.g., per-message, text input, image input).
+    *   **Bot Metadata:** Extracts the bot's creator, description, and other descriptive text.
+3.  **Local Dataset:** It stores this aggregated and scraped data in a local JSON file (`src/virginia_clemm_poe/data/poe_models.json`). This allows the package's API to provide instant access to the data without needing to perform network requests for every query.
+4.  **Data Access:** It provides two primary ways for users to interact with the data:
+    *   A **Python API** (`api.py`) for developers to programmatically search, filter, and retrieve model information within their own applications.
+    *   A **Command-Line Interface (CLI)** (`__main__.py`) for end-users to easily update the local dataset, search for models, and list model information directly from the terminal.
+
+**Technical Architecture:**
+
+*   **Language:** Python 3.12+
+*   **Data Modeling:** `pydantic` is used extensively in `models.py` to define strongly-typed and validated data structures for models, pricing, and bot information (`PoeModel`, `Pricing`, `BotInfo`).
+*   **HTTP Requests:** `httpx` is used for efficient asynchronous communication with the Poe API.
+*   **Web Scraping:** `playwright` automates the browser to handle dynamic web content and extract data from the Poe website. `browser_manager.py` handles the setup and management of the browser instance.
+*   **CLI:** `python-fire` is used to create the user-friendly command-line interface from the methods in the `updater.py` and `api.py` modules.
+*   **UI/Output:** `rich` is used to provide formatted and colorized output in the terminal, enhancing readability.
+*   **Dependency Management:** The project uses `uv` for fast and modern package management, configured in `pyproject.toml`.
+*   **Logging:** `loguru` provides flexible and powerful logging.
+
+**Key Modules:**
+
+*   `src/virginia_clemm_poe/api.py`: The main entry point for the Python API. Provides functions like `search_models()`, `get_model_by_id()`, etc.
+*   `src/virginia_cĺemm_poe/updater.py`: Contains the core logic for updating the model database. It orchestrates fetching data from the API, scraping the website, and saving the results.
+*   `src/virginia_clemm_poe/models.py`: Defines the Pydantic models that structure the entire dataset.
+*   `src/virginia_clemm_poe/__main__.py`: The entry point that exposes the functionality to the command line via `fire`.
+*   `src/virginia_clemm_poe/browser_manager.py`: Manages the lifecycle of the Playwright browser used for scraping.
+*   `src/virginia_clemm_poe/data/poe_models.json`: The canonical, version-controlled dataset that the package reads from.

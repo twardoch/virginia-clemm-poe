@@ -2,11 +2,9 @@
 
 """Virginia Clemm Poe - Poe.com model data management.
 
-A Python package providing programmatic access to Poe.com model data 
+A Python package providing programmatic access to Poe.com model data
 with pricing information.
 """
-
-from pathlib import Path
 
 # Version handling
 try:

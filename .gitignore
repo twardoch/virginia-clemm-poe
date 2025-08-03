@@ -144,3 +144,4 @@ var/
 venv.bak/
 venv/
 wheels/
+external/

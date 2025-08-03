@@ -8,6 +8,62 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Architecture Modernization**: Comprehensive refactoring following PlaywrightAuthor patterns
+- **Exception Hierarchy**: Full exception system in `exceptions.py` with:
+  - Base `VirginiaPoeError` class for all package exceptions
+  - Browser-specific exceptions: `BrowserManagerError`, `ChromeNotFoundError`, `ChromeLaunchError`, `CDPConnectionError`
+  - Data-specific exceptions: `ModelDataError`, `ModelNotFoundError`, `DataUpdateError`
+  - API-specific exceptions: `APIError`, `AuthenticationError`, `RateLimitError`
+  - Network and scraping exceptions: `NetworkError`, `ScrapingError`
+- **Utilities Module**: New `utils/` package with modular components:
+  - `utils/logger.py` - Centralized loguru configuration
+  - `utils/paths.py` - Cross-platform path management utilities
+- **File Navigation**: `this_file:` comments in all source files showing relative paths
+- **CLI Commands**: Three new diagnostic and maintenance commands:
+  - `status` - Comprehensive system health checks (browser installation, data freshness, API key validation)
+  - `clear-cache` - Selective cache clearing with granular options (data, browser, or both)
+  - `doctor` - Advanced diagnostics with issue detection and actionable solution suggestions
+- **Enhanced Logging**: Verbose flag support across all CLI commands with consistent logger configuration
+- **Rich UI**: Color-coded console output with formatting for enhanced user experience
+
+### Changed
+- **BREAKING**: Replaced entire internal browser management system with external PlaywrightAuthor package
+  - Removed ~500+ lines of browser-related code
+  - Simplified architecture by delegating complex browser operations to proven external package
+  - Maintained API compatibility while dramatically reducing maintenance burden
+- **BREAKING**: CLI class renamed from `CLI` to `Cli` following PlaywrightAuthor naming conventions
+- **Browser Management**: Complete rewrite of browser orchestration:
+  - `browser_manager.py` now uses PlaywrightAuthor's `ensure_browser()` for setup
+  - Direct Playwright CDP connection for actual browser operations
+  - Async context manager support for resource cleanup
+  - Robust error handling with specific exception types
+- **CLI Architecture**: Modernized command-line interface:
+  - Centralized logger configuration with verbose mode support
+  - All commands now use `console.print()` for consistent rich formatting
+  - Enhanced error messages with actionable solutions and recovery guidance
+  - Improved user onboarding with clearer setup instructions
+- **Error Handling**: Comprehensive upgrade across entire codebase:
+  - Custom exception types for specific error scenarios
+  - Better error messages with context and suggested solutions
+  - Graceful degradation for non-critical failures
+
+### Removed
+- **Internal Browser System**: Eliminated entire `browser/` module hierarchy:
+  - `browser/finder.py` - Chrome executable detection (now in PlaywrightAuthor)
+  - `browser/installer.py` - Chrome for Testing installation (now in PlaywrightAuthor)
+  - `browser/launcher.py` - Chrome process launching (now in PlaywrightAuthor)
+  - `browser/process.py` - Process management utilities (now in PlaywrightAuthor)
+- **Legacy Browser Interface**: Removed `browser.py` compatibility module
+- **Dependencies**: No longer directly depends on `psutil` and `platformdirs` (provided by PlaywrightAuthor)
+
+### Technical Improvements
+- **Codebase Reduction**: Eliminated ~500+ lines while maintaining full functionality
+- **Dependency Simplification**: Reduced direct dependencies by leveraging PlaywrightAuthor's mature browser management
+- **Architecture Clarity**: Cleaner separation of concerns with focused modules
+- **Maintenance Reduction**: Browser management complexity delegated to external, well-maintained package
+
+### From Previous Release
+### Added
 - Enhanced bot information capture from Poe.com bot info cards
 - New `bot_info` field in PoeModel with BotInfo model containing:
   - `creator`: Bot creator handle (e.g., "@openai")
