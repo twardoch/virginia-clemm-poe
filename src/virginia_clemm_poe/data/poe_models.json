@@ -1,0 +1,6040 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "App-Creator",
+      "object": "model",
+      "created": 1737569087127,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "App-Creator",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:51:55.068887",
+        "details": {
+          "Input (text)": "12 points/1k tokens",
+          "Input (image)": "12 points/1k tokens",
+          "Bot message": "21 points/message",
+          "Chat history": "Input rates are applied",
+          "Chat history cache discount": "90% discount oncached chat history"
+        }
+      }
+    },
+    {
+      "id": "Aya-Expanse-32B",
+      "object": "model",
+      "created": 1739905182986,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Aya-Expanse-32B",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:52:01.465513",
+        "details": {
+          "Total cost": "170 points/message"
+        }
+      }
+    },
+    {
+      "id": "Aya-Vision",
+      "object": "model",
+      "created": 1741042614242,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Aya-Vision",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:52:07.705162",
+        "details": {
+          "Total cost": "0 points/message"
+        }
+      }
+    },
+    {
+      "id": "Bria-Eraser",
+      "object": "model",
+      "created": 1739957916196,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Bria-Eraser",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:52:13.949602",
+        "details": {
+          "Image Output": "1334 points / message"
+        }
+      }
+    },
+    {
+      "id": "Cartesia",
+      "object": "model",
+      "created": 1731968187492,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Cartesia",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "audio"
+        ],
+        "modality": "text->audio"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:52:20.316653",
+        "details": {
+          "Text input": "934 points / 1k characters"
+        }
+      }
+    },
+    {
+      "id": "ChatGPT-4o-Latest",
+      "object": "model",
+      "created": 1723609331341,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "ChatGPT-4o-Latest",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:52:26.533254",
+        "details": {
+          "Input (text)": "150 points/1k tokens",
+          "Input (image)": "150 points/1k tokens",
+          "Bot message": "302 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "Clarity-Upscaler",
+      "object": "model",
+      "created": 1736160594594,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Clarity-Upscaler",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:52:32.735249",
+        "details": {
+          "Image Output": "850 points / megapixel"
+        }
+      }
+    },
+    {
+      "id": "Claude-Haiku-3",
+      "object": "model",
+      "created": 1709942726436,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Claude-Haiku-3",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:52:39.566029",
+        "details": {
+          "Input (text)": "10 points/1k tokens",
+          "Input (image)": "10 points/1k tokens",
+          "Bot message": "19 points/message",
+          "Chat history": "Input rates are applied",
+          "Chat history cache discount": "90% discount oncached chat history"
+        }
+      }
+    },
+    {
+      "id": "Claude-Haiku-3.5",
+      "object": "model",
+      "created": 1727818578813,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Claude-Haiku-3.5",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:52:45.612085",
+        "details": {
+          "Input (text)": "30 points/1k tokens",
+          "Input (image)": "30 points/1k tokens",
+          "Bot message": "42 points/message",
+          "Chat history": "Input rates are applied",
+          "Chat history cache discount": "90% discount oncached chat history"
+        }
+      }
+    },
+    {
+      "id": "Claude-Haiku-3.5-Search",
+      "object": "model",
+      "created": 1747285932473,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Claude-Haiku-3.5-Search",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:52:51.577208",
+        "details": {
+          "Input (text)": "30 points/1k tokens",
+          "Input (image)": "30 points/1k tokens",
+          "Bot message": "92 points/message",
+          "Chat history": "Input rates are applied",
+          "Chat history cache discount": "90% discount oncached chat history"
+        }
+      }
+    },
+    {
+      "id": "Claude-Opus-3",
+      "object": "model",
+      "created": 1709574492024,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Claude-Opus-3",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:52:57.673771",
+        "details": {
+          "Input (text)": "585 points/1k tokens",
+          "Input (image)": "585 points/1k tokens",
+          "Bot message": "1918 points/message",
+          "Chat history": "Input rates are applied",
+          "Chat history cache discount": "90% discount oncached chat history"
+        }
+      }
+    },
+    {
+      "id": "Claude-Opus-4",
+      "object": "model",
+      "created": 1747863925397,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Claude-Opus-4",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:53:03.628550",
+        "details": {
+          "Input (text)": "585 points/1k tokens",
+          "Input (image)": "585 points/1k tokens",
+          "Bot message": "4817 points/message",
+          "Chat history": "Input rates are applied",
+          "Chat history cache discount": "90% discount oncached chat history"
+        }
+      }
+    },
+    {
+      "id": "Claude-Opus-4-Reasoning",
+      "object": "model",
+      "created": 1747865908863,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Claude-Opus-4-Reasoning",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:53:09.550128",
+        "details": {
+          "Input (text)": "585 points/1k tokens",
+          "Input (image)": "585 points/1k tokens",
+          "Bot message": "5782 points/message",
+          "Chat history": "Input rates are applied",
+          "Chat history cache discount": "90% discount oncached chat history"
+        }
+      }
+    },
+    {
+      "id": "Claude-Opus-4-Search",
+      "object": "model",
+      "created": 1750451340055,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Claude-Opus-4-Search",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:53:15.482773",
+        "details": {
+          "Input (text)": "585 points/1k tokens",
+          "Input (image)": "585 points/1k tokens",
+          "Bot message": "4222 points/message",
+          "Chat history": "Input rates are applied",
+          "Chat history cache discount": "90% discount oncached chat history"
+        }
+      }
+    },
+    {
+      "id": "Claude-Sonnet-3.5",
+      "object": "model",
+      "created": 1717554300318,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Claude-Sonnet-3.5",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:53:21.363033",
+        "details": {
+          "Input (text)": "115 points/1k tokens",
+          "Input (image)": "115 points/1k tokens",
+          "Bot message": "243 points/message",
+          "Chat history": "Input rates are applied",
+          "Chat history cache discount": "90% discount oncached chat history"
+        }
+      }
+    },
+    {
+      "id": "Claude-Sonnet-3.5-June",
+      "object": "model",
+      "created": 1731966954824,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Claude-Sonnet-3.5-June",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:53:27.284290",
+        "details": {
+          "Input (text)": "115 points/1k tokens",
+          "Input (image)": "115 points/1k tokens",
+          "Bot message": "363 points/message",
+          "Chat history": "Input rates are applied",
+          "Chat history cache discount": "90% discount oncached chat history"
+        }
+      }
+    },
+    {
+      "id": "Claude-Sonnet-3.5-Search",
+      "object": "model",
+      "created": 1747285956234,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Claude-Sonnet-3.5-Search",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:53:33.232604",
+        "details": {
+          "Input (text)": "115 points/1k tokens",
+          "Input (image)": "Variable",
+          "Bot message": "438 points/message",
+          "Chat history": "Input rates are applied",
+          "Chat history cache discount": "90% discount oncached chat history"
+        }
+      }
+    },
+    {
+      "id": "Claude-Sonnet-3.7",
+      "object": "model",
+      "created": 1739926818142,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Claude-Sonnet-3.7",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:53:39.160701",
+        "details": {
+          "Input (text)": "115 points/1k tokens",
+          "Input (image)": "115 points/1k tokens",
+          "Bot message": "1017 points/message",
+          "Chat history": "Input rates are applied",
+          "Chat history cache discount": "90% discount oncached chat history"
+        }
+      }
+    },
+    {
+      "id": "Claude-Sonnet-3.7-Reasoning",
+      "object": "model",
+      "created": 1739926096905,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Claude-Sonnet-3.7-Reasoning",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:53:44.562698",
+        "details": {
+          "Input (text)": "115 points/1k tokens",
+          "Input (image)": "115 points/1k tokens",
+          "Bot message": "1695 points/message",
+          "Chat history": "Input rates are applied",
+          "Chat history cache discount": "90% discount oncached chat history"
+        }
+      }
+    },
+    {
+      "id": "Claude-Sonnet-3.7-Search",
+      "object": "model",
+      "created": 1747285973996,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Claude-Sonnet-3.7-Search",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:53:50.494768",
+        "details": {
+          "Input (text)": "115 points/1k tokens",
+          "Input (image)": "115 points/1k tokens",
+          "Bot message": "1491 points/message",
+          "Chat history": "Input rates are applied",
+          "Chat history cache discount": "90% discount oncached chat history"
+        }
+      }
+    },
+    {
+      "id": "Claude-Sonnet-4",
+      "object": "model",
+      "created": 1747860708348,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Claude-Sonnet-4",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:53:56.381275",
+        "details": {
+          "Input (text)": "115 points/1k tokens",
+          "Input (image)": "115 points/1k tokens",
+          "Bot message": "911 points/message",
+          "Chat history": "Input rates are applied",
+          "Chat history cache discount": "90% discount oncached chat history"
+        }
+      }
+    },
+    {
+      "id": "Claude-Sonnet-4-Reasoning",
+      "object": "model",
+      "created": 1747865657124,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Claude-Sonnet-4-Reasoning",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:54:02.286333",
+        "details": {
+          "Input (text)": "115 points/1k tokens",
+          "Input (image)": "115 points/1k tokens",
+          "Bot message": "1601 points/message",
+          "Chat history": "Input rates are applied",
+          "Chat history cache discount": "90% discount oncached chat history"
+        }
+      }
+    },
+    {
+      "id": "Claude-Sonnet-4-Search",
+      "object": "model",
+      "created": 1750451236340,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Claude-Sonnet-4-Search",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:54:08.165770",
+        "details": {
+          "Input (text)": "115 points/1k tokens",
+          "Input (image)": "115 points/1k tokens",
+          "Bot message": "843 points/message",
+          "Chat history": "Input rates are applied",
+          "Chat history cache discount": "90% discount oncached chat history"
+        }
+      }
+    },
+    {
+      "id": "Command-R",
+      "object": "model",
+      "created": 1711035788709,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Command-R",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:54:13.522347",
+        "details": {
+          "Total cost": "170 points/message"
+        }
+      }
+    },
+    {
+      "id": "Command-R-Plus",
+      "object": "model",
+      "created": 1712716481132,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Command-R-Plus",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:54:19.462548",
+        "details": {
+          "Total cost": "1130 points/message"
+        }
+      }
+    },
+    {
+      "id": "DALL-E-3",
+      "object": "model",
+      "created": 1699306131647,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "DALL-E-3",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:54:24.790502",
+        "details": {
+          "Total cost": "1500 points/message"
+        }
+      }
+    },
+    {
+      "id": "DeepClaude",
+      "object": "model",
+      "created": 1740454833334,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "DeepClaude",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:54:30.748721",
+        "details": {
+          "Per Message": "5334 points"
+        }
+      }
+    },
+    {
+      "id": "DeepSeek-R1",
+      "object": "model",
+      "created": 1737571591125,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "DeepSeek-R1",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:54:36.110916",
+        "details": {
+          "Total cost": "600 points/message"
+        }
+      }
+    },
+    {
+      "id": "DeepSeek-R1-DI",
+      "object": "model",
+      "created": 1740487208576,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "DeepSeek-R1-DI",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:54:42.209661",
+        "details": {
+          "Total cost": "200 points/message"
+        }
+      }
+    },
+    {
+      "id": "DeepSeek-R1-Distill",
+      "object": "model",
+      "created": 1738098004778,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "DeepSeek-R1-Distill",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:54:48.094825",
+        "details": {
+          "Total cost": "150 points/message"
+        }
+      }
+    },
+    {
+      "id": "DeepSeek-R1-FW",
+      "object": "model",
+      "created": 1737499802568,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "DeepSeek-R1-FW",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:54:53.990844",
+        "details": {
+          "Total cost": "600 points/message"
+        }
+      }
+    },
+    {
+      "id": "DeepSeek-R1-Turbo-DI",
+      "object": "model",
+      "created": 1741250889407,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "DeepSeek-R1-Turbo-DI",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:55:00.114749",
+        "details": {
+          "Total cost": "500 points/message"
+        }
+      }
+    },
+    {
+      "id": "DeepSeek-V3",
+      "object": "model",
+      "created": 1735963694067,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "DeepSeek-V3",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:55:05.962002",
+        "details": {
+          "Total cost": "415 points/message"
+        }
+      }
+    },
+    {
+      "id": "DeepSeek-V3-DI",
+      "object": "model",
+      "created": 1739797458982,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "DeepSeek-V3-DI",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:55:11.331242",
+        "details": {
+          "Total cost": "145 points/message"
+        }
+      }
+    },
+    {
+      "id": "DeepSeek-V3-Turbo-DI",
+      "object": "model",
+      "created": 1741250579199,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "DeepSeek-V3-Turbo-DI",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:55:17.195557",
+        "details": {
+          "Total cost": "195 points/message"
+        }
+      }
+    },
+    {
+      "id": "Deepseek-V3-FW",
+      "object": "model",
+      "created": 1735687236887,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Deepseek-V3-FW",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:55:22.577303",
+        "details": {
+          "Total cost": "300 points/message"
+        }
+      }
+    },
+    {
+      "id": "Dream-Machine",
+      "object": "model",
+      "created": 1726690715197,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Dream-Machine",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "video"
+        ],
+        "modality": "text->video"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:55:28.742728",
+        "details": {
+          "Total cost": "12000 points/message"
+        }
+      }
+    },
+    {
+      "id": "ElevenLabs",
+      "object": "model",
+      "created": 1730153913289,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "ElevenLabs",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "audio"
+        ],
+        "modality": "text->audio"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:55:34.558886",
+        "details": {
+          "Input (text)": "1 point / character"
+        }
+      }
+    },
+    {
+      "id": "FLUX-Fill",
+      "object": "model",
+      "created": 1736787123399,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "FLUX-Fill",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:55:40.440268",
+        "details": {
+          "Image Output": "992 points / message"
+        }
+      }
+    },
+    {
+      "id": "FLUX-Inpaint",
+      "object": "model",
+      "created": 1736797755390,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "FLUX-Inpaint",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:55:46.307767",
+        "details": {
+          "Image Output": "992 points / message"
+        }
+      }
+    },
+    {
+      "id": "FLUX-dev",
+      "object": "model",
+      "created": 1722521612508,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "FLUX-dev",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:55:51.760402",
+        "details": {
+          "Image Output": "567 points / message"
+        }
+      }
+    },
+    {
+      "id": "FLUX-dev-DI",
+      "object": "model",
+      "created": 1750507284607,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "FLUX-dev-DI",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:55:57.682617",
+        "details": {
+          "Total cost": "165 points/message"
+        }
+      }
+    },
+    {
+      "id": "FLUX-dev-finetuner",
+      "object": "model",
+      "created": 1727479142160,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "FLUX-dev-finetuner",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:56:02.980099",
+        "details": {
+          "Finetuning": "56667 points / message"
+        }
+      }
+    },
+    {
+      "id": "FLUX-pro",
+      "object": "model",
+      "created": 1722529535890,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "FLUX-pro",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:56:08.887288",
+        "details": {
+          "Image Output": "1667 points / message"
+        }
+      }
+    },
+    {
+      "id": "FLUX-pro-1-T",
+      "object": "model",
+      "created": 1730863349678,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "FLUX-pro-1-T",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:56:14.811304",
+        "details": {
+          "Total cost": "1250 points/message"
+        }
+      }
+    },
+    {
+      "id": "FLUX-pro-1.1",
+      "object": "model",
+      "created": 1727968438767,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "FLUX-pro-1.1",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:56:20.193500",
+        "details": {
+          "Image Output": "1334 points / message"
+        }
+      }
+    },
+    {
+      "id": "FLUX-pro-1.1-T",
+      "object": "model",
+      "created": 1730863432942,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "FLUX-pro-1.1-T",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:56:26.356777",
+        "details": {
+          "Total cost": "1000 points/message"
+        }
+      }
+    },
+    {
+      "id": "FLUX-pro-1.1-ultra",
+      "object": "model",
+      "created": 1731696606126,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "FLUX-pro-1.1-ultra",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:56:32.241952",
+        "details": {
+          "Image Output": "2000 points / message"
+        }
+      }
+    },
+    {
+      "id": "FLUX-schnell",
+      "object": "model",
+      "created": 1722523149211,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "FLUX-schnell",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:56:38.210517",
+        "details": {
+          "Image Output": "40 points / message"
+        }
+      }
+    },
+    {
+      "id": "FLUX-schnell-DI",
+      "object": "model",
+      "created": 1750333477944,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "FLUX-schnell-DI",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:56:43.528075",
+        "details": {
+          "Total cost": "33 points/message"
+        }
+      }
+    },
+    {
+      "id": "Flux-1-Dev-FW",
+      "object": "model",
+      "created": 1729618505818,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Flux-1-Dev-FW",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:56:49.390449",
+        "details": {
+          "Total cost": "375 points/message"
+        }
+      }
+    },
+    {
+      "id": "Flux-1-Schnell-FW",
+      "object": "model",
+      "created": 1729619977045,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Flux-1-Schnell-FW",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:56:54.706335",
+        "details": {
+          "Total cost": "35 points/message"
+        }
+      }
+    },
+    {
+      "id": "Flux-Kontext-Max",
+      "object": "model",
+      "created": 1748526727201,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Flux-Kontext-Max",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:57:00.091375",
+        "details": {
+          "Image Output": "2667 points / message"
+        }
+      }
+    },
+    {
+      "id": "Flux-Kontext-Pro",
+      "object": "model",
+      "created": 1748527242279,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Flux-Kontext-Pro",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:57:05.960253",
+        "details": {
+          "Image Output": "1334 points / message"
+        }
+      }
+    },
+    {
+      "id": "Flux-Schnell-T",
+      "object": "model",
+      "created": 1730862046687,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Flux-Schnell-T",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:57:11.857127",
+        "details": {
+          "Total cost": "70 points/message"
+        }
+      }
+    },
+    {
+      "id": "GLM-4.5",
+      "object": "model",
+      "created": 1753915796429,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GLM-4.5",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:57:17.726923",
+        "details": {
+          "Total cost": "180 points/message"
+        }
+      }
+    },
+    {
+      "id": "GPT-3.5-Turbo",
+      "object": "model",
+      "created": 1694610718926,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GPT-3.5-Turbo",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:57:23.840269",
+        "details": {
+          "Input (text)": "15 points/1k tokens",
+          "Input (image)": "Variable",
+          "Bot message": "9 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "GPT-3.5-Turbo-Instruct",
+      "object": "model",
+      "created": 1695250309273,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GPT-3.5-Turbo-Instruct",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:57:29.742242",
+        "details": {
+          "Input (text)": "45 points/1k tokens",
+          "Input (image)": "Variable",
+          "Bot message": "8 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "GPT-3.5-Turbo-Raw",
+      "object": "model",
+      "created": 1695849978857,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GPT-3.5-Turbo-Raw",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:57:35.638526",
+        "details": {
+          "Input (text)": "15 points/1k tokens",
+          "Input (image)": "Variable",
+          "Bot message": "11 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "GPT-4-Classic",
+      "object": "model",
+      "created": 1711404454811,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GPT-4-Classic",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:57:41.821473",
+        "details": {
+          "Input (text)": "900 points/1k tokens",
+          "Input (image)": "900 points/1k tokens",
+          "Bot message": "559 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "GPT-4-Classic-0314",
+      "object": "model",
+      "created": 1724707714433,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GPT-4-Classic-0314",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:57:47.659210",
+        "details": {
+          "Input (text)": "900 points/1k tokens",
+          "Input (image)": "900 points/1k tokens",
+          "Bot message": "334 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "GPT-4-Turbo",
+      "object": "model",
+      "created": 1694610718932,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GPT-4-Turbo",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:57:53.355066",
+        "details": {
+          "Input (text)": "300 points/1k tokens",
+          "Input (image)": "300 points/1k tokens",
+          "Bot message": "285 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "GPT-4.1",
+      "object": "model",
+      "created": 1744675047923,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GPT-4.1",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:57:59.227228",
+        "details": {
+          "Input (text)": "60 points/1k tokens",
+          "Input (image)": "60 points/1k tokens",
+          "Bot message": "193 points/message",
+          "Chat history": "Input rates are applied",
+          "Chat history cache discount": "75% discount oncached chat history"
+        }
+      }
+    },
+    {
+      "id": "GPT-4.1-mini",
+      "object": "model",
+      "created": 1744675260112,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GPT-4.1-mini",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:58:05.071914",
+        "details": {
+          "Input (text)": "12 points/1k tokens",
+          "Input (image)": "12 points/1k tokens",
+          "Bot message": "22 points/message",
+          "Chat history": "Input rates are applied",
+          "Chat history cache discount": "75% discount oncached chat history"
+        }
+      }
+    },
+    {
+      "id": "GPT-4.1-nano",
+      "object": "model",
+      "created": 1744675276376,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GPT-4.1-nano",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:58:10.928267",
+        "details": {
+          "Input (text)": "3 points/1k tokens",
+          "Input (image)": "3 points/1k tokens",
+          "Bot message": "6 points/message",
+          "Chat history": "Input rates are applied",
+          "Chat history cache discount": "75% discount oncached chat history"
+        }
+      }
+    },
+    {
+      "id": "GPT-4o",
+      "object": "model",
+      "created": 1715641234752,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GPT-4o",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:58:16.303647",
+        "details": {
+          "Input (text)": "75 points/1k tokens",
+          "Input (image)": "75 points/1k tokens",
+          "Bot message": "187 points/message",
+          "Image generation": "Additional costs based on the \"Image Generation\" section below",
+          "Chat history": "Input rates are applied",
+          "Chat history cache discount": "50% discount oncached chat history"
+        }
+      }
+    },
+    {
+      "id": "GPT-4o-Aug",
+      "object": "model",
+      "created": 1732149774348,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GPT-4o-Aug",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:58:22.200309",
+        "details": {
+          "Input (text)": "75 points/1k tokens",
+          "Input (image)": "75 points/1k tokens",
+          "Bot message": "128 points/message",
+          "Chat history": "Input rates are applied",
+          "Chat history cache discount": "50% discount oncached chat history"
+        }
+      }
+    },
+    {
+      "id": "GPT-4o-Search",
+      "object": "model",
+      "created": 1741720622451,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GPT-4o-Search",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:58:28.079114",
+        "details": {
+          "Input (text)": "75 points/1k tokens",
+          "Bot message": "1232 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "GPT-4o-mini",
+      "object": "model",
+      "created": 1721338046069,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GPT-4o-mini",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:58:34.322777",
+        "details": {
+          "Input (text)": "5 points/1k tokens",
+          "Input (image)": "5 points/1k tokens",
+          "Bot message": "5 points/message",
+          "Chat history": "Input rates are applied",
+          "Chat history cache discount": "50% discount oncached chat history"
+        }
+      }
+    },
+    {
+      "id": "GPT-4o-mini-Search",
+      "object": "model",
+      "created": 1741724009166,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GPT-4o-mini-Search",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:58:40.218319",
+        "details": {
+          "Input (text)": "5 points/1k tokens",
+          "Bot message": "831 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "GPT-Image-1",
+      "object": "model",
+      "created": 1743434309185,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GPT-Image-1",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:58:45.577158",
+        "details": {
+          "Input (text)": "151 points/1k tokens",
+          "Input (images)": "301 points/1k tokens",
+          "High fidelity editing": "2000 points",
+          "Output (image)": "Based on output image quality and resolution (see table below)"
+        }
+      }
+    },
+    {
+      "id": "GPT-Researcher",
+      "object": "model",
+      "created": 1735901906014,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GPT-Researcher",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:58:51.008114",
+        "details": {
+          "Text input": "100 points / token",
+          "Research analysis": "200 points / research",
+          "Research response": "150 points / research"
+        }
+      }
+    },
+    {
+      "id": "Gemini-1.5-Flash",
+      "object": "model",
+      "created": 1715720620412,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Gemini-1.5-Flash",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:58:56.906608",
+        "details": {
+          "Input (text)": "1 point/1k characters",
+          "Input (image)": "1 point/image",
+          "Input (video)": "1 point/second",
+          "Bot message": "2 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "Gemini-1.5-Flash-Search",
+      "object": "model",
+      "created": 1710801504184,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Gemini-1.5-Flash-Search",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:59:02.804793",
+        "details": {
+          "Input (text)": "1 point/1k characters",
+          "Bot message": "3 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "Gemini-1.5-Pro",
+      "object": "model",
+      "created": 1711587293628,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Gemini-1.5-Pro",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:59:08.661033",
+        "details": {
+          "Input (text)": "5 points/1k characters",
+          "Input (image)": "5 points/image",
+          "Input (video)": "5 points/second",
+          "Bot message": "30 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "Gemini-1.5-Pro-Search",
+      "object": "model",
+      "created": 1713221016407,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Gemini-1.5-Pro-Search",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:59:14.540529",
+        "details": {
+          "Input (text)": "5 points/1k characters",
+          "Bot message": "41 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "Gemini-2.0-Flash",
+      "object": "model",
+      "created": 1733958136993,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Gemini-2.0-Flash",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:59:19.966538",
+        "details": {
+          "Input (text)": "2 points/1k tokens",
+          "Input (image)": "2 points/1k tokens",
+          "Input (video)": "1 point/second",
+          "Bot message": "6 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "Gemini-2.0-Flash-Lite",
+      "object": "model",
+      "created": 1738780480313,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Gemini-2.0-Flash-Lite",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:59:25.865596",
+        "details": {
+          "Input (text)": "1 point/1k tokens",
+          "Input (image)": "1 point/1k tokens",
+          "Input (video)": "1 point/second",
+          "Bot message": "5 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "Gemini-2.0-Flash-Preview",
+      "object": "model",
+      "created": 1741921762534,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Gemini-2.0-Flash-Preview",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:59:31.736324",
+        "details": {
+          "Total cost": "2 points/message"
+        }
+      }
+    },
+    {
+      "id": "Gemini-2.5-Flash",
+      "object": "model",
+      "created": 1745638152572,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Gemini-2.5-Flash",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:59:37.605374",
+        "details": {
+          "Input (text)": "3 points/1k tokens",
+          "Input (image)": "3 points/1k tokens",
+          "Input (video)": "1 point/second",
+          "Bot message": "8 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "Gemini-2.5-Flash-Lite-Preview",
+      "object": "model",
+      "created": 1750348180783,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Gemini-2.5-Flash-Lite-Preview",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:59:43.457274",
+        "details": {
+          "Input (text)": "1 point/1k tokens",
+          "Input (image)": "1 point/1k tokens",
+          "Input (video)": "1 point/second",
+          "Bot message": "12 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "Gemini-2.5-Pro",
+      "object": "model",
+      "created": 1738780524168,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Gemini-2.5-Pro",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:59:49.352286",
+        "details": {
+          "Input (text)": "13 points/1k tokens",
+          "Input (image)": "13 points/1k tokens",
+          "Input (video)": "4 points/second",
+          "Bot message": "332 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "Gemma-2-27b-T",
+      "object": "model",
+      "created": 1721258568677,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Gemma-2-27b-T",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T01:59:54.704498",
+        "details": {
+          "Total cost": "90 points/message"
+        }
+      }
+    },
+    {
+      "id": "Gemma-3-27B",
+      "object": "model",
+      "created": 1742186137210,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Gemma-3-27B",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:00:00.643349",
+        "details": {
+          "Per Message": "134 points"
+        }
+      }
+    },
+    {
+      "id": "Grok-2",
+      "object": "model",
+      "created": 1736893314102,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Grok-2",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:00:06.529032",
+        "details": {
+          "Input (text)": "67 points/1k tokens",
+          "Input (image)": "18 points/image",
+          "Bot message": "169 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "Grok-3",
+      "object": "model",
+      "created": 1744341886555,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Grok-3",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:00:12.418239",
+        "details": {
+          "Input (text)": "100 points/1k tokens",
+          "Input (image)": "Variable",
+          "Bot message": "833 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "Grok-3-Mini",
+      "object": "model",
+      "created": 1744388431404,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Grok-3-Mini",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:00:18.312285",
+        "details": {
+          "Input (text)": "10 points/1k tokens",
+          "Input (image)": "Variable",
+          "Bot message": "37 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "Grok-4",
+      "object": "model",
+      "created": 1752143407651,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Grok-4",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:00:23.664570",
+        "details": {
+          "Input (text)": "100 points/1k tokens",
+          "Input (image)": "90 points/image",
+          "Bot message": "750 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "Hailuo-02",
+      "object": "model",
+      "created": 1750150747414,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Hailuo-02",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "video"
+        ],
+        "modality": "text->video"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:00:29.014029",
+        "details": {
+          "768p-6s video": "14000 credits per video"
+        }
+      }
+    },
+    {
+      "id": "Hailuo-02-Standard",
+      "object": "model",
+      "created": 1750266147410,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Hailuo-02-Standard",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:00:34.998481",
+        "details": {
+          "Video Output": "1500 points / second"
+        }
+      }
+    },
+    {
+      "id": "Hailuo-AI",
+      "object": "model",
+      "created": 1729194728486,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Hailuo-AI",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "video"
+        ],
+        "modality": "text->video"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:00:40.948940",
+        "details": {
+          "Video Output": "14167 points / message"
+        }
+      }
+    },
+    {
+      "id": "Hailuo-Director-01",
+      "object": "model",
+      "created": 1749502785341,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Hailuo-Director-01",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "video"
+        ],
+        "modality": "text->video"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:00:46.907552",
+        "details": {
+          "Video Output": "16667 points / message"
+        }
+      }
+    },
+    {
+      "id": "Hailuo-Live",
+      "object": "model",
+      "created": 1734370063740,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Hailuo-Live",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "video"
+        ],
+        "modality": "text->video"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:00:52.829062",
+        "details": {
+          "Video Output": "14167 points / message"
+        }
+      }
+    },
+    {
+      "id": "Hailuo-Speech-02",
+      "object": "model",
+      "created": 1749503032615,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Hailuo-Speech-02",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "audio"
+        ],
+        "modality": "text->audio"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:00:58.776148",
+        "details": {
+          "HD Output": "3334 points / 1000 characters",
+          "Turbo Output": "2000 points / 1000 characters"
+        }
+      }
+    },
+    {
+      "id": "Hermes-3-70B",
+      "object": "model",
+      "created": 1724032528549,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Hermes-3-70B",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:01:04.073051",
+        "details": {
+          "Total cost": "200 points/message"
+        }
+      }
+    },
+    {
+      "id": "Hidream-I1-full",
+      "object": "model",
+      "created": 1747144375790,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Hidream-I1-full",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:01:09.883161",
+        "details": {
+          "Image Output": "1417 points / message"
+        }
+      }
+    },
+    {
+      "id": "Ideogram",
+      "object": "model",
+      "created": 1712178346331,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Ideogram",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:01:15.817883",
+        "details": {
+          "Total cost": "1500 points/message"
+        }
+      }
+    },
+    {
+      "id": "Ideogram-v2",
+      "object": "model",
+      "created": 1724273571743,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Ideogram-v2",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:01:21.711740",
+        "details": {
+          "Total cost": "1900 points/message"
+        }
+      }
+    },
+    {
+      "id": "Ideogram-v2a",
+      "object": "model",
+      "created": 1740678539688,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Ideogram-v2a",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:01:27.621133",
+        "details": {
+          "Total cost": "1300 points/message"
+        }
+      }
+    },
+    {
+      "id": "Ideogram-v2a-Turbo",
+      "object": "model",
+      "created": 1740678577836,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Ideogram-v2a-Turbo",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:01:33.484176",
+        "details": {
+          "Total cost": "800 points/message"
+        }
+      }
+    },
+    {
+      "id": "Ideogram-v3",
+      "object": "model",
+      "created": 1746189583927,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Ideogram-v3",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:01:39.386360",
+        "details": {
+          "Image Output": "2000 points / message"
+        }
+      }
+    },
+    {
+      "id": "Imagen-3",
+      "object": "model",
+      "created": 1729023417016,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Imagen-3",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:01:45.286007",
+        "details": {
+          "Total cost": "400 points/message"
+        }
+      }
+    },
+    {
+      "id": "Imagen-3-Fast",
+      "object": "model",
+      "created": 1729127959259,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Imagen-3-Fast",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:01:51.199079",
+        "details": {
+          "Total cost": "200 points/message"
+        }
+      }
+    },
+    {
+      "id": "Imagen-4",
+      "object": "model",
+      "created": 1747888192720,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Imagen-4",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:01:57.098900",
+        "details": {
+          "Total cost": "400 points/message"
+        }
+      }
+    },
+    {
+      "id": "Imagen-4-Fast",
+      "object": "model",
+      "created": 1750875079224,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Imagen-4-Fast",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:02:02.949636",
+        "details": {
+          "Total cost": "200 points/message"
+        }
+      }
+    },
+    {
+      "id": "Imagen-4-Ultra-Exp",
+      "object": "model",
+      "created": 1748061401435,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Imagen-4-Ultra-Exp",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:02:08.295458",
+        "details": {
+          "Total cost": "400 points/message"
+        }
+      }
+    },
+    {
+      "id": "Inception-Mercury",
+      "object": "model",
+      "created": 1750952818304,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Inception-Mercury",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:02:14.195925",
+        "details": {
+          "Input (text)": "13 points / 1k tokens",
+          "Bot Message (text)": "50 points / 1k tokens"
+        }
+      }
+    },
+    {
+      "id": "Inception-Mercury-Coder",
+      "object": "model",
+      "created": 1747072614396,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Inception-Mercury-Coder",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:02:20.599554",
+        "details": {
+          "Input (text)": "9 points / 1k tokens",
+          "Bot Message (text)": "34 points / 1k tokens"
+        }
+      }
+    },
+    {
+      "id": "Kimi-K2",
+      "object": "model",
+      "created": 1752519798608,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Kimi-K2",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:02:26.596880",
+        "details": {
+          "Total cost": "200 points/message"
+        }
+      }
+    },
+    {
+      "id": "Kimi-K2-T",
+      "object": "model",
+      "created": 1752510412371,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Kimi-K2-T",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:02:32.548546",
+        "details": {
+          "Total cost": "360 points/message"
+        }
+      }
+    },
+    {
+      "id": "Kling-1.5-Pro",
+      "object": "model",
+      "created": 1733347438699,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Kling-1.5-Pro",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "video"
+        ],
+        "modality": "text->video"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:02:38.462355",
+        "details": {
+          "Video Output": "2834 points / second"
+        }
+      }
+    },
+    {
+      "id": "Kling-1.6-Pro",
+      "object": "model",
+      "created": 1737537681579,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Kling-1.6-Pro",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "video"
+        ],
+        "modality": "text->video"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:02:44.432268",
+        "details": {
+          "Video Output": "2834 points / second"
+        }
+      }
+    },
+    {
+      "id": "Kling-2.0-Master",
+      "object": "model",
+      "created": 1744698597290,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Kling-2.0-Master",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image",
+          "video"
+        ],
+        "modality": "text->image,video"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:02:50.349496",
+        "details": {
+          "Video Output": "6000 points / second"
+        }
+      }
+    },
+    {
+      "id": "Kling-2.1-Master",
+      "object": "model",
+      "created": 1748544153317,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Kling-2.1-Master",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "video"
+        ],
+        "modality": "text->video"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:02:56.300331",
+        "details": {
+          "Video Output": "6000 points / second"
+        }
+      }
+    },
+    {
+      "id": "Kling-2.1-Pro",
+      "object": "model",
+      "created": 1748544740987,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Kling-2.1-Pro",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "video"
+        ],
+        "modality": "text->video"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:03:02.181275",
+        "details": {
+          "Video Output": "2834 points / second"
+        }
+      }
+    },
+    {
+      "id": "Kling-2.1-Std",
+      "object": "model",
+      "created": 1748545509401,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Kling-2.1-Std",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "video"
+        ],
+        "modality": "text->video"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:03:08.146332",
+        "details": {
+          "Video Output": "1667 points / second"
+        }
+      }
+    },
+    {
+      "id": "Kling-Pro-Effects",
+      "object": "model",
+      "created": 1743698583798,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Kling-Pro-Effects",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "video"
+        ],
+        "modality": "text->video"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:03:14.018101",
+        "details": {
+          "Video Output": "3334 points / second"
+        }
+      }
+    },
+    {
+      "id": "LivePortrait",
+      "object": "model",
+      "created": 1720556185003,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "LivePortrait",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:03:19.934054",
+        "details": {
+          "Video Output": "85 points / message"
+        }
+      }
+    },
+    {
+      "id": "Llama-3-70B-FP16",
+      "object": "model",
+      "created": 1724034563488,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3-70B-FP16",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:03:25.828776",
+        "details": {
+          "Total cost": "200 points/message"
+        }
+      }
+    },
+    {
+      "id": "Llama-3-70B-T",
+      "object": "model",
+      "created": 1713463834064,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3-70B-T",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:03:31.215861",
+        "details": {
+          "Total cost": "75 points/message"
+        }
+      }
+    },
+    {
+      "id": "Llama-3-70b-Groq",
+      "object": "model",
+      "created": 1713833546209,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3-70b-Groq",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:03:37.117797",
+        "details": {
+          "Total cost": "75 points/message"
+        }
+      }
+    },
+    {
+      "id": "Llama-3-70b-Inst-FW",
+      "object": "model",
+      "created": 1713475738051,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3-70b-Inst-FW",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:03:43.048392",
+        "details": {
+          "Total cost": "75 points/message"
+        }
+      }
+    },
+    {
+      "id": "Llama-3-8B-T",
+      "object": "model",
+      "created": 1713463356287,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3-8B-T",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:03:49.250943",
+        "details": {
+          "Total cost": "15 points/message"
+        }
+      }
+    },
+    {
+      "id": "Llama-3-8b-Groq",
+      "object": "model",
+      "created": 1704930986258,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3-8b-Groq",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:03:55.163883",
+        "details": {
+          "Total cost": "10 points/message"
+        }
+      }
+    },
+    {
+      "id": "Llama-3.1-405B",
+      "object": "model",
+      "created": 1723099000397,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3.1-405B",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:04:01.050509",
+        "details": {
+          "Input (text)": "100 points/1k tokens",
+          "Input (image)": "Variable",
+          "Bot message": "39 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "Llama-3.1-405B-FP16",
+      "object": "model",
+      "created": 1724034411290,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3.1-405B-FP16",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:04:07.013426",
+        "details": {
+          "Total cost": "2070 points/message"
+        }
+      }
+    },
+    {
+      "id": "Llama-3.1-405B-FW",
+      "object": "model",
+      "created": 1721749475784,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3.1-405B-FW",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:04:13.042720",
+        "details": {
+          "Total cost": "1500 points/message"
+        }
+      }
+    },
+    {
+      "id": "Llama-3.1-405B-T",
+      "object": "model",
+      "created": 1721748214074,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3.1-405B-T",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:04:18.979923",
+        "details": {
+          "Total cost": "335 points/message"
+        }
+      }
+    },
+    {
+      "id": "Llama-3.1-70B",
+      "object": "model",
+      "created": 1723143011206,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3.1-70B",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:04:24.911610",
+        "details": {
+          "Input (text)": "30 points/1k tokens",
+          "Input (image)": "Variable",
+          "Bot message": "8 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "Llama-3.1-70B-FP16",
+      "object": "model",
+      "created": 1724034470327,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3.1-70B-FP16",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:04:30.840072",
+        "details": {
+          "Total cost": "200 points/message"
+        }
+      }
+    },
+    {
+      "id": "Llama-3.1-70B-FW",
+      "object": "model",
+      "created": 1721749532051,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3.1-70B-FW",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:04:36.763188",
+        "details": {
+          "Total cost": "400 points/message"
+        }
+      }
+    },
+    {
+      "id": "Llama-3.1-70B-T",
+      "object": "model",
+      "created": 1721748215163,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3.1-70B-T",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:04:42.659222",
+        "details": {
+          "Total cost": "460 points/message"
+        }
+      }
+    },
+    {
+      "id": "Llama-3.1-8B",
+      "object": "model",
+      "created": 1723143047872,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3.1-8B",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:04:48.548192",
+        "details": {
+          "Input (text)": "7 points/1k tokens",
+          "Input (image)": "Variable",
+          "Bot message": "2 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "Llama-3.1-8B-DI",
+      "object": "model",
+      "created": 1740488781419,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3.1-8B-DI",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:04:54.450748",
+        "details": {
+          "Total cost": "0 points/message"
+        }
+      }
+    },
+    {
+      "id": "Llama-3.1-8B-FP16",
+      "object": "model",
+      "created": 1724034517400,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3.1-8B-FP16",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:05:00.333297",
+        "details": {
+          "Total cost": "50 points/message"
+        }
+      }
+    },
+    {
+      "id": "Llama-3.1-8B-FW",
+      "object": "model",
+      "created": 1721749569258,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3.1-8B-FW",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:05:06.243773",
+        "details": {
+          "Total cost": "50 points/message"
+        }
+      }
+    },
+    {
+      "id": "Llama-3.1-8B-T-128k",
+      "object": "model",
+      "created": 1721748216574,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3.1-8B-T-128k",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:05:12.148138",
+        "details": {
+          "Total cost": "100 points/message"
+        }
+      }
+    },
+    {
+      "id": "Llama-3.1-Nemotron",
+      "object": "model",
+      "created": 1731442142151,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3.1-Nemotron",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:05:18.071683",
+        "details": {
+          "Total cost": "200 points/message"
+        }
+      }
+    },
+    {
+      "id": "Llama-3.3-70B",
+      "object": "model",
+      "created": 1733509126023,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3.3-70B",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:05:24.357604",
+        "details": {
+          "Total cost": "130 points/message"
+        }
+      }
+    },
+    {
+      "id": "Llama-3.3-70B-DI",
+      "object": "model",
+      "created": 1740489360582,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3.3-70B-DI",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:05:30.443690",
+        "details": {
+          "Total cost": "50 points/message"
+        }
+      }
+    },
+    {
+      "id": "Llama-3.3-70B-FW",
+      "object": "model",
+      "created": 1733508651951,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3.3-70B-FW",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:05:36.358163",
+        "details": {
+          "Total cost": "140 points/message"
+        }
+      }
+    },
+    {
+      "id": "Llama-3.3-70B-Vers",
+      "object": "model",
+      "created": 1753869935065,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3.3-70B-Vers",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:05:42.294347",
+        "details": {
+          "Input (text)": "7 points / 1k tokens",
+          "Input (image)": "10 points / image",
+          "Output (text)": "7 points / 1k tokens",
+          "File Processing": "3 points / file",
+          "Document Processing": "15 points / document"
+        }
+      }
+    },
+    {
+      "id": "Llama-4-Maverick",
+      "object": "model",
+      "created": 1743882925518,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-4-Maverick",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:05:48.285214",
+        "details": {
+          "Total cost": "50 points/message"
+        }
+      }
+    },
+    {
+      "id": "Llama-4-Maverick-B10",
+      "object": "model",
+      "created": 1743915107713,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-4-Maverick-B10",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:05:54.181702",
+        "details": {
+          "Total cost": "145 points/message"
+        }
+      }
+    },
+    {
+      "id": "Llama-4-Maverick-T",
+      "object": "model",
+      "created": 1743883014548,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-4-Maverick-T",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:06:00.137116",
+        "details": {
+          "Total cost": "55 points/message"
+        }
+      }
+    },
+    {
+      "id": "Llama-4-Scout",
+      "object": "model",
+      "created": 1743882853643,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-4-Scout",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:06:06.093508",
+        "details": {
+          "Total cost": "30 points/message"
+        }
+      }
+    },
+    {
+      "id": "Llama-4-Scout-B10",
+      "object": "model",
+      "created": 1743896554195,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-4-Scout-B10",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:06:12.043500",
+        "details": {
+          "Total cost": "100 points/message"
+        }
+      }
+    },
+    {
+      "id": "Llama-4-Scout-T",
+      "object": "model",
+      "created": 1743891662563,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-4-Scout-T",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:06:17.957286",
+        "details": {
+          "Total cost": "35 points/message"
+        }
+      }
+    },
+    {
+      "id": "Llama-4-Scout-nitro",
+      "object": "model",
+      "created": 1747179494349,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-4-Scout-nitro",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:06:23.332266",
+        "details": {
+          "Total cost": "350 points/message"
+        }
+      }
+    },
+    {
+      "id": "Luma-Photon",
+      "object": "model",
+      "created": 1733181326256,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Luma-Photon",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:06:29.193071",
+        "details": {
+          "Image Output": "634 points / message"
+        }
+      }
+    },
+    {
+      "id": "Luma-Photon-Flash",
+      "object": "model",
+      "created": 1733181412355,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Luma-Photon-Flash",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:06:35.055782",
+        "details": {
+          "Image Output": "167 points / message"
+        }
+      }
+    },
+    {
+      "id": "Lyria",
+      "object": "model",
+      "created": 1749063911995,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Lyria",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:06:40.279408",
+        "details": {
+          "Input (text)": "2000 points per generated song"
+        }
+      }
+    },
+    {
+      "id": "MarkItDown",
+      "object": "model",
+      "created": 1746488364378,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "MarkItDown",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:06:46.156045",
+        "details": {
+          "Markdown conversion": "100 per Markdown conversion"
+        }
+      }
+    },
+    {
+      "id": "MiniMax-M1",
+      "object": "model",
+      "created": 1749637524703,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "MiniMax-M1",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:06:52.036030",
+        "details": {
+          "Input (≤200K tokens)": "20 credits / 1000 tokens",
+          "Input (>200K tokens)": "65 credits / 1000 tokens",
+          "Output": "110 credits / 1000 tokens"
+        }
+      }
+    },
+    {
+      "id": "Mistral-7B-v0.3-DI",
+      "object": "model",
+      "created": 1740490886743,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Mistral-7B-v0.3-DI",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:06:57.981046",
+        "details": {
+          "Total cost": "5 points/message"
+        }
+      }
+    },
+    {
+      "id": "Mistral-7B-v0.3-T",
+      "object": "model",
+      "created": 1716798156279,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Mistral-7B-v0.3-T",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:07:03.907788",
+        "details": {
+          "Total cost": "45 points/message"
+        }
+      }
+    },
+    {
+      "id": "Mistral-Large-2",
+      "object": "model",
+      "created": 1708971504266,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Mistral-Large-2",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:07:09.829432",
+        "details": {
+          "Input (text)": "100 points/1k tokens",
+          "Input (image)": "Variable",
+          "Bot message": "241 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "Mistral-Medium",
+      "object": "model",
+      "created": 1703096777397,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Mistral-Medium",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:07:15.706415",
+        "details": {
+          "Input (text)": "90 points/1k tokens",
+          "Input (image)": "Variable",
+          "Bot message": "227 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "Mistral-NeMo",
+      "object": "model",
+      "created": 1747480582228,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Mistral-NeMo",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:07:21.607723",
+        "details": {
+          "Base request fee": "50",
+          "Input processing": "2 per token",
+          "Output generation": "4 per token"
+        }
+      }
+    },
+    {
+      "id": "Mistral-Small-3",
+      "object": "model",
+      "created": 1738360161146,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Mistral-Small-3",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:07:27.536689",
+        "details": {
+          "Input (text)": "4 points/1k tokens",
+          "Input (image)": "Variable",
+          "Bot message": "6 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "Mistral-Small-3.1",
+      "object": "model",
+      "created": 1742338142315,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Mistral-Small-3.1",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:07:33.945015",
+        "details": {
+          "Per Message": "64 points"
+        }
+      }
+    },
+    {
+      "id": "Mistral-Small-3.2",
+      "object": "model",
+      "created": 1753262625533,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Mistral-Small-3.2",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:07:39.978233",
+        "details": {
+          "Base request fee": "50",
+          "Input processing": "2 per token",
+          "Output generation": "4 per token"
+        }
+      }
+    },
+    {
+      "id": "Mixtral8x22b-Inst-FW",
+      "object": "model",
+      "created": 1712949013942,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Mixtral8x22b-Inst-FW",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:07:45.891759",
+        "details": {
+          "Total cost": "120 points/message"
+        }
+      }
+    },
+    {
+      "id": "Mochi-preview",
+      "object": "model",
+      "created": 1729817676311,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Mochi-preview",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "video"
+        ],
+        "modality": "text->video"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:07:52.231098",
+        "details": {
+          "Video Output": "11334 points / message"
+        }
+      }
+    },
+    {
+      "id": "Orpheus-TTS",
+      "object": "model",
+      "created": 1743698312235,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Orpheus-TTS",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "audio"
+        ],
+        "modality": "text->audio"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:07:58.137452",
+        "details": {
+          "Audio Output": "1667 points / 1000 character"
+        }
+      }
+    },
+    {
+      "id": "Perplexity-Deep-Research",
+      "object": "model",
+      "created": 1740542141787,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Perplexity-Deep-Research",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:08:04.011786",
+        "details": {
+          "Per Message": "15167 points"
+        }
+      }
+    },
+    {
+      "id": "Perplexity-R1-1776",
+      "object": "model",
+      "created": 1742157434003,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Perplexity-R1-1776",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:08:09.927990",
+        "details": {
+          "Per Message": "580 points"
+        }
+      }
+    },
+    {
+      "id": "Perplexity-Sonar",
+      "object": "model",
+      "created": 1737790362317,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Perplexity-Sonar",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:08:15.826948",
+        "details": {
+          "Per Message": "434 points"
+        }
+      }
+    },
+    {
+      "id": "Perplexity-Sonar-Pro",
+      "object": "model",
+      "created": 1737790959209,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Perplexity-Sonar-Pro",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:08:21.807758",
+        "details": {
+          "Per Message": "1667 points"
+        }
+      }
+    },
+    {
+      "id": "Perplexity-Sonar-Rsn",
+      "object": "model",
+      "created": 1739996703995,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Perplexity-Sonar-Rsn",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:08:27.723753",
+        "details": {
+          "Per Message": "1234 points"
+        }
+      }
+    },
+    {
+      "id": "Perplexity-Sonar-Rsn-Pro",
+      "object": "model",
+      "created": 1739997380566,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Perplexity-Sonar-Rsn-Pro",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:08:33.600740",
+        "details": {
+          "Per Message": "2967 points"
+        }
+      }
+    },
+    {
+      "id": "Phi-4-DI",
+      "object": "model",
+      "created": 1740490334949,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Phi-4-DI",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:08:39.052528",
+        "details": {
+          "Total cost": "10 points/message"
+        }
+      }
+    },
+    {
+      "id": "Phoenix-1.0",
+      "object": "model",
+      "created": 1748565176146,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Phoenix-1.0",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:08:44.955529",
+        "details": {
+          "Total cost": "560 points/message"
+        }
+      }
+    },
+    {
+      "id": "Pika",
+      "object": "model",
+      "created": 1742425653535,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Pika",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "video"
+        ],
+        "modality": "text->video"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:08:50.941799",
+        "details": {
+          "Turbo (Default)": [
+            "720p",
+            "5s",
+            "5,000"
+          ],
+          "2.1": [
+            "1080p",
+            "5s",
+            "19,167"
+          ],
+          "2.2": [
+            "1080p",
+            "10s",
+            "40,000"
+          ],
+          "2.2 + ingredients": [
+            "1080p",
+            "10s",
+            "60,000"
+          ],
+          "Pikaffects": [
+            "720p",
+            "5s",
+            "23,334"
+          ]
+        }
+      }
+    },
+    {
+      "id": "Pixverse-v4.5",
+      "object": "model",
+      "created": 1747737997951,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Pixverse-v4.5",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "video"
+        ],
+        "modality": "text->video"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:08:56.866635",
+        "details": {
+          "Video Output (360p)": "2000 points / second",
+          "Video Output (540p)": "2000 points / second",
+          "Video Output (720p)": "2667 points / second",
+          "Video Output (1080p)": "5334 points / second",
+          "Video Effects/Video Transition Output (360p)": "4000 points / second",
+          "Video Effects/Video Transition Output (540p)": "4000 points / second",
+          "Video Effects/Video Transition Output (720p)": "5334 points / second",
+          "Video Effects/Video Transition Output (1080p)": "10667 points / second"
+        }
+      }
+    },
+    {
+      "id": "PlayAI-Dialog",
+      "object": "model",
+      "created": 1737460623400,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "PlayAI-Dialog",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "audio"
+        ],
+        "modality": "text->audio"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:09:02.787421",
+        "details": {
+          "Audio Output": "29 points / second"
+        }
+      }
+    },
+    {
+      "id": "PlayAI-TTS",
+      "object": "model",
+      "created": 1737458808496,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "PlayAI-TTS",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "audio"
+        ],
+        "modality": "text->audio"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:09:08.136363",
+        "details": {
+          "Audio Output": "17 points / second"
+        }
+      }
+    },
+    {
+      "id": "Poe-System-Bot",
+      "object": "model",
+      "created": 1725041210466,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Poe-System-Bot",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:09:14.035093",
+        "details": {
+          "Total cost": "30 points/message"
+        }
+      }
+    },
+    {
+      "id": "Python",
+      "object": "model",
+      "created": 1724756919380,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Python",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:09:20.072332",
+        "details": {
+          "Total cost": "1 point/message"
+        }
+      }
+    },
+    {
+      "id": "QwQ-32B-B10",
+      "object": "model",
+      "created": 1742954432562,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "QwQ-32B-B10",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:09:25.991804",
+        "details": {
+          "Total cost": "200 points/message"
+        }
+      }
+    },
+    {
+      "id": "QwQ-32B-Preview-T",
+      "object": "model",
+      "created": 1733158246974,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "QwQ-32B-Preview-T",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:09:31.875258",
+        "details": {
+          "Total cost": "320 points/message"
+        }
+      }
+    },
+    {
+      "id": "QwQ-32B-T",
+      "object": "model",
+      "created": 1742492449252,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "QwQ-32B-T",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:09:37.807731",
+        "details": {
+          "Total cost": "250 points/message"
+        }
+      }
+    },
+    {
+      "id": "Qwen-2.5-72B-T",
+      "object": "model",
+      "created": 1730863910082,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Qwen-2.5-72B-T",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:09:43.751170",
+        "details": {
+          "Total cost": "300 points/message"
+        }
+      }
+    },
+    {
+      "id": "Qwen-2.5-7B-T",
+      "object": "model",
+      "created": 1730863674687,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Qwen-2.5-7B-T",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:09:49.691310",
+        "details": {
+          "Total cost": "75 points/message"
+        }
+      }
+    },
+    {
+      "id": "Qwen-2.5-Coder-32B-T",
+      "object": "model",
+      "created": 1733158197633,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Qwen-2.5-Coder-32B-T",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:09:55.625792",
+        "details": {
+          "Total cost": "210 points/message"
+        }
+      }
+    },
+    {
+      "id": "Qwen-2.5-VL-32b",
+      "object": "model",
+      "created": 1743550499150,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Qwen-2.5-VL-32b",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:10:01.011257",
+        "details": {
+          "Total cost": "220 points/message"
+        }
+      }
+    },
+    {
+      "id": "Qwen-3-235B-0527-T",
+      "object": "model",
+      "created": 1745978851479,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Qwen-3-235B-0527-T",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:10:06.900479",
+        "details": {
+          "Total cost": "63 points/message"
+        }
+      }
+    },
+    {
+      "id": "Qwen-72B-T",
+      "object": "model",
+      "created": 1709166989166,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Qwen-72B-T",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:10:12.783355",
+        "details": {
+          "Total cost": "125 points/message"
+        }
+      }
+    },
+    {
+      "id": "Qwen-QwQ-32b-preview",
+      "object": "model",
+      "created": 1733275325628,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Qwen-QwQ-32b-preview",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:10:18.725892",
+        "details": {
+          "Total cost": "240 points/message"
+        }
+      }
+    },
+    {
+      "id": "Qwen2-72B-Instruct-T",
+      "object": "model",
+      "created": 1718313334490,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Qwen2-72B-Instruct-T",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:10:24.602963",
+        "details": {
+          "Total cost": "190 points/message"
+        }
+      }
+    },
+    {
+      "id": "Qwen2.5-Coder-32B",
+      "object": "model",
+      "created": 1731698228854,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Qwen2.5-Coder-32B",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:10:30.481619",
+        "details": {
+          "Total cost": "50 points/message"
+        }
+      }
+    },
+    {
+      "id": "Qwen2.5-VL-72B-T",
+      "object": "model",
+      "created": 1743431047831,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Qwen2.5-VL-72B-T",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:10:35.825519",
+        "details": {
+          "Total cost": "290 points/message"
+        }
+      }
+    },
+    {
+      "id": "Qwen3-235B-2507-FW",
+      "object": "model",
+      "created": 1745952547301,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Qwen3-235B-2507-FW",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:10:41.173293",
+        "details": {
+          "Total cost": "90 points/message"
+        }
+      }
+    },
+    {
+      "id": "Qwen3-235B-A22B",
+      "object": "model",
+      "created": 1745872547811,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Qwen3-235B-A22B",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:10:46.827154",
+        "details": {
+          "Total cost": "0 points/message"
+        }
+      }
+    },
+    {
+      "id": "Qwen3-235B-A22B-DI",
+      "object": "model",
+      "created": 1746004656402,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Qwen3-235B-A22B-DI",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:10:52.731833",
+        "details": {
+          "Total cost": "63 points/message"
+        }
+      }
+    },
+    {
+      "id": "Qwen3-32B-nitro",
+      "object": "model",
+      "created": 1747326165823,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Qwen3-32B-nitro",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:10:58.735182",
+        "details": {
+          "Total cost": "1 point/message"
+        }
+      }
+    },
+    {
+      "id": "Qwen3-Coder-480B-FW",
+      "object": "model",
+      "created": 1753296529249,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Qwen3-Coder-480B-FW",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:11:04.604046",
+        "details": {
+          "Total cost": "300 points/message"
+        }
+      }
+    },
+    {
+      "id": "Ray2",
+      "object": "model",
+      "created": 1740094898040,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Ray2",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "video"
+        ],
+        "modality": "text->video"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:11:10.582575",
+        "details": {
+          "5s": [
+            "6,000 points",
+            "11,750 points",
+            "26,250 points",
+            "106,250 points"
+          ],
+          "9s": [
+            "10,800 points",
+            "21,150 points",
+            "47,250 points",
+            "191,250 points"
+          ]
+        }
+      }
+    },
+    {
+      "id": "Recraft-V3",
+      "object": "model",
+      "created": 1730322043217,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Recraft-V3",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:11:16.480444",
+        "details": {
+          "Image Output": "2267 points / message"
+        }
+      }
+    },
+    {
+      "id": "Reka-Core",
+      "object": "model",
+      "created": 1713038207102,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Reka-Core",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:11:22.383727",
+        "details": {
+          "Total Cost": "834 points / message"
+        }
+      }
+    },
+    {
+      "id": "Reka-Flash",
+      "object": "model",
+      "created": 1707892216404,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Reka-Flash",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:11:27.786928",
+        "details": {
+          "Total Cost": "27 points / message"
+        }
+      }
+    },
+    {
+      "id": "Reka-Research",
+      "object": "model",
+      "created": 1750919363394,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Reka-Research",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:11:33.682387",
+        "details": {
+          "Total Cost": "334 points / message"
+        }
+      }
+    },
+    {
+      "id": "Restyler",
+      "object": "model",
+      "created": 1739302186273,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Restyler",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:11:39.077319",
+        "details": {
+          "Image Output": "2000 points / message"
+        }
+      }
+    },
+    {
+      "id": "Retro-Diffusion-Core",
+      "object": "model",
+      "created": 1742484693553,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Retro-Diffusion-Core",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing_error": "No pricing table found in dialog"
+    },
+    {
+      "id": "Runway",
+      "object": "model",
+      "created": 1728610474100,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Runway",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "video"
+        ],
+        "modality": "text->video"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:11:50.550447",
+        "details": {
+          "5 seconds": "11334 points",
+          "10 seconds": "21334 points"
+        }
+      }
+    },
+    {
+      "id": "Runway-Gen-4-Turbo",
+      "object": "model",
+      "created": 1746825004531,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Runway-Gen-4-Turbo",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "video"
+        ],
+        "modality": "text->video"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:11:56.604249",
+        "details": {
+          "5 seconds": "11334 points",
+          "10 seconds": "21334 points"
+        }
+      }
+    },
+    {
+      "id": "Sana-T2I",
+      "object": "model",
+      "created": 1736139178094,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Sana-T2I",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:12:04.652595",
+        "details": {
+          "Image Output": "29 points / message"
+        }
+      }
+    },
+    {
+      "id": "Seedance-1.0-Lite",
+      "object": "model",
+      "created": 1750007728801,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Seedance-1.0-Lite",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:12:10.649760",
+        "details": {
+          "Video Output": "60000 points / million video tokens"
+        }
+      }
+    },
+    {
+      "id": "Seedance-1.0-Pro",
+      "object": "model",
+      "created": 1750447821693,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Seedance-1.0-Pro",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:12:16.597021",
+        "details": {
+          "Video Output": "83334 points / million video tokens"
+        }
+      }
+    },
+    {
+      "id": "Seedream-3.0",
+      "object": "model",
+      "created": 1750007407012,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Seedream-3.0",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:12:22.602633",
+        "details": {
+          "Image Output": "1334 points / message"
+        }
+      }
+    },
+    {
+      "id": "Sketch-to-Image",
+      "object": "model",
+      "created": 1736176125104,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Sketch-to-Image",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:12:28.256341",
+        "details": {
+          "Image Output": "992 points / message"
+        }
+      }
+    },
+    {
+      "id": "Solar-Pro-2",
+      "object": "model",
+      "created": 1694610718864,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Solar-Pro-2",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:12:34.354826",
+        "details": {
+          "Total cost": "70 points/message"
+        }
+      }
+    },
+    {
+      "id": "Sora",
+      "object": "model",
+      "created": 1749552672238,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Sora",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "video"
+        ],
+        "modality": "text->video"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:12:39.850812",
+        "details": {
+          "Video Output": "1667 points / second"
+        }
+      }
+    },
+    {
+      "id": "StableDiffusion3-2B",
+      "object": "model",
+      "created": 1718216691252,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "StableDiffusion3-2B",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:12:45.398245",
+        "details": {
+          "Image Output": "334 points / message"
+        }
+      }
+    },
+    {
+      "id": "StableDiffusion3.5-L",
+      "object": "model",
+      "created": 1729613306476,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "StableDiffusion3.5-L",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:12:50.854174",
+        "details": {
+          "Image Output": "1842 points / message"
+        }
+      }
+    },
+    {
+      "id": "StableDiffusion3.5-T",
+      "object": "model",
+      "created": 1729817429663,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "StableDiffusion3.5-T",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:12:56.805236",
+        "details": {
+          "Image Output": "284 points / message"
+        }
+      }
+    },
+    {
+      "id": "StableDiffusionXL",
+      "object": "model",
+      "created": 1688868065472,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "StableDiffusionXL",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:13:02.802873",
+        "details": {
+          "Total cost": "120 points/message"
+        }
+      }
+    },
+    {
+      "id": "Tako",
+      "object": "model",
+      "created": 1723756137465,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Tako",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:13:08.205431",
+        "details": {
+          "Total cost": "1000 points/message"
+        }
+      }
+    },
+    {
+      "id": "TopazLabs",
+      "object": "model",
+      "created": 1733266151324,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "TopazLabs",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:13:13.801043",
+        "details": {
+          "Up to 24": "1167 points",
+          "24 - 32": "2334 points",
+          "32 - 48": "3501 points",
+          "48 - 64": "4668 points",
+          "64 - 128": "7002 points",
+          "128 - 256": "11670 points",
+          "> 256(Up to 512)": "18672 points"
+        }
+      }
+    },
+    {
+      "id": "Trellis-3D",
+      "object": "model",
+      "created": 1743054517902,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Trellis-3D",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:13:19.256441",
+        "details": {
+          "3D Output": "567 points / message"
+        }
+      }
+    },
+    {
+      "id": "TwelveLabs",
+      "object": "model",
+      "created": 1736295272277,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "TwelveLabs",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:13:25.438381",
+        "details": {
+          "Visual Analysis": "1100 points",
+          "Audio Analysis": "277 points",
+          "Storage": "50 points"
+        }
+      }
+    },
+    {
+      "id": "Unreal-Speech-TTS",
+      "object": "model",
+      "created": 1741061137514,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Unreal-Speech-TTS",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "audio"
+        ],
+        "modality": "text->audio"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:13:31.414659",
+        "details": {
+          "Text input": "1 point per 5 characters"
+        }
+      }
+    },
+    {
+      "id": "Veo-2",
+      "object": "model",
+      "created": 1733117805122,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Veo-2",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "video"
+        ],
+        "modality": "text->video"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:13:37.511190",
+        "details": {
+          "Total cost": "37000 points/message"
+        }
+      }
+    },
+    {
+      "id": "Veo-2-Video",
+      "object": "model",
+      "created": 1740172728462,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Veo-2-Video",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:13:43.656160",
+        "details": {
+          "Video Output": "70834 points / message"
+        }
+      }
+    },
+    {
+      "id": "Veo-3",
+      "object": "model",
+      "created": 1747796700448,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Veo-3",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "video"
+        ],
+        "modality": "text->video"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:13:49.804724",
+        "details": {
+          "Total cost": "55500 points/message"
+        }
+      }
+    },
+    {
+      "id": "Veo-3-Fast",
+      "object": "model",
+      "created": 1752140109634,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Veo-3-Fast",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:13:55.958088",
+        "details": {
+          "Video Output": "8334 points / s",
+          "Audio + Video Output": "13334 points / s"
+        }
+      }
+    },
+    {
+      "id": "Wan-2.1",
+      "object": "model",
+      "created": 1741001573656,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Wan-2.1",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "video"
+        ],
+        "modality": "text->video"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:14:02.158137",
+        "details": {
+          "Video Output": "11334 points / message"
+        }
+      }
+    },
+    {
+      "id": "Wan-2.2",
+      "object": "model",
+      "created": 1753731782474,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Wan-2.2",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:14:08.380129",
+        "details": {
+          "Video Output": "2667 points / second"
+        }
+      }
+    },
+    {
+      "id": "Web-Search",
+      "object": "model",
+      "created": 1694131444821,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Web-Search",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing_error": "No pricing table found in dialog"
+    },
+    {
+      "id": "o1",
+      "object": "model",
+      "created": 1734482114732,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "o1",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:14:20.057729",
+        "details": {
+          "Input (text)": "450 points/1k tokens",
+          "Input (image)": "450 points/1k tokens",
+          "Bot message": "3853 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "o1-mini",
+      "object": "model",
+      "created": 1726176659168,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "o1-mini",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:14:26.307918",
+        "details": {
+          "Input (text)": "33 points/1k tokens",
+          "Bot message": "352 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "o1-pro",
+      "object": "model",
+      "created": 1742413231833,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "o1-pro",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:14:32.260685",
+        "details": {
+          "Input (text)": "4500 points/1k tokens",
+          "Input (image)": "4500 points/1k tokens",
+          "Bot message": "53457 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "o3",
+      "object": "model",
+      "created": 1744826529075,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "o3",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:14:37.898190",
+        "details": {
+          "Input (text)": "60 points/1k tokens",
+          "Input (image)": "60 points/1k tokens",
+          "Bot message": "388 points/message",
+          "Chat history": "Input rates are applied",
+          "Chat history cache discount": "75% discount oncached chat history"
+        }
+      }
+    },
+    {
+      "id": "o3-deep-research",
+      "object": "model",
+      "created": 1750982619753,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "o3-deep-research",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:14:43.707282",
+        "details": {
+          "Input (text)": "300 points/1k tokens",
+          "Input (image)": "300 points/1k tokens",
+          "Bot message": "95345 points/message",
+          "Chat history": "Input rates are applied",
+          "Chat history cache discount": "75% discount oncached chat history"
+        }
+      }
+    },
+    {
+      "id": "o3-mini",
+      "object": "model",
+      "created": 1738356284517,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "o3-mini",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:14:49.354136",
+        "details": {
+          "Input (text)": "33 points/1k tokens",
+          "Input (image)": "Variable",
+          "Bot message": "199 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "o3-mini-high",
+      "object": "model",
+      "created": 1738356365479,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "o3-mini-high",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:14:55.102661",
+        "details": {
+          "Input (text)": "33 points/1k tokens",
+          "Input (image)": "Variable",
+          "Bot message": "447 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "o3-pro",
+      "object": "model",
+      "created": 1749588430571,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "o3-pro",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:15:00.654591",
+        "details": {
+          "Input (text)": "600 points/1k tokens",
+          "Input (image)": "600 points/1k tokens",
+          "Bot message": "4669 points/message",
+          "Chat history": "Input rates are applied"
+        }
+      }
+    },
+    {
+      "id": "o4-mini",
+      "object": "model",
+      "created": 1744826580331,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "o4-mini",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:15:06.757296",
+        "details": {
+          "Input (text)": "33 points/1k tokens",
+          "Input (image)": "33 points/1k tokens",
+          "Bot message": "235 points/message",
+          "Chat history": "Input rates are applied",
+          "Chat history cache discount": "75% discount oncached chat history"
+        }
+      }
+    },
+    {
+      "id": "o4-mini-deep-research",
+      "object": "model",
+      "created": 1750982713340,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "o4-mini-deep-research",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:15:12.860116",
+        "details": {
+          "Input (text)": "60 points/1k tokens",
+          "Input (image)": "60 points/1k tokens",
+          "Bot message": "21977 points/message",
+          "Chat history": "Input rates are applied",
+          "Chat history cache discount": "75% discount oncached chat history"
+        }
+      }
+    },
+    {
+      "id": "remove-background",
+      "object": "model",
+      "created": 1714848450172,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "remove-background",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "image"
+        ],
+        "modality": "text->image"
+      },
+      "pricing": {
+        "checked_at": "2025-08-03T02:15:19.050032",
+        "details": {
+          "Image Output": "34 points / message"
+        }
+      }
+    }
+  ]
+}

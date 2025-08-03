@@ -1,0 +1,62 @@
+# this_file: pyproject.toml
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "virginia-clemm-poe"
+dynamic = ["version"]
+description = "A Python package providing programmatic access to Poe.com model data with pricing information"
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "Adam Twardoch", email = "adam+github@twardoch.com"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "httpx>=0.24.0",
+    "playwright>=1.40.0",
+    "beautifulsoup4>=4.12.0",
+    "pydantic>=2.5.0",
+    "fire>=0.5.0",
+    "rich>=13.0.0",
+    "loguru>=0.7.0",
+    "aiohttp>=3.9.0",
+]
+
+[project.scripts]
+virginia-clemm-poe = "virginia_clemm_poe.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/twardoch/virginia-clemm-poe"
+Repository = "https://github.com/twardoch/virginia-clemm-poe"
+Issues = "https://github.com/twardoch/virginia-clemm-poe/issues"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/virginia_clemm_poe/_version.py"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 120
+select = ["E", "F", "UP", "B", "SIM", "I"]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.1.0",
+    "ruff>=0.1.0",
+    "mypy>=1.7.0",
+    "types-beautifulsoup4",
+]
