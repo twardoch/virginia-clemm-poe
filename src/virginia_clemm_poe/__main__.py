@@ -15,7 +15,7 @@ from . import api
 from .browser_manager import BrowserManager
 from .config import DATA_FILE_PATH
 from .updater import ModelUpdater
-from .utils.logger import configure_logger, log_user_action, log_operation
+from .utils.logger import configure_logger, log_operation, log_user_action
 
 console = Console()
 
@@ -23,7 +23,7 @@ console = Console()
 class Cli:
     """Virginia Clemm Poe - Poe.com model data management CLI."""
 
-    def setup(self, verbose: bool = False):
+    def setup(self, verbose: bool = False) -> None:
         """Initialize browser environment for Virginia Clemm Poe web scraping operations.
 
         This command prepares your system for data collection by ensuring Chrome/Chromium
@@ -105,13 +105,13 @@ class Cli:
             - doctor(): Diagnose and fix browser-related issues
         """
         configure_logger(verbose)
-        
+
         # Log user action
         log_user_action("setup", command="setup", verbose=verbose)
-        
+
         console.print("[bold blue]Setting up browser for Virginia Clemm Poe...[/bold blue]")
 
-        async def run_setup():
+        async def run_setup() -> None:
             success = await BrowserManager.setup_chrome()
             if success:
                 console.print("[green]✓ Chrome is available![/green]")
@@ -130,7 +130,7 @@ class Cli:
 
         asyncio.run(run_setup())
 
-    def status(self, verbose: bool = False):
+    def status(self, verbose: bool = False) -> None:
         """Check browser and data status."""
         configure_logger(verbose)
         console.print("[bold blue]Virginia Clemm Poe Status[/bold blue]\n")
@@ -194,7 +194,7 @@ class Cli:
             console.print("[yellow]⚠ POE_API_KEY not set[/yellow]")
             console.print("  Set with: export POE_API_KEY=your_key")
 
-    def clear_cache(self, data: bool = False, browser: bool = False, all: bool = True, verbose: bool = False):
+    def clear_cache(self, data: bool = False, browser: bool = False, all: bool = True, verbose: bool = False) -> None:
         """Clear cache and stored data.
 
         Args:
@@ -249,7 +249,7 @@ class Cli:
 
         console.print("\n[green]Cache cleared successfully![/green]")
 
-    def doctor(self, verbose: bool = False):
+    def doctor(self, verbose: bool = False) -> None:
         """Diagnose common issues and provide solutions."""
         configure_logger(verbose)
         console.print("[bold blue]Virginia Clemm Poe Doctor[/bold blue]\n")
@@ -276,9 +276,13 @@ class Cli:
             api_key = os.environ.get("POE_API_KEY")
             import httpx
 
+            from .config import API_TIMEOUT_SECONDS
+
             try:
                 response = httpx.get(
-                    "https://api.poe.com/v2/models", headers={"Authorization": f"Bearer {api_key}"}, timeout=5.0
+                    "https://api.poe.com/v2/models",
+                    headers={"Authorization": f"Bearer {api_key}"},
+                    timeout=API_TIMEOUT_SECONDS,
                 )
                 if response.status_code == 200:
                     console.print("[green]✓ API key is valid[/green]")
@@ -317,8 +321,10 @@ class Cli:
         console.print("\n[bold]Network:[/bold]")
         import httpx
 
+        from .config import NETWORK_TIMEOUT_SECONDS
+
         try:
-            response = httpx.get("https://poe.com", timeout=5.0)
+            response = httpx.get("https://poe.com", timeout=NETWORK_TIMEOUT_SECONDS)
             if response.status_code == 200:
                 console.print("[green]✓ Can reach poe.com[/green]")
             else:
@@ -393,7 +399,7 @@ class Cli:
         force: bool = False,
         debug_port: int = 9222,
         verbose: bool = False,
-    ):
+    ) -> None:
         """Update Poe model data with pricing and bot information from web scraping.
 
         This is the primary command for refreshing your local model dataset. It fetches
@@ -412,7 +418,7 @@ class Cli:
             pricing: Update only pricing information (costs, points, rate structures).
                     Skips bot info scraping when only pricing data is required.
             all: Update both pricing and bot info (default: True). This is the recommended
-                 mode for complete data freshness. Automatically disabled if --info or 
+                 mode for complete data freshness. Automatically disabled if --info or
                  --pricing flags are used.
             api_key: Poe API key for authentication. Overrides POE_API_KEY environment
                     variable if provided. Get your key from: https://poe.com/api_key
@@ -439,10 +445,10 @@ class Cli:
             ```bash
             # Update only pricing information
             virginia-clemm-poe update --pricing
-            
+
             # Update only bot info (faster)
             virginia-clemm-poe update --info
-            
+
             # Force refresh all data
             virginia-clemm-poe update --force
             ```
@@ -451,10 +457,10 @@ class Cli:
             ```bash
             # Enable verbose logging for debugging
             virginia-clemm-poe update --verbose
-            
+
             # Use custom API key
             virginia-clemm-poe update --api_key your_key
-            
+
             # Use different debug port if conflicts occur
             virginia-clemm-poe update --debug_port 9223
             ```
@@ -477,16 +483,16 @@ class Cli:
         """
         # Configure logger first
         configure_logger(verbose)
-        
+
         # Log user action with context
         log_user_action(
-            "update", 
+            "update",
             command=f"update --info={info} --pricing={pricing} --all={all} --force={force}",
             info=info,
             pricing=pricing,
             all=all,
             force=force,
-            verbose=verbose
+            verbose=verbose,
         )
 
         # Get API key
@@ -525,13 +531,13 @@ class Cli:
             console.print(f"[green]Updating {' and '.join(updates)}...[/green]")
 
         # Run update
-        async def run_update():
+        async def run_update() -> None:
             updater = ModelUpdater(api_key, debug_port=debug_port, verbose=verbose)
             await updater.update_all(force=force, update_info=update_info, update_pricing=update_pricing)
 
         asyncio.run(run_update())
 
-    def search(self, query: str, show_pricing: bool = True, show_bot_info: bool = False, verbose: bool = False):
+    def search(self, query: str, show_pricing: bool = True, show_bot_info: bool = False, verbose: bool = False) -> None:
         """Search and display Poe models by ID or name with flexible filtering.
 
         This command provides an intuitive way to find specific models in the local dataset
@@ -566,10 +572,10 @@ class Cli:
             ```bash
             # Find all Claude models
             virginia-clemm-poe search claude
-            
+
             # Find GPT models
             virginia-clemm-poe search gpt
-            
+
             # Search for specific model
             virginia-clemm-poe search "Claude-3-Opus"
             ```
@@ -578,10 +584,10 @@ class Cli:
             ```bash
             # Show models with bot creator info
             virginia-clemm-poe search claude --show_bot_info
-            
+
             # Search without pricing (faster display)
             virginia-clemm-poe search gpt --no-show_pricing
-            
+
             # Verbose search for troubleshooting
             virginia-clemm-poe search claude --verbose
             ```
@@ -624,7 +630,7 @@ class Cli:
             - status(): Check if model data is current
         """
         configure_logger(verbose)
-        
+
         # Log user action
         log_user_action(
             "search",
@@ -632,7 +638,7 @@ class Cli:
             query=query,
             show_pricing=show_pricing,
             show_bot_info=show_bot_info,
-            verbose=verbose
+            verbose=verbose,
         )
 
         if not DATA_FILE_PATH.exists():
@@ -703,7 +709,7 @@ class Cli:
             if bot_info.description_extra:
                 console.print(f"[dim]Details:[/dim] {bot_info.description_extra}")
 
-    def list(self, with_pricing: bool = False, limit: int | None = None, verbose: bool = False):
+    def list(self, with_pricing: bool = False, limit: int | None = None, verbose: bool = False) -> None:
         """List all available models.
 
         Args:
@@ -729,10 +735,10 @@ class Cli:
         table.add_column("Need Update", style="yellow")
 
         all_models = api.get_all_models()
-        with_pricing = len([m for m in all_models if m.has_pricing()])
+        count_with_pricing = len([m for m in all_models if m.has_pricing()])
         need_update = len([m for m in all_models if m.needs_pricing_update()])
 
-        table.add_row(str(len(all_models)), str(with_pricing), str(need_update))
+        table.add_row(str(len(all_models)), str(count_with_pricing), str(need_update))
         console.print(table)
 
         if models:

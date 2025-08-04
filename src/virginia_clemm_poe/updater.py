@@ -9,7 +9,7 @@ from datetime import datetime
 from typing import Any
 
 import httpx
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag
 from loguru import logger
 from playwright.async_api import Page
 from rich.progress import Progress, SpinnerColumn, TextColumn, TimeElapsedColumn
@@ -17,14 +17,17 @@ from rich.progress import Progress, SpinnerColumn, TextColumn, TimeElapsedColumn
 from .browser_manager import BrowserManager
 from .config import (
     DATA_FILE_PATH,
+    DIALOG_WAIT_SECONDS,
+    EXPANSION_WAIT_SECONDS,
     LOAD_TIMEOUT_MS,
+    MODAL_CLOSE_WAIT_SECONDS,
     PAUSE_SECONDS,
     POE_API_URL,
     POE_BASE_URL,
     TABLE_TIMEOUT_MS,
 )
 from .models import BotInfo, ModelCollection, PoeModel, Pricing, PricingDetails
-from .utils.logger import log_api_request, log_browser_operation, log_operation, log_performance_metric
+from .utils.logger import log_api_request, log_browser_operation, log_performance_metric
 
 
 class ModelUpdater:
@@ -49,26 +52,23 @@ class ModelUpdater:
                 try:
                     response = await client.get(POE_API_URL, headers=headers)
                     response.raise_for_status()
-                    
+
                     # Add response context
                     ctx["status_code"] = response.status_code
                     ctx["response_size"] = len(response.content)
-                    
-                    data = response.json()
+
+                    data: dict[str, Any] = response.json()
                     model_count = len(data.get("data", []))
                     ctx["models_fetched"] = model_count
-                    
+
                     # Log performance metric
                     log_performance_metric(
-                        "api_models_fetched", 
-                        model_count, 
-                        "count",
-                        {"endpoint": "models", "api_version": "v1"}
+                        "api_models_fetched", model_count, "count", {"endpoint": "models", "api_version": "v1"}
                     )
-                    
+
                     logger.info(f"Successfully fetched {model_count} models from Poe API")
                     return data
-                    
+
                 except httpx.HTTPStatusError as e:
                     ctx["status_code"] = e.response.status_code
                     ctx["error_detail"] = e.response.text if e.response else "No response"
@@ -85,6 +85,9 @@ class ModelUpdater:
         table = soup.find("table")
         if table is None:
             raise ValueError("No table found in the provided HTML.")
+        
+        # Type check: table should be a Tag when found
+        assert isinstance(table, Tag), "Table element should be a Tag"
 
         data: dict[str, Any | None] = {}
         for row in table.find_all("tr"):
@@ -112,12 +115,12 @@ class ModelUpdater:
 
         with log_browser_operation("scrape_model", model_id, self.debug_port) as ctx:
             ctx["url"] = url
-            
+
             try:
                 logger.debug(f"Navigating to {url}")
                 await page.goto(url, wait_until="networkidle", timeout=LOAD_TIMEOUT_MS)
                 await asyncio.sleep(PAUSE_SECONDS)
-                
+
                 ctx["page_loaded"] = True
 
                 # Initialize bot info
@@ -130,7 +133,7 @@ class ModelUpdater:
                     "[class*='initialPointsCost'] span",
                     "[class*='BotInfoCardHeader_initialPointsCost'] span",
                     ".BotInfoCardHeader_initialPointsCost__oIIcI",
-                "[class*='initialPointsCost']",
+                    "[class*='initialPointsCost']",
                 ]
 
                 for selector in initial_points_selectors:
@@ -140,7 +143,9 @@ class ModelUpdater:
                             text = await elem.text_content()
                             if text and ("point" in text.lower() or "+" in text):
                                 initial_points_cost = text.strip()
-                                logger.debug(f"Found initial points cost with selector '{selector}': {initial_points_cost}")
+                                logger.debug(
+                                    f"Found initial points cost with selector '{selector}': {initial_points_cost}"
+                                )
                                 break
                     except Exception as e:
                         logger.debug(f"Selector '{selector}' failed: {e}")
@@ -182,7 +187,7 @@ class ModelUpdater:
                         if elem:
                             logger.debug(f"Found 'View more' button with selector '{selector}', clicking...")
                             await elem.click()
-                            await asyncio.sleep(0.5)  # Wait for expansion
+                            await asyncio.sleep(EXPANSION_WAIT_SECONDS)  # Wait for expansion
                             break
                     except Exception as e:
                         logger.debug(f"View more selector '{selector}' failed: {e}")
@@ -229,7 +234,8 @@ class ModelUpdater:
                             if text and text.strip() and ("Powered by" in text or "Learn more" in text):
                                 bot_info.description_extra = text.strip()
                                 logger.debug(
-                                    f"Found description_extra with selector '{selector}': {bot_info.description_extra[:50]}..."
+                                    f"Found description_extra with selector '{selector}': "
+                                    f"{bot_info.description_extra[:50]}..."
                                 )
                                 break
                     except Exception as e:
@@ -258,7 +264,7 @@ class ModelUpdater:
 
                 # Wait for the rates dialog
                 await page.wait_for_selector("div[role='dialog']", timeout=TABLE_TIMEOUT_MS)
-                await asyncio.sleep(1)
+                await asyncio.sleep(DIALOG_WAIT_SECONDS)
 
                 # Extract pricing table
                 table_html = None
@@ -307,7 +313,7 @@ class ModelUpdater:
                 # Close the modal
                 try:
                     await page.keyboard.press("Escape")
-                    await asyncio.sleep(0.5)
+                    await asyncio.sleep(MODAL_CLOSE_WAIT_SECONDS)
                 except Exception:
                     pass
 
@@ -319,14 +325,14 @@ class ModelUpdater:
                     scraped_fields.append("bot_info")
                 if initial_points_cost:
                     scraped_fields.append("initial_points")
-                
+
                 ctx["scraped_fields"] = scraped_fields
                 ctx["success"] = True
-                
+
                 logger.debug(f"Successfully scraped {model_id}: {', '.join(scraped_fields)}")
                 return pricing, bot_info, None
 
-            except TimeoutError as e:
+            except TimeoutError:
                 ctx["error_type"] = "timeout"
                 ctx["timeout_ms"] = LOAD_TIMEOUT_MS
                 logger.error(f"Timeout while scraping {model_id} after {LOAD_TIMEOUT_MS}ms")

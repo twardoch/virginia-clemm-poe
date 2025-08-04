@@ -23,3 +23,10 @@ BROWSER_CONNECT_MAX_ATTEMPTS = 10
 LOAD_TIMEOUT_MS = 30_000
 TABLE_TIMEOUT_MS = 10_000
 PAUSE_SECONDS = 2.0
+EXPANSION_WAIT_SECONDS = 0.5  # Wait time after clicking "View more" button
+DIALOG_WAIT_SECONDS = 1.0     # Wait time for modal dialog to appear
+MODAL_CLOSE_WAIT_SECONDS = 0.5  # Wait time after closing modal
+
+# Network configuration
+API_TIMEOUT_SECONDS = 5.0     # Timeout for API health checks
+NETWORK_TIMEOUT_SECONDS = 5.0 # Timeout for network connectivity checks

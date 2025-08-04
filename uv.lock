@@ -580,7 +580,8 @@ wheels = [
 
 [[package]]
 name = "playwrightauthor"
-source = { directory = "external/playwrightauthor" }
+version = "1.0.6"
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "fire" },
     { name = "loguru" },
@@ -590,23 +591,9 @@ dependencies = [
     { name = "requests" },
     { name = "rich" },
 ]
-
-[package.metadata]
-requires-dist = [
-    { name = "fire" },
-    { name = "loguru" },
-    { name = "platformdirs" },
-    { name = "playwright" },
-    { name = "psutil" },
-    { name = "requests" },
-    { name = "rich" },
-]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "mypy" },
-    { name = "pytest" },
-    { name = "ruff" },
+sdist = { url = "https://files.pythonhosted.org/packages/93/3b/fdc6b53a90bb048d15cccc8a1e1be9bf8c842f28bc7e627c5f701719c4ec/playwrightauthor-1.0.6.tar.gz", hash = "sha256:b44338cef8aac99b1cb78fe2f87e19e463d437a3e0134c87397589ca3c943f3d", size = 83820, upload-time = "2025-08-03T22:59:13.49Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b0/e1/f356079ec10836a1dd0320501dedb752c88a97ad4465dcc90fc3356d2241/playwrightauthor-1.0.6-py3-none-any.whl", hash = "sha256:7c59f65e2e01f216ca7ecb03dae4e723636f4be784a2103b589f93403727cc11", size = 36511, upload-time = "2025-08-03T22:59:11.966Z" },
 ]
 
 [[package]]
@@ -972,7 +959,7 @@ requires-dist = [
     { name = "fire", specifier = ">=0.5.0" },
     { name = "httpx", specifier = ">=0.24.0" },
     { name = "loguru", specifier = ">=0.7.0" },
-    { name = "playwrightauthor", directory = "external/playwrightauthor" },
+    { name = "playwrightauthor", specifier = ">=1.0.6" },
     { name = "pydantic", specifier = ">=2.5.0" },
     { name = "rich", specifier = ">=13.0.0" },
 ]

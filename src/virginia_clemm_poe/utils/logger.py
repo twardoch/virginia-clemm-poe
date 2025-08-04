@@ -78,26 +78,26 @@ def get_logger(name: str) -> Any:
 @contextmanager
 def log_operation(operation_name: str, context: dict[str, Any] | None = None, log_level: str = "INFO") -> Any:
     """Context manager for logging operations with timing and context.
-    
+
     This context manager provides structured logging for operations with:
     - Start and completion logging
     - Automatic timing measurement
     - Exception handling and logging
     - Contextual information tracking
-    
+
     Args:
         operation_name: Human-readable name of the operation (e.g., "API request", "Browser launch")
         context: Optional dictionary of contextual information to include in logs
         log_level: Log level for success messages (DEBUG, INFO, WARNING, ERROR)
-    
+
     Yields:
         dict: Context dictionary that can be updated during operation
-    
+
     Examples:
         ```python
         with log_operation("API request", {"endpoint": "models", "method": "GET"}):
             response = await client.get("/models")
-        
+
         with log_operation("Browser launch", {"port": 9222}) as ctx:
             browser = await playwright.launch()
             ctx["browser_pid"] = browser.pid
@@ -106,35 +106,24 @@ def log_operation(operation_name: str, context: dict[str, Any] | None = None, lo
     start_time = time.time()
     ctx = context or {}
     operation_id = f"{operation_name}_{int(start_time * 1000)}"
-    
+
     # Bind operation context to logger
-    op_logger = logger.bind(
-        operation=operation_name,
-        operation_id=operation_id,
-        **ctx
-    )
-    
+    op_logger = logger.bind(operation=operation_name, operation_id=operation_id, **ctx)
+
     op_logger.log(log_level, f"Starting {operation_name}", **ctx)
-    
+
     try:
         yield ctx
-        
+
         duration = time.time() - start_time
         op_logger.bind(duration_seconds=duration).log(
-            log_level, 
-            f"Completed {operation_name} in {duration:.2f}s", 
-            **ctx
+            log_level, f"Completed {operation_name} in {duration:.2f}s", **ctx
         )
-        
+
     except Exception as e:
         duration = time.time() - start_time
-        op_logger.bind(
-            duration_seconds=duration,
-            error_type=type(e).__name__,
-            error_message=str(e)
-        ).error(
-            f"Failed {operation_name} after {duration:.2f}s: {e}", 
-            **ctx
+        op_logger.bind(duration_seconds=duration, error_type=type(e).__name__, error_message=str(e)).error(
+            f"Failed {operation_name} after {duration:.2f}s: {e}", **ctx
         )
         raise
 
@@ -142,18 +131,18 @@ def log_operation(operation_name: str, context: dict[str, Any] | None = None, lo
 @contextmanager
 def log_api_request(method: str, url: str, headers: dict[str, str] | None = None) -> Any:
     """Context manager for logging API requests with timing and response info.
-    
+
     Specialized context manager for HTTP API requests that logs request details,
     response status, timing, and any errors that occur.
-    
+
     Args:
         method: HTTP method (GET, POST, etc.)
         url: Request URL
         headers: Optional request headers (sensitive data will be masked)
-    
+
     Yields:
         dict: Context dictionary with request info
-    
+
     Examples:
         ```python
         with log_api_request("GET", "https://api.poe.com/models") as ctx:
@@ -170,32 +159,28 @@ def log_api_request(method: str, url: str, headers: dict[str, str] | None = None
                 safe_headers[key] = "***MASKED***"
             else:
                 safe_headers[key] = value
-    
-    context = {
-        "method": method,
-        "url": url,
-        "headers": safe_headers
-    }
-    
+
+    context = {"method": method, "url": url, "headers": safe_headers}
+
     with log_operation(f"API {method} request", context, "DEBUG") as ctx:
         yield ctx
 
 
 @contextmanager
-def log_browser_operation(operation: str, model_id: str | None = None, debug_port: int | None = None):
+def log_browser_operation(operation: str, model_id: str | None = None, debug_port: int | None = None) -> Any:
     """Context manager for logging browser operations with model context.
-    
+
     Specialized context manager for browser automation operations that includes
     model-specific context and browser configuration details.
-    
+
     Args:
         operation: Browser operation name (e.g., "scrape_model", "launch_browser")
         model_id: Optional model ID being processed
         debug_port: Optional Chrome debug port
-    
+
     Yields:
         dict: Context dictionary with browser operation info
-    
+
     Examples:
         ```python
         with log_browser_operation("scrape_model", "Claude-3-Opus", 9222) as ctx:
@@ -203,31 +188,31 @@ def log_browser_operation(operation: str, model_id: str | None = None, debug_por
             ctx["scraped_fields"] = ["pricing", "bot_info"]
         ```
     """
-    context = {
-        "browser_operation": operation
-    }
-    
+    context: dict[str, Any] = {"browser_operation": operation}
+
     if model_id:
         context["model_id"] = model_id
     if debug_port:
         context["debug_port"] = debug_port
-    
+
     with log_operation(f"Browser {operation}", context, "DEBUG") as ctx:
         yield ctx
 
 
-def log_performance_metric(metric_name: str, value: float, unit: str = "seconds", context: dict[str, Any] | None = None):
+def log_performance_metric(
+    metric_name: str, value: float, unit: str = "seconds", context: dict[str, Any] | None = None
+) -> None:
     """Log performance metrics for monitoring and optimization.
-    
+
     Records performance metrics with structured logging for analysis and monitoring.
     Useful for tracking response times, throughput, resource usage, etc.
-    
+
     Args:
         metric_name: Name of the metric (e.g., "api_response_time", "models_processed")
         value: Numeric value of the metric
         unit: Unit of measurement (e.g., "seconds", "count", "bytes")
         context: Optional additional context information
-    
+
     Examples:
         ```python
         log_performance_metric("api_response_time", 0.245, "seconds", {"endpoint": "/models"})
@@ -235,33 +220,26 @@ def log_performance_metric(metric_name: str, value: float, unit: str = "seconds"
         ```
     """
     ctx = context or {}
-    logger.bind(
-        metric_name=metric_name,
-        metric_value=value,
-        metric_unit=unit,
-        **ctx
-    ).info(f"Performance metric: {metric_name}={value} {unit}")
+    logger.bind(metric_name=metric_name, metric_value=value, metric_unit=unit, **ctx).info(
+        f"Performance metric: {metric_name}={value} {unit}"
+    )
 
 
-def log_user_action(action: str, command: str | None = None, **kwargs):
+def log_user_action(action: str, command: str | None = None, **kwargs: Any) -> None:
     """Log user actions for CLI usage tracking and debugging.
-    
+
     Records user interactions with the CLI for usage analytics and debugging
     user workflows. Helps understand how the tool is being used.
-    
+
     Args:
         action: The action performed (e.g., "search", "update", "setup")
         command: Full command executed (optional)
         **kwargs: Additional context about the action
-    
+
     Examples:
         ```python
         log_user_action("search", query="claude", results_count=5)
         log_user_action("update", force=True, pricing=True, models_updated=42)
         ```
     """
-    logger.bind(
-        user_action=action,
-        command=command,
-        **kwargs
-    ).info(f"User action: {action}")
+    logger.bind(user_action=action, command=command, **kwargs).info(f"User action: {action}")

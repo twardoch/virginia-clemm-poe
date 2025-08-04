@@ -6,16 +6,19 @@ type safety, code documentation, and maintainability. It follows the
 Python 3.12+ type hint standards using modern syntax.
 """
 
-from typing import Any, Callable, Literal, NotRequired, TypedDict
+from collections.abc import Callable
+from typing import Any, Literal, NotRequired, TypedDict
 
 # API Response Types
 
+
 class PoeApiModelData(TypedDict):
     """Type definition for model data from Poe API response.
-    
+
     Represents the structure of individual model objects returned
     by the Poe.com API endpoint.
     """
+
     id: str
     object: Literal["model"]
     created: int
@@ -28,22 +31,25 @@ class PoeApiModelData(TypedDict):
 
 class PoeApiResponse(TypedDict):
     """Type definition for Poe API /models endpoint response.
-    
+
     Represents the complete API response structure containing
     metadata and model data.
     """
+
     object: Literal["list"]
     data: list[PoeApiModelData]
 
 
 # Filter and Search Types
 
+
 class ModelFilterCriteria(TypedDict, total=False):
     """Filter criteria for model search and filtering operations.
-    
+
     Used by API functions to specify search and filter parameters.
     All fields are optional to allow flexible filtering.
     """
+
     has_pricing: bool
     needs_update: bool
     owned_by: str
@@ -55,9 +61,10 @@ class ModelFilterCriteria(TypedDict, total=False):
 
 class SearchOptions(TypedDict, total=False):
     """Options for model search operations.
-    
+
     Controls search behavior and result formatting in API functions.
     """
+
     case_sensitive: bool
     exact_match: bool
     include_description: bool
@@ -68,12 +75,14 @@ class SearchOptions(TypedDict, total=False):
 
 # Browser and Scraping Types
 
+
 class BrowserConfig(TypedDict, total=False):
     """Configuration options for browser management.
-    
+
     Used by BrowserManager and related classes for browser setup
     and operation configuration.
     """
+
     debug_port: int
     headless: bool
     viewport_width: int
@@ -85,10 +94,11 @@ class BrowserConfig(TypedDict, total=False):
 
 class ScrapingResult(TypedDict):
     """Result of web scraping operations.
-    
+
     Standardized return type for scraping functions to ensure
     consistent error handling and result processing.
     """
+
     success: bool
     data: dict[str, Any] | None
     error_message: str | None
@@ -98,12 +108,14 @@ class ScrapingResult(TypedDict):
 
 # Logging and Context Types
 
+
 class LogContext(TypedDict, total=False):
     """Context information for structured logging.
-    
+
     Base type for logging context that can be extended with
     operation-specific fields.
     """
+
     operation: str
     operation_id: str
     duration_seconds: float
@@ -113,10 +125,11 @@ class LogContext(TypedDict, total=False):
 
 class ApiLogContext(LogContext, total=False):
     """Extended context for API operation logging.
-    
+
     Includes API-specific context information for request/response
     logging and monitoring.
     """
+
     method: str
     url: str
     status_code: int
@@ -128,10 +141,11 @@ class ApiLogContext(LogContext, total=False):
 
 class BrowserLogContext(LogContext, total=False):
     """Extended context for browser operation logging.
-    
+
     Includes browser-specific context for automation operations
     and debugging.
     """
+
     browser_operation: str
     model_id: str
     debug_port: int
@@ -142,10 +156,11 @@ class BrowserLogContext(LogContext, total=False):
 
 class PerformanceMetric(TypedDict):
     """Performance metric data structure.
-    
+
     Standardized format for performance monitoring and
     optimization tracking.
     """
+
     metric_name: str
     metric_value: float
     metric_unit: str
@@ -155,11 +170,13 @@ class PerformanceMetric(TypedDict):
 
 # CLI and User Interface Types
 
+
 class CliCommand(TypedDict):
     """CLI command execution context.
-    
+
     Tracks user command execution for analytics and debugging.
     """
+
     command: str
     action: str
     arguments: dict[str, Any]
@@ -169,10 +186,11 @@ class CliCommand(TypedDict):
 
 class DisplayOptions(TypedDict, total=False):
     """Options for controlling CLI output display.
-    
+
     Used by CLI commands to control table formatting and
     information display.
     """
+
     show_pricing: bool
     show_bot_info: bool
     show_architecture: bool
@@ -184,12 +202,14 @@ class DisplayOptions(TypedDict, total=False):
 
 # Error and Exception Types
 
+
 class ErrorContext(TypedDict, total=False):
     """Context information for error reporting and debugging.
-    
+
     Provides structured error context for better debugging
     and user support.
     """
+
     error_type: str
     error_message: str
     operation: str
@@ -202,12 +222,14 @@ class ErrorContext(TypedDict, total=False):
 
 # Update and Synchronization Types
 
+
 class UpdateOptions(TypedDict, total=False):
     """Options for model data update operations.
-    
+
     Controls what data is updated and how the update process
     behaves.
     """
+
     update_pricing: bool
     update_info: bool
     force_update: bool
@@ -219,10 +241,11 @@ class UpdateOptions(TypedDict, total=False):
 
 class SyncProgress(TypedDict):
     """Progress tracking for synchronization operations.
-    
+
     Provides structured progress information for long-running
     update operations.
     """
+
     total_models: int
     processed_models: int
     successful_updates: int

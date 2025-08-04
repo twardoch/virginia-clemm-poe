@@ -5,8 +5,10 @@ This module provides a wrapper that uses playwrightauthor for browser setup
 but directly uses playwright for the connection to avoid import issues.
 """
 
+from typing import Any
+
 from loguru import logger
-from playwright.async_api import Browser, Page, async_playwright
+from playwright.async_api import Browser, BrowserContext, Page, Playwright, async_playwright
 
 from .exceptions import BrowserManagerError, CDPConnectionError
 
@@ -27,9 +29,9 @@ class BrowserManager:
         """
         self.debug_port = debug_port
         self.verbose = verbose
-        self.playwright = None
-        self.browser = None
-        self.context = None
+        self.playwright: Playwright | None = None
+        self.browser: Browser | None = None
+        self.context: BrowserContext | None = None
 
     async def connect(self) -> Browser:
         """Connect to browser using CDP.
@@ -97,12 +99,12 @@ class BrowserManager:
                 self.browser = None
                 self.context = None
 
-    async def __aenter__(self):
+    async def __aenter__(self) -> "BrowserManager":
         """Async context manager entry."""
         await self.connect()
         return self
 
-    async def __aexit__(self, exc_type, exc_val, exc_tb):
+    async def __aexit__(self, exc_type: Any, exc_val: Any, exc_tb: Any) -> None:
         """Async context manager exit."""
         await self.close()
 

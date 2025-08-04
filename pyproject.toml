@@ -23,7 +23,7 @@ classifiers = [
 ]
 dependencies = [
     "httpx>=0.24.0",
-    "playwrightauthor @ file:///Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/external/playwrightauthor",
+    "playwrightauthor>=1.0.6",
     "beautifulsoup4>=4.12.0",
     "pydantic>=2.5.0",
     "fire>=0.5.0",
@@ -65,3 +65,25 @@ dev-dependencies = [
     "mypy>=1.7.0",
     "types-beautifulsoup4",
 ]
+
+[tool.mypy]
+# Strict type checking configuration
+python_version = "3.12"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+show_error_codes = true
+
+# Handle missing imports for external packages without stubs
+[[tool.mypy.overrides]]
+module = [
+    "playwrightauthor.*",
+    "fire",
+]
+ignore_missing_imports = true
+
+# Allow some flexibility for specific patterns
+[[tool.mypy.overrides]]
+module = "virginia_clemm_poe.*"
+# Allow Any for external API responses and complex data structures
+disallow_any_expr = false
