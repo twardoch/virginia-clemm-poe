@@ -136,6 +136,7 @@ pip-log.txt
 profile_default/
 sdist/
 share/python-wheels/
+external/
 src/virginia_clemm_poe/_version.py
 target
 target/

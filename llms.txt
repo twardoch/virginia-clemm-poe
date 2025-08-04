@@ -6,31 +6,57 @@ Project Structure:
 ├── 📁 docs
 │   ├── 📄 ALGORITHMS.md
 │   └── 📄 EDGE_CASES.md
+├── 📁 external
+│   └── 📁 playwrightauthor
+│       ├── 📁 .github
+│       │   └── 📁 workflows
+│       ├── 📁 docs
+│       │   ├── 📁 architecture
+│       │   ├── 📁 auth
+│       │   ├── 📁 performance
+│       │   └── 📁 platforms
+│       ├── 📁 examples
+│       │   ├── 📁 fastapi
+│       │   └── 📁 pytest
+│       ├── 📁 old
+│       ├── 📁 scripts
+│       ├── 📁 src
+│       │   └── 📁 playwrightauthor
+│       │       ├── 📁 browser
+│       │       │   └── ... (depth limit reached)
+│       │       ├── 📁 repl
+│       │       │   └── ... (depth limit reached)
+│       │       ├── 📁 templates
+│       │       │   └── ... (depth limit reached)
+│       │       └── 📁 utils
+│       │           └── ... (depth limit reached)
+│       └── 📁 tests
 ├── 📁 htmlcov
 ├── 📁 scripts
 │   └── 📄 lint.py
 ├── 📁 src
-│   └── 📁 virginia_clemm_poe
-│       ├── 📁 utils
-│       │   ├── 📄 __init__.py
-│       │   ├── 📄 cache.py
-│       │   ├── 📄 crash_recovery.py
-│       │   ├── 📄 logger.py
-│       │   ├── 📄 memory.py
-│       │   ├── 📄 paths.py
-│       │   └── 📄 timeout.py
-│       ├── 📄 __init__.py
-│       ├── 📄 __main__.py
-│       ├── 📄 api.py
-│       ├── 📄 browser_manager.py
-│       ├── 📄 browser_pool.py
-│       ├── 📄 config.py
-│       ├── 📄 exceptions.py
-│       ├── 📄 models.py
-│       ├── 📄 type_guards.py
-│       ├── 📄 types.py
-│       ├── 📄 updater.py
-│       └── 📄 utils.py
+│   ├── 📁 virginia_clemm_poe
+│   │   ├── 📁 utils
+│   │   │   ├── 📄 __init__.py
+│   │   │   ├── 📄 cache.py
+│   │   │   ├── 📄 crash_recovery.py
+│   │   │   ├── 📄 logger.py
+│   │   │   ├── 📄 memory.py
+│   │   │   ├── 📄 paths.py
+│   │   │   └── 📄 timeout.py
+│   │   ├── 📄 __init__.py
+│   │   ├── 📄 __main__.py
+│   │   ├── 📄 api.py
+│   │   ├── 📄 browser_manager.py
+│   │   ├── 📄 browser_pool.py
+│   │   ├── 📄 config.py
+│   │   ├── 📄 exceptions.py
+│   │   ├── 📄 models.py
+│   │   ├── 📄 type_guards.py
+│   │   ├── 📄 types.py
+│   │   ├── 📄 updater.py
+│   │   └── 📄 utils.py
+│   └── 📄 __init__.py
 ├── 📁 tests
 │   ├── 📄 __init__.py
 │   ├── 📄 conftest.py
@@ -754,6 +780,7 @@ pip-log.txt
 profile_default/
 sdist/
 share/python-wheels/
+external/
 src/virginia_clemm_poe/_version.py
 target
 target/
@@ -3339,32 +3366,131 @@ Virginia Clemm Poe has successfully completed **Phase 4: Code Quality Standards*
 
 **Package Status**: Ready for production use with enterprise-grade reliability and performance.
 
-## Phase 5: Testing Infrastructure (Next Priority)
+## Phase 5: PlaywrightAuthor Integration
 
-**Objective**: Establish comprehensive testing foundation for maintainable development
+**Objective**: Refactor the browser management to fully utilize the `playwrightauthor` package, improving maintainability and reliability.
 
-### 5.1 Core Test Suite
-**Priority**: High - Foundation for reliable development
-- Unit tests for all core modules (`api.py`, `models.py`, `updater.py`)
-- Browser management testing with mocked operations
-- CLI command testing with fixtures
-- Integration tests for end-to-end workflows
-- Performance benchmarking tests
+### 5.1. Rationale and Benefits
 
-### 5.2 Test Infrastructure
-**Priority**: Medium - Development efficiency
-- pytest configuration with async support
-- Test fixtures for model data and API responses  
-- Mock browser operations for CI environments
-- Coverage reporting with minimum 80% target
-- Property-based testing for edge cases
+Integrating `playwrightauthor` will provide the following benefits:
 
-### 5.3 CI/CD Enhancement
-**Priority**: Medium - Automated quality assurance
-- Multi-platform testing (Windows, macOS, Linux)
-- Automated test execution on all pull requests
-- Performance regression detection
-- Automated releases with version bumping
+*   **Reduced Maintenance**: Offloads the complexities of browser installation, updates, and path management to a dedicated, battle-tested package.
+*   **Increased Reliability**: `playwrightauthor` is designed to handle various edge cases related to browser management, making our application more robust.
+*   **Simplified Codebase**: Removes boilerplate code from `virginia-clemm-poe`, allowing developers to focus on the core logic of the application.
+*   **Consistency**: Ensures a consistent browser environment across different development and production machines.
+
+### 5.2. Detailed Integration Specification
+
+This section provides a detailed guide for a junior developer to perform the integration.
+
+#### 5.2.1. Understand the `playwrightauthor` API
+
+The `playwrightauthor` package provides a simple API for managing the browser. The key function we will use is `playwrightauthor.get_browser()`. This function ensures that a compatible browser is installed and returns a Playwright `Browser` object.
+
+#### 5.2.2. Refactor `src/virginia_clemm_poe/browser_manager.py`
+
+The `browser_manager.py` module will be simplified to act as a thin wrapper around `playwrightauthor`.
+
+**Current Implementation:**
+
+The current `BrowserManager` class likely contains complex logic for finding, launching, and connecting to a browser instance.
+
+**New Implementation:**
+
+The new `BrowserManager` will delegate all browser management tasks to `playwrightauthor`.
+
+```python
+# src/virginia_clemm_poe/browser_manager.py
+
+from playwright.async_api import Browser
+from playwrightauthor import get_browser
+
+class BrowserManager:
+    """
+    A simplified browser manager that uses playwrightauthor.
+    """
+    def __init__(self, debug_port: int = 9222):
+        self.debug_port = debug_port
+        self._browser: Browser | None = None
+
+    async def get_browser(self) -> Browser:
+        """
+        Gets a browser instance using playwrightauthor.
+        """
+        if self._browser is None or not self._browser.is_connected():
+            self._browser = await get_browser(
+                headless=True,
+                port=self.debug_port
+            )
+        return self._browser
+
+    @staticmethod
+    async def setup_chrome() -> bool:
+        """
+        Ensures Chrome is installed using playwrightauthor.
+        This can be a simple wrapper.
+        """
+        from playwrightauthor.browser_manager import ensure_browser
+        ensure_browser(verbose=True)
+        return True
+```
+
+#### 5.2.3. Update `src/virginia_clemm_poe/browser_pool.py`
+
+The `browser_pool.py` module will be updated to use the new `BrowserManager`. The core logic of the pool will remain the same, but the way it acquires a browser instance will change.
+
+**Current Implementation:**
+
+The `BrowserPool` likely has its own logic for creating and managing browser connections.
+
+**New Implementation:**
+
+The `BrowserPool` will use the `BrowserManager` to get browser instances.
+
+```python
+# src/virginia_clemm_poe/browser_pool.py
+
+# ... imports ...
+from .browser_manager import BrowserManager
+
+class BrowserPool:
+    # ... (existing code) ...
+
+    async def _create_connection(self) -> Browser:
+        """
+        Creates a new browser connection using the BrowserManager.
+        """
+        manager = BrowserManager(debug_port=self.port)
+        browser = await manager.get_browser()
+        return browser
+
+    # ... (rest of the class) ...
+```
+
+#### 5.2.4. Verify `pyproject.toml`
+
+Ensure that `playwrightauthor` is listed as a dependency in `pyproject.toml`.
+
+```toml
+# pyproject.toml
+
+[project]
+# ...
+dependencies = [
+    "playwrightauthor>=1.0.6",
+    # ... other dependencies
+]
+# ...
+```
+
+#### 5.2.5. Remove Redundant Code
+
+After the refactoring, remove any unused code from `browser_manager.py` and other related files. This includes any custom logic for finding the browser executable, managing user data directories, or launching the browser process.
+
+### 5.3. Testing Strategy
+
+*   **Unit Tests**: Update the unit tests for `browser_manager.py` and `browser_pool.py` to mock the `playwrightauthor.get_browser` function.
+*   **Integration Tests**: Run the existing integration tests to ensure that the application still works as expected after the refactoring. The tests should cover the `update` and `doctor` CLI commands.
 
 ## Phase 6: Advanced Features (Future Enhancement)
 
@@ -3398,6 +3524,7 @@ Virginia Clemm Poe has successfully completed **Phase 4: Code Quality Standards*
 - Predictive pricing analytics
 - Custom alerting and notifications
 - Enterprise reporting and compliance features
+
 </document_content>
 </document>
 
@@ -3785,32 +3912,15 @@ This is an unofficial companion tool for Poe.com's API. It is not affiliated wit
 
 All Phase 4 (Code Quality Standards) tasks completed successfully. Package now ready for production use with enterprise-grade reliability.
 
-## 🔄 Next Priority: Phase 5 - Testing Infrastructure
+## 🔄 Next Priority: Phase 5 - PlaywrightAuthor Integration
 
-### Core Test Suite (High Priority)
-- [ ] Create unit tests for `api.py` module
-- [ ] Create unit tests for `models.py` module  
-- [ ] Create unit tests for `updater.py` module
-- [ ] Create unit tests for `browser_manager.py` module
-- [ ] Create unit tests for `browser_pool.py` module
-- [ ] Create unit tests for all `utils/` modules
-- [ ] Create CLI command tests with fixtures
-- [ ] Create end-to-end integration tests
-- [ ] Create performance benchmarking tests
-
-### Test Infrastructure (Medium Priority)
-- [ ] Set up pytest configuration with async support
-- [ ] Create test fixtures for model data
-- [ ] Create test fixtures for API responses
-- [ ] Create mock browser operations for CI environments
-- [ ] Set up coverage reporting with 80% minimum target
-- [ ] Add property-based testing for edge cases
-
-### CI/CD Enhancement (Medium Priority)
-- [ ] Set up multi-platform testing (Windows, macOS, Linux)
-- [ ] Add automated test execution on pull requests
-- [ ] Add performance regression detection
-- [ ] Set up automated releases with version bumping
+- [x] **Understand `playwrightauthor` API**: Review the `playwrightauthor.get_browser` function.
+- [x] **Refactor `browser_manager.py`**: Simplify the module to be a thin wrapper around `playwrightauthor`.
+- [x] **Update `browser_pool.py`**: Modify the pool to use the new `BrowserManager`.
+- [x] **Verify `pyproject.toml`**: Ensure `playwrightauthor` is a dependency.
+- [x] **Remove Redundant Code**: Delete unused browser management code.
+- [ ] **Update Unit Tests**: Mock `playwrightauthor.get_browser` in tests for `browser_manager.py` and `browser_pool.py`.
+- [ ] **Run Integration Tests**: Verify the `update` and `doctor` commands still work correctly.
 
 ## 🔮 Future Enhancements (Low Priority)
 
@@ -6214,6 +6324,11 @@ def main(()) -> int:
     """Run all linting checks and return exit code."""
 
 
+# File: /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/__init__.py
+# Language: python
+
+
+
 # File: /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/__init__.py
 # Language: python
 
@@ -6441,61 +6556,42 @@ def reload_models(()) -> ModelCollection:
 # File: /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/browser_manager.py
 # Language: python
 
-import asyncio
-from typing import Any
-from loguru import logger
-from playwright.async_api import Browser, BrowserContext, Page, Playwright, async_playwright
-from .config import (
-    BROWSER_CONNECT_TIMEOUT_SECONDS,
-    BROWSER_LAUNCH_TIMEOUT_SECONDS,
-    DEFAULT_DEBUG_PORT,
-)
-from .exceptions import BrowserManagerError, CDPConnectionError
-from .utils.crash_recovery import (
-    crash_recovery_handler,
-    get_global_crash_recovery,
-)
-from .utils.timeout import (
-    GracefulTimeout,
-    retry_handler,
-    timeout_handler,
-    with_retries,
-)
-from playwrightauthor.browser_manager import ensure_browser
+from playwright.async_api import Browser
+from playwrightauthor import get_browser
+from .config import DEFAULT_DEBUG_PORT
+from .exceptions import BrowserManagerError
 from playwrightauthor.browser_manager import ensure_browser
 
 class BrowserManager:
-    """Manages browser lifecycle using playwrightauthor for setup."""
+    """Manages browser lifecycle using playwrightauthor."""
     def __init__((self, debug_port: int = DEFAULT_DEBUG_PORT, verbose: bool = False)):
         """Initialize the browser manager."""
+    def get_browser((self)) -> Browser:
+        """ Gets a browser instance using playwrightauthor...."""
+    def close((self)) -> None:
+        """ Closes the browser connection...."""
     def __aenter__((self)) -> "BrowserManager":
         """Async context manager entry."""
-    def __aexit__((self, exc_type: Any, exc_val: Any, exc_tb: Any)) -> None:
+    def __aexit__((self, exc_type, exc_val, exc_tb)) -> None:
         """Async context manager exit."""
 
 def __init__((self, debug_port: int = DEFAULT_DEBUG_PORT, verbose: bool = False)):
     """Initialize the browser manager."""
 
-def connect((self)) -> Browser:
-    """Connect to browser using CDP with timeout and retry handling."""
+def get_browser((self)) -> Browser:
+    """ Gets a browser instance using playwrightauthor...."""
 
-def cleanup_on_failure(()) -> None:
-    """Clean up resources on connection failure."""
-
-def new_page((self)) -> Page:
-    """Create a new page with timeout handling."""
+def setup_chrome(()) -> bool:
+    """ Ensures Chrome is installed using playwrightauthor...."""
 
 def close((self)) -> None:
-    """Close browser connection and clean up resources with timeout."""
+    """ Closes the browser connection...."""
 
 def __aenter__((self)) -> "BrowserManager":
     """Async context manager entry."""
 
-def __aexit__((self, exc_type: Any, exc_val: Any, exc_tb: Any)) -> None:
+def __aexit__((self, exc_type, exc_val, exc_tb)) -> None:
     """Async context manager exit."""
-
-def setup_chrome(()) -> bool:
-    """Setup Chrome for the system."""
 
 
 # File: /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/browser_pool.py

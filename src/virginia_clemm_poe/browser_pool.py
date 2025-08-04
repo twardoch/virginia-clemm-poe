@@ -273,8 +273,8 @@ class BrowserPool:
 
                 manager = BrowserManager(debug_port=self.debug_port, verbose=self.verbose)
                 try:
-                    browser = await manager.connect()
-                    context = manager.context
+                    browser = await manager.get_browser()
+                    context = browser.contexts[0] if browser.contexts else await browser.new_context()
 
                     if not context:
                         raise BrowserManagerError("No browser context available")
