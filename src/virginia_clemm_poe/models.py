@@ -298,7 +298,7 @@ class ModelCollection(BaseModel):
         Note:
             Used by api.get_model_by_id() for direct model access.
         """
-        return next((m for m in self.data if m.id == model_id), None)
+        return next((model for model in self.data if model.id == model_id), None)
 
     def search(self, query: str) -> list[PoeModel]:
         """Search models by ID or name using case-insensitive matching.
@@ -316,4 +316,4 @@ class ModelCollection(BaseModel):
             Searches both 'id' and 'root' fields for maximum coverage.
         """
         query_lower = query.lower()
-        return [m for m in self.data if query_lower in m.id.lower() or query_lower in m.root.lower()]
+        return [model for model in self.data if query_lower in model.id.lower() or query_lower in model.root.lower()]

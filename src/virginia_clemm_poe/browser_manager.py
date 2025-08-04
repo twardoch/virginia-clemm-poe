@@ -3,14 +3,31 @@
 
 This module provides a wrapper that uses playwrightauthor for browser setup
 but directly uses playwright for the connection to avoid import issues.
+Includes comprehensive timeout handling and graceful error recovery.
 """
 
+import asyncio
 from typing import Any
 
 from loguru import logger
 from playwright.async_api import Browser, BrowserContext, Page, Playwright, async_playwright
 
+from .config import (
+    BROWSER_CONNECT_TIMEOUT_SECONDS,
+    BROWSER_LAUNCH_TIMEOUT_SECONDS,
+    DEFAULT_DEBUG_PORT,
+)
 from .exceptions import BrowserManagerError, CDPConnectionError
+from .utils.crash_recovery import (
+    crash_recovery_handler,
+    get_global_crash_recovery,
+)
+from .utils.timeout import (
+    GracefulTimeout,
+    retry_handler,
+    timeout_handler,
+    with_retries,
+)
 
 
 class BrowserManager:
@@ -20,7 +37,7 @@ class BrowserManager:
     but connects directly via playwright to avoid compatibility issues.
     """
 
-    def __init__(self, debug_port: int = 9222, verbose: bool = False):
+    def __init__(self, debug_port: int = DEFAULT_DEBUG_PORT, verbose: bool = False):
         """Initialize the browser manager.
 
         Args:
@@ -33,67 +50,114 @@ class BrowserManager:
         self.browser: Browser | None = None
         self.context: BrowserContext | None = None
 
+    @timeout_handler(BROWSER_CONNECT_TIMEOUT_SECONDS, "browser_connection")
+    @crash_recovery_handler("browser_connection", max_retries=5)
     async def connect(self) -> Browser:
-        """Connect to browser using CDP.
+        """Connect to browser using CDP with timeout and retry handling.
 
         Returns:
             Connected browser instance.
 
         Raises:
-            CDPConnectionError: If connection fails.
+            CDPConnectionError: If connection fails after retries.
         """
-        try:
-            # Import and use playwrightauthor's ensure_browser for setup
-            from playwrightauthor.browser_manager import ensure_browser
-
-            # Ensure browser is running (this handles installation and launch)
-            if self.verbose:
-                logger.info("Ensuring browser is available via playwrightauthor...")
-
-            ensure_browser(verbose=self.verbose)
-
-            # Connect via playwright CDP
-            self.playwright = await async_playwright().start()
-            self.browser = await self.playwright.chromium.connect_over_cdp(f"http://localhost:{self.debug_port}")
-
-            # Get or create context
-            if not self.browser.contexts:
-                self.context = await self.browser.new_context()
-            else:
-                self.context = self.browser.contexts[0]
-
-            if self.verbose:
-                logger.info("Successfully connected to browser")
-
-            return self.browser
-
-        except Exception as e:
+        async def cleanup_on_failure() -> None:
+            """Clean up resources on connection failure."""
             if self.playwright:
-                await self.playwright.stop()
-                self.playwright = None
-            raise CDPConnectionError(f"Failed to connect to browser: {e}") from e
+                try:
+                    await self.playwright.stop()
+                except Exception:
+                    pass
+                finally:
+                    self.playwright = None
 
+        async with GracefulTimeout(
+            BROWSER_CONNECT_TIMEOUT_SECONDS,
+            "browser_connection",
+            cleanup_on_failure,
+        ):
+            try:
+                # Import and use playwrightauthor's ensure_browser for setup
+                from playwrightauthor.browser_manager import ensure_browser
+
+                # Ensure browser is running (this handles installation and launch)
+                if self.verbose:
+                    logger.info("Ensuring browser is available via playwrightauthor...")
+
+                # Run browser setup with timeout
+                await asyncio.to_thread(ensure_browser, verbose=self.verbose)
+
+                # Connect via playwright CDP with timeout
+                self.playwright = await async_playwright().start()
+                
+                # Add retry logic for CDP connection
+                connection_url = f"http://localhost:{self.debug_port}"
+                self.browser = await with_retries(
+                    self.playwright.chromium.connect_over_cdp,
+                    connection_url,
+                    max_retries=3,
+                    base_delay=1.0,
+                    retryable_exceptions=(Exception,),
+                    operation_name=f"CDP connection to {connection_url}",
+                )
+
+                # Get or create context with timeout
+                if not self.browser.contexts:
+                    self.context = await asyncio.wait_for(
+                        self.browser.new_context(),
+                        timeout=10.0
+                    )
+                else:
+                    self.context = self.browser.contexts[0]
+
+                if self.verbose:
+                    logger.info(f"Successfully connected to browser on port {self.debug_port}")
+
+                return self.browser
+
+            except asyncio.TimeoutError as e:
+                await cleanup_on_failure()
+                raise CDPConnectionError(
+                    f"Browser connection timed out after {BROWSER_CONNECT_TIMEOUT_SECONDS}s"
+                ) from e
+            except Exception as e:
+                await cleanup_on_failure()
+                raise CDPConnectionError(f"Failed to connect to browser: {e}") from e
+
+    @timeout_handler(10.0, "new_page_creation")
     async def new_page(self) -> Page:
-        """Create a new page.
+        """Create a new page with timeout handling.
 
         Returns:
             New page instance.
 
         Raises:
-            BrowserManagerError: If browser not connected.
+            BrowserManagerError: If browser not connected or page creation fails.
         """
         if not self.context:
             raise BrowserManagerError("Browser not connected")
 
-        return await self.context.new_page()
+        try:
+            page = await self.context.new_page()
+            
+            # Set default timeouts for the page
+            page.set_default_timeout(30000)  # 30 seconds for most operations
+            page.set_default_navigation_timeout(45000)  # 45 seconds for navigation
+            
+            return page
+        except Exception as e:
+            raise BrowserManagerError(f"Failed to create new page: {e}") from e
 
+    @timeout_handler(15.0, "browser_cleanup")
     async def close(self) -> None:
-        """Close browser connection and clean up resources."""
+        """Close browser connection and clean up resources with timeout."""
         if self.playwright:
             try:
+                logger.debug("Closing browser connection...")
                 await self.playwright.stop()
-            except Exception:
-                pass
+                logger.debug("Browser connection closed successfully")
+            except Exception as e:
+                logger.warning(f"Error during browser cleanup: {e}")
             finally:
                 self.playwright = None
                 self.browser = None
