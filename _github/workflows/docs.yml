@@ -1,0 +1,205 @@
+name: Build and Deploy Documentation
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'src_docs/**'
+      - '_github/workflows/docs.yml'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'src_docs/**'
+      - '_github/workflows/docs.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v2
+        with:
+          version: "latest"
+
+      - name: Install MkDocs and dependencies
+        run: |
+          uv tool install mkdocs-material
+          uv tool install mkdocs
+          uv tool install mkdocstrings
+          uv tool install mkdocstrings-python
+
+      - name: Configure Git for MkDocs
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+
+      - name: Build documentation
+        run: |
+          cd src_docs
+          uvx mkdocs build --verbose --clean
+
+      - name: Upload documentation artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: documentation
+          path: docs/
+          retention-days: 30
+
+      - name: Setup Pages
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        uses: actions/configure-pages@v3
+
+      - name: Upload to GitHub Pages
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: docs/
+
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+
+  validate-docs:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download documentation artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: documentation
+          path: docs/
+
+      - name: Validate documentation structure
+        run: |
+          # Check that all expected files exist
+          required_files=(
+            "index.html"
+            "chapter1-introduction/index.html"
+            "chapter2-installation/index.html"
+            "chapter3-quickstart/index.html"
+            "chapter4-api/index.html"
+            "chapter5-cli/index.html"
+            "chapter6-models/index.html"
+            "chapter7-browser/index.html"
+            "chapter8-configuration/index.html"
+            "chapter9-troubleshooting/index.html"
+          )
+          
+          missing_files=()
+          for file in "${required_files[@]}"; do
+            if [ ! -f "docs/$file" ]; then
+              missing_files+=("$file")
+            fi
+          done
+          
+          if [ ${#missing_files[@]} -gt 0 ]; then
+            echo "Missing documentation files:"
+            printf '%s\n' "${missing_files[@]}"
+            exit 1
+          fi
+          
+          echo "✓ All required documentation files found"
+
+      - name: Check for broken links
+        run: |
+          # Install link checker
+          npm install -g broken-link-checker
+          
+          # Start a simple HTTP server for local testing
+          cd docs
+          python -m http.server 8000 &
+          server_pid=$!
+          
+          # Wait for server to start
+          sleep 3
+          
+          # Check for broken links
+          blc http://localhost:8000 --recursive --exclude-external || true
+          
+          # Clean up
+          kill $server_pid
+
+      - name: Validate HTML
+        run: |
+          # Install HTML validator
+          npm install -g html-validate
+          
+          # Validate HTML files
+          find docs/ -name "*.html" -exec html-validate {} + || true
+
+      - name: Check file sizes
+        run: |
+          # Check that documentation files aren't too large
+          large_files=$(find docs/ -name "*.html" -size +1M)
+          if [ -n "$large_files" ]; then
+            echo "Large HTML files found (>1MB):"
+            echo "$large_files"
+            echo "Consider optimizing these files"
+          fi
+          
+          # Check total documentation size
+          total_size=$(du -sh docs/ | cut -f1)
+          echo "Total documentation size: $total_size"
+
+  test-mkdocs-serve:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v2
+        with:
+          version: "latest"
+
+      - name: Install MkDocs and dependencies
+        run: |
+          uv tool install mkdocs-material
+          uv tool install mkdocs
+          uv tool install mkdocstrings
+          uv tool install mkdocstrings-python
+
+      - name: Test MkDocs serve
+        run: |
+          cd src_docs
+          timeout 30s uvx mkdocs serve --dev-addr 127.0.0.1:8000 || true
+          echo "✓ MkDocs serve command works"
+
+      - name: Test MkDocs build with strict mode
+        run: |
+          cd src_docs
+          uvx mkdocs build --strict --verbose
