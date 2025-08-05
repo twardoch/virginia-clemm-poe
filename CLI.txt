@@ -1,0 +1,47 @@
+NAME
+    __main__.py - Virginia Clemm Poe - Poe.com model data management CLI.
+
+SYNOPSIS
+    __main__.py COMMAND
+
+DESCRIPTION
+    A comprehensive tool for accessing and maintaining Poe.com model information with
+    pricing data. Use 'virginia-clemm-poe COMMAND --help' for detailed command info.
+
+    Quick Start:
+        1. virginia-clemm-poe setup     # One-time browser installation
+        2. virginia-clemm-poe update    # Fetch/refresh model data  
+        3. virginia-clemm-poe search    # Query models by name/ID
+
+    Common Workflows:
+        - Initial Setup: setup → update → search
+        - Regular Use: search (data cached locally)
+        - Maintenance: status → update (if needed)
+        - Troubleshooting: doctor → follow recommendations
+
+COMMANDS
+    COMMAND is one of the following:
+
+     cache
+       Monitor cache performance and hit rates - optimize your API usage.
+
+     clear_cache
+       Clear cache and stored data - use when experiencing stale data issues.
+
+     doctor
+       Diagnose and fix common issues - run this when something goes wrong.
+
+     list
+       List all available models - get an overview of the entire dataset.
+
+     search
+       Find models by name or ID - your primary command for discovering models.
+
+     setup
+       Set up Chrome browser for web scraping - required before first update.
+
+     status
+       Check system health and data freshness - your go-to diagnostic command.
+
+     update
+       Fetch latest model data from Poe - run weekly or when new models appear.

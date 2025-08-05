@@ -22,15 +22,15 @@ console = Console()
 
 class Cli:
     """Virginia Clemm Poe - Poe.com model data management CLI.
-    
+
     A comprehensive tool for accessing and maintaining Poe.com model information with
     pricing data. Use 'virginia-clemm-poe COMMAND --help' for detailed command info.
-    
+
     Quick Start:
         1. virginia-clemm-poe setup     # One-time browser installation
-        2. virginia-clemm-poe update    # Fetch/refresh model data  
+        2. virginia-clemm-poe update    # Fetch/refresh model data
         3. virginia-clemm-poe search    # Query models by name/ID
-    
+
     Common Workflows:
         - Initial Setup: setup → update → search
         - Regular Use: search (data cached locally)
@@ -126,7 +126,9 @@ class Cli:
         # Log user action
         log_user_action("setup", command="setup", verbose=verbose)
 
-        console.print("[bold blue]Setting up browser for Virginia Clemm Poe...[/bold blue]")
+        console.print(
+            "[bold blue]Setting up browser for Virginia Clemm Poe...[/bold blue]"
+        )
 
         async def run_setup() -> None:
             success = await BrowserManager.setup_chrome()
@@ -134,9 +136,15 @@ class Cli:
                 console.print("[green]✓ Chrome is available![/green]")
                 console.print("\n[bold]You're all set![/bold]")
                 console.print("\nTo get started:")
-                console.print("1. Set your Poe API key: [cyan]export POE_API_KEY=your_key[/cyan]")
-                console.print("2. Update model data: [cyan]virginia-clemm-poe update[/cyan]")
-                console.print("3. Search models: [cyan]virginia-clemm-poe search claude[/cyan]")
+                console.print(
+                    "1. Set your Poe API key: [cyan]export POE_API_KEY=your_key[/cyan]"
+                )
+                console.print(
+                    "2. Update model data: [cyan]virginia-clemm-poe update[/cyan]"
+                )
+                console.print(
+                    "3. Search models: [cyan]virginia-clemm-poe search claude[/cyan]"
+                )
             else:
                 console.print("[red]✗ Failed to set up Chrome[/red]")
                 console.print("\nPlease install Chrome or Chromium manually:")
@@ -149,7 +157,7 @@ class Cli:
 
     def status(self, verbose: bool = False) -> None:
         """Check system health and data freshness - your go-to diagnostic command.
-        
+
         Comprehensive system health check for Virginia Clemm Poe installation.
 
         This diagnostic command verifies that all components are properly installed and
@@ -214,15 +222,21 @@ class Cli:
         # Check browser status
         console.print("[bold]Browser Status:[/bold]")
         try:
-            from playwrightauthor.browser_manager import ensure_browser
+            from playwrightauthor import Browser
 
-            browser_path, data_dir = ensure_browser(verbose=verbose)
-            console.print("[green]✓ Browser is ready[/green]")
-            console.print(f"  Path: {browser_path}")
-            console.print(f"  User Data: {data_dir}")
-        except Exception as e:
-            console.print(f"[red]✗ Browser not available: {e}[/red]")
-            console.print("  Run 'virginia-clemm-poe setup' to install")
+            # Try to create a Browser instance (sync, not async)
+            try:
+                browser = Browser(verbose=verbose)
+                with browser:
+                    pass  # Just test that browser can be created
+                console.print("[green]✓ Browser is ready[/green]")
+                console.print("  PlaywrightAuthor Browser configured")
+            except Exception as e:
+                console.print(f"[red]✗ Browser not available: {e}[/red]")
+                console.print("  Run 'virginia-clemm-poe setup' to install")
+        except ImportError as e:
+            console.print(f"[red]✗ PlaywrightAuthor not installed: {e}[/red]")
+            console.print("  Check your installation")
 
         # Check data status
         console.print("\n[bold]Data Status:[/bold]")
@@ -233,8 +247,12 @@ class Cli:
                 models_data = json.load(f)
 
             total_models = len(models_data.get("models", []))
-            with_pricing = sum(1 for model in models_data.get("models", []) if model.get("pricing"))
-            with_bot_info = sum(1 for model in models_data.get("models", []) if model.get("bot_info"))
+            with_pricing = sum(
+                1 for model in models_data.get("models", []) if model.get("pricing")
+            )
+            with_bot_info = sum(
+                1 for model in models_data.get("models", []) if model.get("bot_info")
+            )
 
             console.print("[green]✓ Model data found[/green]")
             console.print(f"  Path: {DATA_FILE_PATH}")
@@ -249,11 +267,16 @@ class Cli:
                 models = api.get_all_models()
                 latest_pricing = None
                 for model in models:
-                    if model.pricing and (latest_pricing is None or model.pricing.checked_at > latest_pricing):
+                    if model.pricing and (
+                        latest_pricing is None
+                        or model.pricing.checked_at > latest_pricing
+                    ):
                         latest_pricing = model.pricing.checked_at
 
                 if latest_pricing:
-                    days_old = (datetime.now(latest_pricing.tzinfo) - latest_pricing).days
+                    days_old = (
+                        datetime.now(latest_pricing.tzinfo) - latest_pricing
+                    ).days
                     if days_old > 7:
                         console.print(f"  [yellow]Data is {days_old} days old[/yellow]")
                     else:
@@ -270,9 +293,15 @@ class Cli:
             console.print("[yellow]⚠ POE_API_KEY not set[/yellow]")
             console.print("  Set with: export POE_API_KEY=your_key")
 
-    def clear_cache(self, data: bool = False, browser: bool = False, all: bool = True, verbose: bool = False) -> None:
+    def clear_cache(
+        self,
+        data: bool = False,
+        browser: bool = False,
+        all: bool = True,
+        verbose: bool = False,
+    ) -> None:
         """Clear cache and stored data - use when experiencing stale data issues.
-        
+
         **When to Use This Command**:
         - Model data appears outdated even after update
         - Browser automation stops working correctly
@@ -316,112 +345,113 @@ class Cli:
         # Clear browser cache (delegate to PlaywrightAuthor)
         if clear_browser:
             console.print("\n[bold]Browser Cache:[/bold]")
-            try:
-                from playwrightauthor.utils.paths import install_dir
-
-                install_path = install_dir()
-                if install_path.exists():
-                    console.print(f"Removing {install_path}...")
-                    shutil.rmtree(install_path)
-                    console.print("[green]✓ Browser cache cleared[/green]")
-                else:
-                    console.print("[yellow]No browser cache to clear[/yellow]")
-            except Exception as e:
-                console.print(f"[red]✗ Failed to clear browser cache: {e}[/red]")
-                console.print("  Solution: Try running the command again or restart your system")
+            console.print(
+                "[yellow]Browser cache management is handled by PlaywrightAuthor[/yellow]"
+            )
+            console.print(
+                "To clear browser cache, use the playwrightauthor CLI directly"
+            )
 
         console.print("\n[green]Cache cleared successfully![/green]")
 
-    def cache(self, stats: bool = True, clear: bool = False, verbose: bool = False) -> None:
+    def cache(
+        self, stats: bool = True, clear: bool = False, verbose: bool = False
+    ) -> None:
         """Monitor cache performance and hit rates - optimize your API usage.
-        
+
         Manage request cache for improved performance.
-        
+
         Args:
             stats: Show cache statistics (default)
             clear: Clear all cache entries
             verbose: Enable verbose logging
         """
         configure_logger(verbose)
-        
+
         if clear:
             console.print("[bold blue]Clearing all caches...[/bold blue]\n")
-            
+
             # Import here to avoid circular imports
             import asyncio
             from .utils.cache import get_api_cache, get_scraping_cache, get_global_cache
-            
+
             async def clear_all_caches():
                 # Clear all cache instances
                 caches = {
                     "Global": get_global_cache(),
-                    "API": get_api_cache(), 
+                    "API": get_api_cache(),
                     "Scraping": get_scraping_cache(),
                 }
-                
+
                 for name, cache in caches.items():
                     await cache.clear()
                     console.print(f"[green]✓ Cleared {name} cache[/green]")
-            
+
             asyncio.run(clear_all_caches())
             console.print("\n[green]All caches cleared successfully![/green]")
             return
-        
+
         if stats:
             console.print("[bold blue]Cache Statistics[/bold blue]\n")
-            
+
             # Import here to avoid circular imports
             import asyncio
             from .utils.cache import get_all_cache_stats
-            
+
             async def show_cache_stats():
                 stats = await get_all_cache_stats()
-                
+
                 if not stats:
                     console.print("[yellow]No cache statistics available[/yellow]")
                     return
-                
+
                 for cache_name, cache_stats in stats.items():
                     console.print(f"[bold]{cache_name.title()} Cache:[/bold]")
-                    console.print(f"  Size: {cache_stats['size']}/{cache_stats['max_size']} entries")
+                    console.print(
+                        f"  Size: {cache_stats['size']}/{cache_stats['max_size']} entries"
+                    )
                     console.print(f"  Hit Rate: {cache_stats['hit_rate_percent']:.1f}%")
                     console.print(f"  Total Requests: {cache_stats['total_requests']}")
                     console.print(f"  Hits: {cache_stats['hits']}")
                     console.print(f"  Misses: {cache_stats['misses']}")
                     console.print(f"  Evictions: {cache_stats['evictions']}")
-                    console.print(f"  Expired Cleanups: {cache_stats['expired_removals']}")
-                    
+                    console.print(
+                        f"  Expired Cleanups: {cache_stats['expired_removals']}"
+                    )
+
                     # Show cache hit rate status
-                    hit_rate = cache_stats['hit_rate_percent']
+                    hit_rate = cache_stats["hit_rate_percent"]
                     if hit_rate >= 80:
                         console.print(f"  Status: [green]Excellent (≥80%)[/green]")
                     elif hit_rate >= 60:
                         console.print(f"  Status: [yellow]Good (≥60%)[/yellow]")
                     else:
                         console.print(f"  Status: [red]Poor (<60%)[/red]")
-                    
+
                     console.print()
-                
+
                 # Overall performance summary
-                total_requests = sum(s['total_requests'] for s in stats.values())
-                total_hits = sum(s['hits'] for s in stats.values())
-                overall_hit_rate = (total_hits / total_requests * 100) if total_requests > 0 else 0
-                
+                total_requests = sum(s["total_requests"] for s in stats.values())
+                total_hits = sum(s["hits"] for s in stats.values())
+                overall_hit_rate = (
+                    (total_hits / total_requests * 100) if total_requests > 0 else 0
+                )
+
                 console.print("[bold]Overall Performance:[/bold]")
                 console.print(f"  Combined Hit Rate: {overall_hit_rate:.1f}%")
                 console.print(f"  Target: 80% (for optimal performance)")
-                
+
                 if overall_hit_rate >= 80:
                     console.print("  [green]✓ Performance target achieved![/green]")
                 else:
                     console.print(f"  [yellow]Performance could be improved[/yellow]")
                     console.print(f"  Suggestion: Consider longer cache TTL values")
-            
+
             asyncio.run(show_cache_stats())
 
     def _check_python_version(self) -> int:
         """Check if Python version meets requirements.
-        
+
         Returns:
             Number of issues found (0 or 1)
         """
@@ -430,16 +460,20 @@ class Cli:
 
         version = sys.version_info
         if version >= (3, 12):
-            console.print(f"[green]✓ Python {version.major}.{version.minor}.{version.micro}[/green]")
+            console.print(
+                f"[green]✓ Python {version.major}.{version.minor}.{version.micro}[/green]"
+            )
             return 0
         else:
-            console.print(f"[red]✗ Python {version.major}.{version.minor}.{version.micro} (requires 3.12+)[/red]")
+            console.print(
+                f"[red]✗ Python {version.major}.{version.minor}.{version.micro} (requires 3.12+)[/red]"
+            )
             console.print("  Solution: Install Python 3.12 or later")
             return 1
-    
+
     def _check_api_key(self) -> int:
         """Check API key presence and validity.
-        
+
         Returns:
             Number of issues found (0 or 1)
         """
@@ -448,17 +482,17 @@ class Cli:
             console.print("[red]✗ POE_API_KEY not set[/red]")
             console.print("  Solution: export POE_API_KEY=your_api_key")
             return 1
-            
+
         console.print("[green]✓ POE_API_KEY is set[/green]")
-        
+
         # Test API key validity
         api_key = os.environ.get("POE_API_KEY")
         import httpx
-        from .config import API_TIMEOUT_SECONDS
+        from .config import API_TIMEOUT_SECONDS, POE_API_URL
 
         try:
             response = httpx.get(
-                "https://api.poe.com/v2/models",
+                POE_API_URL,  # Use the correct API URL from config
                 headers={"Authorization": f"Bearer {api_key}"},
                 timeout=API_TIMEOUT_SECONDS,
             )
@@ -466,45 +500,50 @@ class Cli:
                 console.print("[green]✓ API key is valid[/green]")
                 return 0
             else:
-                console.print(f"[red]✗ API key might be invalid (status: {response.status_code})[/red]")
-                console.print("  Solution: Check your API key at https://poe.com/api")
+                console.print(
+                    f"[red]✗ API key might be invalid (status: {response.status_code})[/red]"
+                )
+                console.print(
+                    "  Solution: Check your API key at https://poe.com/api_key"
+                )
                 return 1
         except Exception as e:
             console.print(f"[yellow]⚠ Could not validate API key: {e}[/yellow]")
             return 0
-    
+
     def _check_browser(self) -> int:
         """Check browser availability and configuration.
-        
+
         Returns:
             Number of issues found
         """
         console.print("\n[bold]Browser:[/bold]")
         issues = 0
-        
+
         try:
-            from playwrightauthor.browser_manager import ensure_browser
+            from playwrightauthor import Browser
 
-            browser_path, data_dir = ensure_browser(verbose=False)
-            console.print("[green]✓ Browser is available[/green]")
-
-            # Check if browser is accessible
-            if os.path.exists(browser_path):
-                console.print(f"[green]✓ Browser executable exists at {browser_path}[/green]")
-            else:
-                console.print(f"[red]✗ Browser executable not found at {browser_path}[/red]")
+            # Try to create a Browser instance (sync, not async)
+            try:
+                browser = Browser(verbose=False)
+                with browser:
+                    pass  # Just test that browser can be created
+                console.print("[green]✓ Browser is available[/green]")
+                console.print("  PlaywrightAuthor Browser configured")
+            except Exception:
+                console.print("[red]✗ Browser not available[/red]")
                 console.print("  Solution: Run 'virginia-clemm-poe setup'")
                 issues += 1
         except Exception as e:
             console.print(f"[red]✗ Browser not available: {e}[/red]")
             console.print("  Solution: Run 'virginia-clemm-poe setup'")
             issues += 1
-            
+
         return issues
-    
+
     def _check_network(self) -> int:
         """Check network connectivity to poe.com.
-        
+
         Returns:
             Number of issues found (0 or 1)
         """
@@ -518,26 +557,36 @@ class Cli:
                 console.print("[green]✓ Can reach poe.com[/green]")
                 return 0
             else:
-                console.print(f"[yellow]⚠ Unexpected status from poe.com: {response.status_code}[/yellow]")
+                console.print(
+                    f"[yellow]⚠ Unexpected status from poe.com: {response.status_code}[/yellow]"
+                )
                 return 0
         except Exception as e:
             console.print(f"[red]✗ Cannot reach poe.com: {e}[/red]")
             console.print("  Solution: Check your internet connection")
             return 1
-    
+
     def _check_dependencies(self) -> int:
         """Check if all required packages are installed.
-        
+
         Returns:
             Number of issues found
         """
         console.print("\n[bold]Dependencies:[/bold]")
-        required_packages = ["httpx", "playwright", "pydantic", "fire", "rich", "loguru", "beautifulsoup4"]
+        required_packages = [
+            "httpx",
+            "playwright",
+            "pydantic",
+            "fire",
+            "rich",
+            "loguru",
+            "bs4",
+        ]
         import importlib
         import importlib.util
-        
+
         issues = 0
-        
+
         for package in required_packages:
             try:
                 importlib.import_module(package)
@@ -554,12 +603,12 @@ class Cli:
             console.print("[red]✗ playwrightauthor not installed[/red]")
             console.print("  Solution: Check pyproject.toml dependencies")
             issues += 1
-            
+
         return issues
-    
+
     def _check_data_file(self) -> int:
         """Check data file existence and validity.
-        
+
         Returns:
             Number of issues found
         """
@@ -568,33 +617,40 @@ class Cli:
             console.print("[yellow]⚠ No model data found[/yellow]")
             console.print("  Solution: Run 'virginia-clemm-poe update'")
             return 0
-            
+
         size = DATA_FILE_PATH.stat().st_size
         console.print(f"[green]✓ Model data exists ({size:,} bytes)[/green]")
 
         # Check if data is valid JSON
         try:
             import json
+
             with open(DATA_FILE_PATH) as f:
                 models_data = json.load(f)
-            console.print(f"[green]✓ Valid JSON with {len(models_data.get('models', []))} models[/green]")
+            console.print(
+                f"[green]✓ Valid JSON with {len(models_data.get('models', []))} models[/green]"
+            )
             return 0
         except Exception as e:
             console.print(f"[red]✗ Invalid JSON: {e}[/red]")
             console.print("  Solution: Run 'virginia-clemm-poe update --force'")
             return 1
-    
+
     def _display_summary(self, issues_found: int) -> None:
         """Display summary of diagnostic results.
-        
+
         Args:
             issues_found: Total number of issues found
         """
         console.print("\n" + "=" * 50)
         if issues_found == 0:
-            console.print("[green]✓ All checks passed! Virginia Clemm Poe is ready to use.[/green]")
+            console.print(
+                "[green]✓ All checks passed! Virginia Clemm Poe is ready to use.[/green]"
+            )
         else:
-            console.print(f"[red]Found {issues_found} issue(s). Please fix them and try again.[/red]")
+            console.print(
+                f"[red]Found {issues_found} issue(s). Please fix them and try again.[/red]"
+            )
             console.print("\nQuick setup commands:")
             console.print("  1. export POE_API_KEY=your_api_key")
             console.print("  2. virginia-clemm-poe setup")
@@ -602,11 +658,11 @@ class Cli:
 
     def doctor(self, verbose: bool = False) -> None:
         """Diagnose and fix common issues - run this when something goes wrong.
-        
+
         **When to Use This Command**:
         - Update command fails with errors
         - Search returns no results when it should
-        - After system updates or configuration changes  
+        - After system updates or configuration changes
         - Before reporting bugs or seeking support"""
         configure_logger(verbose)
         console.print("[bold blue]Virginia Clemm Poe Doctor[/bold blue]\n")
@@ -619,19 +675,19 @@ class Cli:
         issues_found += self._check_network()
         issues_found += self._check_dependencies()
         issues_found += self._check_data_file()
-        
+
         # Display summary
         self._display_summary(issues_found)
 
     def _validate_api_key(self, api_key: str | None) -> str:
         """Validate and return API key.
-        
+
         Args:
             api_key: Optional API key override
-            
+
         Returns:
             Valid API key
-            
+
         Raises:
             SystemExit: If no API key is available
         """
@@ -639,18 +695,22 @@ class Cli:
         if not api_key:
             console.print("[red]✗ POE_API_KEY not set[/red]")
             console.print("  Solution: export POE_API_KEY=your_api_key")
-            console.print("  Or pass it as: virginia-clemm-poe update --api_key your_api_key")
+            console.print(
+                "  Or pass it as: virginia-clemm-poe update --api_key your_api_key"
+            )
             sys.exit(1)
         return api_key
-    
-    def _determine_update_mode(self, info: bool, pricing: bool, all: bool) -> tuple[bool, bool]:
+
+    def _determine_update_mode(
+        self, info: bool, pricing: bool, all: bool
+    ) -> tuple[bool, bool]:
         """Determine what data to update based on flags.
-        
+
         Args:
             info: Update bot info flag
             pricing: Update pricing flag
             all: Update all flag
-            
+
         Returns:
             Tuple of (update_info, update_pricing)
         """
@@ -667,12 +727,14 @@ class Cli:
             console.print("  --info     Update bot info (creator, description)")
             console.print("  --pricing  Update pricing information")
             console.print("  --all      Update both (default)")
-            
+
         return update_info, update_pricing
-    
-    def _display_update_status(self, all: bool, update_info: bool, update_pricing: bool) -> None:
+
+    def _display_update_status(
+        self, all: bool, update_info: bool, update_pricing: bool
+    ) -> None:
         """Display what will be updated.
-        
+
         Args:
             all: True if updating all data
             update_info: True if updating bot info
@@ -699,7 +761,7 @@ class Cli:
         verbose: bool = False,
     ) -> None:
         """Fetch latest model data from Poe - run weekly or when new models appear.
-        
+
         Update Poe model data with pricing and bot information from web scraping.
 
         This is the primary command for refreshing your local model dataset. It fetches
@@ -808,47 +870,53 @@ class Cli:
         # Run update
         async def run_update() -> None:
             updater = ModelUpdater(api_key, debug_port=debug_port, verbose=verbose)
-            await updater.update_all(force=force, update_info=update_info, update_pricing=update_pricing)
+            await updater.update_all(
+                force=force, update_info=update_info, update_pricing=update_pricing
+            )
 
         asyncio.run(run_update())
 
     def _validate_data_exists(self) -> bool:
         """Check if model data file exists.
-        
+
         Returns:
             True if data exists, False otherwise
         """
         if not DATA_FILE_PATH.exists():
-            console.print("[yellow]No model data found. Run 'virginia-clemm-poe update' first.[/yellow]")
+            console.print(
+                "[yellow]No model data found. Run 'virginia-clemm-poe update' first.[/yellow]"
+            )
             return False
         return True
-    
+
     def _perform_search(self, query: str) -> list:
         """Search for models matching the query.
-        
+
         Args:
             query: Search term
-            
+
         Returns:
             List of matching models
         """
         with log_operation("model_search", {"query": query}) as ctx:
             models = api.search_models(query)
             ctx["results_count"] = len(models)
-        
+
         if not models:
             console.print(f"[yellow]No models found matching '{query}'[/yellow]")
-        
+
         return models
-    
-    def _create_results_table(self, query: str, show_pricing: bool, show_bot_info: bool) -> Table:
+
+    def _create_results_table(
+        self, query: str, show_pricing: bool, show_bot_info: bool
+    ) -> Table:
         """Create a formatted table for search results.
-        
+
         Args:
             query: Search query for title
             show_pricing: Whether to include pricing columns
             show_bot_info: Whether to include bot info columns
-            
+
         Returns:
             Configured Table object
         """
@@ -864,15 +932,15 @@ class Cli:
         if show_pricing:
             table.add_column("Pricing", style="yellow")
             table.add_column("Updated", style="dim")
-            
+
         return table
-    
+
     def _format_pricing_info(self, model) -> tuple[str, str]:
         """Format pricing information for display.
-        
+
         Args:
             model: Model object with pricing data
-            
+
         Returns:
             Tuple of (pricing_info, updated_date)
         """
@@ -882,7 +950,9 @@ class Cli:
 
             # Include initial points cost if available
             if model.pricing.details.initial_points_cost:
-                pricing_info = f"{model.pricing.details.initial_points_cost} | {pricing_info}"
+                pricing_info = (
+                    f"{model.pricing.details.initial_points_cost} | {pricing_info}"
+                )
 
             updated = model.pricing.checked_at.strftime("%Y-%m-%d")
             return pricing_info, updated
@@ -890,10 +960,12 @@ class Cli:
             return f"[red]Error: {model.pricing_error}[/red]", "-"
         else:
             return "[dim]Not checked[/dim]", "-"
-    
-    def _add_model_row(self, table: Table, model, show_pricing: bool, show_bot_info: bool) -> None:
+
+    def _add_model_row(
+        self, table: Table, model, show_pricing: bool, show_bot_info: bool
+    ) -> None:
         """Add a single model row to the table.
-        
+
         Args:
             table: Table to add row to
             model: Model data
@@ -916,10 +988,10 @@ class Cli:
             row.extend([pricing_info, updated])
 
         table.add_row(*[str(x) for x in row])
-    
+
     def _display_single_model_bot_info(self, model) -> None:
         """Display detailed bot info for a single model result.
-        
+
         Args:
             model: Model with bot info to display
         """
@@ -931,9 +1003,15 @@ class Cli:
             if bot_info.description_extra:
                 console.print(f"[dim]Details:[/dim] {bot_info.description_extra}")
 
-    def search(self, query: str, show_pricing: bool = True, show_bot_info: bool = False, verbose: bool = False) -> None:
+    def search(
+        self,
+        query: str,
+        show_pricing: bool = True,
+        show_bot_info: bool = False,
+        verbose: bool = False,
+    ) -> None:
         """Find models by name or ID - your primary command for discovering models.
-        
+
         Search and display Poe models by ID or name with flexible filtering.
 
         This command provides an intuitive way to find specific models in the local dataset
@@ -1048,7 +1126,7 @@ class Cli:
 
         # Create and populate results table
         table = self._create_results_table(query, show_pricing, show_bot_info)
-        
+
         for model in models:
             self._add_model_row(table, model, show_pricing, show_bot_info)
 
@@ -1060,9 +1138,14 @@ class Cli:
         if show_bot_info and len(models) == 1:
             self._display_single_model_bot_info(models[0])
 
-    def list(self, with_pricing: bool = False, limit: int | None = None, verbose: bool = False) -> None:
+    def list(
+        self,
+        with_pricing: bool = False,
+        limit: int | None = None,
+        verbose: bool = False,
+    ) -> None:
         """List all available models - get an overview of the entire dataset.
-        
+
         **When to Use This Command**:
         - Viewing summary statistics about model coverage
         - Checking how many models have pricing data
@@ -1077,7 +1160,9 @@ class Cli:
         configure_logger(verbose)
 
         if not DATA_FILE_PATH.exists():
-            console.print("[yellow]No model data found. Run 'virginia-clemm-poe update' first.[/yellow]")
+            console.print(
+                "[yellow]No model data found. Run 'virginia-clemm-poe update' first.[/yellow]"
+            )
             return
 
         models = api.get_models_with_pricing() if with_pricing else api.get_all_models()

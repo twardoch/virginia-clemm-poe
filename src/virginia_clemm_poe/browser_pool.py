@@ -41,7 +41,7 @@ from .utils.timeout import (
 
 
 class BrowserConnection:
-    """Represents a pooled browser connection with usage tracking."""
+    """Represents a pooled browser connection with usage tracking and session reuse support."""
 
     def __init__(self, browser: Browser, context: BrowserContext, manager: BrowserManager):
         """Initialize a browser connection.
@@ -58,6 +58,7 @@ class BrowserConnection:
         self.last_used = time.time()
         self.use_count = 0
         self.is_healthy = True
+        self.supports_session_reuse = hasattr(browser, 'get_page')
 
     def mark_used(self) -> None:
         """Mark this connection as recently used."""
@@ -71,6 +72,24 @@ class BrowserConnection:
     def idle_seconds(self) -> float:
         """Get the time since this connection was last used."""
         return time.time() - self.last_used
+    
+    async def get_page(self, reuse_session: bool = True) -> Page:
+        """Get a page from this connection, optionally reusing existing sessions.
+        
+        Args:
+            reuse_session: Whether to try reusing existing pages/contexts for session persistence
+            
+        Returns:
+            A page instance, either reused or newly created
+        """
+        if reuse_session and self.supports_session_reuse:
+            # Use playwrightauthor's get_page() for session reuse
+            logger.debug("Using session reuse via browser.get_page()")
+            return await self.browser.get_page()
+        else:
+            # Create a new page the traditional way
+            logger.debug("Creating new page without session reuse")
+            return await self.context.new_page()
 
     async def health_check(self) -> bool:
         """Check if the connection is still healthy using multi-layer validation with crash detection.
@@ -156,6 +175,7 @@ class BrowserPool:
         max_idle_seconds: int = 60,  # 1 minute
         debug_port: int = DEFAULT_DEBUG_PORT,
         verbose: bool = False,
+        reuse_sessions: bool = True,
     ):
         """Initialize the browser pool.
 
@@ -165,12 +185,14 @@ class BrowserPool:
             max_idle_seconds: Maximum idle time before connection is closed
             debug_port: Port for Chrome DevTools Protocol
             verbose: Enable verbose logging
+            reuse_sessions: Enable session reuse for maintaining authentication state
         """
         self.max_size = max_size
         self.max_age_seconds = max_age_seconds
         self.max_idle_seconds = max_idle_seconds
         self.debug_port = debug_port
         self.verbose = verbose
+        self.reuse_sessions = reuse_sessions
 
         self._pool: deque[BrowserConnection] = deque()
         self._active_connections: set[BrowserConnection] = set()
@@ -271,7 +293,7 @@ class BrowserPool:
                 start_time = time.time()
                 self._connections_created += 1
 
-                manager = BrowserManager(debug_port=self.debug_port, verbose=self.verbose)
+                manager = BrowserManager(debug_port=self.debug_port, verbose=self.verbose, reuse_session=self.reuse_sessions)
                 try:
                     browser = await manager.get_browser()
                     context = browser.contexts[0] if browser.contexts else await browser.new_context()
@@ -385,11 +407,11 @@ class BrowserPool:
         """
         connection.mark_used()
         
-        # Create page with timeout
+        # Create page with timeout, using session reuse if enabled
         page = await with_timeout(
-            connection.context.new_page(),
+            connection.get_page(reuse_session=self.reuse_sessions),
             15.0,
-            "new_page_creation"
+            "page_acquisition"
         )
 
         # Set timeouts on the page
@@ -432,6 +454,69 @@ class BrowserPool:
                 # Close unhealthy or old connection
                 asyncio.create_task(connection.close())
                 logger.debug("Closed connection instead of returning to pool")
+
+    async def get_reusable_page(self) -> Page:
+        """Get a page using session reuse for maintaining authentication.
+        
+        This method is optimized for the pre-authorized sessions workflow where
+        you've already logged into services in a running Chrome for Testing instance.
+        It will reuse existing pages/contexts to maintain your authentication state.
+        
+        Returns:
+            A page instance with reused session
+            
+        Raises:
+            BrowserManagerError: If unable to get a page
+            
+        Example:
+            ```python
+            # First, launch Chrome for Testing and log in manually:
+            # $ playwrightauthor browse
+            
+            # Then in your script:
+            pool = BrowserPool()
+            await pool.start()
+            
+            # Get a page that reuses your logged-in session
+            page = await pool.get_reusable_page()
+            await page.goto("https://github.com/notifications")
+            # You're already logged in!
+            ```
+        """
+        if self._closed:
+            raise BrowserManagerError("Browser pool is closed")
+            
+        # Get or create a browser manager with session reuse
+        manager = BrowserManager(
+            debug_port=self.debug_port, 
+            verbose=self.verbose, 
+            reuse_session=True
+        )
+        
+        try:
+            # Use the manager's get_page() method which leverages playwrightauthor's session reuse
+            page = await manager.get_page()
+            
+            # Set timeouts on the page
+            page.set_default_timeout(PAGE_ELEMENT_TIMEOUT_MS)
+            page.set_default_navigation_timeout(45000)
+            
+            # Log performance metric
+            log_performance_metric(
+                "session_reuse_page_acquired",
+                1,
+                "count",
+                {
+                    "pool_size": len(self._pool),
+                    "active_connections": len(self._active_connections),
+                }
+            )
+            
+            return page
+            
+        except Exception as e:
+            logger.error(f"Failed to get reusable page: {e}")
+            raise BrowserManagerError(f"Failed to get page with session reuse: {e}") from e
 
     @asynccontextmanager
     async def acquire_page(self) -> AsyncIterator[Page]:

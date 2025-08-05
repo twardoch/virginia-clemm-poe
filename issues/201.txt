@@ -1,0 +1,13 @@
+```
+ $ uvx virginia-clemm-poe
+Traceback (most recent call last):
+  File "/Users/adam/.cache/uv/archive-v0/YxYSM2Iaq6FHay48c45Xl/bin/virginia-clemm-poe", line 6, in <module>
+    from virginia_clemm_poe.__main__ import main
+  File "/Users/adam/.cache/uv/archive-v0/YxYSM2Iaq6FHay48c45Xl/lib/python3.12/site-packages/virginia_clemm_poe/__main__.py", line 15, in <module>
+    from .browser_manager import BrowserManager
+  File "/Users/adam/.cache/uv/archive-v0/YxYSM2Iaq6FHay48c45Xl/lib/python3.12/site-packages/virginia_clemm_poe/browser_manager.py", line 9, in <module>
+    from playwrightauthor import get_browser
+ImportError: cannot import name 'get_browser' from 'playwrightauthor' 
+```
+
+We have recently modified the `playwrightauthor` package. See @external/playwrightauthor for the most recent version. Now modify our `virginia-clemm-poe` package to use the new version correctly. Think hard. 

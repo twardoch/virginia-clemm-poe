@@ -261,6 +261,18 @@ class CachedFunction:
         self.ttl = ttl
         self.key_prefix = key_prefix
         
+    def __get__(self, instance: Any, owner: type) -> Callable[..., Awaitable[T]]:
+        """Descriptor protocol to handle method access.
+        
+        This ensures that when a cached method is accessed on an instance,
+        it's properly bound with the instance as the first argument.
+        """
+        if instance is None:
+            return self
+        
+        import functools
+        return functools.partial(self.__call__, instance)
+        
     async def __call__(self, *args: Any, **kwargs: Any) -> T:
         """Call the function with caching.
         
