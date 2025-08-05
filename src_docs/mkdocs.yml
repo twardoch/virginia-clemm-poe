@@ -1,0 +1,86 @@
+# this_file: src_docs/mkdocs.yml
+
+site_name: Virginia Clemm Poe Documentation
+site_description: A Python package providing programmatic access to Poe.com model data with pricing information
+site_author: Terragon Labs
+site_url: https://terragonlabs.github.io/virginia-clemm-poe/
+
+repo_name: terragonlabs/virginia-clemm-poe
+repo_url: https://github.com/terragonlabs/virginia-clemm-poe
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - search.highlight
+    - search.share
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: google
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Introduction: chapter1-introduction.md
+    - Installation: chapter2-installation.md
+    - Quick Start: chapter3-quickstart.md
+  - Usage:
+    - Python API: chapter4-api.md
+    - CLI Commands: chapter5-cli.md
+    - Data Models: chapter6-models.md
+  - Advanced:
+    - Browser Management: chapter7-browser.md
+    - Configuration: chapter8-configuration.md
+    - Troubleshooting: chapter9-troubleshooting.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/terragonlabs/virginia-clemm-poe
+
+copyright: Copyright &copy; 2024 Terragon Labs
+
+# Build directory
+site_dir: ../docs
+docs_dir: md
