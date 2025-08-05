@@ -3,6 +3,10 @@ Project Structure:
 ├── 📁 .github
 │   └── 📁 workflows
 │       └── 📄 ci.yml
+├── 📁 _github
+│   └── 📁 workflows
+│       ├── 📄 ci.yml
+│       └── 📄 docs.yml
 ├── 📁 docs
 │   ├── 📄 ALGORITHMS.md
 │   └── 📄 EDGE_CASES.md
@@ -41,6 +45,8 @@ Project Structure:
 │   └── 📄 lint.py
 ├── 📁 src
 │   ├── 📁 virginia_clemm_poe
+│   │   ├── 📁 data
+│   │   │   └── 📄 poe_models.json
 │   │   ├── 📁 utils
 │   │   │   ├── 📄 __init__.py
 │   │   │   ├── 📄 cache.py
@@ -62,6 +68,19 @@ Project Structure:
 │   │   ├── 📄 updater.py
 │   │   └── 📄 utils.py
 │   └── 📄 __init__.py
+├── 📁 src_docs
+│   ├── 📁 md
+│   │   ├── 📄 chapter1-introduction.md
+│   │   ├── 📄 chapter2-installation.md
+│   │   ├── 📄 chapter3-quickstart.md
+│   │   ├── 📄 chapter4-api.md
+│   │   ├── 📄 chapter5-cli.md
+│   │   ├── 📄 chapter6-models.md
+│   │   ├── 📄 chapter7-browser.md
+│   │   ├── 📄 chapter8-configuration.md
+│   │   ├── 📄 chapter9-troubleshooting.md
+│   │   └── 📄 index.md
+│   └── 📄 mkdocs.yml
 ├── 📁 tests
 │   ├── 📄 __init__.py
 │   ├── 📄 conftest.py
@@ -1787,6 +1806,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - All browser-related functionality restored with correct API usage
   - Fixed doctor command dependency check for beautifulsoup4 (checks for "bs4" import)
   - Fixed browser status check to use sync Browser class instead of async wrapper
+  - Fixed API key validation to use correct endpoint (`/v1/models` not `/v2/models`)
 
 ### Added
 - **PlaywrightAuthor Session Reuse Integration** (2025-08-05): Optimized browser automation with Chrome for Testing
@@ -4971,6 +4991,415 @@ asyncio.run(analyze_models_parallel())
 </document>
 
 <document index="18">
+<source>_github/workflows/ci.yml</source>
+<document_content>
+name: CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  lint:
+    name: Code Quality Checks
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.12'
+        
+    - name: Install uv
+      uses: astral-sh/setup-uv@v2
+      with:
+        version: "latest"
+        
+    - name: Install dependencies
+      run: uv sync --all-extras --dev
+      
+    - name: Run ruff linting
+      run: uvx ruff check src/ tests/
+      
+    - name: Run ruff formatting check  
+      run: uvx ruff format --check src/ tests/
+      
+    - name: Run mypy type checking
+      run: uvx mypy src/
+      
+    - name: Run bandit security check
+      run: uvx bandit -r src/ -c pyproject.toml
+      
+    - name: Check for missing __init__.py files
+      run: |
+        find src/ -type d -exec test -f {}/__init__.py \; -o -print | grep -v __pycache__ | head -10
+        if [ $? -eq 0 ]; then
+          echo "Missing __init__.py files found"
+          exit 1
+        fi
+
+  test:
+    name: Test Suite
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.12']
+        
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+        
+    - name: Install uv
+      uses: astral-sh/setup-uv@v2
+      with:
+        version: "latest"
+        
+    - name: Install dependencies
+      run: uv sync --all-extras --dev
+      
+    - name: Install browsers for playwright
+      run: |
+        # Install system dependencies for headless browser testing
+        sudo apt-get update
+        sudo apt-get install -y xvfb
+        
+    - name: Run unit tests
+      run: |
+        # Run tests with coverage in headless mode
+        xvfb-run -a uvx pytest tests/ -m "not integration" --cov=virginia_clemm_poe --cov-report=xml --cov-report=term-missing
+      env:
+        DISPLAY: :99
+        
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        file: ./coverage.xml
+        flags: unittests
+        name: codecov-umbrella
+        fail_ci_if_error: false
+
+  integration-test:
+    name: Integration Tests
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'test-integration'))
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.12'
+        
+    - name: Install uv  
+      uses: astral-sh/setup-uv@v2
+      with:
+        version: "latest"
+        
+    - name: Install dependencies
+      run: uv sync --all-extras --dev
+      
+    - name: Install browsers for playwright
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y xvfb google-chrome-stable
+        
+    - name: Run integration tests
+      run: |
+        xvfb-run -a uvx pytest tests/ -m "integration" --tb=short
+      env:
+        DISPLAY: :99
+        POE_API_KEY: ${{ secrets.POE_API_KEY }}
+      continue-on-error: true  # Integration tests may fail due to external dependencies
+
+  build:
+    name: Build Package
+    runs-on: ubuntu-latest
+    needs: [lint, test]
+    
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Needed for version calculation
+        
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.12'
+        
+    - name: Install uv
+      uses: astral-sh/setup-uv@v2
+      with:
+        version: "latest"
+        
+    - name: Build package
+      run: |
+        uv build
+        
+    - name: Check package contents
+      run: |
+        uvx twine check dist/*
+        
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: dist
+        path: dist/
+
+  security-scan:
+    name: Security Scan
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.12'
+        
+    - name: Install uv
+      uses: astral-sh/setup-uv@v2
+      with:
+        version: "latest"
+        
+    - name: Install dependencies
+      run: uv sync --dev
+      
+    - name: Run safety check
+      run: uvx safety check --json || true  # Don't fail CI on safety issues
+      
+    - name: Run semgrep security scan
+      uses: returntocorp/semgrep-action@v1
+      with:
+        config: >-
+          p/security-audit
+          p/secrets
+          p/python
+      continue-on-error: true  # Don't fail CI on semgrep issues
+</document_content>
+</document>
+
+<document index="19">
+<source>_github/workflows/docs.yml</source>
+<document_content>
+name: Build and Deploy Documentation
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'src_docs/**'
+      - '_github/workflows/docs.yml'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'src_docs/**'
+      - '_github/workflows/docs.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v2
+        with:
+          version: "latest"
+
+      - name: Install MkDocs and dependencies
+        run: |
+          uv tool install mkdocs-material
+          uv tool install mkdocs
+          uv tool install mkdocstrings
+          uv tool install mkdocstrings-python
+
+      - name: Configure Git for MkDocs
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+
+      - name: Build documentation
+        run: |
+          cd src_docs
+          uvx mkdocs build --verbose --clean
+
+      - name: Upload documentation artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: documentation
+          path: docs/
+          retention-days: 30
+
+      - name: Setup Pages
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        uses: actions/configure-pages@v3
+
+      - name: Upload to GitHub Pages
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: docs/
+
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+
+  validate-docs:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download documentation artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: documentation
+          path: docs/
+
+      - name: Validate documentation structure
+        run: |
+          # Check that all expected files exist
+          required_files=(
+            "index.html"
+            "chapter1-introduction/index.html"
+            "chapter2-installation/index.html"
+            "chapter3-quickstart/index.html"
+            "chapter4-api/index.html"
+            "chapter5-cli/index.html"
+            "chapter6-models/index.html"
+            "chapter7-browser/index.html"
+            "chapter8-configuration/index.html"
+            "chapter9-troubleshooting/index.html"
+          )
+          
+          missing_files=()
+          for file in "${required_files[@]}"; do
+            if [ ! -f "docs/$file" ]; then
+              missing_files+=("$file")
+            fi
+          done
+          
+          if [ ${#missing_files[@]} -gt 0 ]; then
+            echo "Missing documentation files:"
+            printf '%s\n' "${missing_files[@]}"
+            exit 1
+          fi
+          
+          echo "✓ All required documentation files found"
+
+      - name: Check for broken links
+        run: |
+          # Install link checker
+          npm install -g broken-link-checker
+          
+          # Start a simple HTTP server for local testing
+          cd docs
+          python -m http.server 8000 &
+          server_pid=$!
+          
+          # Wait for server to start
+          sleep 3
+          
+          # Check for broken links
+          blc http://localhost:8000 --recursive --exclude-external || true
+          
+          # Clean up
+          kill $server_pid
+
+      - name: Validate HTML
+        run: |
+          # Install HTML validator
+          npm install -g html-validate
+          
+          # Validate HTML files
+          find docs/ -name "*.html" -exec html-validate {} + || true
+
+      - name: Check file sizes
+        run: |
+          # Check that documentation files aren't too large
+          large_files=$(find docs/ -name "*.html" -size +1M)
+          if [ -n "$large_files" ]; then
+            echo "Large HTML files found (>1MB):"
+            echo "$large_files"
+            echo "Consider optimizing these files"
+          fi
+          
+          # Check total documentation size
+          total_size=$(du -sh docs/ | cut -f1)
+          echo "Total documentation size: $total_size"
+
+  test-mkdocs-serve:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v2
+        with:
+          version: "latest"
+
+      - name: Install MkDocs and dependencies
+        run: |
+          uv tool install mkdocs-material
+          uv tool install mkdocs
+          uv tool install mkdocstrings
+          uv tool install mkdocstrings-python
+
+      - name: Test MkDocs serve
+        run: |
+          cd src_docs
+          timeout 30s uvx mkdocs serve --dev-addr 127.0.0.1:8000 || true
+          echo "✓ MkDocs serve command works"
+
+      - name: Test MkDocs build with strict mode
+        run: |
+          cd src_docs
+          uvx mkdocs build --strict --verbose
+</document_content>
+</document>
+
+<document index="20">
 <source>docs/ALGORITHMS.md</source>
 <document_content>
 # Complex Algorithms Documentation
@@ -5492,7 +5921,7 @@ FUNCTION standardize_currency_symbols(text):
 </document_content>
 </document>
 
-<document index="19">
+<document index="21">
 <source>docs/EDGE_CASES.md</source>
 <document_content>
 # Edge Cases Documentation
@@ -5993,7 +6422,7 @@ Consider monitoring these edge case indicators in production:
 </document_content>
 </document>
 
-<document index="20">
+<document index="22">
 <source>mypy.ini</source>
 <document_content>
 [mypy]
@@ -6056,7 +6485,7 @@ ignore_missing_imports = True
 </document_content>
 </document>
 
-<document index="21">
+<document index="23">
 <source>publish.sh</source>
 <document_content>
 #!/usr/bin/env bash
@@ -6069,7 +6498,7 @@ uvx hatch publish
 </document_content>
 </document>
 
-<document index="22">
+<document index="24">
 <source>pyproject.toml</source>
 <document_content>
 # this_file: pyproject.toml
@@ -6855,6 +7284,18 @@ def close_global_pool(()) -> None:
 
 from pathlib import Path
 
+
+<document index="25">
+<source>src/virginia_clemm_poe/data/poe_models.json</source>
+<document_content>
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "App-Creator",
+... (file content truncated to first 5 lines)
+</document_content>
+</document>
 
 # File: /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/exceptions.py
 # Language: python
@@ -7838,6 +8279,4788 @@ def json_serializer((obj: Any)) -> Any:
 def format_points_cost((points: str)) -> str:
     """Format points cost string for display."""
 
+
+<document index="26">
+<source>src_docs/md/chapter1-introduction.md</source>
+<document_content>
+# Chapter 1: Introduction and Overview
+
+## What is Virginia Clemm Poe?
+
+Virginia Clemm Poe is a specialized Python package designed to bridge the gap between the official Poe.com API and the rich metadata available on the Poe website. While the Poe API provides basic model information, it lacks crucial details like pricing data, detailed descriptions, and creator information that are only available through the web interface.
+
+This package solves that problem by combining API data with intelligent web scraping to create a comprehensive, locally-cached dataset of all Poe.com models with their complete metadata.
+
+## Why This Package Exists
+
+### The Problem
+
+The Poe.com platform hosts hundreds of AI models from various providers, each with different capabilities, pricing structures, and use cases. While Poe provides an API to access these models programmatically, the API response lacks several key pieces of information:
+
+- **Detailed Pricing Information**: Cost per message, input pricing, cache discounts
+- **Rich Metadata**: Creator information, detailed descriptions, model capabilities
+- **Real-time Availability**: Which models are currently active and accessible
+
+### The Solution
+
+Virginia Clemm Poe addresses these limitations by:
+
+1. **Fetching Complete API Data**: Starting with the official Poe API to get the base model list
+2. **Intelligent Web Scraping**: Using Playwright to navigate to each model's page and extract missing information
+3. **Data Enrichment**: Combining API and scraped data into comprehensive model records
+4. **Local Caching**: Storing the enriched dataset locally for fast, offline access
+5. **Easy Access**: Providing both Python API and CLI interfaces for different use cases
+
+## Core Architecture
+
+### Data Flow
+
+```mermaid
+graph TD
+    A[Poe API] --> B[API Data Fetcher]
+    C[Poe Website] --> D[Web Scraper]
+    B --> E[Data Merger]
+    D --> E
+    E --> F[Local JSON Dataset]
+    F --> G[Python API]
+    F --> H[CLI Interface]
+```
+
+### Key Components
+
+1. **API Client** (`api.py`): Handles communication with the Poe API
+2. **Web Scraper** (`updater.py`, `browser_manager.py`): Manages browser automation and data extraction
+3. **Data Models** (`models.py`): Pydantic models for type safety and validation
+4. **Local Storage**: JSON-based dataset with version control
+5. **User Interfaces**: Python API and CLI for different access patterns
+
+## Package Philosophy
+
+### Design Principles
+
+- **Reliability First**: Robust error handling and graceful degradation
+- **Type Safety**: Full Pydantic models with comprehensive validation
+- **Performance**: Local caching minimizes network requests
+- **Transparency**: Clear logging and debugging capabilities
+- **Maintainability**: Clean architecture with separation of concerns
+
+### Data Integrity
+
+The package prioritizes data accuracy and freshness:
+
+- **Incremental Updates**: Only scrape models that need updates
+- **Validation**: Pydantic models ensure data consistency
+- **Backup and Recovery**: Automatic backup of existing data before updates
+- **Version Tracking**: Timestamps for data freshness monitoring
+
+## Use Cases
+
+### For Developers
+
+- **Model Discovery**: Find the right AI model for your specific needs
+- **Cost Analysis**: Compare pricing across different models and providers
+- **Integration Planning**: Understand model capabilities before implementation
+- **Monitoring**: Track model availability and pricing changes
+
+### For Researchers
+
+- **Market Analysis**: Study the AI model landscape and pricing trends
+- **Capability Mapping**: Understand the distribution of AI capabilities
+- **Provider Comparison**: Analyze different AI providers' offerings
+
+### For Business Users
+
+- **Cost Optimization**: Find the most cost-effective models for your use cases
+- **Vendor Evaluation**: Compare AI providers and their model portfolios
+- **Budget Planning**: Understand pricing structures for budget allocation
+
+## What's Next
+
+In the following chapters, you'll learn how to:
+
+- Install and configure the package
+- Use the Python API for programmatic access
+- Leverage the CLI for data management and querying
+- Understand the data structures and models
+- Configure advanced features and troubleshoot issues
+
+## Package Naming
+
+The package is named after **Virginia Clemm Poe** (1822-1847), the wife and cousin of Edgar Allan Poe. Just as Virginia was a faithful companion to the great poet, this package serves as a faithful companion to the Poe platform, enriching and enhancing the core functionality with additional valuable information.
+
+The choice reflects the package's role as a supportive tool that doesn't replace the original Poe API but rather complements and enhances it, much like how Virginia supported and inspired Edgar Allan Poe's literary work.
+</document_content>
+</document>
+
+<document index="27">
+<source>src_docs/md/chapter2-installation.md</source>
+<document_content>
+# Chapter 2: Installation and Setup
+
+## System Requirements
+
+### Python Version
+- **Python 3.12+** is required
+- The package uses modern Python features and type hints
+
+### Operating System
+- **Linux** (recommended for production)
+- **macOS** (fully supported)
+- **Windows** (supported with some limitations)
+
+### Browser Requirements
+- **Chrome or Chromium** browser must be installed
+- The package uses Playwright for web scraping, which requires a Chromium-based browser
+- Browser installation is handled automatically by the package
+
+## Installation Methods
+
+### Method 1: PyPI Installation (Recommended)
+
+```bash
+pip install virginia-clemm-poe
+```
+
+For users with `uv` (recommended for faster dependency resolution):
+
+```bash
+uv pip install virginia-clemm-poe
+```
+
+### Method 2: Development Installation
+
+If you want to contribute or use the latest development version:
+
+```bash
+git clone https://github.com/terragonlabs/virginia-clemm-poe.git
+cd virginia-clemm-poe
+uv venv --python 3.12
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+uv pip install -e .
+```
+
+### Method 3: Direct from GitHub
+
+```bash
+pip install git+https://github.com/terragonlabs/virginia-clemm-poe.git
+```
+
+## Initial Setup
+
+### 1. Browser Setup
+
+After installation, you need to set up the browser for web scraping:
+
+```bash
+virginia-clemm-poe setup
+```
+
+This command will:
+- Download and configure Playwright
+- Install necessary browser dependencies
+- Verify browser functionality
+- Create initial configuration files
+
+!!! note "Browser Setup"
+    The setup process downloads a Chromium browser (~100MB) that's isolated from your system browser. This ensures consistent scraping behavior across different environments.
+
+### 2. API Key Configuration
+
+To use the full functionality, you need a Poe API key:
+
+#### Getting a Poe API Key
+
+1. Visit [Poe.com](https://poe.com)
+2. Sign in to your account
+3. Navigate to API settings
+4. Generate a new API key
+5. Copy the key for configuration
+
+#### Setting the API Key
+
+You can provide the API key in several ways:
+
+**Option 1: Environment Variable (Recommended)**
+```bash
+export POE_API_KEY="your_api_key_here"
+```
+
+**Option 2: Configuration File**
+```bash
+virginia-clemm-poe config set-api-key your_api_key_here
+```
+
+**Option 3: Runtime Parameter**
+```bash
+virginia-clemm-poe update --api-key your_api_key_here
+```
+
+### 3. Verify Installation
+
+Test that everything is working correctly:
+
+```bash
+# Check package version
+virginia-clemm-poe --version
+
+# Test basic functionality
+virginia-clemm-poe search "claude"
+
+# Run a complete health check
+virginia-clemm-poe diagnose
+```
+
+## Configuration Options
+
+### Configuration File Location
+
+The package stores configuration in:
+- **Linux/macOS**: `~/.config/virginia-clemm-poe/config.json`
+- **Windows**: `%APPDATA%\virginia-clemm-poe\config.json`
+
+### Configuration Structure
+
+```json
+{
+  "api_key": "your_poe_api_key",
+  "browser": {
+    "headless": true,
+    "timeout": 30000,
+    "user_agent": "custom_user_agent"
+  },
+  "cache": {
+    "enabled": true,
+    "max_age": 3600
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "~/.local/share/virginia-clemm-poe/logs/app.log"
+  }
+}
+```
+
+### Environment Variables
+
+The package respects these environment variables:
+
+| Variable | Description | Default |
+|----------|-------------|---------|
+| `POE_API_KEY` | Your Poe API key | None (required) |
+| `VCP_HEADLESS` | Run browser in headless mode | `true` |
+| `VCP_TIMEOUT` | Browser timeout in milliseconds | `30000` |
+| `VCP_LOG_LEVEL` | Logging level | `INFO` |
+| `VCP_CACHE_DIR` | Cache directory location | Platform default |
+
+## Data Storage
+
+### Default Locations
+
+The package stores data in platform-appropriate locations:
+
+**Linux/macOS:**
+- **Data**: `~/.local/share/virginia-clemm-poe/`
+- **Config**: `~/.config/virginia-clemm-poe/`
+- **Cache**: `~/.cache/virginia-clemm-poe/`
+- **Logs**: `~/.local/share/virginia-clemm-poe/logs/`
+
+**Windows:**
+- **Data**: `%LOCALAPPDATA%\virginia-clemm-poe\`
+- **Config**: `%APPDATA%\virginia-clemm-poe\`
+- **Cache**: `%LOCALAPPDATA%\virginia-clemm-poe\cache\`
+- **Logs**: `%LOCALAPPDATA%\virginia-clemm-poe\logs\`
+
+### Dataset Location
+
+The main model dataset is stored as a JSON file:
+```
+~/.local/share/virginia-clemm-poe/poe_models.json
+```
+
+## Troubleshooting Installation
+
+### Common Issues
+
+#### 1. Python Version Error
+```
+ERROR: Package requires Python 3.12+
+```
+**Solution**: Upgrade your Python installation or use a version manager like `pyenv`.
+
+#### 2. Browser Setup Fails
+```
+ERROR: Failed to install browser dependencies
+```
+**Solutions**:
+- Ensure you have internet connectivity
+- Run with elevated permissions if needed
+- Check disk space (browser download requires ~100MB)
+
+#### 3. Permission Errors
+```
+ERROR: Permission denied writing to config directory
+```
+**Solutions**:
+- Check file permissions on config directories
+- Run installation with appropriate user permissions
+- Manually create config directories if needed
+
+#### 4. Network Issues
+```
+ERROR: Unable to connect to Poe API
+```
+**Solutions**:
+- Check internet connectivity
+- Verify API key is correct
+- Check if your network blocks API requests
+
+### Debug Installation
+
+For detailed debugging during installation:
+
+```bash
+# Enable verbose logging
+export VCP_LOG_LEVEL=DEBUG
+
+# Run installation with debug output
+virginia-clemm-poe setup --verbose
+
+# Check system compatibility
+virginia-clemm-poe diagnose --full
+```
+
+## Upgrading
+
+### Upgrade Package
+
+```bash
+pip install --upgrade virginia-clemm-poe
+```
+
+### Upgrade Browser Dependencies
+
+```bash
+virginia-clemm-poe setup --force
+```
+
+### Migrate Configuration
+
+When upgrading from older versions, you may need to migrate configuration:
+
+```bash
+virginia-clemm-poe config migrate
+```
+
+## Uninstallation
+
+### Remove Package
+
+```bash
+pip uninstall virginia-clemm-poe
+```
+
+### Clean Up Data (Optional)
+
+To remove all data and configuration files:
+
+```bash
+# Remove data directories
+rm -rf ~/.local/share/virginia-clemm-poe
+rm -rf ~/.config/virginia-clemm-poe
+rm -rf ~/.cache/virginia-clemm-poe
+
+# On Windows, remove:
+# %LOCALAPPDATA%\virginia-clemm-poe
+# %APPDATA%\virginia-clemm-poe
+```
+
+## Next Steps
+
+With the package installed and configured, you're ready to:
+
+1. Follow the [Quick Start Guide](chapter3-quickstart.md) for basic usage
+2. Learn about the [Python API](chapter4-api.md) for programmatic access
+3. Explore [CLI Commands](chapter5-cli.md) for command-line usage
+
+!!! tip "Performance Optimization"
+    For best performance, consider running the initial data update during off-peak hours as it involves scraping hundreds of model pages:
+    ```bash
+    POE_API_KEY=your_key virginia-clemm-poe update --all
+    ```
+</document_content>
+</document>
+
+<document index="28">
+<source>src_docs/md/chapter3-quickstart.md</source>
+<document_content>
+# Chapter 3: Quick Start Guide
+
+## Your First 5 Minutes
+
+This guide will get you up and running with Virginia Clemm Poe in just a few minutes. By the end, you'll have:
+
+- ✅ Installed and configured the package
+- ✅ Updated your local model dataset
+- ✅ Found and analyzed AI models
+- ✅ Used both Python API and CLI
+
+## Step 1: Installation and Setup
+
+```bash
+# Install the package
+pip install virginia-clemm-poe
+
+# Set up browser for web scraping
+virginia-clemm-poe setup
+
+# Set your Poe API key
+export POE_API_KEY="your_poe_api_key_here"
+```
+
+!!! tip "Get Your API Key"
+    Visit [Poe.com](https://poe.com) → Settings → API to generate your free API key.
+
+## Step 2: Initial Data Update
+
+```bash
+# Update model data with pricing information
+virginia-clemm-poe update --pricing
+```
+
+This command will:
+- Fetch all models from the Poe API
+- Scrape pricing information from the website
+- Save the enriched dataset locally
+
+!!! note "First Run"
+    The first update may take 5-10 minutes as it scrapes data for hundreds of models. Subsequent updates are much faster as they only update changed models.
+
+## Step 3: Basic CLI Usage
+
+### Search for Models
+
+```bash
+# Find Claude models
+virginia-clemm-poe search "claude"
+
+# Find GPT models
+virginia-clemm-poe search "gpt"
+
+# Find models by capability
+virginia-clemm-poe search "image"
+```
+
+### List All Models
+
+```bash
+# Show all available models
+virginia-clemm-poe list
+
+# Show only models with pricing data
+virginia-clemm-poe list --with-pricing
+
+# Show models in JSON format
+virginia-clemm-poe list --format json
+```
+
+### Get Model Details
+
+```bash
+# Get detailed information about a specific model
+virginia-clemm-poe info "claude-3-opus"
+```
+
+## Step 4: Basic Python API Usage
+
+Create a Python script to explore the model data:
+
+```python
+# quick_start.py
+from virginia_clemm_poe import api
+
+def main():
+    # Search for models
+    print("🔍 Searching for Claude models...")
+    claude_models = api.search_models(query="claude")
+    print(f"Found {len(claude_models)} Claude models")
+    
+    # Get a specific model
+    print("\n📊 Getting Claude 3 Opus details...")
+    opus = api.get_model_by_id("claude-3-opus")
+    if opus:
+        print(f"Model: {opus.model_name}")
+        print(f"Description: {opus.description}")
+        if opus.pricing:
+            input_cost = opus.pricing.details.get("Input (text)", "N/A")
+            print(f"Input cost: {input_cost}")
+    
+    # List all models with pricing
+    print("\n💰 Models with pricing data...")
+    models_with_pricing = api.list_models(with_pricing=True)
+    print(f"Found {len(models_with_pricing)} models with pricing")
+    
+    # Find cheapest text model
+    print("\n🎯 Finding cheapest text models...")
+    text_models = [m for m in models_with_pricing 
+                   if m.pricing and "Input (text)" in m.pricing.details]
+    
+    if text_models:
+        # Sort by input cost (assuming cost is in format like "$0.015 / 1k tokens")
+        def extract_cost(model):
+            cost_str = model.pricing.details.get("Input (text)", "$999")
+            # Simple extraction - in real use, you'd want more robust parsing
+            try:
+                return float(cost_str.replace("$", "").split()[0])
+            except:
+                return 999.0
+        
+        cheapest = min(text_models, key=extract_cost)
+        print(f"Cheapest: {cheapest.model_name}")
+        print(f"Cost: {cheapest.pricing.details['Input (text)']}")
+
+if __name__ == "__main__":
+    main()
+```
+
+Run the script:
+```bash
+python quick_start.py
+```
+
+## Common Use Cases
+
+### Use Case 1: Find Models by Price Range
+
+```python
+from virginia_clemm_poe import api
+
+def find_affordable_models(max_cost=0.01):
+    """Find models under a certain cost threshold."""
+    models = api.list_models(with_pricing=True)
+    affordable = []
+    
+    for model in models:
+        if model.pricing and "Input (text)" in model.pricing.details:
+            cost_str = model.pricing.details["Input (text)"]
+            # Extract numeric cost (simplified)
+            try:
+                cost = float(cost_str.replace("$", "").split()[0])
+                if cost <= max_cost:
+                    affordable.append((model.model_name, cost))
+            except:
+                continue
+    
+    return sorted(affordable, key=lambda x: x[1])
+
+# Find models under $0.01 per 1k tokens
+cheap_models = find_affordable_models(0.01)
+for name, cost in cheap_models[:5]:
+    print(f"{name}: ${cost}")
+```
+
+### Use Case 2: Compare Model Capabilities
+
+```python
+from virginia_clemm_poe import api
+
+def compare_models(model_ids):
+    """Compare multiple models side by side."""
+    models = [api.get_model_by_id(mid) for mid in model_ids]
+    
+    print(f"{'Model':<20} {'Input Cost':<15} {'Output Cost':<15}")
+    print("-" * 50)
+    
+    for model in models:
+        if model and model.pricing:
+            input_cost = model.pricing.details.get("Input (text)", "N/A")
+            output_cost = model.pricing.details.get("Bot message", "N/A")
+            print(f"{model.model_name:<20} {input_cost:<15} {output_cost:<15}")
+
+# Compare popular models
+compare_models([
+    "claude-3-opus", 
+    "gpt-4", 
+    "claude-3-sonnet"
+])
+```
+
+### Use Case 3: Monitor Model Availability
+
+```bash
+#!/bin/bash
+# monitor_models.sh - Check if specific models are available
+
+models=("claude-3-opus" "gpt-4" "gemini-pro")
+
+for model in "${models[@]}"; do
+    echo "Checking $model..."
+    virginia-clemm-poe info "$model" > /dev/null 2>&1
+    if [ $? -eq 0 ]; then
+        echo "✅ $model is available"
+    else
+        echo "❌ $model is not available"
+    fi
+done
+```
+
+## CLI Workflow Examples
+
+### Daily Update Routine
+
+```bash
+#!/bin/bash
+# daily_update.sh - Daily model data maintenance
+
+echo "🔄 Starting daily update..."
+
+# Update models that might have changed
+virginia-clemm-poe update --pricing --changed-only
+
+# Check for new models
+virginia-clemm-poe update --new-only
+
+# Generate a summary report
+virginia-clemm-poe stats
+
+echo "✅ Daily update complete"
+```
+
+### Research Workflow
+
+```bash
+# 1. Update dataset
+virginia-clemm-poe update --all
+
+# 2. Search for specific capabilities
+virginia-clemm-poe search "vision" > vision_models.txt
+virginia-clemm-poe search "code" > coding_models.txt
+
+# 3. Get detailed pricing for interesting models
+virginia-clemm-poe info "claude-3-opus" --format json > opus_details.json
+virginia-clemm-poe info "gpt-4-vision" --format json > gpt4v_details.json
+
+# 4. Generate comparison report
+virginia-clemm-poe compare "claude-3-opus" "gpt-4" --output report.html
+```
+
+## Integration Examples
+
+### Jupyter Notebook Integration
+
+```python
+# In Jupyter notebook
+import pandas as pd
+from virginia_clemm_poe import api
+
+# Load all models into a DataFrame
+models = api.list_models(with_pricing=True)
+df = pd.DataFrame([
+    {
+        'name': m.model_name,
+        'provider': m.bot_info.creator if m.bot_info else 'Unknown',
+        'input_cost': m.pricing.details.get('Input (text)', 'N/A') if m.pricing else 'N/A',
+        'description': m.description[:100] + '...' if len(m.description) > 100 else m.description
+    }
+    for m in models
+])
+
+# Analyze the data
+print(f"Total models: {len(df)}")
+print(f"Unique providers: {df['provider'].nunique()}")
+df.head()
+```
+
+### FastAPI Integration
+
+```python
+from fastapi import FastAPI
+from virginia_clemm_poe import api
+
+app = FastAPI()
+
+@app.get("/models/search/{query}")
+def search_models(query: str):
+    """Search for models matching the query."""
+    models = api.search_models(query=query)
+    return {"query": query, "count": len(models), "models": models}
+
+@app.get("/models/{model_id}")
+def get_model(model_id: str):
+    """Get detailed information about a specific model."""
+    model = api.get_model_by_id(model_id)
+    if not model:
+        return {"error": "Model not found"}
+    return model
+
+@app.get("/stats")
+def get_stats():
+    """Get statistics about the model dataset."""
+    all_models = api.list_models()
+    with_pricing = api.list_models(with_pricing=True)
+    
+    return {
+        "total_models": len(all_models),
+        "models_with_pricing": len(with_pricing),
+        "coverage": len(with_pricing) / len(all_models) * 100
+    }
+```
+
+## Next Steps
+
+Now that you've got the basics down, explore:
+
+1. **[Python API Reference](chapter4-api.md)** - Complete API documentation
+2. **[CLI Commands](chapter5-cli.md)** - All available command-line options
+3. **[Data Models](chapter6-models.md)** - Understanding the data structures
+4. **[Configuration](chapter8-configuration.md)** - Advanced configuration options
+
+## Quick Reference
+
+### Essential Commands
+```bash
+# Setup
+virginia-clemm-poe setup
+virginia-clemm-poe update --pricing
+
+# Search and explore
+virginia-clemm-poe search "query"
+virginia-clemm-poe list --with-pricing
+virginia-clemm-poe info "model-id"
+
+# Maintenance
+virginia-clemm-poe update --changed-only
+virginia-clemm-poe stats
+virginia-clemm-poe diagnose
+```
+
+### Essential Python Imports
+```python
+from virginia_clemm_poe import api
+from virginia_clemm_poe.models import PoeModel, Pricing, BotInfo
+```
+
+!!! tip "Performance Tips"
+    - Use `--changed-only` for faster updates
+    - Cache search results for repeated queries
+    - Use `--format json` for programmatic processing
+    - Monitor logs with `--verbose` for debugging
+</document_content>
+</document>
+
+<document index="29">
+<source>src_docs/md/chapter4-api.md</source>
+<document_content>
+# Chapter 4: Python API Reference
+
+## Overview
+
+The Virginia Clemm Poe Python API provides programmatic access to comprehensive Poe.com model data. The API is designed for simplicity and performance, with intelligent caching and type safety through Pydantic models.
+
+## Core Functions
+
+### Data Loading and Management
+
+#### `load_models(force_reload: bool = False) -> ModelCollection`
+
+The foundational function that loads the complete Poe model dataset from the local JSON file.
+
+```python
+from virginia_clemm_poe import api
+
+# Standard usage (cached)
+collection = api.load_models()
+print(f"Loaded {len(collection.data)} models")
+
+# Force reload after external update
+collection = api.load_models(force_reload=True)
+```
+
+**Parameters:**
+- `force_reload` (bool): If True, bypasses cache and reloads from file
+
+**Returns:**
+- `ModelCollection`: Container with all model data and search capabilities
+
+**Performance:**
+- First call: ~50-200ms (file I/O + JSON parsing)
+- Cached calls: <1ms (in-memory access)
+- Memory usage: ~2-5MB for typical dataset
+
+#### `reload_models() -> ModelCollection`
+
+Convenience function to force reload models from disk, bypassing cache.
+
+```python
+# After external update
+fresh_collection = api.reload_models()
+```
+
+### Model Retrieval
+
+#### `get_all_models() -> list[PoeModel]`
+
+Retrieves the complete list of models without any filtering.
+
+```python
+# Get all models
+models = api.get_all_models()
+print(f"Total models: {len(models)}")
+
+# Analyze by provider
+by_owner = {}
+for model in models:
+    owner = model.owned_by
+    by_owner.setdefault(owner, []).append(model)
+
+for owner, owner_models in sorted(by_owner.items()):
+    print(f"{owner}: {len(owner_models)} models")
+```
+
+**Returns:**
+- `list[PoeModel]`: Complete list of models with full metadata
+
+#### `get_model_by_id(model_id: str) -> PoeModel | None`
+
+Fast, exact-match lookup for a specific model by ID.
+
+```python
+# Get specific model
+model = api.get_model_by_id("Claude-3-Opus")
+if model:
+    print(f"Found: {model.model_name}")
+    if model.pricing:
+        print(f"Input cost: {model.pricing.details.get('Input (text)', 'N/A')}")
+else:
+    print("Model not found")
+```
+
+**Parameters:**
+- `model_id` (str): Exact model ID (case-sensitive)
+
+**Returns:**
+- `PoeModel | None`: The matching model or None if not found
+
+**Performance:**
+- Lookup time: <1ms (uses internal dictionary mapping)
+
+### Model Search and Filtering
+
+#### `search_models(query: str) -> list[PoeModel]`
+
+Case-insensitive search across model IDs and names.
+
+```python
+# Find Claude models
+claude_models = api.search_models("claude")
+print(f"Found {len(claude_models)} Claude models")
+
+# Find models by capability
+vision_models = api.search_models("vision")
+coding_models = api.search_models("code")
+```
+
+**Parameters:**
+- `query` (str): Search term (case-insensitive)
+
+**Returns:**
+- `list[PoeModel]`: Matching models sorted by ID
+
+#### `get_models_with_pricing() -> list[PoeModel]`
+
+Get all models that have valid pricing information.
+
+```python
+# Get models with pricing for cost analysis
+priced_models = api.get_models_with_pricing()
+print(f"Models with pricing: {len(priced_models)}")
+
+# Find affordable models
+budget_models = [
+    m for m in priced_models 
+    if m.pricing and "Input (text)" in m.pricing.details
+]
+```
+
+**Returns:**
+- `list[PoeModel]`: Models with valid pricing data
+
+#### `get_models_needing_update() -> list[PoeModel]`
+
+Identify models that need pricing information updated.
+
+```python
+# Check data completeness
+need_update = api.get_models_needing_update()
+all_models = api.get_all_models()
+
+completion_rate = (len(all_models) - len(need_update)) / len(all_models) * 100
+print(f"Data completion: {completion_rate:.1f}%")
+```
+
+**Returns:**
+- `list[PoeModel]`: Models requiring data updates
+
+## Data Models
+
+### PoeModel
+
+The core model representing a Poe.com AI model.
+
+```python
+from virginia_clemm_poe.models import PoeModel
+
+# Access model properties
+model = api.get_model_by_id("Claude-3-Opus")
+if model:
+    print(f"ID: {model.id}")
+    print(f"Name: {model.model_name}")
+    print(f"Owner: {model.owned_by}")
+    print(f"Created: {model.created}")
+    print(f"Description: {model.description}")
+```
+
+**Key Properties:**
+- `id: str` - Unique model identifier
+- `model_name: str` - Display name
+- `owned_by: str` - Model provider/owner
+- `created: str` - Creation timestamp
+- `description: str` - Model description
+- `architecture: Architecture` - Input/output capabilities
+- `pricing: Pricing | None` - Cost information
+- `bot_info: BotInfo | None` - Creator and metadata
+- `pricing_error: str | None` - Error message if scraping failed
+
+**Utility Methods:**
+```python
+# Check if model has pricing data
+if model.has_pricing():
+    print("Pricing available")
+
+# Check if model needs update
+if model.needs_pricing_update():
+    print("Needs pricing update")
+```
+
+### Pricing
+
+Contains cost information for a model.
+
+```python
+if model.pricing:
+    # Access pricing details
+    details = model.pricing.details
+    input_cost = details.get("Input (text)", "N/A")
+    output_cost = details.get("Bot message", "N/A")
+    
+    print(f"Input: {input_cost}")
+    print(f"Output: {output_cost}")
+    print(f"Last checked: {model.pricing.checked_at}")
+```
+
+**Properties:**
+- `details: dict[str, str]` - Cost breakdown
+- `checked_at: datetime` - Last update timestamp
+
+**Common Pricing Fields:**
+- `"Input (text)"` - Cost per text input
+- `"Input (image)"` - Cost per image input
+- `"Bot message"` - Cost per output message
+- `"Chat history loaded"` - History loading cost
+- `"Cache discount"` - Caching discount rate
+
+### BotInfo
+
+Creator and description metadata.
+
+```python
+if model.bot_info:
+    print(f"Creator: {model.bot_info.creator}")
+    print(f"Description: {model.bot_info.description}")
+    if model.bot_info.description_extra:
+        print(f"Extra info: {model.bot_info.description_extra}")
+```
+
+**Properties:**
+- `creator: str` - Bot creator handle
+- `description: str` - Main description
+- `description_extra: str | None` - Additional details
+
+### Architecture
+
+Model capability information.
+
+```python
+arch = model.architecture
+print(f"Input types: {arch.input_modalities}")
+print(f"Output types: {arch.output_modalities}")
+print(f"Modality: {arch.modality}")
+```
+
+**Properties:**
+- `input_modalities: list[str]` - Supported inputs
+- `output_modalities: list[str]` - Supported outputs
+- `modality: str` - Primary mode description
+
+## Advanced Usage Examples
+
+### Cost Analysis
+
+```python
+def analyze_costs():
+    """Analyze model costs across providers."""
+    models = api.get_models_with_pricing()
+    
+    # Group by provider
+    by_provider = {}
+    for model in models:
+        provider = model.owned_by
+        by_provider.setdefault(provider, []).append(model)
+    
+    # Calculate average costs
+    for provider, provider_models in by_provider.items():
+        costs = []
+        for model in provider_models:
+            if model.pricing and "Input (text)" in model.pricing.details:
+                cost_str = model.pricing.details["Input (text)"]
+                # Extract numeric cost (simplified parsing)
+                try:
+                    cost = float(cost_str.replace("$", "").split()[0])
+                    costs.append(cost)
+                except:
+                    continue
+        
+        if costs:
+            avg_cost = sum(costs) / len(costs)
+            print(f"{provider}: ${avg_cost:.4f} average")
+
+analyze_costs()
+```
+
+### Model Comparison
+
+```python
+def compare_models(model_ids: list[str]):
+    """Compare multiple models side by side."""
+    models = [api.get_model_by_id(mid) for mid in model_ids]
+    models = [m for m in models if m is not None]
+    
+    print(f"{'Model':<25} {'Provider':<15} {'Input Cost':<15}")
+    print("-" * 55)
+    
+    for model in models:
+        provider = model.owned_by
+        if model.pricing and "Input (text)" in model.pricing.details:
+            cost = model.pricing.details["Input (text)"]
+        else:
+            cost = "N/A"
+        
+        print(f"{model.model_name:<25} {provider:<15} {cost:<15}")
+
+# Compare popular models
+compare_models([
+    "Claude-3-Opus",
+    "Claude-3-Sonnet", 
+    "GPT-4",
+    "GPT-4-Turbo"
+])
+```
+
+### Data Quality Monitoring
+
+```python
+def check_data_quality():
+    """Monitor data quality and coverage."""
+    all_models = api.get_all_models()
+    priced_models = api.get_models_with_pricing()
+    need_update = api.get_models_needing_update()
+    
+    print(f"📊 Data Quality Report")
+    print(f"Total models: {len(all_models)}")
+    print(f"With pricing: {len(priced_models)}")
+    print(f"Need update: {len(need_update)}")
+    
+    # Coverage percentage
+    coverage = len(priced_models) / len(all_models) * 100 if all_models else 0
+    print(f"Coverage: {coverage:.1f}%")
+    
+    # Error analysis
+    errors = [m for m in all_models if m.pricing_error]
+    if errors:
+        print(f"Models with errors: {len(errors)}")
+        error_types = {}
+        for model in errors:
+            error = model.pricing_error or "Unknown"
+            error_types[error] = error_types.get(error, 0) + 1
+        
+        for error, count in sorted(error_types.items()):
+            print(f"  {error}: {count}")
+
+check_data_quality()
+```
+
+### Real-time Monitoring
+
+```python
+import time
+from pathlib import Path
+
+def monitor_updates(interval: int = 60):
+    """Monitor for data file changes and reload automatically."""
+    from virginia_clemm_poe.config import DATA_FILE_PATH
+    
+    if not DATA_FILE_PATH.exists():
+        print("Data file not found. Run update first.")
+        return
+    
+    last_modified = DATA_FILE_PATH.stat().st_mtime
+    print(f"Monitoring {DATA_FILE_PATH} for changes...")
+    
+    while True:
+        try:
+            current_modified = DATA_FILE_PATH.stat().st_mtime
+            if current_modified > last_modified:
+                print("📊 Data file updated, reloading...")
+                collection = api.reload_models()
+                print(f"✅ Reloaded {len(collection.data)} models")
+                last_modified = current_modified
+            
+            time.sleep(interval)
+        except KeyboardInterrupt:
+            print("Monitoring stopped.")
+            break
+        except Exception as e:
+            print(f"Error: {e}")
+            time.sleep(interval)
+
+# Start monitoring
+# monitor_updates(60)  # Check every minute
+```
+
+## Error Handling
+
+### Common Error Patterns
+
+```python
+def safe_model_access(model_id: str):
+    """Safely access model data with comprehensive error handling."""
+    try:
+        # Load models
+        collection = api.load_models()
+        if not collection.data:
+            print("No data available. Run 'virginia-clemm-poe update'")
+            return None
+        
+        # Get specific model
+        model = api.get_model_by_id(model_id)
+        if not model:
+            print(f"Model '{model_id}' not found")
+            # Try fuzzy search
+            results = api.search_models(model_id.lower())
+            if results:
+                print(f"Similar models: {[m.id for m in results[:3]]}")
+            return None
+        
+        # Access pricing safely
+        if model.pricing:
+            return model
+        elif model.pricing_error:
+            print(f"Pricing error: {model.pricing_error}")
+            return model
+        else:
+            print("No pricing data available")
+            return model
+            
+    except FileNotFoundError:
+        print("Data file missing. Run 'virginia-clemm-poe update --all'")
+        return None
+    except Exception as e:
+        print(f"Unexpected error: {e}")
+        return None
+```
+
+### Data Validation
+
+```python
+def validate_model_data(model: PoeModel) -> bool:
+    """Validate model data completeness."""
+    issues = []
+    
+    if not model.id:
+        issues.append("Missing model ID")
+    
+    if not model.model_name:
+        issues.append("Missing model name")
+    
+    if not model.owned_by:
+        issues.append("Missing owner information")
+    
+    if model.pricing is None and model.pricing_error is None:
+        issues.append("No pricing data or error information")
+    
+    if issues:
+        print(f"Validation issues for {model.id}: {', '.join(issues)}")
+        return False
+    
+    return True
+
+# Validate all models
+models = api.get_all_models()
+valid_models = [m for m in models if validate_model_data(m)]
+print(f"Valid models: {len(valid_models)}/{len(models)}")
+```
+
+## Best Practices
+
+### Performance Optimization
+
+1. **Use Caching**: Don't call `reload_models()` unnecessarily
+2. **Exact Lookups**: Use `get_model_by_id()` for known IDs instead of search
+3. **Batch Operations**: Process multiple models in single loops
+4. **Filter Early**: Use specific functions like `get_models_with_pricing()`
+
+### Data Freshness
+
+1. **Check Timestamps**: Monitor `pricing.checked_at` for data age
+2. **Reload After Updates**: Call `reload_models()` after external updates
+3. **Monitor Coverage**: Use `get_models_needing_update()` for quality checks
+
+### Error Resilience
+
+1. **Check for None**: Always verify pricing and bot_info existence
+2. **Handle Missing Data**: Gracefully handle missing models
+3. **Validate Assumptions**: Don't assume specific pricing fields exist
+
+## Integration Patterns
+
+### With Data Analysis Libraries
+
+```python
+import pandas as pd
+
+def models_to_dataframe():
+    """Convert model data to pandas DataFrame for analysis."""
+    models = api.get_models_with_pricing()
+    
+    data = []
+    for model in models:
+        row = {
+            'id': model.id,
+            'name': model.model_name,
+            'provider': model.owned_by,
+            'created': model.created,
+        }
+        
+        if model.pricing:
+            row['input_cost'] = model.pricing.details.get('Input (text)', None)
+            row['output_cost'] = model.pricing.details.get('Bot message', None)
+            row['pricing_date'] = model.pricing.checked_at
+        
+        if model.bot_info:
+            row['creator'] = model.bot_info.creator
+        
+        data.append(row)
+    
+    return pd.DataFrame(data)
+
+# Create DataFrame for analysis
+df = models_to_dataframe()
+print(df.head())
+```
+
+### With Web Frameworks
+
+```python
+from fastapi import FastAPI, HTTPException
+from virginia_clemm_poe import api
+
+app = FastAPI()
+
+@app.get("/models")
+def list_models(with_pricing: bool = False):
+    """API endpoint to list models."""
+    if with_pricing:
+        models = api.get_models_with_pricing()
+    else:
+        models = api.get_all_models()
+    
+    return {
+        "count": len(models),
+        "models": [{"id": m.id, "name": m.model_name} for m in models]
+    }
+
+@app.get("/models/{model_id}")
+def get_model(model_id: str):
+    """API endpoint to get specific model."""
+    model = api.get_model_by_id(model_id)
+    if not model:
+        raise HTTPException(status_code=404, detail="Model not found")
+    
+    return model.dict()
+```
+
+This comprehensive API reference provides everything you need to integrate Virginia Clemm Poe into your Python applications efficiently and reliably.
+</document_content>
+</document>
+
+<document index="30">
+<source>src_docs/md/chapter5-cli.md</source>
+<document_content>
+# Chapter 5: CLI Usage and Commands
+
+## Overview
+
+Virginia Clemm Poe provides a comprehensive command-line interface built with Python Fire and Rich for beautiful terminal output. The CLI is designed for both interactive exploration and automation workflows.
+
+## Command Structure
+
+All commands follow the pattern:
+```bash
+virginia-clemm-poe <command> [options]
+```
+
+Get help for any command:
+```bash
+virginia-clemm-poe <command> --help
+```
+
+## Core Commands
+
+### Setup and Configuration
+
+#### `setup`
+Set up Chrome browser for web scraping - required before first update.
+
+```bash
+# Basic setup (recommended)
+virginia-clemm-poe setup
+
+# Troubleshooting setup with verbose output
+virginia-clemm-poe setup --verbose
+```
+
+**What it does:**
+- Detects existing Chrome/Chromium installations
+- Downloads Chrome for Testing if needed (~200MB)
+- Configures browser automation with DevTools Protocol
+- Verifies browser can launch successfully
+
+**System requirements:**
+- Available disk space: ~200MB
+- Network access for browser download
+- Write permissions to cache directory
+
+**Installation locations:**
+- **macOS**: `~/Library/Caches/virginia-clemm-poe/`
+- **Linux**: `~/.cache/virginia-clemm-poe/`
+- **Windows**: `%LOCALAPPDATA%\virginia-clemm-poe\`
+
+#### `status`
+Check system health and data freshness.
+
+```bash
+# Quick health check
+virginia-clemm-poe status
+
+# Detailed system diagnosis
+virginia-clemm-poe status --verbose
+```
+
+**Checks performed:**
+- ✅ Browser installation and accessibility
+- ✅ Model dataset existence and freshness
+- ✅ POE_API_KEY environment variable
+- ✅ System dependencies
+
+**Sample output:**
+```
+Virginia Clemm Poe Status
+
+Browser Status:
+✓ Browser is ready
+  Path: /Users/user/.cache/virginia-clemm-poe/chrome-mac/chrome
+  User Data: /Users/user/.cache/virginia-clemm-poe/user-data
+
+Data Status:
+✓ Model data found
+  Path: ~/.local/share/virginia-clemm-poe/poe_models.json
+  Total models: 244
+  With pricing: 239
+  With bot info: 235
+  Data is 2 days old
+
+API Key Status:
+✓ POE_API_KEY is set
+```
+
+#### `doctor`
+Comprehensive diagnostic tool for troubleshooting.
+
+```bash
+# Run all diagnostic checks
+virginia-clemm-poe doctor
+
+# Verbose diagnosis for support requests
+virginia-clemm-poe doctor --verbose
+```
+
+**Diagnostic checks:**
+1. **Python Version**: Ensures Python 3.12+ compatibility
+2. **API Key**: Validates POE_API_KEY and tests connectivity
+3. **Browser**: Verifies browser installation and launch capability
+4. **Network**: Tests connectivity to poe.com
+5. **Dependencies**: Checks all required packages
+6. **Data File**: Validates JSON structure and content
+
+**Exit codes:**
+- `0`: All checks passed
+- `1`: Issues found that need attention
+
+### Data Management
+
+#### `update`
+Fetch latest model data from Poe - run weekly or when new models appear.
+
+```bash
+# Update all data (default)
+POE_API_KEY=your_key virginia-clemm-poe update
+
+# Update only pricing information
+virginia-clemm-poe update --pricing
+
+# Update only bot information (faster)
+virginia-clemm-poe update --info
+
+# Force update all models
+virginia-clemm-poe update --force
+
+# Use custom API key
+virginia-clemm-poe update --api_key your_key
+
+# Debug port conflicts
+virginia-clemm-poe update --debug_port 9223
+
+# Troubleshooting with verbose output
+virginia-clemm-poe update --verbose
+```
+
+**Update process:**
+1. Fetches all models from Poe API
+2. Launches Chrome for web scraping
+3. Visits each model's page to extract pricing and metadata
+4. Saves enriched dataset to local JSON file
+
+**Parameters:**
+- `--info`: Update only bot information
+- `--pricing`: Update only pricing information  
+- `--all`: Update both (default)
+- `--force`: Update even models with existing data
+- `--api_key`: Override POE_API_KEY environment variable
+- `--debug_port`: Chrome DevTools port (default: 9222)
+- `--verbose`: Enable detailed logging
+
+**Performance:**
+- Full update: 5-15 minutes for ~240 models
+- Partial updates: 1-5 minutes depending on changes
+- Incremental: Only updates models missing data
+
+#### `clear-cache`
+Clear cache and stored data.
+
+```bash
+# Clear all cache (default)
+virginia-clemm-poe clear-cache
+
+# Clear only model data
+virginia-clemm-poe clear-cache --data
+
+# Clear only browser cache
+virginia-clemm-poe clear-cache --browser
+
+# Verbose cache clearing
+virginia-clemm-poe clear-cache --verbose
+```
+
+**Cache types:**
+- **Model data**: Local JSON dataset
+- **Browser cache**: Chrome user data and profiles
+
+#### `cache`
+Monitor cache performance and statistics.
+
+```bash
+# Show cache statistics
+virginia-clemm-poe cache
+
+# Clear all caches
+virginia-clemm-poe cache --clear
+
+# Verbose cache management
+virginia-clemm-poe cache --verbose
+```
+
+**Statistics shown:**
+- Cache hit rates and miss rates
+- Total requests and performance
+- Memory usage and evictions
+- Expired entry cleanups
+
+### Data Query Commands
+
+#### `search`
+Find models by name or ID - primary discovery command.
+
+```bash
+# Find Claude models
+virginia-clemm-poe search claude
+
+# Find GPT models with bot info
+virginia-clemm-poe search gpt --show_bot_info
+
+# Search without pricing data
+virginia-clemm-poe search vision --no-show_pricing
+
+# Verbose search for debugging
+virginia-clemm-poe search claude --verbose
+```
+
+**Search features:**
+- Case-insensitive substring matching
+- Searches both model IDs and names
+- Fuzzy matching for partial terms
+- Formatted table output with Rich
+
+**Parameters:**
+- `query`: Search term (required)
+- `--show_pricing`: Display pricing columns (default: True)
+- `--show_bot_info`: Include creator and description (default: False)
+- `--verbose`: Enable detailed logging
+
+**Sample output:**
+```
+                Models matching 'claude'                
+┏━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┓
+┃ ID              ┃ Created    ┃ Input ┃ Output ┃ Pricing             ┃
+┡━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━┩
+│ Claude-3-Opus   │ 2024-02-29 │ text  │ text   │ 15 points/message  │
+│ Claude-3-Sonnet │ 2024-03-04 │ text  │ text   │ 10 points/message  │
+└─────────────────┴────────────┴───────┴────────┴─────────────────────┘
+Found 2 models
+```
+
+#### `list`
+List all available models with summary statistics.
+
+```bash
+# Show model summary
+virginia-clemm-poe list
+
+# Show only models with pricing
+virginia-clemm-poe list --with_pricing
+
+# Limit results
+virginia-clemm-poe list --limit 10
+
+# Verbose listing
+virginia-clemm-poe list --verbose
+```
+
+**Parameters:**
+- `--with_pricing`: Filter to models with pricing data
+- `--limit`: Maximum number of models to show
+- `--verbose`: Enable detailed logging
+
+**Sample output:**
+```
+          Poe Models Summary           
+┏━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓
+┃ Total Models ┃ With Pricing ┃ Need Update ┃
+┡━━━━━━━━━━━━━━╇━━━━━━━━━━━━━╇━━━━━━━━━━━━━┩
+│ 244          │ 239          │ 5           │
+└──────────────┴─────────────┴─────────────┘
+
+Showing 244 models:
+✓ Claude-3-Opus
+✓ Claude-3-Sonnet
+✗ NewModel-Beta
+...
+```
+
+## Environment Variables
+
+The CLI respects these environment variables:
+
+| Variable | Description | Default |
+|----------|-------------|---------|
+| `POE_API_KEY` | Your Poe API key (required) | None |
+| `VCP_HEADLESS` | Run browser in headless mode | `true` |
+| `VCP_TIMEOUT` | Browser timeout in milliseconds | `30000` |
+| `VCP_LOG_LEVEL` | Logging level (DEBUG, INFO, WARNING, ERROR) | `INFO` |
+| `VCP_CACHE_DIR` | Cache directory location | Platform default |
+
+Example configuration:
+```bash
+export POE_API_KEY="your_poe_api_key_here"
+export VCP_LOG_LEVEL="DEBUG"
+export VCP_TIMEOUT="60000"
+virginia-clemm-poe update --verbose
+```
+
+## Common Workflows
+
+### Initial Setup Workflow
+
+```bash
+# 1. Install package
+pip install virginia-clemm-poe
+
+# 2. Set up browser
+virginia-clemm-poe setup
+
+# 3. Set API key
+export POE_API_KEY="your_api_key_here"
+
+# 4. Verify configuration
+virginia-clemm-poe status
+
+# 5. Fetch initial data
+virginia-clemm-poe update
+
+# 6. Search for models
+virginia-clemm-poe search claude
+```
+
+### Daily Maintenance Workflow
+
+```bash
+# Check system health
+virginia-clemm-poe status
+
+# Update changed models only (fast)
+virginia-clemm-poe update --pricing
+
+# Search for new models
+virginia-clemm-poe search "new"
+
+# Check data coverage
+virginia-clemm-poe list
+```
+
+### Research Workflow
+
+```bash
+# Update all data
+virginia-clemm-poe update --all --force
+
+# Find models by capability
+virginia-clemm-poe search "vision" --show_bot_info
+virginia-clemm-poe search "code" --show_bot_info
+
+# Get comprehensive model list
+virginia-clemm-poe list --with_pricing > models.txt
+
+# Generate pricing comparison
+virginia-clemm-poe search "claude" > claude_models.txt
+virginia-clemm-poe search "gpt" > gpt_models.txt
+```
+
+### Troubleshooting Workflow
+
+```bash
+# Run comprehensive diagnostics
+virginia-clemm-poe doctor
+
+# Clear cache if issues persist
+virginia-clemm-poe clear-cache
+
+# Re-setup browser
+virginia-clemm-poe setup --verbose
+
+# Test with single model update
+virginia-clemm-poe update --force --verbose
+
+# Check cache performance
+virginia-clemm-poe cache
+```
+
+## Output Formats and Styling
+
+The CLI uses Rich for beautiful terminal output:
+
+### Table Formatting
+- **Borders**: Unicode box-drawing characters
+- **Colors**: Syntax highlighting for different data types
+- **Alignment**: Smart column alignment based on content
+- **Wrapping**: Automatic text wrapping for long descriptions
+
+### Status Indicators
+- ✅ **Green checkmark**: Success/available
+- ❌ **Red X**: Error/unavailable  
+- ⚠️ **Yellow warning**: Caution/needs attention
+- 🔄 **Blue info**: Processing/informational
+
+### Progress Indicators
+- Spinner animations for long operations
+- Progress bars for batch updates
+- Real-time status updates during scraping
+
+## Automation and Scripting
+
+### Exit Codes
+
+Commands return standard exit codes for automation:
+- `0`: Success
+- `1`: Error or failure
+- `2`: Invalid arguments
+
+### JSON Output
+
+Some commands support JSON output for programmatic use:
+
+```bash
+# Export model data as JSON (planned feature)
+virginia-clemm-poe list --format json > models.json
+
+# Search with JSON output (planned feature)
+virginia-clemm-poe search claude --format json
+```
+
+### Batch Operations
+
+```bash
+#!/bin/bash
+# batch_update.sh - Update specific model categories
+
+models=("claude" "gpt" "gemini")
+
+for model_type in "${models[@]}"; do
+    echo "Updating $model_type models..."
+    virginia-clemm-poe search "$model_type" 
+    echo "Found models for $model_type"
+done
+```
+
+### CI/CD Integration
+
+```yaml
+# .github/workflows/model-data.yml
+name: Update Model Data
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'  # Weekly on Monday at 6 AM
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+          
+      - name: Install package
+        run: pip install virginia-clemm-poe
+        
+      - name: Setup browser
+        run: virginia-clemm-poe setup
+        
+      - name: Update model data
+        env:
+          POE_API_KEY: ${{ secrets.POE_API_KEY }}
+        run: virginia-clemm-poe update --all
+        
+      - name: Check status
+        run: virginia-clemm-poe status
+```
+
+## Performance Tips
+
+### Optimization Strategies
+
+1. **Selective Updates**: Use `--pricing` or `--info` for faster updates
+2. **Cache Management**: Monitor cache hit rates with `cache` command
+3. **Incremental Updates**: Avoid `--force` unless necessary
+4. **Network Optimization**: Increase timeout for slow connections
+
+### Resource Management
+
+```bash
+# Monitor resource usage during updates
+export VCP_LOG_LEVEL="DEBUG"
+virginia-clemm-poe update --verbose
+
+# Optimize for slow networks
+export VCP_TIMEOUT="120000"  # 2 minutes
+virginia-clemm-poe update
+
+# Reduce memory usage
+virginia-clemm-poe clear-cache --browser
+virginia-clemm-poe update --pricing  # Only update pricing
+```
+
+### Error Recovery
+
+```bash
+# Automatic retry script
+#!/bin/bash
+MAX_RETRIES=3
+RETRY_COUNT=0
+
+while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+    virginia-clemm-poe update
+    if [ $? -eq 0 ]; then
+        echo "Update successful"
+        exit 0
+    fi
+    
+    RETRY_COUNT=$((RETRY_COUNT + 1))
+    echo "Retry $RETRY_COUNT/$MAX_RETRIES"
+    sleep 30
+done
+
+echo "Update failed after $MAX_RETRIES retries"
+exit 1
+```
+
+## Configuration Files
+
+### Default Locations
+
+The CLI stores configuration in platform-appropriate locations:
+
+**Linux/macOS:**
+- Config: `~/.config/virginia-clemm-poe/config.json`
+- Data: `~/.local/share/virginia-clemm-poe/`
+- Cache: `~/.cache/virginia-clemm-poe/`
+- Logs: `~/.local/share/virginia-clemm-poe/logs/`
+
+**Windows:**
+- Config: `%APPDATA%\virginia-clemm-poe\config.json`
+- Data: `%LOCALAPPDATA%\virginia-clemm-poe\`
+- Cache: `%LOCALAPPDATA%\virginia-clemm-poe\cache\`
+- Logs: `%LOCALAPPDATA%\virginia-clemm-poe\logs\`
+
+### Configuration Schema
+
+```json
+{
+  "api_key": "your_poe_api_key",
+  "browser": {
+    "headless": true,
+    "timeout": 30000,
+    "debug_port": 9222,
+    "user_agent": "custom_user_agent"
+  },
+  "cache": {
+    "enabled": true,
+    "max_age": 3600,
+    "max_size": 1000
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "~/.local/share/virginia-clemm-poe/logs/app.log",
+    "max_size": "10MB",
+    "backup_count": 5
+  }
+}
+```
+
+## Advanced Usage
+
+### Custom Browser Configuration
+
+```bash
+# Use custom Chrome installation
+export CHROME_PATH="/path/to/chrome"
+virginia-clemm-poe setup
+
+# Use custom user data directory
+export VCP_USER_DATA_DIR="/path/to/userdata"
+virginia-clemm-poe update
+```
+
+### Logging Configuration
+
+```bash
+# Enable debug logging
+export VCP_LOG_LEVEL="DEBUG"
+virginia-clemm-poe update --verbose 2>&1 | tee update.log
+
+# Log to custom file
+export VCP_LOG_FILE="/path/to/custom.log"
+virginia-clemm-poe update
+```
+
+### Network Configuration
+
+```bash
+# Configure proxy
+export HTTP_PROXY="http://proxy.example.com:8080"
+export HTTPS_PROXY="http://proxy.example.com:8080"
+virginia-clemm-poe update
+
+# Custom timeouts
+export VCP_TIMEOUT="60000"  # 60 seconds
+export VCP_NETWORK_TIMEOUT="30000"  # 30 seconds
+virginia-clemm-poe update
+```
+
+This comprehensive CLI reference provides everything you need to effectively use Virginia Clemm Poe from the command line, whether for interactive exploration or automated workflows.
+</document_content>
+</document>
+
+<document index="31">
+<source>src_docs/md/chapter6-models.md</source>
+<document_content>
+# Chapter 6: Data Models and Structure
+
+## Overview
+
+Virginia Clemm Poe uses Pydantic models to provide type-safe, validated data structures for all model information. This chapter explains the data models, their relationships, and how to work with them effectively.
+
+## Core Data Models
+
+### Architecture
+
+Defines what types of data a Poe model can accept and produce.
+
+```python
+from virginia_clemm_poe.models import Architecture
+
+# Example: Multimodal text model
+arch = Architecture(
+    input_modalities=["text", "image"],
+    output_modalities=["text"],
+    modality="multimodal->text"
+)
+
+print(f"Inputs: {arch.input_modalities}")    # ["text", "image"]
+print(f"Outputs: {arch.output_modalities}")  # ["text"]
+print(f"Mode: {arch.modality}")              # "multimodal->text"
+```
+
+**Properties:**
+- `input_modalities: list[str]` - Supported input types
+- `output_modalities: list[str]` - Supported output types  
+- `modality: str` - Primary modality description
+
+**Common Modality Types:**
+- `"text->text"` - Pure text models (most common)
+- `"multimodal->text"` - Accept text + images, output text
+- `"text->image"` - Text-to-image generators
+- `"text->video"` - Text-to-video generators
+
+### PricingDetails
+
+Captures all possible pricing structures found on Poe.com model pages.
+
+```python
+from virginia_clemm_poe.models import PricingDetails
+
+# Example: Standard text model pricing
+pricing_details = PricingDetails(
+    input_text="10 points/1k tokens",      # Input cost
+    bot_message="5 points/message",         # Output cost
+    initial_points_cost="100 points"       # Upfront cost
+)
+
+# Access pricing information
+print(f"Input cost: {pricing_details.input_text}")
+print(f"Output cost: {pricing_details.bot_message}")
+```
+
+**Standard Pricing Fields:**
+- `input_text` (alias: "Input (text)") - Cost per text input
+- `input_image` (alias: "Input (image)") - Cost per image input
+- `bot_message` (alias: "Bot message") - Cost per bot response
+- `chat_history` (alias: "Chat history") - Chat history access cost
+- `chat_history_cache_discount` - Caching discount rate
+
+**Alternative Pricing Fields:**
+- `total_cost` - Flat rate pricing
+- `image_output` - Cost per generated image
+- `video_output` - Cost per generated video
+- `text_input` - Alternative text input format
+- `per_message` - Cost per message interaction
+- `finetuning` - Model fine-tuning cost
+- `initial_points_cost` - Upfront cost from bot card
+
+**Field Aliases:**
+The model uses Pydantic field aliases to match exact text from Poe.com:
+
+```python
+# These are equivalent:
+pricing.input_text
+pricing.model_dump(by_alias=True)["Input (text)"]
+```
+
+### Pricing
+
+Combines pricing details with a timestamp for data freshness tracking.
+
+```python
+from datetime import datetime, timezone
+from virginia_clemm_poe.models import Pricing, PricingDetails
+
+pricing = Pricing(
+    checked_at=datetime.now(timezone.utc),
+    details=PricingDetails(input_text="10 points/1k tokens")
+)
+
+# Check data age
+age = datetime.now(timezone.utc) - pricing.checked_at
+print(f"Pricing data is {age.days} days old")
+```
+
+**Properties:**
+- `checked_at: datetime` - UTC timestamp of last scrape
+- `details: PricingDetails` - Complete pricing breakdown
+
+### BotInfo
+
+Creator and description metadata scraped from Poe.com bot info cards.
+
+```python
+from virginia_clemm_poe.models import BotInfo
+
+bot_info = BotInfo(
+    creator="@anthropic",
+    description="Claude is an AI assistant created by Anthropic",
+    description_extra="Powered by Claude-3 Sonnet"
+)
+
+print(f"Created by: {bot_info.creator}")
+print(f"Description: {bot_info.description}")
+```
+
+**Properties:**
+- `creator: str | None` - Bot creator handle (includes "@" prefix)
+- `description: str | None` - Main bot description text
+- `description_extra: str | None` - Additional details or disclaimers
+
+### PoeModel
+
+The main model class representing a complete Poe.com model.
+
+```python
+from virginia_clemm_poe.models import PoeModel, Architecture, Pricing, BotInfo
+
+model = PoeModel(
+    id="Claude-3-Opus",
+    created=1709574492024,
+    owned_by="anthropic",
+    root="Claude-3-Opus",
+    architecture=Architecture(
+        input_modalities=["text"],
+        output_modalities=["text"],
+        modality="text->text"
+    ),
+    pricing=Pricing(...),
+    bot_info=BotInfo(...)
+)
+```
+
+**Core Properties:**
+- `id: str` - Unique model identifier
+- `object: str` - Always "model" (API compatibility)
+- `created: int` - Unix timestamp of creation
+- `owned_by: str` - Organization owning the model
+- `root: str` - Root model name
+- `parent: str | None` - Parent model for variants
+- `architecture: Architecture` - Capability information
+
+**Enhanced Properties:**
+- `pricing: Pricing | None` - Scraped pricing data
+- `pricing_error: str | None` - Error if pricing scraping failed
+- `bot_info: BotInfo | None` - Scraped bot metadata
+
+**Utility Methods:**
+
+```python
+# Check if model has pricing data
+if model.has_pricing():
+    print("Pricing available")
+
+# Check if model needs pricing update
+if model.needs_pricing_update():
+    print("Needs pricing update")
+
+# Get primary cost for display
+primary_cost = model.get_primary_cost()
+if primary_cost:
+    print(f"Cost: {primary_cost}")
+```
+
+### ModelCollection
+
+Container for working with multiple models with search capabilities.
+
+```python
+from virginia_clemm_poe.models import ModelCollection
+
+collection = ModelCollection(data=[model1, model2, model3])
+
+# Search for models
+claude_models = collection.search("claude")
+
+# Get specific model
+model = collection.get_by_id("Claude-3-Opus")
+```
+
+**Properties:**
+- `object: str` - Always "list" (API compatibility)
+- `data: list[PoeModel]` - List of all models
+
+**Methods:**
+- `get_by_id(model_id)` - Exact ID lookup
+- `search(query)` - Case-insensitive substring search
+
+## Data Relationships
+
+### Hierarchy
+
+```
+ModelCollection
+├── data: list[PoeModel]
+    ├── architecture: Architecture
+    │   ├── input_modalities: list[str]
+    │   ├── output_modalities: list[str]
+    │   └── modality: str
+    ├── pricing: Pricing | None
+    │   ├── checked_at: datetime
+    │   └── details: PricingDetails
+    │       ├── input_text: str | None
+    │       ├── bot_message: str | None
+    │       └── ... (other pricing fields)
+    └── bot_info: BotInfo | None
+        ├── creator: str | None
+        ├── description: str | None
+        └── description_extra: str | None
+```
+
+### Data Sources
+
+1. **API Data** (from Poe API):
+   - `id`, `created`, `owned_by`, `root`, `parent`
+   - `architecture` information
+
+2. **Scraped Data** (from Poe website):
+   - `pricing` details and timestamp
+   - `bot_info` metadata
+   - `pricing_error` if scraping failed
+
+## Working with Models
+
+### Type Safety
+
+All models use Pydantic for runtime validation:
+
+```python
+from virginia_clemm_poe.models import PoeModel
+
+# This will raise ValidationError
+try:
+    invalid_model = PoeModel(
+        id="test",
+        created="not_a_number",  # Should be int
+        owned_by="test",
+        root="test",
+        architecture="invalid"   # Should be Architecture object
+    )
+except ValidationError as e:
+    print(f"Validation error: {e}")
+```
+
+### JSON Serialization
+
+Models can be serialized to/from JSON:
+
+```python
+# Serialize to JSON
+model_json = model.model_dump_json()
+
+# Deserialize from JSON
+model_dict = json.loads(model_json)
+restored_model = PoeModel(**model_dict)
+
+# With aliases (matches website field names)
+model_with_aliases = model.model_dump(by_alias=True)
+```
+
+### Filtering and Queries
+
+Common patterns for working with model data:
+
+```python
+from virginia_clemm_poe import api
+
+# Get all models
+models = api.get_all_models()
+
+# Filter by capability
+text_models = [m for m in models if "text" in m.architecture.input_modalities]
+image_models = [m for m in models if "image" in m.architecture.input_modalities]
+
+# Filter by provider
+anthropic_models = [m for m in models if m.owned_by == "anthropic"]
+openai_models = [m for m in models if m.owned_by == "openai"]
+
+# Filter by pricing availability
+priced_models = [m for m in models if m.has_pricing()]
+free_models = [m for m in models if m.pricing and "free" in m.get_primary_cost().lower()]
+
+# Filter by creation date
+import datetime
+recent_models = [m for m in models if m.created > 1700000000]  # After Nov 2023
+```
+
+### Advanced Queries
+
+```python
+# Find cheapest models (simplified cost extraction)
+def extract_numeric_cost(cost_str):
+    """Extract numeric cost from pricing string."""
+    if not cost_str:
+        return float('inf')
+    
+    # Simple extraction - matches "X points" patterns
+    import re
+    match = re.search(r'(\d+(?:\.\d+)?)', cost_str)
+    return float(match.group(1)) if match else float('inf')
+
+priced_models = [m for m in models if m.has_pricing()]
+cheapest_models = sorted(
+    priced_models,
+    key=lambda m: extract_numeric_cost(m.get_primary_cost())
+)[:10]
+
+# Find models by capability combination
+multimodal_models = [
+    m for m in models 
+    if len(m.architecture.input_modalities) > 1
+]
+
+# Group models by provider
+from collections import defaultdict
+by_provider = defaultdict(list)
+for model in models:
+    by_provider[model.owned_by].append(model)
+
+for provider, provider_models in by_provider.items():
+    print(f"{provider}: {len(provider_models)} models")
+```
+
+## Data File Structure
+
+The local dataset is stored as JSON in `poe_models.json`:
+
+```json
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "Claude-3-Opus",
+      "object": "model",
+      "created": 1709574492024,
+      "owned_by": "anthropic",
+      "permission": [],
+      "root": "Claude-3-Opus",
+      "parent": null,
+      "architecture": {
+        "input_modalities": ["text"],
+        "output_modalities": ["text"],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2024-03-15T10:30:00Z",
+        "details": {
+          "Input (text)": "15 points/message",
+          "initial_points_cost": null
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@anthropic",
+        "description": "Claude-3 Opus is Anthropic's most powerful model",
+        "description_extra": null
+      }
+    }
+  ]
+}
+```
+
+### File Management
+
+```python
+from virginia_clemm_poe.config import DATA_FILE_PATH
+import json
+
+# Read raw JSON data
+with open(DATA_FILE_PATH) as f:
+    raw_data = json.load(f)
+
+# Load into Pydantic models
+from virginia_clemm_poe.models import ModelCollection
+collection = ModelCollection(**raw_data)
+
+# Save back to JSON
+with open(DATA_FILE_PATH, 'w') as f:
+    json.dump(collection.model_dump(), f, indent=2)
+```
+
+## Validation and Error Handling
+
+### Model Validation
+
+```python
+from pydantic import ValidationError
+from virginia_clemm_poe.models import PoeModel
+
+def safe_model_creation(data_dict):
+    """Safely create model with error handling."""
+    try:
+        return PoeModel(**data_dict)
+    except ValidationError as e:
+        print(f"Validation failed: {e}")
+        return None
+
+# Example usage
+raw_data = {"id": "test", "created": "invalid"}
+model = safe_model_creation(raw_data)  # Returns None
+```
+
+### Data Integrity Checks
+
+```python
+def validate_collection_integrity(collection: ModelCollection):
+    """Validate model collection data integrity."""
+    issues = []
+    
+    for i, model in enumerate(collection.data):
+        # Check required fields
+        if not model.id:
+            issues.append(f"Model {i}: Missing ID")
+        
+        # Check pricing consistency
+        if model.pricing and model.pricing_error:
+            issues.append(f"Model {model.id}: Has both pricing and error")
+        
+        # Check architecture validity
+        if not model.architecture.input_modalities:
+            issues.append(f"Model {model.id}: No input modalities")
+    
+    return issues
+```
+
+## Performance Considerations
+
+### Memory Usage
+
+```python
+import sys
+from virginia_clemm_poe import api
+
+# Check memory usage of model collection
+collection = api.load_models()
+size_bytes = sys.getsizeof(collection)
+model_count = len(collection.data)
+
+print(f"Collection size: {size_bytes:,} bytes")
+print(f"Per model: {size_bytes / model_count:.1f} bytes")
+```
+
+### Efficient Queries
+
+```python
+# Use generator expressions for large datasets
+def find_models_by_criteria(models, criteria_func):
+    """Memory-efficient model filtering."""
+    return (model for model in models if criteria_func(model))
+
+# Example: Find expensive models without loading all into memory
+expensive_models = find_models_by_criteria(
+    models,
+    lambda m: m.has_pricing() and extract_numeric_cost(m.get_primary_cost()) > 100
+)
+
+# Process one at a time
+for model in expensive_models:
+    print(f"Expensive: {model.id}")
+```
+
+## Custom Model Extensions
+
+### Extending PoeModel
+
+```python
+from virginia_clemm_poe.models import PoeModel
+from pydantic import computed_field
+
+class ExtendedPoeModel(PoeModel):
+    """Extended model with custom computed properties."""
+    
+    @computed_field
+    @property
+    def is_multimodal(self) -> bool:
+        """Check if model supports multiple input types."""
+        return len(self.architecture.input_modalities) > 1
+    
+    @computed_field
+    @property
+    def cost_per_token_estimate(self) -> float | None:
+        """Estimate cost per token (simplified)."""
+        if not self.pricing:
+            return None
+        
+        primary_cost = self.get_primary_cost()
+        if not primary_cost or "points" not in primary_cost:
+            return None
+        
+        # Extract points and estimate
+        import re
+        match = re.search(r'(\d+(?:\.\d+)?)\s*points', primary_cost)
+        if match:
+            return float(match.group(1)) / 1000  # Assume per 1k tokens
+        
+        return None
+
+# Use extended model
+def upgrade_to_extended(standard_model: PoeModel) -> ExtendedPoeModel:
+    """Convert standard model to extended version."""
+    return ExtendedPoeModel(**standard_model.model_dump())
+```
+
+### Custom Collections
+
+```python
+from virginia_clemm_poe.models import ModelCollection, PoeModel
+
+class SmartModelCollection(ModelCollection):
+    """Enhanced collection with additional query methods."""
+    
+    def get_by_provider(self, provider: str) -> list[PoeModel]:
+        """Get all models from a specific provider."""
+        return [m for m in self.data if m.owned_by.lower() == provider.lower()]
+    
+    def get_by_capability(self, input_type: str = None, output_type: str = None) -> list[PoeModel]:
+        """Get models by input/output capabilities."""
+        results = self.data
+        
+        if input_type:
+            results = [m for m in results if input_type in m.architecture.input_modalities]
+        
+        if output_type:
+            results = [m for m in results if output_type in m.architecture.output_modalities]
+        
+        return results
+    
+    def get_price_range(self, min_cost: float = None, max_cost: float = None) -> list[PoeModel]:
+        """Get models within a price range."""
+        results = []
+        
+        for model in self.data:
+            if not model.has_pricing():
+                continue
+            
+            cost = extract_numeric_cost(model.get_primary_cost())
+            if cost == float('inf'):
+                continue
+            
+            if min_cost is not None and cost < min_cost:
+                continue
+            
+            if max_cost is not None and cost > max_cost:
+                continue
+            
+            results.append(model)
+        
+        return results
+```
+
+This comprehensive guide to the data models provides everything you need to understand and work with Virginia Clemm Poe's type-safe, validated data structures efficiently.
+</document_content>
+</document>
+
+<document index="32">
+<source>src_docs/md/chapter7-browser.md</source>
+<document_content>
+# Chapter 7: Browser Management and Web Scraping
+
+## Overview
+
+Virginia Clemm Poe uses sophisticated browser automation to scrape pricing and metadata from Poe.com that isn't available through the API. This chapter explains the browser management system, web scraping techniques, and how to troubleshoot automation issues.
+
+## Browser Architecture
+
+### PlaywrightAuthor Integration
+
+The package uses the external [PlaywrightAuthor](https://github.com/sswam/playwrightauthor) package for robust browser management:
+
+```python
+from virginia_clemm_poe.browser_manager import BrowserManager
+
+# Initialize browser manager
+manager = BrowserManager(debug_port=9222, verbose=True)
+
+# Get browser instance (handled automatically)
+browser = await manager.get_browser()
+```
+
+**Key benefits of PlaywrightAuthor:**
+- Automatic Chrome for Testing installation
+- Robust browser lifecycle management
+- DevTools Protocol connection handling
+- Cross-platform compatibility
+
+### Browser Pool Architecture
+
+For efficient concurrent scraping, the package uses a browser pool system:
+
+```python
+from virginia_clemm_poe.browser_pool import BrowserPool, get_global_pool
+
+# Get global browser pool instance
+pool = get_global_pool()
+
+# Use browser from pool
+async with pool.get_browser() as browser:
+    page = await browser.new_page()
+    # ... scraping operations
+```
+
+**Pool Features:**
+- **Connection Reuse**: Browsers stay alive between operations
+- **Concurrent Scraping**: Multiple pages can run simultaneously
+- **Resource Management**: Automatic cleanup and memory management
+- **Error Recovery**: Handles browser crashes and restarts
+
+## Scraping Pipeline
+
+### Data Collection Process
+
+1. **API Data Fetching**: Get basic model information from Poe API
+2. **Browser Launch**: Start Chrome with DevTools Protocol
+3. **Page Navigation**: Visit each model's Poe.com page
+4. **Content Extraction**: Parse pricing tables and bot info cards
+5. **Data Validation**: Validate scraped data with Pydantic models
+6. **Storage**: Save enriched dataset to local JSON file
+
+### Scraping Targets
+
+#### Pricing Information
+
+Extracted from pricing tables on model pages:
+
+```html
+<!-- Example pricing table structure -->
+<table class="pricing-table">
+  <tr>
+    <td>Input (text)</td>
+    <td>10 points/1k tokens</td>
+  </tr>
+  <tr>
+    <td>Bot message</td>
+    <td>5 points/message</td>
+  </tr>
+</table>
+```
+
+**Pricing Fields Scraped:**
+- Input costs (text, image)
+- Output costs (messages, images, video)
+- Special rates (cache discounts, fine-tuning)
+- Initial point costs from bot cards
+
+#### Bot Information
+
+Extracted from bot info cards and description sections:
+
+```html
+<!-- Example bot info structure -->
+<div class="bot-info-card">
+  <div class="creator">@anthropic</div>
+  <div class="description">Claude is an AI assistant...</div>
+  <div class="disclaimer">Powered by Claude-3 Sonnet</div>
+</div>
+```
+
+**Bot Data Scraped:**
+- Creator handles (e.g., "@anthropic", "@openai")
+- Main descriptions and capabilities
+- Additional disclaimers or details
+
+## Browser Management Code
+
+### BrowserManager Class
+
+```python
+from virginia_clemm_poe.browser_manager import BrowserManager
+
+class BrowserManager:
+    """Manages browser lifecycle using playwrightauthor."""
+    
+    def __init__(self, debug_port: int = 9222, verbose: bool = False):
+        self.debug_port = debug_port
+        self.verbose = verbose
+        self._browser = None
+    
+    async def get_browser(self):
+        """Get browser instance with automatic setup."""
+        if self._browser is None or not self._browser.is_connected():
+            from playwrightauthor import get_browser
+            self._browser = await get_browser(
+                headless=True,
+                port=self.debug_port,
+                verbose=self.verbose
+            )
+        return self._browser
+    
+    @staticmethod
+    async def setup_chrome():
+        """Ensure Chrome is installed."""
+        from playwrightauthor.browser_manager import ensure_browser
+        ensure_browser(verbose=True)
+        return True
+```
+
+### Browser Pool Implementation
+
+```python
+from virginia_clemm_poe.browser_pool import BrowserPool
+
+# Create browser pool
+pool = BrowserPool(max_browsers=3, debug_port_start=9222)
+
+# Use pool for concurrent operations
+async def scrape_models_concurrently(model_ids):
+    tasks = []
+    
+    for model_id in model_ids:
+        task = scrape_single_model(pool, model_id)
+        tasks.append(task)
+    
+    results = await asyncio.gather(*tasks, return_exceptions=True)
+    return results
+
+async def scrape_single_model(pool, model_id):
+    async with pool.get_browser() as browser:
+        page = await browser.new_page()
+        try:
+            # Navigate and scrape
+            await page.goto(f"https://poe.com/{model_id}")
+            pricing_data = await extract_pricing(page)
+            return pricing_data
+        finally:
+            await page.close()
+```
+
+## Scraping Techniques
+
+### Page Navigation
+
+```python
+async def navigate_to_model_page(page: Page, model_id: str):
+    """Navigate to model page with error handling."""
+    url = f"https://poe.com/{model_id}"
+    
+    try:
+        # Navigate with timeout
+        await page.goto(url, timeout=30000, wait_until="networkidle")
+        
+        # Wait for page to fully load
+        await page.wait_for_load_state("domcontentloaded")
+        
+        # Handle potential modals or overlays
+        await dismiss_modals(page)
+        
+    except PlaywrightTimeoutError:
+        logger.warning(f"Timeout navigating to {url}")
+        raise
+    except Exception as e:
+        logger.error(f"Navigation error for {model_id}: {e}")
+        raise
+```
+
+### Modal and Dialog Handling
+
+```python
+async def dismiss_modals(page: Page):
+    """Dismiss any modal dialogs that might block scraping."""
+    
+    # Common modal selectors
+    modal_selectors = [
+        "[data-testid='modal-close']",
+        ".modal-close",
+        "[aria-label='Close']",
+        "button:has-text('Close')",
+        "button:has-text('×')"
+    ]
+    
+    for selector in modal_selectors:
+        try:
+            modal = await page.query_selector(selector)
+            if modal and await modal.is_visible():
+                await modal.click()
+                await page.wait_for_timeout(1000)  # Wait for animation
+                logger.debug(f"Dismissed modal: {selector}")
+                break
+        except Exception:
+            continue  # Try next selector
+```
+
+### Data Extraction
+
+#### Pricing Table Scraping
+
+```python
+async def extract_pricing_data(page: Page) -> dict[str, str]:
+    """Extract pricing information from pricing tables."""
+    pricing_data = {}
+    
+    # Look for pricing tables
+    tables = await page.query_selector_all("table")
+    
+    for table in tables:
+        rows = await table.query_selector_all("tr")
+        
+        for row in rows:
+            cells = await row.query_selector_all("td")
+            
+            if len(cells) >= 2:
+                # Get label and value
+                label_element = cells[0]
+                value_element = cells[1]
+                
+                label = await label_element.inner_text()
+                value = await value_element.inner_text()
+                
+                # Clean and normalize
+                label = label.strip()
+                value = value.strip()
+                
+                if label and value:
+                    pricing_data[label] = value
+    
+    return pricing_data
+```
+
+#### Bot Info Extraction
+
+```python
+async def extract_bot_info(page: Page) -> dict[str, str]:
+    """Extract bot information from info cards."""
+    bot_info = {}
+    
+    # Look for creator information
+    creator_selectors = [
+        "[data-testid='bot-creator']",
+        ".bot-creator",
+        "span:has-text('@')"
+    ]
+    
+    for selector in creator_selectors:
+        try:
+            element = await page.query_selector(selector)
+            if element:
+                creator = await element.inner_text()
+                if creator.startswith('@'):
+                    bot_info['creator'] = creator
+                    break
+        except Exception:
+            continue
+    
+    # Look for description
+    description_selectors = [
+        "[data-testid='bot-description']",
+        ".bot-description",
+        ".model-description"
+    ]
+    
+    for selector in description_selectors:
+        try:
+            element = await page.query_selector(selector)
+            if element:
+                description = await element.inner_text()
+                if description:
+                    bot_info['description'] = description.strip()
+                    break
+        except Exception:
+            continue
+    
+    return bot_info
+```
+
+### Error Handling and Resilience
+
+```python
+async def scrape_with_retry(page: Page, model_id: str, max_retries: int = 3):
+    """Scrape model data with retry logic."""
+    
+    for attempt in range(max_retries):
+        try:
+            # Navigate to page
+            await navigate_to_model_page(page, model_id)
+            
+            # Extract data
+            pricing_data = await extract_pricing_data(page)
+            bot_info = await extract_bot_info(page)
+            
+            return {
+                'pricing': pricing_data,
+                'bot_info': bot_info,
+                'scraped_at': datetime.utcnow()
+            }
+            
+        except Exception as e:
+            if attempt < max_retries - 1:
+                logger.warning(f"Scraping attempt {attempt + 1} failed for {model_id}: {e}")
+                await asyncio.sleep(2 ** attempt)  # Exponential backoff
+                continue
+            else:
+                logger.error(f"All scraping attempts failed for {model_id}: {e}")
+                return {
+                    'pricing': {},
+                    'bot_info': {},
+                    'error': str(e)
+                }
+```
+
+## Performance Optimization
+
+### Concurrent Scraping
+
+```python
+async def scrape_models_batch(model_ids: list[str], batch_size: int = 5):
+    """Scrape models in controlled batches."""
+    
+    results = []
+    pool = get_global_pool()
+    
+    # Process in batches to avoid overwhelming the server
+    for i in range(0, len(model_ids), batch_size):
+        batch = model_ids[i:i + batch_size]
+        
+        # Create tasks for batch
+        tasks = [scrape_single_model(pool, model_id) for model_id in batch]
+        
+        # Execute batch with timeout
+        batch_results = await asyncio.gather(*tasks, return_exceptions=True)
+        results.extend(batch_results)
+        
+        # Pause between batches
+        if i + batch_size < len(model_ids):
+            await asyncio.sleep(1)
+    
+    return results
+```
+
+### Memory Management
+
+```python
+from virginia_clemm_poe.utils.memory import MemoryManagedOperation
+
+async def memory_efficient_scraping(model_ids: list[str]):
+    """Scrape with memory monitoring and management."""
+    
+    async with MemoryManagedOperation("model_scraping") as mem_op:
+        results = []
+        
+        for i, model_id in enumerate(model_ids):
+            # Check memory usage
+            if mem_op.should_gc():
+                await mem_op.cleanup()
+            
+            # Scrape model
+            result = await scrape_single_model_safe(model_id)
+            results.append(result)
+            
+            # Log progress
+            if i % 10 == 0:
+                mem_op.log_progress(f"Scraped {i}/{len(model_ids)} models")
+        
+        return results
+```
+
+### Caching Strategy
+
+```python
+from virginia_clemm_poe.utils.cache import cached, get_scraping_cache
+
+@cached(cache=get_scraping_cache(), ttl=3600, key_prefix="model_scrape")
+async def scrape_model_cached(model_id: str) -> dict:
+    """Scrape model with caching to avoid repeated requests."""
+    pool = get_global_pool()
+    
+    async with pool.get_browser() as browser:
+        page = await browser.new_page()
+        try:
+            return await scrape_model_data(page, model_id)
+        finally:
+            await page.close()
+```
+
+## Configuration and Customization
+
+### Browser Settings
+
+```python
+# Environment variables for browser configuration
+import os
+
+browser_config = {
+    'headless': os.getenv('VCP_HEADLESS', 'true').lower() == 'true',
+    'timeout': int(os.getenv('VCP_TIMEOUT', '30000')),
+    'debug_port': int(os.getenv('VCP_DEBUG_PORT', '9222')),
+    'user_agent': os.getenv('VCP_USER_AGENT', None),
+    'viewport': {
+        'width': int(os.getenv('VCP_VIEWPORT_WIDTH', '1920')),
+        'height': int(os.getenv('VCP_VIEWPORT_HEIGHT', '1080'))
+    }
+}
+```
+
+### Scraping Parameters
+
+```python
+# Timing configuration
+TIMING_CONFIG = {
+    'navigation_timeout': 30000,    # Page navigation timeout
+    'load_timeout': 10000,         # Element load timeout
+    'pause_between_requests': 1,    # Delay between requests
+    'retry_delay': 2,              # Delay before retry
+    'modal_wait': 1,               # Wait after modal dismiss
+}
+
+# Selector configuration
+SELECTOR_CONFIG = {
+    'pricing_table': [
+        'table[data-testid="pricing"]',
+        '.pricing-table',
+        'table:has-text("Input")'
+    ],
+    'bot_creator': [
+        '[data-testid="bot-creator"]',
+        '.bot-creator',
+        'span:has-text("@")'
+    ],
+    'bot_description': [
+        '[data-testid="bot-description"]',
+        '.bot-description',
+        '.model-description'
+    ]
+}
+```
+
+## Troubleshooting Common Issues
+
+### Browser Connection Problems
+
+```python
+async def diagnose_browser_issues():
+    """Diagnose and report browser connectivity issues."""
+    
+    try:
+        # Test browser installation
+        from playwrightauthor.browser_manager import ensure_browser
+        browser_path, data_dir = ensure_browser(verbose=True)
+        print(f"✓ Browser found at: {browser_path}")
+        
+        # Test browser launch
+        manager = BrowserManager(verbose=True)
+        browser = await manager.get_browser()
+        print(f"✓ Browser connected: {browser.is_connected()}")
+        
+        # Test page creation
+        page = await browser.new_page()
+        await page.goto("https://poe.com")
+        print("✓ Page navigation successful")
+        
+        await page.close()
+        await manager.close()
+        
+    except Exception as e:
+        print(f"✗ Browser issue: {e}")
+        return False
+    
+    return True
+```
+
+### Scraping Failures
+
+```python
+async def debug_scraping_failure(model_id: str):
+    """Debug why scraping fails for a specific model."""
+    
+    pool = get_global_pool()
+    
+    async with pool.get_browser() as browser:
+        page = await browser.new_page()
+        
+        try:
+            # Enable request/response logging
+            page.on("request", lambda req: print(f"→ {req.method} {req.url}"))
+            page.on("response", lambda resp: print(f"← {resp.status} {resp.url}"))
+            
+            # Navigate with detailed logging
+            url = f"https://poe.com/{model_id}"
+            print(f"Navigating to: {url}")
+            
+            await page.goto(url, timeout=30000)
+            print("Navigation complete")
+            
+            # Take screenshot for debugging
+            await page.screenshot(path=f"debug_{model_id}.png")
+            print(f"Screenshot saved: debug_{model_id}.png")
+            
+            # Check for pricing table
+            pricing_tables = await page.query_selector_all("table")
+            print(f"Found {len(pricing_tables)} tables")
+            
+            # Check for bot info
+            creator_elements = await page.query_selector_all("span:has-text('@')")
+            print(f"Found {len(creator_elements)} potential creator elements")
+            
+            # Get page content for manual inspection
+            content = await page.content()
+            with open(f"debug_{model_id}.html", "w") as f:
+                f.write(content)
+            print(f"Page content saved: debug_{model_id}.html")
+            
+        finally:
+            await page.close()
+```
+
+### Performance Issues
+
+```python
+async def monitor_scraping_performance():
+    """Monitor and report scraping performance metrics."""
+    
+    from virginia_clemm_poe.utils.timeout import with_timeout
+    import time
+    
+    start_time = time.time()
+    model_count = 0
+    error_count = 0
+    
+    try:
+        # Sample a few models for performance testing
+        test_models = ["Claude-3-Opus", "GPT-4", "Claude-3-Sonnet"]
+        
+        for model_id in test_models:
+            model_start = time.time()
+            
+            try:
+                async with with_timeout(30.0):
+                    await scrape_single_model_safe(model_id)
+                
+                model_time = time.time() - model_start
+                print(f"✓ {model_id}: {model_time:.2f}s")
+                model_count += 1
+                
+            except Exception as e:
+                print(f"✗ {model_id}: {e}")
+                error_count += 1
+        
+        total_time = time.time() - start_time
+        success_rate = model_count / (model_count + error_count) * 100
+        avg_time = total_time / len(test_models)
+        
+        print(f"\nPerformance Summary:")
+        print(f"Total time: {total_time:.2f}s")
+        print(f"Average per model: {avg_time:.2f}s")
+        print(f"Success rate: {success_rate:.1f}%")
+        
+    except Exception as e:
+        print(f"Performance monitoring failed: {e}")
+```
+
+## Best Practices
+
+### Ethical Scraping
+
+1. **Rate Limiting**: Respect server resources with delays between requests
+2. **Error Handling**: Gracefully handle failures without overwhelming the server
+3. **User Agent**: Use appropriate user agent strings
+4. **Retry Logic**: Implement exponential backoff for retries
+
+### Resource Management
+
+1. **Browser Pooling**: Reuse browser instances to reduce overhead
+2. **Memory Monitoring**: Track memory usage and trigger cleanup
+3. **Connection Cleanup**: Always close pages and browsers properly
+4. **Timeout Handling**: Set reasonable timeouts to prevent hangs
+
+### Reliability
+
+1. **Error Recovery**: Handle network issues and browser crashes
+2. **Data Validation**: Validate scraped data before storage
+3. **Fallback Strategies**: Have backup selectors for critical elements
+4. **Logging**: Comprehensive logging for debugging and monitoring
+
+This comprehensive guide to browser management and web scraping provides the foundation for understanding and extending Virginia Clemm Poe's data collection capabilities.
+</document_content>
+</document>
+
+<document index="33">
+<source>src_docs/md/chapter8-configuration.md</source>
+<document_content>
+# Chapter 8: Configuration and Advanced Usage
+
+## Overview
+
+Virginia Clemm Poe provides extensive configuration options for customizing behavior, performance tuning, and integration with different environments. This chapter covers advanced configuration, custom integrations, and power-user features.
+
+## Configuration System
+
+### Configuration Hierarchy
+
+Configuration is loaded in order of precedence:
+
+1. **Command-line arguments** (highest priority)
+2. **Environment variables**
+3. **Configuration files**
+4. **Default values** (lowest priority)
+
+### Configuration File Locations
+
+**Linux/macOS:**
+```bash
+# Primary config file
+~/.config/virginia-clemm-poe/config.json
+
+# Alternative locations
+~/.virginia-clemm-poe/config.json
+./virginia-clemm-poe.json
+```
+
+**Windows:**
+```cmd
+# Primary config file
+%APPDATA%\virginia-clemm-poe\config.json
+
+# Alternative locations
+%USERPROFILE%\.virginia-clemm-poe\config.json
+.\virginia-clemm-poe.json
+```
+
+### Configuration Schema
+
+```json
+{
+  "api": {
+    "key": "your_poe_api_key",
+    "base_url": "https://api.poe.com/v2",
+    "timeout": 30,
+    "retry_count": 3,
+    "rate_limit": {
+      "requests_per_minute": 60,
+      "burst_limit": 10
+    }
+  },
+  "browser": {
+    "headless": true,
+    "debug_port_start": 9222,
+    "max_browsers": 3,
+    "timeout": 30000,
+    "user_agent": "virginia-clemm-poe/1.0",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "chrome_args": [
+      "--no-sandbox",
+      "--disable-dev-shm-usage"
+    ]
+  },
+  "scraping": {
+    "concurrent_limit": 5,
+    "pause_between_requests": 1.0,
+    "retry_delay": 2.0,
+    "max_retries": 3,
+    "selectors": {
+      "pricing_table": [
+        "table[data-testid='pricing']",
+        ".pricing-table"
+      ],
+      "bot_creator": [
+        "[data-testid='bot-creator']",
+        ".bot-creator"
+      ]
+    }
+  },
+  "cache": {
+    "enabled": true,
+    "api_cache": {
+      "ttl": 600,
+      "max_size": 1000
+    },
+    "scraping_cache": {
+      "ttl": 3600,
+      "max_size": 5000
+    },
+    "global_cache": {
+      "ttl": 1800,
+      "max_size": 2000
+    }
+  },
+  "storage": {
+    "data_file": "~/.local/share/virginia-clemm-poe/poe_models.json",
+    "backup_count": 5,
+    "auto_backup": true,
+    "compression": false
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "~/.local/share/virginia-clemm-poe/logs/app.log",
+    "max_size": "10MB",
+    "backup_count": 5,
+    "format": "{time:YYYY-MM-DD HH:mm:ss} | {level:<8} | {name}:{function}:{line} | {message}",
+    "structured": true
+  },
+  "performance": {
+    "memory_limit": "512MB",
+    "gc_threshold": 0.8,
+    "enable_profiling": false,
+    "metrics_enabled": true
+  }
+}
+```
+
+## Environment Variables
+
+### Core Configuration
+
+```bash
+# API Configuration
+export POE_API_KEY="your_poe_api_key_here"
+export VCP_API_BASE_URL="https://api.poe.com/v2"
+export VCP_API_TIMEOUT="30"
+
+# Browser Configuration
+export VCP_HEADLESS="true"
+export VCP_DEBUG_PORT="9222"
+export VCP_BROWSER_TIMEOUT="30000"
+export VCP_USER_AGENT="virginia-clemm-poe/1.0"
+
+# Scraping Configuration
+export VCP_CONCURRENT_LIMIT="5"
+export VCP_PAUSE_SECONDS="1.0"
+export VCP_MAX_RETRIES="3"
+
+# Cache Configuration
+export VCP_CACHE_ENABLED="true"
+export VCP_CACHE_TTL="3600"
+export VCP_CACHE_MAX_SIZE="5000"
+
+# Logging Configuration
+export VCP_LOG_LEVEL="INFO"
+export VCP_LOG_FILE="~/.local/share/virginia-clemm-poe/logs/app.log"
+export VCP_STRUCTURED_LOGGING="true"
+
+# Storage Configuration
+export VCP_DATA_FILE="~/.local/share/virginia-clemm-poe/poe_models.json"
+export VCP_BACKUP_COUNT="5"
+export VCP_AUTO_BACKUP="true"
+
+# Performance Configuration
+export VCP_MEMORY_LIMIT="512MB"
+export VCP_GC_THRESHOLD="0.8"
+export VCP_ENABLE_PROFILING="false"
+```
+
+### Advanced Environment Variables
+
+```bash
+# Network Configuration
+export HTTP_PROXY="http://proxy.example.com:8080"
+export HTTPS_PROXY="http://proxy.example.com:8080"
+export NO_PROXY="localhost,127.0.0.1"
+
+# Browser Engine Selection
+export CHROME_PATH="/path/to/custom/chrome"
+export VCP_USER_DATA_DIR="/path/to/user/data"
+export VCP_DISABLE_EXTENSIONS="true"
+
+# Development Configuration
+export VCP_DEBUG="true"
+export VCP_PROFILE_MEMORY="true"
+export VCP_SAVE_SCREENSHOTS="true"
+export VCP_SAVE_PAGE_CONTENT="true"
+
+# CI/CD Configuration
+export VCP_CI_MODE="true"
+export VCP_NON_INTERACTIVE="true"
+export VCP_FAIL_FAST="true"
+```
+
+## Advanced Configuration Examples
+
+### High-Performance Configuration
+
+For servers with ample resources:
+
+```json
+{
+  "browser": {
+    "max_browsers": 10,
+    "debug_port_start": 9222,
+    "timeout": 60000
+  },
+  "scraping": {
+    "concurrent_limit": 20,
+    "pause_between_requests": 0.5,
+    "max_retries": 5
+  },
+  "cache": {
+    "api_cache": {
+      "ttl": 300,
+      "max_size": 5000
+    },
+    "scraping_cache": {
+      "ttl": 1800,
+      "max_size": 20000
+    }
+  },
+  "performance": {
+    "memory_limit": "2GB",
+    "gc_threshold": 0.7,
+    "enable_profiling": true
+  }
+}
+```
+
+### Low-Resource Configuration
+
+For resource-constrained environments:
+
+```json
+{
+  "browser": {
+    "max_browsers": 1,
+    "timeout": 15000,
+    "chrome_args": [
+      "--no-sandbox",
+      "--disable-dev-shm-usage",
+      "--memory-pressure-off",
+      "--max_old_space_size=256"
+    ]
+  },
+  "scraping": {
+    "concurrent_limit": 1,
+    "pause_between_requests": 2.0,
+    "max_retries": 2
+  },
+  "cache": {
+    "api_cache": {
+      "max_size": 100
+    },
+    "scraping_cache": {
+      "max_size": 500
+    }
+  },
+  "performance": {
+    "memory_limit": "128MB",
+    "gc_threshold": 0.6
+  }
+}
+```
+
+### Development Configuration
+
+For development and debugging:
+
+```json
+{
+  "browser": {
+    "headless": false,
+    "debug_port_start": 9222,
+    "chrome_args": [
+      "--disable-blink-features=AutomationControlled",
+      "--disable-extensions-except=/path/to/dev/extension",
+      "--load-extension=/path/to/dev/extension"
+    ]
+  },
+  "scraping": {
+    "pause_between_requests": 3.0,
+    "save_screenshots": true,
+    "save_page_content": true
+  },
+  "logging": {
+    "level": "DEBUG",
+    "structured": true,
+    "enable_console": true
+  },
+  "performance": {
+    "enable_profiling": true,
+    "metrics_enabled": true
+  }
+}
+```
+
+## Advanced API Usage
+
+### Custom Configuration Loading
+
+```python
+from virginia_clemm_poe.config import load_config, Config
+
+# Load configuration with custom file
+config = load_config("/path/to/custom/config.json")
+
+# Override specific settings
+config.browser.headless = False
+config.scraping.concurrent_limit = 1
+
+# Use configuration in API calls
+from virginia_clemm_poe import api
+api.configure(config)
+```
+
+### Configuration Validation
+
+```python
+from virginia_clemm_poe.config import validate_config, ConfigValidationError
+
+try:
+    config = load_config()
+    validate_config(config)
+    print("Configuration is valid")
+except ConfigValidationError as e:
+    print(f"Configuration error: {e}")
+    # Handle invalid configuration
+```
+
+### Dynamic Configuration Updates
+
+```python
+from virginia_clemm_poe.config import get_runtime_config, update_runtime_config
+
+# Get current runtime configuration
+runtime_config = get_runtime_config()
+
+# Update configuration at runtime
+update_runtime_config({
+    "scraping.concurrent_limit": 3,
+    "cache.api_cache.ttl": 1200
+})
+
+# Changes take effect immediately for new operations
+```
+
+## Performance Tuning
+
+### Memory Optimization
+
+```python
+from virginia_clemm_poe.utils.memory import configure_memory_management
+
+# Configure memory management
+configure_memory_management(
+    limit="512MB",
+    gc_threshold=0.8,
+    enable_monitoring=True
+)
+
+# Monitor memory usage during operations
+from virginia_clemm_poe.utils.memory import get_memory_stats
+
+stats = get_memory_stats()
+print(f"Memory usage: {stats['used_mb']:.1f}MB / {stats['limit_mb']:.1f}MB")
+print(f"GC collections: {stats['gc_collections']}")
+```
+
+### Cache Optimization
+
+```python
+from virginia_clemm_poe.utils.cache import configure_caches, get_cache_stats
+
+# Configure cache settings
+configure_caches({
+    "api_cache": {"ttl": 300, "max_size": 1000},
+    "scraping_cache": {"ttl": 1800, "max_size": 5000},
+    "global_cache": {"ttl": 900, "max_size": 2000}
+})
+
+# Monitor cache performance
+stats = get_cache_stats()
+for cache_name, cache_stats in stats.items():
+    hit_rate = cache_stats['hit_rate_percent']
+    print(f"{cache_name}: {hit_rate:.1f}% hit rate")
+```
+
+### Concurrent Processing
+
+```python
+from virginia_clemm_poe.updater import ModelUpdater
+import asyncio
+
+async def optimized_update():
+    updater = ModelUpdater(
+        api_key="your_key",
+        concurrent_limit=10,  # Increase concurrency
+        batch_size=20,        # Larger batches
+        retry_delay=1.0       # Faster retries
+    )
+    
+    # Update with optimized settings
+    await updater.update_all(
+        force=False,           # Only update what's needed
+        update_pricing=True,   # Focus on pricing data
+        update_info=False      # Skip bot info for speed
+    )
+
+# Run optimized update
+asyncio.run(optimized_update())
+```
+
+## Integration Patterns
+
+### Web Framework Integration
+
+#### FastAPI Integration
+
+```python
+from fastapi import FastAPI, BackgroundTasks
+from virginia_clemm_poe import api
+from virginia_clemm_poe.config import load_config
+
+app = FastAPI()
+
+# Load configuration on startup
+@app.on_event("startup")
+async def startup_event():
+    config = load_config()
+    api.configure(config)
+
+@app.get("/models/search/{query}")
+async def search_models(query: str):
+    models = api.search_models(query)
+    return {"query": query, "models": models}
+
+@app.post("/admin/update")
+async def trigger_update(background_tasks: BackgroundTasks):
+    background_tasks.add_task(run_update_task)
+    return {"message": "Update started"}
+
+async def run_update_task():
+    from virginia_clemm_poe.updater import ModelUpdater
+    updater = ModelUpdater(api_key=os.environ["POE_API_KEY"])
+    await updater.update_all()
+```
+
+#### Django Integration
+
+```python
+# settings.py
+VIRGINIA_CLEMM_POE = {
+    'API_KEY': os.environ.get('POE_API_KEY'),
+    'CACHE_ENABLED': True,
+    'CONCURRENT_LIMIT': 5,
+    'DATA_FILE': os.path.join(BASE_DIR, 'data', 'poe_models.json')
+}
+
+# management/commands/update_models.py
+from django.core.management.base import BaseCommand
+from virginia_clemm_poe.updater import ModelUpdater
+import asyncio
+
+class Command(BaseCommand):
+    help = 'Update Poe model data'
+    
+    def handle(self, *args, **options):
+        from django.conf import settings
+        
+        updater = ModelUpdater(
+            api_key=settings.VIRGINIA_CLEMM_POE['API_KEY']
+        )
+        asyncio.run(updater.update_all())
+        
+        self.stdout.write(
+            self.style.SUCCESS('Successfully updated model data')
+        )
+```
+
+### Database Integration
+
+#### SQLAlchemy Integration
+
+```python
+from sqlalchemy import create_engine, Column, String, DateTime, Text
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+import json
+
+Base = declarative_base()
+
+class PoeModelRecord(Base):
+    __tablename__ = 'poe_models'
+    
+    id = Column(String, primary_key=True)
+    model_name = Column(String)
+    owned_by = Column(String)
+    created = Column(DateTime)
+    pricing_data = Column(Text)  # JSON
+    bot_info_data = Column(Text)  # JSON
+    last_updated = Column(DateTime)
+
+def sync_to_database():
+    """Sync Virginia Clemm Poe data to database."""
+    from virginia_clemm_poe import api
+    
+    engine = create_engine('sqlite:///poe_models.db')
+    Base.metadata.create_all(engine)
+    Session = sessionmaker(bind=engine)
+    session = Session()
+    
+    models = api.get_all_models()
+    
+    for model in models:
+        record = session.query(PoeModelRecord).filter_by(id=model.id).first()
+        if not record:
+            record = PoeModelRecord(id=model.id)
+            session.add(record)
+        
+        record.model_name = model.model_name
+        record.owned_by = model.owned_by
+        record.created = datetime.fromtimestamp(model.created)
+        record.pricing_data = json.dumps(model.pricing.model_dump() if model.pricing else None)
+        record.bot_info_data = json.dumps(model.bot_info.model_dump() if model.bot_info else None)
+        record.last_updated = datetime.utcnow()
+    
+    session.commit()
+    session.close()
+```
+
+### Monitoring Integration
+
+#### Prometheus Metrics
+
+```python
+from prometheus_client import Counter, Histogram, Gauge, start_http_server
+from virginia_clemm_poe.utils.metrics import register_metrics
+
+# Register custom metrics
+SCRAPING_REQUESTS = Counter('vcp_scraping_requests_total', 'Total scraping requests', ['model_id', 'status'])
+SCRAPING_DURATION = Histogram('vcp_scraping_duration_seconds', 'Scraping request duration', ['model_id'])
+CACHE_HIT_RATE = Gauge('vcp_cache_hit_rate', 'Cache hit rate', ['cache_name'])
+
+def monitor_scraping():
+    """Monitor scraping operations with Prometheus metrics."""
+    
+    @SCRAPING_DURATION.time()
+    def scrape_with_metrics(model_id):
+        try:
+            result = scrape_model(model_id)
+            SCRAPING_REQUESTS.labels(model_id=model_id, status='success').inc()
+            return result
+        except Exception as e:
+            SCRAPING_REQUESTS.labels(model_id=model_id, status='error').inc()
+            raise
+    
+    # Start metrics server
+    start_http_server(8000)
+    
+    return scrape_with_metrics
+```
+
+#### Grafana Dashboard
+
+```json
+{
+  "dashboard": {
+    "title": "Virginia Clemm Poe Monitoring",
+    "panels": [
+      {
+        "title": "Scraping Success Rate",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "rate(vcp_scraping_requests_total{status=\"success\"}[5m]) / rate(vcp_scraping_requests_total[5m]) * 100"
+          }
+        ]
+      },
+      {
+        "title": "Cache Hit Rates",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "vcp_cache_hit_rate",
+            "legendFormat": "{{cache_name}}"
+          }
+        ]
+      },
+      {
+        "title": "Scraping Duration",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, rate(vcp_scraping_duration_seconds_bucket[5m]))"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+## Security Configuration
+
+### API Key Management
+
+```python
+# Using environment variables (recommended)
+import os
+api_key = os.environ.get('POE_API_KEY')
+
+# Using keyring for secure storage
+import keyring
+keyring.set_password('virginia-clemm-poe', 'api_key', 'your_key')
+api_key = keyring.get_password('virginia-clemm-poe', 'api_key')
+
+# Using AWS Secrets Manager
+import boto3
+client = boto3.client('secretsmanager')
+response = client.get_secret_value(SecretId='virginia-clemm-poe/api-key')
+api_key = response['SecretString']
+```
+
+### Network Security
+
+```python
+# Configure proxy settings
+import httpx
+
+proxy_config = {
+    'http://': 'http://proxy.example.com:8080',
+    'https://': 'http://proxy.example.com:8080'
+}
+
+# SSL/TLS configuration
+ssl_config = {
+    'verify': True,  # Verify SSL certificates
+    'cert': '/path/to/client/cert.pem',  # Client certificate
+    'trust_env': True  # Trust environment proxy settings
+}
+
+# Configure HTTP client with security settings
+client = httpx.AsyncClient(
+    proxies=proxy_config,
+    **ssl_config,
+    timeout=30.0
+)
+```
+
+### Data Security
+
+```python
+# Encrypt sensitive data at rest
+from cryptography.fernet import Fernet
+
+def encrypt_data_file(data_file_path: str, key: bytes):
+    """Encrypt model data file."""
+    fernet = Fernet(key)
+    
+    with open(data_file_path, 'rb') as f:
+        data = f.read()
+    
+    encrypted_data = fernet.encrypt(data)
+    
+    with open(f"{data_file_path}.encrypted", 'wb') as f:
+        f.write(encrypted_data)
+
+def decrypt_data_file(encrypted_file_path: str, key: bytes) -> dict:
+    """Decrypt and load model data."""
+    fernet = Fernet(key)
+    
+    with open(encrypted_file_path, 'rb') as f:
+        encrypted_data = f.read()
+    
+    decrypted_data = fernet.decrypt(encrypted_data)
+    return json.loads(decrypted_data)
+```
+
+## Deployment Configurations
+
+### Docker Configuration
+
+```dockerfile
+# Dockerfile
+FROM python:3.12-slim
+
+# Install system dependencies for Chrome
+RUN apt-get update && apt-get install -y \
+    wget \
+    gnupg \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Virginia Clemm Poe
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+
+# Create app user
+RUN useradd -m -u 1000 vcp
+USER vcp
+
+# Setup application
+WORKDIR /app
+COPY --chown=vcp:vcp . .
+
+# Setup browser
+RUN virginia-clemm-poe setup
+
+# Configuration
+ENV VCP_HEADLESS=true
+ENV VCP_LOG_LEVEL=INFO
+ENV VCP_CACHE_ENABLED=true
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=60s \
+    CMD virginia-clemm-poe status || exit 1
+
+CMD ["virginia-clemm-poe", "update", "--all"]
+```
+
+### Kubernetes Configuration
+
+```yaml
+# deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: virginia-clemm-poe
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: virginia-clemm-poe
+  template:
+    metadata:
+      labels:
+        app: virginia-clemm-poe
+    spec:
+      containers:
+      - name: virginia-clemm-poe
+        image: virginia-clemm-poe:latest
+        env:
+        - name: POE_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: poe-api-key
+              key: api-key
+        - name: VCP_HEADLESS
+          value: "true"
+        - name: VCP_LOG_LEVEL
+          value: "INFO"
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "250m"
+          limits:
+            memory: "1Gi"
+            cpu: "500m"
+        volumeMounts:
+        - name: data-volume
+          mountPath: /data
+        - name: config-volume
+          mountPath: /config
+      volumes:
+      - name: data-volume
+        persistentVolumeClaim:
+          claimName: vcp-data
+      - name: config-volume
+        configMap:
+          name: vcp-config
+```
+
+This comprehensive configuration guide provides everything needed to customize and optimize Virginia Clemm Poe for any environment or use case.
+</document_content>
+</document>
+
+<document index="34">
+<source>src_docs/md/chapter9-troubleshooting.md</source>
+<document_content>
+# Chapter 9: Troubleshooting and FAQ
+
+## Quick Diagnostics
+
+### Health Check Commands
+
+Start with these commands to identify issues:
+
+```bash
+# Comprehensive system check
+virginia-clemm-poe doctor
+
+# Check current status
+virginia-clemm-poe status
+
+# Test basic functionality
+virginia-clemm-poe search "test"
+
+# Clear cache if issues persist
+virginia-clemm-poe clear-cache
+```
+
+### Common Issue Indicators
+
+| Symptom | Likely Cause | Quick Fix |
+|---------|--------------|-----------|
+| "No model data found" | Missing or corrupted data file | `virginia-clemm-poe update` |
+| "POE_API_KEY not set" | Missing API key | `export POE_API_KEY=your_key` |
+| "Browser not available" | Chrome not installed | `virginia-clemm-poe setup` |
+| "Cannot reach poe.com" | Network connectivity | Check internet/proxy settings |
+| Slow updates | Resource constraints | Reduce concurrent limit |
+
+## Installation Issues
+
+### Python Version Problems
+
+**Error**: `Package requires Python 3.12+`
+
+**Solution**:
+```bash
+# Check current version
+python --version
+
+# Install Python 3.12+ using pyenv
+curl https://pyenv.run | bash
+pyenv install 3.12.0
+pyenv global 3.12.0
+
+# Or use system package manager
+# Ubuntu/Debian:
+sudo apt update && sudo apt install python3.12
+
+# macOS:
+brew install python@3.12
+```
+
+### Package Installation Failures
+
+**Error**: `pip install virginia-clemm-poe fails`
+
+**Common causes and solutions**:
+
+1. **Outdated pip**:
+```bash
+pip install --upgrade pip
+pip install virginia-clemm-poe
+```
+
+2. **Network issues**:
+```bash
+pip install --trusted-host pypi.org --trusted-host pypi.python.org virginia-clemm-poe
+```
+
+3. **Permission errors**:
+```bash
+pip install --user virginia-clemm-poe
+# or
+python -m pip install virginia-clemm-poe
+```
+
+4. **Dependency conflicts**:
+```bash
+# Create clean environment
+python -m venv fresh_env
+source fresh_env/bin/activate
+pip install virginia-clemm-poe
+```
+
+### Browser Setup Issues
+
+**Error**: `Failed to install browser dependencies`
+
+**Solutions**:
+
+1. **Manual Chrome installation**:
+```bash
+# Ubuntu/Debian
+wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+sudo apt update && sudo apt install google-chrome-stable
+
+# macOS
+brew install --cask google-chrome
+
+# Windows
+# Download from https://www.google.com/chrome/
+```
+
+2. **Check disk space**:
+```bash
+df -h  # Ensure at least 500MB free space
+```
+
+3. **Permissions**:
+```bash
+# Fix cache directory permissions
+chmod -R 755 ~/.cache/virginia-clemm-poe/
+```
+
+## API and Authentication Issues
+
+### API Key Problems
+
+**Error**: `Invalid API key` or `Authentication failed`
+
+**Solutions**:
+
+1. **Verify API key format**:
+```bash
+# API key should be a long alphanumeric string
+echo $POE_API_KEY | wc -c  # Should be 40+ characters
+```
+
+2. **Get new API key**:
+   - Visit https://poe.com/api_key
+   - Generate new key
+   - Update environment variable
+
+3. **Check key permissions**:
+   - Ensure key has model listing permissions
+   - Some keys may be rate-limited
+
+### Network Connectivity Issues
+
+**Error**: `Cannot reach poe.com` or `Connection timeout`
+
+**Solutions**:
+
+1. **Test connectivity**:
+```bash
+curl -I https://poe.com
+curl -I https://api.poe.com/v2/models
+```
+
+2. **Proxy configuration**:
+```bash
+export HTTP_PROXY="http://proxy.example.com:8080"
+export HTTPS_PROXY="http://proxy.example.com:8080"
+virginia-clemm-poe update
+```
+
+3. **Corporate firewall**:
+   - Contact IT for API access approval
+   - Use corporate proxy settings
+   - Consider VPN if needed
+
+4. **DNS issues**:
+```bash
+# Test DNS resolution
+nslookup poe.com
+# Try different DNS servers
+export DNS_SERVER="8.8.8.8"
+```
+
+## Browser and Scraping Issues
+
+### Browser Launch Failures
+
+**Error**: `Failed to get browser` or `Chrome process exited`
+
+**Solutions**:
+
+1. **Check Chrome installation**:
+```bash
+# Test manual Chrome launch
+google-chrome --version
+chromium --version
+```
+
+2. **Port conflicts**:
+```bash
+# Check if port is in use
+netstat -tulpn | grep :9222
+
+# Use different port
+virginia-clemm-poe update --debug_port 9223
+```
+
+3. **Insufficient resources**:
+```bash
+# Check system resources
+free -m  # Memory
+df -h    # Disk space
+
+# Use low-resource mode
+export VCP_MEMORY_LIMIT="256MB"
+virginia-clemm-poe update --verbose
+```
+
+4. **Headless mode issues**:
+```bash
+# Try non-headless mode for debugging
+export VCP_HEADLESS="false"
+virginia-clemm-poe update --verbose
+```
+
+### Scraping Timeouts
+
+**Error**: `Navigation timeout` or `Element not found`
+
+**Solutions**:
+
+1. **Increase timeouts**:
+```bash
+export VCP_TIMEOUT="60000"  # 60 seconds
+virginia-clemm-poe update --verbose
+```
+
+2. **Reduce concurrency**:
+```bash
+export VCP_CONCURRENT_LIMIT="1"
+virginia-clemm-poe update
+```
+
+3. **Network delays**:
+```bash
+export VCP_PAUSE_SECONDS="3.0"
+virginia-clemm-poe update
+```
+
+4. **Debug specific models**:
+```bash
+# Enable verbose logging
+virginia-clemm-poe update --verbose
+
+# Check logs for failing models
+tail -f ~/.local/share/virginia-clemm-poe/logs/app.log
+```
+
+### Anti-Bot Detection
+
+**Error**: `Access denied` or `Captcha required`
+
+**Solutions**:
+
+1. **Rate limiting**:
+```bash
+# Slow down requests
+export VCP_PAUSE_SECONDS="5.0"
+export VCP_CONCURRENT_LIMIT="1"
+virginia-clemm-poe update
+```
+
+2. **User agent rotation**:
+```bash
+export VCP_USER_AGENT="Mozilla/5.0 (compatible; virginia-clemm-poe/1.0)"
+virginia-clemm-poe update
+```
+
+3. **Proxy rotation**:
+```bash
+# Use different proxy
+export HTTP_PROXY="http://proxy2.example.com:8080"
+virginia-clemm-poe update
+```
+
+4. **Wait and retry**:
+```bash
+# Wait before retrying
+sleep 3600  # 1 hour
+virginia-clemm-poe update --force
+```
+
+## Performance Issues
+
+### Slow Updates
+
+**Problem**: Updates take too long
+
+**Solutions**:
+
+1. **Increase concurrency** (if resources allow):
+```bash
+export VCP_CONCURRENT_LIMIT="10"
+virginia-clemm-poe update
+```
+
+2. **Selective updates**:
+```bash
+# Update only pricing
+virginia-clemm-poe update --pricing
+
+# Skip force update
+virginia-clemm-poe update  # Only updates missing data
+```
+
+3. **Cache optimization**:
+```bash
+# Clear old cache
+virginia-clemm-poe clear-cache
+
+# Optimize cache settings
+export VCP_CACHE_TTL="7200"  # 2 hours
+virginia-clemm-poe update
+```
+
+### Memory Issues
+
+**Error**: `Out of memory` or system becomes unresponsive
+
+**Solutions**:
+
+1. **Reduce memory usage**:
+```bash
+export VCP_MEMORY_LIMIT="256MB"
+export VCP_CONCURRENT_LIMIT="1"
+virginia-clemm-poe update
+```
+
+2. **Enable garbage collection**:
+```bash
+export VCP_GC_THRESHOLD="0.7"
+virginia-clemm-poe update --verbose
+```
+
+3. **Clear browser cache**:
+```bash
+virginia-clemm-poe clear-cache --browser
+```
+
+4. **Process batching**:
+```bash
+# Update in smaller batches
+virginia-clemm-poe update --limit 50
+```
+
+### High CPU Usage
+
+**Problem**: Process uses too much CPU
+
+**Solutions**:
+
+1. **Reduce browser instances**:
+```bash
+export VCP_MAX_BROWSERS="1"
+virginia-clemm-poe update
+```
+
+2. **Add delays**:
+```bash
+export VCP_PAUSE_SECONDS="2.0"
+virginia-clemm-poe update
+```
+
+3. **Lower priority**:
+```bash
+nice -n 10 virginia-clemm-poe update
+```
+
+## Data Issues
+
+### Corrupted Data File
+
+**Error**: `Invalid JSON` or `Validation error`
+
+**Solutions**:
+
+1. **Restore from backup**:
+```bash
+# Check for backups
+ls ~/.local/share/virginia-clemm-poe/backups/
+
+# Restore latest backup
+cp ~/.local/share/virginia-clemm-poe/backups/poe_models_*.json \
+   ~/.local/share/virginia-clemm-poe/poe_models.json
+```
+
+2. **Force fresh update**:
+```bash
+# Remove corrupted file
+rm ~/.local/share/virginia-clemm-poe/poe_models.json
+
+# Fetch fresh data
+virginia-clemm-poe update --all
+```
+
+3. **Validate data manually**:
+```python
+import json
+from virginia_clemm_poe.config import DATA_FILE_PATH
+
+try:
+    with open(DATA_FILE_PATH) as f:
+        data = json.load(f)
+    print("JSON is valid")
+except json.JSONDecodeError as e:
+    print(f"JSON error at line {e.lineno}: {e.msg}")
+```
+
+### Missing or Incomplete Data
+
+**Problem**: Some models missing pricing or bot info
+
+**Solutions**:
+
+1. **Force update specific areas**:
+```bash
+# Update only missing pricing
+virginia-clemm-poe update --pricing --force
+
+# Update only missing bot info
+virginia-clemm-poe update --info --force
+```
+
+2. **Check for errors**:
+```bash
+# Look for pricing errors in data
+virginia-clemm-poe search "" --verbose | grep -i error
+```
+
+3. **Manual verification**:
+```python
+from virginia_clemm_poe import api
+
+# Check data completeness
+models = api.get_all_models()
+need_update = api.get_models_needing_update()
+
+print(f"Total models: {len(models)}")
+print(f"Need update: {len(need_update)}")
+
+# List models with errors
+for model in models:
+    if model.pricing_error:
+        print(f"{model.id}: {model.pricing_error}")
+```
+
+## Environment-Specific Issues
+
+### Docker Issues
+
+**Problem**: Browser doesn't work in container
+
+**Solutions**:
+
+1. **Add required arguments**:
+```dockerfile
+ENV VCP_CHROME_ARGS="--no-sandbox,--disable-dev-shm-usage,--disable-gpu"
+```
+
+2. **Install dependencies**:
+```dockerfile
+RUN apt-get update && apt-get install -y \
+    fonts-liberation \
+    libasound2 \
+    libatk-bridge2.0-0 \
+    libgtk-3-0 \
+    libnspr4 \
+    libnss3 \
+    libx11-xcb1 \
+    libxcomposite1 \
+    libxss1 \
+    xdg-utils
+```
+
+3. **Use privileged mode**:
+```bash
+docker run --privileged virginia-clemm-poe
+```
+
+### CI/CD Issues
+
+**Problem**: Automated runs fail
+
+**Solutions**:
+
+1. **CI-specific configuration**:
+```bash
+export VCP_CI_MODE="true"
+export VCP_HEADLESS="true"
+export VCP_NON_INTERACTIVE="true"
+virginia-clemm-poe update
+```
+
+2. **GitHub Actions example**:
+```yaml
+- name: Setup browser
+  run: |
+    sudo apt-get update
+    sudo apt-get install -y google-chrome-stable
+    virginia-clemm-poe setup
+
+- name: Update models
+  env:
+    POE_API_KEY: ${{ secrets.POE_API_KEY }}
+    VCP_HEADLESS: true
+  run: virginia-clemm-poe update --all
+```
+
+3. **Handle rate limits**:
+```bash
+# Longer delays in CI
+export VCP_PAUSE_SECONDS="10.0"
+export VCP_CONCURRENT_LIMIT="1"
+```
+
+### Windows-Specific Issues
+
+**Problem**: Path or permission issues on Windows
+
+**Solutions**:
+
+1. **Use PowerShell**:
+```powershell
+$env:POE_API_KEY="your_key"
+virginia-clemm-poe update
+```
+
+2. **Fix path issues**:
+```powershell
+# Use full paths
+$env:VCP_DATA_FILE="C:\Users\YourName\AppData\Local\virginia-clemm-poe\poe_models.json"
+```
+
+3. **Antivirus exclusions**:
+   - Add virginia-clemm-poe cache directory to exclusions
+   - Temporarily disable real-time protection
+
+## Debugging Techniques
+
+### Enable Debug Logging
+
+```bash
+# Maximum verbosity
+export VCP_LOG_LEVEL="DEBUG"
+virginia-clemm-poe update --verbose 2>&1 | tee debug.log
+
+# Structured logging
+export VCP_STRUCTURED_LOGGING="true"
+virginia-clemm-poe update --verbose
+```
+
+### Browser Debugging
+
+```bash
+# Save screenshots and page content
+export VCP_SAVE_SCREENSHOTS="true"
+export VCP_SAVE_PAGE_CONTENT="true"
+virginia-clemm-poe update --verbose
+
+# Check saved files
+ls ~/.local/share/virginia-clemm-poe/debug/
+```
+
+### Network Debugging
+
+```bash
+# Monitor network traffic
+export VCP_LOG_REQUESTS="true"
+virginia-clemm-poe update --verbose
+
+# Use proxy for inspection
+export HTTP_PROXY="http://localhost:8080"  # Burp Suite or similar
+virginia-clemm-poe update
+```
+
+### Memory Debugging
+
+```python
+from virginia_clemm_poe.utils.memory import enable_memory_profiling
+
+# Enable memory profiling
+enable_memory_profiling()
+
+# Run operation
+virginia-clemm-poe update --verbose
+
+# Check memory report
+cat ~/.local/share/virginia-clemm-poe/logs/memory_profile.log
+```
+
+## Getting Help
+
+### Information to Gather
+
+When seeking help, provide:
+
+1. **System information**:
+```bash
+virginia-clemm-poe doctor > system_info.txt
+python --version
+uname -a  # Linux/macOS
+systeminfo  # Windows
+```
+
+2. **Error logs**:
+```bash
+# Recent logs
+tail -n 100 ~/.local/share/virginia-clemm-poe/logs/app.log
+
+# Full debug run
+virginia-clemm-poe update --verbose 2>&1 | tee full_debug.log
+```
+
+3. **Configuration**:
+```bash
+# Environment variables
+env | grep VCP
+
+# Configuration file
+cat ~/.config/virginia-clemm-poe/config.json
+```
+
+### Support Channels
+
+1. **GitHub Issues**: [Create detailed issue](https://github.com/terragonlabs/virginia-clemm-poe/issues)
+2. **Documentation**: Check [official docs](https://terragonlabs.github.io/virginia-clemm-poe/)
+3. **Community**: Join discussions and ask questions
+
+### Bug Report Template
+
+```markdown
+## Bug Description
+Brief description of the issue
+
+## Steps to Reproduce
+1. Step one
+2. Step two
+3. Step three
+
+## Expected Behavior
+What should happen
+
+## Actual Behavior
+What actually happens
+
+## Environment
+- OS: 
+- Python version: 
+- Virginia Clemm Poe version: 
+- Browser: 
+
+## Logs
+```bash
+# Paste relevant logs here
+```
+
+## Configuration
+```json
+// Paste relevant config here
+```
+
+## Additional Context
+Any other relevant information
+```
+
+## Frequently Asked Questions
+
+### General Questions
+
+**Q: How often should I update the model data?**
+A: Weekly updates are usually sufficient. More frequent updates may be needed when new models are released.
+
+**Q: Can I use this without a Poe API key?**
+A: No, the API key is required to fetch the initial model list from Poe.com.
+
+**Q: Is it safe to run multiple update processes simultaneously?**
+A: No, this can cause data corruption. Use the built-in concurrency controls instead.
+
+**Q: Why are some models missing pricing data?**
+A: Some models may have pricing errors, be in beta, or have updated page layouts that the scraper doesn't recognize yet.
+
+### Technical Questions
+
+**Q: How much data does the package store locally?**
+A: Typically 2-10MB for the complete dataset, depending on the number of models.
+
+**Q: Can I customize the scraping selectors?**
+A: Yes, through configuration files or environment variables (see Chapter 8).
+
+**Q: How do I integrate with my existing data pipeline?**
+A: See the integration examples in Chapter 8 for database and API integrations.
+
+**Q: What happens if Poe.com changes their website structure?**
+A: The scraper may fail for new layouts. Update to the latest version or report the issue.
+
+### Performance Questions
+
+**Q: Why is the first update so slow?**
+A: The first update scrapes all models. Subsequent updates only process changed models.
+
+**Q: How can I speed up updates?**
+A: Increase concurrency limits, use selective updates (--pricing or --info), and ensure good network connectivity.
+
+**Q: Does the package cache data?**
+A: Yes, it uses multiple cache layers for API responses, scraping results, and processed data.
+
+This comprehensive troubleshooting guide should help resolve most issues you might encounter with Virginia Clemm Poe.
+</document_content>
+</document>
+
+<document index="35">
+<source>src_docs/md/index.md</source>
+<document_content>
+# Virginia Clemm Poe Documentation
+
+## TLDR
+
+**Virginia Clemm Poe** is a Python package that provides programmatic access to comprehensive Poe.com model data with pricing information. It acts as a companion tool to the official Poe API by fetching, maintaining, and enriching model data through web scraping, with a special focus on capturing detailed pricing information not available through the API alone.
+
+**Key Features:**
+- 🤖 **Comprehensive Model Data**: Access to all Poe.com models with detailed metadata
+- 💰 **Pricing Information**: Automatically scraped pricing data for all operations
+- 🐍 **Python API**: Clean, typed API for programmatic access
+- 🖥️ **CLI Interface**: Fire-based command-line tools for data management
+- 🌐 **Web Scraping**: Playwright-powered browser automation for reliable data extraction
+- 📊 **Pydantic Models**: Fully typed data structures for easy integration
+
+## Table of Contents
+
+### Getting Started
+1. **[Introduction and Overview](chapter1-introduction.md)** - Learn about the package's purpose, architecture, and core concepts
+2. **[Installation and Setup](chapter2-installation.md)** - Step-by-step installation guide and initial configuration
+3. **[Quick Start Guide](chapter3-quickstart.md)** - Get up and running with basic examples and common use cases
+
+### Usage Guides
+4. **[Python API Reference](chapter4-api.md)** - Complete Python API documentation with examples
+5. **[CLI Usage and Commands](chapter5-cli.md)** - Command-line interface reference and usage patterns
+6. **[Data Models and Structure](chapter6-models.md)** - Understanding the data structures and Pydantic models
+
+### Advanced Topics
+7. **[Browser Management and Web Scraping](chapter7-browser.md)** - Deep dive into web scraping functionality and browser automation
+8. **[Configuration and Advanced Usage](chapter8-configuration.md)** - Advanced configuration options and customization
+9. **[Troubleshooting and FAQ](chapter9-troubleshooting.md)** - Common issues, solutions, and frequently asked questions
+
+## Quick Example
+
+```python
+from virginia_clemm_poe import api
+
+# Search for Claude models
+claude_models = api.search_models(query="claude")
+
+# Get specific model with pricing
+model = api.get_model_by_id("claude-3-opus")
+if model.pricing:
+    print(f"Input cost: {model.pricing.details['Input (text)']}")
+
+# List all available models
+all_models = api.list_models()
+print(f"Total models available: {len(all_models)}")
+```
+
+## CLI Quick Start
+
+```bash
+# Setup browser for web scraping
+virginia-clemm-poe setup
+
+# Update model data with pricing
+POE_API_KEY=your_key virginia-clemm-poe update --pricing
+
+# Search for models
+virginia-clemm-poe search "gpt-4"
+```
+
+## Project Links
+
+- **GitHub Repository**: [terragonlabs/virginia-clemm-poe](https://github.com/terragonlabs/virginia-clemm-poe)
+- **PyPI Package**: [virginia-clemm-poe](https://pypi.org/project/virginia-clemm-poe/)
+- **Issues & Support**: [GitHub Issues](https://github.com/terragonlabs/virginia-clemm-poe/issues)
+
+---
+
+*Named after Edgar Allan Poe's wife and cousin, Virginia Clemm Poe, this package serves as a faithful companion to the Poe platform, just as she was to the great poet.*
+</document_content>
+</document>
+
+<document index="36">
+<source>src_docs/mkdocs.yml</source>
+<document_content>
+# this_file: src_docs/mkdocs.yml
+
+site_name: Virginia Clemm Poe Documentation
+site_description: A Python package providing programmatic access to Poe.com model data with pricing information
+site_author: Terragon Labs
+site_url: https://terragonlabs.github.io/virginia-clemm-poe/
+
+repo_name: terragonlabs/virginia-clemm-poe
+repo_url: https://github.com/terragonlabs/virginia-clemm-poe
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - search.highlight
+    - search.share
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: google
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Introduction: chapter1-introduction.md
+    - Installation: chapter2-installation.md
+    - Quick Start: chapter3-quickstart.md
+  - Usage:
+    - Python API: chapter4-api.md
+    - CLI Commands: chapter5-cli.md
+    - Data Models: chapter6-models.md
+  - Advanced:
+    - Browser Management: chapter7-browser.md
+    - Configuration: chapter8-configuration.md
+    - Troubleshooting: chapter9-troubleshooting.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/terragonlabs/virginia-clemm-poe
+
+copyright: Copyright &copy; 2024 Terragon Labs
+
+# Build directory
+site_dir: ../docs
+docs_dir: md
+</document_content>
+</document>
 
 # File: /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/tests/__init__.py
 # Language: python

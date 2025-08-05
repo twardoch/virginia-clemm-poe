@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - All browser-related functionality restored with correct API usage
   - Fixed doctor command dependency check for beautifulsoup4 (checks for "bs4" import)
   - Fixed browser status check to use sync Browser class instead of async wrapper
+  - Fixed API key validation to use correct endpoint (`/v1/models` not `/v2/models`)
 
 ### Added
 - **PlaywrightAuthor Session Reuse Integration** (2025-08-05): Optimized browser automation with Chrome for Testing
