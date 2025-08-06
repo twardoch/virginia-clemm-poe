@@ -1,11 +1,11 @@
 # this_file: src_docs/mkdocs.yml
 
-site_name: Virginia Clemm Poe Documentation
+site_name: Virginia Clemm Poe
 site_description: A Python package providing programmatic access to Poe.com model data with pricing information
-site_author: Terragon Labs
+site_author: Adam Twardoch
 site_url: https://twardoch.github.io/virginia-clemm-poe/
 
-repo_name: terragonlabs/virginia-clemm-poe
+repo_name: twardoch/virginia-clemm-poe
 repo_url: https://github.com/twardoch/virginia-clemm-poe
 
 theme:
