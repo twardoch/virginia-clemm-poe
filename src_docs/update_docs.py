@@ -418,7 +418,7 @@ def main() -> None:
 
         content = generate_model_page(model)
         model_path.write_text(content)
-        
+
         if i % 50 == 0 or i == len(models):
             logger.info(f"Progress: {i}/{len(models)} model pages generated")
 
@@ -444,39 +444,37 @@ def main() -> None:
 
     models_index_path.write_text("".join(models_index_content))
     logger.success(f"Generated models index: {models_index_path}")
-    
+
     logger.success("🎉 Documentation update completed successfully!")
 
 
 def setup_logging(verbose: bool = False) -> None:
     """Configure loguru logging with appropriate level and format."""
     logger.remove()  # Remove default handler
-    
+
     # Configure format based on verbose mode
     if verbose:
-        format_string = "<green>{time:YYYY-MM-DD HH:mm:ss}</green> | <level>{level: <8}</level> | <cyan>{name}</cyan>:<cyan>{function}</cyan>:<cyan>{line}</cyan> - <level>{message}</level>"
+        format_string = (
+            "<green>{time:YYYY-MM-DD HH:mm:ss}</green> | "
+            "<level>{level: <8}</level> | "
+            "<cyan>{name}</cyan>:<cyan>{function}</cyan>:<cyan>{line}</cyan> - "
+            "<level>{message}</level>"
+        )
         level = "DEBUG"
     else:
         format_string = "<green>{time:HH:mm:ss}</green> | <level>{level: <8}</level> | <level>{message}</level>"
         level = "INFO"
-    
-    logger.add(
-        sys.stderr,
-        format=format_string,
-        level=level,
-        colorize=True,
-        backtrace=True,
-        diagnose=True
-    )
+
+    logger.add(sys.stderr, format=format_string, level=level, colorize=True, backtrace=True, diagnose=True)
 
 
 if __name__ == "__main__":
     # Simple argument parsing for verbose mode
     verbose = "--verbose" in sys.argv or "-v" in sys.argv
-    
+
     # Setup logging
     setup_logging(verbose)
-    
+
     try:
         main()
     except Exception as e:
