@@ -73,15 +73,15 @@ nav:
     - Models: models/index.md
     - Table: table.html
   - Tools:
-    - Introduction: chapter1-introduction.md
-    - Installation: chapter2-installation.md
-    - Quick Start: chapter3-quickstart.md
-    - Python API: chapter4-api.md
-    - CLI Commands: chapter5-cli.md
-    - Data Models: chapter6-models.md
-    - Browser Management: chapter7-browser.md
-    - Configuration: chapter8-configuration.md
-    - Troubleshooting: chapter9-troubleshooting.md
+    - Intro: chapter1-introduction.md
+    - Install: chapter2-installation.md
+    - Start: chapter3-quickstart.md
+    - Python: chapter4-api.md
+    - CLI: chapter5-cli.md
+    - Data: chapter6-models.md
+    - Browser: chapter7-browser.md
+    - Config: chapter8-configuration.md
+    - Problems: chapter9-troubleshooting.md
 
 extra:
   social:

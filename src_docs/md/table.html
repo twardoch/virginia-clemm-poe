@@ -135,7 +135,7 @@
 
         async function loadData() {
             try {
-                const response = await fetch('/virginia-clemm-poe/data/poe_models.json');
+                const response = await fetch('data/poe_models.json');
                 const data = await response.json();
                 modelsData = data.data || [];
                 initializeFilters();
