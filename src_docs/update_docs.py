@@ -42,7 +42,7 @@ def generate_model_page(model: dict[str, Any]) -> str:
     content = []
 
     # Title and basic info
-    content.append(f"# [{model['id']}](https://poe.com/{model['id']})\n")
+    content.append(f"# [{model['id']}](https://poe.com/{model['id']}){{ .md-button .md-button--primary }}\n")
 
     # Pricing section
     if pricing := model.get("pricing"):
@@ -83,8 +83,6 @@ def generate_model_page(model: dict[str, Any]) -> str:
     content.append(f"**Root:** {model.get('root', 'N/A')}\n")
 
     return "\n".join(content)
-
-
 
 
 def main() -> None:
@@ -141,14 +139,14 @@ def main() -> None:
     docs_dir = project_root / "docs"
     docs_dir.mkdir(parents=True, exist_ok=True)
     dest_table_html = docs_dir / "table.html"
-    
+
     # Check if source table.html exists
     if src_table_html.exists():
         shutil.copy2(src_table_html, dest_table_html)
         logger.success(f"Copied table.html from {src_table_html} to {dest_table_html}")
     else:
         logger.warning(f"Source table.html not found at {src_table_html}, skipping copy")
-    
+
     # Also copy the data directory to docs/data for the table to access
     docs_data_dest = docs_dir / "data"
     docs_data_dest.mkdir(parents=True, exist_ok=True)
