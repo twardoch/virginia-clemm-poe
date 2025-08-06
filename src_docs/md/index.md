@@ -1,4 +1,4 @@
-# Virginia Clemm Poe Documentation
+# Virginia Clemm Poe 
 
 **Virginia Clemm Poe** is a Python package that provides programmatic access to comprehensive Poe.com model data with pricing information. It acts as a companion tool to the official Poe API by fetching, maintaining, and enriching model data through web scraping, with a special focus on capturing detailed pricing information not available through the API alone.
 
@@ -6,7 +6,7 @@
 
 The models shown here is a snapshot of the models that are available on [api.poe.com](https://creator.poe.com/docs/external-applications/openai-compatible-api), the OpenAI-compatible API that you can use with your Poe.com [API key](https://poe.com/api_key) if you’re a Poe subscriber. 
 
-The JSON is based on `https://api.poe.com/v1/models` but is extended with pricing info and description.  
+The JSON at `https://raw.githubusercontent.com/twardoch/virginia-clemm-poe/refs/heads/main/src/virginia_clemm_poe/data/poe_models.json` is based on `https://api.poe.com/v1/models` but is extended with pricing info and description.  
 
 The tools in this repository can be used to update the JSON file with the latest pricing info and description. 
 
