@@ -444,8 +444,6 @@ def main() -> None:
 
     for model in sorted(models, key=lambda x: x["id"]):
         models_index_content.append(f"### [{model['id']}]({model['id']}.md)")
-        if (bot_info := model.get("bot_info")) and (creator := bot_info.get("creator")):
-            models_index_content.append(f" by {creator}")
         models_index_content.append("\n\n")
 
     models_index_path.write_text("".join(models_index_content))
