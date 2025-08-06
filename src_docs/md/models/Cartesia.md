@@ -1,4 +1,4 @@
-# [Cartesia](https://poe.com/Cartesia)
+# [Cartesia](https://poe.com/Cartesia){ .md-button .md-button--primary }
 
 ## Pricing
 

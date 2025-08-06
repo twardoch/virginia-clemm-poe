@@ -1,4 +1,4 @@
-# [ChatGPT-4o-Latest](https://poe.com/ChatGPT-4o-Latest)
+# [ChatGPT-4o-Latest](https://poe.com/ChatGPT-4o-Latest){ .md-button .md-button--primary }
 
 ## Pricing
 

@@ -1,4 +1,4 @@
-# [Hailuo-Speech-02](https://poe.com/Hailuo-Speech-02)
+# [Hailuo-Speech-02](https://poe.com/Hailuo-Speech-02){ .md-button .md-button--primary }
 
 ## Pricing
 

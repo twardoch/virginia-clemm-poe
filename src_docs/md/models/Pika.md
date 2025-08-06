@@ -1,4 +1,4 @@
-# [Pika](https://poe.com/Pika)
+# [Pika](https://poe.com/Pika){ .md-button .md-button--primary }
 
 ## Pricing
 

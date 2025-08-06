@@ -1,4 +1,4 @@
-# [Hidream-I1-full](https://poe.com/Hidream-I1-full)
+# [Hidream-I1-full](https://poe.com/Hidream-I1-full){ .md-button .md-button--primary }
 
 ## Pricing
 

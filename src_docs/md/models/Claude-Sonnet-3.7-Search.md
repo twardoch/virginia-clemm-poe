@@ -1,4 +1,4 @@
-# [Claude-Sonnet-3.7-Search](https://poe.com/Claude-Sonnet-3.7-Search)
+# [Claude-Sonnet-3.7-Search](https://poe.com/Claude-Sonnet-3.7-Search){ .md-button .md-button--primary }
 
 ## Pricing
 

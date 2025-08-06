@@ -1,4 +1,4 @@
-# [Imagen-4](https://poe.com/Imagen-4)
+# [Imagen-4](https://poe.com/Imagen-4){ .md-button .md-button--primary }
 
 ## Pricing
 

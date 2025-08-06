@@ -1,4 +1,4 @@
-# [Kling-2.0-Master](https://poe.com/Kling-2.0-Master)
+# [Kling-2.0-Master](https://poe.com/Kling-2.0-Master){ .md-button .md-button--primary }
 
 ## Pricing
 

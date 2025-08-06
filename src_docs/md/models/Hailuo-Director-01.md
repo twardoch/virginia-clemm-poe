@@ -1,4 +1,4 @@
-# [Hailuo-Director-01](https://poe.com/Hailuo-Director-01)
+# [Hailuo-Director-01](https://poe.com/Hailuo-Director-01){ .md-button .md-button--primary }
 
 ## Pricing
 

@@ -1,4 +1,4 @@
-# [Wan-2.2](https://poe.com/Wan-2.2)
+# [Wan-2.2](https://poe.com/Wan-2.2){ .md-button .md-button--primary }
 
 ## Pricing
 

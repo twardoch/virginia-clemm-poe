@@ -1,4 +1,4 @@
-# [Bria-Eraser](https://poe.com/Bria-Eraser)
+# [Bria-Eraser](https://poe.com/Bria-Eraser){ .md-button .md-button--primary }
 
 ## Pricing
 

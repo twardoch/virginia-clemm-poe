@@ -1,4 +1,4 @@
-# [Grok-3-Mini](https://poe.com/Grok-3-Mini)
+# [Grok-3-Mini](https://poe.com/Grok-3-Mini){ .md-button .md-button--primary }
 
 ## Pricing
 

@@ -1,4 +1,4 @@
-# [Llama-4-Scout-nitro](https://poe.com/Llama-4-Scout-nitro)
+# [Llama-4-Scout-nitro](https://poe.com/Llama-4-Scout-nitro){ .md-button .md-button--primary }
 
 ## Pricing
 

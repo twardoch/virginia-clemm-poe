@@ -1,4 +1,4 @@
-# [FLUX-schnell](https://poe.com/FLUX-schnell)
+# [FLUX-schnell](https://poe.com/FLUX-schnell){ .md-button .md-button--primary }
 
 ## Pricing
 

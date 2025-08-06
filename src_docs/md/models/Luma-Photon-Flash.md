@@ -1,4 +1,4 @@
-# [Luma-Photon-Flash](https://poe.com/Luma-Photon-Flash)
+# [Luma-Photon-Flash](https://poe.com/Luma-Photon-Flash){ .md-button .md-button--primary }
 
 ## Pricing
 

@@ -1,4 +1,4 @@
-# [Gemini-2.0-Flash-Lite](https://poe.com/Gemini-2.0-Flash-Lite)
+# [Gemini-2.0-Flash-Lite](https://poe.com/Gemini-2.0-Flash-Lite){ .md-button .md-button--primary }
 
 ## Pricing
 

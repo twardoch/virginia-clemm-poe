@@ -1,4 +1,4 @@
-# [GPT-3.5-Turbo-Instruct](https://poe.com/GPT-3.5-Turbo-Instruct)
+# [GPT-3.5-Turbo-Instruct](https://poe.com/GPT-3.5-Turbo-Instruct){ .md-button .md-button--primary }
 
 ## Pricing
 

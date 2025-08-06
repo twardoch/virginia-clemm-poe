@@ -1,4 +1,4 @@
-# [Restyler](https://poe.com/Restyler)
+# [Restyler](https://poe.com/Restyler){ .md-button .md-button--primary }
 
 ## Pricing
 

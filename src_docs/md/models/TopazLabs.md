@@ -1,4 +1,4 @@
-# [TopazLabs](https://poe.com/TopazLabs)
+# [TopazLabs](https://poe.com/TopazLabs){ .md-button .md-button--primary }
 
 ## Pricing
 

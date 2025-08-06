@@ -1,4 +1,4 @@
-# [GPT-4.1-nano](https://poe.com/GPT-4.1-nano)
+# [GPT-4.1-nano](https://poe.com/GPT-4.1-nano){ .md-button .md-button--primary }
 
 ## Pricing
 

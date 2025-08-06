@@ -1,4 +1,4 @@
-# [Mistral-NeMo](https://poe.com/Mistral-NeMo)
+# [Mistral-NeMo](https://poe.com/Mistral-NeMo){ .md-button .md-button--primary }
 
 ## Pricing
 

@@ -1,4 +1,4 @@
-# [Claude-Opus-4-Reasoning](https://poe.com/Claude-Opus-4-Reasoning)
+# [Claude-Opus-4-Reasoning](https://poe.com/Claude-Opus-4-Reasoning){ .md-button .md-button--primary }
 
 ## Pricing
 

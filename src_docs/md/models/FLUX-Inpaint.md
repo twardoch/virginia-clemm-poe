@@ -1,4 +1,4 @@
-# [FLUX-Inpaint](https://poe.com/FLUX-Inpaint)
+# [FLUX-Inpaint](https://poe.com/FLUX-Inpaint){ .md-button .md-button--primary }
 
 ## Pricing
 

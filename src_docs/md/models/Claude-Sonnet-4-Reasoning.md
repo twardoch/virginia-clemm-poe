@@ -1,4 +1,4 @@
-# [Claude-Sonnet-4-Reasoning](https://poe.com/Claude-Sonnet-4-Reasoning)
+# [Claude-Sonnet-4-Reasoning](https://poe.com/Claude-Sonnet-4-Reasoning){ .md-button .md-button--primary }
 
 ## Pricing
 

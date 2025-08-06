@@ -1,4 +1,4 @@
-# [Aya-Expanse-32B](https://poe.com/Aya-Expanse-32B)
+# [Aya-Expanse-32B](https://poe.com/Aya-Expanse-32B){ .md-button .md-button--primary }
 
 ## Pricing
 

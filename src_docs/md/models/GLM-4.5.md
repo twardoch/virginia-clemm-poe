@@ -1,4 +1,4 @@
-# [GLM-4.5](https://poe.com/GLM-4.5)
+# [GLM-4.5](https://poe.com/GLM-4.5){ .md-button .md-button--primary }
 
 ## Pricing
 

@@ -1,4 +1,4 @@
-# [Kimi-K2-T](https://poe.com/Kimi-K2-T)
+# [Kimi-K2-T](https://poe.com/Kimi-K2-T){ .md-button .md-button--primary }
 
 ## Pricing
 

@@ -1,4 +1,4 @@
-# [Sketch-to-Image](https://poe.com/Sketch-to-Image)
+# [Sketch-to-Image](https://poe.com/Sketch-to-Image){ .md-button .md-button--primary }
 
 ## Pricing
 

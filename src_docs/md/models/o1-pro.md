@@ -1,4 +1,4 @@
-# [o1-pro](https://poe.com/o1-pro)
+# [o1-pro](https://poe.com/o1-pro){ .md-button .md-button--primary }
 
 ## Pricing
 

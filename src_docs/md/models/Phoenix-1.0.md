@@ -1,4 +1,4 @@
-# [Phoenix-1.0](https://poe.com/Phoenix-1.0)
+# [Phoenix-1.0](https://poe.com/Phoenix-1.0){ .md-button .md-button--primary }
 
 ## Pricing
 

@@ -1,4 +1,4 @@
-# [OpenAI-GPT-OSS-120B](https://poe.com/OpenAI-GPT-OSS-120B)
+# [OpenAI-GPT-OSS-120B](https://poe.com/OpenAI-GPT-OSS-120B){ .md-button .md-button--primary }
 
 ## Pricing
 

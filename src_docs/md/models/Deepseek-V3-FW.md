@@ -1,4 +1,4 @@
-# [Deepseek-V3-FW](https://poe.com/Deepseek-V3-FW)
+# [Deepseek-V3-FW](https://poe.com/Deepseek-V3-FW){ .md-button .md-button--primary }
 
 ## Pricing
 

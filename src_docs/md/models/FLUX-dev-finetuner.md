@@ -1,4 +1,4 @@
-# [FLUX-dev-finetuner](https://poe.com/FLUX-dev-finetuner)
+# [FLUX-dev-finetuner](https://poe.com/FLUX-dev-finetuner){ .md-button .md-button--primary }
 
 ## Pricing
 

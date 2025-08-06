@@ -1,4 +1,4 @@
-# [GPT-4o-Search](https://poe.com/GPT-4o-Search)
+# [GPT-4o-Search](https://poe.com/GPT-4o-Search){ .md-button .md-button--primary }
 
 ## Pricing
 

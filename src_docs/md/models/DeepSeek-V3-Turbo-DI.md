@@ -1,4 +1,4 @@
-# [DeepSeek-V3-Turbo-DI](https://poe.com/DeepSeek-V3-Turbo-DI)
+# [DeepSeek-V3-Turbo-DI](https://poe.com/DeepSeek-V3-Turbo-DI){ .md-button .md-button--primary }
 
 ## Pricing
 

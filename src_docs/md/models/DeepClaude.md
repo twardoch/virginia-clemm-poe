@@ -1,4 +1,4 @@
-# [DeepClaude](https://poe.com/DeepClaude)
+# [DeepClaude](https://poe.com/DeepClaude){ .md-button .md-button--primary }
 
 ## Pricing
 

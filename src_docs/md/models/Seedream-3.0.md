@@ -1,4 +1,4 @@
-# [Seedream-3.0](https://poe.com/Seedream-3.0)
+# [Seedream-3.0](https://poe.com/Seedream-3.0){ .md-button .md-button--primary }
 
 ## Pricing
 

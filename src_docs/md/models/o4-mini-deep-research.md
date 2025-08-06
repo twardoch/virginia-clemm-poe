@@ -1,4 +1,4 @@
-# [o4-mini-deep-research](https://poe.com/o4-mini-deep-research)
+# [o4-mini-deep-research](https://poe.com/o4-mini-deep-research){ .md-button .md-button--primary }
 
 ## Pricing
 

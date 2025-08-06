@@ -1,4 +1,4 @@
-# [DALL-E-3](https://poe.com/DALL-E-3)
+# [DALL-E-3](https://poe.com/DALL-E-3){ .md-button .md-button--primary }
 
 ## Pricing
 

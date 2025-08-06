@@ -1,4 +1,4 @@
-# [Hailuo-AI](https://poe.com/Hailuo-AI)
+# [Hailuo-AI](https://poe.com/Hailuo-AI){ .md-button .md-button--primary }
 
 ## Pricing
 

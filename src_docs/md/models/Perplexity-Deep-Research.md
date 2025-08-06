@@ -1,4 +1,4 @@
-# [Perplexity-Deep-Research](https://poe.com/Perplexity-Deep-Research)
+# [Perplexity-Deep-Research](https://poe.com/Perplexity-Deep-Research){ .md-button .md-button--primary }
 
 ## Pricing
 

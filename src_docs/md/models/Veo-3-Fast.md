@@ -1,4 +1,4 @@
-# [Veo-3-Fast](https://poe.com/Veo-3-Fast)
+# [Veo-3-Fast](https://poe.com/Veo-3-Fast){ .md-button .md-button--primary }
 
 ## Pricing
 

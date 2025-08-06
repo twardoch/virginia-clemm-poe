@@ -1,4 +1,4 @@
-# [Reka-Research](https://poe.com/Reka-Research)
+# [Reka-Research](https://poe.com/Reka-Research){ .md-button .md-button--primary }
 
 ## Pricing
 

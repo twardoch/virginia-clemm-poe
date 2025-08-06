@@ -1,4 +1,4 @@
-# [MarkItDown](https://poe.com/MarkItDown)
+# [MarkItDown](https://poe.com/MarkItDown){ .md-button .md-button--primary }
 
 ## Pricing
 

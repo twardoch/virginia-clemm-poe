@@ -1,4 +1,4 @@
-# [Qwen3-Coder-480B-FW](https://poe.com/Qwen3-Coder-480B-FW)
+# [Qwen3-Coder-480B-FW](https://poe.com/Qwen3-Coder-480B-FW){ .md-button .md-button--primary }
 
 ## Pricing
 

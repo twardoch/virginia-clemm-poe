@@ -1,4 +1,4 @@
-# [Reka-Flash](https://poe.com/Reka-Flash)
+# [Reka-Flash](https://poe.com/Reka-Flash){ .md-button .md-button--primary }
 
 ## Pricing
 

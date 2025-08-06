@@ -1,4 +1,4 @@
-# [o3-pro](https://poe.com/o3-pro)
+# [o3-pro](https://poe.com/o3-pro){ .md-button .md-button--primary }
 
 ## Pricing
 

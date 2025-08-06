@@ -1,4 +1,4 @@
-# [Ideogram-v2a-Turbo](https://poe.com/Ideogram-v2a-Turbo)
+# [Ideogram-v2a-Turbo](https://poe.com/Ideogram-v2a-Turbo){ .md-button .md-button--primary }
 
 ## Pricing
 

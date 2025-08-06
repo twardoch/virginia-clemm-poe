@@ -1,4 +1,4 @@
-# [PlayAI-Dialog](https://poe.com/PlayAI-Dialog)
+# [PlayAI-Dialog](https://poe.com/PlayAI-Dialog){ .md-button .md-button--primary }
 
 ## Pricing
 

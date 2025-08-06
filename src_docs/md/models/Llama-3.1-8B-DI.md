@@ -1,4 +1,4 @@
-# [Llama-3.1-8B-DI](https://poe.com/Llama-3.1-8B-DI)
+# [Llama-3.1-8B-DI](https://poe.com/Llama-3.1-8B-DI){ .md-button .md-button--primary }
 
 ## Pricing
 

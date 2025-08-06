@@ -1,4 +1,4 @@
-# [Kling-2.1-Std](https://poe.com/Kling-2.1-Std)
+# [Kling-2.1-Std](https://poe.com/Kling-2.1-Std){ .md-button .md-button--primary }
 
 ## Pricing
 

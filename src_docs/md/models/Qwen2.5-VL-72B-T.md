@@ -1,4 +1,4 @@
-# [Qwen2.5-VL-72B-T](https://poe.com/Qwen2.5-VL-72B-T)
+# [Qwen2.5-VL-72B-T](https://poe.com/Qwen2.5-VL-72B-T){ .md-button .md-button--primary }
 
 ## Pricing
 

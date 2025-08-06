@@ -1,4 +1,4 @@
-# [Sana-T2I](https://poe.com/Sana-T2I)
+# [Sana-T2I](https://poe.com/Sana-T2I){ .md-button .md-button--primary }
 
 ## Pricing
 

@@ -1,4 +1,4 @@
-# [Mistral-Large-2](https://poe.com/Mistral-Large-2)
+# [Mistral-Large-2](https://poe.com/Mistral-Large-2){ .md-button .md-button--primary }
 
 ## Pricing
 

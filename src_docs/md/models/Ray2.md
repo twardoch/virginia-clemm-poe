@@ -1,4 +1,4 @@
-# [Ray2](https://poe.com/Ray2)
+# [Ray2](https://poe.com/Ray2){ .md-button .md-button--primary }
 
 ## Pricing
 

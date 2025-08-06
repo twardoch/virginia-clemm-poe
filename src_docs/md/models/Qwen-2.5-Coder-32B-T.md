@@ -1,4 +1,4 @@
-# [Qwen-2.5-Coder-32B-T](https://poe.com/Qwen-2.5-Coder-32B-T)
+# [Qwen-2.5-Coder-32B-T](https://poe.com/Qwen-2.5-Coder-32B-T){ .md-button .md-button--primary }
 
 ## Pricing
 

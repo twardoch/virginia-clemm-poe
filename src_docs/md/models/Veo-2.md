@@ -1,4 +1,4 @@
-# [Veo-2](https://poe.com/Veo-2)
+# [Veo-2](https://poe.com/Veo-2){ .md-button .md-button--primary }
 
 ## Pricing
 

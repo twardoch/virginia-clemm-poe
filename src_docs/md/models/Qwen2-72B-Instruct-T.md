@@ -1,4 +1,4 @@
-# [Qwen2-72B-Instruct-T](https://poe.com/Qwen2-72B-Instruct-T)
+# [Qwen2-72B-Instruct-T](https://poe.com/Qwen2-72B-Instruct-T){ .md-button .md-button--primary }
 
 ## Pricing
 

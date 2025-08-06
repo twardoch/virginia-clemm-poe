@@ -1,4 +1,4 @@
-# [Imagen-3-Fast](https://poe.com/Imagen-3-Fast)
+# [Imagen-3-Fast](https://poe.com/Imagen-3-Fast){ .md-button .md-button--primary }
 
 ## Pricing
 

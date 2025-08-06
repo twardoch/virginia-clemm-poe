@@ -1,4 +1,4 @@
-# [Claude-Haiku-3.5](https://poe.com/Claude-Haiku-3.5)
+# [Claude-Haiku-3.5](https://poe.com/Claude-Haiku-3.5){ .md-button .md-button--primary }
 
 ## Pricing
 

@@ -1,4 +1,4 @@
-# [Dream-Machine](https://poe.com/Dream-Machine)
+# [Dream-Machine](https://poe.com/Dream-Machine){ .md-button .md-button--primary }
 
 ## Pricing
 

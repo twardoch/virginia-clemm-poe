@@ -1,4 +1,4 @@
-# [GPT-Image-1](https://poe.com/GPT-Image-1)
+# [GPT-Image-1](https://poe.com/GPT-Image-1){ .md-button .md-button--primary }
 
 ## Pricing
 

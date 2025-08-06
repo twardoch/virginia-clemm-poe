@@ -1,4 +1,4 @@
-# [Perplexity-R1-1776](https://poe.com/Perplexity-R1-1776)
+# [Perplexity-R1-1776](https://poe.com/Perplexity-R1-1776){ .md-button .md-button--primary }
 
 ## Pricing
 

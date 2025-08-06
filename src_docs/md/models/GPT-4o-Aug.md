@@ -1,4 +1,4 @@
-# [GPT-4o-Aug](https://poe.com/GPT-4o-Aug)
+# [GPT-4o-Aug](https://poe.com/GPT-4o-Aug){ .md-button .md-button--primary }
 
 ## Pricing
 

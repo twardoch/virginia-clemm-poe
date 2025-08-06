@@ -1,4 +1,4 @@
-# [o4-mini](https://poe.com/o4-mini)
+# [o4-mini](https://poe.com/o4-mini){ .md-button .md-button--primary }
 
 ## Pricing
 

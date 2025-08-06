@@ -1,4 +1,4 @@
-# [Retro-Diffusion-Core](https://poe.com/Retro-Diffusion-Core)
+# [Retro-Diffusion-Core](https://poe.com/Retro-Diffusion-Core){ .md-button .md-button--primary }
 
 ## Bot Information
 

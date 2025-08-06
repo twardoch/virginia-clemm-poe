@@ -1,4 +1,4 @@
-# [Mochi-preview](https://poe.com/Mochi-preview)
+# [Mochi-preview](https://poe.com/Mochi-preview){ .md-button .md-button--primary }
 
 ## Pricing
 

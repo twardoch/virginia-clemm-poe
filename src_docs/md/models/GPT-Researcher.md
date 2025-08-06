@@ -1,4 +1,4 @@
-# [GPT-Researcher](https://poe.com/GPT-Researcher)
+# [GPT-Researcher](https://poe.com/GPT-Researcher){ .md-button .md-button--primary }
 
 ## Pricing
 

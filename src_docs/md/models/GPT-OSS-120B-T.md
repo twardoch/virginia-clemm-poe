@@ -1,4 +1,4 @@
-# [GPT-OSS-120B-T](https://poe.com/GPT-OSS-120B-T)
+# [GPT-OSS-120B-T](https://poe.com/GPT-OSS-120B-T){ .md-button .md-button--primary }
 
 ## Pricing
 

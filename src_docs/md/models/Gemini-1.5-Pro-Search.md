@@ -1,4 +1,4 @@
-# [Gemini-1.5-Pro-Search](https://poe.com/Gemini-1.5-Pro-Search)
+# [Gemini-1.5-Pro-Search](https://poe.com/Gemini-1.5-Pro-Search){ .md-button .md-button--primary }
 
 ## Pricing
 

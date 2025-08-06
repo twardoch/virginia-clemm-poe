@@ -1,4 +1,4 @@
-# [Web-Search](https://poe.com/Web-Search)
+# [Web-Search](https://poe.com/Web-Search){ .md-button .md-button--primary }
 
 ## Bot Information
 

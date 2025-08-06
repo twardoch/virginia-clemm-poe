@@ -1,4 +1,4 @@
-# [FLUX-pro-1.1](https://poe.com/FLUX-pro-1.1)
+# [FLUX-pro-1.1](https://poe.com/FLUX-pro-1.1){ .md-button .md-button--primary }
 
 ## Pricing
 

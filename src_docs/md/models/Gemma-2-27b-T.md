@@ -1,4 +1,4 @@
-# [Gemma-2-27b-T](https://poe.com/Gemma-2-27b-T)
+# [Gemma-2-27b-T](https://poe.com/Gemma-2-27b-T){ .md-button .md-button--primary }
 
 ## Pricing
 

@@ -1,4 +1,4 @@
-# [Inception-Mercury](https://poe.com/Inception-Mercury)
+# [Inception-Mercury](https://poe.com/Inception-Mercury){ .md-button .md-button--primary }
 
 ## Pricing
 

@@ -1,4 +1,4 @@
-# [Qwen3-235B-A22B-DI](https://poe.com/Qwen3-235B-A22B-DI)
+# [Qwen3-235B-A22B-DI](https://poe.com/Qwen3-235B-A22B-DI){ .md-button .md-button--primary }
 
 ## Pricing
 

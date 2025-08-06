@@ -1,4 +1,4 @@
-# [Flux-Kontext-Max](https://poe.com/Flux-Kontext-Max)
+# [Flux-Kontext-Max](https://poe.com/Flux-Kontext-Max){ .md-button .md-button--primary }
 
 ## Pricing
 

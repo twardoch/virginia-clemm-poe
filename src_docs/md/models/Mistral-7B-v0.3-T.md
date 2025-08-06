@@ -1,4 +1,4 @@
-# [Mistral-7B-v0.3-T](https://poe.com/Mistral-7B-v0.3-T)
+# [Mistral-7B-v0.3-T](https://poe.com/Mistral-7B-v0.3-T){ .md-button .md-button--primary }
 
 ## Pricing
 

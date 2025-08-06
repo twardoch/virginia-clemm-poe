@@ -1,4 +1,4 @@
-# [Claude-Sonnet-3.5-June](https://poe.com/Claude-Sonnet-3.5-June)
+# [Claude-Sonnet-3.5-June](https://poe.com/Claude-Sonnet-3.5-June){ .md-button .md-button--primary }
 
 ## Pricing
 

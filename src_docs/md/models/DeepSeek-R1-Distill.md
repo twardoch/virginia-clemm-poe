@@ -1,4 +1,4 @@
-# [DeepSeek-R1-Distill](https://poe.com/DeepSeek-R1-Distill)
+# [DeepSeek-R1-Distill](https://poe.com/DeepSeek-R1-Distill){ .md-button .md-button--primary }
 
 ## Pricing
 

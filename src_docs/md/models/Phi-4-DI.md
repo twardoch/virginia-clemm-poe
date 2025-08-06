@@ -1,4 +1,4 @@
-# [Phi-4-DI](https://poe.com/Phi-4-DI)
+# [Phi-4-DI](https://poe.com/Phi-4-DI){ .md-button .md-button--primary }
 
 ## Pricing
 

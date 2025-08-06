@@ -1,4 +1,4 @@
-# [Perplexity-Sonar](https://poe.com/Perplexity-Sonar)
+# [Perplexity-Sonar](https://poe.com/Perplexity-Sonar){ .md-button .md-button--primary }
 
 ## Pricing
 

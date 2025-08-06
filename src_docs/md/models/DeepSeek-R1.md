@@ -1,4 +1,4 @@
-# [DeepSeek-R1](https://poe.com/DeepSeek-R1)
+# [DeepSeek-R1](https://poe.com/DeepSeek-R1){ .md-button .md-button--primary }
 
 ## Pricing
 

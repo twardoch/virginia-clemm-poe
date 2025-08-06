@@ -1,4 +1,4 @@
-# [Mistral-Small-3.1](https://poe.com/Mistral-Small-3.1)
+# [Mistral-Small-3.1](https://poe.com/Mistral-Small-3.1){ .md-button .md-button--primary }
 
 ## Pricing
 

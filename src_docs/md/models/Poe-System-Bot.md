@@ -1,4 +1,4 @@
-# [Poe-System-Bot](https://poe.com/Poe-System-Bot)
+# [Poe-System-Bot](https://poe.com/Poe-System-Bot){ .md-button .md-button--primary }
 
 ## Pricing
 

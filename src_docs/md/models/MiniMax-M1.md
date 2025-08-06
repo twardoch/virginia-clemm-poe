@@ -1,4 +1,4 @@
-# [MiniMax-M1](https://poe.com/MiniMax-M1)
+# [MiniMax-M1](https://poe.com/MiniMax-M1){ .md-button .md-button--primary }
 
 ## Pricing
 

@@ -1,4 +1,4 @@
-# [Tako](https://poe.com/Tako)
+# [Tako](https://poe.com/Tako){ .md-button .md-button--primary }
 
 ## Pricing
 

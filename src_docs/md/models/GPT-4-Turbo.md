@@ -1,4 +1,4 @@
-# [GPT-4-Turbo](https://poe.com/GPT-4-Turbo)
+# [GPT-4-Turbo](https://poe.com/GPT-4-Turbo){ .md-button .md-button--primary }
 
 ## Pricing
 

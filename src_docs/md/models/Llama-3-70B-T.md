@@ -1,4 +1,4 @@
-# [Llama-3-70B-T](https://poe.com/Llama-3-70B-T)
+# [Llama-3-70B-T](https://poe.com/Llama-3-70B-T){ .md-button .md-button--primary }
 
 ## Pricing
 

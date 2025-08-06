@@ -1,4 +1,4 @@
-# [Lyria](https://poe.com/Lyria)
+# [Lyria](https://poe.com/Lyria){ .md-button .md-button--primary }
 
 ## Pricing
 

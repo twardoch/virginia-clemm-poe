@@ -1,4 +1,4 @@
-# [StableDiffusion3-2B](https://poe.com/StableDiffusion3-2B)
+# [StableDiffusion3-2B](https://poe.com/StableDiffusion3-2B){ .md-button .md-button--primary }
 
 ## Pricing
 

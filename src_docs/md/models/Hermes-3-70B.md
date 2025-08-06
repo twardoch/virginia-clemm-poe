@@ -1,4 +1,4 @@
-# [Hermes-3-70B](https://poe.com/Hermes-3-70B)
+# [Hermes-3-70B](https://poe.com/Hermes-3-70B){ .md-button .md-button--primary }
 
 ## Pricing
 

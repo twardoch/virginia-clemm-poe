@@ -1,4 +1,4 @@
-# [Luma-Photon](https://poe.com/Luma-Photon)
+# [Luma-Photon](https://poe.com/Luma-Photon){ .md-button .md-button--primary }
 
 ## Pricing
 

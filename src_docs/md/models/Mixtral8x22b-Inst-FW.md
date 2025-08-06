@@ -1,4 +1,4 @@
-# [Mixtral8x22b-Inst-FW](https://poe.com/Mixtral8x22b-Inst-FW)
+# [Mixtral8x22b-Inst-FW](https://poe.com/Mixtral8x22b-Inst-FW){ .md-button .md-button--primary }
 
 ## Pricing
 

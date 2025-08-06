@@ -1,4 +1,4 @@
-# [Gemini-2.5-Pro](https://poe.com/Gemini-2.5-Pro)
+# [Gemini-2.5-Pro](https://poe.com/Gemini-2.5-Pro){ .md-button .md-button--primary }
 
 ## Pricing
 

@@ -1,4 +1,4 @@
-# [Seedance-1.0-Lite](https://poe.com/Seedance-1.0-Lite)
+# [Seedance-1.0-Lite](https://poe.com/Seedance-1.0-Lite){ .md-button .md-button--primary }
 
 ## Pricing
 

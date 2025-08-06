@@ -1,4 +1,4 @@
-# [Gemini-2.5-Flash-Lite-Preview](https://poe.com/Gemini-2.5-Flash-Lite-Preview)
+# [Gemini-2.5-Flash-Lite-Preview](https://poe.com/Gemini-2.5-Flash-Lite-Preview){ .md-button .md-button--primary }
 
 ## Bot Information
 

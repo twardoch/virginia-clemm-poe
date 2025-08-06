@@ -1,4 +1,4 @@
-# [Qwen3-32B-nitro](https://poe.com/Qwen3-32B-nitro)
+# [Qwen3-32B-nitro](https://poe.com/Qwen3-32B-nitro){ .md-button .md-button--primary }
 
 ## Pricing
 

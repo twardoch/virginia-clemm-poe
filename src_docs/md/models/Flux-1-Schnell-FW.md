@@ -1,4 +1,4 @@
-# [Flux-1-Schnell-FW](https://poe.com/Flux-1-Schnell-FW)
+# [Flux-1-Schnell-FW](https://poe.com/Flux-1-Schnell-FW){ .md-button .md-button--primary }
 
 ## Pricing
 

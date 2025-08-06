@@ -1,4 +1,4 @@
-# [Solar-Pro-2](https://poe.com/Solar-Pro-2)
+# [Solar-Pro-2](https://poe.com/Solar-Pro-2){ .md-button .md-button--primary }
 
 ## Pricing
 

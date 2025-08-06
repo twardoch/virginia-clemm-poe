@@ -1,4 +1,4 @@
-# [Python](https://poe.com/Python)
+# [Python](https://poe.com/Python){ .md-button .md-button--primary }
 
 ## Pricing
 

@@ -1,4 +1,4 @@
-# [Hailuo-Live](https://poe.com/Hailuo-Live)
+# [Hailuo-Live](https://poe.com/Hailuo-Live){ .md-button .md-button--primary }
 
 ## Pricing
 

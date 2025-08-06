@@ -1,4 +1,4 @@
-# [Command-R](https://poe.com/Command-R)
+# [Command-R](https://poe.com/Command-R){ .md-button .md-button--primary }
 
 ## Pricing
 

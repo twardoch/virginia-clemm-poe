@@ -1,4 +1,4 @@
-# [Clarity-Upscaler](https://poe.com/Clarity-Upscaler)
+# [Clarity-Upscaler](https://poe.com/Clarity-Upscaler){ .md-button .md-button--primary }
 
 ## Pricing
 

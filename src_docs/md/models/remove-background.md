@@ -1,4 +1,4 @@
-# [remove-background](https://poe.com/remove-background)
+# [remove-background](https://poe.com/remove-background){ .md-button .md-button--primary }
 
 ## Pricing
 

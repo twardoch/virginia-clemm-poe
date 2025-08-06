@@ -1,4 +1,4 @@
-# [Ideogram-v2](https://poe.com/Ideogram-v2)
+# [Ideogram-v2](https://poe.com/Ideogram-v2){ .md-button .md-button--primary }
 
 ## Pricing
 

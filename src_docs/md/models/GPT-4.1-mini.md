@@ -1,4 +1,4 @@
-# [GPT-4.1-mini](https://poe.com/GPT-4.1-mini)
+# [GPT-4.1-mini](https://poe.com/GPT-4.1-mini){ .md-button .md-button--primary }
 
 ## Pricing
 

@@ -1,4 +1,4 @@
-# [Gemini-1.5-Flash-Search](https://poe.com/Gemini-1.5-Flash-Search)
+# [Gemini-1.5-Flash-Search](https://poe.com/Gemini-1.5-Flash-Search){ .md-button .md-button--primary }
 
 ## Pricing
 

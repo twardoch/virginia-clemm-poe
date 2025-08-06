@@ -1,4 +1,4 @@
-# [Llama-4-Maverick-B10](https://poe.com/Llama-4-Maverick-B10)
+# [Llama-4-Maverick-B10](https://poe.com/Llama-4-Maverick-B10){ .md-button .md-button--primary }
 
 ## Pricing
 

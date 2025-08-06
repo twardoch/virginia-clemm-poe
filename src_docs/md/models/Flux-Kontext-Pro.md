@@ -1,4 +1,4 @@
-# [Flux-Kontext-Pro](https://poe.com/Flux-Kontext-Pro)
+# [Flux-Kontext-Pro](https://poe.com/Flux-Kontext-Pro){ .md-button .md-button--primary }
 
 ## Pricing
 

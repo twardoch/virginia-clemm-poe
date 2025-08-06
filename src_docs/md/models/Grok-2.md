@@ -1,4 +1,4 @@
-# [Grok-2](https://poe.com/Grok-2)
+# [Grok-2](https://poe.com/Grok-2){ .md-button .md-button--primary }
 
 ## Pricing
 

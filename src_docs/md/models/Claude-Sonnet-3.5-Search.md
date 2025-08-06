@@ -1,4 +1,4 @@
-# [Claude-Sonnet-3.5-Search](https://poe.com/Claude-Sonnet-3.5-Search)
+# [Claude-Sonnet-3.5-Search](https://poe.com/Claude-Sonnet-3.5-Search){ .md-button .md-button--primary }
 
 ## Pricing
 

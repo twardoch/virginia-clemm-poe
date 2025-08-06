@@ -1,4 +1,4 @@
-# [GPT-4-Classic-0314](https://poe.com/GPT-4-Classic-0314)
+# [GPT-4-Classic-0314](https://poe.com/GPT-4-Classic-0314){ .md-button .md-button--primary }
 
 ## Pricing
 

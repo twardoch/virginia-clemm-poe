@@ -1,4 +1,4 @@
-# [QwQ-32B-T](https://poe.com/QwQ-32B-T)
+# [QwQ-32B-T](https://poe.com/QwQ-32B-T){ .md-button .md-button--primary }
 
 ## Pricing
 

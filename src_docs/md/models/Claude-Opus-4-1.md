@@ -1,4 +1,4 @@
-# [Claude-Opus-4-1](https://poe.com/Claude-Opus-4-1)
+# [Claude-Opus-4-1](https://poe.com/Claude-Opus-4-1){ .md-button .md-button--primary }
 
 ## Pricing
 

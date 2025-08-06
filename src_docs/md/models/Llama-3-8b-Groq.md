@@ -1,4 +1,4 @@
-# [Llama-3-8b-Groq](https://poe.com/Llama-3-8b-Groq)
+# [Llama-3-8b-Groq](https://poe.com/Llama-3-8b-Groq){ .md-button .md-button--primary }
 
 ## Pricing
 

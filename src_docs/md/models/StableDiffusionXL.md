@@ -1,4 +1,4 @@
-# [StableDiffusionXL](https://poe.com/StableDiffusionXL)
+# [StableDiffusionXL](https://poe.com/StableDiffusionXL){ .md-button .md-button--primary }
 
 ## Pricing
 

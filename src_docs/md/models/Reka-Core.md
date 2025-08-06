@@ -1,4 +1,4 @@
-# [Reka-Core](https://poe.com/Reka-Core)
+# [Reka-Core](https://poe.com/Reka-Core){ .md-button .md-button--primary }
 
 ## Pricing
 

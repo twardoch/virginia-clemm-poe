@@ -1,4 +1,4 @@
-# [o3-deep-research](https://poe.com/o3-deep-research)
+# [o3-deep-research](https://poe.com/o3-deep-research){ .md-button .md-button--primary }
 
 ## Pricing
 

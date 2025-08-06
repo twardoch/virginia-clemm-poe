@@ -1,4 +1,4 @@
-# [FLUX-dev-DI](https://poe.com/FLUX-dev-DI)
+# [FLUX-dev-DI](https://poe.com/FLUX-dev-DI){ .md-button .md-button--primary }
 
 ## Pricing
 

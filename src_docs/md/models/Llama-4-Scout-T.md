@@ -1,4 +1,4 @@
-# [Llama-4-Scout-T](https://poe.com/Llama-4-Scout-T)
+# [Llama-4-Scout-T](https://poe.com/Llama-4-Scout-T){ .md-button .md-button--primary }
 
 ## Pricing
 

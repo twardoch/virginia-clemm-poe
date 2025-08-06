@@ -1,4 +1,4 @@
-# [Kling-1.5-Pro](https://poe.com/Kling-1.5-Pro)
+# [Kling-1.5-Pro](https://poe.com/Kling-1.5-Pro){ .md-button .md-button--primary }
 
 ## Pricing
 

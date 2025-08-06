@@ -1,4 +1,4 @@
-# [Kling-Pro-Effects](https://poe.com/Kling-Pro-Effects)
+# [Kling-Pro-Effects](https://poe.com/Kling-Pro-Effects){ .md-button .md-button--primary }
 
 ## Pricing
 

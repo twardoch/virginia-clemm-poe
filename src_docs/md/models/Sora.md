@@ -1,4 +1,4 @@
-# [Sora](https://poe.com/Sora)
+# [Sora](https://poe.com/Sora){ .md-button .md-button--primary }
 
 ## Pricing
 
