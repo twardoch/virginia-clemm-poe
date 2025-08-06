@@ -65,12 +65,12 @@ def generate_model_page(model: dict[str, Any]) -> str:
     if pricing := model.get("pricing"):
         content.append("## Pricing\n")
         if details := pricing.get("details"):
-            content.append("| Type | Cost |\n")
-            content.append("|------|------|\n")
+            content.append("| Type | Cost |")
+            content.append("|------|------|")
             for key, value in details.items():
                 if value:
                     formatted_key = key.replace("_", " ").title()
-                    content.append(f"| {formatted_key} | {value} |\n")
+                    content.append(f"| {formatted_key} | {value} |")
         content.append(f"\n**Last Checked:** {pricing.get('checked_at', 'N/A')}\n")
         content.append("")
 
@@ -225,7 +225,7 @@ def generate_table_html() -> str:
 
         async function loadData() {
             try {
-                const response = await fetch('/virginia-clemm-poe/data/poe_models.json');
+                const response = await fetch('data/poe_models.json');
                 const data = await response.json();
                 modelsData = data.data || [];
                 initializeFilters();
@@ -436,15 +436,17 @@ def main() -> None:
     models_index_path = docs_models_dir / "index.md"
     models_index_content = ["# Models Database\n\n"]
     models_index_content.append("## Interactive Table\n\n")
-    models_index_content.append('<iframe src="/virginia-clemm-poe/table.html" width="100%" height="800px" frameborder="0" style="border: 1px solid #ddd; border-radius: 4px;"></iframe>\n\n')
+    models_index_content.append(
+        '<iframe src="../table.html" width="100%" height="800px" frameborder="0" style="border: 1px solid #ddd; border-radius: 4px;"></iframe>\n\n'
+    )
     models_index_content.append("## All Models\n\n")
     models_index_content.append("Browse all available Poe models:\n\n")
 
     for model in sorted(models, key=lambda x: x["id"]):
-        models_index_content.append(f"- [{model['id']}]({model['id']}.md)")
+        models_index_content.append(f"### [{model['id']}]({model['id']}.md)")
         if (bot_info := model.get("bot_info")) and (creator := bot_info.get("creator")):
             models_index_content.append(f" by {creator}")
-        models_index_content.append("\n")
+        models_index_content.append("\n\n")
 
     models_index_path.write_text("".join(models_index_content))
     logger.success(f"Generated models index: {models_index_path}")
@@ -452,16 +454,10 @@ def main() -> None:
     # Build the MkDocs site
     logger.info("🔨 Building MkDocs site")
     src_docs_dir = project_root / "src_docs"
-    
+
     try:
         # Change to src_docs directory and run mkdocs build
-        result = subprocess.run(
-            ["mkdocs", "build"],
-            cwd=src_docs_dir,
-            capture_output=True,
-            text=True,
-            check=True
-        )
+        result = subprocess.run(["mkdocs", "build"], cwd=src_docs_dir, capture_output=True, text=True, check=True)
         logger.success("✅ MkDocs site built successfully")
         if result.stdout:
             logger.debug(f"MkDocs output: {result.stdout}")

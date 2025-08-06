@@ -24,13 +24,9 @@ Supports 128k tokens of input context and 8k tokens of output context. Quantizat
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Total Cost | 50 points/message |
-
 | Initial Points Cost | 50 points |
-
 
 **Last Checked:** 2025-08-05 23:31:43.098006
 

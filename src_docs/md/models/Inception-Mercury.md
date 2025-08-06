@@ -21,15 +21,10 @@
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Input Text | 13 points / 1k tokens |
-
 | Initial Points Cost | 20+ points |
-
 | Bot Message (Text) | 50 points / 1k tokens |
-
 
 **Last Checked:** 2025-08-05 23:27:54.533447
 

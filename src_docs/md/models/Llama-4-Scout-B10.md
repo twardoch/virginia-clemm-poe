@@ -25,13 +25,9 @@ Scout is perfect for tasks requiring a lot of context, from summarizing large do
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Total Cost | 100 points/message |
-
 | Initial Points Cost | 100 points |
-
 
 **Last Checked:** 2025-08-05 23:32:30.529482
 

@@ -21,13 +21,9 @@
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Image Output | 1842 points / message |
-
 | Initial Points Cost | 1842 points |
-
 
 **Last Checked:** 2025-08-05 23:40:32.725927
 

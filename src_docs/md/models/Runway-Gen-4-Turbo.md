@@ -21,15 +21,10 @@
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Initial Points Cost | Variable points |
-
 | 5 Seconds | 11334 points |
-
 | 10 Seconds | 21334 points |
-
 
 **Last Checked:** 2025-08-05 23:39:29.900681
 

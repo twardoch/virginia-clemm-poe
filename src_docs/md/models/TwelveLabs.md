@@ -31,17 +31,11 @@ Let's explore your videos together!
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Initial Points Cost | Variable points |
-
 | Visual Analysis | 1100 points |
-
 | Audio Analysis | 277 points |
-
 | Storage | 50 points |
-
 
 **Last Checked:** 2025-08-05 23:41:13.804179
 

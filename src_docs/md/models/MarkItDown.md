@@ -21,11 +21,8 @@
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Markdown Conversion | 100 per Markdown conversion |
-
 
 **Last Checked:** 2025-08-05 23:33:11.349106
 

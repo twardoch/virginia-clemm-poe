@@ -23,13 +23,9 @@ Input token limit 128k, output token limit 8k. Quantization: FP16 (official).
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Total Cost | 0 points/message |
-
 | Initial Points Cost | 0 points |
-
 
 **Last Checked:** 2025-08-05 23:31:01.566403
 

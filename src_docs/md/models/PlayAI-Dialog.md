@@ -90,13 +90,9 @@ Mary_Narrative_(Hebrew/Israeli)
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Initial Points Cost | Variable points |
-
 | Audio Output | 29 points / second |
-
 
 **Last Checked:** 2025-08-05 23:36:04.017253
 

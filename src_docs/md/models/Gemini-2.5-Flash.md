@@ -23,21 +23,13 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Input Text | 3 points/1k tokens |
-
 | Input Image | 3 points/1k tokens |
-
 | Bot Message | 8 points/message |
-
 | Chat History | Input rates are applied |
-
 | Initial Points Cost | 9+ points |
-
 | Input (Video) | 1 point/second |
-
 
 **Last Checked:** 2025-08-05 23:24:45.534393
 

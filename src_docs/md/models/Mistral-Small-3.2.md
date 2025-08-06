@@ -29,17 +29,11 @@ Supported File Types
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Initial Points Cost | 50+ points |
-
 | Base Request Fee | 50 |
-
 | Input Processing | 2 per token |
-
 | Output Generation | 4 per token |
-
 
 **Last Checked:** 2025-08-05 23:34:14.300020
 

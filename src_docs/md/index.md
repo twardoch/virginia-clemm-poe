@@ -1,7 +1,5 @@
 # Virginia Clemm Poe Documentation
 
-## TLDR
-
 **Virginia Clemm Poe** is a Python package that provides programmatic access to comprehensive Poe.com model data with pricing information. It acts as a companion tool to the official Poe API by fetching, maintaining, and enriching model data through web scraping, with a special focus on capturing detailed pricing information not available through the API alone.
 
 **Key Features:**
@@ -12,13 +10,9 @@
 - 🌐 **Web Scraping**: Playwright-powered browser automation for reliable data extraction
 - 📊 **Pydantic Models**: Fully typed data structures for easy integration
 
-## Explore Models
+## [Browse Poe Models](models/index.md)
 
-🔍 **[Browse Interactive Models Database](models/index.md)** - Explore all available Poe.com models with real-time search, filtering, and detailed pricing information
-
-📊 **[View Models Table](table.html)** - Interactive searchable table of all models with pricing and metadata
-
-## Table of Contents
+Explore all available Poe.com models with real-time search, filtering, and detailed pricing information
 
 ### Getting Started
 1. **[Introduction and Overview](chapter1-introduction.md)** - Learn about the package's purpose, architecture, and core concepts

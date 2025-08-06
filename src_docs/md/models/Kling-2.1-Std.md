@@ -21,13 +21,9 @@
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Video Output | 1667 points / second |
-
 | Initial Points Cost | Variable points |
-
 
 **Last Checked:** 2025-08-05 23:28:56.529083
 

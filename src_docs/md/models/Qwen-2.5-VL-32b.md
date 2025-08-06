@@ -21,13 +21,9 @@
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Total Cost | 220 points/message |
-
 | Initial Points Cost | 220 points |
-
 
 **Last Checked:** 2025-08-05 23:37:12.751511
 

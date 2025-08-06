@@ -26,19 +26,12 @@ Optional parameters:
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Input Text | 151 points/1k tokens |
-
 | Initial Points Cost | Variable points |
-
 | Input (Images) | 301 points/1k tokens |
-
 | High Fidelity Editing | 2000 points |
-
 | Output (Image) | Based on output image quality and resolution (see table below) |
-
 
 **Last Checked:** 2025-08-05 23:23:34.836895
 

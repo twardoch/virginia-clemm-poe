@@ -47,13 +47,9 @@ Japanese -- Alice
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Input Text | 1 point / character |
-
 | Initial Points Cost | Variable points |
-
 
 **Last Checked:** 2025-08-05 23:19:42.115656
 

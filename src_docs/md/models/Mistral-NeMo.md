@@ -23,17 +23,11 @@ The supported languages include, but are not limited to, widely spoken languages
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Initial Points Cost | 25+ |
-
 | Base Request Fee | 50 |
-
 | Input Processing | 2 per token |
-
 | Output Generation | 4 per token |
-
 
 **Last Checked:** 2025-08-05 23:33:53.622131
 

@@ -22,13 +22,9 @@ This bot supports .jpg and .png images.
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Image Output | 850 points / megapixel |
-
 | Initial Points Cost | Variable points |
-
 
 **Last Checked:** 2025-08-05 23:15:54.768248
 

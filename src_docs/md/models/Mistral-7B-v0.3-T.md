@@ -23,13 +23,9 @@ The points price is subject to change.
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Total Cost | 45 points/message |
-
 | Initial Points Cost | 45 points |
-
 
 **Last Checked:** 2025-08-05 23:33:33.000566
 

@@ -23,13 +23,9 @@ Delivering results on par with Llama-3-405B despite using only one-fifth of the 
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Total Cost | 300 points/message |
-
 | Initial Points Cost | 300 points |
-
 
 **Last Checked:** 2025-08-05 23:36:52.211945
 

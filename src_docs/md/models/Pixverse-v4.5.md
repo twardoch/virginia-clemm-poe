@@ -27,27 +27,16 @@ Use `--seed` to set the seed and `--aspect` to set the aspect ratio.
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Initial Points Cost | Variable points |
-
 | Video Output (360P) | 2000 points / second |
-
 | Video Output (540P) | 2000 points / second |
-
 | Video Output (720P) | 2667 points / second |
-
 | Video Output (1080P) | 5334 points / second |
-
 | Video Effects/Video Transition Output (360P) | 4000 points / second |
-
 | Video Effects/Video Transition Output (540P) | 4000 points / second |
-
 | Video Effects/Video Transition Output (720P) | 5334 points / second |
-
 | Video Effects/Video Transition Output (1080P) | 10667 points / second |
-
 
 **Last Checked:** 2025-08-05 23:35:57.229243
 

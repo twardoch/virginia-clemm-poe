@@ -23,13 +23,9 @@ Try it out with blazing-fast speed optimized by Baseten's model performance engi
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Total Cost | 200 points/message |
-
 | Initial Points Cost | 200 points |
-
 
 **Last Checked:** 2025-08-05 23:36:31.598040
 

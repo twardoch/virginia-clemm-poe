@@ -21,21 +21,13 @@
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Input Text | 5 points/1k tokens |
-
 | Input Image | 5 points/1k tokens |
-
 | Bot Message | 5 points/message |
-
 | Chat History | Input rates are applied |
-
 | Chat History Cache Discount | 50% discount oncached chat history |
-
 | Initial Points Cost | 6+ points |
-
 
 **Last Checked:** 2025-08-05 23:23:20.637183
 

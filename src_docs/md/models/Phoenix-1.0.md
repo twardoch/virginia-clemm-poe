@@ -28,13 +28,9 @@ Image generation prompts can be a maximum of 1500 characters.
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Total Cost | 560 points/message |
-
 | Initial Points Cost | 560 points |
-
 
 **Last Checked:** 2025-08-05 23:35:43.785165
 

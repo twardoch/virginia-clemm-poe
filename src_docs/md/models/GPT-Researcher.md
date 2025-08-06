@@ -23,17 +23,11 @@ GPTR is based on the popular open source project: https://github.com/assafelovic
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Text Input | 100 points / token |
-
 | Initial Points Cost | Variable points |
-
 | Research Analysis | 200 points / research |
-
 | Research Response | 150 points / research |
-
 
 **Last Checked:** 2025-08-05 23:23:49.279887
 

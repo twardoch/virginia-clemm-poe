@@ -21,19 +21,12 @@
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Input Text | 90 points/1k tokens |
-
 | Input Image | Variable |
-
 | Bot Message | 227 points/message |
-
 | Chat History | Input rates are applied |
-
 | Initial Points Cost | 248+ points |
-
 
 **Last Checked:** 2025-08-05 23:33:46.719356
 

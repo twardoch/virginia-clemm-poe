@@ -22,21 +22,13 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Input Text | 585 points/1k tokens |
-
 | Input Image | 585 points/1k tokens |
-
 | Bot Message | 5782 points/message |
-
 | Chat History | Input rates are applied |
-
 | Chat History Cache Discount | 90% discount oncached chat history |
-
 | Initial Points Cost | 5916+ points |
-
 
 **Last Checked:** 2025-08-05 23:16:43.181755
 

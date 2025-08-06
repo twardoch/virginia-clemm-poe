@@ -21,21 +21,13 @@
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Input Text | 1 point/1k characters |
-
 | Input Image | 1 point/image |
-
 | Bot Message | 2 points/message |
-
 | Chat History | Input rates are applied |
-
 | Initial Points Cost | 3+ points |
-
 | Input (Video) | 1 point/second |
-
 
 **Last Checked:** 2025-08-05 23:23:56.330740
 

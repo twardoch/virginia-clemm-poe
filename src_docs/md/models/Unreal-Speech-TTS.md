@@ -56,13 +56,9 @@ Portuguese
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Text Input | 1 point per 5 characters |
-
 | Initial Points Cost | Variable points |
-
 
 **Last Checked:** 2025-08-05 23:41:20.548138
 

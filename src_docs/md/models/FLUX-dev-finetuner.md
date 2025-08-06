@@ -21,13 +21,9 @@
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Finetuning | 56667 points / message |
-
 | Initial Points Cost | Variable points |
-
 
 **Last Checked:** 2025-08-05 23:20:18.224623
 

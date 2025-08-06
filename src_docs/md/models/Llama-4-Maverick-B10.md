@@ -25,13 +25,9 @@ Maverick is a versatile model, great for tasks from creative content generation 
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Total Cost | 145 points/message |
-
 | Initial Points Cost | 145 points |
-
 
 **Last Checked:** 2025-08-05 23:32:10.172263
 

@@ -26,13 +26,9 @@ To set inference, use "--num_inference_steps". Options from 1 up to 50. Default:
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Total Cost | 165 points/message |
-
 | Initial Points Cost | 165 points |
-
 
 **Last Checked:** 2025-08-05 23:20:10.330382
 

@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+./src_docs/update_docs.py
 llms . "*.txt"
 uvx hatch clean
 gitnextver .

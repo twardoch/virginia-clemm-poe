@@ -21,13 +21,9 @@
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Video Output | 16667 points / message |
-
 | Initial Points Cost | 16667 points |
-
 
 **Last Checked:** 2025-08-05 23:26:10.693794
 

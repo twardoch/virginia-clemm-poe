@@ -21,15 +21,10 @@
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Initial Points Cost | Variable points |
-
 | Hd Output | 3334 points / 1000 characters |
-
 | Turbo Output | 2000 points / 1000 characters |
-
 
 **Last Checked:** 2025-08-05 23:26:25.018163
 

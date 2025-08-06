@@ -21,15 +21,10 @@
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Video Output | 8334 points / s |
-
 | Initial Points Cost | Variable points |
-
 | Audio + Video Output | 13334 points / s |
-
 
 **Last Checked:** 2025-08-05 23:41:48.319898
 

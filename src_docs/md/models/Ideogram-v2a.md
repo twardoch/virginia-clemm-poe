@@ -22,13 +22,9 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Total Cost | 1300 points/message |
-
 | Initial Points Cost | 1300 points |
-
 
 **Last Checked:** 2025-08-05 23:26:59.261416
 

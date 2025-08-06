@@ -21,13 +21,9 @@
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Initial Points Cost | 567 points |
-
 | 3D Output | 567 points / message |
-
 
 **Last Checked:** 2025-08-05 23:41:06.753634
 

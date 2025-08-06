@@ -22,19 +22,12 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Input Text | 33 points/1k tokens |
-
 | Input Image | Variable |
-
 | Bot Message | 199 points/message |
-
 | Chat History | Input rates are applied |
-
 | Initial Points Cost | 207+ points |
-
 
 **Last Checked:** 2025-08-05 23:42:49.316928
 

@@ -21,21 +21,13 @@
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Initial Points Cost | Variable points |
-
 | Turbo (Default) | ['720p', '5s', '5,000'] |
-
 | 2.1 | ['1080p', '5s', '19,167'] |
-
 | 2.2 | ['1080p', '10s', '40,000'] |
-
 | 2.2 + Ingredients | ['1080p', '10s', '60,000'] |
-
 | Pikaffects | ['720p', '5s', '23,334'] |
-
 
 **Last Checked:** 2025-08-05 23:35:50.521416
 

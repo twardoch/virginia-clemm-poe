@@ -23,13 +23,9 @@ Allows users to specify elements to exclude in the audio using the "--no" parame
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Input Text | 2000 points per generated song |
-
 | Initial Points Cost | Variable points |
-
 
 **Last Checked:** 2025-08-05 23:33:04.616564
 

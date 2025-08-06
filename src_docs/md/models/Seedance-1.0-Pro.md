@@ -22,13 +22,9 @@ Number of video tokens calculated for pricing is approximately: `height * width 
 ## Pricing
 
 | Type | Cost |
-
 |------|------|
-
 | Video Output | 83334 points / million video tokens |
-
 | Initial Points Cost | Variable points |
-
 
 **Last Checked:** 2025-08-05 23:39:50.550570
 
