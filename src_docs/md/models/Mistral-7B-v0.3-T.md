@@ -1,4 +1,14 @@
-# Mistral-7B-v0.3-T
+# [Mistral-7B-v0.3-T](https://poe.com/Mistral-7B-v0.3-T)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 45 points/message |
+| Initial Points Cost | 45 points |
+
+**Last Checked:** 2025-08-05 23:33:33.000566
+
 
 ## Bot Information
 
@@ -18,16 +28,6 @@ The points price is subject to change.
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 45 points/message |
-| Initial Points Cost | 45 points |
-
-**Last Checked:** 2025-08-05 23:33:33.000566
 
 
 ## Technical Details

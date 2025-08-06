@@ -1,4 +1,14 @@
-# Veo-3
+# [Veo-3](https://poe.com/Veo-3)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 55500 points/message |
+| Initial Points Cost | 55500 points |
+
+**Last Checked:** 2025-08-05 23:41:41.451474
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** video
 
 **Modality:** text->video
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 55500 points/message |
-| Initial Points Cost | 55500 points |
-
-**Last Checked:** 2025-08-05 23:41:41.451474
 
 
 ## Technical Details

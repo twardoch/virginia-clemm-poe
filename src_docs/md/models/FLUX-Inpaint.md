@@ -1,4 +1,14 @@
-# FLUX-Inpaint
+# [FLUX-Inpaint](https://poe.com/FLUX-Inpaint)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Image Output | 992 points / message |
+| Initial Points Cost | 992 points |
+
+**Last Checked:** 2025-08-05 23:19:56.486168
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Image Output | 992 points / message |
-| Initial Points Cost | 992 points |
-
-**Last Checked:** 2025-08-05 23:19:56.486168
 
 
 ## Technical Details

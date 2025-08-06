@@ -1,4 +1,14 @@
-# Phi-4-DI
+# [Phi-4-DI](https://poe.com/Phi-4-DI)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 10 points/message |
+| Initial Points Cost | 10 points |
+
+**Last Checked:** 2025-08-05 23:35:36.883529
+
 
 ## Bot Information
 
@@ -22,16 +32,6 @@ Supports 16k tokens of input context and 8k tokens of output context. Quantizati
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 10 points/message |
-| Initial Points Cost | 10 points |
-
-**Last Checked:** 2025-08-05 23:35:36.883529
 
 
 ## Technical Details

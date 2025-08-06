@@ -1,4 +1,14 @@
-# Llama-3.1-405B-FP16
+# [Llama-3.1-405B-FP16](https://poe.com/Llama-3.1-405B-FP16)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 2070 points/message |
+| Initial Points Cost | 2070 points |
+
+**Last Checked:** 2025-08-05 23:30:05.326261
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 2070 points/message |
-| Initial Points Cost | 2070 points |
-
-**Last Checked:** 2025-08-05 23:30:05.326261
 
 
 ## Technical Details

@@ -1,4 +1,14 @@
-# remove-background
+# [remove-background](https://poe.com/remove-background)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Image Output | 34 points / message |
+| Initial Points Cost | 34 points |
+
+**Last Checked:** 2025-08-05 23:43:23.507230
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** image
 
 **Modality:** text->image
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Image Output | 34 points / message |
-| Initial Points Cost | 34 points |
-
-**Last Checked:** 2025-08-05 23:43:23.507230
 
 
 ## Technical Details

@@ -1,4 +1,14 @@
-# Mistral-Small-3.1
+# [Mistral-Small-3.1](https://poe.com/Mistral-Small-3.1)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Per Message | 64 points |
+| Initial Points Cost | 64 points |
+
+**Last Checked:** 2025-08-05 23:34:07.637659
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Per Message | 64 points |
-| Initial Points Cost | 64 points |
-
-**Last Checked:** 2025-08-05 23:34:07.637659
 
 
 ## Technical Details

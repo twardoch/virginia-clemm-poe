@@ -1,4 +1,4 @@
-# Retro-Diffusion-Core
+# [Retro-Diffusion-Core](https://poe.com/Retro-Diffusion-Core)
 
 ## Bot Information
 

@@ -1,4 +1,14 @@
-# Imagen-4-Ultra-Exp
+# [Imagen-4-Ultra-Exp](https://poe.com/Imagen-4-Ultra-Exp)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 400 points/message |
+| Initial Points Cost | 400 points |
+
+**Last Checked:** 2025-08-05 23:27:47.764398
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** image
 
 **Modality:** text->image
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 400 points/message |
-| Initial Points Cost | 400 points |
-
-**Last Checked:** 2025-08-05 23:27:47.764398
 
 
 ## Technical Details

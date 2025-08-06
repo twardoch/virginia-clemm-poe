@@ -1,4 +1,14 @@
-# Wan-2.1
+# [Wan-2.1](https://poe.com/Wan-2.1)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Video Output | 11334 points / message |
+| Initial Points Cost | 11334 points |
+
+**Last Checked:** 2025-08-05 23:41:55.253613
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** video
 
 **Modality:** text->video
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Video Output | 11334 points / message |
-| Initial Points Cost | 11334 points |
-
-**Last Checked:** 2025-08-05 23:41:55.253613
 
 
 ## Technical Details

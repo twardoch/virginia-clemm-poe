@@ -1,4 +1,14 @@
-# DeepSeek-V3
+# [DeepSeek-V3](https://poe.com/DeepSeek-V3)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 415 points/message |
+| Initial Points Cost | 415 points |
+
+**Last Checked:** 2025-08-05 23:19:05.755817
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 415 points/message |
-| Initial Points Cost | 415 points |
-
-**Last Checked:** 2025-08-05 23:19:05.755817
 
 
 ## Technical Details

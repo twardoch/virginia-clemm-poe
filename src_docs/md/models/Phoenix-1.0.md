@@ -1,4 +1,14 @@
-# Phoenix-1.0
+# [Phoenix-1.0](https://poe.com/Phoenix-1.0)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 560 points/message |
+| Initial Points Cost | 560 points |
+
+**Last Checked:** 2025-08-05 23:35:43.785165
+
 
 ## Bot Information
 
@@ -23,16 +33,6 @@ Image generation prompts can be a maximum of 1500 characters.
 **Output Modalities:** image
 
 **Modality:** text->image
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 560 points/message |
-| Initial Points Cost | 560 points |
-
-**Last Checked:** 2025-08-05 23:35:43.785165
 
 
 ## Technical Details

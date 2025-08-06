@@ -1,4 +1,17 @@
-# ChatGPT-4o-Latest
+# [ChatGPT-4o-Latest](https://poe.com/ChatGPT-4o-Latest)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Input Text | 150 points/1k tokens |
+| Input Image | 150 points/1k tokens |
+| Bot Message | 302 points/message |
+| Chat History | Input rates are applied |
+| Initial Points Cost | 335+ points |
+
+**Last Checked:** 2025-08-05 23:15:47.594449
+
 
 ## Bot Information
 
@@ -16,19 +29,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Input Text | 150 points/1k tokens |
-| Input Image | 150 points/1k tokens |
-| Bot Message | 302 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 335+ points |
-
-**Last Checked:** 2025-08-05 23:15:47.594449
 
 
 ## Technical Details

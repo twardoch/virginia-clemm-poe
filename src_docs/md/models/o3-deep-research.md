@@ -1,4 +1,18 @@
-# o3-deep-research
+# [o3-deep-research](https://poe.com/o3-deep-research)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Input Text | 300 points/1k tokens |
+| Input Image | 300 points/1k tokens |
+| Bot Message | 95345 points/message |
+| Chat History | Input rates are applied |
+| Chat History Cache Discount | 75% discount oncached chat history |
+| Initial Points Cost | 95410+ points |
+
+**Last Checked:** 2025-08-05 23:42:42.355031
+
 
 ## Bot Information
 
@@ -16,20 +30,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Input Text | 300 points/1k tokens |
-| Input Image | 300 points/1k tokens |
-| Bot Message | 95345 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 75% discount oncached chat history |
-| Initial Points Cost | 95410+ points |
-
-**Last Checked:** 2025-08-05 23:42:42.355031
 
 
 ## Technical Details

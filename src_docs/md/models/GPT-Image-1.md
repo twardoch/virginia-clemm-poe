@@ -1,4 +1,17 @@
-# GPT-Image-1
+# [GPT-Image-1](https://poe.com/GPT-Image-1)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Input Text | 151 points/1k tokens |
+| Initial Points Cost | Variable points |
+| Input (Images) | 301 points/1k tokens |
+| High Fidelity Editing | 2000 points |
+| Output (Image) | Based on output image quality and resolution (see table below) |
+
+**Last Checked:** 2025-08-05 23:23:34.836895
+
 
 ## Bot Information
 
@@ -21,19 +34,6 @@ Optional parameters:
 **Output Modalities:** image
 
 **Modality:** text->image
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Input Text | 151 points/1k tokens |
-| Initial Points Cost | Variable points |
-| Input (Images) | 301 points/1k tokens |
-| High Fidelity Editing | 2000 points |
-| Output (Image) | Based on output image quality and resolution (see table below) |
-
-**Last Checked:** 2025-08-05 23:23:34.836895
 
 
 ## Technical Details

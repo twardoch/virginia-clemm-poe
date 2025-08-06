@@ -1,4 +1,20 @@
-# TopazLabs
+# [TopazLabs](https://poe.com/TopazLabs)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Initial Points Cost | Variable points |
+| Up To 24 | 1167 points |
+| 24 - 32 | 2334 points |
+| 32 - 48 | 3501 points |
+| 48 - 64 | 4668 points |
+| 64 - 128 | 7002 points |
+| 128 - 256 | 11670 points |
+| > 256(Up To 512) | 18672 points |
+
+**Last Checked:** 2025-08-05 23:40:59.940563
+
 
 ## Bot Information
 
@@ -16,22 +32,6 @@
 **Output Modalities:** image
 
 **Modality:** text->image
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Initial Points Cost | Variable points |
-| Up To 24 | 1167 points |
-| 24 - 32 | 2334 points |
-| 32 - 48 | 3501 points |
-| 48 - 64 | 4668 points |
-| 64 - 128 | 7002 points |
-| 128 - 256 | 11670 points |
-| > 256(Up To 512) | 18672 points |
-
-**Last Checked:** 2025-08-05 23:40:59.940563
 
 
 ## Technical Details

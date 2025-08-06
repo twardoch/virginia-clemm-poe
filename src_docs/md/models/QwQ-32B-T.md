@@ -1,4 +1,14 @@
-# QwQ-32B-T
+# [QwQ-32B-T](https://poe.com/QwQ-32B-T)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 250 points/message |
+| Initial Points Cost | 250 points |
+
+**Last Checked:** 2025-08-05 23:36:45.070268
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 250 points/message |
-| Initial Points Cost | 250 points |
-
-**Last Checked:** 2025-08-05 23:36:45.070268
 
 
 ## Technical Details

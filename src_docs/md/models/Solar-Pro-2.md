@@ -1,4 +1,14 @@
-# Solar-Pro-2
+# [Solar-Pro-2](https://poe.com/Solar-Pro-2)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 70 points/message |
+| Initial Points Cost | 70 points |
+
+**Last Checked:** 2025-08-05 23:40:11.150652
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 70 points/message |
-| Initial Points Cost | 70 points |
-
-**Last Checked:** 2025-08-05 23:40:11.150652
 
 
 ## Technical Details

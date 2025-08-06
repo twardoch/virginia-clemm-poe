@@ -1,4 +1,14 @@
-# Tako
+# [Tako](https://poe.com/Tako)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 1000 points/message |
+| Initial Points Cost | 1000 points |
+
+**Last Checked:** 2025-08-05 23:40:53.136305
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 1000 points/message |
-| Initial Points Cost | 1000 points |
-
-**Last Checked:** 2025-08-05 23:40:53.136305
 
 
 ## Technical Details

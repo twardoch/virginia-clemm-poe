@@ -1,4 +1,14 @@
-# Qwen-QwQ-32b-preview
+# [Qwen-QwQ-32b-preview](https://poe.com/Qwen-QwQ-32b-preview)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 240 points/message |
+| Initial Points Cost | 240 points |
+
+**Last Checked:** 2025-08-05 23:37:33.522406
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 240 points/message |
-| Initial Points Cost | 240 points |
-
-**Last Checked:** 2025-08-05 23:37:33.522406
 
 
 ## Technical Details

@@ -1,4 +1,14 @@
-# Ideogram
+# [Ideogram](https://poe.com/Ideogram)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 1500 points/message |
+| Initial Points Cost | 1500 points |
+
+**Last Checked:** 2025-08-05 23:26:45.751930
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** image
 
 **Modality:** text->image
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 1500 points/message |
-| Initial Points Cost | 1500 points |
-
-**Last Checked:** 2025-08-05 23:26:45.751930
 
 
 ## Technical Details

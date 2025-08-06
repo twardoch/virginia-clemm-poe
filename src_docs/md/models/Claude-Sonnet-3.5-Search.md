@@ -1,4 +1,18 @@
-# Claude-Sonnet-3.5-Search
+# [Claude-Sonnet-3.5-Search](https://poe.com/Claude-Sonnet-3.5-Search)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Input Text | 115 points/1k tokens |
+| Input Image | Variable |
+| Bot Message | 438 points/message |
+| Chat History | Input rates are applied |
+| Chat History Cache Discount | 90% discount oncached chat history |
+| Initial Points Cost | 465+ points |
+
+**Last Checked:** 2025-08-05 23:17:10.530327
+
 
 ## Bot Information
 
@@ -16,20 +30,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Input Text | 115 points/1k tokens |
-| Input Image | Variable |
-| Bot Message | 438 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 90% discount oncached chat history |
-| Initial Points Cost | 465+ points |
-
-**Last Checked:** 2025-08-05 23:17:10.530327
 
 
 ## Technical Details

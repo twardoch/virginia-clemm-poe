@@ -1,4 +1,14 @@
-# Unreal-Speech-TTS
+# [Unreal-Speech-TTS](https://poe.com/Unreal-Speech-TTS)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Text Input | 1 point per 5 characters |
+| Initial Points Cost | Variable points |
+
+**Last Checked:** 2025-08-05 23:41:20.548138
+
 
 ## Bot Information
 
@@ -51,16 +61,6 @@ Portuguese
 **Output Modalities:** audio
 
 **Modality:** text->audio
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Text Input | 1 point per 5 characters |
-| Initial Points Cost | Variable points |
-
-**Last Checked:** 2025-08-05 23:41:20.548138
 
 
 ## Technical Details

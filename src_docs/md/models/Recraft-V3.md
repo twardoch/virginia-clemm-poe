@@ -1,4 +1,14 @@
-# Recraft-V3
+# [Recraft-V3](https://poe.com/Recraft-V3)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Image Output | 2267 points / message |
+| Initial Points Cost | 2267 points |
+
+**Last Checked:** 2025-08-05 23:38:41.717608
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** image
 
 **Modality:** text->image
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Image Output | 2267 points / message |
-| Initial Points Cost | 2267 points |
-
-**Last Checked:** 2025-08-05 23:38:41.717608
 
 
 ## Technical Details

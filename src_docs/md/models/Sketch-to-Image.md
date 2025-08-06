@@ -1,4 +1,14 @@
-# Sketch-to-Image
+# [Sketch-to-Image](https://poe.com/Sketch-to-Image)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Image Output | 992 points / message |
+| Initial Points Cost | Variable points |
+
+**Last Checked:** 2025-08-05 23:40:04.326621
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Image Output | 992 points / message |
-| Initial Points Cost | Variable points |
-
-**Last Checked:** 2025-08-05 23:40:04.326621
 
 
 ## Technical Details

@@ -1,4 +1,14 @@
-# Qwen3-235B-A22B
+# [Qwen3-235B-A22B](https://poe.com/Qwen3-235B-A22B)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 1 point/message |
+| Initial Points Cost | 1 point |
+
+**Last Checked:** 2025-08-05 23:38:07.438613
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 1 point/message |
-| Initial Points Cost | 1 point |
-
-**Last Checked:** 2025-08-05 23:38:07.438613
 
 
 ## Technical Details

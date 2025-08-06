@@ -1,4 +1,14 @@
-# DeepSeek-V3-DI
+# [DeepSeek-V3-DI](https://poe.com/DeepSeek-V3-DI)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 145 points/message |
+| Initial Points Cost | 145 points |
+
+**Last Checked:** 2025-08-05 23:19:12.696299
+
 
 ## Bot Information
 
@@ -18,16 +28,6 @@ Supports 64k tokens of input context and 8k tokens of output context. Quantizati
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 145 points/message |
-| Initial Points Cost | 145 points |
-
-**Last Checked:** 2025-08-05 23:19:12.696299
 
 
 ## Technical Details

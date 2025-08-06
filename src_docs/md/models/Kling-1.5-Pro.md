@@ -1,4 +1,14 @@
-# Kling-1.5-Pro
+# [Kling-1.5-Pro](https://poe.com/Kling-1.5-Pro)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Video Output | 2834 points / second |
+| Initial Points Cost | Variable points |
+
+**Last Checked:** 2025-08-05 23:28:21.928770
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** video
 
 **Modality:** text->video
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Video Output | 2834 points / second |
-| Initial Points Cost | Variable points |
-
-**Last Checked:** 2025-08-05 23:28:21.928770
 
 
 ## Technical Details

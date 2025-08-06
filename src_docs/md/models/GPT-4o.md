@@ -1,4 +1,19 @@
-# GPT-4o
+# [GPT-4o](https://poe.com/GPT-4o)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Input Text | 75 points/1k tokens |
+| Input Image | 75 points/1k tokens |
+| Bot Message | 187 points/message |
+| Chat History | Input rates are applied |
+| Chat History Cache Discount | 50% discount oncached chat history |
+| Initial Points Cost | Variable points |
+| Image Generation | Additional costs based on the "Image Generation" section below |
+
+**Last Checked:** 2025-08-05 23:22:59.250841
+
 
 ## Bot Information
 
@@ -16,21 +31,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Input Text | 75 points/1k tokens |
-| Input Image | 75 points/1k tokens |
-| Bot Message | 187 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 50% discount oncached chat history |
-| Initial Points Cost | Variable points |
-| Image Generation | Additional costs based on the "Image Generation" section below |
-
-**Last Checked:** 2025-08-05 23:22:59.250841
 
 
 ## Technical Details

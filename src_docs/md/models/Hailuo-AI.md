@@ -1,4 +1,14 @@
-# Hailuo-AI
+# [Hailuo-AI](https://poe.com/Hailuo-AI)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Video Output | 14167 points / message |
+| Initial Points Cost | Variable points |
+
+**Last Checked:** 2025-08-05 23:26:03.811511
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** video
 
 **Modality:** text->video
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Video Output | 14167 points / message |
-| Initial Points Cost | Variable points |
-
-**Last Checked:** 2025-08-05 23:26:03.811511
 
 
 ## Technical Details

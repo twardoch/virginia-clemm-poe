@@ -1,4 +1,14 @@
-# Qwen-2.5-Coder-32B-T
+# [Qwen-2.5-Coder-32B-T](https://poe.com/Qwen-2.5-Coder-32B-T)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 210 points/message |
+| Initial Points Cost | 210 points |
+
+**Last Checked:** 2025-08-05 23:37:05.768897
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 210 points/message |
-| Initial Points Cost | 210 points |
-
-**Last Checked:** 2025-08-05 23:37:05.768897
 
 
 ## Technical Details

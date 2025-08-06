@@ -1,4 +1,14 @@
-# Mochi-preview
+# [Mochi-preview](https://poe.com/Mochi-preview)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Video Output | 11334 points / message |
+| Initial Points Cost | 11334 points |
+
+**Last Checked:** 2025-08-05 23:34:27.761025
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** video
 
 **Modality:** text->video
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Video Output | 11334 points / message |
-| Initial Points Cost | 11334 points |
-
-**Last Checked:** 2025-08-05 23:34:27.761025
 
 
 ## Technical Details

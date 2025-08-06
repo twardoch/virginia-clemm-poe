@@ -1,4 +1,16 @@
-# Mistral-Small-3.2
+# [Mistral-Small-3.2](https://poe.com/Mistral-Small-3.2)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Initial Points Cost | 50+ points |
+| Base Request Fee | 50 |
+| Input Processing | 2 per token |
+| Output Generation | 4 per token |
+
+**Last Checked:** 2025-08-05 23:34:14.300020
+
 
 ## Bot Information
 
@@ -24,18 +36,6 @@ Supported File Types
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Initial Points Cost | 50+ points |
-| Base Request Fee | 50 |
-| Input Processing | 2 per token |
-| Output Generation | 4 per token |
-
-**Last Checked:** 2025-08-05 23:34:14.300020
 
 
 ## Technical Details

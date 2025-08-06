@@ -1,4 +1,13 @@
-# MarkItDown
+# [MarkItDown](https://poe.com/MarkItDown)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Markdown Conversion | 100 per Markdown conversion |
+
+**Last Checked:** 2025-08-05 23:33:11.349106
+
 
 ## Bot Information
 
@@ -16,15 +25,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Markdown Conversion | 100 per Markdown conversion |
-
-**Last Checked:** 2025-08-05 23:33:11.349106
 
 
 ## Technical Details

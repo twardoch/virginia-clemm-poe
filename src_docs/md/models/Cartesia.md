@@ -1,4 +1,14 @@
-# Cartesia
+# [Cartesia](https://poe.com/Cartesia)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Text Input | 934 points / 1k characters |
+| Initial Points Cost | Variable points |
+
+**Last Checked:** 2025-08-05 23:15:40.728102
+
 
 ## Bot Information
 
@@ -174,16 +184,6 @@ Zia
 **Output Modalities:** audio
 
 **Modality:** text->audio
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Text Input | 934 points / 1k characters |
-| Initial Points Cost | Variable points |
-
-**Last Checked:** 2025-08-05 23:15:40.728102
 
 
 ## Technical Details

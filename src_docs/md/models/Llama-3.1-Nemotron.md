@@ -1,4 +1,14 @@
-# Llama-3.1-Nemotron
+# [Llama-3.1-Nemotron](https://poe.com/Llama-3.1-Nemotron)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 200 points/message |
+| Initial Points Cost | 200 points |
+
+**Last Checked:** 2025-08-05 23:31:29.204173
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 200 points/message |
-| Initial Points Cost | 200 points |
-
-**Last Checked:** 2025-08-05 23:31:29.204173
 
 
 ## Technical Details

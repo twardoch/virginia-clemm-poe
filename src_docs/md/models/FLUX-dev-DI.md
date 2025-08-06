@@ -1,4 +1,14 @@
-# FLUX-dev-DI
+# [FLUX-dev-DI](https://poe.com/FLUX-dev-DI)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 165 points/message |
+| Initial Points Cost | 165 points |
+
+**Last Checked:** 2025-08-05 23:20:10.330382
+
 
 ## Bot Information
 
@@ -21,16 +31,6 @@ To set inference, use "--num_inference_steps". Options from 1 up to 50. Default:
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 165 points/message |
-| Initial Points Cost | 165 points |
-
-**Last Checked:** 2025-08-05 23:20:10.330382
 
 
 ## Technical Details

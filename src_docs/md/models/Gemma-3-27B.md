@@ -1,4 +1,14 @@
-# Gemma-3-27B
+# [Gemma-3-27B](https://poe.com/Gemma-3-27B)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Per Message | 134 points |
+| Initial Points Cost | 134 points |
+
+**Last Checked:** 2025-08-05 23:25:13.184251
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Per Message | 134 points |
-| Initial Points Cost | 134 points |
-
-**Last Checked:** 2025-08-05 23:25:13.184251
 
 
 ## Technical Details

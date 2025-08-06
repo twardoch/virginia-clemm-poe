@@ -1,4 +1,14 @@
-# Sora
+# [Sora](https://poe.com/Sora)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Video Output | 1667 points / second |
+| Initial Points Cost | Variable points |
+
+**Last Checked:** 2025-08-05 23:40:18.005847
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** video
 
 **Modality:** text->video
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Video Output | 1667 points / second |
-| Initial Points Cost | Variable points |
-
-**Last Checked:** 2025-08-05 23:40:18.005847
 
 
 ## Technical Details

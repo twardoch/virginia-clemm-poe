@@ -1,4 +1,14 @@
-# Perplexity-Sonar-Rsn-Pro
+# [Perplexity-Sonar-Rsn-Pro](https://poe.com/Perplexity-Sonar-Rsn-Pro)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Per Message | 2967 points |
+| Initial Points Cost | 2967 points |
+
+**Last Checked:** 2025-08-05 23:35:29.954636
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Per Message | 2967 points |
-| Initial Points Cost | 2967 points |
-
-**Last Checked:** 2025-08-05 23:35:29.954636
 
 
 ## Technical Details

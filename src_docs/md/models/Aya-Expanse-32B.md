@@ -1,4 +1,14 @@
-# Aya-Expanse-32B
+# [Aya-Expanse-32B](https://poe.com/Aya-Expanse-32B)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 170 points/message |
+| Initial Points Cost | 170 points |
+
+**Last Checked:** 2025-08-05 23:15:20.551128
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 170 points/message |
-| Initial Points Cost | 170 points |
-
-**Last Checked:** 2025-08-05 23:15:20.551128
 
 
 ## Technical Details

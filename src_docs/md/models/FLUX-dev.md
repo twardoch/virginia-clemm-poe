@@ -1,4 +1,14 @@
-# FLUX-dev
+# [FLUX-dev](https://poe.com/FLUX-dev)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Image Output | 567 points / message |
+| Initial Points Cost | 567 points |
+
+**Last Checked:** 2025-08-05 23:20:03.360248
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** image
 
 **Modality:** text->image
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Image Output | 567 points / message |
-| Initial Points Cost | 567 points |
-
-**Last Checked:** 2025-08-05 23:20:03.360248
 
 
 ## Technical Details

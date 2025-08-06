@@ -1,4 +1,17 @@
-# Llama-3.1-70B
+# [Llama-3.1-70B](https://poe.com/Llama-3.1-70B)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Input Text | 30 points/1k tokens |
+| Input Image | Variable |
+| Bot Message | 8 points/message |
+| Chat History | Input rates are applied |
+| Initial Points Cost | 15+ points |
+
+**Last Checked:** 2025-08-05 23:30:27.371374
+
 
 ## Bot Information
 
@@ -16,19 +29,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Input Text | 30 points/1k tokens |
-| Input Image | Variable |
-| Bot Message | 8 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 15+ points |
-
-**Last Checked:** 2025-08-05 23:30:27.371374
 
 
 ## Technical Details

@@ -1,4 +1,14 @@
-# Kling-2.1-Std
+# [Kling-2.1-Std](https://poe.com/Kling-2.1-Std)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Video Output | 1667 points / second |
+| Initial Points Cost | Variable points |
+
+**Last Checked:** 2025-08-05 23:28:56.529083
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** video
 
 **Modality:** text->video
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Video Output | 1667 points / second |
-| Initial Points Cost | Variable points |
-
-**Last Checked:** 2025-08-05 23:28:56.529083
 
 
 ## Technical Details

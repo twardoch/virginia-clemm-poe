@@ -1,4 +1,18 @@
-# App-Creator
+# [App-Creator](https://poe.com/App-Creator)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Input Text | 12 points/1k tokens |
+| Input Image | 12 points/1k tokens |
+| Bot Message | 21 points/message |
+| Chat History | Input rates are applied |
+| Chat History Cache Discount | 90% discount oncached chat history |
+| Initial Points Cost | 24+ points |
+
+**Last Checked:** 2025-08-05 23:15:13.821272
+
 
 ## Bot Information
 
@@ -18,20 +32,6 @@ See what's new: https://creator.poe.com/changelog?tag=canvas-apps
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Input Text | 12 points/1k tokens |
-| Input Image | 12 points/1k tokens |
-| Bot Message | 21 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 90% discount oncached chat history |
-| Initial Points Cost | 24+ points |
-
-**Last Checked:** 2025-08-05 23:15:13.821272
 
 
 ## Technical Details

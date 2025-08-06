@@ -1,4 +1,14 @@
-# LivePortrait
+# [LivePortrait](https://poe.com/LivePortrait)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Video Output | 85 points / message |
+| Initial Points Cost | 85 points |
+
+**Last Checked:** 2025-08-05 23:29:10.359275
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Video Output | 85 points / message |
-| Initial Points Cost | 85 points |
-
-**Last Checked:** 2025-08-05 23:29:10.359275
 
 
 ## Technical Details

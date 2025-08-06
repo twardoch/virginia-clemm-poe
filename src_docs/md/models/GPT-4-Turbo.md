@@ -1,4 +1,17 @@
-# GPT-4-Turbo
+# [GPT-4-Turbo](https://poe.com/GPT-4-Turbo)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Input Text | 300 points/1k tokens |
+| Input Image | 300 points/1k tokens |
+| Bot Message | 285 points/message |
+| Chat History | Input rates are applied |
+| Initial Points Cost | 351+ points |
+
+**Last Checked:** 2025-08-05 23:22:31.663097
+
 
 ## Bot Information
 
@@ -16,19 +29,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Input Text | 300 points/1k tokens |
-| Input Image | 300 points/1k tokens |
-| Bot Message | 285 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 351+ points |
-
-**Last Checked:** 2025-08-05 23:22:31.663097
 
 
 ## Technical Details

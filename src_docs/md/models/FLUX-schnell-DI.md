@@ -1,4 +1,14 @@
-# FLUX-schnell-DI
+# [FLUX-schnell-DI](https://poe.com/FLUX-schnell-DI)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 33 points/message |
+| Initial Points Cost | 33 points |
+
+**Last Checked:** 2025-08-05 23:21:07.325562
+
 
 ## Bot Information
 
@@ -21,16 +31,6 @@ To set inference, use "--num_inference_steps". Options from 1 up to 50. Default:
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 33 points/message |
-| Initial Points Cost | 33 points |
-
-**Last Checked:** 2025-08-05 23:21:07.325562
 
 
 ## Technical Details

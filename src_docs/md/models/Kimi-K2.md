@@ -1,4 +1,14 @@
-# Kimi-K2
+# [Kimi-K2](https://poe.com/Kimi-K2)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 200 points/message |
+| Initial Points Cost | 200 points |
+
+**Last Checked:** 2025-08-05 23:28:08.163105
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 200 points/message |
-| Initial Points Cost | 200 points |
-
-**Last Checked:** 2025-08-05 23:28:08.163105
 
 
 ## Technical Details

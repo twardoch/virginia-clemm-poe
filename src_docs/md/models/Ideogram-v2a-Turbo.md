@@ -1,4 +1,14 @@
-# Ideogram-v2a-Turbo
+# [Ideogram-v2a-Turbo](https://poe.com/Ideogram-v2a-Turbo)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 800 points/message |
+| Initial Points Cost | 800 points |
+
+**Last Checked:** 2025-08-05 23:27:06.161208
+
 
 ## Bot Information
 
@@ -17,16 +27,6 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 **Output Modalities:** image
 
 **Modality:** text->image
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 800 points/message |
-| Initial Points Cost | 800 points |
-
-**Last Checked:** 2025-08-05 23:27:06.161208
 
 
 ## Technical Details

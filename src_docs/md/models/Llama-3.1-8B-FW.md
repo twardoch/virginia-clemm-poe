@@ -1,4 +1,14 @@
-# Llama-3.1-8B-FW
+# [Llama-3.1-8B-FW](https://poe.com/Llama-3.1-8B-FW)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 50 points/message |
+| Initial Points Cost | 50 points |
+
+**Last Checked:** 2025-08-05 23:31:15.490392
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 50 points/message |
-| Initial Points Cost | 50 points |
-
-**Last Checked:** 2025-08-05 23:31:15.490392
 
 
 ## Technical Details

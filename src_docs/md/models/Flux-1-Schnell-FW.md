@@ -1,4 +1,14 @@
-# Flux-1-Schnell-FW
+# [Flux-1-Schnell-FW](https://poe.com/Flux-1-Schnell-FW)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 35 points/message |
+| Initial Points Cost | 35 points |
+
+**Last Checked:** 2025-08-05 23:21:22.057689
+
 
 ## Bot Information
 
@@ -21,16 +31,6 @@ Key Features
 **Output Modalities:** image
 
 **Modality:** text->image
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 35 points/message |
-| Initial Points Cost | 35 points |
-
-**Last Checked:** 2025-08-05 23:21:22.057689
 
 
 ## Technical Details

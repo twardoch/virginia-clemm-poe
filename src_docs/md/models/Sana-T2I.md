@@ -1,4 +1,14 @@
-# Sana-T2I
+# [Sana-T2I](https://poe.com/Sana-T2I)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Image Output | 29 points / message |
+| Initial Points Cost | 29 points |
+
+**Last Checked:** 2025-08-05 23:39:36.762692
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** image
 
 **Modality:** text->image
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Image Output | 29 points / message |
-| Initial Points Cost | 29 points |
-
-**Last Checked:** 2025-08-05 23:39:36.762692
 
 
 ## Technical Details

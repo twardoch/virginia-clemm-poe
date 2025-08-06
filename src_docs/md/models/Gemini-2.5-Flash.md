@@ -1,4 +1,18 @@
-# Gemini-2.5-Flash
+# [Gemini-2.5-Flash](https://poe.com/Gemini-2.5-Flash)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Input Text | 3 points/1k tokens |
+| Input Image | 3 points/1k tokens |
+| Bot Message | 8 points/message |
+| Chat History | Input rates are applied |
+| Initial Points Cost | 9+ points |
+| Input (Video) | 1 point/second |
+
+**Last Checked:** 2025-08-05 23:24:45.534393
+
 
 ## Bot Information
 
@@ -18,20 +32,6 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Input Text | 3 points/1k tokens |
-| Input Image | 3 points/1k tokens |
-| Bot Message | 8 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 9+ points |
-| Input (Video) | 1 point/second |
-
-**Last Checked:** 2025-08-05 23:24:45.534393
 
 
 ## Technical Details

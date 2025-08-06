@@ -1,4 +1,14 @@
-# GPT-OSS-120B-T
+# [GPT-OSS-120B-T](https://poe.com/GPT-OSS-120B-T)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 50 points/message |
+| Initial Points Cost | 50 points |
+
+**Last Checked:** 2025-08-05 23:23:42.232404
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 50 points/message |
-| Initial Points Cost | 50 points |
-
-**Last Checked:** 2025-08-05 23:23:42.232404
 
 
 ## Technical Details

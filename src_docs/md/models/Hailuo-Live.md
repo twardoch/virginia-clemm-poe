@@ -1,4 +1,14 @@
-# Hailuo-Live
+# [Hailuo-Live](https://poe.com/Hailuo-Live)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Video Output | 14167 points / message |
+| Initial Points Cost | Variable points |
+
+**Last Checked:** 2025-08-05 23:26:18.071920
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** video
 
 **Modality:** text->video
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Video Output | 14167 points / message |
-| Initial Points Cost | Variable points |
-
-**Last Checked:** 2025-08-05 23:26:18.071920
 
 
 ## Technical Details

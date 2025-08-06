@@ -1,4 +1,14 @@
-# FLUX-pro-1.1
+# [FLUX-pro-1.1](https://poe.com/FLUX-pro-1.1)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Image Output | 1334 points / message |
+| Initial Points Cost | 1334 points |
+
+**Last Checked:** 2025-08-05 23:20:38.897480
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** image
 
 **Modality:** text->image
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Image Output | 1334 points / message |
-| Initial Points Cost | 1334 points |
-
-**Last Checked:** 2025-08-05 23:20:38.897480
 
 
 ## Technical Details

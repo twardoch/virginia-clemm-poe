@@ -1,4 +1,18 @@
-# o4-mini-deep-research
+# [o4-mini-deep-research](https://poe.com/o4-mini-deep-research)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Input Text | 60 points/1k tokens |
+| Input Image | 60 points/1k tokens |
+| Bot Message | 21977 points/message |
+| Chat History | Input rates are applied |
+| Chat History Cache Discount | 75% discount oncached chat history |
+| Initial Points Cost | 21990+ points |
+
+**Last Checked:** 2025-08-05 23:43:16.644220
+
 
 ## Bot Information
 
@@ -16,20 +30,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Input Text | 60 points/1k tokens |
-| Input Image | 60 points/1k tokens |
-| Bot Message | 21977 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 75% discount oncached chat history |
-| Initial Points Cost | 21990+ points |
-
-**Last Checked:** 2025-08-05 23:43:16.644220
 
 
 ## Technical Details

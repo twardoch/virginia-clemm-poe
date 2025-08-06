@@ -1,4 +1,16 @@
-# GPT-4o-Search
+# [GPT-4o-Search](https://poe.com/GPT-4o-Search)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Input Text | 75 points/1k tokens |
+| Bot Message | 1232 points/message |
+| Chat History | Input rates are applied |
+| Initial Points Cost | 1249+ points |
+
+**Last Checked:** 2025-08-05 23:23:13.685733
+
 
 ## Bot Information
 
@@ -16,18 +28,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Input Text | 75 points/1k tokens |
-| Bot Message | 1232 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 1249+ points |
-
-**Last Checked:** 2025-08-05 23:23:13.685733
 
 
 ## Technical Details

@@ -1,4 +1,14 @@
-# Restyler
+# [Restyler](https://poe.com/Restyler)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Image Output | 2000 points / message |
+| Initial Points Cost | 2000 points |
+
+**Last Checked:** 2025-08-05 23:39:09.601288
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Image Output | 2000 points / message |
-| Initial Points Cost | 2000 points |
-
-**Last Checked:** 2025-08-05 23:39:09.601288
 
 
 ## Technical Details

@@ -1,4 +1,14 @@
-# DeepSeek-R1-DI
+# [DeepSeek-R1-DI](https://poe.com/DeepSeek-R1-DI)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 200 points/message |
+| Initial Points Cost | 200 points |
+
+**Last Checked:** 2025-08-05 23:18:38.148028
+
 
 ## Bot Information
 
@@ -18,16 +28,6 @@ Supports 64k tokens of input context and 8k tokens of output context. Quantizati
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 200 points/message |
-| Initial Points Cost | 200 points |
-
-**Last Checked:** 2025-08-05 23:18:38.148028
 
 
 ## Technical Details

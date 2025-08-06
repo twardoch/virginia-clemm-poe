@@ -1,4 +1,14 @@
-# Bria-Eraser
+# [Bria-Eraser](https://poe.com/Bria-Eraser)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Image Output | 1334 points / message |
+| Initial Points Cost | 1334 points |
+
+**Last Checked:** 2025-08-05 23:15:34.046916
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Image Output | 1334 points / message |
-| Initial Points Cost | 1334 points |
-
-**Last Checked:** 2025-08-05 23:15:34.046916
 
 
 ## Technical Details

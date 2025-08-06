@@ -1,4 +1,14 @@
-# Veo-2-Video
+# [Veo-2-Video](https://poe.com/Veo-2-Video)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Video Output | 70834 points / message |
+| Initial Points Cost | 70834 points |
+
+**Last Checked:** 2025-08-05 23:41:34.388204
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Video Output | 70834 points / message |
-| Initial Points Cost | 70834 points |
-
-**Last Checked:** 2025-08-05 23:41:34.388204
 
 
 ## Technical Details

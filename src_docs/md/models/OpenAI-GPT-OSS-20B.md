@@ -1,4 +1,14 @@
-# OpenAI-GPT-OSS-20B
+# [OpenAI-GPT-OSS-20B](https://poe.com/OpenAI-GPT-OSS-20B)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 25 points/message |
+| Initial Points Cost | 25 points |
+
+**Last Checked:** 2025-08-05 23:34:41.269870
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 25 points/message |
-| Initial Points Cost | 25 points |
-
-**Last Checked:** 2025-08-05 23:34:41.269870
 
 
 ## Technical Details

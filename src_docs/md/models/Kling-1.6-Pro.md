@@ -1,4 +1,14 @@
-# Kling-1.6-Pro
+# [Kling-1.6-Pro](https://poe.com/Kling-1.6-Pro)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Video Output | 2834 points / second |
+| Initial Points Cost | Variable points |
+
+**Last Checked:** 2025-08-05 23:28:29.183654
+
 
 ## Bot Information
 
@@ -17,16 +27,6 @@ Use `--aspect` to set the aspect ratio. Allowed values are `16:9`, `9:16` and `1
 **Output Modalities:** video
 
 **Modality:** text->video
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Video Output | 2834 points / second |
-| Initial Points Cost | Variable points |
-
-**Last Checked:** 2025-08-05 23:28:29.183654
 
 
 ## Technical Details

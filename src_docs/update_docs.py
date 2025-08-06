@@ -42,7 +42,20 @@ def generate_model_page(model: dict[str, Any]) -> str:
     content = []
 
     # Title and basic info
-    content.append(f"# {model['id']}\n")
+    content.append(f"# [{model['id']}](https://poe.com/{model['id']})\n")
+
+    # Pricing section
+    if pricing := model.get("pricing"):
+        content.append("## Pricing\n")
+        if details := pricing.get("details"):
+            content.append("| Type | Cost |")
+            content.append("|------|------|")
+            for key, value in details.items():
+                if value:
+                    formatted_key = key.replace("_", " ").title()
+                    content.append(f"| {formatted_key} | {value} |")
+        content.append(f"\n**Last Checked:** {pricing.get('checked_at', 'N/A')}\n")
+        content.append("")
 
     # Bot info section
     if bot_info := model.get("bot_info"):
@@ -59,19 +72,6 @@ def generate_model_page(model: dict[str, Any]) -> str:
         content.append(f"**Input Modalities:** {', '.join(arch.get('input_modalities', []))}\n")
         content.append(f"**Output Modalities:** {', '.join(arch.get('output_modalities', []))}\n")
         content.append(f"**Modality:** {arch.get('modality', 'N/A')}\n")
-        content.append("")
-
-    # Pricing section
-    if pricing := model.get("pricing"):
-        content.append("## Pricing\n")
-        if details := pricing.get("details"):
-            content.append("| Type | Cost |")
-            content.append("|------|------|")
-            for key, value in details.items():
-                if value:
-                    formatted_key = key.replace("_", " ").title()
-                    content.append(f"| {formatted_key} | {value} |")
-        content.append(f"\n**Last Checked:** {pricing.get('checked_at', 'N/A')}\n")
         content.append("")
 
     # Technical details

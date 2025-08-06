@@ -1,4 +1,16 @@
-# Mistral-NeMo
+# [Mistral-NeMo](https://poe.com/Mistral-NeMo)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Initial Points Cost | 25+ |
+| Base Request Fee | 50 |
+| Input Processing | 2 per token |
+| Output Generation | 4 per token |
+
+**Last Checked:** 2025-08-05 23:33:53.622131
+
 
 ## Bot Information
 
@@ -18,18 +30,6 @@ The supported languages include, but are not limited to, widely spoken languages
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Initial Points Cost | 25+ |
-| Base Request Fee | 50 |
-| Input Processing | 2 per token |
-| Output Generation | 4 per token |
-
-**Last Checked:** 2025-08-05 23:33:53.622131
 
 
 ## Technical Details

@@ -1,4 +1,18 @@
-# Gemini-2.0-Flash-Lite
+# [Gemini-2.0-Flash-Lite](https://poe.com/Gemini-2.0-Flash-Lite)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Input Text | 1 point/1k tokens |
+| Input Image | 1 point/1k tokens |
+| Bot Message | 5 points/message |
+| Chat History | Input rates are applied |
+| Initial Points Cost | 6+ points |
+| Input (Video) | 1 point/second |
+
+**Last Checked:** 2025-08-05 23:24:31.048897
+
 
 ## Bot Information
 
@@ -16,20 +30,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Input Text | 1 point/1k tokens |
-| Input Image | 1 point/1k tokens |
-| Bot Message | 5 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 6+ points |
-| Input (Video) | 1 point/second |
-
-**Last Checked:** 2025-08-05 23:24:31.048897
 
 
 ## Technical Details

@@ -1,4 +1,16 @@
-# GPT-4o-mini-Search
+# [GPT-4o-mini-Search](https://poe.com/GPT-4o-mini-Search)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Input Text | 5 points/1k tokens |
+| Bot Message | 831 points/message |
+| Chat History | Input rates are applied |
+| Initial Points Cost | 832+ points |
+
+**Last Checked:** 2025-08-05 23:23:27.757333
+
 
 ## Bot Information
 
@@ -16,18 +28,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Input Text | 5 points/1k tokens |
-| Bot Message | 831 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 832+ points |
-
-**Last Checked:** 2025-08-05 23:23:27.757333
 
 
 ## Technical Details

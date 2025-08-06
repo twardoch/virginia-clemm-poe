@@ -1,4 +1,14 @@
-# FLUX-pro-1-T
+# [FLUX-pro-1-T](https://poe.com/FLUX-pro-1-T)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 1250 points/message |
+| Initial Points Cost | 1250 points |
+
+**Last Checked:** 2025-08-05 23:20:31.853626
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 1250 points/message |
-| Initial Points Cost | 1250 points |
-
-**Last Checked:** 2025-08-05 23:20:31.853626
 
 
 ## Technical Details

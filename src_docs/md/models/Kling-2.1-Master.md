@@ -1,4 +1,14 @@
-# Kling-2.1-Master
+# [Kling-2.1-Master](https://poe.com/Kling-2.1-Master)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Video Output | 6000 points / second |
+| Initial Points Cost | Variable points |
+
+**Last Checked:** 2025-08-05 23:28:42.750959
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** video
 
 **Modality:** text->video
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Video Output | 6000 points / second |
-| Initial Points Cost | Variable points |
-
-**Last Checked:** 2025-08-05 23:28:42.750959
 
 
 ## Technical Details

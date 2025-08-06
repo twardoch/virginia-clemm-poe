@@ -1,4 +1,14 @@
-# Hailuo-02-Standard
+# [Hailuo-02-Standard](https://poe.com/Hailuo-02-Standard)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Video Output | 1500 points / second |
+| Initial Points Cost | Variable points |
+
+**Last Checked:** 2025-08-05 23:25:56.927553
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Video Output | 1500 points / second |
-| Initial Points Cost | Variable points |
-
-**Last Checked:** 2025-08-05 23:25:56.927553
 
 
 ## Technical Details

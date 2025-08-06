@@ -1,4 +1,14 @@
-# DeepSeek-R1
+# [DeepSeek-R1](https://poe.com/DeepSeek-R1)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 600 points/message |
+| Initial Points Cost | 600 points |
+
+**Last Checked:** 2025-08-05 23:18:31.361879
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 600 points/message |
-| Initial Points Cost | 600 points |
-
-**Last Checked:** 2025-08-05 23:18:31.361879
 
 
 ## Technical Details

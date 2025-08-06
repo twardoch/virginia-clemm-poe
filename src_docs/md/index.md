@@ -2,7 +2,6 @@
 
 **Virginia Clemm Poe** is a Python package that provides programmatic access to comprehensive Poe.com model data with pricing information. It acts as a companion tool to the official Poe API by fetching, maintaining, and enriching model data through web scraping, with a special focus on capturing detailed pricing information not available through the API alone.
 
-**Key Features:**
 - 🤖 **Comprehensive Model Data**: Access to all Poe.com models with detailed metadata
 - 💰 **Pricing Information**: Automatically scraped pricing data for all operations
 - 🐍 **Python API**: Clean, typed API for programmatic access
@@ -10,21 +9,25 @@
 - 🌐 **Web Scraping**: Playwright-powered browser automation for reliable data extraction
 - 📊 **Pydantic Models**: Fully typed data structures for easy integration
 
-## [Browse Poe Models](models/index.md)
+## Key Links
 
-Explore all available Poe.com models with real-time search, filtering, and detailed pricing information
+- **[Browse Poe Models](models/index.md)**: Explore all available Poe.com models with real-time search, filtering, and detailed pricing information.
+- **[Extended JSON data](https://raw.githubusercontent.com/twardoch/virginia-clemm-poe/refs/heads/main/src/virginia_clemm_poe/data/poe_models.json)**
 
-### Getting Started
+## Getting Started
+
 1. **[Introduction and Overview](chapter1-introduction.md)** - Learn about the package's purpose, architecture, and core concepts
 2. **[Installation and Setup](chapter2-installation.md)** - Step-by-step installation guide and initial configuration
 3. **[Quick Start Guide](chapter3-quickstart.md)** - Get up and running with basic examples and common use cases
 
-### Usage Guides
+## Usage Guides
+
 4. **[Python API Reference](chapter4-api.md)** - Complete Python API documentation with examples
 5. **[CLI Usage and Commands](chapter5-cli.md)** - Command-line interface reference and usage patterns
 6. **[Data Models and Structure](chapter6-models.md)** - Understanding the data structures and Pydantic models
 
-### Advanced Topics
+## Advanced Topics
+
 7. **[Browser Management and Web Scraping](chapter7-browser.md)** - Deep dive into web scraping functionality and browser automation
 8. **[Configuration and Advanced Usage](chapter8-configuration.md)** - Advanced configuration options and customization
 9. **[Troubleshooting and FAQ](chapter9-troubleshooting.md)** - Common issues, solutions, and frequently asked questions

@@ -1,4 +1,4 @@
-# Web-Search
+# [Web-Search](https://poe.com/Web-Search)
 
 ## Bot Information
 

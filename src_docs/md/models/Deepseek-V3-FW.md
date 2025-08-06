@@ -1,4 +1,14 @@
-# Deepseek-V3-FW
+# [Deepseek-V3-FW](https://poe.com/Deepseek-V3-FW)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 300 points/message |
+| Initial Points Cost | 300 points |
+
+**Last Checked:** 2025-08-05 23:19:26.926273
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 300 points/message |
-| Initial Points Cost | 300 points |
-
-**Last Checked:** 2025-08-05 23:19:26.926273
 
 
 ## Technical Details

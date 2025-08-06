@@ -1,4 +1,15 @@
-# Veo-3-Fast
+# [Veo-3-Fast](https://poe.com/Veo-3-Fast)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Video Output | 8334 points / s |
+| Initial Points Cost | Variable points |
+| Audio + Video Output | 13334 points / s |
+
+**Last Checked:** 2025-08-05 23:41:48.319898
+
 
 ## Bot Information
 
@@ -16,17 +27,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Video Output | 8334 points / s |
-| Initial Points Cost | Variable points |
-| Audio + Video Output | 13334 points / s |
-
-**Last Checked:** 2025-08-05 23:41:48.319898
 
 
 ## Technical Details

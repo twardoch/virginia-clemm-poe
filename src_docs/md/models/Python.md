@@ -1,4 +1,14 @@
-# Python
+# [Python](https://poe.com/Python)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 1 point/message |
+| Initial Points Cost | 1 point |
+
+**Last Checked:** 2025-08-05 23:36:24.428504
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 1 point/message |
-| Initial Points Cost | 1 point |
-
-**Last Checked:** 2025-08-05 23:36:24.428504
 
 
 ## Technical Details

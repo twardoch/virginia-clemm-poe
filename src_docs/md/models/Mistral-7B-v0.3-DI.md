@@ -1,4 +1,14 @@
-# Mistral-7B-v0.3-DI
+# [Mistral-7B-v0.3-DI](https://poe.com/Mistral-7B-v0.3-DI)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 5 points/message |
+| Initial Points Cost | 5 points |
+
+**Last Checked:** 2025-08-05 23:33:25.938299
+
 
 ## Bot Information
 
@@ -20,16 +30,6 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 5 points/message |
-| Initial Points Cost | 5 points |
-
-**Last Checked:** 2025-08-05 23:33:25.938299
 
 
 ## Technical Details

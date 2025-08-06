@@ -1,4 +1,14 @@
-# StableDiffusion3.5-T
+# [StableDiffusion3.5-T](https://poe.com/StableDiffusion3.5-T)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Image Output | 284 points / message |
+| Initial Points Cost | 284 points |
+
+**Last Checked:** 2025-08-05 23:40:39.632388
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** image
 
 **Modality:** text->image
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Image Output | 284 points / message |
-| Initial Points Cost | 284 points |
-
-**Last Checked:** 2025-08-05 23:40:39.632388
 
 
 ## Technical Details

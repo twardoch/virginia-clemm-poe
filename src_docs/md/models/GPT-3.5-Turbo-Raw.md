@@ -1,4 +1,17 @@
-# GPT-3.5-Turbo-Raw
+# [GPT-3.5-Turbo-Raw](https://poe.com/GPT-3.5-Turbo-Raw)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Input Text | 15 points/1k tokens |
+| Input Image | Variable |
+| Bot Message | 11 points/message |
+| Chat History | Input rates are applied |
+| Initial Points Cost | 15+ points |
+
+**Last Checked:** 2025-08-05 23:22:11.148957
+
 
 ## Bot Information
 
@@ -16,19 +29,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Input Text | 15 points/1k tokens |
-| Input Image | Variable |
-| Bot Message | 11 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 15+ points |
-
-**Last Checked:** 2025-08-05 23:22:11.148957
 
 
 ## Technical Details

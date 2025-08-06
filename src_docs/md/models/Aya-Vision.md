@@ -1,4 +1,14 @@
-# Aya-Vision
+# [Aya-Vision](https://poe.com/Aya-Vision)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 0 points/message |
+| Initial Points Cost | 0 points |
+
+**Last Checked:** 2025-08-05 23:15:27.275730
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 0 points/message |
-| Initial Points Cost | 0 points |
-
-**Last Checked:** 2025-08-05 23:15:27.275730
 
 
 ## Technical Details

@@ -1,4 +1,14 @@
-# DALL-E-3
+# [DALL-E-3](https://poe.com/DALL-E-3)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 1500 points/message |
+| Initial Points Cost | 1500 points |
+
+**Last Checked:** 2025-08-05 23:18:17.711665
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** image
 
 **Modality:** text->image
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 1500 points/message |
-| Initial Points Cost | 1500 points |
-
-**Last Checked:** 2025-08-05 23:18:17.711665
 
 
 ## Technical Details

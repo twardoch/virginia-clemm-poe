@@ -1,4 +1,14 @@
-# ElevenLabs
+# [ElevenLabs](https://poe.com/ElevenLabs)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Input Text | 1 point / character |
+| Initial Points Cost | Variable points |
+
+**Last Checked:** 2025-08-05 23:19:42.115656
+
 
 ## Bot Information
 
@@ -42,16 +52,6 @@ Japanese -- Alice
 **Output Modalities:** audio
 
 **Modality:** text->audio
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Input Text | 1 point / character |
-| Initial Points Cost | Variable points |
-
-**Last Checked:** 2025-08-05 23:19:42.115656
 
 
 ## Technical Details

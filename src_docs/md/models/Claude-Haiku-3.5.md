@@ -1,4 +1,18 @@
-# Claude-Haiku-3.5
+# [Claude-Haiku-3.5](https://poe.com/Claude-Haiku-3.5)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Input Text | 30 points/1k tokens |
+| Input Image | 30 points/1k tokens |
+| Bot Message | 42 points/message |
+| Chat History | Input rates are applied |
+| Chat History Cache Discount | 90% discount oncached chat history |
+| Initial Points Cost | 49+ points |
+
+**Last Checked:** 2025-08-05 23:16:08.345743
+
 
 ## Bot Information
 
@@ -16,20 +30,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Input Text | 30 points/1k tokens |
-| Input Image | 30 points/1k tokens |
-| Bot Message | 42 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 90% discount oncached chat history |
-| Initial Points Cost | 49+ points |
-
-**Last Checked:** 2025-08-05 23:16:08.345743
 
 
 ## Technical Details

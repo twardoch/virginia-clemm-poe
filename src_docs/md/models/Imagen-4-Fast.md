@@ -1,4 +1,14 @@
-# Imagen-4-Fast
+# [Imagen-4-Fast](https://poe.com/Imagen-4-Fast)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 200 points/message |
+| Initial Points Cost | 200 points |
+
+**Last Checked:** 2025-08-05 23:27:41.002410
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** image
 
 **Modality:** text->image
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 200 points/message |
-| Initial Points Cost | 200 points |
-
-**Last Checked:** 2025-08-05 23:27:41.002410
 
 
 ## Technical Details

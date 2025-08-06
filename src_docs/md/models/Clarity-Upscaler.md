@@ -1,4 +1,14 @@
-# Clarity-Upscaler
+# [Clarity-Upscaler](https://poe.com/Clarity-Upscaler)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Image Output | 850 points / megapixel |
+| Initial Points Cost | Variable points |
+
+**Last Checked:** 2025-08-05 23:15:54.768248
+
 
 ## Bot Information
 
@@ -17,16 +27,6 @@ This bot supports .jpg and .png images.
 **Output Modalities:** image
 
 **Modality:** text->image
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Image Output | 850 points / megapixel |
-| Initial Points Cost | Variable points |
-
-**Last Checked:** 2025-08-05 23:15:54.768248
 
 
 ## Technical Details

@@ -1,4 +1,14 @@
-# Mixtral8x22b-Inst-FW
+# [Mixtral8x22b-Inst-FW](https://poe.com/Mixtral8x22b-Inst-FW)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 120 points/message |
+| Initial Points Cost | 120 points |
+
+**Last Checked:** 2025-08-05 23:34:21.000610
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 120 points/message |
-| Initial Points Cost | 120 points |
-
-**Last Checked:** 2025-08-05 23:34:21.000610
 
 
 ## Technical Details

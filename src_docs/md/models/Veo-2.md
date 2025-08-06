@@ -1,4 +1,14 @@
-# Veo-2
+# [Veo-2](https://poe.com/Veo-2)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 37000 points/message |
+| Initial Points Cost | 37000 points |
+
+**Last Checked:** 2025-08-05 23:41:27.384550
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** video
 
 **Modality:** text->video
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 37000 points/message |
-| Initial Points Cost | 37000 points |
-
-**Last Checked:** 2025-08-05 23:41:27.384550
 
 
 ## Technical Details

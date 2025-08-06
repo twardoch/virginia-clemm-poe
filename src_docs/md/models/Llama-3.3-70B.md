@@ -1,4 +1,14 @@
-# Llama-3.3-70B
+# [Llama-3.3-70B](https://poe.com/Llama-3.3-70B)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 130 points/message |
+| Initial Points Cost | 130 points |
+
+**Last Checked:** 2025-08-05 23:31:36.120662
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 130 points/message |
-| Initial Points Cost | 130 points |
-
-**Last Checked:** 2025-08-05 23:31:36.120662
 
 
 ## Technical Details

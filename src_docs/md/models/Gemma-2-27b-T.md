@@ -1,4 +1,14 @@
-# Gemma-2-27b-T
+# [Gemma-2-27b-T](https://poe.com/Gemma-2-27b-T)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 90 points/message |
+| Initial Points Cost | 90 points |
+
+**Last Checked:** 2025-08-05 23:25:06.097695
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 90 points/message |
-| Initial Points Cost | 90 points |
-
-**Last Checked:** 2025-08-05 23:25:06.097695
 
 
 ## Technical Details

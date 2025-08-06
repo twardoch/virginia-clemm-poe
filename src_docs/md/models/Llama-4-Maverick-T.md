@@ -1,4 +1,14 @@
-# Llama-4-Maverick-T
+# [Llama-4-Maverick-T](https://poe.com/Llama-4-Maverick-T)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 55 points/message |
+| Initial Points Cost | 55 points |
+
+**Last Checked:** 2025-08-05 23:32:17.076272
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 55 points/message |
-| Initial Points Cost | 55 points |
-
-**Last Checked:** 2025-08-05 23:32:17.076272
 
 
 ## Technical Details

@@ -1,4 +1,14 @@
-# Gemini-2.0-Flash-Preview
+# [Gemini-2.0-Flash-Preview](https://poe.com/Gemini-2.0-Flash-Preview)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 2 points/message |
+| Initial Points Cost | 2 points |
+
+**Last Checked:** 2025-08-05 23:24:38.164410
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** image
 
 **Modality:** text->image
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 2 points/message |
-| Initial Points Cost | 2 points |
-
-**Last Checked:** 2025-08-05 23:24:38.164410
 
 
 ## Technical Details

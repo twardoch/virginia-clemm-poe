@@ -1,4 +1,14 @@
-# Command-R-Plus
+# [Command-R-Plus](https://poe.com/Command-R-Plus)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 1130 points/message |
+| Initial Points Cost | 1130 points |
+
+**Last Checked:** 2025-08-05 23:18:08.873554
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 1130 points/message |
-| Initial Points Cost | 1130 points |
-
-**Last Checked:** 2025-08-05 23:18:08.873554
 
 
 ## Technical Details

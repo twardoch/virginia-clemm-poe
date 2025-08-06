@@ -1,4 +1,14 @@
-# Flux-1-Dev-FW
+# [Flux-1-Dev-FW](https://poe.com/Flux-1-Dev-FW)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 375 points/message |
+| Initial Points Cost | 375 points |
+
+**Last Checked:** 2025-08-05 23:21:14.396193
+
 
 ## Bot Information
 
@@ -23,16 +33,6 @@ Key Features
 **Output Modalities:** image
 
 **Modality:** text->image
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 375 points/message |
-| Initial Points Cost | 375 points |
-
-**Last Checked:** 2025-08-05 23:21:14.396193
 
 
 ## Technical Details

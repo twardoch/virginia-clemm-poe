@@ -1,4 +1,14 @@
-# Seedream-3.0
+# [Seedream-3.0](https://poe.com/Seedream-3.0)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Image Output | 1334 points / message |
+| Initial Points Cost | 1334 points |
+
+**Last Checked:** 2025-08-05 23:39:57.500106
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Image Output | 1334 points / message |
-| Initial Points Cost | 1334 points |
-
-**Last Checked:** 2025-08-05 23:39:57.500106
 
 
 ## Technical Details

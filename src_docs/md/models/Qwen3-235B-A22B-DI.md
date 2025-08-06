@@ -1,4 +1,14 @@
-# Qwen3-235B-A22B-DI
+# [Qwen3-235B-A22B-DI](https://poe.com/Qwen3-235B-A22B-DI)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 63 points/message |
+| Initial Points Cost | 63 points |
+
+**Last Checked:** 2025-08-05 23:38:14.117934
+
 
 ## Bot Information
 
@@ -18,16 +28,6 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 63 points/message |
-| Initial Points Cost | 63 points |
-
-**Last Checked:** 2025-08-05 23:38:14.117934
 
 
 ## Technical Details

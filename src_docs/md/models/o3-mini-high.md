@@ -1,4 +1,17 @@
-# o3-mini-high
+# [o3-mini-high](https://poe.com/o3-mini-high)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Input Text | 33 points/1k tokens |
+| Input Image | Variable |
+| Bot Message | 447 points/message |
+| Chat History | Input rates are applied |
+| Initial Points Cost | 455+ points |
+
+**Last Checked:** 2025-08-05 23:42:56.317548
+
 
 ## Bot Information
 
@@ -16,19 +29,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Input Text | 33 points/1k tokens |
-| Input Image | Variable |
-| Bot Message | 447 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 455+ points |
-
-**Last Checked:** 2025-08-05 23:42:56.317548
 
 
 ## Technical Details

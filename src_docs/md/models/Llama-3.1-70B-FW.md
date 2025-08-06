@@ -1,4 +1,14 @@
-# Llama-3.1-70B-FW
+# [Llama-3.1-70B-FW](https://poe.com/Llama-3.1-70B-FW)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 400 points/message |
+| Initial Points Cost | 400 points |
+
+**Last Checked:** 2025-08-05 23:30:41.237507
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 400 points/message |
-| Initial Points Cost | 400 points |
-
-**Last Checked:** 2025-08-05 23:30:41.237507
 
 
 ## Technical Details

@@ -1,4 +1,14 @@
-# Luma-Photon-Flash
+# [Luma-Photon-Flash](https://poe.com/Luma-Photon-Flash)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Image Output | 167 points / message |
+| Initial Points Cost | 167 points |
+
+**Last Checked:** 2025-08-05 23:32:57.794151
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** image
 
 **Modality:** text->image
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Image Output | 167 points / message |
-| Initial Points Cost | 167 points |
-
-**Last Checked:** 2025-08-05 23:32:57.794151
 
 
 ## Technical Details

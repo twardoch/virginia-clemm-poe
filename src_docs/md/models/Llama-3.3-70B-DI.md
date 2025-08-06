@@ -1,4 +1,14 @@
-# Llama-3.3-70B-DI
+# [Llama-3.3-70B-DI](https://poe.com/Llama-3.3-70B-DI)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 50 points/message |
+| Initial Points Cost | 50 points |
+
+**Last Checked:** 2025-08-05 23:31:43.098006
+
 
 ## Bot Information
 
@@ -19,16 +29,6 @@ Supports 128k tokens of input context and 8k tokens of output context. Quantizat
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 50 points/message |
-| Initial Points Cost | 50 points |
-
-**Last Checked:** 2025-08-05 23:31:43.098006
 
 
 ## Technical Details

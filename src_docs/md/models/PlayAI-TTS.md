@@ -1,4 +1,14 @@
-# PlayAI-TTS
+# [PlayAI-TTS](https://poe.com/PlayAI-TTS)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Initial Points Cost | Variable points |
+| Audio Output | 17 points / second |
+
+**Last Checked:** 2025-08-05 23:36:11.067852
+
 
 ## Bot Information
 
@@ -77,16 +87,6 @@ Mary_Narrative_(Hebrew/Israeli)
 **Output Modalities:** audio
 
 **Modality:** text->audio
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Initial Points Cost | Variable points |
-| Audio Output | 17 points / second |
-
-**Last Checked:** 2025-08-05 23:36:11.067852
 
 
 ## Technical Details

@@ -1,4 +1,14 @@
-# Trellis-3D
+# [Trellis-3D](https://poe.com/Trellis-3D)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Initial Points Cost | 567 points |
+| 3D Output | 567 points / message |
+
+**Last Checked:** 2025-08-05 23:41:06.753634
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Initial Points Cost | 567 points |
-| 3D Output | 567 points / message |
-
-**Last Checked:** 2025-08-05 23:41:06.753634
 
 
 ## Technical Details

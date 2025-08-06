@@ -1,4 +1,14 @@
-# Llama-4-Scout-B10
+# [Llama-4-Scout-B10](https://poe.com/Llama-4-Scout-B10)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 100 points/message |
+| Initial Points Cost | 100 points |
+
+**Last Checked:** 2025-08-05 23:32:30.529482
+
 
 ## Bot Information
 
@@ -20,16 +30,6 @@ Scout is perfect for tasks requiring a lot of context, from summarizing large do
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 100 points/message |
-| Initial Points Cost | 100 points |
-
-**Last Checked:** 2025-08-05 23:32:30.529482
 
 
 ## Technical Details

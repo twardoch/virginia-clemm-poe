@@ -1,4 +1,16 @@
-# Gemini-1.5-Flash-Search
+# [Gemini-1.5-Flash-Search](https://poe.com/Gemini-1.5-Flash-Search)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Input Text | 1 point/1k characters |
+| Bot Message | 3 points/message |
+| Chat History | Input rates are applied |
+| Initial Points Cost | 4+ points |
+
+**Last Checked:** 2025-08-05 23:24:03.483648
+
 
 ## Bot Information
 
@@ -16,18 +28,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Input Text | 1 point/1k characters |
-| Bot Message | 3 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 4+ points |
-
-**Last Checked:** 2025-08-05 23:24:03.483648
 
 
 ## Technical Details

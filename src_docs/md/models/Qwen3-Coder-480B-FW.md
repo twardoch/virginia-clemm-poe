@@ -1,4 +1,14 @@
-# Qwen3-Coder-480B-FW
+# [Qwen3-Coder-480B-FW](https://poe.com/Qwen3-Coder-480B-FW)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 300 points/message |
+| Initial Points Cost | 300 points |
+
+**Last Checked:** 2025-08-05 23:38:27.785906
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 300 points/message |
-| Initial Points Cost | 300 points |
-
-**Last Checked:** 2025-08-05 23:38:27.785906
 
 
 ## Technical Details

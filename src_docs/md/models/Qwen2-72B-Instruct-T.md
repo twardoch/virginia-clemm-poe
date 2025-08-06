@@ -1,4 +1,14 @@
-# Qwen2-72B-Instruct-T
+# [Qwen2-72B-Instruct-T](https://poe.com/Qwen2-72B-Instruct-T)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 190 points/message |
+| Initial Points Cost | 190 points |
+
+**Last Checked:** 2025-08-05 23:37:40.299065
+
 
 ## Bot Information
 
@@ -20,16 +30,6 @@ The points price is subject to change.
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 190 points/message |
-| Initial Points Cost | 190 points |
-
-**Last Checked:** 2025-08-05 23:37:40.299065
 
 
 ## Technical Details

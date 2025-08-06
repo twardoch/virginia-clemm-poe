@@ -1,4 +1,18 @@
-# Claude-Sonnet-3.7
+# [Claude-Sonnet-3.7](https://poe.com/Claude-Sonnet-3.7)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Input Text | 115 points/1k tokens |
+| Input Image | 115 points/1k tokens |
+| Bot Message | 1017 points/message |
+| Chat History | Input rates are applied |
+| Chat History Cache Discount | 90% discount oncached chat history |
+| Initial Points Cost | 1044+ points |
+
+**Last Checked:** 2025-08-05 23:17:17.451270
+
 
 ## Bot Information
 
@@ -17,20 +31,6 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Input Text | 115 points/1k tokens |
-| Input Image | 115 points/1k tokens |
-| Bot Message | 1017 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 90% discount oncached chat history |
-| Initial Points Cost | 1044+ points |
-
-**Last Checked:** 2025-08-05 23:17:17.451270
 
 
 ## Technical Details

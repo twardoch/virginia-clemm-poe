@@ -1,4 +1,14 @@
-# Qwen-2.5-72B-T
+# [Qwen-2.5-72B-T](https://poe.com/Qwen-2.5-72B-T)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 300 points/message |
+| Initial Points Cost | 300 points |
+
+**Last Checked:** 2025-08-05 23:36:52.211945
+
 
 ## Bot Information
 
@@ -18,16 +28,6 @@ Delivering results on par with Llama-3-405B despite using only one-fifth of the 
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 300 points/message |
-| Initial Points Cost | 300 points |
-
-**Last Checked:** 2025-08-05 23:36:52.211945
 
 
 ## Technical Details

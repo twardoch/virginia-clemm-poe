@@ -1,4 +1,17 @@
-# o1-pro
+# [o1-pro](https://poe.com/o1-pro)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Input Text | 4500 points/1k tokens |
+| Input Image | 4500 points/1k tokens |
+| Bot Message | 53457 points/message |
+| Chat History | Input rates are applied |
+| Initial Points Cost | 54420+ points |
+
+**Last Checked:** 2025-08-05 23:42:28.739426
+
 
 ## Bot Information
 
@@ -17,19 +30,6 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Input Text | 4500 points/1k tokens |
-| Input Image | 4500 points/1k tokens |
-| Bot Message | 53457 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 54420+ points |
-
-**Last Checked:** 2025-08-05 23:42:28.739426
 
 
 ## Technical Details

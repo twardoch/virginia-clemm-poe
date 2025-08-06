@@ -1,4 +1,14 @@
-# Flux-Schnell-T
+# [Flux-Schnell-T](https://poe.com/Flux-Schnell-T)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 70 points/message |
+| Initial Points Cost | 70 points |
+
+**Last Checked:** 2025-08-05 23:21:43.063596
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** image
 
 **Modality:** text->image
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 70 points/message |
-| Initial Points Cost | 70 points |
-
-**Last Checked:** 2025-08-05 23:21:43.063596
 
 
 ## Technical Details

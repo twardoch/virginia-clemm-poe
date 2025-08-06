@@ -1,4 +1,14 @@
-# Imagen-3
+# [Imagen-3](https://poe.com/Imagen-3)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 400 points/message |
+| Initial Points Cost | 400 points |
+
+**Last Checked:** 2025-08-05 23:27:20.123244
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** image
 
 **Modality:** text->image
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 400 points/message |
-| Initial Points Cost | 400 points |
-
-**Last Checked:** 2025-08-05 23:27:20.123244
 
 
 ## Technical Details

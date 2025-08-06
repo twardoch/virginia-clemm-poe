@@ -1,4 +1,14 @@
-# Llama-3-8b-Groq
+# [Llama-3-8b-Groq](https://poe.com/Llama-3-8b-Groq)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 10 points/message |
+| Initial Points Cost | 10 points |
+
+**Last Checked:** 2025-08-05 23:29:51.416038
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 10 points/message |
-| Initial Points Cost | 10 points |
-
-**Last Checked:** 2025-08-05 23:29:51.416038
 
 
 ## Technical Details

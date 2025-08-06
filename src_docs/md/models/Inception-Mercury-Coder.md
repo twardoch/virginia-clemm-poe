@@ -1,4 +1,15 @@
-# Inception-Mercury-Coder
+# [Inception-Mercury-Coder](https://poe.com/Inception-Mercury-Coder)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Input Text | 9 points / 1k tokens |
+| Initial Points Cost | 14+ points |
+| Bot Message (Text) | 34 points / 1k tokens |
+
+**Last Checked:** 2025-08-05 23:28:01.303010
+
 
 ## Bot Information
 
@@ -16,17 +27,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Input Text | 9 points / 1k tokens |
-| Initial Points Cost | 14+ points |
-| Bot Message (Text) | 34 points / 1k tokens |
-
-**Last Checked:** 2025-08-05 23:28:01.303010
 
 
 ## Technical Details

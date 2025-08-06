@@ -1,4 +1,14 @@
-# Llama-3-70b-Groq
+# [Llama-3-70b-Groq](https://poe.com/Llama-3-70b-Groq)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 75 points/message |
+| Initial Points Cost | 75 points |
+
+**Last Checked:** 2025-08-05 23:29:31.071131
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 75 points/message |
-| Initial Points Cost | 75 points |
-
-**Last Checked:** 2025-08-05 23:29:31.071131
 
 
 ## Technical Details

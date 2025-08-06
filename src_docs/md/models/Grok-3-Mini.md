@@ -1,4 +1,17 @@
-# Grok-3-Mini
+# [Grok-3-Mini](https://poe.com/Grok-3-Mini)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Input Text | 10 points/1k tokens |
+| Input Image | Variable |
+| Bot Message | 37 points/message |
+| Chat History | Input rates are applied |
+| Initial Points Cost | 40+ points |
+
+**Last Checked:** 2025-08-05 23:25:36.036731
+
 
 ## Bot Information
 
@@ -17,19 +30,6 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Input Text | 10 points/1k tokens |
-| Input Image | Variable |
-| Bot Message | 37 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 40+ points |
-
-**Last Checked:** 2025-08-05 23:25:36.036731
 
 
 ## Technical Details

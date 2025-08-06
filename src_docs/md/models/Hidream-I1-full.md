@@ -1,4 +1,14 @@
-# Hidream-I1-full
+# [Hidream-I1-full](https://poe.com/Hidream-I1-full)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Image Output | 1417 points / message |
+| Initial Points Cost | 1417 points |
+
+**Last Checked:** 2025-08-05 23:26:38.962827
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** image
 
 **Modality:** text->image
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Image Output | 1417 points / message |
-| Initial Points Cost | 1417 points |
-
-**Last Checked:** 2025-08-05 23:26:38.962827
 
 
 ## Technical Details

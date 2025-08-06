@@ -1,4 +1,14 @@
-# Qwen-2.5-7B-T
+# [Qwen-2.5-7B-T](https://poe.com/Qwen-2.5-7B-T)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 75 points/message |
+| Initial Points Cost | 75 points |
+
+**Last Checked:** 2025-08-05 23:36:59.016836
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 75 points/message |
-| Initial Points Cost | 75 points |
-
-**Last Checked:** 2025-08-05 23:36:59.016836
 
 
 ## Technical Details

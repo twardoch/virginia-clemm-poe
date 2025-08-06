@@ -1,4 +1,14 @@
-# Llama-3.1-8B-T-128k
+# [Llama-3.1-8B-T-128k](https://poe.com/Llama-3.1-8B-T-128k)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 100 points/message |
+| Initial Points Cost | 100 points |
+
+**Last Checked:** 2025-08-05 23:31:22.343319
+
 
 ## Bot Information
 
@@ -18,16 +28,6 @@ The points price is subject to change.
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 100 points/message |
-| Initial Points Cost | 100 points |
-
-**Last Checked:** 2025-08-05 23:31:22.343319
 
 
 ## Technical Details

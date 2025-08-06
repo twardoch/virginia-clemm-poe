@@ -1,4 +1,14 @@
-# StableDiffusionXL
+# [StableDiffusionXL](https://poe.com/StableDiffusionXL)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 120 points/message |
+| Initial Points Cost | 120 points |
+
+**Last Checked:** 2025-08-05 23:40:46.372779
+
 
 ## Bot Information
 
@@ -20,16 +30,6 @@ Powered by Stable Diffusion XL.
 **Output Modalities:** image
 
 **Modality:** text->image
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 120 points/message |
-| Initial Points Cost | 120 points |
-
-**Last Checked:** 2025-08-05 23:40:46.372779
 
 
 ## Technical Details

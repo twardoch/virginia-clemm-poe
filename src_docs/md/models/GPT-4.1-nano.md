@@ -1,4 +1,18 @@
-# GPT-4.1-nano
+# [GPT-4.1-nano](https://poe.com/GPT-4.1-nano)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Input Text | 3 points/1k tokens |
+| Input Image | 3 points/1k tokens |
+| Bot Message | 6 points/message |
+| Chat History | Input rates are applied |
+| Chat History Cache Discount | 75% discount oncached chat history |
+| Initial Points Cost | 7+ points |
+
+**Last Checked:** 2025-08-05 23:22:52.385639
+
 
 ## Bot Information
 
@@ -16,20 +30,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Input Text | 3 points/1k tokens |
-| Input Image | 3 points/1k tokens |
-| Bot Message | 6 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 75% discount oncached chat history |
-| Initial Points Cost | 7+ points |
-
-**Last Checked:** 2025-08-05 23:22:52.385639
 
 
 ## Technical Details

@@ -1,4 +1,14 @@
-# Reka-Core
+# [Reka-Core](https://poe.com/Reka-Core)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Initial Points Cost | 834 points |
+| Total Cost | 834 points / message |
+
+**Last Checked:** 2025-08-05 23:38:48.669710
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Initial Points Cost | 834 points |
-| Total Cost | 834 points / message |
-
-**Last Checked:** 2025-08-05 23:38:48.669710
 
 
 ## Technical Details

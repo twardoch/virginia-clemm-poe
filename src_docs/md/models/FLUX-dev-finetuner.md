@@ -1,4 +1,14 @@
-# FLUX-dev-finetuner
+# [FLUX-dev-finetuner](https://poe.com/FLUX-dev-finetuner)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Finetuning | 56667 points / message |
+| Initial Points Cost | Variable points |
+
+**Last Checked:** 2025-08-05 23:20:18.224623
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** image
 
 **Modality:** text->image
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Finetuning | 56667 points / message |
-| Initial Points Cost | Variable points |
-
-**Last Checked:** 2025-08-05 23:20:18.224623
 
 
 ## Technical Details

@@ -1,4 +1,14 @@
-# Qwen2.5-VL-72B-T
+# [Qwen2.5-VL-72B-T](https://poe.com/Qwen2.5-VL-72B-T)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 290 points/message |
+| Initial Points Cost | 290 points |
+
+**Last Checked:** 2025-08-05 23:37:53.708533
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 290 points/message |
-| Initial Points Cost | 290 points |
-
-**Last Checked:** 2025-08-05 23:37:53.708533
 
 
 ## Technical Details

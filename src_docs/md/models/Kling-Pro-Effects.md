@@ -1,4 +1,14 @@
-# Kling-Pro-Effects
+# [Kling-Pro-Effects](https://poe.com/Kling-Pro-Effects)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Video Output | 3334 points / second |
+| Initial Points Cost | Variable points |
+
+**Last Checked:** 2025-08-05 23:29:03.322016
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** video
 
 **Modality:** text->video
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Video Output | 3334 points / second |
-| Initial Points Cost | Variable points |
-
-**Last Checked:** 2025-08-05 23:29:03.322016
 
 
 ## Technical Details

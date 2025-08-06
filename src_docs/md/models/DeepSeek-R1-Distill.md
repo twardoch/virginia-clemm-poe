@@ -1,4 +1,14 @@
-# DeepSeek-R1-Distill
+# [DeepSeek-R1-Distill](https://poe.com/DeepSeek-R1-Distill)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 150 points/message |
+| Initial Points Cost | 150 points |
+
+**Last Checked:** 2025-08-05 23:18:45.122844
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 150 points/message |
-| Initial Points Cost | 150 points |
-
-**Last Checked:** 2025-08-05 23:18:45.122844
 
 
 ## Technical Details

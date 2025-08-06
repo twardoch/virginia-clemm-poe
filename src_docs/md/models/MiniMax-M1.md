@@ -1,4 +1,16 @@
-# MiniMax-M1
+# [MiniMax-M1](https://poe.com/MiniMax-M1)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Initial Points Cost | 100+ |
+| Input (≤200K Tokens) | 20 credits / 1000 tokens |
+| Input (>200K Tokens) | 65 credits / 1000 tokens |
+| Output | 110 credits / 1000 tokens |
+
+**Last Checked:** 2025-08-05 23:33:18.629743
+
 
 ## Bot Information
 
@@ -17,18 +29,6 @@ This is a pure text reasoning model and currently does not process any file type
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Initial Points Cost | 100+ |
-| Input (≤200K Tokens) | 20 credits / 1000 tokens |
-| Input (>200K Tokens) | 65 credits / 1000 tokens |
-| Output | 110 credits / 1000 tokens |
-
-**Last Checked:** 2025-08-05 23:33:18.629743
 
 
 ## Technical Details

@@ -1,4 +1,14 @@
-# Qwen3-32B-nitro
+# [Qwen3-32B-nitro](https://poe.com/Qwen3-32B-nitro)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 1 point/message |
+| Initial Points Cost | 1 point |
+
+**Last Checked:** 2025-08-05 23:38:20.884039
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 1 point/message |
-| Initial Points Cost | 1 point |
-
-**Last Checked:** 2025-08-05 23:38:20.884039
 
 
 ## Technical Details

@@ -1,4 +1,14 @@
-# Perplexity-Deep-Research
+# [Perplexity-Deep-Research](https://poe.com/Perplexity-Deep-Research)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Per Message | 15167 points |
+| Initial Points Cost | 15167 points |
+
+**Last Checked:** 2025-08-05 23:34:54.669430
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Per Message | 15167 points |
-| Initial Points Cost | 15167 points |
-
-**Last Checked:** 2025-08-05 23:34:54.669430
 
 
 ## Technical Details

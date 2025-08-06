@@ -1,4 +1,14 @@
-# Flux-Kontext-Max
+# [Flux-Kontext-Max](https://poe.com/Flux-Kontext-Max)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Image Output | 2667 points / message |
+| Initial Points Cost | 2667 points |
+
+**Last Checked:** 2025-08-05 23:21:29.173255
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** image
 
 **Modality:** text->image
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Image Output | 2667 points / message |
-| Initial Points Cost | 2667 points |
-
-**Last Checked:** 2025-08-05 23:21:29.173255
 
 
 ## Technical Details

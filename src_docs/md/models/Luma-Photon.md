@@ -1,4 +1,14 @@
-# Luma-Photon
+# [Luma-Photon](https://poe.com/Luma-Photon)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Image Output | 634 points / message |
+| Initial Points Cost | 634 points |
+
+**Last Checked:** 2025-08-05 23:32:50.996305
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** image
 
 **Modality:** text->image
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Image Output | 634 points / message |
-| Initial Points Cost | 634 points |
-
-**Last Checked:** 2025-08-05 23:32:50.996305
 
 
 ## Technical Details

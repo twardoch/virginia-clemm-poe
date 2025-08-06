@@ -1,4 +1,14 @@
-# Flux-Kontext-Pro
+# [Flux-Kontext-Pro](https://poe.com/Flux-Kontext-Pro)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Image Output | 1334 points / message |
+| Initial Points Cost | 1334 points |
+
+**Last Checked:** 2025-08-05 23:21:36.157410
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** image
 
 **Modality:** text->image
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Image Output | 1334 points / message |
-| Initial Points Cost | 1334 points |
-
-**Last Checked:** 2025-08-05 23:21:36.157410
 
 
 ## Technical Details

@@ -1,4 +1,14 @@
-# Llama-4-Scout-T
+# [Llama-4-Scout-T](https://poe.com/Llama-4-Scout-T)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 35 points/message |
+| Initial Points Cost | 35 points |
+
+**Last Checked:** 2025-08-05 23:32:37.263865
+
 
 ## Bot Information
 
@@ -16,16 +26,6 @@
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 35 points/message |
-| Initial Points Cost | 35 points |
-
-**Last Checked:** 2025-08-05 23:32:37.263865
 
 
 ## Technical Details

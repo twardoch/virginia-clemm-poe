@@ -1,4 +1,15 @@
-# Runway
+# [Runway](https://poe.com/Runway)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Initial Points Cost | Variable points |
+| 5 Seconds | 11334 points |
+| 10 Seconds | 21334 points |
+
+**Last Checked:** 2025-08-05 23:39:23.053451
+
 
 ## Bot Information
 
@@ -16,17 +27,6 @@
 **Output Modalities:** video
 
 **Modality:** text->video
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Initial Points Cost | Variable points |
-| 5 Seconds | 11334 points |
-| 10 Seconds | 21334 points |
-
-**Last Checked:** 2025-08-05 23:39:23.053451
 
 
 ## Technical Details

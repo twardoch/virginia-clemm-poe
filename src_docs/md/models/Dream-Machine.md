@@ -1,4 +1,14 @@
-# Dream-Machine
+# [Dream-Machine](https://poe.com/Dream-Machine)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 12000 points/message |
+| Initial Points Cost | 12000 points |
+
+**Last Checked:** 2025-08-05 23:19:34.534115
+
 
 ## Bot Information
 
@@ -18,16 +28,6 @@ To specify the aspect ratio of your video add --aspect_ratio (1:1, 16:9, 9:16, 4
 **Output Modalities:** video
 
 **Modality:** text->video
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 12000 points/message |
-| Initial Points Cost | 12000 points |
-
-**Last Checked:** 2025-08-05 23:19:34.534115
 
 
 ## Technical Details

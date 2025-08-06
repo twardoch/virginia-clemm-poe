@@ -1,4 +1,14 @@
-# Llama-4-Maverick-B10
+# [Llama-4-Maverick-B10](https://poe.com/Llama-4-Maverick-B10)
+
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 145 points/message |
+| Initial Points Cost | 145 points |
+
+**Last Checked:** 2025-08-05 23:32:10.172263
+
 
 ## Bot Information
 
@@ -20,16 +30,6 @@ Maverick is a versatile model, great for tasks from creative content generation 
 **Output Modalities:** text
 
 **Modality:** text->text
-
-
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Total Cost | 145 points/message |
-| Initial Points Cost | 145 points |
-
-**Last Checked:** 2025-08-05 23:32:10.172263
 
 
 ## Technical Details
