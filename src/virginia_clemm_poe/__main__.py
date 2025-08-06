@@ -13,6 +13,7 @@ from rich.table import Table
 from . import api
 from .browser_manager import BrowserManager
 from .config import DATA_FILE_PATH, DEFAULT_DEBUG_PORT
+from .poe_session import PoeSessionManager
 from .updater import ModelUpdater
 from .utils.logger import configure_logger, log_operation, log_user_action
 
@@ -516,8 +517,10 @@ class Cli:
         from .config import NETWORK_TIMEOUT_SECONDS
 
         try:
-            response = httpx.get("https://poe.com", timeout=NETWORK_TIMEOUT_SECONDS)
-            if response.status_code == 200:
+            # Use follow_redirects=True to handle redirects automatically
+            response = httpx.get("https://poe.com", timeout=NETWORK_TIMEOUT_SECONDS, follow_redirects=True)
+            # Accept any 2xx or 3xx status as success since Poe uses redirects
+            if 200 <= response.status_code < 400:
                 console.print("[green]✓ Can reach poe.com[/green]")
                 return 0
             console.print(f"[yellow]⚠ Unexpected status from poe.com: {response.status_code}[/yellow]")
@@ -588,7 +591,9 @@ class Cli:
 
             with open(DATA_FILE_PATH) as f:
                 models_data = json.load(f)
-            console.print(f"[green]✓ Valid JSON with {len(models_data.get('models', []))} models[/green]")
+            # The data structure has 'data' key containing the list of models
+            model_count = len(models_data.get('data', []))
+            console.print(f"[green]✓ Valid JSON with {model_count} models[/green]")
             return 0
         except Exception as e:
             console.print(f"[red]✗ Invalid JSON: {e}[/red]")
@@ -1125,6 +1130,225 @@ class Cli:
             for model in models:
                 status = "✓" if model.has_pricing() else "✗"
                 console.print(f"{status} {model.id}")
+
+    def balance(self, login: bool = False, refresh: bool = False, no_browser: bool = False, verbose: bool = False) -> None:
+        """Check Poe account balance and compute points - monitor your usage.
+        
+        Display your Poe account's compute points balance and subscription status.
+        
+        This command shows your current compute points balance, daily points availability,
+        and subscription status. It requires you to be logged in to Poe through stored
+        session cookies. Use the --login flag to authenticate if you haven't already.
+        
+        Balance data is cached for 5 minutes to reduce API calls. Use --refresh to force
+        fetching fresh data. By default, if the API doesn't return balance data, a browser
+        will be launched to scrape the information directly from the website.
+        
+        Args:
+            login: Open browser for manual Poe login if not authenticated.
+                  This will open an interactive browser window where you can log in.
+            refresh: Force refresh balance data, ignoring the 5-minute cache.
+            no_browser: Disable automatic browser launch for scraping when API fails.
+            verbose: Enable detailed logging for troubleshooting authentication.
+        
+        Examples:
+            Check balance (if already logged in):
+            ```bash
+            virginia-clemm-poe balance
+            ```
+            
+            Force refresh to get latest balance:
+            ```bash
+            virginia-clemm-poe balance --refresh
+            ```
+            
+            Login and check balance:
+            ```bash
+            virginia-clemm-poe balance --login
+            ```
+            
+            Quick check without browser launch:
+            ```bash
+            virginia-clemm-poe balance --no-browser
+            ```
+            
+            Troubleshoot authentication:
+            ```bash
+            virginia-clemm-poe balance --verbose
+            ```
+        
+        Common Issues:
+            - "No cookies available": Use --login flag to authenticate
+            - "Cookies expired": Re-login with --login flag
+            - "Authentication failed": Clear cookies and login again
+            - Balance shows "Unknown": Browser scraping may be needed (happens automatically)
+        
+        Note:
+            Session cookies are stored locally and persist between commands.
+            You only need to login once unless cookies expire or are cleared.
+            Balance data is cached for 5 minutes to reduce API calls.
+        """
+        configure_logger(verbose)
+        
+        console.print("[bold blue]Poe Account Balance[/bold blue]\n")
+        
+        async def run_balance() -> None:
+            session_manager = PoeSessionManager()
+            
+            # Check if we need to login
+            if login or not session_manager.has_valid_cookies():
+                if not login:
+                    console.print("[yellow]No valid session found. Please login first.[/yellow]")
+                    console.print("Use: virginia-clemm-poe balance --login")
+                    return
+                
+                console.print("[bold]Opening browser for Poe login...[/bold]")
+                
+                # Use browser to both login and get balance
+                from virginia_clemm_poe.browser_pool import get_global_pool
+                
+                pool = await get_global_pool(max_size=1)
+                async with pool.acquire_page() as page:
+                    try:
+                        # Login or extract cookies using the same page
+                        cookies = await api.login_to_poe(page=page)
+                        console.print(f"[green]✓ Successfully logged in and extracted {len(cookies)} cookies[/green]\n")
+                        
+                        # Get balance using the same browser page for scraping
+                        session_manager = api.get_session_manager()
+                        balance_info = await session_manager.get_account_balance(page=page, force_refresh=True)
+                        
+                    except Exception as e:
+                        console.print(f"[red]✗ Login failed: {e}[/red]")
+                        return
+            else:
+                # Get balance without browser login
+                try:
+                    balance_info = await api.get_account_balance(
+                        use_browser=not no_browser,
+                        force_refresh=refresh
+                    )
+                except Exception as e:
+                    console.print(f"[red]✗ Failed to get balance: {e}[/red]")
+                    return
+            
+            # Display balance information
+            console.print("[bold]Account Information:[/bold]")
+            
+            # Compute points
+            points = balance_info.get("compute_points_available")
+            if points is not None:
+                console.print(f"[green]Compute Points:[/green] {points:,}")
+            else:
+                console.print("[green]Compute Points:[/green] Unknown")
+            
+            # Daily points
+            daily = balance_info.get("daily_compute_points_available")
+            if daily is not None:
+                console.print(f"[blue]Daily Points:[/blue] {daily:,}")
+            
+            # Subscription status
+            subscription = balance_info.get("subscription", {})
+            if subscription.get("isActive"):
+                console.print("[green]Subscription:[/green] Active ✓")
+                if subscription.get("expiresAt"):
+                    console.print(f"  Expires: {subscription['expiresAt']}")
+            else:
+                console.print("[yellow]Subscription:[/yellow] Not active")
+            
+            # Message point info
+            msg_info = balance_info.get("message_point_info", {})
+            if msg_info:
+                if "messagePointBalance" in msg_info and msg_info["messagePointBalance"] is not None:
+                    console.print(f"[cyan]Message Points:[/cyan] {msg_info['messagePointBalance']:,}")
+                if "monthlyQuota" in msg_info and msg_info["monthlyQuota"] is not None:
+                    console.print(f"[cyan]Monthly Quota:[/cyan] {msg_info['monthlyQuota']:,}")
+            
+            # Timestamp
+            console.print(f"\n[dim]Last updated: {balance_info.get('timestamp', 'Unknown')}[/dim]")
+        
+        asyncio.run(run_balance())
+    
+    def login(self, verbose: bool = False) -> None:
+        """Login to Poe interactively - authenticate for balance checking.
+        
+        Open an interactive browser window for manual Poe authentication.
+        
+        This command launches a browser where you can log in to your Poe account.
+        After successful login, your session cookies are extracted and stored locally
+        for use with other commands like 'balance'.
+        
+        Args:
+            verbose: Enable detailed logging during the login process.
+        
+        Examples:
+            Basic login:
+            ```bash
+            virginia-clemm-poe login
+            ```
+            
+            Debug login issues:
+            ```bash
+            virginia-clemm-poe login --verbose
+            ```
+        
+        Note:
+            - The browser window will stay open until you complete login
+            - You have 5 minutes to complete the login process
+            - Cookies are stored securely in your local app directory
+            - You only need to login once unless cookies expire
+        """
+        configure_logger(verbose)
+        
+        console.print("[bold blue]Poe Interactive Login[/bold blue]\n")
+        
+        async def run_login() -> None:
+            try:
+                console.print("[bold]Opening browser for Poe login...[/bold]")
+                cookies = await api.login_to_poe()
+                
+                console.print(f"\n[green]✓ Successfully logged in![/green]")
+                console.print(f"[green]Extracted {len(cookies)} session cookies[/green]")
+                
+                # Show available commands
+                console.print("\n[bold]You can now use:[/bold]")
+                console.print("  virginia-clemm-poe balance    # Check compute points")
+                
+            except Exception as e:
+                console.print(f"[red]✗ Login failed: {e}[/red]")
+                if "TimeoutError" in str(e.__class__.__name__):
+                    console.print("Login timed out after 5 minutes")
+        
+        asyncio.run(run_login())
+    
+    def logout(self, verbose: bool = False) -> None:
+        """Logout from Poe - clear stored session cookies.
+        
+        Clear all stored Poe session cookies and authentication data.
+        
+        This command removes your stored Poe session, requiring you to login
+        again before using commands that need authentication (like 'balance').
+        
+        Args:
+            verbose: Enable detailed logging.
+        
+        Examples:
+            ```bash
+            virginia-clemm-poe logout
+            ```
+        """
+        configure_logger(verbose)
+        
+        console.print("[bold blue]Poe Logout[/bold blue]\n")
+        
+        session_manager = PoeSessionManager()
+        
+        if session_manager.has_valid_cookies():
+            session_manager.clear_cookies()
+            console.print("[green]✓ Successfully logged out[/green]")
+            console.print("Session cookies have been cleared")
+        else:
+            console.print("[yellow]No active session to clear[/yellow]")
 
 
 def main() -> None:

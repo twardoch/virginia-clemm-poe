@@ -17,32 +17,42 @@ Project Structure:
 │   ├── 📁 models
 │   └── 📁 search
 ├── 📁 external
-│   └── 📁 playwrightauthor
-│       ├── 📁 .github
-│       │   └── 📁 workflows
-│       ├── 📁 docs
-│       │   ├── 📁 architecture
-│       │   ├── 📁 auth
-│       │   ├── 📁 performance
-│       │   └── 📁 platforms
-│       ├── 📁 examples
-│       │   ├── 📁 fastapi
-│       │   └── 📁 pytest
-│       ├── 📁 issues
-│       ├── 📁 scripts
-│       ├── 📁 src
-│       │   └── 📁 playwrightauthor
-│       │       ├── 📁 browser
-│       │       │   └── ... (depth limit reached)
-│       │       ├── 📁 repl
-│       │       │   └── ... (depth limit reached)
-│       │       ├── 📁 templates
-│       │       │   └── ... (depth limit reached)
-│       │       └── 📁 utils
-│       │           └── ... (depth limit reached)
-│       ├── 📁 src_docs
-│       │   └── 📁 md
-│       └── 📁 tests
+│   ├── 📁 fastapi_poe
+│   │   ├── 📁 .github
+│   │   │   └── 📁 workflows
+│   │   ├── 📁 docs
+│   │   ├── 📁 src
+│   │   │   └── 📁 fastapi_poe
+│   │   └── 📁 tests
+│   ├── 📁 playwrightauthor
+│   │   ├── 📁 .github
+│   │   │   └── 📁 workflows
+│   │   ├── 📁 docs
+│   │   │   ├── 📁 architecture
+│   │   │   ├── 📁 auth
+│   │   │   ├── 📁 performance
+│   │   │   └── 📁 platforms
+│   │   ├── 📁 examples
+│   │   │   ├── 📁 fastapi
+│   │   │   └── 📁 pytest
+│   │   ├── 📁 issues
+│   │   ├── 📁 scripts
+│   │   ├── 📁 src
+│   │   │   └── 📁 playwrightauthor
+│   │   │       ├── 📁 browser
+│   │   │       │   └── ... (depth limit reached)
+│   │   │       ├── 📁 repl
+│   │   │       │   └── ... (depth limit reached)
+│   │   │       ├── 📁 templates
+│   │   │       │   └── ... (depth limit reached)
+│   │   │       └── 📁 utils
+│   │   │           └── ... (depth limit reached)
+│   │   ├── 📁 src_docs
+│   │   │   └── 📁 md
+│   │   └── 📁 tests
+│   └── 📁 poe-api-wrapper
+│       └── 📁 poe_api_wrapper
+│           └── 📁 openai
 ├── 📁 htmlcov
 ├── 📁 issues
 ├── 📁 scripts
@@ -62,11 +72,13 @@ Project Structure:
 │   │   ├── 📄 __init__.py
 │   │   ├── 📄 __main__.py
 │   │   ├── 📄 api.py
+│   │   ├── 📄 balance_scraper.py
 │   │   ├── 📄 browser_manager.py
 │   │   ├── 📄 browser_pool.py
 │   │   ├── 📄 config.py
 │   │   ├── 📄 exceptions.py
 │   │   ├── 📄 models.py
+│   │   ├── 📄 poe_session.py
 │   │   ├── 📄 type_guards.py
 │   │   ├── 📄 types.py
 │   │   ├── 📄 updater.py
@@ -345,9 +357,12 @@ Project Structure:
 ├── 📄 .gitignore
 ├── 📄 AGENTS.md
 ├── 📄 ARCHITECTURE.md
+├── 📄 BALANCE_FEATURE.md
 ├── 📄 CHANGELOG.md
+├── 📄 check_cookies.py
 ├── 📄 CLAUDE.md
 ├── 📄 CONTRIBUTING.md
+├── 📄 debug_login.py
 ├── 📄 GEMINI.md
 ├── 📄 LICENSE
 ├── 📄 Makefile
@@ -356,6 +371,11 @@ Project Structure:
 ├── 📄 publish.sh
 ├── 📄 pyproject.toml
 ├── 📄 README.md
+├── 📄 test_balance.py
+├── 📄 test_balance_debug.py
+├── 📄 test_balance_numeric.py
+├── 📄 test_balance_web.py
+├── 📄 test_session.py
 ├── 📄 TODO.md
 ├── 📄 WORK.md
 └── 📄 WORKFLOWS.md
@@ -2115,6 +2135,180 @@ The architecture is designed to evolve with user needs while maintaining backwar
 </document>
 
 <document index="8">
+<source>BALANCE_FEATURE.md</source>
+<document_content>
+# Poe Account Balance Feature
+
+## Overview
+
+This document describes the implementation of the Poe account balance checking feature for Virginia Clemm Poe. The feature allows users to authenticate with Poe, extract session cookies, and check their compute points balance.
+
+## Implementation Summary
+
+### 1. Core Components
+
+#### PoeSessionManager (`src/virginia_clemm_poe/poe_session.py`)
+- Manages Poe session cookies and authentication
+- Stores cookies persistently in local data directory
+- Provides methods for:
+  - Extracting cookies from browser sessions
+  - Checking account balance via internal Poe API
+  - Integration with poe-api-wrapper (if installed)
+
+Key methods:
+- `extract_cookies_from_browser()`: Extract cookies from browser context
+- `login_with_browser()`: Interactive browser login
+- `extract_from_existing_playwright_session()`: Extract from PlaywrightAuthor session
+- `get_account_balance()`: Retrieve compute points and subscription info
+- `has_valid_cookies()`: Check if authenticated
+- `clear_cookies()`: Logout functionality
+
+#### API Module Updates (`src/virginia_clemm_poe/api.py`)
+Added public API functions:
+- `get_account_balance()`: Get compute points balance
+- `login_to_poe()`: Interactive browser login
+- `extract_poe_cookies()`: Extract cookies from existing browser session
+- `has_valid_poe_session()`: Check authentication status
+- `clear_poe_session()`: Clear stored cookies
+
+#### CLI Commands (`src/virginia_clemm_poe/__main__.py`)
+New commands added:
+- `virginia-clemm-poe balance [--login]`: Check account balance
+- `virginia-clemm-poe login`: Interactive Poe login
+- `virginia-clemm-poe logout`: Clear session cookies
+
+### 2. Authentication Flow
+
+1. **Initial Login**:
+   - User runs `virginia-clemm-poe login`
+   - Browser window opens to Poe.com login page
+   - User manually logs in (supports 2FA)
+   - Cookies are extracted and stored locally
+
+2. **Cookie Storage**:
+   - Essential cookies (p-b, p-lat, m-b, cf_clearance) are extracted
+   - Stored in `~/Library/Application Support/virginia-clemm-poe/cookies/poe_cookies.json`
+   - Cookies persist between sessions
+
+3. **Balance Checking**:
+   - Uses stored cookies to query internal Poe API endpoint
+   - Endpoint: `https://www.quora.com/poe_api/settings`
+   - Returns compute points, subscription status, daily points
+
+### 3. Integration with PlaywrightAuthor
+
+The implementation is designed to work seamlessly with PlaywrightAuthor:
+- Can extract cookies from existing PlaywrightAuthor browser sessions
+- Uses the same browser pool for login operations
+- Compatible with CDP (Chrome DevTools Protocol) sessions
+
+### 4. Features
+
+- **Persistent Authentication**: Cookies stored locally, no need to re-login each time
+- **Balance Information**: Shows compute points, daily points, subscription status
+- **Session Management**: Login, logout, and session validation
+- **Error Handling**: Graceful handling of expired cookies and authentication failures
+- **Optional poe-api-wrapper Integration**: Can use poe-api-wrapper for enhanced functionality if installed
+
+## Usage Examples
+
+### Check Balance
+```bash
+# If already logged in
+virginia-clemm-poe balance
+
+# Login and check balance
+virginia-clemm-poe balance --login
+```
+
+### Login/Logout
+```bash
+# Interactive login
+virginia-clemm-poe login
+
+# Clear session
+virginia-clemm-poe logout
+```
+
+### Python API
+```python
+import asyncio
+from virginia_clemm_poe import api
+
+async def check_balance():
+    # Check if logged in
+    if not api.has_valid_poe_session():
+        # Login interactively
+        await api.login_to_poe()
+    
+    # Get balance
+    balance = await api.get_account_balance()
+    print(f"Compute points: {balance['compute_points_available']:,}")
+
+asyncio.run(check_balance())
+```
+
+## Technical Details
+
+### Cookie Extraction
+The implementation extracts the following essential cookies:
+- `p-b`: Primary session token
+- `p-lat`: Session latitude token  
+- `m-b`: Message token
+- `__cf_bm`: Cloudflare bot management
+- `cf_clearance`: Cloudflare clearance
+
+### API Endpoints Used
+- Login: `https://poe.com/login`
+- Settings/Balance: `https://www.quora.com/poe_api/settings`
+
+### Data Storage
+- Cookies: `{data_dir}/cookies/poe_cookies.json`
+- Data directory varies by platform:
+  - macOS: `~/Library/Application Support/virginia-clemm-poe/`
+  - Linux: `~/.local/share/virginia-clemm-poe/`
+  - Windows: `%LOCALAPPDATA%\virginia-clemm-poe\`
+
+## Future Enhancements
+
+1. **Automatic Token Refresh**: Detect expired cookies and prompt for re-login
+2. **Enhanced poe-api-wrapper Integration**: Use for model details and advanced features
+3. **Multi-Account Support**: Allow switching between multiple Poe accounts
+4. **Balance History Tracking**: Store and display balance history over time
+5. **Usage Analytics**: Track compute point usage patterns
+
+## Testing
+
+A test script is provided at `test_balance.py` to verify the implementation:
+
+```bash
+python test_balance.py
+```
+
+This tests:
+- Session manager functionality
+- Cookie storage and retrieval
+- Balance checking (if authenticated)
+- CLI command availability
+
+## Dependencies
+
+The feature uses:
+- `httpx`: For API requests with cookies
+- `playwright`: For browser automation
+- `loguru`: For logging
+- `poe-api-wrapper` (optional): For enhanced functionality
+
+## Security Considerations
+
+- Cookies are stored locally in the user's data directory
+- No credentials are stored, only session cookies
+- Users must manually authenticate through the browser
+- Cookies can be cleared with the logout command
+</document_content>
+</document>
+
+<document index="9">
 <source>CHANGELOG.md</source>
 <document_content>
 # Changelog
@@ -2583,7 +2777,7 @@ This major release completes Phase 4: Code Quality Standards, transforming virgi
 </document_content>
 </document>
 
-<document index="9">
+<document index="10">
 <source>CLAUDE.md</source>
 <document_content>
 # CLAUDE.md
@@ -2940,7 +3134,7 @@ This repository contains the source code for `virginia-clemm-poe`, a Python pack
 </document_content>
 </document>
 
-<document index="10">
+<document index="11">
 <source>CONTRIBUTING.md</source>
 <document_content>
 # Contributing to Virginia Clemm Poe
@@ -3222,7 +3416,7 @@ Thank you for contributing to Virginia Clemm Poe! Your contributions help make t
 </document_content>
 </document>
 
-<document index="11">
+<document index="12">
 <source>GEMINI.md</source>
 <document_content>
 # CLAUDE.md
@@ -3579,7 +3773,7 @@ This repository contains the source code for `virginia-clemm-poe`, a Python pack
 </document_content>
 </document>
 
-<document index="12">
+<document index="13">
 <source>LICENSE</source>
 <document_content>
 MIT License
@@ -3607,7 +3801,7 @@ SOFTWARE.
 </document_content>
 </document>
 
-<document index="13">
+<document index="14">
 <source>Makefile</source>
 <document_content>
 # Makefile for Virginia Clemm Poe development tasks
@@ -3729,7 +3923,7 @@ ci-check: all-checks test build
 </document_content>
 </document>
 
-<document index="14">
+<document index="15">
 <source>PLAN.md</source>
 <document_content>
 # this_file: PLAN.md
@@ -3804,7 +3998,7 @@ Successfully integrated PlaywrightAuthor's latest features:
 </document_content>
 </document>
 
-<document index="15">
+<document index="16">
 <source>README.md</source>
 <document_content>
 # Virginia Clemm Poe
@@ -4269,7 +4463,7 @@ This is an unofficial companion tool for Poe.com's API. It is not affiliated wit
 </document_content>
 </document>
 
-<document index="16">
+<document index="17">
 <source>TODO.md</source>
 <document_content>
 # this_file: TODO.md
@@ -4288,8 +4482,40 @@ All PlaywrightAuthor integration tasks have been completed:
 - ✅ Pre-authorized sessions for authenticated scraping
 - ✅ Documentation updated with comprehensive examples
 
+## ✅ FIXED: Balance Command With Automatic Browser Fallback
+
+### Problem Resolution (2025-08-06)
+Successfully implemented automatic browser-based balance retrieval when the API fails:
+
+#### Solution Implemented
+- ✅ **Automatic browser fallback**: When API returns no data, browser is automatically launched for scraping
+- ✅ **5-minute balance cache**: Balance data is cached locally to reduce API calls
+- ✅ **--refresh flag**: Force fresh data retrieval, bypassing cache
+- ✅ **--no-browser flag**: Option to disable automatic browser launch
+- ✅ **Improved error handling**: Clear messages about authentication status
+
+#### How It Works
+1. First attempts to use cached balance (if less than 5 minutes old)
+2. If cache miss or refresh forced, tries the internal API with stored cookies
+3. If API returns no data, automatically launches browser for web scraping
+4. Successfully retrieves balance (999,933 points) and subscription status
+5. Caches the result for subsequent quick access
+
+#### Usage Examples
+```bash
+# Quick check using cache
+virginia-clemm-poe balance
+
+# Force fresh data with browser scraping if needed
+virginia-clemm-poe balance --refresh
+
+# Disable automatic browser launch
+virginia-clemm-poe balance --no-browser
+```
+
 ## 🔄 Next Priority: Testing & Verification
 
+- [x] **Fix Balance Command**: ✅ Implemented browser launch for balance checking with stored cookies
 - [ ] **Update Unit Tests**: Mock `playwrightauthor.get_browser` in tests for `browser_manager.py` and `browser_pool.py`.
 - [ ] **Run Integration Tests**: Verify the `update` and `doctor` commands still work correctly.
 
@@ -4328,7 +4554,7 @@ All PlaywrightAuthor integration tasks have been completed:
 </document_content>
 </document>
 
-<document index="17">
+<document index="18">
 <source>WORK.md</source>
 <document_content>
 # this_file: WORK.md
@@ -4718,7 +4944,7 @@ Working on completing Phase 4.2b Documentation Excellence tasks for comprehensiv
 </document_content>
 </document>
 
-<document index="18">
+<document index="19">
 <source>WORKFLOWS.md</source>
 <document_content>
 # this_file: WORKFLOWS.md
@@ -5319,7 +5545,24 @@ asyncio.run(analyze_models_parallel())
 </document_content>
 </document>
 
-<document index="19">
+# File: /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/check_cookies.py
+# Language: python
+
+import json
+from pathlib import Path
+
+
+# File: /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/debug_login.py
+# Language: python
+
+import asyncio
+from playwright.async_api import async_playwright
+
+def check_poe_login(()):
+    """Check if we can detect Poe login status."""
+
+
+<document index="20">
 <source>mypy.ini</source>
 <document_content>
 [mypy]
@@ -5382,7 +5625,7 @@ ignore_missing_imports = True
 </document_content>
 </document>
 
-<document index="20">
+<document index="21">
 <source>publish.sh</source>
 <document_content>
 #!/usr/bin/env bash
@@ -5396,7 +5639,7 @@ uvx hatch publish
 </document_content>
 </document>
 
-<document index="21">
+<document index="22">
 <source>pyproject.toml</source>
 <document_content>
 # this_file: pyproject.toml
@@ -5701,6 +5944,7 @@ from rich.table import Table
 from . import api
 from .browser_manager import BrowserManager
 from .config import DATA_FILE_PATH, DEFAULT_DEBUG_PORT
+from .poe_session import PoeSessionManager
 from .updater import ModelUpdater
 from .utils.logger import configure_logger, log_operation, log_user_action
 from playwrightauthor import Browser
@@ -5719,6 +5963,7 @@ from .config import NETWORK_TIMEOUT_SECONDS
 import importlib
 import importlib.util
 import json
+from virginia_clemm_poe.browser_pool import get_global_pool
 
 class Cli:
     """Virginia Clemm Poe - Poe.com model data management CLI."""
@@ -5796,6 +6041,12 @@ class Cli:
         verbose: bool = False,
     )) -> None:
         """List all available models - get an overview of the entire dataset."""
+    def balance((self, login: bool = False, refresh: bool = False, no_browser: bool = False, verbose: bool = False)) -> None:
+        """Check Poe account balance and compute points - monitor your usage."""
+    def login((self, verbose: bool = False)) -> None:
+        """Login to Poe interactively - authenticate for balance checking."""
+    def logout((self, verbose: bool = False)) -> None:
+        """Logout from Poe - clear stored session cookies."""
 
 def setup((self, verbose: bool = False)) -> None:
     """r"""Set up Chrome browser for web scraping - required before first update."""
@@ -5903,6 +6154,19 @@ def list((
     )) -> None:
     """List all available models - get an overview of the entire dataset."""
 
+def balance((self, login: bool = False, refresh: bool = False, no_browser: bool = False, verbose: bool = False)) -> None:
+    """Check Poe account balance and compute points - monitor your usage."""
+
+def run_balance(()) -> None:
+
+def login((self, verbose: bool = False)) -> None:
+    """Login to Poe interactively - authenticate for balance checking."""
+
+def run_login(()) -> None:
+
+def logout((self, verbose: bool = False)) -> None:
+    """Logout from Poe - clear stored session cookies."""
+
 def main(()) -> None:
     """Main CLI entry point."""
 
@@ -5910,10 +6174,18 @@ def main(()) -> None:
 # File: /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/api.py
 # Language: python
 
+import asyncio
 import json
 from loguru import logger
 from .config import DATA_FILE_PATH
+from .exceptions import AuthenticationError
 from .models import ModelCollection, PoeModel
+from .poe_session import PoeSessionManager
+from virginia_clemm_poe.browser_pool import get_global_pool
+from .browser_pool import get_global_pool
+
+def get_session_manager(()) -> PoeSessionManager:
+    """Get or create the global session manager instance."""
 
 def load_models((force_reload: bool = False)) -> ModelCollection:
     """Load model collection from the data file with intelligent caching."""
@@ -5935,6 +6207,39 @@ def get_models_needing_update(()) -> list[PoeModel]:
 
 def reload_models(()) -> ModelCollection:
     """Force reload models from disk, bypassing cache."""
+
+def get_account_balance((use_api_key: bool = False, api_key: str | None = None, use_browser: bool = True, use_cache: bool = True, force_refresh: bool = False)) -> dict:
+    """Get Poe account balance and compute points information."""
+
+def login_to_poe((page=None)) -> dict[str, str]:
+    """Open browser for manual Poe login and extract session cookies."""
+
+def extract_poe_cookies((page)) -> dict[str, str]:
+    """Extract Poe session cookies from an existing browser session."""
+
+def has_valid_poe_session(()) -> bool:
+    """Check if valid Poe session cookies are available."""
+
+def clear_poe_session(()) -> None:
+    """Clear stored Poe session cookies."""
+
+
+# File: /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/balance_scraper.py
+# Language: python
+
+import asyncio
+from typing import Any, Optional
+from loguru import logger
+from playwright.async_api import Page
+import re
+import re
+from datetime import datetime
+
+def scrape_balance_from_page((page: Page)) -> dict[str, Any]:
+    """Scrape balance information from an authenticated Poe page."""
+
+def get_balance_with_browser((page: Page)) -> dict[str, Any]:
+    """Get balance using an authenticated browser page."""
 
 
 # File: /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/browser_manager.py
@@ -6165,7 +6470,7 @@ def close_global_pool(()) -> None:
 from pathlib import Path
 
 
-<document index="22">
+<document index="23">
 <source>src/virginia_clemm_poe/data/poe_models.json</source>
 <document_content>
 {
@@ -6273,6 +6578,97 @@ def search((self, query: str)) -> list[PoeModel]:
     """Search models by ID or name using case-insensitive matching."""
 
 
+# File: /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/poe_session.py
+# Language: python
+
+import json
+import os
+from datetime import datetime, timedelta
+from pathlib import Path
+from typing import Any, Optional
+import httpx
+from loguru import logger
+from playwright.async_api import Browser, BrowserContext, Page
+from .config import POE_BASE_URL
+from .exceptions import APIError, AuthenticationError
+from .utils.paths import get_data_dir
+from .balance_scraper import get_balance_with_browser
+from poe_api_wrapper import AsyncPoeApi
+
+class PoeSessionManager:
+    """Manages Poe session cookies and account balance checking."""
+    def __init__((self, cookies_dir: Optional[Path] = None)):
+        """Initialize session manager with optional custom cookies directory."""
+    def _load_cookies((self)) -> None:
+        """Load cookies from disk if available."""
+    def _save_cookies((self)) -> None:
+        """Save cookies to disk."""
+    def _load_balance_cache((self)) -> None:
+        """Load cached balance data from disk if available and not expired."""
+    def _save_balance_cache((self, balance_data: dict[str, Any])) -> None:
+        """Save balance data to cache."""
+    def extract_cookies_from_browser((self, context: BrowserContext)) -> dict[str, str]:
+        """Extract Poe session cookies from browser context."""
+    def login_with_browser((self, browser: Browser)) -> dict[str, str]:
+        """Open Poe login page and wait for user to log in."""
+    def extract_from_existing_playwright_session((self, page: Page)) -> dict[str, str]:
+        """Extract cookies from an existing PlaywrightAuthor browser session."""
+    def get_account_balance((self, use_api_key: bool = False, api_key: Optional[str] = None, page: Optional[Page] = None, use_cache: bool = True, force_refresh: bool = False)) -> dict[str, Any]:
+        """Get account balance and settings using stored cookies."""
+    def _get_balance_via_cookies((self)) -> dict[str, Any]:
+        """Get balance using session cookies (internal API)."""
+    def _get_balance_via_api((self, api_key: str)) -> dict[str, Any]:
+        """Get basic balance info using API key (limited information)."""
+    def has_valid_cookies((self)) -> bool:
+        """Check if we have the minimum required cookies."""
+    def clear_cookies((self)) -> None:
+        """Clear stored cookies and delete cookies file."""
+    def use_with_poe_api_wrapper((self)) -> Optional["AsyncPoeApi"]:
+        """Create a poe-api-wrapper client using stored cookies."""
+
+def __init__((self, cookies_dir: Optional[Path] = None)):
+    """Initialize session manager with optional custom cookies directory."""
+
+def _load_cookies((self)) -> None:
+    """Load cookies from disk if available."""
+
+def _save_cookies((self)) -> None:
+    """Save cookies to disk."""
+
+def _load_balance_cache((self)) -> None:
+    """Load cached balance data from disk if available and not expired."""
+
+def _save_balance_cache((self, balance_data: dict[str, Any])) -> None:
+    """Save balance data to cache."""
+
+def extract_cookies_from_browser((self, context: BrowserContext)) -> dict[str, str]:
+    """Extract Poe session cookies from browser context."""
+
+def login_with_browser((self, browser: Browser)) -> dict[str, str]:
+    """Open Poe login page and wait for user to log in."""
+
+def extract_from_existing_playwright_session((self, page: Page)) -> dict[str, str]:
+    """Extract cookies from an existing PlaywrightAuthor browser session."""
+
+def get_account_balance((self, use_api_key: bool = False, api_key: Optional[str] = None, page: Optional[Page] = None, use_cache: bool = True, force_refresh: bool = False)) -> dict[str, Any]:
+    """Get account balance and settings using stored cookies."""
+
+def _get_balance_via_cookies((self)) -> dict[str, Any]:
+    """Get balance using session cookies (internal API)."""
+
+def _get_balance_via_api((self, api_key: str)) -> dict[str, Any]:
+    """Get basic balance info using API key (limited information)."""
+
+def has_valid_cookies((self)) -> bool:
+    """Check if we have the minimum required cookies."""
+
+def clear_cookies((self)) -> None:
+    """Clear stored cookies and delete cookies file."""
+
+def use_with_poe_api_wrapper((self)) -> Optional["AsyncPoeApi"]:
+    """Create a poe-api-wrapper client using stored cookies."""
+
+
 # File: /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/type_guards.py
 # Language: python
 
@@ -6377,6 +6773,7 @@ from .config import (
     TABLE_TIMEOUT_MS,
 )
 from .models import BotInfo, ModelCollection, PoeModel, Pricing, PricingDetails
+from .poe_session import PoeSessionManager
 from .type_guards import validate_poe_api_response
 from .types import PoeApiResponse
 from .utils.cache import cached, get_api_cache, get_scraping_cache
@@ -6386,7 +6783,7 @@ from .models import Architecture
 
 class ModelUpdater:
     """Updates Poe model data with pricing information."""
-    def __init__((self, api_key: str, debug_port: int = DEFAULT_DEBUG_PORT, verbose: bool = False)):
+    def __init__((self, api_key: str, debug_port: int = DEFAULT_DEBUG_PORT, verbose: bool = False, session_manager: PoeSessionManager | None = None)):
     def parse_pricing_table((self, html: str)) -> dict[str, Any | None]:
         """Parse pricing table HTML into structured data for model cost analysis."""
     def scrape_model_info((
@@ -6444,8 +6841,16 @@ class ModelUpdater:
         """Sync models with API and update pricing/info data."""
     def update_all((self, force: bool = False, update_info: bool = True, update_pricing: bool = True)) -> None:
         """Update model data and save to file."""
+    def get_account_balance((self)) -> dict[str, Any]:
+        """Get Poe account balance using stored session cookies."""
+    def extract_cookies_from_browser((self, page: Page)) -> dict[str, str]:
+        """Extract Poe cookies from an active browser session."""
+    def login_and_extract_cookies((self)) -> dict[str, str]:
+        """Open browser for manual Poe login and extract cookies."""
+    def get_enhanced_model_data((self)) -> ModelCollection | None:
+        """Get model data with enhanced information using poe-api-wrapper."""
 
-def __init__((self, api_key: str, debug_port: int = DEFAULT_DEBUG_PORT, verbose: bool = False)):
+def __init__((self, api_key: str, debug_port: int = DEFAULT_DEBUG_PORT, verbose: bool = False, session_manager: PoeSessionManager | None = None)):
 
 def fetch_models_from_api((self)) -> PoeApiResponse:
     """Fetch models from Poe API with structured logging and performance tracking."""
@@ -6532,6 +6937,18 @@ def sync_models((
 
 def update_all((self, force: bool = False, update_info: bool = True, update_pricing: bool = True)) -> None:
     """Update model data and save to file."""
+
+def get_account_balance((self)) -> dict[str, Any]:
+    """Get Poe account balance using stored session cookies."""
+
+def extract_cookies_from_browser((self, page: Page)) -> dict[str, str]:
+    """Extract Poe cookies from an active browser session."""
+
+def login_and_extract_cookies((self)) -> dict[str, str]:
+    """Open browser for manual Poe login and extract cookies."""
+
+def get_enhanced_model_data((self)) -> ModelCollection | None:
+    """Get model data with enhanced information using poe-api-wrapper."""
 
 
 # File: /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/utils/__init__.py
@@ -7093,7 +7510,7 @@ def format_points_cost((points: str)) -> str:
     """Format points cost string for display."""
 
 
-<document index="23">
+<document index="24">
 <source>src_docs/md/chapter1-introduction.md</source>
 <document_content>
 # Chapter 1: Introduction and Overview
@@ -7205,7 +7622,7 @@ The choice reflects the package's role as a supportive tool that doesn't replace
 </document_content>
 </document>
 
-<document index="24">
+<document index="25">
 <source>src_docs/md/chapter2-installation.md</source>
 <document_content>
 # Chapter 2: Installation and Setup
@@ -7502,7 +7919,7 @@ With the package installed and configured, you're ready to:
 </document_content>
 </document>
 
-<document index="25">
+<document index="26">
 <source>src_docs/md/chapter3-quickstart.md</source>
 <document_content>
 # Chapter 3: Quick Start Guide
@@ -7859,7 +8276,7 @@ from virginia_clemm_poe.models import PoeModel, Pricing, BotInfo
 </document_content>
 </document>
 
-<document index="26">
+<document index="27">
 <source>src_docs/md/chapter4-api.md</source>
 <document_content>
 # Chapter 4: Python API Reference
@@ -8414,7 +8831,7 @@ This comprehensive API reference provides everything you need to integrate Virgi
 </document_content>
 </document>
 
-<document index="27">
+<document index="28">
 <source>src_docs/md/chapter5-cli.md</source>
 <document_content>
 # Chapter 5: CLI Usage and Commands
@@ -9023,7 +9440,7 @@ This comprehensive CLI reference provides everything you need to effectively use
 </document_content>
 </document>
 
-<document index="28">
+<document index="29">
 <source>src_docs/md/chapter6-models.md</source>
 <document_content>
 # Chapter 6: Data Models and Structure
@@ -9595,7 +10012,7 @@ This comprehensive guide to the data models provides everything you need to unde
 </document_content>
 </document>
 
-<document index="29">
+<document index="30">
 <source>src_docs/md/chapter7-browser.md</source>
 <document_content>
 # Chapter 7: Browser Management and Web Scraping
@@ -10216,7 +10633,7 @@ This comprehensive guide to browser management and web scraping provides the fou
 </document_content>
 </document>
 
-<document index="30">
+<document index="31">
 <source>src_docs/md/chapter8-configuration.md</source>
 <document_content>
 # Chapter 8: Configuration and Advanced Usage
@@ -10992,7 +11409,7 @@ This comprehensive configuration guide provides everything needed to customize a
 </document_content>
 </document>
 
-<document index="31">
+<document index="32">
 <source>src_docs/md/chapter9-troubleshooting.md</source>
 <document_content>
 # Chapter 9: Troubleshooting and FAQ
@@ -11706,7 +12123,7 @@ This comprehensive troubleshooting guide should help resolve most issues you mig
 </document_content>
 </document>
 
-<document index="32">
+<document index="33">
 <source>src_docs/md/data/poe_models.json</source>
 <document_content>
 {
@@ -11718,7 +12135,7 @@ This comprehensive troubleshooting guide should help resolve most issues you mig
 </document_content>
 </document>
 
-<document index="33">
+<document index="34">
 <source>src_docs/md/index.md</source>
 <document_content>
 # Virginia Clemm Poe 
@@ -11794,7 +12211,7 @@ virginia-clemm-poe search "gpt-4"
 </document_content>
 </document>
 
-<document index="34">
+<document index="35">
 <source>src_docs/md/models/App-Creator.md</source>
 <document_content>
 # [App-Creator](https://poe.com/App-Creator){ .md-button .md-button--primary }
@@ -11848,7 +12265,7 @@ See what's new: https://creator.poe.com/changelog?tag=canvas-apps
 </document_content>
 </document>
 
-<document index="35">
+<document index="36">
 <source>src_docs/md/models/Aya-Expanse-32B.md</source>
 <document_content>
 # [Aya-Expanse-32B](https://poe.com/Aya-Expanse-32B){ .md-button .md-button--primary }
@@ -11896,7 +12313,7 @@ See what's new: https://creator.poe.com/changelog?tag=canvas-apps
 </document_content>
 </document>
 
-<document index="36">
+<document index="37">
 <source>src_docs/md/models/Aya-Vision.md</source>
 <document_content>
 # [Aya-Vision](https://poe.com/Aya-Vision){ .md-button .md-button--primary }
@@ -11944,7 +12361,7 @@ See what's new: https://creator.poe.com/changelog?tag=canvas-apps
 </document_content>
 </document>
 
-<document index="37">
+<document index="38">
 <source>src_docs/md/models/Bria-Eraser.md</source>
 <document_content>
 # [Bria-Eraser](https://poe.com/Bria-Eraser){ .md-button .md-button--primary }
@@ -11992,7 +12409,7 @@ See what's new: https://creator.poe.com/changelog?tag=canvas-apps
 </document_content>
 </document>
 
-<document index="38">
+<document index="39">
 <source>src_docs/md/models/Cartesia.md</source>
 <document_content>
 # [Cartesia](https://poe.com/Cartesia){ .md-button .md-button--primary }
@@ -12198,7 +12615,7 @@ Zia
 </document_content>
 </document>
 
-<document index="39">
+<document index="40">
 <source>src_docs/md/models/ChatGPT-4o-Latest.md</source>
 <document_content>
 # [ChatGPT-4o-Latest](https://poe.com/ChatGPT-4o-Latest){ .md-button .md-button--primary }
@@ -12249,7 +12666,7 @@ Zia
 </document_content>
 </document>
 
-<document index="40">
+<document index="41">
 <source>src_docs/md/models/Clarity-Upscaler.md</source>
 <document_content>
 # [Clarity-Upscaler](https://poe.com/Clarity-Upscaler){ .md-button .md-button--primary }
@@ -12298,7 +12715,7 @@ This bot supports .jpg and .png images.
 </document_content>
 </document>
 
-<document index="41">
+<document index="42">
 <source>src_docs/md/models/Claude-Haiku-3.5-Search.md</source>
 <document_content>
 # [Claude-Haiku-3.5-Search](https://poe.com/Claude-Haiku-3.5-Search){ .md-button .md-button--primary }
@@ -12350,7 +12767,7 @@ This bot supports .jpg and .png images.
 </document_content>
 </document>
 
-<document index="42">
+<document index="43">
 <source>src_docs/md/models/Claude-Haiku-3.5.md</source>
 <document_content>
 # [Claude-Haiku-3.5](https://poe.com/Claude-Haiku-3.5){ .md-button .md-button--primary }
@@ -12402,7 +12819,7 @@ This bot supports .jpg and .png images.
 </document_content>
 </document>
 
-<document index="43">
+<document index="44">
 <source>src_docs/md/models/Claude-Haiku-3.md</source>
 <document_content>
 # [Claude-Haiku-3](https://poe.com/Claude-Haiku-3){ .md-button .md-button--primary }
@@ -12454,7 +12871,7 @@ This bot supports .jpg and .png images.
 </document_content>
 </document>
 
-<document index="44">
+<document index="45">
 <source>src_docs/md/models/Claude-Opus-3.md</source>
 <document_content>
 # [Claude-Opus-3](https://poe.com/Claude-Opus-3){ .md-button .md-button--primary }
@@ -12506,7 +12923,7 @@ This bot supports .jpg and .png images.
 </document_content>
 </document>
 
-<document index="45">
+<document index="46">
 <source>src_docs/md/models/Claude-Opus-4-1.md</source>
 <document_content>
 # [Claude-Opus-4-1](https://poe.com/Claude-Opus-4-1){ .md-button .md-button--primary }
@@ -12559,7 +12976,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 </document_content>
 </document>
 
-<document index="46">
+<document index="47">
 <source>src_docs/md/models/Claude-Opus-4-Reasoning.md</source>
 <document_content>
 # [Claude-Opus-4-Reasoning](https://poe.com/Claude-Opus-4-Reasoning){ .md-button .md-button--primary }
@@ -12612,7 +13029,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 </document_content>
 </document>
 
-<document index="47">
+<document index="48">
 <source>src_docs/md/models/Claude-Opus-4-Search.md</source>
 <document_content>
 # [Claude-Opus-4-Search](https://poe.com/Claude-Opus-4-Search){ .md-button .md-button--primary }
@@ -12665,7 +13082,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 </document_content>
 </document>
 
-<document index="48">
+<document index="49">
 <source>src_docs/md/models/Claude-Opus-4.md</source>
 <document_content>
 # [Claude-Opus-4](https://poe.com/Claude-Opus-4){ .md-button .md-button--primary }
@@ -12718,7 +13135,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 </document_content>
 </document>
 
-<document index="49">
+<document index="50">
 <source>src_docs/md/models/Claude-Sonnet-3.5-June.md</source>
 <document_content>
 # [Claude-Sonnet-3.5-June](https://poe.com/Claude-Sonnet-3.5-June){ .md-button .md-button--primary }
@@ -12770,7 +13187,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 </document_content>
 </document>
 
-<document index="50">
+<document index="51">
 <source>src_docs/md/models/Claude-Sonnet-3.5-Search.md</source>
 <document_content>
 # [Claude-Sonnet-3.5-Search](https://poe.com/Claude-Sonnet-3.5-Search){ .md-button .md-button--primary }
@@ -12822,7 +13239,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 </document_content>
 </document>
 
-<document index="51">
+<document index="52">
 <source>src_docs/md/models/Claude-Sonnet-3.5.md</source>
 <document_content>
 # [Claude-Sonnet-3.5](https://poe.com/Claude-Sonnet-3.5){ .md-button .md-button--primary }
@@ -12874,7 +13291,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 </document_content>
 </document>
 
-<document index="52">
+<document index="53">
 <source>src_docs/md/models/Claude-Sonnet-3.7-Reasoning.md</source>
 <document_content>
 # [Claude-Sonnet-3.7-Reasoning](https://poe.com/Claude-Sonnet-3.7-Reasoning){ .md-button .md-button--primary }
@@ -12927,7 +13344,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 </document_content>
 </document>
 
-<document index="53">
+<document index="54">
 <source>src_docs/md/models/Claude-Sonnet-3.7-Search.md</source>
 <document_content>
 # [Claude-Sonnet-3.7-Search](https://poe.com/Claude-Sonnet-3.7-Search){ .md-button .md-button--primary }
@@ -12980,7 +13397,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 </document_content>
 </document>
 
-<document index="54">
+<document index="55">
 <source>src_docs/md/models/Claude-Sonnet-3.7.md</source>
 <document_content>
 # [Claude-Sonnet-3.7](https://poe.com/Claude-Sonnet-3.7){ .md-button .md-button--primary }
@@ -13033,7 +13450,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 </document_content>
 </document>
 
-<document index="55">
+<document index="56">
 <source>src_docs/md/models/Claude-Sonnet-4-Reasoning.md</source>
 <document_content>
 # [Claude-Sonnet-4-Reasoning](https://poe.com/Claude-Sonnet-4-Reasoning){ .md-button .md-button--primary }
@@ -13086,7 +13503,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 </document_content>
 </document>
 
-<document index="56">
+<document index="57">
 <source>src_docs/md/models/Claude-Sonnet-4-Search.md</source>
 <document_content>
 # [Claude-Sonnet-4-Search](https://poe.com/Claude-Sonnet-4-Search){ .md-button .md-button--primary }
@@ -13139,7 +13556,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 </document_content>
 </document>
 
-<document index="57">
+<document index="58">
 <source>src_docs/md/models/Claude-Sonnet-4.md</source>
 <document_content>
 # [Claude-Sonnet-4](https://poe.com/Claude-Sonnet-4){ .md-button .md-button--primary }
@@ -13192,7 +13609,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 </document_content>
 </document>
 
-<document index="58">
+<document index="59">
 <source>src_docs/md/models/Command-R-Plus.md</source>
 <document_content>
 # [Command-R-Plus](https://poe.com/Command-R-Plus){ .md-button .md-button--primary }
@@ -13240,7 +13657,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 </document_content>
 </document>
 
-<document index="59">
+<document index="60">
 <source>src_docs/md/models/Command-R.md</source>
 <document_content>
 # [Command-R](https://poe.com/Command-R){ .md-button .md-button--primary }
@@ -13288,7 +13705,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 </document_content>
 </document>
 
-<document index="60">
+<document index="61">
 <source>src_docs/md/models/DALL-E-3.md</source>
 <document_content>
 # [DALL-E-3](https://poe.com/DALL-E-3){ .md-button .md-button--primary }
@@ -13336,7 +13753,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 </document_content>
 </document>
 
-<document index="61">
+<document index="62">
 <source>src_docs/md/models/DeepClaude.md</source>
 <document_content>
 # [DeepClaude](https://poe.com/DeepClaude){ .md-button .md-button--primary }
@@ -13384,7 +13801,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 </document_content>
 </document>
 
-<document index="62">
+<document index="63">
 <source>src_docs/md/models/DeepSeek-R1-DI.md</source>
 <document_content>
 # [DeepSeek-R1-DI](https://poe.com/DeepSeek-R1-DI){ .md-button .md-button--primary }
@@ -13434,7 +13851,7 @@ Supports 64k tokens of input context and 8k tokens of output context. Quantizati
 </document_content>
 </document>
 
-<document index="63">
+<document index="64">
 <source>src_docs/md/models/DeepSeek-R1-Distill.md</source>
 <document_content>
 # [DeepSeek-R1-Distill](https://poe.com/DeepSeek-R1-Distill){ .md-button .md-button--primary }
@@ -13482,7 +13899,7 @@ Supports 64k tokens of input context and 8k tokens of output context. Quantizati
 </document_content>
 </document>
 
-<document index="64">
+<document index="65">
 <source>src_docs/md/models/DeepSeek-R1-FW.md</source>
 <document_content>
 # [DeepSeek-R1-FW](https://poe.com/DeepSeek-R1-FW){ .md-button .md-button--primary }
@@ -13530,7 +13947,7 @@ Supports 64k tokens of input context and 8k tokens of output context. Quantizati
 </document_content>
 </document>
 
-<document index="65">
+<document index="66">
 <source>src_docs/md/models/DeepSeek-R1-Turbo-DI.md</source>
 <document_content>
 # [DeepSeek-R1-Turbo-DI](https://poe.com/DeepSeek-R1-Turbo-DI){ .md-button .md-button--primary }
@@ -13580,7 +13997,7 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 </document_content>
 </document>
 
-<document index="66">
+<document index="67">
 <source>src_docs/md/models/DeepSeek-R1.md</source>
 <document_content>
 # [DeepSeek-R1](https://poe.com/DeepSeek-R1){ .md-button .md-button--primary }
@@ -13628,7 +14045,7 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 </document_content>
 </document>
 
-<document index="67">
+<document index="68">
 <source>src_docs/md/models/DeepSeek-V3-DI.md</source>
 <document_content>
 # [DeepSeek-V3-DI](https://poe.com/DeepSeek-V3-DI){ .md-button .md-button--primary }
@@ -13678,7 +14095,7 @@ Supports 64k tokens of input context and 8k tokens of output context. Quantizati
 </document_content>
 </document>
 
-<document index="68">
+<document index="69">
 <source>src_docs/md/models/DeepSeek-V3-Turbo-DI.md</source>
 <document_content>
 # [DeepSeek-V3-Turbo-DI](https://poe.com/DeepSeek-V3-Turbo-DI){ .md-button .md-button--primary }
@@ -13728,7 +14145,7 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 </document_content>
 </document>
 
-<document index="69">
+<document index="70">
 <source>src_docs/md/models/DeepSeek-V3.md</source>
 <document_content>
 # [DeepSeek-V3](https://poe.com/DeepSeek-V3){ .md-button .md-button--primary }
@@ -13776,7 +14193,7 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 </document_content>
 </document>
 
-<document index="70">
+<document index="71">
 <source>src_docs/md/models/Deepseek-V3-FW.md</source>
 <document_content>
 # [Deepseek-V3-FW](https://poe.com/Deepseek-V3-FW){ .md-button .md-button--primary }
@@ -13824,7 +14241,7 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 </document_content>
 </document>
 
-<document index="71">
+<document index="72">
 <source>src_docs/md/models/Dream-Machine.md</source>
 <document_content>
 # [Dream-Machine](https://poe.com/Dream-Machine){ .md-button .md-button--primary }
@@ -13874,7 +14291,7 @@ To specify the aspect ratio of your video add --aspect_ratio (1:1, 16:9, 9:16, 4
 </document_content>
 </document>
 
-<document index="72">
+<document index="73">
 <source>src_docs/md/models/ElevenLabs.md</source>
 <document_content>
 # [ElevenLabs](https://poe.com/ElevenLabs){ .md-button .md-button--primary }
@@ -13948,7 +14365,7 @@ Japanese -- Alice
 </document_content>
 </document>
 
-<document index="73">
+<document index="74">
 <source>src_docs/md/models/FLUX-Fill.md</source>
 <document_content>
 # [FLUX-Fill](https://poe.com/FLUX-Fill){ .md-button .md-button--primary }
@@ -13996,7 +14413,7 @@ Japanese -- Alice
 </document_content>
 </document>
 
-<document index="74">
+<document index="75">
 <source>src_docs/md/models/FLUX-Inpaint.md</source>
 <document_content>
 # [FLUX-Inpaint](https://poe.com/FLUX-Inpaint){ .md-button .md-button--primary }
@@ -14044,7 +14461,7 @@ Japanese -- Alice
 </document_content>
 </document>
 
-<document index="75">
+<document index="76">
 <source>src_docs/md/models/FLUX-dev-DI.md</source>
 <document_content>
 # [FLUX-dev-DI](https://poe.com/FLUX-dev-DI){ .md-button .md-button--primary }
@@ -14097,7 +14514,7 @@ To set inference, use "--num_inference_steps". Options from 1 up to 50. Default:
 </document_content>
 </document>
 
-<document index="76">
+<document index="77">
 <source>src_docs/md/models/FLUX-dev-finetuner.md</source>
 <document_content>
 # [FLUX-dev-finetuner](https://poe.com/FLUX-dev-finetuner){ .md-button .md-button--primary }
@@ -14145,7 +14562,7 @@ To set inference, use "--num_inference_steps". Options from 1 up to 50. Default:
 </document_content>
 </document>
 
-<document index="77">
+<document index="78">
 <source>src_docs/md/models/FLUX-dev.md</source>
 <document_content>
 # [FLUX-dev](https://poe.com/FLUX-dev){ .md-button .md-button--primary }
@@ -14193,7 +14610,7 @@ To set inference, use "--num_inference_steps". Options from 1 up to 50. Default:
 </document_content>
 </document>
 
-<document index="78">
+<document index="79">
 <source>src_docs/md/models/FLUX-pro-1-T.md</source>
 <document_content>
 # [FLUX-pro-1-T](https://poe.com/FLUX-pro-1-T){ .md-button .md-button--primary }
@@ -14241,7 +14658,7 @@ To set inference, use "--num_inference_steps". Options from 1 up to 50. Default:
 </document_content>
 </document>
 
-<document index="79">
+<document index="80">
 <source>src_docs/md/models/FLUX-pro-1.1-T.md</source>
 <document_content>
 # [FLUX-pro-1.1-T](https://poe.com/FLUX-pro-1.1-T){ .md-button .md-button--primary }
@@ -14289,7 +14706,7 @@ To set inference, use "--num_inference_steps". Options from 1 up to 50. Default:
 </document_content>
 </document>
 
-<document index="80">
+<document index="81">
 <source>src_docs/md/models/FLUX-pro-1.1-ultra.md</source>
 <document_content>
 # [FLUX-pro-1.1-ultra](https://poe.com/FLUX-pro-1.1-ultra){ .md-button .md-button--primary }
@@ -14337,7 +14754,7 @@ To set inference, use "--num_inference_steps". Options from 1 up to 50. Default:
 </document_content>
 </document>
 
-<document index="81">
+<document index="82">
 <source>src_docs/md/models/FLUX-pro-1.1.md</source>
 <document_content>
 # [FLUX-pro-1.1](https://poe.com/FLUX-pro-1.1){ .md-button .md-button--primary }
@@ -14385,7 +14802,7 @@ To set inference, use "--num_inference_steps". Options from 1 up to 50. Default:
 </document_content>
 </document>
 
-<document index="82">
+<document index="83">
 <source>src_docs/md/models/FLUX-pro.md</source>
 <document_content>
 # [FLUX-pro](https://poe.com/FLUX-pro){ .md-button .md-button--primary }
@@ -14433,7 +14850,7 @@ To set inference, use "--num_inference_steps". Options from 1 up to 50. Default:
 </document_content>
 </document>
 
-<document index="83">
+<document index="84">
 <source>src_docs/md/models/FLUX-schnell-DI.md</source>
 <document_content>
 # [FLUX-schnell-DI](https://poe.com/FLUX-schnell-DI){ .md-button .md-button--primary }
@@ -14486,7 +14903,7 @@ To set inference, use "--num_inference_steps". Options from 1 up to 50. Default:
 </document_content>
 </document>
 
-<document index="84">
+<document index="85">
 <source>src_docs/md/models/FLUX-schnell.md</source>
 <document_content>
 # [FLUX-schnell](https://poe.com/FLUX-schnell){ .md-button .md-button--primary }
@@ -14534,7 +14951,7 @@ To set inference, use "--num_inference_steps". Options from 1 up to 50. Default:
 </document_content>
 </document>
 
-<document index="85">
+<document index="86">
 <source>src_docs/md/models/Flux-1-Dev-FW.md</source>
 <document_content>
 # [Flux-1-Dev-FW](https://poe.com/Flux-1-Dev-FW){ .md-button .md-button--primary }
@@ -14589,7 +15006,7 @@ Key Features
 </document_content>
 </document>
 
-<document index="86">
+<document index="87">
 <source>src_docs/md/models/Flux-1-Schnell-FW.md</source>
 <document_content>
 # [Flux-1-Schnell-FW](https://poe.com/Flux-1-Schnell-FW){ .md-button .md-button--primary }
@@ -14642,7 +15059,7 @@ Key Features
 </document_content>
 </document>
 
-<document index="87">
+<document index="88">
 <source>src_docs/md/models/Flux-Kontext-Max.md</source>
 <document_content>
 # [Flux-Kontext-Max](https://poe.com/Flux-Kontext-Max){ .md-button .md-button--primary }
@@ -14690,7 +15107,7 @@ Key Features
 </document_content>
 </document>
 
-<document index="88">
+<document index="89">
 <source>src_docs/md/models/Flux-Kontext-Pro.md</source>
 <document_content>
 # [Flux-Kontext-Pro](https://poe.com/Flux-Kontext-Pro){ .md-button .md-button--primary }
@@ -14738,7 +15155,7 @@ Key Features
 </document_content>
 </document>
 
-<document index="89">
+<document index="90">
 <source>src_docs/md/models/Flux-Schnell-T.md</source>
 <document_content>
 # [Flux-Schnell-T](https://poe.com/Flux-Schnell-T){ .md-button .md-button--primary }
@@ -14786,7 +15203,7 @@ Key Features
 </document_content>
 </document>
 
-<document index="90">
+<document index="91">
 <source>src_docs/md/models/GLM-4.5.md</source>
 <document_content>
 # [GLM-4.5](https://poe.com/GLM-4.5){ .md-button .md-button--primary }
@@ -14834,7 +15251,7 @@ Key Features
 </document_content>
 </document>
 
-<document index="91">
+<document index="92">
 <source>src_docs/md/models/GPT-3.5-Turbo-Instruct.md</source>
 <document_content>
 # [GPT-3.5-Turbo-Instruct](https://poe.com/GPT-3.5-Turbo-Instruct){ .md-button .md-button--primary }
@@ -14885,7 +15302,7 @@ Key Features
 </document_content>
 </document>
 
-<document index="92">
+<document index="93">
 <source>src_docs/md/models/GPT-3.5-Turbo-Raw.md</source>
 <document_content>
 # [GPT-3.5-Turbo-Raw](https://poe.com/GPT-3.5-Turbo-Raw){ .md-button .md-button--primary }
@@ -14936,7 +15353,7 @@ Key Features
 </document_content>
 </document>
 
-<document index="93">
+<document index="94">
 <source>src_docs/md/models/GPT-3.5-Turbo.md</source>
 <document_content>
 # [GPT-3.5-Turbo](https://poe.com/GPT-3.5-Turbo){ .md-button .md-button--primary }
@@ -14987,7 +15404,7 @@ Key Features
 </document_content>
 </document>
 
-<document index="94">
+<document index="95">
 <source>src_docs/md/models/GPT-4-Classic-0314.md</source>
 <document_content>
 # [GPT-4-Classic-0314](https://poe.com/GPT-4-Classic-0314){ .md-button .md-button--primary }
@@ -15038,7 +15455,7 @@ Key Features
 </document_content>
 </document>
 
-<document index="95">
+<document index="96">
 <source>src_docs/md/models/GPT-4-Classic.md</source>
 <document_content>
 # [GPT-4-Classic](https://poe.com/GPT-4-Classic){ .md-button .md-button--primary }
@@ -15089,7 +15506,7 @@ Key Features
 </document_content>
 </document>
 
-<document index="96">
+<document index="97">
 <source>src_docs/md/models/GPT-4-Turbo.md</source>
 <document_content>
 # [GPT-4-Turbo](https://poe.com/GPT-4-Turbo){ .md-button .md-button--primary }
@@ -15140,7 +15557,7 @@ Key Features
 </document_content>
 </document>
 
-<document index="97">
+<document index="98">
 <source>src_docs/md/models/GPT-4.1-mini.md</source>
 <document_content>
 # [GPT-4.1-mini](https://poe.com/GPT-4.1-mini){ .md-button .md-button--primary }
@@ -15192,7 +15609,7 @@ Key Features
 </document_content>
 </document>
 
-<document index="98">
+<document index="99">
 <source>src_docs/md/models/GPT-4.1-nano.md</source>
 <document_content>
 # [GPT-4.1-nano](https://poe.com/GPT-4.1-nano){ .md-button .md-button--primary }
@@ -15244,7 +15661,7 @@ Key Features
 </document_content>
 </document>
 
-<document index="99">
+<document index="100">
 <source>src_docs/md/models/GPT-4.1.md</source>
 <document_content>
 # [GPT-4.1](https://poe.com/GPT-4.1){ .md-button .md-button--primary }
@@ -15296,7 +15713,7 @@ Key Features
 </document_content>
 </document>
 
-<document index="100">
+<document index="101">
 <source>src_docs/md/models/GPT-4o-Aug.md</source>
 <document_content>
 # [GPT-4o-Aug](https://poe.com/GPT-4o-Aug){ .md-button .md-button--primary }
@@ -15348,7 +15765,7 @@ Key Features
 </document_content>
 </document>
 
-<document index="101">
+<document index="102">
 <source>src_docs/md/models/GPT-4o-Search.md</source>
 <document_content>
 # [GPT-4o-Search](https://poe.com/GPT-4o-Search){ .md-button .md-button--primary }
@@ -15398,7 +15815,7 @@ Key Features
 </document_content>
 </document>
 
-<document index="102">
+<document index="103">
 <source>src_docs/md/models/GPT-4o-mini-Search.md</source>
 <document_content>
 # [GPT-4o-mini-Search](https://poe.com/GPT-4o-mini-Search){ .md-button .md-button--primary }
@@ -15448,7 +15865,7 @@ Key Features
 </document_content>
 </document>
 
-<document index="103">
+<document index="104">
 <source>src_docs/md/models/GPT-4o-mini.md</source>
 <document_content>
 # [GPT-4o-mini](https://poe.com/GPT-4o-mini){ .md-button .md-button--primary }
@@ -15500,7 +15917,7 @@ Key Features
 </document_content>
 </document>
 
-<document index="104">
+<document index="105">
 <source>src_docs/md/models/GPT-4o.md</source>
 <document_content>
 # [GPT-4o](https://poe.com/GPT-4o){ .md-button .md-button--primary }
@@ -15553,7 +15970,7 @@ Key Features
 </document_content>
 </document>
 
-<document index="105">
+<document index="106">
 <source>src_docs/md/models/GPT-Image-1.md</source>
 <document_content>
 # [GPT-Image-1](https://poe.com/GPT-Image-1){ .md-button .md-button--primary }
@@ -15609,7 +16026,7 @@ Optional parameters:
 </document_content>
 </document>
 
-<document index="106">
+<document index="107">
 <source>src_docs/md/models/GPT-OSS-120B-T.md</source>
 <document_content>
 # [GPT-OSS-120B-T](https://poe.com/GPT-OSS-120B-T){ .md-button .md-button--primary }
@@ -15657,7 +16074,7 @@ Optional parameters:
 </document_content>
 </document>
 
-<document index="107">
+<document index="108">
 <source>src_docs/md/models/GPT-Researcher.md</source>
 <document_content>
 # [GPT-Researcher](https://poe.com/GPT-Researcher){ .md-button .md-button--primary }
@@ -15709,7 +16126,7 @@ GPTR is based on the popular open source project: https://github.com/assafelovic
 </document_content>
 </document>
 
-<document index="108">
+<document index="109">
 <source>src_docs/md/models/Gemini-1.5-Flash-Search.md</source>
 <document_content>
 # [Gemini-1.5-Flash-Search](https://poe.com/Gemini-1.5-Flash-Search){ .md-button .md-button--primary }
@@ -15759,7 +16176,7 @@ GPTR is based on the popular open source project: https://github.com/assafelovic
 </document_content>
 </document>
 
-<document index="109">
+<document index="110">
 <source>src_docs/md/models/Gemini-1.5-Flash.md</source>
 <document_content>
 # [Gemini-1.5-Flash](https://poe.com/Gemini-1.5-Flash){ .md-button .md-button--primary }
@@ -15811,7 +16228,7 @@ GPTR is based on the popular open source project: https://github.com/assafelovic
 </document_content>
 </document>
 
-<document index="110">
+<document index="111">
 <source>src_docs/md/models/Gemini-1.5-Pro-Search.md</source>
 <document_content>
 # [Gemini-1.5-Pro-Search](https://poe.com/Gemini-1.5-Pro-Search){ .md-button .md-button--primary }
@@ -15861,7 +16278,7 @@ GPTR is based on the popular open source project: https://github.com/assafelovic
 </document_content>
 </document>
 
-<document index="111">
+<document index="112">
 <source>src_docs/md/models/Gemini-1.5-Pro.md</source>
 <document_content>
 # [Gemini-1.5-Pro](https://poe.com/Gemini-1.5-Pro){ .md-button .md-button--primary }
@@ -15913,7 +16330,7 @@ GPTR is based on the popular open source project: https://github.com/assafelovic
 </document_content>
 </document>
 
-<document index="112">
+<document index="113">
 <source>src_docs/md/models/Gemini-2.0-Flash-Lite.md</source>
 <document_content>
 # [Gemini-2.0-Flash-Lite](https://poe.com/Gemini-2.0-Flash-Lite){ .md-button .md-button--primary }
@@ -15965,7 +16382,7 @@ GPTR is based on the popular open source project: https://github.com/assafelovic
 </document_content>
 </document>
 
-<document index="113">
+<document index="114">
 <source>src_docs/md/models/Gemini-2.0-Flash-Preview.md</source>
 <document_content>
 # [Gemini-2.0-Flash-Preview](https://poe.com/Gemini-2.0-Flash-Preview){ .md-button .md-button--primary }
@@ -16013,7 +16430,7 @@ GPTR is based on the popular open source project: https://github.com/assafelovic
 </document_content>
 </document>
 
-<document index="114">
+<document index="115">
 <source>src_docs/md/models/Gemini-2.0-Flash.md</source>
 <document_content>
 # [Gemini-2.0-Flash](https://poe.com/Gemini-2.0-Flash){ .md-button .md-button--primary }
@@ -16065,7 +16482,7 @@ GPTR is based on the popular open source project: https://github.com/assafelovic
 </document_content>
 </document>
 
-<document index="115">
+<document index="116">
 <source>src_docs/md/models/Gemini-2.5-Flash-Lite-Preview.md</source>
 <document_content>
 # [Gemini-2.5-Flash-Lite-Preview](https://poe.com/Gemini-2.5-Flash-Lite-Preview){ .md-button .md-button--primary }
@@ -16105,7 +16522,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 </document_content>
 </document>
 
-<document index="116">
+<document index="117">
 <source>src_docs/md/models/Gemini-2.5-Flash.md</source>
 <document_content>
 # [Gemini-2.5-Flash](https://poe.com/Gemini-2.5-Flash){ .md-button .md-button--primary }
@@ -16159,7 +16576,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 </document_content>
 </document>
 
-<document index="117">
+<document index="118">
 <source>src_docs/md/models/Gemini-2.5-Pro.md</source>
 <document_content>
 # [Gemini-2.5-Pro](https://poe.com/Gemini-2.5-Pro){ .md-button .md-button--primary }
@@ -16212,7 +16629,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 </document_content>
 </document>
 
-<document index="118">
+<document index="119">
 <source>src_docs/md/models/Gemma-2-27b-T.md</source>
 <document_content>
 # [Gemma-2-27b-T](https://poe.com/Gemma-2-27b-T){ .md-button .md-button--primary }
@@ -16260,7 +16677,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 </document_content>
 </document>
 
-<document index="119">
+<document index="120">
 <source>src_docs/md/models/Gemma-3-27B.md</source>
 <document_content>
 # [Gemma-3-27B](https://poe.com/Gemma-3-27B){ .md-button .md-button--primary }
@@ -16308,7 +16725,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 </document_content>
 </document>
 
-<document index="120">
+<document index="121">
 <source>src_docs/md/models/Grok-2.md</source>
 <document_content>
 # [Grok-2](https://poe.com/Grok-2){ .md-button .md-button--primary }
@@ -16359,7 +16776,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 </document_content>
 </document>
 
-<document index="121">
+<document index="122">
 <source>src_docs/md/models/Grok-3-Mini.md</source>
 <document_content>
 # [Grok-3-Mini](https://poe.com/Grok-3-Mini){ .md-button .md-button--primary }
@@ -16411,7 +16828,7 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 </document_content>
 </document>
 
-<document index="122">
+<document index="123">
 <source>src_docs/md/models/Grok-3.md</source>
 <document_content>
 # [Grok-3](https://poe.com/Grok-3){ .md-button .md-button--primary }
@@ -16462,7 +16879,7 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 </document_content>
 </document>
 
-<document index="123">
+<document index="124">
 <source>src_docs/md/models/Grok-4.md</source>
 <document_content>
 # [Grok-4](https://poe.com/Grok-4){ .md-button .md-button--primary }
@@ -16513,7 +16930,7 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 </document_content>
 </document>
 
-<document index="124">
+<document index="125">
 <source>src_docs/md/models/Hailuo-02-Standard.md</source>
 <document_content>
 # [Hailuo-02-Standard](https://poe.com/Hailuo-02-Standard){ .md-button .md-button--primary }
@@ -16561,7 +16978,7 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 </document_content>
 </document>
 
-<document index="125">
+<document index="126">
 <source>src_docs/md/models/Hailuo-02.md</source>
 <document_content>
 # [Hailuo-02](https://poe.com/Hailuo-02){ .md-button .md-button--primary }
@@ -16609,7 +17026,7 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 </document_content>
 </document>
 
-<document index="126">
+<document index="127">
 <source>src_docs/md/models/Hailuo-AI.md</source>
 <document_content>
 # [Hailuo-AI](https://poe.com/Hailuo-AI){ .md-button .md-button--primary }
@@ -16657,7 +17074,7 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 </document_content>
 </document>
 
-<document index="127">
+<document index="128">
 <source>src_docs/md/models/Hailuo-Director-01.md</source>
 <document_content>
 # [Hailuo-Director-01](https://poe.com/Hailuo-Director-01){ .md-button .md-button--primary }
@@ -16705,7 +17122,7 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 </document_content>
 </document>
 
-<document index="128">
+<document index="129">
 <source>src_docs/md/models/Hailuo-Live.md</source>
 <document_content>
 # [Hailuo-Live](https://poe.com/Hailuo-Live){ .md-button .md-button--primary }
@@ -16753,7 +17170,7 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 </document_content>
 </document>
 
-<document index="129">
+<document index="130">
 <source>src_docs/md/models/Hailuo-Speech-02.md</source>
 <document_content>
 # [Hailuo-Speech-02](https://poe.com/Hailuo-Speech-02){ .md-button .md-button--primary }
@@ -16802,7 +17219,7 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 </document_content>
 </document>
 
-<document index="130">
+<document index="131">
 <source>src_docs/md/models/Hermes-3-70B.md</source>
 <document_content>
 # [Hermes-3-70B](https://poe.com/Hermes-3-70B){ .md-button .md-button--primary }
@@ -16852,7 +17269,7 @@ The ethos of the Hermes series of models is focused on aligning LLMs to the user
 </document_content>
 </document>
 
-<document index="131">
+<document index="132">
 <source>src_docs/md/models/Hidream-I1-full.md</source>
 <document_content>
 # [Hidream-I1-full](https://poe.com/Hidream-I1-full){ .md-button .md-button--primary }
@@ -16900,7 +17317,7 @@ The ethos of the Hermes series of models is focused on aligning LLMs to the user
 </document_content>
 </document>
 
-<document index="132">
+<document index="133">
 <source>src_docs/md/models/Ideogram-v2.md</source>
 <document_content>
 # [Ideogram-v2](https://poe.com/Ideogram-v2){ .md-button .md-button--primary }
@@ -16948,7 +17365,7 @@ The ethos of the Hermes series of models is focused on aligning LLMs to the user
 </document_content>
 </document>
 
-<document index="133">
+<document index="134">
 <source>src_docs/md/models/Ideogram-v2a-Turbo.md</source>
 <document_content>
 # [Ideogram-v2a-Turbo](https://poe.com/Ideogram-v2a-Turbo){ .md-button .md-button--primary }
@@ -16997,7 +17414,7 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 </document_content>
 </document>
 
-<document index="134">
+<document index="135">
 <source>src_docs/md/models/Ideogram-v2a.md</source>
 <document_content>
 # [Ideogram-v2a](https://poe.com/Ideogram-v2a){ .md-button .md-button--primary }
@@ -17046,7 +17463,7 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 </document_content>
 </document>
 
-<document index="135">
+<document index="136">
 <source>src_docs/md/models/Ideogram-v3.md</source>
 <document_content>
 # [Ideogram-v3](https://poe.com/Ideogram-v3){ .md-button .md-button--primary }
@@ -17094,7 +17511,7 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 </document_content>
 </document>
 
-<document index="136">
+<document index="137">
 <source>src_docs/md/models/Ideogram.md</source>
 <document_content>
 # [Ideogram](https://poe.com/Ideogram){ .md-button .md-button--primary }
@@ -17142,7 +17559,7 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 </document_content>
 </document>
 
-<document index="137">
+<document index="138">
 <source>src_docs/md/models/Imagen-3-Fast.md</source>
 <document_content>
 # [Imagen-3-Fast](https://poe.com/Imagen-3-Fast){ .md-button .md-button--primary }
@@ -17190,7 +17607,7 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 </document_content>
 </document>
 
-<document index="138">
+<document index="139">
 <source>src_docs/md/models/Imagen-3.md</source>
 <document_content>
 # [Imagen-3](https://poe.com/Imagen-3){ .md-button .md-button--primary }
@@ -17238,7 +17655,7 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 </document_content>
 </document>
 
-<document index="139">
+<document index="140">
 <source>src_docs/md/models/Imagen-4-Fast.md</source>
 <document_content>
 # [Imagen-4-Fast](https://poe.com/Imagen-4-Fast){ .md-button .md-button--primary }
@@ -17286,7 +17703,7 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 </document_content>
 </document>
 
-<document index="140">
+<document index="141">
 <source>src_docs/md/models/Imagen-4-Ultra-Exp.md</source>
 <document_content>
 # [Imagen-4-Ultra-Exp](https://poe.com/Imagen-4-Ultra-Exp){ .md-button .md-button--primary }
@@ -17334,7 +17751,7 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 </document_content>
 </document>
 
-<document index="141">
+<document index="142">
 <source>src_docs/md/models/Imagen-4.md</source>
 <document_content>
 # [Imagen-4](https://poe.com/Imagen-4){ .md-button .md-button--primary }
@@ -17382,7 +17799,7 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 </document_content>
 </document>
 
-<document index="142">
+<document index="143">
 <source>src_docs/md/models/Inception-Mercury-Coder.md</source>
 <document_content>
 # [Inception-Mercury-Coder](https://poe.com/Inception-Mercury-Coder){ .md-button .md-button--primary }
@@ -17431,7 +17848,7 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 </document_content>
 </document>
 
-<document index="143">
+<document index="144">
 <source>src_docs/md/models/Inception-Mercury.md</source>
 <document_content>
 # [Inception-Mercury](https://poe.com/Inception-Mercury){ .md-button .md-button--primary }
@@ -17480,7 +17897,7 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 </document_content>
 </document>
 
-<document index="144">
+<document index="145">
 <source>src_docs/md/models/Kimi-K2-T.md</source>
 <document_content>
 # [Kimi-K2-T](https://poe.com/Kimi-K2-T){ .md-button .md-button--primary }
@@ -17528,7 +17945,7 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 </document_content>
 </document>
 
-<document index="145">
+<document index="146">
 <source>src_docs/md/models/Kimi-K2.md</source>
 <document_content>
 # [Kimi-K2](https://poe.com/Kimi-K2){ .md-button .md-button--primary }
@@ -17576,7 +17993,7 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 </document_content>
 </document>
 
-<document index="146">
+<document index="147">
 <source>src_docs/md/models/Kling-1.5-Pro.md</source>
 <document_content>
 # [Kling-1.5-Pro](https://poe.com/Kling-1.5-Pro){ .md-button .md-button--primary }
@@ -17624,7 +18041,7 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 </document_content>
 </document>
 
-<document index="147">
+<document index="148">
 <source>src_docs/md/models/Kling-1.6-Pro.md</source>
 <document_content>
 # [Kling-1.6-Pro](https://poe.com/Kling-1.6-Pro){ .md-button .md-button--primary }
@@ -17673,7 +18090,7 @@ Use `--aspect` to set the aspect ratio. Allowed values are `16:9`, `9:16` and `1
 </document_content>
 </document>
 
-<document index="148">
+<document index="149">
 <source>src_docs/md/models/Kling-2.0-Master.md</source>
 <document_content>
 # [Kling-2.0-Master](https://poe.com/Kling-2.0-Master){ .md-button .md-button--primary }
@@ -17721,7 +18138,7 @@ Use `--aspect` to set the aspect ratio. Allowed values are `16:9`, `9:16` and `1
 </document_content>
 </document>
 
-<document index="149">
+<document index="150">
 <source>src_docs/md/models/Kling-2.1-Master.md</source>
 <document_content>
 # [Kling-2.1-Master](https://poe.com/Kling-2.1-Master){ .md-button .md-button--primary }
@@ -17769,7 +18186,7 @@ Use `--aspect` to set the aspect ratio. Allowed values are `16:9`, `9:16` and `1
 </document_content>
 </document>
 
-<document index="150">
+<document index="151">
 <source>src_docs/md/models/Kling-2.1-Pro.md</source>
 <document_content>
 # [Kling-2.1-Pro](https://poe.com/Kling-2.1-Pro){ .md-button .md-button--primary }
@@ -17817,7 +18234,7 @@ Use `--aspect` to set the aspect ratio. Allowed values are `16:9`, `9:16` and `1
 </document_content>
 </document>
 
-<document index="151">
+<document index="152">
 <source>src_docs/md/models/Kling-2.1-Std.md</source>
 <document_content>
 # [Kling-2.1-Std](https://poe.com/Kling-2.1-Std){ .md-button .md-button--primary }
@@ -17865,7 +18282,7 @@ Use `--aspect` to set the aspect ratio. Allowed values are `16:9`, `9:16` and `1
 </document_content>
 </document>
 
-<document index="152">
+<document index="153">
 <source>src_docs/md/models/Kling-Pro-Effects.md</source>
 <document_content>
 # [Kling-Pro-Effects](https://poe.com/Kling-Pro-Effects){ .md-button .md-button--primary }
@@ -17913,7 +18330,7 @@ Use `--aspect` to set the aspect ratio. Allowed values are `16:9`, `9:16` and `1
 </document_content>
 </document>
 
-<document index="153">
+<document index="154">
 <source>src_docs/md/models/LivePortrait.md</source>
 <document_content>
 # [LivePortrait](https://poe.com/LivePortrait){ .md-button .md-button--primary }
@@ -17961,7 +18378,7 @@ Use `--aspect` to set the aspect ratio. Allowed values are `16:9`, `9:16` and `1
 </document_content>
 </document>
 
-<document index="154">
+<document index="155">
 <source>src_docs/md/models/Llama-3-70B-FP16.md</source>
 <document_content>
 # [Llama-3-70B-FP16](https://poe.com/Llama-3-70B-FP16){ .md-button .md-button--primary }
@@ -18009,7 +18426,7 @@ Use `--aspect` to set the aspect ratio. Allowed values are `16:9`, `9:16` and `1
 </document_content>
 </document>
 
-<document index="155">
+<document index="156">
 <source>src_docs/md/models/Llama-3-70B-T.md</source>
 <document_content>
 # [Llama-3-70B-T](https://poe.com/Llama-3-70B-T){ .md-button .md-button--primary }
@@ -18057,7 +18474,7 @@ Use `--aspect` to set the aspect ratio. Allowed values are `16:9`, `9:16` and `1
 </document_content>
 </document>
 
-<document index="156">
+<document index="157">
 <source>src_docs/md/models/Llama-3-70b-Groq.md</source>
 <document_content>
 # [Llama-3-70b-Groq](https://poe.com/Llama-3-70b-Groq){ .md-button .md-button--primary }
@@ -18105,7 +18522,7 @@ Use `--aspect` to set the aspect ratio. Allowed values are `16:9`, `9:16` and `1
 </document_content>
 </document>
 
-<document index="157">
+<document index="158">
 <source>src_docs/md/models/Llama-3-70b-Inst-FW.md</source>
 <document_content>
 # [Llama-3-70b-Inst-FW](https://poe.com/Llama-3-70b-Inst-FW){ .md-button .md-button--primary }
@@ -18153,7 +18570,7 @@ Use `--aspect` to set the aspect ratio. Allowed values are `16:9`, `9:16` and `1
 </document_content>
 </document>
 
-<document index="158">
+<document index="159">
 <source>src_docs/md/models/Llama-3-8B-T.md</source>
 <document_content>
 # [Llama-3-8B-T](https://poe.com/Llama-3-8B-T){ .md-button .md-button--primary }
@@ -18203,7 +18620,7 @@ The points price is subject to change.
 </document_content>
 </document>
 
-<document index="159">
+<document index="160">
 <source>src_docs/md/models/Llama-3-8b-Groq.md</source>
 <document_content>
 # [Llama-3-8b-Groq](https://poe.com/Llama-3-8b-Groq){ .md-button .md-button--primary }
@@ -18251,7 +18668,7 @@ The points price is subject to change.
 </document_content>
 </document>
 
-<document index="160">
+<document index="161">
 <source>src_docs/md/models/Llama-3.1-405B-FP16.md</source>
 <document_content>
 # [Llama-3.1-405B-FP16](https://poe.com/Llama-3.1-405B-FP16){ .md-button .md-button--primary }
@@ -18299,7 +18716,7 @@ The points price is subject to change.
 </document_content>
 </document>
 
-<document index="161">
+<document index="162">
 <source>src_docs/md/models/Llama-3.1-405B-FW.md</source>
 <document_content>
 # [Llama-3.1-405B-FW](https://poe.com/Llama-3.1-405B-FW){ .md-button .md-button--primary }
@@ -18347,7 +18764,7 @@ The points price is subject to change.
 </document_content>
 </document>
 
-<document index="162">
+<document index="163">
 <source>src_docs/md/models/Llama-3.1-405B-T.md</source>
 <document_content>
 # [Llama-3.1-405B-T](https://poe.com/Llama-3.1-405B-T){ .md-button .md-button--primary }
@@ -18397,7 +18814,7 @@ The points price is subject to change.
 </document_content>
 </document>
 
-<document index="163">
+<document index="164">
 <source>src_docs/md/models/Llama-3.1-405B.md</source>
 <document_content>
 # [Llama-3.1-405B](https://poe.com/Llama-3.1-405B){ .md-button .md-button--primary }
@@ -18448,7 +18865,7 @@ The points price is subject to change.
 </document_content>
 </document>
 
-<document index="164">
+<document index="165">
 <source>src_docs/md/models/Llama-3.1-70B-FP16.md</source>
 <document_content>
 # [Llama-3.1-70B-FP16](https://poe.com/Llama-3.1-70B-FP16){ .md-button .md-button--primary }
@@ -18496,7 +18913,7 @@ The points price is subject to change.
 </document_content>
 </document>
 
-<document index="165">
+<document index="166">
 <source>src_docs/md/models/Llama-3.1-70B-FW.md</source>
 <document_content>
 # [Llama-3.1-70B-FW](https://poe.com/Llama-3.1-70B-FW){ .md-button .md-button--primary }
@@ -18544,7 +18961,7 @@ The points price is subject to change.
 </document_content>
 </document>
 
-<document index="166">
+<document index="167">
 <source>src_docs/md/models/Llama-3.1-70B-T.md</source>
 <document_content>
 # [Llama-3.1-70B-T](https://poe.com/Llama-3.1-70B-T){ .md-button .md-button--primary }
@@ -18594,7 +19011,7 @@ The points price is subject to change.
 </document_content>
 </document>
 
-<document index="167">
+<document index="168">
 <source>src_docs/md/models/Llama-3.1-70B.md</source>
 <document_content>
 # [Llama-3.1-70B](https://poe.com/Llama-3.1-70B){ .md-button .md-button--primary }
@@ -18645,7 +19062,7 @@ The points price is subject to change.
 </document_content>
 </document>
 
-<document index="168">
+<document index="169">
 <source>src_docs/md/models/Llama-3.1-8B-DI.md</source>
 <document_content>
 # [Llama-3.1-8B-DI](https://poe.com/Llama-3.1-8B-DI){ .md-button .md-button--primary }
@@ -18695,7 +19112,7 @@ Input token limit 128k, output token limit 8k. Quantization: FP16 (official).
 </document_content>
 </document>
 
-<document index="169">
+<document index="170">
 <source>src_docs/md/models/Llama-3.1-8B-FP16.md</source>
 <document_content>
 # [Llama-3.1-8B-FP16](https://poe.com/Llama-3.1-8B-FP16){ .md-button .md-button--primary }
@@ -18743,7 +19160,7 @@ Input token limit 128k, output token limit 8k. Quantization: FP16 (official).
 </document_content>
 </document>
 
-<document index="170">
+<document index="171">
 <source>src_docs/md/models/Llama-3.1-8B-FW.md</source>
 <document_content>
 # [Llama-3.1-8B-FW](https://poe.com/Llama-3.1-8B-FW){ .md-button .md-button--primary }
@@ -18791,7 +19208,7 @@ Input token limit 128k, output token limit 8k. Quantization: FP16 (official).
 </document_content>
 </document>
 
-<document index="171">
+<document index="172">
 <source>src_docs/md/models/Llama-3.1-8B-T-128k.md</source>
 <document_content>
 # [Llama-3.1-8B-T-128k](https://poe.com/Llama-3.1-8B-T-128k){ .md-button .md-button--primary }
@@ -18841,7 +19258,7 @@ The points price is subject to change.
 </document_content>
 </document>
 
-<document index="172">
+<document index="173">
 <source>src_docs/md/models/Llama-3.1-8B.md</source>
 <document_content>
 # [Llama-3.1-8B](https://poe.com/Llama-3.1-8B){ .md-button .md-button--primary }
@@ -18892,7 +19309,7 @@ The points price is subject to change.
 </document_content>
 </document>
 
-<document index="173">
+<document index="174">
 <source>src_docs/md/models/Llama-3.1-Nemotron.md</source>
 <document_content>
 # [Llama-3.1-Nemotron](https://poe.com/Llama-3.1-Nemotron){ .md-button .md-button--primary }
@@ -18940,7 +19357,7 @@ The points price is subject to change.
 </document_content>
 </document>
 
-<document index="174">
+<document index="175">
 <source>src_docs/md/models/Llama-3.3-70B-DI.md</source>
 <document_content>
 # [Llama-3.3-70B-DI](https://poe.com/Llama-3.3-70B-DI){ .md-button .md-button--primary }
@@ -18991,7 +19408,7 @@ Supports 128k tokens of input context and 8k tokens of output context. Quantizat
 </document_content>
 </document>
 
-<document index="175">
+<document index="176">
 <source>src_docs/md/models/Llama-3.3-70B-FW.md</source>
 <document_content>
 # [Llama-3.3-70B-FW](https://poe.com/Llama-3.3-70B-FW){ .md-button .md-button--primary }
@@ -19039,7 +19456,7 @@ Supports 128k tokens of input context and 8k tokens of output context. Quantizat
 </document_content>
 </document>
 
-<document index="176">
+<document index="177">
 <source>src_docs/md/models/Llama-3.3-70B-Vers.md</source>
 <document_content>
 # [Llama-3.3-70B-Vers](https://poe.com/Llama-3.3-70B-Vers){ .md-button .md-button--primary }
@@ -19091,7 +19508,7 @@ Supports 128k tokens of input context and 8k tokens of output context. Quantizat
 </document_content>
 </document>
 
-<document index="177">
+<document index="178">
 <source>src_docs/md/models/Llama-3.3-70B.md</source>
 <document_content>
 # [Llama-3.3-70B](https://poe.com/Llama-3.3-70B){ .md-button .md-button--primary }
@@ -19139,7 +19556,7 @@ Supports 128k tokens of input context and 8k tokens of output context. Quantizat
 </document_content>
 </document>
 
-<document index="178">
+<document index="179">
 <source>src_docs/md/models/Llama-4-Maverick-B10.md</source>
 <document_content>
 # [Llama-4-Maverick-B10](https://poe.com/Llama-4-Maverick-B10){ .md-button .md-button--primary }
@@ -19191,7 +19608,7 @@ Maverick is a versatile model, great for tasks from creative content generation 
 </document_content>
 </document>
 
-<document index="179">
+<document index="180">
 <source>src_docs/md/models/Llama-4-Maverick-T.md</source>
 <document_content>
 # [Llama-4-Maverick-T](https://poe.com/Llama-4-Maverick-T){ .md-button .md-button--primary }
@@ -19239,7 +19656,7 @@ Maverick is a versatile model, great for tasks from creative content generation 
 </document_content>
 </document>
 
-<document index="180">
+<document index="181">
 <source>src_docs/md/models/Llama-4-Maverick.md</source>
 <document_content>
 # [Llama-4-Maverick](https://poe.com/Llama-4-Maverick){ .md-button .md-button--primary }
@@ -19287,7 +19704,7 @@ Maverick is a versatile model, great for tasks from creative content generation 
 </document_content>
 </document>
 
-<document index="181">
+<document index="182">
 <source>src_docs/md/models/Llama-4-Scout-B10.md</source>
 <document_content>
 # [Llama-4-Scout-B10](https://poe.com/Llama-4-Scout-B10){ .md-button .md-button--primary }
@@ -19339,7 +19756,7 @@ Scout is perfect for tasks requiring a lot of context, from summarizing large do
 </document_content>
 </document>
 
-<document index="182">
+<document index="183">
 <source>src_docs/md/models/Llama-4-Scout-T.md</source>
 <document_content>
 # [Llama-4-Scout-T](https://poe.com/Llama-4-Scout-T){ .md-button .md-button--primary }
@@ -19387,7 +19804,7 @@ Scout is perfect for tasks requiring a lot of context, from summarizing large do
 </document_content>
 </document>
 
-<document index="183">
+<document index="184">
 <source>src_docs/md/models/Llama-4-Scout-nitro.md</source>
 <document_content>
 # [Llama-4-Scout-nitro](https://poe.com/Llama-4-Scout-nitro){ .md-button .md-button--primary }
@@ -19435,7 +19852,7 @@ Scout is perfect for tasks requiring a lot of context, from summarizing large do
 </document_content>
 </document>
 
-<document index="184">
+<document index="185">
 <source>src_docs/md/models/Llama-4-Scout.md</source>
 <document_content>
 # [Llama-4-Scout](https://poe.com/Llama-4-Scout){ .md-button .md-button--primary }
@@ -19483,7 +19900,7 @@ Scout is perfect for tasks requiring a lot of context, from summarizing large do
 </document_content>
 </document>
 
-<document index="185">
+<document index="186">
 <source>src_docs/md/models/Luma-Photon-Flash.md</source>
 <document_content>
 # [Luma-Photon-Flash](https://poe.com/Luma-Photon-Flash){ .md-button .md-button--primary }
@@ -19531,7 +19948,7 @@ Scout is perfect for tasks requiring a lot of context, from summarizing large do
 </document_content>
 </document>
 
-<document index="186">
+<document index="187">
 <source>src_docs/md/models/Luma-Photon.md</source>
 <document_content>
 # [Luma-Photon](https://poe.com/Luma-Photon){ .md-button .md-button--primary }
@@ -19579,7 +19996,7 @@ Scout is perfect for tasks requiring a lot of context, from summarizing large do
 </document_content>
 </document>
 
-<document index="187">
+<document index="188">
 <source>src_docs/md/models/Lyria.md</source>
 <document_content>
 # [Lyria](https://poe.com/Lyria){ .md-button .md-button--primary }
@@ -19629,7 +20046,7 @@ Allows users to specify elements to exclude in the audio using the "--no" parame
 </document_content>
 </document>
 
-<document index="188">
+<document index="189">
 <source>src_docs/md/models/MarkItDown.md</source>
 <document_content>
 # [MarkItDown](https://poe.com/MarkItDown){ .md-button .md-button--primary }
@@ -19676,7 +20093,7 @@ Allows users to specify elements to exclude in the audio using the "--no" parame
 </document_content>
 </document>
 
-<document index="189">
+<document index="190">
 <source>src_docs/md/models/MiniMax-M1.md</source>
 <document_content>
 # [MiniMax-M1](https://poe.com/MiniMax-M1){ .md-button .md-button--primary }
@@ -19727,7 +20144,7 @@ This is a pure text reasoning model and currently does not process any file type
 </document_content>
 </document>
 
-<document index="190">
+<document index="191">
 <source>src_docs/md/models/Mistral-7B-v0.3-DI.md</source>
 <document_content>
 # [Mistral-7B-v0.3-DI](https://poe.com/Mistral-7B-v0.3-DI){ .md-button .md-button--primary }
@@ -19779,7 +20196,7 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 </document_content>
 </document>
 
-<document index="191">
+<document index="192">
 <source>src_docs/md/models/Mistral-7B-v0.3-T.md</source>
 <document_content>
 # [Mistral-7B-v0.3-T](https://poe.com/Mistral-7B-v0.3-T){ .md-button .md-button--primary }
@@ -19829,7 +20246,7 @@ The points price is subject to change.
 </document_content>
 </document>
 
-<document index="192">
+<document index="193">
 <source>src_docs/md/models/Mistral-Large-2.md</source>
 <document_content>
 # [Mistral-Large-2](https://poe.com/Mistral-Large-2){ .md-button .md-button--primary }
@@ -19880,7 +20297,7 @@ The points price is subject to change.
 </document_content>
 </document>
 
-<document index="193">
+<document index="194">
 <source>src_docs/md/models/Mistral-Medium.md</source>
 <document_content>
 # [Mistral-Medium](https://poe.com/Mistral-Medium){ .md-button .md-button--primary }
@@ -19931,7 +20348,7 @@ The points price is subject to change.
 </document_content>
 </document>
 
-<document index="194">
+<document index="195">
 <source>src_docs/md/models/Mistral-NeMo.md</source>
 <document_content>
 # [Mistral-NeMo](https://poe.com/Mistral-NeMo){ .md-button .md-button--primary }
@@ -19983,7 +20400,7 @@ The supported languages include, but are not limited to, widely spoken languages
 </document_content>
 </document>
 
-<document index="195">
+<document index="196">
 <source>src_docs/md/models/Mistral-Small-3.1.md</source>
 <document_content>
 # [Mistral-Small-3.1](https://poe.com/Mistral-Small-3.1){ .md-button .md-button--primary }
@@ -20031,7 +20448,7 @@ The supported languages include, but are not limited to, widely spoken languages
 </document_content>
 </document>
 
-<document index="196">
+<document index="197">
 <source>src_docs/md/models/Mistral-Small-3.2.md</source>
 <document_content>
 # [Mistral-Small-3.2](https://poe.com/Mistral-Small-3.2){ .md-button .md-button--primary }
@@ -20089,7 +20506,7 @@ Supported File Types
 </document_content>
 </document>
 
-<document index="197">
+<document index="198">
 <source>src_docs/md/models/Mistral-Small-3.md</source>
 <document_content>
 # [Mistral-Small-3](https://poe.com/Mistral-Small-3){ .md-button .md-button--primary }
@@ -20140,7 +20557,7 @@ Supported File Types
 </document_content>
 </document>
 
-<document index="198">
+<document index="199">
 <source>src_docs/md/models/Mixtral8x22b-Inst-FW.md</source>
 <document_content>
 # [Mixtral8x22b-Inst-FW](https://poe.com/Mixtral8x22b-Inst-FW){ .md-button .md-button--primary }
@@ -20188,7 +20605,7 @@ Supported File Types
 </document_content>
 </document>
 
-<document index="199">
+<document index="200">
 <source>src_docs/md/models/Mochi-preview.md</source>
 <document_content>
 # [Mochi-preview](https://poe.com/Mochi-preview){ .md-button .md-button--primary }
@@ -20236,7 +20653,7 @@ Supported File Types
 </document_content>
 </document>
 
-<document index="200">
+<document index="201">
 <source>src_docs/md/models/OpenAI-GPT-OSS-120B.md</source>
 <document_content>
 # [OpenAI-GPT-OSS-120B](https://poe.com/OpenAI-GPT-OSS-120B){ .md-button .md-button--primary }
@@ -20284,7 +20701,7 @@ Supported File Types
 </document_content>
 </document>
 
-<document index="201">
+<document index="202">
 <source>src_docs/md/models/OpenAI-GPT-OSS-20B.md</source>
 <document_content>
 # [OpenAI-GPT-OSS-20B](https://poe.com/OpenAI-GPT-OSS-20B){ .md-button .md-button--primary }
@@ -20332,7 +20749,7 @@ Supported File Types
 </document_content>
 </document>
 
-<document index="202">
+<document index="203">
 <source>src_docs/md/models/Orpheus-TTS.md</source>
 <document_content>
 # [Orpheus-TTS](https://poe.com/Orpheus-TTS){ .md-button .md-button--primary }
@@ -20380,7 +20797,7 @@ Supported File Types
 </document_content>
 </document>
 
-<document index="203">
+<document index="204">
 <source>src_docs/md/models/Perplexity-Deep-Research.md</source>
 <document_content>
 # [Perplexity-Deep-Research](https://poe.com/Perplexity-Deep-Research){ .md-button .md-button--primary }
@@ -20428,7 +20845,7 @@ Supported File Types
 </document_content>
 </document>
 
-<document index="204">
+<document index="205">
 <source>src_docs/md/models/Perplexity-R1-1776.md</source>
 <document_content>
 # [Perplexity-R1-1776](https://poe.com/Perplexity-R1-1776){ .md-button .md-button--primary }
@@ -20476,7 +20893,7 @@ Supported File Types
 </document_content>
 </document>
 
-<document index="205">
+<document index="206">
 <source>src_docs/md/models/Perplexity-Sonar-Pro.md</source>
 <document_content>
 # [Perplexity-Sonar-Pro](https://poe.com/Perplexity-Sonar-Pro){ .md-button .md-button--primary }
@@ -20524,7 +20941,7 @@ Supported File Types
 </document_content>
 </document>
 
-<document index="206">
+<document index="207">
 <source>src_docs/md/models/Perplexity-Sonar-Rsn-Pro.md</source>
 <document_content>
 # [Perplexity-Sonar-Rsn-Pro](https://poe.com/Perplexity-Sonar-Rsn-Pro){ .md-button .md-button--primary }
@@ -20572,7 +20989,7 @@ Supported File Types
 </document_content>
 </document>
 
-<document index="207">
+<document index="208">
 <source>src_docs/md/models/Perplexity-Sonar-Rsn.md</source>
 <document_content>
 # [Perplexity-Sonar-Rsn](https://poe.com/Perplexity-Sonar-Rsn){ .md-button .md-button--primary }
@@ -20620,7 +21037,7 @@ Supported File Types
 </document_content>
 </document>
 
-<document index="208">
+<document index="209">
 <source>src_docs/md/models/Perplexity-Sonar.md</source>
 <document_content>
 # [Perplexity-Sonar](https://poe.com/Perplexity-Sonar){ .md-button .md-button--primary }
@@ -20668,7 +21085,7 @@ Supported File Types
 </document_content>
 </document>
 
-<document index="209">
+<document index="210">
 <source>src_docs/md/models/Phi-4-DI.md</source>
 <document_content>
 # [Phi-4-DI](https://poe.com/Phi-4-DI){ .md-button .md-button--primary }
@@ -20722,7 +21139,7 @@ Supports 16k tokens of input context and 8k tokens of output context. Quantizati
 </document_content>
 </document>
 
-<document index="210">
+<document index="211">
 <source>src_docs/md/models/Phoenix-1.0.md</source>
 <document_content>
 # [Phoenix-1.0](https://poe.com/Phoenix-1.0){ .md-button .md-button--primary }
@@ -20777,7 +21194,7 @@ Image generation prompts can be a maximum of 1500 characters.
 </document_content>
 </document>
 
-<document index="211">
+<document index="212">
 <source>src_docs/md/models/Pika.md</source>
 <document_content>
 # [Pika](https://poe.com/Pika){ .md-button .md-button--primary }
@@ -20829,7 +21246,7 @@ Image generation prompts can be a maximum of 1500 characters.
 </document_content>
 </document>
 
-<document index="212">
+<document index="213">
 <source>src_docs/md/models/Pixverse-v4.5.md</source>
 <document_content>
 # [Pixverse-v4.5](https://poe.com/Pixverse-v4.5){ .md-button .md-button--primary }
@@ -20890,7 +21307,7 @@ Use `--seed` to set the seed and `--aspect` to set the aspect ratio.
 </document_content>
 </document>
 
-<document index="213">
+<document index="214">
 <source>src_docs/md/models/PlayAI-Dialog.md</source>
 <document_content>
 # [PlayAI-Dialog](https://poe.com/PlayAI-Dialog){ .md-button .md-button--primary }
@@ -21007,7 +21424,7 @@ Mary_Narrative_(Hebrew/Israeli)
 </document_content>
 </document>
 
-<document index="214">
+<document index="215">
 <source>src_docs/md/models/PlayAI-TTS.md</source>
 <document_content>
 # [PlayAI-TTS](https://poe.com/PlayAI-TTS){ .md-button .md-button--primary }
@@ -21116,7 +21533,7 @@ Mary_Narrative_(Hebrew/Israeli)
 </document_content>
 </document>
 
-<document index="215">
+<document index="216">
 <source>src_docs/md/models/Poe-System-Bot.md</source>
 <document_content>
 # [Poe-System-Bot](https://poe.com/Poe-System-Bot){ .md-button .md-button--primary }
@@ -21164,7 +21581,7 @@ Mary_Narrative_(Hebrew/Israeli)
 </document_content>
 </document>
 
-<document index="216">
+<document index="217">
 <source>src_docs/md/models/Python.md</source>
 <document_content>
 # [Python](https://poe.com/Python){ .md-button .md-button--primary }
@@ -21212,7 +21629,7 @@ Mary_Narrative_(Hebrew/Israeli)
 </document_content>
 </document>
 
-<document index="217">
+<document index="218">
 <source>src_docs/md/models/QwQ-32B-B10.md</source>
 <document_content>
 # [QwQ-32B-B10](https://poe.com/QwQ-32B-B10){ .md-button .md-button--primary }
@@ -21262,7 +21679,7 @@ Try it out with blazing-fast speed optimized by Baseten's model performance engi
 </document_content>
 </document>
 
-<document index="218">
+<document index="219">
 <source>src_docs/md/models/QwQ-32B-Preview-T.md</source>
 <document_content>
 # [QwQ-32B-Preview-T](https://poe.com/QwQ-32B-Preview-T){ .md-button .md-button--primary }
@@ -21312,7 +21729,7 @@ It demonstrates exceptional performance in complex problem-solving, achieving im
 </document_content>
 </document>
 
-<document index="219">
+<document index="220">
 <source>src_docs/md/models/QwQ-32B-T.md</source>
 <document_content>
 # [QwQ-32B-T](https://poe.com/QwQ-32B-T){ .md-button .md-button--primary }
@@ -21360,7 +21777,7 @@ It demonstrates exceptional performance in complex problem-solving, achieving im
 </document_content>
 </document>
 
-<document index="220">
+<document index="221">
 <source>src_docs/md/models/Qwen-2.5-72B-T.md</source>
 <document_content>
 # [Qwen-2.5-72B-T](https://poe.com/Qwen-2.5-72B-T){ .md-button .md-button--primary }
@@ -21410,7 +21827,7 @@ Delivering results on par with Llama-3-405B despite using only one-fifth of the 
 </document_content>
 </document>
 
-<document index="221">
+<document index="222">
 <source>src_docs/md/models/Qwen-2.5-7B-T.md</source>
 <document_content>
 # [Qwen-2.5-7B-T](https://poe.com/Qwen-2.5-7B-T){ .md-button .md-button--primary }
@@ -21458,7 +21875,7 @@ Delivering results on par with Llama-3-405B despite using only one-fifth of the 
 </document_content>
 </document>
 
-<document index="222">
+<document index="223">
 <source>src_docs/md/models/Qwen-2.5-Coder-32B-T.md</source>
 <document_content>
 # [Qwen-2.5-Coder-32B-T](https://poe.com/Qwen-2.5-Coder-32B-T){ .md-button .md-button--primary }
@@ -21506,7 +21923,7 @@ Delivering results on par with Llama-3-405B despite using only one-fifth of the 
 </document_content>
 </document>
 
-<document index="223">
+<document index="224">
 <source>src_docs/md/models/Qwen-2.5-VL-32b.md</source>
 <document_content>
 # [Qwen-2.5-VL-32b](https://poe.com/Qwen-2.5-VL-32b){ .md-button .md-button--primary }
@@ -21554,7 +21971,7 @@ Delivering results on par with Llama-3-405B despite using only one-fifth of the 
 </document_content>
 </document>
 
-<document index="224">
+<document index="225">
 <source>src_docs/md/models/Qwen-3-235B-0527-T.md</source>
 <document_content>
 # [Qwen-3-235B-0527-T](https://poe.com/Qwen-3-235B-0527-T){ .md-button .md-button--primary }
@@ -21602,7 +22019,7 @@ Delivering results on par with Llama-3-405B despite using only one-fifth of the 
 </document_content>
 </document>
 
-<document index="225">
+<document index="226">
 <source>src_docs/md/models/Qwen-72B-T.md</source>
 <document_content>
 # [Qwen-72B-T](https://poe.com/Qwen-72B-T){ .md-button .md-button--primary }
@@ -21654,7 +22071,7 @@ The points price is subject to change.
 </document_content>
 </document>
 
-<document index="226">
+<document index="227">
 <source>src_docs/md/models/Qwen-QwQ-32b-preview.md</source>
 <document_content>
 # [Qwen-QwQ-32b-preview](https://poe.com/Qwen-QwQ-32b-preview){ .md-button .md-button--primary }
@@ -21702,7 +22119,7 @@ The points price is subject to change.
 </document_content>
 </document>
 
-<document index="227">
+<document index="228">
 <source>src_docs/md/models/Qwen2-72B-Instruct-T.md</source>
 <document_content>
 # [Qwen2-72B-Instruct-T](https://poe.com/Qwen2-72B-Instruct-T){ .md-button .md-button--primary }
@@ -21754,7 +22171,7 @@ The points price is subject to change.
 </document_content>
 </document>
 
-<document index="228">
+<document index="229">
 <source>src_docs/md/models/Qwen2.5-Coder-32B.md</source>
 <document_content>
 # [Qwen2.5-Coder-32B](https://poe.com/Qwen2.5-Coder-32B){ .md-button .md-button--primary }
@@ -21802,7 +22219,7 @@ The points price is subject to change.
 </document_content>
 </document>
 
-<document index="229">
+<document index="230">
 <source>src_docs/md/models/Qwen2.5-VL-72B-T.md</source>
 <document_content>
 # [Qwen2.5-VL-72B-T](https://poe.com/Qwen2.5-VL-72B-T){ .md-button .md-button--primary }
@@ -21850,7 +22267,7 @@ The points price is subject to change.
 </document_content>
 </document>
 
-<document index="230">
+<document index="231">
 <source>src_docs/md/models/Qwen3-235B-2507-FW.md</source>
 <document_content>
 # [Qwen3-235B-2507-FW](https://poe.com/Qwen3-235B-2507-FW){ .md-button .md-button--primary }
@@ -21898,7 +22315,7 @@ The points price is subject to change.
 </document_content>
 </document>
 
-<document index="231">
+<document index="232">
 <source>src_docs/md/models/Qwen3-235B-A22B-DI.md</source>
 <document_content>
 # [Qwen3-235B-A22B-DI](https://poe.com/Qwen3-235B-A22B-DI){ .md-button .md-button--primary }
@@ -21948,7 +22365,7 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 </document_content>
 </document>
 
-<document index="232">
+<document index="233">
 <source>src_docs/md/models/Qwen3-235B-A22B.md</source>
 <document_content>
 # [Qwen3-235B-A22B](https://poe.com/Qwen3-235B-A22B){ .md-button .md-button--primary }
@@ -21996,7 +22413,7 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 </document_content>
 </document>
 
-<document index="233">
+<document index="234">
 <source>src_docs/md/models/Qwen3-32B-nitro.md</source>
 <document_content>
 # [Qwen3-32B-nitro](https://poe.com/Qwen3-32B-nitro){ .md-button .md-button--primary }
@@ -22044,7 +22461,7 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 </document_content>
 </document>
 
-<document index="234">
+<document index="235">
 <source>src_docs/md/models/Qwen3-Coder-480B-FW.md</source>
 <document_content>
 # [Qwen3-Coder-480B-FW](https://poe.com/Qwen3-Coder-480B-FW){ .md-button .md-button--primary }
@@ -22092,7 +22509,7 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 </document_content>
 </document>
 
-<document index="235">
+<document index="236">
 <source>src_docs/md/models/Ray2.md</source>
 <document_content>
 # [Ray2](https://poe.com/Ray2){ .md-button .md-button--primary }
@@ -22141,7 +22558,7 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 </document_content>
 </document>
 
-<document index="236">
+<document index="237">
 <source>src_docs/md/models/Recraft-V3.md</source>
 <document_content>
 # [Recraft-V3](https://poe.com/Recraft-V3){ .md-button .md-button--primary }
@@ -22189,7 +22606,7 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 </document_content>
 </document>
 
-<document index="237">
+<document index="238">
 <source>src_docs/md/models/Reka-Core.md</source>
 <document_content>
 # [Reka-Core](https://poe.com/Reka-Core){ .md-button .md-button--primary }
@@ -22237,7 +22654,7 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 </document_content>
 </document>
 
-<document index="238">
+<document index="239">
 <source>src_docs/md/models/Reka-Flash.md</source>
 <document_content>
 # [Reka-Flash](https://poe.com/Reka-Flash){ .md-button .md-button--primary }
@@ -22285,7 +22702,7 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 </document_content>
 </document>
 
-<document index="239">
+<document index="240">
 <source>src_docs/md/models/Reka-Research.md</source>
 <document_content>
 # [Reka-Research](https://poe.com/Reka-Research){ .md-button .md-button--primary }
@@ -22333,7 +22750,7 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 </document_content>
 </document>
 
-<document index="240">
+<document index="241">
 <source>src_docs/md/models/Restyler.md</source>
 <document_content>
 # [Restyler](https://poe.com/Restyler){ .md-button .md-button--primary }
@@ -22381,7 +22798,7 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 </document_content>
 </document>
 
-<document index="241">
+<document index="242">
 <source>src_docs/md/models/Retro-Diffusion-Core.md</source>
 <document_content>
 # [Retro-Diffusion-Core](https://poe.com/Retro-Diffusion-Core){ .md-button .md-button--primary }
@@ -22435,7 +22852,7 @@ Additional notes: All styles have a size range of 48x48 -> 512x512, except for t
 </document_content>
 </document>
 
-<document index="242">
+<document index="243">
 <source>src_docs/md/models/Runway-Gen-4-Turbo.md</source>
 <document_content>
 # [Runway-Gen-4-Turbo](https://poe.com/Runway-Gen-4-Turbo){ .md-button .md-button--primary }
@@ -22484,7 +22901,7 @@ Additional notes: All styles have a size range of 48x48 -> 512x512, except for t
 </document_content>
 </document>
 
-<document index="243">
+<document index="244">
 <source>src_docs/md/models/Runway.md</source>
 <document_content>
 # [Runway](https://poe.com/Runway){ .md-button .md-button--primary }
@@ -22533,7 +22950,7 @@ Additional notes: All styles have a size range of 48x48 -> 512x512, except for t
 </document_content>
 </document>
 
-<document index="244">
+<document index="245">
 <source>src_docs/md/models/Sana-T2I.md</source>
 <document_content>
 # [Sana-T2I](https://poe.com/Sana-T2I){ .md-button .md-button--primary }
@@ -22581,7 +22998,7 @@ Additional notes: All styles have a size range of 48x48 -> 512x512, except for t
 </document_content>
 </document>
 
-<document index="245">
+<document index="246">
 <source>src_docs/md/models/Seedance-1.0-Lite.md</source>
 <document_content>
 # [Seedance-1.0-Lite](https://poe.com/Seedance-1.0-Lite){ .md-button .md-button--primary }
@@ -22630,7 +23047,7 @@ Number of video tokens calculated for pricing is approximately: `height * width 
 </document_content>
 </document>
 
-<document index="246">
+<document index="247">
 <source>src_docs/md/models/Seedance-1.0-Pro.md</source>
 <document_content>
 # [Seedance-1.0-Pro](https://poe.com/Seedance-1.0-Pro){ .md-button .md-button--primary }
@@ -22679,7 +23096,7 @@ Number of video tokens calculated for pricing is approximately: `height * width 
 </document_content>
 </document>
 
-<document index="247">
+<document index="248">
 <source>src_docs/md/models/Seedream-3.0.md</source>
 <document_content>
 # [Seedream-3.0](https://poe.com/Seedream-3.0){ .md-button .md-button--primary }
@@ -22727,7 +23144,7 @@ Number of video tokens calculated for pricing is approximately: `height * width 
 </document_content>
 </document>
 
-<document index="248">
+<document index="249">
 <source>src_docs/md/models/Sketch-to-Image.md</source>
 <document_content>
 # [Sketch-to-Image](https://poe.com/Sketch-to-Image){ .md-button .md-button--primary }
@@ -22775,7 +23192,7 @@ Number of video tokens calculated for pricing is approximately: `height * width 
 </document_content>
 </document>
 
-<document index="249">
+<document index="250">
 <source>src_docs/md/models/Solar-Pro-2.md</source>
 <document_content>
 # [Solar-Pro-2](https://poe.com/Solar-Pro-2){ .md-button .md-button--primary }
@@ -22823,7 +23240,7 @@ Number of video tokens calculated for pricing is approximately: `height * width 
 </document_content>
 </document>
 
-<document index="250">
+<document index="251">
 <source>src_docs/md/models/Sora.md</source>
 <document_content>
 # [Sora](https://poe.com/Sora){ .md-button .md-button--primary }
@@ -22871,7 +23288,7 @@ Number of video tokens calculated for pricing is approximately: `height * width 
 </document_content>
 </document>
 
-<document index="251">
+<document index="252">
 <source>src_docs/md/models/StableDiffusion3-2B.md</source>
 <document_content>
 # [StableDiffusion3-2B](https://poe.com/StableDiffusion3-2B){ .md-button .md-button--primary }
@@ -22919,7 +23336,7 @@ Number of video tokens calculated for pricing is approximately: `height * width 
 </document_content>
 </document>
 
-<document index="252">
+<document index="253">
 <source>src_docs/md/models/StableDiffusion3.5-L.md</source>
 <document_content>
 # [StableDiffusion3.5-L](https://poe.com/StableDiffusion3.5-L){ .md-button .md-button--primary }
@@ -22967,7 +23384,7 @@ Number of video tokens calculated for pricing is approximately: `height * width 
 </document_content>
 </document>
 
-<document index="253">
+<document index="254">
 <source>src_docs/md/models/StableDiffusion3.5-T.md</source>
 <document_content>
 # [StableDiffusion3.5-T](https://poe.com/StableDiffusion3.5-T){ .md-button .md-button--primary }
@@ -23015,7 +23432,7 @@ Number of video tokens calculated for pricing is approximately: `height * width 
 </document_content>
 </document>
 
-<document index="254">
+<document index="255">
 <source>src_docs/md/models/StableDiffusionXL.md</source>
 <document_content>
 # [StableDiffusionXL](https://poe.com/StableDiffusionXL){ .md-button .md-button--primary }
@@ -23067,7 +23484,7 @@ Powered by Stable Diffusion XL.
 </document_content>
 </document>
 
-<document index="255">
+<document index="256">
 <source>src_docs/md/models/Tako.md</source>
 <document_content>
 # [Tako](https://poe.com/Tako){ .md-button .md-button--primary }
@@ -23115,7 +23532,7 @@ Powered by Stable Diffusion XL.
 </document_content>
 </document>
 
-<document index="256">
+<document index="257">
 <source>src_docs/md/models/TopazLabs.md</source>
 <document_content>
 # [TopazLabs](https://poe.com/TopazLabs){ .md-button .md-button--primary }
@@ -23169,7 +23586,7 @@ Powered by Stable Diffusion XL.
 </document_content>
 </document>
 
-<document index="257">
+<document index="258">
 <source>src_docs/md/models/Trellis-3D.md</source>
 <document_content>
 # [Trellis-3D](https://poe.com/Trellis-3D){ .md-button .md-button--primary }
@@ -23217,7 +23634,7 @@ Powered by Stable Diffusion XL.
 </document_content>
 </document>
 
-<document index="258">
+<document index="259">
 <source>src_docs/md/models/TwelveLabs.md</source>
 <document_content>
 # [TwelveLabs](https://poe.com/TwelveLabs){ .md-button .md-button--primary }
@@ -23277,7 +23694,7 @@ Let's explore your videos together!
 </document_content>
 </document>
 
-<document index="259">
+<document index="260">
 <source>src_docs/md/models/Unreal-Speech-TTS.md</source>
 <document_content>
 # [Unreal-Speech-TTS](https://poe.com/Unreal-Speech-TTS){ .md-button .md-button--primary }
@@ -23360,7 +23777,7 @@ Portuguese
 </document_content>
 </document>
 
-<document index="260">
+<document index="261">
 <source>src_docs/md/models/Veo-2-Video.md</source>
 <document_content>
 # [Veo-2-Video](https://poe.com/Veo-2-Video){ .md-button .md-button--primary }
@@ -23408,7 +23825,7 @@ Portuguese
 </document_content>
 </document>
 
-<document index="261">
+<document index="262">
 <source>src_docs/md/models/Veo-2.md</source>
 <document_content>
 # [Veo-2](https://poe.com/Veo-2){ .md-button .md-button--primary }
@@ -23456,7 +23873,7 @@ Portuguese
 </document_content>
 </document>
 
-<document index="262">
+<document index="263">
 <source>src_docs/md/models/Veo-3-Fast.md</source>
 <document_content>
 # [Veo-3-Fast](https://poe.com/Veo-3-Fast){ .md-button .md-button--primary }
@@ -23505,7 +23922,7 @@ Portuguese
 </document_content>
 </document>
 
-<document index="263">
+<document index="264">
 <source>src_docs/md/models/Veo-3.md</source>
 <document_content>
 # [Veo-3](https://poe.com/Veo-3){ .md-button .md-button--primary }
@@ -23553,7 +23970,7 @@ Portuguese
 </document_content>
 </document>
 
-<document index="264">
+<document index="265">
 <source>src_docs/md/models/Wan-2.1.md</source>
 <document_content>
 # [Wan-2.1](https://poe.com/Wan-2.1){ .md-button .md-button--primary }
@@ -23601,7 +24018,7 @@ Portuguese
 </document_content>
 </document>
 
-<document index="265">
+<document index="266">
 <source>src_docs/md/models/Wan-2.2.md</source>
 <document_content>
 # [Wan-2.2](https://poe.com/Wan-2.2){ .md-button .md-button--primary }
@@ -23649,7 +24066,7 @@ Portuguese
 </document_content>
 </document>
 
-<document index="266">
+<document index="267">
 <source>src_docs/md/models/Web-Search.md</source>
 <document_content>
 # [Web-Search](https://poe.com/Web-Search){ .md-button .md-button--primary }
@@ -23687,7 +24104,7 @@ Portuguese
 </document_content>
 </document>
 
-<document index="267">
+<document index="268">
 <source>src_docs/md/models/index.md</source>
 <document_content>
 # Models Database
@@ -24192,7 +24609,7 @@ Browse all available Poe models:
 </document_content>
 </document>
 
-<document index="268">
+<document index="269">
 <source>src_docs/md/models/o1-mini.md</source>
 <document_content>
 # [o1-mini](https://poe.com/o1-mini){ .md-button .md-button--primary }
@@ -24242,7 +24659,7 @@ Browse all available Poe models:
 </document_content>
 </document>
 
-<document index="269">
+<document index="270">
 <source>src_docs/md/models/o1-pro.md</source>
 <document_content>
 # [o1-pro](https://poe.com/o1-pro){ .md-button .md-button--primary }
@@ -24294,7 +24711,7 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 </document_content>
 </document>
 
-<document index="270">
+<document index="271">
 <source>src_docs/md/models/o1.md</source>
 <document_content>
 # [o1](https://poe.com/o1){ .md-button .md-button--primary }
@@ -24345,7 +24762,7 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 </document_content>
 </document>
 
-<document index="271">
+<document index="272">
 <source>src_docs/md/models/o3-deep-research.md</source>
 <document_content>
 # [o3-deep-research](https://poe.com/o3-deep-research){ .md-button .md-button--primary }
@@ -24397,7 +24814,7 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 </document_content>
 </document>
 
-<document index="272">
+<document index="273">
 <source>src_docs/md/models/o3-mini-high.md</source>
 <document_content>
 # [o3-mini-high](https://poe.com/o3-mini-high){ .md-button .md-button--primary }
@@ -24448,7 +24865,7 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 </document_content>
 </document>
 
-<document index="273">
+<document index="274">
 <source>src_docs/md/models/o3-mini.md</source>
 <document_content>
 # [o3-mini](https://poe.com/o3-mini){ .md-button .md-button--primary }
@@ -24500,7 +24917,7 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 </document_content>
 </document>
 
-<document index="274">
+<document index="275">
 <source>src_docs/md/models/o3-pro.md</source>
 <document_content>
 # [o3-pro](https://poe.com/o3-pro){ .md-button .md-button--primary }
@@ -24553,7 +24970,7 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 </document_content>
 </document>
 
-<document index="275">
+<document index="276">
 <source>src_docs/md/models/o3.md</source>
 <document_content>
 # [o3](https://poe.com/o3){ .md-button .md-button--primary }
@@ -24607,7 +25024,7 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 </document_content>
 </document>
 
-<document index="276">
+<document index="277">
 <source>src_docs/md/models/o4-mini-deep-research.md</source>
 <document_content>
 # [o4-mini-deep-research](https://poe.com/o4-mini-deep-research){ .md-button .md-button--primary }
@@ -24659,7 +25076,7 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 </document_content>
 </document>
 
-<document index="277">
+<document index="278">
 <source>src_docs/md/models/o4-mini.md</source>
 <document_content>
 # [o4-mini](https://poe.com/o4-mini){ .md-button .md-button--primary }
@@ -24713,7 +25130,7 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 </document_content>
 </document>
 
-<document index="278">
+<document index="279">
 <source>src_docs/md/models/remove-background.md</source>
 <document_content>
 # [remove-background](https://poe.com/remove-background){ .md-button .md-button--primary }
@@ -24761,7 +25178,7 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 </document_content>
 </document>
 
-<document index="279">
+<document index="280">
 <source>src_docs/md/table.html</source>
 <document_content>
 <!DOCTYPE html>
@@ -25051,7 +25468,7 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 </document_content>
 </document>
 
-<document index="280">
+<document index="281">
 <source>src_docs/mkdocs.yml</source>
 <document_content>
 # this_file: src_docs/mkdocs.yml
@@ -25175,6 +25592,74 @@ def main(()) -> None:
 
 def setup_logging((verbose: bool = False)) -> None:
     """Configure loguru logging with appropriate level and format."""
+
+
+# File: /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/test_balance.py
+# Language: python
+
+import asyncio
+import os
+import sys
+from pathlib import Path
+from virginia_clemm_poe import api
+from virginia_clemm_poe.poe_session import PoeSessionManager
+
+def test_session_manager(()):
+    """Test the PoeSessionManager functionality."""
+
+def test_balance_check(()):
+    """Test getting account balance."""
+
+def test_cli_commands(()):
+    """Test CLI command availability."""
+
+def main(()):
+    """Run all tests."""
+
+
+# File: /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/test_balance_debug.py
+# Language: python
+
+import asyncio
+import json
+import httpx
+from pathlib import Path
+
+def test_balance(()):
+    """Test the balance API directly."""
+
+
+# File: /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/test_balance_numeric.py
+# Language: python
+
+import asyncio
+import json
+from pathlib import Path
+from virginia_clemm_poe import api
+from virginia_clemm_poe.poe_session import PoeSessionManager
+
+def test_balance_numeric(()):
+    """Test that balance is stored as numeric value."""
+
+
+# File: /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/test_balance_web.py
+# Language: python
+
+import asyncio
+from playwright.async_api import async_playwright
+import json
+from pathlib import Path
+
+def test_balance_web(()):
+    """Get balance using browser with cookies."""
+
+
+# File: /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/test_session.py
+# Language: python
+
+import sys
+from pathlib import Path
+from virginia_clemm_poe.poe_session import PoeSessionManager
 
 
 # File: /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/tests/__init__.py

@@ -1,0 +1,229 @@
+Below is what I was able to dig up on Poe’s **(lack of) official support** for checking your remaining *compute points* via an API key, plus two practical work-arounds that developers are currently using in the wild.
+
+---
+
+## TL;DR (summary)
+
+* **There is no documented “balance” endpoint in the new `https://api.poe.com/v1` API.**  The only feedback the OpenAI-compatible endpoint gives is a `402 insufficient_credits` error once your balance is ≤ 0, and normal usage metadata (`usage.total_tokens`) in successful completions. ([creator.poe.com][1])
+* **Poe’s own web UI gets your balance from an *internal* JSON endpoint** located at `https://www.quora.com/poe_api/settings`. That call never uses your API key; instead it relies on the browser’s session cookie (`m-b`). The response JSON contains the field **`"computePointsAvailable"`** (monthly quota) and, for free users, **`"dailyComputePointsAvailable"`**. This is what most community wrappers (e.g. `poe-api-wrapper`) scrape. ([GitHub][2])
+* Therefore, to programmatically query your balance **today** you have only two viable options:
+
+  1. **Hit the internal `/poe_api/settings` endpoint** with a valid session cookie and parse the JSON (straightforward but unofficial).
+  2. **Infer the balance** by keeping your own running total of points spent (each chat response returns the exact point cost in the normal JSON payload) and/or by catching the `402 insufficient_credits` error when you hit zero. ([creator.poe.com][3], [help.poe.com][4])
+
+Until Poe exposes a first-class “usage” or “billing” route, those two approaches are all we have.
+
+---
+
+## 1  Why the official API doesn’t expose balance
+
+The newly released developer API focuses on being **OpenAI-compatible**: you can swap `base_url="https://api.poe.com/v1"` and keep the same `/v1/chat/completions` calls. ([creator.poe.com][1])
+Documentation explicitly mentions that *“compute points are deducted directly from the account associated with the API key”*—but it never promises a balance endpoint. ([creator.poe.com][3])
+When your balance is empty a request fails with `{"error":{"type":"insufficient_credits", …}}`. ([creator.poe.com][1])
+
+---
+
+## 2  Using the **internal** `/poe_api/settings` JSON
+
+### How the web client does it
+
+A network trace of the Settings page (or reading community wrappers) shows this request:
+
+```
+GET https://www.quora.com/poe_api/settings
+Cookie: m-b=<your_session_cookie>
+Accept: application/json
+```
+
+The response body (truncated) looks like:
+
+```json
+{
+  "computePointsAvailable": 979933,
+  "dailyComputePointsAvailable": 3000,
+  "subscription": { … }
+}
+```
+
+The field names were confirmed in multiple wrapper issues and PRs. ([GitHub][2])
+
+> **Caveat** – This relies on your browser/session cookie, **not** the Poe API key. You’ll need to keep that cookie fresh (re-authenticate or reuse an existing browser session) and you are officially off-road—Quora may change the endpoint without notice.
+
+### Minimal Python example
+
+```python
+#!/usr/bin/env -S uv run -s
+# /// script
+# dependencies = ["requests", "fire", "rich"]
+# ///
+# this_file: poe_points.py
+"""
+Check remaining Poe compute-points by calling the internal /poe_api/settings endpoint.
+
+Usage:
+    poe_points.py --cookie '<m-b cookie value>'
+"""
+import requests, json, fire
+from rich import print as rprint
+
+def check(cookie: str):
+    url = "https://www.quora.com/poe_api/settings"
+    r = requests.get(url, headers={"cookie": f"m-b={cookie}"}, timeout=15)
+    r.raise_for_status()
+    data = r.json()
+    rprint({
+        "monthly_points_left": data.get("computePointsAvailable"),
+        "daily_points_left":  data.get("dailyComputePointsAvailable"),
+    })
+
+if __name__ == "__main__":
+    fire.Fire(check)
+```
+
+---
+
+## 3  Keeping (and checking) your own ledger with the **official** API key
+
+Every successful chat completion returns a JSON blob with the **point cost of that call** embedded inside the assistant’s reply metadata. Most people ignore it, but you can read it and subtract from a local counter.  Combine that with a **catch → retry** loop for the `402 insufficient_credits` error and you get a reasonable “soft” balance check.
+
+Community best-practice (from FAQ threads & blog posts) is to wrap the OpenAI call in something like:
+
+```python
+try:
+    chat = client.chat.completions.create(...)
+    points_spent = chat.usage.metadata["compute_points_spent"]
+    my_ledger -= points_spent
+except openai.InsufficientCreditsError:
+    # balance hit zero
+```
+
+This is more work, but it’s 100 % within the public API contract and won’t break if Quora turns off the internal endpoint. ([help.poe.com][4], [TechCrunch][5], [Carleton Torpin][6])
+
+---
+
+## 4  What to watch for
+
+* **Change logs** – The creator docs are updated frequently; a real “/v1/usage” route may appear soon. ([TechCrunch][5])
+* **Headers** – Some developers have reported experimental headers like `x-poe-compute-remaining` on early beta servers, but these are not yet consistent across regions.
+* **Rate limits** – Requests to `/poe_api/settings` seem to be exempt from the 500 RPM limit, but Cloudflare occasionally flags them; a short back-off (e.g. 250 ms with jitter) is wise. ([GitHub][2])
+
+---
+
+## 5  Bottom line
+
+* **With only an API key** you cannot (yet) hit an official “balance” endpoint.
+* **If you can also supply your `m-b` session cookie**, the internal JSON at `/poe_api/settings` is the shortest path to your exact compute-point balance.
+* **For production-grade tools** (CLI wrappers, VS Code plugins, etc.) keep an internal ledger, surface `402 insufficient_credits`, and be ready to switch to an official endpoint once Quora ships one.
+
+---
+
+### Further reading
+
+* Poe FAQs on compute-points ([help.poe.com][4])
+* Subscription FAQ (balance resets & settings page) ([help.poe.com][7])
+* External Application Guide (points charged to API key) ([creator.poe.com][3])
+* OpenAI-compatible endpoint docs ([creator.poe.com][1])
+* GitHub community wrapper issue showing `computePointsAvailable` ([GitHub][2])
+* Blog/review outlining monthly point allocations ([raifedowley.com][8])
+* Reddit discussion on compute-point limits ([reddit.com][9])
+
+[1]: https://creator.poe.com/docs/external-applications/openai-compatible-api "OpenAI Compatible API | Poe Creator Platform"
+[2]: https://github.com/snowby666/poe-api-wrapper/issues/134?utm_source=chatgpt.com "New error? simplejson.errors.JSONDecodeError · Issue ... - GitHub"
+[3]: https://creator.poe.com/docs/external-applications/external-application-guide "External Application Guide | Poe Creator Platform"
+[4]: https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs?utm_source=chatgpt.com "Poe FAQs – Help Center"
+[5]: https://techcrunch.com/2025/07/31/quoras-poe-is-releasing-an-api-for-developers-to-easily-access-a-boquet-of-models/?utm_source=chatgpt.com "Quora's Poe releases a developer API with access to a bouquet of AI ..."
+[6]: https://carletontorpin.com/ai/poe-ai-compute-points-explained/?utm_source=chatgpt.com "Poe AI Compute Points Explained - Carleton Torpin"
+[7]: https://help.poe.com/hc/en-us/articles/19945140063636-Poe-Subscriptions-FAQs?utm_source=chatgpt.com "Poe Subscriptions FAQs – Help Center"
+[8]: https://raifedowley.com/best-ai-tools-for-bloggers?utm_source=chatgpt.com "9 Best AI Tools for Bloggers: Boost Your Content Game (2024)"
+[9]: https://www.reddit.com/r/PoeAI/comments/1gn76p3/does_anyone_else_struggle_with_poes_compute/?utm_source=chatgpt.com "Does anyone else struggle with POE's compute points limitations ..."
+To programmatically check your Poe account's available compute points using your Poe API key, you need to go beyond the basic Poe API documentation, as there is no official endpoint exposed directly for compute point queries. However, the open-source Python library poe-api-wrapper provides exactly this feature by mimicking Poe's internal API calls.
+
+Here's how you can do it in Python, step by step:
+
+### 1. Install the poe-api-wrapper Library
+
+```bash
+pip install -U poe-api-wrapper
+```
+
+### 2. Obtain Poe Authentication Tokens
+
+- Log in to https://poe.com in your browser.
+- Open DevTools (F12) → Storage (or Application) → Cookies → poe.com.
+- Find and copy the values for the `p-b` and `p-lat` cookies.
+- These serve as your authentication tokens.
+
+### 3. Check Your Compute Points in Python
+
+Here’s a minimal script to check your settings (including remaining compute points):
+
+```python
+from poe_api_wrapper import PoeApi
+
+tokens = {
+    "p-b": "YOUR_P-B-COOKIE-HERE",
+    "p-lat": "YOUR_P-LAT-COOKIE-HERE"
+}
+
+client = PoeApi(tokens=tokens)
+data = client.get_settings()
+print(data)
+```
+
+- The `get_settings()` method retrieves a dict containing user account details.
+- Among the returned fields is your **remaining compute points** for the current period.
+
+### Notes, Gotchas & Insights
+
+- The Poe API key from https://poe.com/api_key alone is not used in this context. Poe's APIs internally require browser session cookies, not just the exposed API key.[1][2]
+- If you want to use it in a production scenario or automate the retrieval, make sure cookies don't expire, or plan for a re-login/cookie refresh mechanism.
+- The project is archived as of July 2025, but the approach still works unless Poe changes their API.
+- Poe does **not** officially document an API endpoint for remaining compute points, so third-party tools/scripts mimicking Poe’s browser behavior are the only way.[1]
+
+### Example Output
+
+```python
+{
+  "username": "your_username",
+  "subscription": "Pro",
+  "computePointsRemaining": 988732,
+  ...
+}
+```
+
+This output will show your current remaining compute points along with other account data.
+
+**Summary**:  
+You cannot query compute points with the "API key" only. Instead, programmatic check is possible via Python with poe-api-wrapper and your Poe browser cookies. Use `get_settings()` to pull compute point data automatically. This mirrors what you see at https://poe.com/settings, but works in scripts and automations.[1]
+
+Wait, but: If Poe later exposes a true API endpoint for compute usage linked only to the API key, that would be easier and safer for automation. For now, browser session tokens and the poe-api-wrapper are the go-to solution.  
+Ideot: Never share your session cookies; treat them like your wallet!  
+Critin: Always check library security (and Poe’s latest changes) before use.
+
+[1] https://github.com/snowby666/poe-api-wrapper
+[2] https://pydigger.com/pypi/poe-api-wrapper
+[3] https://www.reddit.com/r/Poe_AI/comments/1et7voj/subscribers_how_do_you_track_your_compute_points/
+[4] https://poe-for-creators.readme.io/docs/external-application-guide
+[5] https://carletontorpin.com/ai/poe-ai-compute-points-explained/
+[6] https://www.voiceflow.com/blog/poe-ai
+[7] https://www.youtube.com/watch?v=VjcYAO8TfxQ
+[8] https://www.allaboutai.com/ai-how-to/use-poe-ai/
+[9] https://www.reddit.com/r/PoeAI/comments/1dvc2yk/how_do_i_buy_more_compute_points/
+[10] https://poe-for-creators.readme.io/docs/poe-bot-monetization-api-documentation
+[11] https://www.reddit.com/r/PoeAI/comments/1bkuplg/anyone_else_here_annoyed_with_compute_points/
+[12] https://github.com/snowby666/poe-api-wrapper/blob/main/README.md
+[13] https://www.pathofexile.com/developer/docs
+[14] https://www.pathofexile.com/forum/view-thread/3588316
+[15] https://www.reddit.com/r/pathofexiledev/
+[16] https://originality.ai/blog/poe-statistics
+[17] https://poeditor.com/docs/api
+[18] https://www.threads.com/@poe_platform/post/DMx7UEpJ0LB/introducing-the-poe-api-for-developers-with-three-important-features1-access-to-
+[19] https://community.openai.com/t/get-the-remaining-credits-via-the-api/18827
+[20] https://stackoverflow.com/questions/76677281/how-to-use-poes-api-in-any-application-ex-nodejs
+[21] https://community.openai.com/t/i-wnat-check-credit-remaining-by-api/577584
+[22] https://www.reddit.com/r/PoeAI/comments/1gn76p3/does_anyone_else_struggle_with_poes_compute/
+[23] https://pypi.org/project/poe-api/
+[24] https://github.com/snowby666/poe-api-wrapper/issues/121
+[25] https://www.pathofexile.com/forum/view-thread/1212138/page/2
+[26] https://arubanetworking.hpe.com/techdocs/central/2.5.6/content/pdfs/api-reference-guide.pdf
+[27] https://pypi.org/project/poe-api-wrapper/
