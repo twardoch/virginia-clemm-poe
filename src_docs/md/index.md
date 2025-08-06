@@ -2,17 +2,13 @@
 
 **Virginia Clemm Poe** is a Python package that provides programmatic access to comprehensive Poe.com model data with pricing information. It acts as a companion tool to the official Poe API by fetching, maintaining, and enriching model data through web scraping, with a special focus on capturing detailed pricing information not available through the API alone.
 
-- 🤖 **Comprehensive Model Data**: Access to all Poe.com models with detailed metadata
-- 💰 **Pricing Information**: Automatically scraped pricing data for all operations
-- 🐍 **Python API**: Clean, typed API for programmatic access
-- 🖥️ **CLI Interface**: Fire-based command-line tools for data management
-- 🌐 **Web Scraping**: Playwright-powered browser automation for reliable data extraction
-- 📊 **Pydantic Models**: Fully typed data structures for easy integration
+[Poe Models](models/index.md){ .md-button .md-button--primary } [Models JSON](https://raw.githubusercontent.com/twardoch/virginia-clemm-poe/refs/heads/main/src/virginia_clemm_poe/data/poe_models.json){ .md-button }
 
-## Key Links
+The models shown here is a snapshot of the models that are available on [api.poe.com](https://creator.poe.com/docs/external-applications/openai-compatible-api), the OpenAI-compatible API that you can use with your Poe.com [API key](https://poe.com/api_key) if you’re a Poe subscriber. 
 
-- **[Browse Poe Models](models/index.md)**: Explore all available Poe.com models with real-time search, filtering, and detailed pricing information.
-- **[Extended JSON data](https://raw.githubusercontent.com/twardoch/virginia-clemm-poe/refs/heads/main/src/virginia_clemm_poe/data/poe_models.json)**
+The JSON is based on `https://api.poe.com/v1/models` but is extended with pricing info and description.  
+
+The tools in this repository can be used to update the JSON file with the latest pricing info and description. 
 
 ## Getting Started
 
