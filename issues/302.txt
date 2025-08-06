@@ -1,0 +1,1 @@
+When I do `virginia-clemm-poe balance` the browser opens, then we grab the points balance from the https://poe.com/settings and then the browser window closes and THEN we get 4x the dialog 'Something went wrong when opening your profile. Some features may be unavailable.' —— we should somehow eliminate it. 

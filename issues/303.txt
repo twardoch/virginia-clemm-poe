@@ -1,0 +1,17 @@
+When I do `virginia-clemm-poe balance`, we get: 
+
+```
+2025-08-07 00:21:09.332 | INFO     | virginia_clemm_poe.utils.cache:get_api_cache:351 - Initialized API cache
+Poe Account Balance
+
+2025-08-07 00:21:09 | INFO     | virginia_clemm_poe.poe_session:_get_balance_via_cookies:312 - Account balance: Unknown
+2025-08-07 00:21:09 | INFO     | virginia_clemm_poe.poe_session:_get_balance_via_cookies:317 - Subscription active: False
+2025-08-07 00:21:09 | INFO     | virginia_clemm_poe.poe_session:get_account_balance:254 - API returned no balance data, trying browser scraping...
+2025-08-07 00:21:10 | INFO     | virginia_clemm_poe.poe_session:_get_balance_via_cookies:312 - Account balance: Unknown
+2025-08-07 00:21:10 | INFO     | virginia_clemm_poe.poe_session:_get_balance_via_cookies:317 - Subscription active: False
+2025-08-07 00:21:10 | INFO     | virginia_clemm_poe.api:get_account_balance:611 - API returned no balance data, launching browser for scraping...
+2025-08-07 00:21:10 | INFO     | virginia_clemm_poe.browser_pool:start:209 - Browser pool started with max_size=1
+2025-08-07 00:21:10.183 | INFO     | playwrightauthor.author:__aenter__:471 - Starting async browser session with profile 'default'...
+```
+
+Let’s work hard to try to get the "API" method working. Analyze once again how our code works and analyze @issues/301.txt and @external/poe-api-wrapper.txt 

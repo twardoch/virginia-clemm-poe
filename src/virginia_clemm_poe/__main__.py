@@ -147,20 +147,20 @@ class Cli:
 
         asyncio.run(run_setup())
 
-    def status(self, verbose: bool = False) -> None:
-        """Check system health and data freshness - your go-to diagnostic command.
+    def status(self, verbose: bool = False, check_all: bool = False) -> None:
+        """Check system health and data freshness - your comprehensive diagnostic command.
 
-        Comprehensive system health check for Virginia Clemm Poe installation.
-
-        This diagnostic command verifies that all components are properly installed and
-        configured for successful operation. It's the first command to run when setting
-        up a new installation or troubleshooting issues with data updates.
+        Complete system health check for Virginia Clemm Poe installation that combines
+        all diagnostic capabilities. This is your primary command for verifying setup
+        and troubleshooting issues.
 
         The status check covers:
-        1. **Browser Environment**: Verifies Chrome/Chromium is installed and accessible
-        2. **Model Dataset**: Checks if local data file exists and reports last update time
-        3. **API Configuration**: Validates POE_API_KEY environment variable (without exposing the key)
-        4. **System Dependencies**: Confirms all required Python packages are available
+        1. **Python Version**: Ensures Python 3.12+ is installed
+        2. **API Configuration**: Validates POE_API_KEY and tests API connectivity
+        3. **Browser Environment**: Verifies Chrome/Chromium via PlaywrightAuthor
+        4. **Network Connectivity**: Tests connection to poe.com
+        5. **Model Dataset**: Reports model count, pricing data, and freshness
+        6. **Dependencies**: Confirms all required Python packages (with --check-all)
 
         **When to Use This Command**:
         - After first installation to verify setup is complete
@@ -170,111 +170,167 @@ class Cli:
         - As part of CI/CD health checks or automated monitoring
 
         Args:
-            verbose: Enable detailed diagnostic output including browser paths, data
-                    file details, and dependency versions. Useful for troubleshooting
-                    and providing detailed system information for support requests.
+            verbose: Enable detailed diagnostic output including browser paths,
+                    data file details, and dependency versions.
+            check_all: Include extended checks like dependency verification.
 
         Examples:
-            Quick health check (recommended for routine use):
+            Quick health check:
             ```bash
             virginia-clemm-poe status
             ```
 
-            Detailed system diagnosis:
+            Full system diagnosis:
             ```bash
-            # Show detailed paths and configuration
-            virginia-clemm-poe status --verbose
+            virginia-clemm-poe status --check-all --verbose
             ```
-
-        Exit Codes:
-            - 0: All systems healthy and ready for operation
-            - 1: Issues found that may prevent normal operation
-
-        What This Command Checks:
-            - Browser installation status and launch capability
-            - Local model dataset existence and freshness (age in days)
-            - POE_API_KEY environment variable presence (key value not displayed)
-            - Critical Python dependencies and version compatibility
-            - File system permissions for data directory access
 
         **Interpreting Results**:
         - ✓ Green checkmarks indicate components are working properly
-        - ✗ Red X marks show issues that need attention before running updates
-        - ⚠ Yellow warnings indicate non-critical issues or recommendations
+        - ✗ Red X marks show issues that need attention
+        - ⚠ Yellow warnings indicate non-critical issues
 
         **Next Steps Based on Results**:
         - If browser not ready: Run `virginia-clemm-poe setup`
         - If API key missing: Set POE_API_KEY environment variable
         - If data outdated: Run `virginia-clemm-poe update` to refresh dataset
-        - If issues persist: Run `virginia-clemm-poe doctor` for detailed diagnosis
         """
         configure_logger(verbose)
-        console.print("[bold blue]Virginia Clemm Poe Status[/bold blue]\n")
+        console.print("[bold blue]Virginia Clemm Poe System Status[/bold blue]\n")
+        
+        issues_found = 0
 
-        # Check browser status
-        console.print("[bold]Browser Status:[/bold]")
+        # 1. Check Python version
+        console.print("[bold]Python Version:[/bold]")
+        import sys
+        version = sys.version_info
+        if version.major == 3 and version.minor >= 12:
+            console.print(f"[green]✓ Python {version.major}.{version.minor}.{version.micro}[/green]")
+        else:
+            console.print(f"[red]✗ Python {version.major}.{version.minor}.{version.micro} (3.12+ required)[/red]")
+            issues_found += 1
+
+        # 2. Check API key and validate
+        console.print("\n[bold]API Configuration:[/bold]")
+        api_key = os.environ.get("POE_API_KEY")
+        if api_key:
+            console.print("[green]✓ POE_API_KEY is set[/green]")
+            # Validate API key
+            try:
+                import httpx
+                response = httpx.get(
+                    "https://api.poe.com/bot/list",
+                    headers={"Authorization": f"Bearer {api_key}"},
+                    timeout=5
+                )
+                if response.status_code == 200:
+                    console.print("[green]✓ API key is valid[/green]")
+                else:
+                    console.print(f"[yellow]⚠ API key validation returned status {response.status_code}[/yellow]")
+            except Exception as e:
+                console.print(f"[yellow]⚠ Could not validate API key: {e}[/yellow]")
+        else:
+            console.print("[red]✗ POE_API_KEY not set[/red]")
+            console.print("  Solution: export POE_API_KEY=your_api_key")
+            issues_found += 1
+
+        # 3. Check browser
+        console.print("\n[bold]Browser Status:[/bold]")
         try:
             from playwrightauthor import Browser
-
-            # Try to create a Browser instance (sync, not async)
             try:
                 browser = Browser(verbose=verbose)
                 with browser:
-                    pass  # Just test that browser can be created
-                console.print("[green]✓ Browser is ready[/green]")
+                    pass
+                console.print("[green]✓ Browser is available[/green]")
                 console.print("  PlaywrightAuthor Browser configured")
             except Exception as e:
-                console.print(f"[red]✗ Browser not available: {e}[/red]")
-                console.print("  Run 'virginia-clemm-poe setup' to install")
-        except ImportError as e:
-            console.print(f"[red]✗ PlaywrightAuthor not installed: {e}[/red]")
-            console.print("  Check your installation")
+                console.print(f"[red]✗ Browser not ready: {e}[/red]")
+                console.print("  Solution: Run 'virginia-clemm-poe setup'")
+                issues_found += 1
+        except ImportError:
+            console.print("[red]✗ PlaywrightAuthor not installed[/red]")
+            console.print("  Solution: pip install playwrightauthor")
+            issues_found += 1
 
-        # Check data status
-        console.print("\n[bold]Data Status:[/bold]")
+        # 4. Check network
+        console.print("\n[bold]Network Connectivity:[/bold]")
+        try:
+            import httpx
+            response = httpx.get("https://poe.com", timeout=5, follow_redirects=True)
+            if 200 <= response.status_code < 400:
+                console.print("[green]✓ Can reach poe.com[/green]")
+            else:
+                console.print(f"[yellow]⚠ Unexpected status from poe.com: {response.status_code}[/yellow]")
+        except Exception as e:
+            console.print(f"[red]✗ Cannot reach poe.com: {e}[/red]")
+            console.print("  Solution: Check your internet connection")
+            issues_found += 1
+
+        # 5. Check data file
+        console.print("\n[bold]Model Data:[/bold]")
         if DATA_FILE_PATH.exists():
             import json
-
-            with open(DATA_FILE_PATH) as f:
-                models_data = json.load(f)
-
-            total_models = len(models_data.get("models", []))
-            with_pricing = sum(1 for model in models_data.get("models", []) if model.get("pricing"))
-            with_bot_info = sum(1 for model in models_data.get("models", []) if model.get("bot_info"))
-
-            console.print("[green]✓ Model data found[/green]")
-            console.print(f"  Path: {DATA_FILE_PATH}")
-            console.print(f"  Total models: {total_models}")
-            console.print(f"  With pricing: {with_pricing}")
-            console.print(f"  With bot info: {with_bot_info}")
-
-            # Check data freshness
-            if total_models > 0:
-                from datetime import datetime
-
-                models = api.get_all_models()
-                latest_pricing = None
-                for model in models:
-                    if model.pricing and (latest_pricing is None or model.pricing.checked_at > latest_pricing):
-                        latest_pricing = model.pricing.checked_at
-
-                if latest_pricing:
-                    days_old = (datetime.now(latest_pricing.tzinfo) - latest_pricing).days
-                    if days_old > 7:
-                        console.print(f"  [yellow]Data is {days_old} days old[/yellow]")
-                    else:
-                        console.print(f"  [green]Data is {days_old} days old[/green]")
+            try:
+                with open(DATA_FILE_PATH) as f:
+                    models_data = json.load(f)
+                
+                # Fix: Use 'data' key instead of 'models'
+                model_list = models_data.get("data", [])
+                total_models = len(model_list)
+                with_pricing = sum(1 for model in model_list if model.get("pricing"))
+                with_bot_info = sum(1 for model in model_list if model.get("bot_info"))
+                
+                size = DATA_FILE_PATH.stat().st_size
+                console.print(f"[green]✓ Model data exists ({size:,} bytes)[/green]")
+                console.print(f"  Total models: {total_models}")
+                console.print(f"  With pricing: {with_pricing}")
+                console.print(f"  With bot info: {with_bot_info}")
+                
+                # Check data freshness
+                if total_models > 0:
+                    from datetime import datetime
+                    models = api.get_all_models()
+                    latest_pricing = None
+                    for model in models:
+                        if model.pricing and (latest_pricing is None or model.pricing.checked_at > latest_pricing):
+                            latest_pricing = model.pricing.checked_at
+                    
+                    if latest_pricing:
+                        days_old = (datetime.now(latest_pricing.tzinfo) - latest_pricing).days
+                        if days_old > 7:
+                            console.print(f"  [yellow]⚠ Data is {days_old} days old (consider updating)[/yellow]")
+                        else:
+                            console.print(f"  [green]✓ Data is {days_old} days old[/green]")
+            except Exception as e:
+                console.print(f"[red]✗ Invalid data file: {e}[/red]")
+                console.print("  Solution: Run 'virginia-clemm-poe update --force'")
+                issues_found += 1
         else:
             console.print("[red]✗ No model data found[/red]")
-            console.print("  Run 'virginia-clemm-poe update' to fetch data")
+            console.print("  Solution: Run 'virginia-clemm-poe update'")
+            issues_found += 1
 
-        # Check API key
-        console.print("\n[bold]API Key Status:[/bold]")
-        if os.environ.get("POE_API_KEY"):
-            console.print("[green]✓ POE_API_KEY is set[/green]")
+        # 6. Check dependencies (optional)
+        if check_all:
+            console.print("\n[bold]Dependencies:[/bold]")
+            required = ["httpx", "playwright", "pydantic", "fire", "rich", "loguru", "bs4", "playwrightauthor"]
+            for package in required:
+                try:
+                    __import__(package)
+                    console.print(f"[green]✓ {package}[/green]")
+                except ImportError:
+                    console.print(f"[red]✗ {package} not installed[/red]")
+                    issues_found += 1
+
+        # Summary
+        console.print("\n" + "=" * 50)
+        if issues_found == 0:
+            console.print("[bold green]✓ All checks passed! System is ready.[/bold green]")
         else:
-            console.print("[yellow]⚠ POE_API_KEY not set[/yellow]")
-            console.print("  Set with: export POE_API_KEY=your_key")
+            console.print(f"[bold yellow]⚠ Found {issues_found} issue(s). Please address them.[/bold yellow]")
+            if not check_all:
+                console.print("[dim]Run with --check-all for extended diagnostics[/dim]")
 
     def clear_cache(
         self,
@@ -421,224 +477,6 @@ class Cli:
                     console.print("  Suggestion: Consider longer cache TTL values")
 
             asyncio.run(show_cache_stats())
-
-    def _check_python_version(self) -> int:
-        """Check if Python version meets requirements.
-
-        Returns:
-            Number of issues found (0 or 1)
-        """
-        console.print("[bold]Python Version:[/bold]")
-        import sys
-
-        version = sys.version_info
-        if version >= (3, 12):
-            console.print(f"[green]✓ Python {version.major}.{version.minor}.{version.micro}[/green]")
-            return 0
-        console.print(f"[red]✗ Python {version.major}.{version.minor}.{version.micro} (requires 3.12+)[/red]")
-        console.print("  Solution: Install Python 3.12 or later")
-        return 1
-
-    def _check_api_key(self) -> int:
-        """Check API key presence and validity.
-
-        Returns:
-            Number of issues found (0 or 1)
-        """
-        console.print("\n[bold]API Key:[/bold]")
-        if not os.environ.get("POE_API_KEY"):
-            console.print("[red]✗ POE_API_KEY not set[/red]")
-            console.print("  Solution: export POE_API_KEY=your_api_key")
-            return 1
-
-        console.print("[green]✓ POE_API_KEY is set[/green]")
-
-        # Test API key validity
-        api_key = os.environ.get("POE_API_KEY")
-        import httpx
-
-        from .config import API_TIMEOUT_SECONDS, POE_API_URL
-
-        try:
-            response = httpx.get(
-                POE_API_URL,  # Use the correct API URL from config
-                headers={"Authorization": f"Bearer {api_key}"},
-                timeout=API_TIMEOUT_SECONDS,
-            )
-            if response.status_code == 200:
-                console.print("[green]✓ API key is valid[/green]")
-                return 0
-            console.print(f"[red]✗ API key might be invalid (status: {response.status_code})[/red]")
-            console.print("  Solution: Check your API key at https://poe.com/api_key")
-            return 1
-        except Exception as e:
-            console.print(f"[yellow]⚠ Could not validate API key: {e}[/yellow]")
-            return 0
-
-    def _check_browser(self) -> int:
-        """Check browser availability and configuration.
-
-        Returns:
-            Number of issues found
-        """
-        console.print("\n[bold]Browser:[/bold]")
-        issues = 0
-
-        try:
-            from playwrightauthor import Browser
-
-            # Try to create a Browser instance (sync, not async)
-            try:
-                browser = Browser(verbose=False)
-                with browser:
-                    pass  # Just test that browser can be created
-                console.print("[green]✓ Browser is available[/green]")
-                console.print("  PlaywrightAuthor Browser configured")
-            except Exception:
-                console.print("[red]✗ Browser not available[/red]")
-                console.print("  Solution: Run 'virginia-clemm-poe setup'")
-                issues += 1
-        except Exception as e:
-            console.print(f"[red]✗ Browser not available: {e}[/red]")
-            console.print("  Solution: Run 'virginia-clemm-poe setup'")
-            issues += 1
-
-        return issues
-
-    def _check_network(self) -> int:
-        """Check network connectivity to poe.com.
-
-        Returns:
-            Number of issues found (0 or 1)
-        """
-        console.print("\n[bold]Network:[/bold]")
-        import httpx
-
-        from .config import NETWORK_TIMEOUT_SECONDS
-
-        try:
-            # Use follow_redirects=True to handle redirects automatically
-            response = httpx.get("https://poe.com", timeout=NETWORK_TIMEOUT_SECONDS, follow_redirects=True)
-            # Accept any 2xx or 3xx status as success since Poe uses redirects
-            if 200 <= response.status_code < 400:
-                console.print("[green]✓ Can reach poe.com[/green]")
-                return 0
-            console.print(f"[yellow]⚠ Unexpected status from poe.com: {response.status_code}[/yellow]")
-            return 0
-        except Exception as e:
-            console.print(f"[red]✗ Cannot reach poe.com: {e}[/red]")
-            console.print("  Solution: Check your internet connection")
-            return 1
-
-    def _check_dependencies(self) -> int:
-        """Check if all required packages are installed.
-
-        Returns:
-            Number of issues found
-        """
-        console.print("\n[bold]Dependencies:[/bold]")
-        required_packages = [
-            "httpx",
-            "playwright",
-            "pydantic",
-            "fire",
-            "rich",
-            "loguru",
-            "bs4",
-        ]
-        import importlib
-        import importlib.util
-
-        issues = 0
-
-        for package in required_packages:
-            try:
-                importlib.import_module(package)
-                console.print(f"[green]✓ {package}[/green]")
-            except ImportError:
-                console.print(f"[red]✗ {package} not installed[/red]")
-                console.print(f"  Solution: pip install {package}")
-                issues += 1
-
-        # Check PlaywrightAuthor
-        if importlib.util.find_spec("playwrightauthor") is not None:
-            console.print("[green]✓ playwrightauthor[/green]")
-        else:
-            console.print("[red]✗ playwrightauthor not installed[/red]")
-            console.print("  Solution: Check pyproject.toml dependencies")
-            issues += 1
-
-        return issues
-
-    def _check_data_file(self) -> int:
-        """Check data file existence and validity.
-
-        Returns:
-            Number of issues found
-        """
-        console.print("\n[bold]Data File:[/bold]")
-        if not DATA_FILE_PATH.exists():
-            console.print("[yellow]⚠ No model data found[/yellow]")
-            console.print("  Solution: Run 'virginia-clemm-poe update'")
-            return 0
-
-        size = DATA_FILE_PATH.stat().st_size
-        console.print(f"[green]✓ Model data exists ({size:,} bytes)[/green]")
-
-        # Check if data is valid JSON
-        try:
-            import json
-
-            with open(DATA_FILE_PATH) as f:
-                models_data = json.load(f)
-            # The data structure has 'data' key containing the list of models
-            model_count = len(models_data.get('data', []))
-            console.print(f"[green]✓ Valid JSON with {model_count} models[/green]")
-            return 0
-        except Exception as e:
-            console.print(f"[red]✗ Invalid JSON: {e}[/red]")
-            console.print("  Solution: Run 'virginia-clemm-poe update --force'")
-            return 1
-
-    def _display_summary(self, issues_found: int) -> None:
-        """Display summary of diagnostic results.
-
-        Args:
-            issues_found: Total number of issues found
-        """
-        console.print("\n" + "=" * 50)
-        if issues_found == 0:
-            console.print("[green]✓ All checks passed! Virginia Clemm Poe is ready to use.[/green]")
-        else:
-            console.print(f"[red]Found {issues_found} issue(s). Please fix them and try again.[/red]")
-            console.print("\nQuick setup commands:")
-            console.print("  1. export POE_API_KEY=your_api_key")
-            console.print("  2. virginia-clemm-poe setup")
-            console.print("  3. virginia-clemm-poe update")
-
-    def doctor(self, verbose: bool = False) -> None:
-        """Diagnose and fix common issues - run this when something goes wrong.
-
-        **When to Use This Command**:
-        - Update command fails with errors
-        - Search returns no results when it should
-        - After system updates or configuration changes
-        - Before reporting bugs or seeking support
-        """
-        configure_logger(verbose)
-        console.print("[bold blue]Virginia Clemm Poe Doctor[/bold blue]\n")
-
-        # Run all diagnostic checks
-        issues_found = 0
-        issues_found += self._check_python_version()
-        issues_found += self._check_api_key()
-        issues_found += self._check_browser()
-        issues_found += self._check_network()
-        issues_found += self._check_dependencies()
-        issues_found += self._check_data_file()
-
-        # Display summary
-        self._display_summary(issues_found)
 
     def _validate_api_key(self, api_key: str | None) -> str:
         """Validate and return API key.

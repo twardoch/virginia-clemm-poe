@@ -373,7 +373,6 @@ Project Structure:
 ├── 📄 README.md
 ├── 📄 test_balance.py
 ├── 📄 test_balance_debug.py
-├── 📄 test_balance_numeric.py
 ├── 📄 test_balance_web.py
 ├── 📄 test_session.py
 ├── 📄 TODO.md
@@ -5947,30 +5946,24 @@ from .config import DATA_FILE_PATH, DEFAULT_DEBUG_PORT
 from .poe_session import PoeSessionManager
 from .updater import ModelUpdater
 from .utils.logger import configure_logger, log_operation, log_user_action
+import sys
+import httpx
 from playwrightauthor import Browser
+import httpx
 import json
 from datetime import datetime
 import asyncio
 from .utils.cache import get_api_cache, get_global_cache, get_scraping_cache
 import asyncio
 from .utils.cache import get_all_cache_stats
-import sys
-import httpx
-from .config import API_TIMEOUT_SECONDS, POE_API_URL
-from playwrightauthor import Browser
-import httpx
-from .config import NETWORK_TIMEOUT_SECONDS
-import importlib
-import importlib.util
-import json
 from virginia_clemm_poe.browser_pool import get_global_pool
 
 class Cli:
     """Virginia Clemm Poe - Poe.com model data management CLI."""
     def setup((self, verbose: bool = False)) -> None:
         """r"""Set up Chrome browser for web scraping - required before first update."""
-    def status((self, verbose: bool = False)) -> None:
-        """Check system health and data freshness - your go-to diagnostic command."""
+    def status((self, verbose: bool = False, check_all: bool = False)) -> None:
+        """Check system health and data freshness - your comprehensive diagnostic command."""
     def clear_cache((
         self,
         data: bool = False,
@@ -5981,22 +5974,6 @@ class Cli:
         """Clear cache and stored data - use when experiencing stale data issues."""
     def cache((self, stats: bool = True, clear: bool = False, verbose: bool = False)) -> None:
         """Monitor cache performance and hit rates - optimize your API usage."""
-    def _check_python_version((self)) -> int:
-        """Check if Python version meets requirements."""
-    def _check_api_key((self)) -> int:
-        """Check API key presence and validity."""
-    def _check_browser((self)) -> int:
-        """Check browser availability and configuration."""
-    def _check_network((self)) -> int:
-        """Check network connectivity to poe.com."""
-    def _check_dependencies((self)) -> int:
-        """Check if all required packages are installed."""
-    def _check_data_file((self)) -> int:
-        """Check data file existence and validity."""
-    def _display_summary((self, issues_found: int)) -> None:
-        """Display summary of diagnostic results."""
-    def doctor((self, verbose: bool = False)) -> None:
-        """Diagnose and fix common issues - run this when something goes wrong."""
     def _validate_api_key((self, api_key: str | None)) -> str:
         """Validate and return API key."""
     def _determine_update_mode((self, info: bool, pricing: bool, all: bool)) -> tuple[bool, bool]:
@@ -6053,8 +6030,8 @@ def setup((self, verbose: bool = False)) -> None:
 
 def run_setup(()) -> None:
 
-def status((self, verbose: bool = False)) -> None:
-    """Check system health and data freshness - your go-to diagnostic command."""
+def status((self, verbose: bool = False, check_all: bool = False)) -> None:
+    """Check system health and data freshness - your comprehensive diagnostic command."""
 
 def clear_cache((
         self,
@@ -6071,30 +6048,6 @@ def cache((self, stats: bool = True, clear: bool = False, verbose: bool = False)
 def clear_all_caches(()):
 
 def show_cache_stats(()):
-
-def _check_python_version((self)) -> int:
-    """Check if Python version meets requirements."""
-
-def _check_api_key((self)) -> int:
-    """Check API key presence and validity."""
-
-def _check_browser((self)) -> int:
-    """Check browser availability and configuration."""
-
-def _check_network((self)) -> int:
-    """Check network connectivity to poe.com."""
-
-def _check_dependencies((self)) -> int:
-    """Check if all required packages are installed."""
-
-def _check_data_file((self)) -> int:
-    """Check data file existence and validity."""
-
-def _display_summary((self, issues_found: int)) -> None:
-    """Display summary of diagnostic results."""
-
-def doctor((self, verbose: bool = False)) -> None:
-    """Diagnose and fix common issues - run this when something goes wrong."""
 
 def _validate_api_key((self, api_key: str | None)) -> str:
     """Validate and return API key."""
@@ -25627,19 +25580,6 @@ from pathlib import Path
 
 def test_balance(()):
     """Test the balance API directly."""
-
-
-# File: /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/test_balance_numeric.py
-# Language: python
-
-import asyncio
-import json
-from pathlib import Path
-from virginia_clemm_poe import api
-from virginia_clemm_poe.poe_session import PoeSessionManager
-
-def test_balance_numeric(()):
-    """Test that balance is stored as numeric value."""
 
 
 # File: /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/test_balance_web.py
