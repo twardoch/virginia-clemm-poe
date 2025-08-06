@@ -100,21 +100,34 @@ def is_model_filter_criteria(value: Any) -> TypeGuard[ModelFilterCriteria]:
 
     # All fields are optional, but if present must have correct types
     for key, value_item in value.items():
-        if key == "id" and not isinstance(value_item, str):
-            return False
-        elif key == "name" and not isinstance(value_item, str):
-            return False
-        elif key == "owned_by" and not isinstance(value_item, str):
-            return False
-        elif key == "has_pricing" and not isinstance(value_item, bool):
-            return False
-        elif key == "has_bot_info" and not isinstance(value_item, bool):
-            return False
-        elif key in ["min_points", "max_points"] and not isinstance(value_item, (int, float)):
-            return False
-        elif key in ["created_after", "created_before"] and not isinstance(value_item, int):
-            return False
-        elif key not in ["id", "name", "owned_by", "has_pricing", "has_bot_info", "min_points", "max_points", "created_after", "created_before"]:
+        if (
+            key == "id"
+            and not isinstance(value_item, str)
+            or key == "name"
+            and not isinstance(value_item, str)
+            or key == "owned_by"
+            and not isinstance(value_item, str)
+            or key == "has_pricing"
+            and not isinstance(value_item, bool)
+            or key == "has_bot_info"
+            and not isinstance(value_item, bool)
+            or key in ["min_points", "max_points"]
+            and not isinstance(value_item, int | float)
+            or key in ["created_after", "created_before"]
+            and not isinstance(value_item, int)
+            or key
+            not in [
+                "id",
+                "name",
+                "owned_by",
+                "has_pricing",
+                "has_bot_info",
+                "min_points",
+                "max_points",
+                "created_after",
+                "created_before",
+            ]
+        ):
             return False
 
     return True

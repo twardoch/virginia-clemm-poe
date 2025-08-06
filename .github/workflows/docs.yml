@@ -1,0 +1,69 @@
+# this_file: .github/workflows/docs.yml
+name: Build and Deploy Documentation
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src_docs/**'
+      - 'src/virginia_clemm_poe/data/poe_models.json'
+      - '.github/workflows/docs.yml'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'src_docs/**'
+      - 'src/virginia_clemm_poe/data/poe_models.json'
+      - '.github/workflows/docs.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build-docs:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    
+    - name: Install dependencies
+      run: |
+        pip install --upgrade pip
+        pip install mkdocs mkdocs-material mkdocstrings[python] pymdown-extensions
+    
+    - name: Update documentation data
+      run: |
+        cd src_docs
+        python update_docs.py
+    
+    - name: Build MkDocs site
+      run: |
+        cd src_docs
+        mkdocs build --clean --strict
+    
+    - name: Add .nojekyll file
+      run: |
+        touch docs/.nojekyll
+    
+    - name: Deploy to GitHub Pages
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs
+        force_orphan: true
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
+        commit_message: 'Deploy documentation to GitHub Pages'

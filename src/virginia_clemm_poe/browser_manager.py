@@ -5,9 +5,11 @@ This module provides optimized browser management that leverages playwrightautho
 session reuse capabilities and Chrome for Testing support for reliable automation.
 """
 
+import contextlib
+
+from loguru import logger
 from playwright.async_api import Browser as PlaywrightBrowser, Page
 from playwrightauthor import AsyncBrowser
-from loguru import logger
 
 from .config import DEFAULT_DEBUG_PORT
 from .exceptions import BrowserManagerError
@@ -36,8 +38,7 @@ class BrowserManager:
         self._browser_ctx: AsyncBrowser | None = None
 
     async def get_browser(self) -> PlaywrightBrowser:
-        """
-        Gets a browser instance using playwrightauthor.
+        """Gets a browser instance using playwrightauthor.
 
         This method connects to Chrome for Testing, either launching a new instance
         or connecting to an existing one for session reuse.
@@ -53,17 +54,16 @@ class BrowserManager:
                 # Use playwrightauthor AsyncBrowser with session reuse
                 self._browser_ctx = AsyncBrowser(verbose=self.verbose)
                 self._browser = await self._browser_ctx.__aenter__()
-                
+
                 if self.verbose:
                     logger.info("Connected to Chrome for Testing via playwrightauthor")
-                    
+
             except Exception as e:
                 raise BrowserManagerError(f"Failed to get browser: {e}") from e
         return self._browser
-    
+
     async def get_page(self) -> Page:
-        """
-        Gets a page using playwrightauthor's session reuse feature.
+        """Gets a page using playwrightauthor's session reuse feature.
 
         This method leverages the browser's get_page() method which reuses
         existing browser contexts and pages instead of creating new ones. This
@@ -77,23 +77,22 @@ class BrowserManager:
         """
         try:
             browser = await self.get_browser()
-            
+
             # Use the browser's get_page() method for session reuse
             # This is attached to the browser object by playwrightauthor
             page = await browser.get_page()
-            
+
             if self.verbose:
                 logger.info("Reused existing browser page for session persistence")
-                
+
             return page
-            
+
         except Exception as e:
             raise BrowserManagerError(f"Failed to get page: {e}") from e
 
     @staticmethod
     async def setup_chrome() -> bool:
-        """
-        Ensures Chrome is installed using playwrightauthor.
+        """Ensures Chrome is installed using playwrightauthor.
 
         Returns:
             True if setup is successful.
@@ -105,14 +104,10 @@ class BrowserManager:
             return False
 
     async def close(self) -> None:
-        """
-        Closes the browser connection.
-        """
+        """Closes the browser connection."""
         if self._browser_ctx:
-            try:
+            with contextlib.suppress(Exception):
                 await self._browser_ctx.__aexit__(None, None, None)
-            except Exception:
-                pass
         self._browser = None
         self._browser_ctx = None
 

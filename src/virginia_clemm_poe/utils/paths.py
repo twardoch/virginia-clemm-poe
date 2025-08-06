@@ -104,14 +104,14 @@ def _get_fallback_cache_dir() -> Path:
 
     if system == "Darwin":  # macOS
         return home / "Library" / "Caches" / get_app_name()
-    elif system == "Windows":
+    if system == "Windows":
         local_app_data = Path.home() / "AppData" / "Local"
         if local_app_data.exists():
             return local_app_data / get_app_name() / "Cache"
         return home / f".{get_app_name()}" / "cache"
-    else:  # Linux and others
-        xdg_cache = Path.home() / ".cache"
-        return xdg_cache / get_app_name()
+    # Linux and others
+    xdg_cache = Path.home() / ".cache"
+    return xdg_cache / get_app_name()
 
 
 def _get_fallback_data_dir() -> Path:
@@ -121,14 +121,14 @@ def _get_fallback_data_dir() -> Path:
 
     if system == "Darwin":  # macOS
         return home / "Library" / "Application Support" / get_app_name()
-    elif system == "Windows":
+    if system == "Windows":
         local_app_data = Path.home() / "AppData" / "Local"
         if local_app_data.exists():
             return local_app_data / get_app_name()
         return home / f".{get_app_name()}" / "data"
-    else:  # Linux and others
-        xdg_data = Path.home() / ".local" / "share"
-        return xdg_data / get_app_name()
+    # Linux and others
+    xdg_data = Path.home() / ".local" / "share"
+    return xdg_data / get_app_name()
 
 
 def _get_fallback_config_dir() -> Path:
@@ -138,14 +138,14 @@ def _get_fallback_config_dir() -> Path:
 
     if system == "Darwin":  # macOS
         return home / "Library" / "Preferences" / get_app_name()
-    elif system == "Windows":
+    if system == "Windows":
         app_data = Path.home() / "AppData" / "Roaming"
         if app_data.exists():
             return app_data / get_app_name()
         return home / f".{get_app_name()}" / "config"
-    else:  # Linux and others
-        xdg_config = Path.home() / ".config"
-        return xdg_config / get_app_name()
+    # Linux and others
+    xdg_config = Path.home() / ".config"
+    return xdg_config / get_app_name()
 
 
 def get_chrome_install_dir() -> Path:

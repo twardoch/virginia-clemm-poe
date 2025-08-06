@@ -1,0 +1,51 @@
+# GPT-3.5-Turbo-Raw
+
+## Bot Information
+
+**Creator:** @openai
+
+**Description:** Powered by gpt-3.5-turbo without a system prompt.
+
+**Extra:** Powered by OpenAI: gpt-3.5-turbo-0125. Learn more
+
+
+## Architecture
+
+**Input Modalities:** text
+
+**Output Modalities:** text
+
+**Modality:** text->text
+
+
+## Pricing
+
+| Type | Cost |
+
+|------|------|
+
+| Input Text | 15 points/1k tokens |
+
+| Input Image | Variable |
+
+| Bot Message | 11 points/message |
+
+| Chat History | Input rates are applied |
+
+| Initial Points Cost | 15+ points |
+
+
+**Last Checked:** 2025-08-05 23:22:11.148957
+
+
+## Technical Details
+
+**Model ID:** `GPT-3.5-Turbo-Raw`
+
+**Object Type:** model
+
+**Created:** 1695849978857
+
+**Owned By:** poe
+
+**Root:** GPT-3.5-Turbo-Raw

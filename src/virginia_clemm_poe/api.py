@@ -325,7 +325,7 @@ def get_models_with_pricing() -> list[PoeModel]:
             - pricing: Pricing (never None) containing:
                 - details: PricingDetails with cost fields like:
                     - input_text: str | None - "10 points/1k tokens"
-                    - bot_message: str | None - "5 points/message" 
+                    - bot_message: str | None - "5 points/message"
                     - initial_points_cost: str | None - "100 points"
                     - (and other pricing fields)
                 - checked_at: datetime - When pricing was scraped

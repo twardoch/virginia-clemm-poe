@@ -240,23 +240,22 @@ class PoeModel(BaseModel):
         # Try different cost fields in order of preference
         if details.input_text:
             return details.input_text
-        elif details.total_cost:
+        if details.total_cost:
             return details.total_cost
-        elif details.per_message:
+        if details.per_message:
             return details.per_message
-        elif details.image_output:
+        if details.image_output:
             return details.image_output
-        elif details.video_output:
+        if details.video_output:
             return details.video_output
-        elif details.text_input:
+        if details.text_input:
             return details.text_input
-        elif details.finetuning:
+        if details.finetuning:
             return details.finetuning
-        else:
-            # If none of the known fields, try to get first available field
-            for _key, value in details.model_dump(exclude_none=True).items():
-                if value and isinstance(value, str):
-                    return str(value)  # Explicit cast to satisfy mypy
+        # If none of the known fields, try to get first available field
+        for value in details.model_dump(exclude_none=True).values():
+            if value and isinstance(value, str):
+                return str(value)  # Explicit cast to satisfy mypy
         return None
 
 

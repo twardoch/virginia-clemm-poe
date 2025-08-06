@@ -1,0 +1,859 @@
+[18:04:55] $ fd -e py -x uvx autoflake -i {}; fd -e py -x uvx pyupgrade --py312-plus {}; fd -e py -x uvx ruff check --output-format=github --fix --unsafe-fixes {}; fd -e py -x uvx ruff format --respect-gitignore --target-version py312 {}; python -m pytest;
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+ruff failed
+  Cause: Failed to parse /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/pyproject.toml
+  Cause: TOML parse error at line 134, column 1
+    |
+134 | skip-string-normalization=false
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+unknown field `skip-string-normalization`, expected one of `exclude`, `preview`, `indent-style`, `quote-style`, `skip-magic-trailing-comma`, `line-ending`, `docstring-code-format`, `docstring-code-line-length`
+
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/fs/__init__.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  __import__("pkg_resources").declare_namespace(__name__)  # type: ignore
+^CTraceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pytest/__main__.py", line 9, in <module>
+    raise SystemExit(pytest.console_main())
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/_pytest/config/__init__.py", line 201, in console_main
+    code = main()
+           ^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/_pytest/config/__init__.py", line 156, in main
+    config = _prepareconfig(args, plugins)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/_pytest/config/__init__.py", line 342, in _prepareconfig
+    config = pluginmanager.hook.pytest_cmdline_parse(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pluggy/_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pluggy/_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pluggy/_callers.py", line 167, in _multicall
+    raise exception
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pluggy/_callers.py", line 139, in _multicall
+    teardown.throw(exception)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/_pytest/helpconfig.py", line 112, in pytest_cmdline_parse
+    config = yield
+             ^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pluggy/_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/_pytest/config/__init__.py", line 1146, in pytest_cmdline_parse
+    self.parse(args)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/_pytest/config/__init__.py", line 1527, in parse
+    self._preparse(args, addopts=addopts)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/_pytest/config/__init__.py", line 1412, in _preparse
+    self.pluginmanager.load_setuptools_entrypoints("pytest11")
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pluggy/_manager.py", line 416, in load_setuptools_entrypoints
+    plugin = ep.load()
+             ^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/metadata/__init__.py", line 205, in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/_pytest/assertion/rewrite.py", line 186, in exec_module
+    exec(co, module.__dict__)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/fugue_test/__init__.py", line 5, in <module>
+    from triad.utils.pyarrow import to_pa_datatype
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/triad/__init__.py", line 4, in <module>
+    from triad.collections import FileSystem, IndexedOrderedDict, ParamDict, Schema
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/triad/collections/__init__.py", line 4, in <module>
+    from triad.collections.fs import FileSystem
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/triad/collections/fs.py", line 8, in <module>
+    import fs
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/fs/__init__.py", line 4, in <module>
+    __import__("pkg_resources").declare_namespace(__name__)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pkg_resources/__init__.py", line 3660, in <module>
+    @_call_aside
+     ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pkg_resources/__init__.py", line 3644, in _call_aside
+    f(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pkg_resources/__init__.py", line 3673, in _initialize_master_working_set
+    working_set = _declare_state('object', 'working_set', WorkingSet._build_master())
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pkg_resources/__init__.py", line 644, in _build_master
+    ws = cls()
+         ^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pkg_resources/__init__.py", line 637, in __init__
+    self.add_entry(entry)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pkg_resources/__init__.py", line 693, in add_entry
+    for dist in find_distributions(entry, True):
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pkg_resources/__init__.py", line 2338, in find_on_path
+    yield from factory(fullpath)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pkg_resources/__init__.py", line 2395, in distributions_from_metadata
+    if len(os.listdir(path)) == 0:
+           ^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+^C
+~/Developer/vcs/github.twardoch/pub/virginia-clemm-poe
+[18:05:18] $ fd -e py -x uvx autoflake -i {}; fd -e py -x uvx pyupgrade --py312-plus {}; fd -e py -x uvx ruff check --output-format=github --fix --unsafe-fixes {}; fd -e py -x uvx ruff format --respect-gitignore --target-version py312 {}; python -m pytest;
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/exceptions.py,line=1,col=1,endLine=1,endColumn=50::src/virginia_clemm_poe/exceptions.py:1:1: ERA001 Found commented-out code
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/tests/__init__.py,line=1,col=1,endLine=1,endColumn=31::tests/__init__.py:1:1: ERA001 Found commented-out code
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/utils.py,line=1,col=1,endLine=1,endColumn=45::src/virginia_clemm_poe/utils.py:1:1: ERA001 Found commented-out code
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/tests/test_models.py,line=1,col=1,endLine=1,endColumn=34::tests/test_models.py:1:1: ERA001 Found commented-out code
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/browser_manager.py,line=1,col=1,endLine=1,endColumn=55::src/virginia_clemm_poe/browser_manager.py:1:1: ERA001 Found commented-out code
+::error title=Ruff (TRY300),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/browser_manager.py,line=88,col=13,endLine=88,endColumn=24::src/virginia_clemm_poe/browser_manager.py:88:13: TRY300 Consider moving this statement to an `else` block
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/api.py,line=1,col=1,endLine=1,endColumn=43::src/virginia_clemm_poe/api.py:1:1: ERA001 Found commented-out code
+::error title=Ruff (PLW0603),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/api.py,line=83,col=12,endLine=83,endColumn=23::src/virginia_clemm_poe/api.py:83:12: PLW0603 Using the global statement to update `_collection` is discouraged
+::error title=Ruff (PTH123),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/api.py,line=94,col=14,endLine=94,endColumn=18::src/virginia_clemm_poe/api.py:94:14: PTH123 `open()` should be replaced by `Path.open()`
+::error title=Ruff (TRY300),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/api.py,line=98,col=9,endLine=98,endColumn=27::src/virginia_clemm_poe/api.py:98:9: TRY300 Consider moving this statement to an `else` block
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/tests/conftest.py,line=1,col=1,endLine=1,endColumn=31::tests/conftest.py:1:1: ERA001 Found commented-out code
+::error title=Ruff (PTH123),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/tests/conftest.py,line=110,col=10,endLine=110,endColumn=14::tests/conftest.py:110:10: PTH123 `open()` should be replaced by `Path.open()`
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/tests/test_type_guards.py,line=1,col=1,endLine=1,endColumn=39::tests/test_type_guards.py:1:1: ERA001 Found commented-out code
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/tests/test_type_guards.py,line=121,col=13,endLine=121,endColumn=28::tests/test_type_guards.py:121:13: ERA001 Found commented-out code
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/type_guards.py,line=1,col=1,endLine=1,endColumn=51::src/virginia_clemm_poe/type_guards.py:1:1: ERA001 Found commented-out code
+::error title=Ruff (E501),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/type_guards.py,line=103,col=121,endLine=103,endColumn=593::src/virginia_clemm_poe/type_guards.py:103:121: E501 Line too long (592 > 120)
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/scripts/lint.py,line=12,col=1,endLine=12,endColumn=29::scripts/lint.py:12:1: ERA001 Found commented-out code
+::error title=Ruff (ARG001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/scripts/lint.py,line=14,col=33,endLine=14,endColumn=44::scripts/lint.py:14:33: ARG001 Unused function argument: `description`
+::error title=Ruff (TRY300),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/scripts/lint.py,line=27,col=9,endLine=27,endColumn=21::scripts/lint.py:27:9: TRY300 Consider moving this statement to an `else` block
+::error title=Ruff (PLC0415),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/scripts/lint.py,line=41,col=5,endLine=41,endColumn=14::scripts/lint.py:41:5: PLC0415 `import` should be at the top-level of a file
+::error title=Ruff (E501),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/scripts/lint.py,line=57,col=121,endLine=57,endColumn=149::scripts/lint.py:57:121: E501 Line too long (148 > 120)
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/tests/test_cli.py,line=1,col=1,endLine=1,endColumn=31::tests/test_cli.py:1:1: ERA001 Found commented-out code
+::error title=Ruff (E501),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/tests/test_cli.py,line=215,col=121,endLine=215,endColumn=123::tests/test_cli.py:215:121: E501 Line too long (122 > 120)
+::error title=Ruff (E501),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/tests/test_cli.py,line=333,col=121,endLine=333,endColumn=123::tests/test_cli.py:333:121: E501 Line too long (122 > 120)
+::error title=Ruff (SIM117),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/tests/test_cli.py,line=403,col=9,endLine=404,endColumn=100::tests/test_cli.py:403:9: SIM117 Use a single `with` statement with multiple contexts instead of nested `with` statements
+::error title=Ruff (PLR1704),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/tests/test_cli.py,line=403,col=68,endLine=403,endColumn=79::tests/test_cli.py:403:68: PLR1704 Redefining argument with the local name `mock_rmtree`
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/tests/test_api.py,line=1,col=1,endLine=1,endColumn=31::tests/test_api.py:1:1: ERA001 Found commented-out code
+::error title=Ruff (PTH123),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/tests/test_api.py,line=175,col=14,endLine=175,endColumn=18::tests/test_api.py:175:14: PTH123 `open()` should be replaced by `Path.open()`
+::error title=Ruff (PTH123),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/tests/test_api.py,line=207,col=14,endLine=207,endColumn=18::tests/test_api.py:207:14: PTH123 `open()` should be replaced by `Path.open()`
+::error title=Ruff (PTH123),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/tests/test_api.py,line=249,col=14,endLine=249,endColumn=18::tests/test_api.py:249:14: PTH123 `open()` should be replaced by `Path.open()`
+::error title=Ruff (PTH123),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/tests/test_api.py,line=284,col=14,endLine=284,endColumn=18::tests/test_api.py:284:14: PTH123 `open()` should be replaced by `Path.open()`
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/browser_pool.py,line=1,col=1,endLine=1,endColumn=52::src/virginia_clemm_poe/browser_pool.py:1:1: ERA001 Found commented-out code
+::error title=Ruff (TRY300),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/browser_pool.py,line=139,col=13,endLine=139,endColumn=24::src/virginia_clemm_poe/browser_pool.py:139:13: TRY300 Consider moving this statement to an `else` block
+::error title=Ruff (E501),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/browser_pool.py,line=244,col=121,endLine=244,endColumn=126::src/virginia_clemm_poe/browser_pool.py:244:121: E501 Line too long (125 > 120)
+::error title=Ruff (E501),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/browser_pool.py,line=294,col=121,endLine=294,endColumn=126::src/virginia_clemm_poe/browser_pool.py:294:121: E501 Line too long (125 > 120)
+::error title=Ruff (TRY301),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/browser_pool.py,line=300,col=25,endLine=300,endColumn=82::src/virginia_clemm_poe/browser_pool.py:300:25: TRY301 Abstract `raise` to an inner function
+::error title=Ruff (TRY300),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/browser_pool.py,line=323,col=21,endLine=323,endColumn=38::src/virginia_clemm_poe/browser_pool.py:323:21: TRY300 Consider moving this statement to an `else` block
+::error title=Ruff (TRY300),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/browser_pool.py,line=513,col=13,endLine=513,endColumn=24::src/virginia_clemm_poe/browser_pool.py:513:13: TRY300 Consider moving this statement to an `else` block
+::error title=Ruff (PLW0603),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/browser_pool.py,line=662,col=12,endLine=662,endColumn=24::src/virginia_clemm_poe/browser_pool.py:662:12: PLW0603 Using the global statement to update `_global_pool` is discouraged
+::error title=Ruff (SLF001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/browser_pool.py,line=664,col=32,endLine=664,endColumn=52::src/virginia_clemm_poe/browser_pool.py:664:32: SLF001 Private member accessed: `_closed`
+::error title=Ruff (PLW0603),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/browser_pool.py,line=673,col=12,endLine=673,endColumn=24::src/virginia_clemm_poe/browser_pool.py:673:12: PLW0603 Using the global statement to update `_global_pool` is discouraged
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src_docs/update_docs.py,line=2,col=1,endLine=2,endColumn=37::src_docs/update_docs.py:2:1: ERA001 Found commented-out code
+::error title=Ruff (PTH123),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src_docs/update_docs.py,line=13,col=10,endLine=13,endColumn=14::src_docs/update_docs.py:13:10: PTH123 `open()` should be replaced by `Path.open()`
+::error title=Ruff (E501),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src_docs/update_docs.py,line=332,col=121,endLine=332,endColumn=165::src_docs/update_docs.py:332:121: E501 Line too long (164 > 120)
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/__init__.py,line=1,col=1,endLine=1,endColumn=48::src/virginia_clemm_poe/__init__.py:1:1: ERA001 Found commented-out code
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/utils/__init__.py,line=1,col=1,endLine=1,endColumn=54::src/virginia_clemm_poe/utils/__init__.py:1:1: ERA001 Found commented-out code
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/config.py,line=1,col=1,endLine=1,endColumn=46::src/virginia_clemm_poe/config.py:1:1: ERA001 Found commented-out code
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/types.py,line=1,col=1,endLine=1,endColumn=45::src/virginia_clemm_poe/types.py:1:1: ERA001 Found commented-out code
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/utils/logger.py,line=1,col=1,endLine=1,endColumn=52::src/virginia_clemm_poe/utils/logger.py:1:1: ERA001 Found commented-out code
+::error title=Ruff (G004),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/utils/logger.py,line=113,col=30,endLine=113,endColumn=58::src/virginia_clemm_poe/utils/logger.py:113:30: G004 Logging statement uses f-string
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/utils/cache.py,line=1,col=1,endLine=1,endColumn=51::src/virginia_clemm_poe/utils/cache.py:1:1: ERA001 Found commented-out code
+::error title=Ruff (PLC0415),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/utils/cache.py,line=273,col=9,endLine=273,endColumn=25::src/virginia_clemm_poe/utils/cache.py:273:9: PLC0415 `import` should be at the top-level of a file
+::error title=Ruff (SLF001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/utils/cache.py,line=287,col=36,endLine=287,endColumn=60::src/virginia_clemm_poe/utils/cache.py:287:36: SLF001 Private member accessed: `_generate_key`
+::error title=Ruff (PLW0603),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/utils/cache.py,line=343,col=12,endLine=343,endColumn=25::src/virginia_clemm_poe/utils/cache.py:343:12: PLW0603 Using the global statement to update `_global_cache` is discouraged
+::error title=Ruff (PLW0603),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/utils/cache.py,line=358,col=12,endLine=358,endColumn=22::src/virginia_clemm_poe/utils/cache.py:358:12: PLW0603 Using the global statement to update `_api_cache` is discouraged
+::error title=Ruff (PLW0603),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/utils/cache.py,line=373,col=12,endLine=373,endColumn=27::src/virginia_clemm_poe/utils/cache.py:373:12: PLW0603 Using the global statement to update `_scraping_cache` is discouraged
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/__main__.py,line=1,col=1,endLine=1,endColumn=48::src/virginia_clemm_poe/__main__.py:1:1: ERA001 Found commented-out code
+::error title=Ruff (PLR0915),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/__main__.py,line=157,col=9,endLine=157,endColumn=15::src/virginia_clemm_poe/__main__.py:157:9: PLR0915 Too many statements (52 > 50)
+::error title=Ruff (PLC0415),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/__main__.py,line=224,col=13,endLine=224,endColumn=49::src/virginia_clemm_poe/__main__.py:224:13: PLC0415 `import` should be at the top-level of a file
+::error title=Ruff (PLC0415),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/__main__.py,line=243,col=13,endLine=243,endColumn=24::src/virginia_clemm_poe/__main__.py:243:13: PLC0415 `import` should be at the top-level of a file
+::error title=Ruff (PTH123),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/__main__.py,line=245,col=18,endLine=245,endColumn=22::src/virginia_clemm_poe/__main__.py:245:18: PTH123 `open()` should be replaced by `Path.open()`
+::error title=Ruff (PLC0415),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/__main__.py,line=264,col=17,endLine=264,endColumn=46::src/virginia_clemm_poe/__main__.py:264:17: PLC0415 `import` should be at the top-level of a file
+::error title=Ruff (PLC0415),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/__main__.py,line=374,col=13,endLine=374,endColumn=27::src/virginia_clemm_poe/__main__.py:374:13: PLC0415 `import` should be at the top-level of a file
+::error title=Ruff (PLC0415),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/__main__.py,line=376,col=13,endLine=376,endColumn=89::src/virginia_clemm_poe/__main__.py:376:13: PLC0415 `import` should be at the top-level of a file
+::error title=Ruff (PLC0415),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/__main__.py,line=398,col=13,endLine=398,endColumn=27::src/virginia_clemm_poe/__main__.py:398:13: PLC0415 `import` should be at the top-level of a file
+::error title=Ruff (PLC0415),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/__main__.py,line=400,col=13,endLine=400,endColumn=57::src/virginia_clemm_poe/__main__.py:400:13: PLC0415 `import` should be at the top-level of a file
+::error title=Ruff (PLC0415),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/__main__.py,line=460,col=9,endLine=460,endColumn=19::src/virginia_clemm_poe/__main__.py:460:9: PLC0415 `import` should be at the top-level of a file
+::error title=Ruff (PLC0415),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/__main__.py,line=490,col=9,endLine=490,endColumn=21::src/virginia_clemm_poe/__main__.py:490:9: PLC0415 `import` should be at the top-level of a file
+::error title=Ruff (PLC0415),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/__main__.py,line=492,col=9,endLine=492,endColumn=61::src/virginia_clemm_poe/__main__.py:492:9: PLC0415 `import` should be at the top-level of a file
+::error title=Ruff (TRY300),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/__main__.py,line=509,col=13,endLine=509,endColumn=21::src/virginia_clemm_poe/__main__.py:509:13: TRY300 Consider moving this statement to an `else` block
+::error title=Ruff (PLC0415),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/__main__.py,line=524,col=13,endLine=524,endColumn=49::src/virginia_clemm_poe/__main__.py:524:13: PLC0415 `import` should be at the top-level of a file
+::error title=Ruff (PLC0415),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/__main__.py,line=551,col=9,endLine=551,endColumn=21::src/virginia_clemm_poe/__main__.py:551:9: PLC0415 `import` should be at the top-level of a file
+::error title=Ruff (PLC0415),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/__main__.py,line=553,col=9,endLine=553,endColumn=52::src/virginia_clemm_poe/__main__.py:553:9: PLC0415 `import` should be at the top-level of a file
+::error title=Ruff (TRY300),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/__main__.py,line=563,col=13,endLine=563,endColumn=21::src/virginia_clemm_poe/__main__.py:563:13: TRY300 Consider moving this statement to an `else` block
+::error title=Ruff (PLC0415),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/__main__.py,line=585,col=9,endLine=585,endColumn=25::src/virginia_clemm_poe/__main__.py:585:9: PLC0415 `import` should be at the top-level of a file
+::error title=Ruff (PLC0415),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/__main__.py,line=586,col=9,endLine=586,endColumn=30::src/virginia_clemm_poe/__main__.py:586:9: PLC0415 `import` should be at the top-level of a file
+::error title=Ruff (PLC0415),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/__main__.py,line=626,col=13,endLine=626,endColumn=24::src/virginia_clemm_poe/__main__.py:626:13: PLC0415 `import` should be at the top-level of a file
+::error title=Ruff (PTH123),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/__main__.py,line=628,col=18,endLine=628,endColumn=22::src/virginia_clemm_poe/__main__.py:628:18: PTH123 `open()` should be replaced by `Path.open()`
+::error title=Ruff (TRY300),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/__main__.py,line=633,col=13,endLine=633,endColumn=21::src/virginia_clemm_poe/__main__.py:633:13: TRY300 Consider moving this statement to an `else` block
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/utils/paths.py,line=1,col=1,endLine=1,endColumn=51::src/virginia_clemm_poe/utils/paths.py:1:1: ERA001 Found commented-out code
+::error title=Ruff (PLC0415),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/utils/paths.py,line=29,col=9,endLine=29,endColumn=28::src/virginia_clemm_poe/utils/paths.py:29:9: PLC0415 `import` should be at the top-level of a file
+::error title=Ruff (PLC0415),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/utils/paths.py,line=56,col=9,endLine=56,endColumn=28::src/virginia_clemm_poe/utils/paths.py:56:9: PLC0415 `import` should be at the top-level of a file
+::error title=Ruff (PLC0415),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/utils/paths.py,line=83,col=9,endLine=83,endColumn=28::src/virginia_clemm_poe/utils/paths.py:83:9: PLC0415 `import` should be at the top-level of a file
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/models.py,line=1,col=1,endLine=1,endColumn=46::src/virginia_clemm_poe/models.py:1:1: ERA001 Found commented-out code
+::error title=Ruff (D106),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/models.py,line=94,col=11,endLine=94,endColumn=17::src/virginia_clemm_poe/models.py:94:11: D106 Missing docstring in public nested class
+::error title=Ruff (PLR0911),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/models.py,line=223,col=9,endLine=223,endColumn=25::src/virginia_clemm_poe/models.py:223:9: PLR0911 Too many return statements (10 > 6)
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/utils/crash_recovery.py,line=1,col=1,endLine=1,endColumn=60::src/virginia_clemm_poe/utils/crash_recovery.py:1:1: ERA001 Found commented-out code
+::error title=Ruff (PLR0911),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/utils/crash_recovery.py,line=74,col=9,endLine=74,endColumn=26::src/virginia_clemm_poe/utils/crash_recovery.py:74:9: PLR0911 Too many return statements (11 > 6)
+::error title=Ruff (ARG004),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/utils/crash_recovery.py,line=74,col=45,endLine=74,endColumn=54::src/virginia_clemm_poe/utils/crash_recovery.py:74:45: ARG004 Unused static method argument: `operation`
+::error title=Ruff (PLW0603),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/utils/crash_recovery.py,line=423,col=12,endLine=423,endColumn=36::src/virginia_clemm_poe/utils/crash_recovery.py:423:12: PLW0603 Using the global statement to update `_global_recovery_manager` is discouraged
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/updater.py,line=1,col=1,endLine=1,endColumn=47::src/virginia_clemm_poe/updater.py:1:1: ERA001 Found commented-out code
+::error title=Ruff (T201),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/updater.py,line=50,col=36,endLine=50,endColumn=41::src/virginia_clemm_poe/updater.py:50:36: T201 `print` found
+::error title=Ruff (TRY300),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/updater.py,line=88,col=21,endLine=88,endColumn=42::src/virginia_clemm_poe/updater.py:88:21: TRY300 Consider moving this statement to an `else` block
+::error title=Ruff (E501),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/updater.py,line=374,col=121,endLine=374,endColumn=125::src/virginia_clemm_poe/updater.py:374:121: E501 Line too long (124 > 120)
+::error title=Ruff (TRY300),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/updater.py,line=481,col=17,endLine=481,endColumn=52::src/virginia_clemm_poe/updater.py:481:17: TRY300 Consider moving this statement to an `else` block
+::error title=Ruff (PTH123),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/updater.py,line=507,col=18,endLine=507,endColumn=22::src/virginia_clemm_poe/updater.py:507:18: PTH123 `open()` should be replaced by `Path.open()`
+::error title=Ruff (TRY300),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/updater.py,line=511,col=13,endLine=511,endColumn=30::src/virginia_clemm_poe/updater.py:511:13: TRY300 Consider moving this statement to an `else` block
+::error title=Ruff (PLC0415),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/updater.py,line=530,col=17,endLine=530,endColumn=49::src/virginia_clemm_poe/updater.py:530:17: PLC0415 `import` should be at the top-level of a file
+::error title=Ruff (SIM113),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/updater.py,line=689,col=17,endLine=689,endColumn=38::src/virginia_clemm_poe/updater.py:689:17: SIM113 Use `enumerate()` for index variable `models_processed` in `for` loop
+::error title=Ruff (PTH123),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/updater.py,line=786,col=14,endLine=786,endColumn=18::src/virginia_clemm_poe/updater.py:786:14: PTH123 `open()` should be replaced by `Path.open()`
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/utils/memory.py,line=1,col=1,endLine=1,endColumn=52::src/virginia_clemm_poe/utils/memory.py:1:1: ERA001 Found commented-out code
+::error title=Ruff (TRY300),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/utils/memory.py,line=64,col=13,endLine=64,endColumn=29::src/virginia_clemm_poe/utils/memory.py:64:13: TRY300 Consider moving this statement to an `else` block
+::error title=Ruff (TRY300),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/utils/memory.py,line=201,col=13,endLine=201,endColumn=26::src/virginia_clemm_poe/utils/memory.py:201:13: TRY300 Consider moving this statement to an `else` block
+::error title=Ruff (PLW0603),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/utils/memory.py,line=297,col=12,endLine=297,endColumn=27::src/virginia_clemm_poe/utils/memory.py:297:12: PLW0603 Using the global statement to update `_global_monitor` is discouraged
+::error title=Ruff (ERA001),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/utils/timeout.py,line=1,col=1,endLine=1,endColumn=53::src/virginia_clemm_poe/utils/timeout.py:1:1: ERA001 Found commented-out code
+::error title=Ruff (TRY300),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/utils/timeout.py,line=104,col=13,endLine=104,endColumn=26::src/virginia_clemm_poe/utils/timeout.py:104:13: TRY300 Consider moving this statement to an `else` block
+::error title=Ruff (TRY300),file=/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/src/virginia_clemm_poe/utils/timeout.py,line=286,col=17,endLine=286,endColumn=30::src/virginia_clemm_poe/utils/timeout.py:286:17: TRY300 Consider moving this statement to an `else` block
+1 file reformatted
+1 file left unchanged
+1 file reformatted
+1 file reformatted
+1 file reformatted
+1 file left unchanged
+1 file reformatted
+1 file left unchanged
+1 file reformatted
+1 file left unchanged
+1 file left unchanged
+1 file left unchanged
+1 file reformatted
+1 file reformatted
+1 file reformatted
+1 file left unchanged
+1 file left unchanged
+1 file left unchanged
+1 file reformatted
+1 file left unchanged
+1 file left unchanged
+1 file left unchanged
+1 file reformatted
+1 file reformatted
+1 file reformatted
+1 file reformatted
+1 file left unchanged
+1 file reformatted
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/fs/__init__.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  __import__("pkg_resources").declare_namespace(__name__)  # type: ignore
+Test session starts (platform: darwin, Python 3.12.8, pytest 8.4.1, pytest-sugar 1.0.0)
+benchmark: 5.1.0 (defaults: timer=time.perf_counter disable_gc=False min_rounds=5 min_time=0.000005 max_time=1.0 calibration_precision=10 warmup=False warmup_iterations=100000)
+Fugue tests will be initialized with options:
+rootdir: /Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe
+configfile: pyproject.toml
+testpaths: tests
+plugins: jaxtyping-0.2.37, flake8-1.3.0, jaraco.mongodb-12.1.2, enabler-3.3.0, ignore-flaky-2.2.1, sugar-1.0.0, env-1.1.5, flaky-3.8.1, time-machine-2.16.0, shutil-1.8.1, rerunfailures-14.0, hypothesis-6.124.7, anyio-4.10.0, cov-6.2.1, typeguard-2.13.3, darkgraylib-1.2.1, langsmith-0.3.45, benchmark-5.1.0, logfire-3.16.1, pmxbot-1122.17.0, virtualenv-1.8.1, jaraco.vcs-2.4.0, fugue-0.9.2.dev1, timeout-2.3.1, mock-3.14.0, hydra-core-1.3.2, asyncio-1.0.0, dash-2.18.2, depends-1.0.1, requests-mock-1.12.1, syrupy-4.8.1
+asyncio: mode=Mode.AUTO, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 96 items
+
+ tests/test_api.py ✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓                                                                                                                   20% ██
+ tests/test_cli.py ✓✓✓✓✓                                                                                                                                 25% ██▌
+
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― TestCliUpdate.test_update_with_api_key ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+tests/test_cli.py:162: in test_update_with_api_key
+    self.cli.update(all=True, force=False, verbose=False)
+src/virginia_clemm_poe/__main__.py:825: in update
+    asyncio.run(run_update())
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py:190: in run
+    raise RuntimeError(
+E   RuntimeError: asyncio.run() cannot be called from a running event loop
+------------------------------------------------------------------------ Captured stdout call -------------------------------------------------------------------------
+2025-08-06 18:06:31.102 | INFO     | virginia_clemm_poe.utils.logger:log_user_action:245 - User action: update
+
+ tests/test_cli.py ⨯✓✓✓✓                                                                                                                                 30% ███
+
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― TestCliSearch.test_search_with_results ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/mock.py:1020: in assert_any_call
+    raise AssertionError(
+E   AssertionError: print('[green]Found 1 models[/green]') call not found
+
+During handling of the above exception, another exception occurred:
+tests/test_cli.py:253: in test_search_with_results
+    mock_console.print.assert_any_call("[green]Found 1 models[/green]")
+E   AssertionError: print('[green]Found 1 models[/green]') call not found
+E
+E   pytest introspection follows:
+E
+E   Args:
+E   assert ('\n[bold]Bot...ion:[/bold]',) == ('[green]Foun...els[/green]',)
+E
+E     At index 0 diff: '\n[bold]Bot Information:[/bold]' != '[green]Found 1 models[/green]'
+E     Use -v to get more diff
+------------------------------------------------------------------------ Captured stdout call -------------------------------------------------------------------------
+2025-08-06 18:06:32.237 | INFO     | virginia_clemm_poe.utils.logger:log_user_action:245 - User action: search
+2025-08-06 18:06:32.238 | INFO     | virginia_clemm_poe.utils.logger:log_operation:113 - Starting model_search
+2025-08-06 18:06:32.238 | INFO     | virginia_clemm_poe.utils.logger:log_operation:119 - Completed model_search in 0.00s
+
+ tests/test_cli.py ⨯✓✓✓✓                                                                                                                                 35% ███▋
+
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― TestCliClearCache.test_clear_cache_browser_only ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/flaky/flaky_pytest_plugin.py:146: in <lambda>
+    lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/mock.py:1393: in patched
+    with self.decoration_helper(patched,
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py:137: in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/mock.py:1375: in decoration_helper
+    arg = exit_stack.enter_context(patching)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py:526: in enter_context
+    result = _enter(cm)
+             ^^^^^^^^^^
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/unittest/mock.py:1451: in __enter__
+    self.target = self.getter()
+                  ^^^^^^^^^^^^^
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pkgutil.py:528: in resolve_name
+    result = getattr(result, p)
+             ^^^^^^^^^^^^^^^^^^
+E   AttributeError: module 'virginia_clemm_poe.__main__' has no attribute 'shutil'
+
+ tests/test_cli.py ⨯✓✓                                                                                                                                   39% ███▉
+
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― TestCliDoctor.test_check_python_version ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+tests/test_cli.py:427: in test_check_python_version
+    result = self.cli._check_python_version()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/virginia_clemm_poe/__main__.py:435: in _check_python_version
+    console.print(f"[green]✓ Python {version.major}.{version.minor}.{version.micro}[/green]")
+                                     ^^^^^^^^^^^^^
+E   AttributeError: 'tuple' object has no attribute 'major'
+------------------------------------------------------------------------ Captured stdout call -------------------------------------------------------------------------
+Python Version:
+
+ tests/test_cli.py ⨯                                                                                                                                     40% ███▉
+
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― TestCliDoctor.test_check_api_key ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+tests/test_cli.py:439: in test_check_api_key
+    result = self.cli._check_api_key()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+src/virginia_clemm_poe/__main__.py:447: in _check_api_key
+    console.print("\n[bold]API Key:[/bold]")
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rich/console.py:1709: in print
+    render_options = self.options.update(
+                     ^^^^^^^^^^^^
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rich/console.py:999: in options
+    size = self.size
+           ^^^^^^^^^
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rich/console.py:1021: in size
+    if self.is_dumb_terminal:
+       ^^^^^^^^^^^^^^^^^^^^^
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rich/console.py:993: in is_dumb_terminal
+    is_dumb = _term.lower() in ("dumb", "unknown")
+              ^^^^^^^^^^^
+E   AttributeError: 'NoneType' object has no attribute 'lower'
+
+ tests/test_cli.py ⨯✓✓✓✓                                                                                                                                 45% ████▌
+ tests/test_models.py ✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓                                                                                                              67% ██████▋
+ tests/test_type_guards.py ✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓                                                                                                 97% █████████▊
+
+―――――――――――――――――――――――――――――――――――――――――――― TestValidateModelFilterCriteria.test_validate_invalid_criteria_unknown_fields ――――――――――――――――――――――――――――――――――――――――――――
+tests/test_type_guards.py:256: in test_validate_invalid_criteria_unknown_fields
+    validate_model_filter_criteria(unknown_field)
+src/virginia_clemm_poe/type_guards.py:221: in validate_model_filter_criteria
+    raise ModelDataError(
+E   virginia_clemm_poe.exceptions.ModelDataError: Invalid filter fields: unknown_field, another_unknown. Valid fields are: created_after, created_before, has_bot_info, has_pricing, id, max_points, min_points, name, owned_by
+
+During handling of the above exception, another exception occurred:
+tests/test_type_guards.py:255: in test_validate_invalid_criteria_unknown_fields
+    with pytest.raises(ModelDataError, match="Invalid filter fields: another_unknown, unknown_field"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Regex pattern did not match.
+E    Regex: 'Invalid filter fields: another_unknown, unknown_field'
+E    Input: 'Invalid filter fields: unknown_field, another_unknown. Valid fields are: created_after, created_before, has_bot_info, has_pricing, id, max_points, min_points, name, owned_by'
+
+ tests/test_type_guards.py ⨯✓✓                                                                                                                          100% ██████████
+ERROR: Coverage failure: total of 36 is less than fail-under=85
+
+========================================================================== warnings summary ===========================================================================
+../../../../../../../Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/_internal/_config.py:323
+  /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/_internal/_config.py:323: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+    warnings.warn(DEPRECATION_MESSAGE, DeprecationWarning)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================================================================== tests coverage ============================================================================
+__________________________________________________________ coverage: platform darwin, python 3.12.8-final-0 ___________________________________________________________
+
+Name                                             Stmts   Miss  Cover   Missing
+------------------------------------------------------------------------------
+src/virginia_clemm_poe/__init__.py                   8      3    62%   12-14
+src/virginia_clemm_poe/_version.py                  13      3    77%   8-11
+src/virginia_clemm_poe/api.py                       38      0   100%
+src/virginia_clemm_poe/browser_manager.py           49     34    31%   34-38, 52-63, 78-91, 100-104, 108-112, 116-117, 121
+src/virginia_clemm_poe/browser_pool.py             250    208    17%   53-60, 64-65, 69, 73, 84-90, 131-151, 155-158, 188-203, 207-209, 213-230, 234-256, 260-279, 291-353, 361-367, 381-394, 405-414, 422-426, 434-447, 477-506, 533-595, 603-607, 652-656, 663-665
+src/virginia_clemm_poe/config.py                    28      0   100%
+src/virginia_clemm_poe/exceptions.py                13      0   100%
+src/virginia_clemm_poe/models.py                    76     16    79%   243-259
+src/virginia_clemm_poe/type_guards.py               66      2    97%   181, 239
+src/virginia_clemm_poe/types.py                    122      0   100%
+src/virginia_clemm_poe/updater.py                  335    293    13%   43-50, 63-98, 134-158, 165-181, 197-208, 212-223, 227-234, 238-254, 258-269, 273-284, 288-300, 309-347, 351-387, 437-490, 501-512, 520-534, 546-575, 591-608, 619-638, 657-685, 707-747, 757-766
+src/virginia_clemm_poe/utils.py                     13     13     0%   5-25
+src/virginia_clemm_poe/utils/__init__.py             0      0   100%
+src/virginia_clemm_poe/utils/cache.py              169    109    36%   43-48, 56, 64-66, 74, 109-118, 129-145, 155-165, 169-177, 181-184, 192-202, 210-213, 257-262, 275-288, 334-338, 364-368, 377-392, 401-424, 434-445
+src/virginia_clemm_poe/utils/crash_recovery.py     142    102    28%   56-60, 64, 81-115, 127-135, 156-160, 171-172, 180-189, 215-226, 242-251, 260-265, 275-282, 307-330, 338-351, 383-392, 407-410
+src/virginia_clemm_poe/utils/logger.py              58     33    43%   29-60, 75, 123-128, 155-166, 191-199, 222-223
+src/virginia_clemm_poe/utils/memory.py             127     96    24%   46-51, 59-69, 77-101, 126-138, 149-207, 215-222, 230-243, 259-262, 266-268, 272-281, 296-299, 317-321, 334-356
+src/virginia_clemm_poe/utils/paths.py               84     84     0%   8-172
+src/virginia_clemm_poe/utils/timeout.py             99     78    21%   38-40, 61-66, 97-127, 152-160, 191-208, 231-235, 239-241, 245-257, 271, 284-300
+------------------------------------------------------------------------------
+TOTAL                                             1690   1074    36%
+Coverage HTML written to dir htmlcov
+FAIL Required test coverage of 85% not reached. Total coverage: 36.45%
+======================================================================= short test summary info =======================================================================
+FAILED tests/test_cli.py::TestCliUpdate::test_update_with_api_key - RuntimeError: asyncio.run() cannot be called from a running event loop
+FAILED tests/test_cli.py::TestCliSearch::test_search_with_results - AssertionError: print('[green]Found 1 models[/green]') call not found
+FAILED tests/test_cli.py::TestCliClearCache::test_clear_cache_browser_only - AttributeError: module 'virginia_clemm_poe.__main__' has no attribute 'shutil'
+FAILED tests/test_cli.py::TestCliDoctor::test_check_python_version - AttributeError: 'tuple' object has no attribute 'major'
+FAILED tests/test_cli.py::TestCliDoctor::test_check_api_key - AttributeError: 'NoneType' object has no attribute 'lower'
+FAILED tests/test_type_guards.py::TestValidateModelFilterCriteria::test_validate_invalid_criteria_unknown_fields - AssertionError: Regex pattern did not match.
+
+Results (36.16s):
+      90 passed
+       6 failed
+         - tests/test_cli.py:151 TestCliUpdate.test_update_with_api_key
+         - tests/test_cli.py:225 TestCliSearch.test_search_with_results
+         - tests/test_cli.py:367 TestCliClearCache.test_clear_cache_browser_only
+         - tests/test_cli.py:424 TestCliDoctor.test_check_python_version
+         - tests/test_cli.py:434 TestCliDoctor.test_check_api_key
+         - tests/test_type_guards.py:252 TestValidateModelFilterCriteria.test_validate_invalid_criteria_unknown_fields
+~/Developer/vcs/github.twardoch/pub/virginia-clemm-poe
+[18:06:42] $

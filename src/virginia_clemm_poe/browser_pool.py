@@ -24,18 +24,17 @@ from .config import (
     PAGE_ELEMENT_TIMEOUT_MS,
 )
 from .exceptions import BrowserManagerError
-from .utils.logger import log_performance_metric
 from .utils.crash_recovery import (
     CrashDetector,
     get_global_crash_recovery,
 )
+from .utils.logger import log_performance_metric
 from .utils.memory import (
     MemoryManagedOperation,
     get_global_memory_monitor,
 )
 from .utils.timeout import (
     GracefulTimeout,
-    timeout_handler,
     with_timeout,
 )
 
@@ -58,7 +57,7 @@ class BrowserConnection:
         self.last_used = time.time()
         self.use_count = 0
         self.is_healthy = True
-        self.supports_session_reuse = hasattr(browser, 'get_page')
+        self.supports_session_reuse = hasattr(browser, "get_page")
 
     def mark_used(self) -> None:
         """Mark this connection as recently used."""
@@ -72,13 +71,13 @@ class BrowserConnection:
     def idle_seconds(self) -> float:
         """Get the time since this connection was last used."""
         return time.time() - self.last_used
-    
+
     async def get_page(self, reuse_session: bool = True) -> Page:
         """Get a page from this connection, optionally reusing existing sessions.
-        
+
         Args:
             reuse_session: Whether to try reusing existing pages/contexts for session persistence
-            
+
         Returns:
             A page instance, either reused or newly created
         """
@@ -86,46 +85,45 @@ class BrowserConnection:
             # Use playwrightauthor's get_page() for session reuse
             logger.debug("Using session reuse via browser.get_page()")
             return await self.browser.get_page()
-        else:
-            # Create a new page the traditional way
-            logger.debug("Creating new page without session reuse")
-            return await self.context.new_page()
+        # Create a new page the traditional way
+        logger.debug("Creating new page without session reuse")
+        return await self.context.new_page()
 
     async def health_check(self) -> bool:
         """Check if the connection is still healthy using multi-layer validation with crash detection.
-        
+
         This method performs a comprehensive health assessment of the browser connection
         by attempting a lightweight page creation operation. It implements sophisticated
         error detection and classification to distinguish between different failure modes.
-        
+
         Health check workflow:
         1. Creates a new page within the existing browser context (5s timeout)
         2. Immediately closes the page to avoid resource leaks
         3. Analyzes any failures using CrashDetector for error classification
         4. Updates internal health status and logs appropriate messages
-        
+
         Error classification and handling:
-        - BROWSER_CRASHED: Browser process died or became unresponsive  
+        - BROWSER_CRASHED: Browser process died or became unresponsive
         - CONNECTION_LOST: Network/IPC connection to browser failed
         - TIMEOUT: Operation took longer than 5 seconds (indicates resource issues)
         - GENERIC_ERROR: Other failures that don't indicate browser health issues
-        
+
         Returns:
             True if connection is healthy (page creation succeeded), False otherwise
-            
+
         Side effects:
             - Updates self.is_healthy flag based on test result
             - Logs debug messages for all outcomes
             - Logs warnings for critical crash types (browser/connection failures)
-            
+
         Example usage:
-            >>> connection = BrowserConnection(browser, context, manager)  
+            >>> connection = BrowserConnection(browser, context, manager)
             >>> if await connection.health_check():
             ...     # Safe to use this connection
             ...     page = await connection.context.new_page()
             >>> else:
             ...     # Connection is unhealthy, should be discarded
-            
+
         Note:
             This is a destructive test that may reveal browser instability.
             Failed health checks should result in connection removal from pool.
@@ -135,21 +133,21 @@ class BrowserConnection:
             async with GracefulTimeout(5.0, f"health_check_connection_{id(self)}"):
                 page = await self.context.new_page()
                 await page.close()
-            
+
             self.is_healthy = True
             logger.debug(f"Connection {id(self)} passed health check")
             return True
         except Exception as e:
             self.is_healthy = False
-            
+
             # Detect crash type for better logging
             crash_type = CrashDetector.detect_crash_type(e, "health_check")
             logger.debug(f"Connection {id(self)} failed health check ({crash_type.value}): {e}")
-            
+
             # If it's a critical crash, log it as a warning
             if crash_type in [crash_type.BROWSER_CRASHED, crash_type.CONNECTION_LOST]:
                 logger.warning(f"Connection {id(self)} appears to have crashed: {e}")
-            
+
             return False
 
     async def close(self) -> None:
@@ -236,20 +234,22 @@ class BrowserPool:
         while not self._closed:
             try:
                 await asyncio.sleep(10)  # Check every 10 seconds
-                
+
                 # Clean up stale connections
                 await self._cleanup_stale_connections()
-                
+
                 # Check memory usage and run cleanup if needed
                 memory_status = self._memory_monitor.check_memory_usage()
                 if memory_status["above_warning"]:
-                    logger.info(f"Memory usage {memory_status['current_mb']:.1f}MB above warning threshold, running cleanup")
+                    logger.info(
+                        f"Memory usage {memory_status['current_mb']:.1f}MB above warning threshold, running cleanup"
+                    )
                     await self._memory_monitor.cleanup_memory()
-                    
+
                 # Log memory status periodically
                 if self._connections_created % 10 == 0:  # Every 10th connection
                     self._memory_monitor.log_memory_status("browser_pool_cleanup_loop")
-                    
+
             except asyncio.CancelledError:
                 break
             except Exception as e:
@@ -287,13 +287,16 @@ class BrowserPool:
         Raises:
             BrowserManagerError: If connection creation fails after recovery attempts
         """
+
         async def _do_create_connection() -> BrowserConnection:
             """Internal function to create connection with recovery."""
             async with MemoryManagedOperation(f"create_browser_connection_{self._connections_created}"):
                 start_time = time.time()
                 self._connections_created += 1
 
-                manager = BrowserManager(debug_port=self.debug_port, verbose=self.verbose, reuse_session=self.reuse_sessions)
+                manager = BrowserManager(
+                    debug_port=self.debug_port, verbose=self.verbose, reuse_session=self.reuse_sessions
+                )
                 try:
                     browser = await manager.get_browser()
                     context = browser.contexts[0] if browser.contexts else await browser.new_context()
@@ -306,32 +309,32 @@ class BrowserPool:
                     # Log performance metric
                     creation_time = time.time() - start_time
                     log_performance_metric(
-                        "browser_connection_created", 
-                        creation_time, 
-                        "seconds", 
+                        "browser_connection_created",
+                        creation_time,
+                        "seconds",
                         {
                             "pool_size": len(self._pool),
                             "connections_created": self._connections_created,
                             "connection_failures": self._connection_failures,
                             "memory_mb": self._memory_monitor.get_memory_usage_mb(),
-                        }
+                        },
                     )
 
                     logger.debug(f"Created new browser connection #{self._connections_created} in {creation_time:.2f}s")
-                    
+
                     # Increment operation count for memory monitoring
                     self._memory_monitor.increment_operation_count()
-                    
+
                     return connection
 
                 except Exception as e:
                     self._connection_failures += 1
                     await manager.close()
-                    
+
                     # Detect crash type and log appropriately
                     crash_type = CrashDetector.detect_crash_type(e, "create_connection")
                     logger.warning(f"Browser connection creation failed ({crash_type.value}): {e}")
-                    
+
                     raise BrowserManagerError(f"Failed to create browser connection: {e}") from e
 
         async def cleanup_on_failure() -> None:
@@ -343,9 +346,7 @@ class BrowserPool:
 
         try:
             return await self._crash_recovery.recover_with_backoff(
-                _do_create_connection,
-                "browser_connection_creation",
-                cleanup_on_failure
+                _do_create_connection, "browser_connection_creation", cleanup_on_failure
             )
         except Exception as e:
             logger.error(f"Failed to create browser connection after recovery attempts: {e}")
@@ -353,7 +354,7 @@ class BrowserPool:
 
     async def _get_connection_from_pool(self) -> tuple[BrowserConnection | None, bool]:
         """Try to get a connection from the pool.
-        
+
         Returns:
             Tuple of (connection, acquired_from_pool)
         """
@@ -364,65 +365,57 @@ class BrowserPool:
                 logger.debug(f"Acquired connection from pool (pool_size={len(self._pool)})")
                 return connection, True
         return None, False
-    
+
     async def _ensure_connection(self, connection: BrowserConnection | None) -> BrowserConnection:
         """Ensure we have a connection, creating one if needed.
-        
+
         Args:
             connection: Existing connection or None
-            
+
         Returns:
             Valid connection
-            
+
         Raises:
             BrowserManagerError: If pool is exhausted
         """
         if connection:
             return connection
-            
+
         # Check pool capacity
         if len(self._active_connections) >= self.max_size:
             raise BrowserManagerError(f"Pool exhausted: {len(self._active_connections)} active connections")
 
         # Create new connection
-        connection = await with_timeout(
-            self._create_connection(),
-            30.0,
-            "new_connection_creation"
-        )
-        
+        connection = await with_timeout(self._create_connection(), 30.0, "new_connection_creation")
+
         async with self._lock:
             self._active_connections.add(connection)
-            
+
         return connection
-    
+
     async def _create_page_from_connection(self, connection: BrowserConnection) -> Page:
         """Create a new page from a connection with proper timeouts.
-        
+
         Args:
             connection: Browser connection to use
-            
+
         Returns:
             Configured page instance
         """
         connection.mark_used()
-        
+
         # Create page with timeout, using session reuse if enabled
-        page = await with_timeout(
-            connection.get_page(reuse_session=self.reuse_sessions),
-            15.0,
-            "page_acquisition"
-        )
+        page = await with_timeout(connection.get_page(reuse_session=self.reuse_sessions), 15.0, "page_acquisition")
 
         # Set timeouts on the page
         page.set_default_timeout(PAGE_ELEMENT_TIMEOUT_MS)
         page.set_default_navigation_timeout(45000)  # 45 seconds for navigation
-        
+
         return page
-    
+
     async def _close_page_safely(self, page: Page | None) -> None:
         """Safely close a page with timeout.
-        
+
         Args:
             page: Page to close, may be None
         """
@@ -431,23 +424,21 @@ class BrowserPool:
                 await with_timeout(page.close(), 10.0, "page_close")
             except Exception as e:
                 logger.warning(f"Error closing page: {e}")
-    
+
     async def _return_or_close_connection(self, connection: BrowserConnection | None) -> None:
         """Return connection to pool if healthy, otherwise close it.
-        
+
         Args:
             connection: Connection to return or close
         """
         if not connection:
             return
-            
+
         async with self._lock:
             self._active_connections.discard(connection)
 
             # Check if connection is still healthy and young enough
-            if (not self._closed and 
-                connection.is_healthy and 
-                connection.age_seconds() < self.max_age_seconds):
+            if not self._closed and connection.is_healthy and connection.age_seconds() < self.max_age_seconds:
                 self._pool.append(connection)
                 logger.debug(f"Returned connection to pool (pool_size={len(self._pool)})")
             else:
@@ -457,26 +448,26 @@ class BrowserPool:
 
     async def get_reusable_page(self) -> Page:
         """Get a page using session reuse for maintaining authentication.
-        
+
         This method is optimized for the pre-authorized sessions workflow where
         you've already logged into services in a running Chrome for Testing instance.
         It will reuse existing pages/contexts to maintain your authentication state.
-        
+
         Returns:
             A page instance with reused session
-            
+
         Raises:
             BrowserManagerError: If unable to get a page
-            
+
         Example:
             ```python
             # First, launch Chrome for Testing and log in manually:
             # $ playwrightauthor browse
-            
+
             # Then in your script:
             pool = BrowserPool()
             await pool.start()
-            
+
             # Get a page that reuses your logged-in session
             page = await pool.get_reusable_page()
             await page.goto("https://github.com/notifications")
@@ -485,22 +476,18 @@ class BrowserPool:
         """
         if self._closed:
             raise BrowserManagerError("Browser pool is closed")
-            
+
         # Get or create a browser manager with session reuse
-        manager = BrowserManager(
-            debug_port=self.debug_port, 
-            verbose=self.verbose, 
-            reuse_session=True
-        )
-        
+        manager = BrowserManager(debug_port=self.debug_port, verbose=self.verbose, reuse_session=True)
+
         try:
             # Use the manager's get_page() method which leverages playwrightauthor's session reuse
             page = await manager.get_page()
-            
+
             # Set timeouts on the page
             page.set_default_timeout(PAGE_ELEMENT_TIMEOUT_MS)
             page.set_default_navigation_timeout(45000)
-            
+
             # Log performance metric
             log_performance_metric(
                 "session_reuse_page_acquired",
@@ -509,11 +496,11 @@ class BrowserPool:
                 {
                     "pool_size": len(self._pool),
                     "active_connections": len(self._active_connections),
-                }
+                },
             )
-            
+
             return page
-            
+
         except Exception as e:
             logger.error(f"Failed to get reusable page: {e}")
             raise BrowserManagerError(f"Failed to get page with session reuse: {e}") from e
@@ -553,7 +540,7 @@ class BrowserPool:
         async def cleanup_resources() -> None:
             """Clean up resources on failure."""
             nonlocal page, connection
-            
+
             # Clean up page
             if page:
                 try:
@@ -582,7 +569,7 @@ class BrowserPool:
                 # Get or create connection
                 connection, acquired_from_pool = await self._get_connection_from_pool()
                 connection = await self._ensure_connection(connection)
-                
+
                 # Create page from connection
                 page = await self._create_page_from_connection(connection)
 
@@ -603,7 +590,7 @@ class BrowserPool:
         finally:
             # Clean up page
             await self._close_page_safely(page)
-            
+
             # Return connection to pool or close it
             await self._return_or_close_connection(connection)
 
@@ -617,7 +604,7 @@ class BrowserPool:
             pool_connections = list(self._pool)
             active_connections = list(self._active_connections)
 
-        stats = {
+        return {
             "pool_size": len(pool_connections),
             "active_connections": len(active_connections),
             "total_connections": len(pool_connections) + len(active_connections),
@@ -641,8 +628,6 @@ class BrowserPool:
                 for conn in active_connections
             ],
         }
-
-        return stats
 
 
 # Global pool instance
@@ -678,4 +663,3 @@ async def close_global_pool() -> None:
     if _global_pool is not None:
         await _global_pool.stop()
         _global_pool = None
-

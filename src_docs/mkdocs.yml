@@ -46,6 +46,14 @@ plugins:
           options:
             docstring_style: google
 
+use_directory_urls: false
+
+extra_javascript:
+  - https://code.jquery.com/jquery-3.6.0.min.js
+
+extra_css:
+  - https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css
+
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -69,6 +77,9 @@ nav:
     - Python API: chapter4-api.md
     - CLI Commands: chapter5-cli.md
     - Data Models: chapter6-models.md
+  - Models Database:
+    - Interactive Table: table.html
+    - All Models: models/index.md
   - Advanced:
     - Browser Management: chapter7-browser.md
     - Configuration: chapter8-configuration.md

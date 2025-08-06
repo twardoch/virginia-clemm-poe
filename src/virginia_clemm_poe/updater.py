@@ -21,7 +21,6 @@ from .config import (
     DIALOG_WAIT_SECONDS,
     EXPANSION_WAIT_SECONDS,
     HTTP_REQUEST_TIMEOUT_SECONDS,
-    LOAD_TIMEOUT_MS,
     MODAL_CLOSE_WAIT_SECONDS,
     PAGE_NAVIGATION_TIMEOUT_MS,
     PAUSE_SECONDS,
@@ -34,8 +33,7 @@ from .type_guards import validate_poe_api_response
 from .types import PoeApiResponse
 from .utils.cache import cached, get_api_cache, get_scraping_cache
 from .utils.logger import log_api_request, log_browser_operation, log_performance_metric
-from .utils.memory import MemoryManagedOperation, get_global_memory_monitor
-from .utils.timeout import with_timeout
+from .utils.memory import MemoryManagedOperation
 
 
 class ModelUpdater:
@@ -101,34 +99,34 @@ class ModelUpdater:
 
     def parse_pricing_table(self, html: str) -> dict[str, Any | None]:
         """Parse pricing table HTML into structured data for model cost analysis.
-        
+
         This function extracts pricing information from HTML tables found on Poe.com
         model pages. It handles various table formats and structures commonly used
         for displaying model pricing information.
-        
+
         The parsing logic:
         1. Locates the first table element in the HTML
         2. Iterates through table rows, extracting key-value pairs
         3. Skips header rows (all th elements)
         4. Uses the first cell as the key and remaining cells as values
         5. Handles single values and multi-value arrays appropriately
-        
+
         Args:
             html: Raw HTML string containing a pricing table element
-            
+
         Returns:
             Dictionary mapping pricing categories to their values:
             - Keys are pricing category names (e.g., "Input (text)", "Bot message")
             - Values can be strings, None, or lists depending on table structure
-            
+
         Raises:
             ValueError: If no table element is found in the HTML
-            
+
         Example:
             >>> html = '<table><tr><td>Input (text)</td><td>$0.50</td></tr></table>'
             >>> parser.parse_pricing_table(html)
             {'Input (text)': '$0.50'}
-            
+
         Note:
             This parser is specifically designed for Poe.com pricing tables and
             may not work correctly with arbitrary HTML table structures.
@@ -164,35 +162,35 @@ class ModelUpdater:
     ) -> tuple[dict[str, Any] | None, BotInfo | None, str | None]:
         """Scrape model information with caching support."""
         # Check cache first
-        cache = get_scraping_cache() 
+        cache = get_scraping_cache()
         cache_key = f"scrape_{model_id}"
-        
+
         cached_result = await cache.get(cache_key)
         if cached_result is not None:
             logger.debug(f"Using cached scraping result for {model_id}")
             return cached_result
-        
+
         # If not cached, scrape and cache the result
         result = await self._scrape_model_info_uncached(model_id, page)
-        
+
         # Only cache successful results (non-error cases)
         if result[2] is None:  # No error
             await cache.set(cache_key, result, ttl=3600)  # Cache for 1 hour
             logger.debug(f"Cached scraping result for {model_id}")
-        
+
         return result
-    
+
     async def _extract_with_fallback_selectors(
         self, page: Page, selectors: list[str], validate_fn=None, debug_name: str = "element"
     ) -> str | None:
         """Extract text content using a list of fallback selectors.
-        
+
         Args:
             page: Playwright page object
             selectors: List of CSS selectors to try in order
             validate_fn: Optional function to validate extracted text
             debug_name: Name for debug logging
-            
+
         Returns:
             Extracted text or None if not found
         """
@@ -201,10 +199,9 @@ class ModelUpdater:
                 elem = await page.query_selector(selector)
                 if elem:
                     text = await elem.text_content()
-                    if text and text.strip():
-                        if validate_fn is None or validate_fn(text):
-                            logger.debug(f"Found {debug_name} with selector '{selector}': {text.strip()[:50]}...")
-                            return text.strip()
+                    if text and text.strip() and (validate_fn is None or validate_fn(text)):
+                        logger.debug(f"Found {debug_name} with selector '{selector}': {text.strip()[:50]}...")
+                        return text.strip()
             except Exception as e:
                 logger.debug(f"{debug_name} selector '{selector}' failed: {e}")
                 continue
@@ -219,13 +216,11 @@ class ModelUpdater:
             ".BotInfoCardHeader_initialPointsCost__oIIcI",
             "[class*='initialPointsCost']",
         ]
-        
+
         def validate_points(text: str) -> bool:
             return "point" in text.lower() or "+" in text
-        
-        return await self._extract_with_fallback_selectors(
-            page, selectors, validate_points, "initial points cost"
-        )
+
+        return await self._extract_with_fallback_selectors(page, selectors, validate_points, "initial points cost")
 
     async def _extract_bot_creator(self, page: Page) -> str | None:
         """Extract bot creator handle from the page."""
@@ -246,7 +241,7 @@ class ModelUpdater:
             "button:has-text('View more')",
             "[aria-expanded='false']",
         ]
-        
+
         for selector in selectors:
             try:
                 elem = await page.query_selector(selector)
@@ -267,13 +262,11 @@ class ModelUpdater:
             "[class*='BotDescriptionDisclaimerSection_text']",
             "[aria-expanded='true'] span",
         ]
-        
+
         def validate_description(text: str) -> bool:
             return len(text.strip()) > 10
-        
-        return await self._extract_with_fallback_selectors(
-            page, selectors, validate_description, "description"
-        )
+
+        return await self._extract_with_fallback_selectors(page, selectors, validate_description, "description")
 
     async def _extract_bot_disclaimer(self, page: Page) -> str | None:
         """Extract bot disclaimer text from the page."""
@@ -284,33 +277,31 @@ class ModelUpdater:
             "p:has-text('Powered by')",
             "p:has(a[href*='privacy_center'])",
         ]
-        
+
         def validate_disclaimer(text: str) -> bool:
             return "Powered by" in text or "Learn more" in text
-        
-        return await self._extract_with_fallback_selectors(
-            page, selectors, validate_disclaimer, "disclaimer"
-        )
+
+        return await self._extract_with_fallback_selectors(page, selectors, validate_disclaimer, "disclaimer")
 
     async def _extract_bot_info(self, page: Page) -> BotInfo:
         """Extract all bot information from the page."""
         bot_info = BotInfo()
-        
+
         # Extract creator
         bot_info.creator = await self._extract_bot_creator(page)
-        
+
         # Expand description if needed
         await self._expand_description(page)
-        
+
         # Extract description and disclaimer
         bot_info.description = await self._extract_bot_description(page)
         bot_info.description_extra = await self._extract_bot_disclaimer(page)
-        
+
         return bot_info
 
     async def _extract_pricing_table(self, page: Page, model_id: str) -> tuple[dict[str, Any] | None, str | None]:
         """Extract pricing information from the rates dialog.
-        
+
         Returns:
             Tuple of (pricing_dict, error_message)
         """
@@ -324,7 +315,7 @@ class ModelUpdater:
         rates_button = await action_bar.query_selector("button:has-text('Rates')")
         if not rates_button:
             rates_button = await action_bar.query_selector("button:has(span:has-text('Rates'))")
-        
+
         if not rates_button:
             logger.debug(f"No 'Rates' button found for {model_id}")
             return None, "No Rates button found"
@@ -345,14 +336,14 @@ class ModelUpdater:
 
         # Parse pricing
         pricing = self.parse_pricing_table(table_html)
-        
+
         # Close modal
         try:
             await page.keyboard.press("Escape")
             await asyncio.sleep(MODAL_CLOSE_WAIT_SECONDS)
         except Exception:
             pass
-            
+
         return pricing, None
 
     async def _find_pricing_table_html(self, page: Page) -> str | None:
@@ -374,7 +365,11 @@ class ModelUpdater:
                     if table_element:
                         table_html = await table_element.inner_html()
                         logger.debug(f"Found table with selector: {selector}")
-                        return f"<table>{table_html}</table>" if not table_html.strip().startswith("<table") else table_html
+                        return (
+                            f"<table>{table_html}</table>"
+                            if not table_html.strip().startswith("<table")
+                            else table_html
+                        )
             except Exception as e:
                 logger.debug(f"Selector {selector} failed: {e}")
 
@@ -388,53 +383,53 @@ class ModelUpdater:
                     return table_match.group(0)
         except Exception as e:
             logger.debug(f"Regex extraction failed: {e}")
-            
+
         return None
 
     async def _scrape_model_info_uncached(
         self, model_id: str, page: Page
     ) -> tuple[dict[str, Any] | None, BotInfo | None, str | None]:
         """Scrape pricing and bot info data for a single model with comprehensive error handling.
-        
+
         This function orchestrates a multi-stage scraping process to extract all available
         information from a Poe.com model page. It coordinates several independent extraction
         operations and implements robust error handling with partial success recovery.
-        
+
         Scraping workflow:
         1. Navigate to the model's Poe.com page with networkidle wait
         2. Extract initial points cost from bot info card header
         3. Extract bot metadata (creator, description, disclaimer text)
         4. Extract detailed pricing from the rates dialog modal
         5. Merge all collected data and handle partial failures gracefully
-        
+
         Error handling strategy:
         - Timeouts: Return partial data with timeout error message
         - Navigation failures: Return empty data with navigation error
         - Partial failures: Return available data (bot_info without pricing, etc.)
         - Complete failures: Return error message but preserve any bot_info found
-        
+
         Args:
             model_id: The model identifier to scrape (e.g., "Claude-3-Opus")
             page: Playwright page object to use for browser automation
-            
+
         Returns:
             Tuple of (pricing_dict, bot_info, error_message):
             - pricing_dict: Dictionary of pricing data or None if unavailable
-            - bot_info: BotInfo object with creator/description or empty if unavailable  
+            - bot_info: BotInfo object with creator/description or empty if unavailable
             - error_message: String describing any errors encountered or None on success
-            
+
         Example successful result:
             >>> pricing, bot_info, error = await scraper._scrape_model_info_uncached("Claude-3-Opus", page)
             >>> pricing  # {"Input (text)": "10 points/1k tokens", "Bot message": "5 points"}
             >>> bot_info  # BotInfo(creator="@anthropic", description="Claude is...")
             >>> error  # None
-            
+
         Example partial failure:
             >>> pricing, bot_info, error = await scraper._scrape_model_info_uncached("model-with-no-pricing", page)
             >>> pricing  # None
             >>> bot_info  # BotInfo(creator="@creator", description="Some description")
             >>> error  # "No Rates button found"
-            
+
         Note:
             This function implements a "best effort" strategy - it attempts to collect
             as much information as possible even if some extraction steps fail.
@@ -453,17 +448,17 @@ class ModelUpdater:
 
                 # Extract initial points cost
                 initial_points_cost = await self._extract_initial_points_cost(page)
-                
+
                 # Extract bot info
                 bot_info = await self._extract_bot_info(page)
-                
+
                 # Extract pricing from rates dialog
                 pricing, error_msg = await self._extract_pricing_table(page, model_id)
-                
+
                 if error_msg and not bot_info.creator and not bot_info.description:
                     # If we couldn't get pricing and have no bot info, return error
                     return None, bot_info, error_msg
-                
+
                 # Add initial points cost to pricing if found
                 if pricing and initial_points_cost:
                     pricing["initial_points_cost"] = initial_points_cost
@@ -483,11 +478,11 @@ class ModelUpdater:
                 logger.debug(f"Successfully scraped {model_id}: {', '.join(scraped_fields)}")
                 return pricing, bot_info, error_msg
 
-            except (TimeoutError, asyncio.TimeoutError) as e:
+            except TimeoutError as e:
                 ctx["error_type"] = "timeout"
                 ctx["timeout_ms"] = PAGE_NAVIGATION_TIMEOUT_MS
-                logger.error(f"Timeout while scraping {model_id} after {PAGE_NAVIGATION_TIMEOUT_MS/1000:.1f}s: {e}")
-                return None, BotInfo(), f"Operation timed out after {PAGE_NAVIGATION_TIMEOUT_MS/1000:.1f}s"
+                logger.error(f"Timeout while scraping {model_id} after {PAGE_NAVIGATION_TIMEOUT_MS / 1000:.1f}s: {e}")
+                return None, BotInfo(), f"Operation timed out after {PAGE_NAVIGATION_TIMEOUT_MS / 1000:.1f}s"
             except Exception as e:
                 ctx["error_type"] = type(e).__name__
                 ctx["error_message"] = str(e)
@@ -496,16 +491,16 @@ class ModelUpdater:
 
     def _load_existing_collection(self, force: bool) -> ModelCollection | None:
         """Load existing model collection from disk if available.
-        
+
         Args:
             force: If True, skip loading existing data
-            
+
         Returns:
             Existing ModelCollection or None if not available/force=True
         """
         if not DATA_FILE_PATH.exists() or force:
             return None
-            
+
         try:
             with open(DATA_FILE_PATH) as f:
                 collection_data = json.load(f)
@@ -518,49 +513,48 @@ class ModelUpdater:
 
     async def _fetch_and_parse_api_models(self) -> tuple[dict[str, Any], list[PoeModel]]:
         """Fetch models from API and parse them into PoeModel instances.
-        
+
         Returns:
             Tuple of (raw_api_data, parsed_models)
         """
         logger.info("Fetching models from API...")
         api_data = await self.fetch_models_from_api()
         api_models = []
-        
+
         for model_dict in api_data["data"]:
             # Ensure architecture is properly typed
             model_data: dict[str, Any] = dict(model_dict)
             if "architecture" in model_data and isinstance(model_data["architecture"], dict):
                 from .models import Architecture
+
                 model_data["architecture"] = Architecture(**model_data["architecture"])
             api_models.append(PoeModel(**model_data))
-            
+
         logger.info(f"Fetched {len(api_models)} models from API")
         return api_data, api_models
 
-    def _merge_models(
-        self, api_models: list[PoeModel], existing_collection: ModelCollection | None
-    ) -> list[PoeModel]:
+    def _merge_models(self, api_models: list[PoeModel], existing_collection: ModelCollection | None) -> list[PoeModel]:
         """Merge API models with existing data, preserving scraped information.
-        
+
         Args:
             api_models: Fresh models from API
             existing_collection: Existing collection with scraped data
-            
+
         Returns:
             Merged list of models sorted by ID
         """
         if not existing_collection:
             return sorted(api_models, key=lambda x: x.id)
-            
+
         # Create lookup for existing models
         existing_lookup = {model.id: model for model in existing_collection.data}
         api_model_ids = set()
         merged_models = []
-        
+
         # Merge API models with existing data
         for api_model in api_models:
             api_model_ids.add(api_model.id)
-            
+
             if api_model.id in existing_lookup:
                 # Preserve scraped data from existing model
                 existing = existing_lookup[api_model.id]
@@ -570,62 +564,52 @@ class ModelUpdater:
                     api_model.pricing_error = existing.pricing_error
                 if existing.bot_info:
                     api_model.bot_info = existing.bot_info
-                    
+
             merged_models.append(api_model)
-        
+
         # Log removed models
         removed_ids = set(existing_lookup.keys()) - api_model_ids
         for removed_id in removed_ids:
             logger.info(f"Removed model no longer in API: {removed_id}")
-            
+
         return sorted(merged_models, key=lambda x: x.id)
 
     def _get_models_to_update(
-        self, 
-        collection: ModelCollection, 
-        force: bool, 
-        update_info: bool, 
-        update_pricing: bool
+        self, collection: ModelCollection, force: bool, update_info: bool, update_pricing: bool
     ) -> list[PoeModel]:
         """Determine which models need updates based on criteria.
-        
+
         Args:
             collection: Model collection to check
             force: Force update all models
             update_info: Check if bot info needs update
             update_pricing: Check if pricing needs update
-            
+
         Returns:
             List of models that need updates
         """
         if not update_info and not update_pricing:
             return []
-            
+
         models_to_update = []
-        
+
         for model in collection.data:
             needs_update = False
-            
+
             if update_pricing and (model.needs_pricing_update() or force):
                 needs_update = True
-                
+
             if update_info and (not model.bot_info or force):
                 needs_update = True
-                
+
             if needs_update:
                 models_to_update.append(model)
-                
+
         return models_to_update
 
-    async def _update_model_data(
-        self, 
-        model: PoeModel, 
-        page: Page, 
-        update_info: bool, 
-        update_pricing: bool
-    ) -> None:
+    async def _update_model_data(self, model: PoeModel, page: Page, update_info: bool, update_pricing: bool) -> None:
         """Update a single model's pricing and/or bot info.
-        
+
         Args:
             model: Model to update (modified in place)
             page: Browser page to use for scraping
@@ -633,21 +617,18 @@ class ModelUpdater:
             update_pricing: Whether to update pricing
         """
         pricing_data, bot_info, error = await self.scrape_model_info(model.id, page)
-        
+
         # Update pricing if requested
         if update_pricing:
             if pricing_data:
-                model.pricing = Pricing(
-                    checked_at=datetime.utcnow(), 
-                    details=PricingDetails(**pricing_data)
-                )
+                model.pricing = Pricing(checked_at=datetime.utcnow(), details=PricingDetails(**pricing_data))
                 model.pricing_error = None
                 logger.info(f"✓ Updated pricing for {model.id}")
             else:
                 model.pricing_error = error or "Unknown error"
                 model.pricing = None
                 logger.warning(f"✗ No pricing found for {model.id}: {error}")
-        
+
         # Update bot info if requested
         if update_info:
             if bot_info and (bot_info.creator or bot_info.description or bot_info.description_extra):
@@ -662,10 +643,10 @@ class ModelUpdater:
         update_info: bool,
         update_pricing: bool,
         memory_monitor: MemoryManagedOperation,
-        pool: BrowserPool
+        pool: BrowserPool,
     ) -> None:
         """Update models with progress tracking and memory management.
-        
+
         Args:
             models_to_update: List of models to update
             update_info: Whether to update bot info
@@ -680,71 +661,69 @@ class ModelUpdater:
         ) as progress:
             task = progress.add_task("Updating models...", total=len(models_to_update))
             models_processed = 0
-            
+
             for model in models_to_update:
                 progress.update(task, description=f"Updating {model.id}...")
-                
+
                 # Use browser pool for each model
                 async with pool.acquire_page() as page:
                     await self._update_model_data(model, page, update_info, update_pricing)
-                
+
                 # Track progress and memory usage
                 models_processed += 1
                 memory_monitor.increment_operation_count()
-                
+
                 # Periodic memory monitoring (every 10 models)
                 if models_processed % 10 == 0:
                     memory_monitor.log_memory_status(f"processed_{models_processed}_models")
-                    
+
                     # Force cleanup if memory is getting high
                     if memory_monitor.should_run_cleanup():
                         logger.info(f"Running memory cleanup after processing {models_processed} models")
                         await memory_monitor.cleanup_memory()
-                
+
                 progress.advance(task)
 
     async def sync_models(
         self, force: bool = False, update_info: bool = True, update_pricing: bool = True
     ) -> ModelCollection:
         """Sync models with API and update pricing/info data.
-        
+
         This method coordinates the entire model synchronization process:
         1. Loads existing data if available
         2. Fetches fresh models from API
         3. Merges API data with existing scraped data
         4. Updates models that need new pricing/bot info
-        
+
         Args:
             force: Force update even if data exists
             update_info: Update bot info (creator, description)
             update_pricing: Update pricing information
-            
+
         Returns:
             Updated ModelCollection with all models
         """
         # Load existing data
         existing_collection = self._load_existing_collection(force)
-        
+
         # Fetch fresh models from API
         api_data, api_models = await self._fetch_and_parse_api_models()
-        
+
         # Merge with existing data
         merged_models = self._merge_models(api_models, existing_collection)
-        
+
         # Create collection
         collection = ModelCollection(object=api_data["object"], data=merged_models)
-        
+
         # Determine which models need updates
-        models_to_update = self._get_models_to_update(
-            collection, force, update_info, update_pricing
-        )
-        
+        models_to_update = self._get_models_to_update(collection, force, update_info, update_pricing)
+
         if not models_to_update:
             logger.info("No models need updates")
             return collection
-            
+
         logger.info(f"Found {len(models_to_update)} models to update")
-        
+
         # Use memory management for the entire update operation
         async with MemoryManagedOperation(f"sync_{len(models_to_update)}_models") as memory_monitor:
             # Get the browser pool for better performance
@@ -753,23 +732,18 @@ class ModelUpdater:
                 debug_port=self.debug_port,
                 verbose=self.verbose,
             )
-            
+
             # Log performance metric for pool usage
-            log_performance_metric(
-                "browser_pool_enabled", 1, "count", 
-                {"models_to_update": len(models_to_update)}
-            )
-            
+            log_performance_metric("browser_pool_enabled", 1, "count", {"models_to_update": len(models_to_update)})
+
             # Update models with progress tracking
-            await self._update_models_with_progress(
-                models_to_update, update_info, update_pricing, memory_monitor, pool
-            )
-        
+            await self._update_models_with_progress(models_to_update, update_info, update_pricing, memory_monitor, pool)
+
         # Pool stats for debugging
         if self.verbose:
             stats = await pool.get_stats()
             logger.debug(f"Browser pool stats: {stats}")
-        
+
         return collection
 
     async def update_all(self, force: bool = False, update_info: bool = True, update_pricing: bool = True) -> None:
