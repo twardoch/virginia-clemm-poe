@@ -107,7 +107,7 @@
 <body>
     <div class="container">
         <h1>Poe Models Database</h1>
-        
+
         <div class="controls">
             <input type="text" id="searchInput" placeholder="Search models...">
             <select id="modalityFilter">
@@ -121,7 +121,7 @@
                 <option value="">All Owners</option>
             </select>
         </div>
-        
+
         <div id="tableContainer">
             <div class="loading">Loading models data...</div>
         </div>
@@ -135,13 +135,13 @@
 
         async function loadData() {
             try {
-                const response = await fetch('data/poe_models.json');
+                const response = await fetch('/virginia-clemm-poe/data/poe_models.json');
                 const data = await response.json();
                 modelsData = data.data || [];
                 initializeFilters();
                 renderTable();
             } catch (error) {
-                document.getElementById('tableContainer').innerHTML = 
+                document.getElementById('tableContainer').innerHTML =
                     '<div class="error">Error loading models data: ' + error.message + '</div>';
             }
         }
@@ -170,15 +170,15 @@
             const ownerFilter = document.getElementById('ownerFilter').value;
 
             filteredData = modelsData.filter(model => {
-                const matchesSearch = !searchTerm || 
+                const matchesSearch = !searchTerm ||
                     model.id.toLowerCase().includes(searchTerm) ||
                     (model.bot_info?.description || '').toLowerCase().includes(searchTerm) ||
                     (model.bot_info?.creator || '').toLowerCase().includes(searchTerm);
-                
-                const matchesModality = !modalityFilter || 
+
+                const matchesModality = !modalityFilter ||
                     model.architecture?.modality === modalityFilter;
-                
-                const matchesOwner = !ownerFilter || 
+
+                const matchesOwner = !ownerFilter ||
                     model.owned_by === ownerFilter;
 
                 return matchesSearch && matchesModality && matchesOwner;
@@ -232,7 +232,7 @@
                     <thead>
                         <tr>
                             <th onclick="handleSort('id')">
-                                Model ID 
+                                Model ID
                                 <span class="sort-arrow ${sortColumn === 'id' ? 'active' : ''}">
                                     ${sortColumn === 'id' ? (sortDirection === 'asc' ? '↑' : '↓') : '↕'}
                                 </span>

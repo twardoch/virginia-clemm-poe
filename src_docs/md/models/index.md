@@ -1,4 +1,10 @@
-# All Models
+# Models Database
+
+## Interactive Table
+
+<iframe src="/virginia-clemm-poe/table.html" width="100%" height="800px" frameborder="0" style="border: 1px solid #ddd; border-radius: 4px;"></iframe>
+
+## All Models
 
 Browse all available Poe models:
 

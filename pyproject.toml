@@ -145,6 +145,7 @@ dev-dependencies=[
     "safety>=2.3.0",
     "pydocstyle>=6.3.0",
     "pre-commit>=3.6.0",
+    "mkdocs-awesome-pages-plugin>=2.10.1",
 ]
 
 [tool.mypy]

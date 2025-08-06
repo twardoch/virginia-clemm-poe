@@ -12,6 +12,12 @@
 - 🌐 **Web Scraping**: Playwright-powered browser automation for reliable data extraction
 - 📊 **Pydantic Models**: Fully typed data structures for easy integration
 
+## Explore Models
+
+🔍 **[Browse Interactive Models Database](models/index.md)** - Explore all available Poe.com models with real-time search, filtering, and detailed pricing information
+
+📊 **[View Models Table](table.html)** - Interactive searchable table of all models with pricing and metadata
+
 ## Table of Contents
 
 ### Getting Started

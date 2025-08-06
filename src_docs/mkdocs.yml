@@ -3,10 +3,10 @@
 site_name: Virginia Clemm Poe Documentation
 site_description: A Python package providing programmatic access to Poe.com model data with pricing information
 site_author: Terragon Labs
-site_url: https://terragonlabs.github.io/virginia-clemm-poe/
+site_url: https://twardoch.github.io/virginia-clemm-poe/
 
 repo_name: terragonlabs/virginia-clemm-poe
-repo_url: https://github.com/terragonlabs/virginia-clemm-poe
+repo_url: https://github.com/twardoch/virginia-clemm-poe
 
 theme:
   name: material
@@ -69,18 +69,16 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Getting Started:
+  - Models:
+    - Models: models/index.md
+    - Table: table.html
+  - Tools:
     - Introduction: chapter1-introduction.md
     - Installation: chapter2-installation.md
     - Quick Start: chapter3-quickstart.md
-  - Usage:
     - Python API: chapter4-api.md
     - CLI Commands: chapter5-cli.md
     - Data Models: chapter6-models.md
-  - Models Database:
-    - Interactive Table: table.html
-    - All Models: models/index.md
-  - Advanced:
     - Browser Management: chapter7-browser.md
     - Configuration: chapter8-configuration.md
     - Troubleshooting: chapter9-troubleshooting.md
@@ -88,9 +86,9 @@ nav:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/terragonlabs/virginia-clemm-poe
+      link: https://github.com/twardoch/virginia-clemm-poe
 
-copyright: Copyright &copy; 2024 Terragon Labs
+copyright: Copyright &copy; 2025 Adam Twardoch
 
 # Build directory
 site_dir: ../docs
