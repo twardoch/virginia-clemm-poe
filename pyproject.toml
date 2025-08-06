@@ -31,6 +31,8 @@ dependencies=[
     "loguru>=0.7.0",
     "aiohttp>=3.9.0",
     "psutil>=5.9.0",
+    "mkdocs-material>=9.6.16",
+    "mkdocstrings[python]>=0.30.0",
 ]
 
 [project.scripts]

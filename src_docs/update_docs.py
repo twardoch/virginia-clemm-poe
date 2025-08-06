@@ -85,296 +85,6 @@ def generate_model_page(model: dict[str, Any]) -> str:
     return "\n".join(content)
 
 
-def generate_table_html() -> str:
-    """Generate HTML page with dynamic table for models."""
-    logger.info("Generating interactive table HTML")
-    return """<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poe Models Interactive Table</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background: #f5f5f5;
-        }
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            padding: 20px;
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 20px;
-        }
-        .controls {
-            margin-bottom: 20px;
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-        input, select {
-            padding: 8px 12px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 14px;
-        }
-        input[type="text"] {
-            flex: 1;
-            min-width: 200px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 14px;
-        }
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        th {
-            background: #f8f9fa;
-            font-weight: 600;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-            cursor: pointer;
-            user-select: none;
-        }
-        th:hover {
-            background: #e9ecef;
-        }
-        tr:hover {
-            background: #f8f9fa;
-        }
-        .model-link {
-            color: #0066cc;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        .model-link:hover {
-            text-decoration: underline;
-        }
-        .modality {
-            display: inline-block;
-            padding: 2px 8px;
-            border-radius: 3px;
-            font-size: 12px;
-            background: #e3f2fd;
-            color: #1976d2;
-        }
-        .price {
-            font-weight: 500;
-            color: #2e7d32;
-        }
-        .loading {
-            text-align: center;
-            padding: 40px;
-            color: #666;
-        }
-        .error {
-            color: #d32f2f;
-            padding: 20px;
-            text-align: center;
-        }
-        .sort-arrow {
-            display: inline-block;
-            margin-left: 5px;
-            opacity: 0.5;
-        }
-        .sort-arrow.active {
-            opacity: 1;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Poe Models Database</h1>
-
-        <div class="controls">
-            <input type="text" id="searchInput" placeholder="Search models...">
-            <select id="modalityFilter">
-                <option value="">All Modalities</option>
-                <option value="text->text">Text → Text</option>
-                <option value="text->image">Text → Image</option>
-                <option value="text->audio">Text → Audio</option>
-                <option value="text->video">Text → Video</option>
-            </select>
-            <select id="ownerFilter">
-                <option value="">All Owners</option>
-            </select>
-        </div>
-
-        <div id="tableContainer">
-            <div class="loading">Loading models data...</div>
-        </div>
-    </div>
-
-    <script>
-        let modelsData = [];
-        let filteredData = [];
-        let sortColumn = 'id';
-        let sortDirection = 'asc';
-
-        async function loadData() {
-            try {
-                const response = await fetch('data/poe_models.json');
-                const data = await response.json();
-                modelsData = data.data || [];
-                initializeFilters();
-                renderTable();
-            } catch (error) {
-                document.getElementById('tableContainer').innerHTML =
-                    '<div class="error">Error loading models data: ' + error.message + '</div>';
-            }
-        }
-
-        function initializeFilters() {
-            const owners = [...new Set(modelsData.map(m => m.owned_by))].sort();
-            const ownerFilter = document.getElementById('ownerFilter');
-            owners.forEach(owner => {
-                const option = document.createElement('option');
-                option.value = owner;
-                option.textContent = owner;
-                ownerFilter.appendChild(option);
-            });
-        }
-
-        function getInitialCost(model) {
-            if (model.pricing?.details?.initial_points_cost) {
-                return model.pricing.details.initial_points_cost;
-            }
-            return 'N/A';
-        }
-
-        function filterData() {
-            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-            const modalityFilter = document.getElementById('modalityFilter').value;
-            const ownerFilter = document.getElementById('ownerFilter').value;
-
-            filteredData = modelsData.filter(model => {
-                const matchesSearch = !searchTerm ||
-                    model.id.toLowerCase().includes(searchTerm) ||
-                    (model.bot_info?.description || '').toLowerCase().includes(searchTerm) ||
-                    (model.bot_info?.creator || '').toLowerCase().includes(searchTerm);
-
-                const matchesModality = !modalityFilter ||
-                    model.architecture?.modality === modalityFilter;
-
-                const matchesOwner = !ownerFilter ||
-                    model.owned_by === ownerFilter;
-
-                return matchesSearch && matchesModality && matchesOwner;
-            });
-
-            sortData();
-        }
-
-        function sortData() {
-            filteredData.sort((a, b) => {
-                let aVal = a[sortColumn];
-                let bVal = b[sortColumn];
-
-                if (sortColumn === 'modality') {
-                    aVal = a.architecture?.modality || '';
-                    bVal = b.architecture?.modality || '';
-                } else if (sortColumn === 'creator') {
-                    aVal = a.bot_info?.creator || '';
-                    bVal = b.bot_info?.creator || '';
-                } else if (sortColumn === 'cost') {
-                    aVal = getInitialCost(a);
-                    bVal = getInitialCost(b);
-                    // Extract numeric value for sorting
-                    const aNum = parseInt(aVal.replace(/[^0-9]/g, '')) || 999999;
-                    const bNum = parseInt(bVal.replace(/[^0-9]/g, '')) || 999999;
-                    aVal = aNum;
-                    bVal = bNum;
-                }
-
-                if (aVal < bVal) return sortDirection === 'asc' ? -1 : 1;
-                if (aVal > bVal) return sortDirection === 'asc' ? 1 : -1;
-                return 0;
-            });
-
-            renderTable();
-        }
-
-        function handleSort(column) {
-            if (sortColumn === column) {
-                sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
-            } else {
-                sortColumn = column;
-                sortDirection = 'asc';
-            }
-            sortData();
-        }
-
-        function renderTable() {
-            const html = `
-                <table>
-                    <thead>
-                        <tr>
-                            <th onclick="handleSort('id')">
-                                Model ID
-                                <span class="sort-arrow ${sortColumn === 'id' ? 'active' : ''}">
-                                    ${sortColumn === 'id' ? (sortDirection === 'asc' ? '↑' : '↓') : '↕'}
-                                </span>
-                            </th>
-                            <th onclick="handleSort('modality')">
-                                Modality
-                                <span class="sort-arrow ${sortColumn === 'modality' ? 'active' : ''}">
-                                    ${sortColumn === 'modality' ? (sortDirection === 'asc' ? '↑' : '↓') : '↕'}
-                                </span>
-                            </th>
-                            <th onclick="handleSort('creator')">
-                                Creator
-                                <span class="sort-arrow ${sortColumn === 'creator' ? 'active' : ''}">
-                                    ${sortColumn === 'creator' ? (sortDirection === 'asc' ? '↑' : '↓') : '↕'}
-                                </span>
-                            </th>
-                            <th onclick="handleSort('cost')">
-                                Initial Cost
-                                <span class="sort-arrow ${sortColumn === 'cost' ? 'active' : ''}">
-                                    ${sortColumn === 'cost' ? (sortDirection === 'asc' ? '↑' : '↓') : '↕'}
-                                </span>
-                            </th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        ${filteredData.map(model => `
-                            <tr>
-                                <td><a href="models/${model.id}.html" class="model-link">${model.id}</a></td>
-                                <td><span class="modality">${model.architecture?.modality || 'N/A'}</span></td>
-                                <td>${model.bot_info?.creator || 'N/A'}</td>
-                                <td class="price">${getInitialCost(model)}</td>
-                                <td>${(model.bot_info?.description || 'N/A').substring(0, 100)}${(model.bot_info?.description || '').length > 100 ? '...' : ''}</td>
-                            </tr>
-                        `).join('')}
-                    </tbody>
-                </table>
-            `;
-            document.getElementById('tableContainer').innerHTML = html;
-        }
-
-        // Event listeners
-        document.getElementById('searchInput').addEventListener('input', filterData);
-        document.getElementById('modalityFilter').addEventListener('change', filterData);
-        document.getElementById('ownerFilter').addEventListener('change', filterData);
-
-        // Initialize
-        loadData();
-    </script>
-</body>
-</html>
-"""
 
 
 def main() -> None:
@@ -425,11 +135,26 @@ def main() -> None:
 
     logger.success(f"✅ Generated {len(models)} model pages in: {docs_models_dir}")
 
-    # Generate interactive table HTML
-    logger.info("🔧 Generating interactive table HTML")
-    table_html_path = docs_md_dir / "table.html"
-    table_html_path.write_text(generate_table_html())
-    logger.success(f"Generated interactive table: {table_html_path}")
+    # Copy the static table HTML file (no generation needed)
+    logger.info("📋 Copying static table HTML and data")
+    src_table_html = docs_md_dir / "table.html"
+    docs_dir = project_root / "docs"
+    docs_dir.mkdir(parents=True, exist_ok=True)
+    dest_table_html = docs_dir / "table.html"
+    
+    # Check if source table.html exists
+    if src_table_html.exists():
+        shutil.copy2(src_table_html, dest_table_html)
+        logger.success(f"Copied table.html from {src_table_html} to {dest_table_html}")
+    else:
+        logger.warning(f"Source table.html not found at {src_table_html}, skipping copy")
+    
+    # Also copy the data directory to docs/data for the table to access
+    docs_data_dest = docs_dir / "data"
+    docs_data_dest.mkdir(parents=True, exist_ok=True)
+    dest_json = docs_data_dest / "poe_models.json"
+    shutil.copy2(docs_data_dir / "poe_models.json", dest_json)
+    logger.success(f"Copied poe_models.json to: {dest_json}")
 
     # Generate models index page
     logger.info("📑 Generating models index page")
