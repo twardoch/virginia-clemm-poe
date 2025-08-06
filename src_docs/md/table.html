@@ -258,7 +258,7 @@
                     <tbody>
                         ${filteredData.map(model => `
                             <tr>
-                                <td><a href="models/${model.id}.html" class="model-link">${model.id}</a></td>
+                                <td><a href="models/${model.id}.html" class="model-link" target="_parent">${model.id}</a></td>
                                 <td><span class="modality">${model.architecture?.modality || 'N/A'}</span></td>
                                 <td>${model.bot_info?.creator || 'N/A'}</td>
                                 <td class="price">${getInitialCost(model)}</td>
