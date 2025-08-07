@@ -6,7 +6,7 @@ import asyncio
 from typing import Any, Optional
 
 from loguru import logger
-from playwright.async_api import Page
+from playwright.async_api import Dialog, Page
 
 
 async def scrape_balance_from_page(page: Page) -> dict[str, Any]:
@@ -18,6 +18,15 @@ async def scrape_balance_from_page(page: Page) -> dict[str, Any]:
     Returns:
         Dictionary with balance information
     """
+    # Set up dialog handler to auto-dismiss error dialogs
+    async def handle_dialog(dialog: Dialog) -> None:
+        """Auto-dismiss any dialogs that appear during scraping."""
+        logger.debug(f"Dialog appeared: {dialog.message}")
+        await dialog.dismiss()
+    
+    # Add dialog handler
+    page.on("dialog", handle_dialog)
+    
     try:
         # Navigate to settings page where balance is shown
         logger.info("Navigating to Poe settings to get balance...")
@@ -153,6 +162,12 @@ async def scrape_balance_from_page(page: Page) -> dict[str, Any]:
     except Exception as e:
         logger.error(f"Error scraping balance: {e}")
         return {"error": str(e)}
+    finally:
+        # Remove dialog handler
+        try:
+            page.remove_listener("dialog", handle_dialog)
+        except:
+            pass
 
 
 async def get_balance_with_browser(page: Page) -> dict[str, Any]:
@@ -167,4 +182,15 @@ async def get_balance_with_browser(page: Page) -> dict[str, Any]:
     Returns:
         Balance information dictionary
     """
-    return await scrape_balance_from_page(page)
+    try:
+        result = await scrape_balance_from_page(page)
+        
+        # Add graceful wait before returning to allow JS cleanup
+        logger.debug("Waiting for page JavaScript to settle...")
+        await page.wait_for_load_state("networkidle", timeout=5000)
+        await asyncio.sleep(0.5)  # Small delay for async operations to complete
+        
+        return result
+    except Exception as e:
+        logger.error(f"Browser balance scraping failed: {e}")
+        return {"error": str(e)}

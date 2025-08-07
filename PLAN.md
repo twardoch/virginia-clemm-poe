@@ -14,46 +14,166 @@ Virginia Clemm Poe has successfully completed **Phase 4: Code Quality Standards*
 
 **Package Status**: Ready for production use with enterprise-grade reliability and performance.
 
-## Phase 5: PlaywrightAuthor Integration ✅ COMPLETED
+## Phase 7: Balance API & Browser Stability Improvements ✅ COMPLETED (2025-08-06)
 
-**Objective**: Refactor the browser management to fully utilize the `playwrightauthor` package, improving maintainability and reliability.
+**Objective**: Fix critical issues with balance retrieval and browser stability to provide seamless user experience.
 
-### Achievements (2025-08-05)
+### Context & Problem Analysis
 
-Successfully integrated PlaywrightAuthor's latest features:
+Currently, the balance command has two critical issues:
 
-1. **Chrome for Testing Support**: Now exclusively uses Chrome for Testing via PlaywrightAuthor
-2. **Session Reuse Implementation**: Added `get_page()` method for maintaining authenticated sessions
-3. **Pre-Authorized Sessions Workflow**: Users can run `playwrightauthor browse` once, then all scripts reuse the session
-4. **Enhanced Browser Pool**: Added `reuse_sessions` parameter and `get_reusable_page()` method
-5. **Documentation Updates**: Added comprehensive session reuse documentation and examples
+1. **Browser Error Dialogs (Issue #302)**: When running `virginia-clemm-poe balance`, after successfully scraping the balance from the browser, 4 error dialogs appear saying "Something went wrong when opening your profile. Some features may be unavailable." This happens during browser cleanup.
 
-**Benefits Realized**:
-- Faster scraping with session persistence
-- Better reliability by avoiding repeated logins
-- One-time authentication workflow
-- Reduced bot detection during authentication
+2. **API Method Failure (Issue #303)**: The internal API method for getting balance doesn't work with our stored cookies. The endpoint `https://www.quora.com/poe_api/settings` returns null/empty data even with valid cookies.
 
-## Phase 6: Advanced Features (Future Enhancement)
+### Research Findings
 
-**Objective**: Extended functionality for power users
+From analyzing poe-api-wrapper and community research:
 
-### 6.1 Data Export & Analysis
-**Priority**: Low - User convenience features
+1. **Cookie Requirements**: The internal API requires specific cookies:
+   - `m-b`: Main session cookie (we're capturing `p-b` instead)
+   - `p-lat`: Latitude cookie (we have this)
+   - Additional cookies may be needed for the internal API
+
+2. **Alternative Approaches**:
+   - **GraphQL Method**: poe-api-wrapper uses GraphQL query `SettingsPageQuery` 
+   - **Direct JSON Endpoint**: `/poe_api/settings` with proper session cookies
+   - **Browser Scraping**: Current fallback method (works but has cleanup issues)
+
+### Implementation Plan
+
+#### 7.1 Fix Browser Error Dialogs (Issue #302)
+
+**Root Cause**: Browser context is being closed while Poe's JavaScript is still running async operations.
+
+**Solution Strategy**:
+1. **Graceful Browser Shutdown**:
+   - Add proper wait states before closing browser
+   - Implement page.evaluate to check for pending XHR/fetch requests
+   - Use page.waitForLoadState('networkidle') before closing
+   
+2. **Error Dialog Prevention**:
+   - Intercept and suppress dialog events during shutdown
+   - Add page.on('dialog') handler to auto-dismiss
+   - Implement try-catch around browser close operations
+
+3. **Context Cleanup**:
+   - Clear browser cache/cookies for Poe domain before closing
+   - Properly dispose of page event listeners
+   - Use context.close() before browser.close()
+
+#### 7.2 Implement Working API Method (Issue #303)
+
+**Strategy**: Implement multiple approaches in fallback order:
+
+1. **Fix Cookie Collection**:
+   - Capture ALL required cookies including `m-b`, `p-b`, `p-lat`, `__cf_bm`, `cf_clearance`
+   - Store cookies with proper domain and path attributes
+   - Implement cookie refresh mechanism
+
+2. **GraphQL Implementation** (Primary):
+   - Implement `SettingsPageQuery` GraphQL query
+   - Use the same endpoint and headers as poe-api-wrapper
+   - Parse response for `computePointsAvailable` and subscription data
+
+3. **Direct JSON Endpoint** (Secondary):
+   - Fix headers to match browser requests exactly
+   - Add proper User-Agent, Referer, Origin headers
+   - Handle redirects and Cloudflare challenges
+
+4. **Enhanced Browser Scraping** (Fallback):
+   - Keep current implementation but fix cleanup issues
+   - Add retry logic for transient failures
+   - Implement better error handling
+
+### Technical Implementation Details
+
+#### 7.2.1 GraphQL Query Implementation
+
+```python
+SETTINGS_QUERY = """
+query SettingsPageQuery {
+  viewer {
+    messagePointInfo {
+      messagePointBalance
+      monthlyQuota
+    }
+    subscription {
+      isActive
+      expiresAt
+    }
+  }
+}
+"""
+```
+
+#### 7.2.2 Cookie Extraction Enhancement
+
+- Modify `extract_cookies_from_browser` to capture all cookies
+- Map Quora domain cookies to Poe endpoints
+- Store cookie metadata (expiry, httpOnly, secure flags)
+
+#### 7.2.3 Request Headers Configuration
+
+```python
+REQUIRED_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+    "Accept": "application/json",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Origin": "https://poe.com",
+    "Referer": "https://poe.com/settings",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin"
+}
+```
+
+### Success Metrics
+
+1. **No Browser Errors**: Zero error dialogs after balance check
+2. **API Success Rate**: >90% success rate for API-based balance retrieval
+3. **Performance**: <2 seconds for cached balance, <5 seconds for fresh retrieval
+4. **Reliability**: Automatic fallback chain works seamlessly
+
+### Testing Strategy
+
+1. **Unit Tests**:
+   - Mock GraphQL responses
+   - Test cookie extraction logic
+   - Verify fallback chain
+
+2. **Integration Tests**:
+   - Test with real Poe accounts
+   - Verify balance accuracy
+   - Test error scenarios
+
+3. **Browser Tests**:
+   - Verify no error dialogs
+   - Test browser cleanup
+   - Check memory leaks
+
+### Risk Mitigation
+
+1. **API Changes**: Monitor poe-api-wrapper for updates
+2. **Rate Limiting**: Implement exponential backoff
+3. **Cookie Expiry**: Auto-refresh mechanism
+4. **Cloudflare**: Handle challenges gracefully
+
+## Phase 8: Future Enhancements (Low Priority)
+
+### 8.1 Data Export & Analysis
 - Export to multiple formats (CSV, Excel, JSON, YAML)
 - Model comparison and diff features
 - Historical pricing tracking with trend analysis
 - Cost calculator with custom usage patterns
 
-### 6.2 Advanced Scalability
-**Priority**: Low - Extreme scale optimization
+### 8.2 Advanced Scalability
 - Intelligent request batching (5x faster for >10 models)
 - Streaming JSON parsing for large datasets (>1000 models)
 - Lazy loading with on-demand fetching
 - Optional parallel processing for independent operations
 
-### 6.3 Integration & Extensibility
-**Priority**: Low - Ecosystem integration
+### 8.3 Integration & Extensibility
 - Webhook support for real-time model updates
 - Plugin system for custom scrapers
 - REST API server mode for remote access

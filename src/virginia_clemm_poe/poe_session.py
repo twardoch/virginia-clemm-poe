@@ -2,6 +2,7 @@
 
 """Poe session management with cookie extraction and balance checking."""
 
+import asyncio
 import json
 import os
 from datetime import datetime, timedelta
@@ -15,6 +16,7 @@ from playwright.async_api import Browser, BrowserContext, Page
 from .config import POE_BASE_URL
 from .exceptions import APIError, AuthenticationError
 from .utils.paths import get_data_dir
+from .utils.timeout import with_retries
 
 
 class PoeSessionManager:
@@ -123,8 +125,9 @@ class PoeSessionManager:
             
             # Filter for Poe-related cookies
             poe_cookies = {}
-            essential_cookies = ["p-b", "p-lat", "m-b", "__cf_bm", "cf_clearance"]
-            optional_cookies = ["poe-formkey", "__stripe_mid", "__stripe_sid"]
+            # m-b is the main cookie for internal API, p-b for external
+            essential_cookies = ["m-b", "p-b", "p-lat", "__cf_bm", "cf_clearance"]
+            optional_cookies = ["poe-formkey", "__stripe_mid", "__stripe_sid", "m-lat", "m-uid"]
             all_wanted = essential_cookies + optional_cookies
             
             # Look for cookies by name, regardless of domain
@@ -144,8 +147,13 @@ class PoeSessionManager:
                     logger.debug(f"Extracted additional cookie: {name}")
             
             # Validate we have minimum required cookies
-            if "p-b" in poe_cookies or "p-lat" in poe_cookies:
+            # We need either m-b (for internal API) or p-b (for external API)
+            if "m-b" in poe_cookies or "p-b" in poe_cookies:
                 logger.info(f"Successfully extracted {len(poe_cookies)} Poe cookies")
+                if "m-b" in poe_cookies:
+                    logger.debug("Found m-b cookie for internal API access")
+                if "p-b" in poe_cookies:
+                    logger.debug("Found p-b cookie for external API access")
                 self.cookies = poe_cookies
                 self._save_cookies()
                 return poe_cookies
@@ -153,7 +161,7 @@ class PoeSessionManager:
                 # Log what we did find for debugging
                 logger.warning(f"Missing essential cookies. Found: {list(poe_cookies.keys())}")
                 logger.debug(f"All cookie names seen: {[c.get('name') for c in all_cookies]}")
-                raise AuthenticationError("Missing essential Poe cookies (p-b or p-lat)")
+                raise AuthenticationError("Missing essential Poe cookies (m-b or p-b)")
                 
         except AuthenticationError:
             raise
@@ -215,7 +223,14 @@ class PoeSessionManager:
         return await self.extract_cookies_from_browser(context)
     
     async def get_account_balance(self, use_api_key: bool = False, api_key: Optional[str] = None, page: Optional[Page] = None, use_cache: bool = True, force_refresh: bool = False) -> dict[str, Any]:
-        """Get account balance and settings using stored cookies.
+        """Get account balance and settings using multiple methods with fallback.
+        
+        Tries methods in this order:
+        1. Cached data (if not expired and not force_refresh)
+        2. API key method (if provided)
+        3. GraphQL query with cookies (most reliable)
+        4. Direct API endpoint with cookies
+        5. Browser scraping (most robust but slowest)
         
         Args:
             use_api_key: If True, try to use API key first (faster but limited info)
@@ -227,51 +242,172 @@ class PoeSessionManager:
         Returns:
             Dictionary with account settings including compute points balance
         """
-        if not self.cookies and not api_key and not page:
-            raise AuthenticationError("No cookies available. Please login first.")
-        
         # Check cache first if allowed
         if use_cache and not force_refresh and self._balance_cache:
             logger.info("Using cached balance data")
             return self._balance_cache
         
+        errors = []  # Collect errors for debugging
+        
         # Try API key method first if requested
         if use_api_key and api_key:
             try:
                 result = await self._get_balance_via_api(api_key)
-                self._save_balance_cache(result)
+                if result.get("compute_points_available") is not None:
+                    self._save_balance_cache(result)
+                    return result
+            except Exception as e:
+                errors.append(f"API key: {e}")
+                logger.debug(f"API key method failed: {e}")
+        
+        # Try cookie-based methods if we have cookies
+        if self.cookies:
+            try:
+                result = await self._get_balance_via_cookies()
+                # If we got real data, save to cache and return it
+                if result.get("compute_points_available") is not None:
+                    self._save_balance_cache(result)
+                    logger.info("Successfully got balance via API")
+                    return result
+            except AuthenticationError:
+                # Re-raise auth errors immediately
+                raise
+            except Exception as e:
+                errors.append(f"Cookie API: {e}")
+                logger.debug(f"Cookie-based API methods failed: {e}")
+        
+        # If we have a page, try scraping as last resort
+        if page:
+            logger.info("Falling back to browser scraping for balance...")
+            try:
+                from .balance_scraper import get_balance_with_browser
+                result = await get_balance_with_browser(page)
+                if result.get("compute_points_available") is not None:
+                    self._save_balance_cache(result)
+                    logger.info("Successfully got balance via browser scraping")
                 return result
             except Exception as e:
-                logger.warning(f"API key method failed, falling back to cookies: {e}")
+                errors.append(f"Browser scraping: {e}")
+                logger.error(f"Browser scraping failed: {e}")
         
-        # Try cookie method first
-        try:
-            result = await self._get_balance_via_cookies()
-            # If we got real data, save to cache and return it
-            if result.get("compute_points_available") is not None:
-                self._save_balance_cache(result)
-                return result
-            logger.info("API returned no balance data, trying browser scraping...")
-        except Exception as e:
-            logger.warning(f"Cookie method failed: {e}")
+        # If all methods failed, provide helpful error
+        if not self.cookies and not api_key:
+            raise AuthenticationError("No authentication available. Please login first with --login flag.")
         
-        # If we have a page, try scraping
-        if page:
-            logger.info("Using browser scraping to get balance...")
-            from .balance_scraper import get_balance_with_browser
-            result = await get_balance_with_browser(page)
-            if result.get("compute_points_available") is not None:
-                self._save_balance_cache(result)
-            return result
-        
-        # If no page provided but cookies failed, return what we have
-        result = await self._get_balance_via_cookies()
-        if result.get("compute_points_available") is not None:
-            self._save_balance_cache(result)
-        return result
+        # Return empty result with error info
+        logger.warning(f"All balance retrieval methods failed. Errors: {errors}")
+        return {
+            "compute_points_available": None,
+            "error": "Failed to retrieve balance",
+            "errors": errors,
+            "timestamp": datetime.utcnow().isoformat()
+        }
     
     async def _get_balance_via_cookies(self) -> dict[str, Any]:
         """Get balance using session cookies (internal API)."""
+        if not self.cookies:
+            raise AuthenticationError("No cookies available")
+        
+        # Try GraphQL method first if we have m-b cookie
+        if "m-b" in self.cookies:
+            try:
+                return await self._get_balance_via_graphql()
+            except Exception as e:
+                logger.debug(f"GraphQL method failed, falling back to direct API: {e}")
+        
+        # Fall back to direct API method
+        return await self._get_balance_via_direct_api()
+    
+    async def _get_balance_via_graphql(self) -> dict[str, Any]:
+        """Get balance using GraphQL query (most reliable method)."""
+        if not self.cookies:
+            raise AuthenticationError("No cookies available")
+        
+        # GraphQL query for settings
+        SETTINGS_QUERY = """
+        query SettingsPageQuery {
+            viewer {
+                messagePointInfo {
+                    messagePointBalance
+                    monthlyQuota
+                }
+                subscription {
+                    isActive
+                    expiresAt
+                }
+            }
+        }
+        """
+        
+        # Build cookie header
+        cookie_header = "; ".join(f"{k}={v}" for k, v in self.cookies.items())
+        
+        headers = {
+            "Cookie": cookie_header,
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+            "Origin": "https://poe.com",
+            "Referer": "https://poe.com/settings",
+            "Sec-Fetch-Dest": "empty",
+            "Sec-Fetch-Mode": "cors",
+            "Sec-Fetch-Site": "same-origin"
+        }
+        
+        # GraphQL endpoint
+        graphql_url = "https://poe.com/api/gql_POST"
+        
+        payload = {
+            "query": SETTINGS_QUERY,
+            "variables": {}
+        }
+        
+        async with httpx.AsyncClient() as client:
+            try:
+                # Use retry logic for transient failures
+                async def make_request():
+                    response = await client.post(graphql_url, json=payload, headers=headers, timeout=15)
+                    response.raise_for_status()
+                    return response
+                
+                response = await with_retries(
+                    make_request,
+                    max_retries=3,
+                    base_delay=1.0,
+                    operation_name="graphql_balance_query"
+                )
+                
+                data = response.json()
+                
+                # Extract data from GraphQL response
+                viewer_data = data.get("data", {}).get("viewer", {})
+                message_info = viewer_data.get("messagePointInfo", {})
+                subscription = viewer_data.get("subscription", {})
+                
+                result = {
+                    "compute_points_available": message_info.get("messagePointBalance"),
+                    "monthly_quota": message_info.get("monthlyQuota"),
+                    "subscription": subscription,
+                    "message_point_info": message_info,
+                    "timestamp": datetime.utcnow().isoformat()
+                }
+                
+                # Log balance info
+                points = result.get("compute_points_available")
+                if points is not None:
+                    logger.info(f"Account balance (via GraphQL): {points:,} compute points")
+                
+                return result
+                
+            except httpx.HTTPStatusError as e:
+                if e.response.status_code == 401:
+                    raise AuthenticationError("GraphQL: Cookies expired or invalid")
+                raise APIError(f"GraphQL request failed: {e}")
+            except Exception as e:
+                raise APIError(f"GraphQL error: {e}")
+    
+    async def _get_balance_via_direct_api(self) -> dict[str, Any]:
+        """Get balance using direct API endpoint (fallback method)."""
         if not self.cookies:
             raise AuthenticationError("No cookies available")
         
@@ -281,13 +417,28 @@ class PoeSessionManager:
         headers = {
             "Cookie": cookie_header,
             "Accept": "application/json",
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+            "Origin": "https://poe.com",
+            "Referer": "https://poe.com/settings",
+            "Sec-Fetch-Dest": "empty",
+            "Sec-Fetch-Mode": "cors",
+            "Sec-Fetch-Site": "cross-site"
         }
         
         async with httpx.AsyncClient() as client:
             try:
-                response = await client.get(self.POE_SETTINGS_URL, headers=headers, timeout=15)
-                response.raise_for_status()
+                # Use retry logic for transient failures
+                async def make_request():
+                    response = await client.get(self.POE_SETTINGS_URL, headers=headers, timeout=15)
+                    response.raise_for_status()
+                    return response
+                
+                response = await with_retries(
+                    make_request,
+                    max_retries=3,
+                    base_delay=1.0,
+                    operation_name="direct_api_balance"
+                )
                 
                 data = response.json()
                 
@@ -333,8 +484,8 @@ class PoeSessionManager:
     
     def has_valid_cookies(self) -> bool:
         """Check if we have the minimum required cookies."""
-        # p-b is the main session cookie, p-lat is optional
-        return "p-b" in self.cookies
+        # We need either m-b (internal API) or p-b (external API)
+        return "m-b" in self.cookies or "p-b" in self.cookies
     
     def clear_cookies(self) -> None:
         """Clear stored cookies and delete cookies file."""

@@ -8,6 +8,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Fixed
+- **Issue #302: Browser Error Dialogs** (2025-08-06): Fixed error dialogs appearing after balance checks
+  - Added graceful browser shutdown with `wait_for_load_state('networkidle')` before closing pages
+  - Implemented automatic dialog suppression handlers during page/context close operations
+  - Improved cleanup sequence: close pages → close context → close browser with proper delays
+  - Added 0.3-0.5 second delays for JavaScript cleanup to prevent async operation errors
+
+- **Issue #303: API Balance Retrieval** (2025-08-06): Fixed balance API returning null/empty data
+  - Enhanced cookie extraction to capture m-b cookie (required for internal API access)
+  - Implemented GraphQL method using SettingsPageQuery for most reliable balance retrieval
+  - Fixed direct API endpoint with proper headers (Origin, Referer, Sec-Fetch headers)
+  - Added intelligent fallback chain: GraphQL → Direct API → Browser scraping
+  - Added retry logic with exponential backoff (max 3 attempts, 1s-5s delays)
+  - Cookie validation now accepts either m-b (internal) or p-b (external) as valid
+
 - **PlaywrightAuthor API Compatibility** (2025-08-06): Updated to work with latest PlaywrightAuthor package
   - Fixed import errors from non-existent `get_browser` function
   - Updated `__main__.py` to use `Browser` class directly instead of deprecated `ensure_browser` function

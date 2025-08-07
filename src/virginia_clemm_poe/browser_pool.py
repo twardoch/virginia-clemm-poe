@@ -15,7 +15,7 @@ from contextlib import asynccontextmanager, suppress
 from typing import Any
 
 from loguru import logger
-from playwright.async_api import Browser, BrowserContext, Page
+from playwright.async_api import Browser, BrowserContext, Dialog, Page
 
 from .browser_manager import BrowserManager
 from .config import (
@@ -151,8 +151,35 @@ class BrowserConnection:
             return False
 
     async def close(self) -> None:
-        """Close this connection and clean up resources."""
+        """Close this connection and clean up resources gracefully."""
         try:
+            # Mark as unhealthy to prevent reuse
+            self.is_healthy = False
+            
+            # Close browser context first (will close all pages)
+            if self.context:
+                try:
+                    # Get all pages and close them gracefully
+                    pages = self.context.pages
+                    for page in pages:
+                        try:
+                            # Add dialog handler to suppress errors
+                            async def handle_dialog(dialog: Dialog) -> None:
+                                await dialog.dismiss()
+                            page.on("dialog", handle_dialog)
+                            
+                            # Wait for network to settle
+                            await page.wait_for_load_state("networkidle", timeout=2000)
+                        except:
+                            pass  # Continue with cleanup
+                    
+                    # Small delay before context close
+                    await asyncio.sleep(0.5)
+                    await self.context.close()
+                except Exception as e:
+                    logger.debug(f"Error closing context: {e}")
+            
+            # Now close the browser manager
             await self.manager.close()
         except Exception as e:
             logger.warning(f"Error closing browser connection: {e}")
@@ -414,13 +441,28 @@ class BrowserPool:
         return page
 
     async def _close_page_safely(self, page: Page | None) -> None:
-        """Safely close a page with timeout.
+        """Safely close a page with timeout and graceful cleanup.
 
         Args:
             page: Page to close, may be None
         """
         if page:
             try:
+                # Add dialog handler to suppress any dialogs during close
+                async def handle_dialog(dialog: Dialog) -> None:
+                    await dialog.dismiss()
+                page.on("dialog", handle_dialog)
+                
+                # Wait for network to settle before closing
+                try:
+                    await page.wait_for_load_state("networkidle", timeout=3000)
+                except:
+                    pass  # Ignore timeout, proceed with close
+                
+                # Small delay for JavaScript cleanup
+                await asyncio.sleep(0.3)
+                
+                # Now close the page
                 await with_timeout(page.close(), 10.0, "page_close")
             except Exception as e:
                 logger.warning(f"Error closing page: {e}")
@@ -541,9 +583,21 @@ class BrowserPool:
             """Clean up resources on failure."""
             nonlocal page, connection
 
-            # Clean up page
+            # Clean up page with graceful shutdown
             if page:
                 try:
+                    # Add dialog handler
+                    async def handle_dialog(dialog: Dialog) -> None:
+                        await dialog.dismiss()
+                    page.on("dialog", handle_dialog)
+                    
+                    # Wait for network to settle
+                    try:
+                        await page.wait_for_load_state("networkidle", timeout=2000)
+                    except:
+                        pass
+                    
+                    await asyncio.sleep(0.2)
                     await with_timeout(page.close(), 5.0, "page_cleanup")
                 except Exception as e:
                     logger.warning(f"Error closing page during cleanup: {e}")
