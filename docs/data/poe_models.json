@@ -494,47 +494,6 @@
       }
     },
     {
-      "id": "Claude-Opus-4-1",
-      "object": "model",
-      "created": 1754419185968,
-      "owned_by": "poe",
-      "permission": [],
-      "root": "Claude-Opus-4-1",
-      "parent": null,
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "modality": "text->text"
-      },
-      "pricing": {
-        "checked_at": "2025-08-05 23:16:36.364727",
-        "details": {
-          "input_text": "585 points/1k tokens",
-          "input_image": "585 points/1k tokens",
-          "bot_message": "1000 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "90% discount oncached chat history",
-          "total_cost": null,
-          "image_output": null,
-          "video_output": null,
-          "text_input": null,
-          "per_message": null,
-          "finetuning": null,
-          "initial_points_cost": "1134+ points"
-        }
-      },
-      "pricing_error": null,
-      "bot_info": {
-        "creator": "@anthropic",
-        "description": "Claude Opus 4.1 from Anthropic, supports customizable thinking budget (up to 32k tokens) and 200k context window.\nTo instruct the bot to use more thinking effort, add --thinking_budget and a number ranging from 0 to 31999 to the end of your message.",
-        "description_extra": "Powered by Anthropic: claude-opus-4-1-20250805. Learn more"
-      }
-    },
-    {
       "id": "Claude-Opus-4-Reasoning",
       "object": "model",
       "created": 1747865908863,
@@ -614,6 +573,47 @@
         "creator": "@anthropic",
         "description": "Claude Opus 4 with access to real-time information from the web. Supports customizable thinking budget of up to 126k tokens.\nTo instruct the bot to use more thinking effort, add --thinking_budget and a number ranging from 0 to 126,000 to the end of your message.",
         "description_extra": "Powered by Anthropic: claude-opus-4-20250514. Learn more"
+      }
+    },
+    {
+      "id": "Claude-Opus-4.1",
+      "object": "model",
+      "created": 1754419185968,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Claude-Opus-4.1",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-08 11:37:47.024091",
+        "details": {
+          "input_text": "585 points/1k tokens",
+          "input_image": "585 points/1k tokens",
+          "bot_message": "4817 points/message",
+          "chat_history": "Input rates are applied",
+          "chat_history_cache_discount": "90% discount oncached chat history",
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "4951+ points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@anthropic",
+        "description": "Claude Opus 4.1 from Anthropic, supports customizable thinking budget (up to 32k tokens) and 200k context window.\nTo instruct the bot to use more thinking effort, add --thinking_budget and a number ranging from 0 to 31999 to the end of your message.",
+        "description_extra": "Powered by Anthropic: claude-opus-4-1-20250805. Learn more"
       }
     },
     {
@@ -2914,6 +2914,170 @@
       }
     },
     {
+      "id": "GPT-5",
+      "object": "model",
+      "created": 1754429855700,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GPT-5",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-08 11:37:55.117491",
+        "details": {
+          "input_text": "38 points/1k tokens",
+          "input_image": "38 points/1k tokens",
+          "bot_message": "241 points/message",
+          "chat_history": "Input rates are applied",
+          "chat_history_cache_discount": "90% discount oncached chat history",
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "250+ points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@openai",
+        "description": "OpenAI’s latest flagship model with significantly improved coding skills, long context (400k tokens), and improved instruction following. Supports native vision, and generally has more intelligence than GPT-4.1. Provides a 90% chat history cache discount.\nTo instruct the bot to use more reasoning effort, add --reasoning_effort to the end of your message with one of \"low\", \"medium\", or \"high\"",
+        "description_extra": "Powered by OpenAI: gpt-5-2025-08-07. Learn more"
+      }
+    },
+    {
+      "id": "GPT-5-Chat",
+      "object": "model",
+      "created": 1754589771417,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GPT-5-Chat",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-08 11:38:02.722845",
+        "details": {
+          "input_text": "38 points/1k tokens",
+          "input_image": "38 points/1k tokens",
+          "bot_message": "241 points/message",
+          "chat_history": "Input rates are applied",
+          "chat_history_cache_discount": "90% discount oncached chat history",
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "250+ points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@openai",
+        "description": "GPT-5 Chat points to the GPT-5 snapshot currently used in ChatGPT. GPT-5 is OpenAI’s latest flagship model with significantly improved coding skills, long context (400k tokens), and improved instruction following. Supports native vision, and generally has more intelligence than GPT-4.1. Provides a 90% chat history cache discount.",
+        "description_extra": "Powered by OpenAI: gpt-5-chat-latest. Learn more"
+      }
+    },
+    {
+      "id": "GPT-5-mini",
+      "object": "model",
+      "created": 1750886324513,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GPT-5-mini",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-08 11:38:11.238882",
+        "details": {
+          "input_text": "8 points/1k tokens",
+          "input_image": "8 points/1k tokens",
+          "bot_message": "27 points/message",
+          "chat_history": "Input rates are applied",
+          "chat_history_cache_discount": "90% discount oncached chat history",
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "29+ points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@openai",
+        "description": "GPT-5 mini is a small, fast & affordable model that matches or beats GPT-4.1 in many intelligence and vision-related tasks. Supports 400k tokens of context. Provides a 90% chat history cache discount.\nTo instruct the bot to use more reasoning effort, add --reasoning_effort to the end of your message with one of \"low\", \"medium\", or \"high\"",
+        "description_extra": "Powered by OpenAI: gpt-5-mini-2025-08-07. Learn more"
+      }
+    },
+    {
+      "id": "GPT-5-nano",
+      "object": "model",
+      "created": 1754429832540,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GPT-5-nano",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-08 11:38:19.573997",
+        "details": {
+          "input_text": "2 points/1k tokens",
+          "input_image": "2 points/1k tokens",
+          "bot_message": "6 points/message",
+          "chat_history": "Input rates are applied",
+          "chat_history_cache_discount": "90% discount oncached chat history",
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "7+ points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@openai",
+        "description": "GPT-5 nano is an extremely fast and cheap model, ideal for text/vision summarization/categorization tasks. Supports native vision and 400k input tokens of context. Provides a 90% chat history cache discount.\nTo instruct the bot to use more reasoning effort, add --reasoning_effort to the end of your message with one of \"low\", \"medium\", or \"high\"",
+        "description_extra": "Powered by OpenAI: gpt-5-nano-2025-08-07. Learn more"
+      }
+    },
+    {
       "id": "GPT-Image-1",
       "object": "model",
       "created": 1743434309185,
@@ -3391,8 +3555,25 @@
         ],
         "modality": "text->text"
       },
-      "pricing": null,
-      "pricing_error": "No pricing table found in dialog",
+      "pricing": {
+        "checked_at": "2025-08-08 11:38:27.848600",
+        "details": {
+          "input_text": "1 point/1k tokens",
+          "input_image": "1 point/1k tokens",
+          "bot_message": "12 points/message",
+          "chat_history": "Input rates are applied",
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "13+ points",
+          "Input (video)": "1 point/second"
+        }
+      },
+      "pricing_error": null,
       "bot_info": {
         "creator": "@google",
         "description": "A lightweight Gemini 2.5 Flash reasoning model optimized for cost efficiency and low latency. Supports web search. Supports 1 million tokens of input context. For more complex queries, use https://poe.com/Gemini-2.5-Pro or https://poe.com/Gemini-2.5-Flash\n\nTo instruct the bot to use more thinking effort, add --thinking_budget and a number ranging from 0 to 24,576 to the end of your message.",
@@ -6116,6 +6297,47 @@
       }
     },
     {
+      "id": "Llama-4-Scout-CS",
+      "object": "model",
+      "created": 1747179494349,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-4-Scout-CS",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-08-08 11:38:35.701101",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": "350 points/message",
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "350 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@cerebrasai",
+        "description": "World’s fastest inference for Llama 4 Scout with Cerebras.",
+        "description_extra": "Powered by a server managed by @cerebrasai. Learn more"
+      }
+    },
+    {
       "id": "Llama-4-Scout-T",
       "object": "model",
       "created": 1743891662563,
@@ -6154,47 +6376,6 @@
         "creator": "@togetherai",
         "description": "Llama 4 Scout, fast long-context multimodal model from Meta. A 16-expert MoE model that excels at multi-document analysis, codebase reasoning, and personalized tasks. A smaller model than Maverick but state of the art in its size & with text + image input support. Supports 300k context.",
         "description_extra": "Powered by a server managed by @togetherai. Learn more"
-      }
-    },
-    {
-      "id": "Llama-4-Scout-nitro",
-      "object": "model",
-      "created": 1747179494349,
-      "owned_by": "poe",
-      "permission": [],
-      "root": "Llama-4-Scout-nitro",
-      "parent": null,
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "modality": "text->text"
-      },
-      "pricing": {
-        "checked_at": "2025-08-05 23:32:44.113342",
-        "details": {
-          "input_text": null,
-          "input_image": null,
-          "bot_message": null,
-          "chat_history": null,
-          "chat_history_cache_discount": null,
-          "total_cost": "350 points/message",
-          "image_output": null,
-          "video_output": null,
-          "text_input": null,
-          "per_message": null,
-          "finetuning": null,
-          "initial_points_cost": "350 points"
-        }
-      },
-      "pricing_error": null,
-      "bot_info": {
-        "creator": "@cerebrasai",
-        "description": "World’s fastest inference for Llama 4 Scout with Cerebras.",
-        "description_extra": "Powered by a server managed by @cerebrasai. Learn more"
       }
     },
     {
@@ -8212,12 +8393,12 @@
       }
     },
     {
-      "id": "Qwen3-32B-nitro",
+      "id": "Qwen3-32B-CS",
       "object": "model",
       "created": 1747326165823,
       "owned_by": "poe",
       "permission": [],
-      "root": "Qwen3-32B-nitro",
+      "root": "Qwen3-32B-CS",
       "parent": null,
       "architecture": {
         "input_modalities": [
@@ -8229,7 +8410,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:38:20.884039",
+        "checked_at": "2025-08-08 11:38:43.941198",
         "details": {
           "input_text": null,
           "input_image": null,

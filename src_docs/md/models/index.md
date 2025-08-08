@@ -32,11 +32,11 @@ Browse all available Poe models:
 
 ### [Claude-Opus-4](Claude-Opus-4.md)
 
-### [Claude-Opus-4-1](Claude-Opus-4-1.md)
-
 ### [Claude-Opus-4-Reasoning](Claude-Opus-4-Reasoning.md)
 
 ### [Claude-Opus-4-Search](Claude-Opus-4-Search.md)
+
+### [Claude-Opus-4.1](Claude-Opus-4.1.md)
 
 ### [Claude-Sonnet-3.5](Claude-Sonnet-3.5.md)
 
@@ -149,6 +149,14 @@ Browse all available Poe models:
 ### [GPT-4o-mini](GPT-4o-mini.md)
 
 ### [GPT-4o-mini-Search](GPT-4o-mini-Search.md)
+
+### [GPT-5](GPT-5.md)
+
+### [GPT-5-Chat](GPT-5-Chat.md)
+
+### [GPT-5-mini](GPT-5-mini.md)
+
+### [GPT-5-nano](GPT-5-nano.md)
 
 ### [GPT-Image-1](GPT-Image-1.md)
 
@@ -306,9 +314,9 @@ Browse all available Poe models:
 
 ### [Llama-4-Scout-B10](Llama-4-Scout-B10.md)
 
-### [Llama-4-Scout-T](Llama-4-Scout-T.md)
+### [Llama-4-Scout-CS](Llama-4-Scout-CS.md)
 
-### [Llama-4-Scout-nitro](Llama-4-Scout-nitro.md)
+### [Llama-4-Scout-T](Llama-4-Scout-T.md)
 
 ### [Luma-Photon](Luma-Photon.md)
 
@@ -406,7 +414,7 @@ Browse all available Poe models:
 
 ### [Qwen3-235B-A22B-DI](Qwen3-235B-A22B-DI.md)
 
-### [Qwen3-32B-nitro](Qwen3-32B-nitro.md)
+### [Qwen3-32B-CS](Qwen3-32B-CS.md)
 
 ### [Qwen3-Coder-480B-FW](Qwen3-Coder-480B-FW.md)
 

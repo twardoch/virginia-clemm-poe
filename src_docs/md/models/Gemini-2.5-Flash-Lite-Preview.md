@@ -1,5 +1,19 @@
 # [Gemini-2.5-Flash-Lite-Preview](https://poe.com/Gemini-2.5-Flash-Lite-Preview){ .md-button .md-button--primary }
 
+## Pricing
+
+| Type | Cost |
+|------|------|
+| Input Text | 1 point/1k tokens |
+| Input Image | 1 point/1k tokens |
+| Bot Message | 12 points/message |
+| Chat History | Input rates are applied |
+| Initial Points Cost | 13+ points |
+| Input (Video) | 1 point/second |
+
+**Last Checked:** 2025-08-08 11:38:27.848600
+
+
 ## Bot Information
 
 **Creator:** @google
