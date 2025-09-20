@@ -7,7 +7,7 @@
 | Initial Points Cost | Variable points |
 | Audio Output | 1667 points / 1000 character |
 
-**Last Checked:** 2025-08-05 23:34:47.967523
+**Last Checked:** 2025-09-20 12:29:31.798518
 
 
 ## Bot Information

@@ -10,7 +10,7 @@
 | Output (Text) | 17 points/1k tokens |
 | Cache Discount | 75% discount oncached chat |
 
-**Last Checked:** 2025-09-20 11:42:50.193092
+**Last Checked:** 2025-09-20 12:18:19.683989
 
 
 ## Bot Information

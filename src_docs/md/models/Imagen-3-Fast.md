@@ -4,17 +4,17 @@
 
 | Type | Cost |
 |------|------|
-| Total Cost | 200 points/message |
-| Initial Points Cost | 200 points |
+| Total Cost | 400 points/message |
+| Initial Points Cost | 400 points |
 
-**Last Checked:** 2025-08-05 23:27:27.058791
+**Last Checked:** 2025-09-20 12:20:33.596800
 
 
 ## Bot Information
 
 **Creator:** @google
 
-**Description:** Google DeepMind's highest quality text-to-image model, capable of generating images with great detail, rich lighting, and few distracting artifacts — optimized for short, simple prompts. To adjust the aspect ratio of your image add --aspect_ratio (1:1, 16:9, 9:16, 4:3, 3:4). For more complex prompts, use @Imagen3. Non english input will be translated first.
+**Description:** Google DeepMind's highest quality text-to-image model, capable of generating images with great detail, rich lighting, and few distracting artifacts — optimized for short, simple prompts. To adjust the aspect ratio of your image add --aspect_ratio (1:1, 16:9, 9:16, 4:3, 3:4). For more complex prompts, use @Imagen3. Non english input will be translated first. Image prompt cannot exceed 480 tokens.
 
 **Extra:** Powered by a server managed by @google. Learn more
 

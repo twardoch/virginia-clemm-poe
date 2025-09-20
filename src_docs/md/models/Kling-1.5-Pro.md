@@ -7,14 +7,14 @@
 | Video Output | 2834 points / second |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:28:21.928770
+**Last Checked:** 2025-09-20 12:21:54.156534
 
 
 ## Bot Information
 
 **Creator:** @fal
 
-**Description:** Kling v1.5 video generation bot, hosted by fal.ai. For best results, upload an image attachment. Use `--aspect` to set the aspect ratio. Allowed values are `16:9`, `9:16` and `1:1`. Use `--duration` to set the duration of the generated video.
+**Description:** Kling v1.5 video generation bot, hosted by fal.ai. For best results, upload an image attachment. Use `--aspect` to set the aspect ratio. Allowed values are `16:9`, `9:16` and `1:1`. Use `--duration` to set the duration of the generated video (5 or 10 seconds).
 
 **Extra:** Powered by a server managed by @fal. Learn more
 

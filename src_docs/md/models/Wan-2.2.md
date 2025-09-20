@@ -4,17 +4,17 @@
 
 | Type | Cost |
 |------|------|
-| Video Output | 2667 points / second |
+| Video Output | 2267 points / second |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:42:02.026350
+**Last Checked:** 2025-09-20 12:39:14.917241
 
 
 ## Bot Information
 
 **Creator:** @fal
 
-**Description:** Wan-2.2 is a video model that generates high-quality videos with high visual quality and motion diversity from text prompts. Use `--aspect` to set the aspect ratio (One of `16:9`, `1:1`, `9:16`) for text-to-video requests. Duration is limited to 5 seconds only with up to 720p resolution.
+**Description:** Wan-2.2 is a video model that generates high-quality videos with high visual quality and motion diversity from text prompts. Send one image for image to video tasks, and send two images for first-frame - last-frame generation. Use `--aspect` to set the aspect ratio (One of `16:9`, `1:1`, `9:16`) for text-to-video requests. Duration is limited to 5 seconds only with up to 720p resolution.
 
 **Extra:** Powered by a server managed by @fal. Learn more
 

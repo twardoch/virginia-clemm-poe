@@ -19,7 +19,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:15:20.551128",
+        "checked_at": "2025-09-20 12:03:46.459448",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -60,7 +60,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:15:27.275730",
+        "checked_at": "2025-09-20 12:03:53.785709",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -101,7 +101,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:39:33.052634",
+        "checked_at": "2025-09-20 12:04:01.132382",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -143,7 +143,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:15:34.046916",
+        "checked_at": "2025-09-20 12:04:08.362415",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -184,7 +184,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:39:42.494179",
+        "checked_at": "2025-09-20 12:04:15.598309",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -226,7 +226,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:39:49.844751",
+        "checked_at": "2025-09-20 12:04:22.941965",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -267,12 +267,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:15:47.594449",
+        "checked_at": "2025-09-20 12:04:30.524554",
         "details": {
-          "input_text": "150 points/1k tokens",
-          "input_image": "150 points/1k tokens",
-          "bot_message": "302 points/message",
-          "chat_history": "Input rates are applied",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -280,7 +280,9 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "335+ points"
+          "initial_points_cost": "371+ points",
+          "Input": "150 points/1k tokens",
+          "Output (text)": "450 points/1k tokens"
         }
       },
       "pricing_error": null,
@@ -308,7 +310,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:15:54.768248",
+        "checked_at": "2025-09-20 12:04:37.815967",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -349,20 +351,23 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:16:01.532861",
+        "checked_at": "2025-09-20 12:04:45.079077",
         "details": {
-          "input_text": "10 points/1k tokens",
-          "input_image": "10 points/1k tokens",
-          "bot_message": "19 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "90% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "22+ points"
+          "initial_points_cost": "19+ points",
+          "Input": "8 points/1k tokens",
+          "Output (text)": "34 points/1k tokens",
+          "Cache discount": "90% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -390,20 +395,23 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:16:08.345743",
+        "checked_at": "2025-09-20 12:04:52.376423",
         "details": {
-          "input_text": "30 points/1k tokens",
-          "input_image": "30 points/1k tokens",
-          "bot_message": "42 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "90% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "49+ points"
+          "initial_points_cost": "44+ points",
+          "Input": "24 points/1k tokens",
+          "Output (text)": "107 points/1k tokens",
+          "Cache discount": "90% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -431,20 +439,23 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:16:15.185407",
+        "checked_at": "2025-09-20 12:05:00.315890",
         "details": {
-          "input_text": "30 points/1k tokens",
-          "input_image": "30 points/1k tokens",
-          "bot_message": "92 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "90% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "99+ points"
+          "initial_points_cost": "124+ points",
+          "Input": "24 points/1k tokens",
+          "Output (text)": "107 points/1k tokens",
+          "Cache discount": "90% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -472,20 +483,23 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:16:22.197900",
+        "checked_at": "2025-09-20 12:05:08.233804",
         "details": {
-          "input_text": "585 points/1k tokens",
-          "input_image": "585 points/1k tokens",
-          "bot_message": "1918 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "90% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "2052+ points"
+          "initial_points_cost": "1804+ points",
+          "Input": "468 points/1k tokens",
+          "Output (text)": "2000 points/1k tokens",
+          "Cache discount": "90% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -513,20 +527,23 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:16:29.098274",
+        "checked_at": "2025-09-20 12:05:15.516955",
         "details": {
-          "input_text": "585 points/1k tokens",
-          "input_image": "585 points/1k tokens",
-          "bot_message": "4817 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "90% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "4951+ points"
+          "initial_points_cost": "3745+ points",
+          "Input": "468 points/1k tokens",
+          "Output (text)": "2000 points/1k tokens",
+          "Cache discount": "90% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -554,20 +571,23 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:16:43.181755",
+        "checked_at": "2025-09-20 12:05:22.889591",
         "details": {
-          "input_text": "585 points/1k tokens",
-          "input_image": "585 points/1k tokens",
-          "bot_message": "5782 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "90% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "5916+ points"
+          "initial_points_cost": "4700+ points",
+          "Input": "468 points/1k tokens",
+          "Output (text)": "2000 points/1k tokens",
+          "Cache discount": "90% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -595,20 +615,23 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:16:50.012200",
+        "checked_at": "2025-09-20 12:05:30.248407",
         "details": {
-          "input_text": "585 points/1k tokens",
-          "input_image": "585 points/1k tokens",
-          "bot_message": "4222 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "90% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "4356+ points"
+          "initial_points_cost": "3135+ points",
+          "Input": "468 points/1k tokens",
+          "Output (text)": "2000 points/1k tokens",
+          "Cache discount": "90% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -636,20 +659,23 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-08 11:37:47.024091",
+        "checked_at": "2025-09-20 12:05:37.471310",
         "details": {
-          "input_text": "585 points/1k tokens",
-          "input_image": "585 points/1k tokens",
-          "bot_message": "4817 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "90% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "4951+ points"
+          "initial_points_cost": "4733+ points",
+          "Input": "468 points/1k tokens",
+          "Output (text)": "2000 points/1k tokens",
+          "Cache discount": "90% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -677,20 +703,23 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:16:56.792948",
+        "checked_at": "2025-09-20 12:05:44.764413",
         "details": {
-          "input_text": "115 points/1k tokens",
-          "input_image": "115 points/1k tokens",
-          "bot_message": "243 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "90% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "270+ points"
+          "initial_points_cost": "210+ points",
+          "Input": "92 points/1k tokens",
+          "Output (text)": "400 points/1k tokens",
+          "Cache discount": "90% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -718,20 +747,23 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:17:03.682147",
+        "checked_at": "2025-09-20 12:05:52.094042",
         "details": {
-          "input_text": "115 points/1k tokens",
-          "input_image": "115 points/1k tokens",
-          "bot_message": "363 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "90% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "390+ points"
+          "initial_points_cost": "308+ points",
+          "Input": "92 points/1k tokens",
+          "Output (text)": "400 points/1k tokens",
+          "Cache discount": "90% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -759,20 +791,23 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:17:10.530327",
+        "checked_at": "2025-09-20 12:06:00.078205",
         "details": {
-          "input_text": "115 points/1k tokens",
+          "input_text": null,
           "input_image": "Variable",
-          "bot_message": "438 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "90% discount oncached chat history",
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "465+ points"
+          "initial_points_cost": "271+ points",
+          "Input": "92 points/1k tokens",
+          "Output (text)": "400 points/1k tokens",
+          "Cache discount": "90% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -800,20 +835,23 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:17:17.451270",
+        "checked_at": "2025-09-20 12:06:07.332244",
         "details": {
-          "input_text": "115 points/1k tokens",
-          "input_image": "115 points/1k tokens",
-          "bot_message": "1017 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "90% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "1044+ points"
+          "initial_points_cost": "729+ points",
+          "Input": "92 points/1k tokens",
+          "Output (text)": "400 points/1k tokens",
+          "Cache discount": "90% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -841,20 +879,23 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:17:25.144538",
+        "checked_at": "2025-09-20 12:06:14.653226",
         "details": {
-          "input_text": "115 points/1k tokens",
-          "input_image": "115 points/1k tokens",
-          "bot_message": "1695 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "90% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "1722+ points"
+          "initial_points_cost": "1241+ points",
+          "Input": "92 points/1k tokens",
+          "Output (text)": "400 points/1k tokens",
+          "Cache discount": "90% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -882,20 +923,23 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:17:31.960532",
+        "checked_at": "2025-09-20 12:06:22.564974",
         "details": {
-          "input_text": "115 points/1k tokens",
-          "input_image": "115 points/1k tokens",
-          "bot_message": "1491 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "90% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "1518+ points"
+          "initial_points_cost": "1126+ points",
+          "Input": "92 points/1k tokens",
+          "Output (text)": "400 points/1k tokens",
+          "Cache discount": "90% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -923,20 +967,23 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:17:38.693428",
+        "checked_at": "2025-09-20 12:06:30.397470",
         "details": {
-          "input_text": "115 points/1k tokens",
-          "input_image": "115 points/1k tokens",
-          "bot_message": "911 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "90% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "938+ points"
+          "initial_points_cost": "799+ points",
+          "Input": "92 points/1k tokens",
+          "Output (text)": "400 points/1k tokens",
+          "Cache discount": "90% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -964,20 +1011,23 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:17:45.523552",
+        "checked_at": "2025-09-20 12:06:37.619123",
         "details": {
-          "input_text": "115 points/1k tokens",
-          "input_image": "115 points/1k tokens",
-          "bot_message": "1601 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "90% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "1628+ points"
+          "initial_points_cost": "1270+ points",
+          "Input": "92 points/1k tokens",
+          "Output (text)": "400 points/1k tokens",
+          "Cache discount": "90% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -1005,20 +1055,23 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:17:52.359681",
+        "checked_at": "2025-09-20 12:06:44.809755",
         "details": {
-          "input_text": "115 points/1k tokens",
-          "input_image": "115 points/1k tokens",
-          "bot_message": "843 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "90% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "870+ points"
+          "initial_points_cost": "991+ points",
+          "Input": "92 points/1k tokens",
+          "Output (text)": "400 points/1k tokens",
+          "Cache discount": "90% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -1046,7 +1099,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:17:59.794855",
+        "checked_at": "2025-09-20 12:06:52.073674",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -1087,7 +1140,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:18:08.873554",
+        "checked_at": "2025-09-20 12:07:00.167023",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -1128,7 +1181,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:18:17.711665",
+        "checked_at": "2025-09-20 12:07:07.495751",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -1169,7 +1222,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:18:24.603323",
+        "checked_at": "2025-09-20 12:07:14.949054",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -1180,9 +1233,37 @@
           "image_output": null,
           "video_output": null,
           "text_input": null,
-          "per_message": "5334 points",
+          "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "5334 points"
+          "initial_points_cost": "592+ points",
+          "DeepSeek R1 + Claude 3.5 Sonnet": [
+            "592",
+            "2865"
+          ],
+          "DeepSeek R1 + Claude Opus 4.1": [
+            "2592",
+            "12865"
+          ],
+          "DeepSeek R1 + Claude Opus 4": [
+            "2592",
+            "12865"
+          ],
+          "DeepSeek R1 + Claude Sonnet 4": [
+            "592",
+            "2865"
+          ],
+          "DeepSeek R1 + Claude Sonnet 3.7": [
+            "592",
+            "2865"
+          ],
+          "DeepSeek R1 + Claude 3.5 Haiku": [
+            "225",
+            "1032"
+          ],
+          "DeepSeek R1 + Claude 3 Opus": [
+            "2592",
+            "12865"
+          ]
         }
       },
       "pricing_error": null,
@@ -1210,7 +1291,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:39:57.285771",
+        "checked_at": "2025-09-20 12:07:22.241826",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -1251,7 +1332,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:18:31.361879",
+        "checked_at": "2025-09-20 12:07:30.645308",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -1292,7 +1373,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:18:38.148028",
+        "checked_at": "2025-09-20 12:07:37.927402",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -1333,7 +1414,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:18:45.122844",
+        "checked_at": "2025-09-20 12:07:45.194444",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -1374,7 +1455,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:18:51.993132",
+        "checked_at": "2025-09-20 12:07:52.508048",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -1415,7 +1496,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:40:04.837452",
+        "checked_at": "2025-09-20 12:07:59.695855",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -1456,7 +1537,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:18:58.847977",
+        "checked_at": "2025-09-20 12:08:06.957553",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -1497,7 +1578,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:19:05.755817",
+        "checked_at": "2025-09-20 12:08:14.306425",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -1538,7 +1619,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:19:12.696299",
+        "checked_at": "2025-09-20 12:08:21.898181",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -1579,7 +1660,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:19:19.809551",
+        "checked_at": "2025-09-20 12:08:29.156963",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -1620,7 +1701,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:40:15.036911",
+        "checked_at": "2025-09-20 12:08:36.916092",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -1661,7 +1742,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:40:22.460750",
+        "checked_at": "2025-09-20 12:08:45.035516",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -1702,7 +1783,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:40:29.836401",
+        "checked_at": "2025-09-20 12:08:53.692312",
         "details": {
           "input_text": "500 points / 1k tokens",
           "input_image": "750 points / 1k token",
@@ -1747,7 +1828,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:40:39.259576",
+        "checked_at": "2025-09-20 12:09:01.219207",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -1789,7 +1870,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:19:26.926273",
+        "checked_at": "2025-09-20 12:09:09.357309",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -1830,7 +1911,7 @@
         "modality": "text->video"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:19:34.534115",
+        "checked_at": "2025-09-20 12:09:16.772560",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -1871,7 +1952,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:40:46.452526",
+        "checked_at": "2025-09-20 12:09:24.160150",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -1912,7 +1993,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:40:55.767422",
+        "checked_at": "2025-09-20 12:09:31.735961",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -1953,7 +2034,7 @@
         "modality": "text->audio"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:41:02.900558",
+        "checked_at": "2025-09-20 12:09:39.441992",
         "details": {
           "input_text": "1 point / character",
           "input_image": null,
@@ -1994,7 +2075,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:41:09.879420",
+        "checked_at": "2025-09-20 12:09:47.580272",
         "details": {
           "input_text": "2 point / character",
           "input_image": null,
@@ -2035,7 +2116,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:19:49.031543",
+        "checked_at": "2025-09-20 12:09:55.822489",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -2076,7 +2157,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:19:56.486168",
+        "checked_at": "2025-09-20 12:10:04.162671",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -2117,7 +2198,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:41:17.132056",
+        "checked_at": "2025-09-20 12:10:13.098503",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -2158,7 +2239,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:20:03.360248",
+        "checked_at": "2025-09-20 12:10:21.424457",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -2199,7 +2280,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:20:10.330382",
+        "checked_at": "2025-09-20 12:10:29.543195",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -2240,7 +2321,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:20:18.224623",
+        "checked_at": "2025-09-20 12:10:37.535243",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -2281,7 +2362,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:20:25.099162",
+        "checked_at": "2025-09-20 12:10:45.535455",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -2322,7 +2403,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:20:31.853626",
+        "checked_at": "2025-09-20 12:10:54.249506",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -2363,7 +2444,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:20:38.897480",
+        "checked_at": "2025-09-20 12:11:02.280416",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -2404,7 +2485,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:20:45.747196",
+        "checked_at": "2025-09-20 12:11:10.280127",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -2445,7 +2526,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:20:52.759536",
+        "checked_at": "2025-09-20 12:11:18.197432",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -2486,7 +2567,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:20:59.827907",
+        "checked_at": "2025-09-20 12:11:26.130158",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -2527,7 +2608,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:21:07.325562",
+        "checked_at": "2025-09-20 12:11:33.782226",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -2568,7 +2649,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:21:14.396193",
+        "checked_at": "2025-09-20 12:11:41.379171",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -2609,7 +2690,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:21:22.057689",
+        "checked_at": "2025-09-20 12:11:48.831979",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -2650,7 +2731,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:21:29.173255",
+        "checked_at": "2025-09-20 12:11:56.854107",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -2691,7 +2772,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:21:36.157410",
+        "checked_at": "2025-09-20 12:12:04.110987",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -2732,7 +2813,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:21:43.063596",
+        "checked_at": "2025-09-20 12:12:11.325492",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -2773,27 +2854,27 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:21:49.915138",
+        "checked_at": "2025-09-20 12:12:18.592751",
         "details": {
           "input_text": null,
           "input_image": null,
           "bot_message": null,
           "chat_history": null,
           "chat_history_cache_discount": null,
-          "total_cost": "180 points/message",
+          "total_cost": "190 points/message",
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "180 points"
+          "initial_points_cost": "190 points"
         }
       },
       "pricing_error": null,
       "bot_info": {
-        "creator": "@fireworksai",
-        "description": "The GLM-4.5 series models are foundation models designed for intelligent agents. GLM-4.5 has 355 billion total parameters with 32 billion active parameters. It unifies reasoning, coding, and intelligent agent capabilities to meet the complex demands of intelligent agent applications.",
-        "description_extra": "Powered by a server managed by @fireworksai. Learn more"
+        "creator": "@novitaai",
+        "description": "The GLM-4.5 series models are foundation models designed for intelligent agents. GLM-4.5 has 355 billion total parameters with 32 billion active parameters, while GLM-4.5-Air adopts a more compact design with 106 billion total parameters and 12 billion active parameters. GLM-4.5 models unify reasoning, coding, and intelligent agent capabilities to meet the complex demands of intelligent agent applications. This bot currently does not accept attachments.",
+        "description_extra": "Powered by a server managed by @novitaai. Learn more"
       }
     },
     {
@@ -2814,7 +2895,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:41:24.078861",
+        "checked_at": "2025-09-20 12:12:26.467560",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -2855,7 +2936,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:41:30.998362",
+        "checked_at": "2025-09-20 12:12:33.739965",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -2896,7 +2977,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:41:37.973595",
+        "checked_at": "2025-09-20 12:12:41.095235",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -2937,7 +3018,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:41:45.255077",
+        "checked_at": "2025-09-20 12:12:48.349804",
         "details": {
           "input_text": "40 points / 1k tokens",
           "input_image": "75 points / image",
@@ -2981,12 +3062,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:21:56.930715",
+        "checked_at": "2025-09-20 12:12:55.730277",
         "details": {
           "input_text": "15 points/1k tokens",
           "input_image": "Variable",
-          "bot_message": "9 points/message",
-          "chat_history": "Input rates are applied",
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -2994,7 +3075,8 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "13+ points"
+          "initial_points_cost": "15+ points",
+          "Output (text)": "45 points/1k tokens"
         }
       },
       "pricing_error": null,
@@ -3022,12 +3104,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:22:03.798705",
+        "checked_at": "2025-09-20 12:13:03.005891",
         "details": {
           "input_text": "45 points/1k tokens",
           "input_image": "Variable",
-          "bot_message": "8 points/message",
-          "chat_history": "Input rates are applied",
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -3035,7 +3117,8 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "18+ points"
+          "initial_points_cost": "20+ points",
+          "Output (text)": "60 points/1k tokens"
         }
       },
       "pricing_error": null,
@@ -3063,12 +3146,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:22:11.148957",
+        "checked_at": "2025-09-20 12:13:12.455404",
         "details": {
           "input_text": "15 points/1k tokens",
           "input_image": "Variable",
-          "bot_message": "11 points/message",
-          "chat_history": "Input rates are applied",
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -3076,7 +3159,8 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "15+ points"
+          "initial_points_cost": "16+ points",
+          "Output (text)": "45 points/1k tokens"
         }
       },
       "pricing_error": null,
@@ -3104,12 +3188,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:22:18.026353",
+        "checked_at": "2025-09-20 12:13:19.577688",
         "details": {
-          "input_text": "900 points/1k tokens",
-          "input_image": "900 points/1k tokens",
-          "bot_message": "559 points/message",
-          "chat_history": "Input rates are applied",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -3117,7 +3201,9 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "757+ points"
+          "initial_points_cost": "842+ points",
+          "Input": "900 points/1k tokens",
+          "Output (text)": "1800 points/1k tokens"
         }
       },
       "pricing_error": null,
@@ -3145,12 +3231,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:22:25.061131",
+        "checked_at": "2025-09-20 12:13:26.904810",
         "details": {
-          "input_text": "900 points/1k tokens",
-          "input_image": "900 points/1k tokens",
-          "bot_message": "334 points/message",
-          "chat_history": "Input rates are applied",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -3158,7 +3244,9 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "532+ points"
+          "initial_points_cost": "844+ points",
+          "Input": "900 points/1k tokens",
+          "Output (text)": "1800 points/1k tokens"
         }
       },
       "pricing_error": null,
@@ -3186,12 +3274,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:22:31.663097",
+        "checked_at": "2025-09-20 12:13:34.250465",
         "details": {
-          "input_text": "300 points/1k tokens",
-          "input_image": "300 points/1k tokens",
-          "bot_message": "285 points/message",
-          "chat_history": "Input rates are applied",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -3199,7 +3287,9 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "351+ points"
+          "initial_points_cost": "445+ points",
+          "Input": "300 points/1k tokens",
+          "Output (text)": "900 points/1k tokens"
         }
       },
       "pricing_error": null,
@@ -3227,26 +3317,29 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:22:38.740327",
+        "checked_at": "2025-09-20 12:13:41.562517",
         "details": {
-          "input_text": "60 points/1k tokens",
-          "input_image": "60 points/1k tokens",
-          "bot_message": "193 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "75% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "206+ points"
+          "initial_points_cost": "240+ points",
+          "Input": "60 points/1k tokens",
+          "Output (text)": "240 points/1k tokens",
+          "Cache discount": "75% discount oncached chat"
         }
       },
       "pricing_error": null,
       "bot_info": {
         "creator": "@openai",
-        "description": "OpenAI’s latest flagship model with significantly improved coding skills, long context (1M tokens), and improved instruction following. Supports native vision, and generally has more intelligence than GPT-4o.",
+        "description": "OpenAI’s GPT-4.1 significantly improves on past models in terms of its coding skills, long context (1M tokens), and improved instruction following. Supports native vision, and generally has more intelligence than GPT-4o. Provides a 75% chat history cache discount.",
         "description_extra": "Powered by OpenAI: gpt-4.1-2025-04-14. Learn more"
       }
     },
@@ -3268,20 +3361,23 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:22:45.530107",
+        "checked_at": "2025-09-20 12:13:48.908647",
         "details": {
-          "input_text": "12 points/1k tokens",
-          "input_image": "12 points/1k tokens",
-          "bot_message": "22 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "75% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "25+ points"
+          "initial_points_cost": "28+ points",
+          "Input": "12 points/1k tokens",
+          "Output (text)": "48 points/1k tokens",
+          "Cache discount": "75% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -3309,20 +3405,23 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:22:52.385639",
+        "checked_at": "2025-09-20 12:13:57.372824",
         "details": {
-          "input_text": "3 points/1k tokens",
-          "input_image": "3 points/1k tokens",
-          "bot_message": "6 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "75% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "7+ points"
+          "initial_points_cost": "7+ points",
+          "Input": "3 points/1k tokens",
+          "Output (text)": "12 points/1k tokens",
+          "Cache discount": "75% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -3350,13 +3449,13 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:22:59.250841",
+        "checked_at": "2025-09-20 12:14:04.772000",
         "details": {
-          "input_text": "75 points/1k tokens",
-          "input_image": "75 points/1k tokens",
-          "bot_message": "187 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "50% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
@@ -3364,7 +3463,10 @@
           "per_message": null,
           "finetuning": null,
           "initial_points_cost": "Variable points",
-          "Image generation": "Additional costs based on the \"Image Generation\" section below"
+          "Input": "75 points/1k tokens",
+          "Output (text)": "300 points/1k tokens",
+          "Image generation": "Additional costs based on the \"Image Generation\" section below",
+          "Cache discount": "50% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -3392,20 +3494,23 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:23:06.785217",
+        "checked_at": "2025-09-20 12:14:12.297848",
         "details": {
-          "input_text": "75 points/1k tokens",
-          "input_image": "75 points/1k tokens",
-          "bot_message": "128 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "50% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "145+ points"
+          "initial_points_cost": "134+ points",
+          "Input": "75 points/1k tokens",
+          "Output (text)": "300 points/1k tokens",
+          "Cache discount": "50% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -3433,12 +3538,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:23:13.685733",
+        "checked_at": "2025-09-20 12:14:19.813285",
         "details": {
           "input_text": "75 points/1k tokens",
           "input_image": null,
-          "bot_message": "1232 points/message",
-          "chat_history": "Input rates are applied",
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -3446,7 +3551,9 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "1249+ points"
+          "initial_points_cost": "1257+ points",
+          "Output (text)": "300 points/1k tokens",
+          "Output (message)": "1050 points/message"
         }
       },
       "pricing_error": null,
@@ -3474,20 +3581,23 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:23:20.637183",
+        "checked_at": "2025-09-20 12:14:27.322286",
         "details": {
-          "input_text": "5 points/1k tokens",
-          "input_image": "5 points/1k tokens",
-          "bot_message": "5 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "50% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "6+ points"
+          "initial_points_cost": "10+ points",
+          "Input": "5 points/1k tokens",
+          "Output (text)": "18 points/1k tokens",
+          "Cache discount": "50% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -3515,12 +3625,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:23:27.757333",
+        "checked_at": "2025-09-20 12:14:35.056558",
         "details": {
           "input_text": "5 points/1k tokens",
           "input_image": null,
-          "bot_message": "831 points/message",
-          "chat_history": "Input rates are applied",
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -3528,7 +3638,9 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "832+ points"
+          "initial_points_cost": "838+ points",
+          "Output (text)": "18 points/1k tokens",
+          "Output (message)": "825 points/message"
         }
       },
       "pricing_error": null,
@@ -3556,26 +3668,29 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-08 11:37:55.117491",
+        "checked_at": "2025-09-20 12:14:43.254287",
         "details": {
-          "input_text": "38 points/1k tokens",
-          "input_image": "38 points/1k tokens",
-          "bot_message": "241 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "90% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "250+ points"
+          "initial_points_cost": "260+ points",
+          "Input": "38 points/1k tokens",
+          "Output (text)": "300 points/1k tokens",
+          "Cache discount": "90% discount oncached chat"
         }
       },
       "pricing_error": null,
       "bot_info": {
         "creator": "@openai",
-        "description": "OpenAI’s latest flagship model with significantly improved coding skills, long context (400k tokens), and improved instruction following. Supports native vision, and generally has more intelligence than GPT-4.1. Provides a 90% chat history cache discount.\nTo instruct the bot to use more reasoning effort, add --reasoning_effort to the end of your message with one of \"low\", \"medium\", or \"high\"",
+        "description": "OpenAI’s latest flagship model with significantly improved coding skills, long context (400k tokens), and improved instruction following. Supports native vision, and generally has more intelligence than GPT-4.1. Provides a 90% chat history cache discount.\nTo instruct the bot to use more reasoning effort, add --reasoning_effort to the end of your message with one of \"minimal\", \"low\", \"medium\", or \"high\"",
         "description_extra": "Powered by OpenAI: gpt-5-2025-08-07. Learn more"
       }
     },
@@ -3597,26 +3712,29 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-08 11:38:02.722845",
+        "checked_at": "2025-09-20 12:14:51.272766",
         "details": {
-          "input_text": "38 points/1k tokens",
-          "input_image": "38 points/1k tokens",
-          "bot_message": "241 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "90% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "250+ points"
+          "initial_points_cost": "139+ points",
+          "Input": "38 points/1k tokens",
+          "Output (text)": "300 points/1k tokens",
+          "Cache discount": "90% discount oncached chat"
         }
       },
       "pricing_error": null,
       "bot_info": {
         "creator": "@openai",
-        "description": "GPT-5 Chat points to the GPT-5 snapshot currently used in ChatGPT. GPT-5 is OpenAI’s latest flagship model with significantly improved coding skills, long context (400k tokens), and improved instruction following. Supports native vision, and generally has more intelligence than GPT-4.1. Provides a 90% chat history cache discount.",
+        "description": "ChatGPT-5 points to the non-reasoning model GPT-5 snapshot (gpt-5-chat-latest) currently used in ChatGPT. Supports native vision, 400k tokens of context, and generally has more intelligence than GPT-4.1. Provides a 90% chat history cache discount.",
         "description_extra": "Powered by OpenAI: gpt-5-chat-latest. Learn more"
       }
     },
@@ -3638,26 +3756,29 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-08 11:38:11.238882",
+        "checked_at": "2025-09-20 12:14:58.613012",
         "details": {
-          "input_text": "8 points/1k tokens",
-          "input_image": "8 points/1k tokens",
-          "bot_message": "27 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "90% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "29+ points"
+          "initial_points_cost": "31+ points",
+          "Input": "8 points/1k tokens",
+          "Output (text)": "60 points/1k tokens",
+          "Cache discount": "90% discount oncached chat"
         }
       },
       "pricing_error": null,
       "bot_info": {
         "creator": "@openai",
-        "description": "GPT-5 mini is a small, fast & affordable model that matches or beats GPT-4.1 in many intelligence and vision-related tasks. Supports 400k tokens of context. Provides a 90% chat history cache discount.\nTo instruct the bot to use more reasoning effort, add --reasoning_effort to the end of your message with one of \"low\", \"medium\", or \"high\"",
+        "description": "GPT-5 mini is a small, fast & affordable model that matches or beats GPT-4.1 in many intelligence and vision-related tasks. Supports 400k tokens of context. Provides a 90% chat history cache discount.\nTo instruct the bot to use more reasoning effort, add `--reasoning_effort` to the end of your message with one of \"minimal\", \"low\", \"medium\", or \"high\". \nUse `--web_search true` to enable web search and real-time information access, this is disabled by default.",
         "description_extra": "Powered by OpenAI: gpt-5-mini-2025-08-07. Learn more"
       }
     },
@@ -3679,26 +3800,29 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-08 11:38:19.573997",
+        "checked_at": "2025-09-20 12:15:07.055152",
         "details": {
-          "input_text": "2 points/1k tokens",
-          "input_image": "2 points/1k tokens",
-          "bot_message": "6 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "90% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "7+ points"
+          "initial_points_cost": "8+ points",
+          "Input": "2 points/1k tokens",
+          "Output (text)": "12 points/1k tokens",
+          "Cache discount": "90% discount oncached chat"
         }
       },
       "pricing_error": null,
       "bot_info": {
         "creator": "@openai",
-        "description": "GPT-5 nano is an extremely fast and cheap model, ideal for text/vision summarization/categorization tasks. Supports native vision and 400k input tokens of context. Provides a 90% chat history cache discount.\nTo instruct the bot to use more reasoning effort, add --reasoning_effort to the end of your message with one of \"low\", \"medium\", or \"high\"",
+        "description": "GPT-5 nano is an extremely fast and cheap model, ideal for text/vision summarization/categorization tasks. Supports native vision and 400k input tokens of context. Provides a 90% chat history cache discount.\nTo instruct the bot to use more reasoning effort, add --reasoning_effort to the end of your message with one of \"minimal, \"low\", \"medium\", or \"high\"",
         "description_extra": "Powered by OpenAI: gpt-5-nano-2025-08-07. Learn more"
       }
     },
@@ -3720,7 +3844,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:23:34.836895",
+        "checked_at": "2025-09-20 12:15:14.449914",
         "details": {
           "input_text": "151 points/1k tokens",
           "input_image": null,
@@ -3742,7 +3866,7 @@
       "pricing_error": null,
       "bot_info": {
         "creator": "@openai",
-        "description": "OpenAI's model that powers image generation in ChatGPT, offering exceptional prompt adherence, level of detail, and quality. It supports editing, restyling, and combining images attached to the latest user query. For a conversational editing experience, use https://poe.com/GPT-4o (all users) or https://poe.com/Assistant (subscribers) instead.\n\nOptional parameters:\n* --aspect (options: 1:1, 3:2, 2:3): Aspect ratio of the output image\n* --quality (options: high, medium, low): Image resolution\n* --use_mask: Indicates that the last attached image is a mask for inpainting (editing specific regions). The mask must match the dimensions of the base image, with transparent (zero-alpha) areas showing which parts to edit.",
+        "description": "OpenAI's model that powers image generation in ChatGPT, offering exceptional prompt adherence, level of detail, and quality. It supports editing, restyling, and combining images attached to the latest user query. For a conversational editing experience, use https://poe.com/GPT-4o (all users) or https://poe.com/Assistant (subscribers) instead.\n\nOptional parameters:\n`--aspect` (options: 1:1, 3:2, 2:3): Aspect ratio of the output image\n` --quality` (options: high, medium, low): Image resolution\n` --use_mask`: Indicates that the last attached image is a mask for in-painting (editing specific regions). The mask must match the dimensions of the base image, with transparent (zero-alpha) areas showing which parts to edit.\n`--use_high_fidelity` to false to disable high input fidelity. This is option is enabled by default.",
         "description_extra": "Powered by a server managed by @openai. Learn more"
       }
     },
@@ -3764,7 +3888,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:41:52.165735",
+        "checked_at": "2025-09-20 12:15:22.345844",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -3805,7 +3929,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:41:59.214935",
+        "checked_at": "2025-09-20 12:15:29.608436",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -3846,7 +3970,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:42:06.318060",
+        "checked_at": "2025-09-20 12:15:37.631587",
         "details": {
           "input_text": "200 points / 1k tokens",
           "input_image": null,
@@ -3889,7 +4013,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:23:42.232404",
+        "checked_at": "2025-09-20 12:15:44.953792",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -3930,7 +4054,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:42:13.435657",
+        "checked_at": "2025-09-20 12:15:52.222920",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -3971,7 +4095,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:42:20.487062",
+        "checked_at": "2025-09-20 12:15:59.521638",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -4012,7 +4136,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:23:49.279887",
+        "checked_at": "2025-09-20 12:16:07.075516",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -4055,12 +4179,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:23:56.330740",
+        "checked_at": "2025-09-20 12:16:15.036534",
         "details": {
           "input_text": "1 point/1k characters",
           "input_image": "1 point/image",
-          "bot_message": "2 points/message",
-          "chat_history": "Input rates are applied",
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -4068,8 +4192,9 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "3+ points",
-          "Input (video)": "1 point/second"
+          "initial_points_cost": "6+ points",
+          "Input (video)": "1 point/second",
+          "Output (text)": "2 points/1k characters"
         }
       },
       "pricing_error": null,
@@ -4097,12 +4222,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:24:03.483648",
+        "checked_at": "2025-09-20 12:16:22.330816",
         "details": {
           "input_text": "1 point/1k characters",
           "input_image": null,
-          "bot_message": "3 points/message",
-          "chat_history": "Input rates are applied",
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -4110,7 +4235,7 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "4+ points"
+          "initial_points_cost": "7+ points"
         }
       },
       "pricing_error": null,
@@ -4138,12 +4263,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:24:10.361916",
+        "checked_at": "2025-09-20 12:16:29.702303",
         "details": {
-          "input_text": "5 points/1k characters",
-          "input_image": "5 points/image",
-          "bot_message": "30 points/message",
-          "chat_history": "Input rates are applied",
+          "input_text": "9 points/1k characters",
+          "input_image": "9 points/image",
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -4151,8 +4276,9 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "35+ points",
-          "Input (video)": "5 points/second"
+          "initial_points_cost": "61+ points",
+          "Input (video)": "9 points/second",
+          "Output (text)": "34 points/1k characters"
         }
       },
       "pricing_error": null,
@@ -4180,12 +4306,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:24:17.101628",
+        "checked_at": "2025-09-20 12:16:36.998448",
         "details": {
-          "input_text": "5 points/1k characters",
+          "input_text": "9 points/1k characters",
           "input_image": null,
-          "bot_message": "41 points/message",
-          "chat_history": "Input rates are applied",
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -4193,7 +4319,7 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "46+ points"
+          "initial_points_cost": "99+ points"
         }
       },
       "pricing_error": null,
@@ -4221,12 +4347,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:24:23.907981",
+        "checked_at": "2025-09-20 12:16:44.307406",
         "details": {
-          "input_text": "2 points/1k tokens",
-          "input_image": "2 points/1k tokens",
-          "bot_message": "6 points/message",
-          "chat_history": "Input rates are applied",
+          "input_text": "3 points/1k tokens",
+          "input_image": "3 points/1k tokens",
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -4234,8 +4360,9 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "7+ points",
-          "Input (video)": "1 point/second"
+          "initial_points_cost": "10+ points",
+          "Input (video)": "1 point/second",
+          "Output (text)": "12 points/1k tokens"
         }
       },
       "pricing_error": null,
@@ -4263,12 +4390,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:24:31.048897",
+        "checked_at": "2025-09-20 12:16:51.542158",
         "details": {
-          "input_text": "1 point/1k tokens",
-          "input_image": "1 point/1k tokens",
-          "bot_message": "5 points/message",
-          "chat_history": "Input rates are applied",
+          "input_text": "2 points/1k tokens",
+          "input_image": "2 points/1k tokens",
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -4276,8 +4403,9 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "6+ points",
-          "Input (video)": "1 point/second"
+          "initial_points_cost": "11+ points",
+          "Input (video)": "1 point/second",
+          "Output (text)": "8 points/1k tokens"
         }
       },
       "pricing_error": null,
@@ -4305,7 +4433,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:24:38.164410",
+        "checked_at": "2025-09-20 12:16:58.702350",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -4346,12 +4474,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:24:45.534393",
+        "checked_at": "2025-09-20 12:17:05.999557",
         "details": {
-          "input_text": "3 points/1k tokens",
-          "input_image": "3 points/1k tokens",
-          "bot_message": "8 points/message",
-          "chat_history": "Input rates are applied",
+          "input_text": "6 points/1k tokens",
+          "input_image": "6 points/1k tokens",
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -4359,8 +4487,10 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "9+ points",
-          "Input (video)": "1 point/second"
+          "initial_points_cost": "34+ points",
+          "Input (video)": "2 points/second",
+          "Output (text)": "12 points/1k tokens",
+          "Cache discount": "75% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -4388,7 +4518,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:42:28.289153",
+        "checked_at": "2025-09-20 12:17:13.254425",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -4432,7 +4562,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:42:35.660504",
+        "checked_at": "2025-09-20 12:17:21.126958",
         "details": {
           "input_text": "2 points/1k tokens",
           "input_image": "2 points/1k tokens",
@@ -4475,12 +4605,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:24:59.111047",
+        "checked_at": "2025-09-20 12:17:28.378297",
         "details": {
-          "input_text": "13 points/1k tokens",
-          "input_image": "13 points/1k tokens",
-          "bot_message": "332 points/message",
-          "chat_history": "Input rates are applied",
+          "input_text": "25 points/1k tokens",
+          "input_image": "25 points/1k tokens",
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -4488,14 +4618,16 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "335+ points",
-          "Input (video)": "4 points/second"
+          "initial_points_cost": "722+ points",
+          "Input (video)": "14 points/second",
+          "Output (text)": "200 points/1k tokens",
+          "Cache discount": "75% discount oncached chat"
         }
       },
       "pricing_error": null,
       "bot_info": {
         "creator": "@google",
-        "description": "Gemini 2.5 Pro is Google's advanced model with frontier performance on various key benchmarks; supports web search and 1 million tokens of input context.\nTo instruct the bot to use more thinking effort, add --thinking_budget and a number ranging from 0 to 32,768 to the end of your message.",
+        "description": "Gemini 2.5 Pro is Google's advanced model with frontier performance on various key benchmarks; supports web search and 1 million tokens of input context.\nTo instruct the bot to use more thinking effort, add --thinking_budget and a number ranging from 0 to 32,768 to the end of your message. \nUse `--web_search false` to disable web search and real-time information access, this is enabled by default.",
         "description_extra": "Powered by Google: gemini-2.5-pro. Learn more"
       }
     },
@@ -4517,7 +4649,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:42:42.913120",
+        "checked_at": "2025-09-20 12:17:35.729530",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -4559,7 +4691,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:25:13.184251",
+        "checked_at": "2025-09-20 12:17:43.155648",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -4600,12 +4732,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:25:21.464057",
+        "checked_at": "2025-09-20 12:17:50.546155",
         "details": {
           "input_text": "67 points/1k tokens",
           "input_image": "18 points/image",
-          "bot_message": "169 points/message",
-          "chat_history": "Input rates are applied",
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -4613,7 +4745,8 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "185+ points"
+          "initial_points_cost": "200+ points",
+          "Output (text)": "334 points/1k tokens"
         }
       },
       "pricing_error": null,
@@ -4641,12 +4774,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:25:28.709101",
+        "checked_at": "2025-09-20 12:17:57.782735",
         "details": {
           "input_text": "100 points/1k tokens",
           "input_image": "Variable",
-          "bot_message": "833 points/message",
-          "chat_history": "Input rates are applied",
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -4654,7 +4787,9 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "856+ points"
+          "initial_points_cost": "814+ points",
+          "Output (text)": "500 points/1k tokens",
+          "Cache discount": "75% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -4682,12 +4817,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:25:36.036731",
+        "checked_at": "2025-09-20 12:18:05.110434",
         "details": {
           "input_text": "10 points/1k tokens",
           "input_image": "Variable",
-          "bot_message": "37 points/message",
-          "chat_history": "Input rates are applied",
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -4695,7 +4830,9 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "40+ points"
+          "initial_points_cost": "41+ points",
+          "Output (text)": "17 points/1k tokens",
+          "Cache discount": "75% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -4723,12 +4860,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:25:42.816787",
+        "checked_at": "2025-09-20 12:18:12.398514",
         "details": {
           "input_text": "100 points/1k tokens",
           "input_image": "90 points/image",
-          "bot_message": "750 points/message",
-          "chat_history": "Input rates are applied",
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -4736,7 +4873,9 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "773+ points"
+          "initial_points_cost": "1046+ points",
+          "Output (text)": "500 points/1k tokens",
+          "Cache discount": "75% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -4764,7 +4903,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:42:50.193092",
+        "checked_at": "2025-09-20 12:18:19.683989",
         "details": {
           "input_text": "7 points/1k tokens",
           "input_image": "7 points/image",
@@ -4807,7 +4946,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:42:57.624857",
+        "checked_at": "2025-09-20 12:18:26.996696",
         "details": {
           "input_text": "7 points/1k tokens",
           "input_image": "7 points/image",
@@ -4850,7 +4989,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:43:05.824362",
+        "checked_at": "2025-09-20 12:18:34.278104",
         "details": {
           "input_text": "7 points/1k tokens",
           "input_image": "Variable",
@@ -4893,7 +5032,7 @@
         "modality": "text->video"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:25:50.075692",
+        "checked_at": "2025-09-20 12:18:41.720088",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -4935,7 +5074,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:43:14.106590",
+        "checked_at": "2025-09-20 12:18:48.951575",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -4976,7 +5115,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:25:56.927553",
+        "checked_at": "2025-09-20 12:18:57.077879",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -5017,7 +5156,7 @@
         "modality": "text->video"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:26:03.811511",
+        "checked_at": "2025-09-20 12:19:05.165328",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -5058,7 +5197,7 @@
         "modality": "text->video"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:26:10.693794",
+        "checked_at": "2025-09-20 12:19:12.510364",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -5077,7 +5216,7 @@
       "pricing_error": null,
       "bot_info": {
         "creator": "@fal",
-        "description": "Generate video clips more accurately with respect to natural language descriptions and using camera movement instructions for shot control. Both text-to-video and image-to-video are supported. Camera movement instructions can be added using square brackets (e.g. [Pan left] or [Zoom in]). You can use up to 3 combined movements per prompt. Supported movements: Truck left/right, Pan left/right, Push in/Pull out, Pedestal up/down, Tilt up/down, Zoom in/out, Shake, Tracking shot, Static shot. For example: [Truck left, Pan right, Zoom in]. For a more detailed guide, refer https://sixth-switch-2ac.notion.site/T2V-01-Director-Model-Tutorial-with-camera-movement-1886c20a98eb80f395b8e05291ad8645",
+        "description": "Generate video clips more accurately with respect to natural language descriptions and using camera movement instructions for shot control. Both text-to-video and image-to-video are supported. \nCamera movement instructions can be added using square brackets (e.g. [Pan left] or [Zoom in]). \nYou can use up to 3 combined movements per prompt. Duration is fixed to 5 seconds. \nSupported movements: Truck left/right, Pan left/right, Push in/Pull out, Pedestal up/down, Tilt up/down, Zoom in/out, Shake, Tracking shot, Static shot. For example: [Truck left, Pan right, Zoom in]. \nFor a more detailed guide, refer https://sixth-switch-2ac.notion.site/T2V-01-Director-Model-Tutorial-with-camera-movement-1886c20a98eb80f395b8e05291ad8645",
         "description_extra": "Powered by a server managed by @fal. Learn more"
       }
     },
@@ -5099,7 +5238,7 @@
         "modality": "text->video"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:26:18.071920",
+        "checked_at": "2025-09-20 12:19:19.859779",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -5118,7 +5257,7 @@
       "pricing_error": null,
       "bot_info": {
         "creator": "@fal",
-        "description": "Hailuo Live, the latest model from Minimax, sets a new standard for bringing still images to life. From breathtakingly vivid motion to finely tuned expressions, this state-of-the-art model enables your characters to captivate, move, and shine like never before. It excels in bring art and drawings to life, exceptional realism without morphing, emotional range, and unparalleled character consistency.",
+        "description": "Hailuo Live, the latest model from Minimax, sets a new standard for bringing still images to life. From breathtakingly vivid motion to finely tuned expressions, this state-of-the-art model enables your characters to captivate, move, and shine like never before. It excels in bring art and drawings to life, exceptional realism without morphing, emotional range, and unparalleled character consistency. Generates 5 second video.",
         "description_extra": "Powered by a server managed by @fal. Learn more"
       }
     },
@@ -5140,7 +5279,7 @@
         "modality": "text->audio"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:26:25.018163",
+        "checked_at": "2025-09-20 12:19:27.156128",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -5183,7 +5322,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:26:31.785836",
+        "checked_at": "2025-09-20 12:19:34.507671",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -5224,7 +5363,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:26:38.962827",
+        "checked_at": "2025-09-20 12:19:41.845149",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -5265,7 +5404,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:26:45.751930",
+        "checked_at": "2025-09-20 12:19:49.184906",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -5306,7 +5445,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:26:52.339205",
+        "checked_at": "2025-09-20 12:19:56.530636",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -5347,7 +5486,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:26:59.261416",
+        "checked_at": "2025-09-20 12:20:03.873690",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -5388,7 +5527,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:27:06.161208",
+        "checked_at": "2025-09-20 12:20:11.431005",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -5429,7 +5568,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:27:13.027905",
+        "checked_at": "2025-09-20 12:20:18.708063",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -5448,7 +5587,7 @@
       "pricing_error": null,
       "bot_info": {
         "creator": "@fal",
-        "description": "Generate high-quality images, posters, and logos with Ideogram V3. Features exceptional typography handling and realistic outputs optimized for commercial and creative use. Use `--aspect` to set the aspect ratio (Valid aspect ratios are 16:9, 4:3, 1:1, 3:4, 9:16), and use `--style`  to specify a style (one of `AUTO`, `GENERAL`, `REALISTIC`, and `DESIGN`, default: `AUTO`.). Send one image with a prompt for image remixing/restyling. Send two images (one an image and the other a black-and-white mask image denoting an area) for image editing.",
+        "description": "Generate high-quality images, posters, and logos with Ideogram V3. Features exceptional typography handling and realistic outputs optimized for commercial and creative use. Use `--aspect` to set the aspect ratio (Valid aspect ratios are 5:4, 4:3, 4:5, 1:1, 1:2, 1:3, 3:4, 3:1, 3:2, 2:1, 2:3, 16:9, 16:10, 10:16, 9:16), and use `--style`  to specify a style (one of `AUTO`, `GENERAL`, `REALISTIC`, and `DESIGN`, default: `AUTO`.). Send one image with a prompt for image remixing/restyling. Send two images (one an image and the other a black-and-white mask image denoting an area) for image editing.",
         "description_extra": "Powered by a server managed by @fal. Learn more"
       }
     },
@@ -5470,26 +5609,26 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:27:20.123244",
+        "checked_at": "2025-09-20 12:20:26.304536",
         "details": {
           "input_text": null,
           "input_image": null,
           "bot_message": null,
           "chat_history": null,
           "chat_history_cache_discount": null,
-          "total_cost": "400 points/message",
+          "total_cost": "800 points/message",
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "400 points"
+          "initial_points_cost": "800 points"
         }
       },
       "pricing_error": null,
       "bot_info": {
         "creator": "@google",
-        "description": "Google DeepMind's highest quality text-to-image model, capable of generating images with great detail, rich lighting, and few distracting artifacts. To adjust the aspect ratio of your image add --aspect_ratio (1:1, 16:9, 9:16, 4:3, 3:4). For simpler prompts, faster results, & lower cost, use @Imagen3-Fast. Non english input will be translated first.",
+        "description": "Google DeepMind's highest quality text-to-image model, capable of generating images with great detail, rich lighting, and few distracting artifacts. To adjust the aspect ratio of your image add --aspect_ratio (1:1, 16:9, 9:16, 4:3, 3:4). For simpler prompts, faster results, & lower cost, use @Imagen3-Fast. Non english input will be translated first. Image prompt cannot exceed 480 tokens.",
         "description_extra": "Powered by a server managed by @google. Learn more"
       }
     },
@@ -5511,26 +5650,26 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:27:27.058791",
+        "checked_at": "2025-09-20 12:20:33.596800",
         "details": {
           "input_text": null,
           "input_image": null,
           "bot_message": null,
           "chat_history": null,
           "chat_history_cache_discount": null,
-          "total_cost": "200 points/message",
+          "total_cost": "400 points/message",
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "200 points"
+          "initial_points_cost": "400 points"
         }
       },
       "pricing_error": null,
       "bot_info": {
         "creator": "@google",
-        "description": "Google DeepMind's highest quality text-to-image model, capable of generating images with great detail, rich lighting, and few distracting artifacts — optimized for short, simple prompts. To adjust the aspect ratio of your image add --aspect_ratio (1:1, 16:9, 9:16, 4:3, 3:4). For more complex prompts, use @Imagen3. Non english input will be translated first.",
+        "description": "Google DeepMind's highest quality text-to-image model, capable of generating images with great detail, rich lighting, and few distracting artifacts — optimized for short, simple prompts. To adjust the aspect ratio of your image add --aspect_ratio (1:1, 16:9, 9:16, 4:3, 3:4). For more complex prompts, use @Imagen3. Non english input will be translated first. Image prompt cannot exceed 480 tokens.",
         "description_extra": "Powered by a server managed by @google. Learn more"
       }
     },
@@ -5552,20 +5691,20 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:27:33.935208",
+        "checked_at": "2025-09-20 12:20:40.869260",
         "details": {
           "input_text": null,
           "input_image": null,
           "bot_message": null,
           "chat_history": null,
           "chat_history_cache_discount": null,
-          "total_cost": "400 points/message",
+          "total_cost": "800 points/message",
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "400 points"
+          "initial_points_cost": "800 points"
         }
       },
       "pricing_error": null,
@@ -5593,20 +5732,20 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:27:41.002410",
+        "checked_at": "2025-09-20 12:20:48.157155",
         "details": {
           "input_text": null,
           "input_image": null,
           "bot_message": null,
           "chat_history": null,
           "chat_history_cache_discount": null,
-          "total_cost": "200 points/message",
+          "total_cost": "400 points/message",
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "200 points"
+          "initial_points_cost": "400 points"
         }
       },
       "pricing_error": null,
@@ -5634,7 +5773,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:43:24.885568",
+        "checked_at": "2025-09-20 12:20:55.419509",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -5675,9 +5814,9 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:27:54.533447",
+        "checked_at": "2025-09-20 12:21:02.787207",
         "details": {
-          "input_text": "13 points / 1k tokens",
+          "input_text": "9 points / 1k tokens",
           "input_image": null,
           "bot_message": null,
           "chat_history": null,
@@ -5688,8 +5827,8 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "20+ points",
-          "Bot Message (text)": "50 points / 1k tokens"
+          "initial_points_cost": "14+ points",
+          "Bot Message (text)": "34 points / 1k tokens"
         }
       },
       "pricing_error": null,
@@ -5717,7 +5856,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:28:01.303010",
+        "checked_at": "2025-09-20 12:21:09.984754",
         "details": {
           "input_text": "9 points / 1k tokens",
           "input_image": null,
@@ -5759,27 +5898,27 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:28:08.163105",
+        "checked_at": "2025-09-20 12:21:17.354871",
         "details": {
           "input_text": null,
           "input_image": null,
           "bot_message": null,
           "chat_history": null,
           "chat_history_cache_discount": null,
-          "total_cost": "200 points/message",
+          "total_cost": "210 points/message",
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "200 points"
+          "initial_points_cost": "210 points"
         }
       },
       "pricing_error": null,
       "bot_info": {
-        "creator": "@fireworksai",
-        "description": "Kimi K2 is a state-of-the-art mixture-of-experts (MoE) language model with 32 billion activated parameters and 1 trillion total parameters. Trained with the Muon optimizer, Kimi K2 achieves exceptional performance across frontier knowledge, reasoning, and coding tasks while being meticulously optimized for agentic capabilities.",
-        "description_extra": "Powered by a server managed by @fireworksai. Learn more"
+        "creator": "@novitaai",
+        "description": "Kimi K2 Instruct is a state-of-the-art mixture-of-experts (MoE) language model with 32 billion activated parameters and 1 trillion total parameters. Trained with the Muon optimizer, Kimi K2 achieves exceptional performance across frontier knowledge, reasoning, and coding tasks while being meticulously optimized for agentic capabilities.\n\nKey Features:\n- Large-Scale Training: Pre-trained a 1T parameter MoE model on 15.5T tokens with zero training instability.\n- MuonClip Optimizer: We apply the Muon optimizer to an unprecedented scale, and develop novel optimization techniques to resolve instabilities while scaling up.\n- Agentic Intelligence: Specifically designed for tool use, reasoning, and autonomous problem-solving.",
+        "description_extra": "Powered by a server managed by @novitaai. Learn more"
       }
     },
     {
@@ -5800,7 +5939,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:43:32.491761",
+        "checked_at": "2025-09-20 12:21:24.741251",
         "details": {
           "input_text": "300 points/1k tokens",
           "input_image": null,
@@ -5843,7 +5982,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:43:40.113597",
+        "checked_at": "2025-09-20 12:21:32.045543",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -5884,7 +6023,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:43:47.818229",
+        "checked_at": "2025-09-20 12:21:39.522273",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -5925,7 +6064,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:28:14.881761",
+        "checked_at": "2025-09-20 12:21:46.836503",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -5966,7 +6105,7 @@
         "modality": "text->video"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:28:21.928770",
+        "checked_at": "2025-09-20 12:21:54.156534",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -5985,7 +6124,7 @@
       "pricing_error": null,
       "bot_info": {
         "creator": "@fal",
-        "description": "Kling v1.5 video generation bot, hosted by fal.ai. For best results, upload an image attachment. Use `--aspect` to set the aspect ratio. Allowed values are `16:9`, `9:16` and `1:1`. Use `--duration` to set the duration of the generated video.",
+        "description": "Kling v1.5 video generation bot, hosted by fal.ai. For best results, upload an image attachment. Use `--aspect` to set the aspect ratio. Allowed values are `16:9`, `9:16` and `1:1`. Use `--duration` to set the duration of the generated video (5 or 10 seconds).",
         "description_extra": "Powered by a server managed by @fal. Learn more"
       }
     },
@@ -6007,7 +6146,7 @@
         "modality": "text->video"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:28:29.183654",
+        "checked_at": "2025-09-20 12:22:01.525049",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -6049,7 +6188,7 @@
         "modality": "text->image,video"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:28:35.934341",
+        "checked_at": "2025-09-20 12:22:08.859280",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -6068,7 +6207,7 @@
       "pricing_error": null,
       "bot_info": {
         "creator": "@fal",
-        "description": "Generate high-quality videos from text or images using Kling 2.0 Master. Use `--negative_prompt` to send a negative prompt, and `--cfg_scale` to send a classifier-free guidance scale between 0.0 and 1.0 (inclusive). Use `--aspect` to set the aspect ratio (One of `16:9`, `9:16` and `1:1`).",
+        "description": "Generate high-quality videos from text or images using Kling 2.0 Master. Use `--negative_prompt` to send a negative prompt, and `--cfg_scale` to send a classifier-free guidance scale between 0.0 and 1.0 (inclusive). Use `--aspect` to set the aspect ratio (One of `16:9`, `9:16` and `1:1`). Use `--duration` to set either 5 or 10 second video.",
         "description_extra": "Powered by a server managed by @fal. Learn more"
       }
     },
@@ -6090,7 +6229,7 @@
         "modality": "text->video"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:28:42.750959",
+        "checked_at": "2025-09-20 12:22:16.179303",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -6131,7 +6270,7 @@
         "modality": "text->video"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:28:49.713253",
+        "checked_at": "2025-09-20 12:22:24.228797",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -6172,7 +6311,7 @@
         "modality": "text->video"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:28:56.529083",
+        "checked_at": "2025-09-20 12:22:31.707821",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -6213,7 +6352,7 @@
         "modality": "text->video"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:29:03.322016",
+        "checked_at": "2025-09-20 12:22:39.101943",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -6304,7 +6443,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:29:10.359275",
+        "checked_at": "2025-09-20 12:23:00.181345",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -6345,7 +6484,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:29:17.314299",
+        "checked_at": "2025-09-20 12:23:07.532732",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -6386,7 +6525,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:29:24.189769",
+        "checked_at": "2025-09-20 12:23:14.805673",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -6427,12 +6566,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:29:58.315106",
+        "checked_at": "2025-09-20 12:23:22.230144",
         "details": {
           "input_text": "100 points/1k tokens",
           "input_image": "Variable",
-          "bot_message": "39 points/message",
-          "chat_history": "Input rates are applied",
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -6440,7 +6579,8 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "62+ points"
+          "initial_points_cost": "89+ points",
+          "Output (text)": "100 points/1k tokens"
         }
       },
       "pricing_error": null,
@@ -6468,7 +6608,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:30:05.326261",
+        "checked_at": "2025-09-20 12:23:29.523192",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -6509,7 +6649,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:30:12.076239",
+        "checked_at": "2025-09-20 12:23:36.736898",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -6550,7 +6690,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:30:19.351098",
+        "checked_at": "2025-09-20 12:23:44.758566",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -6591,12 +6731,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:30:27.371374",
+        "checked_at": "2025-09-20 12:23:53.218911",
         "details": {
           "input_text": "30 points/1k tokens",
           "input_image": "Variable",
-          "bot_message": "8 points/message",
-          "chat_history": "Input rates are applied",
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -6604,7 +6744,8 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "15+ points"
+          "initial_points_cost": "15+ points",
+          "Output (text)": "30 points/1k tokens"
         }
       },
       "pricing_error": null,
@@ -6632,7 +6773,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:30:34.324244",
+        "checked_at": "2025-09-20 12:24:00.970999",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -6673,7 +6814,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:30:41.237507",
+        "checked_at": "2025-09-20 12:24:09.267031",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -6714,7 +6855,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:30:47.975700",
+        "checked_at": "2025-09-20 12:24:16.626326",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -6755,12 +6896,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:30:54.570651",
+        "checked_at": "2025-09-20 12:24:23.940276",
         "details": {
           "input_text": "7 points/1k tokens",
           "input_image": "Variable",
-          "bot_message": "2 points/message",
-          "chat_history": "Input rates are applied",
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -6768,7 +6909,8 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "4+ points"
+          "initial_points_cost": "5+ points",
+          "Output (text)": "7 points/1k tokens"
         }
       },
       "pricing_error": null,
@@ -6796,7 +6938,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:44:09.622909",
+        "checked_at": "2025-09-20 12:24:31.216134",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -6837,7 +6979,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:31:01.566403",
+        "checked_at": "2025-09-20 12:24:38.572447",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -6878,7 +7020,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:31:08.466479",
+        "checked_at": "2025-09-20 12:24:45.855355",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -6919,7 +7061,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:31:15.490392",
+        "checked_at": "2025-09-20 12:24:53.636352",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -6960,7 +7102,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:31:22.343319",
+        "checked_at": "2025-09-20 12:25:00.884046",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -7001,7 +7143,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:31:36.120662",
+        "checked_at": "2025-09-20 12:25:08.288398",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -7042,7 +7184,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:44:16.961922",
+        "checked_at": "2025-09-20 12:25:15.538623",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -7083,7 +7225,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:44:24.260194",
+        "checked_at": "2025-09-20 12:25:23.207999",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -7125,7 +7267,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:31:43.098006",
+        "checked_at": "2025-09-20 12:25:30.489158",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -7166,7 +7308,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:31:49.968636",
+        "checked_at": "2025-09-20 12:25:37.769184",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -7207,7 +7349,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:44:32.200883",
+        "checked_at": "2025-09-20 12:25:45.102993",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -7248,7 +7390,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:44:39.469428",
+        "checked_at": "2025-09-20 12:25:52.406143",
         "details": {
           "input_text": "7 points / 1k tokens",
           "input_image": "10 points / image",
@@ -7292,7 +7434,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:32:03.409144",
+        "checked_at": "2025-09-20 12:26:00.136194",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -7333,7 +7475,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:32:10.172263",
+        "checked_at": "2025-09-20 12:26:08.542272",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -7374,7 +7516,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:32:17.076272",
+        "checked_at": "2025-09-20 12:26:15.857489",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -7415,7 +7557,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:32:23.732519",
+        "checked_at": "2025-09-20 12:26:23.204169",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -7456,7 +7598,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:32:30.529482",
+        "checked_at": "2025-09-20 12:26:30.488737",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -7497,20 +7639,20 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-08 11:38:35.701101",
+        "checked_at": "2025-09-20 12:26:37.804184",
         "details": {
           "input_text": null,
           "input_image": null,
           "bot_message": null,
           "chat_history": null,
           "chat_history_cache_discount": null,
-          "total_cost": "350 points/message",
+          "total_cost": "200 points/message",
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "350 points"
+          "initial_points_cost": "200 points"
         }
       },
       "pricing_error": null,
@@ -7538,7 +7680,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:44:46.649639",
+        "checked_at": "2025-09-20 12:26:48.620238",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -7580,7 +7722,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:32:37.263865",
+        "checked_at": "2025-09-20 12:26:55.961503",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -7621,7 +7763,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:32:50.996305",
+        "checked_at": "2025-09-20 12:27:03.185623",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -7640,7 +7782,7 @@
       "pricing_error": null,
       "bot_info": {
         "creator": "@fal",
-        "description": "Luma Photon delivers industry-specific visual excellence, crafting images that align perfectly with professional standards - not just generic AI art. From marketing to creative design, each generation is purposefully tailored to your industry's unique requirements. Add --aspect to the end of your prompts to change the aspect ratio of your generations (1:1, 16:9, 9:16, 4:3, 3:4, 21:9, 9:21 are supported).",
+        "description": "Luma Photon delivers industry-specific visual excellence, crafting images that align perfectly with professional standards - not just generic AI art. From marketing to creative design, each generation is purposefully tailored to your industry's unique requirements. Add --aspect to the end of your prompts to change the aspect ratio of your generations (1:1, 16:9, 9:16, 4:3, 3:4, 21:9, 9:21 are supported). Prompt input cannot exceed 5,000 characters.",
         "description_extra": "Powered by a server managed by @fal. Learn more"
       }
     },
@@ -7662,7 +7804,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:32:57.794151",
+        "checked_at": "2025-09-20 12:27:10.359057",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -7681,7 +7823,7 @@
       "pricing_error": null,
       "bot_info": {
         "creator": "@fal",
-        "description": "Luma Photon delivers industry-specific visual excellence, crafting images that align perfectly with professional standards - not just generic AI art. From marketing to creative design, each generation is purposefully tailored to your industry's unique requirements. Add --aspect to the end of your prompts to change the aspect ratio of your generations (1:1, 16:9, 9:16, 4:3, 3:4, 21:9, 9:21 are supported).",
+        "description": "Luma Photon delivers industry-specific visual excellence, crafting images that align perfectly with professional standards - not just generic AI art. From marketing to creative design, each generation is purposefully tailored to your industry's unique requirements. Add --aspect to the end of your prompts to change the aspect ratio of your generations (1:1, 16:9, 9:16, 4:3, 3:4, 21:9, 9:21 are supported). Prompt input cannot exceed 5,000 characters.",
         "description_extra": "Powered by a server managed by @fal. Learn more"
       }
     },
@@ -7703,7 +7845,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:33:04.616564",
+        "checked_at": "2025-09-20 12:27:17.620901",
         "details": {
           "input_text": "2000 points per generated song",
           "input_image": null,
@@ -7722,7 +7864,7 @@
       "pricing_error": null,
       "bot_info": {
         "creator": "@google",
-        "description": "Google DeepMind's Lyria 2 delivers high-quality audio generation, capable of creating diverse soundscapes and musical pieces from text prompts.\n\nAllows users to specify elements to exclude in the audio using the \"--no\" parameter at the end of the prompt. Also supports \"--seed\" for deterministic generation. e.g. \"An energetic electronic dance track --no vocals, slow tempo --seed 123\". Lyria blocks prompts that name specific artists or songs (artist-intent and recitation checks). This bot does not support attachments.",
+        "description": "Google DeepMind's Lyria 2 delivers high-quality audio generation, capable of creating diverse soundscapes and musical pieces from text prompts.\n\nAllows users to specify elements to exclude in the audio using the \"--no\" parameter at the end of the prompt. Also supports \"--seed\" for deterministic generation. e.g. \"An energetic electronic dance track --no vocals, slow tempo --seed 123\". Lyria blocks prompts that name specific artists or songs (artist-intent and recitation checks). This bot does not support attachments. This bot accepts input prompts of up to 480 tokens.",
         "description_extra": "Powered by a server managed by @google. Learn more"
       }
     },
@@ -7744,7 +7886,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:44:53.893135",
+        "checked_at": "2025-09-20 12:27:24.922958",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -7785,7 +7927,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:33:11.349106",
+        "checked_at": "2025-09-20 12:27:32.185773",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -7827,7 +7969,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:33:18.629743",
+        "checked_at": "2025-09-20 12:27:39.586483",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -7871,7 +8013,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:33:25.938299",
+        "checked_at": "2025-09-20 12:27:46.857182",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -7912,7 +8054,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:33:33.000566",
+        "checked_at": "2025-09-20 12:27:54.093051",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -7953,12 +8095,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:33:39.901647",
+        "checked_at": "2025-09-20 12:28:01.543622",
         "details": {
           "input_text": "100 points/1k tokens",
           "input_image": "Variable",
-          "bot_message": "241 points/message",
-          "chat_history": "Input rates are applied",
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -7966,7 +8108,8 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "264+ points"
+          "initial_points_cost": "233+ points",
+          "Output (text)": "300 points/1k tokens"
         }
       },
       "pricing_error": null,
@@ -7994,12 +8137,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:33:46.719356",
+        "checked_at": "2025-09-20 12:28:08.793276",
         "details": {
           "input_text": "90 points/1k tokens",
           "input_image": "Variable",
-          "bot_message": "227 points/message",
-          "chat_history": "Input rates are applied",
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -8007,7 +8150,8 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "248+ points"
+          "initial_points_cost": "239+ points",
+          "Output (text)": "270 points/1k tokens"
         }
       },
       "pricing_error": null,
@@ -8035,7 +8179,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:45:03.164821",
+        "checked_at": "2025-09-20 12:28:16.193790",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -8076,7 +8220,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:45:10.394987",
+        "checked_at": "2025-09-20 12:28:24.073006",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -8118,7 +8262,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:45:17.634970",
+        "checked_at": "2025-09-20 12:28:31.419893",
         "details": {
           "input_text": "500 points/1k tokens",
           "input_image": null,
@@ -8162,12 +8306,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:34:00.718416",
+        "checked_at": "2025-09-20 12:28:38.604699",
         "details": {
           "input_text": "4 points/1k tokens",
           "input_image": "Variable",
-          "bot_message": "6 points/message",
-          "chat_history": "Input rates are applied",
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -8175,7 +8319,8 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "7+ points"
+          "initial_points_cost": "9+ points",
+          "Output (text)": "10 points/1k tokens"
         }
       },
       "pricing_error": null,
@@ -8203,7 +8348,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:34:07.637659",
+        "checked_at": "2025-09-20 12:28:45.985164",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -8244,7 +8389,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:34:21.000610",
+        "checked_at": "2025-09-20 12:28:53.891214",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -8285,7 +8430,7 @@
         "modality": "text->video"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:34:27.761025",
+        "checked_at": "2025-09-20 12:29:01.165296",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -8304,7 +8449,7 @@
       "pricing_error": null,
       "bot_info": {
         "creator": "@fal",
-        "description": "Open state-of-the-art video generation model with high-fidelity motion and strong prompt adherence. Supports both text-to-video and image-to-video.",
+        "description": "Open state-of-the-art video generation model with high-fidelity motion and strong prompt adherence. Supports both text-to-video and image-to-video. Generates 5 second video.",
         "description_extra": "Powered by a server managed by @fal. Learn more"
       }
     },
@@ -8326,7 +8471,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:45:24.898204",
+        "checked_at": "2025-09-20 12:29:08.448346",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -8368,7 +8513,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:34:34.624297",
+        "checked_at": "2025-09-20 12:29:16.427944",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -8409,7 +8554,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:34:41.269870",
+        "checked_at": "2025-09-20 12:29:24.508580",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -8428,7 +8573,7 @@
       "pricing_error": null,
       "bot_info": {
         "creator": "@fireworksai",
-        "description": "GPT-OSS-20b is a compact, open-weight language model optimized for low-latency and resource-constrained environments, including local and edge deployments. It shares the same Harmony training foundation and capabilities as 120B, with faster inference and easier deployment that is ideal for specialized or offline use cases, fast responsive performance, chain-of-thought output and adjustable reasoning levels, and agentic workflows.",
+        "description": "GPT-OSS-20B is a compact, open-weight language model optimized for low-latency and resource-constrained environments, including local and edge deployments. It shares the same Harmony training foundation and capabilities as 120B, with faster inference and easier deployment that is ideal for specialized or offline use cases, fast responsive performance, chain-of-thought output, and agentic workflows.",
         "description_extra": "Powered by a server managed by @fireworksai. Learn more"
       }
     },
@@ -8450,7 +8595,7 @@
         "modality": "text->audio"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:34:47.967523",
+        "checked_at": "2025-09-20 12:29:31.798518",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -8492,7 +8637,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:34:54.669430",
+        "checked_at": "2025-09-20 12:29:39.271322",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -8503,9 +8648,14 @@
           "image_output": null,
           "video_output": null,
           "text_input": null,
-          "per_message": "15167 points",
+          "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "15167 points"
+          "initial_points_cost": "21667+ points",
+          "Input Tokens": "160 per 1,000 tokens",
+          "Output Tokens": "640 per 1,000 tokens",
+          "Citation Tokens": "160 per 1,000 tokens",
+          "Reasoning Tokens": "240 per 1,000 tokens",
+          "Search Queries": "400000 per 1,000 queries"
         }
       },
       "pricing_error": null,
@@ -8533,7 +8683,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:35:08.632041",
+        "checked_at": "2025-09-20 12:29:46.739386",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -8544,9 +8694,13 @@
           "image_output": null,
           "video_output": null,
           "text_input": null,
-          "per_message": "434 points",
+          "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "434 points"
+          "initial_points_cost": "400+ points",
+          "Base Fee (Low Context)": "400",
+          "Base Fee (Medium Context)": "640",
+          "Base Fee (High Context)": "960",
+          "Input & Output Tokens": "80 per 1,000 tokens"
         }
       },
       "pricing_error": null,
@@ -8574,7 +8728,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:35:15.241202",
+        "checked_at": "2025-09-20 12:29:54.132205",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -8585,9 +8739,14 @@
           "image_output": null,
           "video_output": null,
           "text_input": null,
-          "per_message": "1667 points",
+          "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "1667 points"
+          "initial_points_cost": "480+ points",
+          "Base Fee (Low Context)": "480",
+          "Base Fee (Medium Context)": "800",
+          "Base Fee (High Context)": "1120",
+          "Input Tokens": "240 per 1,000 tokens",
+          "Output Tokens": "1200 per 1,000 tokens"
         }
       },
       "pricing_error": null,
@@ -8615,7 +8774,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:35:21.931176",
+        "checked_at": "2025-09-20 12:30:01.500120",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -8626,9 +8785,14 @@
           "image_output": null,
           "video_output": null,
           "text_input": null,
-          "per_message": "1234 points",
+          "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "1234 points"
+          "initial_points_cost": "400+ points",
+          "Base Fee (Low Context)": "400",
+          "Base Fee (Medium Context)": "640",
+          "Base Fee (High Context)": "960",
+          "Input Tokens": "80 per 1,000 tokens",
+          "Output Tokens": "400 per 1,000 tokens"
         }
       },
       "pricing_error": null,
@@ -8656,7 +8820,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:35:29.954636",
+        "checked_at": "2025-09-20 12:30:09.032390",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -8667,9 +8831,14 @@
           "image_output": null,
           "video_output": null,
           "text_input": null,
-          "per_message": "2967 points",
+          "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "2967 points"
+          "initial_points_cost": "480+ points",
+          "Base Fee (Low Context)": "480",
+          "Base Fee (Medium Context)": "800",
+          "Base Fee (High Context)": "1120",
+          "Input Tokens": "160 per 1,000 tokens",
+          "Output Tokens": "640 per 1,000 tokens"
         }
       },
       "pricing_error": null,
@@ -8697,7 +8866,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:35:36.883529",
+        "checked_at": "2025-09-20 12:30:16.344322",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -8738,7 +8907,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:35:43.785165",
+        "checked_at": "2025-09-20 12:30:23.649650",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -8779,7 +8948,7 @@
         "modality": "text->video"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:35:50.521416",
+        "checked_at": "2025-09-20 12:30:30.951318",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -8823,7 +8992,7 @@
       "pricing_error": null,
       "bot_info": {
         "creator": "@pikalabs",
-        "description": "Pika's video generation models. Select between Turbo, 2.1, 2.2, or Pikaffect. To adjust the aspect ratio of your image add --aspect (1:1, 5:2, 16:9, 4:3, 4:5, 9:16). Image to video is supported on all models, and multiple images are supported for 2.2 with an IngredientMode selected.",
+        "description": "Pika's video generation models. Select between Turbo, 2.1, 2.2, or Pikaffect. To adjust the aspect ratio of your image add --aspect (1:1, 5:2, 16:9, 4:3, 4:5, 9:16). Image to video is supported on all models, and multiple images are supported for 2.2 with an IngredientMode selected. Generates 4 second video.",
         "description_extra": "Powered by a server managed by @pikalabs. Learn more"
       }
     },
@@ -8845,7 +9014,7 @@
         "modality": "text->video"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:35:57.229243",
+        "checked_at": "2025-09-20 12:30:38.218470",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -8894,7 +9063,7 @@
         "modality": "text->audio"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:36:04.017253",
+        "checked_at": "2025-09-20 12:30:45.665106",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -8914,7 +9083,7 @@
       "pricing_error": null,
       "bot_info": {
         "creator": "@fal",
-        "description": "Generates dialogues based on your script using PlayHT's text-to-speech model, in the voices of your choice. Use --speaker_1 [voice_name]  and --speaker_2 [voice_name] to pass in the voices of your choice, choosing from below. Voice defaults to `Jennifer_(English_(US)/American)`.  Follow the below format while prompting (case sensitive):\nFORMAT:\n```\nSpeaker 1: ......\nSpeaker 2: ......\nSpeaker 1: ......\nSpeaker 2: ......\n--speaker_1 [voice_1] --speaker_2 [voice_2]\n```\nVOICES AVAILABLE:\nJennifer_(English_(US)/American)\nDexter_(English_(US)/American)\nAva_(English_(AU)/Australian)\nTilly_(English_(AU)/Australian)\nCharlotte_(Advertising)_(English_(CA)/Canadian)\nCharlotte_(Meditation)_(English_(CA)/Canadian)\nCecil_(English_(GB)/British)\nSterling_(English_(GB)/British)\nCillian_(English_(IE)/Irish)\nMadison_(English_(IE)/Irish)\nAda_(English_(ZA)/South_African)\nFurio_(English_(IT)/Italian)\nAlessandro_(English_(IT)/Italian)\nCarmen_(English_(MX)/Mexican)\nSumita_(English_(IN)/Indian)\nNavya_(English_(IN)/Indian)\nBaptiste_(English_(FR)/French)\nLumi_(English_(FI)/Finnish)\nRonel_Conversational_(Afrikaans/South_African)\nRonel_Narrative_(Afrikaans/South_African)\nAbdo_Conversational_(Arabic/Arabic)\nAbdo_Narrative_(Arabic/Arabic)\nMousmi_Conversational_(Bengali/Bengali)\nMousmi_Narrative_(Bengali/Bengali)\nCaroline_Conversational_(Portuguese_(BR)/Brazilian)\nCaroline_Narrative_(Portuguese_(BR)/Brazilian)\nAnge_Conversational_(French/French)\nAnge_Narrative_(French/French)\nAnke_Conversational_(German/German)\nAnke_Narrative_(German/German)\nBora_Conversational_(Greek/Greek)\nBora_Narrative_(Greek/Greek)\nAnuj_Conversational_(Hindi/Indian)\nAnuj_Narrative_(Hindi/Indian)\nAlessandro_Conversational_(Italian/Italian)\nAlessandro_Narrative_(Italian/Italian)\nKiriko_Conversational_(Japanese/Japanese)\nKiriko_Narrative_(Japanese/Japanese)\nDohee_Conversational_(Korean/Korean)\nDohee_Narrative_(Korean/Korean)\nIgnatius_Conversational_(Malay/Malay)\nIgnatius_Narrative_(Malay/Malay)\nAdam_Conversational_(Polish/Polish)\nAdam_Narrative_(Polish/Polish)\nAndrei_Conversational_(Russian/Russian)\nAndrei_Narrative_(Russian/Russian)\nAleksa_Conversational_(Serbian/Serbian)\nAleksa_Narrative_(Serbian/Serbian)\nCarmen_Conversational_(Spanish/Spanish)\nPatricia_Conversational_(Spanish/Spanish)\nAiken_Conversational_(Tagalog/Filipino)\nAiken_Narrative_(Tagalog/Filipino)\nKatbundit_Conversational_(Thai/Thai)\nKatbundit_Narrative_(Thai/Thai)\nAli_Conversational_(Turkish/Turkish)\nAli_Narrative_(Turkish/Turkish)\nSahil_Conversational_(Urdu/Pakistani)\nSahil_Narrative_(Urdu/Pakistani)\nMary_Conversational_(Hebrew/Israeli)\nMary_Narrative_(Hebrew/Israeli)",
+        "description": "Generates dialogues based on your script using PlayHT's text-to-speech model, in the voices of your choice. Use --speaker_1 [voice_name]  and --speaker_2 [voice_name] to pass in the voices of your choice, choosing from below. Voice defaults to `Jennifer_(English_(US)/American)`.  Follow the below format while prompting (case sensitive):\nFORMAT:\n```\nSpeaker 1: ......\nSpeaker 2: ......\nSpeaker 1: ......\nSpeaker 2: ......\n--speaker_1 [voice_1] --speaker_2 [voice_2]\n```\nVOICES AVAILABLE:\nJennifer_(English_(US)/American)\nDexter_(English_(US)/American)\nAva_(English_(AU)/Australian)\nTilly_(English_(AU)/Australian)\nCharlotte_(Advertising)_(English_(CA)/Canadian)\nCharlotte_(Meditation)_(English_(CA)/Canadian)\nCecil_(English_(GB)/British)\nSterling_(English_(GB)/British)\nCillian_(English_(IE)/Irish)\nMadison_(English_(IE)/Irish)\nAda_(English_(ZA)/South_African)\nFurio_(English_(IT)/Italian)\nAlessandro_(English_(IT)/Italian)\nCarmen_(English_(MX)/Mexican)\nSumita_(English_(IN)/Indian)\nNavya_(English_(IN)/Indian)\nBaptiste_(English_(FR)/French)\nLumi_(English_(FI)/Finnish)\nRonel_Conversational_(Afrikaans/South_African)\nRonel_Narrative_(Afrikaans/South_African)\nAbdo_Conversational_(Arabic/Arabic)\nAbdo_Narrative_(Arabic/Arabic)\nMousmi_Conversational_(Bengali/Bengali)\nMousmi_Narrative_(Bengali/Bengali)\nCaroline_Conversational_(Portuguese_(BR)/Brazilian)\nCaroline_Narrative_(Portuguese_(BR)/Brazilian)\nAnge_Conversational_(French/French)\nAnge_Narrative_(French/French)\nAnke_Conversational_(German/German)\nAnke_Narrative_(German/German)\nBora_Conversational_(Greek/Greek)\nBora_Narrative_(Greek/Greek)\nAnuj_Conversational_(Hindi/Indian)\nAnuj_Narrative_(Hindi/Indian)\nAlessandro_Conversational_(Italian/Italian)\nAlessandro_Narrative_(Italian/Italian)\nKiriko_Conversational_(Japanese/Japanese)\nKiriko_Narrative_(Japanese/Japanese)\nDohee_Conversational_(Korean/Korean)\nDohee_Narrative_(Korean/Korean)\nIgnatius_Conversational_(Malay/Malay)\nIgnatius_Narrative_(Malay/Malay)\nAdam_Conversational_(Polish/Polish)\nAdam_Narrative_(Polish/Polish)\nAndrei_Conversational_(Russian/Russian)\nAndrei_Narrative_(Russian/Russian)\nAleksa_Conversational_(Serbian/Serbian)\nAleksa_Narrative_(Serbian/Serbian)\nCarmen_Conversational_(Spanish/Spanish)\nPatricia_Conversational_(Spanish/Spanish)\nAiken_Conversational_(Tagalog/Filipino)\nAiken_Narrative_(Tagalog/Filipino)\nKatbundit_Conversational_(Thai/Thai)\nKatbundit_Narrative_(Thai/Thai)\nAli_Conversational_(Turkish/Turkish)\nAli_Narrative_(Turkish/Turkish)\nSahil_Conversational_(Urdu/Pakistani)\nSahil_Narrative_(Urdu/Pakistani)\nMary_Conversational_(Hebrew/Israeli)\nMary_Narrative_(Hebrew/Israeli)\n\nPrompt input cannot exceed 10,000 characters.",
         "description_extra": "Powered by a server managed by @fal. Learn more"
       }
     },
@@ -8936,7 +9105,7 @@
         "modality": "text->audio"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:36:11.067852",
+        "checked_at": "2025-09-20 12:30:52.999830",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -8978,7 +9147,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:36:17.731036",
+        "checked_at": "2025-09-20 12:31:00.257399",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -9019,7 +9188,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:36:24.428504",
+        "checked_at": "2025-09-20 12:31:07.414687",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -9060,7 +9229,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:36:31.598040",
+        "checked_at": "2025-09-20 12:31:14.697355",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -9101,7 +9270,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:36:38.369043",
+        "checked_at": "2025-09-20 12:31:22.051136",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -9142,7 +9311,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:36:45.070268",
+        "checked_at": "2025-09-20 12:31:29.346695",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -9183,7 +9352,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:36:52.211945",
+        "checked_at": "2025-09-20 12:31:36.733191",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -9224,7 +9393,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:36:59.016836",
+        "checked_at": "2025-09-20 12:31:44.028458",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -9265,7 +9434,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:37:05.768897",
+        "checked_at": "2025-09-20 12:31:51.418384",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -9306,7 +9475,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:37:12.751511",
+        "checked_at": "2025-09-20 12:31:58.746939",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -9347,7 +9516,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:45:32.111845",
+        "checked_at": "2025-09-20 12:32:06.042266",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -9388,7 +9557,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:45:39.379074",
+        "checked_at": "2025-09-20 12:32:13.295985",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -9429,7 +9598,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:45:46.598559",
+        "checked_at": "2025-09-20 12:32:20.537846",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -9470,7 +9639,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:45:54.026683",
+        "checked_at": "2025-09-20 12:32:27.992420",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -9511,7 +9680,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:46:01.429203",
+        "checked_at": "2025-09-20 12:32:35.376689",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -9552,7 +9721,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:37:47.009580",
+        "checked_at": "2025-09-20 12:32:42.713440",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -9593,7 +9762,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:37:53.708533",
+        "checked_at": "2025-09-20 12:32:49.999681",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -9634,7 +9803,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:46:08.779144",
+        "checked_at": "2025-09-20 12:32:57.192224",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -9675,7 +9844,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:38:00.571537",
+        "checked_at": "2025-09-20 12:33:04.510837",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -9716,7 +9885,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:38:07.438613",
+        "checked_at": "2025-09-20 12:33:11.816213",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -9757,7 +9926,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:38:14.117934",
+        "checked_at": "2025-09-20 12:33:19.113607",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -9798,7 +9967,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:46:16.192715",
+        "checked_at": "2025-09-20 12:33:26.468680",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -9839,7 +10008,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:46:23.698566",
+        "checked_at": "2025-09-20 12:33:34.343220",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -9880,7 +10049,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:46:31.244277",
+        "checked_at": "2025-09-20 12:33:41.573309",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -9921,20 +10090,20 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-08 11:38:43.941198",
+        "checked_at": "2025-09-20 12:33:49.096671",
         "details": {
           "input_text": null,
           "input_image": null,
           "bot_message": null,
           "chat_history": null,
           "chat_history_cache_discount": null,
-          "total_cost": "1 point/message",
+          "total_cost": "120 points/message",
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "1 point"
+          "initial_points_cost": "120 points"
         }
       },
       "pricing_error": null,
@@ -9962,7 +10131,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:46:39.301222",
+        "checked_at": "2025-09-20 12:33:56.601314",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -10003,7 +10172,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:46:46.903642",
+        "checked_at": "2025-09-20 12:34:04.004075",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -10044,7 +10213,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:46:54.285099",
+        "checked_at": "2025-09-20 12:34:11.422710",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -10085,7 +10254,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:47:01.779853",
+        "checked_at": "2025-09-20 12:34:20.477651",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -10126,7 +10295,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:47:09.273946",
+        "checked_at": "2025-09-20 12:34:29.441617",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -10167,7 +10336,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:47:17.093239",
+        "checked_at": "2025-09-20 12:34:37.602067",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -10208,7 +10377,7 @@
         "modality": "text->video"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:38:34.650389",
+        "checked_at": "2025-09-20 12:34:45.942612",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -10261,7 +10430,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:38:41.717608",
+        "checked_at": "2025-09-20 12:34:53.820266",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -10280,7 +10449,7 @@
       "pricing_error": null,
       "bot_info": {
         "creator": "@fal",
-        "description": "Recraft V3, state of the art image generation. Use --style for styles, and --aspect for aspect ratio configuration. Available styles: realistic_image, digital_illustration, vector_illustration, realistic_image/b_and_w, realistic_image/hard_flash, realistic_image/hdr, realistic_image/natural_light, realistic_image/studio_portrait, realistic_image/enterprise, realistic_image/motion_blur, digital_illustration/pixel_art, digital_illustration/hand_drawn, digital_illustration/grain, digital_illustration/infantile_sketch, digital_illustration/2d_art_poster, digital_illustration/handmade_3d, digital_illustration/hand_drawn_outline, digital_illustration/engraving_color, digital_illustration/2d_art_poster_2, vector_illustration/engraving, vector_illustration/line_art, vector_illustration/line_circuit, vector_illustration/linocut",
+        "description": "Recraft V3, state of the art image generation. Prompt input cannot exceed 1,000 characters.\nUse --style for styles, and --aspect for aspect ratio configuration (16:9, 4:3, 1:1, 3:4, 9:16). \nAvailable styles: realistic_image, digital_illustration, vector_illustration, realistic_image/b_and_w, realistic_image/hard_flash, realistic_image/hdr, realistic_image/natural_light, realistic_image/studio_portrait, realistic_image/enterprise, realistic_image/motion_blur, digital_illustration/pixel_art, digital_illustration/hand_drawn, digital_illustration/grain, digital_illustration/infantile_sketch, digital_illustration/2d_art_poster, digital_illustration/handmade_3d, digital_illustration/hand_drawn_outline, digital_illustration/engraving_color, digital_illustration/2d_art_poster_2, vector_illustration/engraving, vector_illustration/line_art, vector_illustration/line_circuit, vector_illustration/linocut",
         "description_extra": "Powered by a server managed by @fal. Learn more"
       }
     },
@@ -10302,7 +10471,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:38:48.669710",
+        "checked_at": "2025-09-20 12:35:01.118704",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -10344,7 +10513,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:38:55.471406",
+        "checked_at": "2025-09-20 12:35:08.527372",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -10386,7 +10555,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:39:02.721156",
+        "checked_at": "2025-09-20 12:35:16.446646",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -10428,7 +10597,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:39:09.601288",
+        "checked_at": "2025-09-20 12:35:23.744765",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -10494,7 +10663,7 @@
         "modality": "text->video"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:39:23.053451",
+        "checked_at": "2025-09-20 12:35:38.027518",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -10537,7 +10706,7 @@
         "modality": "text->video"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:39:29.900681",
+        "checked_at": "2025-09-20 12:35:45.901658",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -10558,7 +10727,7 @@
       "pricing_error": null,
       "bot_info": {
         "creator": "@runwayml",
-        "description": "Runway's Gen-4 Turbo model creates best-in-class, controllable, and high-fidelity video generations based on your prompts. Both text inputs (max 1000 characters) and image inputs are supported, but we recommend using image inputs for best results. Use --aspect_ratio (16:9, 9:16, landscape, portrait) for landscape/portrait videos. Use --duration (5, 10) to specify video length in seconds. Full prompting guide here: https://help.runwayml.com/hc/en-us/articles/39789879462419-Gen-4-Video-Prompting-Guide",
+        "description": "Runway's Gen-4 Turbo model creates best-in-class, controllable, and high-fidelity video generations based on your prompts. Both text inputs (max 1000 characters) and image inputs are supported, but we recommend using image inputs for best results. Use --aspect_ratio (16:9, 1:1, 9:16, landscape, portrait) for landscape/portrait videos. Use --duration (5, 10) to specify video length in seconds. Full prompting guide here: https://help.runwayml.com/hc/en-us/articles/39789879462419-Gen-4-Video-Prompting-Guide",
         "description_extra": "Powered by a server managed by @runwayml. Learn more"
       }
     },
@@ -10580,7 +10749,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:39:36.762692",
+        "checked_at": "2025-09-20 12:35:53.216488",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -10621,7 +10790,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:47:31.240050",
+        "checked_at": "2025-09-20 12:36:00.477502",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -10662,7 +10831,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:39:43.587532",
+        "checked_at": "2025-09-20 12:36:07.799915",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -10680,9 +10849,9 @@
       },
       "pricing_error": null,
       "bot_info": {
-        "creator": "@fal",
-        "description": "Seedance is a video generation model with text-to-video and image-to-video capabilities. It achieves breakthroughs in semantic understanding and prompt following. Use `--aspect` to set the aspect ratio (available values: `16:9`, `4:3`, `1:1` and `9:21`). Use `--resolution` (one of `480p` and `720p` to set the video resolution. `--duration` (5 or 10) sets the video duration.\nNumber of video tokens calculated for pricing is approximately: `height * width * fps * duration / 1024).",
-        "description_extra": "Powered by a server managed by @fal. Learn more"
+        "creator": "@Bytedance",
+        "description": "Seedance is a video generation model with text-to-video and image-to-video capabilities. It achieves breakthroughs in semantic understanding and prompt following. Use `--aspect` to set the aspect ratio (available values: `16:9`, `4:3`, `1:1` and `9:21`). Use `--resolution` (one of `480p` and `720p` to set the video resolution. `--duration` (3 to 12) sets the video duration.\nNumber of video tokens calculated for pricing is approximately: `height * width * fps * duration / 1024).",
+        "description_extra": "Powered by a server managed by @Bytedance. Learn more"
       }
     },
     {
@@ -10703,7 +10872,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:39:50.550570",
+        "checked_at": "2025-09-20 12:36:15.144733",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -10721,9 +10890,9 @@
       },
       "pricing_error": null,
       "bot_info": {
-        "creator": "@fal",
-        "description": "Seedance is a video generation model with text-to-video and image-to-video capabilities. It achieves breakthroughs in semantic understanding and prompt following. Use `--aspect` to set the aspect ratio (available values: `21:9`, `16:9`, `4:3`, `1:1`, `3:4`, `9:16`). Use `--resolution` (one of `480p` and `1080p` to set the video resolution. `--duration` (5 or 10) sets the video duration.\nNumber of video tokens calculated for pricing is approximately: `height * width * fps * duration / 1024).",
-        "description_extra": "Powered by a server managed by @fal. Learn more"
+        "creator": "@Bytedance",
+        "description": "Seedance is a video generation model with text-to-video and image-to-video capabilities. It achieves breakthroughs in semantic understanding and prompt following. Use `--aspect` to set the aspect ratio (available values: `21:9`, `16:9`, `4:3`, `1:1`, `3:4`, `9:16`). Use `--resolution` (one of `480p` and `1080p` to set the video resolution. `--duration` (3 to 12) sets the video duration.\nNumber of video tokens calculated for pricing is approximately: `height * width * fps * duration / 1024).",
+        "description_extra": "Powered by a server managed by @Bytedance. Learn more"
       }
     },
     {
@@ -10744,7 +10913,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:39:57.500106",
+        "checked_at": "2025-09-20 12:36:22.552818",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -10752,19 +10921,19 @@
           "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
-          "image_output": "1334 points / message",
+          "image_output": "1000 points / message",
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "1334 points"
+          "initial_points_cost": "1000 points"
         }
       },
       "pricing_error": null,
       "bot_info": {
-        "creator": "@fal",
+        "creator": "@Bytedance",
         "description": "Seedream 3.0 by ByteDance is a bilingual (Chinese and English) text-to-image model that excels at text-to-image generation.",
-        "description_extra": "Powered by a server managed by @fal. Learn more"
+        "description_extra": "Powered by a server managed by @Bytedance. Learn more"
       }
     },
     {
@@ -10785,7 +10954,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:47:40.646075",
+        "checked_at": "2025-09-20 12:36:30.178272",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -10826,7 +10995,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:40:04.326621",
+        "checked_at": "2025-09-20 12:36:37.605046",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -10867,7 +11036,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:40:11.150652",
+        "checked_at": "2025-09-20 12:36:45.652360",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -10908,7 +11077,7 @@
         "modality": "text->video"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:40:18.005847",
+        "checked_at": "2025-09-20 12:36:53.050595",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -10949,7 +11118,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:47:47.874792",
+        "checked_at": "2025-09-20 12:37:00.322217",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -10992,7 +11161,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:47:55.086260",
+        "checked_at": "2025-09-20 12:37:08.116585",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -11034,7 +11203,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:40:24.751517",
+        "checked_at": "2025-09-20 12:37:15.363936",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -11075,7 +11244,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:40:32.725927",
+        "checked_at": "2025-09-20 12:37:22.632946",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -11116,7 +11285,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:40:39.632388",
+        "checked_at": "2025-09-20 12:37:29.916497",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -11157,7 +11326,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:40:46.372779",
+        "checked_at": "2025-09-20 12:37:37.365085",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -11198,7 +11367,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:40:53.136305",
+        "checked_at": "2025-09-20 12:37:44.648409",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -11239,27 +11408,20 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:40:59.940563",
+        "checked_at": "2025-09-20 12:37:51.925734",
         "details": {
           "input_text": null,
           "input_image": null,
           "bot_message": null,
           "chat_history": null,
           "chat_history_cache_discount": null,
-          "total_cost": null,
+          "total_cost": "1 point/message",
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "Variable points",
-          "Up to 24": "1167 points",
-          "24 - 32": "2334 points",
-          "32 - 48": "3501 points",
-          "48 - 64": "4668 points",
-          "64 - 128": "7002 points",
-          "128 - 256": "11670 points",
-          "> 256(Up to 512)": "18672 points"
+          "initial_points_cost": "1 point"
         }
       },
       "pricing_error": null,
@@ -11287,7 +11449,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:41:06.753634",
+        "checked_at": "2025-09-20 12:37:59.885437",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -11329,7 +11491,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:41:13.804179",
+        "checked_at": "2025-09-20 12:38:07.455940",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -11373,7 +11535,7 @@
         "modality": "text->audio"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:41:20.548138",
+        "checked_at": "2025-09-20 12:38:14.860024",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -11414,20 +11576,20 @@
         "modality": "text->video"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:41:27.384550",
+        "checked_at": "2025-09-20 12:38:22.162689",
         "details": {
           "input_text": null,
           "input_image": null,
           "bot_message": null,
           "chat_history": null,
           "chat_history_cache_discount": null,
-          "total_cost": "37000 points/message",
+          "total_cost": "74000 points/message",
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "37000 points"
+          "initial_points_cost": "74000 points"
         }
       },
       "pricing_error": null,
@@ -11455,7 +11617,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:41:34.388204",
+        "checked_at": "2025-09-20 12:38:29.524052",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -11496,26 +11658,26 @@
         "modality": "text->video"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:41:41.451474",
+        "checked_at": "2025-09-20 12:38:36.915812",
         "details": {
           "input_text": null,
           "input_image": null,
           "bot_message": null,
           "chat_history": null,
           "chat_history_cache_discount": null,
-          "total_cost": "55500 points/message",
+          "total_cost": "79000 points/message",
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "55500 points"
+          "initial_points_cost": "79000 points"
         }
       },
       "pricing_error": null,
       "bot_info": {
         "creator": "@google",
-        "description": "Veo 3 creates incredibly high-quality videos in a wide range of subjects and styles. It brings an improved understanding of real-world physics and the nuances of human movement and expression, which helps improve its detail and realism overall. Veo 3 understands the unique language of cinematography: ask it for a genre, specify a lens, suggest cinematic effects and Veo 3 will deliver in 8-second clips. Supports text-to-video as well as image-to-video. Note: currently has low rate limit so you may need to retry your request at times of peak usage.",
+        "description": "Veo 3 creates incredibly high-quality videos in a wide range of subjects and styles. It brings an improved understanding of real-world physics and the nuances of human movement and expression, which helps improve its detail and realism overall. Veo 3 understands the unique language of cinematography: ask it for a genre, specify a lens, suggest cinematic effects and Veo 3 will deliver in 8-second clips. Supports text-to-video as well as image-to-video.\nUse `--no` followed by the negative prompt. examples are `blurry`, `cloudy`, or input other elements. Use `--seed` followed by value (e.g.2 ) to set value.\nDuration is limited to 8 seconds and aspect ratio of 16:9.",
         "description_extra": "Powered by a server managed by @google. Learn more"
       }
     },
@@ -11537,7 +11699,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:41:48.319898",
+        "checked_at": "2025-09-20 12:38:44.212384",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -11557,7 +11719,7 @@
       "pricing_error": null,
       "bot_info": {
         "creator": "@fal",
-        "description": "Veo-3 Fast is a faster and more cost effective version of Google's Veo 3. Use `--aspect` to set the aspect ratio of the generated image (one of `16:9`, `1:1`, `9:16`. Use `--generate_audio` to generate audio with your video at a higher cost. Use --negative_prompt to set negative prompt option `blur`, `low resolution`, `poor resolution`. This is a text to video generation model only.",
+        "description": "Veo-3 Fast is a faster and more cost effective version of Google's Veo 3. \nUse `--aspect` to set the aspect ratio of the generated image (one of `16:9`, `1:1`, `9:16`). \nUse `--generate_audio` to generate audio with your video at a higher cost. \nUse --negative_prompt to set negative prompt option `blur`, `low resolution`, `poor quality`. \nDuration is limited to 7 seconds. This is a text to video generation model only.",
         "description_extra": "Powered by a server managed by @fal. Learn more"
       }
     },
@@ -11579,7 +11741,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:48:02.341982",
+        "checked_at": "2025-09-20 12:38:51.678730",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -11626,7 +11788,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:48:09.738913",
+        "checked_at": "2025-09-20 12:38:59.367917",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -11667,7 +11829,7 @@
         "modality": "text->video"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:41:55.253613",
+        "checked_at": "2025-09-20 12:39:07.283731",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -11686,7 +11848,7 @@
       "pricing_error": null,
       "bot_info": {
         "creator": "@fal",
-        "description": "Wan-2.1 is a text-to-video model that generates high-quality videos with high visual quality and motion diversity from text prompts.",
+        "description": "Wan-2.1 is a text-to-video model that generates high-quality videos with high visual quality and motion diversity from text prompts. Generates 5 second video.",
         "description_extra": "Powered by a server managed by @fal. Learn more"
       }
     },
@@ -11708,7 +11870,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:42:02.026350",
+        "checked_at": "2025-09-20 12:39:14.917241",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -11717,7 +11879,7 @@
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
-          "video_output": "2667 points / second",
+          "video_output": "2267 points / second",
           "text_input": null,
           "per_message": null,
           "finetuning": null,
@@ -11727,7 +11889,7 @@
       "pricing_error": null,
       "bot_info": {
         "creator": "@fal",
-        "description": "Wan-2.2 is a video model that generates high-quality videos with high visual quality and motion diversity from text prompts. Use `--aspect` to set the aspect ratio (One of `16:9`, `1:1`, `9:16`) for text-to-video requests. Duration is limited to 5 seconds only with up to 720p resolution.",
+        "description": "Wan-2.2 is a video model that generates high-quality videos with high visual quality and motion diversity from text prompts. Send one image for image to video tasks, and send two images for first-frame - last-frame generation. Use `--aspect` to set the aspect ratio (One of `16:9`, `1:1`, `9:16`) for text-to-video requests. Duration is limited to 5 seconds only with up to 720p resolution.",
         "description_extra": "Powered by a server managed by @fal. Learn more"
       }
     },
@@ -11774,7 +11936,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-09-20 11:48:23.937958",
+        "checked_at": "2025-09-20 12:39:29.670150",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -11815,12 +11977,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:42:15.056787",
+        "checked_at": "2025-09-20 12:39:36.966771",
         "details": {
-          "input_text": "450 points/1k tokens",
-          "input_image": "450 points/1k tokens",
-          "bot_message": "3853 points/message",
-          "chat_history": "Input rates are applied",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -11828,7 +11990,9 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "3950+ points"
+          "initial_points_cost": "4017+ points",
+          "Input": "450 points/1k tokens",
+          "Output (text)": "1800 points/1k tokens"
         }
       },
       "pricing_error": null,
@@ -11856,12 +12020,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:42:21.888136",
+        "checked_at": "2025-09-20 12:39:44.220706",
         "details": {
           "input_text": "33 points/1k tokens",
           "input_image": null,
-          "bot_message": "352 points/message",
-          "chat_history": "Input rates are applied",
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -11869,7 +12033,8 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "360+ points"
+          "initial_points_cost": "345+ points",
+          "Output (text)": "132 points/1k tokens"
         }
       },
       "pricing_error": null,
@@ -11897,12 +12062,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:42:28.739426",
+        "checked_at": "2025-09-20 12:39:52.134309",
         "details": {
-          "input_text": "4500 points/1k tokens",
-          "input_image": "4500 points/1k tokens",
-          "bot_message": "53457 points/message",
-          "chat_history": "Input rates are applied",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -11910,7 +12075,9 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "54420+ points"
+          "initial_points_cost": "54914+ points",
+          "Input": "4500 points/1k tokens",
+          "Output (text)": "18000 points/1k tokens"
         }
       },
       "pricing_error": null,
@@ -11938,20 +12105,23 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:42:35.454194",
+        "checked_at": "2025-09-20 12:39:59.442033",
         "details": {
-          "input_text": "60 points/1k tokens",
-          "input_image": "60 points/1k tokens",
-          "bot_message": "388 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "75% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "401+ points"
+          "initial_points_cost": "421+ points",
+          "Input": "60 points/1k tokens",
+          "Output (text)": "240 points/1k tokens",
+          "Cache discount": "75% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -11979,26 +12149,29 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:42:42.355031",
+        "checked_at": "2025-09-20 12:40:07.080028",
         "details": {
-          "input_text": "300 points/1k tokens",
-          "input_image": "300 points/1k tokens",
-          "bot_message": "95345 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "75% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "95410+ points"
+          "initial_points_cost": "60074+ points",
+          "Input": "300 points/1k tokens",
+          "Output (text)": "1200 points/1k tokens",
+          "Cache discount": "75% discount oncached chat"
         }
       },
       "pricing_error": null,
       "bot_info": {
         "creator": "@openai",
-        "description": "Deep Research from OpenAI powered by the o3 model, can search through extensive web information to answer complex, nuanced research questions in various domains such as finance, consulting, and science. Research queries that take longer than 10 minutes (600 seconds) will error out and compute points will be refunded.",
+        "description": "Deep Research from OpenAI powered by the o3 model, can search through extensive web information to answer complex, nuanced research questions in various domains such as finance, consulting, and science. Research queries that take longer than 10 minutes (600 seconds) will error out and compute points will be refunded after 2 hours.",
         "description_extra": "Powered by OpenAI: o3-deep-research-2025-06-26. Learn more"
       }
     },
@@ -12020,12 +12193,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:42:49.316928",
+        "checked_at": "2025-09-20 12:40:14.313223",
         "details": {
           "input_text": "33 points/1k tokens",
           "input_image": "Variable",
-          "bot_message": "199 points/message",
-          "chat_history": "Input rates are applied",
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -12033,7 +12206,8 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "207+ points"
+          "initial_points_cost": "210+ points",
+          "Output (text)": "132 points/1k tokens"
         }
       },
       "pricing_error": null,
@@ -12061,12 +12235,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:42:56.317548",
+        "checked_at": "2025-09-20 12:40:21.736917",
         "details": {
           "input_text": "33 points/1k tokens",
           "input_image": "Variable",
-          "bot_message": "447 points/message",
-          "chat_history": "Input rates are applied",
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -12074,7 +12248,8 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "455+ points"
+          "initial_points_cost": "430+ points",
+          "Output (text)": "132 points/1k tokens"
         }
       },
       "pricing_error": null,
@@ -12102,12 +12277,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:43:03.178226",
+        "checked_at": "2025-09-20 12:40:28.938980",
         "details": {
-          "input_text": "600 points/1k tokens",
-          "input_image": "600 points/1k tokens",
-          "bot_message": "4669 points/message",
-          "chat_history": "Input rates are applied",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -12115,7 +12290,9 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "4798+ points"
+          "initial_points_cost": "4970+ points",
+          "Input": "600 points/1k tokens",
+          "Output (text)": "2400 points/1k tokens"
         }
       },
       "pricing_error": null,
@@ -12143,20 +12320,23 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:43:09.818497",
+        "checked_at": "2025-09-20 12:40:36.305927",
         "details": {
-          "input_text": "33 points/1k tokens",
-          "input_image": "33 points/1k tokens",
-          "bot_message": "235 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "75% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "243+ points"
+          "initial_points_cost": "256+ points",
+          "Input": "33 points/1k tokens",
+          "Output (text)": "132 points/1k tokens",
+          "Cache discount": "75% discount oncached chat"
         }
       },
       "pricing_error": null,
@@ -12184,26 +12364,29 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:43:16.644220",
+        "checked_at": "2025-09-20 12:40:43.721682",
         "details": {
-          "input_text": "60 points/1k tokens",
-          "input_image": "60 points/1k tokens",
-          "bot_message": "21977 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "75% discount oncached chat history",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "21990+ points"
+          "initial_points_cost": "21992+ points",
+          "Input": "60 points/1k tokens",
+          "Output (text)": "240 points/1k tokens",
+          "Cache discount": "75% discount oncached chat"
         }
       },
       "pricing_error": null,
       "bot_info": {
         "creator": "@openai",
-        "description": "Deep Research from OpenAI powered by the o4-mini model, can search through extensive web information to answer complex, nuanced research questions in various domains such as finance, consulting, and science. Research queries that take longer than 10 minutes (600 seconds) will error out and compute points will be refunded.",
+        "description": "Deep Research from OpenAI powered by the o4-mini model, can search through extensive web information to answer complex, nuanced research questions in various domains such as finance, consulting, and science. Research queries that take longer than 10 minutes (600 seconds) will error out and compute points will be refunded after 2 hours.",
         "description_extra": "Powered by OpenAI: o4-mini-deep-research-2025-06-26. Learn more"
       }
     },
@@ -12225,7 +12408,7 @@
         "modality": "text->image"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:43:23.507230",
+        "checked_at": "2025-09-20 12:40:51.200994",
         "details": {
           "input_text": null,
           "input_image": null,

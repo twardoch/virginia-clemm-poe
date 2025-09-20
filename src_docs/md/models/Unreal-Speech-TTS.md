@@ -7,7 +7,7 @@
 | Text Input | 1 point per 5 characters |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:41:20.548138
+**Last Checked:** 2025-09-20 12:38:14.860024
 
 
 ## Bot Information

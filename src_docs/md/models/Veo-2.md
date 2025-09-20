@@ -4,10 +4,10 @@
 
 | Type | Cost |
 |------|------|
-| Total Cost | 37000 points/message |
-| Initial Points Cost | 37000 points |
+| Total Cost | 74000 points/message |
+| Initial Points Cost | 74000 points |
 
-**Last Checked:** 2025-08-05 23:41:27.384550
+**Last Checked:** 2025-09-20 12:38:22.162689
 
 
 ## Bot Information

@@ -12,7 +12,7 @@
 | Premium Template To Video Output | 10000 points / video |
 | Advanced Template To Video Output | 16667 points / video |
 
-**Last Checked:** 2025-09-20 11:48:02.341982
+**Last Checked:** 2025-09-20 12:38:51.678730
 
 
 ## Bot Information

@@ -4,21 +4,19 @@
 
 | Type | Cost |
 |------|------|
-| Input Text | 60 points/1k tokens |
-| Input Image | 60 points/1k tokens |
-| Bot Message | 21977 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 75% discount oncached chat history |
-| Initial Points Cost | 21990+ points |
+| Initial Points Cost | 21992+ points |
+| Input | 60 points/1k tokens |
+| Output (Text) | 240 points/1k tokens |
+| Cache Discount | 75% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:43:16.644220
+**Last Checked:** 2025-09-20 12:40:43.721682
 
 
 ## Bot Information
 
 **Creator:** @openai
 
-**Description:** Deep Research from OpenAI powered by the o4-mini model, can search through extensive web information to answer complex, nuanced research questions in various domains such as finance, consulting, and science. Research queries that take longer than 10 minutes (600 seconds) will error out and compute points will be refunded.
+**Description:** Deep Research from OpenAI powered by the o4-mini model, can search through extensive web information to answer complex, nuanced research questions in various domains such as finance, consulting, and science. Research queries that take longer than 10 minutes (600 seconds) will error out and compute points will be refunded after 2 hours.
 
 **Extra:** Powered by OpenAI: o4-mini-deep-research-2025-06-26. Learn more
 

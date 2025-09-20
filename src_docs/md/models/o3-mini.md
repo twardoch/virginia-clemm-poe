@@ -6,11 +6,10 @@
 |------|------|
 | Input Text | 33 points/1k tokens |
 | Input Image | Variable |
-| Bot Message | 199 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 207+ points |
+| Initial Points Cost | 210+ points |
+| Output (Text) | 132 points/1k tokens |
 
-**Last Checked:** 2025-08-05 23:42:49.316928
+**Last Checked:** 2025-09-20 12:40:14.313223
 
 
 ## Bot Information

@@ -7,14 +7,14 @@
 | Video Output | 6000 points / second |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:28:35.934341
+**Last Checked:** 2025-09-20 12:22:08.859280
 
 
 ## Bot Information
 
 **Creator:** @fal
 
-**Description:** Generate high-quality videos from text or images using Kling 2.0 Master. Use `--negative_prompt` to send a negative prompt, and `--cfg_scale` to send a classifier-free guidance scale between 0.0 and 1.0 (inclusive). Use `--aspect` to set the aspect ratio (One of `16:9`, `9:16` and `1:1`).
+**Description:** Generate high-quality videos from text or images using Kling 2.0 Master. Use `--negative_prompt` to send a negative prompt, and `--cfg_scale` to send a classifier-free guidance scale between 0.0 and 1.0 (inclusive). Use `--aspect` to set the aspect ratio (One of `16:9`, `9:16` and `1:1`). Use `--duration` to set either 5 or 10 second video.
 
 **Extra:** Powered by a server managed by @fal. Learn more
 

@@ -4,10 +4,14 @@
 
 | Type | Cost |
 |------|------|
-| Per Message | 1234 points |
-| Initial Points Cost | 1234 points |
+| Initial Points Cost | 400+ points |
+| Base Fee (Low Context) | 400 |
+| Base Fee (Medium Context) | 640 |
+| Base Fee (High Context) | 960 |
+| Input Tokens | 80 per 1,000 tokens |
+| Output Tokens | 400 per 1,000 tokens |
 
-**Last Checked:** 2025-08-05 23:35:21.931176
+**Last Checked:** 2025-09-20 12:30:01.500120
 
 
 ## Bot Information

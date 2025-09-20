@@ -7,7 +7,7 @@
 | Initial Points Cost | Variable points |
 | Video Generation | 4667 points / second |
 
-**Last Checked:** 2025-09-20 11:45:24.898204
+**Last Checked:** 2025-09-20 12:29:08.448346
 
 
 ## Bot Information

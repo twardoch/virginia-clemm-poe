@@ -7,7 +7,7 @@
 | Video Output | 3334 points / second |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:29:03.322016
+**Last Checked:** 2025-09-20 12:22:39.101943
 
 
 ## Bot Information

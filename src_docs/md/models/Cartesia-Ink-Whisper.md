@@ -7,7 +7,7 @@
 | Initial Points Cost | Variable points |
 | Output (Audio) | 4200 points / hour |
 
-**Last Checked:** 2025-09-20 11:39:42.494179
+**Last Checked:** 2025-09-20 12:04:15.598309
 
 
 ## Bot Information

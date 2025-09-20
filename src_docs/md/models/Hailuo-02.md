@@ -7,7 +7,7 @@
 | Initial Points Cost | 7000+ |
 | 768P-6S Video | 14000 credits per video |
 
-**Last Checked:** 2025-08-05 23:25:50.075692
+**Last Checked:** 2025-09-20 12:18:41.720088
 
 
 ## Bot Information

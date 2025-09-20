@@ -7,7 +7,7 @@
 | Video Output | 85 points / message |
 | Initial Points Cost | 85 points |
 
-**Last Checked:** 2025-08-05 23:29:10.359275
+**Last Checked:** 2025-09-20 12:23:00.181345
 
 
 ## Bot Information

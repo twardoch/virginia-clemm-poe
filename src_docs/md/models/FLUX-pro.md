@@ -7,7 +7,7 @@
 | Image Output | 1667 points / message |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:20:25.099162
+**Last Checked:** 2025-09-20 12:10:45.535455
 
 
 ## Bot Information

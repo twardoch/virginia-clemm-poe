@@ -9,7 +9,7 @@
 | Base Cost | 50 points/message |
 | Output (Text) | 300 points/1k tokens |
 
-**Last Checked:** 2025-09-20 11:43:32.491761
+**Last Checked:** 2025-09-20 12:21:24.741251
 
 
 ## Bot Information

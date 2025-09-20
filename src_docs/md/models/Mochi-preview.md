@@ -7,14 +7,14 @@
 | Video Output | 11334 points / message |
 | Initial Points Cost | 11334 points |
 
-**Last Checked:** 2025-08-05 23:34:27.761025
+**Last Checked:** 2025-09-20 12:29:01.165296
 
 
 ## Bot Information
 
 **Creator:** @fal
 
-**Description:** Open state-of-the-art video generation model with high-fidelity motion and strong prompt adherence. Supports both text-to-video and image-to-video.
+**Description:** Open state-of-the-art video generation model with high-fidelity motion and strong prompt adherence. Supports both text-to-video and image-to-video. Generates 5 second video.
 
 **Extra:** Powered by a server managed by @fal. Learn more
 

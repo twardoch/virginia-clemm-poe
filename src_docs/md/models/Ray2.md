@@ -8,7 +8,7 @@
 | 5S | ['6,000 points', '11,750 points', '26,250 points', '106,250 points'] |
 | 9S | ['10,800 points', '21,150 points', '47,250 points', '191,250 points'] |
 
-**Last Checked:** 2025-08-05 23:38:34.650389
+**Last Checked:** 2025-09-20 12:34:45.942612
 
 
 ## Bot Information

@@ -4,10 +4,16 @@
 
 | Type | Cost |
 |------|------|
-| Per Message | 5334 points |
-| Initial Points Cost | 5334 points |
+| Initial Points Cost | 592+ points |
+| Deepseek R1 + Claude 3.5 Sonnet | ['592', '2865'] |
+| Deepseek R1 + Claude Opus 4.1 | ['2592', '12865'] |
+| Deepseek R1 + Claude Opus 4 | ['2592', '12865'] |
+| Deepseek R1 + Claude Sonnet 4 | ['592', '2865'] |
+| Deepseek R1 + Claude Sonnet 3.7 | ['592', '2865'] |
+| Deepseek R1 + Claude 3.5 Haiku | ['225', '1032'] |
+| Deepseek R1 + Claude 3 Opus | ['2592', '12865'] |
 
-**Last Checked:** 2025-08-05 23:18:24.603323
+**Last Checked:** 2025-09-20 12:07:14.949054
 
 
 ## Bot Information

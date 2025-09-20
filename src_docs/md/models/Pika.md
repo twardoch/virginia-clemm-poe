@@ -11,14 +11,14 @@
 | 2.2 + Ingredients | ['1080p', '10s', '60,000'] |
 | Pikaffects | ['720p', '5s', '23,334'] |
 
-**Last Checked:** 2025-08-05 23:35:50.521416
+**Last Checked:** 2025-09-20 12:30:30.951318
 
 
 ## Bot Information
 
 **Creator:** @pikalabs
 
-**Description:** Pika's video generation models. Select between Turbo, 2.1, 2.2, or Pikaffect. To adjust the aspect ratio of your image add --aspect (1:1, 5:2, 16:9, 4:3, 4:5, 9:16). Image to video is supported on all models, and multiple images are supported for 2.2 with an IngredientMode selected.
+**Description:** Pika's video generation models. Select between Turbo, 2.1, 2.2, or Pikaffect. To adjust the aspect ratio of your image add --aspect (1:1, 5:2, 16:9, 4:3, 4:5, 9:16). Image to video is supported on all models, and multiple images are supported for 2.2 with an IngredientMode selected. Generates 4 second video.
 
 **Extra:** Powered by a server managed by @pikalabs. Learn more
 

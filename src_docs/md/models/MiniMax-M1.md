@@ -9,7 +9,7 @@
 | Input (>200K Tokens) | 65 credits / 1000 tokens |
 | Output | 110 credits / 1000 tokens |
 
-**Last Checked:** 2025-08-05 23:33:18.629743
+**Last Checked:** 2025-09-20 12:27:39.586483
 
 
 ## Bot Information

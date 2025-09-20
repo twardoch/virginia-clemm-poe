@@ -4,10 +4,14 @@
 
 | Type | Cost |
 |------|------|
-| Per Message | 15167 points |
-| Initial Points Cost | 15167 points |
+| Initial Points Cost | 21667+ points |
+| Input Tokens | 160 per 1,000 tokens |
+| Output Tokens | 640 per 1,000 tokens |
+| Citation Tokens | 160 per 1,000 tokens |
+| Reasoning Tokens | 240 per 1,000 tokens |
+| Search Queries | 400000 per 1,000 queries |
 
-**Last Checked:** 2025-08-05 23:34:54.669430
+**Last Checked:** 2025-09-20 12:29:39.271322
 
 
 ## Bot Information

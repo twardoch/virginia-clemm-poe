@@ -6,11 +6,11 @@
 |------|------|
 | Input Text | 100 points/1k tokens |
 | Input Image | 90 points/image |
-| Bot Message | 750 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 773+ points |
+| Initial Points Cost | 1046+ points |
+| Output (Text) | 500 points/1k tokens |
+| Cache Discount | 75% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:25:42.816787
+**Last Checked:** 2025-09-20 12:18:12.398514
 
 
 ## Bot Information

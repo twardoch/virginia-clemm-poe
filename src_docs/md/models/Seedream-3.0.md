@@ -4,19 +4,19 @@
 
 | Type | Cost |
 |------|------|
-| Image Output | 1334 points / message |
-| Initial Points Cost | 1334 points |
+| Image Output | 1000 points / message |
+| Initial Points Cost | 1000 points |
 
-**Last Checked:** 2025-08-05 23:39:57.500106
+**Last Checked:** 2025-09-20 12:36:22.552818
 
 
 ## Bot Information
 
-**Creator:** @fal
+**Creator:** @Bytedance
 
 **Description:** Seedream 3.0 by ByteDance is a bilingual (Chinese and English) text-to-image model that excels at text-to-image generation.
 
-**Extra:** Powered by a server managed by @fal. Learn more
+**Extra:** Powered by a server managed by @Bytedance. Learn more
 
 
 ## Architecture

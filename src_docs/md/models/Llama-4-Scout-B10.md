@@ -7,7 +7,7 @@
 | Total Cost | 100 points/message |
 | Initial Points Cost | 100 points |
 
-**Last Checked:** 2025-08-05 23:32:30.529482
+**Last Checked:** 2025-09-20 12:26:30.488737
 
 
 ## Bot Information

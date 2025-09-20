@@ -14,7 +14,7 @@
 | Video Effects/Video Transition Output (720P) | 5334 points / second |
 | Video Effects/Video Transition Output (1080P) | 10667 points / second |
 
-**Last Checked:** 2025-08-05 23:35:57.229243
+**Last Checked:** 2025-09-20 12:30:38.218470
 
 
 ## Bot Information

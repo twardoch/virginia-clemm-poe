@@ -4,14 +4,12 @@
 
 | Type | Cost |
 |------|------|
-| Input Text | 38 points/1k tokens |
-| Input Image | 38 points/1k tokens |
-| Bot Message | 241 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 90% discount oncached chat history |
-| Initial Points Cost | 250+ points |
+| Initial Points Cost | 260+ points |
+| Input | 38 points/1k tokens |
+| Output (Text) | 300 points/1k tokens |
+| Cache Discount | 90% discount oncached chat |
 
-**Last Checked:** 2025-08-08 11:37:55.117491
+**Last Checked:** 2025-09-20 12:14:43.254287
 
 
 ## Bot Information
@@ -19,7 +17,7 @@
 **Creator:** @openai
 
 **Description:** OpenAI’s latest flagship model with significantly improved coding skills, long context (400k tokens), and improved instruction following. Supports native vision, and generally has more intelligence than GPT-4.1. Provides a 90% chat history cache discount.
-To instruct the bot to use more reasoning effort, add --reasoning_effort to the end of your message with one of "low", "medium", or "high"
+To instruct the bot to use more reasoning effort, add --reasoning_effort to the end of your message with one of "minimal", "low", "medium", or "high"
 
 **Extra:** Powered by OpenAI: gpt-5-2025-08-07. Learn more
 

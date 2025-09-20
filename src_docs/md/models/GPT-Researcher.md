@@ -9,7 +9,7 @@
 | Research Analysis | 200 points / research |
 | Research Response | 150 points / research |
 
-**Last Checked:** 2025-08-05 23:23:49.279887
+**Last Checked:** 2025-09-20 12:16:07.075516
 
 
 ## Bot Information

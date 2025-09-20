@@ -7,7 +7,7 @@
 | Image Output | 850 points / megapixel |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:15:54.768248
+**Last Checked:** 2025-09-20 12:04:37.815967
 
 
 ## Bot Information

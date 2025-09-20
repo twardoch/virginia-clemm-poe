@@ -7,7 +7,7 @@
 | Initial Points Cost | Variable points |
 | Audio Output | 29 points / second |
 
-**Last Checked:** 2025-08-05 23:36:04.017253
+**Last Checked:** 2025-09-20 12:30:45.665106
 
 
 ## Bot Information
@@ -84,6 +84,8 @@ Sahil_Conversational_(Urdu/Pakistani)
 Sahil_Narrative_(Urdu/Pakistani)
 Mary_Conversational_(Hebrew/Israeli)
 Mary_Narrative_(Hebrew/Israeli)
+
+Prompt input cannot exceed 10,000 characters.
 
 **Extra:** Powered by a server managed by @fal. Learn more
 

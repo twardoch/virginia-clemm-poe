@@ -7,7 +7,7 @@
 | Video Output | 14167 points / message |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:26:03.811511
+**Last Checked:** 2025-09-20 12:19:05.165328
 
 
 ## Bot Information

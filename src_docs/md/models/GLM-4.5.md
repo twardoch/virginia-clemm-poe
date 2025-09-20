@@ -4,19 +4,19 @@
 
 | Type | Cost |
 |------|------|
-| Total Cost | 180 points/message |
-| Initial Points Cost | 180 points |
+| Total Cost | 190 points/message |
+| Initial Points Cost | 190 points |
 
-**Last Checked:** 2025-08-05 23:21:49.915138
+**Last Checked:** 2025-09-20 12:12:18.592751
 
 
 ## Bot Information
 
-**Creator:** @fireworksai
+**Creator:** @novitaai
 
-**Description:** The GLM-4.5 series models are foundation models designed for intelligent agents. GLM-4.5 has 355 billion total parameters with 32 billion active parameters. It unifies reasoning, coding, and intelligent agent capabilities to meet the complex demands of intelligent agent applications.
+**Description:** The GLM-4.5 series models are foundation models designed for intelligent agents. GLM-4.5 has 355 billion total parameters with 32 billion active parameters, while GLM-4.5-Air adopts a more compact design with 106 billion total parameters and 12 billion active parameters. GLM-4.5 models unify reasoning, coding, and intelligent agent capabilities to meet the complex demands of intelligent agent applications. This bot currently does not accept attachments.
 
-**Extra:** Powered by a server managed by @fireworksai. Learn more
+**Extra:** Powered by a server managed by @novitaai. Learn more
 
 
 ## Architecture

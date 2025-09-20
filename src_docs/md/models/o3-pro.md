@@ -4,13 +4,11 @@
 
 | Type | Cost |
 |------|------|
-| Input Text | 600 points/1k tokens |
-| Input Image | 600 points/1k tokens |
-| Bot Message | 4669 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 4798+ points |
+| Initial Points Cost | 4970+ points |
+| Input | 600 points/1k tokens |
+| Output (Text) | 2400 points/1k tokens |
 
-**Last Checked:** 2025-08-05 23:43:03.178226
+**Last Checked:** 2025-09-20 12:40:28.938980
 
 
 ## Bot Information

@@ -4,19 +4,24 @@
 
 | Type | Cost |
 |------|------|
-| Total Cost | 200 points/message |
-| Initial Points Cost | 200 points |
+| Total Cost | 210 points/message |
+| Initial Points Cost | 210 points |
 
-**Last Checked:** 2025-08-05 23:28:08.163105
+**Last Checked:** 2025-09-20 12:21:17.354871
 
 
 ## Bot Information
 
-**Creator:** @fireworksai
+**Creator:** @novitaai
 
-**Description:** Kimi K2 is a state-of-the-art mixture-of-experts (MoE) language model with 32 billion activated parameters and 1 trillion total parameters. Trained with the Muon optimizer, Kimi K2 achieves exceptional performance across frontier knowledge, reasoning, and coding tasks while being meticulously optimized for agentic capabilities.
+**Description:** Kimi K2 Instruct is a state-of-the-art mixture-of-experts (MoE) language model with 32 billion activated parameters and 1 trillion total parameters. Trained with the Muon optimizer, Kimi K2 achieves exceptional performance across frontier knowledge, reasoning, and coding tasks while being meticulously optimized for agentic capabilities.
 
-**Extra:** Powered by a server managed by @fireworksai. Learn more
+Key Features:
+- Large-Scale Training: Pre-trained a 1T parameter MoE model on 15.5T tokens with zero training instability.
+- MuonClip Optimizer: We apply the Muon optimizer to an unprecedented scale, and develop novel optimization techniques to resolve instabilities while scaling up.
+- Agentic Intelligence: Specifically designed for tool use, reasoning, and autonomous problem-solving.
+
+**Extra:** Powered by a server managed by @novitaai. Learn more
 
 
 ## Architecture

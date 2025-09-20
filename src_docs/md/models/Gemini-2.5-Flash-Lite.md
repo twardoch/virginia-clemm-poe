@@ -10,7 +10,7 @@
 | Input (Video) | 1 point/second |
 | Output (Text) | 8 points/1k tokens |
 
-**Last Checked:** 2025-09-20 11:42:35.660504
+**Last Checked:** 2025-09-20 12:17:21.126958
 
 
 ## Bot Information

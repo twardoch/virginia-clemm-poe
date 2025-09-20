@@ -5914,13 +5914,14 @@ ignore_missing_imports = True
 <document_content>
 #!/usr/bin/env bash
 uv pip install --system --upgrade -e .
-python -m virginia-clemm-poe update --all --force --verbose
+python -m virginia_clemm_poe update --all --force --verbose
 python ./src_docs/update_docs.py
 llms . "*.txt,docs"
 uvx hatch clean
 gitnextver .
 uvx hatch build
 uv publish
+say "Virginia Clemm Poe is ready!"
 
 </document_content>
 </document>
@@ -12542,7 +12543,7 @@ See what's new: https://creator.poe.com/changelog?tag=canvas-apps
 | Total Cost | 170 points/message |
 | Initial Points Cost | 170 points |
 
-**Last Checked:** 2025-08-05 23:15:20.551128
+**Last Checked:** 2025-09-20 12:03:46.459448
 
 
 ## Bot Information
@@ -12590,7 +12591,7 @@ See what's new: https://creator.poe.com/changelog?tag=canvas-apps
 | Total Cost | 0 points/message |
 | Initial Points Cost | 0 points |
 
-**Last Checked:** 2025-08-05 23:15:27.275730
+**Last Checked:** 2025-09-20 12:03:53.785709
 
 
 ## Bot Information
@@ -12638,7 +12639,7 @@ See what's new: https://creator.poe.com/changelog?tag=canvas-apps
 | Initial Points Cost | 650 points |
 | Per Search | 650 points |
 
-**Last Checked:** 2025-09-20 11:39:33.052634
+**Last Checked:** 2025-09-20 12:04:01.132382
 
 
 ## Bot Information
@@ -12686,7 +12687,7 @@ See what's new: https://creator.poe.com/changelog?tag=canvas-apps
 | Image Output | 1334 points / message |
 | Initial Points Cost | 1334 points |
 
-**Last Checked:** 2025-08-05 23:15:34.046916
+**Last Checked:** 2025-09-20 12:04:08.362415
 
 
 ## Bot Information
@@ -12734,7 +12735,7 @@ See what's new: https://creator.poe.com/changelog?tag=canvas-apps
 | Initial Points Cost | Variable points |
 | Output (Audio) | 4200 points / hour |
 
-**Last Checked:** 2025-09-20 11:39:42.494179
+**Last Checked:** 2025-09-20 12:04:15.598309
 
 
 ## Bot Information
@@ -12886,7 +12887,7 @@ Cantonese (yue)
 | Text Input | 934 points / 1k characters |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-09-20 11:39:49.844751
+**Last Checked:** 2025-09-20 12:04:22.941965
 
 
 ## Bot Information
@@ -13294,13 +13295,11 @@ Zia
 
 | Type | Cost |
 |------|------|
-| Input Text | 150 points/1k tokens |
-| Input Image | 150 points/1k tokens |
-| Bot Message | 302 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 335+ points |
+| Initial Points Cost | 371+ points |
+| Input | 150 points/1k tokens |
+| Output (Text) | 450 points/1k tokens |
 
-**Last Checked:** 2025-08-05 23:15:47.594449
+**Last Checked:** 2025-09-20 12:04:30.524554
 
 
 ## Bot Information
@@ -13348,7 +13347,7 @@ Zia
 | Image Output | 850 points / megapixel |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:15:54.768248
+**Last Checked:** 2025-09-20 12:04:37.815967
 
 
 ## Bot Information
@@ -13394,14 +13393,12 @@ This bot supports .jpg and .png images.
 
 | Type | Cost |
 |------|------|
-| Input Text | 30 points/1k tokens |
-| Input Image | 30 points/1k tokens |
-| Bot Message | 92 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 90% discount oncached chat history |
-| Initial Points Cost | 99+ points |
+| Initial Points Cost | 124+ points |
+| Input | 24 points/1k tokens |
+| Output (Text) | 107 points/1k tokens |
+| Cache Discount | 90% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:16:15.185407
+**Last Checked:** 2025-09-20 12:05:00.315890
 
 
 ## Bot Information
@@ -13446,14 +13443,12 @@ This bot supports .jpg and .png images.
 
 | Type | Cost |
 |------|------|
-| Input Text | 30 points/1k tokens |
-| Input Image | 30 points/1k tokens |
-| Bot Message | 42 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 90% discount oncached chat history |
-| Initial Points Cost | 49+ points |
+| Initial Points Cost | 44+ points |
+| Input | 24 points/1k tokens |
+| Output (Text) | 107 points/1k tokens |
+| Cache Discount | 90% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:16:08.345743
+**Last Checked:** 2025-09-20 12:04:52.376423
 
 
 ## Bot Information
@@ -13498,14 +13493,12 @@ This bot supports .jpg and .png images.
 
 | Type | Cost |
 |------|------|
-| Input Text | 10 points/1k tokens |
-| Input Image | 10 points/1k tokens |
-| Bot Message | 19 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 90% discount oncached chat history |
-| Initial Points Cost | 22+ points |
+| Initial Points Cost | 19+ points |
+| Input | 8 points/1k tokens |
+| Output (Text) | 34 points/1k tokens |
+| Cache Discount | 90% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:16:01.532861
+**Last Checked:** 2025-09-20 12:04:45.079077
 
 
 ## Bot Information
@@ -13550,14 +13543,12 @@ This bot supports .jpg and .png images.
 
 | Type | Cost |
 |------|------|
-| Input Text | 585 points/1k tokens |
-| Input Image | 585 points/1k tokens |
-| Bot Message | 1918 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 90% discount oncached chat history |
-| Initial Points Cost | 2052+ points |
+| Initial Points Cost | 1804+ points |
+| Input | 468 points/1k tokens |
+| Output (Text) | 2000 points/1k tokens |
+| Cache Discount | 90% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:16:22.197900
+**Last Checked:** 2025-09-20 12:05:08.233804
 
 
 ## Bot Information
@@ -13655,14 +13646,12 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 
 | Type | Cost |
 |------|------|
-| Input Text | 585 points/1k tokens |
-| Input Image | 585 points/1k tokens |
-| Bot Message | 5782 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 90% discount oncached chat history |
-| Initial Points Cost | 5916+ points |
+| Initial Points Cost | 4700+ points |
+| Input | 468 points/1k tokens |
+| Output (Text) | 2000 points/1k tokens |
+| Cache Discount | 90% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:16:43.181755
+**Last Checked:** 2025-09-20 12:05:22.889591
 
 
 ## Bot Information
@@ -13708,14 +13697,12 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 
 | Type | Cost |
 |------|------|
-| Input Text | 585 points/1k tokens |
-| Input Image | 585 points/1k tokens |
-| Bot Message | 4222 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 90% discount oncached chat history |
-| Initial Points Cost | 4356+ points |
+| Initial Points Cost | 3135+ points |
+| Input | 468 points/1k tokens |
+| Output (Text) | 2000 points/1k tokens |
+| Cache Discount | 90% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:16:50.012200
+**Last Checked:** 2025-09-20 12:05:30.248407
 
 
 ## Bot Information
@@ -13761,14 +13748,12 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 
 | Type | Cost |
 |------|------|
-| Input Text | 585 points/1k tokens |
-| Input Image | 585 points/1k tokens |
-| Bot Message | 4817 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 90% discount oncached chat history |
-| Initial Points Cost | 4951+ points |
+| Initial Points Cost | 4733+ points |
+| Input | 468 points/1k tokens |
+| Output (Text) | 2000 points/1k tokens |
+| Cache Discount | 90% discount oncached chat |
 
-**Last Checked:** 2025-08-08 11:37:47.024091
+**Last Checked:** 2025-09-20 12:05:37.471310
 
 
 ## Bot Information
@@ -13814,14 +13799,12 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 
 | Type | Cost |
 |------|------|
-| Input Text | 585 points/1k tokens |
-| Input Image | 585 points/1k tokens |
-| Bot Message | 4817 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 90% discount oncached chat history |
-| Initial Points Cost | 4951+ points |
+| Initial Points Cost | 3745+ points |
+| Input | 468 points/1k tokens |
+| Output (Text) | 2000 points/1k tokens |
+| Cache Discount | 90% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:16:29.098274
+**Last Checked:** 2025-09-20 12:05:15.516955
 
 
 ## Bot Information
@@ -13867,14 +13850,12 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 
 | Type | Cost |
 |------|------|
-| Input Text | 115 points/1k tokens |
-| Input Image | 115 points/1k tokens |
-| Bot Message | 363 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 90% discount oncached chat history |
-| Initial Points Cost | 390+ points |
+| Initial Points Cost | 308+ points |
+| Input | 92 points/1k tokens |
+| Output (Text) | 400 points/1k tokens |
+| Cache Discount | 90% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:17:03.682147
+**Last Checked:** 2025-09-20 12:05:52.094042
 
 
 ## Bot Information
@@ -13919,14 +13900,13 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 
 | Type | Cost |
 |------|------|
-| Input Text | 115 points/1k tokens |
 | Input Image | Variable |
-| Bot Message | 438 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 90% discount oncached chat history |
-| Initial Points Cost | 465+ points |
+| Initial Points Cost | 271+ points |
+| Input | 92 points/1k tokens |
+| Output (Text) | 400 points/1k tokens |
+| Cache Discount | 90% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:17:10.530327
+**Last Checked:** 2025-09-20 12:06:00.078205
 
 
 ## Bot Information
@@ -13971,14 +13951,12 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 
 | Type | Cost |
 |------|------|
-| Input Text | 115 points/1k tokens |
-| Input Image | 115 points/1k tokens |
-| Bot Message | 243 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 90% discount oncached chat history |
-| Initial Points Cost | 270+ points |
+| Initial Points Cost | 210+ points |
+| Input | 92 points/1k tokens |
+| Output (Text) | 400 points/1k tokens |
+| Cache Discount | 90% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:16:56.792948
+**Last Checked:** 2025-09-20 12:05:44.764413
 
 
 ## Bot Information
@@ -14023,14 +14001,12 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 
 | Type | Cost |
 |------|------|
-| Input Text | 115 points/1k tokens |
-| Input Image | 115 points/1k tokens |
-| Bot Message | 1695 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 90% discount oncached chat history |
-| Initial Points Cost | 1722+ points |
+| Initial Points Cost | 1241+ points |
+| Input | 92 points/1k tokens |
+| Output (Text) | 400 points/1k tokens |
+| Cache Discount | 90% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:17:25.144538
+**Last Checked:** 2025-09-20 12:06:14.653226
 
 
 ## Bot Information
@@ -14076,14 +14052,12 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 
 | Type | Cost |
 |------|------|
-| Input Text | 115 points/1k tokens |
-| Input Image | 115 points/1k tokens |
-| Bot Message | 1491 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 90% discount oncached chat history |
-| Initial Points Cost | 1518+ points |
+| Initial Points Cost | 1126+ points |
+| Input | 92 points/1k tokens |
+| Output (Text) | 400 points/1k tokens |
+| Cache Discount | 90% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:17:31.960532
+**Last Checked:** 2025-09-20 12:06:22.564974
 
 
 ## Bot Information
@@ -14129,14 +14103,12 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 
 | Type | Cost |
 |------|------|
-| Input Text | 115 points/1k tokens |
-| Input Image | 115 points/1k tokens |
-| Bot Message | 1017 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 90% discount oncached chat history |
-| Initial Points Cost | 1044+ points |
+| Initial Points Cost | 729+ points |
+| Input | 92 points/1k tokens |
+| Output (Text) | 400 points/1k tokens |
+| Cache Discount | 90% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:17:17.451270
+**Last Checked:** 2025-09-20 12:06:07.332244
 
 
 ## Bot Information
@@ -14182,14 +14154,12 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 
 | Type | Cost |
 |------|------|
-| Input Text | 115 points/1k tokens |
-| Input Image | 115 points/1k tokens |
-| Bot Message | 1601 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 90% discount oncached chat history |
-| Initial Points Cost | 1628+ points |
+| Initial Points Cost | 1270+ points |
+| Input | 92 points/1k tokens |
+| Output (Text) | 400 points/1k tokens |
+| Cache Discount | 90% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:17:45.523552
+**Last Checked:** 2025-09-20 12:06:37.619123
 
 
 ## Bot Information
@@ -14235,14 +14205,12 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 
 | Type | Cost |
 |------|------|
-| Input Text | 115 points/1k tokens |
-| Input Image | 115 points/1k tokens |
-| Bot Message | 843 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 90% discount oncached chat history |
-| Initial Points Cost | 870+ points |
+| Initial Points Cost | 991+ points |
+| Input | 92 points/1k tokens |
+| Output (Text) | 400 points/1k tokens |
+| Cache Discount | 90% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:17:52.359681
+**Last Checked:** 2025-09-20 12:06:44.809755
 
 
 ## Bot Information
@@ -14288,14 +14256,12 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 
 | Type | Cost |
 |------|------|
-| Input Text | 115 points/1k tokens |
-| Input Image | 115 points/1k tokens |
-| Bot Message | 911 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 90% discount oncached chat history |
-| Initial Points Cost | 938+ points |
+| Initial Points Cost | 799+ points |
+| Input | 92 points/1k tokens |
+| Output (Text) | 400 points/1k tokens |
+| Cache Discount | 90% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:17:38.693428
+**Last Checked:** 2025-09-20 12:06:30.397470
 
 
 ## Bot Information
@@ -14344,7 +14310,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 | Total Cost | 1130 points/message |
 | Initial Points Cost | 1130 points |
 
-**Last Checked:** 2025-08-05 23:18:08.873554
+**Last Checked:** 2025-09-20 12:07:00.167023
 
 
 ## Bot Information
@@ -14392,7 +14358,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 | Total Cost | 170 points/message |
 | Initial Points Cost | 170 points |
 
-**Last Checked:** 2025-08-05 23:17:59.794855
+**Last Checked:** 2025-09-20 12:06:52.073674
 
 
 ## Bot Information
@@ -14440,7 +14406,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 | Total Cost | 1500 points/message |
 | Initial Points Cost | 1500 points |
 
-**Last Checked:** 2025-08-05 23:18:17.711665
+**Last Checked:** 2025-09-20 12:07:07.495751
 
 
 ## Bot Information
@@ -14485,10 +14451,16 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 
 | Type | Cost |
 |------|------|
-| Per Message | 5334 points |
-| Initial Points Cost | 5334 points |
+| Initial Points Cost | 592+ points |
+| Deepseek R1 + Claude 3.5 Sonnet | ['592', '2865'] |
+| Deepseek R1 + Claude Opus 4.1 | ['2592', '12865'] |
+| Deepseek R1 + Claude Opus 4 | ['2592', '12865'] |
+| Deepseek R1 + Claude Sonnet 4 | ['592', '2865'] |
+| Deepseek R1 + Claude Sonnet 3.7 | ['592', '2865'] |
+| Deepseek R1 + Claude 3.5 Haiku | ['225', '1032'] |
+| Deepseek R1 + Claude 3 Opus | ['2592', '12865'] |
 
-**Last Checked:** 2025-08-05 23:18:24.603323
+**Last Checked:** 2025-09-20 12:07:14.949054
 
 
 ## Bot Information
@@ -14536,7 +14508,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 | Per Message | 667 points |
 | Initial Points Cost | 667 points |
 
-**Last Checked:** 2025-09-20 11:39:57.285771
+**Last Checked:** 2025-09-20 12:07:22.241826
 
 
 ## Bot Information
@@ -14584,7 +14556,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 | Total Cost | 200 points/message |
 | Initial Points Cost | 200 points |
 
-**Last Checked:** 2025-08-05 23:18:38.148028
+**Last Checked:** 2025-09-20 12:07:37.927402
 
 
 ## Bot Information
@@ -14634,7 +14606,7 @@ Supports 64k tokens of input context and 8k tokens of output context. Quantizati
 | Total Cost | 150 points/message |
 | Initial Points Cost | 150 points |
 
-**Last Checked:** 2025-08-05 23:18:45.122844
+**Last Checked:** 2025-09-20 12:07:45.194444
 
 
 ## Bot Information
@@ -14682,7 +14654,7 @@ Supports 64k tokens of input context and 8k tokens of output context. Quantizati
 | Total Cost | 600 points/message |
 | Initial Points Cost | 600 points |
 
-**Last Checked:** 2025-08-05 23:18:51.993132
+**Last Checked:** 2025-09-20 12:07:52.508048
 
 
 ## Bot Information
@@ -14730,7 +14702,7 @@ Supports 64k tokens of input context and 8k tokens of output context. Quantizati
 | Total Cost | 200 points/message |
 | Initial Points Cost | 200 points |
 
-**Last Checked:** 2025-09-20 11:40:04.837452
+**Last Checked:** 2025-09-20 12:07:59.695855
 
 
 ## Bot Information
@@ -14778,7 +14750,7 @@ Supports 64k tokens of input context and 8k tokens of output context. Quantizati
 | Total Cost | 500 points/message |
 | Initial Points Cost | 500 points |
 
-**Last Checked:** 2025-08-05 23:18:58.847977
+**Last Checked:** 2025-09-20 12:08:06.957553
 
 
 ## Bot Information
@@ -14828,7 +14800,7 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 | Total Cost | 600 points/message |
 | Initial Points Cost | 600 points |
 
-**Last Checked:** 2025-08-05 23:18:31.361879
+**Last Checked:** 2025-09-20 12:07:30.645308
 
 
 ## Bot Information
@@ -14876,7 +14848,7 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 | Total Cost | 145 points/message |
 | Initial Points Cost | 145 points |
 
-**Last Checked:** 2025-08-05 23:19:12.696299
+**Last Checked:** 2025-09-20 12:08:21.898181
 
 
 ## Bot Information
@@ -14926,7 +14898,7 @@ Supports 64k tokens of input context and 8k tokens of output context. Quantizati
 | Total Cost | 195 points/message |
 | Initial Points Cost | 195 points |
 
-**Last Checked:** 2025-08-05 23:19:19.809551
+**Last Checked:** 2025-09-20 12:08:29.156963
 
 
 ## Bot Information
@@ -14976,7 +14948,7 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 | Total Cost | 190 points/message |
 | Initial Points Cost | 190 points |
 
-**Last Checked:** 2025-09-20 11:40:22.460750
+**Last Checked:** 2025-09-20 12:08:45.035516
 
 
 ## Bot Information
@@ -15034,7 +15006,7 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 | Input (File) | 750 points / 1k token |
 | Output (Text) | 500 points / 1k tokens |
 
-**Last Checked:** 2025-09-20 11:40:29.836401
+**Last Checked:** 2025-09-20 12:08:53.692312
 
 
 ## Bot Information
@@ -15082,7 +15054,7 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 | Total Cost | 260 points/message |
 | Initial Points Cost | 260 points |
 
-**Last Checked:** 2025-09-20 11:40:15.036911
+**Last Checked:** 2025-09-20 12:08:36.916092
 
 
 ## Bot Information
@@ -15132,7 +15104,7 @@ This bot accepts PDF, DOC and XLSX files and does not accept audio and video fil
 | Total Cost | 415 points/message |
 | Initial Points Cost | 415 points |
 
-**Last Checked:** 2025-08-05 23:19:05.755817
+**Last Checked:** 2025-09-20 12:08:14.306425
 
 
 ## Bot Information
@@ -15180,7 +15152,7 @@ This bot accepts PDF, DOC and XLSX files and does not accept audio and video fil
 | Initial Points Cost | 631+ points |
 | Transcription | 631 points |
 
-**Last Checked:** 2025-09-20 11:40:39.259576
+**Last Checked:** 2025-09-20 12:09:01.219207
 
 
 ## Bot Information
@@ -15260,7 +15232,7 @@ Dutch
 | Total Cost | 300 points/message |
 | Initial Points Cost | 300 points |
 
-**Last Checked:** 2025-08-05 23:19:26.926273
+**Last Checked:** 2025-09-20 12:09:09.357309
 
 
 ## Bot Information
@@ -15308,7 +15280,7 @@ Dutch
 | Total Cost | 12000 points/message |
 | Initial Points Cost | 12000 points |
 
-**Last Checked:** 2025-08-05 23:19:34.534115
+**Last Checked:** 2025-09-20 12:09:16.772560
 
 
 ## Bot Information
@@ -15358,7 +15330,7 @@ To specify the aspect ratio of your video add --aspect_ratio (1:1, 16:9, 9:16, 4
 | Image Output | 1000 points / message |
 | Initial Points Cost | 1000 points |
 
-**Last Checked:** 2025-09-20 11:40:46.452526
+**Last Checked:** 2025-09-20 12:09:24.160150
 
 
 ## Bot Information
@@ -15408,7 +15380,7 @@ Use "--aspect" to select an aspect ratio (e.g --aspect 1:1). Valid aspect ratios
 | Total Cost | 30000 points/message |
 | Initial Points Cost | 30000 points |
 
-**Last Checked:** 2025-09-20 11:40:55.767422
+**Last Checked:** 2025-09-20 12:09:31.735961
 
 
 ## Bot Information
@@ -15458,7 +15430,7 @@ Prompt input cannot exceed 2,000 characters.
 | Input Text | 1 point / character |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-09-20 11:41:02.900558
+**Last Checked:** 2025-09-20 12:09:39.441992
 
 
 ## Bot Information
@@ -15534,7 +15506,7 @@ Prompt input cannot exceed 10,000 characters.
 | Input Text | 2 point / character |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-09-20 11:41:09.879420
+**Last Checked:** 2025-09-20 12:09:47.580272
 
 
 ## Bot Information
@@ -15711,7 +15683,7 @@ Japanese -- Alice
 | Image Output | 992 points / message |
 | Initial Points Cost | 992 points |
 
-**Last Checked:** 2025-08-05 23:19:49.031543
+**Last Checked:** 2025-09-20 12:09:55.822489
 
 
 ## Bot Information
@@ -15759,7 +15731,7 @@ Japanese -- Alice
 | Image Output | 992 points / message |
 | Initial Points Cost | 992 points |
 
-**Last Checked:** 2025-08-05 23:19:56.486168
+**Last Checked:** 2025-09-20 12:10:04.162671
 
 
 ## Bot Information
@@ -15807,7 +15779,7 @@ Japanese -- Alice
 | Image Output | 709 points / message |
 | Initial Points Cost | 709 points |
 
-**Last Checked:** 2025-09-20 11:41:17.132056
+**Last Checked:** 2025-09-20 12:10:13.098503
 
 
 ## Bot Information
@@ -15855,7 +15827,7 @@ Japanese -- Alice
 | Total Cost | 165 points/message |
 | Initial Points Cost | 165 points |
 
-**Last Checked:** 2025-08-05 23:20:10.330382
+**Last Checked:** 2025-09-20 12:10:29.543195
 
 
 ## Bot Information
@@ -15908,7 +15880,7 @@ To set inference, use "--num_inference_steps". Options from 1 up to 50. Default:
 | Finetuning | 56667 points / message |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:20:18.224623
+**Last Checked:** 2025-09-20 12:10:37.535243
 
 
 ## Bot Information
@@ -15956,7 +15928,7 @@ To set inference, use "--num_inference_steps". Options from 1 up to 50. Default:
 | Image Output | 567 points / message |
 | Initial Points Cost | 567 points |
 
-**Last Checked:** 2025-08-05 23:20:03.360248
+**Last Checked:** 2025-09-20 12:10:21.424457
 
 
 ## Bot Information
@@ -16004,7 +15976,7 @@ To set inference, use "--num_inference_steps". Options from 1 up to 50. Default:
 | Total Cost | 1250 points/message |
 | Initial Points Cost | 1250 points |
 
-**Last Checked:** 2025-08-05 23:20:31.853626
+**Last Checked:** 2025-09-20 12:10:54.249506
 
 
 ## Bot Information
@@ -16052,7 +16024,7 @@ To set inference, use "--num_inference_steps". Options from 1 up to 50. Default:
 | Total Cost | 1000 points/message |
 | Initial Points Cost | 1000 points |
 
-**Last Checked:** 2025-08-05 23:20:45.747196
+**Last Checked:** 2025-09-20 12:11:10.280127
 
 
 ## Bot Information
@@ -16100,7 +16072,7 @@ To set inference, use "--num_inference_steps". Options from 1 up to 50. Default:
 | Image Output | 2000 points / message |
 | Initial Points Cost | 2000 points |
 
-**Last Checked:** 2025-08-05 23:20:52.759536
+**Last Checked:** 2025-09-20 12:11:18.197432
 
 
 ## Bot Information
@@ -16148,7 +16120,7 @@ To set inference, use "--num_inference_steps". Options from 1 up to 50. Default:
 | Image Output | 1334 points / message |
 | Initial Points Cost | 1334 points |
 
-**Last Checked:** 2025-08-05 23:20:38.897480
+**Last Checked:** 2025-09-20 12:11:02.280416
 
 
 ## Bot Information
@@ -16196,7 +16168,7 @@ To set inference, use "--num_inference_steps". Options from 1 up to 50. Default:
 | Image Output | 1667 points / message |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:20:25.099162
+**Last Checked:** 2025-09-20 12:10:45.535455
 
 
 ## Bot Information
@@ -16244,7 +16216,7 @@ To set inference, use "--num_inference_steps". Options from 1 up to 50. Default:
 | Total Cost | 33 points/message |
 | Initial Points Cost | 33 points |
 
-**Last Checked:** 2025-08-05 23:21:07.325562
+**Last Checked:** 2025-09-20 12:11:33.782226
 
 
 ## Bot Information
@@ -16297,7 +16269,7 @@ To set inference, use "--num_inference_steps". Options from 1 up to 50. Default:
 | Image Output | 40 points / message |
 | Initial Points Cost | 40 points |
 
-**Last Checked:** 2025-08-05 23:20:59.827907
+**Last Checked:** 2025-09-20 12:11:26.130158
 
 
 ## Bot Information
@@ -16345,7 +16317,7 @@ To set inference, use "--num_inference_steps". Options from 1 up to 50. Default:
 | Total Cost | 375 points/message |
 | Initial Points Cost | 375 points |
 
-**Last Checked:** 2025-08-05 23:21:14.396193
+**Last Checked:** 2025-09-20 12:11:41.379171
 
 
 ## Bot Information
@@ -16400,7 +16372,7 @@ Key Features
 | Total Cost | 35 points/message |
 | Initial Points Cost | 35 points |
 
-**Last Checked:** 2025-08-05 23:21:22.057689
+**Last Checked:** 2025-09-20 12:11:48.831979
 
 
 ## Bot Information
@@ -16453,7 +16425,7 @@ Key Features
 | Image Output | 2667 points / message |
 | Initial Points Cost | 2667 points |
 
-**Last Checked:** 2025-08-05 23:21:29.173255
+**Last Checked:** 2025-09-20 12:11:56.854107
 
 
 ## Bot Information
@@ -16501,7 +16473,7 @@ Key Features
 | Image Output | 1334 points / message |
 | Initial Points Cost | 1334 points |
 
-**Last Checked:** 2025-08-05 23:21:36.157410
+**Last Checked:** 2025-09-20 12:12:04.110987
 
 
 ## Bot Information
@@ -16549,7 +16521,7 @@ Key Features
 | Total Cost | 70 points/message |
 | Initial Points Cost | 70 points |
 
-**Last Checked:** 2025-08-05 23:21:43.063596
+**Last Checked:** 2025-09-20 12:12:11.325492
 
 
 ## Bot Information
@@ -16597,7 +16569,7 @@ Key Features
 | Total Cost | 80 points/message |
 | Initial Points Cost | 80 points |
 
-**Last Checked:** 2025-09-20 11:41:30.998362
+**Last Checked:** 2025-09-20 12:12:33.739965
 
 
 ## Bot Information
@@ -16645,7 +16617,7 @@ Key Features
 | Total Cost | 200 points/message |
 | Initial Points Cost | 200 points |
 
-**Last Checked:** 2025-09-20 11:41:24.078861
+**Last Checked:** 2025-09-20 12:12:26.467560
 
 
 ## Bot Information
@@ -16693,7 +16665,7 @@ Key Features
 | Total Cost | 180 points/message |
 | Initial Points Cost | 180 points |
 
-**Last Checked:** 2025-09-20 11:41:37.973595
+**Last Checked:** 2025-09-20 12:12:41.095235
 
 
 ## Bot Information
@@ -16745,7 +16717,7 @@ Key Features
 | File Processing | 40 points / file |
 | Document Processing | 100 points / document |
 
-**Last Checked:** 2025-09-20 11:41:45.255077
+**Last Checked:** 2025-09-20 12:12:48.349804
 
 
 ## Bot Information
@@ -16816,19 +16788,19 @@ Tags: AI Model, Multimodal LLM, PDF Analyzer, Code Assistant, HTML Code Generato
 
 | Type | Cost |
 |------|------|
-| Total Cost | 180 points/message |
-| Initial Points Cost | 180 points |
+| Total Cost | 190 points/message |
+| Initial Points Cost | 190 points |
 
-**Last Checked:** 2025-08-05 23:21:49.915138
+**Last Checked:** 2025-09-20 12:12:18.592751
 
 
 ## Bot Information
 
-**Creator:** @fireworksai
+**Creator:** @novitaai
 
-**Description:** The GLM-4.5 series models are foundation models designed for intelligent agents. GLM-4.5 has 355 billion total parameters with 32 billion active parameters. It unifies reasoning, coding, and intelligent agent capabilities to meet the complex demands of intelligent agent applications.
+**Description:** The GLM-4.5 series models are foundation models designed for intelligent agents. GLM-4.5 has 355 billion total parameters with 32 billion active parameters, while GLM-4.5-Air adopts a more compact design with 106 billion total parameters and 12 billion active parameters. GLM-4.5 models unify reasoning, coding, and intelligent agent capabilities to meet the complex demands of intelligent agent applications. This bot currently does not accept attachments.
 
-**Extra:** Powered by a server managed by @fireworksai. Learn more
+**Extra:** Powered by a server managed by @novitaai. Learn more
 
 
 ## Architecture
@@ -16866,11 +16838,10 @@ Tags: AI Model, Multimodal LLM, PDF Analyzer, Code Assistant, HTML Code Generato
 |------|------|
 | Input Text | 45 points/1k tokens |
 | Input Image | Variable |
-| Bot Message | 8 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 18+ points |
+| Initial Points Cost | 20+ points |
+| Output (Text) | 60 points/1k tokens |
 
-**Last Checked:** 2025-08-05 23:22:03.798705
+**Last Checked:** 2025-09-20 12:13:03.005891
 
 
 ## Bot Information
@@ -16917,11 +16888,10 @@ Tags: AI Model, Multimodal LLM, PDF Analyzer, Code Assistant, HTML Code Generato
 |------|------|
 | Input Text | 15 points/1k tokens |
 | Input Image | Variable |
-| Bot Message | 11 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 15+ points |
+| Initial Points Cost | 16+ points |
+| Output (Text) | 45 points/1k tokens |
 
-**Last Checked:** 2025-08-05 23:22:11.148957
+**Last Checked:** 2025-09-20 12:13:12.455404
 
 
 ## Bot Information
@@ -16968,11 +16938,10 @@ Tags: AI Model, Multimodal LLM, PDF Analyzer, Code Assistant, HTML Code Generato
 |------|------|
 | Input Text | 15 points/1k tokens |
 | Input Image | Variable |
-| Bot Message | 9 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 13+ points |
+| Initial Points Cost | 15+ points |
+| Output (Text) | 45 points/1k tokens |
 
-**Last Checked:** 2025-08-05 23:21:56.930715
+**Last Checked:** 2025-09-20 12:12:55.730277
 
 
 ## Bot Information
@@ -17017,13 +16986,11 @@ Tags: AI Model, Multimodal LLM, PDF Analyzer, Code Assistant, HTML Code Generato
 
 | Type | Cost |
 |------|------|
-| Input Text | 900 points/1k tokens |
-| Input Image | 900 points/1k tokens |
-| Bot Message | 334 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 532+ points |
+| Initial Points Cost | 844+ points |
+| Input | 900 points/1k tokens |
+| Output (Text) | 1800 points/1k tokens |
 
-**Last Checked:** 2025-08-05 23:22:25.061131
+**Last Checked:** 2025-09-20 12:13:26.904810
 
 
 ## Bot Information
@@ -17068,13 +17035,11 @@ Tags: AI Model, Multimodal LLM, PDF Analyzer, Code Assistant, HTML Code Generato
 
 | Type | Cost |
 |------|------|
-| Input Text | 900 points/1k tokens |
-| Input Image | 900 points/1k tokens |
-| Bot Message | 559 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 757+ points |
+| Initial Points Cost | 842+ points |
+| Input | 900 points/1k tokens |
+| Output (Text) | 1800 points/1k tokens |
 
-**Last Checked:** 2025-08-05 23:22:18.026353
+**Last Checked:** 2025-09-20 12:13:19.577688
 
 
 ## Bot Information
@@ -17119,13 +17084,11 @@ Tags: AI Model, Multimodal LLM, PDF Analyzer, Code Assistant, HTML Code Generato
 
 | Type | Cost |
 |------|------|
-| Input Text | 300 points/1k tokens |
-| Input Image | 300 points/1k tokens |
-| Bot Message | 285 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 351+ points |
+| Initial Points Cost | 445+ points |
+| Input | 300 points/1k tokens |
+| Output (Text) | 900 points/1k tokens |
 
-**Last Checked:** 2025-08-05 23:22:31.663097
+**Last Checked:** 2025-09-20 12:13:34.250465
 
 
 ## Bot Information
@@ -17170,14 +17133,12 @@ Tags: AI Model, Multimodal LLM, PDF Analyzer, Code Assistant, HTML Code Generato
 
 | Type | Cost |
 |------|------|
-| Input Text | 12 points/1k tokens |
-| Input Image | 12 points/1k tokens |
-| Bot Message | 22 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 75% discount oncached chat history |
-| Initial Points Cost | 25+ points |
+| Initial Points Cost | 28+ points |
+| Input | 12 points/1k tokens |
+| Output (Text) | 48 points/1k tokens |
+| Cache Discount | 75% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:22:45.530107
+**Last Checked:** 2025-09-20 12:13:48.908647
 
 
 ## Bot Information
@@ -17222,14 +17183,12 @@ Tags: AI Model, Multimodal LLM, PDF Analyzer, Code Assistant, HTML Code Generato
 
 | Type | Cost |
 |------|------|
-| Input Text | 3 points/1k tokens |
-| Input Image | 3 points/1k tokens |
-| Bot Message | 6 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 75% discount oncached chat history |
 | Initial Points Cost | 7+ points |
+| Input | 3 points/1k tokens |
+| Output (Text) | 12 points/1k tokens |
+| Cache Discount | 75% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:22:52.385639
+**Last Checked:** 2025-09-20 12:13:57.372824
 
 
 ## Bot Information
@@ -17274,21 +17233,19 @@ Tags: AI Model, Multimodal LLM, PDF Analyzer, Code Assistant, HTML Code Generato
 
 | Type | Cost |
 |------|------|
-| Input Text | 60 points/1k tokens |
-| Input Image | 60 points/1k tokens |
-| Bot Message | 193 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 75% discount oncached chat history |
-| Initial Points Cost | 206+ points |
+| Initial Points Cost | 240+ points |
+| Input | 60 points/1k tokens |
+| Output (Text) | 240 points/1k tokens |
+| Cache Discount | 75% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:22:38.740327
+**Last Checked:** 2025-09-20 12:13:41.562517
 
 
 ## Bot Information
 
 **Creator:** @openai
 
-**Description:** OpenAI’s latest flagship model with significantly improved coding skills, long context (1M tokens), and improved instruction following. Supports native vision, and generally has more intelligence than GPT-4o.
+**Description:** OpenAI’s GPT-4.1 significantly improves on past models in terms of its coding skills, long context (1M tokens), and improved instruction following. Supports native vision, and generally has more intelligence than GPT-4o. Provides a 75% chat history cache discount.
 
 **Extra:** Powered by OpenAI: gpt-4.1-2025-04-14. Learn more
 
@@ -17326,14 +17283,12 @@ Tags: AI Model, Multimodal LLM, PDF Analyzer, Code Assistant, HTML Code Generato
 
 | Type | Cost |
 |------|------|
-| Input Text | 75 points/1k tokens |
-| Input Image | 75 points/1k tokens |
-| Bot Message | 128 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 50% discount oncached chat history |
-| Initial Points Cost | 145+ points |
+| Initial Points Cost | 134+ points |
+| Input | 75 points/1k tokens |
+| Output (Text) | 300 points/1k tokens |
+| Cache Discount | 50% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:23:06.785217
+**Last Checked:** 2025-09-20 12:14:12.297848
 
 
 ## Bot Information
@@ -17379,11 +17334,11 @@ Tags: AI Model, Multimodal LLM, PDF Analyzer, Code Assistant, HTML Code Generato
 | Type | Cost |
 |------|------|
 | Input Text | 75 points/1k tokens |
-| Bot Message | 1232 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 1249+ points |
+| Initial Points Cost | 1257+ points |
+| Output (Text) | 300 points/1k tokens |
+| Output (Message) | 1050 points/message |
 
-**Last Checked:** 2025-08-05 23:23:13.685733
+**Last Checked:** 2025-09-20 12:14:19.813285
 
 
 ## Bot Information
@@ -17429,11 +17384,11 @@ Tags: AI Model, Multimodal LLM, PDF Analyzer, Code Assistant, HTML Code Generato
 | Type | Cost |
 |------|------|
 | Input Text | 5 points/1k tokens |
-| Bot Message | 831 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 832+ points |
+| Initial Points Cost | 838+ points |
+| Output (Text) | 18 points/1k tokens |
+| Output (Message) | 825 points/message |
 
-**Last Checked:** 2025-08-05 23:23:27.757333
+**Last Checked:** 2025-09-20 12:14:35.056558
 
 
 ## Bot Information
@@ -17478,14 +17433,12 @@ Tags: AI Model, Multimodal LLM, PDF Analyzer, Code Assistant, HTML Code Generato
 
 | Type | Cost |
 |------|------|
-| Input Text | 5 points/1k tokens |
-| Input Image | 5 points/1k tokens |
-| Bot Message | 5 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 50% discount oncached chat history |
-| Initial Points Cost | 6+ points |
+| Initial Points Cost | 10+ points |
+| Input | 5 points/1k tokens |
+| Output (Text) | 18 points/1k tokens |
+| Cache Discount | 50% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:23:20.637183
+**Last Checked:** 2025-09-20 12:14:27.322286
 
 
 ## Bot Information
@@ -17530,15 +17483,13 @@ Tags: AI Model, Multimodal LLM, PDF Analyzer, Code Assistant, HTML Code Generato
 
 | Type | Cost |
 |------|------|
-| Input Text | 75 points/1k tokens |
-| Input Image | 75 points/1k tokens |
-| Bot Message | 187 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 50% discount oncached chat history |
 | Initial Points Cost | Variable points |
+| Input | 75 points/1k tokens |
+| Output (Text) | 300 points/1k tokens |
 | Image Generation | Additional costs based on the "Image Generation" section below |
+| Cache Discount | 50% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:22:59.250841
+**Last Checked:** 2025-09-20 12:14:04.772000
 
 
 ## Bot Information
@@ -17583,21 +17534,19 @@ Tags: AI Model, Multimodal LLM, PDF Analyzer, Code Assistant, HTML Code Generato
 
 | Type | Cost |
 |------|------|
-| Input Text | 38 points/1k tokens |
-| Input Image | 38 points/1k tokens |
-| Bot Message | 241 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 90% discount oncached chat history |
-| Initial Points Cost | 250+ points |
+| Initial Points Cost | 139+ points |
+| Input | 38 points/1k tokens |
+| Output (Text) | 300 points/1k tokens |
+| Cache Discount | 90% discount oncached chat |
 
-**Last Checked:** 2025-08-08 11:38:02.722845
+**Last Checked:** 2025-09-20 12:14:51.272766
 
 
 ## Bot Information
 
 **Creator:** @openai
 
-**Description:** GPT-5 Chat points to the GPT-5 snapshot currently used in ChatGPT. GPT-5 is OpenAI’s latest flagship model with significantly improved coding skills, long context (400k tokens), and improved instruction following. Supports native vision, and generally has more intelligence than GPT-4.1. Provides a 90% chat history cache discount.
+**Description:** ChatGPT-5 points to the non-reasoning model GPT-5 snapshot (gpt-5-chat-latest) currently used in ChatGPT. Supports native vision, 400k tokens of context, and generally has more intelligence than GPT-4.1. Provides a 90% chat history cache discount.
 
 **Extra:** Powered by OpenAI: gpt-5-chat-latest. Learn more
 
@@ -17635,14 +17584,12 @@ Tags: AI Model, Multimodal LLM, PDF Analyzer, Code Assistant, HTML Code Generato
 
 | Type | Cost |
 |------|------|
-| Input Text | 8 points/1k tokens |
-| Input Image | 8 points/1k tokens |
-| Bot Message | 27 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 90% discount oncached chat history |
-| Initial Points Cost | 29+ points |
+| Initial Points Cost | 31+ points |
+| Input | 8 points/1k tokens |
+| Output (Text) | 60 points/1k tokens |
+| Cache Discount | 90% discount oncached chat |
 
-**Last Checked:** 2025-08-08 11:38:11.238882
+**Last Checked:** 2025-09-20 12:14:58.613012
 
 
 ## Bot Information
@@ -17650,7 +17597,8 @@ Tags: AI Model, Multimodal LLM, PDF Analyzer, Code Assistant, HTML Code Generato
 **Creator:** @openai
 
 **Description:** GPT-5 mini is a small, fast & affordable model that matches or beats GPT-4.1 in many intelligence and vision-related tasks. Supports 400k tokens of context. Provides a 90% chat history cache discount.
-To instruct the bot to use more reasoning effort, add --reasoning_effort to the end of your message with one of "low", "medium", or "high"
+To instruct the bot to use more reasoning effort, add `--reasoning_effort` to the end of your message with one of "minimal", "low", "medium", or "high". 
+Use `--web_search true` to enable web search and real-time information access, this is disabled by default.
 
 **Extra:** Powered by OpenAI: gpt-5-mini-2025-08-07. Learn more
 
@@ -17688,14 +17636,12 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 
 | Type | Cost |
 |------|------|
-| Input Text | 2 points/1k tokens |
-| Input Image | 2 points/1k tokens |
-| Bot Message | 6 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 90% discount oncached chat history |
-| Initial Points Cost | 7+ points |
+| Initial Points Cost | 8+ points |
+| Input | 2 points/1k tokens |
+| Output (Text) | 12 points/1k tokens |
+| Cache Discount | 90% discount oncached chat |
 
-**Last Checked:** 2025-08-08 11:38:19.573997
+**Last Checked:** 2025-09-20 12:15:07.055152
 
 
 ## Bot Information
@@ -17703,7 +17649,7 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 **Creator:** @openai
 
 **Description:** GPT-5 nano is an extremely fast and cheap model, ideal for text/vision summarization/categorization tasks. Supports native vision and 400k input tokens of context. Provides a 90% chat history cache discount.
-To instruct the bot to use more reasoning effort, add --reasoning_effort to the end of your message with one of "low", "medium", or "high"
+To instruct the bot to use more reasoning effort, add --reasoning_effort to the end of your message with one of "minimal, "low", "medium", or "high"
 
 **Extra:** Powered by OpenAI: gpt-5-nano-2025-08-07. Learn more
 
@@ -17741,14 +17687,12 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 
 | Type | Cost |
 |------|------|
-| Input Text | 38 points/1k tokens |
-| Input Image | 38 points/1k tokens |
-| Bot Message | 241 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 90% discount oncached chat history |
-| Initial Points Cost | 250+ points |
+| Initial Points Cost | 260+ points |
+| Input | 38 points/1k tokens |
+| Output (Text) | 300 points/1k tokens |
+| Cache Discount | 90% discount oncached chat |
 
-**Last Checked:** 2025-08-08 11:37:55.117491
+**Last Checked:** 2025-09-20 12:14:43.254287
 
 
 ## Bot Information
@@ -17756,7 +17700,7 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 **Creator:** @openai
 
 **Description:** OpenAI’s latest flagship model with significantly improved coding skills, long context (400k tokens), and improved instruction following. Supports native vision, and generally has more intelligence than GPT-4.1. Provides a 90% chat history cache discount.
-To instruct the bot to use more reasoning effort, add --reasoning_effort to the end of your message with one of "low", "medium", or "high"
+To instruct the bot to use more reasoning effort, add --reasoning_effort to the end of your message with one of "minimal", "low", "medium", or "high"
 
 **Extra:** Powered by OpenAI: gpt-5-2025-08-07. Learn more
 
@@ -17800,7 +17744,7 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 | High Fidelity Editing | 2000 points |
 | Output (Image) | Based on output image quality and resolution (see table below) |
 
-**Last Checked:** 2025-08-05 23:23:34.836895
+**Last Checked:** 2025-09-20 12:15:14.449914
 
 
 ## Bot Information
@@ -17810,9 +17754,10 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 **Description:** OpenAI's model that powers image generation in ChatGPT, offering exceptional prompt adherence, level of detail, and quality. It supports editing, restyling, and combining images attached to the latest user query. For a conversational editing experience, use https://poe.com/GPT-4o (all users) or https://poe.com/Assistant (subscribers) instead.
 
 Optional parameters:
-* --aspect (options: 1:1, 3:2, 2:3): Aspect ratio of the output image
-* --quality (options: high, medium, low): Image resolution
-* --use_mask: Indicates that the last attached image is a mask for inpainting (editing specific regions). The mask must match the dimensions of the base image, with transparent (zero-alpha) areas showing which parts to edit.
+`--aspect` (options: 1:1, 3:2, 2:3): Aspect ratio of the output image
+` --quality` (options: high, medium, low): Image resolution
+` --use_mask`: Indicates that the last attached image is a mask for in-painting (editing specific regions). The mask must match the dimensions of the base image, with transparent (zero-alpha) areas showing which parts to edit.
+`--use_high_fidelity` to false to disable high input fidelity. This is option is enabled by default.
 
 **Extra:** Powered by a server managed by @openai. Learn more
 
@@ -17853,7 +17798,7 @@ Optional parameters:
 | Total Cost | 85 points/message |
 | Initial Points Cost | 85 points |
 
-**Last Checked:** 2025-09-20 11:41:59.214935
+**Last Checked:** 2025-09-20 12:15:29.608436
 
 
 ## Bot Information
@@ -17903,7 +17848,7 @@ Optional parameters:
 | Base Cost | 150 points per message |
 | Output (Text) | 200 points / 1k tokens |
 
-**Last Checked:** 2025-09-20 11:42:06.318060
+**Last Checked:** 2025-09-20 12:15:37.631587
 
 
 ## Bot Information
@@ -17951,7 +17896,7 @@ Optional parameters:
 | Total Cost | 50 points/message |
 | Initial Points Cost | 50 points |
 
-**Last Checked:** 2025-08-05 23:23:42.232404
+**Last Checked:** 2025-09-20 12:15:44.953792
 
 
 ## Bot Information
@@ -17999,7 +17944,7 @@ Optional parameters:
 | Total Cost | 40 points/message |
 | Initial Points Cost | 40 points |
 
-**Last Checked:** 2025-09-20 11:41:52.165735
+**Last Checked:** 2025-09-20 12:15:22.345844
 
 
 ## Bot Information
@@ -18049,7 +17994,7 @@ The GPT-OSS-120B model achieves near-parity with OpenAI o4-mini on core reasonin
 | Total Cost | 15 points/message |
 | Initial Points Cost | 15 points |
 
-**Last Checked:** 2025-09-20 11:42:20.487062
+**Last Checked:** 2025-09-20 12:15:59.521638
 
 
 ## Bot Information
@@ -18097,7 +18042,7 @@ The GPT-OSS-120B model achieves near-parity with OpenAI o4-mini on core reasonin
 | Total Cost | 15 points/message |
 | Initial Points Cost | 15 points |
 
-**Last Checked:** 2025-09-20 11:42:13.435657
+**Last Checked:** 2025-09-20 12:15:52.222920
 
 
 ## Bot Information
@@ -18149,7 +18094,7 @@ The GPT-OSS-20B model delivers similar results to OpenAI o3‑mini on common ben
 | Research Analysis | 200 points / research |
 | Research Response | 150 points / research |
 
-**Last Checked:** 2025-08-05 23:23:49.279887
+**Last Checked:** 2025-09-20 12:16:07.075516
 
 
 ## Bot Information
@@ -18197,11 +18142,9 @@ GPTR is based on the popular open source project: https://github.com/assafelovic
 | Type | Cost |
 |------|------|
 | Input Text | 1 point/1k characters |
-| Bot Message | 3 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 4+ points |
+| Initial Points Cost | 7+ points |
 
-**Last Checked:** 2025-08-05 23:24:03.483648
+**Last Checked:** 2025-09-20 12:16:22.330816
 
 
 ## Bot Information
@@ -18248,12 +18191,11 @@ GPTR is based on the popular open source project: https://github.com/assafelovic
 |------|------|
 | Input Text | 1 point/1k characters |
 | Input Image | 1 point/image |
-| Bot Message | 2 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 3+ points |
+| Initial Points Cost | 6+ points |
 | Input (Video) | 1 point/second |
+| Output (Text) | 2 points/1k characters |
 
-**Last Checked:** 2025-08-05 23:23:56.330740
+**Last Checked:** 2025-09-20 12:16:15.036534
 
 
 ## Bot Information
@@ -18298,12 +18240,10 @@ GPTR is based on the popular open source project: https://github.com/assafelovic
 
 | Type | Cost |
 |------|------|
-| Input Text | 5 points/1k characters |
-| Bot Message | 41 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 46+ points |
+| Input Text | 9 points/1k characters |
+| Initial Points Cost | 99+ points |
 
-**Last Checked:** 2025-08-05 23:24:17.101628
+**Last Checked:** 2025-09-20 12:16:36.998448
 
 
 ## Bot Information
@@ -18348,14 +18288,13 @@ GPTR is based on the popular open source project: https://github.com/assafelovic
 
 | Type | Cost |
 |------|------|
-| Input Text | 5 points/1k characters |
-| Input Image | 5 points/image |
-| Bot Message | 30 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 35+ points |
-| Input (Video) | 5 points/second |
+| Input Text | 9 points/1k characters |
+| Input Image | 9 points/image |
+| Initial Points Cost | 61+ points |
+| Input (Video) | 9 points/second |
+| Output (Text) | 34 points/1k characters |
 
-**Last Checked:** 2025-08-05 23:24:10.361916
+**Last Checked:** 2025-09-20 12:16:29.702303
 
 
 ## Bot Information
@@ -18400,14 +18339,13 @@ GPTR is based on the popular open source project: https://github.com/assafelovic
 
 | Type | Cost |
 |------|------|
-| Input Text | 1 point/1k tokens |
-| Input Image | 1 point/1k tokens |
-| Bot Message | 5 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 6+ points |
+| Input Text | 2 points/1k tokens |
+| Input Image | 2 points/1k tokens |
+| Initial Points Cost | 11+ points |
 | Input (Video) | 1 point/second |
+| Output (Text) | 8 points/1k tokens |
 
-**Last Checked:** 2025-08-05 23:24:31.048897
+**Last Checked:** 2025-09-20 12:16:51.542158
 
 
 ## Bot Information
@@ -18455,7 +18393,7 @@ GPTR is based on the popular open source project: https://github.com/assafelovic
 | Total Cost | 2 points/message |
 | Initial Points Cost | 2 points |
 
-**Last Checked:** 2025-08-05 23:24:38.164410
+**Last Checked:** 2025-09-20 12:16:58.702350
 
 
 ## Bot Information
@@ -18500,14 +18438,13 @@ GPTR is based on the popular open source project: https://github.com/assafelovic
 
 | Type | Cost |
 |------|------|
-| Input Text | 2 points/1k tokens |
-| Input Image | 2 points/1k tokens |
-| Bot Message | 6 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 7+ points |
+| Input Text | 3 points/1k tokens |
+| Input Image | 3 points/1k tokens |
+| Initial Points Cost | 10+ points |
 | Input (Video) | 1 point/second |
+| Output (Text) | 12 points/1k tokens |
 
-**Last Checked:** 2025-08-05 23:24:23.907981
+**Last Checked:** 2025-09-20 12:16:44.307406
 
 
 ## Bot Information
@@ -18557,7 +18494,7 @@ GPTR is based on the popular open source project: https://github.com/assafelovic
 | Output (Text) | 67 points/1k tokens |
 | Output (Image) | 800 points/1k tokens |
 
-**Last Checked:** 2025-09-20 11:42:28.289153
+**Last Checked:** 2025-09-20 12:17:13.254425
 
 
 ## Bot Information
@@ -18662,7 +18599,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 | Input (Video) | 1 point/second |
 | Output (Text) | 8 points/1k tokens |
 
-**Last Checked:** 2025-09-20 11:42:35.660504
+**Last Checked:** 2025-09-20 12:17:21.126958
 
 
 ## Bot Information
@@ -18709,14 +18646,14 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 
 | Type | Cost |
 |------|------|
-| Input Text | 3 points/1k tokens |
-| Input Image | 3 points/1k tokens |
-| Bot Message | 8 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 9+ points |
-| Input (Video) | 1 point/second |
+| Input Text | 6 points/1k tokens |
+| Input Image | 6 points/1k tokens |
+| Initial Points Cost | 34+ points |
+| Input (Video) | 2 points/second |
+| Output (Text) | 12 points/1k tokens |
+| Cache Discount | 75% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:24:45.534393
+**Last Checked:** 2025-09-20 12:17:05.999557
 
 
 ## Bot Information
@@ -18766,7 +18703,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 | Initial Points Cost | 200 points |
 | Message Cost | 200 points |
 
-**Last Checked:** 2025-09-20 11:42:42.913120
+**Last Checked:** 2025-09-20 12:17:35.729530
 
 
 ## Bot Information
@@ -18811,14 +18748,14 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 
 | Type | Cost |
 |------|------|
-| Input Text | 13 points/1k tokens |
-| Input Image | 13 points/1k tokens |
-| Bot Message | 332 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 335+ points |
-| Input (Video) | 4 points/second |
+| Input Text | 25 points/1k tokens |
+| Input Image | 25 points/1k tokens |
+| Initial Points Cost | 722+ points |
+| Input (Video) | 14 points/second |
+| Output (Text) | 200 points/1k tokens |
+| Cache Discount | 75% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:24:59.111047
+**Last Checked:** 2025-09-20 12:17:28.378297
 
 
 ## Bot Information
@@ -18826,7 +18763,8 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 **Creator:** @google
 
 **Description:** Gemini 2.5 Pro is Google's advanced model with frontier performance on various key benchmarks; supports web search and 1 million tokens of input context.
-To instruct the bot to use more thinking effort, add --thinking_budget and a number ranging from 0 to 32,768 to the end of your message.
+To instruct the bot to use more thinking effort, add --thinking_budget and a number ranging from 0 to 32,768 to the end of your message. 
+Use `--web_search false` to disable web search and real-time information access, this is enabled by default.
 
 **Extra:** Powered by Google: gemini-2.5-pro. Learn more
 
@@ -18915,7 +18853,7 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 | Per Message | 134 points |
 | Initial Points Cost | 134 points |
 
-**Last Checked:** 2025-08-05 23:25:13.184251
+**Last Checked:** 2025-09-20 12:17:43.155648
 
 
 ## Bot Information
@@ -18962,11 +18900,10 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 |------|------|
 | Input Text | 67 points/1k tokens |
 | Input Image | 18 points/image |
-| Bot Message | 169 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 185+ points |
+| Initial Points Cost | 200+ points |
+| Output (Text) | 334 points/1k tokens |
 
-**Last Checked:** 2025-08-05 23:25:21.464057
+**Last Checked:** 2025-09-20 12:17:50.546155
 
 
 ## Bot Information
@@ -19013,11 +18950,11 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 |------|------|
 | Input Text | 10 points/1k tokens |
 | Input Image | Variable |
-| Bot Message | 37 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 40+ points |
+| Initial Points Cost | 41+ points |
+| Output (Text) | 17 points/1k tokens |
+| Cache Discount | 75% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:25:36.036731
+**Last Checked:** 2025-09-20 12:18:05.110434
 
 
 ## Bot Information
@@ -19065,11 +19002,11 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 |------|------|
 | Input Text | 100 points/1k tokens |
 | Input Image | Variable |
-| Bot Message | 833 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 856+ points |
+| Initial Points Cost | 814+ points |
+| Output (Text) | 500 points/1k tokens |
+| Cache Discount | 75% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:25:28.709101
+**Last Checked:** 2025-09-20 12:17:57.782735
 
 
 ## Bot Information
@@ -19120,7 +19057,7 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 | Output (Text) | 17 points/1k tokens |
 | Cache Discount | 75% discount oncached chat |
 
-**Last Checked:** 2025-09-20 11:42:50.193092
+**Last Checked:** 2025-09-20 12:18:19.683989
 
 
 ## Bot Information
@@ -19171,7 +19108,7 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 | Output (Text) | 17 points/1k tokens |
 | Cache Discount | 75% discount oncached chat |
 
-**Last Checked:** 2025-09-20 11:42:57.624857
+**Last Checked:** 2025-09-20 12:18:26.996696
 
 
 ## Bot Information
@@ -19219,11 +19156,11 @@ To instruct the bot to use more reasoning effort, add `--reasoning_effort` to th
 |------|------|
 | Input Text | 100 points/1k tokens |
 | Input Image | 90 points/image |
-| Bot Message | 750 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 773+ points |
+| Initial Points Cost | 1046+ points |
+| Output (Text) | 500 points/1k tokens |
+| Cache Discount | 75% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:25:42.816787
+**Last Checked:** 2025-09-20 12:18:12.398514
 
 
 ## Bot Information
@@ -19274,7 +19211,7 @@ To instruct the bot to use more reasoning effort, add `--reasoning_effort` to th
 | Output (Text) | 50 points/1k tokens |
 | Cache Discount | 90% discount oncached chat |
 
-**Last Checked:** 2025-09-20 11:43:05.824362
+**Last Checked:** 2025-09-20 12:18:34.278104
 
 
 ## Bot Information
@@ -19322,7 +19259,7 @@ To instruct the bot to use more reasoning effort, add `--reasoning_effort` to th
 | Video Output | 2667 points / second |
 | Initial Points Cost | 16000 points |
 
-**Last Checked:** 2025-09-20 11:43:14.106590
+**Last Checked:** 2025-09-20 12:18:48.951575
 
 
 ## Bot Information
@@ -19370,7 +19307,7 @@ To instruct the bot to use more reasoning effort, add `--reasoning_effort` to th
 | Video Output | 1500 points / second |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:25:56.927553
+**Last Checked:** 2025-09-20 12:18:57.077879
 
 
 ## Bot Information
@@ -19418,7 +19355,7 @@ To instruct the bot to use more reasoning effort, add `--reasoning_effort` to th
 | Initial Points Cost | 7000+ |
 | 768P-6S Video | 14000 credits per video |
 
-**Last Checked:** 2025-08-05 23:25:50.075692
+**Last Checked:** 2025-09-20 12:18:41.720088
 
 
 ## Bot Information
@@ -19466,7 +19403,7 @@ To instruct the bot to use more reasoning effort, add `--reasoning_effort` to th
 | Video Output | 14167 points / message |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:26:03.811511
+**Last Checked:** 2025-09-20 12:19:05.165328
 
 
 ## Bot Information
@@ -19514,14 +19451,18 @@ To instruct the bot to use more reasoning effort, add `--reasoning_effort` to th
 | Video Output | 16667 points / message |
 | Initial Points Cost | 16667 points |
 
-**Last Checked:** 2025-08-05 23:26:10.693794
+**Last Checked:** 2025-09-20 12:19:12.510364
 
 
 ## Bot Information
 
 **Creator:** @fal
 
-**Description:** Generate video clips more accurately with respect to natural language descriptions and using camera movement instructions for shot control. Both text-to-video and image-to-video are supported. Camera movement instructions can be added using square brackets (e.g. [Pan left] or [Zoom in]). You can use up to 3 combined movements per prompt. Supported movements: Truck left/right, Pan left/right, Push in/Pull out, Pedestal up/down, Tilt up/down, Zoom in/out, Shake, Tracking shot, Static shot. For example: [Truck left, Pan right, Zoom in]. For a more detailed guide, refer https://sixth-switch-2ac.notion.site/T2V-01-Director-Model-Tutorial-with-camera-movement-1886c20a98eb80f395b8e05291ad8645
+**Description:** Generate video clips more accurately with respect to natural language descriptions and using camera movement instructions for shot control. Both text-to-video and image-to-video are supported. 
+Camera movement instructions can be added using square brackets (e.g. [Pan left] or [Zoom in]). 
+You can use up to 3 combined movements per prompt. Duration is fixed to 5 seconds. 
+Supported movements: Truck left/right, Pan left/right, Push in/Pull out, Pedestal up/down, Tilt up/down, Zoom in/out, Shake, Tracking shot, Static shot. For example: [Truck left, Pan right, Zoom in]. 
+For a more detailed guide, refer https://sixth-switch-2ac.notion.site/T2V-01-Director-Model-Tutorial-with-camera-movement-1886c20a98eb80f395b8e05291ad8645
 
 **Extra:** Powered by a server managed by @fal. Learn more
 
@@ -19562,14 +19503,14 @@ To instruct the bot to use more reasoning effort, add `--reasoning_effort` to th
 | Video Output | 14167 points / message |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:26:18.071920
+**Last Checked:** 2025-09-20 12:19:19.859779
 
 
 ## Bot Information
 
 **Creator:** @fal
 
-**Description:** Hailuo Live, the latest model from Minimax, sets a new standard for bringing still images to life. From breathtakingly vivid motion to finely tuned expressions, this state-of-the-art model enables your characters to captivate, move, and shine like never before. It excels in bring art and drawings to life, exceptional realism without morphing, emotional range, and unparalleled character consistency.
+**Description:** Hailuo Live, the latest model from Minimax, sets a new standard for bringing still images to life. From breathtakingly vivid motion to finely tuned expressions, this state-of-the-art model enables your characters to captivate, move, and shine like never before. It excels in bring art and drawings to life, exceptional realism without morphing, emotional range, and unparalleled character consistency. Generates 5 second video.
 
 **Extra:** Powered by a server managed by @fal. Learn more
 
@@ -19611,7 +19552,7 @@ To instruct the bot to use more reasoning effort, add `--reasoning_effort` to th
 | Hd Output | 3334 points / 1000 characters |
 | Turbo Output | 2000 points / 1000 characters |
 
-**Last Checked:** 2025-08-05 23:26:25.018163
+**Last Checked:** 2025-09-20 12:19:27.156128
 
 
 ## Bot Information
@@ -19659,7 +19600,7 @@ To instruct the bot to use more reasoning effort, add `--reasoning_effort` to th
 | Total Cost | 200 points/message |
 | Initial Points Cost | 200 points |
 
-**Last Checked:** 2025-08-05 23:26:31.785836
+**Last Checked:** 2025-09-20 12:19:34.507671
 
 
 ## Bot Information
@@ -19709,7 +19650,7 @@ The ethos of the Hermes series of models is focused on aligning LLMs to the user
 | Image Output | 1417 points / message |
 | Initial Points Cost | 1417 points |
 
-**Last Checked:** 2025-08-05 23:26:38.962827
+**Last Checked:** 2025-09-20 12:19:41.845149
 
 
 ## Bot Information
@@ -19757,7 +19698,7 @@ The ethos of the Hermes series of models is focused on aligning LLMs to the user
 | Total Cost | 1900 points/message |
 | Initial Points Cost | 1900 points |
 
-**Last Checked:** 2025-08-05 23:26:52.339205
+**Last Checked:** 2025-09-20 12:19:56.530636
 
 
 ## Bot Information
@@ -19805,7 +19746,7 @@ The ethos of the Hermes series of models is focused on aligning LLMs to the user
 | Total Cost | 800 points/message |
 | Initial Points Cost | 800 points |
 
-**Last Checked:** 2025-08-05 23:27:06.161208
+**Last Checked:** 2025-09-20 12:20:11.431005
 
 
 ## Bot Information
@@ -19854,7 +19795,7 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 | Total Cost | 1300 points/message |
 | Initial Points Cost | 1300 points |
 
-**Last Checked:** 2025-08-05 23:26:59.261416
+**Last Checked:** 2025-09-20 12:20:03.873690
 
 
 ## Bot Information
@@ -19903,14 +19844,14 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 | Image Output | 2000 points / message |
 | Initial Points Cost | 2000 points |
 
-**Last Checked:** 2025-08-05 23:27:13.027905
+**Last Checked:** 2025-09-20 12:20:18.708063
 
 
 ## Bot Information
 
 **Creator:** @fal
 
-**Description:** Generate high-quality images, posters, and logos with Ideogram V3. Features exceptional typography handling and realistic outputs optimized for commercial and creative use. Use `--aspect` to set the aspect ratio (Valid aspect ratios are 16:9, 4:3, 1:1, 3:4, 9:16), and use `--style`  to specify a style (one of `AUTO`, `GENERAL`, `REALISTIC`, and `DESIGN`, default: `AUTO`.). Send one image with a prompt for image remixing/restyling. Send two images (one an image and the other a black-and-white mask image denoting an area) for image editing.
+**Description:** Generate high-quality images, posters, and logos with Ideogram V3. Features exceptional typography handling and realistic outputs optimized for commercial and creative use. Use `--aspect` to set the aspect ratio (Valid aspect ratios are 5:4, 4:3, 4:5, 1:1, 1:2, 1:3, 3:4, 3:1, 3:2, 2:1, 2:3, 16:9, 16:10, 10:16, 9:16), and use `--style`  to specify a style (one of `AUTO`, `GENERAL`, `REALISTIC`, and `DESIGN`, default: `AUTO`.). Send one image with a prompt for image remixing/restyling. Send two images (one an image and the other a black-and-white mask image denoting an area) for image editing.
 
 **Extra:** Powered by a server managed by @fal. Learn more
 
@@ -19951,7 +19892,7 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 | Total Cost | 1500 points/message |
 | Initial Points Cost | 1500 points |
 
-**Last Checked:** 2025-08-05 23:26:45.751930
+**Last Checked:** 2025-09-20 12:19:49.184906
 
 
 ## Bot Information
@@ -19996,17 +19937,17 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 
 | Type | Cost |
 |------|------|
-| Total Cost | 200 points/message |
-| Initial Points Cost | 200 points |
+| Total Cost | 400 points/message |
+| Initial Points Cost | 400 points |
 
-**Last Checked:** 2025-08-05 23:27:27.058791
+**Last Checked:** 2025-09-20 12:20:33.596800
 
 
 ## Bot Information
 
 **Creator:** @google
 
-**Description:** Google DeepMind's highest quality text-to-image model, capable of generating images with great detail, rich lighting, and few distracting artifacts — optimized for short, simple prompts. To adjust the aspect ratio of your image add --aspect_ratio (1:1, 16:9, 9:16, 4:3, 3:4). For more complex prompts, use @Imagen3. Non english input will be translated first.
+**Description:** Google DeepMind's highest quality text-to-image model, capable of generating images with great detail, rich lighting, and few distracting artifacts — optimized for short, simple prompts. To adjust the aspect ratio of your image add --aspect_ratio (1:1, 16:9, 9:16, 4:3, 3:4). For more complex prompts, use @Imagen3. Non english input will be translated first. Image prompt cannot exceed 480 tokens.
 
 **Extra:** Powered by a server managed by @google. Learn more
 
@@ -20044,17 +19985,17 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 
 | Type | Cost |
 |------|------|
-| Total Cost | 400 points/message |
-| Initial Points Cost | 400 points |
+| Total Cost | 800 points/message |
+| Initial Points Cost | 800 points |
 
-**Last Checked:** 2025-08-05 23:27:20.123244
+**Last Checked:** 2025-09-20 12:20:26.304536
 
 
 ## Bot Information
 
 **Creator:** @google
 
-**Description:** Google DeepMind's highest quality text-to-image model, capable of generating images with great detail, rich lighting, and few distracting artifacts. To adjust the aspect ratio of your image add --aspect_ratio (1:1, 16:9, 9:16, 4:3, 3:4). For simpler prompts, faster results, & lower cost, use @Imagen3-Fast. Non english input will be translated first.
+**Description:** Google DeepMind's highest quality text-to-image model, capable of generating images with great detail, rich lighting, and few distracting artifacts. To adjust the aspect ratio of your image add --aspect_ratio (1:1, 16:9, 9:16, 4:3, 3:4). For simpler prompts, faster results, & lower cost, use @Imagen3-Fast. Non english input will be translated first. Image prompt cannot exceed 480 tokens.
 
 **Extra:** Powered by a server managed by @google. Learn more
 
@@ -20092,10 +20033,10 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 
 | Type | Cost |
 |------|------|
-| Total Cost | 200 points/message |
-| Initial Points Cost | 200 points |
+| Total Cost | 400 points/message |
+| Initial Points Cost | 400 points |
 
-**Last Checked:** 2025-08-05 23:27:41.002410
+**Last Checked:** 2025-09-20 12:20:48.157155
 
 
 ## Bot Information
@@ -20191,7 +20132,7 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 | Total Cost | 800 points/message |
 | Initial Points Cost | 800 points |
 
-**Last Checked:** 2025-09-20 11:43:24.885568
+**Last Checked:** 2025-09-20 12:20:55.419509
 
 
 ## Bot Information
@@ -20236,10 +20177,10 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 
 | Type | Cost |
 |------|------|
-| Total Cost | 400 points/message |
-| Initial Points Cost | 400 points |
+| Total Cost | 800 points/message |
+| Initial Points Cost | 800 points |
 
-**Last Checked:** 2025-08-05 23:27:33.935208
+**Last Checked:** 2025-09-20 12:20:40.869260
 
 
 ## Bot Information
@@ -20288,7 +20229,7 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 | Initial Points Cost | 14+ points |
 | Bot Message (Text) | 34 points / 1k tokens |
 
-**Last Checked:** 2025-08-05 23:28:01.303010
+**Last Checked:** 2025-09-20 12:21:09.984754
 
 
 ## Bot Information
@@ -20333,11 +20274,11 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 
 | Type | Cost |
 |------|------|
-| Input Text | 13 points / 1k tokens |
-| Initial Points Cost | 20+ points |
-| Bot Message (Text) | 50 points / 1k tokens |
+| Input Text | 9 points / 1k tokens |
+| Initial Points Cost | 14+ points |
+| Bot Message (Text) | 34 points / 1k tokens |
 
-**Last Checked:** 2025-08-05 23:27:54.533447
+**Last Checked:** 2025-09-20 12:21:02.787207
 
 
 ## Bot Information
@@ -20387,7 +20328,7 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 | Base Cost | 50 points/message |
 | Output (Text) | 300 points/1k tokens |
 
-**Last Checked:** 2025-09-20 11:43:32.491761
+**Last Checked:** 2025-09-20 12:21:24.741251
 
 
 ## Bot Information
@@ -20435,7 +20376,7 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 | Total Cost | 350 points/message |
 | Initial Points Cost | 350 points |
 
-**Last Checked:** 2025-09-20 11:43:40.113597
+**Last Checked:** 2025-09-20 12:21:32.045543
 
 
 ## Bot Information
@@ -20483,7 +20424,7 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 | Total Cost | 200 points/message |
 | Initial Points Cost | 200 points |
 
-**Last Checked:** 2025-09-20 11:43:47.818229
+**Last Checked:** 2025-09-20 12:21:39.522273
 
 
 ## Bot Information
@@ -20531,7 +20472,7 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 | Total Cost | 360 points/message |
 | Initial Points Cost | 360 points |
 
-**Last Checked:** 2025-08-05 23:28:14.881761
+**Last Checked:** 2025-09-20 12:21:46.836503
 
 
 ## Bot Information
@@ -20576,19 +20517,24 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 
 | Type | Cost |
 |------|------|
-| Total Cost | 200 points/message |
-| Initial Points Cost | 200 points |
+| Total Cost | 210 points/message |
+| Initial Points Cost | 210 points |
 
-**Last Checked:** 2025-08-05 23:28:08.163105
+**Last Checked:** 2025-09-20 12:21:17.354871
 
 
 ## Bot Information
 
-**Creator:** @fireworksai
+**Creator:** @novitaai
 
-**Description:** Kimi K2 is a state-of-the-art mixture-of-experts (MoE) language model with 32 billion activated parameters and 1 trillion total parameters. Trained with the Muon optimizer, Kimi K2 achieves exceptional performance across frontier knowledge, reasoning, and coding tasks while being meticulously optimized for agentic capabilities.
+**Description:** Kimi K2 Instruct is a state-of-the-art mixture-of-experts (MoE) language model with 32 billion activated parameters and 1 trillion total parameters. Trained with the Muon optimizer, Kimi K2 achieves exceptional performance across frontier knowledge, reasoning, and coding tasks while being meticulously optimized for agentic capabilities.
 
-**Extra:** Powered by a server managed by @fireworksai. Learn more
+Key Features:
+- Large-Scale Training: Pre-trained a 1T parameter MoE model on 15.5T tokens with zero training instability.
+- MuonClip Optimizer: We apply the Muon optimizer to an unprecedented scale, and develop novel optimization techniques to resolve instabilities while scaling up.
+- Agentic Intelligence: Specifically designed for tool use, reasoning, and autonomous problem-solving.
+
+**Extra:** Powered by a server managed by @novitaai. Learn more
 
 
 ## Architecture
@@ -20627,14 +20573,14 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 | Video Output | 2834 points / second |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:28:21.928770
+**Last Checked:** 2025-09-20 12:21:54.156534
 
 
 ## Bot Information
 
 **Creator:** @fal
 
-**Description:** Kling v1.5 video generation bot, hosted by fal.ai. For best results, upload an image attachment. Use `--aspect` to set the aspect ratio. Allowed values are `16:9`, `9:16` and `1:1`. Use `--duration` to set the duration of the generated video.
+**Description:** Kling v1.5 video generation bot, hosted by fal.ai. For best results, upload an image attachment. Use `--aspect` to set the aspect ratio. Allowed values are `16:9`, `9:16` and `1:1`. Use `--duration` to set the duration of the generated video (5 or 10 seconds).
 
 **Extra:** Powered by a server managed by @fal. Learn more
 
@@ -20675,7 +20621,7 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 | Video Output | 2834 points / second |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:28:29.183654
+**Last Checked:** 2025-09-20 12:22:01.525049
 
 
 ## Bot Information
@@ -20724,14 +20670,14 @@ Use `--aspect` to set the aspect ratio. Allowed values are `16:9`, `9:16` and `1
 | Video Output | 6000 points / second |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:28:35.934341
+**Last Checked:** 2025-09-20 12:22:08.859280
 
 
 ## Bot Information
 
 **Creator:** @fal
 
-**Description:** Generate high-quality videos from text or images using Kling 2.0 Master. Use `--negative_prompt` to send a negative prompt, and `--cfg_scale` to send a classifier-free guidance scale between 0.0 and 1.0 (inclusive). Use `--aspect` to set the aspect ratio (One of `16:9`, `9:16` and `1:1`).
+**Description:** Generate high-quality videos from text or images using Kling 2.0 Master. Use `--negative_prompt` to send a negative prompt, and `--cfg_scale` to send a classifier-free guidance scale between 0.0 and 1.0 (inclusive). Use `--aspect` to set the aspect ratio (One of `16:9`, `9:16` and `1:1`). Use `--duration` to set either 5 or 10 second video.
 
 **Extra:** Powered by a server managed by @fal. Learn more
 
@@ -20772,7 +20718,7 @@ Use `--aspect` to set the aspect ratio. Allowed values are `16:9`, `9:16` and `1
 | Video Output | 6000 points / second |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:28:42.750959
+**Last Checked:** 2025-09-20 12:22:16.179303
 
 
 ## Bot Information
@@ -20820,7 +20766,7 @@ Use `--aspect` to set the aspect ratio. Allowed values are `16:9`, `9:16` and `1
 | Video Output | 2834 points / second |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:28:49.713253
+**Last Checked:** 2025-09-20 12:22:24.228797
 
 
 ## Bot Information
@@ -20868,7 +20814,7 @@ Use `--aspect` to set the aspect ratio. Allowed values are `16:9`, `9:16` and `1
 | Video Output | 1667 points / second |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:28:56.529083
+**Last Checked:** 2025-09-20 12:22:31.707821
 
 
 ## Bot Information
@@ -20916,7 +20862,7 @@ Use `--aspect` to set the aspect ratio. Allowed values are `16:9`, `9:16` and `1
 | Video Output | 3334 points / second |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:29:03.322016
+**Last Checked:** 2025-09-20 12:22:39.101943
 
 
 ## Bot Information
@@ -21053,7 +20999,7 @@ Learn more: https://www.linkup.so/
 | Video Output | 85 points / message |
 | Initial Points Cost | 85 points |
 
-**Last Checked:** 2025-08-05 23:29:10.359275
+**Last Checked:** 2025-09-20 12:23:00.181345
 
 
 ## Bot Information
@@ -21101,7 +21047,7 @@ Learn more: https://www.linkup.so/
 | Total Cost | 200 points/message |
 | Initial Points Cost | 200 points |
 
-**Last Checked:** 2025-08-05 23:29:17.314299
+**Last Checked:** 2025-09-20 12:23:07.532732
 
 
 ## Bot Information
@@ -21149,7 +21095,7 @@ Learn more: https://www.linkup.so/
 | Total Cost | 75 points/message |
 | Initial Points Cost | 75 points |
 
-**Last Checked:** 2025-08-05 23:29:24.189769
+**Last Checked:** 2025-09-20 12:23:14.805673
 
 
 ## Bot Information
@@ -21391,7 +21337,7 @@ The points price is subject to change.
 | Total Cost | 2070 points/message |
 | Initial Points Cost | 2070 points |
 
-**Last Checked:** 2025-08-05 23:30:05.326261
+**Last Checked:** 2025-09-20 12:23:29.523192
 
 
 ## Bot Information
@@ -21439,7 +21385,7 @@ The points price is subject to change.
 | Total Cost | 1500 points/message |
 | Initial Points Cost | 1500 points |
 
-**Last Checked:** 2025-08-05 23:30:12.076239
+**Last Checked:** 2025-09-20 12:23:36.736898
 
 
 ## Bot Information
@@ -21487,7 +21433,7 @@ The points price is subject to change.
 | Total Cost | 335 points/message |
 | Initial Points Cost | 335 points |
 
-**Last Checked:** 2025-08-05 23:30:19.351098
+**Last Checked:** 2025-09-20 12:23:44.758566
 
 
 ## Bot Information
@@ -21536,11 +21482,10 @@ The points price is subject to change.
 |------|------|
 | Input Text | 100 points/1k tokens |
 | Input Image | Variable |
-| Bot Message | 39 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 62+ points |
+| Initial Points Cost | 89+ points |
+| Output (Text) | 100 points/1k tokens |
 
-**Last Checked:** 2025-08-05 23:29:58.315106
+**Last Checked:** 2025-09-20 12:23:22.230144
 
 
 ## Bot Information
@@ -21588,7 +21533,7 @@ The points price is subject to change.
 | Total Cost | 200 points/message |
 | Initial Points Cost | 200 points |
 
-**Last Checked:** 2025-08-05 23:30:34.324244
+**Last Checked:** 2025-09-20 12:24:00.970999
 
 
 ## Bot Information
@@ -21636,7 +21581,7 @@ The points price is subject to change.
 | Total Cost | 400 points/message |
 | Initial Points Cost | 400 points |
 
-**Last Checked:** 2025-08-05 23:30:41.237507
+**Last Checked:** 2025-09-20 12:24:09.267031
 
 
 ## Bot Information
@@ -21684,7 +21629,7 @@ The points price is subject to change.
 | Total Cost | 460 points/message |
 | Initial Points Cost | 460 points |
 
-**Last Checked:** 2025-08-05 23:30:47.975700
+**Last Checked:** 2025-09-20 12:24:16.626326
 
 
 ## Bot Information
@@ -21733,11 +21678,10 @@ The points price is subject to change.
 |------|------|
 | Input Text | 30 points/1k tokens |
 | Input Image | Variable |
-| Bot Message | 8 points/message |
-| Chat History | Input rates are applied |
 | Initial Points Cost | 15+ points |
+| Output (Text) | 30 points/1k tokens |
 
-**Last Checked:** 2025-08-05 23:30:27.371374
+**Last Checked:** 2025-09-20 12:23:53.218911
 
 
 ## Bot Information
@@ -21785,7 +21729,7 @@ The points price is subject to change.
 | Total Cost | 30 points/message |
 | Initial Points Cost | 30 points |
 
-**Last Checked:** 2025-09-20 11:44:09.622909
+**Last Checked:** 2025-09-20 12:24:31.216134
 
 
 ## Bot Information
@@ -21833,7 +21777,7 @@ The points price is subject to change.
 | Total Cost | 0 points/message |
 | Initial Points Cost | 0 points |
 
-**Last Checked:** 2025-08-05 23:31:01.566403
+**Last Checked:** 2025-09-20 12:24:38.572447
 
 
 ## Bot Information
@@ -21883,7 +21827,7 @@ Input token limit 128k, output token limit 8k. Quantization: FP16 (official).
 | Total Cost | 50 points/message |
 | Initial Points Cost | 50 points |
 
-**Last Checked:** 2025-08-05 23:31:08.466479
+**Last Checked:** 2025-09-20 12:24:45.855355
 
 
 ## Bot Information
@@ -21931,7 +21875,7 @@ Input token limit 128k, output token limit 8k. Quantization: FP16 (official).
 | Total Cost | 50 points/message |
 | Initial Points Cost | 50 points |
 
-**Last Checked:** 2025-08-05 23:31:15.490392
+**Last Checked:** 2025-09-20 12:24:53.636352
 
 
 ## Bot Information
@@ -21979,7 +21923,7 @@ Input token limit 128k, output token limit 8k. Quantization: FP16 (official).
 | Total Cost | 100 points/message |
 | Initial Points Cost | 100 points |
 
-**Last Checked:** 2025-08-05 23:31:22.343319
+**Last Checked:** 2025-09-20 12:25:00.884046
 
 
 ## Bot Information
@@ -22028,11 +21972,10 @@ The points price is subject to change.
 |------|------|
 | Input Text | 7 points/1k tokens |
 | Input Image | Variable |
-| Bot Message | 2 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 4+ points |
+| Initial Points Cost | 5+ points |
+| Output (Text) | 7 points/1k tokens |
 
-**Last Checked:** 2025-08-05 23:30:54.570651
+**Last Checked:** 2025-09-20 12:24:23.940276
 
 
 ## Bot Information
@@ -22128,7 +22071,7 @@ The points price is subject to change.
 | Total Cost | 260 points/message |
 | Initial Points Cost | 260 points |
 
-**Last Checked:** 2025-09-20 11:44:16.961922
+**Last Checked:** 2025-09-20 12:25:15.538623
 
 
 ## Bot Information
@@ -22176,7 +22119,7 @@ The points price is subject to change.
 | Initial Points Cost | 200 points |
 | Message Cost | 200 points |
 
-**Last Checked:** 2025-09-20 11:44:24.260194
+**Last Checked:** 2025-09-20 12:25:23.207999
 
 
 ## Bot Information
@@ -22224,7 +22167,7 @@ The points price is subject to change.
 | Total Cost | 50 points/message |
 | Initial Points Cost | 50 points |
 
-**Last Checked:** 2025-08-05 23:31:43.098006
+**Last Checked:** 2025-09-20 12:25:30.489158
 
 
 ## Bot Information
@@ -22275,7 +22218,7 @@ Supports 128k tokens of input context and 8k tokens of output context. Quantizat
 | Total Cost | 140 points/message |
 | Initial Points Cost | 140 points |
 
-**Last Checked:** 2025-08-05 23:31:49.968636
+**Last Checked:** 2025-09-20 12:25:37.769184
 
 
 ## Bot Information
@@ -22323,7 +22266,7 @@ Supports 128k tokens of input context and 8k tokens of output context. Quantizat
 | Total Cost | 45 points/message |
 | Initial Points Cost | 45 points |
 
-**Last Checked:** 2025-09-20 11:44:32.200883
+**Last Checked:** 2025-09-20 12:25:45.102993
 
 
 ## Bot Information
@@ -22375,7 +22318,7 @@ Supports 128k tokens of input context and 8k tokens of output context. Quantizat
 | File Processing | 3 points / file |
 | Document Processing | 15 points / document |
 
-**Last Checked:** 2025-09-20 11:44:39.469428
+**Last Checked:** 2025-09-20 12:25:52.406143
 
 
 ## Bot Information
@@ -22475,7 +22418,7 @@ Supports 128k tokens of input context and 8k tokens of output context. Quantizat
 | Total Cost | 130 points/message |
 | Initial Points Cost | 130 points |
 
-**Last Checked:** 2025-08-05 23:31:36.120662
+**Last Checked:** 2025-09-20 12:25:08.288398
 
 
 ## Bot Information
@@ -22523,7 +22466,7 @@ Supports 128k tokens of input context and 8k tokens of output context. Quantizat
 | Total Cost | 145 points/message |
 | Initial Points Cost | 145 points |
 
-**Last Checked:** 2025-08-05 23:32:10.172263
+**Last Checked:** 2025-09-20 12:26:08.542272
 
 
 ## Bot Information
@@ -22575,7 +22518,7 @@ Maverick is a versatile model, great for tasks from creative content generation 
 | Total Cost | 55 points/message |
 | Initial Points Cost | 55 points |
 
-**Last Checked:** 2025-08-05 23:32:17.076272
+**Last Checked:** 2025-09-20 12:26:15.857489
 
 
 ## Bot Information
@@ -22623,7 +22566,7 @@ Maverick is a versatile model, great for tasks from creative content generation 
 | Total Cost | 50 points/message |
 | Initial Points Cost | 50 points |
 
-**Last Checked:** 2025-08-05 23:32:03.409144
+**Last Checked:** 2025-09-20 12:26:00.136194
 
 
 ## Bot Information
@@ -22671,7 +22614,7 @@ Maverick is a versatile model, great for tasks from creative content generation 
 | Total Cost | 100 points/message |
 | Initial Points Cost | 100 points |
 
-**Last Checked:** 2025-08-05 23:32:30.529482
+**Last Checked:** 2025-09-20 12:26:30.488737
 
 
 ## Bot Information
@@ -22720,10 +22663,10 @@ Scout is perfect for tasks requiring a lot of context, from summarizing large do
 
 | Type | Cost |
 |------|------|
-| Total Cost | 350 points/message |
-| Initial Points Cost | 350 points |
+| Total Cost | 200 points/message |
+| Initial Points Cost | 200 points |
 
-**Last Checked:** 2025-08-08 11:38:35.701101
+**Last Checked:** 2025-09-20 12:26:37.804184
 
 
 ## Bot Information
@@ -22770,7 +22713,7 @@ Scout is perfect for tasks requiring a lot of context, from summarizing large do
 |------|------|
 | Message Cost | 200 points |
 
-**Last Checked:** 2025-09-20 11:44:46.649639
+**Last Checked:** 2025-09-20 12:26:48.620238
 
 
 ## Bot Information
@@ -22818,7 +22761,7 @@ Scout is perfect for tasks requiring a lot of context, from summarizing large do
 | Total Cost | 35 points/message |
 | Initial Points Cost | 35 points |
 
-**Last Checked:** 2025-08-05 23:32:37.263865
+**Last Checked:** 2025-09-20 12:26:55.961503
 
 
 ## Bot Information
@@ -22914,7 +22857,7 @@ Scout is perfect for tasks requiring a lot of context, from summarizing large do
 | Total Cost | 30 points/message |
 | Initial Points Cost | 30 points |
 
-**Last Checked:** 2025-08-05 23:32:23.732519
+**Last Checked:** 2025-09-20 12:26:23.204169
 
 
 ## Bot Information
@@ -22962,14 +22905,14 @@ Scout is perfect for tasks requiring a lot of context, from summarizing large do
 | Image Output | 167 points / message |
 | Initial Points Cost | 167 points |
 
-**Last Checked:** 2025-08-05 23:32:57.794151
+**Last Checked:** 2025-09-20 12:27:10.359057
 
 
 ## Bot Information
 
 **Creator:** @fal
 
-**Description:** Luma Photon delivers industry-specific visual excellence, crafting images that align perfectly with professional standards - not just generic AI art. From marketing to creative design, each generation is purposefully tailored to your industry's unique requirements. Add --aspect to the end of your prompts to change the aspect ratio of your generations (1:1, 16:9, 9:16, 4:3, 3:4, 21:9, 9:21 are supported).
+**Description:** Luma Photon delivers industry-specific visual excellence, crafting images that align perfectly with professional standards - not just generic AI art. From marketing to creative design, each generation is purposefully tailored to your industry's unique requirements. Add --aspect to the end of your prompts to change the aspect ratio of your generations (1:1, 16:9, 9:16, 4:3, 3:4, 21:9, 9:21 are supported). Prompt input cannot exceed 5,000 characters.
 
 **Extra:** Powered by a server managed by @fal. Learn more
 
@@ -23010,14 +22953,14 @@ Scout is perfect for tasks requiring a lot of context, from summarizing large do
 | Image Output | 634 points / message |
 | Initial Points Cost | 634 points |
 
-**Last Checked:** 2025-08-05 23:32:50.996305
+**Last Checked:** 2025-09-20 12:27:03.185623
 
 
 ## Bot Information
 
 **Creator:** @fal
 
-**Description:** Luma Photon delivers industry-specific visual excellence, crafting images that align perfectly with professional standards - not just generic AI art. From marketing to creative design, each generation is purposefully tailored to your industry's unique requirements. Add --aspect to the end of your prompts to change the aspect ratio of your generations (1:1, 16:9, 9:16, 4:3, 3:4, 21:9, 9:21 are supported).
+**Description:** Luma Photon delivers industry-specific visual excellence, crafting images that align perfectly with professional standards - not just generic AI art. From marketing to creative design, each generation is purposefully tailored to your industry's unique requirements. Add --aspect to the end of your prompts to change the aspect ratio of your generations (1:1, 16:9, 9:16, 4:3, 3:4, 21:9, 9:21 are supported). Prompt input cannot exceed 5,000 characters.
 
 **Extra:** Powered by a server managed by @fal. Learn more
 
@@ -23058,7 +23001,7 @@ Scout is perfect for tasks requiring a lot of context, from summarizing large do
 | Input Text | 2000 points per generated song |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:33:04.616564
+**Last Checked:** 2025-09-20 12:27:17.620901
 
 
 ## Bot Information
@@ -23067,7 +23010,7 @@ Scout is perfect for tasks requiring a lot of context, from summarizing large do
 
 **Description:** Google DeepMind's Lyria 2 delivers high-quality audio generation, capable of creating diverse soundscapes and musical pieces from text prompts.
 
-Allows users to specify elements to exclude in the audio using the "--no" parameter at the end of the prompt. Also supports "--seed" for deterministic generation. e.g. "An energetic electronic dance track --no vocals, slow tempo --seed 123". Lyria blocks prompts that name specific artists or songs (artist-intent and recitation checks). This bot does not support attachments.
+Allows users to specify elements to exclude in the audio using the "--no" parameter at the end of the prompt. Also supports "--seed" for deterministic generation. e.g. "An energetic electronic dance track --no vocals, slow tempo --seed 123". Lyria blocks prompts that name specific artists or songs (artist-intent and recitation checks). This bot does not support attachments. This bot accepts input prompts of up to 480 tokens.
 
 **Extra:** Powered by a server managed by @google. Learn more
 
@@ -23108,7 +23051,7 @@ Allows users to specify elements to exclude in the audio using the "--no" parame
 | Per Message | 667 points |
 | Initial Points Cost | 667 points |
 
-**Last Checked:** 2025-09-20 11:44:53.893135
+**Last Checked:** 2025-09-20 12:27:24.922958
 
 
 ## Bot Information
@@ -23157,7 +23100,7 @@ Supported file type uploads: PDF, XLSX, TXT, PNG, JPG, JPEG
 |------|------|
 | Markdown Conversion | 100 per Markdown conversion |
 
-**Last Checked:** 2025-08-05 23:33:11.349106
+**Last Checked:** 2025-09-20 12:27:32.185773
 
 
 ## Bot Information
@@ -23207,7 +23150,7 @@ Supported file type uploads: PDF, XLSX, TXT, PNG, JPG, JPEG
 | Input (>200K Tokens) | 65 credits / 1000 tokens |
 | Output | 110 credits / 1000 tokens |
 
-**Last Checked:** 2025-08-05 23:33:18.629743
+**Last Checked:** 2025-09-20 12:27:39.586483
 
 
 ## Bot Information
@@ -23256,7 +23199,7 @@ This is a pure text reasoning model and currently does not process any file type
 | Total Cost | 5 points/message |
 | Initial Points Cost | 5 points |
 
-**Last Checked:** 2025-08-05 23:33:25.938299
+**Last Checked:** 2025-09-20 12:27:46.857182
 
 
 ## Bot Information
@@ -23308,7 +23251,7 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 | Total Cost | 45 points/message |
 | Initial Points Cost | 45 points |
 
-**Last Checked:** 2025-08-05 23:33:33.000566
+**Last Checked:** 2025-09-20 12:27:54.093051
 
 
 ## Bot Information
@@ -23357,11 +23300,10 @@ The points price is subject to change.
 |------|------|
 | Input Text | 100 points/1k tokens |
 | Input Image | Variable |
-| Bot Message | 241 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 264+ points |
+| Initial Points Cost | 233+ points |
+| Output (Text) | 300 points/1k tokens |
 
-**Last Checked:** 2025-08-05 23:33:39.901647
+**Last Checked:** 2025-09-20 12:28:01.543622
 
 
 ## Bot Information
@@ -23409,7 +23351,7 @@ The points price is subject to change.
 | Per Message | 500 points |
 | Initial Points Cost | 500 points |
 
-**Last Checked:** 2025-09-20 11:45:03.164821
+**Last Checked:** 2025-09-20 12:28:16.193790
 
 
 ## Bot Information
@@ -23456,11 +23398,10 @@ The points price is subject to change.
 |------|------|
 | Input Text | 90 points/1k tokens |
 | Input Image | Variable |
-| Bot Message | 227 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 248+ points |
+| Initial Points Cost | 239+ points |
+| Output (Text) | 270 points/1k tokens |
 
-**Last Checked:** 2025-08-05 23:33:46.719356
+**Last Checked:** 2025-09-20 12:28:08.793276
 
 
 ## Bot Information
@@ -23508,7 +23449,7 @@ The points price is subject to change.
 | Initial Points Cost | 200 points |
 | Message Cost | 200 points |
 
-**Last Checked:** 2025-09-20 11:45:10.394987
+**Last Checked:** 2025-09-20 12:28:24.073006
 
 
 ## Bot Information
@@ -23561,7 +23502,7 @@ The supported languages include, but are not limited to, widely spoken languages
 | Input (File) | 750 points/1k tokens |
 | Output (Text) | 500 points/1k tokens |
 
-**Last Checked:** 2025-09-20 11:45:17.634970
+**Last Checked:** 2025-09-20 12:28:31.419893
 
 
 ## Bot Information
@@ -23663,7 +23604,7 @@ The supported languages include, but are not limited to, widely spoken languages
 | Per Message | 64 points |
 | Initial Points Cost | 64 points |
 
-**Last Checked:** 2025-08-05 23:34:07.637659
+**Last Checked:** 2025-09-20 12:28:45.985164
 
 
 ## Bot Information
@@ -23768,11 +23709,10 @@ Supported File Types
 |------|------|
 | Input Text | 4 points/1k tokens |
 | Input Image | Variable |
-| Bot Message | 6 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 7+ points |
+| Initial Points Cost | 9+ points |
+| Output (Text) | 10 points/1k tokens |
 
-**Last Checked:** 2025-08-05 23:34:00.718416
+**Last Checked:** 2025-09-20 12:28:38.604699
 
 
 ## Bot Information
@@ -23820,7 +23760,7 @@ Supported File Types
 | Total Cost | 120 points/message |
 | Initial Points Cost | 120 points |
 
-**Last Checked:** 2025-08-05 23:34:21.000610
+**Last Checked:** 2025-09-20 12:28:53.891214
 
 
 ## Bot Information
@@ -23868,14 +23808,14 @@ Supported File Types
 | Video Output | 11334 points / message |
 | Initial Points Cost | 11334 points |
 
-**Last Checked:** 2025-08-05 23:34:27.761025
+**Last Checked:** 2025-09-20 12:29:01.165296
 
 
 ## Bot Information
 
 **Creator:** @fal
 
-**Description:** Open state-of-the-art video generation model with high-fidelity motion and strong prompt adherence. Supports both text-to-video and image-to-video.
+**Description:** Open state-of-the-art video generation model with high-fidelity motion and strong prompt adherence. Supports both text-to-video and image-to-video. Generates 5 second video.
 
 **Extra:** Powered by a server managed by @fal. Learn more
 
@@ -23916,7 +23856,7 @@ Supported File Types
 | Initial Points Cost | Variable points |
 | Video Generation | 4667 points / second |
 
-**Last Checked:** 2025-09-20 11:45:24.898204
+**Last Checked:** 2025-09-20 12:29:08.448346
 
 
 ## Bot Information
@@ -23964,7 +23904,7 @@ Supported File Types
 | Total Cost | 50 points/message |
 | Initial Points Cost | 50 points |
 
-**Last Checked:** 2025-08-05 23:34:34.624297
+**Last Checked:** 2025-09-20 12:29:16.427944
 
 
 ## Bot Information
@@ -24012,14 +23952,14 @@ Supported File Types
 | Total Cost | 25 points/message |
 | Initial Points Cost | 25 points |
 
-**Last Checked:** 2025-08-05 23:34:41.269870
+**Last Checked:** 2025-09-20 12:29:24.508580
 
 
 ## Bot Information
 
 **Creator:** @fireworksai
 
-**Description:** GPT-OSS-20b is a compact, open-weight language model optimized for low-latency and resource-constrained environments, including local and edge deployments. It shares the same Harmony training foundation and capabilities as 120B, with faster inference and easier deployment that is ideal for specialized or offline use cases, fast responsive performance, chain-of-thought output and adjustable reasoning levels, and agentic workflows.
+**Description:** GPT-OSS-20B is a compact, open-weight language model optimized for low-latency and resource-constrained environments, including local and edge deployments. It shares the same Harmony training foundation and capabilities as 120B, with faster inference and easier deployment that is ideal for specialized or offline use cases, fast responsive performance, chain-of-thought output, and agentic workflows.
 
 **Extra:** Powered by a server managed by @fireworksai. Learn more
 
@@ -24060,7 +24000,7 @@ Supported File Types
 | Initial Points Cost | Variable points |
 | Audio Output | 1667 points / 1000 character |
 
-**Last Checked:** 2025-08-05 23:34:47.967523
+**Last Checked:** 2025-09-20 12:29:31.798518
 
 
 ## Bot Information
@@ -24105,10 +24045,14 @@ Supported File Types
 
 | Type | Cost |
 |------|------|
-| Per Message | 15167 points |
-| Initial Points Cost | 15167 points |
+| Initial Points Cost | 21667+ points |
+| Input Tokens | 160 per 1,000 tokens |
+| Output Tokens | 640 per 1,000 tokens |
+| Citation Tokens | 160 per 1,000 tokens |
+| Reasoning Tokens | 240 per 1,000 tokens |
+| Search Queries | 400000 per 1,000 queries |
 
-**Last Checked:** 2025-08-05 23:34:54.669430
+**Last Checked:** 2025-09-20 12:29:39.271322
 
 
 ## Bot Information
@@ -24201,10 +24145,14 @@ Supported File Types
 
 | Type | Cost |
 |------|------|
-| Per Message | 1667 points |
-| Initial Points Cost | 1667 points |
+| Initial Points Cost | 480+ points |
+| Base Fee (Low Context) | 480 |
+| Base Fee (Medium Context) | 800 |
+| Base Fee (High Context) | 1120 |
+| Input Tokens | 240 per 1,000 tokens |
+| Output Tokens | 1200 per 1,000 tokens |
 
-**Last Checked:** 2025-08-05 23:35:15.241202
+**Last Checked:** 2025-09-20 12:29:54.132205
 
 
 ## Bot Information
@@ -24249,10 +24197,14 @@ Supported File Types
 
 | Type | Cost |
 |------|------|
-| Per Message | 2967 points |
-| Initial Points Cost | 2967 points |
+| Initial Points Cost | 480+ points |
+| Base Fee (Low Context) | 480 |
+| Base Fee (Medium Context) | 800 |
+| Base Fee (High Context) | 1120 |
+| Input Tokens | 160 per 1,000 tokens |
+| Output Tokens | 640 per 1,000 tokens |
 
-**Last Checked:** 2025-08-05 23:35:29.954636
+**Last Checked:** 2025-09-20 12:30:09.032390
 
 
 ## Bot Information
@@ -24297,10 +24249,14 @@ Supported File Types
 
 | Type | Cost |
 |------|------|
-| Per Message | 1234 points |
-| Initial Points Cost | 1234 points |
+| Initial Points Cost | 400+ points |
+| Base Fee (Low Context) | 400 |
+| Base Fee (Medium Context) | 640 |
+| Base Fee (High Context) | 960 |
+| Input Tokens | 80 per 1,000 tokens |
+| Output Tokens | 400 per 1,000 tokens |
 
-**Last Checked:** 2025-08-05 23:35:21.931176
+**Last Checked:** 2025-09-20 12:30:01.500120
 
 
 ## Bot Information
@@ -24345,10 +24301,13 @@ Supported File Types
 
 | Type | Cost |
 |------|------|
-| Per Message | 434 points |
-| Initial Points Cost | 434 points |
+| Initial Points Cost | 400+ points |
+| Base Fee (Low Context) | 400 |
+| Base Fee (Medium Context) | 640 |
+| Base Fee (High Context) | 960 |
+| Input & Output Tokens | 80 per 1,000 tokens |
 
-**Last Checked:** 2025-08-05 23:35:08.632041
+**Last Checked:** 2025-09-20 12:29:46.739386
 
 
 ## Bot Information
@@ -24396,7 +24355,7 @@ Supported File Types
 | Total Cost | 10 points/message |
 | Initial Points Cost | 10 points |
 
-**Last Checked:** 2025-08-05 23:35:36.883529
+**Last Checked:** 2025-09-20 12:30:16.344322
 
 
 ## Bot Information
@@ -24450,7 +24409,7 @@ Supports 16k tokens of input context and 8k tokens of output context. Quantizati
 | Total Cost | 560 points/message |
 | Initial Points Cost | 560 points |
 
-**Last Checked:** 2025-08-05 23:35:43.785165
+**Last Checked:** 2025-09-20 12:30:23.649650
 
 
 ## Bot Information
@@ -24509,14 +24468,14 @@ Image generation prompts can be a maximum of 1500 characters.
 | 2.2 + Ingredients | ['1080p', '10s', '60,000'] |
 | Pikaffects | ['720p', '5s', '23,334'] |
 
-**Last Checked:** 2025-08-05 23:35:50.521416
+**Last Checked:** 2025-09-20 12:30:30.951318
 
 
 ## Bot Information
 
 **Creator:** @pikalabs
 
-**Description:** Pika's video generation models. Select between Turbo, 2.1, 2.2, or Pikaffect. To adjust the aspect ratio of your image add --aspect (1:1, 5:2, 16:9, 4:3, 4:5, 9:16). Image to video is supported on all models, and multiple images are supported for 2.2 with an IngredientMode selected.
+**Description:** Pika's video generation models. Select between Turbo, 2.1, 2.2, or Pikaffect. To adjust the aspect ratio of your image add --aspect (1:1, 5:2, 16:9, 4:3, 4:5, 9:16). Image to video is supported on all models, and multiple images are supported for 2.2 with an IngredientMode selected. Generates 4 second video.
 
 **Extra:** Powered by a server managed by @pikalabs. Learn more
 
@@ -24564,7 +24523,7 @@ Image generation prompts can be a maximum of 1500 characters.
 | Video Effects/Video Transition Output (720P) | 5334 points / second |
 | Video Effects/Video Transition Output (1080P) | 10667 points / second |
 
-**Last Checked:** 2025-08-05 23:35:57.229243
+**Last Checked:** 2025-09-20 12:30:38.218470
 
 
 ## Bot Information
@@ -24618,7 +24577,7 @@ Use `--seed` to set the seed and `--aspect` to set the aspect ratio.
 | Initial Points Cost | Variable points |
 | Audio Output | 29 points / second |
 
-**Last Checked:** 2025-08-05 23:36:04.017253
+**Last Checked:** 2025-09-20 12:30:45.665106
 
 
 ## Bot Information
@@ -24696,6 +24655,8 @@ Sahil_Narrative_(Urdu/Pakistani)
 Mary_Conversational_(Hebrew/Israeli)
 Mary_Narrative_(Hebrew/Israeli)
 
+Prompt input cannot exceed 10,000 characters.
+
 **Extra:** Powered by a server managed by @fal. Learn more
 
 
@@ -24735,7 +24696,7 @@ Mary_Narrative_(Hebrew/Israeli)
 | Initial Points Cost | Variable points |
 | Audio Output | 17 points / second |
 
-**Last Checked:** 2025-08-05 23:36:11.067852
+**Last Checked:** 2025-09-20 12:30:52.999830
 
 
 ## Bot Information
@@ -24844,7 +24805,7 @@ Mary_Narrative_(Hebrew/Israeli)
 | Total Cost | 30 points/message |
 | Initial Points Cost | 30 points |
 
-**Last Checked:** 2025-08-05 23:36:17.731036
+**Last Checked:** 2025-09-20 12:31:00.257399
 
 
 ## Bot Information
@@ -24892,7 +24853,7 @@ Mary_Narrative_(Hebrew/Israeli)
 | Total Cost | 1 point/message |
 | Initial Points Cost | 1 point |
 
-**Last Checked:** 2025-08-05 23:36:24.428504
+**Last Checked:** 2025-09-20 12:31:07.414687
 
 
 ## Bot Information
@@ -24940,7 +24901,7 @@ Mary_Narrative_(Hebrew/Israeli)
 | Total Cost | 200 points/message |
 | Initial Points Cost | 200 points |
 
-**Last Checked:** 2025-08-05 23:36:31.598040
+**Last Checked:** 2025-09-20 12:31:14.697355
 
 
 ## Bot Information
@@ -24990,7 +24951,7 @@ Try it out with blazing-fast speed optimized by Baseten's model performance engi
 | Total Cost | 320 points/message |
 | Initial Points Cost | 320 points |
 
-**Last Checked:** 2025-08-05 23:36:38.369043
+**Last Checked:** 2025-09-20 12:31:22.051136
 
 
 ## Bot Information
@@ -25040,7 +25001,7 @@ It demonstrates exceptional performance in complex problem-solving, achieving im
 | Total Cost | 250 points/message |
 | Initial Points Cost | 250 points |
 
-**Last Checked:** 2025-08-05 23:36:45.070268
+**Last Checked:** 2025-09-20 12:31:29.346695
 
 
 ## Bot Information
@@ -25088,7 +25049,7 @@ It demonstrates exceptional performance in complex problem-solving, achieving im
 | Total Cost | 300 points/message |
 | Initial Points Cost | 300 points |
 
-**Last Checked:** 2025-08-05 23:36:52.211945
+**Last Checked:** 2025-09-20 12:31:36.733191
 
 
 ## Bot Information
@@ -25138,7 +25099,7 @@ Delivering results on par with Llama-3-405B despite using only one-fifth of the 
 | Total Cost | 75 points/message |
 | Initial Points Cost | 75 points |
 
-**Last Checked:** 2025-08-05 23:36:59.016836
+**Last Checked:** 2025-09-20 12:31:44.028458
 
 
 ## Bot Information
@@ -25186,7 +25147,7 @@ Delivering results on par with Llama-3-405B despite using only one-fifth of the 
 | Total Cost | 210 points/message |
 | Initial Points Cost | 210 points |
 
-**Last Checked:** 2025-08-05 23:37:05.768897
+**Last Checked:** 2025-09-20 12:31:51.418384
 
 
 ## Bot Information
@@ -25234,7 +25195,7 @@ Delivering results on par with Llama-3-405B despite using only one-fifth of the 
 | Total Cost | 220 points/message |
 | Initial Points Cost | 220 points |
 
-**Last Checked:** 2025-08-05 23:37:12.751511
+**Last Checked:** 2025-09-20 12:31:58.746939
 
 
 ## Bot Information
@@ -25330,7 +25291,7 @@ Delivering results on par with Llama-3-405B despite using only one-fifth of the 
 | Total Cost | 63 points/message |
 | Initial Points Cost | 63 points |
 
-**Last Checked:** 2025-09-20 11:45:32.111845
+**Last Checked:** 2025-09-20 12:32:06.042266
 
 
 ## Bot Information
@@ -25378,7 +25339,7 @@ Delivering results on par with Llama-3-405B despite using only one-fifth of the 
 | Total Cost | 100 points/message |
 | Initial Points Cost | 100 points |
 
-**Last Checked:** 2025-09-20 11:45:39.379074
+**Last Checked:** 2025-09-20 12:32:13.295985
 
 
 ## Bot Information
@@ -25479,7 +25440,7 @@ The points price is subject to change.
 | Image Output | 850 points / message |
 | Initial Points Cost | 850 points |
 
-**Last Checked:** 2025-09-20 11:45:46.598559
+**Last Checked:** 2025-09-20 12:32:20.537846
 
 
 ## Bot Information
@@ -25527,7 +25488,7 @@ The points price is subject to change.
 | Image Output | 617 points / message |
 | Initial Points Cost | 617 points |
 
-**Last Checked:** 2025-09-20 11:46:01.429203
+**Last Checked:** 2025-09-20 12:32:35.376689
 
 
 ## Bot Information
@@ -25575,7 +25536,7 @@ The points price is subject to change.
 | Total Cost | 660 points/message |
 | Initial Points Cost | 660 points |
 
-**Last Checked:** 2025-09-20 11:45:54.026683
+**Last Checked:** 2025-09-20 12:32:27.992420
 
 
 ## Bot Information
@@ -25723,7 +25684,7 @@ The points price is subject to change.
 | Total Cost | 50 points/message |
 | Initial Points Cost | 50 points |
 
-**Last Checked:** 2025-08-05 23:37:47.009580
+**Last Checked:** 2025-09-20 12:32:42.713440
 
 
 ## Bot Information
@@ -25771,7 +25732,7 @@ The points price is subject to change.
 | Total Cost | 290 points/message |
 | Initial Points Cost | 290 points |
 
-**Last Checked:** 2025-08-05 23:37:53.708533
+**Last Checked:** 2025-09-20 12:32:49.999681
 
 
 ## Bot Information
@@ -25819,7 +25780,7 @@ The points price is subject to change.
 | Total Cost | 200 points/message |
 | Initial Points Cost | 200 points |
 
-**Last Checked:** 2025-09-20 11:46:08.779144
+**Last Checked:** 2025-09-20 12:32:57.192224
 
 
 ## Bot Information
@@ -25867,7 +25828,7 @@ The points price is subject to change.
 | Total Cost | 90 points/message |
 | Initial Points Cost | 90 points |
 
-**Last Checked:** 2025-08-05 23:38:00.571537
+**Last Checked:** 2025-09-20 12:33:04.510837
 
 
 ## Bot Information
@@ -25915,7 +25876,7 @@ The points price is subject to change.
 | Total Cost | 63 points/message |
 | Initial Points Cost | 63 points |
 
-**Last Checked:** 2025-08-05 23:38:14.117934
+**Last Checked:** 2025-09-20 12:33:19.113607
 
 
 ## Bot Information
@@ -25965,7 +25926,7 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 | Total Cost | 60 points/message |
 | Initial Points Cost | 60 points |
 
-**Last Checked:** 2025-09-20 11:46:16.192715
+**Last Checked:** 2025-09-20 12:33:26.468680
 
 
 ## Bot Information
@@ -26018,7 +25979,7 @@ This feature the following key enhancements:
 | Total Cost | 1 point/message |
 | Initial Points Cost | 1 point |
 
-**Last Checked:** 2025-08-05 23:38:07.438613
+**Last Checked:** 2025-09-20 12:33:11.816213
 
 
 ## Bot Information
@@ -26066,7 +26027,7 @@ This feature the following key enhancements:
 | Total Cost | 200 points/message |
 | Initial Points Cost | 200 points |
 
-**Last Checked:** 2025-09-20 11:46:23.698566
+**Last Checked:** 2025-09-20 12:33:34.343220
 
 
 ## Bot Information
@@ -26114,7 +26075,7 @@ This feature the following key enhancements:
 | Total Cost | 50 points/message |
 | Initial Points Cost | 50 points |
 
-**Last Checked:** 2025-09-20 11:46:31.244277
+**Last Checked:** 2025-09-20 12:33:41.573309
 
 
 ## Bot Information
@@ -26159,10 +26120,10 @@ This feature the following key enhancements:
 
 | Type | Cost |
 |------|------|
-| Total Cost | 1 point/message |
-| Initial Points Cost | 1 point |
+| Total Cost | 120 points/message |
+| Initial Points Cost | 120 points |
 
-**Last Checked:** 2025-08-08 11:38:43.941198
+**Last Checked:** 2025-09-20 12:33:49.096671
 
 
 ## Bot Information
@@ -26258,7 +26219,7 @@ This feature the following key enhancements:
 | Total Cost | 580 points/message |
 | Initial Points Cost | 580 points |
 
-**Last Checked:** 2025-09-20 11:46:39.301222
+**Last Checked:** 2025-09-20 12:33:56.601314
 
 
 ## Bot Information
@@ -26306,7 +26267,7 @@ This feature the following key enhancements:
 | Total Cost | 50 points/message |
 | Initial Points Cost | 50 points |
 
-**Last Checked:** 2025-09-20 11:46:54.285099
+**Last Checked:** 2025-09-20 12:34:11.422710
 
 
 ## Bot Information
@@ -26402,7 +26363,7 @@ This feature the following key enhancements:
 | Total Cost | 240 points/message |
 | Initial Points Cost | 240 points |
 
-**Last Checked:** 2025-09-20 11:47:01.779853
+**Last Checked:** 2025-09-20 12:34:20.477651
 
 
 ## Bot Information
@@ -26450,7 +26411,7 @@ This feature the following key enhancements:
 | Total Cost | 550 points/message |
 | Initial Points Cost | 550 points |
 
-**Last Checked:** 2025-09-20 11:47:09.273946
+**Last Checked:** 2025-09-20 12:34:29.441617
 
 
 ## Bot Information
@@ -26498,7 +26459,7 @@ This feature the following key enhancements:
 | Total Cost | 300 points/message |
 | Initial Points Cost | 300 points |
 
-**Last Checked:** 2025-09-20 11:46:46.903642
+**Last Checked:** 2025-09-20 12:34:04.004075
 
 
 ## Bot Information
@@ -26546,7 +26507,7 @@ This feature the following key enhancements:
 | Total Cost | 80 points/message |
 | Initial Points Cost | 80 points |
 
-**Last Checked:** 2025-09-20 11:47:17.093239
+**Last Checked:** 2025-09-20 12:34:37.602067
 
 
 ## Bot Information
@@ -26598,7 +26559,7 @@ This is the non-thinking version of https://poe.com/Qwen3-Next-80B-Think; suppor
 | 5S | ['6,000 points', '11,750 points', '26,250 points', '106,250 points'] |
 | 9S | ['10,800 points', '21,150 points', '47,250 points', '191,250 points'] |
 
-**Last Checked:** 2025-08-05 23:38:34.650389
+**Last Checked:** 2025-09-20 12:34:45.942612
 
 
 ## Bot Information
@@ -26646,14 +26607,16 @@ This is the non-thinking version of https://poe.com/Qwen3-Next-80B-Think; suppor
 | Image Output | 2267 points / message |
 | Initial Points Cost | 2267 points |
 
-**Last Checked:** 2025-08-05 23:38:41.717608
+**Last Checked:** 2025-09-20 12:34:53.820266
 
 
 ## Bot Information
 
 **Creator:** @fal
 
-**Description:** Recraft V3, state of the art image generation. Use --style for styles, and --aspect for aspect ratio configuration. Available styles: realistic_image, digital_illustration, vector_illustration, realistic_image/b_and_w, realistic_image/hard_flash, realistic_image/hdr, realistic_image/natural_light, realistic_image/studio_portrait, realistic_image/enterprise, realistic_image/motion_blur, digital_illustration/pixel_art, digital_illustration/hand_drawn, digital_illustration/grain, digital_illustration/infantile_sketch, digital_illustration/2d_art_poster, digital_illustration/handmade_3d, digital_illustration/hand_drawn_outline, digital_illustration/engraving_color, digital_illustration/2d_art_poster_2, vector_illustration/engraving, vector_illustration/line_art, vector_illustration/line_circuit, vector_illustration/linocut
+**Description:** Recraft V3, state of the art image generation. Prompt input cannot exceed 1,000 characters.
+Use --style for styles, and --aspect for aspect ratio configuration (16:9, 4:3, 1:1, 3:4, 9:16). 
+Available styles: realistic_image, digital_illustration, vector_illustration, realistic_image/b_and_w, realistic_image/hard_flash, realistic_image/hdr, realistic_image/natural_light, realistic_image/studio_portrait, realistic_image/enterprise, realistic_image/motion_blur, digital_illustration/pixel_art, digital_illustration/hand_drawn, digital_illustration/grain, digital_illustration/infantile_sketch, digital_illustration/2d_art_poster, digital_illustration/handmade_3d, digital_illustration/hand_drawn_outline, digital_illustration/engraving_color, digital_illustration/2d_art_poster_2, vector_illustration/engraving, vector_illustration/line_art, vector_illustration/line_circuit, vector_illustration/linocut
 
 **Extra:** Powered by a server managed by @fal. Learn more
 
@@ -26694,7 +26657,7 @@ This is the non-thinking version of https://poe.com/Qwen3-Next-80B-Think; suppor
 | Initial Points Cost | 834 points |
 | Total Cost | 834 points / message |
 
-**Last Checked:** 2025-08-05 23:38:48.669710
+**Last Checked:** 2025-09-20 12:35:01.118704
 
 
 ## Bot Information
@@ -26742,7 +26705,7 @@ This is the non-thinking version of https://poe.com/Qwen3-Next-80B-Think; suppor
 | Initial Points Cost | 27 points |
 | Total Cost | 27 points / message |
 
-**Last Checked:** 2025-08-05 23:38:55.471406
+**Last Checked:** 2025-09-20 12:35:08.527372
 
 
 ## Bot Information
@@ -26790,7 +26753,7 @@ This is the non-thinking version of https://poe.com/Qwen3-Next-80B-Think; suppor
 | Initial Points Cost | 334 points |
 | Total Cost | 334 points / message |
 
-**Last Checked:** 2025-08-05 23:39:02.721156
+**Last Checked:** 2025-09-20 12:35:16.446646
 
 
 ## Bot Information
@@ -26838,7 +26801,7 @@ This is the non-thinking version of https://poe.com/Qwen3-Next-80B-Think; suppor
 | Image Output | 2000 points / message |
 | Initial Points Cost | 2000 points |
 
-**Last Checked:** 2025-08-05 23:39:09.601288
+**Last Checked:** 2025-09-20 12:35:23.744765
 
 
 ## Bot Information
@@ -26941,14 +26904,14 @@ Additional notes: All styles have a size range of 48x48 -> 512x512, except for t
 | 5 Seconds | 11334 points |
 | 10 Seconds | 21334 points |
 
-**Last Checked:** 2025-08-05 23:39:29.900681
+**Last Checked:** 2025-09-20 12:35:45.901658
 
 
 ## Bot Information
 
 **Creator:** @runwayml
 
-**Description:** Runway's Gen-4 Turbo model creates best-in-class, controllable, and high-fidelity video generations based on your prompts. Both text inputs (max 1000 characters) and image inputs are supported, but we recommend using image inputs for best results. Use --aspect_ratio (16:9, 9:16, landscape, portrait) for landscape/portrait videos. Use --duration (5, 10) to specify video length in seconds. Full prompting guide here: https://help.runwayml.com/hc/en-us/articles/39789879462419-Gen-4-Video-Prompting-Guide
+**Description:** Runway's Gen-4 Turbo model creates best-in-class, controllable, and high-fidelity video generations based on your prompts. Both text inputs (max 1000 characters) and image inputs are supported, but we recommend using image inputs for best results. Use --aspect_ratio (16:9, 1:1, 9:16, landscape, portrait) for landscape/portrait videos. Use --duration (5, 10) to specify video length in seconds. Full prompting guide here: https://help.runwayml.com/hc/en-us/articles/39789879462419-Gen-4-Video-Prompting-Guide
 
 **Extra:** Powered by a server managed by @runwayml. Learn more
 
@@ -26990,7 +26953,7 @@ Additional notes: All styles have a size range of 48x48 -> 512x512, except for t
 | 5 Seconds | 11334 points |
 | 10 Seconds | 21334 points |
 
-**Last Checked:** 2025-08-05 23:39:23.053451
+**Last Checked:** 2025-09-20 12:35:38.027518
 
 
 ## Bot Information
@@ -27038,7 +27001,7 @@ Additional notes: All styles have a size range of 48x48 -> 512x512, except for t
 | Image Output | 29 points / message |
 | Initial Points Cost | 29 points |
 
-**Last Checked:** 2025-08-05 23:39:36.762692
+**Last Checked:** 2025-09-20 12:35:53.216488
 
 
 ## Bot Information
@@ -27086,7 +27049,7 @@ Additional notes: All styles have a size range of 48x48 -> 512x512, except for t
 | Image Output | 1000 points / message |
 | Initial Points Cost | 1000 points |
 
-**Last Checked:** 2025-09-20 11:47:31.240050
+**Last Checked:** 2025-09-20 12:36:00.477502
 
 
 ## Bot Information
@@ -27134,17 +27097,17 @@ Additional notes: All styles have a size range of 48x48 -> 512x512, except for t
 | Video Output | 60000 points / million video tokens |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:39:43.587532
+**Last Checked:** 2025-09-20 12:36:07.799915
 
 
 ## Bot Information
 
-**Creator:** @fal
+**Creator:** @Bytedance
 
-**Description:** Seedance is a video generation model with text-to-video and image-to-video capabilities. It achieves breakthroughs in semantic understanding and prompt following. Use `--aspect` to set the aspect ratio (available values: `16:9`, `4:3`, `1:1` and `9:21`). Use `--resolution` (one of `480p` and `720p` to set the video resolution. `--duration` (5 or 10) sets the video duration.
+**Description:** Seedance is a video generation model with text-to-video and image-to-video capabilities. It achieves breakthroughs in semantic understanding and prompt following. Use `--aspect` to set the aspect ratio (available values: `16:9`, `4:3`, `1:1` and `9:21`). Use `--resolution` (one of `480p` and `720p` to set the video resolution. `--duration` (3 to 12) sets the video duration.
 Number of video tokens calculated for pricing is approximately: `height * width * fps * duration / 1024).
 
-**Extra:** Powered by a server managed by @fal. Learn more
+**Extra:** Powered by a server managed by @Bytedance. Learn more
 
 
 ## Architecture
@@ -27183,17 +27146,17 @@ Number of video tokens calculated for pricing is approximately: `height * width 
 | Video Output | 83334 points / million video tokens |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:39:50.550570
+**Last Checked:** 2025-09-20 12:36:15.144733
 
 
 ## Bot Information
 
-**Creator:** @fal
+**Creator:** @Bytedance
 
-**Description:** Seedance is a video generation model with text-to-video and image-to-video capabilities. It achieves breakthroughs in semantic understanding and prompt following. Use `--aspect` to set the aspect ratio (available values: `21:9`, `16:9`, `4:3`, `1:1`, `3:4`, `9:16`). Use `--resolution` (one of `480p` and `1080p` to set the video resolution. `--duration` (5 or 10) sets the video duration.
+**Description:** Seedance is a video generation model with text-to-video and image-to-video capabilities. It achieves breakthroughs in semantic understanding and prompt following. Use `--aspect` to set the aspect ratio (available values: `21:9`, `16:9`, `4:3`, `1:1`, `3:4`, `9:16`). Use `--resolution` (one of `480p` and `1080p` to set the video resolution. `--duration` (3 to 12) sets the video duration.
 Number of video tokens calculated for pricing is approximately: `height * width * fps * duration / 1024).
 
-**Extra:** Powered by a server managed by @fal. Learn more
+**Extra:** Powered by a server managed by @Bytedance. Learn more
 
 
 ## Architecture
@@ -27229,19 +27192,19 @@ Number of video tokens calculated for pricing is approximately: `height * width 
 
 | Type | Cost |
 |------|------|
-| Image Output | 1334 points / message |
-| Initial Points Cost | 1334 points |
+| Image Output | 1000 points / message |
+| Initial Points Cost | 1000 points |
 
-**Last Checked:** 2025-08-05 23:39:57.500106
+**Last Checked:** 2025-09-20 12:36:22.552818
 
 
 ## Bot Information
 
-**Creator:** @fal
+**Creator:** @Bytedance
 
 **Description:** Seedream 3.0 by ByteDance is a bilingual (Chinese and English) text-to-image model that excels at text-to-image generation.
 
-**Extra:** Powered by a server managed by @fal. Learn more
+**Extra:** Powered by a server managed by @Bytedance. Learn more
 
 
 ## Architecture
@@ -27280,7 +27243,7 @@ Number of video tokens calculated for pricing is approximately: `height * width 
 | Image Output | 1000 points / message |
 | Initial Points Cost | 1000 points |
 
-**Last Checked:** 2025-09-20 11:47:40.646075
+**Last Checked:** 2025-09-20 12:36:30.178272
 
 
 ## Bot Information
@@ -27328,7 +27291,7 @@ Number of video tokens calculated for pricing is approximately: `height * width 
 | Image Output | 992 points / message |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:40:04.326621
+**Last Checked:** 2025-09-20 12:36:37.605046
 
 
 ## Bot Information
@@ -27376,7 +27339,7 @@ Number of video tokens calculated for pricing is approximately: `height * width 
 | Total Cost | 70 points/message |
 | Initial Points Cost | 70 points |
 
-**Last Checked:** 2025-08-05 23:40:11.150652
+**Last Checked:** 2025-09-20 12:36:45.652360
 
 
 ## Bot Information
@@ -27424,7 +27387,7 @@ Number of video tokens calculated for pricing is approximately: `height * width 
 | Video Output | 1667 points / second |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:40:18.005847
+**Last Checked:** 2025-09-20 12:36:53.050595
 
 
 ## Bot Information
@@ -27473,7 +27436,7 @@ Number of video tokens calculated for pricing is approximately: `height * width 
 | Base Cost | 19267 points |
 | Per Step Cost | 69 points |
 
-**Last Checked:** 2025-09-20 11:47:47.874792
+**Last Checked:** 2025-09-20 12:37:00.322217
 
 
 ## Bot Information
@@ -27537,7 +27500,7 @@ Parameter controls available:
 | Initial Points Cost | 22667 points |
 | Generation | 22667 points |
 
-**Last Checked:** 2025-09-20 11:47:55.086260
+**Last Checked:** 2025-09-20 12:37:08.116585
 
 
 ## Bot Information
@@ -27605,7 +27568,7 @@ Parameter controls available:
 | Image Output | 334 points / message |
 | Initial Points Cost | 334 points |
 
-**Last Checked:** 2025-08-05 23:40:24.751517
+**Last Checked:** 2025-09-20 12:37:15.363936
 
 
 ## Bot Information
@@ -27653,7 +27616,7 @@ Parameter controls available:
 | Image Output | 1842 points / message |
 | Initial Points Cost | 1842 points |
 
-**Last Checked:** 2025-08-05 23:40:32.725927
+**Last Checked:** 2025-09-20 12:37:22.632946
 
 
 ## Bot Information
@@ -27701,7 +27664,7 @@ Parameter controls available:
 | Image Output | 284 points / message |
 | Initial Points Cost | 284 points |
 
-**Last Checked:** 2025-08-05 23:40:39.632388
+**Last Checked:** 2025-09-20 12:37:29.916497
 
 
 ## Bot Information
@@ -27749,7 +27712,7 @@ Parameter controls available:
 | Total Cost | 120 points/message |
 | Initial Points Cost | 120 points |
 
-**Last Checked:** 2025-08-05 23:40:46.372779
+**Last Checked:** 2025-09-20 12:37:37.365085
 
 
 ## Bot Information
@@ -27801,7 +27764,7 @@ Powered by Stable Diffusion XL.
 | Total Cost | 1000 points/message |
 | Initial Points Cost | 1000 points |
 
-**Last Checked:** 2025-08-05 23:40:53.136305
+**Last Checked:** 2025-09-20 12:37:44.648409
 
 
 ## Bot Information
@@ -27846,16 +27809,10 @@ Powered by Stable Diffusion XL.
 
 | Type | Cost |
 |------|------|
-| Initial Points Cost | Variable points |
-| Up To 24 | 1167 points |
-| 24 - 32 | 2334 points |
-| 32 - 48 | 3501 points |
-| 48 - 64 | 4668 points |
-| 64 - 128 | 7002 points |
-| 128 - 256 | 11670 points |
-| > 256(Up To 512) | 18672 points |
+| Total Cost | 1 point/message |
+| Initial Points Cost | 1 point |
 
-**Last Checked:** 2025-08-05 23:40:59.940563
+**Last Checked:** 2025-09-20 12:37:51.925734
 
 
 ## Bot Information
@@ -27903,7 +27860,7 @@ Powered by Stable Diffusion XL.
 | Initial Points Cost | 567 points |
 | 3D Output | 567 points / message |
 
-**Last Checked:** 2025-08-05 23:41:06.753634
+**Last Checked:** 2025-09-20 12:37:59.885437
 
 
 ## Bot Information
@@ -27953,7 +27910,7 @@ Powered by Stable Diffusion XL.
 | Audio Analysis | 277 points |
 | Storage | 50 points |
 
-**Last Checked:** 2025-08-05 23:41:13.804179
+**Last Checked:** 2025-09-20 12:38:07.455940
 
 
 ## Bot Information
@@ -28011,7 +27968,7 @@ Let's explore your videos together!
 | Text Input | 1 point per 5 characters |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:41:20.548138
+**Last Checked:** 2025-09-20 12:38:14.860024
 
 
 ## Bot Information
@@ -28094,7 +28051,7 @@ Portuguese
 | Video Output | 70834 points / message |
 | Initial Points Cost | 70834 points |
 
-**Last Checked:** 2025-08-05 23:41:34.388204
+**Last Checked:** 2025-09-20 12:38:29.524052
 
 
 ## Bot Information
@@ -28139,10 +28096,10 @@ Portuguese
 
 | Type | Cost |
 |------|------|
-| Total Cost | 37000 points/message |
-| Initial Points Cost | 37000 points |
+| Total Cost | 74000 points/message |
+| Initial Points Cost | 74000 points |
 
-**Last Checked:** 2025-08-05 23:41:27.384550
+**Last Checked:** 2025-09-20 12:38:22.162689
 
 
 ## Bot Information
@@ -28191,14 +28148,18 @@ Portuguese
 | Initial Points Cost | Variable points |
 | Audio + Video Output | 13334 points / s |
 
-**Last Checked:** 2025-08-05 23:41:48.319898
+**Last Checked:** 2025-09-20 12:38:44.212384
 
 
 ## Bot Information
 
 **Creator:** @fal
 
-**Description:** Veo-3 Fast is a faster and more cost effective version of Google's Veo 3. Use `--aspect` to set the aspect ratio of the generated image (one of `16:9`, `1:1`, `9:16`. Use `--generate_audio` to generate audio with your video at a higher cost. Use --negative_prompt to set negative prompt option `blur`, `low resolution`, `poor resolution`. This is a text to video generation model only.
+**Description:** Veo-3 Fast is a faster and more cost effective version of Google's Veo 3. 
+Use `--aspect` to set the aspect ratio of the generated image (one of `16:9`, `1:1`, `9:16`). 
+Use `--generate_audio` to generate audio with your video at a higher cost. 
+Use --negative_prompt to set negative prompt option `blur`, `low resolution`, `poor quality`. 
+Duration is limited to 7 seconds. This is a text to video generation model only.
 
 **Extra:** Powered by a server managed by @fal. Learn more
 
@@ -28236,17 +28197,19 @@ Portuguese
 
 | Type | Cost |
 |------|------|
-| Total Cost | 55500 points/message |
-| Initial Points Cost | 55500 points |
+| Total Cost | 79000 points/message |
+| Initial Points Cost | 79000 points |
 
-**Last Checked:** 2025-08-05 23:41:41.451474
+**Last Checked:** 2025-09-20 12:38:36.915812
 
 
 ## Bot Information
 
 **Creator:** @google
 
-**Description:** Veo 3 creates incredibly high-quality videos in a wide range of subjects and styles. It brings an improved understanding of real-world physics and the nuances of human movement and expression, which helps improve its detail and realism overall. Veo 3 understands the unique language of cinematography: ask it for a genre, specify a lens, suggest cinematic effects and Veo 3 will deliver in 8-second clips. Supports text-to-video as well as image-to-video. Note: currently has low rate limit so you may need to retry your request at times of peak usage.
+**Description:** Veo 3 creates incredibly high-quality videos in a wide range of subjects and styles. It brings an improved understanding of real-world physics and the nuances of human movement and expression, which helps improve its detail and realism overall. Veo 3 understands the unique language of cinematography: ask it for a genre, specify a lens, suggest cinematic effects and Veo 3 will deliver in 8-second clips. Supports text-to-video as well as image-to-video.
+Use `--no` followed by the negative prompt. examples are `blurry`, `cloudy`, or input other elements. Use `--seed` followed by value (e.g.2 ) to set value.
+Duration is limited to 8 seconds and aspect ratio of 16:9.
 
 **Extra:** Powered by a server managed by @google. Learn more
 
@@ -28287,7 +28250,7 @@ Portuguese
 | Video Output | 13334 points / video |
 | Initial Points Cost | 13334 points |
 
-**Last Checked:** 2025-09-20 11:48:09.738913
+**Last Checked:** 2025-09-20 12:38:59.367917
 
 
 ## Bot Information
@@ -28349,7 +28312,7 @@ The bot accepts PNG, JPEG, and WEBP formats. Duration is limited to 5 seconds.
 | Premium Template To Video Output | 10000 points / video |
 | Advanced Template To Video Output | 16667 points / video |
 
-**Last Checked:** 2025-09-20 11:48:02.341982
+**Last Checked:** 2025-09-20 12:38:51.678730
 
 
 ## Bot Information
@@ -28407,14 +28370,14 @@ Duration is limited to 5 seconds.
 | Video Output | 11334 points / message |
 | Initial Points Cost | 11334 points |
 
-**Last Checked:** 2025-08-05 23:41:55.253613
+**Last Checked:** 2025-09-20 12:39:07.283731
 
 
 ## Bot Information
 
 **Creator:** @fal
 
-**Description:** Wan-2.1 is a text-to-video model that generates high-quality videos with high visual quality and motion diversity from text prompts.
+**Description:** Wan-2.1 is a text-to-video model that generates high-quality videos with high visual quality and motion diversity from text prompts. Generates 5 second video.
 
 **Extra:** Powered by a server managed by @fal. Learn more
 
@@ -28452,17 +28415,17 @@ Duration is limited to 5 seconds.
 
 | Type | Cost |
 |------|------|
-| Video Output | 2667 points / second |
+| Video Output | 2267 points / second |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-08-05 23:42:02.026350
+**Last Checked:** 2025-09-20 12:39:14.917241
 
 
 ## Bot Information
 
 **Creator:** @fal
 
-**Description:** Wan-2.2 is a video model that generates high-quality videos with high visual quality and motion diversity from text prompts. Use `--aspect` to set the aspect ratio (One of `16:9`, `1:1`, `9:16`) for text-to-video requests. Duration is limited to 5 seconds only with up to 720p resolution.
+**Description:** Wan-2.2 is a video model that generates high-quality videos with high visual quality and motion diversity from text prompts. Send one image for image to video tasks, and send two images for first-frame - last-frame generation. Use `--aspect` to set the aspect ratio (One of `16:9`, `1:1`, `9:16`) for text-to-video requests. Duration is limited to 5 seconds only with up to 720p resolution.
 
 **Extra:** Powered by a server managed by @fal. Learn more
 
@@ -28541,7 +28504,7 @@ Duration is limited to 5 seconds.
 | Total Cost | 100 points/message |
 | Initial Points Cost | 100 points |
 
-**Last Checked:** 2025-09-20 11:48:23.937958
+**Last Checked:** 2025-09-20 12:39:29.670150
 
 
 ## Bot Information
@@ -29198,11 +29161,10 @@ Browse all available Poe models:
 | Type | Cost |
 |------|------|
 | Input Text | 33 points/1k tokens |
-| Bot Message | 352 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 360+ points |
+| Initial Points Cost | 345+ points |
+| Output (Text) | 132 points/1k tokens |
 
-**Last Checked:** 2025-08-05 23:42:21.888136
+**Last Checked:** 2025-09-20 12:39:44.220706
 
 
 ## Bot Information
@@ -29247,13 +29209,11 @@ Browse all available Poe models:
 
 | Type | Cost |
 |------|------|
-| Input Text | 4500 points/1k tokens |
-| Input Image | 4500 points/1k tokens |
-| Bot Message | 53457 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 54420+ points |
+| Initial Points Cost | 54914+ points |
+| Input | 4500 points/1k tokens |
+| Output (Text) | 18000 points/1k tokens |
 
-**Last Checked:** 2025-08-05 23:42:28.739426
+**Last Checked:** 2025-09-20 12:39:52.134309
 
 
 ## Bot Information
@@ -29299,13 +29259,11 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 
 | Type | Cost |
 |------|------|
-| Input Text | 450 points/1k tokens |
-| Input Image | 450 points/1k tokens |
-| Bot Message | 3853 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 3950+ points |
+| Initial Points Cost | 4017+ points |
+| Input | 450 points/1k tokens |
+| Output (Text) | 1800 points/1k tokens |
 
-**Last Checked:** 2025-08-05 23:42:15.056787
+**Last Checked:** 2025-09-20 12:39:36.966771
 
 
 ## Bot Information
@@ -29350,21 +29308,19 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 
 | Type | Cost |
 |------|------|
-| Input Text | 300 points/1k tokens |
-| Input Image | 300 points/1k tokens |
-| Bot Message | 95345 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 75% discount oncached chat history |
-| Initial Points Cost | 95410+ points |
+| Initial Points Cost | 60074+ points |
+| Input | 300 points/1k tokens |
+| Output (Text) | 1200 points/1k tokens |
+| Cache Discount | 75% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:42:42.355031
+**Last Checked:** 2025-09-20 12:40:07.080028
 
 
 ## Bot Information
 
 **Creator:** @openai
 
-**Description:** Deep Research from OpenAI powered by the o3 model, can search through extensive web information to answer complex, nuanced research questions in various domains such as finance, consulting, and science. Research queries that take longer than 10 minutes (600 seconds) will error out and compute points will be refunded.
+**Description:** Deep Research from OpenAI powered by the o3 model, can search through extensive web information to answer complex, nuanced research questions in various domains such as finance, consulting, and science. Research queries that take longer than 10 minutes (600 seconds) will error out and compute points will be refunded after 2 hours.
 
 **Extra:** Powered by OpenAI: o3-deep-research-2025-06-26. Learn more
 
@@ -29404,11 +29360,10 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 |------|------|
 | Input Text | 33 points/1k tokens |
 | Input Image | Variable |
-| Bot Message | 447 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 455+ points |
+| Initial Points Cost | 430+ points |
+| Output (Text) | 132 points/1k tokens |
 
-**Last Checked:** 2025-08-05 23:42:56.317548
+**Last Checked:** 2025-09-20 12:40:21.736917
 
 
 ## Bot Information
@@ -29455,11 +29410,10 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 |------|------|
 | Input Text | 33 points/1k tokens |
 | Input Image | Variable |
-| Bot Message | 199 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 207+ points |
+| Initial Points Cost | 210+ points |
+| Output (Text) | 132 points/1k tokens |
 
-**Last Checked:** 2025-08-05 23:42:49.316928
+**Last Checked:** 2025-09-20 12:40:14.313223
 
 
 ## Bot Information
@@ -29505,13 +29459,11 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 
 | Type | Cost |
 |------|------|
-| Input Text | 600 points/1k tokens |
-| Input Image | 600 points/1k tokens |
-| Bot Message | 4669 points/message |
-| Chat History | Input rates are applied |
-| Initial Points Cost | 4798+ points |
+| Initial Points Cost | 4970+ points |
+| Input | 600 points/1k tokens |
+| Output (Text) | 2400 points/1k tokens |
 
-**Last Checked:** 2025-08-05 23:43:03.178226
+**Last Checked:** 2025-09-20 12:40:28.938980
 
 
 ## Bot Information
@@ -29558,14 +29510,12 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 
 | Type | Cost |
 |------|------|
-| Input Text | 60 points/1k tokens |
-| Input Image | 60 points/1k tokens |
-| Bot Message | 388 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 75% discount oncached chat history |
-| Initial Points Cost | 401+ points |
+| Initial Points Cost | 421+ points |
+| Input | 60 points/1k tokens |
+| Output (Text) | 240 points/1k tokens |
+| Cache Discount | 75% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:42:35.454194
+**Last Checked:** 2025-09-20 12:39:59.442033
 
 
 ## Bot Information
@@ -29612,21 +29562,19 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 
 | Type | Cost |
 |------|------|
-| Input Text | 60 points/1k tokens |
-| Input Image | 60 points/1k tokens |
-| Bot Message | 21977 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 75% discount oncached chat history |
-| Initial Points Cost | 21990+ points |
+| Initial Points Cost | 21992+ points |
+| Input | 60 points/1k tokens |
+| Output (Text) | 240 points/1k tokens |
+| Cache Discount | 75% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:43:16.644220
+**Last Checked:** 2025-09-20 12:40:43.721682
 
 
 ## Bot Information
 
 **Creator:** @openai
 
-**Description:** Deep Research from OpenAI powered by the o4-mini model, can search through extensive web information to answer complex, nuanced research questions in various domains such as finance, consulting, and science. Research queries that take longer than 10 minutes (600 seconds) will error out and compute points will be refunded.
+**Description:** Deep Research from OpenAI powered by the o4-mini model, can search through extensive web information to answer complex, nuanced research questions in various domains such as finance, consulting, and science. Research queries that take longer than 10 minutes (600 seconds) will error out and compute points will be refunded after 2 hours.
 
 **Extra:** Powered by OpenAI: o4-mini-deep-research-2025-06-26. Learn more
 
@@ -29664,14 +29612,12 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 
 | Type | Cost |
 |------|------|
-| Input Text | 33 points/1k tokens |
-| Input Image | 33 points/1k tokens |
-| Bot Message | 235 points/message |
-| Chat History | Input rates are applied |
-| Chat History Cache Discount | 75% discount oncached chat history |
-| Initial Points Cost | 243+ points |
+| Initial Points Cost | 256+ points |
+| Input | 33 points/1k tokens |
+| Output (Text) | 132 points/1k tokens |
+| Cache Discount | 75% discount oncached chat |
 
-**Last Checked:** 2025-08-05 23:43:09.818497
+**Last Checked:** 2025-09-20 12:40:36.305927
 
 
 ## Bot Information
@@ -29721,7 +29667,7 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 | Image Output | 34 points / message |
 | Initial Points Cost | 34 points |
 
-**Last Checked:** 2025-08-05 23:43:23.507230
+**Last Checked:** 2025-09-20 12:40:51.200994
 
 
 ## Bot Information
