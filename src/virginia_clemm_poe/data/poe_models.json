@@ -2,47 +2,6 @@
   "object": "list",
   "data": [
     {
-      "id": "App-Creator",
-      "object": "model",
-      "created": 1737569087127,
-      "owned_by": "poe",
-      "permission": [],
-      "root": "App-Creator",
-      "parent": null,
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "modality": "text->text"
-      },
-      "pricing": {
-        "checked_at": "2025-08-05 23:15:13.821272",
-        "details": {
-          "input_text": "12 points/1k tokens",
-          "input_image": "12 points/1k tokens",
-          "bot_message": "21 points/message",
-          "chat_history": "Input rates are applied",
-          "chat_history_cache_discount": "90% discount oncached chat history",
-          "total_cost": null,
-          "image_output": null,
-          "video_output": null,
-          "text_input": null,
-          "per_message": null,
-          "finetuning": null,
-          "initial_points_cost": "24+ points"
-        }
-      },
-      "pricing_error": null,
-      "bot_info": {
-        "creator": "@poe_tools",
-        "description": "Specializes in building interactive web applications designed for publishing as apps on Poe. Available at a reduced early-access price for a limited time. Powered by Claude Sonnet 4.\n\nSee what's new: https://creator.poe.com/changelog?tag=canvas-apps",
-        "description_extra": "Powered by Anthropic: claude-sonnet-4-20250514. Learn more"
-      }
-    },
-    {
       "id": "Aya-Expanse-32B",
       "object": "model",
       "created": 1739905182986,
@@ -125,6 +84,48 @@
       }
     },
     {
+      "id": "Bagoodex-Web-Search",
+      "object": "model",
+      "created": 1753947757043,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Bagoodex-Web-Search",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:39:33.052634",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "650 points",
+          "Per Search": "650 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@empiriolabsai",
+        "description": "Bagoodex delivers real-time AI-powered web search offering instant access to videos, images, weather, and more. Audio and video uploads are not supported at this time.",
+        "description_extra": "Powered by a server managed by @empiriolabsai. Learn more"
+      }
+    },
+    {
       "id": "Bria-Eraser",
       "object": "model",
       "created": 1739957916196,
@@ -166,24 +167,66 @@
       }
     },
     {
-      "id": "Cartesia",
+      "id": "Cartesia-Ink-Whisper",
       "object": "model",
-      "created": 1731968187492,
+      "created": 1757628728993,
       "owned_by": "poe",
       "permission": [],
-      "root": "Cartesia",
+      "root": "Cartesia-Ink-Whisper",
       "parent": null,
       "architecture": {
         "input_modalities": [
           "text"
         ],
         "output_modalities": [
-          "audio"
+          "text"
         ],
-        "modality": "text->audio"
+        "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:15:40.728102",
+        "checked_at": "2025-09-20 11:39:42.494179",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "Variable points",
+          "Output (audio)": "4200 points / hour"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@cartesiateam",
+        "description": "Transcribe audio files using Speech-to-Text with the Cartesia Ink Whisper model.\n\nSelect the Language (`--language`) of your audio file in Settings. Default is English (en).\n\nSupported Languages:\nEnglish (en)\nChinese (zh)\nGerman (de)\nSpanish (es)\nRussian (ru)\nKorean (ko)\nFrench (fr)\nJapanese (ja)\nPortuguese (pt)\nTurkish (tr)\nPolish (pl)\nCatalan (ca)\nDutch (nl)\nArabic (ar)\nSwedish (sv)\nItalian (it)\nIndonesian (id)\nHindi (hi)\nFinnish (fi)\nVietnamese (vi)\nHebrew (he)\nUkrainian (uk)\nGreek (el)\nMalay (ms)\nCzech (cs)\nRomanian (ro)\nDanish (da)\nHungarian (hu)\nTamil (ta)\nNorwegian (no)\nThai (th)\nUrdu (ur)\nCroatian (hr)\nBulgarian (bg)\nLithuanian (lt)\nLatin (la)\nMaori (mi)\nMalayalam (ml)\nWelsh (cy)\nSlovak (sk)\nTelugu (te)\nPersian (fa)\nLatvian (lv)\nBengali (bn)\nSerbian (sr)\nAzerbaijani (az)\nSlovenian (sl)\nKannada (kn)\nEstonian (et)\nMacedonian (mk)\nBreton (br)\nBasque (eu)\nIcelandic (is)\nArmenian (hy)\nNepali (ne)\nMongolian (mn)\nBosnian (bs)\nKazakh (kk)\nAlbanian (sq)\nSwahili (sw)\nGalician (gl)\nMarathi (mr)\nPunjabi (pa)\nSinhala (si)\nKhmer (km)\nShona (sn)\nYoruba (yo)\nSomali (so)\nAfrikaans (af)\nOccitan (oc)\nGeorgian (ka)\nBelarusian (be)\nTajik (tg)\nSindhi (sd)\nGujarati (gu)\nAmharic (am)\nYiddish (yi)\nLao (lo)\nUzbek (uz)\nFaroese (fo)\nHaitian Creole (ht)\nPashto (ps)\nTurkmen (tk)\nNynorsk (nn)\nMaltese (mt)\nSanskrit (sa)\nLuxembourgish (lb)\nMyanmar (my)\nTibetan (bo)\nTagalog (tl)\nMalagasy (mg)\nAssamese (as)\nTatar (tt)\nHawaiian (haw)\nLingala (ln)\nHausa (ha)\nBashkir (ba)\nJavanese (jw)\nSundanese (su)\nCantonese (yue)",
+        "description_extra": "Powered by a server managed by @cartesiateam. Learn more"
+      }
+    },
+    {
+      "id": "Cartesia-Sonic",
+      "object": "model",
+      "created": 1731968187492,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Cartesia-Sonic",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:39:49.844751",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -202,7 +245,7 @@
       "pricing_error": null,
       "bot_info": {
         "creator": "@cartesiateam",
-        "description": "Generates audio based on your prompt using the latest Cartesia's Sonic 2.0 text-to-speech model in your voice of choice (see below)\n\nAdd --voice [Voice Name] to the end of a message to customize the voice used or to handle different language inputs (e.g. 你好 --voice Chinese Commercial Woman). All of Cartesia's voices are supported on Poe. \n\nThe following voices are supported covering 14 languages (English, French, German, Spanish, Portuguese, Chinese, Japanese, Hindi, Italian, Korean, Dutch, Polish, Russian, Swedish, Turkish):\n\n\nHere's the alphabetical list of all the top voice names:\n\n\"1920's Radioman\"\nAadhya\nAdele\nAlabama Man\nAlina\nAmerican Voiceover Man\nAnanya\nAnna\nAnnouncer Man\nApoorva\nASMR Lady\nAustralian Customer Support Man\nAustralian Man\nAustralian Narrator Lady\nAustralian Salesman\nAustralian Woman\nBarbershop Man\nBrenda\nBritish Customer Support Lady\nBritish Lady\nBritish Reading Lady\nBrooke\nCalifornia Girl\nCalm French Woman\nCalm Lady\nCamille\nCarson\nCasper\nCathy\nCathy\nChongz\nClassy British Man\nCommercial Lady\nCommercial Man\nConfident British Man\nConnie\nCorinne\nCustomer Support Lady\nCustomer Support Man\nDallas\nDave\nDavid\nDevansh\nElena\nEllen\nEthan\nFemale Nurse\nFlorence\nFrancesca\nFrench Conversational Lady\nFrench Narrator Lady\nFrench Narrator Man\nFriendly Australian Man\nFriendly French Man\nFriendly Reading Man\nFriendly Sidekick\nGerman Conversational Woman\nGerman Conversation Man\nGerman Reporter Man\nGerman Woman\nGrace\nGriffin\nHappy Carson\nHelpful French Lady\nHelpful Woman\nHindi Calm Man\nHinglish Speaking Woman\nIndian Lady\nIndian Man\nIsabel\nIshan\nJacqueline\nJanvi\nJapanese Male Conversational\nJoan of Ark\nJohn\nJordan\nKatie\nKeith\nKenneth\nKentucky Man\nKorean Support Woman\nLaidback Woman\nLena\nLily Whisper\nLittle Gaming Girl\nLittle Narrator Girl\nLiv\nLukas\nLuke\nMadame Mischief\nMadison\nMaria\nMateo\nMexican Man\nMexican Woman\nMia\nMiddle Eastern Woman\nMidwestern Man\nMidwestern Woman\nMovieman\nNathan\nNewslady\nNewsman\nNew York Man\nNico\nNonfiction Man\nOlivia\nOrion\nPeninsular Spanish Narrator Lady\nPleasant Brazilian Lady\nPleasant Man\nPolite Man\nPrincess\nProfessional Woman\nRebecca\nReflective Woman\nRonald\nRussian Storyteller Man\nSalesman\nSamantha Angry\nSamantha Happy\nSarah\nSarah Curious\nSavannah\nSilas\nSophie\nSouthern Man\nSouthern Woman\nSpanish Narrator Woman\nSpanish Reporter Woman\nSpanish-speaking Reporter Man\nSportsman\nStacy\nStern French Man\nSteve\nStoryteller Lady\nSweet Lady\nTatiana\nTaylor\nTeacher Lady\nThe Merchant\nTutorial Man\nWise Guide Man\nWise Lady\nWise Man\nWizardman\nYogaman\nYoung Shy Japanese Woman\nZia",
+        "description": "Generates audio based on your prompt using the latest Cartesia's Sonic 2.0 text-to-speech model in your voice of choice (see below)\n\nAdd --voice [Voice Name] to the end of a message to customize the voice used or to handle different language inputs (e.g. 你好 --voice Chinese Commercial Woman). All of Cartesia's voices are supported on Poe. \n\nThe following voices are supported covering 15 languages (English, French, German, Spanish, Portuguese, Chinese, Japanese, Hindi, Italian, Korean, Dutch, Polish, Russian, Swedish, Turkish):\n\n\nHere's the alphabetical list of all the top voice names:\n\n\"1920's Radioman\"\nAadhya\nAdele\nAlabama Man\nAlina\nAmerican Voiceover Man\nAnanya\nAnna\nAnnouncer Man\nApoorva\nASMR Lady\nAustralian Customer Support Man\nAustralian Man\nAustralian Narrator Lady\nAustralian Salesman\nAustralian Woman\nBarbershop Man\nBrenda\nBritish Customer Support Lady\nBritish Lady\nBritish Reading Lady\nBrooke\nCalifornia Girl\nCalm French Woman\nCalm Lady\nCamille\nCarson\nCasper\nCathy\nChongz\nClassy British Man\nCommercial Lady\nCommercial Man\nConfident British Man\nConnie\nCorinne\nCustomer Support Lady\nCustomer Support Man\nDallas\nDave\nDavid\nDevansh\nElena\nEllen\nEthan\nFemale Nurse\nFlorence\nFrancesca\nFrench Conversational Lady\nFrench Narrator Lady\nFrench Narrator Man\nFriendly Australian Man\nFriendly French Man\nFriendly Reading Man\nFriendly Sidekick\nGerman Conversational Woman\nGerman Conversation Man\nGerman Reporter Man\nGerman Woman\nGrace\nGriffin\nHappy Carson\nHelpful French Lady\nHelpful Woman\nHindi Calm Man\nHinglish Speaking Woman\nIndian Lady\nIndian Man\nIsabel\nIshan\nJacqueline\nJanvi\nJapanese Male Conversational\nJoan of Ark\nJohn\nJordan\nKatie\nKeith\nKenneth\nKentucky Man\nKorean Support Woman\nLaidback Woman\nLena\nLily Whisper\nLittle Gaming Girl\nLittle Narrator Girl\nLiv\nLukas\nLuke\nMadame Mischief\nMadison\nMaria\nMateo\nMexican Man\nMexican Woman\nMia\nMiddle Eastern Woman\nMidwestern Man\nMidwestern Woman\nMovieman\nNathan\nNewslady\nNewsman\nNew York Man\nNico\nNonfiction Man\nOlivia\nOrion\nPeninsular Spanish Narrator Lady\nPleasant Brazilian Lady\nPleasant Man\nPolite Man\nPrincess\nProfessional Woman\nRebecca\nReflective Woman\nRonald\nRussian Storyteller Man\nSalesman\nSamantha Angry\nSamantha Happy\nSarah\nSarah Curious\nSavannah\nSilas\nSophie\nSouthern Man\nSouthern Woman\nSpanish Narrator Woman\nSpanish Reporter Woman\nSpanish-speaking Reporter Man\nSportsman\nStacy\nStern French Man\nSteve\nStoryteller Lady\nSweet Lady\nTatiana\nTaylor\nTeacher Lady\nThe Merchant\nTutorial Man\nWise Guide Man\nWise Lady\nWise Man\nWizardman\nYogaman\nYoung Shy Japanese Woman\nZia",
         "description_extra": "Powered by a server managed by @cartesiateam. Learn more"
       }
     },
@@ -1150,6 +1193,47 @@
       }
     },
     {
+      "id": "DeepSeek-Prover-V2",
+      "object": "model",
+      "created": 1747979752008,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "DeepSeek-Prover-V2",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:39:57.285771",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": "667 points",
+          "finetuning": null,
+          "initial_points_cost": "667 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@empiriolabsai",
+        "description": "DeepSeek-Prover-V2 is an open-source large language model specifically designed for formal theorem proving in Lean 4. The model builds on a recursive theorem proving pipeline powered by the company's DeepSeek-V3 foundation model.",
+        "description_extra": "Powered by a server managed by @empiriolabsai. Learn more"
+      }
+    },
+    {
       "id": "DeepSeek-R1",
       "object": "model",
       "created": 1737571591125,
@@ -1311,6 +1395,47 @@
         "creator": "@fireworksai",
         "description": "State-of-the-art large reasoning model problem solving, math, and coding performance at a fraction of the cost; explains its chain of thought. All data you provide this bot will not be used in training, and is sent only to Fireworks AI, a US-based company. Supports 164k tokens of input context and 164k tokens of output context. Uses the latest May 28th, 2025 snapshot.",
         "description_extra": "Powered by a server managed by @fireworksai. Learn more"
+      }
+    },
+    {
+      "id": "DeepSeek-R1-N",
+      "object": "model",
+      "created": 1754049641148,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "DeepSeek-R1-N",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:40:04.837452",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": "200 points/message",
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "200 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@novitaai",
+        "description": "The DeepSeek-R1 (latest Snapshot model DeepSeek-R1-0528) model features enhanced reasoning and inference capabilities through optimized algorithms and increased computational resources. It excels in mathematics, programming, and logic, with performance nearing top-tier models like o3 and Gemini 2.5 Pro. This bot does not accept attachments. Bot does not accept attachment.",
+        "description_extra": "Powered by a server managed by @novitaai. Learn more"
       }
     },
     {
@@ -1478,6 +1603,175 @@
       }
     },
     {
+      "id": "DeepSeek-V3.1",
+      "object": "model",
+      "created": 1755767741363,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "DeepSeek-V3.1",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:40:15.036911",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": "260 points/message",
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "260 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@fireworksai",
+        "description": "DeepSeek-V3.1 is a hybrid model that supports both thinking mode and non-thinking mode. \nDeepSeek-V3.1 is post-trained on the top of DeepSeek-V3.1-Base, which is built upon the original V3 base checkpoint through a two-phase long context extension approach, following the methodology outlined in the original DeepSeek-V3 report. It supports 128k token context window. \nThis bot accepts PDF, DOC and XLSX files and does not accept audio and video files.",
+        "description_extra": "Powered by a server managed by @fireworksai. Learn more"
+      }
+    },
+    {
+      "id": "DeepSeek-V3.1-N",
+      "object": "model",
+      "created": 1755623272928,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "DeepSeek-V3.1-N",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:40:22.460750",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": "190 points/message",
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "190 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@novitaai",
+        "description": "DeepSeek-V3.1 is a hybrid model that supports both thinking mode and non-thinking mode. Compared to the previous version, this upgrade brings improvements in multiple aspects:\n\n- Hybrid thinking mode: One model supports both thinking mode and non-thinking mode by changing the chat template.\n- Smarter tool calling: Through post-training optimization, the model's performance in tool usage and agent tasks has significantly improved.\n- Higher thinking efficiency: DeepSeek-V3.1-Think achieves comparable answer quality to DeepSeek-R1-0528, while responding more quickly.\n- The Bot does not currently support attachments",
+        "description_extra": "Powered by a server managed by @novitaai. Learn more"
+      }
+    },
+    {
+      "id": "DeepSeek-V3.1-Omni",
+      "object": "model",
+      "created": 1756627533519,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "DeepSeek-V3.1-Omni",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:40:29.836401",
+        "details": {
+          "input_text": "500 points / 1k tokens",
+          "input_image": "750 points / 1k token",
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "400+ points",
+          "Base Cost": "400 points / message",
+          "Input (video)": "1000 points / file",
+          "Input (file)": "750 points / 1k token",
+          "Output (text)": "500 points / 1k tokens"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@OpenSourceLab",
+        "description": "DeepSeek-V3.1-Omni is based on the new DeepSeek-V3.1-Chat-0324 version. It is optimized for multimodal conversations to enable natural, context-based responses. This bot accepts file attachments such as images, Excel files, Word documents, and PDFs.",
+        "description_extra": "Powered by a server managed by @OpenSourceLab. Learn more"
+      }
+    },
+    {
+      "id": "Deepgram-Nova-3",
+      "object": "model",
+      "created": 1753875390474,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Deepgram-Nova-3",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:40:39.259576",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "631+ points",
+          "Transcription": "631 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@empiriolabsai",
+        "description": "Transcribe audio files using Speech-to-Text technology with the Deepgram Nova-3 model, featuring multi-language support and advanced customizable settings.\n\n[1] Basic Features: \nUse `--generate_pdf true` to generate a PDF file of the transcription, \nUse `--diarize true` to identify different speakers in the audio. This will automatically enable utterances.\nUse `--smart_format false` to disable automatic format text for improved readability including punctuation and paragraphs. This feature is enabled by default.\n\n[2] Advanced Features:\nUse `--dictation true` to convert spoken commands for punctuation into their respective marks (e.g., 'period' becomes '.'). This will automatically enable punctuation.\nUse `--measurements true` to format spoken measurement units into abbreviations\nUse `--profanity_filter true` to replace profanity with asterisks\nUse `--redact_pci true` to redact payment card information\nUse `--redact_pii true` to redact personally identifiable information\nUse `--utterances true` to segment speech into meaningful semantic units\nUse `--paragraphs false` to disable paragraphs feature. This feature split audio into paragraphs to improve transcript readability. This will automatically enable punctuation. This is enabled by default.\nUse `--punctuate false` to disable punctuate feature. This feature add punctuation and capitalization to your transcript. This is enabled by default.\nUse `--numerals false` to disable numerals feature. This feature convert numbers from written format to numerical format\n\n[3] Languages Supported:\nAuto-detect (Default)\nEnglish\nSpanish\nFrench\nGerman\nItalian\nPortuguese\nJapanese\nChinese\nHindi\nRussian\nDutch\n\n[4] Key Terms `--keyterm` to enter important terms to improve recognition accuracy, separated by commas. English only, Limited to 500 tokens total.",
+        "description_extra": "Powered by a server managed by @empiriolabsai. Learn more"
+      }
+    },
+    {
       "id": "Deepseek-V3-FW",
       "object": "model",
       "created": 1735687236887,
@@ -1560,12 +1854,94 @@
       }
     },
     {
-      "id": "ElevenLabs",
+      "id": "Dreamina-3.1",
+      "object": "model",
+      "created": 1754503266312,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Dreamina-3.1",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:40:46.452526",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": "1000 points / message",
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "1000 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@Bytedance",
+        "description": "ByteDance's Dreamina 3.1 Text-to-Image showcases superior picture effects, with significant improvements in picture aesthetics, precise and diverse styles, and rich details. This model excels with  large prompts, please use large prompts in case you face Content Checker issues.\nThe model does not accept attachment. \nUse \"--aspect\" to select an aspect ratio (e.g --aspect 1:1). Valid aspect ratios are 16:9, 4:3, 1:1, 3:4, & 9:16.",
+        "description_extra": "Powered by a server managed by @Bytedance. Learn more"
+      }
+    },
+    {
+      "id": "ElevenLabs-Music",
+      "object": "model",
+      "created": 1756499655464,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "ElevenLabs-Music",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:40:55.767422",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": "30000 points/message",
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "30000 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@elevenlabsco",
+        "description": "The ElevenLabs music model is a generative AI system designed to compose original music from text prompts. It allows creators to specify genres, moods, instruments, and structure, producing royalty-free tracks tailored to their needs. The model emphasizes speed, creative flexibility, and high-quality audio output, making it suitable for use in videos, podcasts, games, and other multimedia projects.\nUse `--music_length_ms` to set the length of the song in milliseconds (10,000 to 300,000 ms).\nPrompt input cannot exceed 2,000 characters.",
+        "description_extra": "Powered by a server managed by @elevenlabsco. Learn more"
+      }
+    },
+    {
+      "id": "ElevenLabs-v2.5-Turbo",
       "object": "model",
       "created": 1730153913289,
       "owned_by": "poe",
       "permission": [],
-      "root": "ElevenLabs",
+      "root": "ElevenLabs-v2.5-Turbo",
       "parent": null,
       "architecture": {
         "input_modalities": [
@@ -1577,7 +1953,7 @@
         "modality": "text->audio"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:19:42.115656",
+        "checked_at": "2025-09-20 11:41:02.900558",
         "details": {
           "input_text": "1 point / character",
           "input_image": null,
@@ -1596,7 +1972,48 @@
       "pricing_error": null,
       "bot_info": {
         "creator": "@elevenlabsco",
-        "description": "ElevenLabs' leading text-to-speech technology converts your text into natural-sounding speech, using the Turbo v2.5 model. Simply send a text prompt, and the bot will generate audio using your choice of available voices. If you link a URL or a PDF, it will do its best to read it aloud to you. The overall default voice is Jessica, an American-English female.\n\nAdd --voice \"Voice Name\" to the end of a message (e.g. \"Hello world --voice Eric\") to customize the voice used. Add --language and the two-letter, Language ISO-639-1 code to your message if you notice pronunciation errors; table of ISO-639-1 codes here: https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes (e.g. zh for Chinese, es for Spanish, hi for Hindi)\n\nThe following voices are supported and recommended for each language:\n\nEnglish -- Sarah, George, River, Matilda, Will, Jessica, Brian, Lily, Monika Sogam\nChinese -- James Gao, Martin Li, Will, River\nSpanish -- David Martin, Will, Efrayn, Alejandro, Sara Martin, Regina Martin\nHindi -- Ranga, Niraj, Liam, Raju, Leo, Manu, Vihana Huja, Kanika, River, Monika Sogam, Muskaan, Saanu, Riya, Devi\nArabic -- Bill, Mo Wiseman, Haytham, George, Mona, Sarah, Sana, Laura\nGerman -- Bill, Otto, Leon Stern, Mila, Emilia, Lea, Leonie\nIndonesian -- Jessica, Putra, Mahaputra\nPortuguese -- Will, Muhammad, Onildo, Lily, Jessica, Alice\nVietnamese -- Bill, Liam, Trung Caha, Van Phuc, Ca Dao, Trang, Jessica, Alice, Matilda\nFilipino -- Roger, Brian, Alice, Matilda\nFrench -- Roger, Louis, Emilie\nSwedish -- Will, Chris, Jessica, Charlotte\nTurkish -- Cavit Pancar, Sohbet Adami, Belma, Sultan, Mahidevran\nRomanian -- Eric, Bill, Brian, Charlotte, Lily\nItalian -- Carmelo, Luca, Alice, Lily\nPolish -- Robert, Rob, Eric, Pawel, Lily, Alice\nNorwegian -- Chris, Charlotte\nCzech -- Pawel\nFinnish -- Callum, River\nHungarian -- Brian, Sarah\nJapanese -- Alice",
+        "description": "ElevenLabs' leading text-to-speech technology converts your text into natural-sounding speech, using the Turbo v2.5 model. Simply send a text prompt, and the bot will generate audio using your choice of available voices. If you link a URL or a PDF, it will do its best to read it aloud to you. The overall default voice is Jessica, an American-English female.\n\nAdd --voice \"Voice Name\" to the end of a message (e.g. \"Hello world --voice Eric\") to customize the voice used. Add --language and the two-letter, Language ISO-639-1 code to your message if you notice pronunciation errors; table of ISO-639-1 codes here: https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes (e.g. zh for Chinese, es for Spanish, hi for Hindi)\n\nThe following voices are supported and recommended for each language:\n\nEnglish -- Sarah, George, River, Matilda, Will, Jessica, Brian, Lily, Monika Sogam\nChinese -- James Gao, Martin Li, Will, River\nSpanish -- David Martin, Will, Efrayn, Alejandro, Sara Martin, Regina Martin\nHindi -- Ranga, Niraj, Liam, Raju, Leo, Manu, Vihana Huja, Kanika, River, Monika Sogam, Muskaan, Saanu, Riya, Devi\nArabic -- Bill, Mo Wiseman, Haytham, George, Mona, Sarah, Sana, Laura\nGerman -- Bill, Otto, Leon Stern, Mila, Emilia, Lea, Leonie\nIndonesian -- Jessica, Putra, Mahaputra\nPortuguese -- Will, Muhammad, Onildo, Lily, Jessica, Alice\nVietnamese -- Bill, Liam, Trung Caha, Van Phuc, Ca Dao, Trang, Jessica, Alice, Matilda\nFilipino -- Roger, Brian, Alice, Matilda\nFrench -- Roger, Louis, Emilie\nSwedish -- Will, Chris, Jessica, Charlotte\nTurkish -- Cavit Pancar, Sohbet Adami, Belma, Sultan, Mahidevran\nRomanian -- Eric, Bill, Brian, Charlotte, Lily\nItalian -- Carmelo, Luca, Alice, Lily\nPolish -- Robert, Rob, Eric, Pawel, Lily, Alice\nNorwegian -- Chris, Charlotte\nCzech -- Pawel\nFinnish -- Callum, River\nHungarian -- Brian, Sarah\nJapanese -- Alice\n\nPrompt input cannot exceed 10,000 characters.",
+        "description_extra": "Powered by a server managed by @elevenlabsco. Learn more"
+      }
+    },
+    {
+      "id": "ElevenLabs-v3",
+      "object": "model",
+      "created": 1749151405074,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "ElevenLabs-v3",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:41:09.879420",
+        "details": {
+          "input_text": "2 point / character",
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "Variable points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@elevenlabsco",
+        "description": "ElevenLabs v3 is a cutting-edge text-to-speech model that brings scripts to life with remarkable realism and performance-level control. Unlike traditional TTS systems, it allows creators to shape the emotional tone, pacing, and soundscape of their audio through the use of inline audio tags. These tags are enclosed in square brackets and act as stage directions—guiding how a line is spoken or what sound effects are inserted—without being spoken aloud. This enables rich, expressive narration and dialogue for applications like audiobooks, games, podcasts, and interactive media. Whether you’re aiming for a tense whisper, a sarcastic remark, or a dramatic soundscape full of explosions and ambient effects, v3 gives you granular control directly in the text prompt. This bot will also run text-to-speech on PDF attachments / URL links.\n\nExamples of voice delivery tags include:\n* [whispers] I have to tell you a secret. \n* [angry] That was *never* the plan.\n* [sarcastic] Oh, sure. That’ll totally work.\n* and [laughs] You're hilarious.\n\nExamples of sound effect tags are:\n* [gunshot] Get down!\n* [applause] Thank you, everyone.\n* and [explosion] What was that?!\n\nThese can also be combined.\n\nMultiple speakers can be supported via the parameter control. Dialogue for multiple speakers must follow the format, e.g. for 3 speakers:\n\nSpeaker 1: [dialogue]\nSpeaker 2: [dialogue]\nSpeaker 3: [dialogue]\nSpeaker 1: [dialogue]\nSpeaker 2: [dialogue]\n--speaker_count 3 --voice_1 [voice_1] --voice_2 [voice_2] --voice_3 [voice_3]\n\nThe following voices are supported for dialogue:\nAlexandra - Conversational & Real\nAmy - Young & Natural\nArabella - Mature Female Narrator\nAustin - Good Ol' Texas Boy\nBlondie - Warm & Conversational\nBradford - British Male Storyteller\nCallum - Gravelly Yet Unsettling\nCharlotte - Raspy & Sensual\nChris - Down-to-Earth\nCoco Li - Shanghainese Female\nGaming - Unreal Tonemanagement 2003\nHarry - Animated Warrior\nHayato - Soothing Zen Male\nHope - Upbeat & Clear\nJames - Husky & Engaging\nJames Gao - Calm Chinese Voice\nJane - Professional Audiobook Reader\nJessica - Playful American Female\nJuniper - Grounded Female Professional\nKaro Yang - Youthful Asian Male\nKuon - Acute Fantastic Female\nLaura - Quirky Female Voice\nLiam - Warm, Energetic Youth\nMonika Sogam - Indian-English Accent\nNichalia Schwartz - Engaging Female American\nPriyanka Sogam - Late-Night Radio\nReginald - Brooding, Intense Villain\nShanShan - Young, Energetic Female\nXiao Bai - Shrill & Annoying\n\nPrompt input cannot exceed 2,000 characters.",
         "description_extra": "Powered by a server managed by @elevenlabsco. Learn more"
       }
     },
@@ -1679,6 +2096,47 @@
       "bot_info": {
         "creator": "@fal",
         "description": "Given an image and a mask (separate images), fills in the region of the image given by the mask as per the prompt. The base image should be the first image attached and the black-and-white mask should be the second image; a text prompt is required and should specify what you want the model to inpaint in the white area of the mask.",
+        "description_extra": "Powered by a server managed by @fal. Learn more"
+      }
+    },
+    {
+      "id": "FLUX-Krea",
+      "object": "model",
+      "created": 1753991501514,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "FLUX-Krea",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:41:17.132056",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": "709 points / message",
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "709 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@fal",
+        "description": "FLUX-Krea is a version of FLUX Dev tuned for superior aesthetics. Use \"--aspect\" to select an aspect ratio (e.g --aspect 1:1). Valid aspect ratios are 16:9, 4:3, 1:1, 3:4, 9:16.  Send an image to have this model reimagine/regenerate it via FLUX Krea Redux.",
         "description_extra": "Powered by a server managed by @fal. Learn more"
       }
     },
@@ -2300,7 +2758,7 @@
     {
       "id": "GLM-4.5",
       "object": "model",
-      "created": 1753915796429,
+      "created": 1753966903844,
       "owned_by": "poe",
       "permission": [],
       "root": "GLM-4.5",
@@ -2336,6 +2794,173 @@
         "creator": "@fireworksai",
         "description": "The GLM-4.5 series models are foundation models designed for intelligent agents. GLM-4.5 has 355 billion total parameters with 32 billion active parameters. It unifies reasoning, coding, and intelligent agent capabilities to meet the complex demands of intelligent agent applications.",
         "description_extra": "Powered by a server managed by @fireworksai. Learn more"
+      }
+    },
+    {
+      "id": "GLM-4.5-Air",
+      "object": "model",
+      "created": 1754761253257,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GLM-4.5-Air",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:41:24.078861",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": "200 points/message",
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "200 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@fireworksai",
+        "description": "GLM-4.5-Air is a 106-billion parameter (12B active) foundation model designed for intelligent agent applications, featuring hybrid reasoning capabilities with both thinking and non-thinking modes. It unifies reasoning, coding, and agent functionality while maintaining superior efficiency, achieving competitive performance at 59.8 on industry benchmarks.",
+        "description_extra": "Powered by a server managed by @fireworksai. Learn more"
+      }
+    },
+    {
+      "id": "GLM-4.5-Air-T",
+      "object": "model",
+      "created": 1754691854718,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GLM-4.5-Air-T",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:41:30.998362",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": "80 points/message",
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "80 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@togetherai",
+        "description": "The GLM-4.5 series models are foundation models designed for intelligent agents. GLM-4.5 has 355 billion total parameters with 32 billion active parameters, while GLM-4.5-Air adopts a more compact design with 106 billion total parameters and 12 billion active parameters. GLM-4.5 models unify reasoning, coding, and intelligent agent capabilities to meet the complex demands of intelligent agent applications.",
+        "description_extra": "Powered by a server managed by @togetherai. Learn more"
+      }
+    },
+    {
+      "id": "GLM-4.5-FW",
+      "object": "model",
+      "created": 1753915796429,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GLM-4.5-FW",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:41:37.973595",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": "180 points/message",
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "180 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@fireworksai",
+        "description": "The GLM-4.5 series models are foundation models designed for intelligent agents. GLM-4.5 has 355 billion total parameters with 32 billion active parameters. It unifies reasoning, coding, and intelligent agent capabilities to meet the complex demands of intelligent agent applications.",
+        "description_extra": "Powered by a server managed by @fireworksai. Learn more"
+      }
+    },
+    {
+      "id": "GLM-4.5-Omni",
+      "object": "model",
+      "created": 1755170204843,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GLM-4.5-Omni",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:41:45.255077",
+        "details": {
+          "input_text": "40 points / 1k tokens",
+          "input_image": "75 points / image",
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "100+ points",
+          "Output (text)": "40 points / 1k tokens",
+          "File Processing": "40 points / file",
+          "Document Processing": "100 points / document"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@OpenSourceLab",
+        "description": "GLM-4.5-Omni is based on GLM-4.5-Air, the latest model in the GLM family developed by Zhipu. With 32 billion parameters, it integrates advanced reinforcement learning and refined alignment techniques to deliver precision, contextual awareness, and adaptability.\n\nThis open-source release builds on proven methods from earlier GLM models to provide a powerful alternative to proprietary LLMs. The model features a context window of 131,072 tokens. GLM-4.5-Omni has been optimized for versatility and can process various data types, including text, images, code files, and PDFs (experimental).\n\n➔ Key Features\n- Image analysis: Can analyze images concisely or in detail (GIF, JPG, PNG, JPEG, BMP).\n- Code processing: Can handle code files such as HTML and Java.\n- PDF processing: Analyzes PDF files concisely or in detail.\n- Multilingual proficiency: Exceptional command of Chinese and English, with support for additional languages.\n- Advanced reasoning: Excellent at complex problem-solving, structured logic, code generation, and mathematical tasks.\n- Contextual intelligence: Maintains accuracy and coherence across long conversations.\n- Balanced output: Combines precision, fluency, and factual integrity for both creative and analytical use cases.\n\n➔ Limitations\n- No video analysis: While this bot can receive and store videos, it cannot read video content beyond file size and name.\n- Excel processing: The chatbot can only store JSON, XLSX, and XLS files but cannot analyze or summarize them.\n- Word document analysis: Can only store DOCX files but cannot analyze or summarize them.\n- No PPTX support: The LLM model does not support PowerPoint files.\n\n➔ Use Cases\n- Research & Science: Summarizing academic papers, extracting insights from large PDF collections.\n- Software development: Debugging HTML, assisting with Java projects, or generating functional code snippets.\n- Business applications: Processing contracts, analyzing regulatory documents, or creating structured reports.\n- Cross-language communication: Translating and aligning English and Chinese documents with high accuracy.\n- Image interpretation: Generating precise captions or structured dataset descriptions from image analysis.\n\nTags: AI Model, Multimodal LLM, PDF Analyzer, Code Assistant, HTML Code Generator, GPT Alternative, GPT-5 Comparable, Grok-4-Level Reasoning, Coder AI Tool, Coding Assistant, Image Analysis AI, Open Source LLM, Multilingual AI, Enterprise AI Solution, Research Assistant Bot, Code Debugging AI, Advanced Reasoning LLM, Document Analysis Tool, Contextual Intelligence Model, Open Source Zhipu AI",
+        "description_extra": "Powered by a server managed by @OpenSourceLab. Learn more"
       }
     },
     {
@@ -3122,6 +3747,131 @@
       }
     },
     {
+      "id": "GPT-OSS-120B",
+      "object": "model",
+      "created": 1754470272746,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GPT-OSS-120B",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:41:52.165735",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": "40 points/message",
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "40 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@novitaai",
+        "description": "OpenAI introduces the GPT-OSS-120B, an open-weight reasoning model available under the Apache 2.0 license and OpenAI GPT-OSS usage policy. Developed with feedback from the open-source community, this text-only model is compatible with OpenAI Responses API and is designed to be used within agentic workflows with strong instruction following, tool use like web search and Python code execution, and reasoning capabilities.\n\nThe GPT-OSS-120B model achieves near-parity with OpenAI o4-mini on core reasoning benchmarks, while running efficiently on a single 80 GB GPU. This model also performs strongly on tool use, few-shot function calling, CoT reasoning (as seen in results on the Tau-Bench agentic evaluation suite) and HealthBench (even outperforming proprietary models like OpenAI o1 and GPT‑4o). Bot does not support attachment.",
+        "description_extra": "Powered by a server managed by @novitaai. Learn more"
+      }
+    },
+    {
+      "id": "GPT-OSS-120B-CS",
+      "object": "model",
+      "created": 1754490145525,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GPT-OSS-120B-CS",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:41:59.214935",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": "85 points/message",
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "85 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@cerebrasai",
+        "description": "World’s fastest inference for GPT OSS 120B with Cerebras. OpenAI's GPT-OSS-120B delivers sophisticated chain-of-thought reasoning capabilities in a fully open model. The bot does not accept video, ppt, docx and excel files.",
+        "description_extra": "Powered by a server managed by @cerebrasai. Learn more"
+      }
+    },
+    {
+      "id": "GPT-OSS-120B-Omni",
+      "object": "model",
+      "created": 1755111212755,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GPT-OSS-120B-Omni",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:42:06.318060",
+        "details": {
+          "input_text": "200 points / 1k tokens",
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "150+ points",
+          "Base Cost": "150 points per message",
+          "Output (text)": "200 points / 1k tokens"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@OpenSourceLab",
+        "description": "GPT-OSS-120B von OpenAI bietet fortschrittliche Fähigkeiten für Gedankenketten-Reasoning in einem Open-Weight-Modell. GPT-OSS-120B-Omni wurde mit Community-Feedback entwickelt und unter der Apache 2.0-Lizenz veröffentlicht, was es zu einer vielseitigen und erweiterten Version dieses Modells macht. Es kann auch PDF-Dateien, Word-Dokumente, Markdown-Dateien, Excel-Dateien (nur xlsx) und Bilder analysieren.",
+        "description_extra": "Powered by a server managed by @OpenSourceLab. Learn more"
+      }
+    },
+    {
       "id": "GPT-OSS-120B-T",
       "object": "model",
       "created": 1754415494029,
@@ -3159,6 +3909,88 @@
       "bot_info": {
         "creator": "@togetherai",
         "description": "OpenAI's GPT-OSS-120B delivers sophisticated chain-of-thought reasoning capabilities in a fully open model. Built with community feedback and released under Apache 2.0, this 120B parameter model provides transparency, customization, and deployment flexibility for organizations requiring complete data security & privacy control.",
+        "description_extra": "Powered by a server managed by @togetherai. Learn more"
+      }
+    },
+    {
+      "id": "GPT-OSS-20B",
+      "object": "model",
+      "created": 1754470883542,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GPT-OSS-20B",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:42:13.435657",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": "15 points/message",
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "15 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@novitaai",
+        "description": "OpenAI introduces the GPT-OSS-20B, an open-weight reasoning model available under the Apache 2.0 license and OpenAI GPT-OSS usage policy. Developed with feedback from the open-source community, this text-only model is compatible with OpenAI Responses API and is designed to be used within agentic workflows with strong instruction following, tool use like web search and Python code execution, and reasoning capabilities.\n\nThe GPT-OSS-20B model delivers similar results to OpenAI o3‑mini on common benchmarks and can run on edge devices with just 16 GB of memory, making it ideal for on-device use cases, local inference, or rapid iteration without costly infrastructure. This model also performs strongly on tool use, few-shot function calling, CoT reasoning (as seen in results on the Tau-Bench agentic evaluation suite) and HealthBench (even outperforming proprietary models like OpenAI o1 and GPT‑4o). Bot does not accept attachment.",
+        "description_extra": "Powered by a server managed by @novitaai. Learn more"
+      }
+    },
+    {
+      "id": "GPT-OSS-20B-T",
+      "object": "model",
+      "created": 1754495737130,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "GPT-OSS-20B-T",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:42:20.487062",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": "15 points/message",
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "15 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@togetherai",
+        "description": "OpenAI's GPT-OSS-20B provides powerful chain-of-thought reasoning in an efficient 20B parameter model. Designed for single-GPU deployment while maintaining sophisticated reasoning capabilities, this Apache 2.0 licensed model offers the perfect balance of performance and resource efficiency for diverse applications.",
         "description_extra": "Powered by a server managed by @togetherai. Learn more"
       }
     },
@@ -3539,12 +4371,12 @@
       }
     },
     {
-      "id": "Gemini-2.5-Flash-Lite-Preview",
+      "id": "Gemini-2.5-Flash-Image",
       "object": "model",
-      "created": 1750348180783,
+      "created": 1755817420757,
       "owned_by": "poe",
       "permission": [],
-      "root": "Gemini-2.5-Flash-Lite-Preview",
+      "root": "Gemini-2.5-Flash-Image",
       "parent": null,
       "architecture": {
         "input_modalities": [
@@ -3556,12 +4388,12 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-08 11:38:27.848600",
+        "checked_at": "2025-09-20 11:42:28.289153",
         "details": {
-          "input_text": "1 point/1k tokens",
-          "input_image": "1 point/1k tokens",
-          "bot_message": "12 points/message",
-          "chat_history": "Input rates are applied",
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
           "chat_history_cache_discount": null,
           "total_cost": null,
           "image_output": null,
@@ -3569,15 +4401,60 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "13+ points",
-          "Input (video)": "1 point/second"
+          "initial_points_cost": "989+ points",
+          "Input": "8 points/1k tokens",
+          "Output (text)": "67 points/1k tokens",
+          "Output (image)": "800 points/1k tokens"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@google",
+        "description": "Google DeepMind's Gemini 2.5 Flash model (also known as \"nano banana\"), offers image generation and editing capabilities, state-of-the-art performance in photo-realistic multi-turn edits at exceptional speeds. Supports a maximum input context of 32k tokens.",
+        "description_extra": "Powered by a server managed by @google. Learn more"
+      }
+    },
+    {
+      "id": "Gemini-2.5-Flash-Lite",
+      "object": "model",
+      "created": 1750348180783,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Gemini-2.5-Flash-Lite",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:42:35.660504",
+        "details": {
+          "input_text": "2 points/1k tokens",
+          "input_image": "2 points/1k tokens",
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "30+ points",
+          "Input (video)": "1 point/second",
+          "Output (text)": "8 points/1k tokens"
         }
       },
       "pricing_error": null,
       "bot_info": {
         "creator": "@google",
         "description": "A lightweight Gemini 2.5 Flash reasoning model optimized for cost efficiency and low latency. Supports web search. Supports 1 million tokens of input context. For more complex queries, use https://poe.com/Gemini-2.5-Pro or https://poe.com/Gemini-2.5-Flash\n\nTo instruct the bot to use more thinking effort, add --thinking_budget and a number ranging from 0 to 24,576 to the end of your message.",
-        "description_extra": "Powered by Google: gemini-2.5-flash-lite-preview-06-17. Learn more"
+        "description_extra": "Powered by Google: gemini-2.5-flash-lite. Learn more"
       }
     },
     {
@@ -3623,12 +4500,12 @@
       }
     },
     {
-      "id": "Gemma-2-27b-T",
+      "id": "Gemini-2.5-Pro-Chat",
       "object": "model",
-      "created": 1721258568677,
+      "created": 1758016364467,
       "owned_by": "poe",
       "permission": [],
-      "root": "Gemma-2-27b-T",
+      "root": "Gemini-2.5-Pro-Chat",
       "parent": null,
       "architecture": {
         "input_modalities": [
@@ -3640,27 +4517,28 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:25:06.097695",
+        "checked_at": "2025-09-20 11:42:42.913120",
         "details": {
           "input_text": null,
           "input_image": null,
           "bot_message": null,
           "chat_history": null,
           "chat_history_cache_discount": null,
-          "total_cost": "90 points/message",
+          "total_cost": null,
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "90 points"
+          "initial_points_cost": "200 points",
+          "Message Cost": "200 points"
         }
       },
       "pricing_error": null,
       "bot_info": {
-        "creator": "@togetherai",
-        "description": "Gemma 2 27B Instruct from Google. For most use cases, https://poe.com/Gemini-2.0-Flash or https://poe.com/Gemini-2.0-Pro will produce better results.",
-        "description_extra": "Powered by a server managed by @togetherai. Learn more"
+        "creator": "@OpenSourceLab",
+        "description": "This model is based on Gemini-2.5-Pro from Google and optimized for chat conversations.  It excels in natural language understanding and creative content generation. It doesn't accept file attachments.",
+        "description_extra": "Powered by a server managed by @OpenSourceLab. Learn more"
       }
     },
     {
@@ -3869,6 +4747,135 @@
       }
     },
     {
+      "id": "Grok-4-Fast-Non-Reasoning",
+      "object": "model",
+      "created": 1758058214655,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Grok-4-Fast-Non-Reasoning",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:42:50.193092",
+        "details": {
+          "input_text": "7 points/1k tokens",
+          "input_image": "7 points/image",
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "7+ points",
+          "Output (text)": "17 points/1k tokens",
+          "Cache discount": "75% discount oncached chat"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@xai",
+        "description": "Grok 4 Fast Non-Reasoning is designed for fast, efficient tasks like content generation and web or X search and with a 2M token context window. Combining cutting-edge performance with cost-efficiency, it ensures high-quality results for simpler, everyday applications.",
+        "description_extra": "Powered by a server managed by @xai. Learn more"
+      }
+    },
+    {
+      "id": "Grok-4-Fast-Reasoning",
+      "object": "model",
+      "created": 1758058244361,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Grok-4-Fast-Reasoning",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:42:57.624857",
+        "details": {
+          "input_text": "7 points/1k tokens",
+          "input_image": "7 points/image",
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "7+ points",
+          "Output (text)": "17 points/1k tokens",
+          "Cache discount": "75% discount oncached chat"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@xai",
+        "description": "Grok 4 Fast Reasoning delivers exceptional performance for tasks requiring logical thinking and problem-solving. With a 2M token context window and state-of-the-art cost-efficiency, it handles complex reasoning tasks with accuracy and speed, making advanced AI capabilities accessible to more users.\nTo instruct the bot to use more reasoning effort, add `--reasoning_effort` to the end of your message with one of \"low\" or \"high\".",
+        "description_extra": "Powered by a server managed by @xai. Learn more"
+      }
+    },
+    {
+      "id": "Grok-Code-Fast-1",
+      "object": "model",
+      "created": 1755884835039,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Grok-Code-Fast-1",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:43:05.824362",
+        "details": {
+          "input_text": "7 points/1k tokens",
+          "input_image": "Variable",
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "52+ points",
+          "Output (text)": "50 points/1k tokens",
+          "Cache discount": "90% discount oncached chat"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@xai",
+        "description": "Grok-Code-Fast-1 from xAI is a high-performance, cost-efficient model designed for agentic coding. It offers visible reasoning traces, strong steerability, and supports a 256k context window.",
+        "description_extra": "Powered by a server managed by @xai. Learn more"
+      }
+    },
+    {
       "id": "Hailuo-02",
       "object": "model",
       "created": 1750150747414,
@@ -3908,6 +4915,47 @@
         "creator": "@MiniMax",
         "description": "Hailuo-02, MiniMax's latest video generation model. Generates 6-second, 768p videos, just submit a text prompt or an image with a prompt describing the desired video behavior, and it will create it; typically takes ~5 minutes for generation time. Strong motion effects and ultra-clear quality.",
         "description_extra": "Powered by a server managed by @MiniMax. Learn more"
+      }
+    },
+    {
+      "id": "Hailuo-02-Pro",
+      "object": "model",
+      "created": 1753281868828,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Hailuo-02-Pro",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:43:14.106590",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": null,
+          "video_output": "2667 points / second",
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "16000 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@fal",
+        "description": "MiniMax Hailuo-02 Pro Video Generation model: Advanced image-to-video generation model with 1080p resolution. Send a prompt with an image for image-to-video, and just a prompt for text-to-video generation. Generates 5 second video.",
+        "description_extra": "Powered by a server managed by @fal. Learn more"
       }
     },
     {
@@ -4569,37 +5617,37 @@
       }
     },
     {
-      "id": "Imagen-4-Ultra-Exp",
+      "id": "Imagen-4-Ultra",
       "object": "model",
       "created": 1748061401435,
       "owned_by": "poe",
       "permission": [],
-      "root": "Imagen-4-Ultra-Exp",
+      "root": "Imagen-4-Ultra",
       "parent": null,
       "architecture": {
         "input_modalities": [
           "text"
         ],
         "output_modalities": [
-          "image"
+          "text"
         ],
-        "modality": "text->image"
+        "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:27:47.764398",
+        "checked_at": "2025-09-20 11:43:24.885568",
         "details": {
           "input_text": null,
           "input_image": null,
           "bot_message": null,
           "chat_history": null,
           "chat_history_cache_discount": null,
-          "total_cost": "400 points/message",
+          "total_cost": "800 points/message",
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "400 points"
+          "initial_points_cost": "800 points"
         }
       },
       "pricing_error": null,
@@ -4696,7 +5744,7 @@
     {
       "id": "Kimi-K2",
       "object": "model",
-      "created": 1752519798608,
+      "created": 1754618326493,
       "owned_by": "poe",
       "permission": [],
       "root": "Kimi-K2",
@@ -4731,6 +5779,131 @@
       "bot_info": {
         "creator": "@fireworksai",
         "description": "Kimi K2 is a state-of-the-art mixture-of-experts (MoE) language model with 32 billion activated parameters and 1 trillion total parameters. Trained with the Muon optimizer, Kimi K2 achieves exceptional performance across frontier knowledge, reasoning, and coding tasks while being meticulously optimized for agentic capabilities.",
+        "description_extra": "Powered by a server managed by @fireworksai. Learn more"
+      }
+    },
+    {
+      "id": "Kimi-K2-0905-Chat",
+      "object": "model",
+      "created": 1757145722830,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Kimi-K2-0905-Chat",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:43:32.491761",
+        "details": {
+          "input_text": "300 points/1k tokens",
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "50+ points",
+          "Base Cost": "50 points/message",
+          "Output (text)": "300 points/1k tokens"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@OpenSourceLab",
+        "description": "This server bot is based on Kimi-K2-Instruct-0905 by Moonshot AI. Kimi K2-Instruct-0905 is the latest, most capable version of Kimi-K2. It is a state-of-the-art mixture-of-experts (MoE) language model. The chatbot is optimized for human conversations. Kimi-K2-0905-Chat can't analyze images, PDF files or other attachments.",
+        "description_extra": "Powered by a server managed by @OpenSourceLab. Learn more"
+      }
+    },
+    {
+      "id": "Kimi-K2-0905-T",
+      "object": "model",
+      "created": 1757044663632,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Kimi-K2-0905-T",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:43:40.113597",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": "350 points/message",
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "350 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@togetherai",
+        "description": "The new Kimi K2-0905 model from Moonshot AI features a massive 256,000-token context window, double the length of its predecessor (Kimi K2), along with greatly improved coding abilities and front-end generation accuracy. It boasts 1 trillion total parameters (with 32 billion activated at a time) and claims 100% tool-call success in real-world tests, setting a new bar for open-source AI performance in complex, multi-step tasks",
+        "description_extra": "Powered by a server managed by @togetherai. Learn more"
+      }
+    },
+    {
+      "id": "Kimi-K2-Instruct",
+      "object": "model",
+      "created": 1752519798608,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Kimi-K2-Instruct",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:43:47.818229",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": "200 points/message",
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "200 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@fireworksai",
+        "description": "Kimi K2 is a state-of-the-art mixture-of-experts (MoE) language model with 32 billion activated parameters and 1 trillion total parameters. Trained with the Muon optimizer, Kimi K2 achieves exceptional performance across frontier knowledge, reasoning, and coding tasks while being meticulously optimized for agentic capabilities. Uses the latest September 5th, 2025 snapshot. The updated version has improved coding abilities, agentic tool use, and a longer (256K) context window.",
         "description_extra": "Powered by a server managed by @fireworksai. Learn more"
       }
     },
@@ -5064,6 +6237,56 @@
       }
     },
     {
+      "id": "Linkup-Deep-Search",
+      "object": "model",
+      "created": 1755390159000,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Linkup-Deep-Search",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": null,
+      "pricing_error": "No pricing table found in dialog",
+      "bot_info": {
+        "creator": "@empiriolabsai",
+        "description": "Linkup Deep Search is an AI-powered search bot that continues to search iteratively if it hasn't found sufficient information on the first attempt. Results are slower compared to its Standard search counterpart, but often yield to more comprehensive results.\nLinkup's technology ranks #1 globally for factual accuracy, achieving state-of-the-art scores on OpenAI’s SimpleQA benchmark. Context Window: 100k\nAudio/video files are not supported at this time. \nParameter controls available: \n1. Domain control. To search only within specific domains use --include_domains, To exclude domains from the search result use --exclude_domains, To give higher priority on search use --prioritize_domains.\n2. Date Range: Use --from_date and to_date to select date range search. Use YYYY-MM-DD date format\n3. Content Option: Use --include_image true to include relevant images on search and --image_count (up to 45) to display specific number of images to display.\nLearn more: https://www.linkup.so/",
+        "description_extra": "Powered by a server managed by @empiriolabsai. Learn more"
+      }
+    },
+    {
+      "id": "Linkup-Standard",
+      "object": "model",
+      "created": 1755298530796,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Linkup-Standard",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": null,
+      "pricing_error": "No pricing table found in dialog",
+      "bot_info": {
+        "creator": "@empiriolabsai",
+        "description": "Linkup Standard is an AI-powered search bot that provides detailed overviews and answers sourced from the web, helping you find high-quality information quickly and accurately. Results are faster compared to its Deep search counterpart. Context Window: 100k\nLinkup's technology ranks #1 globally for factual accuracy, achieving state-of-the-art scores on OpenAI’s SimpleQA benchmark. Audio/video files are not supported at this time.\nParameter controls available: \n1. Domain control. To search only within specific domains use --include_domains, To exclude domains from the search result use --exclude_domains, To give higher priority on search use --prioritize_domains.\n2. Date Range: Use --from_date and to_date to select date range search. Use YYYY-MM-DD date format\n3. Content Option: Use --include_image true to include relevant images on search and --image_count (up to 45) to display specific number of images to display.\nLearn more: https://www.linkup.so/",
+        "description_extra": "Powered by a server managed by @empiriolabsai. Learn more"
+      }
+    },
+    {
       "id": "LivePortrait",
       "object": "model",
       "created": 1720556185003,
@@ -5184,170 +6407,6 @@
         "creator": "@togetherai",
         "description": "Llama 3 70B Instruct from Meta. For most use cases, https://poe.com/Llama-3.3-70B will perform better.",
         "description_extra": "Powered by a server managed by @togetherai. Learn more"
-      }
-    },
-    {
-      "id": "Llama-3-70b-Groq",
-      "object": "model",
-      "created": 1713833546209,
-      "owned_by": "poe",
-      "permission": [],
-      "root": "Llama-3-70b-Groq",
-      "parent": null,
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "modality": "text->text"
-      },
-      "pricing": {
-        "checked_at": "2025-08-05 23:29:31.071131",
-        "details": {
-          "input_text": null,
-          "input_image": null,
-          "bot_message": null,
-          "chat_history": null,
-          "chat_history_cache_discount": null,
-          "total_cost": "75 points/message",
-          "image_output": null,
-          "video_output": null,
-          "text_input": null,
-          "per_message": null,
-          "finetuning": null,
-          "initial_points_cost": "75 points"
-        }
-      },
-      "pricing_error": null,
-      "bot_info": {
-        "creator": "@groq",
-        "description": "Llama 3 70b powered by the Groq LPU™ Inference Engine",
-        "description_extra": "Powered by Groq. Learn more"
-      }
-    },
-    {
-      "id": "Llama-3-70b-Inst-FW",
-      "object": "model",
-      "created": 1713475738051,
-      "owned_by": "poe",
-      "permission": [],
-      "root": "Llama-3-70b-Inst-FW",
-      "parent": null,
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "modality": "text->text"
-      },
-      "pricing": {
-        "checked_at": "2025-08-05 23:29:37.905640",
-        "details": {
-          "input_text": null,
-          "input_image": null,
-          "bot_message": null,
-          "chat_history": null,
-          "chat_history_cache_discount": null,
-          "total_cost": "75 points/message",
-          "image_output": null,
-          "video_output": null,
-          "text_input": null,
-          "per_message": null,
-          "finetuning": null,
-          "initial_points_cost": "75 points"
-        }
-      },
-      "pricing_error": null,
-      "bot_info": {
-        "creator": "@fireworksai",
-        "description": "Meta's Llama-3-70B-Instruct hosted by Fireworks AI. For use cases, https://poe.com/Llama-3.3-70B-FW will be better.",
-        "description_extra": "Powered by a server managed by @fireworksai. Learn more"
-      }
-    },
-    {
-      "id": "Llama-3-8B-T",
-      "object": "model",
-      "created": 1713463356287,
-      "owned_by": "poe",
-      "permission": [],
-      "root": "Llama-3-8B-T",
-      "parent": null,
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "modality": "text->text"
-      },
-      "pricing": {
-        "checked_at": "2025-08-05 23:29:44.652580",
-        "details": {
-          "input_text": null,
-          "input_image": null,
-          "bot_message": null,
-          "chat_history": null,
-          "chat_history_cache_discount": null,
-          "total_cost": "15 points/message",
-          "image_output": null,
-          "video_output": null,
-          "text_input": null,
-          "per_message": null,
-          "finetuning": null,
-          "initial_points_cost": "15 points"
-        }
-      },
-      "pricing_error": null,
-      "bot_info": {
-        "creator": "@togetherai",
-        "description": "Llama 3 8B Instruct from Meta.\n\nThe points price is subject to change.",
-        "description_extra": "Powered by a server managed by @togetherai. Learn more"
-      }
-    },
-    {
-      "id": "Llama-3-8b-Groq",
-      "object": "model",
-      "created": 1704930986258,
-      "owned_by": "poe",
-      "permission": [],
-      "root": "Llama-3-8b-Groq",
-      "parent": null,
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "modality": "text->text"
-      },
-      "pricing": {
-        "checked_at": "2025-08-05 23:29:51.416038",
-        "details": {
-          "input_text": null,
-          "input_image": null,
-          "bot_message": null,
-          "chat_history": null,
-          "chat_history_cache_discount": null,
-          "total_cost": "10 points/message",
-          "image_output": null,
-          "video_output": null,
-          "text_input": null,
-          "per_message": null,
-          "finetuning": null,
-          "initial_points_cost": "10 points"
-        }
-      },
-      "pricing_error": null,
-      "bot_info": {
-        "creator": "@groq",
-        "description": "Llama 3 8b powered by the Groq LPU™ Inference Engine",
-        "description_extra": "Powered by Groq. Learn more"
       }
     },
     {
@@ -5720,6 +6779,47 @@
       }
     },
     {
+      "id": "Llama-3.1-8B-CS",
+      "object": "model",
+      "created": 1747179273060,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3.1-8B-CS",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:44:09.622909",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": "30 points/message",
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "30 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@cerebrasai",
+        "description": "World’s fastest inference for Llama 3.1 8B with Cerebras. This Llama 8B instruct-tuned version is fast and efficient. The Llama 3.1 8B is an instruction tuned text only model, optimized for multilingual dialogue use cases. It has demonstrated strong performance compared to leading closed-source models in human evaluations.",
+        "description_extra": "Powered by a server managed by @cerebrasai. Learn more"
+      }
+    },
+    {
       "id": "Llama-3.1-8B-DI",
       "object": "model",
       "created": 1740488781419,
@@ -5884,47 +6984,6 @@
       }
     },
     {
-      "id": "Llama-3.1-Nemotron",
-      "object": "model",
-      "created": 1731442142151,
-      "owned_by": "poe",
-      "permission": [],
-      "root": "Llama-3.1-Nemotron",
-      "parent": null,
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "modality": "text->text"
-      },
-      "pricing": {
-        "checked_at": "2025-08-05 23:31:29.204173",
-        "details": {
-          "input_text": null,
-          "input_image": null,
-          "bot_message": null,
-          "chat_history": null,
-          "chat_history_cache_discount": null,
-          "total_cost": "200 points/message",
-          "image_output": null,
-          "video_output": null,
-          "text_input": null,
-          "per_message": null,
-          "finetuning": null,
-          "initial_points_cost": "200 points"
-        }
-      },
-      "pricing_error": null,
-      "bot_info": {
-        "creator": "@togetherai",
-        "description": "Llama 3.1 Nemotron 70B from Nvidia. Excels in understanding, following instructions, writing and performing coding tasks. Strong reasoning abilities.",
-        "description_extra": "Powered by a server managed by @togetherai. Learn more"
-      }
-    },
-    {
       "id": "Llama-3.3-70B",
       "object": "model",
       "created": 1733509126023,
@@ -5963,6 +7022,89 @@
         "creator": "@togetherai",
         "description": "Llama 3.3 70B – with similar performance as Llama 3.1 405B while being faster and much smaller! Llama 3.3 70B is a new open source model that delivers leading performance and quality across text-based use cases such as synthetic data generation at a fraction of the inference cost, improving over Llama 3.1 70B.",
         "description_extra": "Powered by a server managed by @togetherai. Learn more"
+      }
+    },
+    {
+      "id": "Llama-3.3-70B-CS",
+      "object": "model",
+      "created": 1747179391092,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3.3-70B-CS",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:44:16.961922",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": "260 points/message",
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "260 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@cerebrasai",
+        "description": "World’s fastest inference for Llama 3.3 70B with Cerebras. The Llama 3.3 instruction tuned text only model is optimized for multilingual dialogue use cases and outperforms many of the available open source and closed chat models on common industry benchmarks.",
+        "description_extra": "Powered by a server managed by @cerebrasai. Learn more"
+      }
+    },
+    {
+      "id": "Llama-3.3-70B-Chat",
+      "object": "model",
+      "created": 1757060631504,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3.3-70B-Chat",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:44:24.260194",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "200 points",
+          "Message Cost": "200 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@OpenSourceLab",
+        "description": "This bot is based on Llama-3.3-70B and hosted on groq. Llama-4-Scout-Chat is a chatbot optimized for human chat conversation. It excels at natural language understanding, long conversations, and complex problem-solving. It doesn't accept any type of attachments including video and image files.",
+        "description_extra": "Powered by a server managed by @OpenSourceLab. Learn more"
       }
     },
     {
@@ -6048,12 +7190,12 @@
       }
     },
     {
-      "id": "Llama-3.3-70B-Vers",
+      "id": "Llama-3.3-70B-N",
       "object": "model",
-      "created": 1753869935065,
+      "created": 1754050595700,
       "owned_by": "poe",
       "permission": [],
-      "root": "Llama-3.3-70B-Vers",
+      "root": "Llama-3.3-70B-N",
       "parent": null,
       "architecture": {
         "input_modalities": [
@@ -6065,7 +7207,48 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:31:56.693649",
+        "checked_at": "2025-09-20 11:44:32.200883",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": "45 points/message",
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "45 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@novitaai",
+        "description": "The Meta Llama 3.3 multilingual large language model (LLM) is an instruction tuned generative model in 70B (text in/text out). The Llama 3.3 instruction tuned text only model is optimized for multilingual dialogue use cases and outperforms many of the available open source and closed chat models on common industry benchmarks. The Bot does not currently support attachments.",
+        "description_extra": "Powered by a server managed by @novitaai. Learn more"
+      }
+    },
+    {
+      "id": "Llama-3.3-70B-Omni",
+      "object": "model",
+      "created": 1753869935065,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-3.3-70B-Omni",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:44:39.469428",
         "details": {
           "input_text": "7 points / 1k tokens",
           "input_image": "10 points / image",
@@ -6087,7 +7270,7 @@
       "pricing_error": null,
       "bot_info": {
         "creator": "@OpenSourceLab",
-        "description": "Open-source model suitable for a wide range of tasks like coding, essay writing, grammar correction and world knowledge answers. It supports analysing images, PDFs, SVGs, XLSX, WEBP, HTML and many other file types.",
+        "description": "Open-source model, suitable for a wide range of tasks such as programming, essay writing, grammar correction, and knowledge queries. It supports the analysis of images, PDFs, SVGs, WEBP, HTML, and many other file formats.",
         "description_extra": "Powered by a server managed by @OpenSourceLab. Learn more"
       }
     },
@@ -6338,6 +7521,48 @@
       }
     },
     {
+      "id": "Llama-4-Scout-Chat",
+      "object": "model",
+      "created": 1757833403951,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Llama-4-Scout-Chat",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:44:46.649639",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": null,
+          "Message Cost": "200 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@OpenSourceLab",
+        "description": "This bot is based on llama-4-scout-17b-16e-instruct and hosted on Groq. Llama-4-Scout-Chat is a bot optimized for human chat conversation. It doesn't accept attachments.",
+        "description_extra": "Powered by a server managed by @OpenSourceLab. Learn more"
+      }
+    },
+    {
       "id": "Llama-4-Scout-T",
       "object": "model",
       "created": 1743891662563,
@@ -6499,6 +7724,47 @@
         "creator": "@google",
         "description": "Google DeepMind's Lyria 2 delivers high-quality audio generation, capable of creating diverse soundscapes and musical pieces from text prompts.\n\nAllows users to specify elements to exclude in the audio using the \"--no\" parameter at the end of the prompt. Also supports \"--seed\" for deterministic generation. e.g. \"An energetic electronic dance track --no vocals, slow tempo --seed 123\". Lyria blocks prompts that name specific artists or songs (artist-intent and recitation checks). This bot does not support attachments.",
         "description_extra": "Powered by a server managed by @google. Learn more"
+      }
+    },
+    {
+      "id": "Magistral-Medium-2506-Thinking",
+      "object": "model",
+      "created": 1750288555644,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Magistral-Medium-2506-Thinking",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:44:53.893135",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": "667 points",
+          "finetuning": null,
+          "initial_points_cost": "667 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@empiriolabsai",
+        "description": "Magistral Medium 2506 (thinking) by Empiriolabs.\nMagistral is Mistral's first reasoning model. It is ideal for general purpose use requiring longer thought processing and better accuracy than with non-reasoning LLMs. From legal research and financial forecasting to software development and creative storytelling — this model solves multi-step challenges where transparency and precision are critical. Context Window: 40,000k\nSupported file type uploads: PDF, XLSX, TXT, PNG, JPG, JPEG",
+        "description_extra": "Powered by a server managed by @empiriolabsai. Learn more"
       }
     },
     {
@@ -6752,12 +8018,12 @@
       }
     },
     {
-      "id": "Mistral-NeMo",
+      "id": "Mistral-Medium-3",
       "object": "model",
-      "created": 1747480582228,
+      "created": 1750801647375,
       "owned_by": "poe",
       "permission": [],
-      "root": "Mistral-NeMo",
+      "root": "Mistral-Medium-3",
       "parent": null,
       "architecture": {
         "input_modalities": [
@@ -6769,7 +8035,48 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:33:53.622131",
+        "checked_at": "2025-09-20 11:45:03.164821",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": "500 points",
+          "finetuning": null,
+          "initial_points_cost": "500 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@empiriolabsai",
+        "description": "Mistral Medium 3 is a powerful, cost-efficient language model offering top-tier reasoning and multimodal performance. Context Window: 130k",
+        "description_extra": "Powered by a server managed by @empiriolabsai. Learn more"
+      }
+    },
+    {
+      "id": "Mistral-NeMo-Chat",
+      "object": "model",
+      "created": 1757414396107,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Mistral-NeMo-Chat",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:45:10.394987",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -6782,10 +8089,52 @@
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "25+",
-          "Base request fee": "50",
-          "Input processing": "2 per token",
-          "Output generation": "4 per token"
+          "initial_points_cost": "200 points",
+          "Message Cost": "200 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@OpenSourceLab",
+        "description": "Mistral and NVIDIA collaborated to create a multimodal, open source model. The 12B parameter language model is designed for extensive multilingual support. The server bot facilitates communication across diverse linguistic landscapes. Mistral-NeMo-Chat is fine-tuned for human chat conversation and doesn't accept data attachments like images or PDF-files.\n\nThe supported languages include, but are not limited to, widely spoken languages such as English, French, German, Spanish, Italian and Portuguese. The model also supports Chinese, Japanese, Korean, Arabic, and Hindi. This broad language coverage makes the model a versatile tool for international applications.",
+        "description_extra": "Powered by a server managed by @OpenSourceLab. Learn more"
+      }
+    },
+    {
+      "id": "Mistral-NeMo-Omni",
+      "object": "model",
+      "created": 1747480582228,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Mistral-NeMo-Omni",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:45:17.634970",
+        "details": {
+          "input_text": "500 points/1k tokens",
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "200+ points",
+          "Base Cost": "200 points",
+          "Input (file)": "750 points/1k tokens",
+          "Output (text)": "500 points/1k tokens"
         }
       },
       "pricing_error": null,
@@ -6878,50 +8227,6 @@
       }
     },
     {
-      "id": "Mistral-Small-3.2",
-      "object": "model",
-      "created": 1753262625533,
-      "owned_by": "poe",
-      "permission": [],
-      "root": "Mistral-Small-3.2",
-      "parent": null,
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "modality": "text->text"
-      },
-      "pricing": {
-        "checked_at": "2025-08-05 23:34:14.300020",
-        "details": {
-          "input_text": null,
-          "input_image": null,
-          "bot_message": null,
-          "chat_history": null,
-          "chat_history_cache_discount": null,
-          "total_cost": null,
-          "image_output": null,
-          "video_output": null,
-          "text_input": null,
-          "per_message": null,
-          "finetuning": null,
-          "initial_points_cost": "50+ points",
-          "Base request fee": "50",
-          "Input processing": "2 per token",
-          "Output generation": "4 per token"
-        }
-      },
-      "pricing_error": null,
-      "bot_info": {
-        "creator": "@OpenSourceLab",
-        "description": "Mistral-Small-3.2 is a lightweight open-source language model designed for natural language tasks while being efficient enough to run on modest hardware. Mistral's mission is to democratize artificial intelligence through open source and open science.\n\nDespite its small size, it offers reliable performance across multilingual tasks, programming help, file understanding, and general-purpose reasoning. Perfect for developers, students, analysts, and tech enthusiasts looking for an open, responsive, low-cost AI.\n\nSupported File Types\n- Text & Data: .txt, .md, .csv, .json, .html\n- Code: .js, .css, .py, .java, .sh, .ts, .c, .cpp, .go, .rb\n- Images (via plugins or extensions): .jpg, .png, .svg\n- File size: up to 10MB per file depending on platform setup",
-        "description_extra": "Powered by a server managed by @OpenSourceLab. Learn more"
-      }
-    },
-    {
       "id": "Mixtral8x22b-Inst-FW",
       "object": "model",
       "created": 1712949013942,
@@ -7001,6 +8306,48 @@
         "creator": "@fal",
         "description": "Open state-of-the-art video generation model with high-fidelity motion and strong prompt adherence. Supports both text-to-video and image-to-video.",
         "description_extra": "Powered by a server managed by @fal. Learn more"
+      }
+    },
+    {
+      "id": "OmniHuman",
+      "object": "model",
+      "created": 1753875678785,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "OmniHuman",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:45:24.898204",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "Variable points",
+          "Video Generation": "4667 points / second"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@Bytedance",
+        "description": "OmniHuman, by Bytedance, generates video using an image of a human figure paired with an audio file. It produces vivid, high-quality videos where the character’s emotions and movements maintain a strong correlation with the audio. Send an image including a human figure with a visible face, and an audio, and the bot will return a video. The maximum audio length accepted is 30 seconds.",
+        "description_extra": "Powered by a server managed by @Bytedance. Learn more"
       }
     },
     {
@@ -7165,47 +8512,6 @@
       "bot_info": {
         "creator": "@empiriolabsai",
         "description": "Sonar Deep Research is a research-focused model designed for multi-step retrieval, synthesis, and reasoning across complex topics. It autonomously searches, reads, and evaluates sources, refining its approach as it gathers information. This enables comprehensive report generation across domains like finance, technology, health, and current events. Context Length: 128k",
-        "description_extra": "Powered by a server managed by @empiriolabsai. Learn more"
-      }
-    },
-    {
-      "id": "Perplexity-R1-1776",
-      "object": "model",
-      "created": 1742157434003,
-      "owned_by": "poe",
-      "permission": [],
-      "root": "Perplexity-R1-1776",
-      "parent": null,
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "modality": "text->text"
-      },
-      "pricing": {
-        "checked_at": "2025-08-05 23:35:01.771024",
-        "details": {
-          "input_text": null,
-          "input_image": null,
-          "bot_message": null,
-          "chat_history": null,
-          "chat_history_cache_discount": null,
-          "total_cost": null,
-          "image_output": null,
-          "video_output": null,
-          "text_input": null,
-          "per_message": "580 points",
-          "finetuning": null,
-          "initial_points_cost": "580 points"
-        }
-      },
-      "pricing_error": null,
-      "bot_info": {
-        "creator": "@empiriolabsai",
-        "description": "This model does not search the web. R1 1776 is a DeepSeek-R1 reasoning model that has been post-trained by Perplexity AI to remove Chinese Communist Party censorship. The model provides unbiased, accurate, and factual information while maintaining high reasoning capabilities. Context Length: 128k",
         "description_extra": "Powered by a server managed by @empiriolabsai. Learn more"
       }
     },
@@ -8024,12 +9330,12 @@
       }
     },
     {
-      "id": "Qwen-3-235B-0527-T",
+      "id": "Qwen-3-235B-2507-T",
       "object": "model",
       "created": 1745978851479,
       "owned_by": "poe",
       "permission": [],
-      "root": "Qwen-3-235B-0527-T",
+      "root": "Qwen-3-235B-2507-T",
       "parent": null,
       "architecture": {
         "input_modalities": [
@@ -8041,7 +9347,7 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:37:19.705652",
+        "checked_at": "2025-09-20 11:45:32.111845",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -8065,12 +9371,12 @@
       }
     },
     {
-      "id": "Qwen-72B-T",
+      "id": "Qwen-3-Next-80B-Think",
       "object": "model",
-      "created": 1709166989166,
+      "created": 1757556610505,
       "owned_by": "poe",
       "permission": [],
-      "root": "Qwen-72B-T",
+      "root": "Qwen-3-Next-80B-Think",
       "parent": null,
       "architecture": {
         "input_modalities": [
@@ -8082,36 +9388,36 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:37:26.704047",
+        "checked_at": "2025-09-20 11:45:39.379074",
         "details": {
           "input_text": null,
           "input_image": null,
           "bot_message": null,
           "chat_history": null,
           "chat_history_cache_discount": null,
-          "total_cost": "125 points/message",
+          "total_cost": "100 points/message",
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "125 points"
+          "initial_points_cost": "100 points"
         }
       },
       "pricing_error": null,
       "bot_info": {
-        "creator": "@togetherai",
-        "description": "Qwen1.5 (通义千问1.5) 72B，基于阿里巴巴自研大模型的AI助手，尤其擅长中文对话。\n\nAlibaba's general-purpose model which excels particularly in Chinese-language queries.\n\nThe points price is subject to change.",
-        "description_extra": "Powered by a server managed by @togetherai. Learn more"
+        "creator": "@novitaai",
+        "description": "The Qwen3-Next-80B-Think (with thinking mode enabled by default) is the next-generation foundation model released by Qwen, optimized for extreme context length and large-scale parameter efficiency, also known as \"Qwen3-Next-80B-A3B-Thinking.\" Despite its ultra-efficiency, it outperforms Qwen3-32B on downstream tasks - while requiring less than 1/10 of the inference cost. Moreover, it delivers over 10x higher inference throughput than Qwen3-32B when handling contexts longer than 32k tokens. This is the thinking version of https://poe.com/Qwen3-Next-80B, supports 65k tokens of context. Toggle off the thinking mode using the parameter control or use `--enable_thinking false`. \nBot does accept PDF, DOC and XLSX files and does not accept audio, video and image files.",
+        "description_extra": "Powered by a server managed by @novitaai. Learn more"
       }
     },
     {
-      "id": "Qwen-QwQ-32b-preview",
+      "id": "Qwen-Edit",
       "object": "model",
-      "created": 1733275325628,
+      "created": 1755628345426,
       "owned_by": "poe",
       "permission": [],
-      "root": "Qwen-QwQ-32b-preview",
+      "root": "Qwen-Edit",
       "parent": null,
       "architecture": {
         "input_modalities": [
@@ -8123,36 +9429,36 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:37:33.522406",
+        "checked_at": "2025-09-20 11:45:46.598559",
         "details": {
           "input_text": null,
           "input_image": null,
           "bot_message": null,
           "chat_history": null,
           "chat_history_cache_discount": null,
-          "total_cost": "240 points/message",
-          "image_output": null,
+          "total_cost": null,
+          "image_output": "850 points / message",
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "240 points"
+          "initial_points_cost": "850 points"
         }
       },
       "pricing_error": null,
       "bot_info": {
-        "creator": "@fireworksai",
-        "description": "Qwen QwQ model focuses on advancing AI reasoning, and showcases the power of open models to match closed frontier model performance. QwQ-32B-Preview is an experimental release, comparable to o1 and surpassing GPT-4o and Claude 3.5 Sonnet on analytical and reasoning abilities across GPQA, AIME, MATH-500 and LiveCodeBench benchmarks. Note: This model is served experimentally by Fireworks.AI",
-        "description_extra": "Powered by a server managed by @fireworksai. Learn more"
+        "creator": "@fal",
+        "description": "Image editing model based on Qwen-Image, with superior text editing capabilities.",
+        "description_extra": "Powered by a server managed by @fal. Learn more"
       }
     },
     {
-      "id": "Qwen2-72B-Instruct-T",
+      "id": "Qwen-Image",
       "object": "model",
-      "created": 1718313334490,
+      "created": 1754383747239,
       "owned_by": "poe",
       "permission": [],
-      "root": "Qwen2-72B-Instruct-T",
+      "root": "Qwen-Image",
       "parent": null,
       "architecture": {
         "input_modalities": [
@@ -8164,27 +9470,68 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:37:40.299065",
+        "checked_at": "2025-09-20 11:45:54.026683",
         "details": {
           "input_text": null,
           "input_image": null,
           "bot_message": null,
           "chat_history": null,
           "chat_history_cache_discount": null,
-          "total_cost": "190 points/message",
+          "total_cost": "660 points/message",
           "image_output": null,
           "video_output": null,
           "text_input": null,
           "per_message": null,
           "finetuning": null,
-          "initial_points_cost": "190 points"
+          "initial_points_cost": "660 points"
         }
       },
       "pricing_error": null,
       "bot_info": {
-        "creator": "@togetherai",
-        "description": "Qwen2 (通义千问2) 72B，基于阿里巴巴自研大模型的AI助手，尤其擅长中文对话。\n\nAlibaba's general-purpose model which excels particularly in Chinese-language queries.\n\nThe points price is subject to change.",
-        "description_extra": "Powered by a server managed by @togetherai. Learn more"
+        "creator": "@novitaai",
+        "description": "Qwen-Image, an image generation foundation model in the Qwen series that achieves significant advances in complex text rendering and precise image editing. Experiments show strong general capabilities in both image generation and editing, with exceptional performance in text rendering, especially for Chinese. Prompt input cannot exceed 2,000 characters.",
+        "description_extra": "Powered by a server managed by @novitaai. Learn more"
+      }
+    },
+    {
+      "id": "Qwen-Image-20B",
+      "object": "model",
+      "created": 1754502513609,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Qwen-Image-20B",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:46:01.429203",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": "617 points / message",
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "617 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@fal",
+        "description": "Qwen-Image (20B) is an image generation foundation model in the Qwen series that achieves significant advances in complex text rendering. Use `--aspect` to set the aspect ratio. Valid aspect ratios are 16:9, 4:3, 1:1, 3:4, 9:16. Use `--negative_prompt` to set the negative prompt.",
+        "description_extra": "Powered by a server managed by @fal. Learn more"
       }
     },
     {
@@ -8267,6 +9614,47 @@
         "creator": "@togetherai",
         "description": "Qwen 2.5 VL 72B, a cutting-edge multimodal model from the Qwen Team, excels in visual and video understanding, multilingual text/image processing (including Japanese, Arabic, and Korean), and dynamic agentic reasoning for automation. It supports long-context comprehension (32K tokens)",
         "description_extra": "Powered by a server managed by @togetherai. Learn more"
+      }
+    },
+    {
+      "id": "Qwen3-235B-2507-CS",
+      "object": "model",
+      "created": 1754489704731,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Qwen3-235B-2507-CS",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:46:08.779144",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": "200 points/message",
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "200 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@cerebrasai",
+        "description": "World's fastest inference with Qwen3 235B Instruct (2507) model with Cerebras. It is optimized for general-purpose text generation, including instruction following, logical reasoning, math, code, and tool usage.",
+        "description_extra": "Powered by a server managed by @cerebrasai. Learn more"
       }
     },
     {
@@ -8393,6 +9781,129 @@
       }
     },
     {
+      "id": "Qwen3-235B-A22B-N",
+      "object": "model",
+      "created": 1754050170519,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Qwen3-235B-A22B-N",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:46:16.192715",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": "60 points/message",
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "60 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@novitaai",
+        "description": "It is optimized for general-purpose text generation, including instruction following, logical reasoning, math, code, and tool usage. The model supports a native 262K context length and does not implement \"thinking mode\" (<think> blocks). The Bot does not currently support attachments.\nThis feature the following key enhancements:\n- Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage.\n- Substantial gains in long-tail knowledge coverage across multiple languages.\n- Markedly better alignment with user preferences in subjective and open-ended tasks, enabling more helpful responses and higher-quality text generation.\n- Enhanced capabilities in 256K long-context understanding.",
+        "description_extra": "Powered by a server managed by @novitaai. Learn more"
+      }
+    },
+    {
+      "id": "Qwen3-235B-Think-CS",
+      "object": "model",
+      "created": 1754489842276,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Qwen3-235B-Think-CS",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:46:23.698566",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": "200 points/message",
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "200 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@cerebrasai",
+        "description": "World’s fastest inference for Qwen 235B Thinking (2507) model with Cerebras. Qwen3-235B-A22B-Thinking-2507 is a high-performance, open-weight Mixture-of-Experts (MoE) language model optimized for complex reasoning tasks.. This \"thinking-only\" variant enhances structured logical reasoning, mathematics, science, and long-form generation.",
+        "description_extra": "Powered by a server managed by @cerebrasai. Learn more"
+      }
+    },
+    {
+      "id": "Qwen3-30B-A3B-Instruct",
+      "object": "model",
+      "created": 1754760896852,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Qwen3-30B-A3B-Instruct",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:46:31.244277",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": "50 points/message",
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "50 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@fireworksai",
+        "description": "Qwen3-30B-A3B-Instruct-2507 is a 30-billion parameter general-purpose LLM with 256K token context length. It delivers enhanced instruction following, logical reasoning, mathematics, and multilingual capabilities, with better alignment for subjective and open-ended tasks. Uses the latest July 2025 snapshot.",
+        "description_extra": "Powered by a server managed by @fireworksai. Learn more"
+      }
+    },
+    {
       "id": "Qwen3-32B-CS",
       "object": "model",
       "created": 1747326165823,
@@ -8434,12 +9945,12 @@
       }
     },
     {
-      "id": "Qwen3-Coder-480B-FW",
+      "id": "Qwen3-480B-Coder-CS",
       "object": "model",
-      "created": 1753296529249,
+      "created": 1754489905423,
       "owned_by": "poe",
       "permission": [],
-      "root": "Qwen3-Coder-480B-FW",
+      "root": "Qwen3-480B-Coder-CS",
       "parent": null,
       "architecture": {
         "input_modalities": [
@@ -8451,7 +9962,48 @@
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2025-08-05 23:38:27.785906",
+        "checked_at": "2025-09-20 11:46:39.301222",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": "580 points/message",
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "580 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@cerebrasai",
+        "description": "World’s fastest inference for Qwen Coder 480B with Cerebras. Qwen3-Coder-480B-A35B-Instruct is a Mixture-of-Experts (MoE) code generation model. It is optimized for agentic coding tasks such as function calling, tool use, and long-context reasoning over repositories.",
+        "description_extra": "Powered by a server managed by @cerebrasai. Learn more"
+      }
+    },
+    {
+      "id": "Qwen3-Coder",
+      "object": "model",
+      "created": 1753296529249,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Qwen3-Coder",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:46:46.903642",
         "details": {
           "input_text": null,
           "input_image": null,
@@ -8470,8 +10022,172 @@
       "pricing_error": null,
       "bot_info": {
         "creator": "@fireworksai",
-        "description": "This state-of-the-art 480B-parameter Mixture-of-Experts model (35B active) achieves top-tier performance across multiple agentic coding benchmarks. Supports 256K native context length and scales to 1M tokens with extrapolation. All data provided will not be used in training, and is sent only to Fireworks AI, a US-based company.",
+        "description": "Qwen3 Coder 480B A35B Instruct is a state-of-the-art 480B-parameter Mixture-of-Experts model (35B active) that achieves top-tier performance across multiple agentic coding benchmarks. Supports 256K native context length and scales to 1M tokens with extrapolation. All data provided will not be used in training, and is sent only to Fireworks AI, a US-based company.",
         "description_extra": "Powered by a server managed by @fireworksai. Learn more"
+      }
+    },
+    {
+      "id": "Qwen3-Coder-30B-A3B",
+      "object": "model",
+      "created": 1754760454302,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Qwen3-Coder-30B-A3B",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:46:54.285099",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": "50 points/message",
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "50 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@fireworksai",
+        "description": "Qwen3-Coder-30B-A3B-Instruct is a 30-billion parameter coding-specialized LLM with 256K token context length, enabling repository-scale code understanding. It excels at autonomous coding tasks and agentic workflows, capable of writing, debugging, and executing complex programming operations independently.",
+        "description_extra": "Powered by a server managed by @fireworksai. Learn more"
+      }
+    },
+    {
+      "id": "Qwen3-Coder-480B-N",
+      "object": "model",
+      "created": 1755222889121,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Qwen3-Coder-480B-N",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:47:01.779853",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": "240 points/message",
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "240 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@novitaai",
+        "description": "Qwen3-Coder-480B-A35B-Instruct delivers Claude Sonnet-comparable performance on agentic coding and browser tasks while supporting 256K-1M token long-context processing and multi-platform agentic coding capabilities. The Bot does not currently support attachments.",
+        "description_extra": "Powered by a server managed by @novitaai. Learn more"
+      }
+    },
+    {
+      "id": "Qwen3-Coder-480B-T",
+      "object": "model",
+      "created": 1753465729255,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Qwen3-Coder-480B-T",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:47:09.273946",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": "550 points/message",
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "550 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@togetherai",
+        "description": "Qwen3‑Coder‑480B is a state of the art mixture‑of‑experts (MoE) code‑specialized language model with 480 billion total parameters and 35 billion activated parameters. Qwen3‑Coder delivers exceptional performance across code generation, function calling, tool use, and long‑context reasoning. It natively supports up to 262,144‑token context windows, making it ideal for large repository and multi‑file coding tasks.",
+        "description_extra": "Powered by a server managed by @togetherai. Learn more"
+      }
+    },
+    {
+      "id": "Qwen3-Next-80B",
+      "object": "model",
+      "created": 1757556042820,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Qwen3-Next-80B",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:47:17.093239",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": "80 points/message",
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "80 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@novitaai",
+        "description": "The Qwen3-Next-80B is the next-generation foundation model released by Qwen, optimized for extreme context length and large-scale parameter efficiency, also known as \"Qwen3-Next-80B-A3B.\" Despite its ultra-efficiency, it outperforms Qwen3-32B on downstream tasks - while requiring less than 1/10 of the training cost.\nMoreover, it delivers over 10x higher inference throughput than Qwen3-32B when handling contexts longer than 32k tokens. \nUse `--enable_thinking false` to disable thinking mode before giving an answer.\nThis is the non-thinking version of https://poe.com/Qwen3-Next-80B-Think; supports 65k tokens of context.",
+        "description_extra": "Powered by a server managed by @novitaai. Learn more"
       }
     },
     {
@@ -8888,6 +10604,47 @@
       }
     },
     {
+      "id": "SeedEdit-3.0",
+      "object": "model",
+      "created": 1754502655602,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "SeedEdit-3.0",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:47:31.240050",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": "1000 points / message",
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "1000 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@Bytedance",
+        "description": "SeedEdit 3.0 is an image editing model independently developed by ByteDance. It excels in accurately following editing instructions and effectively preserving image content, especially excelling in handling real images. Please send an image with a prompt to edit the image.",
+        "description_extra": "Powered by a server managed by @Bytedance. Learn more"
+      }
+    },
+    {
       "id": "Seedance-1.0-Lite",
       "object": "model",
       "created": 1750007728801,
@@ -9011,6 +10768,47 @@
       }
     },
     {
+      "id": "Seedream-4.0",
+      "object": "model",
+      "created": 1757430793599,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Seedream-4.0",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:47:40.646075",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": "1000 points / message",
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "1000 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@Bytedance",
+        "description": "Seedream 4.0 is ByteDance's latest and best text-to-image model, capable of impressive high fidelity image generation, with great text-rendering ability. Seedream 4.0 can also take in  multiple images as references and combine them together or edit them to return an output. Pass `--aspect` to set the aspect ratio for the model (One of `16:9`, `4:3`, `1:1`, `3:4`, `9:16`).",
+        "description_extra": "Powered by a server managed by @Bytedance. Learn more"
+      }
+    },
+    {
       "id": "Sketch-to-Image",
       "object": "model",
       "created": 1736176125104,
@@ -9131,6 +10929,91 @@
         "creator": "@fal",
         "description": "Sora is OpenAI's video generation model. Use `--duration` to set the duration of the generated video, and `--resolution` to set the video's resolution (480p, 720p, or 1080p). Set the aspect ratio of the generated video with `--aspect` (Valid aspect ratios are 16:9, 1:1, 9:16). This is a text-to-video model only.",
         "description_extra": "Powered by a server managed by @fal. Learn more"
+      }
+    },
+    {
+      "id": "Stable-Audio-2.0",
+      "object": "model",
+      "created": 1756880177270,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Stable-Audio-2.0",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:47:47.874792",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "21307+ points",
+          "Base Cost": "19267 points",
+          "Per Step Cost": "69 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@empiriolabsai",
+        "description": "Stable Audio 2.0 generates audio up to 3 minutes long from text prompts, supporting text-to-audio and audio-to-audio transformations with customizable settings like duration, steps, CFG scale, and more. It is ideal for creative professionals seeking detailed and extended outputs from simple prompts.\n\nNote: Audio-to-audio mode requires a prompt alongside an uploaded audio file for generation.\n\nParameter controls available:\n1. Basic\n   - Default: text-to-audio (no `--mode` needed)\n   - If transforming uploaded audio: `--mode audio-to-audio`\n   - `--output_format wav` (for high quality, otherwise omit for mp3)\n2. Timing and Randomness \n   - `--duration [1-190 seconds]` controls how long generated audio is\n   - '--random_seed false --seed [0-4294967294]' disables random seed generation\n3. Advanced\n   - `--cfg_scale [1-25]`: Higher = closer to prompt (recommended 7-15)\n   - `--steps [30-100]`: Higher = better quality (recommended 50-80)\n4. Transformation control (only for audio-to-audio)\n   - `--strength [0-1]`: How much to change/transform (0.3-0.7 typical)",
+        "description_extra": "Powered by a server managed by @empiriolabsai. Learn more"
+      }
+    },
+    {
+      "id": "Stable-Audio-2.5",
+      "object": "model",
+      "created": 1756869275249,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Stable-Audio-2.5",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:47:55.086260",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "22667 points",
+          "Generation": "22667 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@empiriolabsai",
+        "description": "Stable Audio 2.5 generates high-quality audio up to 3 minutes long from text prompts, supporting text-to-audio, audio-to-audio transformations, and inpainting with customizable settings like duration, steps, CFG scale, and more. It is Ideal for music production, cinematic sound design, and remixing. \n\nNote: Audio-to-audio and inpaint modes require a prompt alongside an uploaded audio file for generation.\n\nParameter controls available:\n1. Basic\n   - Default: text-to-audio (no `--mode` needed)\n   - If transforming uploaded audio: `--mode audio-to-audio`\n   - If replacing specific parts: `--mode audio-inpaint`\n   - `--output_format wav` (for high quality, otherwise omit for mp3)\n2. Timing and Randomness \n   - `--duration [1-190 seconds]` controls how long generated audio is\n   - '--random_seed false --seed [0-4294967294]' disables random seed generation\n3. Advanced\n   - `--cfg_scale [1-25]`: Higher = closer to prompt (recommended 7-15)\n   - `--steps [4-8]`: Higher = better quality (recommended 6-8)\n4. Transformation control (only for audio-to-audio)\n   - `--strength [0-1]`: How much to change/transform (0.3-0.7 typical)\n5. Inpainting control (only for audio-inpaint)\n   - `--mask_start_time [seconds]` start time of the uploaded audio to modify\n   - `--mask_end_time [seconds]` end time of the uploaded audio to modify",
+        "description_extra": "Powered by a server managed by @empiriolabsai. Learn more"
       }
     },
     {
@@ -9679,6 +11562,94 @@
       }
     },
     {
+      "id": "Vidu",
+      "object": "model",
+      "created": 1756292711841,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Vidu",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:48:02.341982",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "Variable points",
+          "Image to Video Output": "6667 points / video",
+          "Reference to Video Output": "13334 points / video",
+          "Start and End Frame to Video Output": "6667 points / video",
+          "Standard Template to Video Output": "6667 points / video",
+          "Premium Template to Video Output": "10000 points / video",
+          "Advanced Template to Video Output": "16667 points / video"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@fal",
+        "description": "The Vidu Video Generation Bot creates videos using images and text prompts. You can generate videos in four modes: \n(1) Image-to-Video: send 1 image with a prompt, \n(2) Start-to-End Frame: send 2 images with a prompt for transition videos, \n(3) Reference-to-Video: send up to 3 images with the `--reference` flag for guidance, and \n(4) Template-to-Video: use `--template` to apply pre-designed templates (1-3 images required, pricing varies by template). \n\nNumber of images required varies by template: `dynasty_dress` and `shop_frame` accept 1-2 images, `wish_sender` requires exactly 3 images, all other templates accept only 1 image.\n\nThe bot supports aspect ratios `--aspect` (16:9, 1:1, 9:16), set movement amplitude `--movement-amplitude`, and accepts PNG, JPEG, and WEBP formats. \nTasks are mutually exclusive (e.g., you cannot combine start-to-end frame and reference-to-video).\nDuration is limited to 5 seconds.",
+        "description_extra": "Powered by a server managed by @fal. Learn more"
+      }
+    },
+    {
+      "id": "Vidu-Q1",
+      "object": "model",
+      "created": 1755797522439,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Vidu-Q1",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:48:09.738913",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": null,
+          "image_output": null,
+          "video_output": "13334 points / video",
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "13334 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@fal",
+        "description": "The Vidu Q1 Video Generation Bot creates videos using text prompts and images. You can generate videos in three modes: \n(1) Text-to-Video: send a text prompt, \n(2) Image-to-Video: send 1 image with a prompt, and \n(3) Reference-to-Video: send up to 7 images with the `--reference flag`. \n\nNumber of images required varies by template: `dynasty_dress` and `shop_frame` accept 1-2 images, `wish_sender` requires exactly 3 images, all other templates accept only 1 image.\n\nThe bot support aspect ratios `--aspect` (16:9, 1:1, 9:16) and set movement amplitude `--movement-amplitude` that can be customized for text-to-video and reference-to-video tasks. \nTasks are mutually exclusive (e.g., you cannot combine start-to-end frame and reference-to-video generation).\nThe bot accepts PNG, JPEG, and WEBP formats. Duration is limited to 5 seconds.",
+        "description_extra": "Powered by a server managed by @fal. Learn more"
+      }
+    },
+    {
       "id": "Wan-2.1",
       "object": "model",
       "created": 1741001573656,
@@ -9783,6 +11754,47 @@
         "creator": "@poe",
         "description": "Web-enabled assistant bot that searches the internet to inform its responses. Particularly good for queries regarding up-to-date information or specific facts. Powered by Gemini 2.0 Flash.",
         "description_extra": "Powered by Poe and third party model providers. Learn more"
+      }
+    },
+    {
+      "id": "Whisper-V3-Large-T",
+      "object": "model",
+      "created": 1756410173218,
+      "owned_by": "poe",
+      "permission": [],
+      "root": "Whisper-V3-Large-T",
+      "parent": null,
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "modality": "text->text"
+      },
+      "pricing": {
+        "checked_at": "2025-09-20 11:48:23.937958",
+        "details": {
+          "input_text": null,
+          "input_image": null,
+          "bot_message": null,
+          "chat_history": null,
+          "chat_history_cache_discount": null,
+          "total_cost": "100 points/message",
+          "image_output": null,
+          "video_output": null,
+          "text_input": null,
+          "per_message": null,
+          "finetuning": null,
+          "initial_points_cost": "100 points"
+        }
+      },
+      "pricing_error": null,
+      "bot_info": {
+        "creator": "@togetherai",
+        "description": "Whisper v3 Large is a state-of-the-art automatic speech recognition and translation model developed by OpenAI, offering 10–20% lower error rates than its predecessor, Whisper large-v2. It supports transcription and translation across numerous languages, with improvements in handling diverse audio inputs, including noisy conditions and long-form audio files.",
+        "description_extra": "Powered by a server managed by @togetherai. Learn more"
       }
     },
     {
