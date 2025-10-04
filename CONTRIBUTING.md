@@ -1,6 +1,6 @@
 # Contributing to Virginia Clemm Poe
 
-Thank you for your interest in contributing to Virginia Clemm Poe! This document provides guidelines and information for contributors.
+This document provides guidelines and information for contributors.
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@ Thank you for your interest in contributing to Virginia Clemm Poe! This document
 
 ## Code of Conduct
 
-Please be respectful and professional in all interactions. We welcome contributions from developers of all skill levels and backgrounds.
+Be respectful and professional. We welcome contributions from developers of all skill levels and backgrounds.
 
 ## Getting Started
 
@@ -23,7 +23,7 @@ Please be respectful and professional in all interactions. We welcome contributi
 
 - Python 3.12 or higher
 - `uv` package manager
-- Chrome or Chromium browser (for web scraping functionality)
+- Chrome or Chromium browser (for web scraping)
 - Poe API key for testing
 
 ### Fork and Clone
@@ -44,7 +44,7 @@ Please be respectful and professional in all interactions. We welcome contributi
    uv sync
    ```
 
-2. Set up environment variables:
+2. Set environment variables:
    ```bash
    export POE_API_KEY=your_poe_api_key_here
    ```
@@ -66,31 +66,31 @@ python -m pytest
 
 ### Python Code Standards
 
-We follow modern Python best practices:
+Follow standard Python practices:
 
-- **PEP 8**: Standard Python formatting and naming conventions
-- **PEP 20**: Zen of Python - simple, explicit, readable code
-- **PEP 257**: Docstring conventions with comprehensive documentation
-- **Type hints**: Use Python 3.12+ type hints throughout
-- **Modern syntax**: f-strings, pattern matching, pathlib
+- **PEP 8**: Formatting and naming conventions
+- **PEP 20**: Simple, explicit, readable code
+- **PEP 257**: Docstring conventions
+- **Type hints**: Required for Python 3.12+
+- **Modern syntax**: Use f-strings, pattern matching, pathlib
 
 ### Code Quality Requirements
 
 #### Docstrings
-- All public functions, classes, and methods must have comprehensive docstrings
-- Include purpose, parameters, return values, examples, and notes
-- Complex logic should be thoroughly documented with workflow explanations
+- All public functions, classes, and methods require docstrings
+- Include purpose, parameters, return values, and examples
+- Document complex logic clearly
 
 #### Error Handling
-- Use proper exception chaining with `raise ... from e`
-- Implement graceful fallbacks and recovery strategies
+- Use exception chaining with `raise ... from e`
+- Implement graceful fallbacks
 - Provide clear error messages with context
 
 #### Function Design
-- Keep functions focused and under 50 lines when possible
+- Keep functions under 50 lines when possible
 - Use the Extract Method pattern for complex operations
 - Follow Single Responsibility Principle
-- Apply DRY principle for repeated logic
+- Avoid repetition with DRY principle
 
 #### Variable Naming
 - Use descriptive names: `collection_data` instead of `data`
@@ -206,8 +206,8 @@ def test_search_models_returns_matching_results():
 
 - All PRs require at least one review
 - Address review feedback promptly
-- Maintain a collaborative and respectful tone
-- Be open to suggestions and improvements
+- Maintain a collaborative tone
+- Be open to suggestions
 
 ## Issue Reporting
 
@@ -273,4 +273,4 @@ Use appropriate labels:
 - **Discussions**: Use GitHub Discussions for broader topics
 - **Bug Reports**: Create detailed issues with reproduction steps
 
-Thank you for contributing to Virginia Clemm Poe! Your contributions help make this tool more useful for the community.
+Your contributions help make this tool more useful for the community.

@@ -1,8 +1,6 @@
-# this_file: WORKFLOWS.md
-
 # Virginia Clemm Poe - Workflow Guide
 
-This guide provides step-by-step workflows for common Virginia Clemm Poe use cases. Each workflow includes commands, expected outputs, and troubleshooting tips.
+Step-by-step workflows for common Virginia Clemm Poe use cases. Each includes commands, expected outputs, and troubleshooting tips.
 
 ## Table of Contents
 
@@ -579,7 +577,7 @@ asyncio.run(analyze_models_parallel())
 
 ## Best Practices
 
-1. **Always check status before updates**: Run `virginia-clemm-poe status` to avoid unnecessary updates
+1. **Check status before updates**: Run `virginia-clemm-poe status` to avoid unnecessary updates
 2. **Use selective updates**: Use `--pricing` or `--info` flags for faster partial updates
 3. **Monitor cache performance**: Regular `cache --stats` checks ensure optimal performance
 4. **Automate maintenance**: Set up weekly cron jobs or CI pipelines for data freshness

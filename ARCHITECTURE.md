@@ -1,5 +1,3 @@
-# this_file: ARCHITECTURE.md
-
 # Virginia Clemm Poe - Architecture Guide
 
 This document describes the architecture of Virginia Clemm Poe, including module relationships, data flow, integration patterns, and design decisions.
@@ -235,7 +233,7 @@ class BrowserManager:
 1. **Reduced Maintenance**: ~500 lines of browser code eliminated
 2. **Battle-Tested**: Used across multiple projects
 3. **Regular Updates**: Browser compatibility maintained externally
-4. **Focused Development**: Can focus on core Poe functionality
+4. **Focused Development**: Core Poe functionality remains the priority
 
 ## Extension Points
 

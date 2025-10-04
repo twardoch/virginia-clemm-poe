@@ -1,0 +1,5 @@
+/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/ARCHITECTURE.md
+/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/BALANCE_FEATURE.md
+/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/CONTRIBUTING.md
+/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/README.md
+/Users/adam/Developer/vcs/github.twardoch/pub/virginia-clemm-poe/WORKFLOWS.md

@@ -40,7 +40,13 @@ from .utils.memory import MemoryManagedOperation
 class ModelUpdater:
     """Updates Poe model data with pricing information."""
 
-    def __init__(self, api_key: str, debug_port: int = DEFAULT_DEBUG_PORT, verbose: bool = False, session_manager: PoeSessionManager | None = None):
+    def __init__(
+        self,
+        api_key: str,
+        debug_port: int = DEFAULT_DEBUG_PORT,
+        verbose: bool = False,
+        session_manager: PoeSessionManager | None = None,
+    ):
         self.api_key = api_key
         self.debug_port = debug_port
         self.verbose = verbose
@@ -766,75 +772,69 @@ class ModelUpdater:
             json.dump(collection.dict(), f, indent=2, ensure_ascii=False, default=str)
 
         logger.info(f"✓ Saved {len(collection.data)} models to {DATA_FILE_PATH}")
-    
+
     async def get_account_balance(self) -> dict[str, Any]:
         """Get Poe account balance using stored session cookies.
-        
+
         Returns:
             Dictionary with balance information including compute points
-            
+
         Raises:
             AuthenticationError: If no valid cookies are available
         """
         return await self.session_manager.get_account_balance(
             use_api_key=False,  # Prefer cookies for more detailed info
-            api_key=self.api_key
+            api_key=self.api_key,
         )
-    
+
     async def extract_cookies_from_browser(self, page: Page) -> dict[str, str]:
         """Extract Poe cookies from an active browser session.
-        
+
         This is designed to work with PlaywrightAuthor's browser session.
-        
+
         Args:
             page: Active Playwright page from PlaywrightAuthor
-            
+
         Returns:
             Dictionary of extracted cookies
         """
         return await self.session_manager.extract_from_existing_playwright_session(page)
-    
+
     async def login_and_extract_cookies(self) -> dict[str, str]:
         """Open browser for manual Poe login and extract cookies.
-        
+
         Returns:
             Dictionary of extracted cookies after successful login
         """
         # Get a browser from the pool for login
-        pool = await get_global_pool(
-            max_size=1,
-            debug_port=self.debug_port,
-            verbose=self.verbose
-        )
-        
+        pool = await get_global_pool(max_size=1, debug_port=self.debug_port, verbose=self.verbose)
+
         async with pool.acquire_page() as page:
             # Navigate to Poe login
             await page.goto("https://poe.com/login")
             logger.info("Please log in to Poe.com in the browser window...")
-            
+
             # Wait for login (detect by user menu button)
             await page.wait_for_selector(
                 "button[aria-label='User menu']",
-                timeout=300000  # 5 minutes
+                timeout=300000,  # 5 minutes
             )
-            
+
             logger.info("Login successful, extracting cookies...")
-            cookies = await self.extract_cookies_from_browser(page)
-            
-        return cookies
-    
+            return await self.extract_cookies_from_browser(page)
+
     async def get_enhanced_model_data(self) -> ModelCollection | None:
         """Get model data with enhanced information using poe-api-wrapper.
-        
+
         This uses the faster poe-api-wrapper library if available and cookies are set.
-        
+
         Returns:
             Enhanced model collection or None if not available
         """
         if not self.session_manager.has_valid_cookies():
             logger.warning("No valid cookies for enhanced model data")
             return None
-        
+
         try:
             # Try to use poe-api-wrapper for faster access
             client = await self.session_manager.use_with_poe_api_wrapper()
@@ -842,12 +842,12 @@ class ModelUpdater:
                 # Get available bots with enhanced info
                 bots = await client.get_available_bots(get_all=True)
                 logger.info(f"Retrieved {len(bots)} bots via poe-api-wrapper")
-                
+
                 # Could enhance our model data with this information
                 # This is where we'd merge the bot data with our models
-                
+
             return None
-            
+
         except Exception as e:
             logger.error(f"Failed to get enhanced model data: {e}")
             return None

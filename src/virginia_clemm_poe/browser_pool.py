@@ -8,6 +8,7 @@ timeout handling and graceful error recovery.
 """
 
 import asyncio
+import builtins
 import time
 from collections import deque
 from collections.abc import AsyncIterator
@@ -155,7 +156,7 @@ class BrowserConnection:
         try:
             # Mark as unhealthy to prevent reuse
             self.is_healthy = False
-            
+
             # Close browser context first (will close all pages)
             if self.context:
                 try:
@@ -166,19 +167,20 @@ class BrowserConnection:
                             # Add dialog handler to suppress errors
                             async def handle_dialog(dialog: Dialog) -> None:
                                 await dialog.dismiss()
+
                             page.on("dialog", handle_dialog)
-                            
+
                             # Wait for network to settle
                             await page.wait_for_load_state("networkidle", timeout=2000)
                         except:
                             pass  # Continue with cleanup
-                    
+
                     # Small delay before context close
                     await asyncio.sleep(0.5)
                     await self.context.close()
                 except Exception as e:
                     logger.debug(f"Error closing context: {e}")
-            
+
             # Now close the browser manager
             await self.manager.close()
         except Exception as e:
@@ -451,17 +453,18 @@ class BrowserPool:
                 # Add dialog handler to suppress any dialogs during close
                 async def handle_dialog(dialog: Dialog) -> None:
                     await dialog.dismiss()
+
                 page.on("dialog", handle_dialog)
-                
+
                 # Wait for network to settle before closing
                 try:
                     await page.wait_for_load_state("networkidle", timeout=3000)
                 except:
                     pass  # Ignore timeout, proceed with close
-                
+
                 # Small delay for JavaScript cleanup
                 await asyncio.sleep(0.3)
-                
+
                 # Now close the page
                 await with_timeout(page.close(), 10.0, "page_close")
             except Exception as e:
@@ -589,14 +592,13 @@ class BrowserPool:
                     # Add dialog handler
                     async def handle_dialog(dialog: Dialog) -> None:
                         await dialog.dismiss()
+
                     page.on("dialog", handle_dialog)
-                    
+
                     # Wait for network to settle
-                    try:
+                    with suppress(builtins.BaseException):
                         await page.wait_for_load_state("networkidle", timeout=2000)
-                    except:
-                        pass
-                    
+
                     await asyncio.sleep(0.2)
                     await with_timeout(page.close(), 5.0, "page_cleanup")
                 except Exception as e:
