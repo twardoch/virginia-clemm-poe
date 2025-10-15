@@ -2,22 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 1900 points/message |
-| Initial Points Cost | 1900 points |
-
-**Last Checked:** 2025-09-20 12:19:56.530636
-
-
-## Bot Information
-
-**Creator:** @ideogramai
-
-**Description:** Latest image model from Ideogram, with industry leading capabilities in generating realistic images, graphic design, typography, and more. Allows users to specify the aspect ratio of the image using the "--aspect" parameter at the end of the prompt (e.g. "Tall trees, daylight --aspect 9:16"). Valid aspect ratios are 10:16, 16:10, 9:16, 16:9, 3:2, 2:3, 4:3, 3:4, 1:1. "--style" parameter can be defined to specify the style of image generated(GENERAL, REALISTIC, DESIGN, RENDER_3D, ANIME). Powered by Ideogram.
-
-**Extra:** Powered by a server managed by @ideogramai. Learn more
-
+| Request | $0.057/request |
 
 ## Architecture
 
@@ -39,3 +28,5 @@
 **Owned By:** poe
 
 **Root:** Ideogram-v2
+
+**API Last Updated:** 2025-10-15 16:36:09.633273

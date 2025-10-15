@@ -2,24 +2,12 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Input Text | 4 points/1k tokens |
-| Input Image | Variable |
-| Initial Points Cost | 9+ points |
-| Output (Text) | 10 points/1k tokens |
-
-**Last Checked:** 2025-09-20 12:28:38.604699
-
-
-## Bot Information
-
-**Creator:** @mistral
-
-**Description:** Mistral Small 3 is a pre-trained and instructed model catered to the ‘80%’ of generative AI tasks--those that require robust language and instruction following performance, with very low latency. Released under an Apache 2.0 license and comparable to Llama-3.3-70B and Qwen2.5-32B-Instruct.
-
-**Extra:** Powered by Mistral. Learn more
-
+| Prompt | $1.2E-7/token |
+| Completion | $3.0E-7/token |
 
 ## Architecture
 
@@ -41,3 +29,5 @@
 **Owned By:** poe
 
 **Root:** Mistral-Small-3
+
+**API Last Updated:** 2025-10-15 16:36:09.636575

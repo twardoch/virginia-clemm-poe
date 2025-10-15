@@ -34,18 +34,18 @@ pip install virginia-clemm-poe
 from virginia_clemm_poe import api
 
 # Search for models
-models = api.search_models("claude")
+models = api.search_bots("claude")
 for model in models:
     print(f"{model.id}: {model.get_primary_cost()}")
 
 # Get model by ID
-model = api.get_model_by_id("claude-3-opus")
+model = api.get_bot_by_id("claude-3-opus")
 if model and model.pricing:
     print(f"Cost: {model.get_primary_cost()}")
     print(f"Updated: {model.pricing.checked_at}")
 
 # Get all models with pricing
-priced_models = api.get_models_with_pricing()
+priced_models = api.get_bots_with_pricing()
 print(f"Found {len(priced_models)} models with pricing")
 ```
 
@@ -159,36 +159,36 @@ Benefits:
 
 ### Core Functions
 
-#### `api.search_models(query: str) -> List[PoeModel]`
+#### `api.search_bots(query: str) -> List[PoeBot]`
 
 Search for models by ID or name (case-insensitive).
 
-#### `api.get_model_by_id(model_id: str) -> Optional[PoeModel]`
+#### `api.get_bot_by_id(model_id: str) -> Optional[PoeBot]`
 
 Get a specific model by its ID.
 
-#### `api.get_all_models() -> List[PoeModel]`
+#### `api.get_all_bots() -> List[PoeBot]`
 
 Get all available models.
 
-#### `api.get_models_with_pricing() -> List[PoeModel]`
+#### `api.get_bots_with_pricing() -> List[PoeBot]`
 
 Get all models that have pricing information.
 
-#### `api.get_models_needing_update() -> List[PoeModel]`
+#### `api.get_bots_needing_update() -> List[PoeBot]`
 
 Get models that need pricing update.
 
-#### `api.reload_models() -> ModelCollection`
+#### `api.reload_bots() -> BotCollection`
 
 Force reload models from disk.
 
 ### Data Models
 
-#### PoeModel
+#### PoeBot
 
 ```python
-class PoeModel:
+class PoeBot:
     id: str
     created: int
     owned_by: str
@@ -358,7 +358,7 @@ This package uses:
 from virginia_clemm_poe import api
 
 # Get a specific model
-model = api.get_model_by_id("claude-3-opus")
+model = api.get_bot_by_id("claude-3-opus")
 if model:
     print(f"Model: {model.id}")
     print(f"Input modalities: {model.architecture.input_modalities}")
@@ -368,7 +368,7 @@ if model:
         print(f"Last updated: {model.pricing.checked_at}")
 
 # Search for models
-gpt_models = api.search_models("gpt")
+gpt_models = api.search_bots("gpt")
 for model in gpt_models:
     print(f"- {model.id}: {model.architecture.modality}")
 ```
@@ -379,15 +379,15 @@ for model in gpt_models:
 from virginia_clemm_poe import api
 
 # Get all models with pricing
-priced_models = api.get_models_with_pricing()
+priced_models = api.get_bots_with_pricing()
 print(f"Models with pricing: {len(priced_models)}")
 
 # Get models needing pricing update
-need_update = api.get_models_needing_update()
+need_update = api.get_bots_needing_update()
 print(f"Models needing update: {len(need_update)}")
 
 # Get models with specific modality
-all_models = api.get_all_models()
+all_models = api.get_all_bots()
 text_to_image = [m for m in all_models if m.architecture.modality == "text->image"]
 print(f"Text-to-image models: {len(text_to_image)}")
 ```
@@ -398,7 +398,7 @@ print(f"Text-to-image models: {len(text_to_image)}")
 from virginia_clemm_poe import api
 
 # Get pricing details for a model
-model = api.get_model_by_id("claude-3-haiku")
+model = api.get_bot_by_id("claude-3-haiku")
 if model and model.pricing:
     details = model.pricing.details
 

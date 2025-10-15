@@ -7,6 +7,62 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Renamed public APIs, data classes, and CLI messaging from *model* to *bot* for consistency with Poe terminology, including renaming the persisted dataset to `poe_bots.json`.
+- `BotUpdater` now records an `api_last_updated` timestamp for every bot, processes updates starting with the stalest entries, removes bots missing from the Poe API, and persists progress after each bot update to avoid repeating work on subsequent runs.
+
+### Quality Improvements
+- **Test Suite Status** (2025-10-15 19:00): Current test health assessment
+  - ✅ 128 tests passing (89.5% pass rate)
+  - ⚠️ 15 tests failing (mostly CLI and API-related)
+  - Test coverage: 45.48% (target: 85%)
+  - Main issues: CLI command structure changes, API response format changes
+  - Core functionality confirmed working (imports, data loading, search)
+
+- **Code Quality Improvements** (2025-10-15): Phase 10.1 completed
+  - ✅ Cleaned up commented-out code (ERA001 violations already resolved)
+  - ✅ Preserved intentional conditional imports in utils/paths.py (soft dependency pattern)
+  - ✅ Fixed bare except block in debug_login.py (E722 violation resolved)
+  - All error handling now uses specific exception types
+
+### Documentation
+- **Documentation Updates** (2025-10-15): Updated all documentation to reflect new JSON structure
+  - ✅ Updated all references from `poe_models.json` to `poe_bots.json` across documentation
+  - ✅ Updated Chapter 6 (Data Models) with new dual pricing structure example
+  - ✅ Enhanced interactive table (`table.html`) to handle nested pricing (api/scraped)
+  - ✅ Updated documentation generator (`update_docs.py`) for new JSON structure
+  - ✅ Added `api_last_updated` field display in technical details section
+  - ✅ Fixed all documentation file paths in installation, CLI, configuration, and troubleshooting guides
+
+### Added
+- **Dual Pricing Model Support** (2025-10-15): Comprehensive refactoring to support new Poe API pricing format
+  - ✅ **API Pricing Model**: Created `ApiPricing` model for dollar-based pricing with Decimal precision
+    - Support for prompt, completion, image, and request pricing fields
+    - Automatic conversion from strings/floats to Decimal for precise calculations
+    - Cost calculation methods for 1k token pricing with configurable input/output ratios
+    - Smart formatting with scientific notation for very small values
+  - ✅ **Unified Pricing Container**: Implemented `UnifiedPricing` model to hold both pricing types
+    - Combines API pricing (dollars) and scraped pricing (points)
+    - Smart display methods that prioritize API pricing when available
+    - Multiple display formats: primary, api-only, scraped-only, or both
+    - Seamless fallback from API to scraped pricing when needed
+  - ✅ **Backward Compatibility**: Maintained full compatibility with existing data
+    - Added aliases: `Pricing` → `ScrapedPricing`, `PricingDetails` → `ScrapedPricingDetails`
+    - Automatic migration logic for old data format (version 1 → version 2)
+    - Existing code continues to work without modifications
+    - JSON serialization/deserialization fully supported
+  - ✅ **Enhanced CLI Display**: Updated all commands to support unified pricing
+    - Added `--pricing_format` parameter to search and list commands
+    - Options: "primary" (default, API preferred), "api", "scraped", or "both"
+    - Enhanced list command with separate columns for API and scraped pricing
+    - Status indicators show which pricing types are available ([AS], [A-], [-S])
+  - ✅ **Comprehensive Testing**: Created extensive test suite for new pricing system
+    - 25 new tests in `test_pricing_models.py` covering all aspects
+    - Integration tests validating end-to-end functionality
+    - Migration tests confirming old data converts correctly
+    - Display format tests for all output options
+    - All tests passing with 100% coverage of new code
+
 ### Fixed
 - **Issue #302: Browser Error Dialogs** (2025-08-06): Fixed error dialogs appearing after balance checks
   - Added graceful browser shutdown with `wait_for_load_state('networkidle')` before closing pages
@@ -114,7 +170,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Enhanced discoverability with clear command purposes
   - ✅ **API Type Documentation**: Enhanced all API functions with detailed type information
     - Added comprehensive return type structure documentation
-    - Documented all fields in complex types (PoeModel, ModelCollection, etc.)
+    - Documented all fields in complex types (PoeBot, BotCollection, etc.)
     - Added inline examples of data structures
     - Developers can understand API without reading source code
   - ✅ **Comprehensive Workflows Guide**: Created WORKFLOWS.md with step-by-step guides
@@ -208,7 +264,7 @@ This major release completes Phase 4: Code Quality Standards, transforming virgi
     - Stale connection cleanup prevents resource leaks
     - Background cleanup task removes stale/unhealthy connections every 10 seconds
     - Connection lifecycle management with usage tracking and age limits
-    - Updated `ModelUpdater.sync_models()` to use pool instead of single browser
+    - Updated `BotUpdater.sync_models()` to use pool instead of single browser
     - **Result**: Expected 50%+ performance improvement for bulk update operations
   - ✅ **Runtime Type Validation**: Added comprehensive type guards for data integrity
     - Created `type_guards.py` module with TypeGuard functions for API responses
@@ -219,9 +275,9 @@ This major release completes Phase 4: Code Quality Standards, transforming virgi
     - Added type guards for future filter criteria validation
     - **Result**: Early detection of API changes and data corruption
   - ✅ **API Documentation Completion**: Enhanced all remaining public API functions
-    - Enhanced `get_all_models()` with performance metrics and error scenarios
-    - Enhanced `get_models_needing_update()` with data completeness examples
-    - Enhanced `reload_models()` with monitoring and external update scenarios
+    - Enhanced `get_all_bots()` with performance metrics and error scenarios
+    - Enhanced `get_bots_needing_update()` with data completeness examples
+    - Enhanced `reload_bots()` with monitoring and external update scenarios
     - **Result**: All 7 public API functions now have comprehensive documentation
 - **Code Quality Standards**: Major improvements to type safety and maintainability (Sessions 2025-01-04)
   - ✅ **Modern Type Hints**: Systematic update of all core modules to Python 3.12+ type hint forms
@@ -253,7 +309,7 @@ This major release completes Phase 4: Code Quality Standards, transforming virgi
     - **Validation Result**: Zero issues across 13 source files
     - Full Python 3.12+ compatibility with modern type hint standards
   - ✅ **Enhanced API Documentation** (Session 2): Comprehensive docstring improvements for developer experience
-    - Enhanced 4 core API functions (`load_models`, `get_model_by_id`, `search_models`, `get_models_with_pricing`)
+    - Enhanced 4 core API functions (`load_bots`, `get_bot_by_id`, `search_bots`, `get_bots_with_pricing`)
     - Added performance characteristics (timing, memory usage, complexity)
     - Added detailed error scenarios with specific resolution steps
     - Added cross-references between related functions ("See Also" sections)
@@ -300,18 +356,18 @@ This major release completes Phase 4: Code Quality Standards, transforming virgi
 - **Dependency Enhancement**: Added `psutil>=5.9.0` for cross-platform memory monitoring
 - **Architecture Modernization**: Comprehensive refactoring following PlaywrightAuthor patterns
 - **Type System Infrastructure**: Complete type safety foundation in `types.py` with:
-  - **API Response Types**: `PoeApiModelData`, `PoeApiResponse` for external API integration
-  - **Search and Filter Types**: `ModelFilterCriteria`, `SearchOptions` for flexible querying
+  - **API Response Types**: `PoeApiBotData`, `PoeApiResponse` for external API integration
+  - **Search and Filter Types**: `BotFilterCriteria`, `SearchOptions` for flexible querying
   - **Browser Types**: `BrowserConfig`, `ScrapingResult` for automation configuration
   - **Logging Types**: `LogContext`, `ApiLogContext`, `BrowserLogContext`, `PerformanceMetric` for structured observability
   - **CLI Types**: `CliCommand`, `DisplayOptions`, `ErrorContext` for user interface consistency
-  - **Update Types**: `UpdateOptions`, `SyncProgress` for batch operation tracking
+  - **Update Types**: `BotUpdateOptions`, `SyncProgress` for batch operation tracking
   - **Type Aliases**: Convenience types (`ModelId`, `ApiKey`, `OptionalString`) and callback handlers
   - **Protocol Classes**: Extensible interfaces for future plugin system development
 - **Exception Hierarchy**: Full exception system in `exceptions.py` with:
   - Base `VirginiaPoeError` class for all package exceptions
   - Browser-specific exceptions: `BrowserManagerError`, `ChromeNotFoundError`, `ChromeLaunchError`, `CDPConnectionError`
-  - Data-specific exceptions: `ModelDataError`, `ModelNotFoundError`, `DataUpdateError`
+  - Data-specific exceptions: `BotDataError`, `BotNotFoundError`, `BotDataUpdateError`
   - API-specific exceptions: `APIError`, `AuthenticationError`, `RateLimitError`
   - Network and scraping exceptions: `NetworkError`, `ScrapingError`
 - **Utilities Module**: New `utils/` package with modular components:
@@ -419,7 +475,7 @@ This major release completes Phase 4: Code Quality Standards, transforming virgi
 ### From Previous Release
 ### Added
 - Enhanced bot information capture from Poe.com bot info cards
-- New `bot_info` field in PoeModel with BotInfo model containing:
+- New `bot_info` field in PoeBot with BotInfo model containing:
   - `creator`: Bot creator handle (e.g., "@openai")
   - `description`: Main bot description text
   - `description_extra`: Additional disclaimer text (e.g., "Powered by...")

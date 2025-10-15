@@ -2,15 +2,24 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
+| Type | Cost |
+|------|------|
+| Prompt | $0.0000030/token |
+| Completion | $0.000015/token |
+
+### Points-based Pricing
+
 | Type | Cost |
 |------|------|
 | Input Text | 100 points/1k tokens |
 | Input Image | Variable |
-| Initial Points Cost | 814+ points |
-| Output (Text) | 500 points/1k tokens |
-| Cache Discount | 75% discount oncached chat |
+| Initial Points Cost | 481+ points |
+| Output (Text) | ['$15.00/1M tokens', '500 points/1k tokens'] |
+| Cache Discount | ['75% discount oncached chat', ''] |
 
-**Last Checked:** 2025-09-20 12:17:57.782735
+**Last Checked:** 2025-10-15 16:42:41.407085
 
 
 ## Bot Information
@@ -42,3 +51,5 @@
 **Owned By:** poe
 
 **Root:** Grok-3
+
+**API Last Updated:** 2025-10-15 16:36:09.620473

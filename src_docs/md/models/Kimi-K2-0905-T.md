@@ -2,12 +2,20 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
+| Type | Cost |
+|------|------|
+| Request | $0.011/request |
+
+### Points-based Pricing
+
 | Type | Cost |
 |------|------|
 | Total Cost | 350 points/message |
 | Initial Points Cost | 350 points |
 
-**Last Checked:** 2025-09-20 12:21:32.045543
+**Last Checked:** 2025-10-15 16:40:19.354604
 
 
 ## Bot Information
@@ -39,3 +47,5 @@
 **Owned By:** poe
 
 **Root:** Kimi-K2-0905-T
+
+**API Last Updated:** 2025-10-15 16:36:09.618180

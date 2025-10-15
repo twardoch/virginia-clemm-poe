@@ -2,14 +2,23 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Initial Points Cost | 210+ points |
-| Input | 92 points/1k tokens |
-| Output (Text) | 400 points/1k tokens |
-| Cache Discount | 90% discount oncached chat |
+| Prompt | $0.0000026/token |
+| Completion | $0.000013/token |
 
-**Last Checked:** 2025-09-20 12:05:44.764413
+### Points-based Pricing
+
+| Type | Cost |
+|------|------|
+| Initial Points Cost | 194+ points |
+| Input | ['$2.55/1M tokens', '85 points/1k tokens'] |
+| Output (Text) | ['$12.75/1M tokens', '425 points/1k tokens'] |
+| Cache Discount | ['90% discount oncached chat', ''] |
+
+**Last Checked:** 2025-10-15 16:44:53.214245
 
 
 ## Bot Information
@@ -41,3 +50,5 @@
 **Owned By:** poe
 
 **Root:** Claude-Sonnet-3.5
+
+**API Last Updated:** 2025-10-15 16:36:09.622719

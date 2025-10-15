@@ -2,28 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 10 points/message |
-| Initial Points Cost | 10 points |
-
-**Last Checked:** 2025-09-20 12:30:16.344322
-
-
-## Bot Information
-
-**Creator:** @deepinfra
-
-**Description:** Microsoft Research Phi-4 is designed to perform well in complex reasoning tasks and can operate efficiently in situations with limited memory or where quick responses are needed.
-
-At 14 billion parameters, it was trained on a mix of high-quality synthetic datasets, data from curated websites, and academic materials. It has undergone careful improvement to follow instructions accurately and maintain strong safety standards. It works best with English language inputs.
-
-All data you provide this bot will not be used in training, and is sent only to DeepInfra, a US-based company.
-
-Supports 16k tokens of input context and 8k tokens of output context. Quantization: FP16 (official).
-
-**Extra:** Powered by a server managed by @deepinfra. Learn more
-
+| Request | $0.00030/request |
 
 ## Architecture
 
@@ -45,3 +28,5 @@ Supports 16k tokens of input context and 8k tokens of output context. Quantizati
 **Owned By:** poe
 
 **Root:** Phi-4-DI
+
+**API Last Updated:** 2025-10-15 16:36:09.637634

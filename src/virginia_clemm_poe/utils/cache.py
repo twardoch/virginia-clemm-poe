@@ -22,7 +22,7 @@ T = TypeVar("T")
 # Cache configuration
 DEFAULT_TTL_SECONDS = 300  # 5 minutes default TTL
 API_CACHE_TTL_SECONDS = 600  # 10 minutes for API responses
-MODEL_CACHE_TTL_SECONDS = 1800  # 30 minutes for model data
+BOT_CACHE_TTL_SECONDS = 1800  # 30 minutes for bot data
 SCRAPING_CACHE_TTL_SECONDS = 3600  # 1 hour for scraped data
 MAX_CACHE_SIZE = 1000  # Maximum number of cached items
 CACHE_CLEANUP_INTERVAL = 300  # Clean up expired items every 5 minutes

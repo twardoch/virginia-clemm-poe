@@ -2,12 +2,20 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
+| Type | Cost |
+|------|------|
+| Request | $0.0024/request |
+
+### Points-based Pricing
+
 | Type | Cost |
 |------|------|
 | Total Cost | 80 points/message |
 | Initial Points Cost | 80 points |
 
-**Last Checked:** 2025-09-20 12:34:37.602067
+**Last Checked:** 2025-10-15 16:38:36.278543
 
 
 ## Bot Information
@@ -42,3 +50,5 @@ This is the non-thinking version of https://poe.com/Qwen3-Next-80B-Think; suppor
 **Owned By:** poe
 
 **Root:** Qwen3-Next-80B
+
+**API Last Updated:** 2025-10-15 16:36:09.617117

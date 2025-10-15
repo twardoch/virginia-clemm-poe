@@ -2,22 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 1000 points/message |
-| Initial Points Cost | 1000 points |
-
-**Last Checked:** 2025-09-20 12:11:10.280127
-
-
-## Bot Information
-
-**Creator:** @togetherai
-
-**Description:** The best state of the art image model from BFL. FLUX 1.1 Pro generates images six times faster than its predecessor, FLUX 1 Pro, while also improving image quality, prompt adherence, and output diversity.
-
-**Extra:** Powered by a server managed by @togetherai. Learn more
-
+| Request | $0.030/request |
 
 ## Architecture
 
@@ -39,3 +28,5 @@
 **Owned By:** poe
 
 **Root:** FLUX-pro-1.1-T
+
+**API Last Updated:** 2025-10-15 16:36:09.642654

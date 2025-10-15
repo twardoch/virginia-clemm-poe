@@ -1,11 +1,11 @@
 # this_file: src/virginia_clemm_poe/updater.py
 
-"""Model updater for Virginia Clemm Poe."""
+"""Bot updater for Virginia Clemm Poe."""
 
 import asyncio
 import json
 import re
-from datetime import datetime
+from datetime import UTC, datetime
 from typing import Any
 
 import httpx
@@ -14,6 +14,15 @@ from loguru import logger
 from playwright.async_api import Page
 from rich.progress import Progress, SpinnerColumn, TextColumn, TimeElapsedColumn
 
+from .bots import (
+    ApiPricing,
+    BotCollection,
+    BotInfo,
+    PoeBot,
+    ScrapedPricing,
+    ScrapedPricingDetails,
+    UnifiedPricing,
+)
 from .browser_pool import BrowserPool, get_global_pool
 from .config import (
     DATA_FILE_PATH,
@@ -28,7 +37,6 @@ from .config import (
     POE_BASE_URL,
     TABLE_TIMEOUT_MS,
 )
-from .models import BotInfo, ModelCollection, PoeModel, Pricing, PricingDetails
 from .poe_session import PoeSessionManager
 from .type_guards import validate_poe_api_response
 from .types import PoeApiResponse
@@ -37,8 +45,8 @@ from .utils.logger import log_api_request, log_browser_operation, log_performanc
 from .utils.memory import MemoryManagedOperation
 
 
-class ModelUpdater:
-    """Updates Poe model data with pricing information."""
+class BotUpdater:
+    """Updates Poe bot data with pricing information."""
 
     def __init__(
         self,
@@ -57,12 +65,12 @@ class ModelUpdater:
             logger.remove()
             logger.add(lambda msg: print(msg), level="DEBUG")
 
-    @cached(cache=get_api_cache(), ttl=600, key_prefix="poe_api_models")
-    async def fetch_models_from_api(self) -> PoeApiResponse:
-        """Fetch models from Poe API with structured logging and performance tracking.
+    @cached(cache=get_api_cache(), ttl=600, key_prefix="poe_api_bots")
+    async def fetch_bots_from_api(self) -> PoeApiResponse:
+        """Fetch bots from Poe API with structured logging and performance tracking.
 
         Returns:
-            Validated PoeApiResponse containing model data
+            Validated PoeApiResponse containing bot data
 
         Raises:
             APIError: If the API response is invalid or doesn't match expected structure
@@ -84,15 +92,15 @@ class ModelUpdater:
                     raw_data = response.json()
                     validated_data = validate_poe_api_response(raw_data)
 
-                    model_count = len(validated_data["data"])
-                    ctx["models_fetched"] = model_count
+                    bot_count = len(validated_data["data"])
+                    ctx["bots_fetched"] = bot_count
 
                     # Log performance metric
                     log_performance_metric(
-                        "api_models_fetched", model_count, "count", {"endpoint": "models", "api_version": "v1"}
+                        "api_bots_fetched", bot_count, "count", {"endpoint": "bots", "api_version": "v1"}
                     )
 
-                    logger.info(f"Successfully fetched and validated {model_count} models from Poe API")
+                    logger.info(f"Successfully fetched and validated {bot_count} bots from Poe API")
                     return validated_data
 
                 except httpx.HTTPStatusError as e:
@@ -102,15 +110,15 @@ class ModelUpdater:
                     raise
                 except Exception as e:
                     ctx["error_type"] = type(e).__name__
-                    logger.error(f"Failed to fetch models from API: {e}")
+                    logger.error(f"Failed to fetch bots from API: {e}")
                     raise
 
     def parse_pricing_table(self, html: str) -> dict[str, Any | None]:
-        """Parse pricing table HTML into structured data for model cost analysis.
+        """Parse pricing table HTML into structured data for bot cost analysis.
 
         This function extracts pricing information from HTML tables found on Poe.com
-        model pages. It handles various table formats and structures commonly used
-        for displaying model pricing information.
+        bot pages. It handles various table formats and structures commonly used
+        for displaying bot pricing information.
 
         The parsing logic:
         1. Locates the first table element in the HTML
@@ -168,7 +176,7 @@ class ModelUpdater:
     async def scrape_model_info(
         self, model_id: str, page: Page
     ) -> tuple[dict[str, Any] | None, BotInfo | None, str | None]:
-        """Scrape model information with caching support."""
+        """Scrape bot information with caching support."""
         # Check cache first
         cache = get_scraping_cache()
         cache_key = f"scrape_{model_id}"
@@ -397,14 +405,14 @@ class ModelUpdater:
     async def _scrape_model_info_uncached(
         self, model_id: str, page: Page
     ) -> tuple[dict[str, Any] | None, BotInfo | None, str | None]:
-        """Scrape pricing and bot info data for a single model with comprehensive error handling.
+        """Scrape pricing and bot info data for a single bot with comprehensive error handling.
 
         This function orchestrates a multi-stage scraping process to extract all available
-        information from a Poe.com model page. It coordinates several independent extraction
+        information from a Poe.com bot page. It coordinates several independent extraction
         operations and implements robust error handling with partial success recovery.
 
         Scraping workflow:
-        1. Navigate to the model's Poe.com page with networkidle wait
+        1. Navigate to the bot's Poe.com page with networkidle wait
         2. Extract initial points cost from bot info card header
         3. Extract bot metadata (creator, description, disclaimer text)
         4. Extract detailed pricing from the rates dialog modal
@@ -417,7 +425,7 @@ class ModelUpdater:
         - Complete failures: Return error message but preserve any bot_info found
 
         Args:
-            model_id: The model identifier to scrape (e.g., "Claude-3-Opus")
+            model_id: The bot identifier to scrape (e.g., "Claude-3-Opus")
             page: Playwright page object to use for browser automation
 
         Returns:
@@ -433,7 +441,7 @@ class ModelUpdater:
             >>> error  # None
 
         Example partial failure:
-            >>> pricing, bot_info, error = await scraper._scrape_model_info_uncached("model-with-no-pricing", page)
+            >>> pricing, bot_info, error = await scraper._scrape_model_info_uncached("bot-with-no-pricing", page)
             >>> pricing  # None
             >>> bot_info  # BotInfo(creator="@creator", description="Some description")
             >>> error  # "No Rates button found"
@@ -497,14 +505,82 @@ class ModelUpdater:
                 logger.error(f"Error while scraping {model_id}: {e}")
                 return None, BotInfo(), f"Error: {str(e)}"
 
-    def _load_existing_collection(self, force: bool) -> ModelCollection | None:
-        """Load existing model collection from disk if available.
+    def _migrate_old_pricing_format(self, model_data: dict[str, Any]) -> dict[str, Any]:
+        """Migrate old pricing format to new UnifiedPricing structure.
+
+        Args:
+            model_data: Bot data dictionary potentially with old pricing format
+
+        Returns:
+            Updated bot data with migrated pricing
+        """
+        if "pricing" in model_data and isinstance(model_data["pricing"], dict):
+            pricing_data = model_data["pricing"]
+
+            # Check if it's the old format with checked_at and details
+            if "checked_at" in pricing_data and "details" in pricing_data:
+                # Convert old ScrapedPricing format to UnifiedPricing
+                old_pricing = pricing_data
+                model_data["pricing"] = {"api": None, "scraped": old_pricing}
+                logger.debug(f"Migrated old pricing format for bot {model_data.get('id', 'unknown')}")
+
+        return model_data
+
+    def _extract_api_update_timestamp(self, model_data: dict[str, Any]) -> datetime | None:
+        """Extract update timestamp from API bot payload if present."""
+        possible_keys = (
+            "updated_at",
+            "updatedAt",
+            "last_updated",
+            "lastUpdated",
+            "last_seen_at",
+            "lastSeenAt",
+        )
+
+        for key in possible_keys:
+            if key in model_data:
+                raw_value = model_data.pop(key)
+                timestamp = self._coerce_datetime(raw_value)
+                if timestamp:
+                    return timestamp
+        return None
+
+    @staticmethod
+    def _coerce_datetime(value: Any) -> datetime | None:
+        """Convert various timestamp representations to naive UTC datetimes."""
+        if isinstance(value, datetime):
+            return value.replace(tzinfo=None) if value.tzinfo else value
+
+        if isinstance(value, (int, float)):
+            epoch_value = value / 1000 if value > 1_000_000_000_000 else value
+            try:
+                return datetime.utcfromtimestamp(epoch_value)
+            except (OSError, OverflowError):
+                return None
+
+        if isinstance(value, str):
+            normalized = value.strip()
+            if not normalized:
+                return None
+            normalized = normalized.replace("Z", "+00:00")
+            try:
+                parsed = datetime.fromisoformat(normalized)
+            except ValueError:
+                return None
+            if parsed.tzinfo:
+                return parsed.astimezone(UTC).replace(tzinfo=None)
+            return parsed
+
+        return None
+
+    def _load_existing_collection(self, force: bool) -> BotCollection | None:
+        """Load existing bot collection from disk if available.
 
         Args:
             force: If True, skip loading existing data
 
         Returns:
-            Existing ModelCollection or None if not available/force=True
+            Existing BotCollection or None if not available/force=True
         """
         if not DATA_FILE_PATH.exists() or force:
             return None
@@ -512,151 +588,217 @@ class ModelUpdater:
         try:
             with open(DATA_FILE_PATH) as f:
                 collection_data = json.load(f)
-            collection = ModelCollection(**collection_data)
-            logger.info(f"Loaded {len(collection.data)} existing models")
+
+            # Check version and migrate if needed
+            version = collection_data.get("version", 1)
+            if version < 2:
+                logger.info("Migrating data from version 1 to version 2 (dual pricing support)")
+                # Migrate each bot's pricing
+                if "data" in collection_data:
+                    for i, model_data in enumerate(collection_data["data"]):
+                        collection_data["data"][i] = self._migrate_old_pricing_format(model_data)
+                collection_data["version"] = 2
+
+            collection = BotCollection(**collection_data)
+            logger.info(f"Loaded {len(collection.data)} existing bots (version {version})")
             return collection
         except Exception as e:
             logger.warning(f"Failed to load existing data: {e}")
             return None
 
-    async def _fetch_and_parse_api_models(self) -> tuple[dict[str, Any], list[PoeModel]]:
-        """Fetch models from API and parse them into PoeModel instances.
+    async def _fetch_and_parse_api_bots(self) -> tuple[dict[str, Any], list[PoeBot]]:
+        """Fetch bots from API and parse them into PoeBot instances.
 
         Returns:
             Tuple of (raw_api_data, parsed_models)
         """
-        logger.info("Fetching models from API...")
-        api_data = await self.fetch_models_from_api()
-        api_models = []
+        logger.info("Fetching bots from API...")
+        api_data = await self.fetch_bots_from_api()
+        api_bots = []
 
         for model_dict in api_data["data"]:
             # Ensure architecture is properly typed
             model_data: dict[str, Any] = dict(model_dict)
             if "architecture" in model_data and isinstance(model_data["architecture"], dict):
-                from .models import Architecture
+                from .bots import Architecture
 
                 model_data["architecture"] = Architecture(**model_data["architecture"])
-            api_models.append(PoeModel(**model_data))
 
-        logger.info(f"Fetched {len(api_models)} models from API")
-        return api_data, api_models
+            # Handle pricing field from API
+            api_pricing_data = None
+            if "pricing" in model_data and isinstance(model_data["pricing"], dict):
+                pricing_data = model_data["pricing"]
 
-    def _merge_models(self, api_models: list[PoeModel], existing_collection: ModelCollection | None) -> list[PoeModel]:
-        """Merge API models with existing data, preserving scraped information.
+                # Check if it's the new API format with prompt/completion fields
+                if any(key in pricing_data for key in ["prompt", "completion", "image", "request"]):
+                    # Store API pricing data for later processing
+                    api_pricing_data = pricing_data
+                    logger.debug(f"Found API pricing for {model_dict.get('id', 'unknown')}")
+
+                # Remove pricing from model_data as we'll handle it separately
+                model_data.pop("pricing", None)
+
+            api_updated_at = self._extract_api_update_timestamp(model_data)
+
+            # Create the bot without pricing first
+            api_model = PoeBot(**model_data)
+            api_model.api_last_updated = api_updated_at or datetime.utcnow()
+
+            # Add API pricing if available
+            if api_pricing_data:
+                api_model.pricing = UnifiedPricing(api=ApiPricing(**api_pricing_data))
+
+            api_bots.append(api_model)
+
+        logger.info(f"Fetched {len(api_bots)} bots from API")
+        return api_data, api_bots
+
+    def _merge_bots(self, api_bots: list[PoeBot], existing_collection: BotCollection | None) -> list[PoeBot]:
+        """Merge API bots with existing data, combining API and scraped pricing.
 
         Args:
-            api_models: Fresh models from API
+            api_bots: Fresh bots from API (may have API pricing)
             existing_collection: Existing collection with scraped data
 
         Returns:
-            Merged list of models sorted by ID
+            Merged list of bots sorted by ID
         """
         if not existing_collection:
-            return sorted(api_models, key=lambda x: x.id)
+            return sorted(api_bots, key=lambda x: x.id)
 
-        # Create lookup for existing models
-        existing_lookup = {model.id: model for model in existing_collection.data}
+        # Create lookup for existing bots
+        existing_lookup = {bot.id: bot for bot in existing_collection.data}
         api_model_ids = set()
-        merged_models = []
+        merged_bots = []
 
-        # Merge API models with existing data
-        for api_model in api_models:
+        # Merge API bots with existing data
+        for api_model in api_bots:
             api_model_ids.add(api_model.id)
 
             if api_model.id in existing_lookup:
-                # Preserve scraped data from existing model
                 existing = existing_lookup[api_model.id]
-                if existing.pricing:
+
+                # Merge pricing information
+                if api_model.pricing and api_model.pricing.api:
+                    # API bot has new API pricing
+                    if existing.pricing and existing.pricing.scraped:
+                        # Combine API pricing with existing scraped pricing
+                        api_model.pricing = UnifiedPricing(api=api_model.pricing.api, scraped=existing.pricing.scraped)
+                    # else: keep API pricing only
+                elif existing.pricing:
+                    # No API pricing, preserve existing pricing
                     api_model.pricing = existing.pricing
+
+                # Preserve error and bot info
                 if existing.pricing_error:
                     api_model.pricing_error = existing.pricing_error
                 if existing.bot_info:
                     api_model.bot_info = existing.bot_info
 
-            merged_models.append(api_model)
+            merged_bots.append(api_model)
 
-        # Log removed models
+        # Log removed bots
         removed_ids = set(existing_lookup.keys()) - api_model_ids
         for removed_id in removed_ids:
-            logger.info(f"Removed model no longer in API: {removed_id}")
+            logger.info(f"Removed bot no longer in API: {removed_id}")
 
-        return sorted(merged_models, key=lambda x: x.id)
+        return sorted(merged_bots, key=lambda x: x.id)
 
-    def _get_models_to_update(
-        self, collection: ModelCollection, force: bool, update_info: bool, update_pricing: bool
-    ) -> list[PoeModel]:
-        """Determine which models need updates based on criteria.
+    def _save_collection(self, collection: BotCollection) -> None:
+        """Persist the current bot collection to disk sorted by API age."""
+        collection.sort_by_api_last_updated()
+        DATA_FILE_PATH.parent.mkdir(parents=True, exist_ok=True)
+        with open(DATA_FILE_PATH, "w") as f:
+            json.dump(collection.model_dump(), f, indent=2, ensure_ascii=False, default=str)
+        logger.debug(f"Persisted {len(collection.data)} bots to {DATA_FILE_PATH}")
+
+    def _get_bots_to_update(
+        self, collection: BotCollection, force: bool, update_info: bool, update_pricing: bool
+    ) -> list[PoeBot]:
+        """Determine which bots need updates based on criteria.
 
         Args:
-            collection: Model collection to check
-            force: Force update all models
+            collection: Bot collection to check
+            force: Force update all bots
             update_info: Check if bot info needs update
-            update_pricing: Check if pricing needs update
+            update_pricing: Check if scraped pricing needs update
 
         Returns:
-            List of models that need updates
+            List of bots that need updates
         """
         if not update_info and not update_pricing:
             return []
 
-        models_to_update = []
+        bots_to_update = []
 
-        for model in collection.data:
+        for bot in collection.data:
             needs_update = False
 
-            if update_pricing and (model.needs_pricing_update() or force):
+            # Check if scraped pricing needs update
+            if update_pricing and (force or bot.needs_scraping_update()):
                 needs_update = True
 
-            if update_info and (not model.bot_info or force):
+            # Check if bot info needs update
+            if update_info and (force or not bot.bot_info):
                 needs_update = True
 
             if needs_update:
-                models_to_update.append(model)
+                bots_to_update.append(bot)
 
-        return models_to_update
+        return bots_to_update
 
-    async def _update_model_data(self, model: PoeModel, page: Page, update_info: bool, update_pricing: bool) -> None:
-        """Update a single model's pricing and/or bot info.
+    async def _update_bot_data(self, bot: PoeBot, page: Page, update_info: bool, update_pricing: bool) -> None:
+        """Update a single bot's scraped pricing and/or bot info.
 
         Args:
-            model: Model to update (modified in place)
+            bot: Bot to update (modified in place)
             page: Browser page to use for scraping
             update_info: Whether to update bot info
-            update_pricing: Whether to update pricing
+            update_pricing: Whether to update scraped pricing
         """
-        pricing_data, bot_info, error = await self.scrape_model_info(model.id, page)
+        pricing_data, bot_info, error = await self.scrape_model_info(bot.id, page)
 
-        # Update pricing if requested
+        # Update scraped pricing if requested
         if update_pricing:
             if pricing_data:
-                model.pricing = Pricing(checked_at=datetime.utcnow(), details=PricingDetails(**pricing_data))
-                model.pricing_error = None
-                logger.info(f"✓ Updated pricing for {model.id}")
+                # Create or update UnifiedPricing with scraped data
+                if not bot.pricing:
+                    bot.pricing = UnifiedPricing()
+
+                bot.pricing.scraped = ScrapedPricing(
+                    checked_at=datetime.utcnow(), details=ScrapedPricingDetails(**pricing_data)
+                )
+                bot.pricing_error = None
+                logger.info(f"✓ Updated scraped pricing for {bot.id}")
             else:
-                model.pricing_error = error or "Unknown error"
-                model.pricing = None
-                logger.warning(f"✗ No pricing found for {model.id}: {error}")
+                bot.pricing_error = error or "Unknown error"
+                # Don't clear pricing entirely - keep API pricing if it exists
+                if bot.pricing:
+                    bot.pricing.scraped = None
+                logger.warning(f"✗ No scraped pricing found for {bot.id}: {error}")
 
         # Update bot info if requested
         if update_info:
             if bot_info and (bot_info.creator or bot_info.description or bot_info.description_extra):
-                model.bot_info = bot_info
-                logger.info(f"✓ Updated bot info for {model.id}")
+                bot.bot_info = bot_info
+                logger.info(f"✓ Updated bot info for {bot.id}")
             else:
-                logger.warning(f"✗ No bot info found for {model.id}")
+                logger.warning(f"✗ No bot info found for {bot.id}")
 
-    async def _update_models_with_progress(
+    async def _update_bots_with_progress(
         self,
-        models_to_update: list[PoeModel],
+        collection: BotCollection,
+        bots_to_update: list[PoeBot],
         update_info: bool,
         update_pricing: bool,
         memory_monitor: MemoryManagedOperation,
         pool: BrowserPool,
     ) -> None:
-        """Update models with progress tracking and memory management.
+        """Update bots with progress tracking, persistence, and memory management.
 
         Args:
-            models_to_update: List of models to update
+            collection: Full bot collection being updated
+            bots_to_update: List of bots to update
             update_info: Whether to update bot info
             update_pricing: Whether to update pricing
             memory_monitor: Memory management context
@@ -667,41 +809,44 @@ class ModelUpdater:
             TextColumn("[progress.description]{task.description}"),
             TimeElapsedColumn(),
         ) as progress:
-            task = progress.add_task("Updating models...", total=len(models_to_update))
-            models_processed = 0
+            task = progress.add_task("Updating bots...", total=len(bots_to_update))
+            bots_processed = 0
 
-            for model in models_to_update:
-                progress.update(task, description=f"Updating {model.id}...")
+            for bot in bots_to_update:
+                progress.update(task, description=f"Updating {bot.id}...")
 
-                # Use browser pool for each model
+                # Use browser pool for each bot
                 async with pool.acquire_page() as page:
-                    await self._update_model_data(model, page, update_info, update_pricing)
+                    await self._update_bot_data(bot, page, update_info, update_pricing)
+
+                # Persist progress after each bot update
+                self._save_collection(collection)
 
                 # Track progress and memory usage
-                models_processed += 1
+                bots_processed += 1
                 memory_monitor.increment_operation_count()
 
-                # Periodic memory monitoring (every 10 models)
-                if models_processed % 10 == 0:
-                    memory_monitor.log_memory_status(f"processed_{models_processed}_models")
+                # Periodic memory monitoring (every 10 bots)
+                if bots_processed % 10 == 0:
+                    memory_monitor.log_memory_status(f"processed_{bots_processed}_bots")
 
                     # Force cleanup if memory is getting high
                     if memory_monitor.should_run_cleanup():
-                        logger.info(f"Running memory cleanup after processing {models_processed} models")
+                        logger.info(f"Running memory cleanup after processing {bots_processed} bots")
                         await memory_monitor.cleanup_memory()
 
                 progress.advance(task)
 
-    async def sync_models(
+    async def sync_bots(
         self, force: bool = False, update_info: bool = True, update_pricing: bool = True
-    ) -> ModelCollection:
-        """Sync models with API and update pricing/info data.
+    ) -> BotCollection:
+        """Sync bots with API and update pricing/info data.
 
-        This method coordinates the entire model synchronization process:
+        This method coordinates the entire bot synchronization process:
         1. Loads existing data if available
-        2. Fetches fresh models from API
+        2. Fetches fresh bots from API
         3. Merges API data with existing scraped data
-        4. Updates models that need new pricing/bot info
+        4. Updates bots that need new pricing/bot info
 
         Args:
             force: Force update even if data exists
@@ -709,31 +854,30 @@ class ModelUpdater:
             update_pricing: Update pricing information
 
         Returns:
-            Updated ModelCollection with all models
+            Updated BotCollection with all bots
         """
         # Load existing data
         existing_collection = self._load_existing_collection(force)
 
-        # Fetch fresh models from API
-        api_data, api_models = await self._fetch_and_parse_api_models()
+        # Fetch fresh bots from API
+        api_data, api_bots = await self._fetch_and_parse_api_bots()
 
-        # Merge with existing data
-        merged_models = self._merge_models(api_models, existing_collection)
+        # Merge with existing data and persist immediately (captures removals)
+        merged_bots = self._merge_bots(api_bots, existing_collection)
+        collection = BotCollection(object=api_data["object"], data=merged_bots)
+        self._save_collection(collection)
 
-        # Create collection
-        collection = ModelCollection(object=api_data["object"], data=merged_models)
+        # Determine which bots need updates (oldest API timestamp first)
+        bots_to_update = self._get_bots_to_update(collection, force, update_info, update_pricing)
 
-        # Determine which models need updates
-        models_to_update = self._get_models_to_update(collection, force, update_info, update_pricing)
-
-        if not models_to_update:
-            logger.info("No models need updates")
+        if not bots_to_update:
+            logger.info("No bots need updates")
             return collection
 
-        logger.info(f"Found {len(models_to_update)} models to update")
+        logger.info(f"Found {len(bots_to_update)} bots to update")
 
         # Use memory management for the entire update operation
-        async with MemoryManagedOperation(f"sync_{len(models_to_update)}_models") as memory_monitor:
+        async with MemoryManagedOperation(f"sync_{len(bots_to_update)}_bots") as memory_monitor:
             # Get the browser pool for better performance
             pool = await get_global_pool(
                 max_size=3,  # Allow up to 3 concurrent browser connections
@@ -742,36 +886,35 @@ class ModelUpdater:
             )
 
             # Log performance metric for pool usage
-            log_performance_metric("browser_pool_enabled", 1, "count", {"models_to_update": len(models_to_update)})
+            log_performance_metric("browser_pool_enabled", 1, "count", {"bots_to_update": len(bots_to_update)})
 
-            # Update models with progress tracking
-            await self._update_models_with_progress(models_to_update, update_info, update_pricing, memory_monitor, pool)
+            # Update bots with progress tracking and persistence
+            await self._update_bots_with_progress(
+                collection, bots_to_update, update_info, update_pricing, memory_monitor, pool
+            )
 
         # Pool stats for debugging
         if self.verbose:
             stats = await pool.get_stats()
             logger.debug(f"Browser pool stats: {stats}")
 
+        # Final persistence to capture any remaining updates
+        self._save_collection(collection)
         return collection
 
     async def update_all(self, force: bool = False, update_info: bool = True, update_pricing: bool = True) -> None:
-        """Update model data and save to file.
+        """Update bot data and save to file.
 
         Args:
             force: Force update even if data exists
             update_info: Update bot info (creator, description)
             update_pricing: Update pricing information
         """
-        collection = await self.sync_models(force=force, update_info=update_info, update_pricing=update_pricing)
+        collection = await self.sync_bots(force=force, update_info=update_info, update_pricing=update_pricing)
 
-        # Ensure data directory exists
-        DATA_FILE_PATH.parent.mkdir(parents=True, exist_ok=True)
-
-        # Save to file
-        with open(DATA_FILE_PATH, "w") as f:
-            json.dump(collection.dict(), f, indent=2, ensure_ascii=False, default=str)
-
-        logger.info(f"✓ Saved {len(collection.data)} models to {DATA_FILE_PATH}")
+        # Final persistence handled by helper to ensure consistent ordering
+        self._save_collection(collection)
+        logger.info(f"✓ Saved {len(collection.data)} bots to {DATA_FILE_PATH}")
 
     async def get_account_balance(self) -> dict[str, Any]:
         """Get Poe account balance using stored session cookies.
@@ -823,16 +966,16 @@ class ModelUpdater:
             logger.info("Login successful, extracting cookies...")
             return await self.extract_cookies_from_browser(page)
 
-    async def get_enhanced_model_data(self) -> ModelCollection | None:
-        """Get model data with enhanced information using poe-api-wrapper.
+    async def get_enhanced_model_data(self) -> BotCollection | None:
+        """Get bot data with enhanced information using poe-api-wrapper.
 
         This uses the faster poe-api-wrapper library if available and cookies are set.
 
         Returns:
-            Enhanced model collection or None if not available
+            Enhanced bot collection or None if not available
         """
         if not self.session_manager.has_valid_cookies():
-            logger.warning("No valid cookies for enhanced model data")
+            logger.warning("No valid cookies for enhanced bot data")
             return None
 
         try:
@@ -843,11 +986,11 @@ class ModelUpdater:
                 bots = await client.get_available_bots(get_all=True)
                 logger.info(f"Retrieved {len(bots)} bots via poe-api-wrapper")
 
-                # Could enhance our model data with this information
-                # This is where we'd merge the bot data with our models
+                # Could enhance our bot data with this information
+                # This is where we'd merge the bot data with our bots
 
             return None
 
         except Exception as e:
-            logger.error(f"Failed to get enhanced model data: {e}")
+            logger.error(f"Failed to get enhanced bot data: {e}")
             return None

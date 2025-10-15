@@ -255,7 +255,7 @@ updater.register_scraper("custom_field", CustomScraperPlugin())
 ```python
 # Future: Post-processing pipeline
 class DataProcessor(Protocol):
-    def process(self, model: PoeModel) -> PoeModel:
+    def process(self, model: PoeBot) -> PoeBot:
         """Transform or enrich model data."""
         ...
 
@@ -269,7 +269,7 @@ api.add_processor(CurrencyConverter())
 ```python
 # Future: Multiple export formats
 class Exporter(Protocol):
-    def export(self, models: list[PoeModel], output: Path) -> None:
+    def export(self, models: list[PoeBot], output: Path) -> None:
         """Export models to custom format."""
         ...
 
@@ -284,11 +284,11 @@ exporters.register("parquet", ParquetExporter())
 ```python
 # Future: Pluggable storage
 class StorageBackend(Protocol):
-    async def load(self) -> ModelCollection:
+    async def load(self) -> BotCollection:
         """Load model collection."""
         ...
     
-    async def save(self, collection: ModelCollection) -> None:
+    async def save(self, collection: BotCollection) -> None:
         """Save model collection."""
         ...
 
@@ -302,7 +302,7 @@ api.set_storage(storage)
 ```python
 # Future: Advanced filtering
 class ModelFilter(Protocol):
-    def matches(self, model: PoeModel) -> bool:
+    def matches(self, model: PoeBot) -> bool:
         """Check if model matches criteria."""
         ...
 
@@ -312,7 +312,7 @@ filters = [
     ModalityFilter(input=["text", "image"]),
     OwnerFilter(owners=["openai", "anthropic"])
 ]
-results = api.search_models_advanced(filters)
+results = api.search_bots_advanced(filters)
 ```
 
 ## Architectural Decisions

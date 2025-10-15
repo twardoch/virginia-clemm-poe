@@ -2,12 +2,14 @@
 
 ## Pricing
 
+### Points-based Pricing
+
 | Type | Cost |
 |------|------|
-| Input Text | 2 point / character |
+| Input Text | 2.5 points / character |
 | Initial Points Cost | Variable points |
 
-**Last Checked:** 2025-09-20 12:09:47.580272
+**Last Checked:** 2025-10-15 16:43:25.428908
 
 
 ## Bot Information
@@ -94,3 +96,5 @@ Prompt input cannot exceed 2,000 characters.
 **Owned By:** poe
 
 **Root:** ElevenLabs-v3
+
+**API Last Updated:** 2025-10-15 16:36:09.621176

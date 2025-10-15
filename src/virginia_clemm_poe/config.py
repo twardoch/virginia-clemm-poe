@@ -7,7 +7,7 @@ from pathlib import Path
 # Package paths
 PACKAGE_DIR = Path(__file__).parent
 DATA_DIR = PACKAGE_DIR / "data"
-DATA_FILE_PATH = DATA_DIR / "poe_models.json"
+DATA_FILE_PATH = DATA_DIR / "poe_bots.json"
 
 # API configuration
 POE_API_URL = "https://api.poe.com/v1/models"

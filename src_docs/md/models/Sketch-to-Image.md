@@ -1,24 +1,5 @@
 # [Sketch-to-Image](https://poe.com/Sketch-to-Image){ .md-button .md-button--primary }
 
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Image Output | 992 points / message |
-| Initial Points Cost | Variable points |
-
-**Last Checked:** 2025-09-20 12:36:37.605046
-
-
-## Bot Information
-
-**Creator:** @fal
-
-**Description:** Takes in sketches and converts them to colored images.
-
-**Extra:** Powered by a server managed by @fal. Learn more
-
-
 ## Architecture
 
 **Input Modalities:** text
@@ -39,3 +20,5 @@
 **Owned By:** poe
 
 **Root:** Sketch-to-Image
+
+**API Last Updated:** 2025-10-15 16:36:09.642174

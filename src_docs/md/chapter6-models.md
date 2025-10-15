@@ -11,7 +11,7 @@ Virginia Clemm Poe uses Pydantic models to provide type-safe, validated data str
 Defines what types of data a Poe model can accept and produce.
 
 ```python
-from virginia_clemm_poe.models import Architecture
+from virginia_clemm_poe.bots import Architecture
 
 # Example: Multimodal text model
 arch = Architecture(
@@ -41,7 +41,7 @@ print(f"Mode: {arch.modality}")              # "multimodal->text"
 Captures all possible pricing structures found on Poe.com model pages.
 
 ```python
-from virginia_clemm_poe.models import PricingDetails
+from virginia_clemm_poe.bots import PricingDetails
 
 # Example: Standard text model pricing
 pricing_details = PricingDetails(
@@ -86,7 +86,7 @@ Combines pricing details with a timestamp for data freshness tracking.
 
 ```python
 from datetime import datetime, timezone
-from virginia_clemm_poe.models import Pricing, PricingDetails
+from virginia_clemm_poe.bots import Pricing, PricingDetails
 
 pricing = Pricing(
     checked_at=datetime.now(timezone.utc),
@@ -107,7 +107,7 @@ print(f"Pricing data is {age.days} days old")
 Creator and description metadata scraped from Poe.com bot info cards.
 
 ```python
-from virginia_clemm_poe.models import BotInfo
+from virginia_clemm_poe.bots import BotInfo
 
 bot_info = BotInfo(
     creator="@anthropic",
@@ -124,14 +124,14 @@ print(f"Description: {bot_info.description}")
 - `description: str | None` - Main bot description text
 - `description_extra: str | None` - Additional details or disclaimers
 
-### PoeModel
+### PoeBot
 
 The main model class representing a complete Poe.com model.
 
 ```python
-from virginia_clemm_poe.models import PoeModel, Architecture, Pricing, BotInfo
+from virginia_clemm_poe.bots import PoeBot, Architecture, Pricing, BotInfo
 
-model = PoeModel(
+model = PoeBot(
     id="Claude-3-Opus",
     created=1709574492024,
     owned_by="anthropic",
@@ -177,14 +177,14 @@ if primary_cost:
     print(f"Cost: {primary_cost}")
 ```
 
-### ModelCollection
+### BotCollection
 
 Container for working with multiple models with search capabilities.
 
 ```python
-from virginia_clemm_poe.models import ModelCollection
+from virginia_clemm_poe.bots import BotCollection
 
-collection = ModelCollection(data=[model1, model2, model3])
+collection = BotCollection(data=[model1, model2, model3])
 
 # Search for models
 claude_models = collection.search("claude")
@@ -195,7 +195,7 @@ model = collection.get_by_id("Claude-3-Opus")
 
 **Properties:**
 - `object: str` - Always "list" (API compatibility)
-- `data: list[PoeModel]` - List of all models
+- `data: list[PoeBot]` - List of all models
 
 **Methods:**
 - `get_by_id(model_id)` - Exact ID lookup
@@ -206,8 +206,8 @@ model = collection.get_by_id("Claude-3-Opus")
 ### Hierarchy
 
 ```
-ModelCollection
-├── data: list[PoeModel]
+BotCollection
+├── data: list[PoeBot]
     ├── architecture: Architecture
     │   ├── input_modalities: list[str]
     │   ├── output_modalities: list[str]
@@ -242,11 +242,11 @@ ModelCollection
 All models use Pydantic for runtime validation:
 
 ```python
-from virginia_clemm_poe.models import PoeModel
+from virginia_clemm_poe.bots import PoeBot
 
 # This will raise ValidationError
 try:
-    invalid_model = PoeModel(
+    invalid_model = PoeBot(
         id="test",
         created="not_a_number",  # Should be int
         owned_by="test",
@@ -267,7 +267,7 @@ model_json = model.model_dump_json()
 
 # Deserialize from JSON
 model_dict = json.loads(model_json)
-restored_model = PoeModel(**model_dict)
+restored_model = PoeBot(**model_dict)
 
 # With aliases (matches website field names)
 model_with_aliases = model.model_dump(by_alias=True)
@@ -281,7 +281,7 @@ Common patterns for working with model data:
 from virginia_clemm_poe import api
 
 # Get all models
-models = api.get_all_models()
+models = api.get_all_bots()
 
 # Filter by capability
 text_models = [m for m in models if "text" in m.architecture.input_modalities]
@@ -338,19 +338,19 @@ for provider, provider_models in by_provider.items():
 
 ## Data File Structure
 
-The local dataset is stored as JSON in `poe_models.json`:
+The local dataset is stored as JSON in `poe_bots.json`:
 
 ```json
 {
   "object": "list",
   "data": [
     {
-      "id": "Claude-3-Opus",
+      "id": "GPT-5-Chat",
       "object": "model",
-      "created": 1709574492024,
-      "owned_by": "anthropic",
+      "created": 1754589771417,
+      "owned_by": "poe",
       "permission": [],
-      "root": "Claude-3-Opus",
+      "root": "GPT-5-Chat",
       "parent": null,
       "architecture": {
         "input_modalities": ["text"],
@@ -358,17 +358,39 @@ The local dataset is stored as JSON in `poe_models.json`:
         "modality": "text->text"
       },
       "pricing": {
-        "checked_at": "2024-03-15T10:30:00Z",
-        "details": {
-          "Input (text)": "15 points/message",
-          "initial_points_cost": null
+        "api": {
+          "prompt": "0.0000011",
+          "completion": "0.0000090",
+          "image": null,
+          "request": null
+        },
+        "scraped": {
+          "checked_at": "2025-09-20 12:14:51.272766",
+          "details": {
+            "input_text": null,
+            "input_image": null,
+            "bot_message": null,
+            "chat_history": null,
+            "chat_history_cache_discount": null,
+            "total_cost": null,
+            "image_output": null,
+            "video_output": null,
+            "text_input": null,
+            "per_message": null,
+            "finetuning": null,
+            "initial_points_cost": "139+ points",
+            "Input": "38 points/1k tokens",
+            "Output (text)": "300 points/1k tokens",
+            "Cache discount": "90% discount oncached chat"
+          }
         }
       },
+      "api_last_updated": "2025-10-15 16:18:26.150888",
       "pricing_error": null,
       "bot_info": {
-        "creator": "@anthropic",
-        "description": "Claude-3 Opus is Anthropic's most powerful model",
-        "description_extra": null
+        "creator": "@openai",
+        "description": "ChatGPT-5 points to the non-reasoning model GPT-5 snapshot (gpt-5-chat-latest) currently used in ChatGPT. Supports native vision, 400k tokens of context, and generally has more intelligence than GPT-4.1. Provides a 90% chat history cache discount.",
+        "description_extra": "Powered by OpenAI: gpt-5-chat-latest. Learn more"
       }
     }
   ]
@@ -386,8 +408,8 @@ with open(DATA_FILE_PATH) as f:
     raw_data = json.load(f)
 
 # Load into Pydantic models
-from virginia_clemm_poe.models import ModelCollection
-collection = ModelCollection(**raw_data)
+from virginia_clemm_poe.bots import BotCollection
+collection = BotCollection(**raw_data)
 
 # Save back to JSON
 with open(DATA_FILE_PATH, 'w') as f:
@@ -400,12 +422,12 @@ with open(DATA_FILE_PATH, 'w') as f:
 
 ```python
 from pydantic import ValidationError
-from virginia_clemm_poe.models import PoeModel
+from virginia_clemm_poe.bots import PoeBot
 
 def safe_model_creation(data_dict):
     """Safely create model with error handling."""
     try:
-        return PoeModel(**data_dict)
+        return PoeBot(**data_dict)
     except ValidationError as e:
         print(f"Validation failed: {e}")
         return None
@@ -418,7 +440,7 @@ model = safe_model_creation(raw_data)  # Returns None
 ### Data Integrity Checks
 
 ```python
-def validate_collection_integrity(collection: ModelCollection):
+def validate_collection_integrity(collection: BotCollection):
     """Validate model collection data integrity."""
     issues = []
     
@@ -447,7 +469,7 @@ import sys
 from virginia_clemm_poe import api
 
 # Check memory usage of model collection
-collection = api.load_models()
+collection = api.load_bots()
 size_bytes = sys.getsizeof(collection)
 model_count = len(collection.data)
 
@@ -476,13 +498,13 @@ for model in expensive_models:
 
 ## Custom Model Extensions
 
-### Extending PoeModel
+### Extending PoeBot
 
 ```python
-from virginia_clemm_poe.models import PoeModel
+from virginia_clemm_poe.bots import PoeBot
 from pydantic import computed_field
 
-class ExtendedPoeModel(PoeModel):
+class ExtendedPoeBot(PoeBot):
     """Extended model with custom computed properties."""
     
     @computed_field
@@ -511,24 +533,24 @@ class ExtendedPoeModel(PoeModel):
         return None
 
 # Use extended model
-def upgrade_to_extended(standard_model: PoeModel) -> ExtendedPoeModel:
+def upgrade_to_extended(standard_model: PoeBot) -> ExtendedPoeBot:
     """Convert standard model to extended version."""
-    return ExtendedPoeModel(**standard_model.model_dump())
+    return ExtendedPoeBot(**standard_model.model_dump())
 ```
 
 ### Custom Collections
 
 ```python
-from virginia_clemm_poe.models import ModelCollection, PoeModel
+from virginia_clemm_poe.bots import BotCollection, PoeBot
 
-class SmartModelCollection(ModelCollection):
+class SmartBotCollection(BotCollection):
     """Enhanced collection with additional query methods."""
     
-    def get_by_provider(self, provider: str) -> list[PoeModel]:
+    def get_by_provider(self, provider: str) -> list[PoeBot]:
         """Get all models from a specific provider."""
         return [m for m in self.data if m.owned_by.lower() == provider.lower()]
     
-    def get_by_capability(self, input_type: str = None, output_type: str = None) -> list[PoeModel]:
+    def get_by_capability(self, input_type: str = None, output_type: str = None) -> list[PoeBot]:
         """Get models by input/output capabilities."""
         results = self.data
         
@@ -540,7 +562,7 @@ class SmartModelCollection(ModelCollection):
         
         return results
     
-    def get_price_range(self, min_cost: float = None, max_cost: float = None) -> list[PoeModel]:
+    def get_price_range(self, min_cost: float = None, max_cost: float = None) -> list[PoeBot]:
         """Get models within a price range."""
         results = []
         

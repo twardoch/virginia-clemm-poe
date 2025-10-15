@@ -168,14 +168,14 @@ def log_api_request(method: str, url: str, headers: dict[str, str] | None = None
 
 @contextmanager
 def log_browser_operation(operation: str, model_id: str | None = None, debug_port: int | None = None) -> Any:
-    """Context manager for logging browser operations with model context.
+    """Context manager for logging browser operations with bot context.
 
     Specialized context manager for browser automation operations that includes
-    model-specific context and browser configuration details.
+    bot-specific context and browser configuration details.
 
     Args:
         operation: Browser operation name (e.g., "scrape_model", "launch_browser")
-        model_id: Optional model ID being processed
+        model_id: Optional bot ID being processed
         debug_port: Optional Chrome debug port
 
     Yields:

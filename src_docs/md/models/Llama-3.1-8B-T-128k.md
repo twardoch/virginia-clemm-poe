@@ -2,24 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 100 points/message |
-| Initial Points Cost | 100 points |
-
-**Last Checked:** 2025-09-20 12:25:00.884046
-
-
-## Bot Information
-
-**Creator:** @togetherai
-
-**Description:** Llama 3.1 8B Instruct from Meta. Supports 128k tokens of context.
-
-The points price is subject to change.
-
-**Extra:** Powered by a server managed by @togetherai. Learn more
-
+| Request | $0.0030/request |
 
 ## Architecture
 
@@ -41,3 +28,5 @@ The points price is subject to change.
 **Owned By:** poe
 
 **Root:** Llama-3.1-8B-T-128k
+
+**API Last Updated:** 2025-10-15 16:36:09.638184

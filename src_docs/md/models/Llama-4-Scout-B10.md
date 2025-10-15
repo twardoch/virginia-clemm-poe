@@ -2,12 +2,20 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
+| Type | Cost |
+|------|------|
+| Request | $0.0030/request |
+
+### Points-based Pricing
+
 | Type | Cost |
 |------|------|
 | Total Cost | 100 points/message |
 | Initial Points Cost | 100 points |
 
-**Last Checked:** 2025-09-20 12:26:30.488737
+**Last Checked:** 2025-10-15 16:43:11.108359
 
 
 ## Bot Information
@@ -43,3 +51,5 @@ Scout is perfect for tasks requiring a lot of context, from summarizing large do
 **Owned By:** poe
 
 **Root:** Llama-4-Scout-B10
+
+**API Last Updated:** 2025-10-15 16:36:09.621014

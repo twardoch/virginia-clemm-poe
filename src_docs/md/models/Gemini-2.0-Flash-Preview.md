@@ -2,12 +2,20 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 2 points/message |
-| Initial Points Cost | 2 points |
+| Request | $0.000090/request |
 
-**Last Checked:** 2025-09-20 12:16:58.702350
+### Points-based Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | 3 points/message |
+| Initial Points Cost | 3 points |
+
+**Last Checked:** 2025-10-15 16:45:23.393769
 
 
 ## Bot Information
@@ -39,3 +47,5 @@
 **Owned By:** poe
 
 **Root:** Gemini-2.0-Flash-Preview
+
+**API Last Updated:** 2025-10-15 16:36:09.623521

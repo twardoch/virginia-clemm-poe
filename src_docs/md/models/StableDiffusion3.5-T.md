@@ -1,24 +1,5 @@
 # [StableDiffusion3.5-T](https://poe.com/StableDiffusion3.5-T){ .md-button .md-button--primary }
 
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Image Output | 284 points / message |
-| Initial Points Cost | 284 points |
-
-**Last Checked:** 2025-09-20 12:37:29.916497
-
-
-## Bot Information
-
-**Creator:** @fal
-
-**Description:** Faster version of Stable Diffusion 3 Large, hosted by @fal. Excels for fast image generation. Use "--aspect" to select an aspect ratio (e.g --aspect 1:1).
-
-**Extra:** Powered by a server managed by @fal. Learn more
-
-
 ## Architecture
 
 **Input Modalities:** text
@@ -39,3 +20,5 @@
 **Owned By:** poe
 
 **Root:** StableDiffusion3.5-T
+
+**API Last Updated:** 2025-10-15 16:36:09.642365

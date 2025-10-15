@@ -2,12 +2,20 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
+| Type | Cost |
+|------|------|
+| Request | $0.0057/request |
+
+### Points-based Pricing
+
 | Type | Cost |
 |------|------|
 | Total Cost | 190 points/message |
 | Initial Points Cost | 190 points |
 
-**Last Checked:** 2025-09-20 12:08:45.035516
+**Last Checked:** 2025-10-15 16:40:48.810118
 
 
 ## Bot Information
@@ -19,7 +27,11 @@
 - Hybrid thinking mode: One model supports both thinking mode and non-thinking mode by changing the chat template.
 - Smarter tool calling: Through post-training optimization, the model's performance in tool usage and agent tasks has significantly improved.
 - Higher thinking efficiency: DeepSeek-V3.1-Think achieves comparable answer quality to DeepSeek-R1-0528, while responding more quickly.
-- The Bot does not currently support attachments
+
+Technical Specifications
+
+File Support: Attachments not supported
+Context window: 128k tokens
 
 **Extra:** Powered by a server managed by @novitaai. Learn more
 
@@ -44,3 +56,5 @@
 **Owned By:** poe
 
 **Root:** DeepSeek-V3.1-N
+
+**API Last Updated:** 2025-10-15 16:36:09.618702

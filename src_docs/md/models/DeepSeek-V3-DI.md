@@ -2,24 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 145 points/message |
-| Initial Points Cost | 145 points |
-
-**Last Checked:** 2025-09-20 12:08:21.898181
-
-
-## Bot Information
-
-**Creator:** @deepinfra
-
-**Description:** Deepseek-v3 – the new top open-source LLM. Achieves state-of-the-art performance in tasks such as coding, mathematics, and reasoning. All data you submit to this bot is governed by the Poe privacy policy and is only sent to DeepInfra, a US-based company.
-
-Supports 64k tokens of input context and 8k tokens of output context. Quantization: FP8 (official).
-
-**Extra:** Powered by a server managed by @deepinfra. Learn more
-
+| Request | $0.0043/request |
 
 ## Architecture
 
@@ -41,3 +28,5 @@ Supports 64k tokens of input context and 8k tokens of output context. Quantizati
 **Owned By:** poe
 
 **Root:** DeepSeek-V3-DI
+
+**API Last Updated:** 2025-10-15 16:36:09.636710

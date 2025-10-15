@@ -1,25 +1,5 @@
 # [Inception-Mercury](https://poe.com/Inception-Mercury){ .md-button .md-button--primary }
 
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Input Text | 9 points / 1k tokens |
-| Initial Points Cost | 14+ points |
-| Bot Message (Text) | 34 points / 1k tokens |
-
-**Last Checked:** 2025-09-20 12:21:02.787207
-
-
-## Bot Information
-
-**Creator:** @inceptionlabsai
-
-**Description:** Mercury is the first diffusion large language model (dLLM). On Copilot Arena, Mercury Coder ranks 1st in speed and ties for 2nd in quality. A new generation of LLMs that push the frontier of fast, high-quality text generation.
-
-**Extra:** Powered by a server managed by @inceptionlabsai. Learn more
-
-
 ## Architecture
 
 **Input Modalities:** text
@@ -40,3 +20,5 @@
 **Owned By:** poe
 
 **Root:** Inception-Mercury
+
+**API Last Updated:** 2025-10-15 16:36:09.628510

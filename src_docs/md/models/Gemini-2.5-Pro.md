@@ -2,16 +2,25 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Input Text | 25 points/1k tokens |
-| Input Image | 25 points/1k tokens |
-| Initial Points Cost | 722+ points |
-| Input (Video) | 14 points/second |
-| Output (Text) | 200 points/1k tokens |
-| Cache Discount | 75% discount oncached chat |
+| Prompt | $8.7E-7/token |
+| Completion | $0.0000070/token |
 
-**Last Checked:** 2025-09-20 12:17:28.378297
+### Points-based Pricing
+
+| Type | Cost |
+|------|------|
+| Input Text | 29 points/1k tokens |
+| Input Image | 29 points/1k tokens |
+| Initial Points Cost | 839+ points |
+| Input (Video) | ['$0.00048/second', '16 points/second'] |
+| Output (Text) | ['$7.02/1M tokens', '234 points/1k tokens'] |
+| Cache Discount | ['75% discount oncached chat', ''] |
+
+**Last Checked:** 2025-10-15 16:37:23.258172
 
 
 ## Bot Information
@@ -20,7 +29,7 @@
 
 **Description:** Gemini 2.5 Pro is Google's advanced model with frontier performance on various key benchmarks; supports web search and 1 million tokens of input context.
 To instruct the bot to use more thinking effort, add --thinking_budget and a number ranging from 0 to 32,768 to the end of your message. 
-Use `--web_search false` to disable web search and real-time information access, this is enabled by default.
+Use `--web_search true` to enable web search and real-time information access, this is disabled by default.
 
 **Extra:** Powered by Google: gemini-2.5-pro. Learn more
 
@@ -45,3 +54,5 @@ Use `--web_search false` to disable web search and real-time information access,
 **Owned By:** poe
 
 **Root:** Gemini-2.5-Pro
+
+**API Last Updated:** 2025-10-15 16:36:09.615773

@@ -131,7 +131,7 @@
 
         async function loadData() {
             try {
-                const response = await fetch('data/poe_models.json');
+                const response = await fetch('data/poe_bots.json');
                 const data = await response.json();
                 modelsData = data.data || [];
                 filteredData = modelsData; // Initialize filteredData with all models
@@ -155,6 +155,22 @@
         }
 
         function getInitialCost(model) {
+            // Check for scraped pricing first (points-based)
+            if (model.pricing?.scraped?.details?.initial_points_cost) {
+                return model.pricing.scraped.details.initial_points_cost;
+            }
+            // Check for API pricing (dollar-based)
+            if (model.pricing?.api?.prompt && model.pricing?.api?.completion) {
+                const prompt = parseFloat(model.pricing.api.prompt);
+                const completion = parseFloat(model.pricing.api.completion);
+                // Calculate cost for 1k tokens (500 in, 500 out)
+                const cost = (prompt * 500 + completion * 500);
+                if (cost < 0.0001) {
+                    return `$${cost.toExponential(2)}/1k`;
+                }
+                return `$${cost.toFixed(6)}/1k`;
+            }
+            // Legacy format support
             if (model.pricing?.details?.initial_points_cost) {
                 return model.pricing.details.initial_points_cost;
             }

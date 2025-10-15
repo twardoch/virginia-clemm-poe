@@ -2,22 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 74000 points/message |
-| Initial Points Cost | 74000 points |
-
-**Last Checked:** 2025-09-20 12:38:22.162689
-
-
-## Bot Information
-
-**Creator:** @google
-
-**Description:** Veo 2 creates incredibly high-quality videos in a wide range of subjects and styles. It brings an improved understanding of real-world physics and the nuances of human movement and expression, which helps improve its detail and realism overall. Veo 2 understands the unique language of cinematography: ask it for a genre, specify a lens, suggest cinematic effects and Veo 2 will deliver in 8-second clips. Use --aspect-ratio (16:9 or 9:16) to customize video aspect ratio. Supports text-to-video as well as image-to-video. Non english input will be translated first. Note: currently has low rate limit so you may need to retry your request at times of peak usage.
-
-**Extra:** Powered by a server managed by @google. Learn more
-
+| Request | $2.58/request |
 
 ## Architecture
 
@@ -39,3 +28,5 @@
 **Owned By:** poe
 
 **Root:** Veo-2
+
+**API Last Updated:** 2025-10-15 16:36:09.635002

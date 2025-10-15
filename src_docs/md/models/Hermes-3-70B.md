@@ -2,24 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 200 points/message |
-| Initial Points Cost | 200 points |
-
-**Last Checked:** 2025-09-20 12:19:34.507671
-
-
-## Bot Information
-
-**Creator:** @hyperbolic
-
-**Description:** Hermes 3 is the latest version of our flagship Hermes series of LLMs by Nous Research.
-Hermes 3 is a generalist language model with many improvements over Hermes 2, including advanced agentic capabilities, much better roleplaying, reasoning, multi-turn conversation, long context coherence, and improvements across the board.
-The ethos of the Hermes series of models is focused on aligning LLMs to the user, with powerful steering capabilities and control given to the end user.
-
-**Extra:** Powered by a server managed by @hyperbolic. Learn more
-
+| Request | $0.0060/request |
 
 ## Architecture
 
@@ -41,3 +28,5 @@ The ethos of the Hermes series of models is focused on aligning LLMs to the user
 **Owned By:** poe
 
 **Root:** Hermes-3-70B
+
+**API Last Updated:** 2025-10-15 16:36:09.645779

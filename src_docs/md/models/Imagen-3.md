@@ -2,22 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 800 points/message |
-| Initial Points Cost | 800 points |
-
-**Last Checked:** 2025-09-20 12:20:26.304536
-
-
-## Bot Information
-
-**Creator:** @google
-
-**Description:** Google DeepMind's highest quality text-to-image model, capable of generating images with great detail, rich lighting, and few distracting artifacts. To adjust the aspect ratio of your image add --aspect_ratio (1:1, 16:9, 9:16, 4:3, 3:4). For simpler prompts, faster results, & lower cost, use @Imagen3-Fast. Non english input will be translated first. Image prompt cannot exceed 480 tokens.
-
-**Extra:** Powered by a server managed by @google. Learn more
-
+| Request | $0.028/request |
 
 ## Architecture
 
@@ -39,3 +28,5 @@
 **Owned By:** poe
 
 **Root:** Imagen-3
+
+**API Last Updated:** 2025-10-15 16:36:09.632908

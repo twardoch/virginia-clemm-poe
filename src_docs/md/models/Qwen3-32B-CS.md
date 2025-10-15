@@ -2,22 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 120 points/message |
-| Initial Points Cost | 120 points |
-
-**Last Checked:** 2025-09-20 12:33:49.096671
-
-
-## Bot Information
-
-**Creator:** @cerebrasai
-
-**Description:** World’s fastest inference for Qwen 3 32B with Cerebras.
-
-**Extra:** Powered by a server managed by @cerebrasai. Learn more
-
+| Request | $0.0036/request |
 
 ## Architecture
 
@@ -39,3 +28,5 @@
 **Owned By:** poe
 
 **Root:** Qwen3-32B-CS
+
+**API Last Updated:** 2025-10-15 16:36:09.636154

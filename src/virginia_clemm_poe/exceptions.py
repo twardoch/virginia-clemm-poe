@@ -46,24 +46,24 @@ class CDPConnectionError(BrowserManagerError):
     """
 
 
-class ModelDataError(VirginiaPoeError):
-    """Exception raised for model data related errors.
+class BotDataError(VirginiaPoeError):
+    """Exception raised for bot data related errors.
 
     This includes errors during data loading, parsing, or validation
-    of Poe model information.
+    of Poe bot information.
     """
 
 
-class ModelNotFoundError(ModelDataError):
-    """Exception raised when a requested model cannot be found.
+class BotNotFoundError(BotDataError):
+    """Exception raised when a requested bot cannot be found.
 
-    This occurs when searching for a model by ID or name that doesn't
+    This occurs when searching for a bot by ID or name that doesn't
     exist in the current dataset.
     """
 
 
-class DataUpdateError(ModelDataError):
-    """Exception raised when model data update fails.
+class BotDataUpdateError(BotDataError):
+    """Exception raised when bot data update fails.
 
     This can occur during API calls, web scraping, or data persistence
     operations.

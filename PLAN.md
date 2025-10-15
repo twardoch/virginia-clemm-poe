@@ -2,187 +2,281 @@
 
 # Virginia Clemm Poe - Development Plan
 
-## Current Status: Production-Ready Package ✅
+## Current Status: Major API Update Refactoring (Phase 9) 🚧
 
-Virginia Clemm Poe has successfully completed **Phase 4: Code Quality Standards** and achieved enterprise-grade production readiness with:
+The Poe API has introduced native pricing information in a new format, requiring a comprehensive refactoring to support dual pricing models while maintaining backward compatibility.
 
-- ✅ **Complete Type Safety**: 100% mypy compliance with Python 3.12+ standards
-- ✅ **Enterprise Documentation**: Comprehensive API docs, workflows, and architecture guides  
-- ✅ **Advanced Code Standards**: Refactored codebase with maintainability patterns
-- ✅ **Performance Excellence**: 50%+ faster operations, <200MB memory usage, 80%+ cache hit rates
-- ✅ **Production Infrastructure**: Automated linting, CI/CD, crash recovery, timeout handling
+## Phase 9: Dual Pricing Model Support (IN PROGRESS - Started 2025-10-15)
 
-**Package Status**: Ready for production use with enterprise-grade reliability and performance.
+### Objective
+Refactor the entire pricing system to support both the new API pricing format (dollars per token) and the existing scraped pricing format (points per message), with API pricing as the authoritative source.
 
-## Phase 7: Balance API & Browser Stability Improvements ✅ COMPLETED (2025-08-06)
+### Context & Analysis
 
-**Objective**: Fix critical issues with balance retrieval and browser stability to provide seamless user experience.
+#### New API Pricing Format
+The Poe API now returns pricing information directly:
+```json
+"pricing": {
+  "prompt": "0.0000011",      // dollars per input token
+  "completion": "0.0000090",   // dollars per output token
+  "image": null,               // dollars per image (if applicable)
+  "request": null              // dollars per request (if applicable)
+}
+```
 
-### Context & Problem Analysis
+#### Existing Scraped Pricing Format
+Our current scraped pricing provides different metrics:
+```json
+"pricing": {
+  "checked_at": "2025-09-20 12:03:46",
+  "details": {
+    "input_text": "10 points/1k tokens",
+    "bot_message": "5 points/message",
+    "total_cost": "170 points/message",
+    // ... other point-based metrics
+  }
+}
+```
 
-Currently, the balance command has two critical issues:
+### Architecture Design
 
-1. **Browser Error Dialogs (Issue #302)**: When running `virginia-clemm-poe balance`, after successfully scraping the balance from the browser, 4 error dialogs appear saying "Something went wrong when opening your profile. Some features may be unavailable." This happens during browser cleanup.
+#### 9.1 New Data Model Structure
 
-2. **API Method Failure (Issue #303)**: The internal API method for getting balance doesn't work with our stored cookies. The endpoint `https://www.quora.com/poe_api/settings` returns null/empty data even with valid cookies.
+We'll implement a unified pricing model that accommodates both formats:
 
-### Research Findings
+```python
+# New pricing models hierarchy
+ApiPricing          # Dollar-based pricing from API
+ScrapedPricing      # Point-based pricing from web scraping
+UnifiedPricing      # Container for both pricing types
+  ├── api: ApiPricing (primary/authoritative)
+  └── scraped: ScrapedPricing (contextual/supplementary)
+```
 
-From analyzing poe-api-wrapper and community research:
+Key design principles:
+1. **API First**: API pricing is the single source of truth when available
+2. **Graceful Fallback**: Use scraped pricing when API pricing unavailable
+3. **Dual Display**: Show both pricing types when both exist
+4. **Backward Compatible**: Support models with only scraped pricing
 
-1. **Cookie Requirements**: The internal API requires specific cookies:
-   - `m-b`: Main session cookie (we're capturing `p-b` instead)
-   - `p-lat`: Latitude cookie (we have this)
-   - Additional cookies may be needed for the internal API
+#### 9.2 Implementation Strategy
 
-2. **Alternative Approaches**:
-   - **GraphQL Method**: poe-api-wrapper uses GraphQL query `SettingsPageQuery` 
-   - **Direct JSON Endpoint**: `/poe_api/settings` with proper session cookies
-   - **Browser Scraping**: Current fallback method (works but has cleanup issues)
+##### Phase 9.2.1: Data Model Refactoring
+1. Create new pricing models:
+   - `ApiPricing`: For dollar-based API pricing
+   - `ScrapedPricingDetails`: Renamed from current `PricingDetails`
+   - `ScrapedPricing`: Renamed from current `Pricing`
+   - `UnifiedPricing`: New container model
 
-### Implementation Plan
+2. Update `PoeBot`:
+   - Replace `pricing: Pricing` with `pricing: UnifiedPricing`
+   - Add migration logic for existing data
+   - Implement conversion utilities
 
-#### 7.1 Fix Browser Error Dialogs (Issue #302)
+##### Phase 9.2.2: Updater Refactoring
+1. Parse API pricing into `ApiPricing` model
+2. Keep scraping logic for `ScrapedPricing`
+3. Merge both into `UnifiedPricing`
+4. Implement intelligent update strategy:
+   - Always update API pricing from API
+   - Only scrape if missing scraped pricing or force flag
+   - Preserve existing scraped data when updating API data
 
-**Root Cause**: Browser context is being closed while Poe's JavaScript is still running async operations.
+##### Phase 9.2.3: Display & CLI Updates
+1. Unified pricing display logic:
+   - Primary line: API pricing in $/token
+   - Secondary line: Scraped pricing in points
+   - Smart formatting based on available data
 
-**Solution Strategy**:
-1. **Graceful Browser Shutdown**:
-   - Add proper wait states before closing browser
-   - Implement page.evaluate to check for pending XHR/fetch requests
-   - Use page.waitForLoadState('networkidle') before closing
-   
-2. **Error Dialog Prevention**:
-   - Intercept and suppress dialog events during shutdown
-   - Add page.on('dialog') handler to auto-dismiss
-   - Implement try-catch around browser close operations
+2. Enhanced CLI commands:
+   - `--show-pricing`: Display detailed pricing breakdown
+   - `--pricing-format`: Choose display format (api/scraped/both)
+   - Cost calculator updates for dual pricing
 
-3. **Context Cleanup**:
-   - Clear browser cache/cookies for Poe domain before closing
-   - Properly dispose of page event listeners
-   - Use context.close() before browser.close()
+##### Phase 9.2.4: Migration & Compatibility
+1. Data migration script:
+   - Convert existing `Pricing` to `ScrapedPricing`
+   - Wrap in `UnifiedPricing` container
+   - Preserve all existing data
 
-#### 7.2 Implement Working API Method (Issue #303)
-
-**Strategy**: Implement multiple approaches in fallback order:
-
-1. **Fix Cookie Collection**:
-   - Capture ALL required cookies including `m-b`, `p-b`, `p-lat`, `__cf_bm`, `cf_clearance`
-   - Store cookies with proper domain and path attributes
-   - Implement cookie refresh mechanism
-
-2. **GraphQL Implementation** (Primary):
-   - Implement `SettingsPageQuery` GraphQL query
-   - Use the same endpoint and headers as poe-api-wrapper
-   - Parse response for `computePointsAvailable` and subscription data
-
-3. **Direct JSON Endpoint** (Secondary):
-   - Fix headers to match browser requests exactly
-   - Add proper User-Agent, Referer, Origin headers
-   - Handle redirects and Cloudflare challenges
-
-4. **Enhanced Browser Scraping** (Fallback):
-   - Keep current implementation but fix cleanup issues
-   - Add retry logic for transient failures
-   - Implement better error handling
+2. Backward compatibility:
+   - Support old JSON format on load
+   - Auto-migrate on first update
+   - Version field in JSON for format detection
 
 ### Technical Implementation Details
 
-#### 7.2.1 GraphQL Query Implementation
+#### 9.3 Detailed Model Definitions
 
 ```python
-SETTINGS_QUERY = """
-query SettingsPageQuery {
-  viewer {
-    messagePointInfo {
-      messagePointBalance
-      monthlyQuota
-    }
-    subscription {
-      isActive
-      expiresAt
-    }
-  }
-}
-"""
+from pydantic import BaseModel, Field
+from typing import Optional
+from datetime import datetime
+from decimal import Decimal
+
+class ApiPricing(BaseModel):
+    """Dollar-based pricing from official API."""
+    prompt: Optional[Decimal] = None        # $/input token
+    completion: Optional[Decimal] = None    # $/output token
+    image: Optional[Decimal] = None         # $/image
+    request: Optional[Decimal] = None       # $/request
+
+    def cost_per_1k_tokens(self, input_tokens: int = 500, output_tokens: int = 500) -> Decimal:
+        """Calculate cost for 1k tokens with given input/output ratio."""
+        ...
+
+class ScrapedPricingDetails(BaseModel):
+    """Point-based pricing details from web scraping."""
+    input_text: Optional[str] = None
+    input_image: Optional[str] = None
+    bot_message: Optional[str] = None
+    chat_history: Optional[str] = None
+    chat_history_cache_discount: Optional[str] = None
+    total_cost: Optional[str] = None
+    image_output: Optional[str] = None
+    video_output: Optional[str] = None
+    text_input: Optional[str] = None
+    per_message: Optional[str] = None
+    finetuning: Optional[str] = None
+    initial_points_cost: Optional[str] = None
+
+class ScrapedPricing(BaseModel):
+    """Container for scraped pricing with metadata."""
+    checked_at: datetime
+    details: ScrapedPricingDetails
+
+class UnifiedPricing(BaseModel):
+    """Unified container for all pricing information."""
+    api: Optional[ApiPricing] = None
+    scraped: Optional[ScrapedPricing] = None
+
+    @property
+    def has_api_pricing(self) -> bool:
+        return self.api is not None
+
+    @property
+    def has_scraped_pricing(self) -> bool:
+        return self.scraped is not None
+
+    def display_primary(self) -> str:
+        """Primary pricing display (API if available)."""
+        ...
+
+    def display_full(self) -> str:
+        """Full pricing display (both if available)."""
+        ...
 ```
 
-#### 7.2.2 Cookie Extraction Enhancement
-
-- Modify `extract_cookies_from_browser` to capture all cookies
-- Map Quora domain cookies to Poe endpoints
-- Store cookie metadata (expiry, httpOnly, secure flags)
-
-#### 7.2.3 Request Headers Configuration
+#### 9.4 Update Flow Refactoring
 
 ```python
-REQUIRED_HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
-    "Accept": "application/json",
-    "Accept-Language": "en-US,en;q=0.9",
-    "Origin": "https://poe.com",
-    "Referer": "https://poe.com/settings",
-    "Sec-Fetch-Dest": "empty",
-    "Sec-Fetch-Mode": "cors",
-    "Sec-Fetch-Site": "same-origin"
-}
+async def update_model_pricing(model: PoeBot, api_data: dict, force_scrape: bool = False):
+    """Update model with both API and scraped pricing."""
+
+    # Step 1: Process API pricing if available
+    if "pricing" in api_data:
+        model.pricing = model.pricing or UnifiedPricing()
+        model.pricing.api = ApiPricing(**api_data["pricing"])
+
+    # Step 2: Determine if scraping needed
+    needs_scraping = (
+        force_scrape or
+        not model.pricing or
+        not model.pricing.scraped or
+        model.pricing_error
+    )
+
+    # Step 3: Scrape if needed
+    if needs_scraping:
+        scraped_data = await scrape_pricing(model.id)
+        if scraped_data:
+            model.pricing = model.pricing or UnifiedPricing()
+            model.pricing.scraped = ScrapedPricing(
+                checked_at=datetime.utcnow(),
+                details=ScrapedPricingDetails(**scraped_data)
+            )
 ```
 
 ### Success Metrics
 
-1. **No Browser Errors**: Zero error dialogs after balance check
-2. **API Success Rate**: >90% success rate for API-based balance retrieval
-3. **Performance**: <2 seconds for cached balance, <5 seconds for fresh retrieval
-4. **Reliability**: Automatic fallback chain works seamlessly
+1. **Data Integrity**: 100% of models with API pricing properly stored
+2. **Backward Compatibility**: Zero data loss during migration
+3. **Performance**: <10% increase in update time despite dual sources
+4. **User Experience**: Clear, unified pricing display in all commands
+5. **Test Coverage**: >95% coverage for pricing-related code
+
+### Risk Mitigation
+
+1. **API Changes**: Abstract pricing parsers for easy updates
+2. **Data Loss**: Comprehensive backup before migration
+3. **Performance**: Parallel processing for API and scraping
+4. **User Confusion**: Clear documentation and help text
 
 ### Testing Strategy
 
 1. **Unit Tests**:
-   - Mock GraphQL responses
-   - Test cookie extraction logic
-   - Verify fallback chain
+   - Model validation with various pricing combinations
+   - Migration logic with edge cases
+   - Display formatting with all scenarios
 
 2. **Integration Tests**:
-   - Test with real Poe accounts
-   - Verify balance accuracy
-   - Test error scenarios
+   - Full update cycle with both pricing sources
+   - CLI commands with unified pricing
+   - Data persistence and loading
 
-3. **Browser Tests**:
-   - Verify no error dialogs
-   - Test browser cleanup
-   - Check memory leaks
+3. **Regression Tests**:
+   - Existing functionality remains intact
+   - Old data formats still loadable
+   - Performance benchmarks maintained
 
-### Risk Mitigation
+## Phase 10: Future Enhancements (After Phase 9)
 
-1. **API Changes**: Monitor poe-api-wrapper for updates
-2. **Rate Limiting**: Implement exponential backoff
-3. **Cookie Expiry**: Auto-refresh mechanism
-4. **Cloudflare**: Handle challenges gracefully
+### 10.1 Advanced Pricing Analytics
+- Historical pricing tracking with trends
+- Cost optimization recommendations
+- Price-performance analysis
+- Usage-based cost projections
 
-## Phase 8: Future Enhancements (Low Priority)
+### 10.2 Enhanced Data Export
+- Export both pricing formats
+- Custom export templates
+- Pricing comparison reports
+- Bulk pricing updates via CSV
 
-### 8.1 Data Export & Analysis
-- Export to multiple formats (CSV, Excel, JSON, YAML)
-- Model comparison and diff features
-- Historical pricing tracking with trend analysis
-- Cost calculator with custom usage patterns
+### 10.3 Real-time Pricing Updates
+- Webhook support for API pricing changes
+- Automatic background updates
+- Price change notifications
+- Pricing alert thresholds
 
-### 8.2 Advanced Scalability
-- Intelligent request batching (5x faster for >10 models)
-- Streaming JSON parsing for large datasets (>1000 models)
-- Lazy loading with on-demand fetching
-- Optional parallel processing for independent operations
+## Implementation Timeline
 
-### 8.3 Integration & Extensibility
-- Webhook support for real-time model updates
-- Plugin system for custom scrapers
-- REST API server mode for remote access
-- Database integration for persistent storage
+### Week 1 (2025-10-15 to 2025-10-22)
+- [x] Analyze new API format
+- [x] Design unified pricing model
+- [ ] Implement new model classes
+- [ ] Write migration logic
+- [ ] Update data persistence
+
+### Week 2 (2025-10-23 to 2025-10-29)
+- [ ] Refactor updater for dual sources
+- [ ] Implement parallel update strategy
+- [ ] Update CLI display logic
+- [ ] Add new CLI options
+- [ ] Comprehensive testing
+
+### Week 3 (2025-10-30 to 2025-11-05)
+- [ ] Performance optimization
+- [ ] Documentation updates
+- [ ] User migration guide
+- [ ] Release preparation
+- [ ] Post-release monitoring
 
 ## Long-term Vision
 
-**Package Evolution**: Transform from utility tool to comprehensive model intelligence platform
-- Real-time monitoring dashboards
-- Predictive pricing analytics
-- Custom alerting and notifications
-- Enterprise reporting and compliance features
+Transform Virginia Clemm Poe into the definitive Poe.com model intelligence platform with:
+- **Comprehensive Pricing Intelligence**: Complete understanding of all pricing models
+- **Real-time Market Analysis**: Track pricing trends across all providers
+- **Cost Optimization Engine**: Recommend best models for specific use cases
+- **Enterprise Integration**: API endpoints for programmatic access
+- **Predictive Analytics**: Forecast pricing changes and model availability

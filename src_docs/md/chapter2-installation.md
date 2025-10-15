@@ -176,7 +176,7 @@ The package stores data in platform-appropriate locations:
 
 The main model dataset is stored as a JSON file:
 ```
-~/.local/share/virginia-clemm-poe/poe_models.json
+~/.local/share/virginia-clemm-poe/poe_bots.json
 ```
 
 ## Troubleshooting Installation

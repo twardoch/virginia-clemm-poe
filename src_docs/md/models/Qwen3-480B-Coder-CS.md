@@ -2,12 +2,20 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
+| Type | Cost |
+|------|------|
+| Request | $0.017/request |
+
+### Points-based Pricing
+
 | Type | Cost |
 |------|------|
 | Total Cost | 580 points/message |
 | Initial Points Cost | 580 points |
 
-**Last Checked:** 2025-09-20 12:33:56.601314
+**Last Checked:** 2025-10-15 16:48:17.249016
 
 
 ## Bot Information
@@ -39,3 +47,5 @@
 **Owned By:** poe
 
 **Root:** Qwen3-480B-Coder-CS
+
+**API Last Updated:** 2025-10-15 16:36:09.626171

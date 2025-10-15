@@ -1,16 +1,24 @@
-# this_file: tests/test_models.py
-"""Tests for Pydantic data models."""
+# this_file: tests/test_bots.py
+"""Tests for Pydantic bot data structures."""
 
-from datetime import datetime
+from datetime import datetime, timedelta
 
 import pytest
 from pydantic import ValidationError
 
-from virginia_clemm_poe.models import Architecture, BotInfo, ModelCollection, PoeModel, Pricing, PricingDetails
+from virginia_clemm_poe.bots import (
+    Architecture,
+    BotCollection,
+    BotInfo,
+    PoeBot,
+    Pricing,
+    PricingDetails,
+    UnifiedPricing,
+)
 
 
 class TestArchitecture:
-    """Test Architecture model validation and functionality."""
+    """Test Architecture bot validation and functionality."""
 
     def test_valid_architecture_creation(self, sample_architecture: Architecture) -> None:
         """Test creating a valid Architecture instance."""
@@ -27,7 +35,7 @@ class TestArchitecture:
 
 
 class TestPricingDetails:
-    """Test PricingDetails model validation and functionality."""
+    """Test PricingDetails bot validation and functionality."""
 
     def test_valid_pricing_details_creation(self, sample_pricing_details: PricingDetails) -> None:
         """Test creating valid pricing details."""
@@ -68,7 +76,7 @@ class TestPricingDetails:
 
 
 class TestBotInfo:
-    """Test BotInfo model validation and functionality."""
+    """Test BotInfo bot validation and functionality."""
 
     def test_valid_bot_info_creation(self, sample_bot_info: BotInfo) -> None:
         """Test creating valid bot info."""
@@ -90,36 +98,36 @@ class TestBotInfo:
         assert bot_info.description is None
 
 
-class TestPoeModel:
-    """Test PoeModel validation and functionality."""
+class TestPoeBot:
+    """Test PoeBot validation and functionality."""
 
-    def test_valid_poe_model_creation(self, sample_poe_model: PoeModel) -> None:
-        """Test creating a valid PoeModel instance."""
-        assert sample_poe_model.id == "test-model-1"
-        assert sample_poe_model.object == "model"
+    def test_valid_poe_model_creation(self, sample_poe_model: PoeBot) -> None:
+        """Test creating a valid PoeBot instance."""
+        assert sample_poe_model.id == "test-bot-1"
+        assert sample_poe_model.object == "bot"
         assert sample_poe_model.owned_by == "testorg"
-        assert sample_poe_model.root == "test-model-1"
+        assert sample_poe_model.root == "test-bot-1"
         assert sample_poe_model.has_pricing()
 
     def test_poe_model_without_pricing(self, sample_architecture: Architecture) -> None:
-        """Test PoeModel without pricing data."""
-        model = PoeModel(
-            id="no-pricing-model",
+        """Test PoeBot without pricing data."""
+        bot = PoeBot(
+            id="no-pricing-bot",
             created=1704369600,
             owned_by="testorg",
-            root="no-pricing-model",
+            root="no-pricing-bot",
             architecture=sample_architecture,
         )
-        assert not model.has_pricing()
-        assert model.needs_pricing_update()
-        assert model.get_primary_cost() is None
+        assert not bot.has_pricing()
+        assert bot.needs_pricing_update()
+        assert bot.get_primary_cost() is None
 
-    def test_poe_model_needs_pricing_update(self, sample_poe_model: PoeModel) -> None:
+    def test_poe_model_needs_pricing_update(self, sample_poe_model: PoeBot) -> None:
         """Test pricing update logic."""
-        # Model with pricing should not need update
+        # Bot with pricing should not need update
         assert not sample_poe_model.needs_pricing_update()
 
-        # Model with pricing error should need update
+        # Bot with pricing error should need update
         sample_poe_model.pricing_error = "Failed to scrape"
         assert sample_poe_model.needs_pricing_update()
 
@@ -129,64 +137,97 @@ class TestPoeModel:
             input_text="10 points/1k tokens", total_cost="500 points", per_message="15 points/message"
         )
         pricing = Pricing(checked_at=datetime.now(), details=pricing_details)
-        model = PoeModel(
-            id="cost-test-model",
+        bot = PoeBot(
+            id="cost-test-bot",
             created=1704369600,
             owned_by="testorg",
-            root="cost-test-model",
+            root="cost-test-bot",
             architecture=sample_architecture,
-            pricing=pricing,
+            pricing=UnifiedPricing(scraped=pricing),
         )
 
         # Should prioritize input_text over other options
-        assert model.get_primary_cost() == "10 points/1k tokens"
+        assert bot.get_primary_cost() == "10 points/1k tokens"
 
     def test_model_validation_errors(self, sample_architecture: Architecture) -> None:
-        """Test model validation catches required field errors."""
+        """Test bot validation catches required field errors."""
         with pytest.raises(ValidationError):
-            PoeModel(architecture=sample_architecture)  # Missing required fields
+            PoeBot(architecture=sample_architecture)  # Missing required fields
 
 
-class TestModelCollection:
-    """Test ModelCollection functionality."""
+class TestBotCollection:
+    """Test BotCollection functionality."""
 
-    def test_valid_model_collection_creation(self, sample_model_collection: ModelCollection) -> None:
-        """Test creating a valid ModelCollection."""
-        assert sample_model_collection.object == "list"
-        assert len(sample_model_collection.data) == 1
-        assert sample_model_collection.data[0].id == "test-model-1"
+    def test_valid_model_collection_creation(self, sample_bot_collection: BotCollection) -> None:
+        """Test creating a valid BotCollection."""
+        assert sample_bot_collection.object == "list"
+        assert len(sample_bot_collection.data) == 1
+        assert sample_bot_collection.data[0].id == "test-bot-1"
 
-    def test_get_by_id_found(self, sample_model_collection: ModelCollection) -> None:
-        """Test getting a model by ID when it exists."""
-        model = sample_model_collection.get_by_id("test-model-1")
-        assert model is not None
-        assert model.id == "test-model-1"
+    def test_get_by_id_found(self, sample_bot_collection: BotCollection) -> None:
+        """Test getting a bot by ID when it exists."""
+        bot = sample_bot_collection.get_by_id("test-bot-1")
+        assert bot is not None
+        assert bot.id == "test-bot-1"
 
-    def test_get_by_id_not_found(self, sample_model_collection: ModelCollection) -> None:
-        """Test getting a model by ID when it doesn't exist."""
-        model = sample_model_collection.get_by_id("nonexistent-model")
-        assert model is None
+    def test_get_by_id_not_found(self, sample_bot_collection: BotCollection) -> None:
+        """Test getting a bot by ID when it doesn't exist."""
+        bot = sample_bot_collection.get_by_id("nonexistent-bot")
+        assert bot is None
 
-    def test_search_by_id(self, sample_model_collection: ModelCollection) -> None:
-        """Test searching models by ID."""
-        results = sample_model_collection.search("test-model")
+    def test_search_by_id(self, sample_bot_collection: BotCollection) -> None:
+        """Test searching bots by ID."""
+        results = sample_bot_collection.search("test-bot")
         assert len(results) == 1
-        assert results[0].id == "test-model-1"
+        assert results[0].id == "test-bot-1"
 
-    def test_search_case_insensitive(self, sample_model_collection: ModelCollection) -> None:
+    def test_search_case_insensitive(self, sample_bot_collection: BotCollection) -> None:
         """Test that search is case insensitive."""
-        results = sample_model_collection.search("TEST-MODEL")
+        results = sample_bot_collection.search("TEST-MODEL")
         assert len(results) == 1
-        assert results[0].id == "test-model-1"
+        assert results[0].id == "test-bot-1"
 
-    def test_search_no_results(self, sample_model_collection: ModelCollection) -> None:
+    def test_search_no_results(self, sample_bot_collection: BotCollection) -> None:
         """Test search with no matching results."""
-        results = sample_model_collection.search("nonexistent")
+        results = sample_bot_collection.search("nonexistent")
         assert len(results) == 0
 
     def test_empty_collection(self) -> None:
         """Test operations on empty collection."""
-        collection = ModelCollection(data=[])
+        collection = BotCollection(data=[])
         assert len(collection.data) == 0
         assert collection.get_by_id("any-id") is None
         assert len(collection.search("any-query")) == 0
+
+    def test_sort_by_api_last_updated_orders_oldest_first(self, sample_architecture: Architecture) -> None:
+        """Bots should sort by oldest API update timestamp first."""
+        now = datetime(2025, 1, 1, 12, 0, 0)
+        older = PoeBot(
+            id="older-bot",
+            created=1700000000,
+            owned_by="org",
+            root="older-bot",
+            architecture=sample_architecture,
+            api_last_updated=now - timedelta(days=2),
+        )
+        newest = PoeBot(
+            id="newer-bot",
+            created=1700000100,
+            owned_by="org",
+            root="newer-bot",
+            architecture=sample_architecture,
+            api_last_updated=now,
+        )
+        missing = PoeBot(
+            id="missing-timestamp",
+            created=1700000200,
+            owned_by="org",
+            root="missing-timestamp",
+            architecture=sample_architecture,
+        )
+
+        collection = BotCollection(data=[newest, missing, older])
+        collection.sort_by_api_last_updated()
+
+        ordered_ids = [bot.id for bot in collection.data]
+        assert ordered_ids == ["missing-timestamp", "older-bot", "newer-bot"], "Expected oldest timestamps first"

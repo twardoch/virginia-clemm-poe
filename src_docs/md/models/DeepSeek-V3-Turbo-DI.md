@@ -2,24 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 195 points/message |
-| Initial Points Cost | 195 points |
-
-**Last Checked:** 2025-09-20 12:08:29.156963
-
-
-## Bot Information
-
-**Creator:** @deepinfra
-
-**Description:** Deepseek-v3 – the new top open-source LLM. Achieves state-of-the-art performance in tasks such as coding, mathematics, and reasoning. Turbo variant is quantized to achieve higher speeds. All data you submit to this bot is governed by the Poe privacy policy and is only sent to DeepInfra, a US-based company.
-
-Supports 32k tokens of input context and 8k tokens of output context. Quantization: FP4 (turbo).
-
-**Extra:** Powered by a server managed by @deepinfra. Learn more
-
+| Request | $0.0059/request |
 
 ## Architecture
 
@@ -41,3 +28,5 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 **Owned By:** poe
 
 **Root:** DeepSeek-V3-Turbo-DI
+
+**API Last Updated:** 2025-10-15 16:36:09.637509

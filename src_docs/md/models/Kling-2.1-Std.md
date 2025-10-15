@@ -1,24 +1,5 @@
 # [Kling-2.1-Std](https://poe.com/Kling-2.1-Std){ .md-button .md-button--primary }
 
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Video Output | 1667 points / second |
-| Initial Points Cost | Variable points |
-
-**Last Checked:** 2025-09-20 12:22:31.707821
-
-
-## Bot Information
-
-**Creator:** @fal
-
-**Description:** Kling 2.1 Standard is a cost-efficient endpoint for the Kling 2.1 model, delivering high-quality image-to-video generation. Use `--negative_prompt` to send a negative prompt, and `--cfg_scale` to send a classifier-free guidance scale between 0.0 and 1.0 (inclusive). Use `--aspect` to set the aspect ratio (One of `16:9`, `9:16` and `1:1`). Set video duration to one of `5` or `10` seconds with `--duration`.
-
-**Extra:** Powered by a server managed by @fal. Learn more
-
-
 ## Architecture
 
 **Input Modalities:** text
@@ -39,3 +20,5 @@
 **Owned By:** poe
 
 **Root:** Kling-2.1-Std
+
+**API Last Updated:** 2025-10-15 16:36:09.634840

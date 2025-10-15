@@ -786,16 +786,16 @@ E   AttributeError: 'NoneType' object has no attribute 'lower'
  tests/test_models.py ✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓                                                                                                              67% ██████▋
  tests/test_type_guards.py ✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓                                                                                                 97% █████████▊
 
-―――――――――――――――――――――――――――――――――――――――――――― TestValidateModelFilterCriteria.test_validate_invalid_criteria_unknown_fields ――――――――――――――――――――――――――――――――――――――――――――
+―――――――――――――――――――――――――――――――――――――――――――― TestValidateBotFilterCriteria.test_validate_invalid_criteria_unknown_fields ――――――――――――――――――――――――――――――――――――――――――――
 tests/test_type_guards.py:256: in test_validate_invalid_criteria_unknown_fields
     validate_model_filter_criteria(unknown_field)
 src/virginia_clemm_poe/type_guards.py:221: in validate_model_filter_criteria
-    raise ModelDataError(
-E   virginia_clemm_poe.exceptions.ModelDataError: Invalid filter fields: unknown_field, another_unknown. Valid fields are: created_after, created_before, has_bot_info, has_pricing, id, max_points, min_points, name, owned_by
+    raise BotDataError(
+E   virginia_clemm_poe.exceptions.BotDataError: Invalid filter fields: unknown_field, another_unknown. Valid fields are: created_after, created_before, has_bot_info, has_pricing, id, max_points, min_points, name, owned_by
 
 During handling of the above exception, another exception occurred:
 tests/test_type_guards.py:255: in test_validate_invalid_criteria_unknown_fields
-    with pytest.raises(ModelDataError, match="Invalid filter fields: another_unknown, unknown_field"):
+    with pytest.raises(BotDataError, match="Invalid filter fields: another_unknown, unknown_field"):
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 E   AssertionError: Regex pattern did not match.
 E    Regex: 'Invalid filter fields: another_unknown, unknown_field'
@@ -844,7 +844,7 @@ FAILED tests/test_cli.py::TestCliSearch::test_search_with_results - AssertionErr
 FAILED tests/test_cli.py::TestCliClearCache::test_clear_cache_browser_only - AttributeError: module 'virginia_clemm_poe.__main__' has no attribute 'shutil'
 FAILED tests/test_cli.py::TestCliDoctor::test_check_python_version - AttributeError: 'tuple' object has no attribute 'major'
 FAILED tests/test_cli.py::TestCliDoctor::test_check_api_key - AttributeError: 'NoneType' object has no attribute 'lower'
-FAILED tests/test_type_guards.py::TestValidateModelFilterCriteria::test_validate_invalid_criteria_unknown_fields - AssertionError: Regex pattern did not match.
+FAILED tests/test_type_guards.py::TestValidateBotFilterCriteria::test_validate_invalid_criteria_unknown_fields - AssertionError: Regex pattern did not match.
 
 Results (36.16s):
       90 passed
@@ -854,6 +854,6 @@ Results (36.16s):
          - tests/test_cli.py:367 TestCliClearCache.test_clear_cache_browser_only
          - tests/test_cli.py:424 TestCliDoctor.test_check_python_version
          - tests/test_cli.py:434 TestCliDoctor.test_check_api_key
-         - tests/test_type_guards.py:252 TestValidateModelFilterCriteria.test_validate_invalid_criteria_unknown_fields
+         - tests/test_type_guards.py:252 TestValidateBotFilterCriteria.test_validate_invalid_criteria_unknown_fields
 ~/Developer/vcs/github.twardoch/pub/virginia-clemm-poe
 [18:06:42] $

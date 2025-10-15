@@ -1,24 +1,5 @@
 # [remove-background](https://poe.com/remove-background){ .md-button .md-button--primary }
 
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Image Output | 34 points / message |
-| Initial Points Cost | 34 points |
-
-**Last Checked:** 2025-09-20 12:40:51.200994
-
-
-## Bot Information
-
-**Creator:** @fal
-
-**Description:** Remove background from your images
-
-**Extra:** Powered by a server managed by @fal. Learn more
-
-
 ## Architecture
 
 **Input Modalities:** text
@@ -39,3 +20,5 @@
 **Owned By:** poe
 
 **Root:** remove-background
+
+**API Last Updated:** 2025-10-15 16:36:09.643566

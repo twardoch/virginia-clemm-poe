@@ -2,22 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 1500 points/message |
-| Initial Points Cost | 1500 points |
-
-**Last Checked:** 2025-09-20 12:07:07.495751
-
-
-## Bot Information
-
-**Creator:** @openai
-
-**Description:** OpenAI's most powerful image generation model. Generates high quality images with intricate details based on the user's most recent prompt. For most prompts, https://poe.com/FLUX-pro-1.1-ultra or https://poe.com/FLUX-dev or https://poe.com/Imagen3 will produce better results. Use "--aspect" to select an aspect ratio (e.g --aspect 1:1). Valid aspect ratios are 1:1, 7:4, & 4:7.
-
-**Extra:** Powered by a server managed by @openai. Learn more
-
+| Request | $0.045/request |
 
 ## Architecture
 
@@ -39,3 +28,5 @@
 **Owned By:** poe
 
 **Root:** DALL-E-3
+
+**API Last Updated:** 2025-10-15 16:36:09.638862

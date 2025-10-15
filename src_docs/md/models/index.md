@@ -8,6 +8,10 @@
 
 Browse all available Poe models:
 
+### [Amazon-Nova-Canvas](Amazon-Nova-Canvas.md)
+
+### [Amazon-Nova-Reel-1.1](Amazon-Nova-Reel-1.1.md)
+
 ### [Aya-Expanse-32B](Aya-Expanse-32B.md)
 
 ### [Aya-Vision](Aya-Vision.md)
@@ -18,7 +22,7 @@ Browse all available Poe models:
 
 ### [Cartesia-Ink-Whisper](Cartesia-Ink-Whisper.md)
 
-### [Cartesia-Sonic](Cartesia-Sonic.md)
+### [Cartesia-Sonic-2.0](Cartesia-Sonic-2.0.md)
 
 ### [ChatGPT-4o-Latest](ChatGPT-4o-Latest.md)
 
@@ -58,21 +62,19 @@ Browse all available Poe models:
 
 ### [Claude-Sonnet-4-Search](Claude-Sonnet-4-Search.md)
 
+### [Claude-Sonnet-4.5](Claude-Sonnet-4.5.md)
+
 ### [Command-R](Command-R.md)
 
 ### [Command-R-Plus](Command-R-Plus.md)
 
 ### [DALL-E-3](DALL-E-3.md)
 
-### [DeepClaude](DeepClaude.md)
-
 ### [DeepSeek-Prover-V2](DeepSeek-Prover-V2.md)
 
 ### [DeepSeek-R1](DeepSeek-R1.md)
 
 ### [DeepSeek-R1-DI](DeepSeek-R1-DI.md)
-
-### [DeepSeek-R1-Distill](DeepSeek-R1-Distill.md)
 
 ### [DeepSeek-R1-FW](DeepSeek-R1-FW.md)
 
@@ -90,7 +92,13 @@ Browse all available Poe models:
 
 ### [DeepSeek-V3.1-N](DeepSeek-V3.1-N.md)
 
-### [DeepSeek-V3.1-Omni](DeepSeek-V3.1-Omni.md)
+### [DeepSeek-V3.1-TM](DeepSeek-V3.1-TM.md)
+
+### [DeepSeek-V3.1-Vers](DeepSeek-V3.1-Vers.md)
+
+### [DeepSeek-V3.2-Chat](DeepSeek-V3.2-Chat.md)
+
+### [DeepSeek-V3.2-Exp](DeepSeek-V3.2-Exp.md)
 
 ### [Deepgram-Nova-3](Deepgram-Nova-3.md)
 
@@ -150,7 +158,9 @@ Browse all available Poe models:
 
 ### [GLM-4.5-FW](GLM-4.5-FW.md)
 
-### [GLM-4.5-Omni](GLM-4.5-Omni.md)
+### [GLM-4.5-Vers](GLM-4.5-Vers.md)
+
+### [GLM-4.6](GLM-4.6.md)
 
 ### [GPT-3.5-Turbo](GPT-3.5-Turbo.md)
 
@@ -184,33 +194,31 @@ Browse all available Poe models:
 
 ### [GPT-5-Chat](GPT-5-Chat.md)
 
+### [GPT-5-Codex](GPT-5-Codex.md)
+
+### [GPT-5-Pro](GPT-5-Pro.md)
+
 ### [GPT-5-mini](GPT-5-mini.md)
 
 ### [GPT-5-nano](GPT-5-nano.md)
 
 ### [GPT-Image-1](GPT-Image-1.md)
 
+### [GPT-Image-1-Mini](GPT-Image-1-Mini.md)
+
 ### [GPT-OSS-120B](GPT-OSS-120B.md)
 
 ### [GPT-OSS-120B-CS](GPT-OSS-120B-CS.md)
 
-### [GPT-OSS-120B-Omni](GPT-OSS-120B-Omni.md)
-
 ### [GPT-OSS-120B-T](GPT-OSS-120B-T.md)
+
+### [GPT-OSS-120B-Vers](GPT-OSS-120B-Vers.md)
 
 ### [GPT-OSS-20B](GPT-OSS-20B.md)
 
 ### [GPT-OSS-20B-T](GPT-OSS-20B-T.md)
 
 ### [GPT-Researcher](GPT-Researcher.md)
-
-### [Gemini-1.5-Flash](Gemini-1.5-Flash.md)
-
-### [Gemini-1.5-Flash-Search](Gemini-1.5-Flash-Search.md)
-
-### [Gemini-1.5-Pro](Gemini-1.5-Pro.md)
-
-### [Gemini-1.5-Pro-Search](Gemini-1.5-Pro-Search.md)
 
 ### [Gemini-2.0-Flash](Gemini-2.0-Flash.md)
 
@@ -220,13 +228,13 @@ Browse all available Poe models:
 
 ### [Gemini-2.5-Flash](Gemini-2.5-Flash.md)
 
-### [Gemini-2.5-Flash-Image](Gemini-2.5-Flash-Image.md)
-
 ### [Gemini-2.5-Flash-Lite](Gemini-2.5-Flash-Lite.md)
+
+### [Gemini-2.5-Flash-TTS](Gemini-2.5-Flash-TTS.md)
 
 ### [Gemini-2.5-Pro](Gemini-2.5-Pro.md)
 
-### [Gemini-2.5-Pro-Chat](Gemini-2.5-Pro-Chat.md)
+### [Gemini-2.5-Pro-TTS](Gemini-2.5-Pro-TTS.md)
 
 ### [Gemma-3-27B](Gemma-3-27B.md)
 
@@ -256,11 +264,15 @@ Browse all available Poe models:
 
 ### [Hailuo-Live](Hailuo-Live.md)
 
+### [Hailuo-Music-v1.5](Hailuo-Music-v1.5.md)
+
 ### [Hailuo-Speech-02](Hailuo-Speech-02.md)
 
 ### [Hermes-3-70B](Hermes-3-70B.md)
 
 ### [Hidream-I1-full](Hidream-I1-full.md)
+
+### [Hunyuan-Image-2.1](Hunyuan-Image-2.1.md)
 
 ### [Ideogram](Ideogram.md)
 
@@ -286,11 +298,15 @@ Browse all available Poe models:
 
 ### [Inception-Mercury-Coder](Inception-Mercury-Coder.md)
 
+### [KAT-Dev](KAT-Dev.md)
+
 ### [Kimi-K2](Kimi-K2.md)
 
 ### [Kimi-K2-0905-Chat](Kimi-K2-0905-Chat.md)
 
 ### [Kimi-K2-0905-T](Kimi-K2-0905-T.md)
+
+### [Kimi-K2-0905-Vers](Kimi-K2-0905-Vers.md)
 
 ### [Kimi-K2-Instruct](Kimi-K2-Instruct.md)
 
@@ -307,6 +323,8 @@ Browse all available Poe models:
 ### [Kling-2.1-Pro](Kling-2.1-Pro.md)
 
 ### [Kling-2.1-Std](Kling-2.1-Std.md)
+
+### [Kling-2.5-Turbo-Pro](Kling-2.5-Turbo-Pro.md)
 
 ### [Kling-Pro-Effects](Kling-Pro-Effects.md)
 
@@ -354,13 +372,11 @@ Browse all available Poe models:
 
 ### [Llama-3.3-70B-Chat](Llama-3.3-70B-Chat.md)
 
-### [Llama-3.3-70B-DI](Llama-3.3-70B-DI.md)
-
 ### [Llama-3.3-70B-FW](Llama-3.3-70B-FW.md)
 
 ### [Llama-3.3-70B-N](Llama-3.3-70B-N.md)
 
-### [Llama-3.3-70B-Omni](Llama-3.3-70B-Omni.md)
+### [Llama-3.3-70B-Vers](Llama-3.3-70B-Vers.md)
 
 ### [Llama-4-Maverick](Llama-4-Maverick.md)
 
@@ -390,6 +406,8 @@ Browse all available Poe models:
 
 ### [MiniMax-M1](MiniMax-M1.md)
 
+### [Mistral-3.2-Chat](Mistral-3.2-Chat.md)
+
 ### [Mistral-7B-v0.3-DI](Mistral-7B-v0.3-DI.md)
 
 ### [Mistral-7B-v0.3-T](Mistral-7B-v0.3-T.md)
@@ -400,17 +418,31 @@ Browse all available Poe models:
 
 ### [Mistral-Medium-3](Mistral-Medium-3.md)
 
+### [Mistral-Medium-3.1](Mistral-Medium-3.1.md)
+
 ### [Mistral-NeMo-Chat](Mistral-NeMo-Chat.md)
 
-### [Mistral-NeMo-Omni](Mistral-NeMo-Omni.md)
+### [Mistral-NeMo-Vers](Mistral-NeMo-Vers.md)
 
 ### [Mistral-Small-3](Mistral-Small-3.md)
 
 ### [Mistral-Small-3.1](Mistral-Small-3.1.md)
 
+### [Mistral-Small-3.2](Mistral-Small-3.2.md)
+
 ### [Mixtral8x22b-Inst-FW](Mixtral8x22b-Inst-FW.md)
 
 ### [Mochi-preview](Mochi-preview.md)
+
+### [Nano-Banana](Nano-Banana.md)
+
+### [Nova-Lite-1.0](Nova-Lite-1.0.md)
+
+### [Nova-Micro-1.0](Nova-Micro-1.0.md)
+
+### [Nova-Premier-1.0](Nova-Premier-1.0.md)
+
+### [Nova-Pro-1.0](Nova-Pro-1.0.md)
 
 ### [OmniHuman](OmniHuman.md)
 
@@ -486,21 +518,31 @@ Browse all available Poe models:
 
 ### [Qwen3-235B-Think-CS](Qwen3-235B-Think-CS.md)
 
-### [Qwen3-30B-A3B-Instruct](Qwen3-30B-A3B-Instruct.md)
-
 ### [Qwen3-32B-CS](Qwen3-32B-CS.md)
+
+### [Qwen3-32B-Chat](Qwen3-32B-Chat.md)
+
+### [Qwen3-32B-Coder-405B](Qwen3-32B-Coder-405B.md)
 
 ### [Qwen3-480B-Coder-CS](Qwen3-480B-Coder-CS.md)
 
 ### [Qwen3-Coder](Qwen3-Coder.md)
 
-### [Qwen3-Coder-30B-A3B](Qwen3-Coder-30B-A3B.md)
-
 ### [Qwen3-Coder-480B-N](Qwen3-Coder-480B-N.md)
 
 ### [Qwen3-Coder-480B-T](Qwen3-Coder-480B-T.md)
 
+### [Qwen3-Max](Qwen3-Max.md)
+
 ### [Qwen3-Next-80B](Qwen3-Next-80B.md)
+
+### [Qwen3-Next-Instruct-T](Qwen3-Next-Instruct-T.md)
+
+### [Qwen3-Next-Think-T](Qwen3-Next-Think-T.md)
+
+### [Qwen3-VL-235B-A22B-I](Qwen3-VL-235B-A22B-I.md)
+
+### [Qwen3-VL-235B-A22B-T](Qwen3-VL-235B-A22B-T.md)
 
 ### [Ray2](Ray2.md)
 
@@ -537,6 +579,10 @@ Browse all available Poe models:
 ### [Solar-Pro-2](Solar-Pro-2.md)
 
 ### [Sora](Sora.md)
+
+### [Sora-2](Sora-2.md)
+
+### [Sora-2-Pro](Sora-2-Pro.md)
 
 ### [Stable-Audio-2.0](Stable-Audio-2.0.md)
 
@@ -575,6 +621,8 @@ Browse all available Poe models:
 ### [Wan-2.1](Wan-2.1.md)
 
 ### [Wan-2.2](Wan-2.2.md)
+
+### [Wan-Animate](Wan-Animate.md)
 
 ### [Web-Search](Web-Search.md)
 

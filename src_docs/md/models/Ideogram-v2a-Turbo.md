@@ -2,23 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 800 points/message |
-| Initial Points Cost | 800 points |
-
-**Last Checked:** 2025-09-20 12:20:11.431005
-
-
-## Bot Information
-
-**Creator:** @ideogramai
-
-**Description:** Fast, affordable text-to-image model, optimized for graphic design and photography. For higher quality, use https://poe.com/Ideogram-v2A
-Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (one of `GENERAL`, `REALISTIC`, `DESIGN`, `3D RENDER` and `ANIME` default: `GENERAL`.)
-
-**Extra:** Powered by a server managed by @ideogramai. Learn more
-
+| Request | $0.024/request |
 
 ## Architecture
 
@@ -40,3 +28,5 @@ Use `--aspect` to set the aspect ratio, and use `--style` to specify a style (on
 **Owned By:** poe
 
 **Root:** Ideogram-v2a-Turbo
+
+**API Last Updated:** 2025-10-15 16:36:09.635482

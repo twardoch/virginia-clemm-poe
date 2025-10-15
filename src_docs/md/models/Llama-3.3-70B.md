@@ -2,22 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 130 points/message |
-| Initial Points Cost | 130 points |
-
-**Last Checked:** 2025-09-20 12:25:08.288398
-
-
-## Bot Information
-
-**Creator:** @togetherai
-
-**Description:** Llama 3.3 70B – with similar performance as Llama 3.1 405B while being faster and much smaller! Llama 3.3 70B is a new open source model that delivers leading performance and quality across text-based use cases such as synthetic data generation at a fraction of the inference cost, improving over Llama 3.1 70B.
-
-**Extra:** Powered by a server managed by @togetherai. Learn more
-
+| Request | $0.0039/request |
 
 ## Architecture
 
@@ -39,3 +28,5 @@
 **Owned By:** poe
 
 **Root:** Llama-3.3-70B
+
+**API Last Updated:** 2025-10-15 16:36:09.629300

@@ -75,7 +75,7 @@ Browser Status:
 
 Data Status:
 ✓ Model data found
-  Path: ~/.local/share/virginia-clemm-poe/poe_models.json
+  Path: ~/.local/share/virginia-clemm-poe/poe_bots.json
   Total models: 244
   With pricing: 239
   With bot info: 235

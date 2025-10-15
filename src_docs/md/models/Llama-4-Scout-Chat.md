@@ -1,23 +1,5 @@
 # [Llama-4-Scout-Chat](https://poe.com/Llama-4-Scout-Chat){ .md-button .md-button--primary }
 
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Message Cost | 200 points |
-
-**Last Checked:** 2025-09-20 12:26:48.620238
-
-
-## Bot Information
-
-**Creator:** @OpenSourceLab
-
-**Description:** This bot is based on llama-4-scout-17b-16e-instruct and hosted on Groq. Llama-4-Scout-Chat is a bot optimized for human chat conversation. It doesn't accept attachments.
-
-**Extra:** Powered by a server managed by @OpenSourceLab. Learn more
-
-
 ## Architecture
 
 **Input Modalities:** text
@@ -38,3 +20,5 @@
 **Owned By:** poe
 
 **Root:** Llama-4-Scout-Chat
+
+**API Last Updated:** 2025-10-15 16:36:09.629055

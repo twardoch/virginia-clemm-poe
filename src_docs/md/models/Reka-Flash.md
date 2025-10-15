@@ -1,24 +1,5 @@
 # [Reka-Flash](https://poe.com/Reka-Flash){ .md-button .md-button--primary }
 
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Initial Points Cost | 27 points |
-| Total Cost | 27 points / message |
-
-**Last Checked:** 2025-09-20 12:35:08.527372
-
-
-## Bot Information
-
-**Creator:** @reka
-
-**Description:** Reka's efficient and capable 21B multimodal model optimized for fast workloads and amazing quality. Works with text, images and video inputs.
-
-**Extra:** Powered by a server managed by @reka. Learn more
-
-
 ## Architecture
 
 **Input Modalities:** text
@@ -39,3 +20,5 @@
 **Owned By:** poe
 
 **Root:** Reka-Flash
+
+**API Last Updated:** 2025-10-15 16:36:09.638932

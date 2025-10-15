@@ -1,24 +1,5 @@
 # [Veo-2-Video](https://poe.com/Veo-2-Video){ .md-button .md-button--primary }
 
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Video Output | 70834 points / message |
-| Initial Points Cost | 70834 points |
-
-**Last Checked:** 2025-09-20 12:38:29.524052
-
-
-## Bot Information
-
-**Creator:** @fal
-
-**Description:** Veo2 is Google's cutting-edge video generation model. Veo creates videos with realistic motion and high quality output.
-
-**Extra:** Powered by a server managed by @fal. Learn more
-
-
 ## Architecture
 
 **Input Modalities:** text
@@ -39,3 +20,5 @@
 **Owned By:** poe
 
 **Root:** Veo-2-Video
+
+**API Last Updated:** 2025-10-15 16:36:09.635344

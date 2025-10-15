@@ -46,7 +46,7 @@ async def check_poe_login():
                         text = await element.text_content()
                         if text:
                             pass
-                    except:
+                    except Exception:
                         pass
                 else:
                     pass

@@ -98,7 +98,7 @@ Configuration is loaded in order of precedence:
     }
   },
   "storage": {
-    "data_file": "~/.local/share/virginia-clemm-poe/poe_models.json",
+    "data_file": "~/.local/share/virginia-clemm-poe/poe_bots.json",
     "backup_count": 5,
     "auto_backup": true,
     "compression": false
@@ -152,7 +152,7 @@ export VCP_LOG_FILE="~/.local/share/virginia-clemm-poe/logs/app.log"
 export VCP_STRUCTURED_LOGGING="true"
 
 # Storage Configuration
-export VCP_DATA_FILE="~/.local/share/virginia-clemm-poe/poe_models.json"
+export VCP_DATA_FILE="~/.local/share/virginia-clemm-poe/poe_bots.json"
 export VCP_BACKUP_COUNT="5"
 export VCP_AUTO_BACKUP="true"
 
@@ -385,11 +385,11 @@ for cache_name, cache_stats in stats.items():
 ### Concurrent Processing
 
 ```python
-from virginia_clemm_poe.updater import ModelUpdater
+from virginia_clemm_poe.updater import BotUpdater
 import asyncio
 
 async def optimized_update():
-    updater = ModelUpdater(
+    updater = BotUpdater(
         api_key="your_key",
         concurrent_limit=10,  # Increase concurrency
         batch_size=20,        # Larger batches
@@ -427,8 +427,8 @@ async def startup_event():
     api.configure(config)
 
 @app.get("/models/search/{query}")
-async def search_models(query: str):
-    models = api.search_models(query)
+async def search_bots(query: str):
+    models = api.search_bots(query)
     return {"query": query, "models": models}
 
 @app.post("/admin/update")
@@ -437,8 +437,8 @@ async def trigger_update(background_tasks: BackgroundTasks):
     return {"message": "Update started"}
 
 async def run_update_task():
-    from virginia_clemm_poe.updater import ModelUpdater
-    updater = ModelUpdater(api_key=os.environ["POE_API_KEY"])
+    from virginia_clemm_poe.updater import BotUpdater
+    updater = BotUpdater(api_key=os.environ["POE_API_KEY"])
     await updater.update_all()
 ```
 
@@ -450,12 +450,12 @@ VIRGINIA_CLEMM_POE = {
     'API_KEY': os.environ.get('POE_API_KEY'),
     'CACHE_ENABLED': True,
     'CONCURRENT_LIMIT': 5,
-    'DATA_FILE': os.path.join(BASE_DIR, 'data', 'poe_models.json')
+    'DATA_FILE': os.path.join(BASE_DIR, 'data', 'poe_bots.json')
 }
 
 # management/commands/update_models.py
 from django.core.management.base import BaseCommand
-from virginia_clemm_poe.updater import ModelUpdater
+from virginia_clemm_poe.updater import BotUpdater
 import asyncio
 
 class Command(BaseCommand):
@@ -464,7 +464,7 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         from django.conf import settings
         
-        updater = ModelUpdater(
+        updater = BotUpdater(
             api_key=settings.VIRGINIA_CLEMM_POE['API_KEY']
         )
         asyncio.run(updater.update_all())
@@ -486,7 +486,7 @@ import json
 
 Base = declarative_base()
 
-class PoeModelRecord(Base):
+class PoeBotRecord(Base):
     __tablename__ = 'poe_models'
     
     id = Column(String, primary_key=True)
@@ -506,12 +506,12 @@ def sync_to_database():
     Session = sessionmaker(bind=engine)
     session = Session()
     
-    models = api.get_all_models()
+    models = api.get_all_bots()
     
     for model in models:
-        record = session.query(PoeModelRecord).filter_by(id=model.id).first()
+        record = session.query(PoeBotRecord).filter_by(id=model.id).first()
         if not record:
-            record = PoeModelRecord(id=model.id)
+            record = PoeBotRecord(id=model.id)
             session.add(record)
         
         record.model_name = model.model_name

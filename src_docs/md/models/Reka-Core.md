@@ -1,24 +1,5 @@
 # [Reka-Core](https://poe.com/Reka-Core){ .md-button .md-button--primary }
 
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Initial Points Cost | 834 points |
-| Total Cost | 834 points / message |
-
-**Last Checked:** 2025-09-20 12:35:01.118704
-
-
-## Bot Information
-
-**Creator:** @reka
-
-**Description:** Reka's largest and most capable multimodal language model. Works with text, images, and video inputs. 8k context length.
-
-**Extra:** Powered by a server managed by @reka. Learn more
-
-
 ## Architecture
 
 **Input Modalities:** text
@@ -39,3 +20,5 @@
 **Owned By:** poe
 
 **Root:** Reka-Core
+
+**API Last Updated:** 2025-10-15 16:36:09.638908

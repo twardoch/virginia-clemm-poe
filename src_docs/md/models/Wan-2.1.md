@@ -1,24 +1,5 @@
 # [Wan-2.1](https://poe.com/Wan-2.1){ .md-button .md-button--primary }
 
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Video Output | 11334 points / message |
-| Initial Points Cost | 11334 points |
-
-**Last Checked:** 2025-09-20 12:39:07.283731
-
-
-## Bot Information
-
-**Creator:** @fal
-
-**Description:** Wan-2.1 is a text-to-video model that generates high-quality videos with high visual quality and motion diversity from text prompts. Generates 5 second video.
-
-**Extra:** Powered by a server managed by @fal. Learn more
-
-
 ## Architecture
 
 **Input Modalities:** text
@@ -39,3 +20,5 @@
 **Owned By:** poe
 
 **Root:** Wan-2.1
+
+**API Last Updated:** 2025-10-15 16:36:09.635364

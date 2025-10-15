@@ -8,7 +8,7 @@ The Virginia Clemm Poe Python API provides programmatic access to comprehensive 
 
 ### Data Loading and Management
 
-#### `load_models(force_reload: bool = False) -> ModelCollection`
+#### `load_bots(force_reload: bool = False) -> BotCollection`
 
 The foundational function that loads the complete Poe model dataset from the local JSON file.
 
@@ -16,42 +16,42 @@ The foundational function that loads the complete Poe model dataset from the loc
 from virginia_clemm_poe import api
 
 # Standard usage (cached)
-collection = api.load_models()
+collection = api.load_bots()
 print(f"Loaded {len(collection.data)} models")
 
 # Force reload after external update
-collection = api.load_models(force_reload=True)
+collection = api.load_bots(force_reload=True)
 ```
 
 **Parameters:**
 - `force_reload` (bool): If True, bypasses cache and reloads from file
 
 **Returns:**
-- `ModelCollection`: Container with all model data and search capabilities
+- `BotCollection`: Container with all model data and search capabilities
 
 **Performance:**
 - First call: ~50-200ms (file I/O + JSON parsing)
 - Cached calls: <1ms (in-memory access)
 - Memory usage: ~2-5MB for typical dataset
 
-#### `reload_models() -> ModelCollection`
+#### `reload_bots() -> BotCollection`
 
 Convenience function to force reload models from disk, bypassing cache.
 
 ```python
 # After external update
-fresh_collection = api.reload_models()
+fresh_collection = api.reload_bots()
 ```
 
 ### Model Retrieval
 
-#### `get_all_models() -> list[PoeModel]`
+#### `get_all_bots() -> list[PoeBot]`
 
 Retrieves the complete list of models without any filtering.
 
 ```python
 # Get all models
-models = api.get_all_models()
+models = api.get_all_bots()
 print(f"Total models: {len(models)}")
 
 # Analyze by provider
@@ -65,15 +65,15 @@ for owner, owner_models in sorted(by_owner.items()):
 ```
 
 **Returns:**
-- `list[PoeModel]`: Complete list of models with full metadata
+- `list[PoeBot]`: Complete list of models with full metadata
 
-#### `get_model_by_id(model_id: str) -> PoeModel | None`
+#### `get_bot_by_id(model_id: str) -> PoeBot | None`
 
 Fast, exact-match lookup for a specific model by ID.
 
 ```python
 # Get specific model
-model = api.get_model_by_id("Claude-3-Opus")
+model = api.get_bot_by_id("Claude-3-Opus")
 if model:
     print(f"Found: {model.model_name}")
     if model.pricing:
@@ -86,40 +86,40 @@ else:
 - `model_id` (str): Exact model ID (case-sensitive)
 
 **Returns:**
-- `PoeModel | None`: The matching model or None if not found
+- `PoeBot | None`: The matching model or None if not found
 
 **Performance:**
 - Lookup time: <1ms (uses internal dictionary mapping)
 
 ### Model Search and Filtering
 
-#### `search_models(query: str) -> list[PoeModel]`
+#### `search_bots(query: str) -> list[PoeBot]`
 
 Case-insensitive search across model IDs and names.
 
 ```python
 # Find Claude models
-claude_models = api.search_models("claude")
+claude_models = api.search_bots("claude")
 print(f"Found {len(claude_models)} Claude models")
 
 # Find models by capability
-vision_models = api.search_models("vision")
-coding_models = api.search_models("code")
+vision_models = api.search_bots("vision")
+coding_models = api.search_bots("code")
 ```
 
 **Parameters:**
 - `query` (str): Search term (case-insensitive)
 
 **Returns:**
-- `list[PoeModel]`: Matching models sorted by ID
+- `list[PoeBot]`: Matching models sorted by ID
 
-#### `get_models_with_pricing() -> list[PoeModel]`
+#### `get_bots_with_pricing() -> list[PoeBot]`
 
 Get all models that have valid pricing information.
 
 ```python
 # Get models with pricing for cost analysis
-priced_models = api.get_models_with_pricing()
+priced_models = api.get_bots_with_pricing()
 print(f"Models with pricing: {len(priced_models)}")
 
 # Find affordable models
@@ -130,35 +130,35 @@ budget_models = [
 ```
 
 **Returns:**
-- `list[PoeModel]`: Models with valid pricing data
+- `list[PoeBot]`: Models with valid pricing data
 
-#### `get_models_needing_update() -> list[PoeModel]`
+#### `get_bots_needing_update() -> list[PoeBot]`
 
 Identify models that need pricing information updated.
 
 ```python
 # Check data completeness
-need_update = api.get_models_needing_update()
-all_models = api.get_all_models()
+need_update = api.get_bots_needing_update()
+all_models = api.get_all_bots()
 
 completion_rate = (len(all_models) - len(need_update)) / len(all_models) * 100
 print(f"Data completion: {completion_rate:.1f}%")
 ```
 
 **Returns:**
-- `list[PoeModel]`: Models requiring data updates
+- `list[PoeBot]`: Models requiring data updates
 
 ## Data Models
 
-### PoeModel
+### PoeBot
 
 The core model representing a Poe.com AI model.
 
 ```python
-from virginia_clemm_poe.models import PoeModel
+from virginia_clemm_poe.bots import PoeBot
 
 # Access model properties
-model = api.get_model_by_id("Claude-3-Opus")
+model = api.get_bot_by_id("Claude-3-Opus")
 if model:
     print(f"ID: {model.id}")
     print(f"Name: {model.model_name}")
@@ -256,7 +256,7 @@ print(f"Modality: {arch.modality}")
 ```python
 def analyze_costs():
     """Analyze model costs across providers."""
-    models = api.get_models_with_pricing()
+    models = api.get_bots_with_pricing()
     
     # Group by provider
     by_provider = {}
@@ -289,7 +289,7 @@ analyze_costs()
 ```python
 def compare_models(model_ids: list[str]):
     """Compare multiple models side by side."""
-    models = [api.get_model_by_id(mid) for mid in model_ids]
+    models = [api.get_bot_by_id(mid) for mid in model_ids]
     models = [m for m in models if m is not None]
     
     print(f"{'Model':<25} {'Provider':<15} {'Input Cost':<15}")
@@ -318,9 +318,9 @@ compare_models([
 ```python
 def check_data_quality():
     """Monitor data quality and coverage."""
-    all_models = api.get_all_models()
-    priced_models = api.get_models_with_pricing()
-    need_update = api.get_models_needing_update()
+    all_models = api.get_all_bots()
+    priced_models = api.get_bots_with_pricing()
+    need_update = api.get_bots_needing_update()
     
     print(f"📊 Data Quality Report")
     print(f"Total models: {len(all_models)}")
@@ -368,7 +368,7 @@ def monitor_updates(interval: int = 60):
             current_modified = DATA_FILE_PATH.stat().st_mtime
             if current_modified > last_modified:
                 print("📊 Data file updated, reloading...")
-                collection = api.reload_models()
+                collection = api.reload_bots()
                 print(f"✅ Reloaded {len(collection.data)} models")
                 last_modified = current_modified
             
@@ -393,17 +393,17 @@ def safe_model_access(model_id: str):
     """Safely access model data with comprehensive error handling."""
     try:
         # Load models
-        collection = api.load_models()
+        collection = api.load_bots()
         if not collection.data:
             print("No data available. Run 'virginia-clemm-poe update'")
             return None
         
         # Get specific model
-        model = api.get_model_by_id(model_id)
+        model = api.get_bot_by_id(model_id)
         if not model:
             print(f"Model '{model_id}' not found")
             # Try fuzzy search
-            results = api.search_models(model_id.lower())
+            results = api.search_bots(model_id.lower())
             if results:
                 print(f"Similar models: {[m.id for m in results[:3]]}")
             return None
@@ -429,7 +429,7 @@ def safe_model_access(model_id: str):
 ### Data Validation
 
 ```python
-def validate_model_data(model: PoeModel) -> bool:
+def validate_model_data(model: PoeBot) -> bool:
     """Validate model data completeness."""
     issues = []
     
@@ -452,7 +452,7 @@ def validate_model_data(model: PoeModel) -> bool:
     return True
 
 # Validate all models
-models = api.get_all_models()
+models = api.get_all_bots()
 valid_models = [m for m in models if validate_model_data(m)]
 print(f"Valid models: {len(valid_models)}/{len(models)}")
 ```
@@ -461,16 +461,16 @@ print(f"Valid models: {len(valid_models)}/{len(models)}")
 
 ### Performance Optimization
 
-1. **Use Caching**: Don't call `reload_models()` unnecessarily
-2. **Exact Lookups**: Use `get_model_by_id()` for known IDs instead of search
+1. **Use Caching**: Don't call `reload_bots()` unnecessarily
+2. **Exact Lookups**: Use `get_bot_by_id()` for known IDs instead of search
 3. **Batch Operations**: Process multiple models in single loops
-4. **Filter Early**: Use specific functions like `get_models_with_pricing()`
+4. **Filter Early**: Use specific functions like `get_bots_with_pricing()`
 
 ### Data Freshness
 
 1. **Check Timestamps**: Monitor `pricing.checked_at` for data age
-2. **Reload After Updates**: Call `reload_models()` after external updates
-3. **Monitor Coverage**: Use `get_models_needing_update()` for quality checks
+2. **Reload After Updates**: Call `reload_bots()` after external updates
+3. **Monitor Coverage**: Use `get_bots_needing_update()` for quality checks
 
 ### Error Resilience
 
@@ -487,7 +487,7 @@ import pandas as pd
 
 def models_to_dataframe():
     """Convert model data to pandas DataFrame for analysis."""
-    models = api.get_models_with_pricing()
+    models = api.get_bots_with_pricing()
     
     data = []
     for model in models:
@@ -527,9 +527,9 @@ app = FastAPI()
 def list_models(with_pricing: bool = False):
     """API endpoint to list models."""
     if with_pricing:
-        models = api.get_models_with_pricing()
+        models = api.get_bots_with_pricing()
     else:
-        models = api.get_all_models()
+        models = api.get_all_bots()
     
     return {
         "count": len(models),
@@ -539,7 +539,7 @@ def list_models(with_pricing: bool = False):
 @app.get("/models/{model_id}")
 def get_model(model_id: str):
     """API endpoint to get specific model."""
-    model = api.get_model_by_id(model_id)
+    model = api.get_bot_by_id(model_id)
     if not model:
         raise HTTPException(status_code=404, detail="Model not found")
     

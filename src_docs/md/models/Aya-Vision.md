@@ -2,22 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 0 points/message |
-| Initial Points Cost | 0 points |
-
-**Last Checked:** 2025-09-20 12:03:53.785709
-
-
-## Bot Information
-
-**Creator:** @cohere
-
-**Description:** Aya Vision is a 32B open-weights multimodal model with advanced capabilities optimized for a variety of vision-language use cases. It is model trained to excel in 23 languages in both vision and text: Arabic, Chinese (simplified & traditional), Czech, Dutch, English, French, German, Greek, Hebrew, Hindi, Indonesian, Italian, Japanese, Korean, Persian, Polish, Portuguese, Romanian, Russian, Spanish, Turkish, Ukrainian, and Vietnamese.
-
-**Extra:** Powered by a server managed by @cohere. Learn more
-
+| Request | $0.00/request |
 
 ## Architecture
 
@@ -39,3 +28,5 @@
 **Owned By:** poe
 
 **Root:** Aya-Vision
+
+**API Last Updated:** 2025-10-15 16:36:09.635848

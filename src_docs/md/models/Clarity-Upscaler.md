@@ -1,25 +1,5 @@
 # [Clarity-Upscaler](https://poe.com/Clarity-Upscaler){ .md-button .md-button--primary }
 
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Image Output | 850 points / megapixel |
-| Initial Points Cost | Variable points |
-
-**Last Checked:** 2025-09-20 12:04:37.815967
-
-
-## Bot Information
-
-**Creator:** @fal
-
-**Description:** Upscales images with high fidelity to the original image. Use "--upscale_factor" (value is a number between 1 and 4) to set the upscaled images' size (2 means the output image is 2x in size, etc.).  "--creativity" and "--clarity" can be set between 0 and 1 to alter the faithfulness to the original image and the sharpness, respectively.
-This bot supports .jpg and .png images.
-
-**Extra:** Powered by a server managed by @fal. Learn more
-
-
 ## Architecture
 
 **Input Modalities:** text
@@ -40,3 +20,5 @@ This bot supports .jpg and .png images.
 **Owned By:** poe
 
 **Root:** Clarity-Upscaler
+
+**API Last Updated:** 2025-10-15 16:36:09.634202

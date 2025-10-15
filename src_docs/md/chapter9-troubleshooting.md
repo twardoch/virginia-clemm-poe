@@ -381,14 +381,14 @@ nice -n 10 virginia-clemm-poe update
 ls ~/.local/share/virginia-clemm-poe/backups/
 
 # Restore latest backup
-cp ~/.local/share/virginia-clemm-poe/backups/poe_models_*.json \
-   ~/.local/share/virginia-clemm-poe/poe_models.json
+cp ~/.local/share/virginia-clemm-poe/backups/poe_bots_*.json \
+   ~/.local/share/virginia-clemm-poe/poe_bots.json
 ```
 
 2. **Force fresh update**:
 ```bash
 # Remove corrupted file
-rm ~/.local/share/virginia-clemm-poe/poe_models.json
+rm ~/.local/share/virginia-clemm-poe/poe_bots.json
 
 # Fetch fresh data
 virginia-clemm-poe update --all
@@ -433,8 +433,8 @@ virginia-clemm-poe search "" --verbose | grep -i error
 from virginia_clemm_poe import api
 
 # Check data completeness
-models = api.get_all_models()
-need_update = api.get_models_needing_update()
+models = api.get_all_bots()
+need_update = api.get_bots_needing_update()
 
 print(f"Total models: {len(models)}")
 print(f"Need update: {len(need_update)}")
@@ -529,7 +529,7 @@ virginia-clemm-poe update
 2. **Fix path issues**:
 ```powershell
 # Use full paths
-$env:VCP_DATA_FILE="C:\Users\YourName\AppData\Local\virginia-clemm-poe\poe_models.json"
+$env:VCP_DATA_FILE="C:\Users\YourName\AppData\Local\virginia-clemm-poe\poe_bots.json"
 ```
 
 3. **Antivirus exclusions**:

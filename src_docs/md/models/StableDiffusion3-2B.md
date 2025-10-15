@@ -1,24 +1,5 @@
 # [StableDiffusion3-2B](https://poe.com/StableDiffusion3-2B){ .md-button .md-button--primary }
 
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Image Output | 334 points / message |
-| Initial Points Cost | 334 points |
-
-**Last Checked:** 2025-09-20 12:37:15.363936
-
-
-## Bot Information
-
-**Creator:** @fal
-
-**Description:** Stable Diffusion v3 Medium - by fal.ai
-
-**Extra:** Powered by a server managed by @fal. Learn more
-
-
 ## Architecture
 
 **Input Modalities:** text
@@ -39,3 +20,5 @@
 **Owned By:** poe
 
 **Root:** StableDiffusion3-2B
+
+**API Last Updated:** 2025-10-15 16:36:09.638355

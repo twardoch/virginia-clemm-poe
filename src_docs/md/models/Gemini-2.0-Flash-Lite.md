@@ -2,15 +2,24 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
+| Type | Cost |
+|------|------|
+| Prompt | $6.0E-8/token |
+| Completion | $2.1E-7/token |
+
+### Points-based Pricing
+
 | Type | Cost |
 |------|------|
 | Input Text | 2 points/1k tokens |
 | Input Image | 2 points/1k tokens |
-| Initial Points Cost | 11+ points |
-| Input (Video) | 1 point/second |
-| Output (Text) | 8 points/1k tokens |
+| Initial Points Cost | 7+ points |
+| Input (Video) | ['$0.000030/second', '1 point/second'] |
+| Output (Text) | ['$0.21/1M tokens', '7 points/1k tokens'] |
 
-**Last Checked:** 2025-09-20 12:16:51.542158
+**Last Checked:** 2025-10-15 16:45:15.740379
 
 
 ## Bot Information
@@ -42,3 +51,5 @@
 **Owned By:** poe
 
 **Root:** Gemini-2.0-Flash-Lite
+
+**API Last Updated:** 2025-10-15 16:36:09.623363

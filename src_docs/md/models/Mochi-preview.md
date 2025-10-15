@@ -1,24 +1,5 @@
 # [Mochi-preview](https://poe.com/Mochi-preview){ .md-button .md-button--primary }
 
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Video Output | 11334 points / message |
-| Initial Points Cost | 11334 points |
-
-**Last Checked:** 2025-09-20 12:29:01.165296
-
-
-## Bot Information
-
-**Creator:** @fal
-
-**Description:** Open state-of-the-art video generation model with high-fidelity motion and strong prompt adherence. Supports both text-to-video and image-to-video. Generates 5 second video.
-
-**Extra:** Powered by a server managed by @fal. Learn more
-
-
 ## Architecture
 
 **Input Modalities:** text
@@ -39,3 +20,5 @@
 **Owned By:** poe
 
 **Root:** Mochi-preview
+
+**API Last Updated:** 2025-10-15 16:36:09.646230

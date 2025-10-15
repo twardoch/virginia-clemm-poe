@@ -1,24 +1,5 @@
 # [LivePortrait](https://poe.com/LivePortrait){ .md-button .md-button--primary }
 
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Video Output | 85 points / message |
-| Initial Points Cost | 85 points |
-
-**Last Checked:** 2025-09-20 12:23:00.181345
-
-
-## Bot Information
-
-**Creator:** @fal
-
-**Description:** Animates given portraits with the motion's in the video. Powered by fal.ai
-
-**Extra:** Powered by a server managed by @fal. Learn more
-
-
 ## Architecture
 
 **Input Modalities:** text
@@ -39,3 +20,5 @@
 **Owned By:** poe
 
 **Root:** LivePortrait
+
+**API Last Updated:** 2025-10-15 16:36:09.637934

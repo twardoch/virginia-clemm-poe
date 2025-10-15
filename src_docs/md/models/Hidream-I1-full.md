@@ -1,24 +1,5 @@
 # [Hidream-I1-full](https://poe.com/Hidream-I1-full){ .md-button .md-button--primary }
 
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Image Output | 1417 points / message |
-| Initial Points Cost | 1417 points |
-
-**Last Checked:** 2025-09-20 12:19:41.845149
-
-
-## Bot Information
-
-**Creator:** @fal
-
-**Description:** Hidream-I1 is a state-of-the-art text to image model by Hidream. Use `--aspect` to set the aspect ratio. Valid aspect ratios are 16:9, 4:3, 1:1, 3:4, 9:16. Use `--negative_prompt` to set the negative prompt. Hosted by fal.ai.
-
-**Extra:** Powered by a server managed by @fal. Learn more
-
-
 ## Architecture
 
 **Input Modalities:** text
@@ -39,3 +20,5 @@
 **Owned By:** poe
 
 **Root:** Hidream-I1-full
+
+**API Last Updated:** 2025-10-15 16:36:09.633661

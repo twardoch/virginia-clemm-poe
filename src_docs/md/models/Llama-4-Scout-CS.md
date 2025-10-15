@@ -2,12 +2,20 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
+| Type | Cost |
+|------|------|
+| Request | $0.0060/request |
+
+### Points-based Pricing
+
 | Type | Cost |
 |------|------|
 | Total Cost | 200 points/message |
 | Initial Points Cost | 200 points |
 
-**Last Checked:** 2025-09-20 12:26:37.804184
+**Last Checked:** 2025-10-15 16:44:23.762874
 
 
 ## Bot Information
@@ -39,3 +47,5 @@
 **Owned By:** poe
 
 **Root:** Llama-4-Scout-CS
+
+**API Last Updated:** 2025-10-15 16:36:09.622180

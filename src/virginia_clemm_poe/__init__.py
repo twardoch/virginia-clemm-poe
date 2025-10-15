@@ -1,8 +1,8 @@
 # this_file: src/virginia_clemm_poe/__init__.py
 
-"""Virginia Clemm Poe - Poe.com model data management.
+"""Virginia Clemm Poe - Poe.com bot data management.
 
-A Python package providing programmatic access to Poe.com model data
+A Python package providing programmatic access to Poe.com bot data
 with pricing information.
 """
 
@@ -15,14 +15,14 @@ except ImportError:
 
 # Public API exports
 from . import api
-from .models import Architecture, ModelCollection, PoeModel, Pricing, PricingDetails
+from .bots import Architecture, BotCollection, PoeBot, Pricing, PricingDetails
 
 __all__ = [
     "__version__",
     "__version_tuple__",
     "api",
-    "PoeModel",
-    "ModelCollection",
+    "PoeBot",
+    "BotCollection",
     "Pricing",
     "PricingDetails",
     "Architecture",

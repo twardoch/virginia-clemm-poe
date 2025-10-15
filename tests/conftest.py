@@ -8,7 +8,19 @@ from typing import Any
 
 import pytest
 
-from virginia_clemm_poe.models import Architecture, BotInfo, ModelCollection, PoeModel, Pricing, PricingDetails
+from virginia_clemm_poe.bots import (
+    Architecture,
+    BotCollection,
+    BotInfo,
+    PoeBot,
+    ScrapedPricing,
+    ScrapedPricingDetails,
+    UnifiedPricing,
+)
+
+# Aliases for backward compatibility in tests
+Pricing = ScrapedPricing
+PricingDetails = ScrapedPricingDetails
 
 
 @pytest.fixture
@@ -42,25 +54,33 @@ def sample_bot_info() -> BotInfo:
 
 
 @pytest.fixture
-def sample_poe_model(sample_architecture: Architecture, sample_pricing: Pricing, sample_bot_info: BotInfo) -> PoeModel:
-    """Sample PoeModel for testing."""
-    return PoeModel(
-        id="test-model-1",
-        object="model",
+def sample_unified_pricing(sample_pricing: Pricing) -> UnifiedPricing:
+    """Sample unified pricing for testing."""
+    return UnifiedPricing(scraped=sample_pricing)
+
+
+@pytest.fixture
+def sample_poe_model(
+    sample_architecture: Architecture, sample_unified_pricing: UnifiedPricing, sample_bot_info: BotInfo
+) -> PoeBot:
+    """Sample PoeBot for testing."""
+    return PoeBot(
+        id="test-bot-1",
+        object="bot",
         created=1704369600,  # 2024-01-04 12:00:00 UTC
         owned_by="testorg",
         permission=[],
-        root="test-model-1",
+        root="test-bot-1",
         architecture=sample_architecture,
-        pricing=sample_pricing,
+        pricing=sample_unified_pricing,
         bot_info=sample_bot_info,
     )
 
 
 @pytest.fixture
-def sample_model_collection(sample_poe_model: PoeModel) -> ModelCollection:
-    """Sample ModelCollection for testing."""
-    return ModelCollection(object="list", data=[sample_poe_model])
+def sample_bot_collection(sample_poe_model: PoeBot) -> BotCollection:
+    """Sample BotCollection for testing."""
+    return BotCollection(object="list", data=[sample_poe_model])
 
 
 @pytest.fixture
@@ -70,12 +90,12 @@ def sample_api_response_data() -> dict[str, Any]:
         "object": "list",
         "data": [
             {
-                "id": "test-model-1",
-                "object": "model",
+                "id": "test-bot-1",
+                "object": "bot",
                 "created": 1704369600,
                 "owned_by": "testorg",
                 "permission": [],
-                "root": "test-model-1",
+                "root": "test-bot-1",
                 "parent": None,
                 "architecture": {"input_modalities": ["text"], "output_modalities": ["text"], "modality": "text->text"},
             }
@@ -84,11 +104,11 @@ def sample_api_response_data() -> dict[str, Any]:
 
 
 @pytest.fixture
-def mock_data_file(tmp_path: Path, sample_model_collection: ModelCollection) -> Path:
+def mock_data_file(tmp_path: Path, sample_bot_collection: BotCollection) -> Path:
     """Create a temporary data file for testing."""
     data_file = tmp_path / "test_models.json"
     with open(data_file, "w") as f:
-        json.dump(sample_model_collection.model_dump(), f, indent=2, default=str)
+        json.dump(sample_bot_collection.model_dump(), f, indent=2, default=str)
     return data_file
 
 

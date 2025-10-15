@@ -2,14 +2,23 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Initial Points Cost | 7+ points |
-| Input | 3 points/1k tokens |
-| Output (Text) | 12 points/1k tokens |
-| Cache Discount | 75% discount oncached chat |
+| Prompt | $9.0E-8/token |
+| Completion | $3.6E-7/token |
 
-**Last Checked:** 2025-09-20 12:13:57.372824
+### Points-based Pricing
+
+| Type | Cost |
+|------|------|
+| Initial Points Cost | 6+ points |
+| Input | ['$0.090/1M tokens', '3 points/1k tokens'] |
+| Output (Text) | ['$0.36/1M tokens', '12 points/1k tokens'] |
+| Cache Discount | ['75% discount oncached chat', ''] |
+
+**Last Checked:** 2025-10-15 16:44:09.524017
 
 
 ## Bot Information
@@ -41,3 +50,5 @@
 **Owned By:** poe
 
 **Root:** GPT-4.1-nano
+
+**API Last Updated:** 2025-10-15 16:36:09.621935

@@ -2,21 +2,41 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
+| Type | Cost |
+|------|------|
+| Request | $0.0078/request |
+
+### Points-based Pricing
+
 | Type | Cost |
 |------|------|
 | Total Cost | 260 points/message |
 | Initial Points Cost | 260 points |
 
-**Last Checked:** 2025-09-20 12:08:36.916092
+**Last Checked:** 2025-10-15 16:40:41.293409
 
 
 ## Bot Information
 
 **Creator:** @fireworksai
 
-**Description:** DeepSeek-V3.1 is a hybrid model that supports both thinking mode and non-thinking mode. 
-DeepSeek-V3.1 is post-trained on the top of DeepSeek-V3.1-Base, which is built upon the original V3 base checkpoint through a two-phase long context extension approach, following the methodology outlined in the original DeepSeek-V3 report. It supports 128k token context window. 
-This bot accepts PDF, DOC and XLSX files and does not accept audio and video files.
+**Description:** Latest Update: Terminus Enhancement
+
+This model has been updated with the Terminus release, addressing key user-reported issues while maintaining all original capabilities:
+- Language consistency: Reduced instances of mixed Chinese-English text and abnormal characters
+- Enhanced agent capabilities: Optimized performance of the Code Agent and Search Agent
+
+Core Capabilities
+
+DeepSeek-V3.1 is a hybrid model supporting both thinking mode and non-thinking mode, built upon the original V3 base checkpoint through a two-phase long context extension approach.
+
+Technical Specifications
+
+Context Window: 128k tokens
+File Support: PDF, DOC, and XLSX files
+File Restrictions: Does not accept audio and video files
 
 **Extra:** Powered by a server managed by @fireworksai. Learn more
 
@@ -41,3 +61,5 @@ This bot accepts PDF, DOC and XLSX files and does not accept audio and video fil
 **Owned By:** poe
 
 **Root:** DeepSeek-V3.1
+
+**API Last Updated:** 2025-10-15 16:36:09.618569

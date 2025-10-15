@@ -150,13 +150,13 @@ python -m pytest tests/test_api.py
 ### Test Structure
 
 ```python
-def test_search_models_returns_matching_results():
-    """Test that search_models returns models matching the query."""
+def test_search_bots_returns_matching_results():
+    """Test that search_bots returns models matching the query."""
     # Arrange
     models = [...]
     
     # Act
-    results = search_models("claude")
+    results = search_bots("claude")
     
     # Assert
     assert len(results) > 0

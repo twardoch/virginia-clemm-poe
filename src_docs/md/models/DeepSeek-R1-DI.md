@@ -2,24 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 200 points/message |
-| Initial Points Cost | 200 points |
-
-**Last Checked:** 2025-09-20 12:07:37.927402
-
-
-## Bot Information
-
-**Creator:** @deepinfra
-
-**Description:** Top open-source reasoning LLM rivaling OpenAI's o1 model; delivers top-tier performance across math, code, and reasoning tasks at a fraction of the cost. All data you provide this bot will not be used in training, and is sent only to DeepInfra, a US-based company.
-
-Supports 64k tokens of input context and 8k tokens of output context. Quantization: FP8 (official).
-
-**Extra:** Powered by a server managed by @deepinfra. Learn more
-
+| Request | $0.0060/request |
 
 ## Architecture
 
@@ -41,3 +28,5 @@ Supports 64k tokens of input context and 8k tokens of output context. Quantizati
 **Owned By:** poe
 
 **Root:** DeepSeek-R1-DI
+
+**API Last Updated:** 2025-10-15 16:36:09.629594

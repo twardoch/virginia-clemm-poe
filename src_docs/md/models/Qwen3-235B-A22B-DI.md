@@ -2,12 +2,20 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
+| Type | Cost |
+|------|------|
+| Request | $0.0019/request |
+
+### Points-based Pricing
+
 | Type | Cost |
 |------|------|
 | Total Cost | 63 points/message |
 | Initial Points Cost | 63 points |
 
-**Last Checked:** 2025-09-20 12:33:19.113607
+**Last Checked:** 2025-10-15 16:48:25.003996
 
 
 ## Bot Information
@@ -41,3 +49,5 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 **Owned By:** poe
 
 **Root:** Qwen3-235B-A22B-DI
+
+**API Last Updated:** 2025-10-15 16:36:09.626295

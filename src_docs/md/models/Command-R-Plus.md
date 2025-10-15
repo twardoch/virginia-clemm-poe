@@ -2,22 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 1130 points/message |
-| Initial Points Cost | 1130 points |
-
-**Last Checked:** 2025-09-20 12:07:00.167023
-
-
-## Bot Information
-
-**Creator:** @cohere
-
-**Description:** A supercharged version of Command R. I can search the web for up to date information and respond in over 10 languages!
-
-**Extra:** Powered by a server managed by @cohere. Learn more
-
+| Request | $0.0051/request |
 
 ## Architecture
 
@@ -39,3 +28,5 @@
 **Owned By:** poe
 
 **Root:** Command-R-Plus
+
+**API Last Updated:** 2025-10-15 16:36:09.639053

@@ -2,22 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 2070 points/message |
-| Initial Points Cost | 2070 points |
-
-**Last Checked:** 2025-09-20 12:23:29.523192
-
-
-## Bot Information
-
-**Creator:** @hyperbolic
-
-**Description:** The Biggest and Best open-source AI model trained by Meta, beating GPT-4o across most benchmarks. This bot is in BF16 and with 128K context length.
-
-**Extra:** Powered by a server managed by @hyperbolic. Learn more
-
+| Request | $0.062/request |
 
 ## Architecture
 
@@ -39,3 +28,5 @@
 **Owned By:** poe
 
 **Root:** Llama-3.1-405B-FP16
+
+**API Last Updated:** 2025-10-15 16:36:09.644108

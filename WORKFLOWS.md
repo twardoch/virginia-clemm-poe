@@ -161,7 +161,7 @@ virginia-clemm-poe cache --stats
 from virginia_clemm_poe import api
 
 # Find all vision-capable models
-all_models = api.get_all_models()
+all_models = api.get_all_bots()
 vision_models = [
     m for m in all_models 
     if "image" in m.architecture.input_modalities
@@ -181,7 +181,7 @@ for model in vision_models[:5]:  # Show first 5
 from virginia_clemm_poe import api
 
 # Get all priced models
-priced_models = api.get_models_with_pricing()
+priced_models = api.get_bots_with_pricing()
 
 # Find budget-friendly models (< 50 points per message)
 budget_models = []
@@ -310,7 +310,7 @@ else:
     previous_data = {}
 
 # Get current data
-current_models = api.get_all_models()
+current_models = api.get_all_bots()
 current_data = {m.id: m.dict() for m in current_models}
 
 # Find changes
@@ -361,7 +361,7 @@ from virginia_clemm_poe import api
 
 def calculate_bulk_cost(model_id: str, messages: int, tokens_per_msg: int = 1000):
     """Calculate cost for bulk message processing."""
-    model = api.get_model_by_id(model_id)
+    model = api.get_bot_by_id(model_id)
     if not model or not model.pricing:
         return None
     
@@ -451,7 +451,7 @@ virginia-clemm-poe clear-cache --all
 
 # Force reload in Python
 from virginia_clemm_poe import api
-api.reload_models()
+api.reload_bots()
 ```
 
 ## Performance Optimization
@@ -466,7 +466,7 @@ from virginia_clemm_poe import api
 
 def process_models_in_batches(batch_size=50):
     """Process models in memory-efficient batches."""
-    all_models = api.get_all_models()
+    all_models = api.get_all_bots()
     
     for i in range(0, len(all_models), batch_size):
         batch = all_models[i:i + batch_size]
@@ -499,19 +499,19 @@ async def warm_caches():
     
     # Load all models to warm primary cache
     print("Warming model cache...")
-    all_models = api.get_all_models()
+    all_models = api.get_all_bots()
     print(f"Loaded {len(all_models)} models")
     
     # Pre-load common searches
     common_searches = ["claude", "gpt", "llama", "mixtral"]
     print("\nWarming search cache...")
     for query in common_searches:
-        results = api.search_models(query)
+        results = api.search_bots(query)
         print(f"Cached '{query}': {len(results)} results")
     
     # Pre-load priced models
     print("\nWarming pricing cache...")
-    priced = api.get_models_with_pricing()
+    priced = api.get_bots_with_pricing()
     print(f"Cached {len(priced)} priced models")
 
 # Run cache warming
@@ -547,7 +547,7 @@ def analyze_model(model):
 
 async def analyze_models_parallel():
     """Analyze all models using parallel processing."""
-    models = api.get_all_models()
+    models = api.get_all_bots()
     
     # Use thread pool for CPU-bound tasks
     with ThreadPoolExecutor(max_workers=4) as executor:

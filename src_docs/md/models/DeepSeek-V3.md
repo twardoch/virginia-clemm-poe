@@ -2,12 +2,20 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
+| Type | Cost |
+|------|------|
+| Request | $0.012/request |
+
+### Points-based Pricing
+
 | Type | Cost |
 |------|------|
 | Total Cost | 415 points/message |
 | Initial Points Cost | 415 points |
 
-**Last Checked:** 2025-09-20 12:08:14.306425
+**Last Checked:** 2025-10-15 16:43:32.512183
 
 
 ## Bot Information
@@ -39,3 +47,5 @@
 **Owned By:** poe
 
 **Root:** DeepSeek-V3
+
+**API Last Updated:** 2025-10-15 16:36:09.621290

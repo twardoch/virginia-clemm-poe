@@ -1,24 +1,5 @@
 # [Hailuo-02](https://poe.com/Hailuo-02){ .md-button .md-button--primary }
 
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Initial Points Cost | 7000+ |
-| 768P-6S Video | 14000 credits per video |
-
-**Last Checked:** 2025-09-20 12:18:41.720088
-
-
-## Bot Information
-
-**Creator:** @MiniMax
-
-**Description:** Hailuo-02, MiniMax's latest video generation model. Generates 6-second, 768p videos, just submit a text prompt or an image with a prompt describing the desired video behavior, and it will create it; typically takes ~5 minutes for generation time. Strong motion effects and ultra-clear quality.
-
-**Extra:** Powered by a server managed by @MiniMax. Learn more
-
-
 ## Architecture
 
 **Input Modalities:** text
@@ -39,3 +20,5 @@
 **Owned By:** poe
 
 **Root:** Hailuo-02
+
+**API Last Updated:** 2025-10-15 16:36:09.633904

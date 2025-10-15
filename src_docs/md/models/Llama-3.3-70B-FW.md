@@ -2,22 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 140 points/message |
-| Initial Points Cost | 140 points |
-
-**Last Checked:** 2025-09-20 12:25:37.769184
-
-
-## Bot Information
-
-**Creator:** @fireworksai
-
-**Description:** Meta's Llama 3.3 70B Instruct, hosted by Fireworks AI. Llama 3.3 70B is a new open source model that delivers leading performance and quality across text-based use cases such as synthetic data generation at a fraction of the inference cost, improving over Llama 3.1 70B.
-
-**Extra:** Powered by a server managed by @fireworksai. Learn more
-
+| Request | $0.0042/request |
 
 ## Architecture
 
@@ -39,3 +28,5 @@
 **Owned By:** poe
 
 **Root:** Llama-3.3-70B-FW
+
+**API Last Updated:** 2025-10-15 16:36:09.629170

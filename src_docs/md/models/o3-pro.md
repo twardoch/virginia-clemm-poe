@@ -2,13 +2,22 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Initial Points Cost | 4970+ points |
-| Input | 600 points/1k tokens |
-| Output (Text) | 2400 points/1k tokens |
+| Prompt | $0.000018/token |
+| Completion | $0.000072/token |
 
-**Last Checked:** 2025-09-20 12:40:28.938980
+### Points-based Pricing
+
+| Type | Cost |
+|------|------|
+| Initial Points Cost | 4958+ points |
+| Input | ['$20.00$18.00/1M tokens', '600 points/1k tokens'] |
+| Output (Text) | ['$80.00$72.00/1M tokens', '2400 points/1k tokens'] |
+
+**Last Checked:** 2025-10-15 16:38:07.228444
 
 
 ## Bot Information
@@ -42,3 +51,5 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 **Owned By:** poe
 
 **Root:** o3-pro
+
+**API Last Updated:** 2025-10-15 16:36:09.616590

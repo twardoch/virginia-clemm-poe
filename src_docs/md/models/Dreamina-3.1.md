@@ -1,26 +1,5 @@
 # [Dreamina-3.1](https://poe.com/Dreamina-3.1){ .md-button .md-button--primary }
 
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Image Output | 1000 points / message |
-| Initial Points Cost | 1000 points |
-
-**Last Checked:** 2025-09-20 12:09:24.160150
-
-
-## Bot Information
-
-**Creator:** @Bytedance
-
-**Description:** ByteDance's Dreamina 3.1 Text-to-Image showcases superior picture effects, with significant improvements in picture aesthetics, precise and diverse styles, and rich details. This model excels with  large prompts, please use large prompts in case you face Content Checker issues.
-The model does not accept attachment. 
-Use "--aspect" to select an aspect ratio (e.g --aspect 1:1). Valid aspect ratios are 16:9, 4:3, 1:1, 3:4, & 9:16.
-
-**Extra:** Powered by a server managed by @Bytedance. Learn more
-
-
 ## Architecture
 
 **Input Modalities:** text
@@ -41,3 +20,5 @@ Use "--aspect" to select an aspect ratio (e.g --aspect 1:1). Valid aspect ratios
 **Owned By:** poe
 
 **Root:** Dreamina-3.1
+
+**API Last Updated:** 2025-10-15 16:36:09.632546

@@ -2,22 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 250 points/message |
-| Initial Points Cost | 250 points |
-
-**Last Checked:** 2025-09-20 12:31:29.346695
-
-
-## Bot Information
-
-**Creator:** @togetherai
-
-**Description:** QwQ‑32B – a compact, open‑source reasoning model with 32B parameters. It leverages multi‑stage reinforcement learning and agentic capabilities to deliver strong performance on math, coding, and general problem‑solving tasks – rivaling giants like DeepSeek‑R1 despite being much smaller. It also supports an impressive context window of up to 131k tokens.
-
-**Extra:** Powered by a server managed by @togetherai. Learn more
-
+| Request | $0.0075/request |
 
 ## Architecture
 
@@ -39,3 +28,5 @@
 **Owned By:** poe
 
 **Root:** QwQ-32B-T
+
+**API Last Updated:** 2025-10-15 16:36:09.626981

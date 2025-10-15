@@ -1,26 +1,5 @@
 # [Lyria](https://poe.com/Lyria){ .md-button .md-button--primary }
 
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Input Text | 2000 points per generated song |
-| Initial Points Cost | Variable points |
-
-**Last Checked:** 2025-09-20 12:27:17.620901
-
-
-## Bot Information
-
-**Creator:** @google
-
-**Description:** Google DeepMind's Lyria 2 delivers high-quality audio generation, capable of creating diverse soundscapes and musical pieces from text prompts.
-
-Allows users to specify elements to exclude in the audio using the "--no" parameter at the end of the prompt. Also supports "--seed" for deterministic generation. e.g. "An energetic electronic dance track --no vocals, slow tempo --seed 123". Lyria blocks prompts that name specific artists or songs (artist-intent and recitation checks). This bot does not support attachments. This bot accepts input prompts of up to 480 tokens.
-
-**Extra:** Powered by a server managed by @google. Learn more
-
-
 ## Architecture
 
 **Input Modalities:** text
@@ -41,3 +20,5 @@ Allows users to specify elements to exclude in the audio using the "--no" parame
 **Owned By:** poe
 
 **Root:** Lyria
+
+**API Last Updated:** 2025-10-15 16:36:09.634027

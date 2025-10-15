@@ -2,22 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 75 points/message |
-| Initial Points Cost | 75 points |
-
-**Last Checked:** 2025-09-20 12:23:14.805673
-
-
-## Bot Information
-
-**Creator:** @togetherai
-
-**Description:** Llama 3 70B Instruct from Meta. For most use cases, https://poe.com/Llama-3.3-70B will perform better.
-
-**Extra:** Powered by a server managed by @togetherai. Learn more
-
+| Request | $0.0023/request |
 
 ## Architecture
 
@@ -39,3 +28,5 @@
 **Owned By:** poe
 
 **Root:** Llama-3-70B-T
+
+**API Last Updated:** 2025-10-15 16:36:09.642951

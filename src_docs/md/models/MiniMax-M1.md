@@ -1,27 +1,5 @@
 # [MiniMax-M1](https://poe.com/MiniMax-M1){ .md-button .md-button--primary }
 
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Initial Points Cost | 100+ |
-| Input (≤200K Tokens) | 20 credits / 1000 tokens |
-| Input (>200K Tokens) | 65 credits / 1000 tokens |
-| Output | 110 credits / 1000 tokens |
-
-**Last Checked:** 2025-09-20 12:27:39.586483
-
-
-## Bot Information
-
-**Creator:** @MiniMax
-
-**Description:** MiniMax's open-weight M1 reasoning model supports 1M context window, making it ideal for long-context retrieval, summarization or problem-solving tasks. Maintains strong memory in extended, multi-turn conversations.
-This is a pure text reasoning model and currently does not process any file types
-
-**Extra:** Powered by a server managed by @MiniMax. Learn more
-
-
 ## Architecture
 
 **Input Modalities:** text
@@ -42,3 +20,5 @@ This is a pure text reasoning model and currently does not process any file type
 **Owned By:** poe
 
 **Root:** MiniMax-M1
+
+**API Last Updated:** 2025-10-15 16:36:09.627018

@@ -1,33 +1,5 @@
 # [GPT-Image-1](https://poe.com/GPT-Image-1){ .md-button .md-button--primary }
 
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Input Text | 151 points/1k tokens |
-| Initial Points Cost | Variable points |
-| Input (Images) | 301 points/1k tokens |
-| High Fidelity Editing | 2000 points |
-| Output (Image) | Based on output image quality and resolution (see table below) |
-
-**Last Checked:** 2025-09-20 12:15:14.449914
-
-
-## Bot Information
-
-**Creator:** @openai
-
-**Description:** OpenAI's model that powers image generation in ChatGPT, offering exceptional prompt adherence, level of detail, and quality. It supports editing, restyling, and combining images attached to the latest user query. For a conversational editing experience, use https://poe.com/GPT-4o (all users) or https://poe.com/Assistant (subscribers) instead.
-
-Optional parameters:
-`--aspect` (options: 1:1, 3:2, 2:3): Aspect ratio of the output image
-` --quality` (options: high, medium, low): Image resolution
-` --use_mask`: Indicates that the last attached image is a mask for in-painting (editing specific regions). The mask must match the dimensions of the base image, with transparent (zero-alpha) areas showing which parts to edit.
-`--use_high_fidelity` to false to disable high input fidelity. This is option is enabled by default.
-
-**Extra:** Powered by a server managed by @openai. Learn more
-
-
 ## Architecture
 
 **Input Modalities:** text
@@ -48,3 +20,5 @@ Optional parameters:
 **Owned By:** poe
 
 **Root:** GPT-Image-1
+
+**API Last Updated:** 2025-10-15 16:36:09.633757

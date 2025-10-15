@@ -2,22 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 1000 points/message |
-| Initial Points Cost | 1000 points |
-
-**Last Checked:** 2025-09-20 12:37:44.648409
-
-
-## Bot Information
-
-**Creator:** @trytako
-
-**Description:** Tako is a bot that transforms your questions about stocks, sports, economics or politics into interactive, shareable knowledge cards from trusted sources. Tako's knowledge graph is built exclusively from authoritative, real-time data providers, and is embeddable in your apps, research and storytelling. You can adjust the specificity threshold by typing `--specificity 30` (or a value between 0 - 100) at the end of your query/question; the default is 60.
-
-**Extra:** Powered by a server managed by @trytako. Learn more
-
+| Request | $0.030/request |
 
 ## Architecture
 
@@ -39,3 +28,5 @@
 **Owned By:** poe
 
 **Root:** Tako
+
+**API Last Updated:** 2025-10-15 16:36:09.643932

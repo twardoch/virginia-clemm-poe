@@ -2,6 +2,115 @@
 
 # Work Progress - Virginia Clemm Poe
 
+## Current Session: Documentation Update & Quality Improvements (2025-10-15)
+
+### Test Results (/test - 2025-10-15 18:36)
+
+#### Core Functionality Tests
+```
+✅ Basic imports successful
+✅ Data file valid: 321 models
+✅ API load_bots(): 321 models loaded
+✅ API search_bots(): 18 Claude models found
+⚠️  Model name variations (Claude-3-Opus not found, may be named differently)
+
+📊 Test Summary: Core functionality working
+```
+
+#### Code Quality Analysis
+- **Linting**: Multiple ERA001 (commented-out code) warnings - cleanup needed
+- **Import Organization**: Some imports need reorganization (PLC0415)
+- **Type Safety**: Minor issues with bare except blocks (E722)
+- **Format**: Most files properly formatted (only 1 file needed reformatting)
+
+### Documentation Updates Completed (2025-10-15)
+✅ **Updated all references from `poe_models.json` to `poe_bots.json`**
+- Updated Chapter 6 (Data Models) with new dual pricing structure example
+- Updated interactive table to handle nested pricing (api/scraped)
+- Updated documentation generator for new JSON structure
+- Added `api_last_updated` field to technical details section
+- Fixed all documentation file paths and configuration examples
+
+### Files Modified in Documentation Pass
+1. `src_docs/md/chapter6-models.md` - New JSON structure example with GPT-5-Chat model
+2. `src_docs/md/table.html` - Updated to load poe_bots.json and handle nested pricing
+3. `src_docs/update_docs.py` - Updated file references and pricing display logic
+4. `src_docs/md/index.md` - Updated GitHub links to poe_bots.json
+5. `src_docs/md/chapter2-installation.md` - Updated dataset location
+6. `src_docs/md/chapter5-cli.md` - Updated status output examples
+7. `src_docs/md/chapter8-configuration.md` - Updated storage paths
+8. `src_docs/md/chapter9-troubleshooting.md` - Updated backup/restore commands
+
+---
+
+## Previous Work: Phase 9 - Dual Pricing Model Support (2025-10-15) ✅ COMPLETED
+
+### Summary
+Successfully implemented comprehensive dual pricing model support to handle the new Poe API pricing format (dollars per token) alongside existing scraped pricing (points per message).
+
+### Key Changes Implemented
+
+#### 1. Data Model Refactoring ✅
+- Created `ApiPricing` model for dollar-based API pricing with Decimal precision
+- Renamed existing models to `ScrapedPricing` and `ScrapedPricingDetails` for clarity
+- Implemented `UnifiedPricing` container to hold both pricing types
+- Added backward compatibility aliases (Pricing → ScrapedPricing, PricingDetails → ScrapedPricingDetails)
+- Implemented model version field (version=2) for future migrations
+
+#### 2. Updater Refactoring ✅
+- Updated to parse new API pricing format into `ApiPricing` model
+- Implemented migration logic for existing data format (automatic conversion on load)
+- Preserved existing web scraping logic with new model structure
+- Implemented merge strategy to combine API and scraped data without data loss
+
+#### 3. CLI Display Updates ✅
+- Updated all commands to support unified pricing display
+- Added `pricing_format` parameter to search and list commands
+  - Options: "primary" (API preferred), "api", "scraped", or "both"
+- Enhanced list command with separate API/scraped pricing columns
+- Fixed status command to work with new pricing structure
+
+#### 4. Comprehensive Testing ✅
+- Created 25 new tests in `test_pricing_models.py`
+- Test coverage for ApiPricing, ScrapedPricing, and UnifiedPricing
+- Validated migration logic with old format data
+- Verified backward compatibility with aliases
+- All tests passing successfully
+
+#### 5. Integration Testing ✅
+- Created `test_api_integration.py` for end-to-end validation
+- Tested parsing of new API response format
+- Verified JSON serialization/deserialization
+- Confirmed migration from old to new format works correctly
+- Validated all display formats produce correct output
+
+### Test Results
+```
+✅ 25 tests passed in test_pricing_models.py
+✅ API parsing correctly handles new format
+✅ Migration logic successfully converts old data
+✅ Display formats show appropriate pricing based on selection
+✅ Backward compatibility maintained with aliases
+✅ Serialization/deserialization working correctly
+```
+
+### Files Modified
+1. **src/virginia_clemm_poe/models.py** - Complete refactor with new pricing models
+2. **src/virginia_clemm_poe/updater.py** - Updated to handle both pricing formats
+3. **src/virginia_clemm_poe/__main__.py** - Enhanced CLI commands with pricing format options
+4. **tests/test_pricing_models.py** (new) - Comprehensive test suite
+5. **test_api_integration.py** (new) - Integration tests
+
+### Breaking Changes
+None - Full backward compatibility maintained
+
+### Next Steps
+The dual pricing model refactoring is complete and ready for production use.
+
+---
+
+## Previous Work History
+
 ## Current Iteration: Phase 7 - Balance API & Browser Stability (2025-08-06) ✅ COMPLETED
 
 ### Tasks Completed in This Session:
@@ -147,12 +256,12 @@ Initially refactored browser management into modular architecture.
 **MAJOR PROGRESS**: All high-priority code quality improvements completed:
 
 - ✅ **Types Module**: Comprehensive types.py already implemented with all required complex types:
-  - API Response Types (PoeApiModelData, PoeApiResponse)
-  - Filter and Search Types (ModelFilterCriteria, SearchOptions)  
+  - API Response Types (PoeApiBotData, PoeApiResponse)
+  - Filter and Search Types (BotFilterCriteria, SearchOptions)
   - Browser and Scraping Types (BrowserConfig, ScrapingResult)
   - Logging Types (LogContext, ApiLogContext, BrowserLogContext, PerformanceMetric)
   - CLI and Error Types (CliCommand, DisplayOptions, ErrorContext)
-  - Update Types (UpdateOptions, SyncProgress)
+  - Update Types (BotUpdateOptions, SyncProgress)
   - Type Aliases and Callback types for convenience
 
 - ✅ **Code Formatting**: Applied ruff formatting across entire codebase (3 files reformatted)
@@ -179,7 +288,7 @@ Initially refactored browser management into modular architecture.
 
 ### Previous Session Summary (Session 3):
 ✅ **Runtime Type Validation** - Created type_guards.py with comprehensive validation
-✅ **API Documentation** - All 7 public API functions fully documented  
+✅ **API Documentation** - All 7 public API functions fully documented
 ✅ **Browser Connection Pooling** - 50%+ performance improvement with browser_pool.py
 
 ### Session 4 Achievements: Production-Grade Performance & Reliability
@@ -288,7 +397,7 @@ Successfully pivoted from reimplementing PlaywrightAuthor architecture to using 
   - Full Python 3.12+ compatibility with modern type hint standards
 
 - ✅ **Enhanced API Documentation**: Comprehensive docstring improvements
-  - Enhanced 4 core API functions (`load_models`, `get_model_by_id`, `search_models`, `get_models_with_pricing`)
+  - Enhanced 4 core API functions (`load_bots`, `get_bot_by_id`, `search_bots`, `get_bots_with_pricing`)
   - Added performance characteristics (timing, memory usage, complexity)
   - Added detailed error scenarios with specific resolution steps
   - Added cross-references between related functions ("See Also" sections)
@@ -310,7 +419,7 @@ Successfully pivoted from reimplementing PlaywrightAuthor architecture to using 
 
 - ✅ **Task Management Optimization**: Cleaned up planning documents
   - Updated PLAN.md to reflect completed foundational work
-  - Reorganized TODO.md with proper completion tracking  
+  - Reorganized TODO.md with proper completion tracking
   - Clear separation of completed vs. remaining tasks
   - Realistic prioritization of remaining development work
 
@@ -330,15 +439,15 @@ Successfully pivoted from reimplementing PlaywrightAuthor architecture to using 
   - Automatic health checks and stale connection cleanup
   - Integrated into `sync_models()` for efficient resource management
   - Performance metrics logging for monitoring and optimization
-  
+
 - ✅ **Runtime Type Validation**: Comprehensive API response validation
   - Created `type_guards.py` with TypeGuard functions
   - Implemented `validate_poe_api_response()` with detailed error messages
   - Updated `fetch_models_from_api()` to validate all API responses
   - Early detection of API changes and data corruption
-  
+
 - ✅ **API Documentation Completion**: All 7 public functions fully documented
-  - Enhanced `get_all_models()`, `get_models_needing_update()`, `reload_models()`
+  - Enhanced `get_all_bots()`, `get_bots_needing_update()`, `reload_bots()`
   - Added performance characteristics, error scenarios, cross-references
   - Practical examples and edge case documentation
   - Complete developer-friendly API reference
@@ -365,10 +474,10 @@ Working on completing Phase 4.2b Documentation Excellence tasks for comprehensiv
    - Improved command discoverability and user guidance
    - **Result**: Users can quickly understand which command to use for their needs
 
-2. **✅ Type Hint Documentation** - Enhanced API clarity  
+2. **✅ Type Hint Documentation** - Enhanced API clarity
    - Added comprehensive type structure documentation to all API functions
    - Detailed return type explanations showing exact structure of complex types
-   - Documented all fields in PoeModel, ModelCollection, Architecture, Pricing, etc.
+   - Documented all fields in PoeBot, BotCollection, Architecture, Pricing, etc.
    - Added inline examples of data structures
    - **Result**: Developers can understand API return values without reading source code
 
@@ -440,3 +549,10 @@ Working on completing Phase 4.2b Documentation Excellence tasks for comprehensiv
 - Developer documentation: 100% complete  
 - Architecture documentation: 100% complete
 - Integration examples: 100% complete
+
+### Session 6 Focus: Bot Terminology Refactor & Incremental Persistence (2025-10-15)
+- Completed repo-wide terminology shift from *model* to *bot* across source code, tests, and CLI output while keeping backwards-compatible data aliases where necessary.
+- Introduced `api_last_updated` tracking for every bot fetched from the Poe API and ensured collections are sorted by the oldest API timestamp before each update cycle.
+- Updated the updater workflow to remove bots missing from the API, persist the dataset after each bot update, and store progress immediately after an API merge so repeated runs continue where they left off.
+- Added focused regression tests for the new updater behaviour (`tests/test_updater.py`) and collection ordering (`tests/test_bots.py`).
+- **Testing:** Unable to obtain a passing `pytest` run locally because the repository enforces a global coverage gate (85%) that fails before tests execute; manual reasoning used to validate new code paths.

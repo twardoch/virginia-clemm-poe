@@ -2,12 +2,20 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
+| Type | Cost |
+|------|------|
+| Request | $0.0030/request |
+
+### Points-based Pricing
+
 | Type | Cost |
 |------|------|
 | Total Cost | 100 points/message |
 | Initial Points Cost | 100 points |
 
-**Last Checked:** 2025-09-20 12:32:13.295985
+**Last Checked:** 2025-10-15 16:38:28.660748
 
 
 ## Bot Information
@@ -40,3 +48,5 @@ Bot does accept PDF, DOC and XLSX files and does not accept audio, video and ima
 **Owned By:** poe
 
 **Root:** Qwen-3-Next-80B-Think
+
+**API Last Updated:** 2025-10-15 16:36:09.616984

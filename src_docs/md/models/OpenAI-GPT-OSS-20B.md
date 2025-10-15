@@ -2,12 +2,20 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
+| Type | Cost |
+|------|------|
+| Request | $0.00075/request |
+
+### Points-based Pricing
+
 | Type | Cost |
 |------|------|
 | Total Cost | 25 points/message |
 | Initial Points Cost | 25 points |
 
-**Last Checked:** 2025-09-20 12:29:24.508580
+**Last Checked:** 2025-10-15 16:46:57.968763
 
 
 ## Bot Information
@@ -39,3 +47,5 @@
 **Owned By:** poe
 
 **Root:** OpenAI-GPT-OSS-20B
+
+**API Last Updated:** 2025-10-15 16:36:09.624834

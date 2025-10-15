@@ -2,22 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 290 points/message |
-| Initial Points Cost | 290 points |
-
-**Last Checked:** 2025-09-20 12:32:49.999681
-
-
-## Bot Information
-
-**Creator:** @togetherai
-
-**Description:** Qwen 2.5 VL 72B, a cutting-edge multimodal model from the Qwen Team, excels in visual and video understanding, multilingual text/image processing (including Japanese, Arabic, and Korean), and dynamic agentic reasoning for automation. It supports long-context comprehension (32K tokens)
-
-**Extra:** Powered by a server managed by @togetherai. Learn more
-
+| Request | $0.0087/request |
 
 ## Architecture
 
@@ -39,3 +28,5 @@
 **Owned By:** poe
 
 **Root:** Qwen2.5-VL-72B-T
+
+**API Last Updated:** 2025-10-15 16:36:09.636442

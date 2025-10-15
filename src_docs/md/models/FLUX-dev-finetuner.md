@@ -1,24 +1,5 @@
 # [FLUX-dev-finetuner](https://poe.com/FLUX-dev-finetuner){ .md-button .md-button--primary }
 
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Finetuning | 56667 points / message |
-| Initial Points Cost | Variable points |
-
-**Last Checked:** 2025-09-20 12:10:37.535243
-
-
-## Bot Information
-
-**Creator:** @fal
-
-**Description:** Fine-tune the FLUX dev model with your own pictures! Upload 8-12 of them (same subject, only one subject in the picture, ideally from different poses and backgrounds) and wait ~2-5 minutes to create your own finetuned bot that will generate pictures of this subject in whatever setting you want.
-
-**Extra:** Powered by a server managed by @fal. Learn more
-
-
 ## Architecture
 
 **Input Modalities:** text
@@ -39,3 +20,5 @@
 **Owned By:** poe
 
 **Root:** FLUX-dev-finetuner
+
+**API Last Updated:** 2025-10-15 16:36:09.635682

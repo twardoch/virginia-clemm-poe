@@ -2,14 +2,23 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Initial Points Cost | 3135+ points |
-| Input | 468 points/1k tokens |
-| Output (Text) | 2000 points/1k tokens |
-| Cache Discount | 90% discount oncached chat |
+| Prompt | $0.000013/token |
+| Completion | $0.000064/token |
 
-**Last Checked:** 2025-09-20 12:05:30.248407
+### Points-based Pricing
+
+| Type | Cost |
+|------|------|
+| Initial Points Cost | 3159+ points |
+| Input | ['$12.75/1M tokens', '425 points/1k tokens'] |
+| Output (Text) | ['$63.75/1M tokens', '2125 points/1k tokens'] |
+| Cache Discount | ['90% discount oncached chat', ''] |
+
+**Last Checked:** 2025-10-15 16:44:30.909284
 
 
 ## Bot Information
@@ -42,3 +51,5 @@ To instruct the bot to use more thinking effort, add --thinking_budget and a num
 **Owned By:** poe
 
 **Root:** Claude-Opus-4-Search
+
+**API Last Updated:** 2025-10-15 16:36:09.622312

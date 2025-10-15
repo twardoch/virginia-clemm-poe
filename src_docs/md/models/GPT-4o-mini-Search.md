@@ -2,24 +2,12 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Input Text | 5 points/1k tokens |
-| Initial Points Cost | 838+ points |
-| Output (Text) | 18 points/1k tokens |
-| Output (Message) | 825 points/message |
-
-**Last Checked:** 2025-09-20 12:14:35.056558
-
-
-## Bot Information
-
-**Creator:** @openai
-
-**Description:** OpenAI's fine-tuned model for searching the web for real-time information. For higher-performance, consider https://poe.com/GPT-4o-Search. Uses medium search context size, currently in preview, supports 128k tokens of context. Does not support image search.
-
-**Extra:** Powered by OpenAI: gpt-4o-mini-search-preview. Learn more
-
+| Prompt | $1.5E-7/token |
+| Completion | $5.4E-7/token |
 
 ## Architecture
 
@@ -41,3 +29,5 @@
 **Owned By:** poe
 
 **Root:** GPT-4o-mini-Search
+
+**API Last Updated:** 2025-10-15 16:36:09.631035

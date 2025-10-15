@@ -86,12 +86,12 @@ from virginia_clemm_poe import api
 def main():
     # Search for models
     print("🔍 Searching for Claude models...")
-    claude_models = api.search_models(query="claude")
+    claude_models = api.search_bots(query="claude")
     print(f"Found {len(claude_models)} Claude models")
     
     # Get a specific model
     print("\n📊 Getting Claude 3 Opus details...")
-    opus = api.get_model_by_id("claude-3-opus")
+    opus = api.get_bot_by_id("claude-3-opus")
     if opus:
         print(f"Model: {opus.model_name}")
         print(f"Description: {opus.description}")
@@ -170,7 +170,7 @@ from virginia_clemm_poe import api
 
 def compare_models(model_ids):
     """Compare multiple models side by side."""
-    models = [api.get_model_by_id(mid) for mid in model_ids]
+    models = [api.get_bot_by_id(mid) for mid in model_ids]
     
     print(f"{'Model':<20} {'Input Cost':<15} {'Output Cost':<15}")
     print("-" * 50)
@@ -284,15 +284,15 @@ from virginia_clemm_poe import api
 app = FastAPI()
 
 @app.get("/models/search/{query}")
-def search_models(query: str):
+def search_bots(query: str):
     """Search for models matching the query."""
-    models = api.search_models(query=query)
+    models = api.search_bots(query=query)
     return {"query": query, "count": len(models), "models": models}
 
 @app.get("/models/{model_id}")
 def get_model(model_id: str):
     """Get detailed information about a specific model."""
-    model = api.get_model_by_id(model_id)
+    model = api.get_bot_by_id(model_id)
     if not model:
         return {"error": "Model not found"}
     return model
@@ -341,7 +341,7 @@ virginia-clemm-poe diagnose
 ### Essential Python Imports
 ```python
 from virginia_clemm_poe import api
-from virginia_clemm_poe.models import PoeModel, Pricing, BotInfo
+from virginia_clemm_poe.bots import PoeBot, Pricing, BotInfo
 ```
 
 !!! tip "Performance Tips"

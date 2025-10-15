@@ -1,24 +1,5 @@
 # [FLUX-dev](https://poe.com/FLUX-dev){ .md-button .md-button--primary }
 
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Image Output | 567 points / message |
-| Initial Points Cost | 567 points |
-
-**Last Checked:** 2025-09-20 12:10:21.424457
-
-
-## Bot Information
-
-**Creator:** @fal
-
-**Description:** High-performance image generation with top of the line prompt following, visual quality, image detail and output diversity. This is a more efficient version of FLUX-pro, balancing quality and speed. Use "--aspect" to select an aspect ratio (e.g --aspect 1:1). Valid aspect ratios are 16:9, 4:3, 1:1, 3:4, 9:16.  Send an image to have this model reimagine/regenerate it via FLUX Redux.
-
-**Extra:** Powered by a server managed by @fal. Learn more
-
-
 ## Architecture
 
 **Input Modalities:** text
@@ -39,3 +20,5 @@
 **Owned By:** poe
 
 **Root:** FLUX-dev
+
+**API Last Updated:** 2025-10-15 16:36:09.634005

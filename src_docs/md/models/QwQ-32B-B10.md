@@ -2,24 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 200 points/message |
-| Initial Points Cost | 200 points |
-
-**Last Checked:** 2025-09-20 12:31:14.697355
-
-
-## Bot Information
-
-**Creator:** @baseten
-
-**Description:** QwQ-32B is a medium-sized reasoning model from the Qwen series. It delivers human-like responses to diverse prompts, including math and code generation, while supporting dozens of different languages. With quality on par with reasoning models multiple times bigger in size, QwQ also features an extensive context window of up to 131,072 tokens. 
-
-Try it out with blazing-fast speed optimized by Baseten's model performance engineers.
-
-**Extra:** Powered by a server managed by @baseten. Learn more
-
+| Request | $0.0060/request |
 
 ## Architecture
 
@@ -41,3 +28,5 @@ Try it out with blazing-fast speed optimized by Baseten's model performance engi
 **Owned By:** poe
 
 **Root:** QwQ-32B-B10
+
+**API Last Updated:** 2025-10-15 16:36:09.636027

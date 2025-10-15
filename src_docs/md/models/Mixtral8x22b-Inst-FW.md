@@ -2,22 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 120 points/message |
-| Initial Points Cost | 120 points |
-
-**Last Checked:** 2025-09-20 12:28:53.891214
-
-
-## Bot Information
-
-**Creator:** @fireworksai
-
-**Description:** Mixtral 8x22B Mixture-of-Experts instruct model from Mistral hosted by Fireworks.
-
-**Extra:** Powered by a server managed by @fireworksai. Learn more
-
+| Request | $0.0036/request |
 
 ## Architecture
 
@@ -39,3 +28,5 @@
 **Owned By:** poe
 
 **Root:** Mixtral8x22b-Inst-FW
+
+**API Last Updated:** 2025-10-15 16:36:09.638471

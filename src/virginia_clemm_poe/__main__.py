@@ -14,22 +14,22 @@ from . import api
 from .browser_manager import BrowserManager
 from .config import DATA_FILE_PATH, DEFAULT_DEBUG_PORT
 from .poe_session import PoeSessionManager
-from .updater import ModelUpdater
+from .updater import BotUpdater
 from .utils.logger import configure_logger, log_operation, log_user_action
 
 console = Console()
 
 
 class Cli:
-    """Virginia Clemm Poe - Poe.com model data management CLI.
+    """Virginia Clemm Poe - Poe.com bot data management CLI.
 
-    A comprehensive tool for accessing and maintaining Poe.com model information with
+    A comprehensive tool for accessing and maintaining Poe.com bot information with
     pricing data. Use 'virginia-clemm-poe COMMAND --help' for detailed command info.
 
     Quick Start:
         1. virginia-clemm-poe setup     # One-time browser installation
-        2. virginia-clemm-poe update    # Fetch/refresh model data
-        3. virginia-clemm-poe search    # Query models by name/ID
+        2. virginia-clemm-poe update    # Fetch/refresh bot data
+        3. virginia-clemm-poe search    # Query bots by name/ID
 
     Common Workflows:
         - Initial Setup: setup → update → search
@@ -117,7 +117,7 @@ class Cli:
             The browser installation is managed by PlaywrightAuthor for reliability.
 
         See Also:
-            - update(): Use the configured browser to fetch model data
+            - update(): Use the configured browser to fetch bot data
             - status(): Check if browser is still properly configured
             - doctor(): Diagnose and fix browser-related issues
         """
@@ -135,8 +135,8 @@ class Cli:
                 console.print("\n[bold]You're all set![/bold]")
                 console.print("\nTo get started:")
                 console.print("1. Set your Poe API key: [cyan]export POE_API_KEY=your_key[/cyan]")
-                console.print("2. Update model data: [cyan]virginia-clemm-poe update[/cyan]")
-                console.print("3. Search models: [cyan]virginia-clemm-poe search claude[/cyan]")
+                console.print("2. Update bot data: [cyan]virginia-clemm-poe update[/cyan]")
+                console.print("3. Search bots: [cyan]virginia-clemm-poe search claude[/cyan]")
             else:
                 console.print("[red]✗ Failed to set up Chrome[/red]")
                 console.print("\nPlease install Chrome or Chromium manually:")
@@ -159,7 +159,7 @@ class Cli:
         2. **API Configuration**: Validates POE_API_KEY and tests API connectivity
         3. **Browser Environment**: Verifies Chrome/Chromium via PlaywrightAuthor
         4. **Network Connectivity**: Tests connection to poe.com
-        5. **Model Dataset**: Reports model count, pricing data, and freshness
+        5. **Bot Dataset**: Reports bot count, pricing data, and freshness
         6. **Dependencies**: Confirms all required Python packages (with --check-all)
 
         **When to Use This Command**:
@@ -270,7 +270,7 @@ class Cli:
             issues_found += 1
 
         # 5. Check data file
-        console.print("\n[bold]Model Data:[/bold]")
+        console.print("\n[bold]Bot Data:[/bold]")
         if DATA_FILE_PATH.exists():
             import json
 
@@ -278,15 +278,15 @@ class Cli:
                 with open(DATA_FILE_PATH) as f:
                     models_data = json.load(f)
 
-                # Fix: Use 'data' key instead of 'models'
+                # Fix: Use 'data' key instead of 'bots'
                 model_list = models_data.get("data", [])
                 total_models = len(model_list)
-                with_pricing = sum(1 for model in model_list if model.get("pricing"))
-                with_bot_info = sum(1 for model in model_list if model.get("bot_info"))
+                with_pricing = sum(1 for bot in model_list if bot.get("pricing"))
+                with_bot_info = sum(1 for bot in model_list if bot.get("bot_info"))
 
                 size = DATA_FILE_PATH.stat().st_size
-                console.print(f"[green]✓ Model data exists ({size:,} bytes)[/green]")
-                console.print(f"  Total models: {total_models}")
+                console.print(f"[green]✓ Bot data exists ({size:,} bytes)[/green]")
+                console.print(f"  Total bots: {total_models}")
                 console.print(f"  With pricing: {with_pricing}")
                 console.print(f"  With bot info: {with_bot_info}")
 
@@ -294,11 +294,14 @@ class Cli:
                 if total_models > 0:
                     from datetime import datetime
 
-                    models = api.get_all_models()
+                    bots = api.get_all_bots()
                     latest_pricing = None
-                    for model in models:
-                        if model.pricing and (latest_pricing is None or model.pricing.checked_at > latest_pricing):
-                            latest_pricing = model.pricing.checked_at
+                    for bot in bots:
+                        # Check for scraped pricing timestamp
+                        if bot.pricing and bot.pricing.scraped:
+                            scraped_time = bot.pricing.scraped.checked_at
+                            if latest_pricing is None or scraped_time > latest_pricing:
+                                latest_pricing = scraped_time
 
                     if latest_pricing:
                         days_old = (datetime.now(latest_pricing.tzinfo) - latest_pricing).days
@@ -311,7 +314,7 @@ class Cli:
                 console.print("  Solution: Run 'virginia-clemm-poe update --force'")
                 issues_found += 1
         else:
-            console.print("[red]✗ No model data found[/red]")
+            console.print("[red]✗ No bot data found[/red]")
             console.print("  Solution: Run 'virginia-clemm-poe update'")
             issues_found += 1
 
@@ -346,13 +349,13 @@ class Cli:
         """Clear cache and stored data - use when experiencing stale data issues.
 
         **When to Use This Command**:
-        - Model data appears outdated even after update
+        - Bot data appears outdated even after update
         - Browser automation stops working correctly
         - Starting fresh after configuration changes
         - Recovering from corrupted data files
 
         Args:
-            data: Clear only model data
+            data: Clear only bot data
             browser: Clear only browser cache (delegates to PlaywrightAuthor)
             all: Clear both data and browser cache (default)
             verbose: Enable verbose logging
@@ -369,21 +372,21 @@ class Cli:
         if not clear_data and not clear_browser:
             console.print("[yellow]No cache type selected.[/yellow]")
             console.print("Available options:")
-            console.print("  --data     Clear model data")
+            console.print("  --data     Clear bot data")
             console.print("  --browser  Clear browser cache")
             console.print("  --all      Clear both (default)")
             return
 
         console.print("[bold blue]Clearing cache...[/bold blue]\n")
 
-        # Clear model data
+        # Clear bot data
         if clear_data:
-            console.print("[bold]Model Data:[/bold]")
+            console.print("[bold]Bot Data:[/bold]")
             if DATA_FILE_PATH.exists():
                 DATA_FILE_PATH.unlink()
-                console.print("[green]✓ Model data cleared[/green]")
+                console.print("[green]✓ Bot data cleared[/green]")
             else:
-                console.print("[yellow]No model data to clear[/yellow]")
+                console.print("[yellow]No bot data to clear[/yellow]")
 
         # Clear browser cache (delegate to PlaywrightAuthor)
         if clear_browser:
@@ -557,18 +560,18 @@ class Cli:
         debug_port: int = DEFAULT_DEBUG_PORT,
         verbose: bool = False,
     ) -> None:
-        """Fetch latest model data from Poe - run weekly or when new models appear.
+        """Fetch latest bot data from Poe - run weekly or when new bots appear.
 
-        Update Poe model data with pricing and bot information from web scraping.
+        Update Poe bot data with pricing and bot information from web scraping.
 
-        This is the primary command for refreshing your local model dataset. It fetches
-        the complete model list from Poe's API, then uses browser automation to scrape
+        This is the primary command for refreshing your local bot dataset. It fetches
+        the complete bot list from Poe's API, then uses browser automation to scrape
         detailed pricing information and bot metadata that isn't available through the API.
 
         The update process involves:
-        1. Fetching all models from Poe API (requires valid API key)
+        1. Fetching all bots from Poe API (requires valid API key)
         2. Launching Chrome browser for web scraping via PlaywrightAuthor
-        3. Visiting each model's page to extract pricing tables and bot info cards
+        3. Visiting each bot's page to extract pricing tables and bot info cards
         4. Saving the enriched dataset to local JSON file for fast API access
 
         Args:
@@ -581,8 +584,8 @@ class Cli:
                  --pricing flags are used.
             api_key: Poe API key for authentication. Overrides POE_API_KEY environment
                     variable if provided. Get your key from: https://poe.com/api_key
-            force: Force update all models even if they already have data. Without this,
-                  only models missing data or with previous errors are updated.
+            force: Force update all bots even if they already have data. Without this,
+                  only bots missing data or with previous errors are updated.
             debug_port: Chrome DevTools Protocol port (default: DEFAULT_DEBUG_PORT). Change if port
                        conflicts occur with other browser automation tools.
             verbose: Enable detailed logging for troubleshooting browser automation,
@@ -627,18 +630,18 @@ class Cli:
         Common Issues:
             - "POE_API_KEY not set": Export your API key or use --api_key flag
             - "Browser setup failed": Run 'virginia-clemm-poe setup' first
-            - "Timeout errors": Use --verbose to see which models are failing
+            - "Timeout errors": Use --verbose to see which bots are failing
             - "Port conflicts": Try different --debug_port value
 
         Note:
             This command requires Chrome/Chromium for web scraping. Run 'setup' command
             first if you haven't already. The update process can take several minutes
-            for the full dataset (240+ models). Use selective flags for faster updates.
+            for the full dataset (240+ bots). Use selective flags for faster updates.
 
         See Also:
             - setup(): Initial browser configuration
             - status(): Check data freshness and system health
-            - search(): Query the updated model data
+            - search(): Query the updated bot data
         """
         configure_logger(verbose)
 
@@ -666,39 +669,39 @@ class Cli:
 
         # Run update
         async def run_update() -> None:
-            updater = ModelUpdater(api_key, debug_port=debug_port, verbose=verbose)
+            updater = BotUpdater(api_key, debug_port=debug_port, verbose=verbose)
             await updater.update_all(force=force, update_info=update_info, update_pricing=update_pricing)
 
         asyncio.run(run_update())
 
     def _validate_data_exists(self) -> bool:
-        """Check if model data file exists.
+        """Check if bot data file exists.
 
         Returns:
             True if data exists, False otherwise
         """
         if not DATA_FILE_PATH.exists():
-            console.print("[yellow]No model data found. Run 'virginia-clemm-poe update' first.[/yellow]")
+            console.print("[yellow]No bot data found. Run 'virginia-clemm-poe update' first.[/yellow]")
             return False
         return True
 
     def _perform_search(self, query: str) -> list:
-        """Search for models matching the query.
+        """Search for bots matching the query.
 
         Args:
             query: Search term
 
         Returns:
-            List of matching models
+            List of matching bots
         """
         with log_operation("model_search", {"query": query}) as ctx:
-            models = api.search_models(query)
-            ctx["results_count"] = len(models)
+            bots = api.search_bots(query)
+            ctx["results_count"] = len(bots)
 
-        if not models:
-            console.print(f"[yellow]No models found matching '{query}'[/yellow]")
+        if not bots:
+            console.print(f"[yellow]No bots found matching '{query}'[/yellow]")
 
-        return models
+        return bots
 
     def _create_results_table(self, query: str, show_pricing: bool, show_bot_info: bool) -> Table:
         """Create a formatted table for search results.
@@ -711,7 +714,7 @@ class Cli:
         Returns:
             Configured Table object
         """
-        table = Table(title=f"Models matching '{query}'")
+        table = Table(title=f"Bots matching '{query}'")
         table.add_column("ID", style="cyan")
         table.add_column("Created", style="green")
         table.add_column("Input", style="blue")
@@ -726,63 +729,67 @@ class Cli:
 
         return table
 
-    def _format_pricing_info(self, model) -> tuple[str, str]:
+    def _format_pricing_info(self, bot, format_type: str = "primary") -> tuple[str, str]:
         """Format pricing information for display.
 
         Args:
-            model: Model object with pricing data
+            bot: Bot object with pricing data
+            format_type: Display format - "primary", "api", "scraped", or "both"
 
         Returns:
             Tuple of (pricing_info, updated_date)
         """
-        if model.pricing:
-            primary_cost = model.get_primary_cost()
-            pricing_info = primary_cost if primary_cost else "[dim]No cost info[/dim]"
+        if bot.pricing:
+            # Get pricing based on format type
+            pricing_info = bot.pricing.display_for_cli(format_type)
 
-            # Include initial points cost if available
-            if model.pricing.details.initial_points_cost:
-                pricing_info = f"{model.pricing.details.initial_points_cost} | {pricing_info}"
+            # Get the most recent update date
+            updated = "-"
+            if bot.pricing.scraped and bot.pricing.scraped.checked_at:
+                updated = bot.pricing.scraped.checked_at.strftime("%Y-%m-%d")
 
-            updated = model.pricing.checked_at.strftime("%Y-%m-%d")
-            return pricing_info, updated
-        if model.pricing_error:
-            return f"[red]Error: {model.pricing_error}[/red]", "-"
+            return pricing_info if pricing_info else "[dim]No cost info[/dim]", updated
+        if bot.pricing_error:
+            return f"[red]Error: {bot.pricing_error}[/red]", "-"
         return "[dim]Not checked[/dim]", "-"
 
-    def _add_model_row(self, table: Table, model, show_pricing: bool, show_bot_info: bool) -> None:
-        """Add a single model row to the table.
+    def _add_model_row(
+        self, table: Table, bot, show_pricing: bool, show_bot_info: bool, pricing_format: str = "primary"
+    ) -> None:
+        """Add a single bot row to the table.
 
         Args:
             table: Table to add row to
-            model: Model data
+            bot: Bot data
             show_pricing: Whether to include pricing columns
             show_bot_info: Whether to include bot info columns
+            pricing_format: Pricing display format
         """
         row = [
-            model.id,
-            model.created,
-            ", ".join(model.architecture.input_modalities),
-            ", ".join(model.architecture.output_modalities),
+            bot.id,
+            bot.created,
+            ", ".join(bot.architecture.input_modalities),
+            ", ".join(bot.architecture.output_modalities),
         ]
 
         if show_bot_info:
-            creator = model.bot_info.creator if model.bot_info else "[dim]-[/dim]"
+            creator = bot.bot_info.creator if bot.bot_info else "[dim]-[/dim]"
             row.append(creator)
 
         if show_pricing:
-            pricing_info, updated = self._format_pricing_info(model)
+            pricing_info, updated = self._format_pricing_info(bot, pricing_format)
             row.extend([pricing_info, updated])
 
         table.add_row(*[str(x) for x in row])
 
-    def _display_single_model_bot_info(self, model) -> None:
-        """Display detailed bot info for a single model result.
+    def _display_single_model_bot_info(self, bot) -> None:
+        """Display detailed bot info for a single bot result.
 
         Args:
-            model: Model with bot info to display
+            bot: Bot with bot info to display
         """
-        if model.bot_info:
-            bot_info = model.bot_info
+        if bot.bot_info:
+            bot_info = bot.bot_info
             console.print("\n[bold]Bot Information:[/bold]")
             if bot_info.description:
                 console.print(f"[blue]Description:[/blue] {bot_info.description}")
@@ -794,33 +801,37 @@ class Cli:
         query: str,
         show_pricing: bool = True,
         show_bot_info: bool = False,
+        pricing_format: str = "primary",
         verbose: bool = False,
     ) -> None:
-        """Find models by name or ID - your primary command for discovering models.
+        """Find bots by name or ID - your primary command for discovering bots.
 
-        Search and display Poe models by ID or name with flexible filtering.
+        Search and display Poe bots by ID or name with flexible filtering.
 
-        This command provides an intuitive way to find specific models in the local dataset
-        using case-insensitive substring matching. It searches both model IDs and root names,
-        making it easy to discover models even with partial information.
+        This command provides an intuitive way to find specific bots in the local dataset
+        using case-insensitive substring matching. It searches both bot IDs and root names,
+        making it easy to discover bots even with partial information.
 
         The search uses fuzzy matching to help users find what they're looking for:
         - "claude" finds "Claude-3-Opus", "Claude-3.5-Sonnet", etc.
         - "gpt" finds "GPT-4", "GPT-4-Turbo", "ChatGPT", etc.
         - "son" finds "Claude-3.5-Sonnet", "Sonnet-3.5", etc.
 
-        Results are displayed in a formatted table with model information, pricing data,
+        Results are displayed in a formatted table with bot information, pricing data,
         and optional bot metadata for easy comparison and selection.
 
         Args:
-            query: Search term to match against model IDs and names. Case-insensitive
+            query: Search term to match against bot IDs and names. Case-insensitive
                   substring matching is used, so partial matches work well.
             show_pricing: Display pricing information in results table (default: True).
-                         Shows the primary cost metric for each model if available.
-                         Disable to focus on model capabilities without cost data.
+                         Shows the primary cost metric for each bot if available.
+                         Disable to focus on bot capabilities without cost data.
             show_bot_info: Include bot creator and description columns (default: False).
                           Shows "@creator" handles and bot descriptions when enabled.
-                          Useful for understanding model origins and purposes.
+                          Useful for understanding bot origins and purposes.
+            pricing_format: Pricing display format (default: "primary").
+                           Options: "primary" (API preferred), "api" (API only),
+                           "scraped" (points only), "both" (all pricing info).
             verbose: Enable detailed logging for search operations and data loading.
                     Helpful for debugging data file issues or search performance.
 
@@ -828,21 +839,21 @@ class Cli:
             None: Results are displayed directly to console in formatted table.
 
         Examples:
-            Basic model search:
+            Basic bot search:
             ```bash
-            # Find all Claude models
+            # Find all Claude bots
             virginia-clemm-poe search claude
 
-            # Find GPT models
+            # Find GPT bots
             virginia-clemm-poe search gpt
 
-            # Search for specific model
+            # Search for specific bot
             virginia-clemm-poe search "Claude-3-Opus"
             ```
 
             Customized output:
             ```bash
-            # Show models with bot creator info
+            # Show bots with bot creator info
             virginia-clemm-poe search claude --show_bot_info
 
             # Search without pricing (faster display)
@@ -855,15 +866,15 @@ class Cli:
             Search patterns:
             ```bash
             # Partial matches work great
-            virginia-clemm-poe search "son"     # Finds Sonnet models
+            virginia-clemm-poe search "son"     # Finds Sonnet bots
             virginia-clemm-poe search "turbo"   # Finds Turbo variants
-            virginia-clemm-poe search "vision"  # Finds vision-capable models
+            virginia-clemm-poe search "vision"  # Finds vision-capable bots
             ```
 
         Output Format:
             Results table includes:
-            - ID: Model identifier (e.g., "Claude-3-Opus")
-            - Created: Model creation timestamp
+            - ID: Bot identifier (e.g., "Claude-3-Opus")
+            - Created: Bot creation timestamp
             - Input: Supported input modalities (text, image, etc.)
             - Output: Supported output modalities (text, image, etc.)
             - Cost: Primary pricing metric (if show_pricing=True)
@@ -871,8 +882,8 @@ class Cli:
             - Description: Bot description (if show_bot_info=True)
 
         Common Issues:
-            - "No model data found": Run 'virginia-clemm-poe update' to fetch data
-            - "No models found": Try broader search terms or check spelling
+            - "No bot data found": Run 'virginia-clemm-poe update' to fetch data
+            - "No bots found": Try broader search terms or check spelling
             - Empty pricing columns: Update with --pricing flag to get cost data
 
         Performance Notes:
@@ -881,13 +892,13 @@ class Cli:
             - Bot info display adds extra columns that may wrap on narrow terminals
 
         Note:
-            This command requires existing model data. If you see "No model data found",
+            This command requires existing bot data. If you see "No bot data found",
             run the 'update' command first to populate your local dataset.
 
         See Also:
-            - update(): Refresh model data from Poe.com
-            - list(): Show all models with filtering options
-            - status(): Check if model data is current
+            - update(): Refresh bot data from Poe.com
+            - list(): Show all bots with filtering options
+            - status(): Check if bot data is current
         """
         configure_logger(verbose)
 
@@ -906,72 +917,87 @@ class Cli:
             return
 
         # Perform search
-        models = self._perform_search(query)
-        if not models:
+        bots = self._perform_search(query)
+        if not bots:
             return
 
         # Create and populate results table
         table = self._create_results_table(query, show_pricing, show_bot_info)
 
-        for model in models:
-            self._add_model_row(table, model, show_pricing, show_bot_info)
+        for bot in bots:
+            self._add_model_row(table, bot, show_pricing, show_bot_info, pricing_format)
 
         # Display results
         console.print(table)
-        console.print(f"\n[green]Found {len(models)} models[/green]")
+        console.print(f"\n[green]Found {len(bots)} bots[/green]")
 
         # Show detailed bot info for single results
-        if show_bot_info and len(models) == 1:
-            self._display_single_model_bot_info(models[0])
+        if show_bot_info and len(bots) == 1:
+            self._display_single_model_bot_info(bots[0])
 
     def list(
         self,
         with_pricing: bool = False,
         limit: int | None = None,
+        pricing_format: str = "primary",
+        show_details: bool = False,
         verbose: bool = False,
     ) -> None:
-        """List all available models - get an overview of the entire dataset.
+        """List all available bots - get an overview of the entire dataset.
 
         **When to Use This Command**:
-        - Viewing summary statistics about model coverage
-        - Checking how many models have pricing data
-        - Getting a quick count of available models
-        - Identifying models that need updating
+        - Viewing summary statistics about bot coverage
+        - Checking how many bots have pricing data
+        - Getting a quick count of available bots
+        - Identifying bots that need updating
 
         Args:
-            with_pricing: Only show models with pricing information
+            with_pricing: Only show bots with pricing information
             limit: Limit number of results
+            pricing_format: Pricing display format - "primary", "api", "scraped", or "both"
+            show_details: Show detailed pricing information for each bot
             verbose: Enable verbose logging
         """
         configure_logger(verbose)
 
         if not DATA_FILE_PATH.exists():
-            console.print("[yellow]No model data found. Run 'virginia-clemm-poe update' first.[/yellow]")
+            console.print("[yellow]No bot data found. Run 'virginia-clemm-poe update' first.[/yellow]")
             return
 
-        models = api.get_models_with_pricing() if with_pricing else api.get_all_models()
+        bots = api.get_bots_with_pricing() if with_pricing else api.get_all_bots()
 
         if limit:
-            models = models[:limit]
+            bots = bots[:limit]
 
         # Create summary table
-        table = Table(title="Poe Models Summary")
-        table.add_column("Total Models", style="cyan")
-        table.add_column("With Pricing", style="green")
+        table = Table(title="Poe Bots Summary")
+        table.add_column("Total Bots", style="cyan")
+        table.add_column("With API Pricing", style="green")
+        table.add_column("With Scraped Pricing", style="blue")
         table.add_column("Need Update", style="yellow")
 
-        all_models = api.get_all_models()
-        count_with_pricing = len([m for m in all_models if m.has_pricing()])
+        all_models = api.get_all_bots()
+        count_with_api = len([m for m in all_models if m.has_api_pricing()])
+        count_with_scraped = len([m for m in all_models if m.has_scraped_pricing()])
         need_update = len([m for m in all_models if m.needs_pricing_update()])
 
-        table.add_row(str(len(all_models)), str(count_with_pricing), str(need_update))
+        table.add_row(str(len(all_models)), str(count_with_api), str(count_with_scraped), str(need_update))
         console.print(table)
 
-        if models:
-            console.print(f"\n[bold]Showing {len(models)} models:[/bold]")
-            for model in models:
-                status = "✓" if model.has_pricing() else "✗"
-                console.print(f"{status} {model.id}")
+        if bots:
+            console.print(f"\n[bold]Showing {len(bots)} bots:[/bold]")
+            for bot in bots:
+                # Determine status indicators
+                api_status = "A" if bot.has_api_pricing() else "-"
+                scraped_status = "S" if bot.has_scraped_pricing() else "-"
+                status = f"[{api_status}{scraped_status}]"
+
+                # Show bot with pricing if requested
+                if show_details and bot.pricing:
+                    pricing_info = bot.pricing.display_for_cli(pricing_format)
+                    console.print(f"{status} {bot.id}: {pricing_info}")
+                else:
+                    console.print(f"{status} {bot.id}")
 
     def balance(
         self, login: bool = False, refresh: bool = False, no_browser: bool = False, verbose: bool = False

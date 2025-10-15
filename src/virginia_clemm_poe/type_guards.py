@@ -10,24 +10,24 @@ from typing import Any, TypeGuard
 
 from loguru import logger
 
-from .exceptions import APIError, ModelDataError
-from .types import ModelFilterCriteria, PoeApiModelData, PoeApiResponse
+from .exceptions import APIError, BotDataError
+from .types import BotFilterCriteria, PoeApiBotData, PoeApiResponse
 
 
-def is_poe_api_model_data(value: Any) -> TypeGuard[PoeApiModelData]:
-    """Type guard to validate individual model data from Poe API.
+def is_poe_api_bot_data(value: Any) -> TypeGuard[PoeApiBotData]:
+    """Type guard to validate individual bot data from Poe API.
 
     Args:
         value: The value to check
 
     Returns:
-        True if the value matches PoeApiModelData structure
+        True if the value matches PoeApiBotData structure
 
     Example:
-        >>> data = {"id": "model-1", "object": "model", "created": 12345, ...}
-        >>> if is_poe_api_model_data(data):
-        ...     # Safe to use as PoeApiModelData
-        ...     model_id = data["id"]
+        >>> data = {"id": "bot-1", "object": "bot", "created": 12345, ...}
+        >>> if is_poe_api_bot_data(data):
+        ...     # Safe to use as PoeApiBotData
+        ...     bot_id = data["id"]
     """
     if not isinstance(value, dict):
         return False
@@ -40,7 +40,7 @@ def is_poe_api_model_data(value: Any) -> TypeGuard[PoeApiModelData]:
     # Validate field types
     return (
         isinstance(value.get("id"), str)
-        and value.get("object") == "model"
+        and value.get("object") in {"bot", "bot"}
         and isinstance(value.get("created"), int)
         and isinstance(value.get("owned_by"), str)
         and isinstance(value.get("permission"), list)
@@ -51,7 +51,7 @@ def is_poe_api_model_data(value: Any) -> TypeGuard[PoeApiModelData]:
 
 
 def is_poe_api_response(value: Any) -> TypeGuard[PoeApiResponse]:
-    """Type guard to validate the complete Poe API response.
+    """Type guard to validate the complete Poe API response for bots.
 
     Args:
         value: The value to check
@@ -76,19 +76,19 @@ def is_poe_api_response(value: Any) -> TypeGuard[PoeApiResponse]:
     if not isinstance(data, list):
         return False
 
-    # Validate each model in the data (optional but recommended)
+    # Validate each bot in the data (optional but recommended)
     # This ensures all models in the response are valid
-    return all(is_poe_api_model_data(model) for model in data)
+    return all(is_poe_api_bot_data(bot) for bot in data)
 
 
-def is_model_filter_criteria(value: Any) -> TypeGuard[ModelFilterCriteria]:
-    """Type guard to validate model filter criteria from user input.
+def is_model_filter_criteria(value: Any) -> TypeGuard[BotFilterCriteria]:
+    """Type guard to validate bot filter criteria from user input.
 
     Args:
         value: The value to check
 
     Returns:
-        True if the value matches ModelFilterCriteria structure
+        True if the value matches BotFilterCriteria structure
 
     Example:
         >>> criteria = {"owned_by": "openai", "has_pricing": True}
@@ -167,15 +167,15 @@ def validate_poe_api_response(response: Any) -> PoeApiResponse:
         # If we get here, the data field has issues
         data = response.get("data", [])
         if not isinstance(data, list):
-            raise APIError(f"API response 'data' field is not a list: {type(data)}. Expected list of model objects.")
+            raise APIError(f"API response 'data' field is not a list: {type(data)}. Expected list of bot objects.")
 
         # Check for invalid models in data
-        for i, model in enumerate(data[:5]):  # Check first 5 for performance
-            if not is_poe_api_model_data(model):
-                logger.error(f"Invalid model at index {i}: {model}")
+        for i, bot in enumerate(data[:5]):  # Check first 5 for performance
+            if not is_poe_api_bot_data(bot):
+                logger.error(f"Invalid bot at index {i}: {bot}")
                 raise APIError(
-                    f"API response contains invalid model data at index {i}. "
-                    "Model must have fields: id, object, created, owned_by, permission, root, architecture."
+                    f"API response contains invalid bot data at index {i}. "
+                    "Bot must have fields: id, object, created, owned_by, permission, root, architecture."
                 )
 
         raise APIError("API response validation failed for unknown reason")
@@ -183,26 +183,26 @@ def validate_poe_api_response(response: Any) -> PoeApiResponse:
     return response
 
 
-def validate_model_filter_criteria(criteria: Any) -> ModelFilterCriteria:
-    """Validate and return model filter criteria with proper error handling.
+def validate_model_filter_criteria(criteria: Any) -> BotFilterCriteria:
+    """Validate and return bot filter criteria with proper error handling.
 
     Args:
         criteria: The filter criteria to validate
 
     Returns:
-        The validated ModelFilterCriteria
+        The validated BotFilterCriteria
 
     Raises:
-        ModelDataError: If the criteria doesn't match expected structure
+        BotDataError: If the criteria doesn't match expected structure
 
     Example:
         >>> user_input = {"owned_by": "openai", "invalid_field": 123}
         >>> validated = validate_model_filter_criteria(user_input)
-        >>> # Raises ModelDataError about invalid_field
+        >>> # Raises BotDataError about invalid_field
     """
     if not is_model_filter_criteria(criteria):
         if not isinstance(criteria, dict):
-            raise ModelDataError(f"Filter criteria must be a dictionary, got {type(criteria).__name__}")
+            raise BotDataError(f"Filter criteria must be a dictionary, got {type(criteria).__name__}")
 
         # Check for invalid fields
         valid_fields = {
@@ -218,7 +218,7 @@ def validate_model_filter_criteria(criteria: Any) -> ModelFilterCriteria:
         }
         invalid_fields = set(criteria.keys()) - valid_fields
         if invalid_fields:
-            raise ModelDataError(
+            raise BotDataError(
                 f"Invalid filter fields: {', '.join(invalid_fields)}. "
                 f"Valid fields are: {', '.join(sorted(valid_fields))}"
             )
@@ -241,6 +241,6 @@ def validate_model_filter_criteria(criteria: Any) -> ModelFilterCriteria:
                 type_errors.append(f"{key} must be string, got {type(value).__name__}")
 
         if type_errors:
-            raise ModelDataError("Filter criteria type errors:\n" + "\n".join(f"  - {err}" for err in type_errors))
+            raise BotDataError("Filter criteria type errors:\n" + "\n".join(f"  - {err}" for err in type_errors))
 
     return criteria  # type: ignore[no-any-return]

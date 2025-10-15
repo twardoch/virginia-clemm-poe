@@ -1,24 +1,5 @@
 # [Hailuo-AI](https://poe.com/Hailuo-AI){ .md-button .md-button--primary }
 
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Video Output | 14167 points / message |
-| Initial Points Cost | Variable points |
-
-**Last Checked:** 2025-09-20 12:19:05.165328
-
-
-## Bot Information
-
-**Creator:** @fal
-
-**Description:** Best-in-class text and image to video model by MiniMax.
-
-**Extra:** Powered by a server managed by @fal. Learn more
-
-
 ## Architecture
 
 **Input Modalities:** text
@@ -39,3 +20,5 @@
 **Owned By:** poe
 
 **Root:** Hailuo-AI
+
+**API Last Updated:** 2025-10-15 16:36:09.635309

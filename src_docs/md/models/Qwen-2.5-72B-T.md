@@ -2,24 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 300 points/message |
-| Initial Points Cost | 300 points |
-
-**Last Checked:** 2025-09-20 12:31:36.733191
-
-
-## Bot Information
-
-**Creator:** @togetherai
-
-**Description:** Qwen 2.5 72B from Alibaba. Excels in coding, math, instruction following, natural language understanding, and has great multilangual support with more than 29 languages. 
-
-Delivering results on par with Llama-3-405B despite using only one-fifth of the parameters.
-
-**Extra:** Powered by a server managed by @togetherai. Learn more
-
+| Request | $0.0090/request |
 
 ## Architecture
 
@@ -41,3 +28,5 @@ Delivering results on par with Llama-3-405B despite using only one-fifth of the 
 **Owned By:** poe
 
 **Root:** Qwen-2.5-72B-T
+
+**API Last Updated:** 2025-10-15 16:36:09.645461

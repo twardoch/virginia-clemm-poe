@@ -1,24 +1,5 @@
 # [Flux-Kontext-Max](https://poe.com/Flux-Kontext-Max){ .md-button .md-button--primary }
 
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Image Output | 2667 points / message |
-| Initial Points Cost | 2667 points |
-
-**Last Checked:** 2025-09-20 12:11:56.854107
-
-
-## Bot Information
-
-**Creator:** @fal
-
-**Description:** FLUX.1 Kontext [max] is a new premium model from Black Forest Labs that brings maximum performance across all aspects. Send a prompt to generate an image, or send an image along with an instruction to edit the image.  Use `--aspect` to set the aspect ratio for text-to-image-generation. Available aspect ratio (21:9, 16:9, 4:3, 1:1, 3:4, 9:16, & 9:21)
-
-**Extra:** Powered by a server managed by @fal. Learn more
-
-
 ## Architecture
 
 **Input Modalities:** text
@@ -39,3 +20,5 @@
 **Owned By:** poe
 
 **Root:** Flux-Kontext-Max
+
+**API Last Updated:** 2025-10-15 16:36:09.632748

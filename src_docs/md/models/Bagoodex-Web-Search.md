@@ -1,24 +1,5 @@
 # [Bagoodex-Web-Search](https://poe.com/Bagoodex-Web-Search){ .md-button .md-button--primary }
 
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Initial Points Cost | 650 points |
-| Per Search | 650 points |
-
-**Last Checked:** 2025-09-20 12:04:01.132382
-
-
-## Bot Information
-
-**Creator:** @empiriolabsai
-
-**Description:** Bagoodex delivers real-time AI-powered web search offering instant access to videos, images, weather, and more. Audio and video uploads are not supported at this time.
-
-**Extra:** Powered by a server managed by @empiriolabsai. Learn more
-
-
 ## Architecture
 
 **Input Modalities:** text
@@ -39,3 +20,5 @@
 **Owned By:** poe
 
 **Root:** Bagoodex-Web-Search
+
+**API Last Updated:** 2025-10-15 16:36:09.630772

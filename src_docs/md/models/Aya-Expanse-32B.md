@@ -2,22 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 170 points/message |
-| Initial Points Cost | 170 points |
-
-**Last Checked:** 2025-09-20 12:03:46.459448
-
-
-## Bot Information
-
-**Creator:** @cohere
-
-**Description:** Aya Expanse is a 32B open-weight research release of a model with highly advanced multilingual capabilities. Aya supports state-of-art generative capabilities in 23 languages: Arabic, Chinese (simplified & traditional), Czech, Dutch, English, French, German, Greek, Hebrew, Hindi, Indonesian, Italian, Japanese, Korean, Persian, Polish, Portuguese, Romanian, Russian, Spanish, Turkish, Ukrainian, and Vietnamese.
-
-**Extra:** Powered by a server managed by @cohere. Learn more
-
+| Request | $0.0051/request |
 
 ## Architecture
 
@@ -39,3 +28,5 @@
 **Owned By:** poe
 
 **Root:** Aya-Expanse-32B
+
+**API Last Updated:** 2025-10-15 16:36:09.637890

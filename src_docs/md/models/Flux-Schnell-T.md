@@ -2,22 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 70 points/message |
-| Initial Points Cost | 70 points |
-
-**Last Checked:** 2025-09-20 12:12:11.325492
-
-
-## Bot Information
-
-**Creator:** @togetherai
-
-**Description:** Lightning-fast AI image generation model that excels in producing high-quality visuals in just seconds. Great for quick prototyping or real-time use cases. This is the fastest version of FLUX.1.
-
-**Extra:** Powered by a server managed by @togetherai. Learn more
-
+| Request | $0.0021/request |
 
 ## Architecture
 
@@ -39,3 +28,5 @@
 **Owned By:** poe
 
 **Root:** Flux-Schnell-T
+
+**API Last Updated:** 2025-10-15 16:36:09.642793

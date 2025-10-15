@@ -2,22 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 1500 points/message |
-| Initial Points Cost | 1500 points |
-
-**Last Checked:** 2025-09-20 12:19:49.184906
-
-
-## Bot Information
-
-**Creator:** @ideogramai
-
-**Description:** Excels at creating high-quality images from text prompts. For most prompts, https://poe.com/Ideogram-v2 will produce better results. Allows users to specify the aspect ratio of the image using the "--aspect" parameter at the end of the prompt (e.g. "Tall trees, daylight --aspect 9:16"). Valid aspect ratios are 10:16, 16:10, 9:16, 16:9, 3:2, 2:3, 4:3, 3:4, & 1:1.
-
-**Extra:** Powered by a server managed by @ideogramai. Learn more
-
+| Request | $0.045/request |
 
 ## Architecture
 
@@ -39,3 +28,5 @@
 **Owned By:** poe
 
 **Root:** Ideogram
+
+**API Last Updated:** 2025-10-15 16:36:09.634164

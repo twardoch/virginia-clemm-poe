@@ -2,24 +2,12 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Input Text | 90 points/1k tokens |
-| Input Image | Variable |
-| Initial Points Cost | 239+ points |
-| Output (Text) | 270 points/1k tokens |
-
-**Last Checked:** 2025-09-20 12:28:08.793276
-
-
-## Bot Information
-
-**Creator:** @mistral
-
-**Description:** Mistral AI's medium-sized model. Supports a context window of 32k tokens (around 24,000 words) and is stronger than Mixtral-8x7b and Mistral-7b on benchmarks across the board.
-
-**Extra:** Powered by Mistral. Learn more
-
+| Prompt | $0.0000027/token |
+| Completion | $0.0000081/token |
 
 ## Architecture
 
@@ -41,3 +29,5 @@
 **Owned By:** poe
 
 **Root:** Mistral-Medium
+
+**API Last Updated:** 2025-10-15 16:36:09.628668

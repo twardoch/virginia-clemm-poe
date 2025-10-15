@@ -2,24 +2,12 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Input Text | 15 points/1k tokens |
-| Input Image | Variable |
-| Initial Points Cost | 16+ points |
-| Output (Text) | 45 points/1k tokens |
-
-**Last Checked:** 2025-09-20 12:13:12.455404
-
-
-## Bot Information
-
-**Creator:** @openai
-
-**Description:** Powered by gpt-3.5-turbo without a system prompt.
-
-**Extra:** Powered by OpenAI: gpt-3.5-turbo-0125. Learn more
-
+| Prompt | $4.5E-7/token |
+| Completion | $0.0000013/token |
 
 ## Architecture
 
@@ -41,3 +29,5 @@
 **Owned By:** poe
 
 **Root:** GPT-3.5-Turbo-Raw
+
+**API Last Updated:** 2025-10-15 16:36:09.646476

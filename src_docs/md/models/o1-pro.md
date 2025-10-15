@@ -2,24 +2,12 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Initial Points Cost | 54914+ points |
-| Input | 4500 points/1k tokens |
-| Output (Text) | 18000 points/1k tokens |
-
-**Last Checked:** 2025-09-20 12:39:52.134309
-
-
-## Bot Information
-
-**Creator:** @openai
-
-**Description:** OpenAI’s o1-pro highly capable reasoning model, tailored for complex, compute- or context-heavy tasks, dedicating additional thinking time to deliver more accurate, reliable answers. For less costly, complex tasks, https://poe.com/o3-mini is recommended.
-To instruct the bot to use more reasoning effort, add --reasoning_effort to the end of your message with one of "low", "medium", or "high".
-
-**Extra:** Powered by OpenAI: o1-pro-2025-03-19. Learn more
-
+| Prompt | $0.00014/token |
+| Completion | $0.00054/token |
 
 ## Architecture
 
@@ -41,3 +29,5 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 **Owned By:** poe
 
 **Root:** o1-pro
+
+**API Last Updated:** 2025-10-15 16:36:09.627262

@@ -2,22 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 800 points/message |
-| Initial Points Cost | 800 points |
-
-**Last Checked:** 2025-09-20 12:20:40.869260
-
-
-## Bot Information
-
-**Creator:** @google
-
-**Description:** DeepMind's May 2025 text-to-image model with exceptional prompt adherence, capable of generating images with great detail, rich lighting, and few distracting artifacts. To adjust the aspect ratio of your image add --aspect_ratio (1:1, 16:9, 9:16, 4:3, 3:4). Non-English input will be translated first. Serves the `imagen-4.0-ultra-generate-05-20` model from Google Vertex, and has a maximum input of 480 tokens.
-
-**Extra:** Powered by a server managed by @google. Learn more
-
+| Request | $0.028/request |
 
 ## Architecture
 
@@ -39,3 +28,5 @@
 **Owned By:** poe
 
 **Root:** Imagen-4
+
+**API Last Updated:** 2025-10-15 16:36:09.632371

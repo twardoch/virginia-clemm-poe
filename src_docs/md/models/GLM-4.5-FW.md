@@ -2,12 +2,20 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
+| Type | Cost |
+|------|------|
+| Request | $0.0054/request |
+
+### Points-based Pricing
+
 | Type | Cost |
 |------|------|
 | Total Cost | 180 points/message |
 | Initial Points Cost | 180 points |
 
-**Last Checked:** 2025-09-20 12:12:41.095235
+**Last Checked:** 2025-10-15 16:41:17.677233
 
 
 ## Bot Information
@@ -39,3 +47,5 @@
 **Owned By:** poe
 
 **Root:** GLM-4.5-FW
+
+**API Last Updated:** 2025-10-15 16:36:09.619097

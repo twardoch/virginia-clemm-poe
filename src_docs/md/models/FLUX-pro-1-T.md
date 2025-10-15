@@ -2,22 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 1250 points/message |
-| Initial Points Cost | 1250 points |
-
-**Last Checked:** 2025-09-20 12:10:54.249506
-
-
-## Bot Information
-
-**Creator:** @togetherai
-
-**Description:** The flagship model in the FLUX.1 lineup. Excels in prompt following, visual quality, image detail, and output diversity.
-
-**Extra:** Powered by a server managed by @togetherai. Learn more
-
+| Request | $0.037/request |
 
 ## Architecture
 
@@ -39,3 +28,5 @@
 **Owned By:** poe
 
 **Root:** FLUX-pro-1-T
+
+**API Last Updated:** 2025-10-15 16:36:09.642492

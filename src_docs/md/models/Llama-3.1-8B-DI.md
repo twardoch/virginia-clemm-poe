@@ -2,24 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 0 points/message |
-| Initial Points Cost | 0 points |
-
-**Last Checked:** 2025-09-20 12:24:38.572447
-
-
-## Bot Information
-
-**Creator:** @deepinfra
-
-**Description:** The smallest and fastest model from Meta's Llama 3.1 family. This open-source language model excels in multilingual dialogue, outperforming numerous industry benchmarks for both closed and open-source conversational AI systems.  All data you submit to this bot is governed by the Poe privacy policy and is only sent to DeepInfra, a US-based company.
-
-Input token limit 128k, output token limit 8k. Quantization: FP16 (official).
-
-**Extra:** Powered by a server managed by @deepinfra. Learn more
-
+| Request | $0.00030/request |
 
 ## Architecture
 
@@ -41,3 +28,5 @@ Input token limit 128k, output token limit 8k. Quantization: FP16 (official).
 **Owned By:** poe
 
 **Root:** Llama-3.1-8B-DI
+
+**API Last Updated:** 2025-10-15 16:36:09.628329

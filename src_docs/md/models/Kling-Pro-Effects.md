@@ -1,24 +1,5 @@
 # [Kling-Pro-Effects](https://poe.com/Kling-Pro-Effects){ .md-button .md-button--primary }
 
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Video Output | 3334 points / second |
-| Initial Points Cost | Variable points |
-
-**Last Checked:** 2025-09-20 12:22:39.101943
-
-
-## Bot Information
-
-**Creator:** @fal
-
-**Description:** Generate videos with effects like squishing an object, two people hugging, making heart gestures, etc. using Kling-Pro-Effects. Requires an image input. Send a single image for `squish` and `expansion` effects and two images (of people) for `hug`, `kiss`, and `heart_gesture` effects. Set effect with --effect. Default effect: `squish`.
-
-**Extra:** Powered by a server managed by @fal. Learn more
-
-
 ## Architecture
 
 **Input Modalities:** text
@@ -39,3 +20,5 @@
 **Owned By:** poe
 
 **Root:** Kling-Pro-Effects
+
+**API Last Updated:** 2025-10-15 16:36:09.635261

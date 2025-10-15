@@ -2,24 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 320 points/message |
-| Initial Points Cost | 320 points |
-
-**Last Checked:** 2025-09-20 12:31:22.051136
-
-
-## Bot Information
-
-**Creator:** @togetherai
-
-**Description:** An experimental research model focused on advancing AI reasoning capabilities. On par with O-1 mini and preview.
-
-It demonstrates exceptional performance in complex problem-solving, achieving impressive scores on mathematical and scientific reasoning benchmarks (65.2% on GPQA, 50.0% on AIME, 90.6% on MATH-500)
-
-**Extra:** Powered by a server managed by @togetherai. Learn more
-
+| Request | $0.0096/request |
 
 ## Architecture
 
@@ -41,3 +28,5 @@ It demonstrates exceptional performance in complex problem-solving, achieving im
 **Owned By:** poe
 
 **Root:** QwQ-32B-Preview-T
+
+**API Last Updated:** 2025-10-15 16:36:09.645306

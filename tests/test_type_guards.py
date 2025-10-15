@@ -5,92 +5,92 @@ from typing import Any
 
 import pytest
 
-from virginia_clemm_poe.exceptions import APIError, ModelDataError
+from virginia_clemm_poe.exceptions import APIError, BotDataError
 from virginia_clemm_poe.type_guards import (
     is_model_filter_criteria,
-    is_poe_api_model_data,
+    is_poe_api_bot_data,
     is_poe_api_response,
     validate_model_filter_criteria,
     validate_poe_api_response,
 )
 
 
-class TestIsPoeApiModelData:
-    """Test is_poe_api_model_data type guard."""
+class TestIsPoeApiBotData:
+    """Test is_poe_api_bot_data type guard."""
 
     def test_valid_model_data(self, sample_api_response_data: dict[str, Any]) -> None:
-        """Test type guard with valid model data."""
+        """Test type guard with valid bot data."""
         model_data = sample_api_response_data["data"][0]
-        assert is_poe_api_model_data(model_data)
+        assert is_poe_api_bot_data(model_data)
 
     def test_invalid_model_data_not_dict(self) -> None:
         """Test type guard with non-dictionary input."""
-        assert not is_poe_api_model_data("not a dict")
-        assert not is_poe_api_model_data([1, 2, 3])
-        assert not is_poe_api_model_data(None)
+        assert not is_poe_api_bot_data("not a dict")
+        assert not is_poe_api_bot_data([1, 2, 3])
+        assert not is_poe_api_bot_data(None)
 
     def test_invalid_model_data_missing_required_fields(self) -> None:
         """Test type guard with missing required fields."""
         incomplete_data = {
-            "id": "test-model",
-            "object": "model",
+            "id": "test-bot",
+            "object": "bot",
             # Missing: created, owned_by, permission, root, architecture
         }
-        assert not is_poe_api_model_data(incomplete_data)
+        assert not is_poe_api_bot_data(incomplete_data)
 
     def test_invalid_model_data_wrong_field_types(self) -> None:
         """Test type guard with incorrect field types."""
         wrong_types = {
             "id": 123,  # Should be string
-            "object": "model",
+            "object": "bot",
             "created": "not-a-number",  # Should be int
             "owned_by": "testorg",
             "permission": "not-a-list",  # Should be list
-            "root": "test-model",
+            "root": "test-bot",
             "architecture": "not-a-dict",  # Should be dict
         }
-        assert not is_poe_api_model_data(wrong_types)
+        assert not is_poe_api_bot_data(wrong_types)
 
     def test_invalid_model_data_wrong_object_type(self) -> None:
         """Test type guard with incorrect object field value."""
         wrong_object = {
-            "id": "test-model",
-            "object": "not-model",  # Should be "model"
+            "id": "test-bot",
+            "object": "not-bot",  # Should be "bot"
             "created": 1704369600,
             "owned_by": "testorg",
             "permission": [],
-            "root": "test-model",
+            "root": "test-bot",
             "architecture": {},
         }
-        assert not is_poe_api_model_data(wrong_object)
+        assert not is_poe_api_bot_data(wrong_object)
 
     def test_valid_model_data_with_optional_parent(self) -> None:
         """Test type guard with optional parent field."""
         with_parent = {
-            "id": "test-model",
-            "object": "model",
+            "id": "test-bot",
+            "object": "bot",
             "created": 1704369600,
             "owned_by": "testorg",
             "permission": [],
-            "root": "test-model",
-            "parent": "parent-model",  # Optional field
+            "root": "test-bot",
+            "parent": "parent-bot",  # Optional field
             "architecture": {},
         }
-        assert is_poe_api_model_data(with_parent)
+        assert is_poe_api_bot_data(with_parent)
 
     def test_valid_model_data_with_null_parent(self) -> None:
         """Test type guard with null parent field."""
         with_null_parent = {
-            "id": "test-model",
-            "object": "model",
+            "id": "test-bot",
+            "object": "bot",
             "created": 1704369600,
             "owned_by": "testorg",
             "permission": [],
-            "root": "test-model",
+            "root": "test-bot",
             "parent": None,  # Null is allowed
             "architecture": {},
         }
-        assert is_poe_api_model_data(with_null_parent)
+        assert is_poe_api_bot_data(with_null_parent)
 
 
 class TestIsPoeApiResponse:
@@ -133,12 +133,12 @@ class TestIsPoeApiResponse:
         assert is_poe_api_response(empty_data)
 
     def test_invalid_api_response_invalid_model_in_data(self) -> None:
-        """Test type guard with invalid model in data array."""
+        """Test type guard with invalid bot in data array."""
         invalid_model = {
             "object": "list",
             "data": [
                 {
-                    "id": "incomplete-model"
+                    "id": "incomplete-bot"
                     # Missing required fields
                 }
             ],
@@ -146,7 +146,7 @@ class TestIsPoeApiResponse:
         assert not is_poe_api_response(invalid_model)
 
 
-class TestIsModelFilterCriteria:
+class TestIsBotFilterCriteria:
     """Test is_model_filter_criteria type guard."""
 
     def test_valid_empty_criteria(self) -> None:
@@ -155,7 +155,7 @@ class TestIsModelFilterCriteria:
 
     def test_valid_criteria_with_string_fields(self) -> None:
         """Test type guard with valid string fields."""
-        criteria = {"id": "test-model", "name": "Test Model", "owned_by": "testorg"}
+        criteria = {"id": "test-bot", "name": "Test Bot", "owned_by": "testorg"}
         assert is_model_filter_criteria(criteria)
 
     def test_valid_criteria_with_boolean_fields(self) -> None:
@@ -221,21 +221,21 @@ class TestValidatePoeApiResponse:
             validate_poe_api_response(data_not_list)
 
     def test_validate_invalid_model_in_data(self) -> None:
-        """Test validation with invalid model in data array."""
+        """Test validation with invalid bot in data array."""
         invalid_model = {
             "object": "list",
             "data": [
                 {
-                    "id": "incomplete-model"
+                    "id": "incomplete-bot"
                     # Missing required fields
                 }
             ],
         }
-        with pytest.raises(APIError, match="invalid model data at index 0"):
+        with pytest.raises(APIError, match="invalid bot data at index 0"):
             validate_poe_api_response(invalid_model)
 
 
-class TestValidateModelFilterCriteria:
+class TestValidateBotFilterCriteria:
     """Test validate_model_filter_criteria function."""
 
     def test_validate_valid_criteria(self) -> None:
@@ -246,13 +246,13 @@ class TestValidateModelFilterCriteria:
 
     def test_validate_invalid_criteria_not_dict(self) -> None:
         """Test validation with non-dictionary input."""
-        with pytest.raises(ModelDataError, match="must be a dictionary"):
+        with pytest.raises(BotDataError, match="must be a dictionary"):
             validate_model_filter_criteria("not a dict")
 
     def test_validate_invalid_criteria_unknown_fields(self) -> None:
         """Test validation with unknown fields."""
         unknown_field = {"unknown_field": "value", "another_unknown": 123}
-        with pytest.raises(ModelDataError, match="Invalid filter fields: another_unknown, unknown_field"):
+        with pytest.raises(BotDataError, match="Invalid filter fields: another_unknown, unknown_field"):
             validate_model_filter_criteria(unknown_field)
 
     def test_validate_invalid_criteria_type_errors(self) -> None:
@@ -262,7 +262,7 @@ class TestValidateModelFilterCriteria:
             "min_points": "ten",  # Should be number
             "id": 123,  # Should be string
         }
-        with pytest.raises(ModelDataError, match="Filter criteria type errors"):
+        with pytest.raises(BotDataError, match="Filter criteria type errors"):
             validate_model_filter_criteria(type_errors)
 
     def test_validate_empty_criteria(self) -> None:

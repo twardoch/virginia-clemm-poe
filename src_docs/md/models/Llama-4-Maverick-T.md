@@ -2,22 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 55 points/message |
-| Initial Points Cost | 55 points |
-
-**Last Checked:** 2025-09-20 12:26:15.857489
-
-
-## Bot Information
-
-**Creator:** @togetherai
-
-**Description:** Llama 4 Maverick, state of the art long-context multimodal model from Meta. A 128-expert MoE powerhouse for multilingual image/text understanding (12 languages), creative writing, and enterprise-scale applications—outperforming Llama 3.3 70B. Supports 500k tokens context.
-
-**Extra:** Powered by a server managed by @togetherai. Learn more
-
+| Request | $0.0016/request |
 
 ## Architecture
 
@@ -39,3 +28,5 @@
 **Owned By:** poe
 
 **Root:** Llama-4-Maverick-T
+
+**API Last Updated:** 2025-10-15 16:36:09.629011

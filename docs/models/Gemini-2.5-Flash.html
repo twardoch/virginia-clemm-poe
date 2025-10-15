@@ -738,6 +738,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Pricing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#api-pricing-usd" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Pricing (USD)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#points-based-pricing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Points-based Pricing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -788,6 +812,26 @@
 
 <h1 id="gemini-25-flash"><a class="md-button md-button--primary" href="https://poe.com/Gemini-2.5-Flash">Gemini-2.5-Flash</a><a class="headerlink" href="#gemini-25-flash" title="Permanent link">&para;</a></h1>
 <h2 id="pricing">Pricing<a class="headerlink" href="#pricing" title="Permanent link">&para;</a></h2>
+<h3 id="api-pricing-usd">API Pricing (USD)<a class="headerlink" href="#api-pricing-usd" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prompt</td>
+<td>$2.1E-7/token</td>
+</tr>
+<tr>
+<td>Completion</td>
+<td>$0.0000018/token</td>
+</tr>
+</tbody>
+</table>
+<h3 id="points-based-pricing">Points-based Pricing<a class="headerlink" href="#points-based-pricing" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -798,36 +842,37 @@
 <tbody>
 <tr>
 <td>Input Text</td>
-<td>6 points/1k tokens</td>
+<td>7 points/1k tokens</td>
 </tr>
 <tr>
 <td>Input Image</td>
-<td>6 points/1k tokens</td>
+<td>7 points/1k tokens</td>
 </tr>
 <tr>
 <td>Initial Points Cost</td>
-<td>34+ points</td>
+<td>114+ points</td>
 </tr>
 <tr>
 <td>Input (Video)</td>
-<td>2 points/second</td>
+<td>['$0.000060/second', '2 points/second']</td>
 </tr>
 <tr>
 <td>Output (Text)</td>
-<td>12 points/1k tokens</td>
+<td>['$1.77/1M tokens', '59 points/1k tokens']</td>
 </tr>
 <tr>
 <td>Cache Discount</td>
-<td>75% discount oncached chat</td>
+<td>['75% discount oncached chat', '']</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Last Checked:</strong> 2025-09-20 12:17:05.999557</p>
+<p><strong>Last Checked:</strong> 2025-10-15 16:38:14.359555</p>
 <h2 id="bot-information">Bot Information<a class="headerlink" href="#bot-information" title="Permanent link">&para;</a></h2>
 <p><strong>Creator:</strong> @google</p>
-<p><strong>Description:</strong> Gemini 2.5 Flash builds upon the popular foundation of Google's 2.0 Flash, this new version delivers a major upgrade in reasoning capabilities, search capabilities, and image/video understanding while still prioritizing speed and cost. Supports 1M tokens of input context.</p>
-<p>To instruct the bot to use more thinking effort, add --thinking_budget and a number ranging from 0 to 24,576 to the end of your message.</p>
-<p><strong>Extra:</strong> Powered by Google: gemini-2.5-flash. Learn more</p>
+<p><strong>Description:</strong> Gemini 2.5 Flash builds upon the popular foundation of Google's 2.0 Flash, this new version delivers a major upgrade in reasoning capabilities, search capabilities, and image/video understanding while still prioritizing speed and cost. Supports 1M tokens of input context. Serves the latest <code>gemini-2.5-flash-preview-09-2025</code> snapshot.</p>
+<p>To instruct the bot to use more thinking effort, add --thinking_budget and a number ranging from 0 to 24,576 to the end of your message.
+To use web search and real-time information access, add <code>--web_search true</code> to enable and add <code>--web_search false</code> to disable (default setting).</p>
+<p><strong>Extra:</strong> Powered by Google: gemini-2.5-flash-preview-09-2025. Learn more</p>
 <h2 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permanent link">&para;</a></h2>
 <p><strong>Input Modalities:</strong> text</p>
 <p><strong>Output Modalities:</strong> text</p>
@@ -838,6 +883,7 @@
 <p><strong>Created:</strong> 1745638152572</p>
 <p><strong>Owned By:</strong> poe</p>
 <p><strong>Root:</strong> Gemini-2.5-Flash</p>
+<p><strong>API Last Updated:</strong> 2025-10-15 16:36:09.616722</p>
 
 
 

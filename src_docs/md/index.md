@@ -2,11 +2,11 @@
 
 **Virginia Clemm Poe** is a Python package that provides programmatic access to comprehensive Poe.com model data with pricing information. It acts as a companion tool to the official Poe API by fetching, maintaining, and enriching model data through web scraping, with a special focus on capturing detailed pricing information not available through the API alone.
 
-[Poe Models](models/index.md){ .md-button .md-button--primary } [Models JSON](https://raw.githubusercontent.com/twardoch/virginia-clemm-poe/refs/heads/main/src/virginia_clemm_poe/data/poe_models.json){ .md-button }
+[Poe Models](models/index.md){ .md-button .md-button--primary } [Models JSON](https://raw.githubusercontent.com/twardoch/virginia-clemm-poe/refs/heads/main/src/virginia_clemm_poe/data/poe_bots.json){ .md-button }
 
 The models shown here is a snapshot of the models that are available on [api.poe.com](https://creator.poe.com/docs/external-applications/openai-compatible-api), the OpenAI-compatible API that you can use with your Poe.com [API key](https://poe.com/api_key) if you’re a Poe subscriber. 
 
-The JSON at `https://raw.githubusercontent.com/twardoch/virginia-clemm-poe/refs/heads/main/src/virginia_clemm_poe/data/poe_models.json` is based on `https://api.poe.com/v1/models` but is extended with pricing info and description.  
+The JSON at `https://raw.githubusercontent.com/twardoch/virginia-clemm-poe/refs/heads/main/src/virginia_clemm_poe/data/poe_bots.json` is based on `https://api.poe.com/v1/models` but is extended with pricing info and description.  
 
 The tools in this repository can be used to update the JSON file with the latest pricing info and description. 
 
@@ -34,10 +34,10 @@ The tools in this repository can be used to update the JSON file with the latest
 from virginia_clemm_poe import api
 
 # Search for Claude models
-claude_models = api.search_models(query="claude")
+claude_models = api.search_bots(query="claude")
 
 # Get specific model with pricing
-model = api.get_model_by_id("claude-3-opus")
+model = api.get_bot_by_id("claude-3-opus")
 if model.pricing:
     print(f"Input cost: {model.pricing.details['Input (text)']}")
 

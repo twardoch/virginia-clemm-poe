@@ -1,29 +1,5 @@
 # [Veo-3-Fast](https://poe.com/Veo-3-Fast){ .md-button .md-button--primary }
 
-## Pricing
-
-| Type | Cost |
-|------|------|
-| Video Output | 8334 points / s |
-| Initial Points Cost | Variable points |
-| Audio + Video Output | 13334 points / s |
-
-**Last Checked:** 2025-09-20 12:38:44.212384
-
-
-## Bot Information
-
-**Creator:** @fal
-
-**Description:** Veo-3 Fast is a faster and more cost effective version of Google's Veo 3. 
-Use `--aspect` to set the aspect ratio of the generated image (one of `16:9`, `1:1`, `9:16`). 
-Use `--generate_audio` to generate audio with your video at a higher cost. 
-Use --negative_prompt to set negative prompt option `blur`, `low resolution`, `poor quality`. 
-Duration is limited to 7 seconds. This is a text to video generation model only.
-
-**Extra:** Powered by a server managed by @fal. Learn more
-
-
 ## Architecture
 
 **Input Modalities:** text
@@ -44,3 +20,5 @@ Duration is limited to 7 seconds. This is a text to video generation model only.
 **Owned By:** poe
 
 **Root:** Veo-3-Fast
+
+**API Last Updated:** 2025-10-15 16:36:09.634495

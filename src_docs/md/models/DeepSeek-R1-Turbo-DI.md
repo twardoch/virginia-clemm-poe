@@ -2,24 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 500 points/message |
-| Initial Points Cost | 500 points |
-
-**Last Checked:** 2025-09-20 12:08:06.957553
-
-
-## Bot Information
-
-**Creator:** @deepinfra
-
-**Description:** Top open-source reasoning LLM rivaling OpenAI's o1 model; delivers top-tier performance across math, code, and reasoning tasks at a fraction of the cost. Turbo model is quantized to achieve higher speeds. All data you provide this bot will not be used in training, and is sent only to DeepInfra, a US-based company.
-
-Supports 32k tokens of input context and 8k tokens of output context. Quantization: FP4 (turbo).
-
-**Extra:** Powered by a server managed by @deepinfra. Learn more
-
+| Request | $0.015/request |
 
 ## Architecture
 
@@ -41,3 +28,5 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 **Owned By:** poe
 
 **Root:** DeepSeek-R1-Turbo-DI
+
+**API Last Updated:** 2025-10-15 16:36:09.637383

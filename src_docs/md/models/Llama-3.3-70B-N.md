@@ -2,22 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 45 points/message |
-| Initial Points Cost | 45 points |
-
-**Last Checked:** 2025-09-20 12:25:45.102993
-
-
-## Bot Information
-
-**Creator:** @novitaai
-
-**Description:** The Meta Llama 3.3 multilingual large language model (LLM) is an instruction tuned generative model in 70B (text in/text out). The Llama 3.3 instruction tuned text only model is optimized for multilingual dialogue use cases and outperforms many of the available open source and closed chat models on common industry benchmarks. The Bot does not currently support attachments.
-
-**Extra:** Powered by a server managed by @novitaai. Learn more
-
+| Request | $0.0014/request |
 
 ## Architecture
 
@@ -39,3 +28,5 @@
 **Owned By:** poe
 
 **Root:** Llama-3.3-70B-N
+
+**API Last Updated:** 2025-10-15 16:36:09.629902

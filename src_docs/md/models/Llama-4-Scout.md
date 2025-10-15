@@ -2,22 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 30 points/message |
-| Initial Points Cost | 30 points |
-
-**Last Checked:** 2025-09-20 12:26:23.204169
-
-
-## Bot Information
-
-**Creator:** @fireworksai
-
-**Description:** Llama 4 Scout is a versatile, general-purpose LLM with multi-modal capabilities—ideal for tasks like multi-document summarization. Supports 131k tokens of input context.
-
-**Extra:** Powered by a server managed by @fireworksai. Learn more
-
+| Request | $0.00090/request |
 
 ## Architecture
 
@@ -39,3 +28,5 @@
 **Owned By:** poe
 
 **Root:** Llama-4-Scout
+
+**API Last Updated:** 2025-10-15 16:36:09.628874

@@ -16,7 +16,7 @@ This repository contains the source code for `virginia-clemm-poe`, a Python pack
 **Technical Architecture:**
 
 *   **Language:** Python 3.12+
-*   **Data Modeling:** `pydantic` is used extensively in `models.py` to define strongly-typed and validated data structures for models, pricing, and bot information (`PoeModel`, `Pricing`, `BotInfo`).
+*   **Data Modeling:** `pydantic` is used extensively in `models.py` to define strongly-typed and validated data structures for models, pricing, and bot information (`PoeBot`, `Pricing`, `BotInfo`).
 *   **HTTP Requests:** `httpx` is used for efficient asynchronous communication with the Poe API.
 *   **Web Scraping:** `playwright` automates the browser to handle dynamic web content and extract data from the Poe website. `browser_manager.py` handles the setup and management of the browser instance.
 *   **CLI:** `python-fire` is used to create the user-friendly command-line interface from the methods in the `updater.py` and `api.py` modules.
@@ -26,7 +26,7 @@ This repository contains the source code for `virginia-clemm-poe`, a Python pack
 
 **Key Modules:**
 
-*   `src/virginia_clemm_poe/api.py`: The main entry point for the Python API. Provides functions like `search_models()`, `get_model_by_id()`, etc.
+*   `src/virginia_clemm_poe/api.py`: The main entry point for the Python API. Provides functions like `search_bots()`, `get_bot_by_id()`, etc.
 *   `src/virginia_cĺemm_poe/updater.py`: Contains the core logic for updating the model database. It orchestrates fetching data from the API, scraping the website, and saving the results.
 *   `src/virginia_clemm_poe/models.py`: Defines the Pydantic models that structure the entire dataset.
 *   `src/virginia_clemm_poe/__main__.py`: The entry point that exposes the functionality to the command line via `fire`.

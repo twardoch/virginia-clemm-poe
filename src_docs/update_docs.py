@@ -16,7 +16,7 @@ from typing import Any
 from loguru import logger
 
 
-def load_models_data(json_path: Path) -> dict[str, Any]:
+def load_bots_data(json_path: Path) -> dict[str, Any]:
     """Load the poe_models.json data."""
     logger.info(f"Loading models data from: {json_path}")
     if not json_path.exists():
@@ -47,15 +47,47 @@ def generate_model_page(model: dict[str, Any]) -> str:
     # Pricing section
     if pricing := model.get("pricing"):
         content.append("## Pricing\n")
+
+        # API pricing (dollar-based)
+        if api_pricing := pricing.get("api"):
+            content.append("### API Pricing (USD)\n")
+            content.append("| Type | Cost |")
+            content.append("|------|------|")
+            if prompt := api_pricing.get("prompt"):
+                content.append(f"| Prompt | ${prompt}/token |")
+            if completion := api_pricing.get("completion"):
+                content.append(f"| Completion | ${completion}/token |")
+            if image := api_pricing.get("image"):
+                content.append(f"| Image | ${image}/image |")
+            if request := api_pricing.get("request"):
+                content.append(f"| Request | ${request}/request |")
+            content.append("")
+
+        # Scraped pricing (points-based)
+        if scraped := pricing.get("scraped"):
+            content.append("### Points-based Pricing\n")
+            if details := scraped.get("details"):
+                content.append("| Type | Cost |")
+                content.append("|------|------|")
+                for key, value in details.items():
+                    if value:
+                        formatted_key = key.replace("_", " ").title()
+                        content.append(f"| {formatted_key} | {value} |")
+            content.append(f"\n**Last Checked:** {scraped.get('checked_at', 'N/A')}\n")
+            content.append("")
+
+        # Legacy format support
         if details := pricing.get("details"):
+            content.append("### Pricing Details\n")
             content.append("| Type | Cost |")
             content.append("|------|------|")
             for key, value in details.items():
                 if value:
                     formatted_key = key.replace("_", " ").title()
                     content.append(f"| {formatted_key} | {value} |")
-        content.append(f"\n**Last Checked:** {pricing.get('checked_at', 'N/A')}\n")
-        content.append("")
+            if checked_at := pricing.get("checked_at"):
+                content.append(f"\n**Last Checked:** {checked_at}\n")
+            content.append("")
 
     # Bot info section
     if bot_info := model.get("bot_info"):
@@ -81,6 +113,7 @@ def generate_model_page(model: dict[str, Any]) -> str:
     content.append(f"**Created:** {model.get('created', 'N/A')}\n")
     content.append(f"**Owned By:** {model.get('owned_by', 'N/A')}\n")
     content.append(f"**Root:** {model.get('root', 'N/A')}\n")
+    content.append(f"**API Last Updated:** {model.get('api_last_updated', 'N/A')}\n")
 
     return "\n".join(content)
 
@@ -91,7 +124,7 @@ def main() -> None:
 
     # Define paths
     project_root = Path(__file__).parent.parent
-    src_models_json = project_root / "src" / "virginia_clemm_poe" / "data" / "poe_models.json"
+    src_models_json = project_root / "src" / "virginia_clemm_poe" / "data" / "poe_bots.json"
     docs_md_dir = project_root / "src_docs" / "md"
     docs_data_dir = docs_md_dir / "data"
     docs_models_dir = docs_md_dir / "models"
@@ -108,11 +141,11 @@ def main() -> None:
     logger.debug(f"Created: {docs_models_dir}")
 
     # Load models data
-    data = load_models_data(src_models_json)
+    data = load_bots_data(src_models_json)
 
     # Copy JSON to docs data directory
     logger.info("📋 Copying JSON data to docs directory")
-    dest_json = docs_data_dir / "poe_models.json"
+    dest_json = docs_data_dir / "poe_bots.json"
     shutil.copy2(src_models_json, dest_json)
     logger.success(f"Copied JSON data to: {dest_json}")
 
@@ -150,9 +183,9 @@ def main() -> None:
     # Also copy the data directory to docs/data for the table to access
     docs_data_dest = docs_dir / "data"
     docs_data_dest.mkdir(parents=True, exist_ok=True)
-    dest_json = docs_data_dest / "poe_models.json"
-    shutil.copy2(docs_data_dir / "poe_models.json", dest_json)
-    logger.success(f"Copied poe_models.json to: {dest_json}")
+    dest_json = docs_data_dest / "poe_bots.json"
+    shutil.copy2(docs_data_dir / "poe_bots.json", dest_json)
+    logger.success(f"Copied poe_bots.json to: {dest_json}")
 
     # Generate models index page
     logger.info("📑 Generating models index page")

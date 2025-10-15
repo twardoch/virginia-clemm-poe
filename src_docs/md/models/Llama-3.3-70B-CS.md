@@ -2,22 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 260 points/message |
-| Initial Points Cost | 260 points |
-
-**Last Checked:** 2025-09-20 12:25:15.538623
-
-
-## Bot Information
-
-**Creator:** @cerebrasai
-
-**Description:** World’s fastest inference for Llama 3.3 70B with Cerebras. The Llama 3.3 instruction tuned text only model is optimized for multilingual dialogue use cases and outperforms many of the available open source and closed chat models on common industry benchmarks.
-
-**Extra:** Powered by a server managed by @cerebrasai. Learn more
-
+| Request | $0.0078/request |
 
 ## Architecture
 
@@ -39,3 +28,5 @@
 **Owned By:** poe
 
 **Root:** Llama-3.3-70B-CS
+
+**API Last Updated:** 2025-10-15 16:36:09.630035

@@ -2,29 +2,11 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Total Cost | 375 points/message |
-| Initial Points Cost | 375 points |
-
-**Last Checked:** 2025-09-20 12:11:41.379171
-
-
-## Bot Information
-
-**Creator:** @fireworksai
-
-**Description:** FLUX.1 [dev] is a 12 billion parameter rectified flow transformer capable of generating images from text descriptions.
-
-Key Features
-1. Cutting-edge output quality, second only to our state-of-the-art model FLUX.1 [pro].
-2. Competitive prompt following, matching the performance of closed source alternatives.
-3. Trained using guidance distillation, making FLUX.1 [dev] more efficient.
-4. Open weights to drive new scientific research, and empower artists to develop innovative workflows.
-5. Generated outputs can be used for personal, scientific, and commercial purposes as described in the FLUX.1 [dev] Non-Commercial License.
-
-**Extra:** Powered by a server managed by @fireworksai. Learn more
-
+| Request | $0.011/request |
 
 ## Architecture
 
@@ -46,3 +28,5 @@ Key Features
 **Owned By:** poe
 
 **Root:** Flux-1-Dev-FW
+
+**API Last Updated:** 2025-10-15 16:36:09.646187

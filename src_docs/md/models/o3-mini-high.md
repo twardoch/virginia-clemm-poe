@@ -2,24 +2,12 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
 | Type | Cost |
 |------|------|
-| Input Text | 33 points/1k tokens |
-| Input Image | Variable |
-| Initial Points Cost | 430+ points |
-| Output (Text) | 132 points/1k tokens |
-
-**Last Checked:** 2025-09-20 12:40:21.736917
-
-
-## Bot Information
-
-**Creator:** @openai
-
-**Description:** o3-mini-high is OpenAI's most recent reasoning model with reasoning_effort set to high, providing frontier intelligence on most tasks. Like other models in the o-series, it is designed to excel at science, math, and coding tasks. Supports 200k tokens of input context and 100k tokens of output context.
-
-**Extra:** Powered by OpenAI: o3-mini-2025-01-31. Learn more
-
+| Prompt | $9.9E-7/token |
+| Completion | $0.0000040/token |
 
 ## Architecture
 
@@ -41,3 +29,5 @@
 **Owned By:** poe
 
 **Root:** o3-mini-high
+
+**API Last Updated:** 2025-10-15 16:36:09.628040

@@ -12,15 +12,15 @@ from typing import Any, Literal, NotRequired, TypedDict
 # API Response Types
 
 
-class PoeApiModelData(TypedDict):
-    """Type definition for model data from Poe API response.
+class PoeApiBotData(TypedDict):
+    """Type definition for bot data from Poe API response.
 
-    Represents the structure of individual model objects returned
+    Represents the structure of individual bot objects returned
     by the Poe.com API endpoint.
     """
 
     id: str
-    object: Literal["model"]
+    object: Literal["model", "bot"]
     created: int
     owned_by: str
     permission: list[Any]
@@ -30,21 +30,21 @@ class PoeApiModelData(TypedDict):
 
 
 class PoeApiResponse(TypedDict):
-    """Type definition for Poe API /models endpoint response.
+    """Type definition for Poe API /bots endpoint response.
 
     Represents the complete API response structure containing
-    metadata and model data.
+    metadata and bot data.
     """
 
     object: Literal["list"]
-    data: list[PoeApiModelData]
+    data: list[PoeApiBotData]
 
 
 # Filter and Search Types
 
 
-class ModelFilterCriteria(TypedDict, total=False):
-    """Filter criteria for model search and filtering operations.
+class BotFilterCriteria(TypedDict, total=False):
+    """Filter criteria for bot search and filtering operations.
 
     Used by API functions to specify search and filter parameters.
     All fields are optional to allow flexible filtering.
@@ -59,8 +59,8 @@ class ModelFilterCriteria(TypedDict, total=False):
     created_before: int
 
 
-class SearchOptions(TypedDict, total=False):
-    """Options for model search operations.
+class BotSearchOptions(TypedDict, total=False):
+    """Options for bot search operations.
 
     Controls search behavior and result formatting in API functions.
     """
@@ -147,7 +147,7 @@ class BrowserLogContext(LogContext, total=False):
     """
 
     browser_operation: str
-    model_id: str
+    bot_id: str
     debug_port: int
     page_url: str
     scraped_fields: list[str]
@@ -213,7 +213,7 @@ class ErrorContext(TypedDict, total=False):
     error_type: str
     error_message: str
     operation: str
-    model_id: str | None
+    bot_id: str | None
     url: str | None
     status_code: int | None
     stack_trace: str | None
@@ -223,8 +223,8 @@ class ErrorContext(TypedDict, total=False):
 # Update and Synchronization Types
 
 
-class UpdateOptions(TypedDict, total=False):
-    """Options for model data update operations.
+class BotUpdateOptions(TypedDict, total=False):
+    """Options for bot data update operations.
 
     Controls what data is updated and how the update process
     behaves.

@@ -2,15 +2,17 @@
 
 ## Pricing
 
+### Points-based Pricing
+
 | Type | Cost |
 |------|------|
 | Initial Points Cost | Variable points |
-| Input | 75 points/1k tokens |
-| Output (Text) | 300 points/1k tokens |
-| Image Generation | Additional costs based on the "Image Generation" section below |
-| Cache Discount | 50% discount oncached chat |
+| Input | ['$2.25/1M tokens', '75 points/1k tokens'] |
+| Output (Text) | ['$9.0/1M tokens', '300 points/1k tokens'] |
+| Image Generation | ['Additional costs based on the "Image Generation" section below', ''] |
+| Cache Discount | ['50% discount oncached chat', ''] |
 
-**Last Checked:** 2025-09-20 12:14:04.772000
+**Last Checked:** 2025-10-15 16:37:00.512219
 
 
 ## Bot Information
@@ -42,3 +44,5 @@
 **Owned By:** poe
 
 **Root:** GPT-4o
+
+**API Last Updated:** 2025-10-15 16:36:09.615385

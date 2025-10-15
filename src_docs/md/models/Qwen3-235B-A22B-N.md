@@ -2,12 +2,20 @@
 
 ## Pricing
 
+### API Pricing (USD)
+
+| Type | Cost |
+|------|------|
+| Request | $0.0018/request |
+
+### Points-based Pricing
+
 | Type | Cost |
 |------|------|
 | Total Cost | 60 points/message |
 | Initial Points Cost | 60 points |
 
-**Last Checked:** 2025-09-20 12:33:26.468680
+**Last Checked:** 2025-10-15 16:48:39.725371
 
 
 ## Bot Information
@@ -20,6 +28,11 @@ This feature the following key enhancements:
 - Substantial gains in long-tail knowledge coverage across multiple languages.
 - Markedly better alignment with user preferences in subjective and open-ended tasks, enabling more helpful responses and higher-quality text generation.
 - Enhanced capabilities in 256K long-context understanding.
+
+Technical Specifications
+
+File Support: Attachments not supported
+Context window: 128k tokens
 
 **Extra:** Powered by a server managed by @novitaai. Learn more
 
@@ -44,3 +57,5 @@ This feature the following key enhancements:
 **Owned By:** poe
 
 **Root:** Qwen3-235B-A22B-N
+
+**API Last Updated:** 2025-10-15 16:36:09.626560

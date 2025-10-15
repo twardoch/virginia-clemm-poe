@@ -8,7 +8,7 @@ import pytest
 from rich.console import Console
 
 from virginia_clemm_poe.__main__ import Cli
-from virginia_clemm_poe.models import Architecture, BotInfo, PoeModel, Pricing, PricingDetails
+from virginia_clemm_poe.bots import Architecture, BotInfo, PoeBot, Pricing, PricingDetails, UnifiedPricing
 
 
 class TestCliSetup:
@@ -81,10 +81,10 @@ class TestCliStatus:
         self.cli.status(verbose=False)
 
         mock_logger.assert_called_once_with(False)
-        mock_console.print.assert_any_call("[red]✗ No model data found[/red]")
+        mock_console.print.assert_any_call("[red]✗ No bot data found[/red]")
 
     @patch("virginia_clemm_poe.__main__.DATA_FILE_PATH")
-    @patch("virginia_clemm_poe.__main__.api.get_all_models")
+    @patch("virginia_clemm_poe.__main__.api.get_all_bots")
     @patch("virginia_clemm_poe.__main__.configure_logger")
     @patch("virginia_clemm_poe.__main__.console", new_callable=Mock)
     def test_status_with_data(self, mock_console, mock_logger, mock_get_models, mock_data_path):
@@ -94,22 +94,22 @@ class TestCliStatus:
 
         # Mock file content
         mock_data = {
-            "models": [
-                {"id": "test-model", "pricing": {"details": {}}},
-                {"id": "test-model-2", "bot_info": {"creator": "@test"}},
+            "bots": [
+                {"id": "test-bot", "pricing": {"details": {}}},
+                {"id": "test-bot-2", "bot_info": {"creator": "@test"}},
             ]
         }
 
-        # Mock sample model with pricing
-        sample_model = PoeModel(
-            id="test-model",
-            object="model",
+        # Mock sample bot with pricing
+        sample_model = PoeBot(
+            id="test-bot",
+            object="bot",
             created=1704369600,
             owned_by="testorg",
             permission=[],
-            root="test-model",
+            root="test-bot",
             architecture=Architecture(input_modalities=["text"], output_modalities=["text"], modality="text->text"),
-            pricing=Pricing(checked_at="2025-08-04T12:00:00Z", details=PricingDetails()),
+            pricing=UnifiedPricing(scraped=Pricing(checked_at="2025-08-04T12:00:00Z", details=PricingDetails())),
         )
 
         mock_get_models.return_value = [sample_model]
@@ -118,7 +118,7 @@ class TestCliStatus:
             self.cli.status(verbose=True)
 
         mock_logger.assert_called_once_with(True)
-        mock_console.print.assert_any_call("[green]✓ Model data found[/green]")
+        mock_console.print.assert_any_call("[green]✓ Bot data found[/green]")
 
 
 class TestCliUpdate:
@@ -148,7 +148,7 @@ class TestCliUpdate:
         mock_console.print.assert_any_call("[red]✗ POE_API_KEY not set[/red]")
         mock_exit.assert_called_once_with(1)
 
-    @patch("virginia_clemm_poe.__main__.ModelUpdater")
+    @patch("virginia_clemm_poe.__main__.BotUpdater")
     @patch("virginia_clemm_poe.__main__.os.environ.get")
     @patch("virginia_clemm_poe.__main__.configure_logger")
     @patch("virginia_clemm_poe.__main__.console", new_callable=Mock)
@@ -205,11 +205,9 @@ class TestCliSearch:
 
         self.cli.search("test-query")
 
-        mock_console.print.assert_any_call(
-            "[yellow]No model data found. Run 'virginia-clemm-poe update' first.[/yellow]"
-        )
+        mock_console.print.assert_any_call("[yellow]No bot data found. Run 'virginia-clemm-poe update' first.[/yellow]")
 
-    @patch("virginia_clemm_poe.__main__.api.search_models")
+    @patch("virginia_clemm_poe.__main__.api.search_bots")
     @patch("virginia_clemm_poe.__main__.DATA_FILE_PATH")
     @patch("virginia_clemm_poe.__main__.configure_logger")
     @patch("virginia_clemm_poe.__main__.console", new_callable=Mock)
@@ -218,11 +216,11 @@ class TestCliSearch:
         mock_data_path.exists.return_value = True
         mock_search.return_value = []
 
-        self.cli.search("nonexistent-model")
+        self.cli.search("nonexistent-bot")
 
-        mock_console.print.assert_any_call("[yellow]No models found matching 'nonexistent-model'[/yellow]")
+        mock_console.print.assert_any_call("[yellow]No bots found matching 'nonexistent-bot'[/yellow]")
 
-    @patch("virginia_clemm_poe.__main__.api.search_models")
+    @patch("virginia_clemm_poe.__main__.api.search_bots")
     @patch("virginia_clemm_poe.__main__.DATA_FILE_PATH")
     @patch("virginia_clemm_poe.__main__.configure_logger")
     @patch("virginia_clemm_poe.__main__.console", new_callable=Mock)
@@ -231,16 +229,18 @@ class TestCliSearch:
         mock_data_path.exists.return_value = True
 
         # Mock search results
-        sample_model = PoeModel(
-            id="test-model-1",
-            object="model",
+        sample_model = PoeBot(
+            id="test-bot-1",
+            object="bot",
             created=1704369600,
             owned_by="testorg",
             permission=[],
-            root="test-model-1",
+            root="test-bot-1",
             architecture=Architecture(input_modalities=["text"], output_modalities=["text"], modality="text->text"),
-            pricing=Pricing(
-                checked_at="2025-08-04T12:00:00Z", details=PricingDetails(input_text="10 points/1k tokens")
+            pricing=UnifiedPricing(
+                scraped=Pricing(
+                    checked_at="2025-08-04T12:00:00Z", details=PricingDetails(input_text="10 points/1k tokens")
+                )
             ),
             bot_info=BotInfo(creator="@testcreator"),
         )
@@ -250,22 +250,24 @@ class TestCliSearch:
         self.cli.search("test", show_pricing=True, show_bot_info=True)
 
         mock_search.assert_called_once_with("test")
-        mock_console.print.assert_any_call("[green]Found 1 models[/green]")
+        mock_console.print.assert_any_call("[green]Found 1 bots[/green]")
 
     def test_format_pricing_info(self):
         """Test pricing information formatting."""
-        # Test model with pricing
-        sample_model = PoeModel(
-            id="test-model",
-            object="model",
+        # Test bot with pricing
+        sample_model = PoeBot(
+            id="test-bot",
+            object="bot",
             created=1704369600,
             owned_by="testorg",
             permission=[],
-            root="test-model",
+            root="test-bot",
             architecture=Architecture(input_modalities=["text"], output_modalities=["text"], modality="text->text"),
-            pricing=Pricing(
-                checked_at="2025-08-04T12:00:00Z",
-                details=PricingDetails(input_text="10 points/1k tokens", initial_points_cost="100 points"),
+            pricing=UnifiedPricing(
+                scraped=Pricing(
+                    checked_at="2025-08-04T12:00:00Z",
+                    details=PricingDetails(input_text="10 points/1k tokens", initial_points_cost="100 points"),
+                )
             ),
         )
 
@@ -275,14 +277,14 @@ class TestCliSearch:
         assert "10 points/1k tokens" in pricing_info
         assert updated == "2025-08-04"
 
-        # Test model with pricing error
-        error_model = PoeModel(
-            id="error-model",
-            object="model",
+        # Test bot with pricing error
+        error_model = PoeBot(
+            id="error-bot",
+            object="bot",
             created=1704369600,
             owned_by="testorg",
             permission=[],
-            root="error-model",
+            root="error-bot",
             architecture=Architecture(input_modalities=["text"], output_modalities=["text"], modality="text->text"),
             pricing_error="Failed to scrape",
         )
@@ -309,12 +311,10 @@ class TestCliList:
 
         self.cli.list()
 
-        mock_console.print.assert_any_call(
-            "[yellow]No model data found. Run 'virginia-clemm-poe update' first.[/yellow]"
-        )
+        mock_console.print.assert_any_call("[yellow]No bot data found. Run 'virginia-clemm-poe update' first.[/yellow]")
 
-    @patch("virginia_clemm_poe.__main__.api.get_all_models")
-    @patch("virginia_clemm_poe.__main__.api.get_models_with_pricing")
+    @patch("virginia_clemm_poe.__main__.api.get_all_bots")
+    @patch("virginia_clemm_poe.__main__.api.get_bots_with_pricing")
     @patch("virginia_clemm_poe.__main__.DATA_FILE_PATH")
     @patch("virginia_clemm_poe.__main__.configure_logger")
     @patch("virginia_clemm_poe.__main__.console", new_callable=Mock)
@@ -322,16 +322,16 @@ class TestCliList:
         """Test list with data available."""
         mock_data_path.exists.return_value = True
 
-        # Mock models
-        sample_model = PoeModel(
-            id="test-model-1",
-            object="model",
+        # Mock bots
+        sample_model = PoeBot(
+            id="test-bot-1",
+            object="bot",
             created=1704369600,
             owned_by="testorg",
             permission=[],
-            root="test-model-1",
+            root="test-bot-1",
             architecture=Architecture(input_modalities=["text"], output_modalities=["text"], modality="text->text"),
-            pricing=Pricing(checked_at="2025-08-04T12:00:00Z", details=PricingDetails()),
+            pricing=UnifiedPricing(scraped=Pricing(checked_at="2025-08-04T12:00:00Z", details=PricingDetails())),
         )
 
         mock_get_all.return_value = [sample_model]
@@ -340,7 +340,7 @@ class TestCliList:
         self.cli.list(with_pricing=False, limit=10)
 
         mock_get_all.assert_called()
-        # Should display summary and model list
+        # Should display summary and bot list
         assert mock_console.print.call_count >= 2
 
 
@@ -362,7 +362,7 @@ class TestCliClearCache:
         self.cli.clear_cache(data=True, browser=False, all=False)
 
         mock_data_path.unlink.assert_called_once()
-        mock_console.print.assert_any_call("[green]✓ Model data cleared[/green]")
+        mock_console.print.assert_any_call("[green]✓ Bot data cleared[/green]")
 
     @patch("virginia_clemm_poe.__main__.DATA_FILE_PATH")
     @patch("virginia_clemm_poe.__main__.shutil.rmtree")
