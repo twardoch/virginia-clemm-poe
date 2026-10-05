@@ -4,6 +4,9 @@
 
 ## Theme and normalized catalogue — 2026-10-05
 
+Completed: strict local/fresh builds, full regression, publication, 509 exact
+live artifact hashes and all rendered acceptance checks pass.
+
 Use the shared FontLab theme assets on MaterialX without global FontLab chrome.
 Normalize saved prices into point references with documented token/character/media
 quantities and matched currency conversion. Generate a tier for every bot, widen

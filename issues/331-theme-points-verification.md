@@ -43,4 +43,17 @@ assignments, width to the right edge, absent side ToC/empty headings, dark-mode
 sync, mobile page width, native menu/search and zero browser page errors.
 
 Tier counts 0–9: **22, 20, 43, 75, 85, 64, 62, 92, 20, 18**.
-Local evidence: `331-theme-points-local.json`. Publication/live evidence follows.
+Local evidence: `331-theme-points-local.json` and screenshot.
+
+Published commit: `a7973341bbdc74fcaff5f3257371211f2fa3afae`.
+[GitHub Pages deployment](https://github.com/twardoch/virginia-clemm-poe/actions/runs/37328597581)
+and [locked documentation build](https://github.com/twardoch/virginia-clemm-poe/actions/runs/37328599058)
+pass. The live catalogue repeats all browser acceptance checks without page errors;
+see `331-theme-points-live.json` and screenshot. All **509** checked live files
+(every model page/index and seven catalogue/site artifacts) match local SHA-256
+hashes exactly; see `331-theme-points-live-hashes.json`.
+
+The general CI workflow still fails repository-wide lint and its existing test
+environment's inability to import `virginia_clemm_poe`. Its integration/security
+jobs pass; the separate locked docs build, Pages publication and directly run
+full suite above pass. This site change does not claim the general CI was repaired.

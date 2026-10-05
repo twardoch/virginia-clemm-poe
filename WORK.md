@@ -12,7 +12,9 @@
 - Verification: `./test.sh` passes 190 Python tests and 18 JavaScript tests; parser coverage 99.22%, vendor coverage 100%; strict clean MkDocs build passes. Focused F/I lint and authored-file diff checks pass. Generated MaterialX HTML retains upstream template whitespace.
 - Browser acceptance passes every tier, modality and creator filter, combined filters, search, both sort directions, currency selection, all static/browser estimate assignments, desktop width, dark mode, mobile overflow, native menu/search and zero page errors. Reproduce with `uv run python scripts/verify_catalogue.py --url=<site>`.
 - A fresh locked environment also passes the strict build. Reinstalling MaterialX repaired shared files removed by the local stock-Material uninstall; the fresh installation confirms the committed dependency set works independently.
-- Publication and live artifact checks follow the verified local build.
+- Published commit `a797334`: GitHub Pages run `37328597581` and documentation run `37328599058` pass. All 509 checked live files (502 model/index pages plus seven catalogue/site artifacts) match local SHA-256 hashes exactly.
+- Live browser acceptance repeats all local checks successfully with zero page errors. Evidence: `issues/331-theme-points-live.json`, screenshot and full hash manifest. The source catalogue is unchanged and no rescrape occurred.
+- General CI remains failing on repository-wide lint and its test environment's `ModuleNotFoundError: virginia_clemm_poe`; integration/security jobs pass. The locked documentation workflow, Pages deployment and directly executed full regression suite pass independently.
 
 ## Pricing correction — 2026-10-05
 

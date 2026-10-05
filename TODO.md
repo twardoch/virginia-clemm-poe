@@ -6,7 +6,7 @@
 - [x] Normalize saved prices and assign all models to Tiers 0–9.
 - [x] Widen the table, remove empty headings, and combine Modality/Creator/Tier filters.
 - [x] Verify local rendering, all filter values, prices, native navigation and dark mode.
-- [ ] Republish and verify live hashes and browser acceptance without rescraping.
+- [x] Republish and verify live hashes and browser acceptance without rescraping.
 
 ## Pricing correction — 2026-10-05
 
