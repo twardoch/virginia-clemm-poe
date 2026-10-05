@@ -101,8 +101,8 @@ def generate_model_page(model: dict[str, Any]) -> str:
     # Architecture section
     if arch := model.get("architecture"):
         content.append("## Architecture\n")
-        content.append(f"**Input Modalities:** {', '.join(arch.get('input_modalities', []))}\n")
-        content.append(f"**Output Modalities:** {', '.join(arch.get('output_modalities', []))}\n")
+        content.append(f"**Input Modalities:** {', '.join(arch.get('input_modalities', [])) or 'Unknown'}\n")
+        content.append(f"**Output Modalities:** {', '.join(arch.get('output_modalities', [])) or 'Unknown'}\n")
         content.append(f"**Modality:** {arch.get('modality', 'N/A')}\n")
         content.append("")
 
@@ -110,10 +110,10 @@ def generate_model_page(model: dict[str, Any]) -> str:
     content.append("## Technical Details\n")
     content.append(f"**Model ID:** `{model['id']}`\n")
     content.append(f"**Object Type:** {model.get('object', 'N/A')}\n")
-    content.append(f"**Created:** {model.get('created', 'N/A')}\n")
+    content.append(f"**Created:** {model.get('created') if model.get('created') is not None else 'Unknown'}\n")
     content.append(f"**Owned By:** {model.get('owned_by', 'N/A')}\n")
     content.append(f"**Root:** {model.get('root', 'N/A')}\n")
-    content.append(f"**API Last Updated:** {model.get('api_last_updated', 'N/A')}\n")
+    content.append(f"**API Last Updated:** {model.get('api_last_updated') or 'Not listed in API'}\n")
 
     return "\n".join(content)
 

@@ -441,7 +441,7 @@ class PoeBot(BaseModel):
 
     id: str
     object: str = "bot"
-    created: int
+    created: int | None = None
     owned_by: str
     permission: list[Any] = Field(default_factory=list)
     root: str
@@ -449,6 +449,7 @@ class PoeBot(BaseModel):
     architecture: Architecture
     pricing: UnifiedPricing | None = None
     api_last_updated: datetime | None = None
+    vendor_profile: str | None = None
     pricing_error: str | None = None
     bot_info: BotInfo | None = None
 

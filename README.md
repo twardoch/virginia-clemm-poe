@@ -1,3 +1,7 @@
+---
+this_file: README.md
+---
+
 # Virginia Clemm Poe
 
 [![PyPI version](https://badge.fury.io/py/virginia-clemm-poe.svg)](https://badge.fury.io/py/virginia-clemm-poe) [![Python Support](https://img.shields.io/pypi/pyversions/virginia-clemm-poe.svg)](https://pypi.org/project/virginia-clemm-poe/) [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -13,12 +17,22 @@ This link points to a static copy of the data file updated by the CLI tool. It d
 ## Features
 
 - **Model Data Access**: Query Poe.com models by ID, name, or other attributes
+- **Vendor Discovery**: Include bots from 28 curated Poe vendor profiles, alongside the API catalog
 - **Bot Information**: Retrieve bot creator, description, and metadata
 - **Pricing Information**: Scrape and sync pricing data for all models
 - **Pydantic Models**: Typed data models for easy integration
 - **CLI Interface**: Fire-based command line tool for data management
 - **Browser Automation**: PlaywrightAuthor with Chrome for Testing
 - **Session Reuse**: Reuse authenticated browser sessions across runs
+
+Vendor handles are packaged in `src/virginia_clemm_poe/data/good_vendors.txt`.
+Every update scrolls each vendor's Created list and scrapes discovered bots through
+the normal info/pricing flow. `vendor_profile` records where a bot was discovered.
+API metadata wins for matching bots; website-only bots have no API pricing or API
+update timestamp, a null creation time, and empty modalities until known. Failed
+or incomplete profiles retain existing bots and report a warning. Forced updates
+also retain this recovery data. Website rates do not prove API availability or cost.
+See [issue 330 verification](issues/330-verification.md) for dated live evidence.
 
 ## Installation
 
@@ -42,7 +56,8 @@ for model in models:
 model = api.get_bot_by_id("claude-3-opus")
 if model and model.pricing:
     print(f"Cost: {model.get_primary_cost()}")
-    print(f"Updated: {model.pricing.checked_at}")
+    if model.pricing.scraped:
+        print(f"Updated: {model.pricing.scraped.checked_at}")
 
 # Get all models with pricing
 priced_models = api.get_bots_with_pricing()
@@ -132,306 +147,31 @@ COMMANDS
     update      Fetch latest model data from Poe
 ```
 
-### Session Reuse Workflow (Recommended)
+## Data and API reference
 
-Virginia Clemm Poe supports PlaywrightAuthor's session reuse feature, maintaining authenticated browser sessions across script runs.
+The packaged dataset is `src/virginia_clemm_poe/data/poe_bots.json`.
+`api.get_all_bots()`, `api.get_bot_by_id()`, `api.search_bots()`, and
+`api.get_bots_with_pricing()` include API and vendor-discovered entries after an
+update. Call `api.reload_bots()` to reload persisted changes.
 
-```bash
-# Step 1: Launch Chrome for Testing and log in manually
-playwrightauthor browse
-
-# Step 2: In the browser window, log into Poe.com
-# The browser stays running after you close the terminal
-
-# Step 3: Run virginia-clemm-poe commands
-export POE_API_KEY=your_api_key
-virginia-clemm-poe update --pricing
-
-# The scraper reuses your logged-in session
-```
-
-Benefits:
-- **One-time authentication**: Log in once, all scripts use that session
-- **Faster scraping**: Skip login flows in automation
-- **More reliable**: Avoid bot detection during login
-
-## API Reference
-
-### Core Functions
-
-#### `api.search_bots(query: str) -> List[PoeBot]`
-
-Search for models by ID or name (case-insensitive).
-
-#### `api.get_bot_by_id(model_id: str) -> Optional[PoeBot]`
-
-Get a specific model by its ID.
-
-#### `api.get_all_bots() -> List[PoeBot]`
-
-Get all available models.
-
-#### `api.get_bots_with_pricing() -> List[PoeBot]`
-
-Get all models that have pricing information.
-
-#### `api.get_bots_needing_update() -> List[PoeBot]`
-
-Get models that need pricing update.
-
-#### `api.reload_bots() -> BotCollection`
-
-Force reload models from disk.
-
-### Data Models
-
-#### PoeBot
-
-```python
-class PoeBot:
-    id: str
-    created: int
-    owned_by: str
-    root: str
-    parent: Optional[str]
-    architecture: Architecture
-    pricing: Optional[Pricing]
-    pricing_error: Optional[str]
-    bot_info: Optional[BotInfo]
-
-    def has_pricing() -> bool
-    def needs_pricing_update() -> bool
-    def get_primary_cost() -> Optional[str]
-```
-
-#### Architecture
-
-```python
-class Architecture:
-    input_modalities: List[str]
-    output_modalities: List[str]
-    modality: str
-```
-
-#### BotInfo
-
-```python
-class BotInfo:
-    creator: Optional[str]        # e.g., "@openai"
-    description: Optional[str]    # Main bot description
-    description_extra: Optional[str]  # Additional disclaimer text
-```
-
-#### Pricing
-
-```python
-class Pricing:
-    checked_at: datetime
-    details: PricingDetails
-```
-
-#### PricingDetails
-
-Flexible pricing details supporting various cost structures:
-
-- Standard fields: `input_text`, `input_image`, `bot_message`, `chat_history`
-- Alternative fields: `total_cost`, `image_output`, `video_output`, etc.
-- Bot info field: `initial_points_cost` (e.g., "206+ points")
-
-## CLI Commands
-
-### setup
-
-Set up browser for web scraping (handled automatically by PlaywrightAuthor).
-
-```bash
-virginia-clemm-poe setup
-```
-
-### update
-
-Update model data from Poe API and scrape additional information.
-
-```bash
-virginia-clemm-poe update [--info] [--pricing] [--all] [--force] [--verbose]
-```
-
-Options:
-
-- `--info`: Update only bot info (creator, description)
-- `--pricing`: Update only pricing information
-- `--all`: Update both info and pricing (default)
-- `--api_key`: Override POE_API_KEY environment variable
-- `--force`: Force update even if data exists
-- `--debug_port`: Chrome debug port (default: 9222)
-- `--verbose`: Enable verbose logging
-
-### search
-
-Search for models by ID or name.
-
-```bash
-virginia-clemm-poe search "claude" [--show-pricing] [--show-bot-info]
-```
-
-Options:
-
-- `--show-pricing`: Show pricing information if available (default: True)
-- `--show-bot-info`: Show bot info (creator, description) (default: False)
-
-### list
-
-List all available models.
-
-```bash
-virginia-clemm-poe list [--with-pricing] [--limit 10]
-```
-
-Options:
-
-- `--with-pricing`: Only show models with pricing information
-- `--limit`: Limit number of results
-
-## Requirements
-
-- Python 3.12+
-- Chrome or Chromium browser (automatically managed by PlaywrightAuthor)
-- Poe API key (set as `POE_API_KEY` environment variable)
-
-## Data Storage
-
-Model data is stored in `src/virginia_clemm_poe/data/poe_models.json` within the package directory. The data includes:
-
-- Basic model information (ID, name, capabilities)
-- Detailed pricing structure
-- Timestamps for data freshness
+`PoeBot.pricing.api` holds USD API rates; `PoeBot.pricing.scraped` holds website
+rates and their check timestamp. These are separate evidence sources.
+For full usage and data-model documentation, see [docs](docs/) and
+[the documentation source](src_docs/md/).
 
 ## Development
 
-### Setting Up Development Environment
-
 ```bash
-# Clone the repository
-git clone https://github.com/twardoch/virginia-clemm-poe.git
-cd virginia-clemm-poe
-
-# Install uv (if not already installed)
-curl -LsSf https://astral.sh/uv/install.sh | sh
-
-# Create virtual environment and install dependencies
-uv venv --python 3.12
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-uv pip install -e ".[dev]"
-
-# Set up browser for development
-virginia-clemm-poe setup
+uv sync
+./test.sh
+uv build
 ```
 
-### Running Tests
+`test.sh` runs all regression tests and checks discovery coverage separately.
+`uvx hatch test` also applies the configured repository-wide 85% coverage gate;
+that broader target currently exceeds measured coverage. See [WORK.md](WORK.md)
+for exact results and [CONTRIBUTING.md](CONTRIBUTING.md) for development guidance.
 
-```bash
-# Run all tests
-python -m pytest
+## Author and licence
 
-# Run with coverage
-python -m pytest --cov=virginia_clemm_poe
-```
-
-### Dependencies
-
-This package uses:
-
-- `uv` for dependency management
-- `httpx` for API requests
-- `playwrightauthor` for browser automation
-- `pydantic` for data models
-- `fire` for CLI interface
-- `rich` for terminal UI
-- `loguru` for logging
-- `hatch-vcs` for automatic versioning from git tags
-
-## API Examples
-
-### Get Model Information
-
-```python
-from virginia_clemm_poe import api
-
-# Get a specific model
-model = api.get_bot_by_id("claude-3-opus")
-if model:
-    print(f"Model: {model.id}")
-    print(f"Input modalities: {model.architecture.input_modalities}")
-    if model.pricing:
-        primary_cost = model.get_primary_cost()
-        print(f"Cost: {primary_cost}")
-        print(f"Last updated: {model.pricing.checked_at}")
-
-# Search for models
-gpt_models = api.search_bots("gpt")
-for model in gpt_models:
-    print(f"- {model.id}: {model.architecture.modality}")
-```
-
-### Filter Models by Criteria
-
-```python
-from virginia_clemm_poe import api
-
-# Get all models with pricing
-priced_models = api.get_bots_with_pricing()
-print(f"Models with pricing: {len(priced_models)}")
-
-# Get models needing pricing update
-need_update = api.get_bots_needing_update()
-print(f"Models needing update: {len(need_update)}")
-
-# Get models with specific modality
-all_models = api.get_all_bots()
-text_to_image = [m for m in all_models if m.architecture.modality == "text->image"]
-print(f"Text-to-image models: {len(text_to_image)}")
-```
-
-### Working with Pricing Data
-
-```python
-from virginia_clemm_poe import api
-
-# Get pricing details for a model
-model = api.get_bot_by_id("claude-3-haiku")
-if model and model.pricing:
-    details = model.pricing.details
-
-    # Access standard pricing fields
-    if details.input_text:
-        print(f"Text input: {details.input_text}")
-    if details.bot_message:
-        print(f"Bot message: {details.bot_message}")
-
-    # Alternative pricing formats
-    if details.total_cost:
-        print(f"Total cost: {details.total_cost}")
-
-    # Get primary cost (auto-detected)
-    print(f"Primary cost: {model.get_primary_cost()}")
-```
-
-## Contributing
-
-Contributions are welcome. Submit a Pull Request or open an issue for major changes.
-
-## Author
-
-Adam Twardoch <adam+github@twardoch.com>
-
-## License
-
-Licensed under the Apache License 2.0. See LICENSE file for details.
-
-## Acknowledgments
-
-Named after Virginia Clemm Poe (1822–1847), wife of Edgar Allan Poe, reflecting the connection to Poe.com.
-
-## Disclaimer
-
-This is an unofficial companion tool for Poe.com's API. It is not affiliated with or endorsed by Poe.com or Quora, Inc.
+Adam Twardoch. Licensed under [Apache 2.0](LICENSE).

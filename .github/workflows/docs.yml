@@ -1,5 +1,5 @@
 # this_file: .github/workflows/docs.yml
-name: Build and Deploy Documentation
+name: Build Documentation
 
 on:
   push:
@@ -7,21 +7,19 @@ on:
       - main
     paths:
       - 'src_docs/**'
-      - 'src/virginia_clemm_poe/data/poe_models.json'
+      - 'src/virginia_clemm_poe/data/poe_bots.json'
       - '.github/workflows/docs.yml'
   pull_request:
     branches:
       - main
     paths:
       - 'src_docs/**'
-      - 'src/virginia_clemm_poe/data/poe_models.json'
+      - 'src/virginia_clemm_poe/data/poe_bots.json'
       - '.github/workflows/docs.yml'
   workflow_dispatch:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
   build-docs:
@@ -57,13 +55,4 @@ jobs:
       run: |
         touch docs/.nojekyll
     
-    - name: Deploy to GitHub Pages
-      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs
-        force_orphan: true
-        user_name: 'github-actions[bot]'
-        user_email: 'github-actions[bot]@users.noreply.github.com'
-        commit_message: 'Deploy documentation to GitHub Pages'
+    # GitHub Pages publishes the committed main/docs directory.

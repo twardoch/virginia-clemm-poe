@@ -11,6 +11,13 @@ from virginia_clemm_poe.__main__ import Cli
 from virginia_clemm_poe.bots import Architecture, BotInfo, PoeBot, Pricing, PricingDetails, UnifiedPricing
 
 
+@pytest.fixture(autouse=True)
+def isolated_cli_environment():
+    """Keep CLI unit tests independent of real browsers and network services."""
+    with patch("playwrightauthor.Browser"), patch("httpx.get", return_value=Mock(status_code=200)):
+        yield
+
+
 class TestCliSetup:
     """Test CLI setup command."""
 
@@ -91,10 +98,11 @@ class TestCliStatus:
         """Test status with existing data file."""
         # Mock data file exists
         mock_data_path.exists.return_value = True
+        mock_data_path.stat.return_value.st_size = 1024
 
         # Mock file content
         mock_data = {
-            "bots": [
+            "data": [
                 {"id": "test-bot", "pricing": {"details": {}}},
                 {"id": "test-bot-2", "bot_info": {"creator": "@test"}},
             ]
@@ -118,7 +126,7 @@ class TestCliStatus:
             self.cli.status(verbose=True)
 
         mock_logger.assert_called_once_with(True)
-        mock_console.print.assert_any_call("[green]✓ Bot data found[/green]")
+        mock_console.print.assert_any_call("[green]✓ Bot data exists (1,024 bytes)[/green]")
 
 
 class TestCliUpdate:
@@ -250,7 +258,7 @@ class TestCliSearch:
         self.cli.search("test", show_pricing=True, show_bot_info=True)
 
         mock_search.assert_called_once_with("test")
-        mock_console.print.assert_any_call("[green]Found 1 bots[/green]")
+        mock_console.print.assert_any_call("\n[green]Found 1 bots[/green]")
 
     def test_format_pricing_info(self):
         """Test pricing information formatting."""
@@ -273,7 +281,7 @@ class TestCliSearch:
 
         pricing_info, updated = self.cli._format_pricing_info(sample_model)
 
-        assert "100 points" in pricing_info
+        assert pricing_info == "10 points/1k tokens", "Primary pricing should use the input token rate"
         assert "10 points/1k tokens" in pricing_info
         assert updated == "2025-08-04"
 
@@ -365,21 +373,14 @@ class TestCliClearCache:
         mock_console.print.assert_any_call("[green]✓ Bot data cleared[/green]")
 
     @patch("virginia_clemm_poe.__main__.DATA_FILE_PATH")
-    @patch("virginia_clemm_poe.__main__.shutil.rmtree")
+    @patch("shutil.rmtree")
     @patch("virginia_clemm_poe.__main__.configure_logger")
     @patch("virginia_clemm_poe.__main__.console", new_callable=Mock)
     def test_clear_cache_browser_only(self, mock_console, mock_logger, mock_rmtree, mock_data_path):
         """Test clearing browser cache only."""
-        mock_install_path = Mock()
-        mock_install_path.exists.return_value = True
-
-        # Mock the import and install_dir function
-        with patch("virginia_clemm_poe.__main__.shutil.rmtree") as mock_rmtree:
-            with patch("playwrightauthor.utils.paths.install_dir", return_value=mock_install_path):
-                self.cli.clear_cache(data=False, browser=True, all=False)
-
-                mock_rmtree.assert_called_once_with(mock_install_path)
-                mock_console.print.assert_any_call("[green]✓ Browser cache cleared[/green]")
+        self.cli.clear_cache(data=False, browser=True, all=False)
+        mock_rmtree.assert_not_called()
+        mock_console.print.assert_any_call("[yellow]Browser cache management is handled by PlaywrightAuthor[/yellow]")
 
     @patch("virginia_clemm_poe.__main__.configure_logger")
     @patch("virginia_clemm_poe.__main__.console", new_callable=Mock)
@@ -401,53 +402,28 @@ class TestCliDoctor:
     @patch("virginia_clemm_poe.__main__.console", new_callable=Mock)
     def test_doctor_command(self, mock_console, mock_logger):
         """Test doctor diagnostic command."""
-        # Mock all the individual check methods
-        self.cli._check_python_version = Mock(return_value=0)
-        self.cli._check_api_key = Mock(return_value=0)
-        self.cli._check_browser = Mock(return_value=0)
-        self.cli._check_network = Mock(return_value=0)
-        self.cli._check_dependencies = Mock(return_value=0)
-        self.cli._check_data_file = Mock(return_value=0)
-        self.cli._display_summary = Mock()
+        self.cli.status(verbose=True, check_all=True)
+        mock_logger.assert_called_once_with(True)
+        mock_console.print.assert_any_call("\n[bold]Dependencies:[/bold]")
 
-        self.cli.doctor(verbose=True)
+    @patch("virginia_clemm_poe.__main__.console", new_callable=Mock)
+    def test_check_python_version(self, mock_console):
+        from types import SimpleNamespace
+        for minor, colour in [(12, "green"), (11, "red")]:
+            with patch("sys.version_info", SimpleNamespace(major=3, minor=minor, micro=0)):
+                self.cli.status()
+            expected = f"[{colour}]✓ Python 3.12.0[/{colour}]" if minor == 12 else "[red]✗ Python 3.11.0 (3.12+ required)[/red]"
+            mock_console.print.assert_any_call(expected)
 
-        # Verify all checks were called
-        self.cli._check_python_version.assert_called_once()
-        self.cli._check_api_key.assert_called_once()
-        self.cli._check_browser.assert_called_once()
-        self.cli._check_network.assert_called_once()
-        self.cli._check_dependencies.assert_called_once()
-        self.cli._check_data_file.assert_called_once()
-        self.cli._display_summary.assert_called_once_with(0)
-
-    def test_check_python_version(self):
-        """Test Python version check."""
-        with patch("sys.version_info", (3, 12, 0)):
-            result = self.cli._check_python_version()
-            assert result == 0
-
-        with patch("sys.version_info", (3, 11, 0)):
-            result = self.cli._check_python_version()
-            assert result == 1
-
+    @patch("virginia_clemm_poe.__main__.console", new_callable=Mock)
     @patch("virginia_clemm_poe.__main__.os.environ.get")
-    def test_check_api_key(self, mock_env_get):
-        """Test API key check."""
-        # Test missing API key
+    def test_check_api_key(self, mock_env_get, mock_console):
         mock_env_get.return_value = None
-        result = self.cli._check_api_key()
-        assert result == 1
-
-        # Test API key present
+        self.cli.status()
+        mock_console.print.assert_any_call("[red]✗ POE_API_KEY not set[/red]")
         mock_env_get.return_value = "test-api-key"
-        with patch("httpx.get") as mock_get:
-            mock_response = Mock()
-            mock_response.status_code = 200
-            mock_get.return_value = mock_response
-
-            result = self.cli._check_api_key()
-            assert result == 0
+        self.cli.status()
+        mock_console.print.assert_any_call("[green]✓ API key is valid[/green]")
 
 
 class TestCliValidation:

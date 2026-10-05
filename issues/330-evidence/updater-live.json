@@ -1,0 +1,15 @@
+{
+  "bot_id": "DeepSeek-V4.1-FlashT",
+  "pricing": {
+    "Total cost": [
+      "$0.00/message",
+      "0 points/message"
+    ]
+  },
+  "bot_info": {
+    "creator": "@togetherai",
+    "description": "DeepSeek V4.1 Flash is DeepSeek's multimodal Mixture-of-Experts model built around one idea pushed to its limit: compressing the KV cache. A Causal Encoder-Decoder architecture, 20 encoder layers followed by 20 decoder layers, lets the model activate just 8B of its 552B backbone parameters during prefill and 16B during decode, cutting cost on input-heavy agentic workloads. Compressed Sparse Attention 2 and FP4 KV caching shrink the global cache to 890 bytes per token, roughly a quarter of DeepSeek V4 Flash, across a 1M-token context. The model natively processes images and text, trained from scratch on 45T multimodal tokens, and reasoning effort is continuously adjustable from 1 to 100 per request. Across DeepSeek's published agentic suite it outperforms the far larger V4 Pro. Released under the MIT license. Available on Together AI.",
+    "description_extra": "Powered by a server managed by @togetherai. Learn more"
+  },
+  "error": null
+}

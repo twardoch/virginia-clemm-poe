@@ -1,0 +1,22 @@
+{
+  "aiSlopCleaner": {
+    "status": "passed",
+    "evidence": "Direct cleanup under single-agent instructions: issues/330-review.md; optional skill unavailable; no claim of invoking it"
+  },
+  "verification": {
+    "status": "passed",
+    "evidence": "Issue-scoped checks: 159 passing regressions, 100% discovery coverage, 28 live profiles, 17 Rates tables, built and inspected wheel. Global Hatch coverage threshold remains unmet and explicitly documented.",
+    "commands": [
+      "./test.sh",
+      "uv build",
+      "installed-wheel resource/import check",
+      "git diff --check",
+      "live 28-vendor discovery and 17 Rates-table checks"
+    ]
+  },
+  "codeReview": {
+    "recommendation": "APPROVE",
+    "architectStatus": "CLEAR",
+    "evidence": "Direct Standards, Spec, and architecture review in issues/330-review.md; no review agents used"
+  }
+}

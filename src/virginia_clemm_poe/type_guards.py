@@ -33,17 +33,17 @@ def is_poe_api_bot_data(value: Any) -> TypeGuard[PoeApiBotData]:
         return False
 
     # Check required fields
-    required_fields = {"id", "object", "created", "owned_by", "permission", "root", "architecture"}
+    required_fields = {"id", "object", "created", "owned_by", "root", "architecture"}
     if not all(field in value for field in required_fields):
         return False
 
     # Validate field types
     return (
         isinstance(value.get("id"), str)
-        and value.get("object") in {"bot", "bot"}
+        and value.get("object") in {"model", "bot"}
         and isinstance(value.get("created"), int)
         and isinstance(value.get("owned_by"), str)
-        and isinstance(value.get("permission"), list)
+        and isinstance(value.get("permission", []), list)
         and isinstance(value.get("root"), str)
         and isinstance(value.get("architecture"), dict)
         and (value.get("parent") is None or isinstance(value.get("parent"), str))
@@ -219,7 +219,7 @@ def validate_model_filter_criteria(criteria: Any) -> BotFilterCriteria:
         invalid_fields = set(criteria.keys()) - valid_fields
         if invalid_fields:
             raise BotDataError(
-                f"Invalid filter fields: {', '.join(invalid_fields)}. "
+                f"Invalid filter fields: {', '.join(sorted(invalid_fields))}. "
                 f"Valid fields are: {', '.join(sorted(valid_fields))}"
             )
 

@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "planId": "issue-330",
+  "createdAt": "2026-10-05T01:25:48.143Z",
+  "updatedAt": "2026-10-05T01:39:52.700Z",
+  "briefPath": ".omc/ultragoal/plans/issue-330/brief.md",
+  "goalsPath": ".omc/ultragoal/plans/issue-330/goals.json",
+  "ledgerPath": ".omc/ultragoal/plans/issue-330/ledger.jsonl",
+  "claudeGoalMode": "aggregate",
+  "goals": [
+    {
+      "id": "G001-vendors",
+      "title": "Vendors",
+      "objective": "Discover and sync bots from all 28 good vendor profiles",
+      "status": "complete",
+      "attempt": 1,
+      "createdAt": "2026-10-05T01:25:48.143Z",
+      "updatedAt": "2026-10-05T01:38:05.164Z",
+      "startedAt": "2026-10-05T01:26:31.834Z",
+      "completedAt": "2026-10-05T01:38:05.164Z",
+      "evidence": "28 profiles verified, 488 unique bots; normal updater integration tests and packaged handles"
+    },
+    {
+      "id": "G002-pricing",
+      "title": "Pricing",
+      "objective": "Verify the 17 named endpoints with live evidence",
+      "status": "complete",
+      "attempt": 1,
+      "createdAt": "2026-10-05T01:25:48.143Z",
+      "updatedAt": "2026-10-05T01:38:05.528Z",
+      "startedAt": "2026-10-05T01:38:05.345Z",
+      "completedAt": "2026-10-05T01:38:05.528Z",
+      "evidence": "17 live Rates HTML tables, free-endpoints.json, successful updater-live.json; API-free claim explicitly unverified"
+    },
+    {
+      "id": "G003-verification",
+      "title": "Verification",
+      "objective": "Test integration, document evidence, and review final changes",
+      "status": "complete",
+      "attempt": 1,
+      "createdAt": "2026-10-05T01:25:48.143Z",
+      "updatedAt": "2026-10-05T01:39:52.700Z",
+      "startedAt": "2026-10-05T01:38:05.716Z",
+      "evidence": "issues/330-review.md and issues/330-verification.md; all issue requirements verified; global coverage limitation documented",
+      "completedAt": "2026-10-05T01:39:52.700Z"
+    }
+  ],
+  "claudeObjective": "$ultragoal /Users/adam/Developer/vcs3/github.twardoch/pub/virginia-clemm-poe/issues/330.md"
+}

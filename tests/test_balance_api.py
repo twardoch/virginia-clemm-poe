@@ -91,7 +91,7 @@ class TestGraphQLBalance:
 
         with patch("httpx.AsyncClient.post") as mock_post:
             mock_post.return_value = AsyncMock(
-                raise_for_status=AsyncMock(), json=lambda: mock_response, status_code=200
+                raise_for_status=MagicMock(), json=lambda: mock_response, status_code=200
             )
 
             result = await session_manager._get_balance_via_graphql()
@@ -112,7 +112,7 @@ class TestGraphQLBalance:
 
         with patch("httpx.AsyncClient.post") as mock_post:
             mock_post.return_value = AsyncMock(
-                raise_for_status=AsyncMock(
+                raise_for_status=MagicMock(
                     side_effect=httpx.HTTPStatusError("401", request=MagicMock(), response=MagicMock(status_code=401))
                 )
             )
@@ -161,7 +161,7 @@ class TestFallbackChain:
             mock_api.side_effect = APIError("All API methods failed")
 
             # Browser scraping succeeds
-            with patch("virginia_clemm_poe.poe_session.get_balance_with_browser") as mock_scraper:
+            with patch("virginia_clemm_poe.balance_scraper.get_balance_with_browser") as mock_scraper:
                 mock_scraper.return_value = {
                     "compute_points_available": 1234,
                     "timestamp": datetime.utcnow().isoformat(),
@@ -173,8 +173,9 @@ class TestFallbackChain:
                 mock_scraper.assert_called_once_with(mock_page)
 
     @pytest.mark.asyncio
-    async def test_cache_usage(self, session_manager):
+    async def test_cache_usage(self, session_manager, mock_cookies):
         """Test that cache is used when available."""
+        session_manager.cookies = mock_cookies
         cached_data = {"compute_points_available": 999, "timestamp": datetime.utcnow().isoformat()}
         session_manager._balance_cache = cached_data
 
@@ -240,7 +241,7 @@ class TestBrowserDialogSuppression:
             await get_balance_with_browser(mock_page)
 
             # Verify wait_for_load_state was called
-            assert mock_page.wait_for_load_state.call_count >= 2
+            mock_page.wait_for_load_state.assert_awaited_with("networkidle", timeout=5000)
 
             # Verify sleep was called for graceful shutdown
             mock_sleep.assert_called()
@@ -266,7 +267,7 @@ class TestRetryLogic:
 
             # Succeed on 3rd attempt
             return AsyncMock(
-                raise_for_status=AsyncMock(),
+                raise_for_status=MagicMock(),
                 json=lambda: {
                     "data": {
                         "viewer": {

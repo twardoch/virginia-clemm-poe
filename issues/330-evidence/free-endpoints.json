@@ -1,0 +1,121 @@
+[
+  {
+    "id": "DeepSeek-V4.1-FlashT",
+    "url": "https://poe.com/DeepSeek-V4.1-FlashT",
+    "checked_at": "2026-10-05T01:29:02.621612+00:00",
+    "rates_text": "Type\tRate (USD)\tRate (Points)\nTotal cost\t$0.00/message\t0 points/message",
+    "status": "rates_observed"
+  },
+  {
+    "id": "Zai-GLM-5.3",
+    "url": "https://poe.com/Zai-GLM-5.3",
+    "checked_at": "2026-10-05T01:29:03.630455+00:00",
+    "rates_text": "Type\tRate (USD)\tRate (Points)\nTotal cost\t$0.00/message\t0 points/message",
+    "status": "rates_observed"
+  },
+  {
+    "id": "GLM-5.3-Flash-T",
+    "url": "https://poe.com/GLM-5.3-Flash-T",
+    "checked_at": "2026-10-05T01:29:04.563901+00:00",
+    "rates_text": "Type\tRate (USD)\tRate (Points)\nTotal cost\t$0.00/message\t0 points/message",
+    "status": "rates_observed"
+  },
+  {
+    "id": "DeepSeek-V4-Pro-813",
+    "url": "https://poe.com/DeepSeek-V4-Pro-813",
+    "checked_at": "2026-10-05T01:29:05.485514+00:00",
+    "rates_text": "Type\tRate (USD)\tRate (Points)\nTotal cost\t$0.00/message\t0 points/message",
+    "status": "rates_observed"
+  },
+  {
+    "id": "Qwen3.8-2.4T-A95B",
+    "url": "https://poe.com/Qwen3.8-2.4T-A95B",
+    "checked_at": "2026-10-05T01:29:06.439000+00:00",
+    "rates_text": "Type\tRate (USD)\tRate (Points)\nTotal cost\t$0.00/message\t0 points/message",
+    "status": "rates_observed"
+  },
+  {
+    "id": "Muse-Glimmer-30B",
+    "url": "https://poe.com/Muse-Glimmer-30B",
+    "checked_at": "2026-10-05T01:29:07.259611+00:00",
+    "rates_text": "Type\tRate (USD)\tRate (Points)\nTotal cost\t$0.00/message\t0 points/message",
+    "status": "rates_observed"
+  },
+  {
+    "id": "DS-V4-Flash-0731",
+    "url": "https://poe.com/DS-V4-Flash-0731",
+    "checked_at": "2026-10-05T01:29:08.205670+00:00",
+    "rates_text": "Type\tRate (USD)\tRate (Points)\nTotal cost\t$0.00/message\t0 points/message",
+    "status": "rates_observed"
+  },
+  {
+    "id": "TML-Inkling-Small",
+    "url": "https://poe.com/TML-Inkling-Small",
+    "checked_at": "2026-10-05T01:29:09.195564+00:00",
+    "rates_text": "Type\tRate (USD)\tRate (Points)\nTotal cost\t$0.00/message\t0 points/message",
+    "status": "rates_observed"
+  },
+  {
+    "id": "TM-Inkling",
+    "url": "https://poe.com/TM-Inkling",
+    "checked_at": "2026-10-05T01:29:10.156453+00:00",
+    "rates_text": "Type\tRate (USD)\tRate (Points)\nTotal cost\t$0.00/message\t0 points/message",
+    "status": "rates_observed"
+  },
+  {
+    "id": "PrismML-Tern-Bonsai",
+    "url": "https://poe.com/PrismML-Tern-Bonsai",
+    "checked_at": "2026-10-05T01:29:11.423962+00:00",
+    "rates_text": "Type\tRate (USD)\tRate (Points)\nTotal cost\t$0.00/message\t0 points/message",
+    "status": "rates_observed"
+  },
+  {
+    "id": "Kimi-K2.7-Code-T",
+    "url": "https://poe.com/Kimi-K2.7-Code-T",
+    "checked_at": "2026-10-05T01:29:12.341738+00:00",
+    "rates_text": "Type\tRate (USD)\tRate (Points)\nTotal cost\t$0.00/message\t0 points/message",
+    "status": "rates_observed"
+  },
+  {
+    "id": "Nemotron-3-Ultra",
+    "url": "https://poe.com/Nemotron-3-Ultra",
+    "checked_at": "2026-10-05T01:29:13.341623+00:00",
+    "rates_text": "Type\tRate (USD)\tRate (Points)\nTotal cost\t$0.00/message\t0 points/message",
+    "status": "rates_observed"
+  },
+  {
+    "id": "Kimi-K2.6-T",
+    "url": "https://poe.com/Kimi-K2.6-T",
+    "checked_at": "2026-10-05T01:29:14.303949+00:00",
+    "rates_text": "Type\tRate (USD)\tRate (Points)\nTotal cost\t$0.00/message\t0 points/message",
+    "status": "rates_observed"
+  },
+  {
+    "id": "Minimax-M2.7-T",
+    "url": "https://poe.com/Minimax-M2.7-T",
+    "checked_at": "2026-10-05T01:29:15.146565+00:00",
+    "rates_text": "Type\tRate (USD)\tRate (Points)\nTotal cost\t$0.00/message\t0 points/message",
+    "status": "rates_observed"
+  },
+  {
+    "id": "Gemma-4-31B-T",
+    "url": "https://poe.com/Gemma-4-31B-T",
+    "checked_at": "2026-10-05T01:29:15.997207+00:00",
+    "rates_text": "Type\tRate (USD)\tRate (Points)\nTotal cost\t$0.00/message\t0 points/message",
+    "status": "rates_observed"
+  },
+  {
+    "id": "Qwen3.5-9B-T",
+    "url": "https://poe.com/Qwen3.5-9B-T",
+    "checked_at": "2026-10-05T01:29:17.108329+00:00",
+    "rates_text": "Type\tRate (USD)\tRate (Points)\nTotal cost\t$0.00/message\t0 points/message",
+    "status": "rates_observed"
+  },
+  {
+    "id": "EssentialAI-Rnj-1-T",
+    "url": "https://poe.com/EssentialAI-Rnj-1-T",
+    "checked_at": "2026-10-05T01:29:18.025867+00:00",
+    "rates_text": "Type\tRate (USD)\tRate (Points)\nTotal cost\t$0.00/message\t0 points/message",
+    "status": "rates_observed"
+  }
+]

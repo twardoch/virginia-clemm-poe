@@ -111,7 +111,7 @@ class TestSearchModels:
     def test_search_bots_case_insensitive(self, mock_data_file: Path) -> None:
         """Test that search is case insensitive."""
         with patch("virginia_clemm_poe.api.DATA_FILE_PATH", mock_data_file):
-            results = api.search_bots("TEST-MODEL")
+            results = api.search_bots("TEST-BOT")
 
         assert len(results) == 1
         assert results[0].id == "test-bot-1"

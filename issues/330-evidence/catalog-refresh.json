@@ -1,0 +1,167 @@
+{
+  "checked_at": "2026-10-05T01:51:14.431421+00:00",
+  "api_count": 342,
+  "vendor_count": 488,
+  "catalog_count": 501,
+  "profiles": [
+    {
+      "vendor": "anthropic",
+      "count": 13,
+      "checked_at": "2026-10-05T01:48:45.699105+00:00"
+    },
+    {
+      "vendor": "binaai",
+      "count": 7,
+      "checked_at": "2026-10-05T01:48:47.058801+00:00"
+    },
+    {
+      "vendor": "Bytedance",
+      "count": 12,
+      "checked_at": "2026-10-05T01:48:48.471640+00:00"
+    },
+    {
+      "vendor": "cartesiateam",
+      "count": 3,
+      "checked_at": "2026-10-05T01:48:49.831579+00:00"
+    },
+    {
+      "vendor": "cerebrasai",
+      "count": 1,
+      "checked_at": "2026-10-05T01:48:51.189928+00:00"
+    },
+    {
+      "vendor": "deepinfra",
+      "count": 8,
+      "checked_at": "2026-10-05T01:48:52.783969+00:00"
+    },
+    {
+      "vendor": "deepseek",
+      "count": 5,
+      "checked_at": "2026-10-05T01:48:54.150820+00:00"
+    },
+    {
+      "vendor": "elevenlabsco",
+      "count": 4,
+      "checked_at": "2026-10-05T01:48:55.519274+00:00"
+    },
+    {
+      "vendor": "empiriolabsai",
+      "count": 110,
+      "checked_at": "2026-10-05T01:49:10.895736+00:00"
+    },
+    {
+      "vendor": "fal",
+      "count": 109,
+      "checked_at": "2026-10-05T01:49:24.812909+00:00"
+    },
+    {
+      "vendor": "fireworksai",
+      "count": 14,
+      "checked_at": "2026-10-05T01:49:26.347641+00:00"
+    },
+    {
+      "vendor": "google",
+      "count": 18,
+      "checked_at": "2026-10-05T01:49:27.821126+00:00"
+    },
+    {
+      "vendor": "gptrdev",
+      "count": 1,
+      "checked_at": "2026-10-05T01:49:29.228380+00:00"
+    },
+    {
+      "vendor": "ideogramai",
+      "count": 2,
+      "checked_at": "2026-10-05T01:49:30.609061+00:00"
+    },
+    {
+      "vendor": "meta",
+      "count": 2,
+      "checked_at": "2026-10-05T01:49:32.472342+00:00"
+    },
+    {
+      "vendor": "minimax",
+      "count": 3,
+      "checked_at": "2026-10-05T01:49:33.869408+00:00"
+    },
+    {
+      "vendor": "moonshotai",
+      "count": 4,
+      "checked_at": "2026-10-05T01:49:35.357265+00:00"
+    },
+    {
+      "vendor": "novitaai",
+      "count": 42,
+      "checked_at": "2026-10-05T01:49:41.481494+00:00"
+    },
+    {
+      "vendor": "openai",
+      "count": 45,
+      "checked_at": "2026-10-05T01:49:47.530144+00:00"
+    },
+    {
+      "vendor": "OpenSourceLab",
+      "count": 31,
+      "checked_at": "2026-10-05T01:49:52.066979+00:00"
+    },
+    {
+      "vendor": "opentools",
+      "count": 3,
+      "checked_at": "2026-10-05T01:49:53.470336+00:00"
+    },
+    {
+      "vendor": "poe_tools",
+      "count": 6,
+      "checked_at": "2026-10-05T01:49:54.865643+00:00"
+    },
+    {
+      "vendor": "reka",
+      "count": 3,
+      "checked_at": "2026-10-05T01:49:56.296210+00:00"
+    },
+    {
+      "vendor": "tencent",
+      "count": 1,
+      "checked_at": "2026-10-05T01:49:57.649947+00:00"
+    },
+    {
+      "vendor": "thinkymachines",
+      "count": 1,
+      "checked_at": "2026-10-05T01:49:59.005119+00:00"
+    },
+    {
+      "vendor": "togetherai",
+      "count": 33,
+      "checked_at": "2026-10-05T01:50:03.506869+00:00"
+    },
+    {
+      "vendor": "trytako",
+      "count": 1,
+      "checked_at": "2026-10-05T01:50:04.938754+00:00"
+    },
+    {
+      "vendor": "xAI",
+      "count": 6,
+      "checked_at": "2026-10-05T01:50:06.379651+00:00"
+    }
+  ],
+  "refreshed_pricing_bots": [
+    "DeepSeek-V4.1-FlashT",
+    "Zai-GLM-5.3",
+    "GLM-5.3-Flash-T",
+    "DeepSeek-V4-Pro-813",
+    "Qwen3.8-2.4T-A95B",
+    "Muse-Glimmer-30B",
+    "DS-V4-Flash-0731",
+    "TML-Inkling-Small",
+    "TM-Inkling",
+    "PrismML-Tern-Bonsai",
+    "Kimi-K2.7-Code-T",
+    "Nemotron-3-Ultra",
+    "Kimi-K2.6-T",
+    "Minimax-M2.7-T",
+    "Gemma-4-31B-T",
+    "Qwen3.5-9B-T",
+    "EssentialAI-Rnj-1-T"
+  ]
+}

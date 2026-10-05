@@ -280,3 +280,9 @@ Transform Virginia Clemm Poe into the definitive Poe.com model intelligence plat
 - **Cost Optimization Engine**: Recommend best models for specific use cases
 - **Enterprise Integration**: API endpoints for programmatic access
 - **Predictive Analytics**: Forecast pricing changes and model availability
+## Issue 330
+
+- [x] Package all 28 vendor handles and discover complete Created lists.
+- [x] Union profile bots with the API catalog and preserve source provenance.
+- [x] Verify the 17 requested website rates with live evidence.
+- [x] Finish regression, packaging, discovery coverage, and direct review checks.

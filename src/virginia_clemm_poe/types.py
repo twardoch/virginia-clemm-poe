@@ -23,7 +23,7 @@ class PoeApiBotData(TypedDict):
     object: Literal["model", "bot"]
     created: int
     owned_by: str
-    permission: list[Any]
+    permission: NotRequired[list[Any]]
     root: str
     parent: NotRequired[str]
     architecture: dict[str, Any]

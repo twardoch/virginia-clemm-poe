@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Issue 330
+- Added a packaged list of 28 curated vendor profiles and complete Created-list discovery during normal updates.
+- Added vendor provenance and explicit unknown creation metadata for website-only bots, with API data precedence and safe retention after profile failures.
+- Wait for loaded Rates tables and use stable selectors when Poe changes action-bar classes.
+- Verified all 28 vendor profiles and advertised zero USD/zero point message rates for the 17 requested bots on 2026-10-05; committed evidence does not imply free API access.
+- Validation: 159 regression tests pass; discovery coverage is 100%; live checks, package builds, and wheel resource checks pass. The existing overall 85% coverage gate remains unmet (53.61%).
+- Repaired stale regression test fixtures and isolated CLI unit tests from real browser/network activity; added missing Hatch test dependencies.
+
+
 ### Changed
 - Renamed public APIs, data classes, and CLI messaging from *model* to *bot* for consistency with Poe terminology, including renaming the persisted dataset to `poe_bots.json`.
 - `BotUpdater` now records an `api_last_updated` timestamp for every bot, processes updates starting with the stalest entries, removes bots missing from the Poe API, and persists progress after each bot update to avoid repeating work on subsequent runs.

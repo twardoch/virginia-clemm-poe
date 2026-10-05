@@ -2,6 +2,15 @@
 
 # Work Progress - Virginia Clemm Poe
 
+## Issue 330 — 2026-10-05
+
+- Implemented packaged vendor handles, structured profile parsing, complete-list scrolling, API/vendor union, source provenance, and safe retention on profile failures.
+- Live browser checks passed all 28 profiles and all 17 named rate tables. See `issues/330-verification.md` and hashed evidence in `issues/330-evidence/`.
+- Package scraper smoke check captured creator, description, and zero-point pricing for DeepSeek-V4.1-FlashT.
+- Initial `uvx hatch test` failed because its isolated environment lacked pytest-cov; added Hatch test dependencies. Baseline full suite: 129 passed, 16 failed, with stale fixtures/assertions and unintended browser activity. Corrected stale fixtures and mocks; CLI tests now isolate browser/network activity. Final `./test.sh`: 159 passed; 14 discovery tests, 100% coverage. Build, wheel-content checks, new-module lint, and diff checks pass. `uvx hatch test` executes all tests successfully but fails the unchanged global 85% coverage gate at 53.61%.
+- Focused feature/API/pricing tests: 70 passed. Final review and requirement audit: `issues/330-review.md`.
+
+
 ## Current Session: Documentation Update & Quality Improvements (2025-10-15)
 
 ### Test Results (/test - 2025-10-15 18:36)

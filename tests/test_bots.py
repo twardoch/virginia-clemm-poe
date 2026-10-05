@@ -183,7 +183,7 @@ class TestBotCollection:
 
     def test_search_case_insensitive(self, sample_bot_collection: BotCollection) -> None:
         """Test that search is case insensitive."""
-        results = sample_bot_collection.search("TEST-MODEL")
+        results = sample_bot_collection.search("TEST-BOT")
         assert len(results) == 1
         assert results[0].id == "test-bot-1"
 

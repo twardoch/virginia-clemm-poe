@@ -6,11 +6,29 @@ from __future__ import annotations
 
 from datetime import datetime
 from typing import Any
+from unittest.mock import AsyncMock, MagicMock
 
 import pytest
 
-from virginia_clemm_poe.bots import Architecture, BotCollection, PoeBot
+from virginia_clemm_poe.bots import ApiPricing, Architecture, BotCollection, PoeBot
 from virginia_clemm_poe.updater import BotUpdater
+
+
+@pytest.mark.asyncio
+async def test_rates_button_when_action_bar_class_changes_then_extracts_table():
+    page = MagicMock()
+    button = MagicMock()
+    button.click = AsyncMock()
+    page.query_selector = AsyncMock(side_effect=[None, button])
+    page.wait_for_selector = AsyncMock()
+    page.keyboard.press = AsyncMock()
+    updater = BotUpdater(api_key="test-key")
+    updater._find_pricing_table_html = AsyncMock(
+        return_value="<table><tr><td>Bot message</td><td>10 points</td></tr></table>"
+    )
+    pricing, error = await updater._extract_pricing_table(page, "test-bot")
+    assert error is None, "Rates should work without a hardcoded action bar class"
+    assert pricing == {"Bot message": "10 points"}, "The visible rates table should be parsed"
 
 
 @pytest.mark.asyncio
@@ -62,3 +80,13 @@ def test_merge_bots_removes_missing_entries(sample_architecture: Architecture) -
 
     assert "survivor-bot" in merged_ids
     assert "stale-bot" not in merged_ids, "Bots absent from the API should be removed"
+
+
+def test_api_refresh_without_rates_drops_stale_api_prices(sample_poe_model):
+    existing = sample_poe_model.model_copy(deep=True)
+    existing.pricing.api = ApiPricing(prompt="0.01")
+    fresh = existing.model_copy(deep=True)
+    fresh.pricing = None
+    result = BotUpdater("key")._merge_bots([fresh], BotCollection(data=[existing]))
+    assert result[0].pricing.api is None, "Missing current API prices must not retain old API rates"
+    assert result[0].pricing.scraped is not None, "Website rates remain independent of API rates"

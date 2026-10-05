@@ -767,7 +767,7 @@ class Cli:
         """
         row = [
             bot.id,
-            bot.created,
+            str(bot.created) if bot.created is not None else "Unknown",
             ", ".join(bot.architecture.input_modalities),
             ", ".join(bot.architecture.output_modalities),
         ]

@@ -32,8 +32,8 @@ def get_bot_schema() -> dict[str, Any]:
                     "required": ["id", "object", "created", "owned_by", "root"],
                     "properties": {
                         "id": {"type": "string", "minLength": 1},
-                        "object": {"type": "string", "const": "model"},
-                        "created": {"type": "integer", "minimum": 0},
+                        "object": {"type": "string", "enum": ["model", "bot"]},
+                        "created": {"type": ["integer", "null"], "minimum": 0},
                         "owned_by": {"type": "string", "minLength": 1},
                         "permission": {"type": "array"},
                         "root": {"type": "string", "minLength": 1},
@@ -45,12 +45,12 @@ def get_bot_schema() -> dict[str, Any]:
                                 "input_modalities": {
                                     "type": "array",
                                     "items": {"type": "string"},
-                                    "minItems": 1
+                                    "minItems": 0
                                 },
                                 "output_modalities": {
                                     "type": "array",
                                     "items": {"type": "string"},
-                                    "minItems": 1
+                                    "minItems": 0
                                 },
                                 "modality": {"type": "string", "minLength": 1}
                             }
@@ -77,6 +77,7 @@ def get_bot_schema() -> dict[str, Any]:
                             }
                         },
                         "api_last_updated": {"type": ["string", "null"]},
+                        "vendor_profile": {"type": ["string", "null"]},
                         "pricing_error": {"type": ["string", "null"]},
                         "bot_info": {
                             "type": ["object", "null"],

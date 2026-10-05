@@ -27,7 +27,6 @@ from .browser_pool import BrowserPool, get_global_pool
 from .config import (
     DATA_FILE_PATH,
     DEFAULT_DEBUG_PORT,
-    DIALOG_WAIT_SECONDS,
     EXPANSION_WAIT_SECONDS,
     HTTP_REQUEST_TIMEOUT_SECONDS,
     MODAL_CLOSE_WAIT_SECONDS,
@@ -43,6 +42,7 @@ from .types import PoeApiResponse
 from .utils.cache import cached, get_api_cache, get_scraping_cache
 from .utils.logger import log_api_request, log_browser_operation, log_performance_metric
 from .utils.memory import MemoryManagedOperation
+from .vendors import load_vendors, scrape_profile
 
 
 class BotUpdater:
@@ -323,14 +323,12 @@ class BotUpdater:
         """
         # Look for the action bar
         action_bar = await page.query_selector(".BotInfoCardActionBar_actionBar__5_Gnq")
-        if not action_bar:
-            logger.debug(f"No action bar found for {model_id}")
-            return None, "No action bar found on page"
+        rates_scope = action_bar or page
 
         # Find the Rates button
-        rates_button = await action_bar.query_selector("button:has-text('Rates')")
+        rates_button = await rates_scope.query_selector("button:has-text('Rates')")
         if not rates_button:
-            rates_button = await action_bar.query_selector("button:has(span:has-text('Rates'))")
+            rates_button = await rates_scope.query_selector("button:has(span:has-text('Rates'))")
 
         if not rates_button:
             logger.debug(f"No 'Rates' button found for {model_id}")
@@ -342,7 +340,7 @@ class BotUpdater:
 
         # Wait for dialog
         await page.wait_for_selector("div[role='dialog']", timeout=TABLE_TIMEOUT_MS)
-        await asyncio.sleep(DIALOG_WAIT_SECONDS)
+        await page.wait_for_selector("div[role='dialog'] table", timeout=TABLE_TIMEOUT_MS)
 
         # Extract table HTML
         table_html = await self._find_pricing_table_html(page)
@@ -458,7 +456,7 @@ class BotUpdater:
             try:
                 # Navigate to page
                 logger.debug(f"Navigating to {url}")
-                await page.goto(url, wait_until="networkidle", timeout=PAGE_NAVIGATION_TIMEOUT_MS)
+                await page.goto(url, wait_until="domcontentloaded", timeout=PAGE_NAVIGATION_TIMEOUT_MS)
                 await asyncio.sleep(PAUSE_SECONDS)
                 ctx["page_loaded"] = True
 
@@ -667,16 +665,16 @@ class BotUpdater:
             return sorted(api_bots, key=lambda x: x.id)
 
         # Create lookup for existing bots
-        existing_lookup = {bot.id: bot for bot in existing_collection.data}
+        existing_lookup = {bot.id.casefold(): bot for bot in existing_collection.data}
         api_model_ids = set()
         merged_bots = []
 
         # Merge API bots with existing data
         for api_model in api_bots:
-            api_model_ids.add(api_model.id)
+            api_model_ids.add(api_model.id.casefold())
 
-            if api_model.id in existing_lookup:
-                existing = existing_lookup[api_model.id]
+            if api_model.id.casefold() in existing_lookup:
+                existing = existing_lookup[api_model.id.casefold()]
 
                 # Merge pricing information
                 if api_model.pricing and api_model.pricing.api:
@@ -686,8 +684,8 @@ class BotUpdater:
                         api_model.pricing = UnifiedPricing(api=api_model.pricing.api, scraped=existing.pricing.scraped)
                     # else: keep API pricing only
                 elif existing.pricing:
-                    # No API pricing, preserve existing pricing
-                    api_model.pricing = existing.pricing
+                    # Keep scraped evidence without presenting stale API rates as current.
+                    api_model.pricing = UnifiedPricing(scraped=existing.pricing.scraped)
 
                 # Preserve error and bot info
                 if existing.pricing_error:
@@ -700,9 +698,60 @@ class BotUpdater:
         # Log removed bots
         removed_ids = set(existing_lookup.keys()) - api_model_ids
         for removed_id in removed_ids:
+            if existing_lookup[removed_id].vendor_profile:
+                continue
             logger.info(f"Removed bot no longer in API: {removed_id}")
 
         return sorted(merged_bots, key=lambda x: x.id)
+
+    async def _discover_vendor_bots(self, pool: BrowserPool) -> tuple[list[PoeBot], set[str]]:
+        """Discover vendors independently and identify failures for safe retention."""
+        bots: list[PoeBot] = []
+        failed: set[str] = set()
+        for vendor in load_vendors():
+            try:
+                async with pool.acquire_page() as page:
+                    discovered = await scrape_profile(page, vendor)
+                bots.extend(discovered)
+                logger.info(f"Discovered {len(discovered)} bots from @{vendor}")
+            except Exception as error:
+                failed.add(vendor.casefold())
+                logger.warning(f"Vendor discovery failed for @{vendor}: {error}")
+        return bots, failed
+
+    def _merge_vendor_bots(
+        self, api_bots: list[PoeBot], vendor_bots: list[PoeBot],
+        existing: BotCollection | None, failed: set[str],
+    ) -> list[PoeBot]:
+        """Union API and vendor bots, keeping API metadata and prior scraped details."""
+        previous = {bot.id.casefold(): bot for bot in existing.data} if existing else {}
+        merged = {bot.id.casefold(): bot for bot in api_bots}
+        for bot in vendor_bots:
+            key = bot.id.casefold()
+            if key in merged:
+                merged[key].vendor_profile = bot.vendor_profile
+                if not merged[key].bot_info:
+                    merged[key].bot_info = bot.bot_info
+                elif bot.bot_info:
+                    merged[key].bot_info.creator = merged[key].bot_info.creator or bot.bot_info.creator
+                    merged[key].bot_info.description = merged[key].bot_info.description or bot.bot_info.description
+                continue
+            old = previous.get(key)
+            if old:
+                bot.pricing = UnifiedPricing(scraped=old.pricing.scraped) if old.pricing else None
+                bot.pricing_error = old.pricing_error
+                bot.bot_info = old.bot_info or bot.bot_info
+            merged[key] = bot
+        for key, bot in previous.items():
+            if key in merged and bot.vendor_profile and bot.vendor_profile.casefold() in failed:
+                merged[key].vendor_profile = bot.vendor_profile
+            if bot.vendor_profile and bot.vendor_profile.casefold() in failed and key not in merged:
+                retained = bot.model_copy(deep=True)
+                retained.api_last_updated = None
+                if retained.pricing:
+                    retained.pricing.api = None
+                merged[key] = retained
+        return sorted(merged.values(), key=lambda bot: bot.id)
 
     def _save_collection(self, collection: BotCollection) -> None:
         """Persist the current bot collection to disk sorted by API age."""
@@ -857,13 +906,16 @@ class BotUpdater:
             Updated BotCollection with all bots
         """
         # Load existing data
-        existing_collection = self._load_existing_collection(force)
+        existing_collection = self._load_existing_collection(False)
 
         # Fetch fresh bots from API
         api_data, api_bots = await self._fetch_and_parse_api_bots()
 
         # Merge with existing data and persist immediately (captures removals)
         merged_bots = self._merge_bots(api_bots, existing_collection)
+        pool = await get_global_pool(max_size=3, debug_port=self.debug_port, verbose=self.verbose)
+        vendor_bots, failed_vendors = await self._discover_vendor_bots(pool)
+        merged_bots = self._merge_vendor_bots(merged_bots, vendor_bots, existing_collection, failed_vendors)
         collection = BotCollection(object=api_data["object"], data=merged_bots)
         self._save_collection(collection)
 
@@ -878,13 +930,6 @@ class BotUpdater:
 
         # Use memory management for the entire update operation
         async with MemoryManagedOperation(f"sync_{len(bots_to_update)}_bots") as memory_monitor:
-            # Get the browser pool for better performance
-            pool = await get_global_pool(
-                max_size=3,  # Allow up to 3 concurrent browser connections
-                debug_port=self.debug_port,
-                verbose=self.verbose,
-            )
-
             # Log performance metric for pool usage
             log_performance_metric("browser_pool_enabled", 1, "count", {"bots_to_update": len(bots_to_update)})
 

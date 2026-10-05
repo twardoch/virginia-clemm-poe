@@ -214,3 +214,9 @@ Focus: Polish and release
 - Documentation updates
 - User migration guide
 - Production release
+## Issue 330
+
+- [x] Package all 28 vendor handles and discover complete Created lists.
+- [x] Union profile bots with the API catalog and preserve source provenance.
+- [x] Verify the 17 requested website rates with live evidence.
+- [x] Finish regression, packaging, discovery coverage, and direct review checks.

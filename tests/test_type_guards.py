@@ -18,6 +18,12 @@ from virginia_clemm_poe.type_guards import (
 class TestIsPoeApiBotData:
     """Test is_poe_api_bot_data type guard."""
 
+    def test_current_api_model_without_permission_then_valid(self, sample_api_response_data):
+        data = sample_api_response_data["data"][0].copy()
+        data["object"] = "model"
+        data.pop("permission")
+        assert is_poe_api_bot_data(data), "Current Poe models omit optional permission"
+
     def test_valid_model_data(self, sample_api_response_data: dict[str, Any]) -> None:
         """Test type guard with valid bot data."""
         model_data = sample_api_response_data["data"][0]
