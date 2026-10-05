@@ -11,7 +11,8 @@
 - Refreshed creator/description metadata; recovered 84 explicit output modalities from website rate labels. The image filter includes multimodal outputs.
 - Verification: 183 Python tests and 5 Node comparison tests pass. New parser coverage: 99%; vendor coverage: 100%. Strict MkDocs build passes after recording 244 canonical filename case changes. Source/generated/served dataset hashes match.
 - Browser iframe checks pass: 501 rows, 483 numeric rates, 23 zeros first, all 18 unknowns last, both sort directions, USD switching, search, message fees, 73 image-filter rows, and no page errors. See `issues/330-pricing-verification.md`.
-- Publish using `uvx gitnextver`; verify deployed assets and rerun iframe checks after Pages completes. Existing unrelated global CI lint/coverage issues remain recorded above.
+- Published v1.0.36 using `uvx gitnextver`. Pages and documentation workflows pass. Live table, comparison JavaScript, and dataset hashes match exactly; live iframe checks reproduce all local results. The package scraper also passes live image-matrix and prose-rate smoke checks.
+- The release tool restored 244 obsolete case variants during its stash step. Removed those duplicate index entries in a separate cleanup commit before another gitnextver push. Existing unrelated general CI failures remain documented above.
 
 ## Issue 330 publication — 2026-10-05
 

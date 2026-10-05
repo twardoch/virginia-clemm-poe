@@ -9,7 +9,7 @@
 - [x] Sort cheapest first; preserve zero values and put unknown prices last.
 - [x] Show token/message/media comparison bases and all rates on model pages.
 - [x] Verify regression tests and strict documentation build.
-- [x] Verify rendered iframe and prepare the checked site for gitnextver publication.
+- [x] Verify local/live iframe, publish with gitnextver, and check exact live asset hashes.
 
 ## ✅ Phase 9: Dual Pricing Model Support (COMPLETED 2025-10-15)
 

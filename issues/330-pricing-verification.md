@@ -48,3 +48,9 @@ Release procedure: `uvx gitnextver`, followed by GitHub Pages completion and a
 fresh live iframe check plus exact asset hash comparison. General CI retains
 the previously documented repository lint/test-environment issues; local tests
 and strict documentation validation above are independently verified.
+
+Live acceptance: v1.0.36 Pages and documentation workflows pass; all three live
+assets match local SHA-256 hashes. The live iframe repeats the local sorting,
+coverage, currency, search, fee, and modality checks. Actual package extraction
+also recovers 24 image-matrix rates and the prose interpreter base fee. Duplicate
+case aliases restored by the release tool were removed before the cleanup push.
