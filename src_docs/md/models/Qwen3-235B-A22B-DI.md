@@ -1,4 +1,4 @@
-# [Qwen3-235B-A22B-DI](https://poe.com/Qwen3-235B-A22B-DI){ .md-button .md-button--primary }
+# [qwen3-235b-a22b-di](https://poe.com/qwen3-235b-a22b-di){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -40,14 +40,14 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 
 ## Technical Details
 
-**Model ID:** `Qwen3-235B-A22B-DI`
+**Model ID:** `qwen3-235b-a22b-di`
 
 **Object Type:** model
 
 **Created:** 1746004656402
 
-**Owned By:** poe
+**Owned By:** DeepInfra
 
-**Root:** Qwen3-235B-A22B-DI
+**Root:** qwen3-235b-a22b-di
 
-**API Last Updated:** 2025-10-15 16:36:09.626295
+**API Last Updated:** 2026-10-05 01:48:43.416619

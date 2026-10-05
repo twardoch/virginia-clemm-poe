@@ -1,4 +1,4 @@
-# [DeepSeek-R1-N](https://poe.com/DeepSeek-R1-N){ .md-button .md-button--primary }
+# [deepseek-r1-n](https://poe.com/deepseek-r1-n){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -6,7 +6,17 @@
 
 | Type | Cost |
 |------|------|
-| Request | $0.0060/request |
+| Request | $0.0061/request |
+
+## Bot Information
+
+**Creator:** @novitaai
+
+**Description:** DeepSeek R1 0528 is the latest open-source model released by the DeepSeek team, featuring impressive reasoning capabilities, particularly achieving performance comparable to OpenAI's o1 model in mathematics, coding, and reasoning tasks.
+
+File Support: Text, Markdown and PDF files
+Context window: 164k tokens
+
 
 ## Architecture
 
@@ -19,14 +29,14 @@
 
 ## Technical Details
 
-**Model ID:** `DeepSeek-R1-N`
+**Model ID:** `deepseek-r1-n`
 
 **Object Type:** model
 
 **Created:** 1754049641148
 
-**Owned By:** poe
+**Owned By:** Novita AI
 
-**Root:** DeepSeek-R1-N
+**Root:** deepseek-r1-n
 
-**API Last Updated:** 2025-10-15 16:36:09.629720
+**API Last Updated:** 2026-10-05 01:48:43.416830

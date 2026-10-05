@@ -1,4 +1,11 @@
-# [Reka-Core](https://poe.com/Reka-Core){ .md-button .md-button--primary }
+# [reka-core](https://poe.com/reka-core){ .md-button .md-button--primary }
+
+## Bot Information
+
+**Creator:** @reka
+
+**Description:** Reka's largest and most capable multimodal language model. Works with text, images, and video inputs. 8k context length.
+
 
 ## Architecture
 
@@ -11,14 +18,14 @@
 
 ## Technical Details
 
-**Model ID:** `Reka-Core`
+**Model ID:** `reka-core`
 
 **Object Type:** model
 
 **Created:** 1713038207102
 
-**Owned By:** poe
+**Owned By:** Reka AI
 
-**Root:** Reka-Core
+**Root:** reka-core
 
-**API Last Updated:** 2025-10-15 16:36:09.638908
+**API Last Updated:** 2026-10-05 01:48:43.417531

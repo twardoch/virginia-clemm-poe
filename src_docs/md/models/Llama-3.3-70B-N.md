@@ -1,4 +1,4 @@
-# [Llama-3.3-70B-N](https://poe.com/Llama-3.3-70B-N){ .md-button .md-button--primary }
+# [llama-3.3-70b-n](https://poe.com/llama-3.3-70b-n){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -7,6 +7,18 @@
 | Type | Cost |
 |------|------|
 | Request | $0.0014/request |
+
+## Bot Information
+
+**Creator:** @novitaai
+
+**Description:** The Meta Llama 3.3 multilingual large language model (LLM) is a pretrained and instruction tuned generative model in 70B (text in/text out). The Llama 3.3 instruction tuned text only model is optimized for multilingual dialogue use cases and outperforms many of the available open source and closed chat models on common industry benchmarks.
+
+Supported languages: English, German, French, Italian, Portuguese, Hindi, Spanish, and Thai.
+
+File Support: Text, Markdown and PDF files
+Context window: 131k tokens
+
 
 ## Architecture
 
@@ -19,14 +31,14 @@
 
 ## Technical Details
 
-**Model ID:** `Llama-3.3-70B-N`
+**Model ID:** `llama-3.3-70b-n`
 
 **Object Type:** model
 
 **Created:** 1754050595700
 
-**Owned By:** poe
+**Owned By:** Novita AI
 
-**Root:** Llama-3.3-70B-N
+**Root:** llama-3.3-70b-n
 
-**API Last Updated:** 2025-10-15 16:36:09.629902
+**API Last Updated:** 2026-10-05 01:48:43.416850

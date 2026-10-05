@@ -1,4 +1,4 @@
-# [GPT-4o-Aug](https://poe.com/GPT-4o-Aug){ .md-button .md-button--primary }
+# [gpt-4o-aug](https://poe.com/gpt-4o-aug){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -6,28 +6,35 @@
 
 | Type | Cost |
 |------|------|
-| Prompt | $0.0000023/token |
-| Completion | $0.0000090/token |
+| Prompt | $0.0000022727/token |
+| Completion | $0.0000090909/token |
+
+## Bot Information
+
+**Creator:** @openai
+
+**Description:** OpenAI's most powerful model, GPT-4o, using the August 2024 model snapshot. Stronger than GPT-3.5 in quantitative questions (math and physics), creative writing, and many other challenging tasks. 
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** text, image
 
 **Output Modalities:** text
 
-**Modality:** text->text
+**Modality:** text,image->text
 
 
 ## Technical Details
 
-**Model ID:** `GPT-4o-Aug`
+**Model ID:** `gpt-4o-aug`
 
 **Object Type:** model
 
 **Created:** 1732149774348
 
-**Owned By:** poe
+**Owned By:** OpenAI
 
-**Root:** GPT-4o-Aug
+**Root:** gpt-4o-aug
 
-**API Last Updated:** 2025-10-15 16:36:09.643118
+**API Last Updated:** 2026-10-05 01:48:43.417711

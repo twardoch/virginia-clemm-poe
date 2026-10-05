@@ -1,4 +1,4 @@
-# [Amazon-Nova-Reel-1.1](https://poe.com/Amazon-Nova-Reel-1.1){ .md-button .md-button--primary }
+# [amazon-nova-reel-1.1](https://poe.com/amazon-nova-reel-1.1){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -25,21 +25,21 @@
 
 **Input Modalities:** text
 
-**Output Modalities:** text
+**Output Modalities:** video
 
-**Modality:** text->text
+**Modality:** text->video
 
 
 ## Technical Details
 
-**Model ID:** `Amazon-Nova-Reel-1.1`
+**Model ID:** `amazon-nova-reel-1.1`
 
 **Object Type:** model
 
 **Created:** 1757629656513
 
-**Owned By:** poe
+**Owned By:** EmpirioLabs AI
 
-**Root:** Amazon-Nova-Reel-1.1
+**Root:** amazon-nova-reel-1.1
 
-**API Last Updated:** 2025-10-15 16:36:09.617926
+**API Last Updated:** 2026-10-05 01:48:43.416323

@@ -1,6 +1,13 @@
-# [Nova-Micro-1.0](https://poe.com/Nova-Micro-1.0){ .md-button .md-button--primary }
+# [nova-micro-1.0](https://poe.com/nova-micro-1.0){ .md-button .md-button--primary }
 
 ## Pricing
+
+### API Pricing (USD)
+
+| Type | Cost |
+|------|------|
+| Prompt | $4.04E-8/token |
+| Completion | $1.616E-7/token |
 
 ### Points-based Pricing
 
@@ -33,14 +40,14 @@
 
 ## Technical Details
 
-**Model ID:** `Nova-Micro-1.0`
+**Model ID:** `nova-micro-1.0`
 
 **Object Type:** model
 
 **Created:** 1733714662051
 
-**Owned By:** poe
+**Owned By:** EmpirioLabs AI
 
-**Root:** Nova-Micro-1.0
+**Root:** nova-micro-1.0
 
-**API Last Updated:** 2025-10-15 16:36:09.617591
+**API Last Updated:** 2026-10-05 01:48:43.416203

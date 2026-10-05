@@ -1,4 +1,4 @@
-# [GPT-4.1](https://poe.com/GPT-4.1){ .md-button .md-button--primary }
+# [gpt-4.1](https://poe.com/gpt-4.1){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -6,8 +6,8 @@
 
 | Type | Cost |
 |------|------|
-| Prompt | $0.0000018/token |
-| Completion | $0.0000072/token |
+| Prompt | $0.0000018182/token |
+| Completion | $0.0000072727/token |
 
 ### Points-based Pricing
 
@@ -32,23 +32,23 @@
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** text, image
 
 **Output Modalities:** text
 
-**Modality:** text->text
+**Modality:** text,image->text
 
 
 ## Technical Details
 
-**Model ID:** `GPT-4.1`
+**Model ID:** `gpt-4.1`
 
 **Object Type:** model
 
 **Created:** 1744675047923
 
-**Owned By:** poe
+**Owned By:** OpenAI
 
-**Root:** GPT-4.1
+**Root:** gpt-4.1
 
-**API Last Updated:** 2025-10-15 16:36:09.621672
+**API Last Updated:** 2026-10-05 01:48:43.416418

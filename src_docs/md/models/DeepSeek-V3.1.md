@@ -1,4 +1,4 @@
-# [DeepSeek-V3.1](https://poe.com/DeepSeek-V3.1){ .md-button .md-button--primary }
+# [deepseek-v3.1](https://poe.com/deepseek-v3.1){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -6,7 +6,8 @@
 
 | Type | Cost |
 |------|------|
-| Request | $0.0078/request |
+| Prompt | $2.121E-7/token |
+| Completion | $7.98E-7/token |
 
 ### Points-based Pricing
 
@@ -52,14 +53,14 @@ File Restrictions: Does not accept audio and video files
 
 ## Technical Details
 
-**Model ID:** `DeepSeek-V3.1`
+**Model ID:** `deepseek-v3.1`
 
 **Object Type:** model
 
-**Created:** 1755767741363
+**Created:** 1783976464218
 
-**Owned By:** poe
+**Owned By:** DeepSeek
 
-**Root:** DeepSeek-V3.1
+**Root:** deepseek-v3.1
 
-**API Last Updated:** 2025-10-15 16:36:09.618569
+**API Last Updated:** 2026-10-05 01:48:43.418491

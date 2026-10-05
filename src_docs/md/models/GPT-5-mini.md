@@ -1,4 +1,4 @@
-# [GPT-5-mini](https://poe.com/GPT-5-mini){ .md-button .md-button--primary }
+# [gpt-5-mini](https://poe.com/gpt-5-mini){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -6,8 +6,8 @@
 
 | Type | Cost |
 |------|------|
-| Prompt | $2.4E-7/token |
-| Completion | $0.0000018/token |
+| Prompt | $2.273E-7/token |
+| Completion | $0.0000018182/token |
 
 ### Points-based Pricing
 
@@ -34,23 +34,23 @@ Use `--web_search true` to enable web search and real-time information access, t
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** text, image
 
 **Output Modalities:** text
 
-**Modality:** text->text
+**Modality:** text,image->text
 
 
 ## Technical Details
 
-**Model ID:** `GPT-5-mini`
+**Model ID:** `gpt-5-mini`
 
 **Object Type:** model
 
 **Created:** 1750886324513
 
-**Owned By:** poe
+**Owned By:** OpenAI
 
-**Root:** GPT-5-mini
+**Root:** gpt-5-mini
 
-**API Last Updated:** 2025-10-15 16:36:09.616036
+**API Last Updated:** 2026-10-05 01:48:43.416150

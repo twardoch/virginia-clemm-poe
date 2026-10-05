@@ -1,4 +1,4 @@
-# [Qwen-2.5-7B-T](https://poe.com/Qwen-2.5-7B-T){ .md-button .md-button--primary }
+# [qwen-2.5-7b-t](https://poe.com/qwen-2.5-7b-t){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -7,6 +7,13 @@
 | Type | Cost |
 |------|------|
 | Request | $0.0023/request |
+
+## Bot Information
+
+**Creator:** @togetherai
+
+**Description:** Qwen 2.5 7B from Alibaba. Excels in coding, math, instruction following, natural language understanding, and has great multilangual support with more than 29 languages.
+
 
 ## Architecture
 
@@ -19,14 +26,14 @@
 
 ## Technical Details
 
-**Model ID:** `Qwen-2.5-7B-T`
+**Model ID:** `qwen-2.5-7b-t`
 
 **Object Type:** model
 
 **Created:** 1730863674687
 
-**Owned By:** poe
+**Owned By:** Together AI
 
-**Root:** Qwen-2.5-7B-T
+**Root:** qwen-2.5-7b-t
 
-**API Last Updated:** 2025-10-15 16:36:09.644848
+**API Last Updated:** 2026-10-05 01:48:43.417823

@@ -1,4 +1,4 @@
-# [DeepSeek-R1-DI](https://poe.com/DeepSeek-R1-DI){ .md-button .md-button--primary }
+# [deepseek-r1-di](https://poe.com/deepseek-r1-di){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -6,7 +6,16 @@
 
 | Type | Cost |
 |------|------|
-| Request | $0.0060/request |
+| Request | $0.0061/request |
+
+## Bot Information
+
+**Creator:** @deepinfra
+
+**Description:** Top open-source reasoning LLM rivaling OpenAI's o1 model; delivers top-tier performance across math, code, and reasoning tasks at a fraction of the cost. All data you provide this bot will not be used in training, and is sent only to DeepInfra, a US-based company. Bot does not accept attachment.
+
+Supports 64k tokens of input context and 8k tokens of output context. Quantization: FP8 (official).
+
 
 ## Architecture
 
@@ -19,14 +28,14 @@
 
 ## Technical Details
 
-**Model ID:** `DeepSeek-R1-DI`
+**Model ID:** `deepseek-r1-di`
 
 **Object Type:** model
 
 **Created:** 1740487208576
 
-**Owned By:** poe
+**Owned By:** DeepInfra
 
-**Root:** DeepSeek-R1-DI
+**Root:** deepseek-r1-di
 
-**API Last Updated:** 2025-10-15 16:36:09.629594
+**API Last Updated:** 2026-10-05 01:48:43.416811

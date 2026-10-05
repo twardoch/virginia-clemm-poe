@@ -2,31 +2,32 @@
 
 ## Pricing
 
-### API Pricing (USD)
+## Bot Information
 
-| Type | Cost |
-|------|------|
-| Request | $0.0042/request |
+**Creator:** @fireworksai
+
+**Description:** Meta's Llama 3.3 70B Instruct, hosted by Fireworks AI. Llama 3.3 70B is a new open source model that delivers leading performance and quality across text-based use cases such as synthetic data generation at a fraction of the inference cost, improving over Llama 3.1 70B.
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details
 
 **Model ID:** `Llama-3.3-70B-FW`
 
-**Object Type:** model
+**Object Type:** bot
 
-**Created:** 1733508651951
+**Created:** Unknown
 
-**Owned By:** poe
+**Owned By:** fireworksai
 
 **Root:** Llama-3.3-70B-FW
 
-**API Last Updated:** 2025-10-15 16:36:09.629170
+**API Last Updated:** Not listed in API

@@ -1,4 +1,4 @@
-# [OpenAI-GPT-OSS-120B](https://poe.com/OpenAI-GPT-OSS-120B){ .md-button .md-button--primary }
+# [openai-gpt-oss-120b](https://poe.com/openai-gpt-oss-120b){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -29,23 +29,23 @@
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** text, image
 
 **Output Modalities:** text
 
-**Modality:** text->text
+**Modality:** text,image->text
 
 
 ## Technical Details
 
-**Model ID:** `OpenAI-GPT-OSS-120B`
+**Model ID:** `openai-gpt-oss-120b`
 
 **Object Type:** model
 
 **Created:** 1754416223840
 
-**Owned By:** poe
+**Owned By:** Fireworks AI
 
-**Root:** OpenAI-GPT-OSS-120B
+**Root:** openai-gpt-oss-120b
 
-**API Last Updated:** 2025-10-15 16:36:09.624698
+**API Last Updated:** 2026-10-05 01:48:43.416515

@@ -1,4 +1,4 @@
-# [GPT-4o-Search](https://poe.com/GPT-4o-Search){ .md-button .md-button--primary }
+# [gpt-4o-search](https://poe.com/gpt-4o-search){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -6,8 +6,15 @@
 
 | Type | Cost |
 |------|------|
-| Prompt | $0.0000023/token |
-| Completion | $0.0000090/token |
+| Prompt | $0.0000022727/token |
+| Completion | $0.0000090909/token |
+
+## Bot Information
+
+**Creator:** @openai
+
+**Description:** OpenAI's fine-tuned model for searching the web for real-time information. For less expensive messages, consider https://poe.com/GPT-4o-mini-Search. Uses medium search context size, currently in preview, supports 128k tokens of context. Does not support image search.
+
 
 ## Architecture
 
@@ -20,14 +27,14 @@
 
 ## Technical Details
 
-**Model ID:** `GPT-4o-Search`
+**Model ID:** `gpt-4o-search`
 
 **Object Type:** model
 
 **Created:** 1741720622451
 
-**Owned By:** poe
+**Owned By:** OpenAI
 
-**Root:** GPT-4o-Search
+**Root:** gpt-4o-search
 
-**API Last Updated:** 2025-10-15 16:36:09.630893
+**API Last Updated:** 2026-10-05 01:48:43.416873

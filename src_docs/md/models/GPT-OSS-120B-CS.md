@@ -1,4 +1,4 @@
-# [GPT-OSS-120B-CS](https://poe.com/GPT-OSS-120B-CS){ .md-button .md-button--primary }
+# [gpt-oss-120b-cs](https://poe.com/gpt-oss-120b-cs){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -6,7 +6,8 @@
 
 | Type | Cost |
 |------|------|
-| Request | $0.0032/request |
+| Prompt | $3.535E-7/token |
+| Completion | $7.576E-7/token |
 
 ### Points-based Pricing
 
@@ -38,14 +39,14 @@
 
 ## Technical Details
 
-**Model ID:** `GPT-OSS-120B-CS`
+**Model ID:** `gpt-oss-120b-cs`
 
 **Object Type:** model
 
 **Created:** 1754490145525
 
-**Owned By:** poe
+**Owned By:** CerebrasAI
 
-**Root:** GPT-OSS-120B-CS
+**Root:** gpt-oss-120b-cs
 
-**API Last Updated:** 2025-10-15 16:36:09.624446
+**API Last Updated:** 2026-10-05 01:48:43.416499

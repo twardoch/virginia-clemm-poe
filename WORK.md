@@ -2,6 +2,13 @@
 
 # Work Progress - Virginia Clemm Poe
 
+## Issue 330 publication — 2026-10-05
+
+- Refreshed the public API list (342 bots), all 28 vendor profiles (488 bots), and all 17 requested rate tables; saved a deduplicated catalog of 501 bots.
+- Rebuilt the committed main/docs site, removed stale generated model sources, corrected the documentation workflow's renamed data path and publishing assumptions, and escaped literal description brackets to avoid false cross-reference warnings.
+- Strict MkDocs build passes. Package/source/served catalog JSON matches exactly; all 17 published model pages contain their zero-point rate. Final regression: 162 tests pass; discovery coverage remains 100%. Strict build also passes after the bracket fix.
+- Commit/tag/push uses `uvx gitnextver` as requested. Live Pages verification follows the push.
+
 ## Issue 330 — 2026-10-05
 
 - Implemented packaged vendor handles, structured profile parsing, complete-list scrolling, API/vendor union, source provenance, and safe retention on profile failures.

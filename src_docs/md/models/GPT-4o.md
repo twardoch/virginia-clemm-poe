@@ -1,4 +1,4 @@
-# [GPT-4o](https://poe.com/GPT-4o){ .md-button .md-button--primary }
+# [gpt-4o](https://poe.com/gpt-4o){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -26,23 +26,23 @@
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** text, image
 
 **Output Modalities:** text
 
-**Modality:** text->text
+**Modality:** text,image->text
 
 
 ## Technical Details
 
-**Model ID:** `GPT-4o`
+**Model ID:** `gpt-4o`
 
 **Object Type:** model
 
 **Created:** 1715641234752
 
-**Owned By:** poe
+**Owned By:** OpenAI
 
-**Root:** GPT-4o
+**Root:** gpt-4o
 
-**API Last Updated:** 2025-10-15 16:36:09.615385
+**API Last Updated:** 2026-10-05 01:48:43.416368

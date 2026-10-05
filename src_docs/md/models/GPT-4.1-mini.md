@@ -1,4 +1,4 @@
-# [GPT-4.1-mini](https://poe.com/GPT-4.1-mini){ .md-button .md-button--primary }
+# [gpt-4.1-mini](https://poe.com/gpt-4.1-mini){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -6,8 +6,8 @@
 
 | Type | Cost |
 |------|------|
-| Prompt | $3.6E-7/token |
-| Completion | $0.0000014/token |
+| Prompt | $3.636E-7/token |
+| Completion | $0.0000014545/token |
 
 ### Points-based Pricing
 
@@ -32,23 +32,23 @@
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** text, image
 
 **Output Modalities:** text
 
-**Modality:** text->text
+**Modality:** text,image->text
 
 
 ## Technical Details
 
-**Model ID:** `GPT-4.1-mini`
+**Model ID:** `gpt-4.1-mini`
 
 **Object Type:** model
 
 **Created:** 1744675260112
 
-**Owned By:** poe
+**Owned By:** OpenAI
 
-**Root:** GPT-4.1-mini
+**Root:** gpt-4.1-mini
 
-**API Last Updated:** 2025-10-15 16:36:09.621802
+**API Last Updated:** 2026-10-05 01:48:43.416435

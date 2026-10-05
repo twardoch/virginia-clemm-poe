@@ -1,4 +1,18 @@
-# [Kling-2.1-Std](https://poe.com/Kling-2.1-Std){ .md-button .md-button--primary }
+# [kling-2.1-std](https://poe.com/kling-2.1-std){ .md-button .md-button--primary }
+
+## Bot Information
+
+**Creator:** @fal
+
+**Description:** Kling 2.1 Standard is a cost-efficient endpoint for the Kling 2.1 model, delivering high-quality image-to-video generation. 
+
+Optional parameters:
+- Negative prompt. Type things to avoid in generated images
+- CFG Scale. To send a classifier-free guidance scale between 0.0 and 1.0. This is set to 0.5 as default
+- Set Duration. Select from (5 seconds or 10 seconds) to specify video length in seconds. Set to 5 seconds as default
+
+Note: This bot can only process 1 image at a time.
+
 
 ## Architecture
 
@@ -11,14 +25,14 @@
 
 ## Technical Details
 
-**Model ID:** `Kling-2.1-Std`
+**Model ID:** `kling-2.1-std`
 
 **Object Type:** model
 
 **Created:** 1748545509401
 
-**Owned By:** poe
+**Owned By:** fal
 
-**Root:** Kling-2.1-Std
+**Root:** kling-2.1-std
 
-**API Last Updated:** 2025-10-15 16:36:09.634840
+**API Last Updated:** 2026-10-05 01:48:43.417272

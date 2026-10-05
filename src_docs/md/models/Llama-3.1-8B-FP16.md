@@ -1,4 +1,4 @@
-# [Llama-3.1-8B-FP16](https://poe.com/Llama-3.1-8B-FP16){ .md-button .md-button--primary }
+# [llama-3.1-8b-fp16](https://poe.com/llama-3.1-8b-fp16){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -7,6 +7,13 @@
 | Type | Cost |
 |------|------|
 | Request | $0.0015/request |
+
+## Bot Information
+
+**Creator:** None
+
+**Description:** The smallest and fastest member of the Llama 3.1 family, offering exceptional efficiency and rapid response times with 128K context length.
+
 
 ## Architecture
 
@@ -19,14 +26,14 @@
 
 ## Technical Details
 
-**Model ID:** `Llama-3.1-8B-FP16`
+**Model ID:** `llama-3.1-8b-fp16`
 
 **Object Type:** model
 
 **Created:** 1724034517400
 
-**Owned By:** poe
+**Owned By:** Hyperbolic
 
-**Root:** Llama-3.1-8B-FP16
+**Root:** llama-3.1-8b-fp16
 
-**API Last Updated:** 2025-10-15 16:36:09.644265
+**API Last Updated:** 2026-10-05 01:48:43.417791

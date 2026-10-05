@@ -1,4 +1,13 @@
-# [Perplexity-Deep-Research](https://poe.com/Perplexity-Deep-Research){ .md-button .md-button--primary }
+# [perplexity-deep-research](https://poe.com/perplexity-deep-research){ .md-button .md-button--primary }
+
+## Bot Information
+
+**Creator:** @empiriolabsai
+
+**Description:** Perplexity Deep Research is a research-focused model designed for multi-step retrieval, synthesis, and reasoning across complex topics. It autonomously searches, reads, and evaluates sources, refining its approach as it gathers information. This enables comprehensive report generation across domains like finance, technology, health, and current events. Context Length: 128k
+
+This bot supports optional parameters for additional customization.
+
 
 ## Architecture
 
@@ -11,14 +20,14 @@
 
 ## Technical Details
 
-**Model ID:** `Perplexity-Deep-Research`
+**Model ID:** `perplexity-deep-research`
 
 **Object Type:** model
 
 **Created:** 1740542141787
 
-**Owned By:** poe
+**Owned By:** EmpirioLabs AI
 
-**Root:** Perplexity-Deep-Research
+**Root:** perplexity-deep-research
 
-**API Last Updated:** 2025-10-15 16:36:09.631202
+**API Last Updated:** 2026-10-05 01:48:43.416935

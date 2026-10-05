@@ -1,24 +1,33 @@
-# [Kling-1.5-Pro](https://poe.com/Kling-1.5-Pro){ .md-button .md-button--primary }
+# [kling-1.5-pro](https://poe.com/kling-1.5-pro){ .md-button .md-button--primary }
+
+## Bot Information
+
+**Creator:** @fal
+
+**Description:** Kling-1.5-Pro video generation bot, hosted by fal.ai. For best results, upload an image attachment. 
+
+This bot supports optional parameters for additional customization.
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** text, image
 
-**Output Modalities:** video
+**Output Modalities:** text
 
-**Modality:** text->video
+**Modality:** text,image->text
 
 
 ## Technical Details
 
-**Model ID:** `Kling-1.5-Pro`
+**Model ID:** `kling-1.5-pro`
 
 **Object Type:** model
 
 **Created:** 1733347438699
 
-**Owned By:** poe
+**Owned By:** fal
 
-**Root:** Kling-1.5-Pro
+**Root:** kling-1.5-pro
 
-**API Last Updated:** 2025-10-15 16:36:09.635889
+**API Last Updated:** 2026-10-05 01:48:43.417334

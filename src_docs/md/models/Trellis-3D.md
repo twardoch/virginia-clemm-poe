@@ -1,24 +1,31 @@
-# [Trellis-3D](https://poe.com/Trellis-3D){ .md-button .md-button--primary }
+# [trellis-3d](https://poe.com/trellis-3d){ .md-button .md-button--primary }
+
+## Bot Information
+
+**Creator:** @fal
+
+**Description:** Generate 3D models from your images using Trellis, a native 3D generative model enabling versatile and high-quality 3D asset creation. Send an image to convert it into a 3D model.
+
 
 ## Architecture
 
 **Input Modalities:** text
 
-**Output Modalities:** text
+**Output Modalities:** image
 
-**Modality:** text->text
+**Modality:** text->image
 
 
 ## Technical Details
 
-**Model ID:** `Trellis-3D`
+**Model ID:** `trellis-3d`
 
 **Object Type:** model
 
 **Created:** 1743054517902
 
-**Owned By:** poe
+**Owned By:** fal
 
-**Root:** Trellis-3D
+**Root:** trellis-3d
 
-**API Last Updated:** 2025-10-15 16:36:09.635659
+**API Last Updated:** 2026-10-05 01:48:43.417310

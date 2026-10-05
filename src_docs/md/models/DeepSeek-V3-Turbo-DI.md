@@ -1,4 +1,4 @@
-# [DeepSeek-V3-Turbo-DI](https://poe.com/DeepSeek-V3-Turbo-DI){ .md-button .md-button--primary }
+# [deepseek-v3-turbo-di](https://poe.com/deepseek-v3-turbo-di){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -7,6 +7,15 @@
 | Type | Cost |
 |------|------|
 | Request | $0.0059/request |
+
+## Bot Information
+
+**Creator:** @deepinfra
+
+**Description:** Deepseek-v3 – the new top open-source LLM. Achieves state-of-the-art performance in tasks such as coding, mathematics, and reasoning. Turbo variant is quantized to achieve higher speeds. All data you submit to this bot is governed by the Poe privacy policy and is only sent to DeepInfra, a US-based company.
+
+Supports 32k tokens of input context and 8k tokens of output context. Quantization: FP4 (turbo).
+
 
 ## Architecture
 
@@ -19,14 +28,14 @@
 
 ## Technical Details
 
-**Model ID:** `DeepSeek-V3-Turbo-DI`
+**Model ID:** `deepseek-v3-turbo-di`
 
 **Object Type:** model
 
 **Created:** 1741250579199
 
-**Owned By:** poe
+**Owned By:** DeepInfra
 
-**Root:** DeepSeek-V3-Turbo-DI
+**Root:** deepseek-v3-turbo-di
 
-**API Last Updated:** 2025-10-15 16:36:09.637509
+**API Last Updated:** 2026-10-05 01:48:43.417421

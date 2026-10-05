@@ -1,24 +1,31 @@
-# [Mochi-preview](https://poe.com/Mochi-preview){ .md-button .md-button--primary }
+# [mochi-preview](https://poe.com/mochi-preview){ .md-button .md-button--primary }
+
+## Bot Information
+
+**Creator:** @fal
+
+**Description:** Open state-of-the-art video generation model with high-fidelity motion and strong prompt adherence. Supports both text-to-video and image-to-video. Generates 5 second video.
+
 
 ## Architecture
 
 **Input Modalities:** text
 
-**Output Modalities:** video
+**Output Modalities:** text
 
-**Modality:** text->video
+**Modality:** text->text
 
 
 ## Technical Details
 
-**Model ID:** `Mochi-preview`
+**Model ID:** `mochi-preview`
 
 **Object Type:** model
 
 **Created:** 1729817676311
 
-**Owned By:** poe
+**Owned By:** fal
 
-**Root:** Mochi-preview
+**Root:** mochi-preview
 
-**API Last Updated:** 2025-10-15 16:36:09.646230
+**API Last Updated:** 2026-10-05 01:48:43.417878

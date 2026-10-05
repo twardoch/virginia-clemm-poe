@@ -1,4 +1,4 @@
-# [Qwen3-Next-80B](https://poe.com/Qwen3-Next-80B){ .md-button .md-button--primary }
+# [qwen3-next-80b](https://poe.com/qwen3-next-80b){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -6,7 +6,8 @@
 
 | Type | Cost |
 |------|------|
-| Request | $0.0024/request |
+| Prompt | $1.515E-7/token |
+| Completion | $0.0000015152/token |
 
 ### Points-based Pricing
 
@@ -41,14 +42,14 @@ This is the non-thinking version of https://poe.com/Qwen3-Next-80B-Think; suppor
 
 ## Technical Details
 
-**Model ID:** `Qwen3-Next-80B`
+**Model ID:** `qwen3-next-80b`
 
 **Object Type:** model
 
 **Created:** 1757556042820
 
-**Owned By:** poe
+**Owned By:** Novita AI
 
-**Root:** Qwen3-Next-80B
+**Root:** qwen3-next-80b
 
-**API Last Updated:** 2025-10-15 16:36:09.617117
+**API Last Updated:** 2026-10-05 01:48:43.416183

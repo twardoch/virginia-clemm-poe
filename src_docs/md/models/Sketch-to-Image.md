@@ -1,24 +1,31 @@
-# [Sketch-to-Image](https://poe.com/Sketch-to-Image){ .md-button .md-button--primary }
+# [sketch-to-image](https://poe.com/sketch-to-image){ .md-button .md-button--primary }
+
+## Bot Information
+
+**Creator:** @fal
+
+**Description:** Takes in sketches and converts them to colored images.
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** text, image
 
-**Output Modalities:** text
+**Output Modalities:** image
 
-**Modality:** text->text
+**Modality:** text,image->image
 
 
 ## Technical Details
 
-**Model ID:** `Sketch-to-Image`
+**Model ID:** `sketch-to-image`
 
 **Object Type:** model
 
 **Created:** 1736176125104
 
-**Owned By:** poe
+**Owned By:** fal
 
-**Root:** Sketch-to-Image
+**Root:** sketch-to-image
 
-**API Last Updated:** 2025-10-15 16:36:09.642174
+**API Last Updated:** 2026-10-05 01:48:43.417589

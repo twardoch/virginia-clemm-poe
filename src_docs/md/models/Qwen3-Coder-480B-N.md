@@ -1,4 +1,4 @@
-# [Qwen3-Coder-480B-N](https://poe.com/Qwen3-Coder-480B-N){ .md-button .md-button--primary }
+# [qwen3-coder-480b-n](https://poe.com/qwen3-coder-480b-n){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -6,7 +6,7 @@
 
 | Type | Cost |
 |------|------|
-| Request | $0.0072/request |
+| Request | $0.0073/request |
 
 ### Points-based Pricing
 
@@ -43,14 +43,14 @@ Context window: 256k tokens
 
 ## Technical Details
 
-**Model ID:** `Qwen3-Coder-480B-N`
+**Model ID:** `qwen3-coder-480b-n`
 
 **Object Type:** model
 
 **Created:** 1755222889121
 
-**Owned By:** poe
+**Owned By:** Novita AI
 
-**Root:** Qwen3-Coder-480B-N
+**Root:** qwen3-coder-480b-n
 
-**API Last Updated:** 2025-10-15 16:36:09.626045
+**API Last Updated:** 2026-10-05 01:48:43.416603

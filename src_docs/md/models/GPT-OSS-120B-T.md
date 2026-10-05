@@ -1,4 +1,4 @@
-# [GPT-OSS-120B-T](https://poe.com/GPT-OSS-120B-T){ .md-button .md-button--primary }
+# [gpt-oss-120b-t](https://poe.com/gpt-oss-120b-t){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -29,23 +29,23 @@
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** text, image
 
 **Output Modalities:** text
 
-**Modality:** text->text
+**Modality:** text,image->text
 
 
 ## Technical Details
 
-**Model ID:** `GPT-OSS-120B-T`
+**Model ID:** `gpt-oss-120b-t`
 
 **Object Type:** model
 
 **Created:** 1754415494029
 
-**Owned By:** poe
+**Owned By:** Together AI
 
-**Root:** GPT-OSS-120B-T
+**Root:** gpt-oss-120b-t
 
-**API Last Updated:** 2025-10-15 16:36:09.617741
+**API Last Updated:** 2026-10-05 01:48:43.416301

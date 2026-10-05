@@ -1,24 +1,31 @@
-# [Hailuo-02-Pro](https://poe.com/Hailuo-02-Pro){ .md-button .md-button--primary }
+# [hailuo-02-pro](https://poe.com/hailuo-02-pro){ .md-button .md-button--primary }
+
+## Bot Information
+
+**Creator:** @fal
+
+**Description:** MiniMax Hailuo-02 Pro Video Generation model: Advanced image-to-video generation model with 1080p resolution. Send a prompt with an image for image-to-video, and just a prompt for text-to-video generation. Generates 5 second video.
+
 
 ## Architecture
 
 **Input Modalities:** text
 
-**Output Modalities:** text
+**Output Modalities:** video
 
-**Modality:** text->text
+**Modality:** text->video
 
 
 ## Technical Details
 
-**Model ID:** `Hailuo-02-Pro`
+**Model ID:** `hailuo-02-pro`
 
 **Object Type:** model
 
 **Created:** 1753281868828
 
-**Owned By:** poe
+**Owned By:** fal
 
-**Root:** Hailuo-02-Pro
+**Root:** hailuo-02-pro
 
-**API Last Updated:** 2025-10-15 16:36:09.633939
+**API Last Updated:** 2026-10-05 01:48:43.417170

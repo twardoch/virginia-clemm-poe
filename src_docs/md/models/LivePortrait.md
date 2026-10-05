@@ -1,4 +1,11 @@
-# [LivePortrait](https://poe.com/LivePortrait){ .md-button .md-button--primary }
+# [liveportrait](https://poe.com/liveportrait){ .md-button .md-button--primary }
+
+## Bot Information
+
+**Creator:** @fal
+
+**Description:** Animates given portraits with the motion's in the video. Powered by fal.ai
+
 
 ## Architecture
 
@@ -11,14 +18,14 @@
 
 ## Technical Details
 
-**Model ID:** `LivePortrait`
+**Model ID:** `liveportrait`
 
 **Object Type:** model
 
 **Created:** 1720556185003
 
-**Owned By:** poe
+**Owned By:** fal
 
-**Root:** LivePortrait
+**Root:** liveportrait
 
-**API Last Updated:** 2025-10-15 16:36:09.637934
+**API Last Updated:** 2026-10-05 01:48:43.417460

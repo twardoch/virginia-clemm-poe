@@ -1,24 +1,34 @@
-# [FLUX-Krea](https://poe.com/FLUX-Krea){ .md-button .md-button--primary }
+# [flux-krea](https://poe.com/flux-krea){ .md-button .md-button--primary }
+
+## Bot Information
+
+**Creator:** @fal
+
+**Description:** FLUX-Krea is a version of FLUX Dev tuned for superior aesthetics. 
+
+Optional parameters:
+Select an aspect ratio. Valid aspect ratios are 16:9, 4:3, 1:1, 3:4, 9:16.  Send an image to have this model reimagine/regenerate it via FLUX Krea Redux.
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** text, image
 
-**Output Modalities:** text
+**Output Modalities:** image
 
-**Modality:** text->text
+**Modality:** text,image->image
 
 
 ## Technical Details
 
-**Model ID:** `FLUX-Krea`
+**Model ID:** `flux-krea`
 
 **Object Type:** model
 
 **Created:** 1753991501514
 
-**Owned By:** poe
+**Owned By:** fal
 
-**Root:** FLUX-Krea
+**Root:** flux-krea
 
-**API Last Updated:** 2025-10-15 16:36:09.632786
+**API Last Updated:** 2026-10-05 01:48:43.417082

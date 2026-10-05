@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Issue 330
+- Refreshed and rebuilt the published catalog: 501 unique bots, all 28 vendor profiles, and updated zero-point website rates for the 17 requested bots. Strict documentation build passes.
+- Corrected stale API-rate retention and escaped bot-description brackets in generated Markdown.
 - Added a packaged list of 28 curated vendor profiles and complete Created-list discovery during normal updates.
 - Added vendor provenance and explicit unknown creation metadata for website-only bots, with API data precedence and safe retention after profile failures.
 - Wait for loaded Rates tables and use stable selectors when Poe changes action-bar classes.

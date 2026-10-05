@@ -1,4 +1,17 @@
-# [Clarity-Upscaler](https://poe.com/Clarity-Upscaler){ .md-button .md-button--primary }
+# [clarity-upscaler](https://poe.com/clarity-upscaler){ .md-button .md-button--primary }
+
+## Bot Information
+
+**Creator:** @fal
+
+**Description:** Upscales images with high fidelity to the original image. 
+
+Optional parameters:
+Upscale_factor (value is a number between 1 and 4) to set the upscaled images' size (2 means the output image is 2x in size, etc.).  
+Creativity and Clarity can be set between 0 and 1 to alter the faithfulness to the original image and the sharpness, respectively.
+
+Note: This bot supports .jpg, .png, bmp, gif and tiff images.
+
 
 ## Architecture
 
@@ -11,14 +24,14 @@
 
 ## Technical Details
 
-**Model ID:** `Clarity-Upscaler`
+**Model ID:** `clarity-upscaler`
 
 **Object Type:** model
 
 **Created:** 1736160594594
 
-**Owned By:** poe
+**Owned By:** fal
 
-**Root:** Clarity-Upscaler
+**Root:** clarity-upscaler
 
-**API Last Updated:** 2025-10-15 16:36:09.634202
+**API Last Updated:** 2026-10-05 01:48:43.417221

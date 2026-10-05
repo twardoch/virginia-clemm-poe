@@ -1,4 +1,4 @@
-# [DeepSeek-V3](https://poe.com/DeepSeek-V3){ .md-button .md-button--primary }
+# [deepseek-v3](https://poe.com/deepseek-v3){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -6,7 +6,8 @@
 
 | Type | Cost |
 |------|------|
-| Request | $0.012/request |
+| Prompt | $2.727E-7/token |
+| Completion | $0.0000011313/token |
 
 ### Points-based Pricing
 
@@ -38,14 +39,14 @@
 
 ## Technical Details
 
-**Model ID:** `DeepSeek-V3`
+**Model ID:** `deepseek-v3`
 
 **Object Type:** model
 
-**Created:** 1735963694067
+**Created:** 1786647234827
 
-**Owned By:** poe
+**Owned By:** DeepSeek
 
-**Root:** DeepSeek-V3
+**Root:** deepseek-v3
 
-**API Last Updated:** 2025-10-15 16:36:09.621290
+**API Last Updated:** 2026-10-05 01:48:43.418840

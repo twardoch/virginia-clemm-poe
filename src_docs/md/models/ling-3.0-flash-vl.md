@@ -1,0 +1,41 @@
+# [ling-3.0-flash-vl](https://poe.com/ling-3.0-flash-vl){ .md-button .md-button--primary }
+
+## Pricing
+
+### API Pricing (USD)
+
+| Type | Cost |
+|------|------|
+
+## Bot Information
+
+**Creator:** @novitaai
+
+**Description:** Ling-3.0-flash-VL builds on Ling-3.0-flash, further strengthening its language capabilities while adding native visual perception and advanced visual agent capabilities. 
+
+File Support: Text, Markdown, Image, Video and PDF files
+Context window: 262k tokens
+
+
+## Architecture
+
+**Input Modalities:** text, image, video
+
+**Output Modalities:** text
+
+**Modality:** text,image,video->text
+
+
+## Technical Details
+
+**Model ID:** `ling-3.0-flash-vl`
+
+**Object Type:** model
+
+**Created:** 1788922501504
+
+**Owned By:** Novita AI
+
+**Root:** ling-3.0-flash-vl
+
+**API Last Updated:** 2026-10-05 01:48:43.419155

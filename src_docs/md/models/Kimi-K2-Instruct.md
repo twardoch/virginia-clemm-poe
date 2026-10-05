@@ -2,12 +2,6 @@
 
 ## Pricing
 
-### API Pricing (USD)
-
-| Type | Cost |
-|------|------|
-| Request | $0.0060/request |
-
 ### Points-based Pricing
 
 | Type | Cost |
@@ -29,23 +23,23 @@
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details
 
 **Model ID:** `Kimi-K2-Instruct`
 
-**Object Type:** model
+**Object Type:** bot
 
-**Created:** 1752519798608
+**Created:** Unknown
 
-**Owned By:** poe
+**Owned By:** fireworksai
 
 **Root:** Kimi-K2-Instruct
 
-**API Last Updated:** 2025-10-15 16:36:09.618448
+**API Last Updated:** Not listed in API

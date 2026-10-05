@@ -1,4 +1,11 @@
-# [Hailuo-AI](https://poe.com/Hailuo-AI){ .md-button .md-button--primary }
+# [hailuo-ai](https://poe.com/hailuo-ai){ .md-button .md-button--primary }
+
+## Bot Information
+
+**Creator:** @fal
+
+**Description:** Best-in-class text and image to video model by MiniMax.
+
 
 ## Architecture
 
@@ -11,14 +18,14 @@
 
 ## Technical Details
 
-**Model ID:** `Hailuo-AI`
+**Model ID:** `hailuo-ai`
 
 **Object Type:** model
 
 **Created:** 1729194728486
 
-**Owned By:** poe
+**Owned By:** fal
 
-**Root:** Hailuo-AI
+**Root:** hailuo-ai
 
-**API Last Updated:** 2025-10-15 16:36:09.635309
+**API Last Updated:** 2026-10-05 01:48:43.417286

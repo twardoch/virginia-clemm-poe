@@ -1,4 +1,4 @@
-# [Ideogram-v2a](https://poe.com/Ideogram-v2a){ .md-button .md-button--primary }
+# [ideogram-v2a](https://poe.com/ideogram-v2a){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -7,6 +7,18 @@
 | Type | Cost |
 |------|------|
 | Request | $0.039/request |
+
+## Bot Information
+
+**Creator:** @ideogramai
+
+**Description:** Fast, affordable text-to-image model, optimized for graphic design and photography. For faster and more cost-effective generations, use https://poe.com/Ideogram-v2A-Turbo.
+Note: Supported file type: JPEG, WebP and PNG.
+
+Optional parameters:
+Aspect to set the aspect ratio. Valid aspect ratios are 10:16, 16:10, 9:16, 16:9, 3:2, 2:3, 4:3, 3:4, & 1:1.
+Style to specify a style (one of `GENERAL`, `REALISTIC`, `DESIGN`, `3D RENDER` and `ANIME` default: `GENERAL`.)
+
 
 ## Architecture
 
@@ -19,14 +31,14 @@
 
 ## Technical Details
 
-**Model ID:** `Ideogram-v2a`
+**Model ID:** `ideogram-v2a`
 
 **Object Type:** model
 
 **Created:** 1740678539688
 
-**Owned By:** poe
+**Owned By:** IdeogramAI
 
-**Root:** Ideogram-v2a
+**Root:** ideogram-v2a
 
-**API Last Updated:** 2025-10-15 16:36:09.635615
+**API Last Updated:** 2026-10-05 01:48:43.417302

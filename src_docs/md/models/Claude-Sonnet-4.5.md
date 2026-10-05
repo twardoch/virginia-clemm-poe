@@ -1,4 +1,4 @@
-# [Claude-Sonnet-4.5](https://poe.com/Claude-Sonnet-4.5){ .md-button .md-button--primary }
+# [claude-sonnet-4.5](https://poe.com/claude-sonnet-4.5){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -6,8 +6,8 @@
 
 | Type | Cost |
 |------|------|
-| Prompt | $0.0000026/token |
-| Completion | $0.000013/token |
+| Prompt | $0.0000025758/token |
+| Completion | $0.0000128788/token |
 
 ### Points-based Pricing
 
@@ -35,23 +35,23 @@ Use `--web_search true` to enable web search and real-time information update. T
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** text, image
 
 **Output Modalities:** text
 
-**Modality:** text->text
+**Modality:** text,image->text
 
 
 ## Technical Details
 
-**Model ID:** `Claude-Sonnet-4.5`
+**Model ID:** `claude-sonnet-4.5`
 
 **Object Type:** model
 
 **Created:** 1758868894776
 
-**Owned By:** poe
+**Owned By:** Anthropic
 
-**Root:** Claude-Sonnet-4.5
+**Root:** claude-sonnet-4.5
 
-**API Last Updated:** 2025-10-15 16:36:09.615045
+**API Last Updated:** 2026-10-05 01:48:43.415841

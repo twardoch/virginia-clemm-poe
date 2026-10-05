@@ -2,12 +2,6 @@
 
 ## Pricing
 
-### API Pricing (USD)
-
-| Type | Cost |
-|------|------|
-| Request | $0.0039/request |
-
 ### Points-based Pricing
 
 | Type | Cost |
@@ -38,23 +32,23 @@ Context window: 160k tokens
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details
 
 **Model ID:** `DeepSeek-V3.2-Exp`
 
-**Object Type:** model
+**Object Type:** bot
 
-**Created:** 1759164328100
+**Created:** Unknown
 
-**Owned By:** poe
+**Owned By:** novitaai
 
 **Root:** DeepSeek-V3.2-Exp
 
-**API Last Updated:** 2025-10-15 16:36:09.617381
+**API Last Updated:** Not listed in API

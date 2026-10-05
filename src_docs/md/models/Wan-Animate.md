@@ -1,24 +1,32 @@
-# [Wan-Animate](https://poe.com/Wan-Animate){ .md-button .md-button--primary }
+# [wan-animate](https://poe.com/wan-animate){ .md-button .md-button--primary }
+
+## Bot Information
+
+**Creator:** @fal
+
+**Description:** Wan Animate takes in an image and a video to generate another video where a character in the image replaces a character in the video(default), or the video character's motion is used to animate the character in the image. Pass --animate for the second functionality.
+The bot supports only four file types: JPEG, PNG, WebP, and MP4
+
 
 ## Architecture
 
 **Input Modalities:** text
 
-**Output Modalities:** text
+**Output Modalities:** video
 
-**Modality:** text->text
+**Modality:** text->video
 
 
 ## Technical Details
 
-**Model ID:** `Wan-Animate`
+**Model ID:** `wan-animate`
 
 **Object Type:** model
 
 **Created:** 1758552514026
 
-**Owned By:** poe
+**Owned By:** fal
 
-**Root:** Wan-Animate
+**Root:** wan-animate
 
-**API Last Updated:** 2025-10-15 16:36:09.632945
+**API Last Updated:** 2026-10-05 01:48:43.417086

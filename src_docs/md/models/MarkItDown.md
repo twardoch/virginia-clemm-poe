@@ -1,4 +1,11 @@
-# [MarkItDown](https://poe.com/MarkItDown){ .md-button .md-button--primary }
+# [markitdown](https://poe.com/markitdown){ .md-button .md-button--primary }
+
+## Bot Information
+
+**Creator:** @opentools
+
+**Description:** Convert anything to Markdown: URLs, PDFs, Word, Excel, images (EXIF metadata), audio (EXIF metadata and transcription), and more. This bot wraps Microsoft’s MarkItDown MCP server (https://github.com/microsoft/markitdown).
+
 
 ## Architecture
 
@@ -11,14 +18,14 @@
 
 ## Technical Details
 
-**Model ID:** `MarkItDown`
+**Model ID:** `markitdown`
 
 **Object Type:** model
 
 **Created:** 1746488364378
 
-**Owned By:** poe
+**Owned By:** OpenTools
 
-**Root:** MarkItDown
+**Root:** markitdown
 
-**API Last Updated:** 2025-10-15 16:36:09.645652
+**API Last Updated:** 2026-10-05 01:48:43.417856

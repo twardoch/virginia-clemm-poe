@@ -1,4 +1,4 @@
-# [Solar-Pro-2](https://poe.com/Solar-Pro-2){ .md-button .md-button--primary }
+# [solar-pro-2](https://poe.com/solar-pro-2){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -8,25 +8,32 @@
 |------|------|
 | Request | $0.0021/request |
 
+## Bot Information
+
+**Creator:** None
+
+**Description:** Solar Pro 2 is Upstage's latest frontier-scale LLM. With just 31B parameters, it delivers top-tier performance through world-class multilingual support, advanced reasoning, and real-world tool use. Especially in Korean, it outperforms much larger models across critical benchmarks. Built for the next generation of practical LLMs, Solar Pro 2 proves that smaller models can still lead. Supports a context length of 64k tokens.
+
+
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** text, image
 
 **Output Modalities:** text
 
-**Modality:** text->text
+**Modality:** text,image->text
 
 
 ## Technical Details
 
-**Model ID:** `Solar-Pro-2`
+**Model ID:** `solar-pro-2`
 
 **Object Type:** model
 
 **Created:** 1694610718864
 
-**Owned By:** poe
+**Owned By:** Upstage
 
-**Root:** Solar-Pro-2
+**Root:** solar-pro-2
 
-**API Last Updated:** 2025-10-15 16:36:09.643523
+**API Last Updated:** 2026-10-05 01:48:43.417737

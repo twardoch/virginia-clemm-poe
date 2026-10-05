@@ -1,4 +1,11 @@
-# [Reka-Research](https://poe.com/Reka-Research){ .md-button .md-button--primary }
+# [reka-research](https://poe.com/reka-research){ .md-button .md-button--primary }
+
+## Bot Information
+
+**Creator:** @reka
+
+**Description:** Reka Research is a state-of-the-art agentic AI that answers complex questions by browsing the web. It excels at synthesizing information from multiple sources, performing work that usually takes hours in minutes
+
 
 ## Architecture
 
@@ -11,14 +18,14 @@
 
 ## Technical Details
 
-**Model ID:** `Reka-Research`
+**Model ID:** `reka-research`
 
 **Object Type:** model
 
 **Created:** 1750919363394
 
-**Owned By:** poe
+**Owned By:** Reka AI
 
-**Root:** Reka-Research
+**Root:** reka-research
 
-**API Last Updated:** 2025-10-15 16:36:09.631082
+**API Last Updated:** 2026-10-05 01:48:43.416885

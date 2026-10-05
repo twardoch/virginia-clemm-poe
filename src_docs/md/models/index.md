@@ -8,635 +8,779 @@
 
 Browse all available Poe models:
 
-### [Amazon-Nova-Canvas](Amazon-Nova-Canvas.md)
+### [Analyse-PDF](Analyse-PDF.md)
 
-### [Amazon-Nova-Reel-1.1](Amazon-Nova-Reel-1.1.md)
+### [AnimagineXL](AnimagineXL.md)
 
-### [Aya-Expanse-32B](Aya-Expanse-32B.md)
+### [App-Generator](App-Generator.md)
 
-### [Aya-Vision](Aya-Vision.md)
+### [App-Generator-Pro](App-Generator-Pro.md)
 
-### [Bagoodex-Web-Search](Bagoodex-Web-Search.md)
+### [AuraSR](AuraSR.md)
 
-### [Bria-Eraser](Bria-Eraser.md)
+### [Bria-GenFill](Bria-GenFill.md)
 
-### [Cartesia-Ink-Whisper](Cartesia-Ink-Whisper.md)
+### [Bria-RMBG](Bria-RMBG.md)
 
-### [Cartesia-Sonic-2.0](Cartesia-Sonic-2.0.md)
+### [CartesiaTest2](CartesiaTest2.md)
 
-### [ChatGPT-4o-Latest](ChatGPT-4o-Latest.md)
+### [CassetteAI-Musicgen](CassetteAI-Musicgen.md)
 
-### [Clarity-Upscaler](Clarity-Upscaler.md)
+### [CassetteAI-SFXGen](CassetteAI-SFXGen.md)
 
-### [Claude-Haiku-3](Claude-Haiku-3.md)
+### [CassetteAI-VidSFXGen](CassetteAI-VidSFXGen.md)
 
-### [Claude-Haiku-3.5](Claude-Haiku-3.5.md)
+### [Claude-Fable-5](Claude-Fable-5.md)
 
-### [Claude-Haiku-3.5-Search](Claude-Haiku-3.5-Search.md)
+### [Claude-Fable-5.1](Claude-Fable-5.1.md)
 
-### [Claude-Opus-3](Claude-Opus-3.md)
+### [Claude-Opus-5](Claude-Opus-5.md)
 
-### [Claude-Opus-4](Claude-Opus-4.md)
+### [Claude-Opus-5.5](Claude-Opus-5.5.md)
 
-### [Claude-Opus-4-Reasoning](Claude-Opus-4-Reasoning.md)
+### [Claude-Sonnet-5](Claude-Sonnet-5.md)
 
-### [Claude-Opus-4-Search](Claude-Opus-4-Search.md)
+### [CreativeQR](CreativeQR.md)
 
-### [Claude-Opus-4.1](Claude-Opus-4.1.md)
+### [DS-V4-Flash-0731](DS-V4-Flash-0731.md)
 
-### [Claude-Sonnet-3.5](Claude-Sonnet-3.5.md)
+### [Deep-Research-Engine](Deep-Research-Engine.md)
 
-### [Claude-Sonnet-3.5-June](Claude-Sonnet-3.5-June.md)
+### [Deep-Search-OSL](Deep-Search-OSL.md)
 
-### [Claude-Sonnet-3.5-Search](Claude-Sonnet-3.5-Search.md)
+### [Deep-Search-Pro](Deep-Search-Pro.md)
 
-### [Claude-Sonnet-3.7](Claude-Sonnet-3.7.md)
-
-### [Claude-Sonnet-3.7-Reasoning](Claude-Sonnet-3.7-Reasoning.md)
-
-### [Claude-Sonnet-3.7-Search](Claude-Sonnet-3.7-Search.md)
-
-### [Claude-Sonnet-4](Claude-Sonnet-4.md)
-
-### [Claude-Sonnet-4-Reasoning](Claude-Sonnet-4-Reasoning.md)
-
-### [Claude-Sonnet-4-Search](Claude-Sonnet-4-Search.md)
-
-### [Claude-Sonnet-4.5](Claude-Sonnet-4.5.md)
-
-### [Command-R](Command-R.md)
-
-### [Command-R-Plus](Command-R-Plus.md)
-
-### [DALL-E-3](DALL-E-3.md)
-
-### [DeepSeek-Prover-V2](DeepSeek-Prover-V2.md)
-
-### [DeepSeek-R1](DeepSeek-R1.md)
-
-### [DeepSeek-R1-DI](DeepSeek-R1-DI.md)
-
-### [DeepSeek-R1-FW](DeepSeek-R1-FW.md)
-
-### [DeepSeek-R1-N](DeepSeek-R1-N.md)
-
-### [DeepSeek-R1-Turbo-DI](DeepSeek-R1-Turbo-DI.md)
-
-### [DeepSeek-V3](DeepSeek-V3.md)
-
-### [DeepSeek-V3-DI](DeepSeek-V3-DI.md)
-
-### [DeepSeek-V3-Turbo-DI](DeepSeek-V3-Turbo-DI.md)
-
-### [DeepSeek-V3.1](DeepSeek-V3.1.md)
-
-### [DeepSeek-V3.1-N](DeepSeek-V3.1-N.md)
-
-### [DeepSeek-V3.1-TM](DeepSeek-V3.1-TM.md)
-
-### [DeepSeek-V3.1-Vers](DeepSeek-V3.1-Vers.md)
-
-### [DeepSeek-V3.2-Chat](DeepSeek-V3.2-Chat.md)
+### [DeepSeek-V3.1-fw](DeepSeek-V3.1-fw.md)
 
 ### [DeepSeek-V3.2-Exp](DeepSeek-V3.2-Exp.md)
 
-### [Deepgram-Nova-3](Deepgram-Nova-3.md)
+### [DeepSeek-V3.2-OSL](DeepSeek-V3.2-OSL.md)
 
-### [Deepseek-V3-FW](Deepseek-V3-FW.md)
+### [DeepSeek-V4-Flash-EL](DeepSeek-V4-Flash-EL.md)
 
-### [Dream-Machine](Dream-Machine.md)
+### [DeepSeek-V4-OSL](DeepSeek-V4-OSL.md)
 
-### [Dreamina-3.1](Dreamina-3.1.md)
+### [DeepSeek-V4-Pro-813](DeepSeek-V4-Pro-813.md)
 
-### [ElevenLabs-Music](ElevenLabs-Music.md)
+### [DeepSeek-V4-Pro-EL](DeepSeek-V4-Pro-EL.md)
 
-### [ElevenLabs-v2.5-Turbo](ElevenLabs-v2.5-Turbo.md)
+### [DeepSeek-V4-Pro-N](DeepSeek-V4-Pro-N.md)
 
-### [ElevenLabs-v3](ElevenLabs-v3.md)
+### [DeepSeek-V4-Pro-OSL](DeepSeek-V4-Pro-OSL.md)
 
-### [FLUX-Fill](FLUX-Fill.md)
+### [DeepSeek-V4.1-FlashT](DeepSeek-V4.1-FlashT.md)
 
-### [FLUX-Inpaint](FLUX-Inpaint.md)
+### [Dia-TTS](Dia-TTS.md)
 
-### [FLUX-Krea](FLUX-Krea.md)
+### [EssentialAI-Rnj-1-T](EssentialAI-Rnj-1-T.md)
 
-### [FLUX-dev](FLUX-dev.md)
+### [FASHN-Try-on](FASHN-Try-on.md)
 
-### [FLUX-dev-DI](FLUX-dev-DI.md)
+### [FLUX-anime](FLUX-anime.md)
 
-### [FLUX-dev-finetuner](FLUX-dev-finetuner.md)
+### [FLUX-pixel-art](FLUX-pixel-art.md)
 
-### [FLUX-pro](FLUX-pro.md)
-
-### [FLUX-pro-1-T](FLUX-pro-1-T.md)
-
-### [FLUX-pro-1.1](FLUX-pro-1.1.md)
-
-### [FLUX-pro-1.1-T](FLUX-pro-1.1-T.md)
-
-### [FLUX-pro-1.1-ultra](FLUX-pro-1.1-ultra.md)
-
-### [FLUX-schnell](FLUX-schnell.md)
-
-### [FLUX-schnell-DI](FLUX-schnell-DI.md)
+### [Face-Retoucher](Face-Retoucher.md)
 
 ### [Flux-1-Dev-FW](Flux-1-Dev-FW.md)
 
-### [Flux-1-Schnell-FW](Flux-1-Schnell-FW.md)
+### [Flux-CN-Inpainting](Flux-CN-Inpainting.md)
 
-### [Flux-Kontext-Max](Flux-Kontext-Max.md)
+### [Flux-Kontext-Dev](Flux-Kontext-Dev.md)
 
-### [Flux-Kontext-Pro](Flux-Kontext-Pro.md)
+### [Flux-Kontext-Multi](Flux-Kontext-Multi.md)
 
-### [Flux-Schnell-T](Flux-Schnell-T.md)
+### [Flux-Outpaint](Flux-Outpaint.md)
 
-### [GLM-4.5](GLM-4.5.md)
+### [Flux-Pro-Inpaint](Flux-Pro-Inpaint.md)
 
-### [GLM-4.5-Air](GLM-4.5-Air.md)
+### [GLM-5-FWAI](GLM-5-FWAI.md)
 
-### [GLM-4.5-Air-T](GLM-4.5-Air-T.md)
+### [GLM-5.1-OSL](GLM-5.1-OSL.md)
 
-### [GLM-4.5-FW](GLM-4.5-FW.md)
+### [GLM-5.2-EL](GLM-5.2-EL.md)
 
-### [GLM-4.5-Vers](GLM-4.5-Vers.md)
+### [GLM-5.2-T](GLM-5.2-T.md)
 
-### [GLM-4.6](GLM-4.6.md)
+### [GLM-5.3-Flash-T](GLM-5.3-Flash-T.md)
 
-### [GPT-3.5-Turbo](GPT-3.5-Turbo.md)
+### [GLM-TTS](GLM-TTS.md)
 
-### [GPT-3.5-Turbo-Instruct](GPT-3.5-Turbo-Instruct.md)
+### [GPT-4o-Audio-Preview](GPT-4o-Audio-Preview.md)
 
-### [GPT-3.5-Turbo-Raw](GPT-3.5-Turbo-Raw.md)
+### [GPT-4o-Mini-Audio](GPT-4o-Mini-Audio.md)
 
-### [GPT-4-Classic](GPT-4-Classic.md)
+### [GPT-5.5](GPT-5.5.md)
 
-### [GPT-4-Classic-0314](GPT-4-Classic-0314.md)
+### [GPT-5.5-Pro](GPT-5.5-Pro.md)
 
-### [GPT-4-Turbo](GPT-4-Turbo.md)
+### [GPT-5.6-Luna](GPT-5.6-Luna.md)
 
-### [GPT-4.1](GPT-4.1.md)
+### [GPT-5.6-Sol](GPT-5.6-Sol.md)
 
-### [GPT-4.1-mini](GPT-4.1-mini.md)
+### [GPT-5.6-Terra](GPT-5.6-Terra.md)
 
-### [GPT-4.1-nano](GPT-4.1-nano.md)
+### [GPT-6-Astra](GPT-6-Astra.md)
 
-### [GPT-4o](GPT-4o.md)
+### [GPT-6-Luna](GPT-6-Luna.md)
 
-### [GPT-4o-Aug](GPT-4o-Aug.md)
+### [GPT-6-Sol](GPT-6-Sol.md)
 
-### [GPT-4o-Search](GPT-4o-Search.md)
+### [GPT-Image-2.5-Flare](GPT-Image-2.5-Flare.md)
 
-### [GPT-4o-mini](GPT-4o-mini.md)
+### [GPT-Image-2.5-Sunburst](GPT-Image-2.5-Sunburst.md)
 
-### [GPT-4o-mini-Search](GPT-4o-mini-Search.md)
+### [GPT-OSS-120B-OSL](GPT-OSS-120B-OSL.md)
 
-### [GPT-5](GPT-5.md)
+### [Gemma-4-26B](Gemma-4-26B.md)
 
-### [GPT-5-Chat](GPT-5-Chat.md)
+### [Gemma-4-31B-T](Gemma-4-31B-T.md)
 
-### [GPT-5-Codex](GPT-5-Codex.md)
-
-### [GPT-5-Pro](GPT-5-Pro.md)
-
-### [GPT-5-mini](GPT-5-mini.md)
-
-### [GPT-5-nano](GPT-5-nano.md)
-
-### [GPT-Image-1](GPT-Image-1.md)
-
-### [GPT-Image-1-Mini](GPT-Image-1-Mini.md)
-
-### [GPT-OSS-120B](GPT-OSS-120B.md)
-
-### [GPT-OSS-120B-CS](GPT-OSS-120B-CS.md)
-
-### [GPT-OSS-120B-T](GPT-OSS-120B-T.md)
-
-### [GPT-OSS-120B-Vers](GPT-OSS-120B-Vers.md)
-
-### [GPT-OSS-20B](GPT-OSS-20B.md)
-
-### [GPT-OSS-20B-T](GPT-OSS-20B-T.md)
-
-### [GPT-Researcher](GPT-Researcher.md)
-
-### [Gemini-2.0-Flash](Gemini-2.0-Flash.md)
-
-### [Gemini-2.0-Flash-Lite](Gemini-2.0-Flash-Lite.md)
-
-### [Gemini-2.0-Flash-Preview](Gemini-2.0-Flash-Preview.md)
-
-### [Gemini-2.5-Flash](Gemini-2.5-Flash.md)
-
-### [Gemini-2.5-Flash-Lite](Gemini-2.5-Flash-Lite.md)
-
-### [Gemini-2.5-Flash-TTS](Gemini-2.5-Flash-TTS.md)
-
-### [Gemini-2.5-Pro](Gemini-2.5-Pro.md)
-
-### [Gemini-2.5-Pro-TTS](Gemini-2.5-Pro-TTS.md)
-
-### [Gemma-3-27B](Gemma-3-27B.md)
-
-### [Grok-2](Grok-2.md)
-
-### [Grok-3](Grok-3.md)
-
-### [Grok-3-Mini](Grok-3-Mini.md)
-
-### [Grok-4](Grok-4.md)
-
-### [Grok-4-Fast-Non-Reasoning](Grok-4-Fast-Non-Reasoning.md)
-
-### [Grok-4-Fast-Reasoning](Grok-4-Fast-Reasoning.md)
-
-### [Grok-Code-Fast-1](Grok-Code-Fast-1.md)
-
-### [Hailuo-02](Hailuo-02.md)
-
-### [Hailuo-02-Pro](Hailuo-02-Pro.md)
-
-### [Hailuo-02-Standard](Hailuo-02-Standard.md)
-
-### [Hailuo-AI](Hailuo-AI.md)
-
-### [Hailuo-Director-01](Hailuo-Director-01.md)
+### [GitHub](GitHub.md)
 
 ### [Hailuo-Live](Hailuo-Live.md)
 
-### [Hailuo-Music-v1.5](Hailuo-Music-v1.5.md)
-
 ### [Hailuo-Speech-02](Hailuo-Speech-02.md)
 
-### [Hermes-3-70B](Hermes-3-70B.md)
-
-### [Hidream-I1-full](Hidream-I1-full.md)
+### [Hidream-E1-Full](Hidream-E1-Full.md)
 
 ### [Hunyuan-Image-2.1](Hunyuan-Image-2.1.md)
 
-### [Ideogram](Ideogram.md)
+### [HunyuanVideo](HunyuanVideo.md)
 
-### [Ideogram-v2](Ideogram-v2.md)
+### [Image-Photo](Image-Photo.md)
 
-### [Ideogram-v2a](Ideogram-v2a.md)
+### [Janus-Pro-DeepSeek](Janus-Pro-DeepSeek.md)
 
-### [Ideogram-v2a-Turbo](Ideogram-v2a-Turbo.md)
-
-### [Ideogram-v3](Ideogram-v3.md)
-
-### [Imagen-3](Imagen-3.md)
-
-### [Imagen-3-Fast](Imagen-3-Fast.md)
-
-### [Imagen-4](Imagen-4.md)
-
-### [Imagen-4-Fast](Imagen-4-Fast.md)
-
-### [Imagen-4-Ultra](Imagen-4-Ultra.md)
-
-### [Inception-Mercury](Inception-Mercury.md)
-
-### [Inception-Mercury-Coder](Inception-Mercury-Coder.md)
-
-### [KAT-Dev](KAT-Dev.md)
-
-### [Kimi-K2](Kimi-K2.md)
-
-### [Kimi-K2-0905-Chat](Kimi-K2-0905-Chat.md)
-
-### [Kimi-K2-0905-T](Kimi-K2-0905-T.md)
-
-### [Kimi-K2-0905-Vers](Kimi-K2-0905-Vers.md)
+### [JapaneseSDXL](JapaneseSDXL.md)
 
 ### [Kimi-K2-Instruct](Kimi-K2-Instruct.md)
 
-### [Kimi-K2-T](Kimi-K2-T.md)
+### [Kimi-K2-Instruct-N](Kimi-K2-Instruct-N.md)
 
-### [Kling-1.5-Pro](Kling-1.5-Pro.md)
+### [Kimi-K2-Thinking-FW](Kimi-K2-Thinking-FW.md)
 
-### [Kling-1.6-Pro](Kling-1.6-Pro.md)
+### [Kimi-K2.6-T](Kimi-K2.6-T.md)
 
-### [Kling-2.0-Master](Kling-2.0-Master.md)
+### [Kimi-K2.7-Code-EL](Kimi-K2.7-Code-EL.md)
 
-### [Kling-2.1-Master](Kling-2.1-Master.md)
+### [Kimi-K2.7-Code-T](Kimi-K2.7-Code-T.md)
 
-### [Kling-2.1-Pro](Kling-2.1-Pro.md)
+### [Kimi-K3-Tog](Kimi-K3-Tog.md)
 
-### [Kling-2.1-Std](Kling-2.1-Std.md)
+### [Kling-Avatar-Std](Kling-Avatar-Std.md)
 
-### [Kling-2.5-Turbo-Pro](Kling-2.5-Turbo-Pro.md)
+### [Kling-Lipsync](Kling-Lipsync.md)
 
 ### [Kling-Pro-Effects](Kling-Pro-Effects.md)
 
-### [Linkup-Deep-Search](Linkup-Deep-Search.md)
+### [Kling-v3](Kling-v3.md)
 
-### [Linkup-Standard](Linkup-Standard.md)
+### [LFM2.5-Reasoning](LFM2.5-Reasoning.md)
 
-### [LivePortrait](LivePortrait.md)
+### [LTX-Video](LTX-Video.md)
 
-### [Llama-3-70B-FP16](Llama-3-70B-FP16.md)
-
-### [Llama-3-70B-T](Llama-3-70B-T.md)
-
-### [Llama-3.1-405B](Llama-3.1-405B.md)
-
-### [Llama-3.1-405B-FP16](Llama-3.1-405B-FP16.md)
-
-### [Llama-3.1-405B-FW](Llama-3.1-405B-FW.md)
-
-### [Llama-3.1-405B-T](Llama-3.1-405B-T.md)
-
-### [Llama-3.1-70B](Llama-3.1-70B.md)
-
-### [Llama-3.1-70B-FP16](Llama-3.1-70B-FP16.md)
-
-### [Llama-3.1-70B-FW](Llama-3.1-70B-FW.md)
-
-### [Llama-3.1-70B-T](Llama-3.1-70B-T.md)
-
-### [Llama-3.1-8B](Llama-3.1-8B.md)
-
-### [Llama-3.1-8B-CS](Llama-3.1-8B-CS.md)
-
-### [Llama-3.1-8B-DI](Llama-3.1-8B-DI.md)
-
-### [Llama-3.1-8B-FP16](Llama-3.1-8B-FP16.md)
-
-### [Llama-3.1-8B-FW](Llama-3.1-8B-FW.md)
-
-### [Llama-3.1-8B-T-128k](Llama-3.1-8B-T-128k.md)
-
-### [Llama-3.3-70B](Llama-3.3-70B.md)
-
-### [Llama-3.3-70B-CS](Llama-3.3-70B-CS.md)
-
-### [Llama-3.3-70B-Chat](Llama-3.3-70B-Chat.md)
+### [Latentsync](Latentsync.md)
 
 ### [Llama-3.3-70B-FW](Llama-3.3-70B-FW.md)
 
-### [Llama-3.3-70B-N](Llama-3.3-70B-N.md)
+### [MMAudio-v2](MMAudio-v2.md)
 
-### [Llama-3.3-70B-Vers](Llama-3.3-70B-Vers.md)
+### [MiMo-V2-Flash](MiMo-V2-Flash.md)
 
-### [Llama-4-Maverick](Llama-4-Maverick.md)
+### [MiMo-V2.5-Pro-EL](MiMo-V2.5-Pro-EL.md)
 
-### [Llama-4-Maverick-B10](Llama-4-Maverick-B10.md)
+### [Midjourney-Create](Midjourney-Create.md)
 
-### [Llama-4-Maverick-T](Llama-4-Maverick-T.md)
+### [MiniMax-M2-FW](MiniMax-M2-FW.md)
 
-### [Llama-4-Scout](Llama-4-Scout.md)
+### [MiniMax-M2.7-HS](MiniMax-M2.7-HS.md)
 
-### [Llama-4-Scout-B10](Llama-4-Scout-B10.md)
+### [MiniMax-M3-EL](MiniMax-M3-EL.md)
 
-### [Llama-4-Scout-CS](Llama-4-Scout-CS.md)
+### [Minimax-M2.7-T](Minimax-M2.7-T.md)
 
-### [Llama-4-Scout-Chat](Llama-4-Scout-Chat.md)
+### [Ministral-3-14B](Ministral-3-14B.md)
 
-### [Llama-4-Scout-T](Llama-4-Scout-T.md)
+### [Ministral-3-8B](Ministral-3-8B.md)
 
-### [Luma-Photon](Luma-Photon.md)
+### [Mistral-7B-OSL](Mistral-7B-OSL.md)
 
-### [Luma-Photon-Flash](Luma-Photon-Flash.md)
+### [Mistral-Medium-3.5](Mistral-Medium-3.5.md)
 
-### [Lyria](Lyria.md)
+### [Mistral-NeMo](Mistral-NeMo.md)
 
-### [Magistral-Medium-2506-Thinking](Magistral-Medium-2506-Thinking.md)
+### [Mistral-Small-4-OSL](Mistral-Small-4-OSL.md)
 
-### [MarkItDown](MarkItDown.md)
+### [Moondream-Next](Moondream-Next.md)
 
-### [MiniMax-M1](MiniMax-M1.md)
+### [Muse-Glimmer-30B](Muse-Glimmer-30B.md)
 
-### [Mistral-3.2-Chat](Mistral-3.2-Chat.md)
+### [Muse-Spark-1.1](Muse-Spark-1.1.md)
 
-### [Mistral-7B-v0.3-DI](Mistral-7B-v0.3-DI.md)
+### [Nemotron-3-Super](Nemotron-3-Super.md)
 
-### [Mistral-7B-v0.3-T](Mistral-7B-v0.3-T.md)
+### [Nemotron-3-Ultra](Nemotron-3-Ultra.md)
 
-### [Mistral-Large-2](Mistral-Large-2.md)
+### [OmniGen-v1](OmniGen-v1.md)
 
-### [Mistral-Medium](Mistral-Medium.md)
+### [OpenAI-TTS-1](OpenAI-TTS-1.md)
 
-### [Mistral-Medium-3](Mistral-Medium-3.md)
+### [OpenAI-TTS-1-HD](OpenAI-TTS-1-HD.md)
 
-### [Mistral-Medium-3.1](Mistral-Medium-3.1.md)
-
-### [Mistral-NeMo-Chat](Mistral-NeMo-Chat.md)
-
-### [Mistral-NeMo-Vers](Mistral-NeMo-Vers.md)
-
-### [Mistral-Small-3](Mistral-Small-3.md)
-
-### [Mistral-Small-3.1](Mistral-Small-3.1.md)
-
-### [Mistral-Small-3.2](Mistral-Small-3.2.md)
-
-### [Mixtral8x22b-Inst-FW](Mixtral8x22b-Inst-FW.md)
-
-### [Mochi-preview](Mochi-preview.md)
-
-### [Nano-Banana](Nano-Banana.md)
-
-### [Nova-Lite-1.0](Nova-Lite-1.0.md)
-
-### [Nova-Micro-1.0](Nova-Micro-1.0.md)
-
-### [Nova-Premier-1.0](Nova-Premier-1.0.md)
-
-### [Nova-Pro-1.0](Nova-Pro-1.0.md)
-
-### [OmniHuman](OmniHuman.md)
-
-### [OpenAI-GPT-OSS-120B](OpenAI-GPT-OSS-120B.md)
-
-### [OpenAI-GPT-OSS-20B](OpenAI-GPT-OSS-20B.md)
-
-### [Orpheus-TTS](Orpheus-TTS.md)
-
-### [Perplexity-Deep-Research](Perplexity-Deep-Research.md)
-
-### [Perplexity-Sonar](Perplexity-Sonar.md)
-
-### [Perplexity-Sonar-Pro](Perplexity-Sonar-Pro.md)
-
-### [Perplexity-Sonar-Rsn](Perplexity-Sonar-Rsn.md)
-
-### [Perplexity-Sonar-Rsn-Pro](Perplexity-Sonar-Rsn-Pro.md)
-
-### [Phi-4-DI](Phi-4-DI.md)
-
-### [Phoenix-1.0](Phoenix-1.0.md)
-
-### [Pika](Pika.md)
+### [OpenAI-audio-to-text](OpenAI-audio-to-text.md)
 
 ### [Pixverse-v4.5](Pixverse-v4.5.md)
 
-### [PlayAI-Dialog](PlayAI-Dialog.md)
+### [Playwright](Playwright.md)
 
-### [PlayAI-TTS](PlayAI-TTS.md)
-
-### [Poe-System-Bot](Poe-System-Bot.md)
-
-### [Python](Python.md)
-
-### [QwQ-32B-B10](QwQ-32B-B10.md)
-
-### [QwQ-32B-Preview-T](QwQ-32B-Preview-T.md)
-
-### [QwQ-32B-T](QwQ-32B-T.md)
-
-### [Qwen-2.5-72B-T](Qwen-2.5-72B-T.md)
-
-### [Qwen-2.5-7B-T](Qwen-2.5-7B-T.md)
-
-### [Qwen-2.5-Coder-32B-T](Qwen-2.5-Coder-32B-T.md)
-
-### [Qwen-2.5-VL-32b](Qwen-2.5-VL-32b.md)
+### [PrismML-Tern-Bonsai](PrismML-Tern-Bonsai.md)
 
 ### [Qwen-3-235B-2507-T](Qwen-3-235B-2507-T.md)
 
-### [Qwen-3-Next-80B-Think](Qwen-3-Next-80B-Think.md)
+### [Qwen-V3.8-Max](Qwen-V3.8-Max.md)
 
-### [Qwen-Edit](Qwen-Edit.md)
+### [Qwen3-235B-0527-T](Qwen3-235B-0527-T.md)
 
-### [Qwen-Image](Qwen-Image.md)
+### [Qwen3-Coder-32B](Qwen3-Coder-32B.md)
 
-### [Qwen-Image-20B](Qwen-Image-20B.md)
+### [Qwen3.5-9B-T](Qwen3.5-9B-T.md)
 
-### [Qwen2.5-Coder-32B](Qwen2.5-Coder-32B.md)
+### [Qwen3.6-Plus-EL](Qwen3.6-Plus-EL.md)
 
-### [Qwen2.5-VL-72B-T](Qwen2.5-VL-72B-T.md)
+### [Qwen3.7-Plus-EL](Qwen3.7-Plus-EL.md)
 
-### [Qwen3-235B-2507-CS](Qwen3-235B-2507-CS.md)
+### [Qwen3.8-2.4T-A95B](Qwen3.8-2.4T-A95B.md)
 
-### [Qwen3-235B-2507-FW](Qwen3-235B-2507-FW.md)
+### [Real-Video-Generator](Real-Video-Generator.md)
 
-### [Qwen3-235B-A22B](Qwen3-235B-A22B.md)
+### [RealVisXL](RealVisXL.md)
 
-### [Qwen3-235B-A22B-DI](Qwen3-235B-A22B-DI.md)
+### [Restyler-Deprecated](Restyler-Deprecated.md)
 
-### [Qwen3-235B-A22B-N](Qwen3-235B-A22B-N.md)
+### [SD3.5L-Inpaint](SD3.5L-Inpaint.md)
 
-### [Qwen3-235B-Think-CS](Qwen3-235B-Think-CS.md)
+### [SDXL-Inpainting](SDXL-Inpainting.md)
 
-### [Qwen3-32B-CS](Qwen3-32B-CS.md)
+### [SSD-1B](SSD-1B.md)
 
-### [Qwen3-32B-Chat](Qwen3-32B-Chat.md)
+### [Search-OSL](Search-OSL.md)
 
-### [Qwen3-32B-Coder-405B](Qwen3-32B-Coder-405B.md)
+### [SeedVR2](SeedVR2.md)
 
-### [Qwen3-480B-Coder-CS](Qwen3-480B-Coder-CS.md)
+### [Seedream-5.0-Flash](Seedream-5.0-Flash.md)
 
-### [Qwen3-Coder](Qwen3-Coder.md)
+### [Seedream-VTON](Seedream-VTON.md)
 
-### [Qwen3-Coder-480B-N](Qwen3-Coder-480B-N.md)
+### [Segment-Anything-v2](Segment-Anything-v2.md)
 
-### [Qwen3-Coder-480B-T](Qwen3-Coder-480B-T.md)
+### [Sonic-3.0](Sonic-3.0.md)
 
-### [Qwen3-Max](Qwen3-Max.md)
+### [SoulX-Podcast](SoulX-Podcast.md)
 
-### [Qwen3-Next-80B](Qwen3-Next-80B.md)
+### [StableAudio-AudioGen](StableAudio-AudioGen.md)
 
-### [Qwen3-Next-Instruct-T](Qwen3-Next-Instruct-T.md)
+### [StableDiffusion3.5-M](StableDiffusion3.5-M.md)
 
-### [Qwen3-Next-Think-T](Qwen3-Next-Think-T.md)
+### [Style-Studio](Style-Studio.md)
 
-### [Qwen3-VL-235B-A22B-I](Qwen3-VL-235B-A22B-I.md)
+### [StyleMaker](StyleMaker.md)
 
-### [Qwen3-VL-235B-A22B-T](Qwen3-VL-235B-A22B-T.md)
+### [Sync-Lipsync](Sync-Lipsync.md)
 
-### [Ray2](Ray2.md)
+### [TM-Inkling](TM-Inkling.md)
 
-### [Recraft-V3](Recraft-V3.md)
+### [TML-Inkling-Small](TML-Inkling-Small.md)
 
-### [Reka-Core](Reka-Core.md)
+### [Tavily-Research](Tavily-Research.md)
 
-### [Reka-Flash](Reka-Flash.md)
+### [Tavily-Search-test](Tavily-Search-test.md)
 
-### [Reka-Research](Reka-Research.md)
+### [Topaz-Video-Upscale](Topaz-Video-Upscale.md)
 
-### [Restyler](Restyler.md)
+### [Transcribe-Audio](Transcribe-Audio.md)
 
-### [Retro-Diffusion-Core](Retro-Diffusion-Core.md)
+### [Trellis-3D-OSL](Trellis-3D-OSL.md)
 
-### [Runway](Runway.md)
+### [TurboTextToVideo](TurboTextToVideo.md)
 
-### [Runway-Gen-4-Turbo](Runway-Gen-4-Turbo.md)
+### [USO-Style-Transfer](USO-Style-Transfer.md)
 
-### [Sana-T2I](Sana-T2I.md)
+### [Video-Generator-Pro](Video-Generator-Pro.md)
 
-### [SeedEdit-3.0](SeedEdit-3.0.md)
+### [WAN-2.2-OSL](WAN-2.2-OSL.md)
 
-### [Seedance-1.0-Lite](Seedance-1.0-Lite.md)
+### [Wan-2.6-N](Wan-2.6-N.md)
 
-### [Seedance-1.0-Pro](Seedance-1.0-Pro.md)
+### [Wan-2.6-Video](Wan-2.6-Video.md)
 
-### [Seedream-3.0](Seedream-3.0.md)
+### [Web-Search-AI](Web-Search-AI.md)
 
-### [Seedream-4.0](Seedream-4.0.md)
+### [YuE-Music](YuE-Music.md)
 
-### [Sketch-to-Image](Sketch-to-Image.md)
+### [Zai-GLM-5.3](Zai-GLM-5.3.md)
 
-### [Solar-Pro-2](Solar-Pro-2.md)
+### [amazon-nova-reel-1.1](amazon-nova-reel-1.1.md)
 
-### [Sora](Sora.md)
+### [assistant](assistant.md)
 
-### [Sora-2](Sora-2.md)
+### [bria-eraser](bria-eraser.md)
 
-### [Sora-2-Pro](Sora-2-Pro.md)
+### [canvas-creator](canvas-creator.md)
 
-### [Stable-Audio-2.0](Stable-Audio-2.0.md)
+### [cartesia-ink-whisper](cartesia-ink-whisper.md)
 
-### [Stable-Audio-2.5](Stable-Audio-2.5.md)
+### [clarity-upscaler](clarity-upscaler.md)
 
-### [StableDiffusion3-2B](StableDiffusion3-2B.md)
+### [claude-code](claude-code.md)
 
-### [StableDiffusion3.5-L](StableDiffusion3.5-L.md)
+### [claude-haiku-4.5](claude-haiku-4.5.md)
 
-### [StableDiffusion3.5-T](StableDiffusion3.5-T.md)
+### [claude-opus-4.5](claude-opus-4.5.md)
 
-### [StableDiffusionXL](StableDiffusionXL.md)
+### [claude-opus-4.6](claude-opus-4.6.md)
 
-### [Tako](Tako.md)
+### [claude-opus-4.7](claude-opus-4.7.md)
 
-### [TopazLabs](TopazLabs.md)
+### [claude-opus-4.8](claude-opus-4.8.md)
 
-### [Trellis-3D](Trellis-3D.md)
+### [claude-sonnet-4.5](claude-sonnet-4.5.md)
 
-### [TwelveLabs](TwelveLabs.md)
+### [claude-sonnet-4.6](claude-sonnet-4.6.md)
 
-### [Unreal-Speech-TTS](Unreal-Speech-TTS.md)
+### [claude-sonnet-5.5](claude-sonnet-5.5.md)
 
-### [Veo-2](Veo-2.md)
+### [code-editor](code-editor.md)
 
-### [Veo-2-Video](Veo-2-Video.md)
+### [code-saver](code-saver.md)
 
-### [Veo-3](Veo-3.md)
+### [creative-upscaler](creative-upscaler.md)
 
-### [Veo-3-Fast](Veo-3-Fast.md)
+### [deep-ai-search](deep-ai-search.md)
 
-### [Vidu](Vidu.md)
+### [deepgram-nova-3](deepgram-nova-3.md)
 
-### [Vidu-Q1](Vidu-Q1.md)
+### [deepreasoning](deepreasoning.md)
 
-### [Wan-2.1](Wan-2.1.md)
+### [deepseek-r1-di](deepseek-r1-di.md)
 
-### [Wan-2.2](Wan-2.2.md)
+### [deepseek-r1-n](deepseek-r1-n.md)
 
-### [Wan-Animate](Wan-Animate.md)
+### [deepseek-r1-turbo-di](deepseek-r1-turbo-di.md)
 
-### [Web-Search](Web-Search.md)
+### [deepseek-v3](deepseek-v3.md)
 
-### [Whisper-V3-Large-T](Whisper-V3-Large-T.md)
+### [deepseek-v3-di](deepseek-v3-di.md)
+
+### [deepseek-v3-turbo-di](deepseek-v3-turbo-di.md)
+
+### [deepseek-v3.1](deepseek-v3.1.md)
+
+### [deepseek-v3.2](deepseek-v3.2.md)
+
+### [deepseek-v3.2-el](deepseek-v3.2-el.md)
+
+### [deepseek-v4-0731](deepseek-v4-0731.md)
+
+### [deepseek-v4-flash](deepseek-v4-flash.md)
+
+### [deepseek-v4-flash-e](deepseek-v4-flash-e.md)
+
+### [deepseek-v4-pro](deepseek-v4-pro.md)
+
+### [deepseek-v4-pro-0813](deepseek-v4-pro-0813.md)
+
+### [deepseek-v4-pro-0813-el](deepseek-v4-pro-0813-el.md)
+
+### [deepseek-v4-pro-e](deepseek-v4-pro-e.md)
+
+### [deepseek-v4-pro-t](deepseek-v4-pro-t.md)
+
+### [deepseek-v4.1-flash](deepseek-v4.1-flash.md)
+
+### [deepseek-vision-exp](deepseek-vision-exp.md)
+
+### [dreamina-3.1](dreamina-3.1.md)
+
+### [ds-v4-flash-0731-el](ds-v4-flash-0731-el.md)
+
+### [ds-v4.1-flash-el](ds-v4.1-flash-el.md)
+
+### [elevenlabs-music](elevenlabs-music.md)
+
+### [elevenlabs-music-v2](elevenlabs-music-v2.md)
+
+### [elevenlabs-v2.5-turbo](elevenlabs-v2.5-turbo.md)
+
+### [elevenlabs-v3](elevenlabs-v3.md)
+
+### [exa-answer](exa-answer.md)
+
+### [exa-search](exa-search.md)
+
+### [flux-2-dev](flux-2-dev.md)
+
+### [flux-2-flash](flux-2-flash.md)
+
+### [flux-2-flex](flux-2-flex.md)
+
+### [flux-2-klein-4b](flux-2-klein-4b.md)
+
+### [flux-2-klein-4b-base](flux-2-klein-4b-base.md)
+
+### [flux-2-klein-9b-base](flux-2-klein-9b-base.md)
+
+### [flux-2-max](flux-2-max.md)
+
+### [flux-2-pro](flux-2-pro.md)
+
+### [flux-2-turbo](flux-2-turbo.md)
+
+### [flux-dev-finetuner](flux-dev-finetuner.md)
+
+### [flux-fill](flux-fill.md)
+
+### [flux-inpaint](flux-inpaint.md)
+
+### [flux-kontext-max](flux-kontext-max.md)
+
+### [flux-kontext-pro](flux-kontext-pro.md)
+
+### [flux-krea](flux-krea.md)
+
+### [flux-pro-1.1-t](flux-pro-1.1-t.md)
+
+### [flux-schnell-t](flux-schnell-t.md)
+
+### [fugu-ultra-v1.0-el](fugu-ultra-v1.0-el.md)
+
+### [fugu-ultra-v1.1-el](fugu-ultra-v1.1-el.md)
+
+### [gemini-2.5-flash-tts](gemini-2.5-flash-tts.md)
+
+### [gemini-2.5-pro-tts](gemini-2.5-pro-tts.md)
+
+### [gemini-3-flash](gemini-3-flash.md)
+
+### [gemini-3.1-flash-lite](gemini-3.1-flash-lite.md)
+
+### [gemini-3.1-flash-tts](gemini-3.1-flash-tts.md)
+
+### [gemini-3.1-pro](gemini-3.1-pro.md)
+
+### [gemini-3.5-flash](gemini-3.5-flash.md)
+
+### [gemini-3.5-flash-lite](gemini-3.5-flash-lite.md)
+
+### [gemini-3.6-flash](gemini-3.6-flash.md)
+
+### [gemini-3.7-flash](gemini-3.7-flash.md)
+
+### [gemini-3.8-flash](gemini-3.8-flash.md)
+
+### [gemini-omni-1.1-flash](gemini-omni-1.1-flash.md)
+
+### [gemma-3-27b](gemma-3-27b.md)
+
+### [gemma-4-26b-a4b](gemma-4-26b-a4b.md)
+
+### [gemma-4-26b-a4b-el](gemma-4-26b-a4b-el.md)
+
+### [gemma-4-31b](gemma-4-31b.md)
+
+### [gemma-4-31b-n](gemma-4-31b-n.md)
+
+### [glm-4.6](glm-4.6.md)
+
+### [glm-4.6v-n](glm-4.6v-n.md)
+
+### [glm-4.7-flash-n](glm-4.7-flash-n.md)
+
+### [glm-5.1](glm-5.1.md)
+
+### [glm-5.2](glm-5.2.md)
+
+### [glm-5.2-n](glm-5.2-n.md)
+
+### [glm-5.3](glm-5.3.md)
+
+### [glm-5.3-el](glm-5.3-el.md)
+
+### [glm-5.3-flash](glm-5.3-flash.md)
+
+### [glm-5.3-flash-el](glm-5.3-flash-el.md)
+
+### [gpt-3.5-turbo](gpt-3.5-turbo.md)
+
+### [gpt-3.5-turbo-raw](gpt-3.5-turbo-raw.md)
+
+### [gpt-4-turbo](gpt-4-turbo.md)
+
+### [gpt-4.1](gpt-4.1.md)
+
+### [gpt-4.1-mini](gpt-4.1-mini.md)
+
+### [gpt-4.1-nano](gpt-4.1-nano.md)
+
+### [gpt-4o](gpt-4o.md)
+
+### [gpt-4o-aug](gpt-4o-aug.md)
+
+### [gpt-4o-mini](gpt-4o-mini.md)
+
+### [gpt-4o-search](gpt-4o-search.md)
+
+### [gpt-5](gpt-5.md)
+
+### [gpt-5-mini](gpt-5-mini.md)
+
+### [gpt-5-nano](gpt-5-nano.md)
+
+### [gpt-5-pro](gpt-5-pro.md)
+
+### [gpt-5.1](gpt-5.1.md)
+
+### [gpt-5.2](gpt-5.2.md)
+
+### [gpt-5.2-pro](gpt-5.2-pro.md)
+
+### [gpt-5.3-codex](gpt-5.3-codex.md)
+
+### [gpt-5.4](gpt-5.4.md)
+
+### [gpt-5.4-mini](gpt-5.4-mini.md)
+
+### [gpt-5.4-nano](gpt-5.4-nano.md)
+
+### [gpt-5.4-pro](gpt-5.4-pro.md)
+
+### [gpt-6.1-sol](gpt-6.1-sol.md)
+
+### [gpt-audio](gpt-audio.md)
+
+### [gpt-audio-1.5](gpt-audio-1.5.md)
+
+### [gpt-audio-mini](gpt-audio-mini.md)
+
+### [gpt-image-1](gpt-image-1.md)
+
+### [gpt-image-1-mini](gpt-image-1-mini.md)
+
+### [gpt-image-1.5](gpt-image-1.5.md)
+
+### [gpt-image-2](gpt-image-2.md)
+
+### [gpt-oss-120b](gpt-oss-120b.md)
+
+### [gpt-oss-120b-cs](gpt-oss-120b-cs.md)
+
+### [gpt-oss-120b-t](gpt-oss-120b-t.md)
+
+### [gpt-oss-20b-n](gpt-oss-20b-n.md)
+
+### [gpt-oss-20b-t](gpt-oss-20b-t.md)
+
+### [gpt-researcher](gpt-researcher.md)
+
+### [gptzero](gptzero.md)
+
+### [grok-4.20-multi-agent](grok-4.20-multi-agent.md)
+
+### [grok-4.3](grok-4.3.md)
+
+### [grok-4.5](grok-4.5.md)
+
+### [grok-4.6](grok-4.6.md)
+
+### [grok-4.7](grok-4.7.md)
+
+### [grok-imagine-image](grok-imagine-image.md)
+
+### [grok-imagine-image-2](grok-imagine-image-2.md)
+
+### [grok-imagine-video](grok-imagine-video.md)
+
+### [grok-imgn-video-1.5](grok-imgn-video-1.5.md)
+
+### [hailuo-02-pro](hailuo-02-pro.md)
+
+### [hailuo-02-standard](hailuo-02-standard.md)
+
+### [hailuo-ai](hailuo-ai.md)
+
+### [hailuo-director-01](hailuo-director-01.md)
+
+### [hailuo-music-v1.5](hailuo-music-v1.5.md)
+
+### [happyhorse-1.0-el](happyhorse-1.0-el.md)
+
+### [happyhorse-1.1](happyhorse-1.1.md)
+
+### [hunyuan-image-3](hunyuan-image-3.md)
+
+### [hy3](hy3.md)
+
+### [hy3-n](hy3-n.md)
+
+### [hy4-preview](hy4-preview.md)
+
+### [ideogram-v2](ideogram-v2.md)
+
+### [ideogram-v2a](ideogram-v2a.md)
+
+### [ideogram-v3](ideogram-v3.md)
+
+### [imgsys.org](imgsys.org.md)
+
+### [inkling](inkling.md)
+
+### [interpreter](interpreter.md)
+
+### [kimi-k2-thinking](kimi-k2-thinking.md)
+
+### [kimi-k2.6](kimi-k2.6.md)
+
+### [kimi-k2.7-code](kimi-k2.7-code.md)
+
+### [kimi-k2.7-code-n](kimi-k2.7-code-n.md)
+
+### [kimi-k3](kimi-k3.md)
+
+### [kimi-k3-el](kimi-k3-el.md)
+
+### [kling-1.5-pro](kling-1.5-pro.md)
+
+### [kling-2.0-master](kling-2.0-master.md)
+
+### [kling-2.1-pro](kling-2.1-pro.md)
+
+### [kling-2.1-std](kling-2.1-std.md)
+
+### [kling-2.5-turbo-pro](kling-2.5-turbo-pro.md)
+
+### [kling-2.5-turbo-std](kling-2.5-turbo-std.md)
+
+### [kling-2.6-pro](kling-2.6-pro.md)
+
+### [kling-3.0-turbo](kling-3.0-turbo.md)
+
+### [kling-avatar-pro](kling-avatar-pro.md)
+
+### [kling-o3](kling-o3.md)
+
+### [kling-omni](kling-omni.md)
+
+### [kling-v3-motion-ctrl](kling-v3-motion-ctrl.md)
+
+### [kling-v3-pro](kling-v3-pro.md)
+
+### [ling-3-0-flash](ling-3-0-flash.md)
+
+### [ling-3.0-flash-fin](ling-3.0-flash-fin.md)
+
+### [ling-3.0-flash-vl](ling-3.0-flash-vl.md)
+
+### [linkup-deep-search](linkup-deep-search.md)
+
+### [linkup-standard](linkup-standard.md)
+
+### [liveportrait](liveportrait.md)
+
+### [llama-3.1-8b-di](llama-3.1-8b-di.md)
+
+### [llama-3.1-8b-fp16](llama-3.1-8b-fp16.md)
+
+### [llama-3.3-70b-n](llama-3.3-70b-n.md)
+
+### [llama-3.3-70b-t](llama-3.3-70b-t.md)
+
+### [ltx-2-fast](ltx-2-fast.md)
+
+### [ltx-2-pro](ltx-2-pro.md)
+
+### [luma-photon](luma-photon.md)
+
+### [luma-photon-flash](luma-photon-flash.md)
+
+### [lyria](lyria.md)
+
+### [lyria-3](lyria-3.md)
+
+### [manus](manus.md)
+
+### [markitdown](markitdown.md)
+
+### [mimo-v2.5-el](mimo-v2.5-el.md)
+
+### [mimo-v2.5-pro](mimo-v2.5-pro.md)
+
+### [mimo-v2.6-flash](mimo-v2.6-flash.md)
+
+### [mimo-v2.6-flash-el](mimo-v2.6-flash-el.md)
+
+### [mimo-v2.6-pro](mimo-v2.6-pro.md)
+
+### [mimo-v2.6-pro-el](mimo-v2.6-pro-el.md)
+
+### [mimo-v2.6-pro-ultraspeed-el](mimo-v2.6-pro-ultraspeed-el.md)
+
+### [minimax-h3-el](minimax-h3-el.md)
+
+### [minimax-h3-n](minimax-h3-n.md)
+
+### [minimax-m2.1](minimax-m2.1.md)
+
+### [minimax-m2.5](minimax-m2.5.md)
+
+### [minimax-m2.7-fw](minimax-m2.7-fw.md)
+
+### [minimax-m3](minimax-m3.md)
+
+### [minimax-m3-t](minimax-m3-t.md)
+
+### [minimax-speech-2.8](minimax-speech-2.8.md)
+
+### [mistral-7b-v0.3-di](mistral-7b-v0.3-di.md)
+
+### [mistral-large-2](mistral-large-2.md)
+
+### [mistral-medium](mistral-medium.md)
+
+### [mistral-small-3](mistral-small-3.md)
+
+### [mistral-small-3.1](mistral-small-3.1.md)
+
+### [mistral-small-4](mistral-small-4.md)
+
+### [mixtral8x22b-inst-fw](mixtral8x22b-inst-fw.md)
+
+### [mochi-preview](mochi-preview.md)
+
+### [moss-video-and-audio](moss-video-and-audio.md)
+
+### [muse-glimmer-30b-el](muse-glimmer-30b-el.md)
+
+### [muse-spark-1-1](muse-spark-1-1.md)
+
+### [nano-banana-2](nano-banana-2.md)
+
+### [nano-banana-2-lite](nano-banana-2-lite.md)
+
+### [nano-banana-pro](nano-banana-pro.md)
+
+### [nova-lite-1.0](nova-lite-1.0.md)
+
+### [nova-lite-2](nova-lite-2.md)
+
+### [nova-micro-1.0](nova-micro-1.0.md)
+
+### [nova-pro-1.0](nova-pro-1.0.md)
 
 ### [o1](o1.md)
-
-### [o1-mini](o1-mini.md)
 
 ### [o1-pro](o1-pro.md)
 
 ### [o3](o3.md)
-
-### [o3-deep-research](o3-deep-research.md)
 
 ### [o3-mini](o3-mini.md)
 
@@ -646,7 +790,223 @@ Browse all available Poe models:
 
 ### [o4-mini](o4-mini.md)
 
-### [o4-mini-deep-research](o4-mini-deep-research.md)
+### [omnihuman](omnihuman.md)
+
+### [openai-gpt-oss-120b](openai-gpt-oss-120b.md)
+
+### [openai-gpt-oss-20b](openai-gpt-oss-20b.md)
+
+### [orpheus-tts](orpheus-tts.md)
+
+### [pearl-gemma-4-31b](pearl-gemma-4-31b.md)
+
+### [perplexity-adv-deep-research](perplexity-adv-deep-research.md)
+
+### [perplexity-deep-research](perplexity-deep-research.md)
+
+### [perplexity-pro-search](perplexity-pro-search.md)
+
+### [perplexity-search](perplexity-search.md)
+
+### [perplexity-sonar](perplexity-sonar.md)
+
+### [perplexity-sonar-pro](perplexity-sonar-pro.md)
+
+### [perplexity-sonar-rsn-pro](perplexity-sonar-rsn-pro.md)
+
+### [phi-4-di](phi-4-di.md)
+
+### [pika-v1.5-effects](pika-v1.5-effects.md)
+
+### [pixel-artist-bot](pixel-artist-bot.md)
+
+### [pixverse-v5](pixverse-v5.md)
+
+### [pixverse-v5.6](pixverse-v5.6.md)
+
+### [python](python.md)
+
+### [qwen-2.5-7b-t](qwen-2.5-7b-t.md)
+
+### [qwen-audio-3.0-tts](qwen-audio-3.0-tts.md)
+
+### [qwen-edit](qwen-edit.md)
+
+### [qwen-image-2](qwen-image-2.md)
+
+### [qwen-image-2-pro](qwen-image-2-pro.md)
+
+### [qwen-image-3.0-el](qwen-image-3.0-el.md)
+
+### [qwen3-235b-a22b-di](qwen3-235b-a22b-di.md)
+
+### [qwen3-235b-a22b-n](qwen3-235b-a22b-n.md)
+
+### [qwen3-coder-480b-n](qwen3-coder-480b-n.md)
+
+### [qwen3-coder-next-n](qwen3-coder-next-n.md)
+
+### [qwen3-max-el](qwen3-max-el.md)
+
+### [qwen3-max-n](qwen3-max-n.md)
+
+### [qwen3-max-preview-el](qwen3-max-preview-el.md)
+
+### [qwen3-max-thinking-el](qwen3-max-thinking-el.md)
+
+### [qwen3-next-80b](qwen3-next-80b.md)
+
+### [qwen3-next-80b-think](qwen3-next-80b-think.md)
+
+### [qwen3-vl-235b-a22b-i](qwen3-vl-235b-a22b-i.md)
+
+### [qwen3-vl-235b-a22b-t](qwen3-vl-235b-a22b-t.md)
+
+### [qwen3.5-397b-a17b](qwen3.5-397b-a17b.md)
+
+### [qwen3.5-4b-el](qwen3.5-4b-el.md)
+
+### [qwen3.5-9b-el](qwen3.5-9b-el.md)
+
+### [qwen3.5-flash-el](qwen3.5-flash-el.md)
+
+### [qwen3.5-omni-flash](qwen3.5-omni-flash.md)
+
+### [qwen3.5-omni-plus](qwen3.5-omni-plus.md)
+
+### [qwen3.5-plus-el](qwen3.5-plus-el.md)
+
+### [qwen3.6-max-preview](qwen3.6-max-preview.md)
+
+### [qwen3.6-plus-t](qwen3.6-plus-t.md)
+
+### [qwen3.7-flash-el](qwen3.7-flash-el.md)
+
+### [qwen3.7-max-el](qwen3.7-max-el.md)
+
+### [qwen3.7-max-t](qwen3.7-max-t.md)
+
+### [qwen3.8-2.4t-a95b-n](qwen3.8-2.4t-a95b-n.md)
+
+### [qwen3.8-27b](qwen3.8-27b.md)
+
+### [qwen3.8-27b-el](qwen3.8-27b-el.md)
+
+### [qwen3.8-flash-el](qwen3.8-flash-el.md)
+
+### [qwen3.8-max-0902-el](qwen3.8-max-0902-el.md)
+
+### [qwen3.8-max-el](qwen3.8-max-el.md)
+
+### [reka-core](reka-core.md)
+
+### [reka-flash](reka-flash.md)
+
+### [reka-research](reka-research.md)
 
 ### [remove-background](remove-background.md)
+
+### [restyler](restyler.md)
+
+### [retro-diffusion-core](retro-diffusion-core.md)
+
+### [runway-gen-4.5](runway-gen-4.5.md)
+
+### [script-bot-creator](script-bot-creator.md)
+
+### [seed-2.0-code](seed-2.0-code.md)
+
+### [seed-2.0-lite](seed-2.0-lite.md)
+
+### [seed-2.0-mini](seed-2.0-mini.md)
+
+### [seed-2.0-pro](seed-2.0-pro.md)
+
+### [seed-2.1-turbo](seed-2.1-turbo.md)
+
+### [seedance-1.0-lite](seedance-1.0-lite.md)
+
+### [seedance-1.0-pro](seedance-1.0-pro.md)
+
+### [seedance-1.0-pro-fast](seedance-1.0-pro-fast.md)
+
+### [seedance-2-fast](seedance-2-fast.md)
+
+### [seedance-2.0](seedance-2.0.md)
+
+### [seedance-2.0-fast-el](seedance-2.0-fast-el.md)
+
+### [seedance-2.0-mini](seedance-2.0-mini.md)
+
+### [seedance-2.0-pro-el](seedance-2.0-pro-el.md)
+
+### [seedance-2.5-el](seedance-2.5-el.md)
+
+### [seededit-3.0](seededit-3.0.md)
+
+### [seedream-3.0](seedream-3.0.md)
+
+### [seedream-4.0](seedream-4.0.md)
+
+### [seedream-4.5](seedream-4.5.md)
+
+### [seedream-5.0-lite](seedream-5.0-lite.md)
+
+### [seedream-5.0-lite-el](seedream-5.0-lite-el.md)
+
+### [seedream-5.0-pro](seedream-5.0-pro.md)
+
+### [sketch-to-image](sketch-to-image.md)
+
+### [solar-pro-2](solar-pro-2.md)
+
+### [stable-audio-2.0](stable-audio-2.0.md)
+
+### [stable-audio-2.5](stable-audio-2.5.md)
+
+### [stablediffusion3-2b](stablediffusion3-2b.md)
+
+### [stablediffusion3.5-l](stablediffusion3.5-l.md)
+
+### [step-3.7-flash-el](step-3.7-flash-el.md)
+
+### [step-5-preview-el](step-5-preview-el.md)
+
+### [svi-2.0-pro](svi-2.0-pro.md)
+
+### [tako](tako.md)
+
+### [trellis-3d](trellis-3d.md)
+
+### [veo-3-vfast](veo-3-vfast.md)
+
+### [veo-3.1](veo-3.1.md)
+
+### [veo-3.1-fast](veo-3.1-fast.md)
+
+### [veo-3.1-lite](veo-3.1-lite.md)
+
+### [veo-v3.1](veo-v3.1.md)
+
+### [veo-v3.1-fast](veo-v3.1-fast.md)
+
+### [vidu](vidu.md)
+
+### [wan-2.5](wan-2.5.md)
+
+### [wan-2.6](wan-2.6.md)
+
+### [wan-2.7](wan-2.7.md)
+
+### [wan-3.0](wan-3.0.md)
+
+### [wan-animate](wan-animate.md)
+
+### [wan2.7-image](wan2.7-image.md)
+
+### [whisper-v3-large-t](whisper-v3-large-t.md)
+
+### [xiaomimimo-mimo-v2-5](xiaomimimo-mimo-v2-5.md)
+
+### [z-image-lightning](z-image-lightning.md)
 

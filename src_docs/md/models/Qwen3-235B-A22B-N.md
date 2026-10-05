@@ -1,4 +1,4 @@
-# [Qwen3-235B-A22B-N](https://poe.com/Qwen3-235B-A22B-N){ .md-button .md-button--primary }
+# [qwen3-235b-a22b-n](https://poe.com/qwen3-235b-a22b-n){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -48,14 +48,14 @@ Context window: 128k tokens
 
 ## Technical Details
 
-**Model ID:** `Qwen3-235B-A22B-N`
+**Model ID:** `qwen3-235b-a22b-n`
 
 **Object Type:** model
 
 **Created:** 1754050170519
 
-**Owned By:** poe
+**Owned By:** Novita AI
 
-**Root:** Qwen3-235B-A22B-N
+**Root:** qwen3-235b-a22b-n
 
-**API Last Updated:** 2025-10-15 16:36:09.626560
+**API Last Updated:** 2026-10-05 01:48:43.416634

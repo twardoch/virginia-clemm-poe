@@ -1,4 +1,11 @@
-# [Perplexity-Sonar-Pro](https://poe.com/Perplexity-Sonar-Pro){ .md-button .md-button--primary }
+# [perplexity-sonar-pro](https://poe.com/perplexity-sonar-pro){ .md-button .md-button--primary }
+
+## Bot Information
+
+**Creator:** @empiriolabsai
+
+**Description:** Sonar Pro by Perplexity is an advanced AI model that enhances real-time, web-connected search capabilities with double the citations and a larger context window. It's designed for complex queries, providing in-depth, nuanced answers and extended extensibility, making it ideal for enterprises and developers needing robust search solutions. Context Length: 200k (max output token limit of 8k)
+
 
 ## Architecture
 
@@ -11,14 +18,14 @@
 
 ## Technical Details
 
-**Model ID:** `Perplexity-Sonar-Pro`
+**Model ID:** `perplexity-sonar-pro`
 
 **Object Type:** model
 
 **Created:** 1737790959209
 
-**Owned By:** poe
+**Owned By:** EmpirioLabs AI
 
-**Root:** Perplexity-Sonar-Pro
+**Root:** perplexity-sonar-pro
 
-**API Last Updated:** 2025-10-15 16:36:09.631151
+**API Last Updated:** 2026-10-05 01:48:43.418188

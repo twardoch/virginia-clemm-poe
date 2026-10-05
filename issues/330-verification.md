@@ -74,3 +74,7 @@ All 17 requested bot pages displayed **$0.00/message and 0 points/message** in t
 ## Regression and packaging
 
 `./test.sh`: 159 regression tests pass; 14 discovery tests provide 100% statement coverage. The source distribution and wheel build successfully and contain the 28 handles. See [direct review](330-review.md). The unchanged repository-wide Hatch coverage gate remains unmet at 53.61% against 85%; no claim is made that this broader gate passes.
+
+## Publication refresh
+
+A fresh public API list contains 342 bots. Union with a fresh scrape of all 28 vendor profiles (488 bots) produces 501 unique catalog entries. All 17 requested bot pages were scraped again through the package updater and their zero-point rates are present in the served JSON and individual rendered pages. Source dataset, documentation-source JSON, and built-site JSON are byte-identical. Strict MkDocs build passes. See [catalog-refresh.json](330-evidence/catalog-refresh.json). Publication uses `uvx gitnextver`; the site is served from committed `main/docs`.

@@ -1,4 +1,4 @@
-# [OpenAI-GPT-OSS-20B](https://poe.com/OpenAI-GPT-OSS-20B){ .md-button .md-button--primary }
+# [openai-gpt-oss-20b](https://poe.com/openai-gpt-oss-20b){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -6,7 +6,7 @@
 
 | Type | Cost |
 |------|------|
-| Request | $0.00075/request |
+| Request | $0.00076/request |
 
 ### Points-based Pricing
 
@@ -29,23 +29,23 @@
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** text, image
 
 **Output Modalities:** text
 
-**Modality:** text->text
+**Modality:** text,image->text
 
 
 ## Technical Details
 
-**Model ID:** `OpenAI-GPT-OSS-20B`
+**Model ID:** `openai-gpt-oss-20b`
 
 **Object Type:** model
 
 **Created:** 1754418551040
 
-**Owned By:** poe
+**Owned By:** Fireworks AI
 
-**Root:** OpenAI-GPT-OSS-20B
+**Root:** openai-gpt-oss-20b
 
-**API Last Updated:** 2025-10-15 16:36:09.624834
+**API Last Updated:** 2026-10-05 01:48:43.416531

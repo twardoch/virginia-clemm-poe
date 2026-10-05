@@ -1,0 +1,31 @@
+# [Ministral-3-8B](https://poe.com/Ministral-3-8B){ .md-button .md-button--primary }
+
+## Bot Information
+
+**Creator:** @OpenSourceLab
+
+**Description:** Ministral-3-8B a fast, edge-optimized AI model from the Ministral-3 family, provides robust language and multimodal vision capabilities in a compact footprint. It offers native function calling, PDF processing, and JSON output. Ministral-3-8B is fully open-source under the permissive Apache 2.0 license, which allows commercial and non-commercial use, modification, and distribution. Context window: 256K tokens.
+
+
+## Architecture
+
+**Input Modalities:** Unknown
+
+**Output Modalities:** Unknown
+
+**Modality:** unknown
+
+
+## Technical Details
+
+**Model ID:** `Ministral-3-8B`
+
+**Object Type:** bot
+
+**Created:** Unknown
+
+**Owned By:** OpenSourceLab
+
+**Root:** Ministral-3-8B
+
+**API Last Updated:** Not listed in API

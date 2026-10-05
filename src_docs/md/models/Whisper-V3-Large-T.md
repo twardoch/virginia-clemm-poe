@@ -1,4 +1,4 @@
-# [Whisper-V3-Large-T](https://poe.com/Whisper-V3-Large-T){ .md-button .md-button--primary }
+# [whisper-v3-large-t](https://poe.com/whisper-v3-large-t){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -8,25 +8,32 @@
 |------|------|
 | Request | $0.0030/request |
 
+## Bot Information
+
+**Creator:** @togetherai
+
+**Description:** Whisper v3 Large is a state-of-the-art automatic speech recognition and translation model developed by OpenAI, offering 10–20% lower error rates than its predecessor, Whisper large-v2. It supports transcription and translation across numerous languages, with improvements in handling diverse audio inputs, including noisy conditions and long-form audio files.
+
+
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** text, audio
 
-**Output Modalities:** text
+**Output Modalities:** audio
 
-**Modality:** text->text
+**Modality:** text,audio->audio
 
 
 ## Technical Details
 
-**Model ID:** `Whisper-V3-Large-T`
+**Model ID:** `whisper-v3-large-t`
 
 **Object Type:** model
 
 **Created:** 1756410173218
 
-**Owned By:** poe
+**Owned By:** Together AI
 
-**Root:** Whisper-V3-Large-T
+**Root:** whisper-v3-large-t
 
-**API Last Updated:** 2025-10-15 16:36:09.631734
+**API Last Updated:** 2026-10-05 01:48:43.416993

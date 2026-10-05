@@ -1,4 +1,4 @@
-# [GPT-OSS-20B-T](https://poe.com/GPT-OSS-20B-T){ .md-button .md-button--primary }
+# [gpt-oss-20b-t](https://poe.com/gpt-oss-20b-t){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -29,23 +29,23 @@
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** text, image
 
 **Output Modalities:** text
 
-**Modality:** text->text
+**Modality:** text,image->text
 
 
 ## Technical Details
 
-**Model ID:** `GPT-OSS-20B-T`
+**Model ID:** `gpt-oss-20b-t`
 
 **Object Type:** model
 
 **Created:** 1754495737130
 
-**Owned By:** poe
+**Owned By:** Together AI
 
-**Root:** GPT-OSS-20B-T
+**Root:** gpt-oss-20b-t
 
-**API Last Updated:** 2025-10-15 16:36:09.617880
+**API Last Updated:** 2026-10-05 01:48:43.416317

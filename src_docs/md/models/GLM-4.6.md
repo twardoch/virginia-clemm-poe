@@ -1,4 +1,4 @@
-# [GLM-4.6](https://poe.com/GLM-4.6){ .md-button .md-button--primary }
+# [glm-4.6](https://poe.com/glm-4.6){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -6,7 +6,8 @@
 
 | Type | Cost |
 |------|------|
-| Request | $0.0066/request |
+| Prompt | $6.061E-7/token |
+| Completion | $0.0000022222/token |
 
 ### Points-based Pricing
 
@@ -47,14 +48,14 @@ Context window: 200k tokens
 
 ## Technical Details
 
-**Model ID:** `GLM-4.6`
+**Model ID:** `glm-4.6`
 
 **Object Type:** model
 
-**Created:** 1759223039599
+**Created:** 1785182887815
 
-**Owned By:** poe
+**Owned By:** Z.ai
 
-**Root:** GLM-4.6
+**Root:** glm-4.6
 
-**API Last Updated:** 2025-10-15 16:36:09.618845
+**API Last Updated:** 2026-10-05 01:48:43.418691

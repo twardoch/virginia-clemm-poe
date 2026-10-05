@@ -1,4 +1,4 @@
-# [Mistral-Large-2](https://poe.com/Mistral-Large-2){ .md-button .md-button--primary }
+# [mistral-large-2](https://poe.com/mistral-large-2){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -6,28 +6,35 @@
 
 | Type | Cost |
 |------|------|
-| Prompt | $0.0000030/token |
-| Completion | $0.0000090/token |
+| Prompt | $0.0000030303/token |
+| Completion | $0.0000090909/token |
+
+## Bot Information
+
+**Creator:** None
+
+**Description:** Mistral's latest text generation model (Mistral-Large-2407) with top-tier reasoning capabilities. It can be used for complex multilingual reasoning tasks, including text understanding, transformation, and code generation. This bot has the full 128k context window supported by the model.
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** text, image
 
 **Output Modalities:** text
 
-**Modality:** text->text
+**Modality:** text,image->text
 
 
 ## Technical Details
 
-**Model ID:** `Mistral-Large-2`
+**Model ID:** `mistral-large-2`
 
 **Object Type:** model
 
 **Created:** 1708971504266
 
-**Owned By:** poe
+**Owned By:** Mistral
 
-**Root:** Mistral-Large-2
+**Root:** mistral-large-2
 
-**API Last Updated:** 2025-10-15 16:36:09.638735
+**API Last Updated:** 2026-10-05 01:48:43.417524

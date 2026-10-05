@@ -1,4 +1,4 @@
-# [Qwen3-VL-235B-A22B-T](https://poe.com/Qwen3-VL-235B-A22B-T){ .md-button .md-button--primary }
+# [qwen3-vl-235b-a22b-t](https://poe.com/qwen3-vl-235b-a22b-t){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -6,7 +6,8 @@
 
 | Type | Cost |
 |------|------|
-| Request | $0.0048/request |
+| Prompt | $9.899E-7/token |
+| Completion | $0.0000039899/token |
 
 ### Points-based Pricing
 
@@ -46,23 +47,23 @@ Context window: 128k tokens
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** text, image, video
 
 **Output Modalities:** text
 
-**Modality:** text->text
+**Modality:** text,image,video->text
 
 
 ## Technical Details
 
-**Model ID:** `Qwen3-VL-235B-A22B-T`
+**Model ID:** `qwen3-vl-235b-a22b-t`
 
 **Object Type:** model
 
 **Created:** 1758695878297
 
-**Owned By:** poe
+**Owned By:** Novita AI
 
-**Root:** Qwen3-VL-235B-A22B-T
+**Root:** qwen3-vl-235b-a22b-t
 
-**API Last Updated:** 2025-10-15 16:36:09.625241
+**API Last Updated:** 2026-10-05 01:48:43.416564

@@ -1,24 +1,38 @@
-# [Mistral-Small-3.1](https://poe.com/Mistral-Small-3.1){ .md-button .md-button--primary }
+# [mistral-small-3.1](https://poe.com/mistral-small-3.1){ .md-button .md-button--primary }
+
+## Pricing
+
+### API Pricing (USD)
+
+| Type | Cost |
+|------|------|
+
+## Bot Information
+
+**Creator:** @empiriolabsai
+
+**Description:** Mistral Small 3.1 24B Instruct is an upgraded variant of Mistral Small 3 (2501), featuring 24 billion parameters with advanced multimodal capabilities. It provides state-of-the-art performance in text-based reasoning and vision tasks, including image analysis, programming, mathematical reasoning, and multilingual support across dozens of languages. Equipped with an extensive 128k token context window and optimized for efficient local inference, it supports use cases such as conversational agents, function calling, long-document comprehension, and privacy-sensitive deployments.
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** text, image
 
 **Output Modalities:** text
 
-**Modality:** text->text
+**Modality:** text,image->text
 
 
 ## Technical Details
 
-**Model ID:** `Mistral-Small-3.1`
+**Model ID:** `mistral-small-3.1`
 
 **Object Type:** model
 
 **Created:** 1742338142315
 
-**Owned By:** poe
+**Owned By:** EmpirioLabs AI
 
-**Root:** Mistral-Small-3.1
+**Root:** mistral-small-3.1
 
-**API Last Updated:** 2025-10-15 16:36:09.631246
+**API Last Updated:** 2026-10-05 01:48:43.416949

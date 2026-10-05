@@ -1,4 +1,11 @@
-# [FLUX-Fill](https://poe.com/FLUX-Fill){ .md-button .md-button--primary }
+# [flux-fill](https://poe.com/flux-fill){ .md-button .md-button--primary }
+
+## Bot Information
+
+**Creator:** @fal
+
+**Description:** Given an image and a mask (separate images), fills in the region of the image given by the mask as per the prompt. The base image should be the first image attached and the black-and-white mask should be the second image; a text prompt is required and should specify what you want the model to inpaint in the white area of the mask.
+
 
 ## Architecture
 
@@ -11,14 +18,14 @@
 
 ## Technical Details
 
-**Model ID:** `FLUX-Fill`
+**Model ID:** `flux-fill`
 
 **Object Type:** model
 
 **Created:** 1736787123399
 
-**Owned By:** poe
+**Owned By:** fal
 
-**Root:** FLUX-Fill
+**Root:** flux-fill
 
-**API Last Updated:** 2025-10-15 16:36:09.635720
+**API Last Updated:** 2026-10-05 01:48:43.417324

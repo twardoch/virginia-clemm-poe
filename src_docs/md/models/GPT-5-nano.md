@@ -1,4 +1,4 @@
-# [GPT-5-nano](https://poe.com/GPT-5-nano){ .md-button .md-button--primary }
+# [gpt-5-nano](https://poe.com/gpt-5-nano){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -6,8 +6,8 @@
 
 | Type | Cost |
 |------|------|
-| Prompt | $6.0E-8/token |
-| Completion | $3.6E-7/token |
+| Prompt | $4.55E-8/token |
+| Completion | $3.636E-7/token |
 
 ### Points-based Pricing
 
@@ -34,23 +34,23 @@ Use `--web_search true` to enable web search and real-time information access, t
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** text, image
 
 **Output Modalities:** text
 
-**Modality:** text->text
+**Modality:** text,image->text
 
 
 ## Technical Details
 
-**Model ID:** `GPT-5-nano`
+**Model ID:** `gpt-5-nano`
 
 **Object Type:** model
 
 **Created:** 1754429832540
 
-**Owned By:** poe
+**Owned By:** OpenAI
 
-**Root:** GPT-5-nano
+**Root:** gpt-5-nano
 
-**API Last Updated:** 2025-10-15 16:36:09.616457
+**API Last Updated:** 2026-10-05 01:48:43.416128

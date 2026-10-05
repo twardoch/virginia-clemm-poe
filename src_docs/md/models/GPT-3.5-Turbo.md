@@ -1,4 +1,4 @@
-# [GPT-3.5-Turbo](https://poe.com/GPT-3.5-Turbo){ .md-button .md-button--primary }
+# [gpt-3.5-turbo](https://poe.com/gpt-3.5-turbo){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -6,28 +6,35 @@
 
 | Type | Cost |
 |------|------|
-| Prompt | $4.5E-7/token |
-| Completion | $0.0000013/token |
+| Prompt | $4.545E-7/token |
+| Completion | $0.0000013636/token |
+
+## Bot Information
+
+**Creator:** @openai
+
+**Description:** OpenAI’s GPT 3.5 Turbo model is a powerful language generation system designed to provide highly coherent, contextually relevant, and detailed responses. Supports 16,384 tokens of context. 
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** text, image
 
 **Output Modalities:** text
 
-**Modality:** text->text
+**Modality:** text,image->text
 
 
 ## Technical Details
 
-**Model ID:** `GPT-3.5-Turbo`
+**Model ID:** `gpt-3.5-turbo`
 
 **Object Type:** model
 
 **Created:** 1694610718926
 
-**Owned By:** poe
+**Owned By:** OpenAI
 
-**Root:** GPT-3.5-Turbo
+**Root:** gpt-3.5-turbo
 
-**API Last Updated:** 2025-10-15 16:36:09.642115
+**API Last Updated:** 2026-10-05 01:48:43.417551

@@ -1,4 +1,4 @@
-# [Mixtral8x22b-Inst-FW](https://poe.com/Mixtral8x22b-Inst-FW){ .md-button .md-button--primary }
+# [mixtral8x22b-inst-fw](https://poe.com/mixtral8x22b-inst-fw){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -7,6 +7,13 @@
 | Type | Cost |
 |------|------|
 | Request | $0.0036/request |
+
+## Bot Information
+
+**Creator:** @fireworksai
+
+**Description:** Mixtral 8x22B Mixture-of-Experts instruct model from Mistral hosted by Fireworks. 
+
 
 ## Architecture
 
@@ -19,14 +26,14 @@
 
 ## Technical Details
 
-**Model ID:** `Mixtral8x22b-Inst-FW`
+**Model ID:** `mixtral8x22b-inst-fw`
 
 **Object Type:** model
 
 **Created:** 1712949013942
 
-**Owned By:** poe
+**Owned By:** Fireworks AI
 
-**Root:** Mixtral8x22b-Inst-FW
+**Root:** mixtral8x22b-inst-fw
 
-**API Last Updated:** 2025-10-15 16:36:09.638471
+**API Last Updated:** 2026-10-05 01:48:43.417480

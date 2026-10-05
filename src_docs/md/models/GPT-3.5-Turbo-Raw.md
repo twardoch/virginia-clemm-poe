@@ -1,4 +1,4 @@
-# [GPT-3.5-Turbo-Raw](https://poe.com/GPT-3.5-Turbo-Raw){ .md-button .md-button--primary }
+# [gpt-3.5-turbo-raw](https://poe.com/gpt-3.5-turbo-raw){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -6,28 +6,35 @@
 
 | Type | Cost |
 |------|------|
-| Prompt | $4.5E-7/token |
-| Completion | $0.0000013/token |
+| Prompt | $4.545E-7/token |
+| Completion | $0.0000013636/token |
+
+## Bot Information
+
+**Creator:** @openai
+
+**Description:** Powered by gpt-3.5-turbo without a system prompt.
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** text, image
 
 **Output Modalities:** text
 
-**Modality:** text->text
+**Modality:** text,image->text
 
 
 ## Technical Details
 
-**Model ID:** `GPT-3.5-Turbo-Raw`
+**Model ID:** `gpt-3.5-turbo-raw`
 
 **Object Type:** model
 
 **Created:** 1695849978857
 
-**Owned By:** poe
+**Owned By:** OpenAI
 
-**Root:** GPT-3.5-Turbo-Raw
+**Root:** gpt-3.5-turbo-raw
 
-**API Last Updated:** 2025-10-15 16:36:09.646476
+**API Last Updated:** 2026-10-05 01:48:43.417893

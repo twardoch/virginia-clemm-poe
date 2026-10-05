@@ -1,24 +1,31 @@
-# [Qwen-Edit](https://poe.com/Qwen-Edit){ .md-button .md-button--primary }
+# [qwen-edit](https://poe.com/qwen-edit){ .md-button .md-button--primary }
+
+## Bot Information
+
+**Creator:** @fal
+
+**Description:** Image editing model based on Qwen-Image, with superior text editing capabilities.
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** text, image
 
-**Output Modalities:** text
+**Output Modalities:** image
 
-**Modality:** text->text
+**Modality:** text,image->image
 
 
 ## Technical Details
 
-**Model ID:** `Qwen-Edit`
+**Model ID:** `qwen-edit`
 
 **Object Type:** model
 
 **Created:** 1755628345426
 
-**Owned By:** poe
+**Owned By:** fal
 
-**Root:** Qwen-Edit
+**Root:** qwen-edit
 
-**API Last Updated:** 2025-10-15 16:36:09.635224
+**API Last Updated:** 2026-10-05 01:48:43.417279

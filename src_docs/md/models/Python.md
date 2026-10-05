@@ -1,4 +1,4 @@
-# [Python](https://poe.com/Python){ .md-button .md-button--primary }
+# [python](https://poe.com/python){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -7,6 +7,13 @@
 | Type | Cost |
 |------|------|
 | Request | $0.000030/request |
+
+## Bot Information
+
+**Creator:** None
+
+**Description:** Executes Python code (version 3.11) from the user message and outputs the results. If there are code blocks in the user message (surrounded by triple backticks), then only the code blocks will be executed. These libraries are imported into this bot's run-time automatically -- numpy, pandas, requests, matplotlib, scikit-learn, torch, PyYAML, tensorflow, scipy, pytest -- along with ~150 of the most widely used Python libraries.
+
 
 ## Architecture
 
@@ -19,14 +26,14 @@
 
 ## Technical Details
 
-**Model ID:** `Python`
+**Model ID:** `python`
 
 **Object Type:** model
 
 **Created:** 1724756919380
 
-**Owned By:** poe
+**Owned By:** Poe
 
-**Root:** Python
+**Root:** python
 
-**API Last Updated:** 2025-10-15 16:36:09.645602
+**API Last Updated:** 2026-10-05 01:48:43.417847

@@ -1,4 +1,4 @@
-# [Mistral-7B-v0.3-DI](https://poe.com/Mistral-7B-v0.3-DI){ .md-button .md-button--primary }
+# [mistral-7b-v0.3-di](https://poe.com/mistral-7b-v0.3-di){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -7,6 +7,17 @@
 | Type | Cost |
 |------|------|
 | Request | $0.00015/request |
+
+## Bot Information
+
+**Creator:** @deepinfra
+
+**Description:** Mistral Instruct 7B v0.3 from Mistral AI.
+
+All data you provide this bot will not be used in training, and is sent only to DeepInfra, a US-based company.
+
+Supports 32k tokens of input context and 8k tokens of output context. Quantization: FP16 (official).
+
 
 ## Architecture
 
@@ -19,14 +30,14 @@
 
 ## Technical Details
 
-**Model ID:** `Mistral-7B-v0.3-DI`
+**Model ID:** `mistral-7b-v0.3-di`
 
 **Object Type:** model
 
 **Created:** 1740490886743
 
-**Owned By:** poe
+**Owned By:** DeepInfra
 
-**Root:** Mistral-7B-v0.3-DI
+**Root:** mistral-7b-v0.3-di
 
-**API Last Updated:** 2025-10-15 16:36:09.637766
+**API Last Updated:** 2026-10-05 01:48:43.417453

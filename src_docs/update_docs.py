@@ -93,7 +93,8 @@ def generate_model_page(model: dict[str, Any]) -> str:
     if bot_info := model.get("bot_info"):
         content.append("## Bot Information\n")
         content.append(f"**Creator:** {bot_info.get('creator', 'N/A')}\n")
-        content.append(f"**Description:** {bot_info.get('description', 'N/A')}\n")
+        description = (bot_info.get("description") or "Unknown").replace("[", r"\[").replace("]", r"\]")
+        content.append(f"**Description:** {description}\n")
         if extra := bot_info.get("description_extra"):
             content.append(f"**Extra:** {extra}\n")
         content.append("")

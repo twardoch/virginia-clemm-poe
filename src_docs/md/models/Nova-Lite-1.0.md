@@ -1,6 +1,13 @@
-# [Nova-Lite-1.0](https://poe.com/Nova-Lite-1.0){ .md-button .md-button--primary }
+# [nova-lite-1.0](https://poe.com/nova-lite-1.0){ .md-button .md-button--primary }
 
 ## Pricing
+
+### API Pricing (USD)
+
+| Type | Cost |
+|------|------|
+| Prompt | $6.97E-8/token |
+| Completion | $2.828E-7/token |
 
 ### Points-based Pricing
 
@@ -24,23 +31,23 @@
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** text, image, video
 
 **Output Modalities:** text
 
-**Modality:** text->text
+**Modality:** text,image,video->text
 
 
 ## Technical Details
 
-**Model ID:** `Nova-Lite-1.0`
+**Model ID:** `nova-lite-1.0`
 
 **Object Type:** model
 
 **Created:** 1733713614756
 
-**Owned By:** poe
+**Owned By:** EmpirioLabs AI
 
-**Root:** Nova-Lite-1.0
+**Root:** nova-lite-1.0
 
-**API Last Updated:** 2025-10-15 16:36:09.617609
+**API Last Updated:** 2026-10-05 01:48:43.416220

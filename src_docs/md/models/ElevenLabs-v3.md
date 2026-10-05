@@ -1,4 +1,4 @@
-# [ElevenLabs-v3](https://poe.com/ElevenLabs-v3){ .md-button .md-button--primary }
+# [elevenlabs-v3](https://poe.com/elevenlabs-v3){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -19,26 +19,26 @@
 **Description:** ElevenLabs v3 is a cutting-edge text-to-speech model that brings scripts to life with remarkable realism and performance-level control. Unlike traditional TTS systems, it allows creators to shape the emotional tone, pacing, and soundscape of their audio through the use of inline audio tags. These tags are enclosed in square brackets and act as stage directions—guiding how a line is spoken or what sound effects are inserted—without being spoken aloud. This enables rich, expressive narration and dialogue for applications like audiobooks, games, podcasts, and interactive media. Whether you’re aiming for a tense whisper, a sarcastic remark, or a dramatic soundscape full of explosions and ambient effects, v3 gives you granular control directly in the text prompt. This bot will also run text-to-speech on PDF attachments / URL links.
 
 Examples of voice delivery tags include:
-* [whispers] I have to tell you a secret. 
-* [angry] That was *never* the plan.
-* [sarcastic] Oh, sure. That’ll totally work.
-* and [laughs] You're hilarious.
+* \[whispers\] I have to tell you a secret. 
+* \[angry\] That was *never* the plan.
+* \[sarcastic\] Oh, sure. That’ll totally work.
+* and \[laughs\] You're hilarious.
 
 Examples of sound effect tags are:
-* [gunshot] Get down!
-* [applause] Thank you, everyone.
-* and [explosion] What was that?!
+* \[gunshot\] Get down!
+* \[applause\] Thank you, everyone.
+* and \[explosion\] What was that?!
 
 These can also be combined.
 
 Multiple speakers can be supported via the parameter control. Dialogue for multiple speakers must follow the format, e.g. for 3 speakers:
 
-Speaker 1: [dialogue]
-Speaker 2: [dialogue]
-Speaker 3: [dialogue]
-Speaker 1: [dialogue]
-Speaker 2: [dialogue]
---speaker_count 3 --voice_1 [voice_1] --voice_2 [voice_2] --voice_3 [voice_3]
+Speaker 1: \[dialogue\]
+Speaker 2: \[dialogue\]
+Speaker 3: \[dialogue\]
+Speaker 1: \[dialogue\]
+Speaker 2: \[dialogue\]
+--speaker_count 3 --voice_1 \[voice_1\] --voice_2 \[voice_2\] --voice_3 \[voice_3\]
 
 The following voices are supported for dialogue:
 Alexandra - Conversational & Real
@@ -87,14 +87,14 @@ Prompt input cannot exceed 2,000 characters.
 
 ## Technical Details
 
-**Model ID:** `ElevenLabs-v3`
+**Model ID:** `elevenlabs-v3`
 
 **Object Type:** model
 
 **Created:** 1749151405074
 
-**Owned By:** poe
+**Owned By:** ElevenLabs
 
-**Root:** ElevenLabs-v3
+**Root:** elevenlabs-v3
 
-**API Last Updated:** 2025-10-15 16:36:09.621176
+**API Last Updated:** 2026-10-05 01:48:43.416002

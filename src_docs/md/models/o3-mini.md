@@ -6,16 +6,26 @@
 
 | Type | Cost |
 |------|------|
-| Prompt | $9.9E-7/token |
-| Completion | $0.0000040/token |
+| Prompt | $0.000001/token |
+| Completion | $0.000004/token |
+
+## Bot Information
+
+**Creator:** @openai
+
+**Description:** o3-mini is OpenAI's reasoning model, providing high intelligence on a variety of tasks and domains, including science, math, and coding. This bot uses medium reasoning effort by default but low, medium & high can be selected; supports 200k tokens of input context and 100k tokens of output context.
+
+Optional parameters:
+Set reasoning effort: Select from `low`, `medium`, `high`. Medium reasoning effort is set by default.
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** text, image
 
 **Output Modalities:** text
 
-**Modality:** text->text
+**Modality:** text,image->text
 
 
 ## Technical Details
@@ -26,8 +36,8 @@
 
 **Created:** 1738356284517
 
-**Owned By:** poe
+**Owned By:** OpenAI
 
 **Root:** o3-mini
 
-**API Last Updated:** 2025-10-15 16:36:09.628186
+**API Last Updated:** 2026-10-05 01:48:43.416728

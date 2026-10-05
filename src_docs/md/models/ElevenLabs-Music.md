@@ -1,12 +1,18 @@
-# [ElevenLabs-Music](https://poe.com/ElevenLabs-Music){ .md-button .md-button--primary }
+# [elevenlabs-music](https://poe.com/elevenlabs-music){ .md-button .md-button--primary }
 
 ## Pricing
 
-### API Pricing (USD)
+## Bot Information
 
-| Type | Cost |
-|------|------|
-| Request | $0.90/request |
+**Creator:** @elevenlabsco
+
+**Description:** The ElevenLabs music model is a generative AI system designed to compose original music from text prompts. It allows creators to specify genres, moods, instruments, and structure, producing royalty-free tracks tailored to their needs. The model emphasizes speed, creative flexibility, and high-quality audio output, making it suitable for use in videos, podcasts, games, and other multimedia projects. This bot can produce songs with suggested lyrics based on general descriptions, exact lyrics if specified as such, or instrumental ones, all via prompting.
+
+Optional parameters:
+Music length to set the length of the song in milliseconds (10,000 to 300,000 ms).
+
+Note: Prompt input cannot exceed 2,000 characters.
+
 
 ## Architecture
 
@@ -19,14 +25,14 @@
 
 ## Technical Details
 
-**Model ID:** `ElevenLabs-Music`
+**Model ID:** `elevenlabs-music`
 
 **Object Type:** model
 
 **Created:** 1756499655464
 
-**Owned By:** poe
+**Owned By:** ElevenLabs
 
-**Root:** ElevenLabs-Music
+**Root:** elevenlabs-music
 
-**API Last Updated:** 2025-10-15 16:36:09.631597
+**API Last Updated:** 2026-10-05 01:48:43.416980

@@ -6,8 +6,8 @@
 
 | Type | Cost |
 |------|------|
-| Prompt | $0.000018/token |
-| Completion | $0.000072/token |
+| Prompt | $0.0000181818/token |
+| Completion | $0.0000727273/token |
 
 ### Points-based Pricing
 
@@ -33,11 +33,11 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** text, image
 
 **Output Modalities:** text
 
-**Modality:** text->text
+**Modality:** text,image->text
 
 
 ## Technical Details
@@ -48,8 +48,8 @@ To instruct the bot to use more reasoning effort, add --reasoning_effort to the 
 
 **Created:** 1749588430571
 
-**Owned By:** poe
+**Owned By:** OpenAI
 
 **Root:** o3-pro
 
-**API Last Updated:** 2025-10-15 16:36:09.616590
+**API Last Updated:** 2026-10-05 01:48:43.416381

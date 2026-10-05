@@ -1,4 +1,4 @@
-# [GPT-5-Pro](https://poe.com/GPT-5-Pro){ .md-button .md-button--primary }
+# [gpt-5-pro](https://poe.com/gpt-5-pro){ .md-button .md-button--primary }
 
 ## Pricing
 
@@ -6,8 +6,8 @@
 
 | Type | Cost |
 |------|------|
-| Prompt | $0.000013/token |
-| Completion | $0.00011/token |
+| Prompt | $0.0000136364/token |
+| Completion | $0.0001090909/token |
 
 ### Points-based Pricing
 
@@ -32,23 +32,23 @@ Use `--web_search true` to enable web search and real-time information access, t
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** text, image
 
 **Output Modalities:** text
 
-**Modality:** text->text
+**Modality:** text,image->text
 
 
 ## Technical Details
 
-**Model ID:** `GPT-5-Pro`
+**Model ID:** `gpt-5-pro`
 
 **Object Type:** model
 
 **Created:** 1759789057270
 
-**Owned By:** poe
+**Owned By:** OpenAI
 
-**Root:** GPT-5-Pro
+**Root:** gpt-5-pro
 
-**API Last Updated:** 2025-10-15 16:36:09.615199
+**API Last Updated:** 2026-10-05 01:48:43.416045

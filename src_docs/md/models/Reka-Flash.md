@@ -1,4 +1,11 @@
-# [Reka-Flash](https://poe.com/Reka-Flash){ .md-button .md-button--primary }
+# [reka-flash](https://poe.com/reka-flash){ .md-button .md-button--primary }
+
+## Bot Information
+
+**Creator:** @reka
+
+**Description:** Reka's efficient and capable 21B multimodal model optimized for fast workloads and amazing quality. Works with text, images and video inputs.
+
 
 ## Architecture
 
@@ -11,14 +18,14 @@
 
 ## Technical Details
 
-**Model ID:** `Reka-Flash`
+**Model ID:** `reka-flash`
 
 **Object Type:** model
 
 **Created:** 1707892216404
 
-**Owned By:** poe
+**Owned By:** Reka AI
 
-**Root:** Reka-Flash
+**Root:** reka-flash
 
-**API Last Updated:** 2025-10-15 16:36:09.638932
+**API Last Updated:** 2026-10-05 01:48:43.417536

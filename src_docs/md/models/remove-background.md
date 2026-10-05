@@ -1,5 +1,12 @@
 # [remove-background](https://poe.com/remove-background){ .md-button .md-button--primary }
 
+## Bot Information
+
+**Creator:** @fal
+
+**Description:** Remove background from your images
+
+
 ## Architecture
 
 **Input Modalities:** text
@@ -17,8 +24,8 @@
 
 **Created:** 1714848450172
 
-**Owned By:** poe
+**Owned By:** fal
 
 **Root:** remove-background
 
-**API Last Updated:** 2025-10-15 16:36:09.643566
+**API Last Updated:** 2026-10-05 01:48:43.417745
