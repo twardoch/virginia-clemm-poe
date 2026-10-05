@@ -1,0 +1,30 @@
+{
+  "id": "mistral-small-4",
+  "checked_at": "2026-10-05T02:10:44.230117+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Mistral-Small-4",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Mistral Small 4 is a powerful hybrid model capable of acting as both a general instruction model and a reasoning model. It unifies the capabilities of three different model families\u2014Instruct, Reasoning (previously called Magistral), and Devstral\u2014into a single, unified model.\n\nWith its multimodal capabilities, efficient architecture, and flexible mode switching, it is a powerful general-purpose model for any task. In a latency-optimized setup, Mistral Small 4 achieves a 40% reduction in end-to-end completion time, and in a throughput-optimized setup, it handles 3x more requests per second compared to Mistral Small 3.\n\nNotes:\n- Context Window: 256k\n- Supported input modalities: Text, Image, Documents\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th style=\"text-align: left;\">Type</th><th style=\"text-align: left;\">Rate (USD)</th><th style=\"text-align: left;\">Rate (Points)</th></tr></thead><tbody><tr><td style=\"text-align: left;\">Input</td><td style=\"text-align: left;\">$0.15/1M tokens</td><td style=\"text-align: left;\">5 points/1K tokens</td></tr><tr><td style=\"text-align: left;\">Output</td><td style=\"text-align: left;\">$0.60/1M tokens</td><td style=\"text-align: left;\">20 points/1K tokens</td></tr></tbody></table>",
+    "<table><thead><tr><th style=\"text-align: left;\">Tool</th><th style=\"text-align: left;\">Rate (USD)</th><th style=\"text-align: left;\">Rate (Points)</th></tr></thead><tbody><tr><td style=\"text-align: left;\">Standard Web Search</td><td style=\"text-align: left;\">$0.084/call</td><td style=\"text-align: left;\">2800 points/call</td></tr><tr><td style=\"text-align: left;\">Premium Web Search</td><td style=\"text-align: left;\">$0.140/call</td><td style=\"text-align: left;\">4667 points/call</td></tr><tr><td style=\"text-align: left;\">Code Interpreter</td><td style=\"text-align: left;\">$0.084/call</td><td style=\"text-align: left;\">2800 points/call</td></tr><tr><td style=\"text-align: left;\">Image Generation</td><td style=\"text-align: left;\">$0.280/image</td><td style=\"text-align: left;\">9333 points/image</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "**Token Pricing**\n| Type | Rate (USD) | Rate (Points) |\n|:-----|:-----------|:--------------|\n| Input | $0.15/1M tokens | 5 points/1K tokens |\n| Output | $0.60/1M tokens | 20 points/1K tokens |\n\n**Tool Pricing** *(only charged when actually used)*\n| Tool | Rate (USD) | Rate (Points) |\n|:-----|:-----------|:--------------|\n| Standard Web Search | $0.084/call | 2800 points/call |\n| Premium Web Search | $0.140/call | 4667 points/call |\n| Code Interpreter | $0.084/call | 2800 points/call |\n| Image Generation | $0.280/image | 9333 points/image |\n\n*Tools are charged only when the model actually invokes them, not when enabled.*"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "claude-code",
+  "checked_at": "2026-10-05T02:11:03.399641+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Claude-Code",
+    "creator": {
+      "isDeleted": false,
+      "handle": "poe_tools",
+      "fullName": "Poe Tools",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2890766504-50-rtkgimwdzuemwbnocyzjdrrownqcarrz.jpeg",
+      "id": "UG9lVXNlcjoyODkwNzY2NTA0"
+    },
+    "description": "A powerful assistant that can read, write, and analyze files across many formats.  It can also delegate to other Poe bots to handle complex, multi-step tasks.\n\nBuilt on the Claude Agent SDK from Anthropic.",
+    "poweredBy": "Runs inside Poe's protected environment.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Claude-Code may make multiple calls to [Claude-Sonnet-4.5](https://poe.com/Claude-Sonnet-4.5), [Claude-Haiku-4.5](https://poe.com/Claude-Haiku-4.5) or [Claude-Opus-4.6](https://poe.com/Claude-Opus-4.6). Each call is charged at the respective bots' rates."
+    }
+  ]
+}

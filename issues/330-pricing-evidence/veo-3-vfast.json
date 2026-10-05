@@ -1,0 +1,29 @@
+{
+  "id": "veo-3-vfast",
+  "checked_at": "2026-10-05T02:12:28.623706+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Veo-3-vFast",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Veo-3 Fast is a faster and more cost effective version of Google's Veo 3. \n\nOptional parameters:\nSet the aspect ratio of the generated image (one of `16:9`, `1:1`, `9:16`). \nToggle `on` the generate audio with your video at a higher cost. \nNegative prompt on what to exclude e.g. `blur`, `low resolution`, `poor quality`. \nDuration is limited to 7 seconds. This is a text to video generation model only.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": false
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Video Output</td><td>8334 points ($0.25) / s</td></tr><tr><td>Audio + Video Output</td><td>13334 points ($0.40) / s</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Video Output | 8334 points ($0.25) / s | \n| Audio + Video Output | 13334 points ($0.40) / s | \n"
+    }
+  ]
+}

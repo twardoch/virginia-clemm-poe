@@ -9,9 +9,31 @@
 | Prompt | $0.0000024242/token |
 | Completion | $0.0000048485/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $2.42/1M tokens · 80 points/1k tokens |
+| Output (Text) | $4.85/1M tokens · 160 points/1k tokens |
+| Bot Message | $0.0051/message · 167 points/message |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 2.42 | 1000000 tokens |
+| Input (text) | POINTS | 80 | 1000 tokens |
+| Output (text) | USD | 4.85 | 1000000 tokens |
+| Output (text) | POINTS | 160 | 1000 tokens |
+| Bot message | USD | 0.0051 | 1 message |
+| Bot message | POINTS | 167 | 1 message |
+
+**Last Checked:** 2026-10-05T02:13:10.556113+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** DeepSeek V4 Pro is a flagship Mixture-of-Experts large language model with 1.6 trillion total parameters and 49 billion active parameters, natively supporting context lengths of up to 1M tokens. Excels at advanced mathematical reasoning, complex logical inference, specialized coding, and deep analysis of long-form text, well suited for cutting-edge research, sophisticated office workflows, and advanced AI agents.
 This model is served from Singapore.

@@ -1,0 +1,29 @@
+{
+  "id": "kling-omni",
+  "checked_at": "2026-10-05T02:11:14.498879+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Kling-Omni",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Bot for Kling Omni Image-to-Video inference. Send one image for image-to-video generation and two images for first-to-last frame video generation. \n\nOptional parameters:\nSet Duration. Select from (5 seconds, 10 seconds) to specify video length in seconds. Set to 5 seconds as default.\n\nNotes:\nAccepted file type: jpeg, png, webp, heic, heif. \nThis bot does not accept video files.\nPrompt is required after attaching images to generate video.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Video Output</td><td>3734 points ($0.11) / second</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Video Output | 3734 points ($0.11) / second | \n"
+    }
+  ]
+}

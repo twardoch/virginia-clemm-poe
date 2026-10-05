@@ -1,0 +1,29 @@
+{
+  "id": "hailuo-music-v1.5",
+  "checked_at": "2026-10-05T02:11:57.073131+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Hailuo-Music-v1.5",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Generate music from text prompts using the MiniMax model, which leverages advanced AI techniques to create high-quality, diverse musical compositions. \n\nNotes: \nSend the lyrics of the music over as your prompt. \nBoth prompt/lyrics and style must be sent over for best quality.\nThe prompt supports [intro][verse][chorus][bridge][outro] sections.\n\nOptional parameters:\nSet music style to set the style of the generated music - for example, rock and roll, hip-hop, etc.  ",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": false
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Audio Output</td><td>1000 points ($0.030) / message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Audio Output | 1000 points ($0.030) / message | \n"
+    }
+  ]
+}

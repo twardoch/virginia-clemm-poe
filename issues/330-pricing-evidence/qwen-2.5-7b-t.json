@@ -1,0 +1,29 @@
+{
+  "id": "qwen-2.5-7b-t",
+  "checked_at": "2026-10-05T02:12:53.167180+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Qwen-2.5-7B-T",
+    "creator": {
+      "isDeleted": false,
+      "handle": "togetherai",
+      "fullName": "Together AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-538388044-50-pymstrtquryhajnzeyeaqftjrrbrgvrv.jpeg",
+      "id": "UG9lVXNlcjo1MzgzODgwNDQ="
+    },
+    "description": "Qwen 2.5 7B from Alibaba. Excels in coding, math, instruction following, natural language understanding, and has great multilangual support with more than 29 languages.",
+    "poweredBy": "Powered by a server managed by @togetherai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.0023/message</td><td>75 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.0023/message | 75 points/message |\n"
+    }
+  ]
+}

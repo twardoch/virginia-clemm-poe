@@ -1,0 +1,29 @@
+{
+  "id": "Midjourney-Create",
+  "checked_at": "2026-10-05T02:09:25.828705+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Midjourney-Create",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Midjourney generates high-quality images and videos from text prompts, supporting features like text-to-image creation, image-to-image transformations, image-to-video conversion, upscaling, style variations, and more.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Operation Type</th><th>Fast Price</th><th>Turbo Price</th></tr></thead><tbody><tr><td>Text Prompt Generation</td><td>5600 ($0.17)</td><td>16800 ($0.51)</td></tr><tr><td>Image Prompt Generation</td><td>5600 ($0.17)</td><td>16800 ($0.51)</td></tr><tr><td>Describe Image</td><td>5600 ($0.17)</td><td>16800 ($0.51)</td></tr><tr><td>Blend Images</td><td>5600 ($0.17)</td><td>16800 ($0.51)</td></tr><tr><td>Video 480p</td><td>60000 ($1.82)</td><td>N/A</td></tr><tr><td>Video 720p (HD)</td><td>145600 ($4.41)</td><td>N/A</td></tr><tr><td>Upscale</td><td>800 ($0.024)</td><td>1600 ($0.048)</td></tr><tr><td>Advanced Upscales</td><td>5600 ($0.17)</td><td>16800 ($0.51)</td></tr><tr><td>Variation / Reroll</td><td>5600 ($0.17)</td><td>16800 ($0.51)</td></tr><tr><td>Inpaint / Vary Region</td><td>5600 ($0.17)</td><td>8000 ($0.24)</td></tr><tr><td>Zoom / Pan</td><td>5600 ($0.17)</td><td>16800 ($0.51)</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "**Generation Costs**: \n\n| Operation Type | Fast Price | Turbo Price |\n|---|---|---|\n| Text Prompt Generation | 5600 ($0.17) | 16800 ($0.51) |\n| Image Prompt Generation | 5600 ($0.17) | 16800 ($0.51) |\n| Describe Image | 5600 ($0.17) | 16800 ($0.51) |\n| Blend Images | 5600 ($0.17) | 16800 ($0.51) |\n| Video 480p | 60000 ($1.82) | N/A |\n| Video 720p (HD) | 145600 ($4.41) | N/A |\n| Upscale | 800 ($0.024) | 1600 ($0.048) |\n| Advanced Upscales | 5600 ($0.17) | 16800 ($0.51) |\n| Variation / Reroll | 5600 ($0.17) | 16800 ($0.51) |\n| Inpaint / Vary Region | 5600 ($0.17) | 8000 ($0.24) |\n| Zoom / Pan | 5600 ($0.17) | 16800 ($0.51) |\n"
+    }
+  ]
+}

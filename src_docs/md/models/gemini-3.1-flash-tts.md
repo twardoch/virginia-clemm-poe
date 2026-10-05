@@ -1,8 +1,27 @@
 # [gemini-3.1-flash-tts](https://poe.com/gemini-3.1-flash-tts){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text Tokens) | 87 ($0.0026) points / 1k tokens |
+| Output (Audio Tokens) | 1734 ($0.053) points / 1k tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text tokens) | USD | 0.0026 | 1000 tokens |
+| Output (audio tokens) | USD | 0.053 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:13:39.922234+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Gemini 3.1 Flash TTS is Google’s most controllable text-to-speech model yet, designed to turn text into natural-sounding audio with precise control over style, tone, pace, and delivery. It uses new Audio Tags to make voices feel more expressive and customizable for narration, assistants, and other voice experiences.
 

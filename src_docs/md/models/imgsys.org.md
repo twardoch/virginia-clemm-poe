@@ -1,8 +1,18 @@
 # [imgsys.org](https://poe.com/imgsys.org){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+
+**Last Checked:** 2026-10-05T02:10:17.575751+00:00
+
+
 ## Bot Information
 
-**Creator:** @fal
+**Creator:** fal
 
 **Description:** Test your prompts on different models and rate them on the imgsys.org.
 

@@ -1,8 +1,31 @@
 # [perplexity-adv-deep-research](https://poe.com/perplexity-adv-deep-research){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input Tokens | 434 ($0.013) per 1,000 tokens |
+| Output Tokens | 2167 ($0.066) per 1,000 tokens |
+| Web Search Call | 434 ($0.013) per call |
+| Url Fetch Call | 44 ($0.0013) per call |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input Tokens | USD | 0.013 | 1000 tokens |
+| Output Tokens | USD | 0.066 | 1000 tokens |
+| Web Search Call | USD | 0.013 | 1 call |
+| URL Fetch Call | USD | 0.0013 | 1 call |
+
+**Last Checked:** 2026-10-05T02:11:03.893890+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Perplexity Advanced Deep Research is designed for institutional-grade inquiry, leveraging the powerful reasoning of Claude Opus 4.6 to deliver sophisticated analysis and maximum depth. With enhanced tool access and extensive source coverage, it is the ideal choice for complex tasks requiring rigorous, comprehensive research.
 

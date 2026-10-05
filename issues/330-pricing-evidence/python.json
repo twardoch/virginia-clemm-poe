@@ -1,0 +1,29 @@
+{
+  "id": "python",
+  "checked_at": "2026-10-05T02:12:53.590308+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Python",
+    "creator": {
+      "isDeleted": false,
+      "handle": "poe",
+      "fullName": "Poe",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2187163946-50-eexyawnwrihdoupubqqzwkbjvasbkqhd.jpeg",
+      "id": "UG9lVXNlcjoyMTg3MTYzOTQ2"
+    },
+    "description": "Executes Python code (version 3.11) from the user message and outputs the results. If there are code blocks in the user message (surrounded by triple backticks), then only the code blocks will be executed. These libraries are imported into this bot's run-time automatically -- numpy, pandas, requests, matplotlib, scikit-learn, torch, PyYAML, tensorflow, scipy, pytest -- along with ~150 of the most widely used Python libraries.",
+    "poweredBy": "Powered by Poe and third party model providers.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": false
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.000030/message</td><td>1 point/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.000030/message | 1 point/message |\n"
+    }
+  ]
+}

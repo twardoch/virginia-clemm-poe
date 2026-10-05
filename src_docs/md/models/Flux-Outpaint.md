@@ -1,8 +1,26 @@
 # [Flux-Outpaint](https://poe.com/Flux-Outpaint){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Image Output | 5334 points ($0.16) / message |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Image Output | USD | 0.16 | 1 message |
+| Image Output | POINTS | 5334 | 1 message |
+
+**Last Checked:** 2026-10-05T02:08:54.337533+00:00
+
+
 ## Bot Information
 
-**Creator:** @fal
+**Creator:** fal
 
 **Description:** Outpainting bot based upon Flux-1.1-Pro. Given an image and a prompt, can expand the borders of an image according to your prompt. Use --horizontal and one of "left", "center", or "right" to set the horizontal position of the input image within the final image, and use --vertical with "top"," bottom", or "center" to set the vertical position of the image in the final image.
 
@@ -13,11 +31,11 @@ Decide the amount to be outpainted with --scale (a number between 0.0 and 1.0, i
 
 ## Architecture
 
-**Input Modalities:** Unknown
+**Input Modalities:** text
 
-**Output Modalities:** Unknown
+**Output Modalities:** image
 
-**Modality:** unknown
+**Modality:** text->image
 
 
 ## Technical Details

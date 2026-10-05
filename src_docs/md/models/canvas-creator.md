@@ -1,8 +1,18 @@
 # [canvas-creator](https://poe.com/canvas-creator){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+
+**Last Checked:** 2026-10-05T02:10:35.840563+00:00
+
+
 ## Bot Information
 
-**Creator:** @poe_tools
+**Creator:** poe_tools
 
 **Description:** Specializes in building interactive web applications designed for publishing as apps on Poe. Powered by Claude Code.
 

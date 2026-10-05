@@ -1,0 +1,29 @@
+{
+  "id": "wan-3.0",
+  "checked_at": "2026-10-05T02:13:43.374145+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Wan-3.0",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Wan 3.0 generates video clips of 2 to 30 seconds with synchronized native audio, with Standard and Prime (faster) tiers.\n\nGeneration modes\n- Text-to-video from a prompt alone\n- Animate one image, or two images as first and last frame\n- Reference mode: combine up to 10 images, 5 video clips, and 5 audio clips, and address them in your prompt as Image 1, Video 1, Audio 1\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Tier</th><th>Resolution</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Standard</td><td>480P</td><td>$0.070/sec</td><td>2,333 pts/sec</td></tr><tr><td>Standard</td><td>720P</td><td>$0.140/sec</td><td>4,667 pts/sec</td></tr><tr><td>Standard</td><td>1080P</td><td>$0.280/sec</td><td>9,333 pts/sec</td></tr><tr><td>Prime</td><td>480P</td><td>$0.136/sec</td><td>4,533 pts/sec</td></tr><tr><td>Prime</td><td>720P</td><td>$0.280/sec</td><td>9,333 pts/sec</td></tr><tr><td>Prime</td><td>1080P</td><td>$0.560/sec</td><td>18,667 pts/sec</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "**Wan 3.0 Video Generation Pricing**\n\nPricing is per second of generated video.\n\n| Tier | Resolution | Rate (USD) | Rate (Points) |\n|------|------------|------------|---------------|\n| Standard | 480P | $0.070/sec | 2,333 pts/sec |\n| Standard | 720P | $0.140/sec | 4,667 pts/sec |\n| Standard | 1080P | $0.280/sec | 9,333 pts/sec |\n| Prime | 480P | $0.136/sec | 4,533 pts/sec |\n| Prime | 720P | $0.280/sec | 9,333 pts/sec |\n| Prime | 1080P | $0.560/sec | 18,667 pts/sec |\n\nRequests that include video references are billed for input plus output duration combined.\n"
+    }
+  ]
+}

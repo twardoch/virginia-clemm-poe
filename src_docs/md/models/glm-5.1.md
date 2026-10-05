@@ -9,9 +9,28 @@
 | Prompt | $0.0000014141/token |
 | Completion | $0.0000044444/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $1.41/1M tokens · 47 points/1k tokens |
+| Output (Text) | $4.44/1M tokens · 147 points/1k tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 1.41 | 1000000 tokens |
+| Input (text) | POINTS | 47 | 1000 tokens |
+| Output (text) | USD | 4.44 | 1000000 tokens |
+| Output (text) | POINTS | 147 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:13:31.905374+00:00
+
+
 ## Bot Information
 
-**Creator:** None
+**Creator:** zai
 
 **Description:** Z.ai GLM 5.1 is built for long-horizon autonomous coding: planning, implementing, testing, and refining complex engineering tasks.
 

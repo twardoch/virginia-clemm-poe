@@ -1,8 +1,18 @@
 # [code-editor](https://poe.com/code-editor){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+
+**Last Checked:** 2026-10-05T02:21:42.064399+00:00
+
+
 ## Bot Information
 
-**Creator:** @poe_tools
+**Creator:** poe_tools
 
 **Description:** Official code editor for Poe Scripting using Python, used to connect multiple Poe bots and create AI workflows. Guide and tips: https://creator.poe.com/docs/script-bots/poe-python-reference
 

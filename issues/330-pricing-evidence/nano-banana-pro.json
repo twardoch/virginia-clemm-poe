@@ -1,0 +1,29 @@
+{
+  "id": "nano-banana-pro",
+  "checked_at": "2026-10-05T02:11:19.905930+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Nano-Banana-Pro",
+    "creator": {
+      "isDeleted": false,
+      "handle": "google",
+      "fullName": "Google",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910402837-50-hdxyjsuznjtgwrszmhvbhgbviwdhkwvl.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDAyODM3"
+    },
+    "description": "Nano Banana Pro (Gemini 3 Pro Image Preview) can make detailed, context-rich visuals, precisely edit or restyle input images with exceptional fidelity, and even generate legible text in images in multiple languages.\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @google.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input</td><td>$2.02/1M tokens</td><td>67 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$12.12/1M tokens</td><td>400 points/1k tokens</td></tr><tr><td>Output (image)</td><td>$121.21/1M tokens</td><td>4000 points/1k tokens</td></tr><tr><td>Output</td><td>$0.014/search</td><td>467 points/search</td></tr><tr><td>Cache discount</td><td>90% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input | $2.02/1M tokens | 67 points/1k tokens |\n| Output (text) | $12.12/1M tokens | 400 points/1k tokens |\n| Output (image) | $121.21/1M tokens | 4000 points/1k tokens |\n| Output | $0.014/search | 467 points/search |\n| Cache discount | 90% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n"
+    }
+  ]
+}

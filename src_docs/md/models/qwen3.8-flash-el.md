@@ -9,9 +9,28 @@
 | Prompt | $1.616E-7/token |
 | Completion | $4.747E-7/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $0.16/1M tokens · 6 points/1k tokens |
+| Output (Text) | $0.47/1M tokens · 16 points/1k tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 0.16 | 1000000 tokens |
+| Input (text) | POINTS | 6 | 1000 tokens |
+| Output (text) | USD | 0.47 | 1000000 tokens |
+| Output (text) | POINTS | 16 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:13:46.658065+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Qwen3.8 Flash is Alibaba's fast multimodal Qwen3.8 model, built for coding, agent, and vision workloads. It accepts text, image, and video input with a 1M token context, and supports deep thinking, function calling, and structured JSON output.
 

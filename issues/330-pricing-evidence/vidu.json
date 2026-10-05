@@ -1,0 +1,29 @@
+{
+  "id": "vidu",
+  "checked_at": "2026-10-05T02:12:28.981838+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Vidu",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "The Vidu Video Generation Bot creates videos using images and text prompts. You can generate videos in four modes: \n(1) Image-to-Video: send 1 image with a prompt, \n(2) Start-to-End Frame: send 2 images with a prompt for transition videos, \n(3) Reference-to-Video: send up to 3 images with the reference image parameter for guidance, and \n(4) Template-to-Video: use `--template` to apply pre-designed templates (1-3 images required, pricing varies by template). \n\nNumber of images required varies by template: `dynasty_dress` and `shop_frame` accept 1-2 images, `wish_sender` requires exactly 3 images, all other templates accept only 1 image.\n\nThe bot supports aspect ratios (16:9, 1:1, 9:16), set movement amplitude, and accepts PNG, JPEG, and WEBP formats. \nTasks are mutually exclusive (e.g., you cannot combine start-to-end frame and reference-to-video).\nDuration is limited to 5 seconds.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Image to Video Output</td><td>6667 points ($0.20) / video</td></tr><tr><td>Reference to Video Output</td><td>13334 points ($0.40) / video</td></tr><tr><td>Start and End Frame to Video Output</td><td>6667 points ($0.20) / video</td></tr><tr><td>Standard Template to Video Output</td><td>6667 points ($0.20) / video</td></tr><tr><td>Premium Template to Video Output</td><td>10000 points ($0.30) / video</td></tr><tr><td>Advanced Template to Video Output</td><td>16667 points ($0.51) / video</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Image to Video Output | 6667 points ($0.20) / video | \n| Reference to Video Output | 13334 points ($0.40) / video | \n| Start and End Frame to Video Output | 6667 points ($0.20) / video | \n| Standard Template to Video Output | 6667 points ($0.20) / video | \n| Premium Template to Video Output | 10000 points ($0.30) / video | \n| Advanced Template to Video Output | 16667 points ($0.51) / video | \n"
+    }
+  ]
+}

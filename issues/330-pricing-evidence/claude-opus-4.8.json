@@ -1,0 +1,29 @@
+{
+  "id": "claude-opus-4.8",
+  "checked_at": "2026-10-05T02:10:26.770332+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Claude-Opus-4.8",
+    "creator": {
+      "isDeleted": false,
+      "handle": "anthropic",
+      "fullName": "Anthropic",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910399423-50-rmsjsjntoqqejhymvulgknulhathfdmz.jpeg",
+      "id": "UG9lVXNlcjoyOTEwMzk5NDIz"
+    },
+    "description": "Anthropic's flagship model for enterprise-grade knowledge work, now with sharper judgment and significantly improved honesty. Powered by Dynamic Workflows and effort control, Opus 4.8 excels at codebase-scale migrations, multi-agent coordination, and long-running autonomous tasks with hundreds of parallel subagents. It leverages a massive 1M-token context window and best-in-class computer-use capabilities to seamlessly execute intricate workflows with elite reasoning, safety, and reliability.\n\nThis bot supports optional parameters for advanced customization.",
+    "poweredBy": "Powered by Anthropic: claude-opus-4-8.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input</td><td>$4.29/1M tokens</td><td>142 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$21.46/1M tokens</td><td>709 points/1k tokens</td></tr><tr><td>Output</td><td>$0.010/search</td><td>334 points/search</td></tr><tr><td>Cache discount</td><td>90% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input | $4.29/1M tokens | 142 points/1k tokens |\n| Output (text) | $21.46/1M tokens | 709 points/1k tokens |\n| Output | $0.010/search | 334 points/search |\n| Cache discount | 90% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n\n\nWeb searches will add input tokens."
+    }
+  ]
+}

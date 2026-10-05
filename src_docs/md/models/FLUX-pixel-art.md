@@ -2,7 +2,7 @@
 
 ## Bot Information
 
-**Creator:** @fal
+**Creator:** fal
 
 **Description:** Generate pixel art images with FLUX.1 \[dev\]
 

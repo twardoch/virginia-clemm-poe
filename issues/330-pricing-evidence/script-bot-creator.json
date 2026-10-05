@@ -1,0 +1,27 @@
+{
+  "id": "script-bot-creator",
+  "checked_at": "2026-10-05T02:10:34.820170+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Script-Bot-Creator",
+    "creator": {
+      "isDeleted": false,
+      "handle": "poe_tools",
+      "fullName": "Poe Tools",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2890766504-50-rtkgimwdzuemwbnocyzjdrrownqcarrz.jpeg",
+      "id": "UG9lVXNlcjoyODkwNzY2NTA0"
+    },
+    "description": "Specializes in building workflows that combine bots on Poe. Powered by Claude Code. Guide and tips: https://creator.poe.com/docs/script-bots/quick-start\n\nNote: Script-Bot-Creator cannot access messages sent to or from other bots.\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Runs inside Poe's protected environment.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Script-Bot-Creator may make multiple calls to [Claude-Sonnet-4.5](https://poe.com/Claude-Sonnet-4.5), [Claude-Haiku-4.5](https://poe.com/Claude-Haiku-4.5) or [Claude-Opus-4.6](https://poe.com/Claude-Opus-4.6). Each call is charged at the respective bots' rates."
+    }
+  ]
+}

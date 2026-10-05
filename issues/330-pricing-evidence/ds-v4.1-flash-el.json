@@ -1,0 +1,29 @@
+{
+  "id": "ds-v4.1-flash-el",
+  "checked_at": "2026-10-05T02:13:52.306427+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "DS-V4.1-Flash-EL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "DeepSeek V4.1 Flash is the lightweight flagship of DeepSeek's new architecture family, with benchmark results ahead of DeepSeek V4 Pro. It accepts text and image input with a 1M token context, hybrid thinking, and function calling.\nThis model is served from Singapore.\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.30/1M tokens</td><td>10 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$1.21/1M tokens</td><td>40 points/1k tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.30/1M tokens | 10 points/1k tokens |\n| Output (text) | $1.21/1M tokens | 40 points/1k tokens |\n"
+    }
+  ]
+}

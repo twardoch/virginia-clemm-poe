@@ -1,0 +1,29 @@
+{
+  "id": "Qwen-3-235B-2507-T",
+  "checked_at": "2026-10-05T02:09:37.666753+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Qwen-3-235B-2507-T",
+    "creator": {
+      "isDeleted": false,
+      "handle": "togetherai",
+      "fullName": "Together AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-538388044-50-pymstrtquryhajnzeyeaqftjrrbrgvrv.jpeg",
+      "id": "UG9lVXNlcjo1MzgzODgwNDQ="
+    },
+    "description": "Qwen3 235B A22B 2507, currently the best instruct model (non-reasoning) among both closed and open source models. It excels in instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage. It is also great at multilingual tasks and supports a long context window (262k).",
+    "poweredBy": "Powered by a server managed by @togetherai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.0019/message</td><td>63 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.0019/message | 63 points/message |\n"
+    }
+  ]
+}

@@ -1,8 +1,29 @@
 # [flux-2-pro](https://poe.com/flux-2-pro){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Image Input | 500 points ($0.015) / Megapixel |
+| Image Output | 1000 points ($0.030) / First Output Megapixel |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Image Input | USD | 0.015 | 1 megapixel |
+| Image Input | POINTS | 500 | 1 megapixel |
+| Image Output | USD | 0.030 | 1 megapixel |
+| Image Output | POINTS | 1000 | 1 megapixel |
+
+**Last Checked:** 2026-10-05T02:11:26.956445+00:00
+
+
 ## Bot Information
 
-**Creator:** @fal
+**Creator:** fal
 
 **Description:** Flux.2 \[Pro\] is Black Forest Labs' state-of-the-art model with multi-reference support, fine-grained text rendering, and other features. Supports structured JSON prompts, and allows use of hex colour codes within the prompt for precise colouring.  Send images (Up to 8 images) in jpeg/png/webp format for editing. Total megapixels (input + output) should not exceed 9 megapixels.
 

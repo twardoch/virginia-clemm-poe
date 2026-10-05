@@ -9,9 +9,28 @@
 | Prompt | $6.313E-7/token |
 | Completion | $0.0000037879/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $0.63/1M tokens · 21 points/1k tokens |
+| Output (Text) | $3.79/1M tokens · 125 points/1k tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 0.63 | 1000000 tokens |
+| Input (text) | POINTS | 21 | 1000 tokens |
+| Output (text) | USD | 3.79 | 1000000 tokens |
+| Output (text) | POINTS | 125 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:13:05.939940+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Seed 2.0 Code is optimized for enterprise-grade coding scenarios. Building on the strong agentic and VLM capabilities of Seed 2.0, it further strengthens code generation and software engineering performance. It delivers particularly strong front-end results and is also optimized for multilingual coding needs commonly found in enterprise environments, making it well suited for integration with a wide range of AI coding tools.
 

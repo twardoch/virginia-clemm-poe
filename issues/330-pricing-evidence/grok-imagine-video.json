@@ -1,0 +1,29 @@
+{
+  "id": "grok-imagine-video",
+  "checked_at": "2026-10-05T02:10:58.848023+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Grok-Imagine-Video",
+    "creator": {
+      "isDeleted": false,
+      "handle": "xAI",
+      "fullName": "XAI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910404251-50-cmlkrxiqjhrxcqdzleffayurkkcvhzmj.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDA0MjUx"
+    },
+    "description": "Create artistic and creative videos with Grok Imagine Video. Supports text to video, image to video (single jpeg/png/webp attachment), and video editing (single mp4 video attachment). Check parameter controls for all supported controls (duration and aspect_ratio).",
+    "poweredBy": "Powered by a server managed by @xAI.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (image)</td><td>$0.0020/image</td><td>67 points/image</td></tr><tr><td>Output (video)</td><td>$0.051/second</td><td>1667 points/second</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (image) | $0.0020/image | 67 points/image |\n| Output (video) | $0.051/second | 1667 points/second |\n"
+    }
+  ]
+}

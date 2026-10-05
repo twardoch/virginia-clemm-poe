@@ -8,6 +8,8 @@ from typing import Any
 
 from pydantic import BaseModel, Field, field_validator
 
+from .pricing import PriceRate
+
 
 class Architecture(BaseModel):
     """Bot architecture information describing input/output capabilities.
@@ -180,6 +182,10 @@ class ScrapedPricingDetails(BaseModel):
 
     # Initial points cost from bot info card
     initial_points_cost: str | None = None
+
+    # Keep both currencies and their denominators; raw legacy strings remain available.
+    rates: list[PriceRate] = Field(default_factory=list)
+    rate_card: str | None = None
 
     # Allow extra fields for future compatibility
     class Config:

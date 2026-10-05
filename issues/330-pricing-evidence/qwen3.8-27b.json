@@ -1,0 +1,29 @@
+{
+  "id": "qwen3.8-27b",
+  "checked_at": "2026-10-05T02:13:47.689015+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Qwen3.8-27b",
+    "creator": {
+      "isDeleted": false,
+      "handle": "novitaai",
+      "fullName": "Novita AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-3067795970-50-ezhhpdjtzbudawymtaodhapblyfagaxk.jpeg",
+      "id": "UG9lVXNlcjozMDY3Nzk1OTcw"
+    },
+    "description": "qwen/qwen3.8-27b powered by Novita AI\n\nFile Support: Text, Markdown, Image, Video and PDF files\nContext window: 1M tokens",
+    "poweredBy": "Powered by a server managed by @novitaai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n"
+    }
+  ]
+}

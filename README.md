@@ -34,6 +34,14 @@ or incomplete profiles retain existing bots and report a warning. Forced updates
 also retain this recovery data. Website rates do not prove API availability or cost.
 See [issue 330 verification](issues/330-verification.md) for dated live evidence.
 
+The [interactive catalogue](https://code.twardoch.com/virginia-clemm-poe/models/index.html)
+opens cheapest first. Website prices are parsed from every rendered table, raw
+Markdown rate cards, and explicit prose rates. Numeric records retain both
+currencies, units, ranges, and sources; failed refreshes retain dated observations.
+Text comparisons use 1,000 input + 1,000 output tokens plus a disclosed message fee.
+Media prices show their unit and lowest tier. Currencies stay separate, and
+undisclosed or usage-dependent prices appear last. Model pages list all rates.
+
 ## Installation
 
 ```bash

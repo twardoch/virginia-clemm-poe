@@ -1,0 +1,29 @@
+{
+  "id": "Nemotron-3-Ultra",
+  "checked_at": "2026-10-05T02:09:33.145240+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Nemotron-3-Ultra",
+    "creator": {
+      "isDeleted": false,
+      "handle": "togetherai",
+      "fullName": "Together AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-538388044-50-pymstrtquryhajnzeyeaqftjrrbrgvrv.jpeg",
+      "id": "UG9lVXNlcjo1MzgzODgwNDQ="
+    },
+    "description": "NVIDIA Nemotron 3 Ultra is a 550B parameter (55B activated) open reasoning model built for long-running autonomous agents handling orchestration and complex tasks across coding, deep research, and enterprise workflows. Its hybrid Mamba-Transformer MoE architecture combines Latent MoE \u2014 which calls 4 experts at the inference cost of 1 \u2014 with Multi-Token Prediction for reduced generation time on long sequences, and Token Budget support for optimal accuracy with minimum reasoning token output. The model supports a 1M token context window and is fully open under the NVIDIA Open Model License with open weights, training data, and recipes.",
+    "poweredBy": "Powered by a server managed by @togetherai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.00/message</td><td>0 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.00/message | 0 points/message |\n"
+    }
+  ]
+}

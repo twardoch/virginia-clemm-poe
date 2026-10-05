@@ -1,0 +1,29 @@
+{
+  "id": "ideogram-v2a",
+  "checked_at": "2026-10-05T02:12:36.317249+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Ideogram-v2a",
+    "creator": {
+      "isDeleted": false,
+      "handle": "ideogramai",
+      "fullName": "IdeogramAI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910408014-50-dnbdgzjucaadyczfppenrloorpewkknk.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDA4MDE0"
+    },
+    "description": "Fast, affordable text-to-image model, optimized for graphic design and photography. For faster and more cost-effective generations, use https://poe.com/Ideogram-v2A-Turbo.\nNote: Supported file type: JPEG, WebP and PNG.\n\nOptional parameters:\nAspect to set the aspect ratio. Valid aspect ratios are 10:16, 16:10, 9:16, 16:9, 3:2, 2:3, 4:3, 3:4, & 1:1.\nStyle to specify a style (one of `GENERAL`, `REALISTIC`, `DESIGN`, `3D RENDER` and `ANIME` default: `GENERAL`.)",
+    "poweredBy": "Powered by a server managed by @ideogramai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.039/message</td><td>1300 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.039/message | 1300 points/message |\n"
+    }
+  ]
+}

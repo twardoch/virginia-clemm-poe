@@ -1,8 +1,27 @@
 # [Tavily-Research](https://poe.com/Tavily-Research){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Mini | ~39520 ($1.20) |
+| Pro | ~91520 ($2.77) |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Mini | USD | 1.20 | 1 mini |
+| Pro | USD | 2.77 | 1 pro |
+
+**Last Checked:** 2026-10-05T02:10:07.268982+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Tavily Research performs comprehensive research on a given topic by conducting multiple searches, analyzing sources, and generating a detailed research report.
 

@@ -1,0 +1,29 @@
+{
+  "id": "minimax-h3-el",
+  "checked_at": "2026-10-05T02:13:35.093556+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "MiniMax-H3-EL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "MiniMax H3 is a multimodal video generation model that produces 4 to 15 second clips at 768p or 2K, 24 fps, each with a native stereo audio track. It supports Text-to-Video, Image-to-Video, First/Last Frame, and Reference-to-Video, auto-detected from your attachments or set manually.\n\nInput Limits & Requirements\n- Prompt: up to 7,000 characters. Can describe action, camera work, dialogue, sound effects, and on-screen text\n- Images: JPEG, PNG, WEBP, or HEIC. 256 to 5760px per side, aspect ratio within 1:2.5-2.5:1, max 30MB each\n- Videos: MP4, MOV, MKV, or WEBM. 2 to 15 seconds each, max 50MB each\n- Audio: WAV or MP3. 2 to 15 seconds each, max 15MB each, and requires an accompanying image or video reference\n- Image-to-Video: 1 image (the opening frame). First/Last Frame: exactly 2 images\n- Reference-to-Video: max 9 images, 3 videos, and 3 audio clips, 12 files total\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Resolution</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>768p</td><td>$0.18/sec</td><td>6,000 pts/sec</td></tr><tr><td>2K</td><td>$0.26/sec</td><td>8,667 pts/sec</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "**MiniMax H3 Video Generation**\n\nBilled per second of video generated, by resolution. Every clip includes a native stereo audio track.\n\n| Resolution | Rate (USD) | Rate (Points) |\n|------------|------------|---------------|\n| 768p | $0.18/sec | 6,000 pts/sec |\n| 2K | $0.26/sec | 8,667 pts/sec |\n\nModes (auto-detected from your attachments): Text-to-Video, Image-to-Video (1 image), First/Last Frame (2 images), Reference-to-Video (up to 9 images, 3 videos, 3 audio clips).\n\nThe first 5 reference images are included, then 2667 ($0.081) per additional image. A reference video is also billed for its own duration in addition to the clip you generate.\n"
+    }
+  ]
+}

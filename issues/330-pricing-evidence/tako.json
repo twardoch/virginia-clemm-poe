@@ -1,0 +1,29 @@
+{
+  "id": "tako",
+  "checked_at": "2026-10-05T02:12:51.396201+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Tako",
+    "creator": {
+      "isDeleted": false,
+      "handle": "trytako",
+      "fullName": "TryTako",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910410372-50-kzcebdqwnwyzjjcddxpyzbynronfgfcf.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDEwMzcy"
+    },
+    "description": "Tako is a bot that transforms your questions about stocks, sports, economics or politics into interactive, shareable knowledge cards from trusted sources. Tako's knowledge graph is built exclusively from authoritative, real-time data providers, and is embeddable in your apps, research and storytelling. You can adjust the specificity threshold by typing `--specificity 30` (or a value between 0 - 100) at the end of your query/question; the default is 60.",
+    "poweredBy": "Powered by a server managed by @trytako.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": false
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.030/message</td><td>1000 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.030/message | 1000 points/message |\n"
+    }
+  ]
+}

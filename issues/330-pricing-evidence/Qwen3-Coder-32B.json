@@ -1,0 +1,29 @@
+{
+  "id": "Qwen3-Coder-32B",
+  "checked_at": "2026-10-05T02:09:40.939047+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Qwen3-Coder-32B",
+    "creator": {
+      "isDeleted": false,
+      "handle": "OpenSourceLab",
+      "fullName": "Open-Source-Lab",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2419661422-50-yfhdcuqxmrjwjokrdinuyvphinqrsuoa.jpeg",
+      "id": "UG9lVXNlcjoyNDE5NjYxNDIy"
+    },
+    "description": "Open source model by Alibaba that represents a rapid and economical iteration of their exclusive Qwen3-Coder-Plus. This robust coding agent model excels in autonomous programming through its adeptness at tool calling and environment interaction, seamlessly integrating coding expertise with broad general-purpose functionalities. Context window: 1M tokens",
+    "poweredBy": "Powered by a server managed by @OpenSourceLab.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": false
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Price</th></tr></thead><tbody><tr><td>Message Cost</td><td>0 points</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "| Type | Price |\n|------|------|\n| Message Cost | 0 points |\n"
+    }
+  ]
+}

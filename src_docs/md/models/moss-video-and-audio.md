@@ -1,8 +1,31 @@
 # [moss-video-and-audio](https://poe.com/moss-video-and-audio){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| 360P | 5664 ($0.17) |
+| 720P | 93145 ($2.82) |
+| Fast | 2167 ($0.066) |
+| Quality | 4334 ($0.13) |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| 360p | USD | 0.17 | 1 360p |
+| 720p | USD | 2.82 | 1 720p |
+| Fast | USD | 0.066 | 1 fast |
+| Quality | USD | 0.13 | 1 quality |
+
+**Last Checked:** 2026-10-05T02:11:09.541404+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** MOSS Video and Audio (MOVA) is an open-source foundation model developed by OpenMOSS that generates synchronized, high-fidelity video and audio in a single end-to-end inference step. Built on a 32-billion parameter Mixture-of-Experts (MoE) architecture, it employs an asymmetric dual-tower design to achieve precise lip-synchronization and eliminate the error accumulation found in traditional cascaded systems. 
 

@@ -1,0 +1,29 @@
+{
+  "id": "minimax-h3-n",
+  "checked_at": "2026-10-05T02:13:51.041447+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Minimax-H3-N",
+    "creator": {
+      "isDeleted": false,
+      "handle": "novitaai",
+      "fullName": "Novita AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-3067795970-50-ezhhpdjtzbudawymtaodhapblyfagaxk.jpeg",
+      "id": "UG9lVXNlcjozMDY3Nzk1OTcw"
+    },
+    "description": "MiniMax H3 is a general-purpose, omni-modal generative system. It supports unified understanding of multimodal contexts composed of text, images, video, and audio, and can generate video with native stereo audio at resolutions up to 2K and durations of up to 15 seconds. Thanks to its task-generalization-oriented system design, H3 already possesses broad multimodal context understanding and generation capabilities at the pre-training stage, enabling outstanding performance in following complex multimodal instructions.",
+    "poweredBy": "Powered by a server managed by @novitaai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.00/message</td><td>0 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.00/message | 0 points/message |\n"
+    }
+  ]
+}

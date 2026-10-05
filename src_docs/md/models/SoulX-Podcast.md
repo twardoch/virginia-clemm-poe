@@ -1,8 +1,27 @@
 # [SoulX-Podcast](https://poe.com/SoulX-Podcast){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Base | 489 ($0.015) / 1k chars |
+| Dialect | 489 ($0.015) / 1k chars |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Base | USD | 0.015 | 1000 characters |
+| Dialect | USD | 0.015 | 1000 characters |
+
+**Last Checked:** 2026-10-05T02:09:55.653105+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** SoulX-Podcast is an open-source AI voice model developed by Soul AI Lab designed to generate realistic, long-form, multi-speaker podcast dialogues. It features advanced paralinguistic controls that simulate natural human elements like laughter and sighs, while supporting zero-shot voice cloning across Mandarin, English, and various Chinese dialects. 
 

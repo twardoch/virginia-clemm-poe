@@ -1,0 +1,29 @@
+{
+  "id": "Seedream-5.0-Flash",
+  "checked_at": "2026-10-05T02:09:51.549011+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Seedream-5.0-Flash",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Seedream 5.0 Flash creates and edits images quickly from text prompts and up to 10 reference images.\n\nGeneration & Editing\n- Generate from a text prompt\n- Edit or combine one to ten attached images\n- Mark an area with a sketch, arrow, or coordinates to edit it precisely\n- Separate one attached image into a base image plus up to 16 transparent layers\n- Render text in Chinese, English, and 14 other languages\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Mode</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Image generation</td><td>$0.030/img</td><td>1,000 pts/img</td></tr><tr><td>Layer decomposition</td><td>$0.030/img</td><td>1,000 pts/img</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "**Seedream 5.0 Flash Pricing**\n\nBilled per generated image at the same rate for every resolution. Reference images are free. Layer separation bills every returned image, the base image and each layer, at that rate.\n\n| Mode | Rate (USD) | Rate (Points) |\n|------|------------|---------------|\n| Image generation | $0.030/img | 1,000 pts/img |\n| Layer decomposition | $0.030/img | 1,000 pts/img |"
+    }
+  ]
+}

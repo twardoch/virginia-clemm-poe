@@ -1,0 +1,29 @@
+{
+  "id": "Hailuo-Live",
+  "checked_at": "2026-10-05T02:09:06.482520+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Hailuo-Live",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Hailuo Live, the latest model from Minimax, sets a new standard for bringing still images to life. From breathtakingly vivid motion to finely tuned expressions, this state-of-the-art model enables your characters to captivate, move, and shine like never before. It excels in bring art and drawings to life, exceptional realism without morphing, emotional range, and unparalleled character consistency. Generates 5 second video.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Video Output</td><td>14167 points ($0.43) / message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Video Output | 14167 points ($0.43) / message | \n"
+    }
+  ]
+}

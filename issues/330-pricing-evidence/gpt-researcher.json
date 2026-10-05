@@ -1,0 +1,29 @@
+{
+  "id": "gpt-researcher",
+  "checked_at": "2026-10-05T02:11:50.740038+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "GPT-Researcher",
+    "creator": {
+      "isDeleted": false,
+      "handle": "gptrdev",
+      "fullName": "GPT Researcher",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-991236996-50-wdyyzuvdjekebiakgwftjbzxqcspbdfl.jpeg",
+      "id": "UG9lVXNlcjo5OTEyMzY5OTY="
+    },
+    "description": "GPT Researcher is an agent that conducts deep research on any topic and generates a comprehensive report with citations. GPT Researcher is powered by Tavily's search engine.\n\nGPTR is based on the popular open source project: https://github.com/assafelovic/gpt-researcher -- by integrating Tavily search, it is optimized for curation and ranking of trusted research sources. Learn more at https://gptr.dev or https://tavily.com",
+    "poweredBy": "Powered by a server managed by @gptrdev.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Text input</td><td>100 points / token</td></tr><tr><td>Research analysis</td><td>200 points / research</td></tr><tr><td>Research response</td><td>150 points / research</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n\n| Service | Rate |\n|------|------|\n| Text input | 100 points / token |\n| Research analysis | 200 points / research |\n| Research response | 150 points / research |\n"
+    }
+  ]
+}

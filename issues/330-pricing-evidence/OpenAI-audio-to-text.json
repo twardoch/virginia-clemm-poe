@@ -1,0 +1,29 @@
+{
+  "id": "OpenAI-audio-to-text",
+  "checked_at": "2026-10-05T02:09:35.039634+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "OpenAI-audio-to-text",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Try the following improved speech-to-text technology: https://poe.com/Deepgram-Nova-3\nWhisper-1 is an automatic speech recognition (ASR) system trained on 680,000 hours of multilingual and multitask supervised data collected from the web. 25mb max upload.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate</th></tr></thead><tbody><tr><td>Per Minute of Audio</td><td>1000 ($0.030) points</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "**Cost Overview**\n\n| Type                  | Rate                                                               |\n|-----------------------|--------------------------------------------------------------------|\n| Per Minute of Audio   | 1000 ($0.030) points |\n"
+    }
+  ]
+}

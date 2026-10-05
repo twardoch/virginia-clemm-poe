@@ -1,0 +1,29 @@
+{
+  "id": "elevenlabs-v3",
+  "checked_at": "2026-10-05T02:11:15.550379+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "ElevenLabs-v3",
+    "creator": {
+      "isDeleted": false,
+      "handle": "elevenlabsco",
+      "fullName": "ElevenLabs",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910413900-50-iohelybqlrnrvplglewzdogeigmqtwln.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDEzOTAw"
+    },
+    "description": "ElevenLabs v3 is a cutting-edge text-to-speech model that brings scripts to life with remarkable realism and performance-level control. Unlike traditional TTS systems, it allows creators to shape the emotional tone, pacing, and soundscape of their audio through the use of inline audio tags. These tags are enclosed in square brackets and act as stage directions\u2014guiding how a line is spoken or what sound effects are inserted\u2014without being spoken aloud. This enables rich, expressive narration and dialogue for applications like audiobooks, games, podcasts, and interactive media. Whether you\u2019re aiming for a tense whisper, a sarcastic remark, or a dramatic soundscape full of explosions and ambient effects, v3 gives you granular control directly in the text prompt. This bot will also run text-to-speech on PDF attachments / URL links.\n\nExamples of voice delivery tags include:\n* [whispers] I have to tell you a secret. \n* [angry] That was *never* the plan.\n* [sarcastic] Oh, sure. That\u2019ll totally work.\n* and [laughs] You're hilarious.\n\nExamples of sound effect tags are:\n* [gunshot] Get down!\n* [applause] Thank you, everyone.\n* and [explosion] What was that?!\n\nThese can also be combined.\n\nMultiple speakers can be supported via the parameter control. Dialogue for multiple speakers must follow the format, e.g. for 3 speakers:\n\nSpeaker 1: [dialogue]\nSpeaker 2: [dialogue]\nSpeaker 3: [dialogue]\nSpeaker 1: [dialogue]\nSpeaker 2: [dialogue]\n\nThe following voices are supported:\nAlexandra - Conversational & Real\nAmy - Young & Natural\nArabella - Mature Female Narrator\nAustin - Good Ol' Texas Boy\nBlondie - Warm & Conversational\nBradford - British Male Storyteller\nCallum - Gravelly Yet Unsettling\nCharlotte - Raspy & Sensual\nChris - Down-to-Earth\nCoco Li - Shanghainese Female\nGaming - Unreal Tonemanagement 2003\nHarry - Animated Warrior\nHayato - Soothing Zen Male\nHope - Upbeat & Clear\nJames - Husky & Engaging\nJames Gao - Calm Chinese Voice\nJane - Professional Audiobook Reader\nJessica - Playful American Female\nJuniper - Grounded Female Professional\nKaro Yang - Youthful Asian Male\nKuon - Acute Fantastic Female\nLaura - Quirky Female Voice\nLiam - Warm, Energetic Youth\nMonika Sogam - Indian-English Accent\nNichalia Schwartz - Engaging Female American\nPriyanka Sogam - Late-Night Radio\nReginald - Brooding, Intense Villain\nShanShan - Young, Energetic Female\nXiao Bai - Shrill & Annoying\n\nPrompt input cannot exceed 5,000 characters.",
+    "poweredBy": "Powered by a server managed by @elevenlabsco.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td><del>$0.22</del> <strong>$0.075</strong> / 1k characters</td><td>2.5 points / character</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. [Learn more.](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01HCFXCW5CB1DSH6F4WXXYHJFJ) Pricing offers up to **86% savings**. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | ~~$0.22~~ **$0.075** / 1k characters | 2.5 points / character |"
+    }
+  ]
+}

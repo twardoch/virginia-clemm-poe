@@ -1,0 +1,29 @@
+{
+  "id": "DeepSeek-V3.2-OSL",
+  "checked_at": "2026-10-05T02:08:40.811673+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "DeepSeek-V3.2-OSL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "OpenSourceLab",
+      "fullName": "Open-Source-Lab",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2419661422-50-yfhdcuqxmrjwjokrdinuyvphinqrsuoa.jpeg",
+      "id": "UG9lVXNlcjoyNDE5NjYxNDIy"
+    },
+    "description": "Based on Deepseek-V3.2 with extended file processing capabilities. This multimodal bot accepts XLSX, PY, HTM, HTML, CSS, JS, CSV, DOCX, JSON, PY, JPG, PNG, BMP, WEBP, TXT and PDF files. DeepSeek-V3.2 can also create apps inside the chat. DeepSeek-V3.2-OSL can't process file like STL, XLS, WEBM, MP4, MP3, WAV, ODS, HEIC, GIF and AVIF images. Maximum file size is 50 MB.",
+    "poweredBy": "Powered by a server managed by @OpenSourceLab.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.60 / 1M tokens</td><td>51 points / 1K tokens</td></tr><tr><td>Output (text)</td><td>$1.20 / 1M tokens</td><td>222 points / 1K tokens</td></tr><tr><td>Input (file)</td><td>Variable</td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "| Type | Rate (USD) | Rate (Points) |\n|-------------|----------------------|---------------------------------------|\n| Input (text) | $0.60 / 1M tokens | 51 points / 1K tokens |\n| Output (text) | $1.20 / 1M tokens | 222 points / 1K tokens |\n| Input (file) | Variable | |"
+    }
+  ]
+}

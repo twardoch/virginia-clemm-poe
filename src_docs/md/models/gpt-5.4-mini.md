@@ -9,9 +9,31 @@
 | Prompt | $6.818E-7/token |
 | Completion | $0.0000040909/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $0.68/1M tokens · 23 points/1k tokens |
+| Output (Text) | $4.09/1M tokens · 135 points/1k tokens |
+| Output | $0.0091/search · 300 points/search |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input | USD | 0.68 | 1000000 tokens |
+| Input | POINTS | 23 | 1000 tokens |
+| Output (text) | USD | 4.09 | 1000000 tokens |
+| Output (text) | POINTS | 135 | 1000 tokens |
+| Output | USD | 0.0091 | 1 search |
+| Output | POINTS | 300 | 1 search |
+
+**Last Checked:** 2026-10-05T02:10:32.618044+00:00
+
+
 ## Bot Information
 
-**Creator:** @openai
+**Creator:** openai
 
 **Description:** GPT‑5.4 Mini is a fast, affordable general‑purpose model designed for production assistants, coding support, document analysis, and multimodal reasoning. With a 400k‑token context window, it handles complex inputs and scalable workflows with strong reliability. 
 

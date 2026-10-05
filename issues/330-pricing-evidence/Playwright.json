@@ -1,0 +1,27 @@
+{
+  "id": "Playwright",
+  "checked_at": "2026-10-05T02:09:36.022025+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Playwright",
+    "creator": {
+      "isDeleted": false,
+      "handle": "opentools",
+      "fullName": "OpenTools",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2979648277-50-avlctjoywupzbpjkucazpvulzqzkvmrp.jpeg",
+      "id": "UG9lVXNlcjoyOTc5NjQ4Mjc3"
+    },
+    "description": "Helps you look at a given website URL and write Playwright tests in TypeScript",
+    "poweredBy": "Powered by a server managed by @opentools.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "The creator has not provided details."
+    }
+  ]
+}

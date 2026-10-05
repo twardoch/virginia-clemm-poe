@@ -1,0 +1,29 @@
+{
+  "id": "DeepSeek-V3.1-fw",
+  "checked_at": "2026-10-05T02:08:39.827617+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "DeepSeek-V3.1-fw",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fireworksai",
+      "fullName": "Fireworks AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2339248475-50-cokslpvhdmlrqrkakgkkmiaffqqkcfgh.jpeg",
+      "id": "UG9lVXNlcjoyMzM5MjQ4NDc1"
+    },
+    "description": "DeepSeek-V3.1 is post-trained on the top of DeepSeek-V3.1-Base, which is built upon the original V3 base checkpoint through a two-phase long context extension approach, following the methodology outlined in the original DeepSeek-V3 report. We have expanded our dataset by collecting additional long documents and substantially extending both training phases. The 32K extension phase has been increased 10-fold to 630B tokens, while the 128K extension phase has been extended by 3.3x to 209B tokens. Additionally, DeepSeek-V3.1 is trained using the UE8M0 FP8 scale data format to ensure compatibility with microscaling data formats.",
+    "poweredBy": "Powered by a server managed by @fireworksai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.0091/message</td><td>300 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.0091/message | 300 points/message |\n"
+    }
+  ]
+}

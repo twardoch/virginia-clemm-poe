@@ -1,0 +1,29 @@
+{
+  "id": "kling-2.6-pro",
+  "checked_at": "2026-10-05T02:11:26.801703+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Kling-2.6-Pro",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Generate high-quality videos with native audio from text and images using Kling 2.6 Pro. \n\nOptional parameters:\n- Negative prompt. Type things to avoid in generated images\n- CFG Scale. To send a classifier-free guidance scale between 0.0 and 1.0. This is set to 0.5 as default\n- Set aspect ratio. Select from (16:9, 1:1, 9:16). It is set to 16:9 aspect ratio as default.\n- Set Duration. Select from (5 seconds or 10 seconds) to specify video length in seconds. Set to 5 seconds as default.\n- Silent Mode. Toggle `on` to use silent mode for video generation. This will generate a video without audio, decreasing the cost.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Video Output without audio</td><td>2334 points ($0.071) / second</td></tr><tr><td>Video Output with audio</td><td>4667 points ($0.14) / second</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Video Output without audio | 2334 points ($0.071) / second | \n| Video Output with audio | 4667 points ($0.14) / second | \n"
+    }
+  ]
+}

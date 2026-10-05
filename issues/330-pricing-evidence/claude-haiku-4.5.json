@@ -1,0 +1,29 @@
+{
+  "id": "claude-haiku-4.5",
+  "checked_at": "2026-10-05T02:10:51.115461+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Claude-Haiku-4.5",
+    "creator": {
+      "isDeleted": false,
+      "handle": "anthropic",
+      "fullName": "Anthropic",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910399423-50-rmsjsjntoqqejhymvulgknulhathfdmz.jpeg",
+      "id": "UG9lVXNlcjoyOTEwMzk5NDIz"
+    },
+    "description": "Claude Haiku 4.5 is Anthropic\u2019s fastest and most efficient model, delivering near-frontier intelligence at a fraction of the cost and latency of larger Claude models. Matching Claude Sonnet 4\u2019s performance across reasoning, coding, and computer-use tasks, Haiku 4.5 brings frontier-level capability to real-time and high-volume applications. It introduces extended thinking to the Haiku line, and scores >73% on SWE-bench verified, ranking among the world's best coding models. Supports 200k tokens of context.",
+    "poweredBy": "Powered by Anthropic: claude-haiku-4-5-20251001.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input</td><td>$0.86/1M tokens</td><td>29 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$4.29/1M tokens</td><td>142 points/1k tokens</td></tr><tr><td>Output</td><td>$0.010/search</td><td>334 points/search</td></tr><tr><td>Cache discount</td><td>90% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input | $0.86/1M tokens | 29 points/1k tokens |\n| Output (text) | $4.29/1M tokens | 142 points/1k tokens |\n| Output | $0.010/search | 334 points/search |\n| Cache discount | 90% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n\n\nWeb searches will add input tokens."
+    }
+  ]
+}

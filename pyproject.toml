@@ -33,6 +33,7 @@ dependencies=[
     "psutil>=5.9.0",
     "mkdocs-material>=9.6.16",
     "mkdocstrings[python]>=0.30.0",
+    "markdown>=3.8",
 ]
 
 [project.scripts]

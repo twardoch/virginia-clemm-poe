@@ -1,0 +1,30 @@
+{
+  "id": "gpt-image-1",
+  "checked_at": "2026-10-05T02:12:15.421477+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "GPT-Image-1",
+    "creator": {
+      "isDeleted": false,
+      "handle": "openai",
+      "fullName": "OpenAI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910400879-50-wrfgcbmfjrhquvwlxvypitmawpovrxoi.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDAwODc5"
+    },
+    "description": "OpenAI's model that powers image generation in ChatGPT, offering exceptional prompt adherence, level of detail, and quality. It supports editing, restyling, and combining images attached to the latest user query. For a conversational editing experience, use https://poe.com/GPT-4o (all users) or https://poe.com/Assistant (subscribers) instead.\n\nOptional parameters:\n- Aspect Ration. Aspect ratio of the output image (Options: 1:1, 3:2, 2:3)\n- Quality: Image resolution (options: high, medium, low)\n- Mask.  Indicates that the last attached image is a mask for in-painting (editing specific regions). The mask must match the dimensions of the base image, with transparent (zero-alpha) areas showing which parts to edit.\n- High fidelity to false to disable high input fidelity. This option is enabled by default.",
+    "poweredBy": "Powered by a server managed by @openai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td><del>5.00</del>  <strong>$4.53</strong>/1M tokens</td><td>151 points/1k tokens</td></tr><tr><td>Input (images)</td><td><del>10.00</del>  <strong>$9.03</strong>/1M tokens</td><td>301 points/1k tokens</td></tr><tr><td>High fidelity editing</td><td>$0.06</td><td>2000 points</td></tr><tr><td>Output (image)</td><td>Based on output image quality and resolution (see table below)</td><td></td></tr></tbody></table>",
+    "<table><thead><tr><th>Size /<br>\nQuality</th><th style=\"text-align: center;\">1:1 <br>\n(1024x1024)</th><th style=\"text-align: center;\">3:2 <br>\n(1536x1024)</th><th style=\"text-align: center;\">2:3 <br>\n(1024x1536)</th></tr></thead><tbody><tr><td>low</td><td style=\"text-align: center;\">328 points ($0.0098)</td><td style=\"text-align: center;\">481 points ($0.014)</td><td style=\"text-align: center;\">491 points ($0.015)</td></tr><tr><td>medium</td><td style=\"text-align: center;\">1269 points ($0.038)</td><td style=\"text-align: center;\">1882 points ($0.056)</td><td style=\"text-align: center;\">1902 points ($0.057)</td></tr><tr><td>high</td><td style=\"text-align: center;\">4993 points ($0.15)</td><td style=\"text-align: center;\">7451 points ($0.22)</td><td style=\"text-align: center;\">7488 points ($0.22)</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | ~~5.00~~  **$4.53**/1M tokens | 151 points/1k tokens |\n| Input (images) | ~~10.00~~  **$9.03**/1M tokens | 301 points/1k tokens \n| High fidelity editing | $0.06 | 2000 points |\n| Output (image) | Based on output image quality and resolution (see table below) |\n\n\n**Output Image Rates**\n\n| Size /&#10;Quality | 1:1 &#10; (1024x1024) | 3:2 &#10; (1536x1024) | 2:3 &#10; (1024x1536) |\n|------|:------:|:------:|:------:|\n| low | 328 points ($0.0098) | 481 points ($0.014) | 491 points ($0.015) |\n| medium | 1269 points ($0.038) | 1882 points ($0.056) | 1902 points ($0.057) |\n| high | 4993 points ($0.15) | 7451 points ($0.22) | 7488 points ($0.22) |"
+    }
+  ]
+}

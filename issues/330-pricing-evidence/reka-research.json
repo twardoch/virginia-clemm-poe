@@ -1,0 +1,29 @@
+{
+  "id": "reka-research",
+  "checked_at": "2026-10-05T02:11:51.816114+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Reka-Research",
+    "creator": {
+      "isDeleted": false,
+      "handle": "reka",
+      "fullName": "Reka AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2514157782-50-bodutlhmeinnphevrbmsqhoyguyozzmk.jpeg",
+      "id": "UG9lVXNlcjoyNTE0MTU3Nzgy"
+    },
+    "description": "Reka Research is a state-of-the-art agentic AI that answers complex questions by browsing the web. It excels at synthesizing information from multiple sources, performing work that usually takes hours in minutes",
+    "poweredBy": "Powered by a server managed by @reka.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": false
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate</th></tr></thead><tbody><tr><td>Total Cost</td><td>334 ($0.010) points / message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n\n| Type | Rate |\n|------|------|\n| Total Cost | 334 ($0.010) points / message |\n"
+    }
+  ]
+}

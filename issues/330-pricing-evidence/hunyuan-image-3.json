@@ -1,0 +1,29 @@
+{
+  "id": "hunyuan-image-3",
+  "checked_at": "2026-10-05T02:11:25.562993+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Hunyuan-Image-3",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Hunyuan Image 3.0 is Tencent\u2019s next\u2011generation open\u2011source text-to-image model that uses a large multimodal Mixture-of-Experts architecture to unify image understanding and generation in one system. It produces high-fidelity, often photorealistic images with strong prompt adherence, multilingual text rendering, and intelligent world-knowledge reasoning that can enrich sparse prompts with appropriate visual details.\n\nNote: Uploading attachments is not supported. \n\nParameter controls available:\n1. Image Settings\n   Size / Aspect Ratio\n   - Default: 1024x1024 (Square 1:1)\n   -  768x1024 (Portrait 3:4)\n   -  1024x768 (Landscape 4:3)\n   -  1024x1536 (Tall Portrait 2:3)\n   -  1536x1024 (Wide Landscape 3:2)\n   -  512x512 (Small Square 1:1)\n\n   Quantity\n   -  number of images to generate. select from 1 to 4. (default: 1)\n\n   Quality & Generation\n   - Inference steps. Number of denoising steps for quality, select from 10 to 50. (default: 28, higher = better quality but slower)\n   - Guidance scale. Set to how closely to follow prompt, select from 1.0 to 20. (default: 7.5)\n\n   Customization\n   - Negative prompt. Type things to avoid in generated images\n   - Seed. Random seed number for reproducible generation with fixed seed (e.g., 42)",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": false
+  },
+  "tables": [
+    "<table><thead><tr><th style=\"text-align: left;\">Item</th><th style=\"text-align: left;\">Rate</th></tr></thead><tbody><tr><td style=\"text-align: left;\">1 Image</td><td style=\"text-align: left;\">4334 ($0.13)</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "| Item | Rate |\n|:---|:---|\n| 1 Image | 4334 ($0.13) |\n\n*Total final price is based on number of images times price per image.*"
+    }
+  ]
+}

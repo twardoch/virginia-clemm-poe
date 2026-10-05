@@ -1,0 +1,29 @@
+{
+  "id": "flux-2-flex",
+  "checked_at": "2026-10-05T02:11:28.003338+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "FLUX-2-Flex",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Flux.2 [Flex] is Black Forest Lab's latest model, with Multi-Reference Support, Fine-grained text rendering, and other features. Supports structured JSON prompts, and allows use of hex color codes within the prompt for precise coloring.\nSend images in jpeg/png/webp format for editing. Total megapixels (input + output) should not exceed 14 megapixels.\n\nOptional parameters:\nSet aspect ratio. Select from (16:9, 4:3, 1:1, 3:4, 9:16). It is set to 4:3 aspect ratio as default.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Image Input</td><td>2000 points ($0.061) / Megapixel</td></tr><tr><td>Image Output</td><td>2000 points ($0.061) / image</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Image Input | 2000 points ($0.061) / Megapixel | \n| Image Output | 2000 points ($0.061) / image | \n"
+    }
+  ]
+}

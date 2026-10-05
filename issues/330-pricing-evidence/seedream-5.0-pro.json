@@ -1,0 +1,29 @@
+{
+  "id": "seedream-5.0-pro",
+  "checked_at": "2026-10-05T02:13:19.757336+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Seedream-5.0-Pro",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Seedream 5.0 Pro creates premium images from text prompts and reference images, with strong detail, composition, and multi-reference fusion. Use it for product concepts, style exploration, image edits, and polished visual assets across 1K and 2K output.\n\nInput limits\n- Up to 10 reference images\n- One generated image is returned per request\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Tier</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Output up to 2.61MP</td><td>$0.075/img</td><td>2,500 pts/img</td></tr><tr><td>Output above 2.61MP</td><td>$0.150/img</td><td>5,000 pts/img</td></tr><tr><td>Layer decomposition up to 2.61MP</td><td>$0.0375/img</td><td>1,250 pts/img</td></tr><tr><td>Layer decomposition above 2.61MP</td><td>$0.0750/img</td><td>2,500 pts/img</td></tr><tr><td>Extra input image after first</td><td>$0.005/img</td><td>167 pts/img</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "**Seedream 5.0 Pro Pricing**\n\nBilled per generated image. The first reference image is included; each additional reference image adds a small input-image charge. Layer separation bills every returned image, the base image and each layer, at its own tier.\n\n| Tier | Rate (USD) | Rate (Points) |\n|------|------------|---------------|\n| Output up to 2.61MP | $0.075/img | 2,500 pts/img |\n| Output above 2.61MP | $0.150/img | 5,000 pts/img |\n| Layer decomposition up to 2.61MP | $0.0375/img | 1,250 pts/img |\n| Layer decomposition above 2.61MP | $0.0750/img | 2,500 pts/img |\n| Extra input image after first | $0.005/img | 167 pts/img |"
+    }
+  ]
+}

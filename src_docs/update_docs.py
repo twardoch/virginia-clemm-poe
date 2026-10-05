@@ -65,14 +65,20 @@ def generate_model_page(model: dict[str, Any]) -> str:
 
         # Scraped pricing (points-based)
         if scraped := pricing.get("scraped"):
-            content.append("### Points-based Pricing\n")
+            content.append("### Website Pricing\n")
             if details := scraped.get("details"):
                 content.append("| Type | Cost |")
                 content.append("|------|------|")
                 for key, value in details.items():
-                    if value:
+                    if value and key not in {"rates", "rate_card"}:
                         formatted_key = key.replace("_", " ").title()
-                        content.append(f"| {formatted_key} | {value} |")
+                        display = " · ".join(value) if isinstance(value, list) else str(value)
+                        content.append(f"| {formatted_key} | {display.replace('|', '&#124;')} |")
+                if rates := details.get("rates"):
+                    content.extend(["", "All parsed rates (both currencies):", "", "| Service | Currency | Amount | Per |", "|---|---|---|---|"])
+                    for rate in rates:
+                        amount = ("From " if rate.get("lower_bound") else "") + str(rate["amount"])
+                        content.append(f"| {rate['label']} | {rate['currency'].upper()} | {amount} | {rate['quantity']} {rate['unit']} |")
             content.append(f"\n**Last Checked:** {scraped.get('checked_at', 'N/A')}\n")
             content.append("")
 
@@ -153,6 +159,11 @@ def main() -> None:
     # Generate individual model pages
     models = data.get("data", [])
     logger.info(f"📄 Generating {len(models)} individual model pages")
+
+    expected_names = {f"{model['id']}.md" for model in models} | {"index.md"}
+    for old_page in docs_models_dir.glob("*.md"):
+        if old_page.name not in expected_names:
+            old_page.unlink()  # Remove stale/case-mismatched generated pages before writing.
 
     for i, model in enumerate(models, 1):
         model_id = model["id"]

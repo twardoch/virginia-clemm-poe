@@ -1,0 +1,29 @@
+{
+  "id": "qwen3-235b-a22b-di",
+  "checked_at": "2026-10-05T02:11:42.440378+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Qwen3-235B-A22B-DI",
+    "creator": {
+      "isDeleted": false,
+      "handle": "deepinfra",
+      "fullName": "DeepInfra",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2942644786-50-kwbwbicjxskxfnovutpupodkegoceisf.jpeg",
+      "id": "UG9lVXNlcjoyOTQyNjQ0Nzg2"
+    },
+    "description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support.\n\nSupports 32k tokens of input context and 8k tokens of output context. Quantization: FP8.",
+    "poweredBy": "Powered by a server managed by @deepinfra.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.0019/message</td><td>63 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.0019/message | 63 points/message |\n"
+    }
+  ]
+}

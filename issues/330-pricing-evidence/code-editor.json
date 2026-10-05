@@ -1,0 +1,27 @@
+{
+  "id": "code-editor",
+  "checked_at": "2026-10-05T02:21:42.064399+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Code-Editor",
+    "creator": {
+      "isDeleted": false,
+      "handle": "poe_tools",
+      "fullName": "Poe Tools",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2890766504-50-rtkgimwdzuemwbnocyzjdrrownqcarrz.jpeg",
+      "id": "UG9lVXNlcjoyODkwNzY2NTA0"
+    },
+    "description": "Official code editor for Poe Scripting using Python, used to connect multiple Poe bots and create AI workflows. Guide and tips: https://creator.poe.com/docs/script-bots/poe-python-reference",
+    "poweredBy": "Powered by Poe.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": false
+  },
+  "tables": [],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "The creator has not provided details."
+    }
+  ]
+}

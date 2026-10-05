@@ -1,0 +1,29 @@
+{
+  "id": "seed-2.0-code",
+  "checked_at": "2026-10-05T02:13:05.939940+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Seed-2.0-Code",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Seed 2.0 Code is optimized for enterprise-grade coding scenarios. Building on the strong agentic and VLM capabilities of Seed 2.0, it further strengthens code generation and software engineering performance. It delivers particularly strong front-end results and is also optimized for multilingual coding needs commonly found in enterprise environments, making it well suited for integration with a wide range of AI coding tools.\n\nNotes:\n- Pricing is 2x when input tokens >128k\n- Context Window: 256k\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.63/1M tokens</td><td>21 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$3.79/1M tokens</td><td>125 points/1k tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.63/1M tokens | 21 points/1k tokens |\n| Output (text) | $3.79/1M tokens | 125 points/1k tokens |\n\n\nInput rate is 2x and output rate is 2x when context is >128k tokens."
+    }
+  ]
+}

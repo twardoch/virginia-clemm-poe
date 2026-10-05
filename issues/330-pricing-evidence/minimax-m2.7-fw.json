@@ -1,0 +1,29 @@
+{
+  "id": "minimax-m2.7-fw",
+  "checked_at": "2026-10-05T02:13:02.630760+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Minimax-M2.7-FW",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fireworksai",
+      "fullName": "Fireworks AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2339248475-50-cokslpvhdmlrqrkakgkkmiaffqqkcfgh.jpeg",
+      "id": "UG9lVXNlcjoyMzM5MjQ4NDc1"
+    },
+    "description": "Mixture-of-Experts language model. M2.7 is capable of building complex agent harnesses and completing highly elaborate productivity tasks, leveraging Agent Teams, complex Skills, and dynamic tool search.",
+    "poweredBy": "Powered by a server managed by @fireworksai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.0061/message</td><td>200 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.0061/message | 200 points/message |\n"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "Search-OSL",
+  "checked_at": "2026-10-05T02:09:48.100745+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Search-OSL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "OpenSourceLab",
+      "fullName": "Open-Source-Lab",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2419661422-50-yfhdcuqxmrjwjokrdinuyvphinqrsuoa.jpeg",
+      "id": "UG9lVXNlcjoyNDE5NjYxNDIy"
+    },
+    "description": "This AI search engine combines live web search with  real-time data, applies advanced reasoning, and returns results while preserving its advantage in high-throughput and fast inference.",
+    "poweredBy": "Runs inside Poe's protected environment.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Script bots cost 1 point per message, plus the rates of any other bots it calls.\n\nThe creator defined additional costs."
+    }
+  ]
+}

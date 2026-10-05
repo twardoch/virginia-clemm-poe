@@ -1,8 +1,29 @@
 # [veo-3-vfast](https://poe.com/veo-3-vfast){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Video Output | 8334 points ($0.25) / s |
+| Audio + Video Output | 13334 points ($0.40) / s |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Video Output | USD | 0.25 | 1 second |
+| Video Output | POINTS | 8334 | 1 second |
+| Audio + Video Output | USD | 0.40 | 1 second |
+| Audio + Video Output | POINTS | 13334 | 1 second |
+
+**Last Checked:** 2026-10-05T02:12:28.623706+00:00
+
+
 ## Bot Information
 
-**Creator:** @fal
+**Creator:** fal
 
 **Description:** Veo-3 Fast is a faster and more cost effective version of Google's Veo 3. 
 

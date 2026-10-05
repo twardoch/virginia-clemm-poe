@@ -1,8 +1,34 @@
 # [pixverse-v5](https://poe.com/pixverse-v5){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| 360P | 8s · 15334 ($0.46) |
+| 540P | 8s · 15334 ($0.46) |
+| 720P | 8s · 20445 ($0.62) |
+| 1080P | 5s · 20445 ($0.62) |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| 360p | USD | 0.23 | 1 360p |
+| 360p | USD | 0.46 | 1 360p |
+| 540p | USD | 0.23 | 1 540p |
+| 540p | USD | 0.46 | 1 540p |
+| 720p | USD | 0.31 | 1 720p |
+| 720p | USD | 0.62 | 1 720p |
+| 1080p | USD | 0.62 | 1 1080p |
+
+**Last Checked:** 2026-10-05T02:12:23.371630+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Pixverse v5 offers advanced creative tools with three main features: 
 1. Text-to-Video, which transforms written prompts into cinematic, high-detail video clips with fluid motion and accurate visual interpretation;

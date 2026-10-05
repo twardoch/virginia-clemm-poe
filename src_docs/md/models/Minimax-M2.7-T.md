@@ -2,18 +2,25 @@
 
 ## Pricing
 
-### Points-based Pricing
+### Website Pricing
 
 | Type | Cost |
 |------|------|
-| Total Cost | 0 points/message |
+| Total Cost | $0.00/message · 0 points/message |
 
-**Last Checked:** 2026-10-05 01:51:02.147173
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Total cost | USD | 0.00 | 1 message |
+| Total cost | POINTS | 0 | 1 message |
+
+**Last Checked:** 2026-10-05T02:09:27.737722+00:00
 
 
 ## Bot Information
 
-**Creator:** @togetherai
+**Creator:** togetherai
 
 **Description:** MiniMax-M2.7 is MiniMax's first model deeply participating in its own evolution. M2.7 is capable of building complex agent harnesses and completing highly elaborate productivity tasks, leveraging Agent Teams, complex Skills, and dynamic tool search. M2.7 delivers outstanding real-world programming capabilities spanning log analysis, bug troubleshooting, refactoring, code security, and machine learning.
 

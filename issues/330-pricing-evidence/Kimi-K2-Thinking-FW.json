@@ -1,0 +1,29 @@
+{
+  "id": "Kimi-K2-Thinking-FW",
+  "checked_at": "2026-10-05T02:09:18.039825+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Kimi-K2-Thinking-FW",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fireworksai",
+      "fullName": "Fireworks AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2339248475-50-cokslpvhdmlrqrkakgkkmiaffqqkcfgh.jpeg",
+      "id": "UG9lVXNlcjoyMzM5MjQ4NDc1"
+    },
+    "description": "Kimi K2 Thinking is the latest, most capable version of open-source thinking model. Starting with Kimi K2, it was built as a thinking agent that reasons step-by-step while dynamically invoking tools. It sets a new state-of-the-art on Humanity's Last Exam (HLE), BrowseComp, and other benchmarks by dramatically scaling multi-step reasoning depth and maintaining stable tool-use across 200\u2013300 sequential calls. At the same time, K2 Thinking is a native INT4 quantization model with 256k context window, achieving lossless reductions in inference latency and GPU memory usage.",
+    "poweredBy": "Powered by a server managed by @fireworksai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.61/1M tokens</td><td>20 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$2.53/1M tokens</td><td>84 points/1k tokens</td></tr><tr><td>Cache discount</td><td>50% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.61/1M tokens | 20 points/1k tokens |\n| Output (text) | $2.53/1M tokens | 84 points/1k tokens |\n| Cache discount | 50% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n"
+    }
+  ]
+}

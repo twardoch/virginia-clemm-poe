@@ -1,0 +1,29 @@
+{
+  "id": "gpt-oss-20b-n",
+  "checked_at": "2026-10-05T02:11:38.201556+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "GPT-OSS-20B-N",
+    "creator": {
+      "isDeleted": false,
+      "handle": "novitaai",
+      "fullName": "Novita AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-3067795970-50-ezhhpdjtzbudawymtaodhapblyfagaxk.jpeg",
+      "id": "UG9lVXNlcjozMDY3Nzk1OTcw"
+    },
+    "description": "gpt-oss-20b is an open-weight 21B parameter model released by OpenAI under the Apache 2.0 license. It uses a Mixture-of-Experts (MoE) architecture with 3.6B active parameters per forward pass, optimized for lower-latency inference and deployability on consumer or single-GPU hardware. The model is trained in OpenAI\u2019s Harmony response format and supports reasoning level configuration, fine-tuning, and agentic capabilities including function calling, tool use, and structured outputs.\n\nFile Support: Text, Markdown, Image and PDF files\nContext window: 131k tokens",
+    "poweredBy": "Powered by a server managed by @novitaai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.00045/message</td><td>15 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.00045/message | 15 points/message |\n"
+    }
+  ]
+}

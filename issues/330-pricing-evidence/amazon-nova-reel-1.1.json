@@ -1,0 +1,29 @@
+{
+  "id": "amazon-nova-reel-1.1",
+  "checked_at": "2026-10-05T02:11:32.621388+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Amazon-Nova-Reel-1.1",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Amazon Nova Reel 1.1 is an advanced AI video generation model that creates up to 2-minute multi-shot videos from text and optional image prompts, offering improved video quality, latency, and visual consistency compared to its predecessor.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate</th></tr></thead><tbody><tr><td>Per second of video</td><td>4800 ($0.15) points</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n\n| Type                  | Rate                                             |\n|-----------------------|--------------------------------------------------|\n| Per second of video  | 4800 ($0.15) points |\n"
+    }
+  ]
+}

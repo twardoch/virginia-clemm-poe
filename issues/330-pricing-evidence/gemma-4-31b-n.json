@@ -1,0 +1,29 @@
+{
+  "id": "gemma-4-31b-n",
+  "checked_at": "2026-10-05T02:10:53.458945+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Gemma-4-31B-N",
+    "creator": {
+      "isDeleted": false,
+      "handle": "novitaai",
+      "fullName": "Novita AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-3067795970-50-ezhhpdjtzbudawymtaodhapblyfagaxk.jpeg",
+      "id": "UG9lVXNlcjozMDY3Nzk1OTcw"
+    },
+    "description": "Gemma 4 31B is engineered to tackle the most demanding enterprise workloads and complex reasoning tasks. With an expansive 256K-token context window, the 31B model can effortlessly ingest entire codebases, and massive sets of images in a single prompt. It boasts state-of-the-art vision-language capabilities, allowing developers to freely interleave text and images. It excels at parsing UI screens, comprehending complex charts, and executing multilingual OCR or handwriting recognition. Combined with native structured Function Calling, robust code generation, and out-of-the-box fluency in 35+ languages, Gemma 4 31B is the ultimate foundation for building sophisticated, autonomous AI agents and heavy-duty multimodal analysis pipelines.\n\nFile Support: Text, Markdown, Image and PDF files\nContext window: 262k tokens\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @novitaai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.14/1M tokens</td><td>5 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$0.40/1M tokens</td><td>14 points/1k tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.14/1M tokens | 5 points/1k tokens |\n| Output (text) | $0.40/1M tokens | 14 points/1k tokens |\n"
+    }
+  ]
+}

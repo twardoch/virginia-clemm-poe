@@ -1,0 +1,29 @@
+{
+  "id": "kimi-k2.6",
+  "checked_at": "2026-10-05T02:13:29.524802+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Kimi-K2.6",
+    "creator": {
+      "isDeleted": false,
+      "handle": "moonshotai",
+      "fullName": "Moonshot AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-3214319264-50-iaczjuaskrwvzkvysbdhvzvwoabggcfr.jpeg",
+      "id": "UG9lVXNlcjozMjE0MzE5MjY0"
+    },
+    "description": "Moonshot AI Kimi K2.6 is a model for long-horizon coding, design-oriented development, and vision-enabled tasks.",
+    "poweredBy": "Powered by a server managed by @moonshotai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input</td><td>$0.96/1M tokens</td><td>32 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$4.04/1M tokens</td><td>134 points/1k tokens</td></tr><tr><td>Cache discount</td><td>83% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input | $0.96/1M tokens | 32 points/1k tokens |\n| Output (text) | $4.04/1M tokens | 134 points/1k tokens |\n| Cache discount | 83% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n"
+    }
+  ]
+}

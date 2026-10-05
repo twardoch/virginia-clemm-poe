@@ -1,0 +1,29 @@
+{
+  "id": "OmniGen-v1",
+  "checked_at": "2026-10-05T02:09:33.326809+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "OmniGen-v1",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "This bot generates or combines images based on a given prompt and up to two images. To request an image, encapsulate the subject(s) in the prompt with <| and |> tags. For example, to create an image of a specific cat wearing a specific hat, input: \"<|cat|> wearing a <|hat|>\" while attaching the cat image as the first file and the hat image as the second. You can provide a maximum of two subjects, and the bot will blend them into a cohesive visual creation.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Image Output</td><td>4250 points ($0.13) / message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Image Output | 4250 points ($0.13) / message | \n"
+    }
+  ]
+}

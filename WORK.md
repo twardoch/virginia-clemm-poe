@@ -2,6 +2,17 @@
 
 # Work Progress - Virginia Clemm Poe
 
+## Pricing correction — 2026-10-05
+
+- Collected rate responses for all 501 bots, including retries via Poe's hidden Rates trigger. Kept public bot metadata, rate tables, and `rateMenuMarkdown`; account/dialog data is excluded.
+- Numeric website coverage: 483/501 (96.4%). The previous interactive table exposed only 159 numeric prices; remaining unknowns fell from 342 to 18. The remaining bots disclose no numeric price, an empty rate table, or variable calls to other bots.
+- Added Decimal/Pydantic normalization across all HTML tables, Markdown and prose fallback, image matrices, milli-cent markers, ranges, and units. Preserve USD and points; exclude obsolete, discount, and trial prices.
+- Default comparison uses points, cheapest first; zero prices survive and unknowns stay last in both directions. USD is selectable without assumed conversion. Each price shows its comparison basis and source; image prices include generation rather than just prompt tokens.
+- Refreshed creator/description metadata; recovered 84 explicit output modalities from website rate labels. The image filter includes multimodal outputs.
+- Verification: 183 Python tests and 5 Node comparison tests pass. New parser coverage: 99%; vendor coverage: 100%. Strict MkDocs build passes after recording 244 canonical filename case changes. Source/generated/served dataset hashes match.
+- Browser iframe checks pass: 501 rows, 483 numeric rates, 23 zeros first, all 18 unknowns last, both sort directions, USD switching, search, message fees, 73 image-filter rows, and no page errors. See `issues/330-pricing-verification.md`.
+- Publish using `uvx gitnextver`; verify deployed assets and rerun iframe checks after Pages completes. Existing unrelated global CI lint/coverage issues remain recorded above.
+
 ## Issue 330 publication — 2026-10-05
 
 - Refreshed the public API list (342 bots), all 28 vendor profiles (488 bots), and all 17 requested rate tables; saved a deduplicated catalog of 501 bots.

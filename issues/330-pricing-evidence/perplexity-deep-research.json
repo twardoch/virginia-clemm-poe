@@ -1,0 +1,29 @@
+{
+  "id": "perplexity-deep-research",
+  "checked_at": "2026-10-05T02:11:55.839767+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Perplexity-Deep-Research",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Perplexity Deep Research is a research-focused model designed for multi-step retrieval, synthesis, and reasoning across complex topics. It autonomously searches, reads, and evaluates sources, refining its approach as it gathers information. This enables comprehensive report generation across domains like finance, technology, health, and current events. Context Length: 128k\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th style=\"text-align: left;\">Item</th><th style=\"text-align: left;\">Rate</th></tr></thead><tbody><tr><td style=\"text-align: left;\">Input Tokens</td><td style=\"text-align: left;\">160 ($0.0048) per 1,000 tokens</td></tr><tr><td style=\"text-align: left;\">Output Tokens</td><td style=\"text-align: left;\">640 ($0.019) per 1,000 tokens</td></tr><tr><td style=\"text-align: left;\">Citation Tokens</td><td style=\"text-align: left;\">160 ($0.0048) per 1,000 tokens</td></tr><tr><td style=\"text-align: left;\">Reasoning Tokens</td><td style=\"text-align: left;\">240 ($0.0073) per 1,000 tokens</td></tr><tr><td style=\"text-align: left;\">Search Queries</td><td style=\"text-align: left;\">400 ($0.012) per query</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "This bot uses a variable pricing model.\n\nNote that conversation history is priced in input tokens.\nAuthorization fees are likely higher than the fee charged. Charges can be viewed by right clicking a message and selecting \"Info\"\n| Item | Rate |\n|:---|:---|\n| Input Tokens          | 160 ($0.0048) per 1,000 tokens |\n| Output Tokens         | 640 ($0.019) per 1,000 tokens |\n| Citation Tokens       | 160 ($0.0048) per 1,000 tokens |\n| Reasoning Tokens      | 240 ($0.0073) per 1,000 tokens |\n| Search Queries        | 400 ($0.012) per query |\n"
+    }
+  ]
+}

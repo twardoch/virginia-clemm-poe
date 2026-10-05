@@ -1,0 +1,29 @@
+{
+  "id": "qwen3.7-max-el",
+  "checked_at": "2026-10-05T02:13:13.860060+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Qwen3.7-Max-EL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Qwen3.7 Max is a next\u2011generation flagship model designed for the agent\u2011centric era, with its core strengths lying in the breadth and depth of its agent\u2011level capabilities: it excels at programming, office and productivity tasks, and long\u2011term autonomous execution.\nThis model is served by Alibaba Cloud Int. from Singapore.\n\nNotes:\n- Context Window: 1,000,000\n- Text only input\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$2.53/1M tokens</td><td>84 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$7.58/1M tokens</td><td>250 points/1k tokens</td></tr><tr><td>Bot message</td><td>$0.0041/message</td><td>134 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $2.53/1M tokens | 84 points/1k tokens |\n| Output (text) | $7.58/1M tokens | 250 points/1k tokens |\n| Bot message | $0.0041/message | 134 points/message |\n"
+    }
+  ]
+}

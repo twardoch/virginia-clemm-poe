@@ -1,8 +1,31 @@
 # [gpt-audio](https://poe.com/gpt-audio){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | 138 ($0.0042) points / 1K tokens |
+| Output (Text) | 550 ($0.017) points / 1K tokens |
+| Input (Audio) | 1760 ($0.053) points / 1K tokens |
+| Output (Audio) | 3520 ($0.11) points / 1K tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 0.0042 | 1000 tokens |
+| Output (text) | USD | 0.017 | 1000 tokens |
+| Input (audio) | USD | 0.053 | 1000 tokens |
+| Output (audio) | USD | 0.11 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:11:17.280035+00:00
+
+
 ## Bot Information
 
-**Creator:** @binaai
+**Creator:** binaai
 
 **Description:** OpenAI's gpt-audio model, brought to Poe as a server bot! This model accepts text and audio inputs and can respond with natural-sounding speech. Learn more at https://platform.openai.com/docs/models/gpt-audio.
 

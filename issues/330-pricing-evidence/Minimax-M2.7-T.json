@@ -1,0 +1,29 @@
+{
+  "id": "Minimax-M2.7-T",
+  "checked_at": "2026-10-05T02:09:27.737722+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Minimax-M2.7-T",
+    "creator": {
+      "isDeleted": false,
+      "handle": "togetherai",
+      "fullName": "Together AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-538388044-50-pymstrtquryhajnzeyeaqftjrrbrgvrv.jpeg",
+      "id": "UG9lVXNlcjo1MzgzODgwNDQ="
+    },
+    "description": "MiniMax-M2.7 is MiniMax's first model deeply participating in its own evolution. M2.7 is capable of building complex agent harnesses and completing highly elaborate productivity tasks, leveraging Agent Teams, complex Skills, and dynamic tool search. M2.7 delivers outstanding real-world programming capabilities spanning log analysis, bug troubleshooting, refactoring, code security, and machine learning.",
+    "poweredBy": "Powered by a server managed by @togetherai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.00/message</td><td>0 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.00/message | 0 points/message |\n"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "wan-2.7",
+  "checked_at": "2026-10-05T02:11:10.560779+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Wan-2.7",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Wan 2.7 is Alibaba's latest multimodal video generation model, capable of creating high-fidelity videos from text, images, video references, or by editing existing videos. It supports four generation modes: Text-to-Video (T2V), Image-to-Video (I2V), Video Edit, and Reference-to-Video (R2V).\n\nNotes:\n- This model is served from the Singapore area.\n- Upload an image to enable image-to-video, a video for video editing, or images/videos for reference-to-video. The mode is auto-detected from your attachments, or you can choose manually to override.\n- Responses may take upwards of 30 minutes to finish generating.\n- Shot type is described directly in your prompt (e.g., \"Generate a multi-shot video\" or use timeline syntax like \"Shot 1 [0-5s] wide shot of...\").\n\nAttachments:\n- For T2V: No attachments required. Optionally attach an audio file for custom audio.\n- For I2V (First Frame): Attach 1 image as the first frame. Optionally attach an audio file for driving audio.\n- For I2V (First + Last Frame): Attach exactly 2 images (first frame and last frame). Optionally attach an audio file for driving audio.\n- For I2V (Video Continuation): Attach 1 video (2\u201310s) as the first clip. Optionally attach 1 image as the target last frame.\n- For Video Edit: Attach 1 video (2\u201310s, \u2264100 MB, MP4/MOV) + up to 3 reference images. If your video is shorter than the selected duration, the output will match your video's length instead.\n- For R2V: Attach up to 5 references total (images + videos combined). Use `Video1`, `Video2` in your prompt to reference subjects from uploaded videos, and `Image1`, `Image2` for uploaded images. Optionally attach an audio file for voice timbre reference.\n- Audio files: For T2V and I2V: 2\u201330 seconds. For R2V: 1\u201310 seconds (voice timbre sample). Max 15 MB, .mp3/.wav. Audio is automatically trimmed to the mode's limit if too long.\n- Images are automatically resized to fit limits (240\u20138,000px per side). HEIC/HEIF images are auto-converted. Videos are validated (MP4/MOV, \u2264100 MB) and auto-trimmed if exceeding the mode's max duration.\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Resolution</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>720P</td><td>$0.10/sec</td><td>3,333 pts/sec</td></tr><tr><td>1080P</td><td>$0.150/sec</td><td>5,000 pts/sec</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "**Wan 2.7 Video Generation Pricing**\n\nPricing is per second of video generated.\n\n**All Modes (T2V, I2V, Video Edit, R2V)**\n| Resolution | Rate (USD) | Rate (Points) |\n|------------|------------|---------------|\n| 720P | $0.10/sec | 3,333 pts/sec |\n| 1080P | $0.150/sec | 5,000 pts/sec |\n\n**Note:** Video Edit and R2V are billed for input video duration + output video duration.\n"
+    }
+  ]
+}

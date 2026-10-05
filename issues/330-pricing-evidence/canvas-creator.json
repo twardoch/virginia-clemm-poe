@@ -1,0 +1,27 @@
+{
+  "id": "canvas-creator",
+  "checked_at": "2026-10-05T02:10:35.840563+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Canvas-Creator",
+    "creator": {
+      "isDeleted": false,
+      "handle": "poe_tools",
+      "fullName": "Poe Tools",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2890766504-50-rtkgimwdzuemwbnocyzjdrrownqcarrz.jpeg",
+      "id": "UG9lVXNlcjoyODkwNzY2NTA0"
+    },
+    "description": "Specializes in building interactive web applications designed for publishing as apps on Poe. Powered by Claude Code.\n\nSee what's new: https://creator.poe.com/changelog?tag=canvas-apps\n\nNote: Canvas-Creator cannot access messages sent to or from other bots.\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Runs inside Poe's protected environment.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Canvas-Creator may make multiple calls to [Claude-Sonnet-4.5](https://poe.com/Claude-Sonnet-4.5), [Claude-Haiku-4.5](https://poe.com/Claude-Haiku-4.5) or [Claude-Opus-4.6](https://poe.com/Claude-Opus-4.6). Each call is charged at the respective bots' rates."
+    }
+  ]
+}

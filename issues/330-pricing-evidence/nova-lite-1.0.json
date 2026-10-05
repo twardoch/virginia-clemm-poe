@@ -1,0 +1,29 @@
+{
+  "id": "nova-lite-1.0",
+  "checked_at": "2026-10-05T02:11:25.494366+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Nova-Lite-1.0",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Amazon Nova Lite is a low\u2011cost multimodal foundation model from Amazon that can process text, images, and video and is optimized for speed and affordability. It offers a context window of 300,000 tokens, allowing handling of very large inputs in a single request (including up to ~30 minutes of video).",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.070/1M tokens</td><td>3 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$0.28/1M tokens</td><td>10 points/1k tokens</td></tr><tr><td>Cache discount</td><td>44% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.070/1M tokens | 3 points/1k tokens |\n| Output (text) | $0.28/1M tokens | 10 points/1k tokens |\n| Cache discount | 44% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n"
+    }
+  ]
+}

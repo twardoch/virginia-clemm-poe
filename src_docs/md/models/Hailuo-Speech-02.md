@@ -1,8 +1,29 @@
 # [Hailuo-Speech-02](https://poe.com/Hailuo-Speech-02){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Hd Output | 3334 points ($0.10) / 1000 characters |
+| Turbo Output | 2000 points ($0.061) / 1000 characters |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| HD Output | USD | 0.10 | 1000 characters |
+| HD Output | POINTS | 3334 | 1000 characters |
+| Turbo Output | USD | 0.061 | 1000 characters |
+| Turbo Output | POINTS | 2000 | 1000 characters |
+
+**Last Checked:** 2026-10-05T02:09:07.313925+00:00
+
+
 ## Bot Information
 
-**Creator:** @fal
+**Creator:** fal
 
 **Description:** Generate speech from text prompts using the MiniMax Speech-02 model. 
 

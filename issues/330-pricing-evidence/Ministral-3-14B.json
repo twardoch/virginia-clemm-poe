@@ -1,0 +1,29 @@
+{
+  "id": "Ministral-3-14B",
+  "checked_at": "2026-10-05T02:09:27.979819+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Ministral-3-14B",
+    "creator": {
+      "isDeleted": false,
+      "handle": "OpenSourceLab",
+      "fullName": "Open-Source-Lab",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2419661422-50-yfhdcuqxmrjwjokrdinuyvphinqrsuoa.jpeg",
+      "id": "UG9lVXNlcjoyNDE5NjYxNDIy"
+    },
+    "description": "Fast, edge-optimized AI model from the Ministral-3 family that provides robust language and multimodal image capabilities in a compact footprint. It is specifically designed to run on a wide range of hardware, making it highly suitable for efficient, private local inference. The model offers native function calling, JSON output, and robust multilingual support across 40+ languages. Context window: 256K tokens",
+    "poweredBy": "Powered by a server managed by @OpenSourceLab.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total Cost</td><td>$0.0006/message</td><td>20 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "| Type | Rate (USD) | Rate (Points) |\n|------|--------------|------------|\n| Total Cost | $0.0006/message | 20 points/message|\n"
+    }
+  ]
+}

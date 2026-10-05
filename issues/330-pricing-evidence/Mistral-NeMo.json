@@ -1,0 +1,29 @@
+{
+  "id": "Mistral-NeMo",
+  "checked_at": "2026-10-05T02:09:29.940113+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Mistral-NeMo",
+    "creator": {
+      "isDeleted": false,
+      "handle": "OpenSourceLab",
+      "fullName": "Open-Source-Lab",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2419661422-50-yfhdcuqxmrjwjokrdinuyvphinqrsuoa.jpeg",
+      "id": "UG9lVXNlcjoyNDE5NjYxNDIy"
+    },
+    "description": "Mistral and NVIDIA collaborated to create a multimodal, open-source model with 12B parameter, designed for extensive multilingual conversations and file processing. You can set optional parameters like temperature and verbosity in the settings. Supported file types: DOCX, TXT, XLSX, TSX, CSV, PDF, HTML, JSON, CSS, WEBP, JPG, HEIC, GIF and PNG. Unsupported file types: ODS, RTF, XLS, JS, PY, AVIF, HEIF, MP4, WEBM, WAV and MP3, STL, OBJ. Context window: 128K tokens",
+    "poweredBy": "Powered by a server managed by @OpenSourceLab.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input</td><td>$0.15 / 1M tokens</td><td>13 points / 1K tokens</td></tr><tr><td>Output (text)</td><td>$0.35 / 1M tokens</td><td>65 points / 1K tokens</td></tr><tr><td>Input (file)</td><td>Variable</td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "| Type | Rate (USD) | Rate (Points) |\n|-------------|----------------------|---------------------------------------|\n| Input | $0.15 / 1M tokens | 13 points / 1K tokens |\n| Output (text) | $0.35 / 1M tokens | 65 points / 1K tokens |\n| Input (file) | Variable | |"
+    }
+  ]
+}

@@ -1,8 +1,26 @@
 # [Sonic-3.0](https://poe.com/Sonic-3.0){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | $0.0061/message · 200 points/message |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Total cost | USD | 0.0061 | 1 message |
+| Total cost | POINTS | 200 | 1 message |
+
+**Last Checked:** 2026-10-05T02:09:54.614364+00:00
+
+
 ## Bot Information
 
-**Creator:** @cartesiateam
+**Creator:** cartesiateam
 
 **Description:** Generates audio based on your prompt using the latest Cartesia's Sonic 3.0 text-to-speech model in your voice of choice.
 Supports 10k characters.

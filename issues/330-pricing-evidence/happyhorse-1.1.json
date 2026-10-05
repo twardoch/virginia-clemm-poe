@@ -1,0 +1,29 @@
+{
+  "id": "happyhorse-1.1",
+  "checked_at": "2026-10-05T02:13:17.538034+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "HappyHorse-1.1",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "HappyHorse 1.1, from Alibaba, supports text-to-video, image-to-video, and reference-to-video from up to nine images, all with synchronized native audio. It has sharper visual quality, smoother motion, and stronger character consistency across clips, at 720p or 1080p for 3 to 15 seconds.\n\nModes (auto-detected)\n- Text-to-Video: send a prompt only.\n- Image-to-Video: attach one image to animate it. The output follows the image's aspect ratio.\n- Reference-to-Video: attach 2 to 9 reference images and name them in your prompt as character1, character2, and so on for consistent subjects, scenes, and styles.\n\nInput limits\n- Prompt up to 2,500 characters.\n- Images: JPEG, PNG, BMP, or WEBP. One image for image-to-video, up to nine for reference-to-video.\n- No video or audio input.\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Resolution</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>720P</td><td>$0.14/sec</td><td>4,667 pts/sec</td></tr><tr><td>1080P</td><td>$0.18/sec</td><td>6,000 pts/sec</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "**HappyHorse 1.1 Video Generation**\n\nBilled per second of video generated, by resolution.\n\n| Resolution | Rate (USD) | Rate (Points) |\n|------------|------------|---------------|\n| 720P | $0.14/sec | 4,667 pts/sec |\n| 1080P | $0.18/sec | 6,000 pts/sec |\n\nModes (auto-detected from your attachments): Text-to-Video, Image-to-Video (1 image), Reference-to-Video (up to 9 images).\n"
+    }
+  ]
+}

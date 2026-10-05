@@ -1,0 +1,29 @@
+{
+  "id": "gemini-2.5-pro-tts",
+  "checked_at": "2026-10-05T02:12:00.953154+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Gemini-2.5-Pro-TTS",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Gemini\u20112.5\u2011Pro\u2011TTS is Google\u2019s highest\u2011quality text\u2011to\u2011speech model preview, designed for complex workflows like podcasts, audiobooks, and customer support; it delivers expressive, accent\u2011 and style\u2011controllable single\u2011 or multi\u2011speaker speech, supporting over 23 languages, and built for state\u2011of\u2011the\u2011art output with the most powerful model architecture.\n\nNotes:\n- Text and style prompt limited to 4,000 bytes each (8,000 bytes combined)\n- Max output duration: approximately 10 minutes\n- Multi-speaker requires SpeakerName: text format (example: Alice: Hi! Bob: Hello, must be on new lines)\n- The model auto-detects the input language. The Language setting is a hint to help choose the right voice/accent, the model may override it if the text is in a different language.\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": false
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate</th></tr></thead><tbody><tr><td>Input (text tokens)</td><td>100 ($0.0030) points / 1k tokens</td></tr><tr><td>Output (audio tokens)</td><td>2000 ($0.061) points / 1k tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n\n| Type | Rate |\n|------|------|\n| Input (text tokens) | 100 ($0.0030) points / 1k tokens |\n| Output (audio tokens) | 2000 ($0.061) points / 1k tokens |\n\nNotes:\n- Approx 4 characters = 1 input token\n- Audio tokens: 25 per second of generated audio\n- Approx 15 characters per second of audio"
+    }
+  ]
+}

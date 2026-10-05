@@ -1,0 +1,29 @@
+{
+  "id": "mimo-v2.5-pro",
+  "checked_at": "2026-10-05T02:13:30.763017+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "MiMo-V2.5-Pro",
+    "creator": {
+      "isDeleted": false,
+      "handle": "xiaomi",
+      "fullName": "Xiaomi",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-3217300834-50-eoqegxmwyrlandsxscvykdvwyrmxgdhi.jpeg",
+      "id": "UG9lVXNlcjozMjE3MzAwODM0"
+    },
+    "description": "Xiaomi MiMo V2.5 Pro is a reasoning model for agentic workflows, software engineering, and long-horizon tasks.",
+    "poweredBy": "Powered by a server managed by @xiaomi.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$1.01/1M tokens</td><td>34 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$3.03/1M tokens</td><td>100 points/1k tokens</td></tr><tr><td>Cache discount</td><td>80% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $1.01/1M tokens | 34 points/1k tokens |\n| Output (text) | $3.03/1M tokens | 100 points/1k tokens |\n| Cache discount | 80% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n"
+    }
+  ]
+}

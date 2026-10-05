@@ -1,0 +1,29 @@
+{
+  "id": "Flux-Kontext-Dev",
+  "checked_at": "2026-10-05T02:08:53.395270+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Flux-Kontext-Dev",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "FLUX.1 Kontext [dev] is a new developer model from Black Forest Labs, especially for image editing. Send an image along with an instruction to edit the image. Priced based on number of output megapixels, rounded up.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Image Output</td><td>709 points ($0.021) / output megapixel</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Image Output | 709 points ($0.021) / output megapixel | \n"
+    }
+  ]
+}

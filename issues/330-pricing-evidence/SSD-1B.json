@@ -1,0 +1,29 @@
+{
+  "id": "SSD-1B",
+  "checked_at": "2026-10-05T02:09:47.204288+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "SSD-1B",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fireworksai",
+      "fullName": "Fireworks AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2339248475-50-cokslpvhdmlrqrkakgkkmiaffqqkcfgh.jpeg",
+      "id": "UG9lVXNlcjoyMzM5MjQ4NDc1"
+    },
+    "description": "Fast image generation bot based off the Segmind Stable Diffusion 1B model hosted by fireworks.ai https://app.fireworks.ai/models/fireworks/SSD-1B\n\nFirst message is text-to-image, then subsequent messages transform the previous image. Clear chat context to do text-to-image again",
+    "poweredBy": "Powered by a server managed by @fireworksai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": false
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.0048/message</td><td>160 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.0048/message | 160 points/message |\n"
+    }
+  ]
+}

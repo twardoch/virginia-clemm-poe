@@ -1,0 +1,29 @@
+{
+  "id": "seedream-3.0",
+  "checked_at": "2026-10-05T02:12:09.970171+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Seedream-3.0",
+    "creator": {
+      "isDeleted": false,
+      "handle": "Bytedance",
+      "fullName": "Bytedance",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-3051278963-50-eutwplhohbxvxssqxmripuferuovulrc.jpeg",
+      "id": "UG9lVXNlcjozMDUxMjc4OTYz"
+    },
+    "description": "Seedream 3.0 by ByteDance is a bilingual (Chinese and English) text-to-image model that excels at text-to-image generation.\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @Bytedance.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": false
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Image Output</td><td>1000 points ($0.030) / message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Image Output | 1000 points ($0.030) / message |"
+    }
+  ]
+}

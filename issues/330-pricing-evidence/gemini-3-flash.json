@@ -1,0 +1,29 @@
+{
+  "id": "gemini-3-flash",
+  "checked_at": "2026-10-05T02:10:56.777410+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Gemini-3-Flash",
+    "creator": {
+      "isDeleted": false,
+      "handle": "google",
+      "fullName": "Google",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910402837-50-hdxyjsuznjtgwrszmhvbhgbviwdhkwvl.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDAyODM3"
+    },
+    "description": "Building on the reasoning capabilities of Gemini 3 Pro, Gemini 3 Flash is a powerful but affordable and performant model. It has exceptional world knowledge, multimodal understanding and reasoning capabilities at a fraction of the cost of equivalent models (as of December 2025).\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by Google: gemini-3-flash-preview.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.40/1M tokens</td><td>14 points/1k tokens</td></tr><tr><td>Input (image)</td><td>$0.40/1M tokens</td><td>14 points/1k tokens</td></tr><tr><td>Input (video)</td><td>$0.000028/second</td><td>1 point/second</td></tr><tr><td>Input (audio)</td><td>$0.000013/second</td><td>1 point/second</td></tr><tr><td>Output (text)</td><td>$2.42/1M tokens</td><td>80 points/1k tokens</td></tr><tr><td>Output</td><td>$0.014/search</td><td>467 points/search</td></tr><tr><td>Cache discount</td><td>90% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.40/1M tokens | 14 points/1k tokens |\n| Input (image) | $0.40/1M tokens | 14 points/1k tokens |\n| Input (video) | $0.000028/second | 1 point/second |\n| Input (audio) | $0.000013/second | 1 point/second |\n| Output (text) | $2.42/1M tokens | 80 points/1k tokens |\n| Output | $0.014/search | 467 points/search |\n| Cache discount | 90% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n\n\nNote: Prompt caching is currently limited to sessions with web search disabled.\n\nWeb searches will add input tokens.\n\nInput rate is 2x and output rate is 1.5x when context is >200k tokens."
+    }
+  ]
+}

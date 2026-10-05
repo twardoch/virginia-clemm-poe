@@ -1,8 +1,37 @@
 # [wan-3.0](https://poe.com/wan-3.0){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Standard | 1080P · $0.280/sec · 9,333 pts/sec |
+| Prime | 1080P · $0.560/sec · 18,667 pts/sec |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Standard | USD | 0.070 | 1 second |
+| Standard | POINTS | 2333 | 1 second |
+| Standard | USD | 0.140 | 1 second |
+| Standard | POINTS | 4667 | 1 second |
+| Standard | USD | 0.280 | 1 second |
+| Standard | POINTS | 9333 | 1 second |
+| Prime | USD | 0.136 | 1 second |
+| Prime | POINTS | 4533 | 1 second |
+| Prime | USD | 0.280 | 1 second |
+| Prime | POINTS | 9333 | 1 second |
+| Prime | USD | 0.560 | 1 second |
+| Prime | POINTS | 18667 | 1 second |
+
+**Last Checked:** 2026-10-05T02:13:43.374145+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Wan 3.0 generates video clips of 2 to 30 seconds with synchronized native audio, with Standard and Prime (faster) tiers.
 

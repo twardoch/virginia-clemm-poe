@@ -1,8 +1,34 @@
 # [kling-o3](https://poe.com/kling-o3){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Text / Image | 17500 ($0.53) /s |
+| Text / Image + Sound | 17500 ($0.53) /s |
+| Video Input (Edit / Ref) | 11200 ($0.34) /s |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Text / Image | USD | 0.17 | 1 second |
+| Text / Image + Sound | USD | 0.23 | 1 second |
+| Video Input (Edit / Ref) | USD | 0.25 | 1 second |
+| Text / Image | USD | 0.23 | 1 second |
+| Text / Image + Sound | USD | 0.28 | 1 second |
+| Video Input (Edit / Ref) | USD | 0.34 | 1 second |
+| Text / Image | USD | 0.53 | 1 second |
+| Text / Image + Sound | USD | 0.53 | 1 second |
+
+**Last Checked:** 2026-10-05T02:11:13.391087+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Kling O3 is a versatile AI video generation model capable of creating high-quality videos in Standard or Pro modes, with resolution varying by aspect ratio. It supports multiple workflows including Text-to-Video, Image-to-Video, Reference-to-Video, and Video Editing, with advanced features like native sound generation and multi-scene transitions.
 

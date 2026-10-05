@@ -1,8 +1,27 @@
 # [GLM-TTS](https://poe.com/GLM-TTS){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Fast (Int8) | 6806 ($0.21) / 1k chars |
+| Quality (Fp16) | 6976 ($0.21) / 1k chars |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Fast (INT8) | USD | 0.21 | 1000 characters |
+| Quality (FP16) | USD | 0.21 | 1000 characters |
+
+**Last Checked:** 2026-10-05T02:08:57.744410+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** GLM-TTS is a high-quality, LLM-based text-to-speech system that supports zero-shot voice cloning from 3–10 seconds of audio and text-to-speech synthesis. It provides controllable, emotion-expressive speech via multi-reward reinforcement learning, with phoneme-level control and strong performance on the seed-tts-eval benchmark.
 

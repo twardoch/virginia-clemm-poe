@@ -1,0 +1,29 @@
+{
+  "id": "llama-3.1-8b-fp16",
+  "checked_at": "2026-10-05T02:12:52.171804+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Llama-3.1-8B-FP16",
+    "creator": {
+      "isDeleted": false,
+      "handle": "hyperbolic",
+      "fullName": "Hyperbolic",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2750645697-50-flvdqddyqoiiysewfthxfggnwiaubvgx.jpeg",
+      "id": "UG9lVXNlcjoyNzUwNjQ1Njk3"
+    },
+    "description": "The smallest and fastest member of the Llama 3.1 family, offering exceptional efficiency and rapid response times with 128K context length.",
+    "poweredBy": "Powered by a server managed by @hyperbolic.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.0015/message</td><td>50 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.0015/message | 50 points/message |\n"
+    }
+  ]
+}

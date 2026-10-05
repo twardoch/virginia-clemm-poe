@@ -1,0 +1,29 @@
+{
+  "id": "minimax-speech-2.8",
+  "checked_at": "2026-10-05T02:10:55.411318+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "MiniMax-Speech-2.8",
+    "creator": {
+      "isDeleted": false,
+      "handle": "novitaai",
+      "fullName": "Novita AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-3067795970-50-ezhhpdjtzbudawymtaodhapblyfagaxk.jpeg",
+      "id": "UG9lVXNlcjozMDY3Nzk1OTcw"
+    },
+    "description": "MiniMax Speech 2.8 is a premium text-to-speech model delivering studio-quality audio with enhanced clarity and naturalness. With support for multiple voice presets, emotional tones, and fine-grained audio controls, it produces broadcast-ready speech synthesis for professional applications.",
+    "poweredBy": "Powered by a server managed by @novitaai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": false
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.0061/message</td><td>200 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.0061/message | 200 points/message |\n"
+    }
+  ]
+}

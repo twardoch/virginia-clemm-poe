@@ -1,0 +1,29 @@
+{
+  "id": "qwen-image-3.0-el",
+  "checked_at": "2026-10-05T02:13:37.593612+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Qwen-Image-3.0-EL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Qwen Image 3.0 supports image generation and editing with Base and Pro variants, multilingual typography, multi-image references, and controllable 1K or 2K output.\n\nGeneration & Editing\n- Generate from a text prompt\n- Edit or combine one to three attached images\n- Generate one to six images per request\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Tier</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Base, 1K or 2K</td><td>$0.030/image</td><td>1,000 points</td></tr><tr><td>Pro, up to 2.25MP (1K)</td><td>$0.040/image</td><td>1,334 points</td></tr><tr><td>Pro, above 2.25MP (2K)</td><td>$0.075/image</td><td>2,500 points</td></tr><tr><td>Input image</td><td>$0.003/image</td><td>100 points</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "**Qwen Image 3.0 Pricing**\n\nPricing is per generated image. Each attached reference image is billed separately.\n\n| Tier | Rate (USD) | Rate (Points) |\n|------|------------|---------------|\n| Base, 1K or 2K | $0.030/image | 1,000 points |\n| Pro, up to 2.25MP (1K) | $0.040/image | 1,334 points |\n| Pro, above 2.25MP (2K) | $0.075/image | 2,500 points |\n| Input image | $0.003/image | 100 points |"
+    }
+  ]
+}

@@ -9,9 +9,28 @@
 | Prompt | $3.157E-7/token |
 | Completion | $0.0000025253/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $0.32/1M tokens · 11 points/1k tokens |
+| Output (Text) | $2.53/1M tokens · 84 points/1k tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 0.32 | 1000000 tokens |
+| Input (text) | POINTS | 11 | 1000 tokens |
+| Output (text) | USD | 2.53 | 1000000 tokens |
+| Output (text) | POINTS | 84 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:10:47.401108+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Seed 2.0 Lite is a balanced model designed for high-frequency enterprise workloads, optimizing for both capability and cost. Its overall performance surpasses the previous-generation ByteDance-Seed-1.8. It is well-suited for production tasks such as unstructured information processing, text content creation, search and recommendation, and data analysis. The model supports long-context processing, multi-source information fusion, multi-step instruction execution, and high-fidelity structured outputs—delivering stable quality while significantly reducing cost.
 This model is served from Malaysia.

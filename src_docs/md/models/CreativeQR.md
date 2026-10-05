@@ -1,8 +1,26 @@
 # [CreativeQR](https://poe.com/CreativeQR){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | $0.0048/message · 160 points/message |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Total cost | USD | 0.0048 | 1 message |
+| Total cost | POINTS | 160 | 1 message |
+
+**Last Checked:** 2026-10-05T02:08:36.879462+00:00
+
+
 ## Bot Information
 
-**Creator:** @fireworksai
+**Creator:** fireworksai
 
 **Description:** Creative QR code image generation. Send a prompt, followed by `--qr`, followed by the data to encode as a QR code. The bot also supports a few other flags:
 

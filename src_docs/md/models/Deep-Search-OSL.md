@@ -1,8 +1,26 @@
 # [Deep-Search-OSL](https://poe.com/Deep-Search-OSL){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | $0.036/message · 1200 points |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Total Cost | USD | 0.036 | 1 message |
+| Total Cost | POINTS | 1200 | 1 message |
+
+**Last Checked:** 2026-10-05T02:08:38.834538+00:00
+
+
 ## Bot Information
 
-**Creator:** @OpenSourceLab
+**Creator:** OpenSourceLab
 
 **Description:** This AI search engine combines live web search with real-time data, applies advanced reasoning, and returns results while preserving its advantage in high-quality throughput.
 

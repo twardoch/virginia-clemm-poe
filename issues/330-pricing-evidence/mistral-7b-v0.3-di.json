@@ -1,0 +1,29 @@
+{
+  "id": "mistral-7b-v0.3-di",
+  "checked_at": "2026-10-05T02:12:43.435298+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Mistral-7B-v0.3-DI",
+    "creator": {
+      "isDeleted": false,
+      "handle": "deepinfra",
+      "fullName": "DeepInfra",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2942644786-50-kwbwbicjxskxfnovutpupodkegoceisf.jpeg",
+      "id": "UG9lVXNlcjoyOTQyNjQ0Nzg2"
+    },
+    "description": "Mistral Instruct 7B v0.3 from Mistral AI.\n\nAll data you provide this bot will not be used in training, and is sent only to DeepInfra, a US-based company.\n\nSupports 32k tokens of input context and 8k tokens of output context. Quantization: FP16 (official).",
+    "poweredBy": "Powered by a server managed by @deepinfra.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.00015/message</td><td>5 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.00015/message | 5 points/message |\n"
+    }
+  ]
+}

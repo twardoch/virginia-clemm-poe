@@ -1,8 +1,18 @@
 # [GitHub](https://poe.com/GitHub){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+
+**Last Checked:** 2026-10-05T02:09:05.710987+00:00
+
+
 ## Bot Information
 
-**Creator:** @opentools
+**Creator:** opentools
 
 **Description:** Unknown
 

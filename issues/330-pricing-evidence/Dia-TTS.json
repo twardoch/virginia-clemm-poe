@@ -1,0 +1,29 @@
+{
+  "id": "Dia-TTS",
+  "checked_at": "2026-10-05T02:08:44.600138+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Dia-TTS",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Dia-TTS generates realistic dialogue (e.g. an audio file with two speakers) from transcripts. Please use the following format:\n* pre-fix the person that is speaking with [S1] or [S2]\n* to use sound effects like laughing use (laughs)\n\nFor example:\n```\n[S1] Dia is an open weights text to dialogue model. [S2] You get full control over scripts and voices. [S1] Wow. Amazing. (laughs) [S2] Try it now on Poe.\n```",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Audio Output</td><td>834 points ($0.025) / message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Audio Output | 834 points ($0.025) / message | \n"
+    }
+  ]
+}

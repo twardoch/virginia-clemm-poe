@@ -7,9 +7,17 @@
 | Type | Cost |
 |------|------|
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+
+**Last Checked:** 2026-10-05T02:13:19.383922+00:00
+
+
 ## Bot Information
 
-**Creator:** @novitaai
+**Creator:** novitaai
 
 **Description:** Built for real-world business scenarios, Hy3 features a 295B/21B active MoE architecture, native 256K context support, and three reasoning modes. It enhances coding, long-form comprehension, multi-turn dialogue, and agentic task execution, balancing reliability, efficiency, and cost across both high-frequency interactions and complex workflows.
 

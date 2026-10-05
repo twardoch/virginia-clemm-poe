@@ -1,0 +1,29 @@
+{
+  "id": "Flux-Outpaint",
+  "checked_at": "2026-10-05T02:08:54.337533+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Flux-Outpaint",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Outpainting bot based upon Flux-1.1-Pro. Given an image and a prompt, can expand the borders of an image according to your prompt. Use --horizontal and one of \"left\", \"center\", or \"right\" to set the horizontal position of the input image within the final image, and use --vertical with \"top\",\" bottom\", or \"center\" to set the vertical position of the image in the final image.\n\nFor more precise image placement, you can use --h_pos and --v_pos by sending numeric values between 0.0 (representing top/left) and 1.0 representing (bottom/right) to set horizontal and vertical positions, respectively.\n\nDecide the amount to be outpainted with --scale (a number between 0.0 and 1.0, including 0.0 and 1.0). 0.0 implies a very low expansion while 1.0 denotes a very large expansion.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Image Output</td><td>5334 points ($0.16) / message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Image Output | 5334 points ($0.16) / message | \n"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "seed-2.0-pro",
+  "checked_at": "2026-10-05T02:10:54.605937+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Seed-2.0-Pro",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Seed 2.0 Pro is a flagship all-purpose general model designed for complex reasoning and long-chain task execution in the Agent era. It emphasizes multimodal understanding, long-context reasoning, structured generation, and tool-augmented execution. It delivers outstanding performance in handling complex instructions and multi-constraint execution, and can reliably address scenarios such as multi-step complex planning, sophisticated visual-text reasoning, video content understanding, and high-difficulty analysis.\nThis model is served from Malaysia.\n\nNotes:\n- Pricing is 2x when input tokens >128k\n- Context Window: 256k\n- Temperature and top_p are fixed by the model (temp=1, top_p=0.95).\n\nParameter controls available:\n1. Reasoning\n- Default: Thinking enabled\n- Reasoning effort [low, medium, high]: How deeply the model thinks. Low=fast, Medium=balanced, High=thorough (default: medium). Only applies if thinking is enabled.\n\n2. Search & Vision\n- Web Search: Enable real-time web search for up-to-date information (default: false).\n- Image Detail [low, high, xhigh]: Quality for image understanding. Higher = more accurate but uses more tokens (default: high).\n- Video FPS [0.2-5]: Frame sampling rate for video input. Higher = more frames analyzed, more accurate, more tokens (default: 1).",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.63/1M tokens</td><td>21 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$3.79/1M tokens</td><td>125 points/1k tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.63/1M tokens | 21 points/1k tokens |\n| Output (text) | $3.79/1M tokens | 125 points/1k tokens |\n\n\nInput rate is 2x and output rate is 2x when context is >128k tokens."
+    }
+  ]
+}

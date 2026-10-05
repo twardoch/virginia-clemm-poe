@@ -1,0 +1,29 @@
+{
+  "id": "gemini-3.5-flash",
+  "checked_at": "2026-10-05T02:10:33.264516+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Gemini-3.5-Flash",
+    "creator": {
+      "isDeleted": false,
+      "handle": "google",
+      "fullName": "Google",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910402837-50-hdxyjsuznjtgwrszmhvbhgbviwdhkwvl.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDAyODM3"
+    },
+    "description": "Gemini 3.5 Flash is Google\u2019s latest Flash-family AI model, built for frontier intelligence with fast, reliable action. It delivers major upgrades in agentic workflows, coding, long-horizon reasoning, multimodal understanding, and rich interactive UI/graphics generation while retaining the Flash series\u2019 focus on speed, low latency, and cost efficiency. Optimized for multi-step tool use and subagent orchestration through platforms like Google Antigravity and the Gemini API. Serves the latest gemini-3.5-flash release.",
+    "poweredBy": "Powered by Google: gemini-3.5-flash.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$1.52/1M tokens</td><td>50 points/1k tokens</td></tr><tr><td>Input (image)</td><td>$1.52/1M tokens</td><td>50 points/1k tokens</td></tr><tr><td>Input (video)</td><td>$0.000088/second</td><td>3 points/second</td></tr><tr><td>Output (text)</td><td>$9.09/1M tokens</td><td>300 points/1k tokens</td></tr><tr><td>Output</td><td>$0.014/search</td><td>467 points/search</td></tr><tr><td>Cache discount</td><td>90% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $1.52/1M tokens | 50 points/1k tokens |\n| Input (image) | $1.52/1M tokens | 50 points/1k tokens |\n| Input (video) | $0.000088/second | 3 points/second |\n| Output (text) | $9.09/1M tokens | 300 points/1k tokens |\n| Output | $0.014/search | 467 points/search |\n| Cache discount | 90% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n\n\nWeb searches will add input tokens."
+    }
+  ]
+}

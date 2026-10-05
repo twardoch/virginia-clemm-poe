@@ -1,0 +1,29 @@
+{
+  "id": "grok-imagine-image",
+  "checked_at": "2026-10-05T02:10:54.199664+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Grok-Imagine-Image",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Create creative and artistic images with Grok Imagine Image. Supports text-to-image and image-editing (single image of jpeg/png/webp format). Set aspect ratio via parameter controls.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Image Input</td><td>67 points ($0.0020) / image input</td></tr><tr><td>Image Output</td><td>667 points ($0.020) / image output</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Image Input | 67 points ($0.0020) / image input | \n| Image Output | 667 points ($0.020) / image output| \n"
+    }
+  ]
+}

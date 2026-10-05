@@ -1,8 +1,41 @@
 # [Tavily-Search-test](https://poe.com/Tavily-Search-test){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Search (Basic/Fast/Ultra-Fast) | 320 ($0.0097) |
+| Search (Advanced) | 640 ($0.019) |
+| Search (Advanced + Answer) | 960 ($0.029) |
+| Extract (Basic) | 320 ($0.0097) per 5 URLs |
+| Extract (Advanced) | 640 ($0.019) per 5 URLs |
+| Crawl (Map Step) | 320 ($0.0097) per 10 pages |
+| Crawl (Map + Instructions) | 640 ($0.019) per 10 pages |
+| Map | 320 ($0.0097) per 10 pages |
+| Map (With Instructions) | 640 ($0.019) per 10 pages |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Search (Basic/Fast/Ultra-Fast) | USD | 0.0097 | 1 fast |
+| Search (Advanced) | USD | 0.019 | 1 search |
+| Search (Advanced + Answer) | USD | 0.029 | 1 search |
+| Extract (Basic) | USD | 0.0097 | 5 urls |
+| Extract (Advanced) | USD | 0.019 | 5 urls |
+| Crawl (Map Step) | USD | 0.0097 | 10 pages |
+| Crawl (Map + Instructions) | USD | 0.019 | 10 pages |
+| Map | USD | 0.0097 | 10 pages |
+| Map (with Instructions) | USD | 0.019 | 10 pages |
+
+**Last Checked:** 2026-10-05T02:10:08.361209+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Utilize Tavily's technology to search web pages and to crawl, extract, and map URLs.
 Note: File upload is not supported.

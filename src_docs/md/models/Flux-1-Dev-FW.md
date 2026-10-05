@@ -2,9 +2,25 @@
 
 ## Pricing
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | $0.011/message · 375 points/message |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Total cost | USD | 0.011 | 1 message |
+| Total cost | POINTS | 375 | 1 message |
+
+**Last Checked:** 2026-10-05T02:08:52.412098+00:00
+
+
 ## Bot Information
 
-**Creator:** @fireworksai
+**Creator:** fireworksai
 
 **Description:** FLUX.1 \[dev\] is a 12 billion parameter rectified flow transformer capable of generating images from text descriptions.
 

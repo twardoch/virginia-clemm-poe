@@ -1,8 +1,26 @@
 # [Sync-Lipsync](https://poe.com/Sync-Lipsync){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Video Output | 23334 points ($0.71) / message |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Video Output | USD | 0.71 | 1 message |
+| Video Output | POINTS | 23334 | 1 message |
+
+**Last Checked:** 2026-10-05T02:10:06.046544+00:00
+
+
 ## Bot Information
 
-**Creator:** @fal
+**Creator:** fal
 
 **Description:** Generate realistic lipsync animations from audio using advanced algorithms for high-quality synchronization. 
 Attach the video file first and the audio file second, and it will match the audio track to the video!
@@ -10,11 +28,11 @@ Attach the video file first and the audio file second, and it will match the aud
 
 ## Architecture
 
-**Input Modalities:** Unknown
+**Input Modalities:** text
 
-**Output Modalities:** Unknown
+**Output Modalities:** video
 
-**Modality:** unknown
+**Modality:** text->video
 
 
 ## Technical Details

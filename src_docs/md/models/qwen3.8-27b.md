@@ -7,9 +7,17 @@
 | Type | Cost |
 |------|------|
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+
+**Last Checked:** 2026-10-05T02:13:47.689015+00:00
+
+
 ## Bot Information
 
-**Creator:** @novitaai
+**Creator:** novitaai
 
 **Description:** qwen/qwen3.8-27b powered by Novita AI
 

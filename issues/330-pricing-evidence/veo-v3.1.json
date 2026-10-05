@@ -1,0 +1,29 @@
+{
+  "id": "veo-v3.1",
+  "checked_at": "2026-10-05T02:12:26.321814+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Veo-v3.1",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Google's Veo-3.1 is an improved version of Veo 3.\n\nOptional parameters:\nSet the aspect ratio of the generated image (one of `16:9`, `9:16`).\nSet silent to generate a silent video at a lower cost.\nSet negative prompt option `blur`, `low resolution`, `poor quality`. (only for T2V).\nSet the duration `4s`, `6s`, `8s`, default `8s`. `4s` and `6s` are only supported for text-to-video generation.\n\nNotes:\nPass a single image for image to video tasks. \nPass two images for a first-frame-to-last-frame video generation task. \nPass up to 3 images with reference for a reference-to-video task. Reference images will be directly used in the video generation.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Video Output</td><td>6667 points ($0.20) / s</td></tr><tr><td>Audio + Video Output</td><td>13334 points ($0.40) / s</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Video Output | 6667 points ($0.20) / s | \n| Audio + Video Output | 13334 points ($0.40) / s | \n"
+    }
+  ]
+}

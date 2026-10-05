@@ -1,0 +1,30 @@
+{
+  "id": "seedance-2.0-mini",
+  "checked_at": "2026-10-05T02:13:18.710676+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Seedance-2.0-Mini",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Seedance 2.0 Mini is the fast, low-cost tier of ByteDance's Seedance 2.0 video model. It generates short cinematic clips with synchronized native audio, camera control, and stable motion from text, images, or video, at 480p and 720p. It is built for drafts, rapid iteration, and high-volume short-form video.\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Resolution</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>480P</td><td>$0.070/sec</td><td>2,333 pts/sec</td></tr><tr><td>720P</td><td>$0.150/sec</td><td>5,000 pts/sec</td></tr></tbody></table>",
+    "<table><thead><tr><th>Resolution</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>480P</td><td>$0.167/sec</td><td>5,567 pts/sec</td></tr><tr><td>720P</td><td>$0.359/sec</td><td>11,967 pts/sec</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "**Seedance 2.0 Mini Video Generation Pricing**\n\nPricing is per second of video generated.\n\n**Text / Image Input (T2V, I2V)**\n| Resolution | Rate (USD) | Rate (Points) |\n|------------|------------|---------------|\n| 480P | $0.070/sec | 2,333 pts/sec |\n| 720P | $0.150/sec | 5,000 pts/sec |\n\n**Video Input (Reference, Edit, Extend)**\n| Resolution | Rate (USD) | Rate (Points) |\n|------------|------------|---------------|\n| 480P | $0.167/sec | 5,567 pts/sec |\n| 720P | $0.359/sec | 11,967 pts/sec |\n"
+    }
+  ]
+}

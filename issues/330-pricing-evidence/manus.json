@@ -1,0 +1,29 @@
+{
+  "id": "manus",
+  "checked_at": "2026-10-05T02:10:55.718317+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Manus",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Manus is an autonomous AI agent that executes tasks. It can take a high-level prompt, break it into subtasks, interact with tools/APIs, and deliver end-to-end results (like reports, code, websites, images, and more) without you managing each step.\n\nNotes: \n- Sometimes, files that Manus has created are incorrectly uploaded to the Poe message. In such cases, please check the Manus chat for the file. \n- Responses may take several minutes to complete, depending on complexity. \n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Profile</th><th>Typical Points</th></tr></thead><tbody><tr><td>Lite profile</td><td>47667 ($1.44) - 86667 ($2.63)</td></tr><tr><td>Standard profile</td><td>95334 ($2.89) - 173334 ($5.25)</td></tr><tr><td>Max profile</td><td>173334 ($5.25) - 303334 ($9.19)</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "**Manus Pricing**\n\n| Profile | Typical Points |\n|---|---|\n| Lite profile | 47667 ($1.44) - 86667 ($2.63) |\n| Standard profile | 95334 ($2.89) - 173334 ($5.25) |\n| Max profile | 173334 ($5.25) - 303334 ($9.19) |\n\n*Ranges shown are typical and may be lower or higher depending on task complexity and runtime.*\n*Authorization price is initially high to provide a buffer for high-complexity tasks, but actual cost may be lower (or higher) depending on consumption.*\n*Lite typically uses about half the points of Standard.*\n"
+    }
+  ]
+}

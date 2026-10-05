@@ -1,0 +1,29 @@
+{
+  "id": "qwen3.8-27b-el",
+  "checked_at": "2026-10-05T02:13:41.133023+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Qwen3.8-27B-EL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Qwen3.8 27B is Alibaba's open multimodal reasoner. It accepts text, image, and video input with a 256K token context, and supports function calling, structured JSON output, and thinking on by default.\n\nWeight Precision: NVFP4\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.17/1M tokens</td><td>6 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$0.51/1M tokens</td><td>17 points/1k tokens</td></tr><tr><td>Cache discount</td><td>52% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.17/1M tokens | 6 points/1k tokens |\n| Output (text) | $0.51/1M tokens | 17 points/1k tokens |\n| Cache discount | 52% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n"
+    }
+  ]
+}

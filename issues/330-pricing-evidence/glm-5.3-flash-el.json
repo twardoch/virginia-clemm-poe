@@ -1,0 +1,29 @@
+{
+  "id": "glm-5.3-flash-el",
+  "checked_at": "2026-10-05T02:13:46.625323+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "GLM-5.3-Flash-EL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "GLM 5.3 Flash is Z.ai's natively multimodal flash model, a 320B-A18B mixture-of-experts released under the MIT license that approaches the larger GLM 5.3 on coding and agentic work. It accepts text, image, and video input with a 1M token context, always-on reasoning at low, high, or max effort, native web search, and function calling.\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.076/1M tokens</td><td>3 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$0.25/1M tokens</td><td>9 points/1k tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.076/1M tokens | 3 points/1k tokens |\n| Output (text) | $0.25/1M tokens | 9 points/1k tokens |\n"
+    }
+  ]
+}

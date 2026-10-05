@@ -1,0 +1,29 @@
+{
+  "id": "glm-4.6v-n",
+  "checked_at": "2026-10-05T02:11:19.593553+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "GLM-4.6V-N",
+    "creator": {
+      "isDeleted": false,
+      "handle": "novitaai",
+      "fullName": "Novita AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-3067795970-50-ezhhpdjtzbudawymtaodhapblyfagaxk.jpeg",
+      "id": "UG9lVXNlcjozMDY3Nzk1OTcw"
+    },
+    "description": "GLM-4.6V represents a significant multimodal advancement in the GLM series, achieving state-of-the-art visual understanding accuracy for models of its parameter scale. Notably, it's the first visual model to natively integrate Function Call capabilities directly into its architecture, creating a seamless pathway from visual perception to executable actions. This breakthrough establishes a unified technical foundation for deploying multimodal agents in real-world business applications.\n\nFile Support: Text, Markdown, Image and PDF files\nContext window: 131k tokens\n\nOptional parameters:\nEnable Thinking - Toggle this on for the model to think before providing a response. This is disabled by default\nTemperature - Controls randomness in the response. Lower values make the output more focused and deterministic. Select from 0 to 2 range. This is set to 0.7 by default.\nMax Output Tokens: Maximum number of tokens to generate in the response. This can be set from 1 to 32768. Set to Max token at 32768 by default.",
+    "poweredBy": "Powered by a server managed by @novitaai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.30/1M tokens</td><td>10 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$0.91/1M tokens</td><td>30 points/1k tokens</td></tr><tr><td>Cache discount</td><td>81% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.30/1M tokens | 10 points/1k tokens |\n| Output (text) | $0.91/1M tokens | 30 points/1k tokens |\n| Cache discount | 81% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n"
+    }
+  ]
+}

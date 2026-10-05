@@ -1,0 +1,29 @@
+{
+  "id": "o3-mini-high",
+  "checked_at": "2026-10-05T02:11:47.004579+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "o3-mini-high",
+    "creator": {
+      "isDeleted": false,
+      "handle": "openai",
+      "fullName": "OpenAI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910400879-50-wrfgcbmfjrhquvwlxvypitmawpovrxoi.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDAwODc5"
+    },
+    "description": "o3-mini-high is OpenAI's most recent reasoning model with reasoning_effort set to high, providing frontier intelligence on most tasks. Like other models in the o-series, it is designed to excel at science, math, and coding tasks. Supports 200k tokens of input context and 100k tokens of output context.",
+    "poweredBy": "Powered by OpenAI: o3-mini-2025-01-31.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$1.00/1M tokens</td><td>33 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$4.00/1M tokens</td><td>132 points/1k tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $1.00/1M tokens | 33 points/1k tokens |\n| Output (text) | $4.00/1M tokens | 132 points/1k tokens |\n"
+    }
+  ]
+}

@@ -1,8 +1,29 @@
 # [Seedream-5.0-Flash](https://poe.com/Seedream-5.0-Flash){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Image Generation | $0.030/img · 1,000 pts/img |
+| Layer Decomposition | $0.030/img · 1,000 pts/img |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Image generation | USD | 0.030 | 1 image |
+| Image generation | POINTS | 1000 | 1 image |
+| Layer decomposition | USD | 0.030 | 1 image |
+| Layer decomposition | POINTS | 1000 | 1 image |
+
+**Last Checked:** 2026-10-05T02:09:51.549011+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Seedream 5.0 Flash creates and edits images quickly from text prompts and up to 10 reference images.
 

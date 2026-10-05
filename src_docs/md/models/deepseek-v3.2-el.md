@@ -9,9 +9,31 @@
 | Prompt | $5.758E-7/token |
 | Completion | $0.0000017273/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $0.58/1M tokens · 19 points/1k tokens |
+| Output (Text) | $1.73/1M tokens · 57 points/1k tokens |
+| Bot Message | $0.0051/message · 167 points/message |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 0.58 | 1000000 tokens |
+| Input (text) | POINTS | 19 | 1000 tokens |
+| Output (text) | USD | 1.73 | 1000000 tokens |
+| Output (text) | POINTS | 57 | 1000 tokens |
+| Bot message | USD | 0.0051 | 1 message |
+| Bot message | POINTS | 167 | 1 message |
+
+**Last Checked:** 2026-10-05T02:11:05.062260+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** This model is retiring on 2026-10-10. Please switch to: https://poe.com/DeepSeek-V4-Pro-EL
 DeepSeek V3.2 is a powerful open-source large language model designed to compete with top-tier models on reasoning, coding, and general language tasks. Built on a Mixture-of-Experts (MoE) architecture, it delivers strong performance while remaining highly efficient to run.

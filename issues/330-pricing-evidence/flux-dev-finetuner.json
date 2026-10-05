@@ -1,0 +1,29 @@
+{
+  "id": "flux-dev-finetuner",
+  "checked_at": "2026-10-05T02:12:37.304913+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "FLUX-dev-finetuner",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Fine-tune the FLUX dev model with your own pictures! Upload 8-12 of them (same subject, only one subject in the picture, ideally from different poses and backgrounds) and wait ~2-5 minutes to create your own finetuned bot that will generate pictures of this subject in whatever setting you want.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Finetuning</td><td>56667 points ($1.72) / message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Finetuning | 56667 points ($1.72) / message | \n"
+    }
+  ]
+}

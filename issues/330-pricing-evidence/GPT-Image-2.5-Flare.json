@@ -1,0 +1,29 @@
+{
+  "id": "GPT-Image-2.5-Flare",
+  "checked_at": "2026-10-05T02:09:03.737056+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "GPT-Image-2.5-Flare",
+    "creator": {
+      "isDeleted": false,
+      "handle": "openai",
+      "fullName": "OpenAI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910400879-50-wrfgcbmfjrhquvwlxvypitmawpovrxoi.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDAwODc5"
+    },
+    "description": "OpenAI's fast image generation and editing model, designed for high-quality results with lower latency and rapid creative iteration.",
+    "poweredBy": "Powered by a server managed by @openai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$5.05/1M tokens</td><td>167 points/1k tokens</td></tr><tr><td>Input (image)</td><td>$8.08/1M tokens</td><td>267 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$30.30/1M tokens</td><td>1000 points/1k tokens</td></tr><tr><td>Cache discount</td><td>75% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $5.05/1M tokens | 167 points/1k tokens |\n| Input (image) | $8.08/1M tokens | 267 points/1k tokens |\n| Output (text) | $30.30/1M tokens | 1000 points/1k tokens |\n| Cache discount | 75% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n"
+    }
+  ]
+}

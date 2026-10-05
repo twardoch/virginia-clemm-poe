@@ -1,0 +1,29 @@
+{
+  "id": "seed-2.1-turbo",
+  "checked_at": "2026-10-05T02:13:21.394337+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Seed-2.1-Turbo",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Seed 2.1 Turbo is ByteDance's next-generation coding and agent model, with engineering-grade code delivery, long-horizon agentic execution, and multimodal understanding across text, image, and video.\n\nNotes:\n- Context Window: 256K\n- Supported input modalities: Text, Image, Video\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.64/1M tokens</td><td>21 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$3.16/1M tokens</td><td>105 points/1k tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.64/1M tokens | 21 points/1k tokens |\n| Output (text) | $3.16/1M tokens | 105 points/1k tokens |\n"
+    }
+  ]
+}

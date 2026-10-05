@@ -1,0 +1,29 @@
+{
+  "id": "Muse-Spark-1.1",
+  "checked_at": "2026-10-05T02:09:31.938814+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "muse-spark-1-1",
+    "creator": {
+      "isDeleted": false,
+      "handle": "meta",
+      "fullName": "Meta",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910403584-50-xqurxblhyhjxizlwovfsruwvhokpfnat.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDAzNTg0"
+    },
+    "description": "Muse Spark 1.1 is the first model in Meta Superintelligence Labs' Muse series\u2014and Meta's most powerful model to date. Small and fast by design, it handles quick everyday questions and complex work across science, math, health, planning, and coding.",
+    "poweredBy": "Powered by a server managed by @meta.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input</td><td>$1.26/1M tokens</td><td>42 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$4.29/1M tokens</td><td>142 points/1k tokens</td></tr><tr><td>Cache discount</td><td>88% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input | $1.26/1M tokens | 42 points/1k tokens |\n| Output (text) | $4.29/1M tokens | 142 points/1k tokens |\n| Cache discount | 88% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n"
+    }
+  ]
+}

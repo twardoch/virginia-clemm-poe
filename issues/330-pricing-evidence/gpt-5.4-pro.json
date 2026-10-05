@@ -1,0 +1,29 @@
+{
+  "id": "gpt-5.4-pro",
+  "checked_at": "2026-10-05T02:10:40.867113+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "GPT-5.4-Pro",
+    "creator": {
+      "isDeleted": false,
+      "handle": "openai",
+      "fullName": "OpenAI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910400879-50-wrfgcbmfjrhquvwlxvypitmawpovrxoi.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDAwODc5"
+    },
+    "description": "A smarter, more precise version of GPT-5.4 that leverages additional compute to think harder and provide consistently better answers. Designed to tackle your toughest problems, this model operates with the highest reasoning capability to ensure maximum accuracy on complex tasks.\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by OpenAI: gpt-5.4-pro.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input</td><td>$27.27/1M tokens</td><td>900 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$163.64/1M tokens</td><td>5400 points/1k tokens</td></tr><tr><td>Output</td><td>$0.0091/search</td><td>300 points/search</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input | $27.27/1M tokens | 900 points/1k tokens |\n| Output (text) | $163.64/1M tokens | 5400 points/1k tokens |\n| Output | $0.0091/search | 300 points/search |\n\n\nWeb searches will add input tokens.\n\nInput rate is 2x and output rate is 1.5x when context is >272k tokens."
+    }
+  ]
+}

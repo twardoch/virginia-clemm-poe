@@ -1,0 +1,29 @@
+{
+  "id": "mixtral8x22b-inst-fw",
+  "checked_at": "2026-10-05T02:12:45.605926+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Mixtral8x22b-Inst-FW",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fireworksai",
+      "fullName": "Fireworks AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2339248475-50-cokslpvhdmlrqrkakgkkmiaffqqkcfgh.jpeg",
+      "id": "UG9lVXNlcjoyMzM5MjQ4NDc1"
+    },
+    "description": "Mixtral 8x22B Mixture-of-Experts instruct model from Mistral hosted by Fireworks. ",
+    "poweredBy": "Powered by a server managed by @fireworksai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": false
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.0036/message</td><td>120 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.0036/message | 120 points/message |\n"
+    }
+  ]
+}

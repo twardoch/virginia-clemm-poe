@@ -2,7 +2,7 @@
 
 ## Bot Information
 
-**Creator:** @fal
+**Creator:** fal
 
 **Description:** Generate anime styled pictures with FLUX.1-schnell
 

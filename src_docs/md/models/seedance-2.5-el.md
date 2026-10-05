@@ -1,8 +1,38 @@
 # [seedance-2.5-el](https://poe.com/seedance-2.5-el){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| 480P | $0.123/sec · 4,100 pts/sec |
+| 720P | $0.276/sec · 9,200 pts/sec |
+| 1080P | $0.680/sec · 22,667 pts/sec |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| 480P | USD | 0.206 | 1 second |
+| 480P | POINTS | 6867 | 1 second |
+| 720P | USD | 0.462 | 1 second |
+| 720P | POINTS | 15400 | 1 second |
+| 1080P | USD | 1.137 | 1 second |
+| 1080P | POINTS | 37900 | 1 second |
+| 480P | USD | 0.123 | 1 second |
+| 480P | POINTS | 4100 | 1 second |
+| 720P | USD | 0.276 | 1 second |
+| 720P | POINTS | 9200 | 1 second |
+| 1080P | USD | 0.680 | 1 second |
+| 1080P | POINTS | 22667 | 1 second |
+
+**Last Checked:** 2026-10-05T02:13:35.250133+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Seedance 2.5 is ByteDance's next-generation video model. It generates a coherent clip of up to 30 seconds in a single request, draws on up to 50 reference assets at once, and edits or extends video you already have.
 

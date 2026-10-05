@@ -7,9 +7,25 @@
 | Type | Cost |
 |------|------|
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Bot Message | $0.0081/message · 267 points/message |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Bot message | USD | 0.0081 | 1 message |
+| Bot message | POINTS | 267 | 1 message |
+
+**Last Checked:** 2026-10-05T02:11:29.240536+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Get a quick LLM-style answer to a question informed by Exa search results. 
 

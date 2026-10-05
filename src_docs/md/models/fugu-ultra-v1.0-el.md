@@ -9,9 +9,28 @@
 | Prompt | $0.0000075758/token |
 | Completion | $0.0000454545/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $7.58/1M tokens · 250 points/1k tokens |
+| Output (Text) | $45.45/1M tokens · 1500 points/1k tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 7.58 | 1000000 tokens |
+| Input (text) | POINTS | 250 | 1000 tokens |
+| Output (text) | USD | 45.45 | 1000000 tokens |
+| Output (text) | POINTS | 1500 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:13:18.270929+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Fugu Ultra v1.0 is Sakana AI's multi-agent conductor: it coordinates a pool of expert models on every request and composes their work into one answer, built for hard reasoning, coding, and research. It accepts text and image input with a 1M token context.
 

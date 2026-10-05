@@ -1,8 +1,29 @@
 # [kling-3.0-turbo](https://poe.com/kling-3.0-turbo){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| 720P | $0.180/sec · 6,000 pts/sec |
+| 1080P | $0.225/sec · 7,500 pts/sec |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| 720P | USD | 0.180 | 1 second |
+| 720P | POINTS | 6000 | 1 second |
+| 1080P | USD | 0.225 | 1 second |
+| 1080P | POINTS | 7500 | 1 second |
+
+**Last Checked:** 2026-10-05T02:13:17.252782+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Kling 3.0 Turbo is a fast video generation model that produces high-quality videos with synchronized native audio, at 720p or 1080p resolution. It supports Text-to-Video and Image-to-Video, with multi-shot prompting for up to 6 sequential scenes in a single clip.
 

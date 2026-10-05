@@ -1,0 +1,27 @@
+{
+  "id": "Image-Photo",
+  "checked_at": "2026-10-05T02:09:11.457228+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Image-Photo",
+    "creator": {
+      "isDeleted": false,
+      "handle": "OpenSourceLab",
+      "fullName": "Open-Source-Lab",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2419661422-50-yfhdcuqxmrjwjokrdinuyvphinqrsuoa.jpeg",
+      "id": "UG9lVXNlcjoyNDE5NjYxNDIy"
+    },
+    "description": "Hyperrealistic photo and image generator for professional use. Adjust numerous aspects, such as colors, composition, lighting, textures or specific details like object positioning, perspective and depth.  It can also transform images (image to image), which will consume additional points.\n\nHow to use:\n1. Upload an image (photo, render, screenshot, artwork) or send an image prompt.\n2. Add transformation flags to your message and combine multiple flags for complex edits (optional).\n3. Reupload results to continue refining or stacking transformations.\n\nTips for best results:\n- Combine multiple flags instead of repeating uploads.\n- Use small increments for brightness, contrast, and saturation.\n- Stack geometry changes before color or effects.\n- Reupload outputs to iteratively refine details.\n- For advanced transformations, be explicit and precise.\n\nGeometric flags:\n`--rotate 90`\n`--mirror`\n`--flip`\n`--resize 800x600`\n`--crop 10,10,500,500`\n\nColor flags:\n`--brightness 20`\n`--contrast 30`\n`--saturation 50`\n`--grayscale`\n`--sepia`\n`--invert`\n`--hue 180`\n`--colorize blue`\n\nEffect flags:\n`--blur 5`\n`--sharpen 3`\n`--edge`\n`--emboss`\n`--pixelate 10`\n`--filter vintage`\n\nExamples:\n- YouTube Thumbnail: `--resize 1280x720 --contrast 25 --sharpen 4`\n- Instagram Post: `--resize 1080x1080 --saturation 30`\n- Instagram Story: `--resize 1080x1920 --brightness 10`\n- Website Banner `--resize 1920x600 --contrast 20`\n- Facebook/Instagram Ad: `--resize 1080x1080` `--brightness 12` `--contrast 28` `--saturation 22` `--sharpen 4`\n- E-Commerce Ad: `--brightness 8` `--contrast 18` `--saturation 12` `--filter clean`\n- Cinematic Brand ad: `--contrast 25` `--saturation -10` `--colorize teal` `--filter cinematic`",
+    "poweredBy": "Runs inside Poe's protected environment.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Script bots cost 1 point per message, plus the rates of any other bots it calls.\n\nThe creator defined additional costs."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "LFM2.5-Reasoning",
+  "checked_at": "2026-10-05T02:09:22.469256+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "LFM2.5-Reasoning",
+    "creator": {
+      "isDeleted": false,
+      "handle": "OpenSourceLab",
+      "fullName": "Open-Source-Lab",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2419661422-50-yfhdcuqxmrjwjokrdinuyvphinqrsuoa.jpeg",
+      "id": "UG9lVXNlcjoyNDE5NjYxNDIy"
+    },
+    "description": "Based on LFM2.5-2.6B that is a compact 2.6-billion-parameter model created by Liquid AI for local, device-native execution. The thinking/reasoning mode is enabled by default. Context window: 66k tokens",
+    "poweredBy": "Powered by a server managed by @OpenSourceLab.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input</td><td>$1.00 / 1M tokens</td><td>50 points / 1K tokens</td></tr><tr><td>Output (text)</td><td>$3.00 / 1M tokens</td><td>150 points / 1K tokens</td></tr><tr><td>Input (file)</td><td>Variable</td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "| Type | Rate (USD) | Rate (Points) |\n|-------------|----------------------|---------------------------------------|\n| Input | $1.00 / 1M tokens | 50 points / 1K tokens |\n| Output (text) | $3.00 / 1M tokens | 150 points / 1K tokens |\n| Input (file) | Variable | |"
+    }
+  ]
+}

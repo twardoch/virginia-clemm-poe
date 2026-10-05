@@ -1,0 +1,27 @@
+{
+  "id": "Style-Studio",
+  "checked_at": "2026-10-05T02:21:36.124095+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Style-Studio",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Change the style of your photos using SeedEdit!",
+    "poweredBy": "Powered by Poe.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": false
+  },
+  "tables": [],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "The creator has not provided details."
+    }
+  ]
+}

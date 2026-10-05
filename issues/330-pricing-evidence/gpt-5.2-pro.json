@@ -1,0 +1,29 @@
+{
+  "id": "gpt-5.2-pro",
+  "checked_at": "2026-10-05T02:11:14.044930+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "GPT-5.2-Pro",
+    "creator": {
+      "isDeleted": false,
+      "handle": "openai",
+      "fullName": "OpenAI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910400879-50-wrfgcbmfjrhquvwlxvypitmawpovrxoi.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDAwODc5"
+    },
+    "description": "A powerful reasoning model that is ideal for your most complex, highest difficulty tasks. On x-high reasoning effort, scores a 90.5% on ARC-AGI-1 benchmark, an incredibly difficult problem-solving benchmark where humans score 100%. Note: the model can take up to 30 minutes to think through a problem and is quite expensive. Supports 400k tokens of context and native vision.\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by OpenAI: gpt-5.2-pro.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input</td><td>$19.09/1M tokens</td><td>630 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$152.73/1M tokens</td><td>5040 points/1k tokens</td></tr><tr><td>Output</td><td>$0.0091/search</td><td>300 points/search</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input | $19.09/1M tokens | 630 points/1k tokens |\n| Output (text) | $152.73/1M tokens | 5040 points/1k tokens |\n| Output | $0.0091/search | 300 points/search |\n\n\nWeb searches will add input tokens."
+    }
+  ]
+}

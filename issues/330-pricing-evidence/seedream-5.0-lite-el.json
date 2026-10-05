@@ -1,0 +1,29 @@
+{
+  "id": "seedream-5.0-lite-el",
+  "checked_at": "2026-10-05T02:13:04.893141+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Seedream-5.0-Lite-EL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Seedream 5.0 Lite is ByteDance\u2019s unified multimodal image-generation model, designed to think through prompts before rendering and offering stronger understanding, reasoning, and image quality. It supports both text-to-image and image-to-image creation, with features like high-resolution output, and consistent results for detailed scenes, editing, and branded visuals.\nThis model is served from Malaysia.\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Model</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Seedream 5.0 Lite</td><td>$0.0350/img</td><td>1,167 pts/img</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "**Seedream 5.0 Lite Pricing**\n\nPricing is per image successfully generated.\n\n| Model | Rate (USD) | Rate (Points) |\n|-------|------------|---------------|\n| Seedream 5.0 Lite | $0.0350/img | 1,167 pts/img |\n\nBatch (sequential) generation produces multiple related images in one request; each generated image is billed."
+    }
+  ]
+}

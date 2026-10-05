@@ -9,9 +9,28 @@
 | Prompt | $0.0000010101/token |
 | Completion | $0.0000027273/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $1.01/1M tokens · 34 points/1k tokens |
+| Output (Text) | $2.73/1M tokens · 90 points/1k tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 1.01 | 1000000 tokens |
+| Input (text) | POINTS | 34 | 1000 tokens |
+| Output (text) | USD | 2.73 | 1000000 tokens |
+| Output (text) | POINTS | 90 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:13:53.349670+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Step 5 Preview is StepFun's frontier reasoning model. It accepts text, image, and video input with a 1M token context, and supports parallel function calling, strict JSON Schema structured output, and adjustable reasoning effort.
 

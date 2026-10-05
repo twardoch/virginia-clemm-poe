@@ -1,8 +1,25 @@
 # [OpenAI-audio-to-text](https://poe.com/OpenAI-audio-to-text){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Per Minute Of Audio | 1000 ($0.030) points |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Per Minute of Audio | USD | 0.030 | 1 minute |
+
+**Last Checked:** 2026-10-05T02:09:35.039634+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Try the following improved speech-to-text technology: https://poe.com/Deepgram-Nova-3
 Whisper-1 is an automatic speech recognition (ASR) system trained on 680,000 hours of multilingual and multitask supervised data collected from the web. 25mb max upload.

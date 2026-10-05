@@ -1,0 +1,29 @@
+{
+  "id": "kling-v3-pro",
+  "checked_at": "2026-10-05T02:11:12.237250+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Kling-v3-Pro",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Kling v3 Pro Video bot, capable of text to video and image to video. Send a text prompt for text to video, and optionally up to two images for start frame and end frame functionality. \nCheck parameter controls for further details.\n\nNote: Generations may take upwards of 20 minutes to complete.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Video Output without audio</td><td>7467 points ($0.23) / second</td></tr><tr><td>Video Output with audio</td><td>11200 points ($0.34) / second</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Video Output without audio | 7467 points ($0.23) / second | \n| Video Output with audio | 11200 points ($0.34) / second | \n"
+    }
+  ]
+}

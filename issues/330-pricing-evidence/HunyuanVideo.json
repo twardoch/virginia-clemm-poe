@@ -1,0 +1,27 @@
+{
+  "id": "HunyuanVideo",
+  "checked_at": "2026-10-05T02:09:10.097403+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "HunyuanVideo",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Hunyuan Video is an open video generation model made by Tencent, with high visual quality, motion diversity, text-video alignment, and generation stability.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "The creator has not provided details."
+    }
+  ]
+}

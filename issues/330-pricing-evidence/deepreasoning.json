@@ -1,0 +1,29 @@
+{
+  "id": "deepreasoning",
+  "checked_at": "2026-10-05T02:12:39.896989+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "DeepReasoning",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "DeepReasoning (previously DeepClaude) is a high-performance LLM inference that combines DeepSeek R1's Chain of Thought (CoT) reasoning capabilities with Anthropic Claude's creative and code generation prowess. It provides a unified interface for leveraging the strengths of both models while maintaining complete control over your data. Learn more: https://deepclaude.com/\n\nSupported file type upload: PDF, TXT, PNG, JPG, JPEG\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$5.05/1M tokens</td><td>167 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$10.10/1M tokens</td><td>334 points/1k tokens</td></tr><tr><td>Bot message</td><td>$0.010/message</td><td>334 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $5.05/1M tokens | 167 points/1k tokens |\n| Output (text) | $10.10/1M tokens | 334 points/1k tokens |\n| Bot message | $0.010/message | 334 points/message |\n"
+    }
+  ]
+}

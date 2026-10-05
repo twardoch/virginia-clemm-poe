@@ -1,0 +1,29 @@
+{
+  "id": "ideogram-v2",
+  "checked_at": "2026-10-05T02:12:12.195525+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Ideogram-v2",
+    "creator": {
+      "isDeleted": false,
+      "handle": "ideogramai",
+      "fullName": "IdeogramAI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910408014-50-dnbdgzjucaadyczfppenrloorpewkknk.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDA4MDE0"
+    },
+    "description": "Latest image model from Ideogram, with industry leading capabilities in generating realistic images, graphic design, typography, and more.\n\nOptional parameters:\nSet aspect ratio. Select from (10:16, 16:10, 9:16, 16:9, 3:2, 2:3, 4:3, 3:4, 1:1). It is set to 1:1 aspect ratio as default.\nSet style. Select from General, Realistic, Design, Render 3D, Anime. This is set to General by default.\n\nNotes: Supported file type: JPEG, WebP and PNG. Powered by Ideogram.",
+    "poweredBy": "Powered by a server managed by @ideogramai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.058/message</td><td>1900 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.058/message | 1900 points/message |\n"
+    }
+  ]
+}

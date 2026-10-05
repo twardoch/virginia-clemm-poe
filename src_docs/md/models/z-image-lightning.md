@@ -1,8 +1,26 @@
 # [z-image-lightning](https://poe.com/z-image-lightning){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Image Output | 167 points ($0.0051) / image |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Image Output | USD | 0.0051 | 1 image |
+| Image Output | POINTS | 167 | 1 image |
+
+**Last Checked:** 2026-10-05T02:12:03.259731+00:00
+
+
 ## Bot Information
 
-**Creator:** @fal
+**Creator:** fal
 
 **Description:** Super-fast endpoint for Z-Image Turbo, hosted by fal.ai. Excels at portrait photos and realistic images.
 

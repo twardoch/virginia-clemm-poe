@@ -1,0 +1,29 @@
+{
+  "id": "kling-2.1-pro",
+  "checked_at": "2026-10-05T02:12:32.997064+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Kling-2.1-Pro",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Kling 2.1 Pro is an advanced endpoint for the Kling 2.1 model, offering professional-grade videos with enhanced visual fidelity, precise camera movements, and dynamic motion control, perfect for cinematic storytelling. \n\nOptional parameters:\n- Negative prompt. Type things to avoid in generated images\n- CFG Scale. To send a classifier-free guidance scale between 0.0 and 1.0. This is set to 0.5 as default\n- Set Duration. Select from (5 seconds or 10 seconds) to specify video length in seconds. Set to 5 seconds as default",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Video Output</td><td>2834 points ($0.086) / second</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Video Output | 2834 points ($0.086) / second | \n"
+    }
+  ]
+}

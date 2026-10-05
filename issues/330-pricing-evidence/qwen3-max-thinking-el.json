@@ -1,0 +1,29 @@
+{
+  "id": "qwen3-max-thinking-el",
+  "checked_at": "2026-10-05T02:10:57.815602+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Qwen3-Max-Thinking-EL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "This model is retiring on 2026-10-10. Please switch to: https://poe.com/Qwen3.7-Max\nQwen3-Max-Thinking is a flagship reasoning model that integrates adaptive tool use, autonomously employing search, memory, and code interpretation to address complex tasks. It further optimizes performance through test-time scaling, a strategy that allocates additional computation during inference to improve reasoning accuracy and context efficiency.\nThis model is served by Alibaba Cloud Int. from Singapore.\n\nNotes:\n- Context window: 256K\n- Pricing is 2x when input tokens >32K, 2.5x when input tokens >128K\n- Save 10% on input tokens and 8% on output tokens compared to standard API rates.\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$1.09/1M tokens</td><td>36 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$5.58/1M tokens</td><td>184 points/1k tokens</td></tr><tr><td>Bot message</td><td>$0.0061/message</td><td>200 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $1.09/1M tokens | 36 points/1k tokens |\n| Output (text) | $5.58/1M tokens | 184 points/1k tokens |\n| Bot message | $0.0061/message | 200 points/message |\n\n\nInput rate is 2x and output rate is 2x when context is 32k-128k tokens.\n\nInput rate is 2.5x and output rate is 2.5x when context is >128k tokens."
+    }
+  ]
+}

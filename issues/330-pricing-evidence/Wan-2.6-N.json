@@ -1,0 +1,29 @@
+{
+  "id": "Wan-2.6-N",
+  "checked_at": "2026-10-05T02:10:13.232826+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Wan-2.6-N",
+    "creator": {
+      "isDeleted": false,
+      "handle": "novitaai",
+      "fullName": "Novita AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-3067795970-50-ezhhpdjtzbudawymtaodhapblyfagaxk.jpeg",
+      "id": "UG9lVXNlcjozMDY3Nzk1OTcw"
+    },
+    "description": "Tongyi Wanxiang 2.6 (also known as Wan 2.6) is the latest generation of professional-grade AI video and image generation models developed by Alibaba Cloud. It represents a significant leap in AI-driven cinematography and creative storytelling, positioning itself as one of the most comprehensive video generation models globally.\n\nKey Features:\n\nExtended Duration & High Quality: Supports generating videos up to 15 seconds in length with up to 1080P/4K resolution and 24fps, ensuring smooth and cinematic visual quality.\n\nRole-Playing & Identity Consistency: The first model in China to support a \"Role-Play\" feature. Users can provide a reference image or video of a character/IP, and the model will maintain high visual and vocal consistency across different scenes.\n\nIntelligent Multi-Shot Narrative: Wan 2.6 can understand complex scripts and automatically generate multi-shot videos (storyboarding) while keeping the subjects, environments, and lighting consistent across different camera angles.\n\nAudio-Visual Synchronization: Features native lip-sync and sound generation, allowing characters to speak, sing, or perform with perfectly matched audio and facial expressions.\n\nCinematic Control: Advanced instruction following for camera movements (e.g., dolly-in, pan, tilt), lighting, and depth of field, enabling professional-level artistic expression.\n\nVersatile Creation Modes: Supports Text-to-Video, Image-to-Video, Video-to-Video, and Voice-to-Video, making it a versatile tool for AI movies, advertising, and social media content.",
+    "poweredBy": "Powered by a server managed by @novitaai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.00/message</td><td>0 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.00/message | 0 points/message |\n"
+    }
+  ]
+}

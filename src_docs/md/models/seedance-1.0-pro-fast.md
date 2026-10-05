@@ -1,8 +1,26 @@
 # [seedance-1.0-pro-fast](https://poe.com/seedance-1.0-pro-fast){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Video Output | 33334 points ($1.01) / million video tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Video Output | USD | 1.01 | 1 tokens |
+| Video Output | POINTS | 33334 | 1 tokens |
+
+**Last Checked:** 2026-10-05T02:12:29.621453+00:00
+
+
 ## Bot Information
 
-**Creator:** @Bytedance
+**Creator:** Bytedance
 
 **Description:** Seedance Pro Fast is a faster version of Seedance 1.0 Pro that balances speed, quality and cost. Seedance is a video generation model with text-to-video and image-to-video capabilities. It achieves breakthroughs in semantic understanding and prompt following.
 

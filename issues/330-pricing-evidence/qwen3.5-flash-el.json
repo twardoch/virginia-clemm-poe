@@ -1,0 +1,29 @@
+{
+  "id": "qwen3.5-flash-el",
+  "checked_at": "2026-10-05T02:10:47.165778+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Qwen3.5-Flash-EL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "The Qwen3.5 native vision-language Flash models are built on a hybrid architecture that integrates a linear attention mechanism with a sparse mixture-of-experts model, achieving higher inference efficiency. Compared to the 3 series, these models deliver a leap forward in performance for both pure text and multimodal tasks, offering fast response times while balancing inference speed and overall performance.\nThis model is served by Alibaba Cloud Int. from Singapore.\nSave 10% on input tokens and 8% on output tokens compared to standard API rates.\n\nNotes:\n- Context Window: 1,000,000\n- Text, Image, & Video input are supported\n- Built-in tool calls are not supported with video attachments\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.091/1M tokens</td><td>3 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$0.37/1M tokens</td><td>13 points/1k tokens</td></tr><tr><td>Bot message</td><td>$0.010/message</td><td>334 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.091/1M tokens | 3 points/1k tokens |\n| Output (text) | $0.37/1M tokens | 13 points/1k tokens |\n| Bot message | $0.010/message | 334 points/message |\n"
+    }
+  ]
+}

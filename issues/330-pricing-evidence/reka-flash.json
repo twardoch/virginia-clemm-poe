@@ -1,0 +1,29 @@
+{
+  "id": "reka-flash",
+  "checked_at": "2026-10-05T02:12:46.784305+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Reka-Flash",
+    "creator": {
+      "isDeleted": false,
+      "handle": "reka",
+      "fullName": "Reka AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2514157782-50-bodutlhmeinnphevrbmsqhoyguyozzmk.jpeg",
+      "id": "UG9lVXNlcjoyNTE0MTU3Nzgy"
+    },
+    "description": "Reka's efficient and capable 21B multimodal model optimized for fast workloads and amazing quality. Works with text, images and video inputs.",
+    "poweredBy": "Powered by a server managed by @reka.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate</th></tr></thead><tbody><tr><td>Total Cost</td><td>27 ($0.00081) points / message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n\n| Type | Rate |\n|------|------|\n| Total Cost | 27 ($0.00081) points / message |\n"
+    }
+  ]
+}

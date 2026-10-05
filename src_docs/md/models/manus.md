@@ -1,8 +1,32 @@
 # [manus](https://poe.com/manus){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Lite Profile | 47667 ($1.44) - 86667 ($2.63) |
+| Standard Profile | 95334 ($2.89) - 173334 ($5.25) |
+| Max Profile | 173334 ($5.25) - 303334 ($9.19) |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Lite profile | USD | 1.44 | 1 lite profile |
+| Lite profile | USD | 2.63 | 1 lite profile |
+| Standard profile | USD | 2.89 | 1 standard profile |
+| Standard profile | USD | 5.25 | 1 standard profile |
+| Max profile | USD | 5.25 | 1 max profile |
+| Max profile | USD | 9.19 | 1 max profile |
+
+**Last Checked:** 2026-10-05T02:10:55.718317+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Manus is an autonomous AI agent that executes tasks. It can take a high-level prompt, break it into subtasks, interact with tools/APIs, and deliver end-to-end results (like reports, code, websites, images, and more) without you managing each step.
 

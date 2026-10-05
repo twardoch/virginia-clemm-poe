@@ -1,8 +1,38 @@
 # [qwen3.5-omni-plus](https://poe.com/qwen3.5-omni-plus){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Audio | $11.00/1M tokens · 367 points/1K tokens |
+| Text / Image / Video | $1.40/1M tokens · 47 points/1K tokens |
+| Text + Audio | $44.00/1M tokens · 1467 points/1K tokens |
+| Text Only | $8.30/1M tokens · 277 points/1K tokens |
+| Web Search | $0.015/request · 500 points/request |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Audio | USD | 11.00 | 1000000 tokens |
+| Audio | POINTS | 367 | 1000 tokens |
+| Text / Image / Video | USD | 1.40 | 1000000 tokens |
+| Text / Image / Video | POINTS | 47 | 1000 tokens |
+| Text + Audio | USD | 44.00 | 1000000 tokens |
+| Text + Audio | POINTS | 1467 | 1000 tokens |
+| Text Only | USD | 8.30 | 1000000 tokens |
+| Text Only | POINTS | 277 | 1000 tokens |
+| Web Search | USD | 0.015 | 1 message |
+| Web Search | POINTS | 500 | 1 message |
+
+**Last Checked:** 2026-10-05T02:10:48.420686+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Qwen3.5-Omni Plus is the flagship variant of Qwen's latest omni-modal model, supporting text, image, audio, and video understanding and interaction. It handles up to 3 hours of audio and 1 hour of video input, with audio input in 90+ languages and speech output in 30+ languages across 55 voice timbres.
 This model is served by Alibaba Cloud Int. from Singapore.

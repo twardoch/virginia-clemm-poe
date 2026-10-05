@@ -1,8 +1,26 @@
 # [veo-3.1](https://poe.com/veo-3.1){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | $0.404/second · 13,333 points/second |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Total Cost | USD | 0.404 | 1 second |
+| Total Cost | POINTS | 13333 | 1 second |
+
+**Last Checked:** 2026-10-05T02:12:17.628147+00:00
+
+
 ## Bot Information
 
-**Creator:** @google
+**Creator:** google
 
 **Description:** Google’s Veo 3.1 is an updated version of the Veo family of models that features richer native audio, from natural conversations to synchronized sound effects, and offers greater narrative control with an improved understanding of cinematic styles. Enhanced image-to-video capabilities ensure better prompt adherence while delivering superior audio and visual quality and maintaining character consistency across multiple scenes.
 

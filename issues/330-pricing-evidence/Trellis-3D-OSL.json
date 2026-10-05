@@ -1,0 +1,29 @@
+{
+  "id": "Trellis-3D-OSL",
+  "checked_at": "2026-10-05T02:10:10.249068+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Trellis-3D-OSL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "OpenSourceLab",
+      "fullName": "Open-Source-Lab",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2419661422-50-yfhdcuqxmrjwjokrdinuyvphinqrsuoa.jpeg",
+      "id": "UG9lVXNlcjoyNDE5NjYxNDIy"
+    },
+    "description": "Trellis-3D is an open-source AI model designed to generate high-quality 3D assets from text or image prompts. It is fully open-sourced under the MIT license and developed by the Microsoft Research team. This bot generates 3D assets with textures and colors in GLB format, when you provide it a reference image. The generated model appears in a 3D canvas preview, where you can rotate, zoom, and inspect geometry in real time. This makes the tool ideal for rapid prototyping, learning 3D geometry, debugging OBJ files, and creating lightweight 3D assets.",
+    "poweredBy": "Powered by a server managed by @OpenSourceLab.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th style=\"text-align: right;\">Rate (USD)</th><th style=\"text-align: right;\">Rate (Points)</th></tr></thead><tbody><tr><td>Total Cost</td><td style=\"text-align: right;\">$0.18/video</td><td style=\"text-align: right;\">6,000 points/video</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "| Type | Rate (USD) | Rate (Points) |\n|---|---:|---:|\n| Total Cost | $0.18/video | 6,000 points/video |"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "StyleMaker",
+  "checked_at": "2026-10-05T02:10:00.293833+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "StyleMaker",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Given two images and a description of the first image, transfers the style of the second image to the first image. Use \"--style_strength\" to change the level of guidance provided by the style image, and use \"--image_strength\" to change the level of guidance provided by the base image. (This is a style transfer bot)",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "The creator has not provided details."
+    }
+  ]
+}

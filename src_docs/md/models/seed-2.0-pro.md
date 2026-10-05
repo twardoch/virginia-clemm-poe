@@ -9,9 +9,28 @@
 | Prompt | $6.313E-7/token |
 | Completion | $0.0000037879/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $0.63/1M tokens · 21 points/1k tokens |
+| Output (Text) | $3.79/1M tokens · 125 points/1k tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 0.63 | 1000000 tokens |
+| Input (text) | POINTS | 21 | 1000 tokens |
+| Output (text) | USD | 3.79 | 1000000 tokens |
+| Output (text) | POINTS | 125 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:10:54.605937+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Seed 2.0 Pro is a flagship all-purpose general model designed for complex reasoning and long-chain task execution in the Agent era. It emphasizes multimodal understanding, long-context reasoning, structured generation, and tool-augmented execution. It delivers outstanding performance in handling complex instructions and multi-constraint execution, and can reliably address scenarios such as multi-step complex planning, sophisticated visual-text reasoning, video content understanding, and high-difficulty analysis.
 This model is served from Malaysia.

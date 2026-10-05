@@ -1,0 +1,29 @@
+{
+  "id": "ltx-2-pro",
+  "checked_at": "2026-10-05T02:12:27.735363+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "LTX-2-Pro",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "LTX-2 Pro is an advanced video generation model by Lightricks designed for professional\u2011grade results. It offers high\u2011quality, realistic video generation at exceptional speed and supports outputs up to 2K resolution. Perfect for both text\u2011to\u2011video and image\u2011to\u2011video creation, it delivers cinematic detail and smooth performance.\n\nOptional Prompts:\nGenerate an audio with the video. This is disabled by default. \nSet. resolution with one of `1080p`, `1440p`, `2160p`. This is set to 1080p by default.\nSet the duration of the generated video (one of `6s, 8s, 10s`). This is set to 6s by default. \nSet the fps of the generated video to one of 25 or 50. This is set to 25 by default\n\nNotes: \nDuration and resolution values will change the price. \nFile attachment accepted: jpeg, png, webp",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Video Output 1080p</td><td>2000 points ($0.061) / second</td></tr><tr><td>Video Output 1440p</td><td>4000 points ($0.12) / second</td></tr><tr><td>Video Output 2160p</td><td>8000 points ($0.24) / second</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Video Output 1080p | 2000 points ($0.061) / second | \n| Video Output 1440p | 4000 points ($0.12) / second | \n| Video Output 2160p | 8000 points ($0.24) / second | \n"
+    }
+  ]
+}

@@ -9,9 +9,28 @@
 | Prompt | $1.414E-7/token |
 | Completion | $5.859E-7/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $0.14/1M tokens · 5 points/1k tokens |
+| Output (Text) | $0.59/1M tokens · 20 points/1k tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 0.14 | 1000000 tokens |
+| Input (text) | POINTS | 5 | 1000 tokens |
+| Output (text) | USD | 0.59 | 1000000 tokens |
+| Output (text) | POINTS | 20 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:13:30.555538+00:00
+
+
 ## Bot Information
 
-**Creator:** @tencent
+**Creator:** tencent
 
 **Description:** Tencent Hy3 is a reasoning model for coding, tool use, and complex problem solving.
 

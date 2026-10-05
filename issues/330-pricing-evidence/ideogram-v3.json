@@ -1,0 +1,29 @@
+{
+  "id": "ideogram-v3",
+  "checked_at": "2026-10-05T02:12:11.942086+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Ideogram-v3",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Generate high-quality images, posters, and logos with Ideogram V3. Features exceptional typography handling and realistic outputs optimized for commercial and creative use. \n\nNote:\nSend one image with a prompt for image remixing/restyling. \nSend two images (one an image and the other a black-and-white mask image denoting an area) for image editing.\n\nOptional parameters:\nSet aspect ratio. Select from (5:4, 4:3, 4:5, 1:1, 1:2, 1:3, 3:4, 3:1, 3:2, 2:1, 2:3, 16:9, 16:10, 10:16, 9:16). It is set to 4:3 aspect ratio as default.\nSet style. Select the desired style preset. No style set as default.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Image Output</td><td>2000 points ($0.061) / message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Image Output | 2000 points ($0.061) / message | \n"
+    }
+  ]
+}

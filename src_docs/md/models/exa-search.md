@@ -1,8 +1,31 @@
 # [exa-search](https://poe.com/exa-search){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Search (1-25 Results) | 200 ($0.0061) per search |
+| Search (26-100 Results) | 1000 ($0.030) per search |
+| Content (Text, Highlights, Summary) | 200 ($0.0061) per page/feature |
+| Code Search | 200 ($0.0061) per 1k tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Search (1-25 results) | USD | 0.0061 | 1 search |
+| Search (26-100 results) | USD | 0.030 | 1 search |
+| Content (Text, Highlights, Summary) | USD | 0.0061 | 1 page |
+| Code Search | USD | 0.0061 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:11:29.858144+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Utilize Exa's technology for searching web pages, finding similar web pages, crawling, and more.
 Note: This endpoint does not return an LLM-style response (visit the following if you want an LLM-style response: https://poe.com/Exa-Answer or https://poe.com/Exa-Research). File upload is not supported. 

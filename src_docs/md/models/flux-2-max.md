@@ -1,8 +1,28 @@
 # [flux-2-max](https://poe.com/flux-2-max){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Image Input/Output | 1000 points ($0.030) / Additional Megapixel |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Image Input/Output | USD | 0.071 | 1 megapixel |
+| Image Input/Output | POINTS | 2334 | 1 megapixel |
+| Image Input/Output | USD | 0.030 | 1 megapixel |
+| Image Input/Output | POINTS | 1000 | 1 megapixel |
+
+**Last Checked:** 2026-10-05T02:12:03.001891+00:00
+
+
 ## Bot Information
 
-**Creator:** @fal
+**Creator:** fal
 
 **Description:** Flux.2 \[Max\] is Black Forest Labs' latest, state-of-the-art model with multi-reference support, fine-grained text rendering, and other features. 
 

@@ -1,0 +1,29 @@
+{
+  "id": "MiMo-V2.5-Pro-EL",
+  "checked_at": "2026-10-05T02:09:25.118173+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "MiMo-V2.5-Pro-EL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "This model is retiring on 2026-10-20. Please switch to: https://poe.com/MiMo-V2.6-Pro-EL\nMiMo-V2.5-Pro is Xiaomi\u2019s most capable model, designed for advanced agentic workflows, complex software engineering, and long-horizon tasks with strong instruction following and coherence across very long contexts. It can sustain complex autonomous work over more than a thousand tool calls while delivering frontier-level capability with strong token efficiency.\n\nNotes: \n- Pricing is 2x when input tokens >256k\n- Context window: 1M\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$1.01/1M tokens</td><td>34 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$3.03/1M tokens</td><td>100 points/1k tokens</td></tr><tr><td>Bot message</td><td>$0.0061/message</td><td>200 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $1.01/1M tokens | 34 points/1k tokens |\n| Output (text) | $3.03/1M tokens | 100 points/1k tokens |\n| Bot message | $0.0061/message | 200 points/message |\n\n\nInput rate is 2x and output rate is 2x when context is >256k tokens."
+    }
+  ]
+}

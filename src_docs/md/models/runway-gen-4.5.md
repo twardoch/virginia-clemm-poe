@@ -1,8 +1,32 @@
 # [runway-gen-4.5](https://poe.com/runway-gen-4.5){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| 5 Seconds | $1.5 · 50000 points |
+| 8 Seconds | $2.4 · 80000 points |
+| 10 Seconds | $3.0 · 100000 points |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| 5 seconds | USD | 1.5 | 5 second |
+| 5 seconds | POINTS | 50000 | 5 second |
+| 8 seconds | USD | 2.4 | 8 second |
+| 8 seconds | POINTS | 80000 | 8 second |
+| 10 seconds | USD | 3.0 | 10 second |
+| 10 seconds | POINTS | 100000 | 10 second |
+
+**Last Checked:** 2026-10-05T02:11:01.299216+00:00
+
+
 ## Bot Information
 
-**Creator:** None
+**Creator:** runwayml
 
 **Description:** Runway Gen 4.5 is an advanced video model that generates cinematic, high‑fidelity video from natural language and images. It offers fine‑grained control over motion, camera behavior, composition, and style, producing physically realistic and temporally consistent scenes.
 

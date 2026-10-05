@@ -1,0 +1,29 @@
+{
+  "id": "deepseek-v3.2",
+  "checked_at": "2026-10-05T02:13:27.040136+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "DeepSeek-V3.2",
+    "creator": {
+      "isDeleted": false,
+      "handle": "deepseek",
+      "fullName": "DeepSeek",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-3213447839-50-bucwvtnbsokxqgqqprnjgichbjnibvyd.jpeg",
+      "id": "UG9lVXNlcjozMjEzNDQ3ODM5"
+    },
+    "description": "DeepSeek V3.2 is DeepSeek's efficient model for long-context reasoning and agentic tool-use tasks.",
+    "poweredBy": "Powered by a server managed by @deepseek.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.26/1M tokens</td><td>9 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$0.38/1M tokens</td><td>13 points/1k tokens</td></tr><tr><td>Cache discount</td><td>50% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.26/1M tokens | 9 points/1k tokens |\n| Output (text) | $0.38/1M tokens | 13 points/1k tokens |\n| Cache discount | 50% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n"
+    }
+  ]
+}

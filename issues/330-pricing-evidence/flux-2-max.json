@@ -1,0 +1,29 @@
+{
+  "id": "flux-2-max",
+  "checked_at": "2026-10-05T02:12:03.001891+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Flux-2-Max",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Flux.2 [Max] is Black Forest Labs' latest, state-of-the-art model with multi-reference support, fine-grained text rendering, and other features. \n\nNotes:\nSupports structured JSON prompts, and allows use of hex colour codes within the prompt for precise colouring.  \nSend images (Up to 8 images) in jpeg/png/webp format for editing.\n\nOptional parameters:\n- Set aspect ratio. Select from (16:9, 4:3, 1:1, 3:4, 9:16). It is set to 4:3 aspect ratio as default.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Image Input/Output</td><td>2334 points ($0.071) / First Megapixel</td></tr><tr><td>Image Input/Output</td><td>1000 points ($0.030) / Additional Megapixel</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Image Input/Output | 2334 points ($0.071) / First Megapixel | \n| Image Input/Output | 1000 points ($0.030) / Additional Megapixel | \n"
+    }
+  ]
+}

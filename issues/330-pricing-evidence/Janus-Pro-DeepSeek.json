@@ -1,0 +1,29 @@
+{
+  "id": "Janus-Pro-DeepSeek",
+  "checked_at": "2026-10-05T02:09:15.791639+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Janus-Pro-DeepSeek",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Janus-Pro is a novel autoregressive framework that unifies multimodal understanding and generation. This bot operates on the Janus Pro 7b model.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Request</th><th style=\"text-align: right;\">Cost</th></tr></thead><tbody><tr><td>Any message</td><td style=\"text-align: right;\">1000 ($0.030) points</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "**Pricing**\n\n| Request | Cost |\n|---|---:|\n| Any message | 1000 ($0.030) points |\n"
+    }
+  ]
+}

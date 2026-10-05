@@ -1,0 +1,29 @@
+{
+  "id": "gpt-4o-aug",
+  "checked_at": "2026-10-05T02:12:50.204923+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "GPT-4o-Aug",
+    "creator": {
+      "isDeleted": false,
+      "handle": "openai",
+      "fullName": "OpenAI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910400879-50-wrfgcbmfjrhquvwlxvypitmawpovrxoi.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDAwODc5"
+    },
+    "description": "OpenAI's most powerful model, GPT-4o, using the August 2024 model snapshot. Stronger than GPT-3.5 in quantitative questions (math and physics), creative writing, and many other challenging tasks. ",
+    "poweredBy": "Powered by OpenAI: gpt-4o-2024-08-06.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input</td><td>$2.27/1M tokens</td><td>75 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$9.09/1M tokens</td><td>300 points/1k tokens</td></tr><tr><td>Output</td><td>$0.023/search</td><td>750 points/search</td></tr><tr><td>Cache discount</td><td>50% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input | $2.27/1M tokens | 75 points/1k tokens |\n| Output (text) | $9.09/1M tokens | 300 points/1k tokens |\n| Output | $0.023/search | 750 points/search |\n| Cache discount | 50% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n"
+    }
+  ]
+}

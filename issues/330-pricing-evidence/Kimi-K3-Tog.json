@@ -1,0 +1,29 @@
+{
+  "id": "Kimi-K3-Tog",
+  "checked_at": "2026-10-05T02:09:20.271954+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Kimi-K3-Tog",
+    "creator": {
+      "isDeleted": false,
+      "handle": "togetherai",
+      "fullName": "Together AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-538388044-50-pymstrtquryhajnzeyeaqftjrrbrgvrv.jpeg",
+      "id": "UG9lVXNlcjo1MzgzODgwNDQ="
+    },
+    "description": "Kimi K3 is Moonshot AI's most capable model and the first open model at the 3-trillion-parameter class, with 2.8T total parameters activating 16 of 896 experts per token. It is built on Kimi Delta Attention and Attention Residuals, two architectural changes to how information flows across sequence length and model depth, with native vision and a 1-million-token context window. The model is designed for long-horizon work: sustaining extended engineering sessions across large repositories, carrying multi-step research and document tasks end to end, and reading screenshots, charts, and documents inside the same model. It runs at maximum thinking effort at launch, and weights are released under an open license. Available on Together AI.",
+    "poweredBy": "Powered by a server managed by @togetherai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.015/message</td><td>500 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.015/message | 500 points/message |\n"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "gpt-4o-search",
+  "checked_at": "2026-10-05T02:11:51.422698+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "GPT-4o-Search",
+    "creator": {
+      "isDeleted": false,
+      "handle": "openai",
+      "fullName": "OpenAI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910400879-50-wrfgcbmfjrhquvwlxvypitmawpovrxoi.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDAwODc5"
+    },
+    "description": "OpenAI's fine-tuned model for searching the web for real-time information. For less expensive messages, consider https://poe.com/GPT-4o-mini-Search. Uses medium search context size, currently in preview, supports 128k tokens of context. Does not support image search.",
+    "poweredBy": "Powered by OpenAI: gpt-4o-search-preview.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": false
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$2.27/1M tokens</td><td>75 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$9.09/1M tokens</td><td>300 points/1k tokens</td></tr><tr><td>Output (message)</td><td>$0.032/message</td><td>1050 points/message</td></tr><tr><td>Output</td><td>$0.023/search</td><td>750 points/search</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $2.27/1M tokens | 75 points/1k tokens |\n| Output (text) | $9.09/1M tokens | 300 points/1k tokens |\n| Output (message) | $0.032/message | 1050 points/message |\n| Output | $0.023/search | 750 points/search |\n\n\nWeb searches will add input tokens."
+    }
+  ]
+}

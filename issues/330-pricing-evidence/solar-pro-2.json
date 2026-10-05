@@ -1,0 +1,29 @@
+{
+  "id": "solar-pro-2",
+  "checked_at": "2026-10-05T02:12:50.214280+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Solar-Pro-2",
+    "creator": {
+      "isDeleted": false,
+      "handle": "upstage",
+      "fullName": "Upstage",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910414622-50-jgzejruzoorwahzxnlnqohvdnxryctcu.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDE0NjIy"
+    },
+    "description": "Solar Pro 2 is Upstage's latest frontier-scale LLM. With just 31B parameters, it delivers top-tier performance through world-class multilingual support, advanced reasoning, and real-world tool use. Especially in Korean, it outperforms much larger models across critical benchmarks. Built for the next generation of practical LLMs, Solar Pro 2 proves that smaller models can still lead. Supports a context length of 64k tokens.",
+    "poweredBy": "Powered by an open source model hosted by Poe.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.0021/message</td><td>70 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.0021/message | 70 points/message |\n"
+    }
+  ]
+}

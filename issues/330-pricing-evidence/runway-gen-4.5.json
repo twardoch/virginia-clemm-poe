@@ -1,0 +1,29 @@
+{
+  "id": "runway-gen-4.5",
+  "checked_at": "2026-10-05T02:11:01.299216+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Runway-Gen-4.5",
+    "creator": {
+      "isDeleted": false,
+      "handle": "runwayml",
+      "fullName": "RunwayML",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910411842-50-nmzixuwssxzfykzmnzlrhtpadwolhsyc.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDExODQy"
+    },
+    "description": "Runway Gen 4.5 is an advanced video model that generates cinematic, high\u2011fidelity video from natural language and images. It offers fine\u2011grained control over motion, camera behavior, composition, and style, producing physically realistic and temporally consistent scenes.\n\nOptional parameters:\nSet aspect ratio. Select from (21:9, 16:9, 4:3, 1:1, 3:4, 9:16). It is set to 16:9 aspect ratio as default.\nSet Duration. Select from (5 seconds, 8 seconds, 10 seconds) to specify video length in seconds. Set to 5 seconds as default.",
+    "poweredBy": "Powered by a server managed by @runwayml.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Video Duration (seconds)</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>5 seconds</td><td>$1.5</td><td>50000 points</td></tr><tr><td>8 seconds</td><td>$2.4</td><td>80000 points</td></tr><tr><td>10 seconds</td><td>$3.0</td><td>100000 points</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, depending on the duration of the generated video (in seconds) as per the below table. \n\n[Learn more](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01HCFXCW5CB1DSH6F4WXXYHJFJ)\n\n| Video Duration (seconds) | Rate (USD) | Rate (Points) |\n|------|------|------|\n| 5 seconds | $1.5 | 50000 points |\n| 8 seconds | $2.4 | 80000 points |\n| 10 seconds | $3.0 | 100000 points |"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "Tavily-Research",
+  "checked_at": "2026-10-05T02:10:07.268982+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Tavily-Research",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Tavily Research performs comprehensive research on a given topic by conducting multiple searches, analyzing sources, and generating a detailed research report.\n\nNote: Responses may take several minutes to complete depending on complexity.\n\nSupported file type upload: PDF, TXT, PNG, JPG, JPEG\nAudio and video file upload is not supported.\n\nParameter controls available:\n1. Research Settings\n- `--model [mini|pro|auto]`: Select the research model (default: auto)\n- `--citation_format [numbered|mla|apa|chicago]`: The format for citations in the research report (default: numbered)",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th style=\"text-align: left;\">Model</th><th style=\"text-align: left;\">Average Cost</th></tr></thead><tbody><tr><td style=\"text-align: left;\">Mini</td><td style=\"text-align: left;\">~39520 ($1.20)</td></tr><tr><td style=\"text-align: left;\">Pro</td><td style=\"text-align: left;\">~91520 ($2.77)</td></tr><tr><td style=\"text-align: left;\">Actual cost varies based on research complexity.</td><td style=\"text-align: left;\"></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "| Model | Average Cost |\n|:---|:---|\n| Mini | ~39520 ($1.20) |\n| Pro | ~91520 ($2.77) |\nActual cost varies based on research complexity."
+    }
+  ]
+}

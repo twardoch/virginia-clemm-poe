@@ -1,0 +1,29 @@
+{
+  "id": "inkling",
+  "checked_at": "2026-10-05T02:10:27.878708+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Inkling",
+    "creator": {
+      "isDeleted": false,
+      "handle": "thinkymachines",
+      "fullName": "Thinking Machines",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-3214051682-50-cmwnpxtfeseumkopgrdbbdugtkixgobc.jpeg",
+      "id": "UG9lVXNlcjozMjE0MDUxNjgy"
+    },
+    "description": "Inkling is Thinking Machines\u2019 multimodal reasoning model, built for deep analysis, coding, and tool-driven work across text, images, and documents. It uses a 975B-parameter mixture-of-experts architecture with 41B active parameters and a 256K-token context window.",
+    "poweredBy": "Powered by a server managed by @thinkymachines.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input</td><td>$1.01/1M tokens</td><td>34 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$4.09/1M tokens</td><td>135 points/1k tokens</td></tr><tr><td>Cache discount</td><td>83% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input | $1.01/1M tokens | 34 points/1k tokens |\n| Output (text) | $4.09/1M tokens | 135 points/1k tokens |\n| Cache discount | 83% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n"
+    }
+  ]
+}

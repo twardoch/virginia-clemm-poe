@@ -1,0 +1,31 @@
+{
+  "id": "mimo-v2.5-el",
+  "checked_at": "2026-10-05T02:13:06.951187+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "MiMo-V2.5-EL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "This model is retiring on 2026-10-20. Please switch to: https://poe.com/MiMo-V2.6-Flash-EL\nMiMo-V2.5 is a multimodal model with native visual and audio understanding, built to reason and act across modalities while supporting a large context window. It is positioned as a major step forward in agentic capability and multimodal understanding, with strong performance in visual reasoning, chart analysis, and real-world multimodal tasks.\n\nNotes: \n- Modalities: Text, Image, Video, Audio\n- Context window: 1M\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th style=\"text-align: left;\">Type</th><th style=\"text-align: left;\">Rate (USD)</th><th style=\"text-align: left;\">Rate (Points)</th></tr></thead><tbody><tr><td style=\"text-align: left;\">Input</td><td style=\"text-align: left;\">$0.40/1M tokens</td><td style=\"text-align: left;\">13 points/1K tokens</td></tr><tr><td style=\"text-align: left;\">Output</td><td style=\"text-align: left;\">$2.00/1M tokens</td><td style=\"text-align: left;\">67 points/1K tokens</td></tr></tbody></table>",
+    "<table><thead><tr><th style=\"text-align: left;\">Type</th><th style=\"text-align: left;\">Rate (USD)</th><th style=\"text-align: left;\">Rate (Points)</th></tr></thead><tbody><tr><td style=\"text-align: left;\">Input</td><td style=\"text-align: left;\">$0.80/1M tokens</td><td style=\"text-align: left;\">27 points/1K tokens</td></tr><tr><td style=\"text-align: left;\">Output</td><td style=\"text-align: left;\">$4.00/1M tokens</td><td style=\"text-align: left;\">133 points/1K tokens</td></tr></tbody></table>",
+    "<table><thead><tr><th style=\"text-align: left;\">Tool</th><th style=\"text-align: left;\">Rate (USD)</th><th style=\"text-align: left;\">Rate (Points)</th></tr></thead><tbody><tr><td style=\"text-align: left;\">Web Search</td><td style=\"text-align: left;\">$0.015/call</td><td style=\"text-align: left;\">500 points/call</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "**Token Pricing \u2014 Tier 1** *(\u2264256K context tokens)*\n\n| Type | Rate (USD) | Rate (Points) |\n|:-----|:-----------|:--------------|\n| Input | $0.40/1M tokens | 13 points/1K tokens |\n| Output | $2.00/1M tokens | 67 points/1K tokens |\n\n**Token Pricing \u2014 Tier 2** *(256K\u20131M context tokens)*\n\n| Type | Rate (USD) | Rate (Points) |\n|:-----|:-----------|:--------------|\n| Input | $0.80/1M tokens | 27 points/1K tokens |\n| Output | $4.00/1M tokens | 133 points/1K tokens |\n\n**Multimodal Input**\n\nImages, audio, and video are billed at the same input token rate. Token counts for media are determined by the API based on resolution, duration, and format.\n\n**Web Search** *(charged per search call)*\n\n| Tool | Rate (USD) | Rate (Points) |\n|:-----|:-----------|:--------------|\n| Web Search | $0.015/call | 500 points/call |\n\n*A single query may trigger multiple search calls based on the Max Keywords setting.*"
+    }
+  ]
+}

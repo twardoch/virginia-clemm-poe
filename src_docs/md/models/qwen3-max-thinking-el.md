@@ -9,9 +9,31 @@
 | Prompt | $0.0000010909/token |
 | Completion | $0.0000055758/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $1.09/1M tokens · 36 points/1k tokens |
+| Output (Text) | $5.58/1M tokens · 184 points/1k tokens |
+| Bot Message | $0.0061/message · 200 points/message |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 1.09 | 1000000 tokens |
+| Input (text) | POINTS | 36 | 1000 tokens |
+| Output (text) | USD | 5.58 | 1000000 tokens |
+| Output (text) | POINTS | 184 | 1000 tokens |
+| Bot message | USD | 0.0061 | 1 message |
+| Bot message | POINTS | 200 | 1 message |
+
+**Last Checked:** 2026-10-05T02:10:57.815602+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** This model is retiring on 2026-10-10. Please switch to: https://poe.com/Qwen3.7-Max
 Qwen3-Max-Thinking is a flagship reasoning model that integrates adaptive tool use, autonomously employing search, memory, and code interpretation to address complex tasks. It further optimizes performance through test-time scaling, a strategy that allocates additional computation during inference to improve reasoning accuracy and context efficiency.

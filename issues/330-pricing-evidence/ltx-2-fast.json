@@ -1,0 +1,29 @@
+{
+  "id": "ltx-2-fast",
+  "checked_at": "2026-10-05T02:12:27.455318+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "LTX-2-Fast",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "LTX-2 Fast is a video model by Lightricks that delivers exceptional quality and speed. It can generate videos at up to 50 FPS in high resolutions and supports both text-to-video and image-to-video generation.\n\nOptional Prompts:\nGenerate an audio with the video. This is disabled by default. \nSet. resolution with one of `1080p`, `1440p`, `2160p`. This is set to 1080p by default.\nSet the duration of the generated video (one of `6s, 8s, 10s`). This is set to 6s by default. \nSet the fps of the generated video to one of 25 or 50. This is set to 25 by default\n\nNotes: \nDuration and resolution values will change the price. \nFile attachment accepted: jpeg, png, webp",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Video Output 1080p</td><td>1334 points ($0.040) / second</td></tr><tr><td>Video Output 1440p</td><td>2667 points ($0.081) / second</td></tr><tr><td>Video Output 2160p</td><td>5334 points ($0.16) / second</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Video Output 1080p | 1334 points ($0.040) / second | \n| Video Output 1440p | 2667 points ($0.081) / second | \n| Video Output 2160p | 5334 points ($0.16) / second | \n"
+    }
+  ]
+}

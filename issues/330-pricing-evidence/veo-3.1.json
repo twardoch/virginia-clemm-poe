@@ -1,0 +1,29 @@
+{
+  "id": "veo-3.1",
+  "checked_at": "2026-10-05T02:12:17.628147+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Veo-3.1",
+    "creator": {
+      "isDeleted": false,
+      "handle": "google",
+      "fullName": "Google",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910402837-50-hdxyjsuznjtgwrszmhvbhgbviwdhkwvl.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDAyODM3"
+    },
+    "description": "Google\u2019s Veo 3.1 is an updated version of the Veo family of models that features richer native audio, from natural conversations to synchronized sound effects, and offers greater narrative control with an improved understanding of cinematic styles. Enhanced image-to-video capabilities ensure better prompt adherence while delivering superior audio and visual quality and maintaining character consistency across multiple scenes.\n\nOptional parameters:\n- Set the aspect ratio (either `16:9` or `9:16`), which defaults to `16:9`\n- Negative prompt can be set on elements to avoid\n- Set the duration (one of `4s`, `6s`, or `8s`), which defaults to `8s`\n- Seed to set the seed (set number value)\n- Resolution (set from 720p or 1080p)\n- Reference mode. Toggle to use input images (3 max) as reference for video generation\n\nFor first & last frame video generation and references support, please use www.poe.com/Veo-v3.1",
+    "poweredBy": "Powered by a server managed by @google.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total Cost</td><td>$0.404/second</td><td>13,333 points/second</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages\n\n| Type | Rate (USD) | Rate (Points)\n|------|------|------|\n|Total Cost | $0.404/second | 13,333 points/second |"
+    }
+  ]
+}

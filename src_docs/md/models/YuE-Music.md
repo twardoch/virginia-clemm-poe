@@ -1,8 +1,26 @@
 # [YuE-Music](https://poe.com/YuE-Music){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Music Output | 50000 points ($1.52) / message |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Music Output | USD | 1.52 | 1 message |
+| Music Output | POINTS | 50000 | 1 message |
+
+**Last Checked:** 2026-10-05T02:10:14.486524+00:00
+
+
 ## Bot Information
 
-**Creator:** @fal
+**Creator:** fal
 
 **Description:** YuE is a groundbreaking series of open-source foundation models designed for music generation, specifically for transforming lyrics into full songs (lyrics2song). It can generate a complete song, that includes both a catchy vocal track and accompaniment track.
 

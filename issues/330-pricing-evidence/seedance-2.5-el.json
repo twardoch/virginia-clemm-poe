@@ -1,0 +1,30 @@
+{
+  "id": "seedance-2.5-el",
+  "checked_at": "2026-10-05T02:13:35.250133+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Seedance-2.5-EL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Seedance 2.5 is ByteDance's next-generation video model. It generates a coherent clip of up to 30 seconds in a single request, draws on up to 50 reference assets at once, and edits or extends video you already have.\n\nModes (auto-detected)\n- Text to video: a prompt on its own.\n- Image to video: attach one image for a first frame, or two for a first and last frame.\n- Multimodal reference: attach up to 30 images, 10 videos, and 10 audio clips together. Audio works on its own, with no visual input.\n- Video edit: attach a clip and say what to change. Add, remove, or replace something in the footage.\n- Video extend: attach a clip and ask to continue it.\n\nAddressing references\nWith several assets attached, point the prompt at a specific one by index: @Image1, @Image2, @Video1, @Audio1. Attachments are numbered in the order you send them, per type.\n\nInput limits\n- Images: jpeg, png, webp, bmp, tiff, gif, heic, heif. 300 to 6000 px per side, under 30 MB each.\n- Videos: MP4 or MOV, 2 to 30 seconds each and 30 seconds in total, under 200 MB each.\n- Audio: WAV or MP3, 2 to 30 seconds each and 30 seconds in total, under 15 MB each.\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Resolution</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>480P</td><td>$0.206/sec</td><td>6,867 pts/sec</td></tr><tr><td>720P</td><td>$0.462/sec</td><td>15,400 pts/sec</td></tr><tr><td>1080P</td><td>$1.137/sec</td><td>37,900 pts/sec</td></tr></tbody></table>",
+    "<table><thead><tr><th>Resolution</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>480P</td><td>$0.123/sec</td><td>4,100 pts/sec</td></tr><tr><td>720P</td><td>$0.276/sec</td><td>9,200 pts/sec</td></tr><tr><td>1080P</td><td>$0.680/sec</td><td>22,667 pts/sec</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "**Seedance 2.5 Video Generation Pricing**\n\nPricing is per second of video generated.\n\n**Text / Image Input (T2V, I2V)**\n| Resolution | Rate (USD) | Rate (Points) |\n|------------|------------|---------------|\n| 480P | $0.206/sec | 6,867 pts/sec |\n| 720P | $0.462/sec | 15,400 pts/sec |\n| 1080P | $1.137/sec | 37,900 pts/sec |\n\n**Video Input (Reference, Edit, Extend)**\n| Resolution | Rate (USD) | Rate (Points) |\n|------------|------------|---------------|\n| 480P | $0.123/sec | 4,100 pts/sec |\n| 720P | $0.276/sec | 9,200 pts/sec |\n| 1080P | $0.680/sec | 22,667 pts/sec |\n\nWhen you attach a reference video, billing covers that clip's seconds as well as the generated seconds, at the lower video-input rate.\n\nDraft at 480P bills the 480P rate. Render my last draft at 1080P bills the 1080P rate for the draft's length."
+    }
+  ]
+}

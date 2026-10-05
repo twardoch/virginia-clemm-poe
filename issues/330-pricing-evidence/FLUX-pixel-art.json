@@ -1,0 +1,27 @@
+{
+  "id": "FLUX-pixel-art",
+  "checked_at": "2026-10-05T02:08:46.678221+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "FLUX-pixel-art",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Generate pixel art images with FLUX.1 [dev]",
+    "poweredBy": "",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": false
+  },
+  "tables": [],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": ""
+    }
+  ]
+}

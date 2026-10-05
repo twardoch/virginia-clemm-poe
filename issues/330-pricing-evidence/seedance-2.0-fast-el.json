@@ -1,0 +1,30 @@
+{
+  "id": "seedance-2.0-fast-el",
+  "checked_at": "2026-10-05T02:11:21.027008+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Seedance-2.0-Fast-EL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Seedance 2.0 Fast is the speed-optimized version of Seedance 2.0, designed to generate cinematic videos with native audio sync, camera control, and stable motion more quickly. It is a strong choice for rapid iteration and high-volume production because it is built to deliver faster results at a lower cost than the standard version.\nThis model is served from Malaysia.\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Resolution</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>480P</td><td>$0.122/sec</td><td>4,067 pts/sec</td></tr><tr><td>720P</td><td>$0.260/sec</td><td>8,667 pts/sec</td></tr></tbody></table>",
+    "<table><thead><tr><th>Resolution</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>480P</td><td>$0.284/sec</td><td>9,467 pts/sec</td></tr><tr><td>720P</td><td>$0.610/sec</td><td>20,333 pts/sec</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "**Seedance 2.0 Fast Video Generation Pricing**\n\nPricing is per second of video generated.\n\n**Text / Image Input (T2V, I2V)**\n| Resolution | Rate (USD) | Rate (Points) |\n|------------|------------|---------------|\n| 480P | $0.122/sec | 4,067 pts/sec |\n| 720P | $0.260/sec | 8,667 pts/sec |\n\n**Video Input (Reference, Edit, Extend)**\n| Resolution | Rate (USD) | Rate (Points) |\n|------------|------------|---------------|\n| 480P | $0.284/sec | 9,467 pts/sec |\n| 720P | $0.610/sec | 20,333 pts/sec |\n"
+    }
+  ]
+}

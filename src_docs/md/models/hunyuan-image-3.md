@@ -1,8 +1,25 @@
 # [hunyuan-image-3](https://poe.com/hunyuan-image-3){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| 1 Image | 4334 ($0.13) |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| 1 Image | USD | 0.13 | 1 image |
+
+**Last Checked:** 2026-10-05T02:11:25.562993+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Hunyuan Image 3.0 is Tencent’s next‑generation open‑source text-to-image model that uses a large multimodal Mixture-of-Experts architecture to unify image understanding and generation in one system. It produces high-fidelity, often photorealistic images with strong prompt adherence, multilingual text rendering, and intelligent world-knowledge reasoning that can enrich sparse prompts with appropriate visual details.
 

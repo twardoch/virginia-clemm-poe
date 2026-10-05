@@ -1,0 +1,29 @@
+{
+  "id": "Mistral-Medium-3.5",
+  "checked_at": "2026-10-05T02:09:29.583531+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Mistral-Medium-3.5",
+    "creator": {
+      "isDeleted": false,
+      "handle": "OpenSourceLab",
+      "fullName": "Open-Source-Lab",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2419661422-50-yfhdcuqxmrjwjokrdinuyvphinqrsuoa.jpeg",
+      "id": "UG9lVXNlcjoyNDE5NjYxNDIy"
+    },
+    "description": "Multimodal open source model released in April 2026 under a modified MIT License. The model has 128B parameters and is optimized for agentic workflows, coding and strong system prompt adherence. Great for role playing and small coding projects. Context window: 256k tokens",
+    "poweredBy": "Powered by a server managed by @OpenSourceLab.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total Cost</td><td>$0.0006/message</td><td>200 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "| Type | Rate (USD) | Rate (Points) |\n|------|--------------|------------|\n| Total Cost | $0.0006/message | 200 points/message|\n"
+    }
+  ]
+}

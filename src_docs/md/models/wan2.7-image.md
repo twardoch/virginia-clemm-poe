@@ -1,8 +1,29 @@
 # [wan2.7-image](https://poe.com/wan2.7-image){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Wan 2.7 Image | $0.030/img · 1,000 pts/img |
+| Wan 2.7 Image Pro | $0.075/img · 2,500 pts/img |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Wan 2.7 Image | USD | 0.030 | 1 image |
+| Wan 2.7 Image | POINTS | 1000 | 1 image |
+| Wan 2.7 Image Pro | USD | 0.075 | 1 image |
+| Wan 2.7 Image Pro | POINTS | 2500 | 1 image |
+
+**Last Checked:** 2026-10-05T02:11:07.216347+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Wan2.7 Image is Alibaba's Wan 2.7 series image generation and editing model, supporting text-to-image, image editing, interactive editing with bounding boxes, and cohesive image set generation from a single prompt. The Pro variant supports up to 4K output resolution with enhanced quality, while the Standard variant offers faster generation at lower cost.
 

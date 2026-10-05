@@ -1,0 +1,29 @@
+{
+  "id": "gpt-5.4",
+  "checked_at": "2026-10-05T02:10:31.453235+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "GPT-5.4",
+    "creator": {
+      "isDeleted": false,
+      "handle": "openai",
+      "fullName": "OpenAI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910400879-50-wrfgcbmfjrhquvwlxvypitmawpovrxoi.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDAwODc5"
+    },
+    "description": "GPT-5.4 is the most capable AI model from OpenAI, built for advanced real-world tasks across coding, computer use, deep research, complex document understanding, and multi-step problem solving. It outperforms previous versions on agentic workflows and tool use, delivering stronger reasoning, higher accuracy, and more reliable results on complex tasks.\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by OpenAI: gpt-5.4.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input</td><td>$2.27/1M tokens</td><td>75 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$13.64/1M tokens</td><td>450 points/1k tokens</td></tr><tr><td>Output</td><td>$0.0091/search</td><td>300 points/search</td></tr><tr><td>Cache discount</td><td>90% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input | $2.27/1M tokens | 75 points/1k tokens |\n| Output (text) | $13.64/1M tokens | 450 points/1k tokens |\n| Output | $0.0091/search | 300 points/search |\n| Cache discount | 90% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n\n\nWeb searches will add input tokens.\n\nInput rate is 2x and output rate is 1.5x when context is >272k tokens."
+    }
+  ]
+}

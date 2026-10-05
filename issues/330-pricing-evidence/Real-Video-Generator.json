@@ -1,0 +1,29 @@
+{
+  "id": "Real-Video-Generator",
+  "checked_at": "2026-10-05T02:09:43.604395+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Real-Video-Generator",
+    "creator": {
+      "isDeleted": false,
+      "handle": "OpenSourceLab",
+      "fullName": "Open-Source-Lab",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2419661422-50-yfhdcuqxmrjwjokrdinuyvphinqrsuoa.jpeg",
+      "id": "UG9lVXNlcjoyNDE5NjYxNDIy"
+    },
+    "description": "Cost-effective video generator based on Wan-2.7 (with synchronized audio). Ideal for content creators, marketers, educators and hobbyists who want quick quality video output without the heavy resource cost. Optionally you can upload a reference image to generate a video with Wan-2.7.",
+    "poweredBy": "Powered by Wan-2.7, a model that is hosted by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Resolution</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>720P</td><td>$0.10/sec</td><td>3,333 pts/sec</td></tr><tr><td>1080P</td><td>$0.150/sec</td><td>5,000 pts/sec</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "**Wan 2.7 Video Generation Pricing**\n\nPricing is per second of video generated.\n\n**All Modes (T2V, I2V, Video Edit, R2V)**\n| Resolution | Rate (USD) | Rate (Points) |\n|------------|------------|---------------|\n| 720P | $0.10/sec | 3,333 pts/sec |\n| 1080P | $0.150/sec | 5,000 pts/sec |\n\n**Note:** Video Edit and R2V are billed for input video duration + output video duration.\n\n\nThe creator defined additional costs."
+    }
+  ]
+}

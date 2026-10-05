@@ -1,0 +1,29 @@
+{
+  "id": "qwen3.8-max-0902-el",
+  "checked_at": "2026-10-05T02:13:49.953175+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Qwen3.8-Max-0902-EL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Qwen3.8 Max 0902 is the upgraded September 2026 snapshot of Alibaba's flagship Qwen3.8 Max, with stronger coding, steadier multi-tool agent work, and sharper chart and document understanding. It accepts text, image, and video input with a 1M token context, and supports deep thinking, function calling, and structured JSON output.\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$2.02/1M tokens</td><td>67 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$6.06/1M tokens</td><td>200 points/1k tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $2.02/1M tokens | 67 points/1k tokens |\n| Output (text) | $6.06/1M tokens | 200 points/1k tokens |\n"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "qwen3.5-omni-plus",
+  "checked_at": "2026-10-05T02:10:48.420686+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Qwen3.5-Omni-Plus",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Qwen3.5-Omni Plus is the flagship variant of Qwen's latest omni-modal model, supporting text, image, audio, and video understanding and interaction. It handles up to 3 hours of audio and 1 hour of video input, with audio input in 90+ languages and speech output in 30+ languages across 55 voice timbres.\nThis model is served by Alibaba Cloud Int. from Singapore.\n\nNotes:\n- Context Window: 256K\n- Recommended: instruct the model to avoid markdown formatting in Text + Audio mode\n\nInput limits:\n- Images: up to 2,048 files, \u226420 MB each, min 10\u00d710 px, aspect ratio \u2264200:1\n- Audio: up to 2,048 files, \u22642 GB each, up to 3 hrs\n- Video: up to 512 files, \u22642 GB each, up to 1 hr\n- Formats \u2014 Image: JPG, JPEG, JPE, PNG, WebP, BMP, TIF, TIFF, HEIC, GIF | Audio: AMR, WAV, 3GP, 3GPP, AAC, MP3 | Video: MP4, AVI, MKV, MOV, FLV, WMV\n- Audio Input: 92 languages, 21 dialects\n\nOutput:\n- Modalities: text only, or text + audio (audio-only not available)\n- 55 voice timbres (default: Tina)\n- Audio output: 29 languages, 7 dialects\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th style=\"text-align: left;\">Input Type</th><th style=\"text-align: left;\">Rate (USD)</th><th style=\"text-align: left;\">Rate (Points)</th></tr></thead><tbody><tr><td style=\"text-align: left;\">Audio</td><td style=\"text-align: left;\">$11.00/1M tokens</td><td style=\"text-align: left;\">367 points/1K tokens</td></tr><tr><td style=\"text-align: left;\">Text / Image / Video</td><td style=\"text-align: left;\">$1.40/1M tokens</td><td style=\"text-align: left;\">47 points/1K tokens</td></tr></tbody></table>",
+    "<table><thead><tr><th style=\"text-align: left;\">Output Type</th><th style=\"text-align: left;\">Rate (USD)</th><th style=\"text-align: left;\">Rate (Points)</th></tr></thead><tbody><tr><td style=\"text-align: left;\">Text + Audio</td><td style=\"text-align: left;\">$44.00/1M tokens</td><td style=\"text-align: left;\">1467 points/1K tokens</td></tr><tr><td style=\"text-align: left;\">Text Only</td><td style=\"text-align: left;\">$8.30/1M tokens</td><td style=\"text-align: left;\">277 points/1K tokens</td></tr></tbody></table>",
+    "<table><thead><tr><th style=\"text-align: left;\">Tool</th><th style=\"text-align: left;\">Rate (USD)</th><th style=\"text-align: left;\">Rate (Points)</th></tr></thead><tbody><tr><td style=\"text-align: left;\">Web Search</td><td style=\"text-align: left;\">$0.015/request</td><td style=\"text-align: left;\">500 points/request</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "**Qwen3.5-Omni-Plus Pricing**\n\n**Input Token Pricing**\n| Input Type | Rate (USD) | Rate (Points) |\n|:-----------|:-----------|:--------------|\n| Audio | $11.00/1M tokens | 367 points/1K tokens |\n| Text / Image / Video | $1.40/1M tokens | 47 points/1K tokens |\n\n**Output Token Pricing**\n| Output Type | Rate (USD) | Rate (Points) |\n|:------------|:-----------|:--------------|\n| Text + Audio | $44.00/1M tokens | 1467 points/1K tokens |\n| Text Only | $8.30/1M tokens | 277 points/1K tokens |\n\n*Note: Output text is not charged when audio is enabled; only audio tokens are billed.*\n\n**Tool Pricing** *(charged per request when enabled)*\n| Tool | Rate (USD) | Rate (Points) |\n|:-----|:-----------|:--------------|\n| Web Search | $0.015/request | 500 points/request |"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "glm-4.6",
+  "checked_at": "2026-10-05T02:13:31.833705+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "GLM-4.6",
+    "creator": {
+      "isDeleted": false,
+      "handle": "zai",
+      "fullName": "Z.ai",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-3213444466-50-irsbbnzaplsaoxxqrswjekectbrnivfa.jpeg",
+      "id": "UG9lVXNlcjozMjEzNDQ0NDY2"
+    },
+    "description": "Z.ai GLM 4.6 is a coding-focused model for large codebases, multi-file analysis, and agentic engineering workflows.",
+    "poweredBy": "Powered by a server managed by @zai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.61/1M tokens</td><td>20 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$2.22/1M tokens</td><td>74 points/1k tokens</td></tr><tr><td>Cache discount</td><td>81% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.61/1M tokens | 20 points/1k tokens |\n| Output (text) | $2.22/1M tokens | 74 points/1k tokens |\n| Cache discount | 81% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n"
+    }
+  ]
+}

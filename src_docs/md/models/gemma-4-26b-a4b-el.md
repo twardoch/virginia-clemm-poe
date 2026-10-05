@@ -9,9 +9,28 @@
 | Prompt | $5.05E-8/token |
 | Completion | $2.929E-7/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $0.051/1M tokens · 2 points/1k tokens |
+| Output (Text) | $0.29/1M tokens · 10 points/1k tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 0.051 | 1000000 tokens |
+| Input (text) | POINTS | 2 | 1000 tokens |
+| Output (text) | USD | 0.29 | 1000000 tokens |
+| Output (text) | POINTS | 10 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:13:11.742322+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Gemma 4 26B A4B is a Google open multimodal model with 256K context, text, image, and video input, tools, and structured output.
 

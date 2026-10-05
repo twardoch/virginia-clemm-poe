@@ -2,6 +2,15 @@
 
 # Virginia Clemm Poe - Development Tasks
 
+## Pricing correction — 2026-10-05
+
+- [x] Collect public rate evidence for every bot and normalize all disclosed numeric prices.
+- [x] Parse HTML, Markdown and prose rates with currencies, quantities, ranges and sources.
+- [x] Sort cheapest first; preserve zero values and put unknown prices last.
+- [x] Show token/message/media comparison bases and all rates on model pages.
+- [x] Verify regression tests and strict documentation build.
+- [x] Verify rendered iframe and prepare the checked site for gitnextver publication.
+
 ## ✅ Phase 9: Dual Pricing Model Support (COMPLETED 2025-10-15)
 
 ### 9.1 Data Model Refactoring

@@ -1,19 +1,37 @@
 # [Kling-Lipsync](https://poe.com/Kling-Lipsync){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Video Output | 4667 points ($0.14) / message |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Video Output | USD | 0.14 | 1 message |
+| Video Output | POINTS | 4667 | 1 message |
+
+**Last Checked:** 2026-10-05T02:09:21.128879+00:00
+
+
 ## Bot Information
 
-**Creator:** @fal
+**Creator:** fal
 
 **Description:** Generate high-quality lipsynced videos using Kling-Lipsync. Send over a video and an audio  to sync the video with the audio, or send a text prompt, a voice and a video to generate an audio and sync the video to it.
 
 
 ## Architecture
 
-**Input Modalities:** Unknown
+**Input Modalities:** text
 
-**Output Modalities:** Unknown
+**Output Modalities:** video
 
-**Modality:** unknown
+**Modality:** text->video
 
 
 ## Technical Details

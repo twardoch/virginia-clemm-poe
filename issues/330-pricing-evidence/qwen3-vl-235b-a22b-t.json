@@ -1,0 +1,29 @@
+{
+  "id": "qwen3-vl-235b-a22b-t",
+  "checked_at": "2026-10-05T02:11:40.547772+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Qwen3-VL-235B-A22B-T",
+    "creator": {
+      "isDeleted": false,
+      "handle": "novitaai",
+      "fullName": "Novita AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-3067795970-50-ezhhpdjtzbudawymtaodhapblyfagaxk.jpeg",
+      "id": "UG9lVXNlcjozMDY3Nzk1OTcw"
+    },
+    "description": "qwen/qwen3-vl-235b-a22b-thinking powered by Novita AI\n\nFile Support: Text, Markdown, Image, Video and PDF files\nContext window: 131k tokens",
+    "poweredBy": "Powered by a server managed by @novitaai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.99/1M tokens</td><td>33 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$3.99/1M tokens</td><td>132 points/1k tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.99/1M tokens | 33 points/1k tokens |\n| Output (text) | $3.99/1M tokens | 132 points/1k tokens |\n"
+    }
+  ]
+}

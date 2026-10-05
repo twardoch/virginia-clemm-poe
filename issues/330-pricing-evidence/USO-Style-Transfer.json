@@ -1,0 +1,29 @@
+{
+  "id": "USO-Style-Transfer",
+  "checked_at": "2026-10-05T02:10:11.224388+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "USO-Style-Transfer",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "USO can transfer styles between images. Send an image to provide the image content, followed by at least one (and at most two) images that provide the style. The style of the latter image(s) will be applied to the first image.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Image Output</td><td>2834 points ($0.086) / message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Image Output | 2834 points ($0.086) / message | \n"
+    }
+  ]
+}

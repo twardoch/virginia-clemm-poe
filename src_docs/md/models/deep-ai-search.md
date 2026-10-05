@@ -1,8 +1,25 @@
 # [deep-ai-search](https://poe.com/deep-ai-search){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Message Cost | 200 points/message |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Message Cost | POINTS | 200 | 1 message |
+
+**Last Checked:** 2026-10-05T02:12:30.817861+00:00
+
+
 ## Bot Information
 
-**Creator:** @OpenSourceLab
+**Creator:** OpenSourceLab
 
 **Description:** Deep search engine that integrates Brave AI with real-time web search. This research assistant executes commands, validates facts and scrapes websites at scale while preserving its hallmark speed and intelligence advantage. Deep-AI-Search doesn't accept file attachments.
 

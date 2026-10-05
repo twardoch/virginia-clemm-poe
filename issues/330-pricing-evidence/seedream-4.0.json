@@ -1,0 +1,29 @@
+{
+  "id": "seedream-4.0",
+  "checked_at": "2026-10-05T02:12:20.196719+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Seedream-4.0",
+    "creator": {
+      "isDeleted": false,
+      "handle": "Bytedance",
+      "fullName": "Bytedance",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-3051278963-50-eutwplhohbxvxssqxmripuferuovulrc.jpeg",
+      "id": "UG9lVXNlcjozMDUxMjc4OTYz"
+    },
+    "description": "Seedream 4.0 is ByteDance's latest and best text-to-image model, capable of impressive high fidelity image generation, with great text-rendering ability. Seedream 4.0 can also take in  multiple images as references and combine them together or edit them to return an output. \n\nOptional parameters:\nSet aspect ratio. Select from (One of `16:9`, `4:3`, `1:1`, `3:4`, `9:16`).",
+    "poweredBy": "Powered by a server managed by @Bytedance.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Image Output</td><td>1000 points ($0.030) / message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Image Output | 1000 points ($0.030) / message | \n"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "kling-v3-motion-ctrl",
+  "checked_at": "2026-10-05T02:11:01.155464+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Kling-v3-Motion-Ctrl",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Kling v3 Motion Control uses Kuaishou's Kling 3.0 model to transfer motion from a reference video onto a character from a reference image, generating a new video where the subject performs the movements with high fidelity and temporal consistency with support for Standard (720p) and Pro (1080p) quality tiers.\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Tier</th><th>Price per second</th></tr></thead><tbody><tr><td>Standard (720p)</td><td>4667 ($0.14) /s</td></tr><tr><td>Pro (1080p)</td><td>6000 ($0.18) /s</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "**Kling V3 Motion Control Pricing**\n\nPer second of generated video.\n\n| Tier | Price per second |\n|------|------------------|\n| Standard (720p) | 4667 ($0.14) /s |\n| Pro (1080p) | 6000 ($0.18) /s |\n"
+    }
+  ]
+}

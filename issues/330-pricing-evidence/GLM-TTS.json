@@ -1,0 +1,29 @@
+{
+  "id": "GLM-TTS",
+  "checked_at": "2026-10-05T02:08:57.744410+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "GLM-TTS",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "GLM-TTS is a high-quality, LLM-based text-to-speech system that supports zero-shot voice cloning from 3\u201310 seconds of audio and text-to-speech synthesis. It provides controllable, emotion-expressive speech via multi-reward reinforcement learning, with phoneme-level control and strong performance on the seed-tts-eval benchmark.\n\nThis model is hosted by EmpirioLabs.ai and is exclusive to the Poe platform.\n\nNotes:\n- Supported audio upload types: WAV, MP3, OGG, FLAC, AAC, M4A, WebM\n- The max TTS length is 5000 characters\n- Generations may take upwards of 5-10 minutes to complete\n\nParameter controls available:\n1. Voice\n- Default: `--voice emma` (Emma - English Female)\n- `--voice james` (James - US Male)\n- `--voice arthur` (Arthur - UK Male)\n- `--voice xiaomei` (Xiaomei - Chinese Female)\n- `--voice zhigang` (Zhigang - Chinese Male)\n- `--voice custom` for voice cloning (requires audio upload)\n\n2. Audio Output\n- `--output_format mp3` (default, smaller file) or `--output_format wav` (lossless, larger file)\n- `--speed [0.5-2.0]` speech rate multiplier (default 1.0)\n\n3. Advanced\n- `--model_quality quality` (FP16 - better, default) or `--model_quality fast` (INT8 - quicker)\n- `--sample_rate 24000` (24 kHz, default) or `--sample_rate 16000` (16 kHz)\n- `--volume [0.1-2.0]` output volume multiplier (default 1.0)\n- `--seed [1-999999]` for reproducible results (leave empty for random)\n- `--use_cache true` (default) or `--use_cache false` to disable caching\n- '-optimize_input true' (default) or '--optimize_input false' to skip text optimization",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Model</th><th>Rate</th></tr></thead><tbody><tr><td>Fast (INT8)</td><td>6806 ($0.21) / 1k chars</td></tr><tr><td>Quality (FP16)</td><td>6976 ($0.21) / 1k chars</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "| Model | Rate |\n|-------|------|\n| Fast (INT8) | 6806 ($0.21) / 1k chars |\n| Quality (FP16) | 6976 ($0.21) / 1k chars |"
+    }
+  ]
+}

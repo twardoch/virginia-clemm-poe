@@ -1,0 +1,29 @@
+{
+  "id": "deepseek-v3.2-el",
+  "checked_at": "2026-10-05T02:11:05.062260+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "DeepSeek-V3.2-EL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "This model is retiring on 2026-10-10. Please switch to: https://poe.com/DeepSeek-V4-Pro-EL\nDeepSeek V3.2 is a powerful open-source large language model designed to compete with top-tier models on reasoning, coding, and general language tasks. Built on a Mixture-of-Experts (MoE) architecture, it delivers strong performance while remaining highly efficient to run.\nThis model is served by Alibaba Cloud Int. from Singapore.\n\nNotes:\n- Context Window: 128K\n- Supported input modalities: Text, Image (non-native), Documents\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.58/1M tokens</td><td>19 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$1.73/1M tokens</td><td>57 points/1k tokens</td></tr><tr><td>Bot message</td><td>$0.0051/message</td><td>167 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.58/1M tokens | 19 points/1k tokens |\n| Output (text) | $1.73/1M tokens | 57 points/1k tokens |\n| Bot message | $0.0051/message | 167 points/message |\n"
+    }
+  ]
+}

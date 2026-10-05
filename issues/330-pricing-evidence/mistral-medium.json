@@ -1,0 +1,29 @@
+{
+  "id": "mistral-medium",
+  "checked_at": "2026-10-05T02:11:47.955703+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Mistral-Medium",
+    "creator": {
+      "isDeleted": false,
+      "handle": "mistral",
+      "fullName": "Mistral",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910404805-50-ygwijasruuxueejozjixjoulatzersfe.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDA0ODA1"
+    },
+    "description": "Mistral AI's medium-sized model. Supports a context window of 32k tokens (around 24,000 words) and is stronger than Mixtral-8x7b and Mistral-7b on benchmarks across the board.",
+    "poweredBy": "Powered by Mistral.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$2.73/1M tokens</td><td>90 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$8.18/1M tokens</td><td>270 points/1k tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $2.73/1M tokens | 90 points/1k tokens |\n| Output (text) | $8.18/1M tokens | 270 points/1k tokens |\n"
+    }
+  ]
+}

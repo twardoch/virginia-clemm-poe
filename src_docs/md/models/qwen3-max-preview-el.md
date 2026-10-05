@@ -9,9 +9,28 @@
 | Prompt | $0.0000010909/token |
 | Completion | $0.0000048485/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $1.09/1M tokens · 36 points/1k tokens |
+| Output (Text) | $4.85/1M tokens · 160 points/1k tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 1.09 | 1000000 tokens |
+| Input (text) | POINTS | 36 | 1000 tokens |
+| Output (text) | USD | 4.85 | 1000000 tokens |
+| Output (text) | POINTS | 160 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:11:45.966936+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** This model is retiring on 2026-10-10. Please switch to: https://poe.com/Qwen3.7-Max
 Qwen3-Max-Preview shows substantial gains over the 2.5 series in overall capability, with significant enhancements in Chinese-English text understanding, complex instruction following, handling of subjective open-ended tasks, multilingual ability, and tool invocation; model knowledge hallucinations are reduced.

@@ -9,9 +9,28 @@
 | Prompt | $9.596E-7/token |
 | Completion | $0.0000040404/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $0.96/1M tokens · 32 points/1k tokens |
+| Output (Text) | $4.04/1M tokens · 134 points/1k tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 0.96 | 1000000 tokens |
+| Input (text) | POINTS | 32 | 1000 tokens |
+| Output (text) | USD | 4.04 | 1000000 tokens |
+| Output (text) | POINTS | 134 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:13:16.212146+00:00
+
+
 ## Bot Information
 
-**Creator:** @novitaai
+**Creator:** novitaai
 
 **Description:** Kimi K2.7 Code is MoonshotAI's strongest coding & agentic model — a 1T-parameter MoE (32B activated) , 256K context and interleaved thinking with multi-step tool calling. It delivers major gains on long-horizon coding tasks while cutting thinking-token usage by ~30% vs K2.6, and accepts text, image and video inputs for vision-driven development workflows.
 

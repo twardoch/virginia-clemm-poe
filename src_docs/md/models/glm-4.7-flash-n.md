@@ -9,9 +9,28 @@
 | Prompt | $7.07E-8/token |
 | Completion | $4.04E-7/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $0.071/1M tokens · 3 points/1k tokens |
+| Output (Text) | $0.40/1M tokens · 14 points/1k tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 0.071 | 1000000 tokens |
+| Input (text) | POINTS | 3 | 1000 tokens |
+| Output (text) | USD | 0.40 | 1000000 tokens |
+| Output (text) | POINTS | 14 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:11:15.141003+00:00
+
+
 ## Bot Information
 
-**Creator:** @novitaai
+**Creator:** novitaai
 
 **Description:** GLM-4.7-Flash, a state-of-the-art model in the 30B class, delivers a compelling balance of high performance and efficiency. Tailored for Agentic Coding, it strengthens coding proficiency, long-horizon planning, and tool synergy, securing top-tier results on public benchmarks among similarly sized open-source models. It excels in complex agent tasks with superior instruction following for tool use, while significantly elevating the frontend aesthetics and completion efficiency of long-range workflows in Artifacts and Agentic Coding. 
 

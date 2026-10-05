@@ -1,0 +1,29 @@
+{
+  "id": "grok-imgn-video-1.5",
+  "checked_at": "2026-10-05T02:13:14.998904+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Grok-Imgn-Video-1.5",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Grok Imagine Video 1.5 supports text-to-video, image-to-video, and reference-to-video generation with up to seven reference images for consistent characters, up to 15 seconds at 1080p.\n\nNotes:\n- Attach 2 to 7 images to keep those characters consistent in a new scene, up to 720p. Refer to them in your prompt as <IMAGE_1>, <IMAGE_2>, and so on\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Resolution</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>480P</td><td>$0.096/sec</td><td>3,200 pts/sec</td></tr><tr><td>720P</td><td>$0.168/sec</td><td>5,600 pts/sec</td></tr><tr><td>1080P</td><td>$0.300/sec</td><td>10,000 pts/sec</td></tr><tr><td>Image input</td><td>$0.050/image</td><td>1,667 pts/image</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "**Grok Imagine Video 1.5 Pricing**\n\nText-to-video, image-to-video, and reference-to-video. Billed per second of video generated, by resolution, plus a per-image fee for each image you attach. Text-to-video attaches no images, so it has no image fee.\n\n| Resolution | Rate (USD) | Rate (Points) |\n|------------|------------|---------------|\n| 480P | $0.096/sec | 3,200 pts/sec |\n| 720P | $0.168/sec | 5,600 pts/sec |\n| 1080P | $0.300/sec | 10,000 pts/sec |\n| Image input | $0.050/image | 1,667 pts/image |\n"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "perplexity-pro-search",
+  "checked_at": "2026-10-05T02:11:54.624372+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Perplexity-Pro-Search",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Perplexity Pro Search turns Sonar Pro into a full agentic researcher that autonomously chains web searches, and fetches full pages while streaming its live reasoning. It dynamically adapts its strategy for complex queries, far beyond standard Sonar Pro's single search. \n\nParameter controls available:\n1. Search Configuration\n   - Search Context Size (low, medium, high] adjusts search depth (affects cost and comprehensiveness)\n   - Stream mode full switches from concise reasoning display to traditional streaming\n\n2. Content Filtering\n   - Search mode academic restricts results to academic sources\n   - Search mode sec limits to SEC filings only\n   - Search domain filter example.com,nasa.gov` includes only specified domains (max 20)\n   - Search domain filter -pinterest.com,-spam.com` excludes domains (prefix with `-`)\n   - Search language filter e.g.`en,fr,de` filters by ISO 639-1 language codes (max 10, two-letter codes)\n\n3. Date and Recency Filters\n   - Search recency filter (day, week, month, year) filters by relative time from today\n   - Search after date `MM/DD/YYYY` and `Search before date `MM/DD/YYYY` for exact publication dates\n   - Note: Specific dates and recency filters are mutually exclusive (dates take priority)\n   - Last updated after filter `MM/DD/YYYY` and Last updated before filter `MM/DD/YYYY` filter by last modified date\n\n4. Location-Based Search\n   - Country e.g `US` sets two-letter ISO 3166-1 country code for localized results\n   - Region e.g. `California` specifies state/province (requires country)\n   - City e.g. \"San Francisco\" narrows to city level (requires country)\n   - Latitude -37.7749 Longitude -122.4194 for precise coordinate-based search (requires country)\n\n5. Media Results\n   - Return images includes images in search results with inline previews\n   - Image domain filter wikimedia.org,-getty.com` filters image sources (max 10, prefix `-` to exclude)\n   - Image format filter e.g. jpg,png,webp restricts to specific formats (gif, jpg, png, webp supported)\n   - Return videos includes embedded video previews (YouTube videos render as iframes)",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th style=\"text-align: left;\">Item</th><th style=\"text-align: left;\">Rate</th></tr></thead><tbody><tr><td style=\"text-align: left;\">Base Fee (Low Context)</td><td style=\"text-align: left;\">1214 ($0.037)</td></tr><tr><td style=\"text-align: left;\">Base Fee (Medium Context)</td><td style=\"text-align: left;\">1560 ($0.047)</td></tr><tr><td style=\"text-align: left;\">Base Fee (High Context)</td><td style=\"text-align: left;\">1907 ($0.058)</td></tr><tr><td style=\"text-align: left;\">Input Tokens</td><td style=\"text-align: left;\">260 ($0.0079) per 1,000 tokens</td></tr><tr><td style=\"text-align: left;\">Output Tokens</td><td style=\"text-align: left;\">1300 ($0.039) per 1,000 tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "This bot uses a variable pricing model.\n\nNote that conversation history and image tokens are priced in input.\nAuthorization fees are likely higher than the fee charged. Charges can be viewed by right clicking a message and selecting \"Info\"\n\n**Note:** The model determines when to perform web searches based on your query. If you need to specifically encourage web search, include phrases like \"search for\", \"latest\", or \"current\".\n| Item | Rate |\n|:---|:---|\n| Base Fee (Low Context) | 1214 ($0.037) |\n| Base Fee (Medium Context) | 1560 ($0.047) |\n| Base Fee (High Context) | 1907 ($0.058) |\n| Input Tokens | 260 ($0.0079) per 1,000 tokens |\n| Output Tokens | 1300 ($0.039) per 1,000 tokens |\n"
+    }
+  ]
+}

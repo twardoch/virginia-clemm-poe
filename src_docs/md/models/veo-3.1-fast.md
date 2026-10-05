@@ -1,8 +1,26 @@
 # [veo-3.1-fast](https://poe.com/veo-3.1-fast){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | $0.135/second · 4,500 points/second |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Total Cost | USD | 0.135 | 1 second |
+| Total Cost | POINTS | 4500 | 1 second |
+
+**Last Checked:** 2026-10-05T02:12:18.707915+00:00
+
+
 ## Bot Information
 
-**Creator:** @google
+**Creator:** google
 
 **Description:** Google’s Veo 3.1 Fast is an updated version of the Veo family of models that's optimized for speed and cost, but still features richer native audio, from natural conversations to synchronized sound effects, and offer greater narrative control with an improved understanding of cinematic styles. Enhanced image-to-video capabilities ensure better prompt adherence while delivering superior audio and visual quality and maintaining character consistency across multiple scenes.
 

@@ -1,0 +1,29 @@
+{
+  "id": "JapaneseSDXL",
+  "checked_at": "2026-10-05T02:09:16.830174+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "JapaneseSDXL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fireworksai",
+      "fullName": "Fireworks AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2339248475-50-cokslpvhdmlrqrkakgkkmiaffqqkcfgh.jpeg",
+      "id": "UG9lVXNlcjoyMzM5MjQ4NDc1"
+    },
+    "description": "Stability.ai\u306b\u3088\u308b\u65e5\u672c\u8a9eStable Diffusion XL\u30e2\u30c7\u30eb\u3002Fireworks.ai\u306b\u3088\u308a\u904b\u7528\u3055\u308c\u3066\u3044\u307e\u3059\u3002https://app.fireworks.ai/models/fireworks/japanese-stable-diffusion-xl\n\u30d7\u30ed\u30f3\u30d7\u30c8\u4f8b\uff1a\n* \u685c\u306e\u6728\n* \u67f4\u72ac\u30ab\u30e9\u30d5\u30eb\u30a2\u30fc\u30c8",
+    "poweredBy": "Powered by a server managed by @fireworksai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.0024/message</td><td>80 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.0024/message | 80 points/message |\n"
+    }
+  ]
+}

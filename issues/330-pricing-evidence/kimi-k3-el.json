@@ -1,0 +1,29 @@
+{
+  "id": "kimi-k3-el",
+  "checked_at": "2026-10-05T02:13:21.843668+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Kimi-K3-EL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Kimi K3 is Moonshot AI's flagship reasoning model with a 1M token context, built for software engineering, deep reasoning, and knowledge work. It supports text, image, and video input with native web search.\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$3.03/1M tokens</td><td>100 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$15.15/1M tokens</td><td>500 points/1k tokens</td></tr><tr><td>Bot message</td><td>$0.0020/message</td><td>67 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $3.03/1M tokens | 100 points/1k tokens |\n| Output (text) | $15.15/1M tokens | 500 points/1k tokens |\n| Bot message | $0.0020/message | 67 points/message |\n"
+    }
+  ]
+}

@@ -2,18 +2,25 @@
 
 ## Pricing
 
-### Points-based Pricing
+### Website Pricing
 
 | Type | Cost |
 |------|------|
-| Total Cost | 0 points/message |
+| Total Cost | $0.00/message · 0 points/message |
 
-**Last Checked:** 2026-10-05 01:50:46.399669
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Total cost | USD | 0.00 | 1 message |
+| Total cost | POINTS | 0 | 1 message |
+
+**Last Checked:** 2026-10-05T02:09:36.196498+00:00
 
 
 ## Bot Information
 
-**Creator:** @togetherai
+**Creator:** togetherai
 
 **Description:** Ternary Bonsai 27B is PrismML's low-bit build of Qwen3.6 27B, representing every language weight as one of three values with group-wise FP16 scaling for a true 1.71 bits per weight, roughly 9.4x smaller than the FP16 baseline. The compression runs end-to-end across embeddings, attention projections, MLP projections, and the LM head, with a compact 4-bit vision tower, and the model retains 95% of full-precision quality with an 80.49 average across 15 thinking-mode benchmarks. Math stays within two points of full precision at a 93.40 category average, and the 262K-token context rides on Qwen3.6's hybrid-attention backbone. Available free on Together AI.
 

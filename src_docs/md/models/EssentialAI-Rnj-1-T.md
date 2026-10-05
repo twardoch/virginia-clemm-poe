@@ -2,18 +2,25 @@
 
 ## Pricing
 
-### Points-based Pricing
+### Website Pricing
 
 | Type | Cost |
 |------|------|
-| Total Cost | 0 points/message |
+| Total Cost | $0.00/message · 0 points/message |
 
-**Last Checked:** 2026-10-05 01:51:14.420880
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Total cost | USD | 0.00 | 1 message |
+| Total cost | POINTS | 0 | 1 message |
+
+**Last Checked:** 2026-10-05T02:08:44.805581+00:00
 
 
 ## Bot Information
 
-**Creator:** @togetherai
+**Creator:** togetherai
 
 **Description:** Rnj-1 Instruct is Essential AI's elite 8B agentic coding model, delivering world-class software engineering capabilities that rival models 10x its size. With 20.8% on SWE-bench Verified, exceptional tool use (62.2% BFCL), and a 32K context window, it excels at autonomous coding agents, iterative problem-solving, and multi-step technical workflows. Released under Apache 2.0, Rnj-1 Instruct is deliberately designed for community extension—limited post-training preserves flexibility for domain specialization and fine-tuning.
 

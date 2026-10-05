@@ -1,0 +1,29 @@
+{
+  "id": "DeepSeek-V4-Pro-EL",
+  "checked_at": "2026-10-05T02:08:42.739127+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "DeepSeek-V4-Pro-EL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "DeepSeek V4 Pro is a flagship Mixture-of-Experts large language model with 1.6 trillion total parameters and 49 billion active parameters, natively supporting context lengths of up to 1M tokens. Excels at advanced mathematical reasoning, complex logical inference, specialized coding, and deep analysis of long-form text, well suited for cutting-edge research, sophisticated office workflows, and advanced AI agents.\nThis model is served from Germany (Frankfurt).\n\nNotes:\n- Context Window: 1M\n- Supported input modalities: Text, Image (non-native), Documents\n- Model may experience errors due to high usage upstream. \n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$1.67/1M tokens</td><td>55 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$3.33/1M tokens</td><td>111 points/1k tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $1.67/1M tokens | 55 points/1k tokens |\n| Output (text) | $3.33/1M tokens | 111 points/1k tokens |\n"
+    }
+  ]
+}

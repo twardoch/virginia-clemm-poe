@@ -1,0 +1,29 @@
+{
+  "id": "Kimi-K2.7-Code-EL",
+  "checked_at": "2026-10-05T02:09:19.279572+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Kimi-K2.7-Code-EL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Kimi K2.7 Code is Moonshot's trillion-parameter agentic coding model with 256K context, always-on reasoning, and text, image, and video input. Supports tools, and built-in web search.\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.96/1M tokens</td><td>32 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$4.04/1M tokens</td><td>134 points/1k tokens</td></tr><tr><td>Bot message</td><td>$0.0051/message</td><td>167 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.96/1M tokens | 32 points/1k tokens |\n| Output (text) | $4.04/1M tokens | 134 points/1k tokens |\n| Bot message | $0.0051/message | 167 points/message |\n"
+    }
+  ]
+}

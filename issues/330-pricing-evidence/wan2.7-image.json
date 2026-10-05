@@ -1,0 +1,29 @@
+{
+  "id": "wan2.7-image",
+  "checked_at": "2026-10-05T02:11:07.216347+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Wan2.7-Image",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Wan2.7 Image is Alibaba's Wan 2.7 series image generation and editing model, supporting text-to-image, image editing, interactive editing with bounding boxes, and cohesive image set generation from a single prompt. The Pro variant supports up to 4K output resolution with enhanced quality, while the Standard variant offers faster generation at lower cost.\n\nNotes:\n- This model is served from the Singapore region.\n- Upload 1-9 images to enable image editing mode. Without images, the bot operates in text-to-image generation mode.\n- Responses may take 10-60 seconds depending on resolution, number of images, model variant, and whether thinking mode is enabled.\n- Prompt has a max of 5,000 characters.\n\nAttachments (Image Editing Mode):\n- Attach 1-9 images (JPEG, PNG, BMP, WEBP) with a text instruction to edit them.\n- Input image resolution must be between 240-8000 pixels per side with an aspect ratio between 1:8 and 8:1.\n- Maximum file size per image: 20 MB.\n- Multi-image editing: Reference images by order (e.g. \"Spray the graffiti from image 2 onto the car in image 1\").\n- Interactive editing: Use bounding boxes to specify regions on images for targeted edits (e.g. \"Place the object from image 1 in the selected area of image 2\").\n- Supported operations: style transfer, object placement, graffiti/texture application, scene blending, background replacement, multi-reference composition, and more.\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Model</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Wan 2.7 Image</td><td>$0.030/img</td><td>1,000 pts/img</td></tr><tr><td>Wan 2.7 Image Pro</td><td>$0.075/img</td><td>2,500 pts/img</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "**Wan2.7 Image Pricing**\n\nPricing is per image generated.\n\n| Model | Rate (USD) | Rate (Points) |\n|-------|------------|---------------|\n| Wan 2.7 Image | $0.030/img | 1,000 pts/img |\n| Wan 2.7 Image Pro | $0.075/img | 2,500 pts/img |\n"
+    }
+  ]
+}

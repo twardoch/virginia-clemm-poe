@@ -8,9 +8,25 @@
 |------|------|
 | Request | $0.0061/request |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | $0.0061/message · 200 points/message |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Total cost | USD | 0.0061 | 1 message |
+| Total cost | POINTS | 200 | 1 message |
+
+**Last Checked:** 2026-10-05T02:13:02.630760+00:00
+
+
 ## Bot Information
 
-**Creator:** @fireworksai
+**Creator:** fireworksai
 
 **Description:** Mixture-of-Experts language model. M2.7 is capable of building complex agent harnesses and completing highly elaborate productivity tasks, leveraging Agent Teams, complex Skills, and dynamic tool search.
 

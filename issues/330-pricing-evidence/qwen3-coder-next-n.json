@@ -1,0 +1,29 @@
+{
+  "id": "qwen3-coder-next-n",
+  "checked_at": "2026-10-05T02:11:02.271270+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Qwen3-Coder-Next-N",
+    "creator": {
+      "isDeleted": false,
+      "handle": "novitaai",
+      "fullName": "Novita AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-3067795970-50-ezhhpdjtzbudawymtaodhapblyfagaxk.jpeg",
+      "id": "UG9lVXNlcjozMDY3Nzk1OTcw"
+    },
+    "description": "Qwen3-Coder-Next is an open-weight language model specifically engineered for coding agents and local development environments. This highly efficient model delivers exceptional performance with only 3B activated parameters out of 80B total parameters, achieving results comparable to models with 10-20x more active parameters while maintaining remarkable cost-effectiveness for agent deployment. Through its sophisticated training methodology, Qwen3-Coder-Next excels in advanced agentic capabilities including long-horizon reasoning, complex tool usage, and robust recovery from execution failures, ensuring reliable performance across dynamic coding tasks. The model's versatility is further enhanced by its 256k context length and adaptability to various scaffold templates, enabling seamless integration with diverse CLI/IDE platforms such as Claude Code, Qwen Code, Qoder, Kilo, Trae, and Cline, making it an ideal solution for comprehensive development environments.\n\nOptional parameters:\nSet temperature to control randomness in the response: Set number from 1 to 2.  This is set to 0.7 by default. Lower values make the output more focused and deterministic.\nSet max output tokens: Set number from 1 to 65536. This is set to 65536 by default.",
+    "poweredBy": "Powered by a server managed by @novitaai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.20/1M tokens</td><td>7 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$1.52/1M tokens</td><td>50 points/1k tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.20/1M tokens | 7 points/1k tokens |\n| Output (text) | $1.52/1M tokens | 50 points/1k tokens |\n"
+    }
+  ]
+}

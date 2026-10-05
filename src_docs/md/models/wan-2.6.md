@@ -1,8 +1,37 @@
 # [wan-2.6](https://poe.com/wan-2.6){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| 720P | Without · $0.0225 /sec · 750 pts/sec |
+| 1080P | Without · $0.03450 /sec · 1,150 pts/sec |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| 720P | USD | 0.09 | 1 second |
+| 720P | POINTS | 3000 | 1 second |
+| 1080P | USD | 0.138 | 1 second |
+| 1080P | POINTS | 4600 | 1 second |
+| 720P | USD | 0.045 | 1 second |
+| 720P | POINTS | 1500 | 1 second |
+| 720P | USD | 0.0225 | 1 second |
+| 720P | POINTS | 750 | 1 second |
+| 1080P | USD | 0.0690 | 1 second |
+| 1080P | POINTS | 2300 | 1 second |
+| 1080P | USD | 0.03450 | 1 second |
+| 1080P | POINTS | 1150 | 1 second |
+
+**Last Checked:** 2026-10-05T02:12:19.726982+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Wan 2.6 is Alibaba’s multimodal video generation model built for cinematic, multi-shot storytelling—creating high-fidelity videos from text and/or images while keeping characters and style consistent across scenes. It also supports native audio-visual sync (including lip-sync) and can generate or align dialogue/music/SFX with the visuals, enabling “prompt-to-video” results that feel production-ready without heavy post work.
 

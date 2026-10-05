@@ -1,0 +1,29 @@
+{
+  "id": "z-image-lightning",
+  "checked_at": "2026-10-05T02:12:03.259731+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Z-Image-Lightning",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Super-fast endpoint for Z-Image Turbo, hosted by fal.ai. Excels at portrait photos and realistic images.\n\nNotes:\nBot does not accept attachment.\n\nOptional parameters:\n- Set aspect ratio. Select from (16:9, 4:3, 1:1, 3:4, 9:16). It is set to 4:3 aspect ratio as default.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": false
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Image Output</td><td>167 points ($0.0051) / image</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Image Output | 167 points ($0.0051) / image | \n"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "trellis-3d",
+  "checked_at": "2026-10-05T02:12:36.703978+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Trellis-3D",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Generate 3D models from your images using Trellis, a native 3D generative model enabling versatile and high-quality 3D asset creation. Send an image to convert it into a 3D model.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>3D Output</td><td>567 points ($0.017) / message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| 3D Output | 567 points ($0.017) / message | \n"
+    }
+  ]
+}

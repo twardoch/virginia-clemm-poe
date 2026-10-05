@@ -1,0 +1,29 @@
+{
+  "id": "gpt-oss-120b-cs",
+  "checked_at": "2026-10-05T02:11:38.207804+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "GPT-OSS-120B-CS",
+    "creator": {
+      "isDeleted": false,
+      "handle": "cerebrasai",
+      "fullName": "CerebrasAI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-3012674654-50-ycklnkoqymxapkshiubfkgqbharebxwr.jpeg",
+      "id": "UG9lVXNlcjozMDEyNjc0NjU0"
+    },
+    "description": "World\u2019s fastest inference for GPT OSS 120B with Cerebras. OpenAI's GPT-OSS-120B delivers sophisticated chain-of-thought reasoning capabilities in a fully open model. The bot does not accept video, ppt, docx and excel files.",
+    "poweredBy": "Powered by a server managed by @cerebrasai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.35/1M tokens</td><td>12 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$0.76/1M tokens</td><td>25 points/1k tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.35/1M tokens | 12 points/1k tokens |\n| Output (text) | $0.76/1M tokens | 25 points/1k tokens |\n"
+    }
+  ]
+}

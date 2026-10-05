@@ -1,0 +1,29 @@
+{
+  "id": "WAN-2.2-OSL",
+  "checked_at": "2026-10-05T02:10:12.307362+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "WAN-2.2-OSL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "OpenSourceLab",
+      "fullName": "Open-Source-Lab",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2419661422-50-yfhdcuqxmrjwjokrdinuyvphinqrsuoa.jpeg",
+      "id": "UG9lVXNlcjoyNDE5NjYxNDIy"
+    },
+    "description": "Wan-2.2 is an open-source video generation model, built on a Mixture-of-Experts (MoE) architecture designed for crafting cinematic scenes. The model allows deep command over shot language, giving you fine-grained control over lighting, color distribution, and composition to achieve professional film-level aesthetics. Furthermore it can create complex motion transfer, that makes it highly suitable for visual storytelling and character continuity. Videos can be up to 8 seconds long with a resolution of  480p.",
+    "poweredBy": "Powered by a server managed by @OpenSourceLab.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": false
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total Cost</td><td>$0.18/video</td><td>6,000 points/video</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "| Type | Rate (USD) | Rate (Points) |\n|---|---|---|\n| Total Cost | $0.18/video | 6,000 points/video |"
+    }
+  ]
+}

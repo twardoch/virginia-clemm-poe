@@ -1,0 +1,29 @@
+{
+  "id": "veo-v3.1-fast",
+  "checked_at": "2026-10-05T02:12:26.612612+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Veo-v3.1-Fast",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Google's Veo 3.1 Fast is a fast version of Veo 3.1.\n\nOptional parameters:\nSet the aspect ratio of the generated image (one of `16:9`, `9:16`).\nSilent to generate a silent video at a lower cost.\nSet negative prompt option `blur`, `low resolution`, `poor quality`. (only for T2V).\nSet the duration `4s`, `6s`, `8s`, default `8s`. `4s` and `6s` are only supported for text-to-video generation\n\nNote: Pass a single image for image to video tasks. Pass two images for a first-frame-to-last-frame video generation task.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Video Output</td><td>3334 points ($0.10) / s</td></tr><tr><td>Audio + Video Output</td><td>5000 points ($0.15) / s</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Video Output | 3334 points ($0.10) / s | \n| Audio + Video Output | 5000 points ($0.15) / s | \n"
+    }
+  ]
+}

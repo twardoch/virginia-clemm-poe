@@ -1,0 +1,30 @@
+{
+  "id": "seedance-2.0-pro-el",
+  "checked_at": "2026-10-05T02:11:18.868887+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Seedance-2.0-Pro-EL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Seedance 2.0 Pro is a multimodal AI video generation model built for cinematic, high-quality output from text, images, audio, and video inputs, with strong motion stability, native audio-video generation, and consistent character handling. It is best suited for creators who want more control over references, editing, pacing, and polished storytelling across multiple assets in one workflow.\nThis model is served from Malaysia.\n\nNote: 4K videos may fail to render, it's recommended to download them and play them locally.\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Resolution</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>480P</td><td>$0.129/sec</td><td>4,286 pts/sec</td></tr><tr><td>720P</td><td>$0.278/sec</td><td>9,250 pts/sec</td></tr><tr><td>1080P</td><td>$0.693/sec</td><td>23,094 pts/sec</td></tr><tr><td>4K</td><td>$1.438/sec</td><td>47,946 pts/sec</td></tr></tbody></table>",
+    "<table><thead><tr><th>Resolution</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>480P</td><td>$0.316/sec</td><td>10,545 pts/sec</td></tr><tr><td>720P</td><td>$0.681/sec</td><td>22,693 pts/sec</td></tr><tr><td>1080P</td><td>$1.703/sec</td><td>56,764 pts/sec</td></tr><tr><td>4K</td><td>$3.452/sec</td><td>115,070 pts/sec</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "**Seedance 2.0 Pro Video Generation Pricing**\n\nPricing is per second of video generated.\n\n**Text / Image Input (T2V, I2V)**\n| Resolution | Rate (USD) | Rate (Points) |\n|------------|------------|---------------|\n| 480P | $0.129/sec | 4,286 pts/sec |\n| 720P | $0.278/sec | 9,250 pts/sec |\n| 1080P | $0.693/sec | 23,094 pts/sec |\n| 4K | $1.438/sec | 47,946 pts/sec |\n\n**Video Input (Reference, Edit, Extend)**\n| Resolution | Rate (USD) | Rate (Points) |\n|------------|------------|---------------|\n| 480P | $0.316/sec | 10,545 pts/sec |\n| 720P | $0.681/sec | 22,693 pts/sec |\n| 1080P | $1.703/sec | 56,764 pts/sec |\n| 4K | $3.452/sec | 115,070 pts/sec |\n\n4K is 3840x2160, 10-bit, encoded in H.265 (HEVC). Some players may not play it inline."
+    }
+  ]
+}

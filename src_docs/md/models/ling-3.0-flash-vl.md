@@ -7,9 +7,17 @@
 | Type | Cost |
 |------|------|
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+
+**Last Checked:** 2026-10-05T02:13:51.173388+00:00
+
+
 ## Bot Information
 
-**Creator:** @novitaai
+**Creator:** novitaai
 
 **Description:** Ling-3.0-flash-VL builds on Ling-3.0-flash, further strengthening its language capabilities while adding native visual perception and advanced visual agent capabilities. 
 

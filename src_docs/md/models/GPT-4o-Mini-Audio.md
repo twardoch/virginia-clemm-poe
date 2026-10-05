@@ -1,8 +1,31 @@
 # [GPT-4o-Mini-Audio](https://poe.com/GPT-4o-Mini-Audio){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | 10 ($0.00028) points / 1K tokens |
+| Output (Text) | 34 ($0.0010) points / 1K tokens |
+| Input (Audio) | 550 ($0.017) points / 1K tokens |
+| Output (Audio) | 1100 ($0.033) points / 1K tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 0.00028 | 1000 tokens |
+| Output (text) | USD | 0.0010 | 1000 tokens |
+| Input (audio) | USD | 0.017 | 1000 tokens |
+| Output (audio) | USD | 0.033 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:08:58.702117+00:00
+
+
 ## Bot Information
 
-**Creator:** @binaai
+**Creator:** binaai
 
 **Description:** OpenAI's gpt-4o-mini-audio-preview model, brought to Poe as a server bot! This model accepts text and audio inputs and can respond with natural-sounding speech. Learn more at https://platform.openai.com/docs/models/gpt-4o-mini-audio-preview.
 
@@ -17,11 +40,11 @@ Optional parameters:
 
 ## Architecture
 
-**Input Modalities:** Unknown
+**Input Modalities:** text
 
-**Output Modalities:** Unknown
+**Output Modalities:** audio
 
-**Modality:** unknown
+**Modality:** text->audio
 
 
 ## Technical Details

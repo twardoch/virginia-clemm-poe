@@ -1,0 +1,29 @@
+{
+  "id": "fugu-ultra-v1.0-el",
+  "checked_at": "2026-10-05T02:13:18.270929+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Fugu-Ultra-v1.0-EL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Fugu Ultra v1.0 is Sakana AI's multi-agent conductor: it coordinates a pool of expert models on every request and composes their work into one answer, built for hard reasoning, coding, and research. It accepts text and image input with a 1M token context.\n\nNotes:\n- Responses can take from a few seconds to a few minutes to complete.\n- The full answer arrives at once rather than token by token (ie. streaming is not available), because the model finishes its internal work before it replies.\n- Extra High and Max reasoning levels are aliases. \n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$7.58/1M tokens</td><td>250 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$45.45/1M tokens</td><td>1500 points/1k tokens</td></tr><tr><td>Cache discount</td><td>80% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $7.58/1M tokens | 250 points/1k tokens |\n| Output (text) | $45.45/1M tokens | 1500 points/1k tokens |\n| Cache discount | 80% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n\n\nInput rate is 2x and output rate is 1.5x when context is >272k tokens."
+    }
+  ]
+}

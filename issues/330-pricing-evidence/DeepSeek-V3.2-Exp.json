@@ -1,0 +1,29 @@
+{
+  "id": "DeepSeek-V3.2-Exp",
+  "checked_at": "2026-10-05T02:08:39.914203+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "DeepSeek-V3.2-Exp",
+    "creator": {
+      "isDeleted": false,
+      "handle": "novitaai",
+      "fullName": "Novita AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-3067795970-50-ezhhpdjtzbudawymtaodhapblyfagaxk.jpeg",
+      "id": "UG9lVXNlcjozMDY3Nzk1OTcw"
+    },
+    "description": "DeepSeek-V3.2-Exp is an experimental model introducing the groundbreaking DeepSeek Sparse Attention (DSA) mechanism for enhanced long-context processing efficiency.\n\nBuilt on V3.1-Terminus, DSA achieves fine-grained sparse attention while maintaining identical output quality. This delivers substantial computational efficiency improvements without compromising accuracy.\n\nComprehensive benchmarks confirm V3.2-Exp matches V3.1-Terminus performance, proving efficiency gains don't sacrifice capability. As both a powerful tool and research platform, it establishes new paradigms for efficient long-context AI processing.\n\n\n\nFile Support: Text, Markdown and PDF files\nContext window: 164k tokens",
+    "poweredBy": "Powered by a server managed by @novitaai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.0039/message</td><td>130 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.0039/message | 130 points/message |\n"
+    }
+  ]
+}

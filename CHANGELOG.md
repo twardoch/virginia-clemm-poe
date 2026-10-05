@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Pricing correction — 2026-10-05
+- Refreshed all 501 public rate cards; numeric website prices now cover 483 bots. The previous table displayed numeric prices for only 159.
+- Parse all tables, Markdown cards, explicit prose fees, USD/points pairs, decimal and scientific values, ranges, denominators, image quality matrices, and Poe milli-cent markers. Exclude discounts, obsolete prices, and promotional free allowances.
+- Default to cheapest-first numeric sorting, preserve zero prices, keep undisclosed prices last in both directions, and group currencies without inventing conversion rates.
+- Show a disclosed comparison basis, include token input/output and message fees, and retain every rate on model pages. Filter multimodal models by their output type.
+- Preserve dated prices after refresh failures; recover creator descriptions and explicit output modalities from current website evidence.
+- Fix generated filename casing so model links work on case-sensitive deployments.
+
 ### Issue 330
 - Refreshed and rebuilt the published catalog: 501 unique bots, all 28 vendor profiles, and updated zero-point website rates for the 17 requested bots. Strict documentation build passes.
 - Corrected stale API-rate retention and escaped bot-description brackets in generated Markdown.

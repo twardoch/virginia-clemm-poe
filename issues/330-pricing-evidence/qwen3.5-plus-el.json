@@ -1,0 +1,29 @@
+{
+  "id": "qwen3.5-plus-el",
+  "checked_at": "2026-10-05T02:10:45.090466+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Qwen3.5-Plus-EL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Qwen3.5-Plus is a state-of-the-art multimodal model featuring a hybrid architecture designed for efficient deep thinking and robust visual understanding. It supports text, image, and video inputs within a massive 1M token context window, delivering performance comparable to leading global models across diverse tasks.\nThis model is served by Alibaba Cloud Int. from Singapore.\n\nNotes:\n- Save 10% on input tokens and 8% on output tokens compared to standard API rates.\n- Pricing is 3x when input tokens >256K\n- Context Window: 1,000,000\n- Text, Image, & Video input are supported\n- Built-in tool calls are not supported with video attachments\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.36/1M tokens</td><td>12 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$2.23/1M tokens</td><td>74 points/1k tokens</td></tr><tr><td>Bot message</td><td>$0.0051/message</td><td>167 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.36/1M tokens | 12 points/1k tokens |\n| Output (text) | $2.23/1M tokens | 74 points/1k tokens |\n| Bot message | $0.0051/message | 167 points/message |\n\n\nInput rate is 3x and output rate is 3x when context is >256k tokens."
+    }
+  ]
+}

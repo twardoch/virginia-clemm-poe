@@ -1,0 +1,29 @@
+{
+  "id": "YuE-Music",
+  "checked_at": "2026-10-05T02:10:14.486524+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "YuE-Music",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "YuE is a groundbreaking series of open-source foundation models designed for music generation, specifically for transforming lyrics into full songs (lyrics2song). It can generate a complete song, that includes both a catchy vocal track and accompaniment track.\n\nPlease include both verses and chorus in your videos, like below:\n```\n[verse]\nline 1\nline 2\n-\n[chorus]\nline 1\nline 2\n-\n```\nYou can control genre/ song voices, etc. by describing it with --genres.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Music Output</td><td>50000 points ($1.52) / message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Music Output | 50000 points ($1.52) / message | \n"
+    }
+  ]
+}

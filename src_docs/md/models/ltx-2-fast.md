@@ -1,8 +1,32 @@
 # [ltx-2-fast](https://poe.com/ltx-2-fast){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Video Output 1080P | 1334 points ($0.040) / second |
+| Video Output 1440P | 2667 points ($0.081) / second |
+| Video Output 2160P | 5334 points ($0.16) / second |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Video Output 1080p | USD | 0.040 | 1 second |
+| Video Output 1080p | POINTS | 1334 | 1 second |
+| Video Output 1440p | USD | 0.081 | 1 second |
+| Video Output 1440p | POINTS | 2667 | 1 second |
+| Video Output 2160p | USD | 0.16 | 1 second |
+| Video Output 2160p | POINTS | 5334 | 1 second |
+
+**Last Checked:** 2026-10-05T02:12:27.455318+00:00
+
+
 ## Bot Information
 
-**Creator:** @fal
+**Creator:** fal
 
 **Description:** LTX-2 Fast is a video model by Lightricks that delivers exceptional quality and speed. It can generate videos at up to 50 FPS in high resolutions and supports both text-to-video and image-to-video generation.
 

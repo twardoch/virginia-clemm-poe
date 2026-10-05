@@ -1,0 +1,29 @@
+{
+  "id": "elevenlabs-v2.5-turbo",
+  "checked_at": "2026-10-05T02:12:00.528154+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "ElevenLabs-v2.5-Turbo",
+    "creator": {
+      "isDeleted": false,
+      "handle": "elevenlabsco",
+      "fullName": "ElevenLabs",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910413900-50-iohelybqlrnrvplglewzdogeigmqtwln.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDEzOTAw"
+    },
+    "description": "ElevenLabs' leading text-to-speech technology converts your text into natural-sounding speech, using the Turbo v2.5 model. Simply send a text prompt, and the bot will generate audio using your choice of available voices. If you link a URL or a PDF, it will do its best to read it aloud to you. The overall default voice is Jessica, an American-English female.\n\nOptional parameters:\nVoice Name. (e.g. \"Hello world --voice Eric\") to customize the voice used. \nLanguage. Language ISO-639-1 code to your message if you notice pronunciation errors; table of ISO-639-1 codes here: https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes (e.g. zh for Chinese, es for Spanish, hi for Hindi)\n\nThe following voices are supported and recommended for each language:\n\nEnglish -- Sarah, George, River, Matilda, Will, Jessica, Brian, Lily, Monika Sogam\nChinese -- James Gao, Martin Li, Will, River\nSpanish -- David Martin, Will, Efrayn, Alejandro, Sara Martin, Regina Martin\nHindi -- Ranga, Niraj, Liam, Raju, Leo, Manu, Vihana Huja, Kanika, River, Monika Sogam, Muskaan, Saanu, Riya, Devi\nArabic -- Bill, Mo Wiseman, Haytham, George, Mona, Sarah, Sana, Laura\nGerman -- Bill, Otto, Leon Stern, Mila, Emilia, Lea, Leonie\nIndonesian -- Jessica, Putra, Mahaputra\nPortuguese -- Will, Muhammad, Onildo, Lily, Jessica, Alice\nVietnamese -- Bill, Liam, Trung Caha, Van Phuc, Ca Dao, Trang, Jessica, Alice, Matilda\nFilipino -- Roger, Brian, Alice, Matilda\nFrench -- Roger, Louis, Emilie\nSwedish -- Will, Chris, Jessica, Charlotte\nTurkish -- Cavit Pancar, Sohbet Adami, Belma, Sultan, Mahidevran\nRomanian -- Eric, Bill, Brian, Charlotte, Lily\nItalian -- Carmelo, Luca, Alice, Lily\nPolish -- Robert, Rob, Eric, Pawel, Lily, Alice\nNorwegian -- Chris, Charlotte\nCzech -- Pawel\nFinnish -- Callum, River\nHungarian -- Brian, Sarah\nJapanese -- Alice\n\nPrompt input cannot exceed 40,000 characters.",
+    "poweredBy": "Powered by a server managed by @elevenlabsco.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td><del>$0.11</del> <strong>$0.03</strong> / 1k characters</td><td>1 point / character</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. [Learn more.](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01HCFXCW5CB1DSH6F4WXXYHJFJ) Pricing offers up to **67% savings**. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | ~~$0.11~~ **$0.03** / 1k characters | 1 point / character |"
+    }
+  ]
+}

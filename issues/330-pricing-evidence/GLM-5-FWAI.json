@@ -1,0 +1,29 @@
+{
+  "id": "GLM-5-FWAI",
+  "checked_at": "2026-10-05T02:08:55.346529+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "GLM-5-FWAI",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fireworksai",
+      "fullName": "Fireworks AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2339248475-50-cokslpvhdmlrqrkakgkkmiaffqqkcfgh.jpeg",
+      "id": "UG9lVXNlcjoyMzM5MjQ4NDc1"
+    },
+    "description": "GLM-5 is Z.ai's SOTA model targeting complex systems engineering and long-horizon agentic tasks. It uses a mixture of experts architecture, so it only activates 40 billion of its 744 billion parameters. This model uses Deepseek Sparse Attention to select only the most relevant tokens for attention, reducing the cost of long-context processing. GLM-5 continues improving on top of GLM-4.7 for coding and agentic use cases, and it's also great for document generation for enterprise workloads",
+    "poweredBy": "Powered by a server managed by @fireworksai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.015/message</td><td>500 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.015/message | 500 points/message |\n"
+    }
+  ]
+}

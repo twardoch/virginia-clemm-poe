@@ -1,0 +1,29 @@
+{
+  "id": "veo-3.1-lite",
+  "checked_at": "2026-10-05T02:10:57.814430+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Veo-3.1-Lite",
+    "creator": {
+      "isDeleted": false,
+      "handle": "google",
+      "fullName": "Google",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910402837-50-hdxyjsuznjtgwrszmhvbhgbviwdhkwvl.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDAyODM3"
+    },
+    "description": "Google\u2019s Veo 3.1 Lite is the most cost-efficient model in the Veo 3.1 family, delivering high-quality video generation with native audio at a fraction of the cost. It supports both text-to-video and image-to-video workflows, with synchronized dialogue, sound effects, and ambient audio. While optimized for affordability, it still benefits from the Veo 3.1 generation\u2019s improved prompt adherence and cinematic understanding.\n\nThis bot supports optional parameters for additional customization.\n\nNote: 1080p requires 8s duration\nReference mode: Use up to 3 input images as references for video generation\nReference images require 8s duration\nPlease only upload photos that you own or have the right to use. Otherwise, the bot will return an error.",
+    "poweredBy": "Powered by a server managed by @google.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>720p</td><td>$0.05/second</td><td>1,500 points/second</td></tr><tr><td>1080p</td><td>$0.08/second</td><td>2,400 points/second</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "| Type | Rate (USD) | Rate (Points)\n|------|------|------|\n|720p | $0.05/second | 1,500 points/second |\n|1080p | $0.08/second | 2,400 points/second |"
+    }
+  ]
+}

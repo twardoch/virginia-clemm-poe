@@ -1,0 +1,27 @@
+{
+  "id": "interpreter",
+  "checked_at": "2026-10-05T02:12:56.644791+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Interpreter",
+    "creator": {
+      "isDeleted": false,
+      "handle": "poe_tools",
+      "fullName": "Poe Tools",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2890766504-50-rtkgimwdzuemwbnocyzjdrrownqcarrz.jpeg",
+      "id": "UG9lVXNlcjoyODkwNzY2NTA0"
+    },
+    "description": "Interpreter for Poe Python",
+    "poweredBy": "Runs inside Poe's protected environment.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Interpreter costs 1 point per message, plus the rates of any other bots it calls."
+    }
+  ]
+}

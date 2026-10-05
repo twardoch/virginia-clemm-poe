@@ -1,0 +1,29 @@
+{
+  "id": "Flux-1-Dev-FW",
+  "checked_at": "2026-10-05T02:08:52.412098+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Flux-1-Dev-FW",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fireworksai",
+      "fullName": "Fireworks AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2339248475-50-cokslpvhdmlrqrkakgkkmiaffqqkcfgh.jpeg",
+      "id": "UG9lVXNlcjoyMzM5MjQ4NDc1"
+    },
+    "description": "FLUX.1 [dev] is a 12 billion parameter rectified flow transformer capable of generating images from text descriptions.\n\nKey Features\n1. Cutting-edge output quality, second only to our state-of-the-art model FLUX.1 [pro].\n2. Competitive prompt following, matching the performance of closed source alternatives.\n3. Trained using guidance distillation, making FLUX.1 [dev] more efficient.\n4. Open weights to drive new scientific research, and empower artists to develop innovative workflows.\n5. Generated outputs can be used for personal, scientific, and commercial purposes as described in the FLUX.1 [dev] Non-Commercial License.\nBot does not accept attachments.",
+    "poweredBy": "Powered by a server managed by @fireworksai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": false
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.011/message</td><td>375 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.011/message | 375 points/message |\n"
+    }
+  ]
+}

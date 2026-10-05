@@ -1,0 +1,31 @@
+{
+  "id": "assistant",
+  "checked_at": "2026-10-05T02:10:20.865073+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Assistant",
+    "creator": {
+      "isDeleted": false,
+      "handle": "poe",
+      "fullName": "Poe",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2187163946-50-eexyawnwrihdoupubqqzwkbjvasbkqhd.jpeg",
+      "id": "UG9lVXNlcjoyMTg3MTYzOTQ2"
+    },
+    "description": "General-purpose assistant. Write, code, ask for real-time information, create images, and more.\n\nQueries are automatically routed based on the task and subscription status.\n\nFor subscribers:\n- General queries: @GPT-5.5\n- Image generation: @Nano-Banana-2\n- Video-input tasks: @Gemini-3.1-Pro\n\nFor non-subscribers:\n- General queries: @GPT-5.4-Nano\n- Image generation: @Nano-Banana-2\n- Video-input tasks: @Gemini-3-Flash",
+    "poweredBy": "Powered by third party model providers.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input(text)</td><td>Up to $0.51/1M tokens</td><td>Up to 17 points/1k tokens</td></tr><tr><td>Input(image)</td><td>Up to $0.40/1M tokens</td><td>Up to 14 points/1k tokens</td></tr><tr><td>Text output</td><td>Up to $3.03/1M tokens</td><td>Up to 100 points/1k tokens</td></tr><tr><td>Image output</td><td>Additional costs based on the \"Image Generation\" section below</td><td>Additional costs based on the \"Image Generation\" section below</td></tr><tr><td>Cache discount</td><td>50% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>",
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input</td><td>Up to $4.55/1M tokens</td><td>Up to 150 points/1k tokens</td></tr><tr><td>Text output</td><td>Up to $27.27/1M tokens</td><td>Up to 900 points/1k tokens</td></tr><tr><td>Image generation</td><td>Additional costs based on the \"Image Generation\" section below</td><td>Additional costs based on the \"Image Generation\" section below</td></tr><tr><td>Cache discount</td><td>90% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>",
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input</td><td>$0.51/1M tokens</td><td>17 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$3.03/1M tokens</td><td>100 points/1k tokens</td></tr><tr><td>Output (image)</td><td>$60.61/1M tokens</td><td>2000 points/1k tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "**Non-subscribers**\nPowered by GPT-5.4-nano, Nano-Banana-2, and Gemini-3-Flash\n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input(text) | Up to $0.51/1M tokens | Up to 17 points/1k tokens |\n| Input(image) | Up to $0.40/1M tokens | Up to 14 points/1k tokens |\n| Text output | Up to $3.03/1M tokens | Up to 100 points/1k tokens |\n| Image output | Additional costs based on the \"Image Generation\" section below | Additional costs based on the \"Image Generation\" section below |\n| Cache discount | 50% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) | |\n\n_Web searches will add input tokens._\n\n&nbsp;\n\n**Subscribers**\nPowered by GPT-5.5, Nano-Banana-2, and Gemini-3.1-Pro.\nMessage costs may be variable: larger inputs require more points. [Learn more](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JDJ4T29Y76DJ3HGN3X8PXJP9)\n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input | Up to $4.55/1M tokens | Up to 150 points/1k tokens |\n| Text output | Up to $27.27/1M tokens | Up to 900 points/1k tokens |\n| Image generation | Additional costs based on the \"Image Generation\" section below | Additional costs based on the \"Image Generation\" section below |\n| Cache discount | 90% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) | |\n\n_Web searches will add input tokens._\n\n&nbsp;\n\n_Image Generation (Nano-Banana-2)_\nMessage cost is variable, so longer messages are more expensive than shorter messages. [Learn more.](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01HCFXCW5CB1DSH6F4WXXYHJFJ)\nImage generation inputs are determined by the bot based on the user query.\n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input | $0.51/1M tokens | 17 points/1k tokens |\n| Output (text) | $3.03/1M tokens | 100 points/1k tokens |\n| Output (image) | $60.61/1M tokens | 2000 points/1k tokens |"
+    }
+  ]
+}

@@ -1,8 +1,31 @@
 # [svi-2.0-pro](https://poe.com/svi-2.0-pro){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| 480P | 1910 ($0.058) |
+| 720P | 5530 ($0.17) |
+| Fast | 2167 ($0.066) |
+| Quality | 4334 ($0.13) |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| 480p | USD | 0.058 | 1 480p |
+| 720p | USD | 0.17 | 1 720p |
+| Fast | USD | 0.066 | 1 fast |
+| Quality | USD | 0.13 | 1 quality |
+
+**Last Checked:** 2026-10-05T02:12:06.428255+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Stable Video Infinity 2.0 Pro, powered by WAN 2.2, generates seamlessly extending, theoretically infinite-length videos from still images while maintaining consistent character IDs. It uses advanced temporal coherence and generative scene expansion to maintain visual consistency, allowing endless, smooth motion and evolving visuals without looping or abrupt transitions.
 

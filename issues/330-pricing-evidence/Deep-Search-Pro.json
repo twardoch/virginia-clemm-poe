@@ -1,0 +1,29 @@
+{
+  "id": "Deep-Search-Pro",
+  "checked_at": "2026-10-05T02:08:38.928111+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Deep-Search-Pro",
+    "creator": {
+      "isDeleted": false,
+      "handle": "OpenSourceLab",
+      "fullName": "Open-Source-Lab",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2419661422-50-yfhdcuqxmrjwjokrdinuyvphinqrsuoa.jpeg",
+      "id": "UG9lVXNlcjoyNDE5NjYxNDIy"
+    },
+    "description": "Deep-Search-Pro combines Brave AI with Relace Search and extended real-time web search. This agent executes commands, cites sources, scrapes websites at scale and delivers a  source breakdown while preserving its hallmark speed advantage. Deep-Search-Pro doesn't accept file attachments.",
+    "poweredBy": "Powered by a server managed by @OpenSourceLab.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": false
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Deep Research (per message)</td><td>$0.036</td><td>1800 points</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "| Type | Rate (USD) | Rate (Points) |\n|---|---|---|\n| Deep Research (per message) | $0.036 | 1800 points |"
+    }
+  ]
+}

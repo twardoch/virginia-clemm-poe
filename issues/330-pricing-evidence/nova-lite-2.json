@@ -1,0 +1,29 @@
+{
+  "id": "nova-lite-2",
+  "checked_at": "2026-10-05T02:11:30.395162+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Nova-Lite-2",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Amazon Nova 2 Lite is a fast, cost-effective multimodal reasoning model from Amazon that can process text, images, documents, and video, designed for everyday workloads like chatbots, document processing, and business automation. It offers a 1 million token context window, enabling very large, complex inputs in a single request, including long documents and extended video clips (~90 minutes).\n\nNotes: \n- Video file uploads are limited to ~1GB. Also note that reasoning traces are not exposed from AWS.\n- Supported file types: JPEG, PNG, GIF, WEBP, PDF, DOCX, TXT, MP4, MOV, MKV, WebM, FLV, MPEG, MPG, WMV, 3GP\n\nParameter controls available:\n- Enable Extended thinking. Enable step-by-step reasoning (default: on).\n- Set reasoning effort: Select from  low (faster), medium (balanced) , high (deep analysis). Default: medium (balanced)",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.38/1M tokens</td><td>13 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$3.19/1M tokens</td><td>106 points/1k tokens</td></tr><tr><td>Cache discount</td><td>44% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.38/1M tokens | 13 points/1k tokens |\n| Output (text) | $3.19/1M tokens | 106 points/1k tokens |\n| Cache discount | 44% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n"
+    }
+  ]
+}

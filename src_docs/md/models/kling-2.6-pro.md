@@ -1,8 +1,29 @@
 # [kling-2.6-pro](https://poe.com/kling-2.6-pro){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Video Output Without Audio | 2334 points ($0.071) / second |
+| Video Output With Audio | 4667 points ($0.14) / second |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Video Output without audio | USD | 0.071 | 1 second |
+| Video Output without audio | POINTS | 2334 | 1 second |
+| Video Output with audio | USD | 0.14 | 1 second |
+| Video Output with audio | POINTS | 4667 | 1 second |
+
+**Last Checked:** 2026-10-05T02:11:26.801703+00:00
+
+
 ## Bot Information
 
-**Creator:** @fal
+**Creator:** fal
 
 **Description:** Generate high-quality videos with native audio from text and images using Kling 2.6 Pro. 
 

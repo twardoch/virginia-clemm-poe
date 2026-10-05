@@ -7,9 +7,25 @@
 | Type | Cost |
 |------|------|
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Output (Message) | $1.43/message · 47334 points/message |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Output (message) | USD | 1.43 | 1 message |
+| Output (message) | POINTS | 47334 | 1 message |
+
+**Last Checked:** 2026-10-05T02:11:57.120744+00:00
+
+
 ## Bot Information
 
-**Creator:** @elevenlabsco
+**Creator:** elevenlabsco
 
 **Description:** ElevenLabs Music v2 is an advanced AI music generation model that creates original songs, instrumentals, and tracks with vocals from text prompts. Describe the music you want—genre, mood, tempo, key signature, instruments, or lyrics—and the model composes a royalty-free track tailored to your needs.
 

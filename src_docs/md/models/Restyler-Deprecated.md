@@ -2,7 +2,7 @@
 
 ## Bot Information
 
-**Creator:** @fal
+**Creator:** fal
 
 **Description:** This bot enables rapid transformation of existing images, delivering high-quality style transfers and image modifications.
 

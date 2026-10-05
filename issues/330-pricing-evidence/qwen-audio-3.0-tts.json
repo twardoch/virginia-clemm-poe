@@ -1,0 +1,29 @@
+{
+  "id": "qwen-audio-3.0-tts",
+  "checked_at": "2026-10-05T02:13:38.919339+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Qwen-Audio-3.0-TTS",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Qwen Audio 3.0 TTS is Alibaba's speech synthesis model, available here in two tiers with over 1,000 shared voices, 16 languages, and 20 Chinese dialect regions. Direct the delivery in plain English, or drop inline tags straight into your text to change expression mid-sentence.\n\nExpression\n- Instruction sets emotion, tone, character, pace, and style, for example \"Speak quickly in an excited, upbeat tone\"\n- Inline tags change expression mid-sentence: [excited], [whispers], [laughing], [sighing], [gasp]\n\nNotes\n- Languages: Arabic, Chinese, English, French, German, Indonesian, Italian, Japanese, Korean, Malay, Portuguese, Russian, Spanish, Tagalog, Thai, Vietnamese\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": false
+  },
+  "tables": [
+    "<table><thead><tr><th>Tier</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Plus (highest quality)</td><td>$0.020 / 1,000 characters</td><td>667 pts / 1,000 characters</td></tr><tr><td>Flash (real-time)</td><td>$0.015 / 1,000 characters</td><td>500 pts / 1,000 characters</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "**Qwen Audio 3.0 TTS**\n\nBilled per character of input text, at the selected tier's rate.\n\n| Tier | Rate (USD) | Rate (Points) |\n|------|-----------|---------------|\n| Plus (highest quality) | $0.020 / 1,000 characters | 667 pts / 1,000 characters |\n| Flash (real-time) | $0.015 / 1,000 characters | 500 pts / 1,000 characters |\n"
+    }
+  ]
+}

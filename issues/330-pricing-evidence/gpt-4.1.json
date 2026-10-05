@@ -1,0 +1,29 @@
+{
+  "id": "gpt-4.1",
+  "checked_at": "2026-10-05T02:11:35.990945+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "GPT-4.1",
+    "creator": {
+      "isDeleted": false,
+      "handle": "openai",
+      "fullName": "OpenAI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910400879-50-wrfgcbmfjrhquvwlxvypitmawpovrxoi.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDAwODc5"
+    },
+    "description": "OpenAI\u2019s GPT-4.1 significantly improves on past models in terms of its coding skills, long context (1M tokens), and improved instruction following. Supports native vision, and generally has more intelligence than GPT-4o. Provides a 75% chat history cache discount.",
+    "poweredBy": "Powered by OpenAI: gpt-4.1-2025-04-14.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input</td><td>$1.82/1M tokens</td><td>60 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$7.27/1M tokens</td><td>240 points/1k tokens</td></tr><tr><td>Output</td><td>$0.023/search</td><td>750 points/search</td></tr><tr><td>Cache discount</td><td>75% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input | $1.82/1M tokens | 60 points/1k tokens |\n| Output (text) | $7.27/1M tokens | 240 points/1k tokens |\n| Output | $0.023/search | 750 points/search |\n| Cache discount | 75% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n"
+    }
+  ]
+}

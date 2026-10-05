@@ -1,0 +1,29 @@
+{
+  "id": "seedance-2.0",
+  "checked_at": "2026-10-05T02:10:49.906191+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Seedance-2.0",
+    "creator": {
+      "isDeleted": false,
+      "handle": "Bytedance",
+      "fullName": "Bytedance",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-3051278963-50-eutwplhohbxvxssqxmripuferuovulrc.jpeg",
+      "id": "UG9lVXNlcjozMDUxMjc4OTYz"
+    },
+    "description": "Seedance 2.0 delivers high\u2011quality video generation across text and image inputs \u2014 built for cinematic scenes, consistent characters, and detailed motion control.\nCost estimate - $0.1442 per second at 480p (10300 tokens per second), $0.3094 per second at 720p (22100 tokens per second) at a rate of $0.014 per 1000 tokens.",
+    "poweredBy": "Powered by a server managed by @Bytedance.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Video Output</td><td>467 points ($0.014) / 1k video tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Video Output | 467 points ($0.014) / 1k video tokens | \n"
+    }
+  ]
+}

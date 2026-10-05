@@ -9,9 +9,28 @@
 | Prompt | $0.0000020202/token |
 | Completion | $0.0000060606/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $2.02/1M tokens · 67 points/1k tokens |
+| Output (Text) | $6.06/1M tokens · 200 points/1k tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 2.02 | 1000000 tokens |
+| Input (text) | POINTS | 67 | 1000 tokens |
+| Output (text) | USD | 6.06 | 1000000 tokens |
+| Output (text) | POINTS | 200 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:13:34.196202+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Qwen3.8 Max is Alibaba's flagship Qwen3.8 model, a trillion-scale mixture-of-experts system built for coding, long-horizon agent work, and professional tasks, with deep thinking and text, image, and video input.
 

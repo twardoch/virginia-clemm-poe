@@ -1,0 +1,29 @@
+{
+  "id": "qwen3.6-max-preview",
+  "checked_at": "2026-10-05T02:13:03.728050+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Qwen3.6-Max-Preview",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "This model is retiring on 2026-10-10. Please switch to: https://poe.com/Qwen3.7-Max\nThe Max model, the largest and most capable variant in the Qwen3.6 series, is now available in a preview version. At present, only its plain-text capabilities are open for experimentation. Compared with the previously released Qwen3-Max and Qwen3.6-Plus, this model features enhanced vibe coding abilities, more efficient coding agent execution, and significantly improved front-end development skills. Additionally, its long-tail knowledge retention has been further upgraded.\nThis model is served by Alibaba Cloud Int. from Singapore.\n\nNotes:\n- Pricing is ~1.5x when input tokens >128k\n- Context Window: 256k\n- Supported input modalities: Text, Image (non-native), Documents\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$1.31/1M tokens</td><td>44 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$7.88/1M tokens</td><td>260 points/1k tokens</td></tr><tr><td>Bot message</td><td>$0.0051/message</td><td>167 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $1.31/1M tokens | 44 points/1k tokens |\n| Output (text) | $7.88/1M tokens | 260 points/1k tokens |\n| Bot message | $0.0051/message | 167 points/message |\n\n\nInput rate is 1.54x and output rate is 1.54x when context is >128k tokens."
+    }
+  ]
+}

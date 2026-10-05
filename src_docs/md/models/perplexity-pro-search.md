@@ -1,8 +1,33 @@
 # [perplexity-pro-search](https://poe.com/perplexity-pro-search){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Base Fee (Low Context) | 1214 ($0.037) |
+| Base Fee (Medium Context) | 1560 ($0.047) |
+| Base Fee (High Context) | 1907 ($0.058) |
+| Input Tokens | 260 ($0.0079) per 1,000 tokens |
+| Output Tokens | 1300 ($0.039) per 1,000 tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Base Fee (Low Context) | USD | 0.037 | 1 base fee (low context) |
+| Base Fee (Medium Context) | USD | 0.047 | 1 base fee (medium context) |
+| Base Fee (High Context) | USD | 0.058 | 1 base fee (high context) |
+| Input Tokens | USD | 0.0079 | 1000 tokens |
+| Output Tokens | USD | 0.039 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:11:54.624372+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Perplexity Pro Search turns Sonar Pro into a full agentic researcher that autonomously chains web searches, and fetches full pages while streaming its live reasoning. It dynamically adapts its strategy for complex queries, far beyond standard Sonar Pro's single search. 
 

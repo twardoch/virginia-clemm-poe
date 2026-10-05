@@ -1,0 +1,29 @@
+{
+  "id": "omnihuman",
+  "checked_at": "2026-10-05T02:12:30.059871+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "OmniHuman",
+    "creator": {
+      "isDeleted": false,
+      "handle": "Bytedance",
+      "fullName": "Bytedance",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-3051278963-50-eutwplhohbxvxssqxmripuferuovulrc.jpeg",
+      "id": "UG9lVXNlcjozMDUxMjc4OTYz"
+    },
+    "description": "OmniHuman, by Bytedance, generates video using an image of a human figure paired with an audio file. It produces vivid, high-quality videos where the character\u2019s emotions and movements maintain a strong correlation with the audio. Send an image including a human figure with a visible face, and an audio, and the bot will return a video. The maximum audio length accepted is 30 seconds.",
+    "poweredBy": "Powered by a server managed by @Bytedance.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Video Generation</td><td>4667 points ($0.14) / second</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Video Generation | 4667 points ($0.14) / second | \n"
+    }
+  ]
+}

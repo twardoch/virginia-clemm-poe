@@ -1,0 +1,29 @@
+{
+  "id": "elevenlabs-music-v2",
+  "checked_at": "2026-10-05T02:11:57.120744+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "ElevenLabs-Music-v2",
+    "creator": {
+      "isDeleted": false,
+      "handle": "elevenlabsco",
+      "fullName": "ElevenLabs",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910413900-50-iohelybqlrnrvplglewzdogeigmqtwln.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDEzOTAw"
+    },
+    "description": "ElevenLabs Music v2 is an advanced AI music generation model that creates original songs, instrumentals, and tracks with vocals from text prompts. Describe the music you want\u2014genre, mood, tempo, key signature, instruments, or lyrics\u2014and the model composes a royalty-free track tailored to your needs.\n\nKey capabilities:\n- Better vocals, instrumentation, and arrangement across every genre\n- Mid-track genre transitions and complex vocal delivery, including fast rap\n- Sound effects embedded within tracks\n- Multilingual lyrics and vocals (English, Spanish, French, German, Japanese, and more)\n\nGenerated tracks are trained on licensed data and cleared for commercial use. Music length ranges from 3 seconds to 5 minutes.",
+    "poweredBy": "Powered by a server managed by @elevenlabsco.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Output (message)</td><td>$1.43/message</td><td>47334 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Output (message) | $1.43/message | 47334 points/message |\n"
+    }
+  ]
+}

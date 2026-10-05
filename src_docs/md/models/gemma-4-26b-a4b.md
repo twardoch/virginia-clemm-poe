@@ -9,9 +9,28 @@
 | Prompt | $1.313E-7/token |
 | Completion | $4.04E-7/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $0.13/1M tokens · 5 points/1k tokens |
+| Output (Text) | $0.40/1M tokens · 14 points/1k tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 0.13 | 1000000 tokens |
+| Input (text) | POINTS | 5 | 1000 tokens |
+| Output (text) | USD | 0.40 | 1000000 tokens |
+| Output (text) | POINTS | 14 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:10:48.502233+00:00
+
+
 ## Bot Information
 
-**Creator:** @novitaai
+**Creator:** novitaai
 
 **Description:** Gemma 4 26B A4B is built for developers who need scalable performance without sacrificing core capabilities. Crucially, it retains the massive 262k-token context window of the 31B model, making it highly competitive for long-context RAG and processing extensive, image-rich document datasets. It fully supports the series' core innovations: native Thinking mode for advanced logic, Interleaved Multimodal Input for dynamic text-image workflows, and flawless document/UI parsing. Equipped with native Function Calling and robust coding proficiencies, the 26B A4B is the ideal, cost-effective engine for powering real-world agentic workflows, visual automation, and global applications across its 140+ pre-trained languages.
 

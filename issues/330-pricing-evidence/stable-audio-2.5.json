@@ -1,0 +1,29 @@
+{
+  "id": "stable-audio-2.5",
+  "checked_at": "2026-10-05T02:11:59.347033+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Stable-Audio-2.5",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Stable Audio 2.5 generates high-quality audio up to 3 minutes long from text prompts, supporting text-to-audio, audio-to-audio transformations, and inpainting with customizable settings like duration, steps, CFG scale, and more. It is Ideal for music production, cinematic sound design, and remixing. \n\nNote: Audio-to-audio and inpaint modes require a prompt alongside an uploaded audio file for generation.\n\nParameter controls available:\n1. Basic\n   - Generation Mode: Text to Audio, Audio to Audio (Transform), Audio Inpaint (Edit Segment)\n   - Output format: WAV (high quality), MP3 (Compressed)\n\n2. Timing and Randomness \n   - Duration [1-190 seconds] controls how long generated audio is\n   - Seed [0-4294967294]' disables random seed generation. Use random seed must be toggled off to set.\n\n3. Advanced\n   - Cfg scale [1-25]: Higher = closer to prompt (recommended 7-15)\n   - Steps [4-8]`: Higher = better quality (recommended 6-8)\n\n4. Transformation control (only for audio-to-audio)\n   - Strength [0-1]`: How much to change/transform (0.3-0.7 typical)\n\n5. Inpainting control (only for audio-inpaint)\n   - Mask start time [seconds] start time of the uploaded audio to modify\n   - Mask end time [seconds] end time of the uploaded audio to modify",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Action</th><th>Rate</th></tr></thead><tbody><tr><td>Generation</td><td>22667 ($0.69) points</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n\n| Action | Rate |\n|--------|------|\n| Generation | 22667 ($0.69) points |\n"
+    }
+  ]
+}

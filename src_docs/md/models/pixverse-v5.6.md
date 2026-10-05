@@ -1,8 +1,49 @@
 # [pixverse-v5.6](https://poe.com/pixverse-v5.6){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| 360P | 58667 ($1.78) · 25667 ($0.78) |
+| 540P | 58667 ($1.78) · 25667 ($0.78) |
+| 720P | 66000 ($2.00) · 33000 ($1.00) |
+| 1080P | 100000 ($3.03) · 50000 ($1.52) |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| 360p | USD | 0.81 | 1 360p |
+| 360p | USD | 0.35 | 1 360p |
+| 540p | USD | 0.81 | 1 540p |
+| 540p | USD | 0.35 | 1 540p |
+| 720p | USD | 0.91 | 1 720p |
+| 720p | USD | 0.45 | 1 720p |
+| 1080p | USD | 1.52 | 1 1080p |
+| 1080p | USD | 0.76 | 1 1080p |
+| 360p | USD | 1.62 | 1 360p |
+| 360p | USD | 0.71 | 1 360p |
+| 540p | USD | 1.62 | 1 540p |
+| 540p | USD | 0.71 | 1 540p |
+| 720p | USD | 1.82 | 1 720p |
+| 720p | USD | 0.91 | 1 720p |
+| 1080p | USD | 3.03 | 1 1080p |
+| 1080p | USD | 1.52 | 1 1080p |
+| 360p | USD | 1.78 | 1 360p |
+| 360p | USD | 0.78 | 1 360p |
+| 540p | USD | 1.78 | 1 540p |
+| 540p | USD | 0.78 | 1 540p |
+| 720p | USD | 2.00 | 1 720p |
+| 720p | USD | 1.00 | 1 720p |
+
+**Last Checked:** 2026-10-05T02:11:09.367447+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** PixVerse v5.6 is capable of creating high-quality videos from text prompts alone or by animating uploaded images (1 or 2 frames). It supports resolutions up to 1080p, multiple aspect ratios, durations of 5–10 seconds, optional synchronized audio, and the ability to control style presets, thinking mode, negative prompts, and seed-based reproducibility.
 

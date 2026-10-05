@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- this_file: src_docs/md/table.html -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -113,20 +114,27 @@
                 <option value="text->audio">Text → Audio</option>
                 <option value="text->video">Text → Video</option>
             </select>
+            <select id="currencyFilter" aria-label="Price currency">
+                <option value="points">Compare points</option>
+                <option value="usd">Compare USD</option>
+            </select>
             <select id="ownerFilter">
                 <option value="">All Owners</option>
             </select>
         </div>
 
+        <p id="priceHelp">Cheapest first. Text: 1,000 input + 1,000 output tokens, plus any disclosed message fee. Other services: the unit shown. “From” marks a minimum or partial rate. Optional tools and media inputs cost extra. Different units are not equivalent; filter by modality. Currencies are grouped without conversion.</p>
+        <p id="priceCoverage"></p>
         <div id="tableContainer">
             <div class="loading">Loading models data...</div>
         </div>
     </div>
 
+    <script src="price_compare.js"></script>
     <script>
         let modelsData = [];
         let filteredData = [];
-        let sortColumn = 'id';
+        let sortColumn = 'cost';
         let sortDirection = 'asc';
 
         async function loadData() {
@@ -136,7 +144,7 @@
                 modelsData = data.data || [];
                 filteredData = modelsData; // Initialize filteredData with all models
                 initializeFilters();
-                renderTable();
+                sortData();
             } catch (error) {
                 document.getElementById('tableContainer').innerHTML =
                     '<div class="error">Error loading models data: ' + error.message + '</div>';
@@ -154,27 +162,13 @@
             });
         }
 
+        function escapeHTML(value) {
+            return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+        }
+
         function getInitialCost(model) {
-            // Check for scraped pricing first (points-based)
-            if (model.pricing?.scraped?.details?.initial_points_cost) {
-                return model.pricing.scraped.details.initial_points_cost;
-            }
-            // Check for API pricing (dollar-based)
-            if (model.pricing?.api?.prompt && model.pricing?.api?.completion) {
-                const prompt = parseFloat(model.pricing.api.prompt);
-                const completion = parseFloat(model.pricing.api.completion);
-                // Calculate cost for 1k tokens (500 in, 500 out)
-                const cost = (prompt * 500 + completion * 500);
-                if (cost < 0.0001) {
-                    return `$${cost.toExponential(2)}/1k`;
-                }
-                return `$${cost.toFixed(6)}/1k`;
-            }
-            // Legacy format support
-            if (model.pricing?.details?.initial_points_cost) {
-                return model.pricing.details.initial_points_cost;
-            }
-            return 'N/A';
+            const price = PoePrices.cost(model, document.getElementById('currencyFilter').value);
+            return `${escapeHTML(price.label)}<br><small>${escapeHTML(price.basis)}${price.source ? ' · ' + price.source : ''}</small>`;
         }
 
         function filterData() {
@@ -189,7 +183,7 @@
                     (model.bot_info?.creator || '').toLowerCase().includes(searchTerm);
 
                 const matchesModality = !modalityFilter ||
-                    model.architecture?.modality === modalityFilter;
+                    (model.architecture?.output_modalities || []).includes(modalityFilter.split('->')[1]);
 
                 const matchesOwner = !ownerFilter ||
                     model.owned_by === ownerFilter;
@@ -212,13 +206,7 @@
                     aVal = a.bot_info?.creator || '';
                     bVal = b.bot_info?.creator || '';
                 } else if (sortColumn === 'cost') {
-                    aVal = getInitialCost(a);
-                    bVal = getInitialCost(b);
-                    // Extract numeric value for sorting
-                    const aNum = parseInt(aVal.replace(/[^0-9]/g, '')) || 999999;
-                    const bNum = parseInt(bVal.replace(/[^0-9]/g, '')) || 999999;
-                    aVal = aNum;
-                    bVal = bNum;
+                    return PoePrices.compare(a, b, sortDirection, document.getElementById('currencyFilter').value);
                 }
 
                 if (aVal < bVal) return sortDirection === 'asc' ? -1 : 1;
@@ -263,7 +251,7 @@
                                 </span>
                             </th>
                             <th onclick="handleSort('cost')">
-                                Initial Cost
+                                Reference Cost
                                 <span class="sort-arrow ${sortColumn === 'cost' ? 'active' : ''}">
                                     ${sortColumn === 'cost' ? (sortDirection === 'asc' ? '↑' : '↓') : '↕'}
                                 </span>
@@ -274,23 +262,27 @@
                     <tbody>
                         ${filteredData.map(model => `
                             <tr>
-                                <td><a href="models/${model.id}.html" class="model-link" target="_parent">${model.id}</a></td>
-                                <td><span class="modality">${model.architecture?.modality || 'N/A'}</span></td>
-                                <td>${model.bot_info?.creator || 'N/A'}</td>
+                                <td><a href="models/${model.id}.html" class="model-link" target="_parent">${escapeHTML(model.id)}</a></td>
+                                <td><span class="modality">${escapeHTML(model.architecture?.modality || 'Not disclosed')}</span></td>
+                                <td>${escapeHTML(model.bot_info?.creator || model.owned_by || 'Not disclosed')}</td>
                                 <td class="price">${getInitialCost(model)}</td>
-                                <td>${(model.bot_info?.description || 'N/A').substring(0, 100)}${(model.bot_info?.description || '').length > 100 ? '...' : ''}</td>
+                                <td>${escapeHTML((model.bot_info?.description || 'Not disclosed').substring(0, 100))}${(model.bot_info?.description || '').length > 100 ? '...' : ''}</td>
                             </tr>
                         `).join('')}
                     </tbody>
                 </table>
             `;
             document.getElementById('tableContainer').innerHTML = html;
+            const known = filteredData.filter(m => PoePrices.cost(m).amount !== null).length;
+            document.getElementById('priceCoverage').textContent = `${known} of ${filteredData.length} models have a numeric price. Open a model for all rate tiers and sources.`;
         }
 
         // Event listeners
         document.getElementById('searchInput').addEventListener('input', filterData);
         document.getElementById('modalityFilter').addEventListener('change', filterData);
         document.getElementById('ownerFilter').addEventListener('change', filterData);
+
+        document.getElementById('currencyFilter').addEventListener('change', sortData);
 
         // Initialize
         loadData();

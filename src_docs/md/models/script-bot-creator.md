@@ -1,8 +1,18 @@
 # [script-bot-creator](https://poe.com/script-bot-creator){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+
+**Last Checked:** 2026-10-05T02:10:34.820170+00:00
+
+
 ## Bot Information
 
-**Creator:** @poe_tools
+**Creator:** poe_tools
 
 **Description:** Specializes in building workflows that combine bots on Poe. Powered by Claude Code. Guide and tips: https://creator.poe.com/docs/script-bots/quick-start
 

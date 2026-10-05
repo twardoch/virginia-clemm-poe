@@ -1,0 +1,29 @@
+{
+  "id": "flux-2-dev",
+  "checked_at": "2026-10-05T02:11:28.751749+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "FLUX-2-Dev",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Open-weight image gen (32B) model, derived from the FLUX.2 base model. The most powerful open-weight image generation and editing model available today, combining text-to-image synthesis and image editing with multiple input images in a single checkpoint.\n\nOptional parameters:\nSet aspect ratio. Select from (16:9, 4:3, 1:1, 3:4, 9:16). It is set to 4:3 aspect ratio as default.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Image Input</td><td>500 points ($0.015) / image input</td></tr><tr><td>Image Output</td><td>500 points ($0.015) / image</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Image Input | 500 points ($0.015) / image input | \n| Image Output | 500 points ($0.015) / image | \n"
+    }
+  ]
+}

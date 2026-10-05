@@ -1,19 +1,37 @@
 # [SeedVR2](https://poe.com/SeedVR2){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Image Output | 34 points ($0.0010) / megapixel (rounded up to nearest integer) |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Image Output | USD | 0.0010 | 1 megapixel |
+| Image Output | POINTS | 34 | 1 megapixel |
+
+**Last Checked:** 2026-10-05T02:09:50.524106+00:00
+
+
 ## Bot Information
 
-**Creator:** @fal
+**Creator:** fal
 
 **Description:** Upscale images with SeedVR2. Supports jpeg, png, webp.
 
 
 ## Architecture
 
-**Input Modalities:** Unknown
+**Input Modalities:** text
 
-**Output Modalities:** Unknown
+**Output Modalities:** image
 
-**Modality:** unknown
+**Modality:** text->image
 
 
 ## Technical Details

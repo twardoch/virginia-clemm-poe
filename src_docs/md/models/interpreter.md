@@ -1,8 +1,25 @@
 # [interpreter](https://poe.com/interpreter){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Message Cost | Interpreter costs 1 point per message, plus the rates of any other bots it calls. |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Message cost | POINTS | From 1 | 1 message |
+
+**Last Checked:** 2026-10-05T02:12:56.644791+00:00
+
+
 ## Bot Information
 
-**Creator:** @poe_tools
+**Creator:** poe_tools
 
 **Description:** Interpreter for Poe Python
 

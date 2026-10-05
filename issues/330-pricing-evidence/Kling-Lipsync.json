@@ -1,0 +1,29 @@
+{
+  "id": "Kling-Lipsync",
+  "checked_at": "2026-10-05T02:09:21.128879+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Kling-Lipsync",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Generate high-quality lipsynced videos using Kling-Lipsync. Send over a video and an audio  to sync the video with the audio, or send a text prompt, a voice and a video to generate an audio and sync the video to it.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Video Output</td><td>4667 points ($0.14) / message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Video Output | 4667 points ($0.14) / message | \n"
+    }
+  ]
+}

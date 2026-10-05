@@ -1,8 +1,26 @@
 # [Wan-2.6-N](https://poe.com/Wan-2.6-N){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Total Cost | $0.00/message · 0 points/message |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Total cost | USD | 0.00 | 1 message |
+| Total cost | POINTS | 0 | 1 message |
+
+**Last Checked:** 2026-10-05T02:10:13.232826+00:00
+
+
 ## Bot Information
 
-**Creator:** @novitaai
+**Creator:** novitaai
 
 **Description:** Tongyi Wanxiang 2.6 (also known as Wan 2.6) is the latest generation of professional-grade AI video and image generation models developed by Alibaba Cloud. It represents a significant leap in AI-driven cinematography and creative storytelling, positioning itself as one of the most comprehensive video generation models globally.
 

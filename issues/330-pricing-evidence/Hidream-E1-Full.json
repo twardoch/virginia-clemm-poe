@@ -1,0 +1,29 @@
+{
+  "id": "Hidream-E1-Full",
+  "checked_at": "2026-10-05T02:09:08.168972+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Hidream-E1-Full",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Hidream-E1 can edit images with great fidelity given natural language instructions. Send an image along with a text prompt to edit it. Use `--negative_prompt` to set the negative prompt for generation.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Image Output</td><td>1700 points ($0.052) / message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Image Output | 1700 points ($0.052) / message | \n"
+    }
+  ]
+}

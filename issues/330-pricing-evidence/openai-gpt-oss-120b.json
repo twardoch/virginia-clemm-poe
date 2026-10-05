@@ -1,0 +1,29 @@
+{
+  "id": "openai-gpt-oss-120b",
+  "checked_at": "2026-10-05T02:11:39.210206+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "OpenAI-GPT-OSS-120B",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fireworksai",
+      "fullName": "Fireworks AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2339248475-50-cokslpvhdmlrqrkakgkkmiaffqqkcfgh.jpeg",
+      "id": "UG9lVXNlcjoyMzM5MjQ4NDc1"
+    },
+    "description": "GPT-OSS-120b is a high-performance, open-weight language model designed for production-grade, general-purpose use cases. It fits on a single H100 GPU, making it accessible without requiring multi-GPU infrastructure. Trained on the Harmony response format, it excels at complex reasoning and supports configurable reasoning effort, full chain-of-thought transparency for easier debugging and trust, and native agentic capabilities for function calling, tool use, and structured outputs.",
+    "poweredBy": "Powered by a server managed by @fireworksai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.0015/message</td><td>50 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.0015/message | 50 points/message |\n"
+    }
+  ]
+}

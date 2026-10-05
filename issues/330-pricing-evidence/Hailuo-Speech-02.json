@@ -1,0 +1,29 @@
+{
+  "id": "Hailuo-Speech-02",
+  "checked_at": "2026-10-05T02:09:07.313925+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Hailuo-Speech-02",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Generate speech from text prompts using the MiniMax Speech-02 model. \n\nOptional parameters:\nHD mode. Toggle on for higher quality output with a higher price. \nSet Speed. Set from 0.5 to 2. Default: 1.\nSet Volume. Set from 0 to 10. Default: 1.\nSet Pitch. Set from -12 to 12. Default: 0.\nSet Emotion. Select from happy, sad, angry, fearful, disgusted, surprised and fearful. Default: None.\nSet Language boost. Select language available. Default. None.\nSet Voice for the audio generation. Default: Wise Woman.\n\nPlease check the UI for allowed values for each parameter.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>HD Output</td><td>3334 points ($0.10) / 1000 characters</td></tr><tr><td>Turbo Output</td><td>2000 points ($0.061) / 1000 characters</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| HD Output | 3334 points ($0.10) / 1000 characters | \n| Turbo Output | 2000 points ($0.061) / 1000 characters | \n"
+    }
+  ]
+}

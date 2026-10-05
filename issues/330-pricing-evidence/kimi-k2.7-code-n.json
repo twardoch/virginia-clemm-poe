@@ -1,0 +1,29 @@
+{
+  "id": "kimi-k2.7-code-n",
+  "checked_at": "2026-10-05T02:13:16.212146+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Kimi-K2.7-Code-N",
+    "creator": {
+      "isDeleted": false,
+      "handle": "novitaai",
+      "fullName": "Novita AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-3067795970-50-ezhhpdjtzbudawymtaodhapblyfagaxk.jpeg",
+      "id": "UG9lVXNlcjozMDY3Nzk1OTcw"
+    },
+    "description": "Kimi K2.7 Code is MoonshotAI's strongest coding & agentic model \u2014 a 1T-parameter MoE (32B activated) , 256K context and interleaved thinking with multi-step tool calling. It delivers major gains on long-horizon coding tasks while cutting thinking-token usage by ~30% vs K2.6, and accepts text, image and video inputs for vision-driven development workflows.\n\nFile Support: Text, Markdown, Image, Video and PDF files\nContext window: 262k tokens",
+    "poweredBy": "Powered by a server managed by @novitaai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.96/1M tokens</td><td>32 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$4.04/1M tokens</td><td>134 points/1k tokens</td></tr><tr><td>Cache discount</td><td>80% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.96/1M tokens | 32 points/1k tokens |\n| Output (text) | $4.04/1M tokens | 134 points/1k tokens |\n| Cache discount | 80% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n"
+    }
+  ]
+}

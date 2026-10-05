@@ -1,8 +1,26 @@
 # [kling-2.5-turbo-std](https://poe.com/kling-2.5-turbo-std){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Video Output | 1400 points ($0.042) / second |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Video Output | USD | 0.042 | 1 second |
+| Video Output | POINTS | 1400 | 1 second |
+
+**Last Checked:** 2026-10-05T02:12:19.096680+00:00
+
+
 ## Bot Information
 
-**Creator:** @fal
+**Creator:** fal
 
 **Description:** Generate high-quality videos from images using Kling 2.5 Turbo Standard. 
 

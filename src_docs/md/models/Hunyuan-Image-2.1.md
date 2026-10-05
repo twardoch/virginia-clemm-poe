@@ -1,8 +1,26 @@
 # [Hunyuan-Image-2.1](https://poe.com/Hunyuan-Image-2.1){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Image Output | 2834 points ($0.086) / message |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Image Output | USD | 0.086 | 1 message |
+| Image Output | POINTS | 2834 | 1 message |
+
+**Last Checked:** 2026-10-05T02:09:09.132977+00:00
+
+
 ## Bot Information
 
-**Creator:** @fal
+**Creator:** fal
 
 **Description:** Hunyuan Image 2.1 is a high quality, highly efficient text-to-image model. Send a prompt to generate an image. 
 
@@ -15,11 +33,11 @@ Notes: This bot does not accept attachment.
 
 ## Architecture
 
-**Input Modalities:** Unknown
+**Input Modalities:** text
 
-**Output Modalities:** Unknown
+**Output Modalities:** image
 
-**Modality:** unknown
+**Modality:** text->image
 
 
 ## Technical Details

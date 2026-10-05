@@ -2,6 +2,15 @@
 
 # Virginia Clemm Poe - Development Plan
 
+## Pricing correction — 2026-10-05
+
+Parse current website tables, Markdown rate cards, and explicit prose with exact
+amounts, currencies, units, and provenance. Collect the entire catalogue, preserve
+rates on transient failures, compare disclosed quantities numerically, and open
+the table cheapest first. Validate Python parsing, JavaScript comparison, strict
+documentation, and the rendered iframe; publish with `uvx gitnextver` and verify
+the live catalogue. Unknown and variable costs must remain explicit.
+
 ## Current Status: Major API Update Refactoring (Phase 9) 🚧
 
 The Poe API has introduced native pricing information in a new format, requiring a comprehensive refactoring to support dual pricing models while maintaining backward compatibility.

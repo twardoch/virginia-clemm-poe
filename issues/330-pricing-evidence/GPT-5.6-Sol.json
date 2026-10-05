@@ -1,0 +1,29 @@
+{
+  "id": "GPT-5.6-Sol",
+  "checked_at": "2026-10-05T02:09:00.619614+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "GPT-5.6-Sol",
+    "creator": {
+      "isDeleted": false,
+      "handle": "openai",
+      "fullName": "OpenAI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910400879-50-wrfgcbmfjrhquvwlxvypitmawpovrxoi.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDAwODc5"
+    },
+    "description": "OpenAI\u2019s GPT-5.6 Sol for complex professional work. For the newer model, use GPT-6-Sol.",
+    "poweredBy": "Powered by a server managed by @openai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input</td><td>$3.64/1M tokens</td><td>120 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$20.20/1M tokens</td><td>667 points/1k tokens</td></tr><tr><td>Output</td><td>$0.0091/search</td><td>300 points/search</td></tr><tr><td>Cache discount</td><td>90% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input | $3.64/1M tokens | 120 points/1k tokens |\n| Output (text) | $20.20/1M tokens | 667 points/1k tokens |\n| Output | $0.0091/search | 300 points/search |\n| Cache discount | 90% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n\n\nWeb searches will add input tokens.\n\nInput rate is 2x and output rate is 1.5x when context is >272k tokens.\n\nWhen new content is written to the cache, it costs 56% more points than the original input and stays stored for 5 minutes before automatically expiring."
+    }
+  ]
+}

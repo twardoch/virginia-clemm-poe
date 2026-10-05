@@ -1,0 +1,29 @@
+{
+  "id": "Claude-Fable-5",
+  "checked_at": "2026-10-05T02:08:34.411969+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Claude-Fable-5",
+    "creator": {
+      "isDeleted": false,
+      "handle": "anthropic",
+      "fullName": "Anthropic",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910399423-50-rmsjsjntoqqejhymvulgknulhathfdmz.jpeg",
+      "id": "UG9lVXNlcjoyOTEwMzk5NDIz"
+    },
+    "description": "Anthropic's previous flagship model, a Mythos-class system made safe for general use. Claude Fable 5 is state-of-the-art on nearly all tested benchmarks, with exceptional performance in software engineering, knowledge work, vision, and scientific research\u2014and its lead widens the longer and more complex the task. It excels at codebase-wide migrations, long-horizon agentic coding, finance-grade analysis, and vision-only tasks, while staying focused across millions of tokens and improving its own work using persistent memory. Released with conservatively tuned safeguards that fall back to Claude Opus 4.8 on a small fraction of sensitive queries (cybersecurity, biology and chemistry, and distillation), Fable 5 pairs frontier capability with elite reasoning, alignment, and reliability.\n\nThis bot supports optional parameters for advanced customization.",
+    "poweredBy": "Powered by Anthropic: claude-fable-5.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input</td><td>$10.10/1M tokens</td><td>334 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$50.51/1M tokens</td><td>1667 points/1k tokens</td></tr><tr><td>Output</td><td>$0.010/search</td><td>334 points/search</td></tr><tr><td>Cache discount</td><td>90% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input | $10.10/1M tokens | 334 points/1k tokens |\n| Output (text) | $50.51/1M tokens | 1667 points/1k tokens |\n| Output | $0.010/search | 334 points/search |\n| Cache discount | 90% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n\n\nWeb searches will add input tokens."
+    }
+  ]
+}

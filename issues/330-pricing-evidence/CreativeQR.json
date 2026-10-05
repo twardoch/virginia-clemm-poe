@@ -1,0 +1,29 @@
+{
+  "id": "CreativeQR",
+  "checked_at": "2026-10-05T02:08:36.879462+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "CreativeQR",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fireworksai",
+      "fullName": "Fireworks AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2339248475-50-cokslpvhdmlrqrkakgkkmiaffqqkcfgh.jpeg",
+      "id": "UG9lVXNlcjoyMzM5MjQ4NDc1"
+    },
+    "description": "Creative QR code image generation. Send a prompt, followed by `--qr`, followed by the data to encode as a QR code. The bot also supports a few other flags:\n\n* `--qr-strength` a decimal number that specifies the strength of the QR code, defaults to 1.4. Increase this if your QR codes aren't scanning well.\n* `--prompt-strength` a whole number that specifies the strength of the prompt, defaults to 10. Increase this if the generated images don't look like your prompt.\n* `--model`, specifies which image generation model to use. Can either be \"sdxl\" for Stable Diffusion XL, or \"sdv1.5\" for Stable Diffusion v1.5. Different models may come out with different style or quality.\n\nEXAMPLES:\n* Beautiful futuristic cityscape --qr https://google.com\n* horses in a stable --qr https://horse.com --qr-strength 1.3\n* horses in a stable --qr https://horse.com --qr-strength 1.3 --prompt-strength 12\n* horses in a stable --qr https://horse.com --qr-strength 1.6 --prompt-strength 12 --model sdv1.5",
+    "poweredBy": "Powered by a server managed by @fireworksai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": false
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.0048/message</td><td>160 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.0048/message | 160 points/message |\n"
+    }
+  ]
+}

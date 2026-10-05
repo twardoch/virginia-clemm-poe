@@ -1,0 +1,29 @@
+{
+  "id": "exa-answer",
+  "checked_at": "2026-10-05T02:11:29.240536+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Exa-Answer",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Get a quick LLM-style answer to a question informed by Exa search results. \n\nFor more in-depth results, consider using the following endpoint: https://poe.com/Exa-Research\n\nSupported file type upload: PDF, TXT, PNG, JPG, JPEG\nAudio and video file upload is not supported.\n\nParameter Controls Available:\n- Include source text snippets. Toggle `on` to show text snippets under each source citation. This is set to `off` by default.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Bot message</td><td>$0.0081/message</td><td>267 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Bot message | $0.0081/message | 267 points/message |\n"
+    }
+  ]
+}

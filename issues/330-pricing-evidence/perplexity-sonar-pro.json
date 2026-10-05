@@ -1,0 +1,29 @@
+{
+  "id": "perplexity-sonar-pro",
+  "checked_at": "2026-10-05T02:13:15.475725+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Perplexity-Sonar-Pro",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Sonar Pro by Perplexity is an advanced AI model that enhances real-time, web-connected search capabilities with double the citations and a larger context window. It's designed for complex queries, providing in-depth, nuanced answers and extended extensibility, making it ideal for enterprises and developers needing robust search solutions. Context Length: 200k (max output token limit of 8k)",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th style=\"text-align: left;\">Item</th><th style=\"text-align: left;\">Rate</th></tr></thead><tbody><tr><td style=\"text-align: left;\">Base Fee (Low Context)</td><td style=\"text-align: left;\">480 ($0.015)</td></tr><tr><td style=\"text-align: left;\">Base Fee (Medium Context)</td><td style=\"text-align: left;\">800 ($0.024)</td></tr><tr><td style=\"text-align: left;\">Base Fee (High Context)</td><td style=\"text-align: left;\">1120 ($0.034)</td></tr><tr><td style=\"text-align: left;\">Input Tokens</td><td style=\"text-align: left;\">240 ($0.0073) per 1,000 tokens</td></tr><tr><td style=\"text-align: left;\">Output Tokens</td><td style=\"text-align: left;\">1200 ($0.036) per 1,000 tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "This bot uses a variable pricing model.\n\nNote that conversation history and image tokens are priced in input.\nAuthorization fees are likely higher than the fee charged. Charges can be viewed by right clicking a message and selecting \"Info\"\n| Item | Rate |\n|:---|:---|\n| Base Fee (Low Context) | 480 ($0.015) |\n| Base Fee (Medium Context) | 800 ($0.024) |\n| Base Fee (High Context) | 1120 ($0.034) |\n| Input Tokens | 240 ($0.0073) per 1,000 tokens |\n| Output Tokens | 1200 ($0.036) per 1,000 tokens |\n"
+    }
+  ]
+}

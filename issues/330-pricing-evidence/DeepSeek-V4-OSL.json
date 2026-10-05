@@ -1,0 +1,29 @@
+{
+  "id": "DeepSeek-V4-OSL",
+  "checked_at": "2026-10-05T02:08:41.824219+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "DeepSeek-V4-OSL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "OpenSourceLab",
+      "fullName": "Open-Source-Lab",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2419661422-50-yfhdcuqxmrjwjokrdinuyvphinqrsuoa.jpeg",
+      "id": "UG9lVXNlcjoyNDE5NjYxNDIy"
+    },
+    "description": "Based on DeepSeek-V4-Flash an MIT-licensed open-weights model. This multimodal bot can process PDF, PNG, JPG, HEIC, TXT, HTML, DOCX, XLSX, CSS and PY files. This bot can't process RTF, WEBM, MP4 and MP3. Maximum file size is 50 MB. Users can adjust the temperature and verbosity of the responses in the settings. Context window: 1M tokens\n\nPrevious version: https://poe.com/DeepSeek-v3.2-OSL",
+    "poweredBy": "Powered by a server managed by @OpenSourceLab.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input</td><td>$0.96 / 1M tokens</td><td>32 points / 1K tokens</td></tr><tr><td>Output (text)</td><td>$3.33 / 1M tokens</td><td>111 points / 1K tokens</td></tr><tr><td>Input (file)</td><td>Variable</td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "| Type | Rate (USD) | Rate (Points) |\n|-------------|----------------------|---------------------------------------|\n| Input | $0.96 / 1M tokens | 32 points / 1K tokens |\n| Output (text) | $3.33 / 1M tokens | 111 points / 1K tokens |\n| Input (file) | Variable | |"
+    }
+  ]
+}

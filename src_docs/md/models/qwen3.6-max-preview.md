@@ -9,9 +9,31 @@
 | Prompt | $0.0000013131/token |
 | Completion | $0.0000078788/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $1.31/1M tokens · 44 points/1k tokens |
+| Output (Text) | $7.88/1M tokens · 260 points/1k tokens |
+| Bot Message | $0.0051/message · 167 points/message |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 1.31 | 1000000 tokens |
+| Input (text) | POINTS | 44 | 1000 tokens |
+| Output (text) | USD | 7.88 | 1000000 tokens |
+| Output (text) | POINTS | 260 | 1000 tokens |
+| Bot message | USD | 0.0051 | 1 message |
+| Bot message | POINTS | 167 | 1 message |
+
+**Last Checked:** 2026-10-05T02:13:03.728050+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** This model is retiring on 2026-10-10. Please switch to: https://poe.com/Qwen3.7-Max
 The Max model, the largest and most capable variant in the Qwen3.6 series, is now available in a preview version. At present, only its plain-text capabilities are open for experimentation. Compared with the previously released Qwen3-Max and Qwen3.6-Plus, this model features enhanced vibe coding abilities, more efficient coding agent execution, and significantly improved front-end development skills. Additionally, its long-tail knowledge retention has been further upgraded.

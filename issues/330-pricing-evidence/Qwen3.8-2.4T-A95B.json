@@ -1,0 +1,29 @@
+{
+  "id": "Qwen3.8-2.4T-A95B",
+  "checked_at": "2026-10-05T02:09:42.920255+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Qwen3.8-2.4T-A95B",
+    "creator": {
+      "isDeleted": false,
+      "handle": "togetherai",
+      "fullName": "Together AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-538388044-50-pymstrtquryhajnzeyeaqftjrrbrgvrv.jpeg",
+      "id": "UG9lVXNlcjo1MzgzODgwNDQ="
+    },
+    "description": "Qwen3.8 Max is the flagship of Qwen's 3.8 generation and the largest model the team has released, a sparse Mixture-of-Experts design with 2.4 trillion total parameters. Qwen describes it as the team's first multimodal model above one trillion parameters, built for coding, long-horizon agentic work, and multimodal reasoning. The model supports a 256K-token context window with up to 128K output tokens, and thinking is always enabled, with reasoning effort adjustable across low, high, and xhigh levels. Announced on July 19, 2026 at the World AI Conference in Shanghai, with Alibaba committing to an open-weight release. Available on Together AI.",
+    "poweredBy": "Powered by a server managed by @togetherai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.00/message</td><td>0 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.00/message | 0 points/message |\n"
+    }
+  ]
+}

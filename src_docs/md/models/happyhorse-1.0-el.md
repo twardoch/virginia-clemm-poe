@@ -1,8 +1,29 @@
 # [happyhorse-1.0-el](https://poe.com/happyhorse-1.0-el){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| 720P | $0.14/sec · 4,667 pts/sec |
+| 1080P | $0.24/sec · 8,000 pts/sec |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| 720P | USD | 0.14 | 1 second |
+| 720P | POINTS | 4667 | 1 second |
+| 1080P | USD | 0.24 | 1 second |
+| 1080P | POINTS | 8000 | 1 second |
+
+**Last Checked:** 2026-10-05T02:13:08.039420+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** HappyHorse 1.0 is a video generation model, capable of creating high-fidelity, motion-smooth videos from text, images, or by editing existing videos. It supports four generation modes: Text-to-Video (T2V), Image-to-Video (I2V), Reference-to-Video (R2V), and Video Edit.
 

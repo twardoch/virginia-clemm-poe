@@ -1,0 +1,29 @@
+{
+  "id": "qwen3.7-max-t",
+  "checked_at": "2026-10-05T02:13:14.461013+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Qwen3.7-Max-T",
+    "creator": {
+      "isDeleted": false,
+      "handle": "togetherai",
+      "fullName": "Together AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-538388044-50-pymstrtquryhajnzeyeaqftjrrbrgvrv.jpeg",
+      "id": "UG9lVXNlcjo1MzgzODgwNDQ="
+    },
+    "description": "Qwen3.7-Max is Qwen's flagship proprietary model built for the agent era, combining frontier reasoning with deep, generalizable agentic capabilities across coding, office automation, and long-horizon task execution. It leads on Terminal-Bench 2.0-Terminus (69.7) and achieves 92.4% GPQA Diamond, 80.4% SWE-Bench Verified, and 97.1% HMMT 2026 Feb. According to Qwen, the model maintained coherent execution across a ~35-hour autonomous session, generalizing across agent scaffolds without framework-specific tuning. Available on Together AI with a 1M token context window.",
+    "poweredBy": "Powered by a server managed by @togetherai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.0061/message</td><td>200 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.0061/message | 200 points/message |\n"
+    }
+  ]
+}

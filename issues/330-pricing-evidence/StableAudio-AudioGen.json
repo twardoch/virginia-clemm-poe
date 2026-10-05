@@ -1,0 +1,29 @@
+{
+  "id": "StableAudio-AudioGen",
+  "checked_at": "2026-10-05T02:09:56.690763+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "StableAudio-AudioGen",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Generate audio effects using prompts using StableAudio.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Audio Output</td><td>100 points ($0.0030) / message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Audio Output | 100 points ($0.0030) / message | \n"
+    }
+  ]
+}

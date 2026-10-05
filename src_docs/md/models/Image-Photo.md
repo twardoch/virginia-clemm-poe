@@ -1,8 +1,25 @@
 # [Image-Photo](https://poe.com/Image-Photo){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Message Cost | Script bots cost 1 point per message, plus the rates of any other bots it calls. |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Message cost | POINTS | From 1 | 1 message |
+
+**Last Checked:** 2026-10-05T02:09:11.457228+00:00
+
+
 ## Bot Information
 
-**Creator:** @OpenSourceLab
+**Creator:** OpenSourceLab
 
 **Description:** Hyperrealistic photo and image generator for professional use. Adjust numerous aspects, such as colors, composition, lighting, textures or specific details like object positioning, perspective and depth.  It can also transform images (image to image), which will consume additional points.
 

@@ -9,9 +9,31 @@
 | Prompt | $1.818E-7/token |
 | Completion | $0.0000011364/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $0.18/1M tokens · 6 points/1k tokens |
+| Output (Text) | $1.14/1M tokens · 38 points/1k tokens |
+| Output | $0.0091/search · 300 points/search |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input | USD | 0.18 | 1000000 tokens |
+| Input | POINTS | 6 | 1000 tokens |
+| Output (text) | USD | 1.14 | 1000000 tokens |
+| Output (text) | POINTS | 38 | 1000 tokens |
+| Output | USD | 0.0091 | 1 search |
+| Output | POINTS | 300 | 1 search |
+
+**Last Checked:** 2026-10-05T02:10:32.137678+00:00
+
+
 ## Bot Information
 
-**Creator:** @openai
+**Creator:** openai
 
 **Description:** GPT‑5.4 Nano is the fastest and most cost‑efficient model in the GPT‑5 family, built for high‑volume tasks such as summarization, categorization, extraction, and lightweight multimodal workflows. It supports native vision and a 400k‑token context window for efficient large‑scale processing.
 

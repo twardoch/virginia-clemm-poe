@@ -1,8 +1,47 @@
 # [Pixverse-v4.5](https://poe.com/Pixverse-v4.5){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Video Output (360P) | 2000 points ($0.061) / second |
+| Video Output (540P) | 2000 points ($0.061) / second |
+| Video Output (720P) | 2667 points ($0.081) / second |
+| Video Output (1080P) | 5334 points ($0.16) / second |
+| Video Effects/Video Transition Output (360P) | 4000 points ($0.12) / second |
+| Video Effects/Video Transition Output (540P) | 4000 points ($0.12) / second |
+| Video Effects/Video Transition Output (720P) | 5334 points ($0.16) / second |
+| Video Effects/Video Transition Output (1080P) | 10667 points ($0.32) / second |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Video Output (360p) | USD | 0.061 | 1 second |
+| Video Output (360p) | POINTS | 2000 | 1 second |
+| Video Output (540p) | USD | 0.061 | 1 second |
+| Video Output (540p) | POINTS | 2000 | 1 second |
+| Video Output (720p) | USD | 0.081 | 1 second |
+| Video Output (720p) | POINTS | 2667 | 1 second |
+| Video Output (1080p) | USD | 0.16 | 1 second |
+| Video Output (1080p) | POINTS | 5334 | 1 second |
+| Video Effects/Video Transition Output (360p) | USD | 0.12 | 1 second |
+| Video Effects/Video Transition Output (360p) | POINTS | 4000 | 1 second |
+| Video Effects/Video Transition Output (540p) | USD | 0.12 | 1 second |
+| Video Effects/Video Transition Output (540p) | POINTS | 4000 | 1 second |
+| Video Effects/Video Transition Output (720p) | USD | 0.16 | 1 second |
+| Video Effects/Video Transition Output (720p) | POINTS | 5334 | 1 second |
+| Video Effects/Video Transition Output (1080p) | USD | 0.32 | 1 second |
+| Video Effects/Video Transition Output (1080p) | POINTS | 10667 | 1 second |
+
+**Last Checked:** 2026-10-05T02:09:35.243231+00:00
+
+
 ## Bot Information
 
-**Creator:** @fal
+**Creator:** fal
 
 **Description:** Pixverse v4.5 is a video generation model capable of generating high quality videos in under a minute. 
 
@@ -19,11 +58,11 @@ Seed to set the seed and Aspect ratio to set the aspect ratio (16:9, 4:3, 1:1, 3
 
 ## Architecture
 
-**Input Modalities:** Unknown
+**Input Modalities:** text
 
-**Output Modalities:** Unknown
+**Output Modalities:** video
 
-**Modality:** unknown
+**Modality:** text->video
 
 
 ## Technical Details

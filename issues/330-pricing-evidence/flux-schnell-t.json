@@ -1,0 +1,29 @@
+{
+  "id": "flux-schnell-t",
+  "checked_at": "2026-10-05T02:12:49.156474+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Flux-Schnell-T",
+    "creator": {
+      "isDeleted": false,
+      "handle": "togetherai",
+      "fullName": "Together AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-538388044-50-pymstrtquryhajnzeyeaqftjrrbrgvrv.jpeg",
+      "id": "UG9lVXNlcjo1MzgzODgwNDQ="
+    },
+    "description": "Lightning-fast AI image generation model that excels in producing high-quality visuals in just seconds. Great for quick prototyping or real-time use cases. This is the fastest version of FLUX.1. \nThe bot does not support any attachments.",
+    "poweredBy": "Powered by a server managed by @togetherai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.0021/message</td><td>70 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.0021/message | 70 points/message |\n"
+    }
+  ]
+}

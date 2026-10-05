@@ -1,0 +1,27 @@
+{
+  "id": "Web-Search-AI",
+  "checked_at": "2026-10-05T02:10:14.307053+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Web-Search-AI",
+    "creator": {
+      "isDeleted": false,
+      "handle": "OpenSourceLab",
+      "fullName": "Open-Source-Lab",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2419661422-50-yfhdcuqxmrjwjokrdinuyvphinqrsuoa.jpeg",
+      "id": "UG9lVXNlcjoyNDE5NjYxNDIy"
+    },
+    "description": "Get instant answers thought AI-powered search. Combining speed, reasoning and accuracy. Find what you need, quickly and easily. Web-Search-AI is based on an AI-powered search engine with internet scraping capabilities. To enable source mode use the `--source` flag. To activate deep thinking mode, use the flag `--deep`. Add `--tool` for Poe bot search. Tools and data analysis will cost additional points.",
+    "poweredBy": "Runs inside Poe's protected environment.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Script bots cost 1 point per message, plus the rates of any other bots it calls.\n\nThe creator defined additional costs."
+    }
+  ]
+}

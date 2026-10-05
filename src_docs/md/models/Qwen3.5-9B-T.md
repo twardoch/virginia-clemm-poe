@@ -2,18 +2,25 @@
 
 ## Pricing
 
-### Points-based Pricing
+### Website Pricing
 
 | Type | Cost |
 |------|------|
-| Total Cost | 0 points/message |
+| Total Cost | $0.00/message · 0 points/message |
 
-**Last Checked:** 2026-10-05 01:51:10.509750
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Total cost | USD | 0.00 | 1 message |
+| Total cost | POINTS | 0 | 1 message |
+
+**Last Checked:** 2026-10-05T02:09:41.714915+00:00
 
 
 ## Bot Information
 
-**Creator:** @togetherai
+**Creator:** togetherai
 
 **Description:** Over recent months, we have intensified our focus on developing foundation models that deliver exceptional utility and performance. Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency.
 

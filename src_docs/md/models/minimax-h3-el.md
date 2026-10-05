@@ -1,8 +1,29 @@
 # [minimax-h3-el](https://poe.com/minimax-h3-el){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| 768P | $0.18/sec · 6,000 pts/sec |
+| 2K | $0.26/sec · 8,667 pts/sec |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| 768p | USD | 0.18 | 1 second |
+| 768p | POINTS | 6000 | 1 second |
+| 2K | USD | 0.26 | 1 second |
+| 2K | POINTS | 8667 | 1 second |
+
+**Last Checked:** 2026-10-05T02:13:35.093556+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** MiniMax H3 is a multimodal video generation model that produces 4 to 15 second clips at 768p or 2K, 24 fps, each with a native stereo audio track. It supports Text-to-Video, Image-to-Video, First/Last Frame, and Reference-to-Video, auto-detected from your attachments or set manually.
 

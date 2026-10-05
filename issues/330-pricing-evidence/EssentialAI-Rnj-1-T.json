@@ -1,0 +1,29 @@
+{
+  "id": "EssentialAI-Rnj-1-T",
+  "checked_at": "2026-10-05T02:08:44.805581+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "EssentialAI-Rnj-1-T",
+    "creator": {
+      "isDeleted": false,
+      "handle": "togetherai",
+      "fullName": "Together AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-538388044-50-pymstrtquryhajnzeyeaqftjrrbrgvrv.jpeg",
+      "id": "UG9lVXNlcjo1MzgzODgwNDQ="
+    },
+    "description": "Rnj-1 Instruct is Essential AI's elite 8B agentic coding model, delivering world-class software engineering capabilities that rival models 10x its size. With 20.8% on SWE-bench Verified, exceptional tool use (62.2% BFCL), and a 32K context window, it excels at autonomous coding agents, iterative problem-solving, and multi-step technical workflows. Released under Apache 2.0, Rnj-1 Instruct is deliberately designed for community extension\u2014limited post-training preserves flexibility for domain specialization and fine-tuning.",
+    "poweredBy": "Powered by a server managed by @togetherai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.00/message</td><td>0 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.00/message | 0 points/message |\n"
+    }
+  ]
+}

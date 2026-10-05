@@ -1,0 +1,29 @@
+{
+  "id": "gpt-3.5-turbo",
+  "checked_at": "2026-10-05T02:12:47.910676+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "GPT-3.5-Turbo",
+    "creator": {
+      "isDeleted": false,
+      "handle": "openai",
+      "fullName": "OpenAI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910400879-50-wrfgcbmfjrhquvwlxvypitmawpovrxoi.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDAwODc5"
+    },
+    "description": "OpenAI\u2019s GPT 3.5 Turbo model is a powerful language generation system designed to provide highly coherent, contextually relevant, and detailed responses. Supports 16,384 tokens of context. ",
+    "poweredBy": "Powered by OpenAI: gpt-3.5-turbo-0125.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.45/1M tokens</td><td>15 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$1.36/1M tokens</td><td>45 points/1k tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.45/1M tokens | 15 points/1k tokens |\n| Output (text) | $1.36/1M tokens | 45 points/1k tokens |\n"
+    }
+  ]
+}

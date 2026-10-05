@@ -2,18 +2,25 @@
 
 ## Pricing
 
-### Points-based Pricing
+### Website Pricing
 
 | Type | Cost |
 |------|------|
-| Total Cost | 0 points/message |
+| Total Cost | $0.00/message · 0 points/message |
 
-**Last Checked:** 2026-10-05 01:50:58.309106
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Total cost | USD | 0.00 | 1 message |
+| Total cost | POINTS | 0 | 1 message |
+
+**Last Checked:** 2026-10-05T02:09:18.836854+00:00
 
 
 ## Bot Information
 
-**Creator:** @togetherai
+**Creator:** togetherai
 
 **Description:** Kimi K2.6 is Moonshot AI's native multimodal agentic model built on a 1T parameter (32B activated) MoE architecture with 256K context. It delivers long-horizon coding stability across multiple languages and domains, Agent Swarm orchestration scaling to 300 sub-agents with 4,000 coordinated steps, and proactive autonomous execution for persistent background agents. The model supports text, image, and video input with thinking mode for multi-step reasoning and tool invocation.
 

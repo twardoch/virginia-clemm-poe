@@ -1,0 +1,29 @@
+{
+  "id": "openai-gpt-oss-20b",
+  "checked_at": "2026-10-05T02:11:39.385139+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "OpenAI-GPT-OSS-20B",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fireworksai",
+      "fullName": "Fireworks AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2339248475-50-cokslpvhdmlrqrkakgkkmiaffqqkcfgh.jpeg",
+      "id": "UG9lVXNlcjoyMzM5MjQ4NDc1"
+    },
+    "description": "GPT-OSS-20B is a compact, open-weight language model optimized for low-latency and resource-constrained environments, including local and edge deployments. It shares the same Harmony training foundation and capabilities as 120B, with faster inference and easier deployment that is ideal for specialized or offline use cases, fast responsive performance, chain-of-thought output, and agentic workflows.",
+    "poweredBy": "Powered by a server managed by @fireworksai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.00076/message</td><td>25 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.00076/message | 25 points/message |\n"
+    }
+  ]
+}

@@ -9,9 +9,28 @@
 | Prompt | $1.515E-7/token |
 | Completion | $5.051E-7/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $0.15/1M tokens · 5 points/1k tokens |
+| Output (Text) | $0.51/1M tokens · 17 points/1k tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 0.15 | 1000000 tokens |
+| Input (text) | POINTS | 5 | 1000 tokens |
+| Output (text) | USD | 0.51 | 1000000 tokens |
+| Output (text) | POINTS | 17 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:13:44.491914+00:00
+
+
 ## Bot Information
 
-**Creator:** @novitaai
+**Creator:** novitaai
 
 **Description:** GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while reducing compute overhead.
 

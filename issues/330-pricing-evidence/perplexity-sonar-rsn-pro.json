@@ -1,0 +1,29 @@
+{
+  "id": "perplexity-sonar-rsn-pro",
+  "checked_at": "2026-10-05T02:11:54.847266+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Perplexity-Sonar-Rsn-Pro",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "This model operates on the open-sourced uncensored R1-1776 model from Perplexity with web search capabilities. The Perplexity Sonar Rsn Pro Reasoning Model takes AI-powered answers to the next level, offering unmatched quality and precision. Outperforming leading search engines and LLMs, This model has demonstrated superior performance in the SimpleQA benchmark, making it the gold standard for high-quality answer generation. Context Length: 128k (max output token limit of 8k)",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th style=\"text-align: left;\">Item</th><th style=\"text-align: left;\">Rate</th></tr></thead><tbody><tr><td style=\"text-align: left;\">Base Fee (Low Context)</td><td style=\"text-align: left;\">480 ($0.015)</td></tr><tr><td style=\"text-align: left;\">Base Fee (Medium Context)</td><td style=\"text-align: left;\">800 ($0.024)</td></tr><tr><td style=\"text-align: left;\">Base Fee (High Context)</td><td style=\"text-align: left;\">1120 ($0.034)</td></tr><tr><td style=\"text-align: left;\">Input Tokens</td><td style=\"text-align: left;\">160 ($0.0048) per 1,000 tokens</td></tr><tr><td style=\"text-align: left;\">Output Tokens</td><td style=\"text-align: left;\">640 ($0.019) per 1,000 tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "This bot uses a variable pricing model.\n\nNote that conversation history and image tokens are priced in input.\nAuthorization fees are likely higher than the fee charged. Charges can be viewed by right clicking a message and selecting \"Info\"\n| Item | Rate |\n|:---|:---|\n| Base Fee (Low Context) | 480 ($0.015) |\n| Base Fee (Medium Context) | 800 ($0.024) |\n| Base Fee (High Context) | 1120 ($0.034) |\n| Input Tokens | 160 ($0.0048) per 1,000 tokens |\n| Output Tokens | 640 ($0.019) per 1,000 tokens |\n"
+    }
+  ]
+}

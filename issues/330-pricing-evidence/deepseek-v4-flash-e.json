@@ -1,0 +1,29 @@
+{
+  "id": "deepseek-v4-flash-e",
+  "checked_at": "2026-10-05T02:13:11.284999+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "DeepSeek-V4-Flash-E",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "This model is retiring on 2026-10-10. Please switch to: https://poe.com/DS-V4-Flash-0731-EL\nDeepSeek V4 Flash is a highly efficient lightweight Mixture-of-Experts model with 284 billion total parameters and 13 billion active parameters, natively supporting context windows of up to 1M tokens. Offers fast inference speed, low latency, and cost-effective invocation, delivering well-balanced overall performance. Designed for high-concurrency, lightweight workloads such as everyday dialogue, content creation, basic RAG applications, and batch text processing.\nThis model is from Singapore.\n\nNotes:\n- Context Window: 1M\n- Supported input modalities: Text, Image (non-native), Documents\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.20/1M tokens</td><td>7 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$0.40/1M tokens</td><td>14 points/1k tokens</td></tr><tr><td>Bot message</td><td>$0.0020/message</td><td>67 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.20/1M tokens | 7 points/1k tokens |\n| Output (text) | $0.40/1M tokens | 14 points/1k tokens |\n| Bot message | $0.0020/message | 67 points/message |\n"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "seedance-1.0-pro-fast",
+  "checked_at": "2026-10-05T02:12:29.621453+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Seedance-1.0-Pro-Fast",
+    "creator": {
+      "isDeleted": false,
+      "handle": "Bytedance",
+      "fullName": "Bytedance",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-3051278963-50-eutwplhohbxvxssqxmripuferuovulrc.jpeg",
+      "id": "UG9lVXNlcjozMDUxMjc4OTYz"
+    },
+    "description": "Seedance Pro Fast is a faster version of Seedance 1.0 Pro that balances speed, quality and cost. Seedance is a video generation model with text-to-video and image-to-video capabilities. It achieves breakthroughs in semantic understanding and prompt following.\n\nOptional prompts:\nSet the aspect ratio (available values: `21:9`, `16:9`, `4:3`, `1:1`, `3:4`, `9:16`). Set to `16:9` as default.\nSet resolution (one of `480p`,`720p`,`1080p` to set the video resolution. Set to `1080p` as default.\nSet video duration (3s to 12s). Set to `5s` as default.\n\nNotes:\nNumber of video tokens calculated for pricing is approximately: `height * width * fps * duration / 1024).\nFile attachment accepted: jpeg, png, webp",
+    "poweredBy": "Powered by a server managed by @Bytedance.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Video Output</td><td>33334 points ($1.01) / million video tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Video Output | 33334 points ($1.01) / million video tokens | \n"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "muse-glimmer-30b-el",
+  "checked_at": "2026-10-05T02:13:37.592564+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Muse-Glimmer-30B-EL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Muse Glimmer 30B is Meta's open agentic model, built for tool use, coding, and multi-step reasoning. It accepts text and image input with a 128K token context, and supports function calling, structured JSON output, and controllable reasoning strength.\n\nWeight Precision: NVFP4\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.20/1M tokens</td><td>7 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$0.81/1M tokens</td><td>27 points/1k tokens</td></tr><tr><td>Cache discount</td><td>75% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.20/1M tokens | 7 points/1k tokens |\n| Output (text) | $0.81/1M tokens | 27 points/1k tokens |\n| Cache discount | 75% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n"
+    }
+  ]
+}

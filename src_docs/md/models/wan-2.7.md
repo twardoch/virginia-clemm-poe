@@ -1,8 +1,29 @@
 # [wan-2.7](https://poe.com/wan-2.7){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| 720P | $0.10/sec · 3,333 pts/sec |
+| 1080P | $0.150/sec · 5,000 pts/sec |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| 720P | USD | 0.10 | 1 second |
+| 720P | POINTS | 3333 | 1 second |
+| 1080P | USD | 0.150 | 1 second |
+| 1080P | POINTS | 5000 | 1 second |
+
+**Last Checked:** 2026-10-05T02:11:10.560779+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Wan 2.7 is Alibaba's latest multimodal video generation model, capable of creating high-fidelity videos from text, images, video references, or by editing existing videos. It supports four generation modes: Text-to-Video (T2V), Image-to-Video (I2V), Video Edit, and Reference-to-Video (R2V).
 

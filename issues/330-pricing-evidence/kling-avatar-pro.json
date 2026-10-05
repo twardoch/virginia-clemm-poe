@@ -1,0 +1,29 @@
+{
+  "id": "kling-avatar-pro",
+  "checked_at": "2026-10-05T02:12:31.078829+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Kling-Avatar-Pro",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Create lifelike avatar videos featuring realistic humans, animals, cartoons, or stylized characters. Simply upload an image and an audio file to generate a video of your character speaking.\n\nSupported file formats:\nImages: JPEG, PNG, WEBP\nAudio: MP3, WAV",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Video Generation</td><td>3834 points ($0.12) / second</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Video Generation | 3834 points ($0.12) / second | \n"
+    }
+  ]
+}

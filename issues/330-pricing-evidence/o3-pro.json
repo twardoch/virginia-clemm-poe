@@ -1,0 +1,29 @@
+{
+  "id": "o3-pro",
+  "checked_at": "2026-10-05T02:11:34.851968+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "o3-pro",
+    "creator": {
+      "isDeleted": false,
+      "handle": "openai",
+      "fullName": "OpenAI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910400879-50-wrfgcbmfjrhquvwlxvypitmawpovrxoi.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDAwODc5"
+    },
+    "description": "o3-pro is a well-rounded and powerful model across domains, with more capability than https://poe.com/o3 at the cost of higher price and lower speed. It is especially capable at math, science, coding, visual reasoning tasks, technical writing, and instruction-following. Use it to think through multi-step problems that involve analysis across text, code, and images. \n\nOptional parameters:\nSet reasoning effort: Select from `low`, `medium`, `high`. Medium reasoning effort is set by default.",
+    "poweredBy": "Powered by OpenAI: o3-pro-2025-06-10.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input</td><td>$18.18/1M tokens</td><td>600 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$72.73/1M tokens</td><td>2400 points/1k tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input | $18.18/1M tokens | 600 points/1k tokens |\n| Output (text) | $72.73/1M tokens | 2400 points/1k tokens |\n"
+    }
+  ]
+}

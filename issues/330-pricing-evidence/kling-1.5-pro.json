@@ -1,0 +1,29 @@
+{
+  "id": "kling-1.5-pro",
+  "checked_at": "2026-10-05T02:12:39.436365+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Kling-1.5-Pro",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Kling-1.5-Pro video generation bot, hosted by fal.ai. For best results, upload an image attachment. \n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Video Output</td><td>2834 points ($0.086) / second</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Video Output | 2834 points ($0.086) / second | \n"
+    }
+  ]
+}

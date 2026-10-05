@@ -1,8 +1,38 @@
 # [qwen3.5-omni-flash](https://poe.com/qwen3.5-omni-flash){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Text / Image / Video | $0.40/1M tokens · 13 points/1K tokens |
+| Audio | $3.00/1M tokens · 100 points/1K tokens |
+| Text Only | $2.20/1M tokens · 73 points/1K tokens |
+| Text + Audio | $11.90/1M tokens · 397 points/1K tokens |
+| Web Search | $0.015/request · 500 points/request |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Text / Image / Video | USD | 0.40 | 1000000 tokens |
+| Text / Image / Video | POINTS | 13 | 1000 tokens |
+| Audio | USD | 3.00 | 1000000 tokens |
+| Audio | POINTS | 100 | 1000 tokens |
+| Text Only | USD | 2.20 | 1000000 tokens |
+| Text Only | POINTS | 73 | 1000 tokens |
+| Text + Audio | USD | 11.90 | 1000000 tokens |
+| Text + Audio | POINTS | 397 | 1000 tokens |
+| Web Search | USD | 0.015 | 1 message |
+| Web Search | POINTS | 500 | 1 message |
+
+**Last Checked:** 2026-10-05T02:10:46.346724+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Qwen3.5-Omni Flash is the cost-efficient variant of Qwen's latest omni-modal model, supporting text, image, audio, and video understanding and interaction. It handles up to 3 hours of audio and 1 hour of video input, with audio input in 90+ languages and speech output in 30+ languages across 55 voice timbres.
 

@@ -1,0 +1,29 @@
+{
+  "id": "gemini-3.6-flash",
+  "checked_at": "2026-10-05T02:10:29.921519+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Gemini-3.6-Flash",
+    "creator": {
+      "isDeleted": false,
+      "handle": "google",
+      "fullName": "Google",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910402837-50-hdxyjsuznjtgwrszmhvbhgbviwdhkwvl.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDAyODM3"
+    },
+    "description": "Google\u2019s token-efficient workhorse model for coding, knowledge work, and multimodal tasks. Get advanced reasoning at Flash speed, analyze text, images, audio, and video, and work with up to 1M tokens of context.",
+    "poweredBy": "Powered by a server managed by @google.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input</td><td>$0.76/1M tokens</td><td>25 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$3.79/1M tokens</td><td>125 points/1k tokens</td></tr><tr><td>Output</td><td>$0.014/search</td><td>467 points/search</td></tr><tr><td>Cache discount</td><td>90% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input | $0.76/1M tokens | 25 points/1k tokens |\n| Output (text) | $3.79/1M tokens | 125 points/1k tokens |\n| Output | $0.014/search | 467 points/search |\n| Cache discount | 90% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n\n\nWeb searches will add input tokens."
+    }
+  ]
+}

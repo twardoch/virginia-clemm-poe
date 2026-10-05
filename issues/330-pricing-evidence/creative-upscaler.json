@@ -1,0 +1,29 @@
+{
+  "id": "creative-upscaler",
+  "checked_at": "2026-10-05T02:10:16.484817+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "creative-upscaler",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Upscale images using the creative upscaler present in fal. Not intended for high fidelity situations. Adds HDR lighting and a bunch of other stuff as well.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Image Output</td><td>142 points ($0.0043) / message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Image Output | 142 points ($0.0043) / message | \n"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "llama-3.1-8b-di",
+  "checked_at": "2026-10-05T02:11:47.459995+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Llama-3.1-8B-DI",
+    "creator": {
+      "isDeleted": false,
+      "handle": "deepinfra",
+      "fullName": "DeepInfra",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2942644786-50-kwbwbicjxskxfnovutpupodkegoceisf.jpeg",
+      "id": "UG9lVXNlcjoyOTQyNjQ0Nzg2"
+    },
+    "description": "The smallest and fastest model from Meta's Llama 3.1 family. This open-source language model excels in multilingual dialogue, outperforming numerous industry benchmarks for both closed and open-source conversational AI systems.  All data you submit to this bot is governed by the Poe privacy policy and is only sent to DeepInfra, a US-based company.\n\nInput token limit 128k, output token limit 8k. Quantization: FP16 (official).",
+    "poweredBy": "Powered by a server managed by @deepinfra.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.00030/message</td><td>10 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.00030/message | 10 points/message |\n"
+    }
+  ]
+}

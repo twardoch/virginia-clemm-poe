@@ -1,0 +1,29 @@
+{
+  "id": "Video-Generator-Pro",
+  "checked_at": "2026-10-05T02:10:12.140350+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Video-Generator-Pro",
+    "creator": {
+      "isDeleted": false,
+      "handle": "OpenSourceLab",
+      "fullName": "Open-Source-Lab",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2419661422-50-yfhdcuqxmrjwjokrdinuyvphinqrsuoa.jpeg",
+      "id": "UG9lVXNlcjoyNDE5NjYxNDIy"
+    },
+    "description": "Premium video generator with synchronized audio and speech. This bot delivers great results for everyday creative projects. Ideal for content creators, marketers, educators and hobbyists who want quick and high quality output for YouTube.\n\nYou can provide the bot a reference image and Video-Generator-Pro will generate a matching video sequence. If you want spoken dialogue, simply enclose the speech in quotation marks and the video generator will embed the voice into the generated clip.",
+    "poweredBy": "Powered by a server managed by @OpenSourceLab.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total Cost</td><td>$0.18 / video</td><td>6,000 points / video</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "| Type | Rate (USD) | Rate (Points) |\n|-------------|----------------------|---------------------------------------|\n| Total Cost | $0.18 / video | 6,000 points / video |"
+    }
+  ]
+}

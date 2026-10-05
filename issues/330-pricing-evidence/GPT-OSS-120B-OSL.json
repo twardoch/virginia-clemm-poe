@@ -1,0 +1,29 @@
+{
+  "id": "GPT-OSS-120B-OSL",
+  "checked_at": "2026-10-05T02:09:04.749346+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "GPT-OSS-120B-OSL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "OpenSourceLab",
+      "fullName": "Open-Source-Lab",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2419661422-50-yfhdcuqxmrjwjokrdinuyvphinqrsuoa.jpeg",
+      "id": "UG9lVXNlcjoyNDE5NjYxNDIy"
+    },
+    "description": "OpenAI's open-weight model with apache 2.0 license. It offers advanced chain-of-thought reasoning and was developed with community feedback. This chatbot is specialized in chat conversations and can process file attachments like TXT, PDF, DOCX, CSV, JSON, PY, MD, HTML, YAML. Other non-text formats like Images, audio, video and binaries are not supported. Context window: 128,000 tokens",
+    "poweredBy": "Powered by a server managed by @OpenSourceLab.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$1.52 / 1M tokens</td><td>50 points / 1K tokens</td></tr><tr><td>Output (text)</td><td>$4.55 / 1M tokens</td><td>150 points / 1K tokens</td></tr><tr><td>Input (file)</td><td>Variable</td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "| Type | Rate (USD) | Rate (Points) |\n|-------------|----------------------|---------------------------------------|\n| Input (text) | $1.52 / 1M tokens | 50 points / 1K tokens |\n| Output (text) | $4.55 / 1M tokens | 150 points / 1K tokens |\n| Input (file) | Variable | |"
+    }
+  ]
+}

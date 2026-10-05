@@ -9,9 +9,31 @@
 | Prompt | $3.636E-7/token |
 | Completion | $0.0000022303/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $0.36/1M tokens · 12 points/1k tokens |
+| Output (Text) | $2.23/1M tokens · 74 points/1k tokens |
+| Bot Message | $0.0051/message · 167 points/message |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 0.36 | 1000000 tokens |
+| Input (text) | POINTS | 12 | 1000 tokens |
+| Output (text) | USD | 2.23 | 1000000 tokens |
+| Output (text) | POINTS | 74 | 1000 tokens |
+| Bot message | USD | 0.0051 | 1 message |
+| Bot message | POINTS | 167 | 1 message |
+
+**Last Checked:** 2026-10-05T02:10:45.090466+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Qwen3.5-Plus is a state-of-the-art multimodal model featuring a hybrid architecture designed for efficient deep thinking and robust visual understanding. It supports text, image, and video inputs within a massive 1M token context window, delivering performance comparable to leading global models across diverse tasks.
 This model is served by Alibaba Cloud Int. from Singapore.

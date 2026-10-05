@@ -1,0 +1,29 @@
+{
+  "id": "SoulX-Podcast",
+  "checked_at": "2026-10-05T02:09:55.653105+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "SoulX-Podcast",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "SoulX-Podcast is an open-source AI voice model developed by Soul AI Lab designed to generate realistic, long-form, multi-speaker podcast dialogues. It features advanced paralinguistic controls that simulate natural human elements like laughter and sighs, while supporting zero-shot voice cloning across Mandarin, English, and various Chinese dialects. \n\nLearn more: https://soul-ailab.github.io/soulx-podcast/\n\nThis model is hosted by EmpirioLabs.ai and is exclusive to the Poe platform.\n\nNotes:\n- Generations may take up to 30 minutes to complete.\n- Generations are capped at 20k words (~2 hours of audio).\n- Large audio files (>50mb) will be linked instead of previewed in the Poe message field due to their size. \n\nParameter controls available:\n1. Voice Configuration\n- `--voice_s[1-4] [arthur/james/lj/xiaomei/zhigang]`: Selects preset voice for specific speaker number\n- If cloning voice: Select `Custom Voice` option for speaker and upload audio\n\n2. Model Settings\n- `--model [base/dialect]`: partial to 'base' (English/Mandarin) or 'dialect' (+ Sichuan, Henan, Cantonese)\n- `--output_format [mp3/wav]`: 'wav' for lossless quality, 'mp3' for smaller file size\n\n3. Advanced Generation\n- `--temperature [0.1-2.0]`: Controls randomness in generation (default 0.6)\n- `--repetition_penalty [1.0-2.0]`: Penalizes repetitive output (default 1.25)\n- `--seed [number]`: Number for reproducible results (default 42)\n\n4. Sampling Controls\n- `--top_k [1-500]`: Limits vocabulary to top K probable tokens (default 100)\n- `--top_p [0.1-1.0]`: Limits vocabulary to cumulative probability P (default 0.9)",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Model</th><th>Rate</th></tr></thead><tbody><tr><td>Base</td><td>489 ($0.015) / 1k chars</td></tr><tr><td>Dialect</td><td>489 ($0.015) / 1k chars</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "| Model | Rate |\n|-------|------|\n| Base | 489 ($0.015) / 1k chars |\n| Dialect | 489 ($0.015) / 1k chars |"
+    }
+  ]
+}

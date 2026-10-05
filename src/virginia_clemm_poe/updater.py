@@ -9,7 +9,7 @@ from datetime import UTC, datetime
 from typing import Any
 
 import httpx
-from bs4 import BeautifulSoup, Tag
+from bs4 import BeautifulSoup
 from loguru import logger
 from playwright.async_api import Page
 from rich.progress import Progress, SpinnerColumn, TextColumn, TimeElapsedColumn
@@ -29,7 +29,6 @@ from .config import (
     DEFAULT_DEBUG_PORT,
     EXPANSION_WAIT_SECONDS,
     HTTP_REQUEST_TIMEOUT_SECONDS,
-    MODAL_CLOSE_WAIT_SECONDS,
     PAGE_NAVIGATION_TIMEOUT_MS,
     PAUSE_SECONDS,
     POE_API_URL,
@@ -37,6 +36,7 @@ from .config import (
     TABLE_TIMEOUT_MS,
 )
 from .poe_session import PoeSessionManager
+from .pricing import parse_rate_card, parse_rate_tables
 from .type_guards import validate_poe_api_response
 from .types import PoeApiResponse
 from .utils.cache import cached, get_api_cache, get_scraping_cache
@@ -120,12 +120,8 @@ class BotUpdater:
         bot pages. It handles various table formats and structures commonly used
         for displaying bot pricing information.
 
-        The parsing logic:
-        1. Locates the first table element in the HTML
-        2. Iterates through table rows, extracting key-value pairs
-        3. Skips header rows (all th elements)
-        4. Uses the first cell as the key and remaining cells as values
-        5. Handles single values and multi-value arrays appropriately
+        Reads all tables, excludes obsolete/discount values, and preserves raw
+        rows alongside numeric currency, amount, denominator, and source records.
 
         Args:
             html: Raw HTML string containing a pricing table element
@@ -147,31 +143,9 @@ class BotUpdater:
             This parser is specifically designed for Poe.com pricing tables and
             may not work correctly with arbitrary HTML table structures.
         """
-        soup = BeautifulSoup(html, "html.parser")
-        table = soup.find("table")
-        if table is None:
+        if not BeautifulSoup(html, "html.parser").select("table, [role=table]"):
             raise ValueError("No table found in the provided HTML.")
-
-        # Type check: table should be a Tag when found
-        assert isinstance(table, Tag), "Table element should be a Tag"
-
-        data: dict[str, Any | None] = {}
-        for row in table.find_all("tr"):
-            cells = row.find_all(["th", "td"])
-            if not cells or all(cell.name == "th" for cell in cells):
-                continue
-            texts = [cell.get_text(strip=True) for cell in cells]
-            if not texts:
-                continue
-            key = texts[0]
-            values = texts[1:]
-            if not values:
-                data[key] = None
-            elif len(values) == 1:
-                data[key] = values[0]
-            else:
-                data[key] = values
-        return data
+        return parse_rate_tables(html)
 
     async def scrape_model_info(
         self, model_id: str, page: Page
@@ -321,44 +295,55 @@ class BotUpdater:
         Returns:
             Tuple of (pricing_dict, error_message)
         """
-        # Look for the action bar
-        action_bar = await page.query_selector(".BotInfoCardActionBar_actionBar__5_Gnq")
-        rates_scope = action_bar or page
+        cards: list[str] = []
+        tasks: list[asyncio.Task] = []
 
-        # Find the Rates button
-        rates_button = await rates_scope.query_selector("button:has-text('Rates')")
-        if not rates_button:
-            rates_button = await rates_scope.query_selector("button:has(span:has-text('Rates'))")
+        async def capture(response):
+            if "/api/gql_POST" not in response.url:
+                return
+            try:
+                node = (await response.json()).get("data", {}).get("botById") or {}
+                card = (node.get("botPricing") or {}).get("rateMenuMarkdown")
+                if card:
+                    cards.append(card)
+            except (ValueError, AttributeError):
+                logger.debug(f"Non-pricing response for {model_id}")
 
-        if not rates_button:
-            logger.debug(f"No 'Rates' button found for {model_id}")
-            return None, "No Rates button found"
+        def on_response(response):
+            tasks.append(asyncio.create_task(capture(response)))
 
-        # Click Rates button
-        logger.debug(f"Found Rates button for {model_id}, clicking...")
-        await rates_button.click()
-
-        # Wait for dialog
-        await page.wait_for_selector("div[role='dialog']", timeout=TABLE_TIMEOUT_MS)
-        await page.wait_for_selector("div[role='dialog'] table", timeout=TABLE_TIMEOUT_MS)
-
-        # Extract table HTML
-        table_html = await self._find_pricing_table_html(page)
-        if not table_html:
-            logger.debug(f"No table found for {model_id}")
-            return None, "No pricing table found in dialog"
-
-        # Parse pricing
-        pricing = self.parse_pricing_table(table_html)
-
-        # Close modal
+        page.on("response", on_response)
         try:
+            button = page.get_by_role("button", name="Rates", exact=True)
+            try:
+                await button.click(timeout=TABLE_TIMEOUT_MS)
+            except Exception:
+                # Poe sometimes renders the public rate trigger inside a hidden card.
+                await button.evaluate("element => element.click()")
+            dialog = page.locator("[role=dialog]")
+            await dialog.wait_for(timeout=TABLE_TIMEOUT_MS)
+            # Rate cards can contain paragraphs/lists instead of a table.
+            try:
+                await dialog.locator("table").first.wait_for(timeout=TABLE_TIMEOUT_MS)
+            except Exception:
+                logger.debug(f"Trying raw rate card for {model_id}")
+            html = await dialog.inner_html()
+            if tasks:
+                await asyncio.gather(*tasks)
+            pricing = parse_rate_tables(html)
+            if not pricing:
+                for card in cards:
+                    pricing.update(parse_rate_card(card))
+            if cards:
+                pricing["rate_card"] = cards[-1]
+            if not pricing.get("rates"):
+                return None, "Creator has not disclosed a numeric rate"
+            return pricing, None
+        finally:
+            page.remove_listener("response", on_response)
+            if tasks:
+                await asyncio.gather(*tasks, return_exceptions=True)
             await page.keyboard.press("Escape")
-            await asyncio.sleep(MODAL_CLOSE_WAIT_SECONDS)
-        except Exception:
-            pass
-
-        return pricing, None
 
     async def _find_pricing_table_html(self, page: Page) -> str | None:
         """Find and extract pricing table HTML from the dialog."""
@@ -821,9 +806,7 @@ class BotUpdater:
                 logger.info(f"✓ Updated scraped pricing for {bot.id}")
             else:
                 bot.pricing_error = error or "Unknown error"
-                # Don't clear pricing entirely - keep API pricing if it exists
-                if bot.pricing:
-                    bot.pricing.scraped = None
+                # Keep the last observed rate and its timestamp on a failed refresh.
                 logger.warning(f"✗ No scraped pricing found for {bot.id}: {error}")
 
         # Update bot info if requested

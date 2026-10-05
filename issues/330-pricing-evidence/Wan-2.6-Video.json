@@ -1,0 +1,29 @@
+{
+  "id": "Wan-2.6-Video",
+  "checked_at": "2026-10-05T02:10:13.358486+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Wan-2.6-Video",
+    "creator": {
+      "isDeleted": false,
+      "handle": "OpenSourceLab",
+      "fullName": "Open-Source-Lab",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2419661422-50-yfhdcuqxmrjwjokrdinuyvphinqrsuoa.jpeg",
+      "id": "UG9lVXNlcjoyNDE5NjYxNDIy"
+    },
+    "description": "Video generation model designed for crafting cinematic, multi-shot narratives, movies and scenes with audio. To add spoken dialogue, wrap the speech in quotation marks (e.g., a painter stand in front his artwork and says: \u201cArt is controlled chaos.\u201d). Wan-2.6-Video is built on Tongyi-Wanxiang-2.6 and can synthesize high-resolution videos at up to 24 FPS with multi shot, character consistency and native audio. The model does support image references.",
+    "poweredBy": "Powered by a server managed by @OpenSourceLab.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total Cost</td><td>$0.18 / video</td><td>6,000 points / video</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "| Type | Rate (USD) | Rate (Points) |\n|-------------|----------------------|---------------------------------------|\n| Total Cost | $0.18 / video | 6,000 points / video |"
+    }
+  ]
+}

@@ -9,9 +9,28 @@
 | Prompt | $0.0000043939/token |
 | Completion | $0.0000087879/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $4.39/1M tokens · 145 points/1k tokens |
+| Output (Text) | $8.79/1M tokens · 290 points/1k tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 4.39 | 1000000 tokens |
+| Input (text) | POINTS | 145 | 1000 tokens |
+| Output (text) | USD | 8.79 | 1000000 tokens |
+| Output (text) | POINTS | 290 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:13:54.421694+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** MiMo V2.6 Pro UltraSpeed serves Xiaomi's trillion-parameter flagship at substantially higher output speed. It accepts text, image, and video input with a 1M token context, and supports reasoning and function calling.
 

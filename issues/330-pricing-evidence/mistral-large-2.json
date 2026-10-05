@@ -1,0 +1,29 @@
+{
+  "id": "mistral-large-2",
+  "checked_at": "2026-10-05T02:12:45.749468+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Mistral-Large-2",
+    "creator": {
+      "isDeleted": false,
+      "handle": "mistral",
+      "fullName": "Mistral",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910404805-50-ygwijasruuxueejozjixjoulatzersfe.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDA0ODA1"
+    },
+    "description": "Mistral's latest text generation model (Mistral-Large-2407) with top-tier reasoning capabilities. It can be used for complex multilingual reasoning tasks, including text understanding, transformation, and code generation. This bot has the full 128k context window supported by the model.",
+    "poweredBy": "Powered by Mistral.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$3.03/1M tokens</td><td>100 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$9.09/1M tokens</td><td>300 points/1k tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $3.03/1M tokens | 100 points/1k tokens |\n| Output (text) | $9.09/1M tokens | 300 points/1k tokens |\n"
+    }
+  ]
+}

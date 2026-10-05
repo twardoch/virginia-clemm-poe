@@ -1,0 +1,29 @@
+{
+  "id": "minimax-m3-t",
+  "checked_at": "2026-10-05T02:13:16.506898+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "MiniMax-M3-T",
+    "creator": {
+      "isDeleted": false,
+      "handle": "togetherai",
+      "fullName": "Together AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-538388044-50-pymstrtquryhajnzeyeaqftjrrbrgvrv.jpeg",
+      "id": "UG9lVXNlcjo1MzgzODgwNDQ="
+    },
+    "description": "MiniMax M3 is MiniMax's frontier open-weight model combining coding and agentic capability, 1M token context, and native multimodality in a single checkpoint \u2014 the first open-weight model to bring all three together. It introduces MSA (MiniMax Sparse Attention), a new sparse attention architecture that reduces per-token compute to 1/20 of the previous generation at 1M context, delivering 9x prefilling and 15x decoding speedups. The model is natively multimodal from training step 0, supporting image and video input and computer use, with a toggleable thinking mode. It scores 59.0% on SWE-Bench Pro and 66.0% on Terminal-Bench 2.1, and is available on Together AI with a 1M token context window.",
+    "poweredBy": "Powered by a server managed by @togetherai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.0061/message</td><td>200 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.0061/message | 200 points/message |\n"
+    }
+  ]
+}

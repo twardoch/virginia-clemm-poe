@@ -1,0 +1,29 @@
+{
+  "id": "mistral-small-3",
+  "checked_at": "2026-10-05T02:12:40.970612+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Mistral-Small-3",
+    "creator": {
+      "isDeleted": false,
+      "handle": "mistral",
+      "fullName": "Mistral",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910404805-50-ygwijasruuxueejozjixjoulatzersfe.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDA0ODA1"
+    },
+    "description": "Mistral Small 3 is a pre-trained and instructed model catered to the \u201880%\u2019 of generative AI tasks--those that require robust language and instruction following performance, with very low latency. Released under an Apache 2.0 license and comparable to Llama-3.3-70B and Qwen2.5-32B-Instruct.",
+    "poweredBy": "Powered by Mistral.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.10/1M tokens</td><td>4 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$0.30/1M tokens</td><td>10 points/1k tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.10/1M tokens | 4 points/1k tokens |\n| Output (text) | $0.30/1M tokens | 10 points/1k tokens |\n"
+    }
+  ]
+}

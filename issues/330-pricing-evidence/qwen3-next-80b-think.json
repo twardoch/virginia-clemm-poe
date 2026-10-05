@@ -1,0 +1,29 @@
+{
+  "id": "qwen3-next-80b-think",
+  "checked_at": "2026-10-05T02:11:23.065291+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Qwen3-Next-80B-Think",
+    "creator": {
+      "isDeleted": false,
+      "handle": "novitaai",
+      "fullName": "Novita AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-3067795970-50-ezhhpdjtzbudawymtaodhapblyfagaxk.jpeg",
+      "id": "UG9lVXNlcjozMDY3Nzk1OTcw"
+    },
+    "description": "Qwen3-Next uses a highly sparse MoE design: 80B total parameters, but only ~3B activated per inference step. Experiments show that, with global load balancing, increasing total expert parameters while keeping activated experts fixed steadily reduces training loss.Compared to Qwen3\u2019s MoE (128 total experts, 8 routed), Qwen3-Next expands to 512 total experts, combining 10 routed experts + 1 shared expert \u2014 maximizing resource usage without hurting performance.\nThe Qwen3-Next-80B-A3B-Thinking excels at complex reasoning tasks \u2014 outperforming higher-cost models like Qwen3-30B-A3B-Thinking-2507 and Qwen3-32B-Thinking, outpeforming the closed-source Gemini-2.5-Flash-Thinking on multiple benchmarks, and approaching the performance of our top-tier model Qwen3-235B-A22B-Thinking-2507.\n\nFile Support: Text, Markdown and PDF files\nContext window: 131k tokens",
+    "poweredBy": "Powered by a server managed by @novitaai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.15/1M tokens</td><td>5 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$1.52/1M tokens</td><td>50 points/1k tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.15/1M tokens | 5 points/1k tokens |\n| Output (text) | $1.52/1M tokens | 50 points/1k tokens |\n"
+    }
+  ]
+}

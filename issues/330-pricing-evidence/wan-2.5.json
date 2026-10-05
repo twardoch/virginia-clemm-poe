@@ -1,0 +1,29 @@
+{
+  "id": "wan-2.5",
+  "checked_at": "2026-10-05T02:12:24.263859+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Wan-2.5",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Wan-2.5 Video Generation bot. Has text-to-video and image-to-video capabilities. Optionally, send an audio file (mp3) to guide the video generation. \n\nOptional Parameters:\nControl the output's resolution. Select from 480p, 720p or 1080p defaults to 720. Pricing varies on the basis of resolution.\nAspect ratio. Select from 16:9, 1:1, 9:16 defaults to 16:9 aspect ratio.\nDuration. Select video duration either 5 seconds or 10 seconds. Defaults to 5 seconds.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Video Output (480p)</td><td>1667 points ($0.051) / second</td></tr><tr><td>Video Output (720p)</td><td>3334 points ($0.10) / second</td></tr><tr><td>Video Output (1080p)</td><td>5000 points ($0.15) / second</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Video Output (480p)| 1667 points ($0.051) / second | \n| Video Output (720p)| 3334 points ($0.10) / second | \n| Video Output (1080p)| 5000 points ($0.15) / second | \n"
+    }
+  ]
+}

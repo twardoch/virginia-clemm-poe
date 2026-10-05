@@ -9,9 +9,28 @@
 | Prompt | $0.0000013333/token |
 | Completion | $0.000004/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $1.33/1M tokens · 44 points/1k tokens |
+| Output (Text) | $4.00/1M tokens · 132 points/1k tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 1.33 | 1000000 tokens |
+| Input (text) | POINTS | 44 | 1000 tokens |
+| Output (text) | USD | 4.00 | 1000000 tokens |
+| Output (text) | POINTS | 132 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:13:42.233883+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** DeepSeek V4 Pro 0813 is the official DeepSeek Pro release with stronger agent, coding, and tool-use performance. It accepts text input with a 1M token context, hybrid thinking, and function calling.
 

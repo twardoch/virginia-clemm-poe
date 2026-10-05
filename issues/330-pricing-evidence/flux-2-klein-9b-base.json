@@ -1,0 +1,29 @@
+{
+  "id": "flux-2-klein-9b-base",
+  "checked_at": "2026-10-05T02:12:04.476496+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Flux-2-Klein-9B-Base",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Text-to-image generation and image editing with Flux 2 [klein] 9B Base from Black Forest Labs. Enhanced realism, crisper text rendering within images, and native editing capabilities. Send up to 3 images (jpeg/ png/ webp) to use for image editing or as references.\n\nOptional parameters:\n- Set aspect ratio. Select from (16:9, 4:3, 1:1, 3:4, 9:16). It is set to 4:3 aspect ratio as default.",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Image Input</td><td>367 points ($0.011) / image input</td></tr><tr><td>Image Output</td><td>367 points ($0.011) / image</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Image Input | 367 points ($0.011) / image input | \n| Image Output | 367 points ($0.011) / image | \n"
+    }
+  ]
+}

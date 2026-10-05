@@ -1,0 +1,27 @@
+{
+  "id": "GitHub",
+  "checked_at": "2026-10-05T02:09:05.710987+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "GitHub",
+    "creator": {
+      "isDeleted": false,
+      "handle": "opentools",
+      "fullName": "OpenTools",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2979648277-50-avlctjoywupzbpjkucazpvulzqzkvmrp.jpeg",
+      "id": "UG9lVXNlcjoyOTc5NjQ4Mjc3"
+    },
+    "description": "",
+    "poweredBy": "Powered by a server managed by @opentools.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": false
+  },
+  "tables": [],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "The creator has not provided details."
+    }
+  ]
+}

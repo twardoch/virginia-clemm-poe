@@ -9,9 +9,28 @@
 | Prompt | $2.02E-7/token |
 | Completion | $8.081E-7/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $0.20/1M tokens · 7 points/1k tokens |
+| Output (Text) | $0.81/1M tokens · 27 points/1k tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 0.20 | 1000000 tokens |
+| Input (text) | POINTS | 7 | 1000 tokens |
+| Output (text) | USD | 0.81 | 1000000 tokens |
+| Output (text) | POINTS | 27 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:13:37.592564+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Muse Glimmer 30B is Meta's open agentic model, built for tool use, coding, and multi-step reasoning. It accepts text and image input with a 128K token context, and supports function calling, structured JSON output, and controllable reasoning strength.
 

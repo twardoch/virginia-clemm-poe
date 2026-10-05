@@ -1,8 +1,29 @@
 # [DeepSeek-V4-Pro-N](https://poe.com/DeepSeek-V4-Pro-N){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $1.62/1M tokens · 54 points/1k tokens |
+| Output (Text) | $3.23/1M tokens · 107 points/1k tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 1.62 | 1000000 tokens |
+| Input (text) | POINTS | 54 | 1000 tokens |
+| Output (text) | USD | 3.23 | 1000000 tokens |
+| Output (text) | POINTS | 107 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:08:42.860514+00:00
+
+
 ## Bot Information
 
-**Creator:** @novitaai
+**Creator:** novitaai
 
 **Description:** DeepSeek-V4-Pro is the next-generation flagship open-source large language model developed by DeepSeek, delivering comprehensive performance that rivals the world's premier closed-source models. Compared to its predecessor, V4-Pro achieves a breakthrough evolution in Agentic capabilities. It firmly holds the top position among open-source models in Agentic Coding, providing a high-quality, end-to-end code delivery experience that surpasses mainstream industry benchmarks (such as Sonnet 4.5). Furthermore, the model not only boasts an expansive repository of world knowledge that leads the open-source community, but it also demonstrates ultimate logical reasoning prowess in highly demanding evaluations—including mathematics, STEM, and competitive programming. In these rigorous domains, V4-Pro outperforms all publicly evaluated open-source models and matches the capabilities of global closed-source giants. As the ideal foundational model for building complex agentic workflows, professional-grade software developm
 
@@ -12,11 +33,11 @@ Context window: 1M tokens
 
 ## Architecture
 
-**Input Modalities:** Unknown
+**Input Modalities:** text
 
-**Output Modalities:** Unknown
+**Output Modalities:** text
 
-**Modality:** unknown
+**Modality:** text->text
 
 
 ## Technical Details

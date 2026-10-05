@@ -1,0 +1,29 @@
+{
+  "id": "qwen3-max-preview-el",
+  "checked_at": "2026-10-05T02:11:45.966936+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Qwen3-Max-Preview-EL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "This model is retiring on 2026-10-10. Please switch to: https://poe.com/Qwen3.7-Max\nQwen3-Max-Preview shows substantial gains over the 2.5 series in overall capability, with significant enhancements in Chinese-English text understanding, complex instruction following, handling of subjective open-ended tasks, multilingual ability, and tool invocation; model knowledge hallucinations are reduced.\n\nParameter controls available:\n1. Thinking Mode\n   - Enable thinking about the response before giving a final answer: toggle it `on`, otherwise it is `off` by default.\n  \n2. Code Interpreter\n   - Toggle it `on` to enable code interpreter. It is `off` by default.\n   - Lets the model write and execute Python code for calculations, data analysis, and visualizations",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$1.09/1M tokens</td><td>36 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$4.85/1M tokens</td><td>160 points/1k tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $1.09/1M tokens | 36 points/1k tokens |\n| Output (text) | $4.85/1M tokens | 160 points/1k tokens |\n\n\nInput rate is 2x and output rate is 2x when context is 32k-128k tokens.\n\nInput rate is 2.5x and output rate is 2.5x when context is >128k tokens."
+    }
+  ]
+}

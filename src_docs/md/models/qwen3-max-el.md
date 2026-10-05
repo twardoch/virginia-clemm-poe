@@ -9,9 +9,31 @@
 | Prompt | $0.0000010909/token |
 | Completion | $0.0000055758/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $1.09/1M tokens · 36 points/1k tokens |
+| Output (Text) | $5.58/1M tokens · 184 points/1k tokens |
+| Bot Message | $0.0030/message · 100 points/message |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 1.09 | 1000000 tokens |
+| Input (text) | POINTS | 36 | 1000 tokens |
+| Output (text) | USD | 5.58 | 1000000 tokens |
+| Output (text) | POINTS | 184 | 1000 tokens |
+| Bot message | USD | 0.0030 | 1 message |
+| Bot message | POINTS | 100 | 1 message |
+
+**Last Checked:** 2026-10-05T02:11:37.191799+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** This model is retiring on 2026-10-10. Please switch to: https://poe.com/Qwen3.7-Max
 Qwen3-Max is a major update to the Qwen3 series, delivering significant improvements in reasoning, instruction following, and multilingual support. It provides higher accuracy in complex tasks like coding and math, along with reduced hallucinations and better performance on open-ended questions.

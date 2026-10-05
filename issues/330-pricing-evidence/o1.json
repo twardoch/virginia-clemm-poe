@@ -1,0 +1,29 @@
+{
+  "id": "o1",
+  "checked_at": "2026-10-05T02:11:43.540256+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "o1",
+    "creator": {
+      "isDeleted": false,
+      "handle": "openai",
+      "fullName": "OpenAI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910400879-50-wrfgcbmfjrhquvwlxvypitmawpovrxoi.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDAwODc5"
+    },
+    "description": "OpenAI's o1 is designed to reason before it responds and provides world-class capabilities on complex tasks (e.g. science, coding, and math). Improving upon o1-preview and with higher reasoning effort, it is also capable of reasoning through images and supports 200k tokens of input context. By default, uses reasoning effort of medium, but low, medium & high are also selectable.",
+    "poweredBy": "Powered by OpenAI: o1-2024-12-17.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input</td><td>$13.64/1M tokens</td><td>450 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$54.55/1M tokens</td><td>1800 points/1k tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input | $13.64/1M tokens | 450 points/1k tokens |\n| Output (text) | $54.55/1M tokens | 1800 points/1k tokens |\n"
+    }
+  ]
+}

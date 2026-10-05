@@ -9,9 +9,28 @@
 | Prompt | $2.626E-7/token |
 | Completion | $3.838E-7/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $0.26/1M tokens · 9 points/1k tokens |
+| Output (Text) | $0.38/1M tokens · 13 points/1k tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 0.26 | 1000000 tokens |
+| Input (text) | POINTS | 9 | 1000 tokens |
+| Output (text) | USD | 0.38 | 1000000 tokens |
+| Output (text) | POINTS | 13 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:13:27.040136+00:00
+
+
 ## Bot Information
 
-**Creator:** @deepseek
+**Creator:** deepseek
 
 **Description:** DeepSeek V3.2 is DeepSeek's efficient model for long-context reasoning and agentic tool-use tasks.
 

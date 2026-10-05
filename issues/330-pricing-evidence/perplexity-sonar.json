@@ -1,0 +1,29 @@
+{
+  "id": "perplexity-sonar",
+  "checked_at": "2026-10-05T02:11:52.549012+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Perplexity-Sonar",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Sonar by Perplexity is a cutting-edge AI model that delivers real-time, web-connected search results with accurate citations. It's designed to provide up-to-date information and customizable search sources, making it a powerful tool for integrating AI search into various applications. Context Length: 127k \n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th style=\"text-align: left;\">Item</th><th style=\"text-align: left;\">Rate</th></tr></thead><tbody><tr><td style=\"text-align: left;\">Base Fee (Low Context)</td><td style=\"text-align: left;\">400 ($0.012)</td></tr><tr><td style=\"text-align: left;\">Base Fee (Medium Context)</td><td style=\"text-align: left;\">640 ($0.019)</td></tr><tr><td style=\"text-align: left;\">Base Fee (High Context)</td><td style=\"text-align: left;\">960 ($0.029)</td></tr><tr><td style=\"text-align: left;\">Input &amp; Output Tokens</td><td style=\"text-align: left;\">80 ($0.0024) per 1,000 tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "This bot uses a variable pricing model.\n\nNote that conversation history and image tokens are priced in input.\nAuthorization fees are likely higher than the fee charged. Charges can be viewed by right clicking a message and selecting \"Info\"\n| Item | Rate |\n|:---|:---|\n| Base Fee (Low Context) | 400 ($0.012) |\n| Base Fee (Medium Context) | 640 ($0.019) |\n| Base Fee (High Context) | 960 ($0.029) |\n| Input & Output Tokens | 80 ($0.0024) per 1,000 tokens |\n"
+    }
+  ]
+}

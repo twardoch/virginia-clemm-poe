@@ -1,0 +1,29 @@
+{
+  "id": "Moondream-Next",
+  "checked_at": "2026-10-05T02:09:30.978120+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Moondream-Next",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Moondream-Next can describe images, detect objects or points in images, and detect a person's gaze in a photo. Pass in an image, a prompt to describe the task (for example, \"detect all circles in this image\", \"caption this image\") and specify the task to be performed with --task [task_name] (task_name ought to be one of `caption`, `bbox_detection`, `point_detection`, `gaze_detection`)",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Image Output</td><td>1700 points ($0.052) / message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Image Output | 1700 points ($0.052) / message | \n"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "nova-micro-1.0",
+  "checked_at": "2026-10-05T02:11:24.374446+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Nova-Micro-1.0",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Amazon Nova Micro is a text-only foundation model in the Amazon Nova family, designed for ultra\u2011low latency and very low cost, optimized for tasks like summarization, translation, and interactive chat. It supports a context window of 128,000 tokens, enabling handling of large text inputs in a single request.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.040/1M tokens</td><td>2 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$0.16/1M tokens</td><td>6 points/1k tokens</td></tr><tr><td>Cache discount</td><td>44% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.040/1M tokens | 2 points/1k tokens |\n| Output (text) | $0.16/1M tokens | 6 points/1k tokens |\n| Cache discount | 44% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n"
+    }
+  ]
+}

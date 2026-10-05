@@ -9,9 +9,28 @@
 | Prompt | $0.0001363636/token |
 | Completion | $0.0005454545/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $136.36/1M tokens · 4500 points/1k tokens |
+| Output (Text) | $545.45/1M tokens · 18000 points/1k tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input | USD | 136.36 | 1000000 tokens |
+| Input | POINTS | 4500 | 1000 tokens |
+| Output (text) | USD | 545.45 | 1000000 tokens |
+| Output (text) | POINTS | 18000 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:11:43.879244+00:00
+
+
 ## Bot Information
 
-**Creator:** @openai
+**Creator:** openai
 
 **Description:** OpenAI’s o1-pro highly capable reasoning model, tailored for complex, compute- or context-heavy tasks, dedicating additional thinking time to deliver more accurate, reliable answers. For less costly, complex tasks, https://poe.com/o3-mini is recommended.
 

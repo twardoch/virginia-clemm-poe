@@ -1,8 +1,29 @@
 # [veo-v3.1](https://poe.com/veo-v3.1){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Video Output | 6667 points ($0.20) / s |
+| Audio + Video Output | 13334 points ($0.40) / s |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Video Output | USD | 0.20 | 1 second |
+| Video Output | POINTS | 6667 | 1 second |
+| Audio + Video Output | USD | 0.40 | 1 second |
+| Audio + Video Output | POINTS | 13334 | 1 second |
+
+**Last Checked:** 2026-10-05T02:12:26.321814+00:00
+
+
 ## Bot Information
 
-**Creator:** @fal
+**Creator:** fal
 
 **Description:** Google's Veo-3.1 is an improved version of Veo 3.
 

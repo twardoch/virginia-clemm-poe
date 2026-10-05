@@ -1,0 +1,29 @@
+{
+  "id": "Gemma-4-26B",
+  "checked_at": "2026-10-05T02:09:04.750411+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Gemma-4-26B",
+    "creator": {
+      "isDeleted": false,
+      "handle": "OpenSourceLab",
+      "fullName": "Open-Source-Lab",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2419661422-50-yfhdcuqxmrjwjokrdinuyvphinqrsuoa.jpeg",
+      "id": "UG9lVXNlcjoyNDE5NjYxNDIy"
+    },
+    "description": "Gemma-4-26B is an open-source model released under the Apache 2.0 license. It can process and analyze large codebases, extensive documentation, and long-form datasets while maintaining strong contextual understanding. Its native function-calling capabilities and strong tool-use performance makes it well suited for building autonomous agents, intelligent assistants, and workflow automation systems. Context window: 256K tokens",
+    "poweredBy": "Powered by a server managed by @OpenSourceLab.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.13/1M tokens</td><td>5 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$0.40/1M tokens</td><td>14 points/1k tokens</td></tr><tr><td>Input (file)</td><td>Variable</td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "| Type | Rate (USD) | Rate (Points) |\n|---|---|---|\n| Input (text) | $0.13/1M tokens | 5 points/1k tokens |\n| Output (text) | $0.40/1M tokens | 14 points/1k tokens |\n| Input (file) | Variable |"
+    }
+  ]
+}

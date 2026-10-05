@@ -1,0 +1,29 @@
+{
+  "id": "grok-imagine-image-2",
+  "checked_at": "2026-10-05T02:13:38.756034+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Grok-Imagine-Image-2",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Grok Imagine Image 2.0 generates images from a text prompt and edits up to five attached images from a plain-language instruction, with selectable quality, 1K or 2K output, and fifteen aspect ratios.\n\nWith more than one image, refer to them in your prompt as IMAGE_0, IMAGE_1, and so on.\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Quality and resolution</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Low, 1K</td><td>$0.048/image</td><td>1,600 pts/image</td></tr><tr><td>Low, 2K</td><td>$0.072/image</td><td>2,400 pts/image</td></tr><tr><td>Medium, 1K</td><td>$0.072/image</td><td>2,400 pts/image</td></tr><tr><td>Medium, 2K</td><td>$0.096/image</td><td>3,200 pts/image</td></tr><tr><td>Image input</td><td>$0.050/image</td><td>1,667 pts/image</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "**Grok Imagine Image 2 Pricing**\n\nText-to-image and image editing. Billed per image generated, by quality and resolution, plus a per-image fee for each image you attach. Text-to-image attaches no images, so it has no image fee.\n\n| Quality and resolution | Rate (USD) | Rate (Points) |\n|------------------------|------------|---------------|\n| Low, 1K | $0.048/image | 1,600 pts/image |\n| Low, 2K | $0.072/image | 2,400 pts/image |\n| Medium, 1K | $0.072/image | 2,400 pts/image |\n| Medium, 2K | $0.096/image | 3,200 pts/image |\n| Image input | $0.050/image | 1,667 pts/image |\n"
+    }
+  ]
+}

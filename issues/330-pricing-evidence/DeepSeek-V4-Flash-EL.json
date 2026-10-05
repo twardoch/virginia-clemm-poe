@@ -1,0 +1,29 @@
+{
+  "id": "DeepSeek-V4-Flash-EL",
+  "checked_at": "2026-10-05T02:08:40.877502+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "DeepSeek-V4-Flash-EL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "This model is retiring on 2026-10-10. Please switch to: https://poe.com/DS-V4-Flash-0731-EL\nDeepSeek V4 Flash is a highly efficient lightweight Mixture-of-Experts model with 284 billion total parameters and 13 billion active parameters, natively supporting context windows of up to 1M tokens. Offers fast inference speed, low latency, and cost-effective invocation, delivering well-balanced overall performance. Designed for high-concurrency, lightweight workloads such as everyday dialogue, content creation, basic RAG applications, and batch text processing.\nThis model is from Germany (Frankfurt).\n\nNotes:\n- Context Window: 1M\n- Supported input modalities: Text, Image (non-native), Documents\n- Model may experience errors due to high usage upstream.\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$0.14/1M tokens</td><td>5 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$0.28/1M tokens</td><td>10 points/1k tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $0.14/1M tokens | 5 points/1k tokens |\n| Output (text) | $0.28/1M tokens | 10 points/1k tokens |\n"
+    }
+  ]
+}

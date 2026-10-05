@@ -732,6 +732,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#pricing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pricing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pricing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#website-pricing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Website Pricing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#bot-information" class="md-nav__link">
     <span class="md-ellipsis">
       Bot Information
@@ -778,8 +802,74 @@
 
 
 <h1 id="gpt-4o-audio-preview"><a class="md-button md-button--primary" href="https://poe.com/GPT-4o-Audio-Preview">GPT-4o-Audio-Preview</a><a class="headerlink" href="#gpt-4o-audio-preview" title="Permanent link">&para;</a></h1>
+<h2 id="pricing">Pricing<a class="headerlink" href="#pricing" title="Permanent link">&para;</a></h2>
+<h3 id="website-pricing">Website Pricing<a class="headerlink" href="#website-pricing" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Input (Text)</td>
+<td>138 ($0.0042) points / 1K tokens</td>
+</tr>
+<tr>
+<td>Output (Text)</td>
+<td>550 ($0.017) points / 1K tokens</td>
+</tr>
+<tr>
+<td>Input (Audio)</td>
+<td>2200 ($0.067) points / 1K tokens</td>
+</tr>
+<tr>
+<td>Output (Audio)</td>
+<td>4400 ($0.13) points / 1K tokens</td>
+</tr>
+</tbody>
+</table>
+<p>All parsed rates (both currencies):</p>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Currency</th>
+<th>Amount</th>
+<th>Per</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Input (text)</td>
+<td>USD</td>
+<td>0.0042</td>
+<td>1000 tokens</td>
+</tr>
+<tr>
+<td>Output (text)</td>
+<td>USD</td>
+<td>0.017</td>
+<td>1000 tokens</td>
+</tr>
+<tr>
+<td>Input (audio)</td>
+<td>USD</td>
+<td>0.067</td>
+<td>1000 tokens</td>
+</tr>
+<tr>
+<td>Output (audio)</td>
+<td>USD</td>
+<td>0.13</td>
+<td>1000 tokens</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Last Checked:</strong> 2026-10-05T02:08:58.291188+00:00</p>
 <h2 id="bot-information">Bot Information<a class="headerlink" href="#bot-information" title="Permanent link">&para;</a></h2>
-<p><strong>Creator:</strong> @binaai</p>
+<p><strong>Creator:</strong> binaai</p>
 <p><strong>Description:</strong> OpenAI's gpt-4o-audio-preview model, brought to Poe as a server bot! This model accepts text and audio inputs and can respond with natural-sounding speech. Learn more at https://platform.openai.com/docs/models/gpt-4o-audio-preview.</p>
 <p>When audio output is on, responses include both a voice recording and a text transcript. When audio output is off, one of the messages in the conversation must include an audio file attachment (audio in previous messages from either you or the bot is fine).</p>
 <p>Optional parameters:
@@ -788,9 +878,9 @@
 -  model_snapshot: select a specific model version
 - auto_max_tokens: Let the model decide the max number of tokens to output (enabled by default). Disable this option to manually specify a token limit between 10 and 16,384 using the max_tokens parameter.</p>
 <h2 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permanent link">&para;</a></h2>
-<p><strong>Input Modalities:</strong> Unknown</p>
-<p><strong>Output Modalities:</strong> Unknown</p>
-<p><strong>Modality:</strong> unknown</p>
+<p><strong>Input Modalities:</strong> text</p>
+<p><strong>Output Modalities:</strong> audio</p>
+<p><strong>Modality:</strong> text-&gt;audio</p>
 <h2 id="technical-details">Technical Details<a class="headerlink" href="#technical-details" title="Permanent link">&para;</a></h2>
 <p><strong>Model ID:</strong> <code>GPT-4o-Audio-Preview</code></p>
 <p><strong>Object Type:</strong> bot</p>

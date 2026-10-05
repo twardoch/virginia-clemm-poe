@@ -1,0 +1,29 @@
+{
+  "id": "OpenAI-TTS-1",
+  "checked_at": "2026-10-05T02:09:34.127723+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "OpenAI-TTS-1",
+    "creator": {
+      "isDeleted": false,
+      "handle": "binaai",
+      "fullName": "Bina AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-3165321840-50-yhpxdivdtijkgqnqmpyscwkabhxyshij.jpeg",
+      "id": "UG9lVXNlcjozMTY1MzIxODQw"
+    },
+    "description": "OpenAI's tts-1 model, brought to Poe as a server bot! This model speaks the text in the latest message and outputs audio. Learn more at https://platform.openai.com/docs/models/tts-1.\n\nOptional parameters:\n- voice: the name of the voice to use: \"alloy\", \"ash\", \"coral\", \"echo\", \"fable\", \"nova\", \"onyx\", \"sage\", or \"shimmer\" (default: sage)\n- speed: the multiplier for how fast you want the audio to be. Ranges from 0.25x to 4x\n- response_format: the file format of the generated audio",
+    "poweredBy": "Powered by a server managed by @binaai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": false
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate</th></tr></thead><tbody><tr><td>Input (text)</td><td>825 ($0.025) points / 1K characters</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "## Pricing\n\n| Type | Rate |\n|------|------|\n| Input (text) | 825 ($0.025) points / 1K characters |"
+    }
+  ]
+}

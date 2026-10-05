@@ -2,18 +2,25 @@
 
 ## Pricing
 
-### Points-based Pricing
+### Website Pricing
 
 | Type | Cost |
 |------|------|
-| Total Cost | 0 points/message |
+| Total Cost | $0.00/message · 0 points/message |
 
-**Last Checked:** 2026-10-05 01:51:06.054472
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Total cost | USD | 0.00 | 1 message |
+| Total cost | POINTS | 0 | 1 message |
+
+**Last Checked:** 2026-10-05T02:09:05.631908+00:00
 
 
 ## Bot Information
 
-**Creator:** @togetherai
+**Creator:** togetherai
 
 **Description:** Gemma 4 models are designed to deliver frontier-level performance at each size, targeting deployment scenarios on consumer GPUs and workstations. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding. Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages.
 

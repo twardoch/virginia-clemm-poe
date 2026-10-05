@@ -1,8 +1,25 @@
 # [OpenAI-TTS-1-HD](https://poe.com/OpenAI-TTS-1-HD){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | 1650 ($0.050) points / 1K characters |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 0.050 | 1000 characters |
+
+**Last Checked:** 2026-10-05T02:09:34.194813+00:00
+
+
 ## Bot Information
 
-**Creator:** @binaai
+**Creator:** binaai
 
 **Description:** OpenAI's tts-1-hd model, brought to Poe as a server bot! This model speaks the text in the latest message and outputs audio. Learn more at https://platform.openai.com/docs/models/tts-1-hd.
 

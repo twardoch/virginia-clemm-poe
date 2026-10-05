@@ -1,0 +1,29 @@
+{
+  "id": "lyria-3",
+  "checked_at": "2026-10-05T02:12:24.460201+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Lyria-3",
+    "creator": {
+      "isDeleted": false,
+      "handle": "google",
+      "fullName": "Google",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910402837-50-hdxyjsuznjtgwrszmhvbhgbviwdhkwvl.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDAyODM3"
+    },
+    "description": "Google DeepMind\u2019s Lyria 3 is an advanced AI music generation model that creates high-fidelity, up to three-minute tracks from text or image prompts, with detailed control over vocals, style, and composition.\n\nOptional parameters:\nFull song: Turn it on to generate a full-length track (up to 3 minutes).\n\nNotes:\nLyria blocks prompts that name specific artists or songs (artist-intent and recitation checks).",
+    "poweredBy": "Powered by a server managed by @google.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Base</td><td>$0.04/message</td><td>1,334 points/message</td></tr><tr><td>Full song</td><td>$0.08/message</td><td>2,667 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Base       | $0.04/message | 1,334 points/message |\n| Full song  | $0.08/message | 2,667 points/message |"
+    }
+  ]
+}

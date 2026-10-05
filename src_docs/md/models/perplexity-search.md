@@ -1,8 +1,25 @@
 # [perplexity-search](https://poe.com/perplexity-search){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Search Request | 200 ($0.0061) per request |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Search Request | USD | 0.0061 | 1 message |
+
+**Last Checked:** 2026-10-05T02:11:06.092719+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Utilize Perplexity's technology for real-time web search with filtering by domain, language, date and more.
 Note: This endpoint does not return an LLM-style response. File upload is not supported.

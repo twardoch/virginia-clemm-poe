@@ -1,0 +1,29 @@
+{
+  "id": "gemini-3.1-flash-tts",
+  "checked_at": "2026-10-05T02:13:39.922234+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Gemini-3.1-Flash-TTS",
+    "creator": {
+      "isDeleted": false,
+      "handle": "empiriolabsai",
+      "fullName": "EmpirioLabs AI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2617899787-50-kivnxtoguszxhdqxmuyslgohhwilqsso.jpeg",
+      "id": "UG9lVXNlcjoyNjE3ODk5Nzg3"
+    },
+    "description": "Gemini 3.1 Flash TTS is Google\u2019s most controllable text-to-speech model yet, designed to turn text into natural-sounding audio with precise control over style, tone, pace, and delivery. It uses new Audio Tags to make voices feel more expressive and customizable for narration, assistants, and other voice experiences.\n\nNotes:\n- Text and style prompt limited to 4,000 bytes each (8,000 bytes combined)\n- Max output duration: approximately 10 minutes\n- Multi-speaker requires SpeakerName: text format (example: Alice: Hi! Bob: Hello, must be on new lines)\n- The model auto-detects the input language. The Language setting is a hint to help choose the right voice/accent, the model may override it if the text is in a different language.\n\nExpressive Audio Tags:\n- Use inline in your text to control delivery\n- Emotion/tone: [whispers], [shouts], [laughs], [cries], [sighs], [gasps], [groans], [scoffs], [sarcasm], [deadpan], [cheerful], [sad], [angry], [fearful], [surprised], [disgusted], [confused], [nervous], [bored], [excited], [relieved], [hopeful], [proud], [shy], [sincere], [playful], [serious], [tender], [dramatic], [monotone], [warm], [cold]\n- Pace/speed: [slow], [fast], [extremely fast], [extremely slow], [normal pace]\n- Pauses: [short pause], [long pause], [pause], [breath]\n- Emphasis/delivery: [emphasis], [softly], [loudly], [high pitch], [low pitch], [rising tone], [falling tone]\n- Example: \"[whispers] I have a secret. [normal pace] But first, let me explain.\"\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @empiriolabsai.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": false
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate</th></tr></thead><tbody><tr><td>Input (text tokens)</td><td>87 ($0.0026) points / 1k tokens</td></tr><tr><td>Output (audio tokens)</td><td>1734 ($0.053) points / 1k tokens</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n\n| Type | Rate |\n|------|------|\n| Input (text tokens) | 87 ($0.0026) points / 1k tokens |\n| Output (audio tokens) | 1734 ($0.053) points / 1k tokens |\n\nNotes:\n- Approx 4 characters = 1 input token\n- Audio tokens: 25 per second of generated audio\n- Approx 15 characters per second of audio"
+    }
+  ]
+}

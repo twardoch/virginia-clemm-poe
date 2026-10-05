@@ -1,8 +1,26 @@
 # [kling-omni](https://poe.com/kling-omni){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Video Output | 3734 points ($0.11) / second |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Video Output | USD | 0.11 | 1 second |
+| Video Output | POINTS | 3734 | 1 second |
+
+**Last Checked:** 2026-10-05T02:11:14.498879+00:00
+
+
 ## Bot Information
 
-**Creator:** @fal
+**Creator:** fal
 
 **Description:** Bot for Kling Omni Image-to-Video inference. Send one image for image-to-video generation and two images for first-to-last frame video generation. 
 

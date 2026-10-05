@@ -1,8 +1,18 @@
 # [claude-code](https://poe.com/claude-code){ .md-button .md-button--primary }
 
+## Pricing
+
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+
+**Last Checked:** 2026-10-05T02:11:03.399641+00:00
+
+
 ## Bot Information
 
-**Creator:** @poe_tools
+**Creator:** poe_tools
 
 **Description:** A powerful assistant that can read, write, and analyze files across many formats.  It can also delegate to other Poe bots to handle complex, multi-step tasks.
 

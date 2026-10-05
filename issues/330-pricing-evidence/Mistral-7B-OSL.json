@@ -1,0 +1,29 @@
+{
+  "id": "Mistral-7B-OSL",
+  "checked_at": "2026-10-05T02:09:29.019945+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Mistral-7B-OSL",
+    "creator": {
+      "isDeleted": false,
+      "handle": "OpenSourceLab",
+      "fullName": "Open-Source-Lab",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2419661422-50-yfhdcuqxmrjwjokrdinuyvphinqrsuoa.jpeg",
+      "id": "UG9lVXNlcjoyNDE5NjYxNDIy"
+    },
+    "description": "Mistral-7B-Instruct-v0.2 is an open-source 7-billion-parameter model released by Mistral AI in December 2023 under the Apache 2.0 License. The instruction-tuned model is optimized for conversational use cases, instruction following, and efficient inference. Context window: 32k tokens",
+    "poweredBy": "Powered by a server managed by @OpenSourceLab.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total Cost</td><td>$0.0003/message</td><td>10 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "| Type | Rate (USD) | Rate (Points) |\n|------|--------------|------------|\n| Total Cost | $0.0003/message | 10 points/message|\n"
+    }
+  ]
+}

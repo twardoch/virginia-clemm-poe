@@ -1,0 +1,29 @@
+{
+  "id": "deepseek-r1-di",
+  "checked_at": "2026-10-05T02:11:49.087219+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "DeepSeek-R1-DI",
+    "creator": {
+      "isDeleted": false,
+      "handle": "deepinfra",
+      "fullName": "DeepInfra",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2942644786-50-kwbwbicjxskxfnovutpupodkegoceisf.jpeg",
+      "id": "UG9lVXNlcjoyOTQyNjQ0Nzg2"
+    },
+    "description": "Top open-source reasoning LLM rivaling OpenAI's o1 model; delivers top-tier performance across math, code, and reasoning tasks at a fraction of the cost. All data you provide this bot will not be used in training, and is sent only to DeepInfra, a US-based company. Bot does not accept attachment.\n\nSupports 64k tokens of input context and 8k tokens of output context. Quantization: FP8 (official).",
+    "poweredBy": "Powered by a server managed by @deepinfra.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Total cost</td><td>$0.0061/message</td><td>200 points/message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": " \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Total cost | $0.0061/message | 200 points/message |\n"
+    }
+  ]
+}

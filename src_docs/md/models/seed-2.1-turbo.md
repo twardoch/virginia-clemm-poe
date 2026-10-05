@@ -9,9 +9,28 @@
 | Prompt | $6.364E-7/token |
 | Completion | $0.0000031616/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $0.64/1M tokens · 21 points/1k tokens |
+| Output (Text) | $3.16/1M tokens · 105 points/1k tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 0.64 | 1000000 tokens |
+| Input (text) | POINTS | 21 | 1000 tokens |
+| Output (text) | USD | 3.16 | 1000000 tokens |
+| Output (text) | POINTS | 105 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:13:21.394337+00:00
+
+
 ## Bot Information
 
-**Creator:** @empiriolabsai
+**Creator:** empiriolabsai
 
 **Description:** Seed 2.1 Turbo is ByteDance's next-generation coding and agent model, with engineering-grade code delivery, long-horizon agentic execution, and multimodal understanding across text, image, and video.
 

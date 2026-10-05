@@ -1,0 +1,29 @@
+{
+  "id": "Segment-Anything-v2",
+  "checked_at": "2026-10-05T02:09:53.748957+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Segment-Anything-v2",
+    "creator": {
+      "isDeleted": false,
+      "handle": "fal",
+      "fullName": "fal",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2489776295-50-tyqrqfikgdldxbwuwfjezpyopepwrhgl.jpeg",
+      "id": "UG9lVXNlcjoyNDg5Nzc2Mjk1"
+    },
+    "description": "Creates a black and white mask segmenting out an object based on a given input point.\nSend an image with a prompt like (x,y), where x and y are the x and y coordinates of the point in the image. (x and y are numbers, greater than 0 and lesser than the max width/height of the image).",
+    "poweredBy": "Powered by a server managed by @fal.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Service</th><th>Rate</th></tr></thead><tbody><tr><td>Image Output</td><td>284 points ($0.0086) / message</td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Cost overview: \n| Service | Rate | \n|------|------| \n| Image Output | 284 points ($0.0086) / message | \n"
+    }
+  ]
+}

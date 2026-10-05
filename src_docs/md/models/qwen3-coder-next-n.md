@@ -9,9 +9,28 @@
 | Prompt | $2.02E-7/token |
 | Completion | $0.0000015152/token |
 
+### Website Pricing
+
+| Type | Cost |
+|------|------|
+| Input (Text) | $0.20/1M tokens · 7 points/1k tokens |
+| Output (Text) | $1.52/1M tokens · 50 points/1k tokens |
+
+All parsed rates (both currencies):
+
+| Service | Currency | Amount | Per |
+|---|---|---|---|
+| Input (text) | USD | 0.20 | 1000000 tokens |
+| Input (text) | POINTS | 7 | 1000 tokens |
+| Output (text) | USD | 1.52 | 1000000 tokens |
+| Output (text) | POINTS | 50 | 1000 tokens |
+
+**Last Checked:** 2026-10-05T02:11:02.271270+00:00
+
+
 ## Bot Information
 
-**Creator:** @novitaai
+**Creator:** novitaai
 
 **Description:** Qwen3-Coder-Next is an open-weight language model specifically engineered for coding agents and local development environments. This highly efficient model delivers exceptional performance with only 3B activated parameters out of 80B total parameters, achieving results comparable to models with 10-20x more active parameters while maintaining remarkable cost-effectiveness for agent deployment. Through its sophisticated training methodology, Qwen3-Coder-Next excels in advanced agentic capabilities including long-horizon reasoning, complex tool usage, and robust recovery from execution failures, ensuring reliable performance across dynamic coding tasks. The model's versatility is further enhanced by its 256k context length and adaptability to various scaffold templates, enabling seamless integration with diverse CLI/IDE platforms such as Claude Code, Qwen Code, Qoder, Kilo, Trae, and Cline, making it an ideal solution for comprehensive development environments.
 

@@ -1,0 +1,29 @@
+{
+  "id": "grok-4.20-multi-agent",
+  "checked_at": "2026-10-05T02:10:43.921561+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "Grok-4.20-Multi-Agent",
+    "creator": {
+      "isDeleted": false,
+      "handle": "xAI",
+      "fullName": "XAI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910404251-50-cmlkrxiqjhrxcqdzleffayurkkcvhzmj.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDA0MjUx"
+    },
+    "description": "Realtime Multi-agent Research enables Grok to orchestrate multiple AI agents that work together in real time to perform deep, multi-step research tasks. Each agent specializes in a particular aspect of the research (searching the web, analyzing data, synthesizing findings) and they collaborate to deliver comprehensive, well-sourced answers.\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by a server managed by @xAI.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input (text)</td><td>$1.26/1M tokens</td><td>42 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$2.53/1M tokens</td><td>84 points/1k tokens</td></tr><tr><td>Cache discount</td><td>84% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input (text) | $1.26/1M tokens | 42 points/1k tokens |\n| Output (text) | $2.53/1M tokens | 84 points/1k tokens |\n| Cache discount | 84% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n\n\nInput rate is 2x and output rate is 2x when context is >200k tokens."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "o4-mini",
+  "checked_at": "2026-10-05T02:11:33.842463+00:00",
+  "http_status": 200,
+  "profile": {
+    "handle": "o4-mini",
+    "creator": {
+      "isDeleted": false,
+      "handle": "openai",
+      "fullName": "OpenAI",
+      "profilePhotoUrl": "https://qph.cf2.poecdn.net/main-thumb-2910400879-50-wrfgcbmfjrhquvwlxvypitmawpovrxoi.jpeg",
+      "id": "UG9lVXNlcjoyOTEwNDAwODc5"
+    },
+    "description": "o4-mini provides high intelligence on a variety of tasks and domains, including science, math, and coding at an affordable price point. \n\nThis bot supports 200k tokens of input context and 100k tokens of output context.\n\nThis bot supports optional parameters for additional customization.",
+    "poweredBy": "Powered by OpenAI: o4-mini-2025-04-16.",
+    "isDeleted": false,
+    "isDown": false,
+    "allowsImageAttachments": true
+  },
+  "tables": [
+    "<table><thead><tr><th>Type</th><th>Rate (USD)</th><th>Rate (Points)</th></tr></thead><tbody><tr><td>Input</td><td>$1.00/1M tokens</td><td>33 points/1k tokens</td></tr><tr><td>Output (text)</td><td>$4.00/1M tokens</td><td>132 points/1k tokens</td></tr><tr><td>Cache discount</td><td>75% discount on <a href=\"https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP\" target=\"_blank\">cached chat</a></td><td></td></tr></tbody></table>"
+  ],
+  "status": "observed",
+  "rate_cards": [
+    {
+      "rateMenuMarkdown": "Message cost is variable, so longer messages are more expensive than shorter messages. \n\n| Type | Rate (USD) | Rate (Points) |\n|------|------|------|\n| Input | $1.00/1M tokens | 33 points/1k tokens |\n| Output (text) | $4.00/1M tokens | 132 points/1k tokens |\n| Cache discount | 75% discount on [cached chat](https://help.poe.com/hc/en-us/articles/19944206309524-Poe-FAQs#h_01JMDGNARXH8B0MN452N6N7XHP) |  |\n"
+    }
+  ]
+}
