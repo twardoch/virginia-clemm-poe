@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/grok-imagine-video.md
+---
+
 # [grok-imagine-video](https://poe.com/grok-imagine-video){ .md-button .md-button--primary }
+
+**Tier 7:** 16,670 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

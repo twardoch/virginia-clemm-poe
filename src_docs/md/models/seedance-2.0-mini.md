@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/seedance-2.0-mini.md
+---
+
 # [seedance-2.0-mini](https://poe.com/seedance-2.0-mini){ .md-button .md-button--primary }
+
+**Tier 7:** From 23,330 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -38,9 +46,9 @@ This bot supports optional parameters for additional customization.
 
 **Input Modalities:** text
 
-**Output Modalities:** text
+**Output Modalities:** text, video
 
-**Modality:** text->text
+**Modality:** text->text+video
 
 
 ## Technical Details

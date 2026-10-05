@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/App-Generator.md
+---
+
 # [App-Generator](https://poe.com/App-Generator){ .md-button .md-button--primary }
+
+**Tier 5:** 760.5 points · 1,000 tokens (500 input + 500 output) + message fee
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

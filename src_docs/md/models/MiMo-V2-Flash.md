@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/MiMo-V2-Flash.md
+---
+
 # [MiMo-V2-Flash](https://poe.com/MiMo-V2-Flash){ .md-button .md-button--primary }
+
+**Tier 1:** 7 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

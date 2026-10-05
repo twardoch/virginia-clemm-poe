@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/hailuo-02-standard.md
+---
+
 # [hailuo-02-standard](https://poe.com/hailuo-02-standard){ .md-button .md-button--primary }
+
+**Tier 7:** 15,000 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

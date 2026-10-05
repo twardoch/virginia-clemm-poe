@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/GLM-5-FWAI.md
+---
+
 # [GLM-5-FWAI](https://poe.com/GLM-5-FWAI){ .md-button .md-button--primary }
+
+**Tier 5:** 500 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/SoulX-Podcast.md
+---
+
 # [SoulX-Podcast](https://poe.com/SoulX-Podcast){ .md-button .md-button--primary }
+
+**Tier 6:** 1,956 points · per 4,000 characters
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -14,7 +22,9 @@ All parsed rates (both currencies):
 | Service | Currency | Amount | Per |
 |---|---|---|---|
 | Base | USD | 0.015 | 1000 characters |
+| Base | POINTS | 489 | 1000 characters |
 | Dialect | USD | 0.015 | 1000 characters |
+| Dialect | POINTS | 489 | 1000 characters |
 
 **Last Checked:** 2026-10-05T02:09:55.653105+00:00
 

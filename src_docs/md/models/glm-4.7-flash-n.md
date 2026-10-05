@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/glm-4.7-flash-n.md
+---
+
 # [glm-4.7-flash-n](https://poe.com/glm-4.7-flash-n){ .md-button .md-button--primary }
+
+**Tier 1:** 8.5 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

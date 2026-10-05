@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/deepreasoning.md
+---
+
 # [deepreasoning](https://poe.com/deepreasoning){ .md-button .md-button--primary }
+
+**Tier 5:** 584.5 points · 1,000 tokens (500 input + 500 output) + message fee
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

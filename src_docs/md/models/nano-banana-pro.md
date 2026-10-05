@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/nano-banana-pro.md
+---
+
 # [nano-banana-pro](https://poe.com/nano-banana-pro){ .md-button .md-button--primary }
+
+**Tier 7:** ≈ 5,160 points · per 1024×1024 image (assumed 1290 output tokens)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

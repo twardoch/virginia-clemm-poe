@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/AuraSR.md
+---
+
 # [AuraSR](https://poe.com/AuraSR){ .md-button .md-button--primary }
+
+**Tier 4:** 142 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

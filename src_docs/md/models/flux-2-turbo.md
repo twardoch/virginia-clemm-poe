@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/flux-2-turbo.md
+---
+
 # [flux-2-turbo](https://poe.com/flux-2-turbo){ .md-button .md-button--primary }
+
+**Tier 4:** 250 points · per image
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

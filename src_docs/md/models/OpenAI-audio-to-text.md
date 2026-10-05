@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/OpenAI-audio-to-text.md
+---
+
 # [OpenAI-audio-to-text](https://poe.com/OpenAI-audio-to-text){ .md-button .md-button--primary }
+
+**Tier 8:** 1,000 points · per minute
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -13,6 +21,7 @@ All parsed rates (both currencies):
 | Service | Currency | Amount | Per |
 |---|---|---|---|
 | Per Minute of Audio | USD | 0.030 | 1 minute |
+| Per Minute of Audio | POINTS | 1000 | 1 minute |
 
 **Last Checked:** 2026-10-05T02:09:35.039634+00:00
 

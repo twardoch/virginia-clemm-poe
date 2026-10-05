@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/kling-3.0-turbo.md
+---
+
 # [kling-3.0-turbo](https://poe.com/kling-3.0-turbo){ .md-button .md-button--primary }
+
+**Tier 7:** From 60,000 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

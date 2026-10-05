@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/GLM-TTS.md
+---
+
 # [GLM-TTS](https://poe.com/GLM-TTS){ .md-button .md-button--primary }
+
+**Tier 7:** From 27,224 points · per 4,000 characters
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -14,7 +22,9 @@ All parsed rates (both currencies):
 | Service | Currency | Amount | Per |
 |---|---|---|---|
 | Fast (INT8) | USD | 0.21 | 1000 characters |
+| Fast (INT8) | POINTS | 6806 | 1000 characters |
 | Quality (FP16) | USD | 0.21 | 1000 characters |
+| Quality (FP16) | POINTS | 6976 | 1000 characters |
 
 **Last Checked:** 2026-10-05T02:08:57.744410+00:00
 

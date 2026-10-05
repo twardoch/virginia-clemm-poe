@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/orpheus-tts.md
+---
+
 # [orpheus-tts](https://poe.com/orpheus-tts){ .md-button .md-button--primary }
+
+**Tier 7:** 6,668 points · per 4,000 characters
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/deepgram-nova-3.md
+---
+
 # [deepgram-nova-3](https://poe.com/deepgram-nova-3){ .md-button .md-button--primary }
+
+**Tier 8:** 474 points · rate: Transcription
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -13,6 +21,7 @@ All parsed rates (both currencies):
 | Service | Currency | Amount | Per |
 |---|---|---|---|
 | Transcription | USD | 0.014 | 1 transcription |
+| Transcription | POINTS | 474 | 1 transcription |
 
 **Last Checked:** 2026-10-05T02:12:02.066732+00:00
 

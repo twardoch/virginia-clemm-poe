@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Flux-Outpaint.md
+---
+
 # [Flux-Outpaint](https://poe.com/Flux-Outpaint){ .md-button .md-button--primary }
+
+**Tier 7:** 5,334 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

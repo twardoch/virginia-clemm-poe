@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Mistral-Medium-3.5.md
+---
+
 # [Mistral-Medium-3.5](https://poe.com/Mistral-Medium-3.5){ .md-button .md-button--primary }
+
+**Tier 4:** 200 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

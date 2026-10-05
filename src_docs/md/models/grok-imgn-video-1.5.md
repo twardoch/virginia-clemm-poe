@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/grok-imgn-video-1.5.md
+---
+
 # [grok-imgn-video-1.5](https://poe.com/grok-imgn-video-1.5){ .md-button .md-button--primary }
+
+**Tier 7:** From 32,000 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

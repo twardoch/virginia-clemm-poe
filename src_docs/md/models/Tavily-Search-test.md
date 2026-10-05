@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Tavily-Search-test.md
+---
+
 # [Tavily-Search-test](https://poe.com/Tavily-Search-test){ .md-button .md-button--primary }
+
+**Tier 8:** From 32 points · rate: Crawl (Map Step)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -21,14 +29,23 @@ All parsed rates (both currencies):
 | Service | Currency | Amount | Per |
 |---|---|---|---|
 | Search (Basic/Fast/Ultra-Fast) | USD | 0.0097 | 1 fast |
+| Search (Basic/Fast/Ultra-Fast) | POINTS | 320 | 1 fast |
 | Search (Advanced) | USD | 0.019 | 1 search |
+| Search (Advanced) | POINTS | 640 | 1 search |
 | Search (Advanced + Answer) | USD | 0.029 | 1 search |
+| Search (Advanced + Answer) | POINTS | 960 | 1 search |
 | Extract (Basic) | USD | 0.0097 | 5 urls |
+| Extract (Basic) | POINTS | 320 | 5 urls |
 | Extract (Advanced) | USD | 0.019 | 5 urls |
+| Extract (Advanced) | POINTS | 640 | 5 urls |
 | Crawl (Map Step) | USD | 0.0097 | 10 pages |
+| Crawl (Map Step) | POINTS | 320 | 10 pages |
 | Crawl (Map + Instructions) | USD | 0.019 | 10 pages |
+| Crawl (Map + Instructions) | POINTS | 640 | 10 pages |
 | Map | USD | 0.0097 | 10 pages |
+| Map | POINTS | 320 | 10 pages |
 | Map (with Instructions) | USD | 0.019 | 10 pages |
+| Map (with Instructions) | POINTS | 640 | 10 pages |
 
 **Last Checked:** 2026-10-05T02:10:08.361209+00:00
 

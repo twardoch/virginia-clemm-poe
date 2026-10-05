@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Qwen3-Coder-32B.md
+---
+
 # [Qwen3-Coder-32B](https://poe.com/Qwen3-Coder-32B){ .md-button .md-button--primary }
+
+**Tier 8:** 0 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

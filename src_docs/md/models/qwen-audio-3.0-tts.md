@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/qwen-audio-3.0-tts.md
+---
+
 # [qwen-audio-3.0-tts](https://poe.com/qwen-audio-3.0-tts){ .md-button .md-button--primary }
+
+**Tier 6:** From 2,000 points · per 4,000 characters
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

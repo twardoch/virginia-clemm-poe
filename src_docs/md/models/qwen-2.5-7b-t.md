@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/qwen-2.5-7b-t.md
+---
+
 # [qwen-2.5-7b-t](https://poe.com/qwen-2.5-7b-t){ .md-button .md-button--primary }
+
+**Tier 3:** 75 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

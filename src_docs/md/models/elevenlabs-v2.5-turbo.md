@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/elevenlabs-v2.5-turbo.md
+---
+
 # [elevenlabs-v2.5-turbo](https://poe.com/elevenlabs-v2.5-turbo){ .md-button .md-button--primary }
+
+**Tier 7:** 4,000 points · per 4,000 characters
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -12,6 +20,7 @@ All parsed rates (both currencies):
 
 | Service | Currency | Amount | Per |
 |---|---|---|---|
+| Input (text) | USD | 0.11 | 1000 characters |
 | Input (text) | USD | 0.03 | 1000 characters |
 | Input (text) | POINTS | 1 | 1 characters |
 

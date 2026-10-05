@@ -2,6 +2,18 @@
 
 # Work Progress - Virginia Clemm Poe
 
+## Theme, normalized points and tiers — 2026-10-05
+
+- Migrated to MaterialX 10.1.8 / ProperDocs 1.6.7 with the four shared FontLab theme CDN assets; omitted global FontLab menu/footer. Native project search, palette and navigation remain functional.
+- Rebuilt all 501 saved models without contacting Poe. Packaged source JSON and observation timestamps remain unchanged; generated site JSON adds estimates, tiers and conversion metadata.
+- Point comparisons use disclosed message/image rates, 1,000 total tokens, 4,000 characters, one 1024×1024 image or 10 seconds of video. Currency/media assumptions are labelled, with a method page and original rates retained.
+- Assigned Tiers 0–9 to every bot; combined Modality/Creator/Tier filters match all saved assignments. Tier counts: 22, 20, 43, 75, 85, 64, 62, 92, 20, 18. Conversion median: 33,221.9269 points/$ from 1,022 positive matched website rate pairs.
+- Replaced 501 empty model headings with compact links, hid the useless ToC and extended the table to the right page edge. Scoped controls use shared daisyUI styles; the iframe follows the parent palette.
+- Verification: `./test.sh` passes 190 Python tests and 18 JavaScript tests; parser coverage 99.22%, vendor coverage 100%; strict clean MkDocs build passes. Focused F/I lint and authored-file diff checks pass. Generated MaterialX HTML retains upstream template whitespace.
+- Browser acceptance passes every tier, modality and creator filter, combined filters, search, both sort directions, currency selection, all static/browser estimate assignments, desktop width, dark mode, mobile overflow, native menu/search and zero page errors. Reproduce with `uv run python scripts/verify_catalogue.py --url=<site>`.
+- A fresh locked environment also passes the strict build. Reinstalling MaterialX repaired shared files removed by the local stock-Material uninstall; the fresh installation confirms the committed dependency set works independently.
+- Publication and live artifact checks follow the verified local build.
+
 ## Pricing correction — 2026-10-05
 
 - Collected rate responses for all 501 bots, including retries via Poe's hidden Rates trigger. Kept public bot metadata, rate tables, and `rateMenuMarkdown`; account/dialog data is excluded.

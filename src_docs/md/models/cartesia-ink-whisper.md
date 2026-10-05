@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/cartesia-ink-whisper.md
+---
+
 # [cartesia-ink-whisper](https://poe.com/cartesia-ink-whisper){ .md-button .md-button--primary }
+
+**Tier 8:** 4,200 points · rate: Output (audio)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -13,6 +21,7 @@ All parsed rates (both currencies):
 | Service | Currency | Amount | Per |
 |---|---|---|---|
 | Output (audio) | USD | 0.13 | 1 hour |
+| Output (audio) | POINTS | 4200 | 1 hour |
 
 **Last Checked:** 2026-10-05T02:11:44.509799+00:00
 

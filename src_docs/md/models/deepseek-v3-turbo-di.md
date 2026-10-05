@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/deepseek-v3-turbo-di.md
+---
+
 # [deepseek-v3-turbo-di](https://poe.com/deepseek-v3-turbo-di){ .md-button .md-button--primary }
+
+**Tier 4:** 195 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

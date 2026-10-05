@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/flux-schnell-t.md
+---
+
 # [flux-schnell-t](https://poe.com/flux-schnell-t){ .md-button .md-button--primary }
+
+**Tier 3:** 70 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

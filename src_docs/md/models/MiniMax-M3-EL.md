@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/MiniMax-M3-EL.md
+---
+
 # [MiniMax-M3-EL](https://poe.com/MiniMax-M3-EL){ .md-button .md-button--primary }
+
+**Tier 2:** 25 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

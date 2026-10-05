@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Tavily-Research.md
+---
+
 # [Tavily-Research](https://poe.com/Tavily-Research){ .md-button .md-button--primary }
+
+**Tier 8:** From 39,520 points · rate: Mini
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -14,7 +22,9 @@ All parsed rates (both currencies):
 | Service | Currency | Amount | Per |
 |---|---|---|---|
 | Mini | USD | 1.20 | 1 mini |
+| Mini | POINTS | 39520 | 1 mini |
 | Pro | USD | 2.77 | 1 pro |
+| Pro | POINTS | 91520 | 1 pro |
 
 **Last Checked:** 2026-10-05T02:10:07.268982+00:00
 

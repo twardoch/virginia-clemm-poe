@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/gemini-2.5-flash-tts.md
+---
+
 # [gemini-2.5-flash-tts](https://poe.com/gemini-2.5-flash-tts){ .md-button .md-button--primary }
+
+**Tier 3:** From 50 points · 1,000 input tokens only
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -14,7 +22,9 @@ All parsed rates (both currencies):
 | Service | Currency | Amount | Per |
 |---|---|---|---|
 | Input (text tokens) | USD | 0.0015 | 1000 tokens |
+| Input (text tokens) | POINTS | 50 | 1000 tokens |
 | Output (audio tokens) | USD | 0.030 | 1000 tokens |
+| Output (audio tokens) | POINTS | 1000 | 1000 tokens |
 
 **Last Checked:** 2026-10-05T02:13:39.944848+00:00
 

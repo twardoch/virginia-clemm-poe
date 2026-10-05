@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/llama-3.1-8b-fp16.md
+---
+
 # [llama-3.1-8b-fp16](https://poe.com/llama-3.1-8b-fp16){ .md-button .md-button--primary }
+
+**Tier 3:** 50 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

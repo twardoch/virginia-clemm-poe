@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/FLUX-pixel-art.md
+---
+
 # [FLUX-pixel-art](https://poe.com/FLUX-pixel-art){ .md-button .md-button--primary }
+
+**Tier 9:** Not disclosed · No numeric rate published
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Bot Information
 

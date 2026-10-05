@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/EssentialAI-Rnj-1-T.md
+---
+
 # [EssentialAI-Rnj-1-T](https://poe.com/EssentialAI-Rnj-1-T){ .md-button .md-button--primary }
+
+**Tier 0:** 0 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

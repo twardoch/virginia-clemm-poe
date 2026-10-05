@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/LFM2.5-Reasoning.md
+---
+
 # [LFM2.5-Reasoning](https://poe.com/LFM2.5-Reasoning){ .md-button .md-button--primary }
+
+**Tier 4:** 100 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

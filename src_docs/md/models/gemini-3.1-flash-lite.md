@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/gemini-3.1-flash-lite.md
+---
+
 # [gemini-3.1-flash-lite](https://poe.com/gemini-3.1-flash-lite){ .md-button .md-button--primary }
+
+**Tier 3:** 29.5 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

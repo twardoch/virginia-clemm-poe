@@ -1,4 +1,14 @@
+---
+this_file: src_docs/md/models/qwen-image-3.0-el.md
+---
+
 # [qwen-image-3.0-el](https://poe.com/qwen-image-3.0-el){ .md-button .md-button--primary }
+
+**Tier 6:** From ≈ 1,000 points · per image
+
+Dollar conversion: ≈ 33,333 points/$ (this bot’s matched website rates).
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -45,9 +55,9 @@ This bot supports optional parameters for additional customization.
 
 **Input Modalities:** text
 
-**Output Modalities:** text
+**Output Modalities:** image, text
 
-**Modality:** text->text
+**Modality:** text->image+text
 
 
 ## Technical Details

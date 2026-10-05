@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/qwen-edit.md
+---
+
 # [qwen-edit](https://poe.com/qwen-edit){ .md-button .md-button--primary }
+
+**Tier 5:** 850 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Claude-Fable-5.md
+---
+
 # [Claude-Fable-5](https://poe.com/Claude-Fable-5){ .md-button .md-button--primary }
+
+**Tier 6:** 1,000.5 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

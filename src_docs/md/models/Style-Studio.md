@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Style-Studio.md
+---
+
 # [Style-Studio](https://poe.com/Style-Studio){ .md-button .md-button--primary }
+
+**Tier 9:** Not disclosed · No numeric rate published
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

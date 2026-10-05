@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/perplexity-search.md
+---
+
 # [perplexity-search](https://poe.com/perplexity-search){ .md-button .md-button--primary }
+
+**Tier 4:** 200 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -13,6 +21,7 @@ All parsed rates (both currencies):
 | Service | Currency | Amount | Per |
 |---|---|---|---|
 | Search Request | USD | 0.0061 | 1 message |
+| Search Request | POINTS | 200 | 1 message |
 
 **Last Checked:** 2026-10-05T02:11:06.092719+00:00
 

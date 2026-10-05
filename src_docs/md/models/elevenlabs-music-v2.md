@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/elevenlabs-music-v2.md
+---
+
 # [elevenlabs-music-v2](https://poe.com/elevenlabs-music-v2){ .md-button .md-button--primary }
+
+**Tier 7:** 47,334 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

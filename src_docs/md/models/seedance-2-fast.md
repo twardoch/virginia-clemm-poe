@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/seedance-2-fast.md
+---
+
 # [seedance-2-fast](https://poe.com/seedance-2-fast){ .md-button .md-button--primary }
+
+**Tier 7:** ≈ 80,784 points · per 10 seconds video (assumed 720p, 24 fps)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/ling-3.0-flash-fin.md
+---
+
 # [ling-3.0-flash-fin](https://poe.com/ling-3.0-flash-fin){ .md-button .md-button--primary }
+
+**Tier 9:** Not disclosed · No numeric rate published
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

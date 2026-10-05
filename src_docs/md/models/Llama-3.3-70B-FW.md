@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Llama-3.3-70B-FW.md
+---
+
 # [Llama-3.3-70B-FW](https://poe.com/Llama-3.3-70B-FW){ .md-button .md-button--primary }
+
+**Tier 4:** 140 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

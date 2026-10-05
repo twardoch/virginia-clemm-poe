@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/gemini-omni-1.1-flash.md
+---
+
 # [gemini-omni-1.1-flash](https://poe.com/gemini-omni-1.1-flash){ .md-button .md-button--primary }
+
+**Tier 7:** ≈ 33,825.28 points · per 10 seconds video (assumed 5,792 tokens/s, 720p)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

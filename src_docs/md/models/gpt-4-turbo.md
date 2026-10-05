@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/gpt-4-turbo.md
+---
+
 # [gpt-4-turbo](https://poe.com/gpt-4-turbo){ .md-button .md-button--primary }
+
+**Tier 5:** 600 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

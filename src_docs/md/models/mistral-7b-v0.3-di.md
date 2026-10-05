@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/mistral-7b-v0.3-di.md
+---
+
 # [mistral-7b-v0.3-di](https://poe.com/mistral-7b-v0.3-di){ .md-button .md-button--primary }
+
+**Tier 1:** 5 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

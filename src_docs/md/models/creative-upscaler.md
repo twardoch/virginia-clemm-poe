@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/creative-upscaler.md
+---
+
 # [creative-upscaler](https://poe.com/creative-upscaler){ .md-button .md-button--primary }
+
+**Tier 4:** 142 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/SDXL-Inpainting.md
+---
+
 # [SDXL-Inpainting](https://poe.com/SDXL-Inpainting){ .md-button .md-button--primary }
+
+**Tier 6:** 1,700 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

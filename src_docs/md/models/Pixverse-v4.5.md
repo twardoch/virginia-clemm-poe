@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Pixverse-v4.5.md
+---
+
 # [Pixverse-v4.5](https://poe.com/Pixverse-v4.5){ .md-button .md-button--primary }
+
+**Tier 7:** From 20,000 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

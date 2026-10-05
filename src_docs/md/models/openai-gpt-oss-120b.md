@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/openai-gpt-oss-120b.md
+---
+
 # [openai-gpt-oss-120b](https://poe.com/openai-gpt-oss-120b){ .md-button .md-button--primary }
+
+**Tier 3:** 50 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

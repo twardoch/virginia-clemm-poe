@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/minimax-h3-el.md
+---
+
 # [minimax-h3-el](https://poe.com/minimax-h3-el){ .md-button .md-button--primary }
+
+**Tier 7:** From 60,000 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -42,9 +50,9 @@ This bot supports optional parameters for additional customization.
 
 **Input Modalities:** text
 
-**Output Modalities:** text
+**Output Modalities:** text, video
 
-**Modality:** text->text
+**Modality:** text->text+video
 
 
 ## Technical Details

@@ -1,10 +1,7 @@
-#!/usr/bin/env -S uv run -s
-# /// script
-# dependencies = ["loguru"]
-# ///
+#!/usr/bin/env -S uv run python
 # this_file: src_docs/update_docs.py
 
-"""Update documentation by parsing poe_models.json and generating static pages."""
+"""Build the catalogue from saved poe_bots.json observations without rescraping."""
 
 import json
 import shutil
@@ -15,9 +12,11 @@ from typing import Any
 
 from loguru import logger
 
+from virginia_clemm_poe.pricing import parse_price_text, parse_rate_card
+
 
 def load_bots_data(json_path: Path) -> dict[str, Any]:
-    """Load the poe_models.json data."""
+    """Load the saved poe_bots.json data."""
     logger.info(f"Loading models data from: {json_path}")
     if not json_path.exists():
         logger.error(f"Models data file not found: {json_path}")
@@ -39,10 +38,18 @@ def load_bots_data(json_path: Path) -> dict[str, Any]:
 def generate_model_page(model: dict[str, Any]) -> str:
     """Generate markdown content for a single model page."""
     logger.debug(f"Generating page for model: {model['id']}")
-    content = []
+    content = [f"---\nthis_file: src_docs/md/models/{model['id']}.md\n---\n"]
 
     # Title and basic info
     content.append(f"# [{model['id']}](https://poe.com/{model['id']}){{ .md-button .md-button--primary }}\n")
+
+    if reference := model.get("point_estimate"):
+        content.append(f"**Tier {model['pricing_tier']}:** {reference['label']} · {reference['basis']}\n")
+        if conversion := reference.get("conversion"):
+            content.append(
+                f"Dollar conversion: ≈ {conversion['pointsPerDollar']:,.0f} points/$ ({conversion['source']}).\n"
+            )
+        content.append("[Comparison method and assumptions](../pricing-method.md).\n")
 
     # Pricing section
     if pricing := model.get("pricing"):
@@ -53,13 +60,13 @@ def generate_model_page(model: dict[str, Any]) -> str:
             content.append("### API Pricing (USD)\n")
             content.append("| Type | Cost |")
             content.append("|------|------|")
-            if prompt := api_pricing.get("prompt"):
+            if (prompt := api_pricing.get("prompt")) is not None:
                 content.append(f"| Prompt | ${prompt}/token |")
-            if completion := api_pricing.get("completion"):
+            if (completion := api_pricing.get("completion")) is not None:
                 content.append(f"| Completion | ${completion}/token |")
-            if image := api_pricing.get("image"):
+            if (image := api_pricing.get("image")) is not None:
                 content.append(f"| Image | ${image}/image |")
-            if request := api_pricing.get("request"):
+            if (request := api_pricing.get("request")) is not None:
                 content.append(f"| Request | ${request}/request |")
             content.append("")
 
@@ -75,10 +82,20 @@ def generate_model_page(model: dict[str, Any]) -> str:
                         display = " · ".join(value) if isinstance(value, list) else str(value)
                         content.append(f"| {formatted_key} | {display.replace('|', '&#124;')} |")
                 if rates := details.get("rates"):
-                    content.extend(["", "All parsed rates (both currencies):", "", "| Service | Currency | Amount | Per |", "|---|---|---|---|"])
+                    content.extend(
+                        [
+                            "",
+                            "All parsed rates (both currencies):",
+                            "",
+                            "| Service | Currency | Amount | Per |",
+                            "|---|---|---|---|",
+                        ]
+                    )
                     for rate in rates:
                         amount = ("From " if rate.get("lower_bound") else "") + str(rate["amount"])
-                        content.append(f"| {rate['label']} | {rate['currency'].upper()} | {amount} | {rate['quantity']} {rate['unit']} |")
+                        content.append(
+                            f"| {rate['label']} | {rate['currency'].upper()} | {amount} | {rate['quantity']} {rate['unit']} |"
+                        )
             content.append(f"\n**Last Checked:** {scraped.get('checked_at', 'N/A')}\n")
             content.append("")
 
@@ -125,6 +142,69 @@ def generate_model_page(model: dict[str, Any]) -> str:
     return "\n".join(content)
 
 
+def normalize_saved_rates(model: dict[str, Any]) -> None:
+    """Reparse saved observations locally; never contact Poe during a docs build."""
+    details = ((model.get("pricing") or {}).get("scraped") or {}).get("details", {})
+    existing = details.get("rates", [])
+    parsed = parse_rate_card(details.get("rate_card", "")).get("rates", [])
+    if parsed and len(parsed) >= len(existing):
+        details["rates"] = parsed
+        return
+    repaired = []
+    for rate in existing:
+        candidates = parse_price_text(rate["label"], rate.get("raw", ""), rate.get("source", "table"))
+        replacement = next((r for r in candidates if r.currency == rate["currency"]), None)
+        # Explicit matrix/table units are stronger than a raw string's inferred unit.
+        if replacement and replacement.unit == rate["unit"]:
+            rate = rate | {"amount": str(replacement.amount), "quantity": str(replacement.quantity)}
+        repaired.append(rate)
+    if repaired:
+        details["rates"] = repaired
+
+
+def add_reference_prices(models: list[dict[str, Any]], script: Path) -> dict[str, Any]:
+    """Use the browser's comparison implementation for every static model page."""
+    program = """const prices = require(process.argv[1]);
+const models = JSON.parse(require('node:fs').readFileSync(0, 'utf8'));
+const conversion = prices.configure(models);
+console.log(JSON.stringify({conversion, rows: models.map(m => ({id: m.id, point_estimate: prices.cost(m), pricing_tier: prices.tier(m)}))}));
+"""
+    result = subprocess.run(
+        ["node", "-e", program, str(script)], input=json.dumps(models), text=True, capture_output=True, check=True
+    )
+    references = json.loads(result.stdout)
+    for model, reference in zip(models, references["rows"], strict=True):
+        model.update(reference)
+    return references["conversion"]
+
+
+def add_saved_modalities(model: dict[str, Any]) -> None:
+    """Include explicit media outputs in saved rate cards in the filter metadata."""
+    details = ((model.get("pricing") or {}).get("scraped") or {}).get("details", {})
+    rates = details.get("rates", [])
+    outputs = set((model.get("architecture") or {}).get("output_modalities", []))
+    for rate in rates:
+        label = rate["label"].lower()
+        if "input" in label and "output" not in label:
+            continue
+        if rate["unit"] == "video" or "video" in label:
+            outputs.add("video")
+        if rate["unit"] in {"image", "megapixel"} or "image" in label:
+            outputs.add("image")
+        if label.startswith("audio output"):
+            outputs.add("audio")
+    if rates and "video generation" in details.get("rate_card", "").lower():
+        outputs.add("video")
+    if outputs:
+        architecture = model.setdefault("architecture", {})
+        if outputs != set(architecture.get("output_modalities", [])):
+            architecture["output_modalities"] = sorted(outputs)
+            architecture["modality"] = (
+                "+".join(architecture.get("input_modalities", []) or ["unknown"]) + "->" + "+".join(sorted(outputs))
+            )
+            model["comparison_modalities_source"] = "saved_rate_card"
+
+
 def main() -> None:
     """Main function to update documentation."""
     logger.info("🚀 Starting documentation update process")
@@ -149,11 +229,16 @@ def main() -> None:
 
     # Load models data
     data = load_bots_data(src_models_json)
+    models = data.get("data", [])
+    for model in models:
+        normalize_saved_rates(model)
+        add_saved_modalities(model)
+    data["point_conversion"] = add_reference_prices(models, docs_md_dir / "price_compare.js")
 
     # Copy JSON to docs data directory
     logger.info("📋 Copying JSON data to docs directory")
     dest_json = docs_data_dir / "poe_bots.json"
-    shutil.copy2(src_models_json, dest_json)
+    dest_json.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     logger.success(f"Copied JSON data to: {dest_json}")
 
     # Generate individual model pages
@@ -202,17 +287,16 @@ def main() -> None:
     # Generate models index page
     logger.info("📑 Generating models index page")
     models_index_path = docs_models_dir / "index.md"
-    models_index_content = ["# Models Database\n\n"]
-    models_index_content.append("## Interactive Table\n\n")
+    models_index_content = ["---\nthis_file: src_docs/md/models/index.md\nhide:\n  - toc\n---\n\n# Models Database\n\n"]
     models_index_content.append(
-        '<iframe src="../table.html" width="100%" height="800px" frameborder="0" style="border: 1px solid #ddd; border-radius: 4px;"></iframe>\n\n'
+        '<iframe class="poe-catalogue" src="../table.html" title="Poe model prices and filters" loading="eager"></iframe>\n\n'
     )
-    models_index_content.append("## All Models\n\n")
-    models_index_content.append("Browse all available Poe models:\n\n")
+    models_index_content.append('Browse model details:\n\n<ul class="poe-model-links">\n')
 
     for model in sorted(models, key=lambda x: x["id"]):
-        models_index_content.append(f"### [{model['id']}]({model['id']}.md)")
-        models_index_content.append("\n\n")
+        models_index_content.append(f'<li><a href="{model["id"]}.html">{model["id"]}</a></li>\n')
+
+    models_index_content.append("</ul>\n")
 
     models_index_path.write_text("".join(models_index_content))
     logger.success(f"Generated models index: {models_index_path}")
@@ -223,7 +307,9 @@ def main() -> None:
 
     try:
         # Change to src_docs directory and run mkdocs build
-        result = subprocess.run(["mkdocs", "build"], cwd=src_docs_dir, capture_output=True, text=True, check=True)
+        result = subprocess.run(
+            ["mkdocs", "build", "--clean", "--strict"], cwd=src_docs_dir, capture_output=True, text=True, check=True
+        )
         logger.success("✅ MkDocs site built successfully")
         if result.stdout:
             logger.debug(f"MkDocs output: {result.stdout}")
@@ -236,7 +322,7 @@ def main() -> None:
         raise
     except FileNotFoundError:
         logger.warning("mkdocs command not found. Please install mkdocs to build the site automatically.")
-        logger.info("You can install it with: pip install mkdocs mkdocs-material")
+        logger.info("Install the locked documentation environment with: uv sync --locked")
 
     logger.success("🎉 Documentation update and build completed successfully!")
 

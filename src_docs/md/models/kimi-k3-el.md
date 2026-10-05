@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/kimi-k3-el.md
+---
+
 # [kimi-k3-el](https://poe.com/kimi-k3-el){ .md-button .md-button--primary }
+
+**Tier 5:** 367 points · 1,000 tokens (500 input + 500 output) + message fee
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

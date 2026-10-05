@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/gpt-researcher.md
+---
+
 # [gpt-researcher](https://poe.com/gpt-researcher){ .md-button .md-button--primary }
+
+**Tier 7:** From 100,000 points · 1,000 input tokens only
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

@@ -1,0 +1,9 @@
+/* this_file: src_docs/md/catalogue.css */
+/* The catalogue uses the right edge while retaining the local navigation. */
+body:has(.poe-catalogue) .md-grid { max-width: none; }
+body:has(.poe-catalogue) .md-sidebar--secondary { display: none; }
+body:has(.poe-catalogue) .md-content { min-width: 0; margin-right: 0; }
+body:has(.poe-catalogue) .md-content__inner { margin-right: 1rem; }
+.poe-catalogue { width: 100%; height: 85vh; min-height: 650px; border: 0; }
+.poe-model-links { columns: 3 15rem; padding-left: 1.25rem; }
+.poe-model-links li { break-inside: avoid; }

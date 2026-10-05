@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/DeepSeek-V3.2-OSL.md
+---
+
 # [DeepSeek-V3.2-OSL](https://poe.com/DeepSeek-V3.2-OSL){ .md-button .md-button--primary }
+
+**Tier 4:** 136.5 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

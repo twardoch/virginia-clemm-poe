@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Latentsync.md
+---
+
 # [Latentsync](https://poe.com/Latentsync){ .md-button .md-button--primary }
+
+**Tier 7:** ≈ 17,000 points · per 10 seconds video (assumed 5s clip)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

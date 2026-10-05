@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/FASHN-Try-on.md
+---
+
 # [FASHN-Try-on](https://poe.com/FASHN-Try-on){ .md-button .md-button--primary }
+
+**Tier 6:** 2,500 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

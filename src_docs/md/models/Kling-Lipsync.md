@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Kling-Lipsync.md
+---
+
 # [Kling-Lipsync](https://poe.com/Kling-Lipsync){ .md-button .md-button--primary }
+
+**Tier 7:** ≈ 9,334 points · per 10 seconds video (assumed 5s clip)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/qwen3.7-flash-el.md
+---
+
 # [qwen3.7-flash-el](https://poe.com/qwen3.7-flash-el){ .md-button .md-button--primary }
+
+**Tier 1:** 3 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

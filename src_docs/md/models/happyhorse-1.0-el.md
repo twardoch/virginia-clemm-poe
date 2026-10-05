@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/happyhorse-1.0-el.md
+---
+
 # [happyhorse-1.0-el](https://poe.com/happyhorse-1.0-el){ .md-button .md-button--primary }
+
+**Tier 7:** From 46,670 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -49,9 +57,9 @@ This bot supports optional parameters for additional customization.
 
 **Input Modalities:** text
 
-**Output Modalities:** text
+**Output Modalities:** text, video
 
-**Modality:** text->text
+**Modality:** text->text+video
 
 
 ## Technical Details

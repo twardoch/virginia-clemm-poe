@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/stablediffusion3.5-l.md
+---
+
 # [stablediffusion3.5-l](https://poe.com/stablediffusion3.5-l){ .md-button .md-button--primary }
+
+**Tier 6:** 1,842 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

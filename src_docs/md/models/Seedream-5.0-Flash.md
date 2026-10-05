@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Seedream-5.0-Flash.md
+---
+
 # [Seedream-5.0-Flash](https://poe.com/Seedream-5.0-Flash){ .md-button .md-button--primary }
+
+**Tier 6:** 1,000 points · per image
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -41,9 +49,9 @@ This bot supports optional parameters for additional customization.
 
 **Input Modalities:** Unknown
 
-**Output Modalities:** Unknown
+**Output Modalities:** image
 
-**Modality:** unknown
+**Modality:** unknown->image
 
 
 ## Technical Details

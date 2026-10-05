@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/qwen-image-2.md
+---
+
 # [qwen-image-2](https://poe.com/qwen-image-2){ .md-button .md-button--primary }
+
+**Tier 6:** 1,167 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -31,9 +39,9 @@ This bot supports optional parameters for additional customization.
 
 **Input Modalities:** text
 
-**Output Modalities:** text
+**Output Modalities:** image, text
 
-**Modality:** text->text
+**Modality:** text->image+text
 
 
 ## Technical Details

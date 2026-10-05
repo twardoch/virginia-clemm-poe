@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Flux-Kontext-Dev.md
+---
+
 # [Flux-Kontext-Dev](https://poe.com/Flux-Kontext-Dev){ .md-button .md-button--primary }
+
+**Tier 5:** ≈ 743.4404 points · per 1024×1024 image (1.048576 MP)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

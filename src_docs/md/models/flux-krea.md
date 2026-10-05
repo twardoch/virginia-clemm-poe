@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/flux-krea.md
+---
+
 # [flux-krea](https://poe.com/flux-krea){ .md-button .md-button--primary }
+
+**Tier 5:** 709 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

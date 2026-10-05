@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/kling-1.5-pro.md
+---
+
 # [kling-1.5-pro](https://poe.com/kling-1.5-pro){ .md-button .md-button--primary }
+
+**Tier 7:** 28,340 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -31,9 +39,9 @@ This bot supports optional parameters for additional customization.
 
 **Input Modalities:** text, image
 
-**Output Modalities:** text
+**Output Modalities:** text, video
 
-**Modality:** text,image->text
+**Modality:** text+image->text+video
 
 
 ## Technical Details

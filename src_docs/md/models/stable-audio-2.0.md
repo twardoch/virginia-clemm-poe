@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/stable-audio-2.0.md
+---
+
 # [stable-audio-2.0](https://poe.com/stable-audio-2.0){ .md-button .md-button--primary }
+
+**Tier 8:** From 69 points · rate: Per Step Cost
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -14,7 +22,9 @@ All parsed rates (both currencies):
 | Service | Currency | Amount | Per |
 |---|---|---|---|
 | Base Cost | USD | 0.58 | 1 base cost |
+| Base Cost | POINTS | 19267 | 1 base cost |
 | Per Step Cost | USD | 0.0021 | 1 step cost |
+| Per Step Cost | POINTS | 69 | 1 step cost |
 
 **Last Checked:** 2026-10-05T02:11:59.907516+00:00
 

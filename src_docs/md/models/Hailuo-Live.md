@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Hailuo-Live.md
+---
+
 # [Hailuo-Live](https://poe.com/Hailuo-Live){ .md-button .md-button--primary }
+
+**Tier 7:** ≈ 28,334 points · per 10 seconds video (assumed 5s clip)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

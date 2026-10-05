@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/MiniMax-M2-FW.md
+---
+
 # [MiniMax-M2-FW](https://poe.com/MiniMax-M2-FW){ .md-button .md-button--primary }
+
+**Tier 4:** 110 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

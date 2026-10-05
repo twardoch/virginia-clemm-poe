@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/qwen3-235b-a22b-di.md
+---
+
 # [qwen3-235b-a22b-di](https://poe.com/qwen3-235b-a22b-di){ .md-button .md-button--primary }
+
+**Tier 3:** 63 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/mochi-preview.md
+---
+
 # [mochi-preview](https://poe.com/mochi-preview){ .md-button .md-button--primary }
+
+**Tier 7:** ≈ 22,668 points · per 10 seconds video (assumed 5s clip)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -29,9 +37,9 @@ All parsed rates (both currencies):
 
 **Input Modalities:** text
 
-**Output Modalities:** text
+**Output Modalities:** text, video
 
-**Modality:** text->text
+**Modality:** text->text+video
 
 
 ## Technical Details

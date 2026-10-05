@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/kling-o3.md
+---
+
 # [kling-o3](https://poe.com/kling-o3){ .md-button .md-button--primary }
+
+**Tier 7:** From 56,000 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -15,13 +23,21 @@ All parsed rates (both currencies):
 | Service | Currency | Amount | Per |
 |---|---|---|---|
 | Text / Image | USD | 0.17 | 1 second |
+| Text / Image | POINTS | 5600 | 1 second |
 | Text / Image + Sound | USD | 0.23 | 1 second |
+| Text / Image + Sound | POINTS | 7467 | 1 second |
 | Video Input (Edit / Ref) | USD | 0.25 | 1 second |
+| Video Input (Edit / Ref) | POINTS | 8400 | 1 second |
 | Text / Image | USD | 0.23 | 1 second |
+| Text / Image | POINTS | 7467 | 1 second |
 | Text / Image + Sound | USD | 0.28 | 1 second |
+| Text / Image + Sound | POINTS | 9334 | 1 second |
 | Video Input (Edit / Ref) | USD | 0.34 | 1 second |
+| Video Input (Edit / Ref) | POINTS | 11200 | 1 second |
 | Text / Image | USD | 0.53 | 1 second |
+| Text / Image | POINTS | 17500 | 1 second |
 | Text / Image + Sound | USD | 0.53 | 1 second |
+| Text / Image + Sound | POINTS | 17500 | 1 second |
 
 **Last Checked:** 2026-10-05T02:11:13.391087+00:00
 
@@ -56,9 +72,9 @@ This bot supports optional parameters for additional customization.
 
 **Input Modalities:** text, image, video
 
-**Output Modalities:** video
+**Output Modalities:** image, video
 
-**Modality:** text,image,video->video
+**Modality:** text+image+video->image+video
 
 
 ## Technical Details

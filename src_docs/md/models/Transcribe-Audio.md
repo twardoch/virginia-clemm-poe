@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Transcribe-Audio.md
+---
+
 # [Transcribe-Audio](https://poe.com/Transcribe-Audio){ .md-button .md-button--primary }
+
+**Tier 5:** 797 points · 1,000 tokens (500 input + 500 output) + message fee
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

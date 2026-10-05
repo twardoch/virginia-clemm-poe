@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Flux-1-Dev-FW.md
+---
+
 # [Flux-1-Dev-FW](https://poe.com/Flux-1-Dev-FW){ .md-button .md-button--primary }
+
+**Tier 5:** 375 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

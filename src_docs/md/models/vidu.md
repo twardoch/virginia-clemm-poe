@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/vidu.md
+---
+
 # [vidu](https://poe.com/vidu){ .md-button .md-button--primary }
+
+**Tier 7:** From ≈ 13,334 points · per 10 seconds video (assumed 5s clip)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -54,9 +62,9 @@ Duration is limited to 5 seconds.
 
 **Input Modalities:** text, image
 
-**Output Modalities:** video
+**Output Modalities:** image, video
 
-**Modality:** text,image->video
+**Modality:** text+image->image+video
 
 
 ## Technical Details

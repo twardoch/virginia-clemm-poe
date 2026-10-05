@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/kling-v3-pro.md
+---
+
 # [kling-v3-pro](https://poe.com/kling-v3-pro){ .md-button .md-button--primary }
+
+**Tier 7:** From 74,670 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

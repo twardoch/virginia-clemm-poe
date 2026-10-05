@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Kimi-K3-Tog.md
+---
+
 # [Kimi-K3-Tog](https://poe.com/Kimi-K3-Tog){ .md-button .md-button--primary }
+
+**Tier 5:** 500 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

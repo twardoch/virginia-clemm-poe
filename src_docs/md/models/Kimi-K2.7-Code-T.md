@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Kimi-K2.7-Code-T.md
+---
+
 # [Kimi-K2.7-Code-T](https://poe.com/Kimi-K2.7-Code-T){ .md-button .md-button--primary }
+
+**Tier 0:** 0 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

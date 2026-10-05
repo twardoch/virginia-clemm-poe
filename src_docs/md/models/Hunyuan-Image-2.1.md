@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Hunyuan-Image-2.1.md
+---
+
 # [Hunyuan-Image-2.1](https://poe.com/Hunyuan-Image-2.1){ .md-button .md-button--primary }
+
+**Tier 6:** 2,834 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

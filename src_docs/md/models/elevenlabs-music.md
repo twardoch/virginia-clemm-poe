@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/elevenlabs-music.md
+---
+
 # [elevenlabs-music](https://poe.com/elevenlabs-music){ .md-button .md-button--primary }
+
+**Tier 7:** 47,334 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -12,6 +20,7 @@ All parsed rates (both currencies):
 
 | Service | Currency | Amount | Per |
 |---|---|---|---|
+| Total cost | USD | 3.55 | 1 message |
 | Total cost | USD | 1.42 | 1 message |
 | Total cost | POINTS | 47334 | 1 message |
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/glm-4.6.md
+---
+
 # [glm-4.6](https://poe.com/glm-4.6){ .md-button .md-button--primary }
+
+**Tier 3:** 47 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

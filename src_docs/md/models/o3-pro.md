@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/o3-pro.md
+---
+
 # [o3-pro](https://poe.com/o3-pro){ .md-button .md-button--primary }
+
+**Tier 6:** 1,500 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

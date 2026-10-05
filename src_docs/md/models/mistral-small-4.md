@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/mistral-small-4.md
+---
+
 # [mistral-small-4](https://poe.com/mistral-small-4){ .md-button .md-button--primary }
+
+**Tier 7:** 9,333 points · per image
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -52,9 +60,9 @@ This bot supports optional parameters for additional customization.
 
 **Input Modalities:** text
 
-**Output Modalities:** text
+**Output Modalities:** image, text
 
-**Modality:** text->text
+**Modality:** text->image+text
 
 
 ## Technical Details

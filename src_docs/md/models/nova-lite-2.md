@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/nova-lite-2.md
+---
+
 # [nova-lite-2](https://poe.com/nova-lite-2){ .md-button .md-button--primary }
+
+**Tier 3:** 59.5 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

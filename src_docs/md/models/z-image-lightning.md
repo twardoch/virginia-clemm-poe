@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/z-image-lightning.md
+---
+
 # [z-image-lightning](https://poe.com/z-image-lightning){ .md-button .md-button--primary }
+
+**Tier 4:** 167 points · per image
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

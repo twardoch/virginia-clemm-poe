@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/wan-2.5.md
+---
+
 # [wan-2.5](https://poe.com/wan-2.5){ .md-button .md-button--primary }
+
+**Tier 7:** From 16,670 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

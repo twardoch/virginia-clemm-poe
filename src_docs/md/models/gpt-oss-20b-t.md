@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/gpt-oss-20b-t.md
+---
+
 # [gpt-oss-20b-t](https://poe.com/gpt-oss-20b-t){ .md-button .md-button--primary }
+
+**Tier 2:** 15 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

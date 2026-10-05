@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/qwen3.5-397b-a17b.md
+---
+
 # [qwen3.5-397b-a17b](https://poe.com/qwen3.5-397b-a17b){ .md-button .md-button--primary }
+
+**Tier 3:** 70 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

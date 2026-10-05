@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/lyria-3.md
+---
+
 # [lyria-3](https://poe.com/lyria-3){ .md-button .md-button--primary }
+
+**Tier 6:** From 1,334 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

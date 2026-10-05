@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/dreamina-3.1.md
+---
+
 # [dreamina-3.1](https://poe.com/dreamina-3.1){ .md-button .md-button--primary }
+
+**Tier 6:** 1,000 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

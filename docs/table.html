@@ -5,51 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poe Models Interactive Table</title>
+    <link rel="stylesheet" href="https://i.fontlab.com/fltheme26/1.0.0/components.css">
+    <link rel="stylesheet" href="https://i.fontlab.com/fltheme26/1.0.0/theme.css">
+    <script src="https://i.fontlab.com/fltheme26/1.0.0/basecoat.js" defer></script>
+    <script src="https://i.fontlab.com/fltheme26/1.0.0/theme.js" defer></script>
     <style>
+        :root { --md-default-bg-color: #fff; --md-default-fg-color: #242424; --surface: #f8f9fa; --line: #ddd; --link: #0066cc; }
+        [data-md-color-scheme="slate"] { --md-default-bg-color: #202024; --md-default-fg-color: #f4f4f5; --surface: #313137; --line: #51515b; --link: #90caf9; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: white;
+            background: var(--md-default-bg-color);
+            color: var(--md-default-fg-color);
         }
         .container {
-            max-width: 1400px;
+            width: 100%;
+            box-sizing: border-box;
             margin: 0 auto;
-            background: white;
-            padding: 20px;
+            background: var(--md-default-bg-color);
+            padding: 12px;
         }
-        h1 {
-            color: #333;
+        .container h1 {
+            color: inherit;
             margin-bottom: 20px;
         }
-        .controls {
+        .container .controls {
             margin-bottom: 20px;
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
         }
-        input, select {
+        .container input, .container select {
             padding: 8px 12px;
-            border: 1px solid #ddd;
+            border: 1px solid var(--line);
+            background: var(--md-default-bg-color);
+            color: inherit;
             border-radius: 4px;
             font-size: 14px;
         }
-        input[type="text"] {
+        .container input[type="text"] {
             flex: 1;
             min-width: 200px;
         }
-        table {
+        .container table {
             width: 100%;
             border-collapse: collapse;
             font-size: 14px;
         }
-        th, td {
+        .container th, .container td {
             padding: 12px;
             text-align: left;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid var(--line);
         }
-        th {
-            background: #f8f9fa;
+        .container th {
+            background: var(--surface);
             font-weight: 600;
             position: sticky;
             top: 0;
@@ -57,21 +67,21 @@
             cursor: pointer;
             user-select: none;
         }
-        th:hover {
-            background: #e9ecef;
+        .container th:hover {
+            background: var(--surface);
         }
-        tr:hover {
-            background: #f8f9fa;
+        .container tr:hover {
+            background: var(--surface);
         }
-        .model-link {
-            color: #0066cc;
+        .container .model-link {
+            color: var(--link);
             text-decoration: none;
             font-weight: 500;
         }
-        .model-link:hover {
+        .container .model-link:hover {
             text-decoration: underline;
         }
-        .modality {
+        .container .modality {
             display: inline-block;
             padding: 2px 8px;
             border-radius: 3px;
@@ -79,10 +89,14 @@
             background: #e3f2fd;
             color: #1976d2;
         }
-        .price {
+        .container .price {
             font-weight: 500;
-            color: #2e7d32;
+            color: inherit;
         }
+        #tableContainer { overflow-x: auto; }
+        .container small { font-weight: 400; }
+        .container p { margin: 0 0 12px; }
+        .container a { color: var(--link); }
         .loading {
             text-align: center;
             padding: 40px;
@@ -105,25 +119,35 @@
 </head>
 <body>
     <div class="container">
-        <div class="controls">
-            <input type="text" id="searchInput" placeholder="Search models...">
-            <select id="modalityFilter">
+        <div class="controls fltheme-components">
+            <input class="du-input" type="text" id="searchInput" aria-label="Search models" placeholder="Search models...">
+            <select class="du-select" id="modalityFilter" aria-label="Modality">
                 <option value="">All Modalities</option>
-                <option value="text->text">Text → Text</option>
-                <option value="text->image">Text → Image</option>
-                <option value="text->audio">Text → Audio</option>
-                <option value="text->video">Text → Video</option>
             </select>
-            <select id="currencyFilter" aria-label="Price currency">
+            <select class="du-select" id="currencyFilter" aria-label="Price currency">
                 <option value="points">Compare points</option>
                 <option value="usd">Compare USD</option>
             </select>
-            <select id="ownerFilter">
-                <option value="">All Owners</option>
+            <select class="du-select" id="creatorFilter" aria-label="Creator">
+                <option value="">All Creators</option>
+            </select>
+            <select class="du-select" id="tierFilter" aria-label="Pricing tier">
+                <option value="">All Tiers</option>
+                <option value="0">Tier 0 · Free (0 points and $0)</option>
+                <option value="1">Tier 1 · Up to 9 points</option>
+                <option value="2">Tier 2 · Up to 29 points</option>
+                <option value="3">Tier 3 · Up to 99 points</option>
+                <option value="4">Tier 4 · Up to 299 points</option>
+                <option value="5">Tier 5 · Up to 999 points</option>
+                <option value="6">Tier 6 · Up to 2,999 points</option>
+                <option value="7">Tier 7 · Above 2,999 points</option>
+                <option value="8">Tier 8 · Different known pricing</option>
+                <option value="9">Tier 9 · Unknown pricing</option>
             </select>
         </div>
 
-        <p id="priceHelp">Cheapest first. Text: 1,000 input + 1,000 output tokens, plus any disclosed message fee. Other services: the unit shown. “From” marks a minimum or partial rate. Optional tools and media inputs cost extra. Different units are not equivalent; filter by modality. Currencies are grouped without conversion.</p>
+        <p id="priceHelp">Cheapest first. Prefer points per message or image; otherwise use 1,000 tokens (500 input + 500 output), 4,000 characters, a 1024×1024 image, or 10 seconds of video. “≈” marks an estimate; “From” marks a minimum or partial rate. Prompt, tool and media-input costs may be extra. Tiers use points regardless of the currency selected. <a href="pricing-method.html" target="_parent">Assumptions and conversion method</a>.</p>
+        <p id="conversionHelp"></p>
         <p id="priceCoverage"></p>
         <div id="tableContainer">
             <div class="loading">Loading models data...</div>
@@ -142,6 +166,8 @@
                 const response = await fetch('data/poe_bots.json');
                 const data = await response.json();
                 modelsData = data.data || [];
+                const exchange = PoePrices.configure(modelsData);
+                document.getElementById('conversionHelp').textContent = exchange ? `Dollar-only prices use ≈ ${Math.round(exchange.pointsPerDollar).toLocaleString()} points/$, the median of ${exchange.observations} matched website rates, or this bot’s own conversion when available.` : 'No matched points/dollar rates available for conversion.';
                 filteredData = modelsData; // Initialize filteredData with all models
                 initializeFilters();
                 sortData();
@@ -152,15 +178,16 @@
         }
 
         function initializeFilters() {
-            const owners = [...new Set(modelsData.map(m => m.owned_by))].sort();
-            const ownerFilter = document.getElementById('ownerFilter');
-            owners.forEach(owner => {
+            const fill = (id, values) => values.forEach(value => {
                 const option = document.createElement('option');
-                option.value = owner;
-                option.textContent = owner;
-                ownerFilter.appendChild(option);
+                option.value = value;
+                option.textContent = value;
+                document.getElementById(id).appendChild(option);
             });
+            fill('creatorFilter', [...new Set(modelsData.map(creatorFor))].sort());
+            fill('modalityFilter', [...new Set(modelsData.flatMap(m => m.architecture?.output_modalities || []))].sort());
         }
+        const creatorFor = model => model.bot_info?.creator || model.owned_by || 'Not disclosed';
 
         function escapeHTML(value) {
             return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -168,13 +195,15 @@
 
         function getInitialCost(model) {
             const price = PoePrices.cost(model, document.getElementById('currencyFilter').value);
-            return `${escapeHTML(price.label)}<br><small>${escapeHTML(price.basis)}${price.source ? ' · ' + price.source : ''}</small>`;
+            const conversion = price.conversion ? ` · ≈ ${Math.round(price.conversion.pointsPerDollar).toLocaleString()} points/$ (${price.conversion.source})` : '';
+            return `${escapeHTML(price.label)}<br><small>${escapeHTML(price.basis)}${price.source ? ' · ' + price.source : ''}${escapeHTML(conversion)}</small>`;
         }
 
         function filterData() {
             const searchTerm = document.getElementById('searchInput').value.toLowerCase();
             const modalityFilter = document.getElementById('modalityFilter').value;
-            const ownerFilter = document.getElementById('ownerFilter').value;
+            const creatorFilter = document.getElementById('creatorFilter').value;
+            const tierFilter = document.getElementById('tierFilter').value;
 
             filteredData = modelsData.filter(model => {
                 const matchesSearch = !searchTerm ||
@@ -183,12 +212,12 @@
                     (model.bot_info?.creator || '').toLowerCase().includes(searchTerm);
 
                 const matchesModality = !modalityFilter ||
-                    (model.architecture?.output_modalities || []).includes(modalityFilter.split('->')[1]);
+                    (model.architecture?.output_modalities || []).includes(modalityFilter);
 
-                const matchesOwner = !ownerFilter ||
-                    model.owned_by === ownerFilter;
+                const matchesCreator = !creatorFilter || creatorFor(model) === creatorFilter;
+                const matchesTier = tierFilter === '' || PoePrices.tier(model) === Number(tierFilter);
 
-                return matchesSearch && matchesModality && matchesOwner;
+                return matchesSearch && matchesModality && matchesCreator && matchesTier;
             });
 
             sortData();
@@ -203,8 +232,11 @@
                     aVal = a.architecture?.modality || '';
                     bVal = b.architecture?.modality || '';
                 } else if (sortColumn === 'creator') {
-                    aVal = a.bot_info?.creator || '';
-                    bVal = b.bot_info?.creator || '';
+                    aVal = creatorFor(a);
+                    bVal = creatorFor(b);
+                } else if (sortColumn === 'tier') {
+                    aVal = PoePrices.tier(a);
+                    bVal = PoePrices.tier(b);
                 } else if (sortColumn === 'cost') {
                     return PoePrices.compare(a, b, sortDirection, document.getElementById('currencyFilter').value);
                 }
@@ -256,6 +288,7 @@
                                     ${sortColumn === 'cost' ? (sortDirection === 'asc' ? '↑' : '↓') : '↕'}
                                 </span>
                             </th>
+                            <th onclick="handleSort('tier')">Tier</th>
                             <th>Description</th>
                         </tr>
                     </thead>
@@ -264,8 +297,9 @@
                             <tr>
                                 <td><a href="models/${model.id}.html" class="model-link" target="_parent">${escapeHTML(model.id)}</a></td>
                                 <td><span class="modality">${escapeHTML(model.architecture?.modality || 'Not disclosed')}</span></td>
-                                <td>${escapeHTML(model.bot_info?.creator || model.owned_by || 'Not disclosed')}</td>
+                                <td>${escapeHTML(creatorFor(model))}</td>
                                 <td class="price">${getInitialCost(model)}</td>
+                                <td>${PoePrices.tier(model)}</td>
                                 <td>${escapeHTML((model.bot_info?.description || 'Not disclosed').substring(0, 100))}${(model.bot_info?.description || '').length > 100 ? '...' : ''}</td>
                             </tr>
                         `).join('')}
@@ -273,19 +307,28 @@
                 </table>
             `;
             document.getElementById('tableContainer').innerHTML = html;
-            const known = filteredData.filter(m => PoePrices.cost(m).amount !== null).length;
+            const known = filteredData.filter(m => PoePrices.cost(m, document.getElementById('currencyFilter').value).amount !== null).length;
             document.getElementById('priceCoverage').textContent = `${known} of ${filteredData.length} models have a numeric price. Open a model for all rate tiers and sources.`;
         }
 
         // Event listeners
         document.getElementById('searchInput').addEventListener('input', filterData);
         document.getElementById('modalityFilter').addEventListener('change', filterData);
-        document.getElementById('ownerFilter').addEventListener('change', filterData);
+        document.getElementById('creatorFilter').addEventListener('change', filterData);
+        document.getElementById('tierFilter').addEventListener('change', filterData);
 
         document.getElementById('currencyFilter').addEventListener('change', sortData);
 
         // Initialize
         loadData();
+        window.addEventListener('message', event => {
+            if (event.origin !== window.location.origin || event.source !== window.parent) return;
+            if (['default','slate'].includes(event.data?.poeScheme)) {
+                document.documentElement.setAttribute('data-md-color-scheme', event.data.poeScheme);
+                window.FLTheme?.refresh();
+            }
+        });
+        window.parent.postMessage({poeReady: true}, window.location.origin);
     </script>
 </body>
 </html>

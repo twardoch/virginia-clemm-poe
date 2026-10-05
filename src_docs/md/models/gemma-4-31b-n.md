@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/gemma-4-31b-n.md
+---
+
 # [gemma-4-31b-n](https://poe.com/gemma-4-31b-n){ .md-button .md-button--primary }
+
+**Tier 2:** 9.5 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

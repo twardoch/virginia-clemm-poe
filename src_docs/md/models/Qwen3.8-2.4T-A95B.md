@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Qwen3.8-2.4T-A95B.md
+---
+
 # [Qwen3.8-2.4T-A95B](https://poe.com/Qwen3.8-2.4T-A95B){ .md-button .md-button--primary }
+
+**Tier 0:** 0 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

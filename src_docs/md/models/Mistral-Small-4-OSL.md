@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Mistral-Small-4-OSL.md
+---
+
 # [Mistral-Small-4-OSL](https://poe.com/Mistral-Small-4-OSL){ .md-button .md-button--primary }
+
+**Tier 2:** 18 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

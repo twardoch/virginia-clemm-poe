@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/canvas-creator.md
+---
+
 # [canvas-creator](https://poe.com/canvas-creator){ .md-button .md-button--primary }
+
+**Tier 9:** Usage based · Charged at called bots’ rates
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

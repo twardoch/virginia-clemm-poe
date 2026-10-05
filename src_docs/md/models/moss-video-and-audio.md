@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/moss-video-and-audio.md
+---
+
 # [moss-video-and-audio](https://poe.com/moss-video-and-audio){ .md-button .md-button--primary }
+
+**Tier 7:** From 56,640 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -15,10 +23,14 @@ All parsed rates (both currencies):
 
 | Service | Currency | Amount | Per |
 |---|---|---|---|
-| 360p | USD | 0.17 | 1 360p |
-| 720p | USD | 2.82 | 1 720p |
+| Video Output (360p) | USD | 0.17 | 1 second |
+| Video Output (360p) | POINTS | 5664 | 1 second |
+| Video Output (720p) | USD | 2.82 | 1 second |
+| Video Output (720p) | POINTS | 93145 | 1 second |
 | Fast | USD | 0.066 | 1 fast |
+| Fast | POINTS | 2167 | 1 fast |
 | Quality | USD | 0.13 | 1 quality |
+| Quality | POINTS | 4334 | 1 quality |
 
 **Last Checked:** 2026-10-05T02:11:09.541404+00:00
 

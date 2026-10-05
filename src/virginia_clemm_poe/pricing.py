@@ -34,6 +34,8 @@ class PriceRate(BaseModel):
 
 def price_unit(label: str, text: str) -> tuple[Decimal, str]:
     """Read scale and unit from an explicit denominator or a rate-row label."""
+    text = re.sub(r"\bmillion\b", "1000000", text, flags=re.IGNORECASE)
+    text = re.sub(r"\bthousand\b", "1000", text, flags=re.IGNORECASE)
     match = UNIT_PATTERN.search(text) or UNIT_PATTERN.search(label)
     if not match and re.match(r"^\d+\s+(seconds?|minutes?|images?)$", label, re.IGNORECASE):
         match = UNIT_PATTERN.search("/ " + label)
@@ -64,6 +66,8 @@ def parse_price_text(label: str, text: str, source: str = "table") -> list[Price
     """Parse dollars, points, scientific notation, ranges, and official milli-cent markers."""
     normalized = text.replace("\u00a0", " ").replace("\u202f", " ")
     normalized = re.sub(r"\[usd_milli_cents=(\d+)\]", lambda m: "$" + str(Decimal(m[1]) / USD_MILLI_CENTS), normalized)
+    # Poe also writes point amounts as `3334 ($0.10)` without the word points.
+    normalized = re.sub(rf"({NUMBER})\s*\(\s*\$", r"\1 points ($", normalized)
     quantity, unit = price_unit(label, normalized)
     rates = []
     for currency, pattern in [("usd", USD_PATTERN), ("points", POINT_PATTERN)]:
@@ -100,14 +104,32 @@ def parse_rate_tables(html: str, source: str = "table") -> dict:
         cells = row.find_all(["td", "th"], recursive=False) or row.select("[role=cell], [role=columnheader]")
         if len(cells) < 2 or all(cell.name == "th" or cell.get("role") == "columnheader" for cell in cells):
             continue
-        label = cells[0].get_text(" ", strip=True)
+        label = " ".join(cells[0].get_text(" ", strip=True).split())
         if "discount" in label.lower():
             continue
         values = [cell.get_text(" ", strip=True) for cell in cells[1:]]
         parsed = [rate for value in values for rate in parse_price_text(label, value, source)]
         table = row.find_parent("table")
+        headers = [cell.get_text(" ", strip=True) for cell in table.select("tr:first-child th")] if table else []
+        preceding = table.find_previous_sibling() if table else None
+        context = preceding.get_text(" ", strip=True) if preceding else ""
+        duration_context = re.fullmatch(r"(\d+(?:\.\d+)?)\s*seconds?:?", context, re.IGNORECASE)
+        if any("duration" in header.lower() for header in headers):
+            duration = values[headers.index(next(h for h in headers if "duration" in h.lower())) - 1]
+            match = re.fullmatch(r"(\d+(?:\.\d+)?)\s*s", duration)
+            if match:
+                for rate in parsed:
+                    rate.label = f"Video Output ({label}; {duration})"
+                    rate.unit, rate.quantity = "second", Decimal(match[1])
+        elif any(re.search(r"(?:/|per)\s*(?:video\s+)?second", h, re.IGNORECASE) for h in headers):
+            for rate in parsed:
+                rate.label, rate.unit = f"Video Output ({label})", "second"
+        elif duration_context:
+            for rate in parsed:
+                rate.label = f"Video Output ({label}; {context})"
+                rate.unit, rate.quantity = "second", Decimal(duration_context[1])
         if table and re.search(r"size\s*/?\s*quality", table.get_text(" ", strip=True), re.IGNORECASE):
-            headers = [cell.get_text(" ", strip=True) for cell in table.select("thead th")]
+            headers = [" ".join(cell.get_text(" ", strip=True).split()) for cell in table.select("thead th")]
             parsed = []
             for index, value in enumerate(values, 1):
                 for rate in parse_price_text(label, value, source):
@@ -129,6 +151,8 @@ def parse_rate_tables(html: str, source: str = "table") -> dict:
 
 def parse_rate_card(text: str) -> dict:
     """Use Python-Markdown's table extension for Poe's raw structured rate-card fallback."""
+    # Poe often omits Markdown's required blank line between prose and a table.
+    text = re.sub(r"(?m)^([^\n|][^\n]*)\n(?=\|)", r"\1\n\n", text)
     data = parse_rate_tables(markdown.markdown(text, extensions=["tables"]), source="rate_card")
     if data:
         return data

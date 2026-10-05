@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/hailuo-music-v1.5.md
+---
+
 # [hailuo-music-v1.5](https://poe.com/hailuo-music-v1.5){ .md-button .md-button--primary }
+
+**Tier 6:** 1,000 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

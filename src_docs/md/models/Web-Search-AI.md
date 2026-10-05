@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Web-Search-AI.md
+---
+
 # [Web-Search-AI](https://poe.com/Web-Search-AI){ .md-button .md-button--primary }
+
+**Tier 8:** From 1 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

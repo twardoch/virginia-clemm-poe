@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/omnihuman.md
+---
+
 # [omnihuman](https://poe.com/omnihuman){ .md-button .md-button--primary }
+
+**Tier 7:** 46,670 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

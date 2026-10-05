@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/exa-search.md
+---
+
 # [exa-search](https://poe.com/exa-search){ .md-button .md-button--primary }
+
+**Tier 8:** 200 points · rate: Content (Text, Highlights, Summary)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -16,9 +24,13 @@ All parsed rates (both currencies):
 | Service | Currency | Amount | Per |
 |---|---|---|---|
 | Search (1-25 results) | USD | 0.0061 | 1 search |
+| Search (1-25 results) | POINTS | 200 | 1 search |
 | Search (26-100 results) | USD | 0.030 | 1 search |
+| Search (26-100 results) | POINTS | 1000 | 1 search |
 | Content (Text, Highlights, Summary) | USD | 0.0061 | 1 page |
+| Content (Text, Highlights, Summary) | POINTS | 200 | 1 page |
 | Code Search | USD | 0.0061 | 1000 tokens |
+| Code Search | POINTS | 200 | 1000 tokens |
 
 **Last Checked:** 2026-10-05T02:11:29.858144+00:00
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/solar-pro-2.md
+---
+
 # [solar-pro-2](https://poe.com/solar-pro-2){ .md-button .md-button--primary }
+
+**Tier 3:** 70 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

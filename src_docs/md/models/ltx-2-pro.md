@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/ltx-2-pro.md
+---
+
 # [ltx-2-pro](https://poe.com/ltx-2-pro){ .md-button .md-button--primary }
+
+**Tier 7:** From 20,000 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

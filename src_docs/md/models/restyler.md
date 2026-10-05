@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/restyler.md
+---
+
 # [restyler](https://poe.com/restyler){ .md-button .md-button--primary }
+
+**Tier 6:** 2,000 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -29,9 +37,9 @@ All parsed rates (both currencies):
 
 **Input Modalities:** text
 
-**Output Modalities:** text
+**Output Modalities:** image, text
 
-**Modality:** text->text
+**Modality:** text->image+text
 
 
 ## Technical Details

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/muse-glimmer-30b-el.md
+---
+
 # [muse-glimmer-30b-el](https://poe.com/muse-glimmer-30b-el){ .md-button .md-button--primary }
+
+**Tier 2:** 17 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

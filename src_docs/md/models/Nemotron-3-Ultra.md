@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Nemotron-3-Ultra.md
+---
+
 # [Nemotron-3-Ultra](https://poe.com/Nemotron-3-Ultra){ .md-button .md-button--primary }
+
+**Tier 0:** 0 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/tako.md
+---
+
 # [tako](https://poe.com/tako){ .md-button .md-button--primary }
+
+**Tier 6:** 1,000 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

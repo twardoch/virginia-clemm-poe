@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/flux-kontext-max.md
+---
+
 # [flux-kontext-max](https://poe.com/flux-kontext-max){ .md-button .md-button--primary }
+
+**Tier 6:** 2,667 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

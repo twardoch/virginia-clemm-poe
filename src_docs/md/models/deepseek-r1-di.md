@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/deepseek-r1-di.md
+---
+
 # [deepseek-r1-di](https://poe.com/deepseek-r1-di){ .md-button .md-button--primary }
+
+**Tier 4:** 200 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

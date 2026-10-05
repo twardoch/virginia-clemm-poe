@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/liveportrait.md
+---
+
 # [liveportrait](https://poe.com/liveportrait){ .md-button .md-button--primary }
+
+**Tier 4:** ≈ 170 points · per 10 seconds video (assumed 5s clip)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -29,9 +37,9 @@ All parsed rates (both currencies):
 
 **Input Modalities:** text
 
-**Output Modalities:** text
+**Output Modalities:** text, video
 
-**Modality:** text->text
+**Modality:** text->text+video
 
 
 ## Technical Details

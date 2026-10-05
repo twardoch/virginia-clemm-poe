@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/gptzero.md
+---
+
 # [gptzero](https://poe.com/gptzero){ .md-button .md-button--primary }
+
+**Tier 8:** 13 points · rate: Per 1,000 words scanned
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -13,6 +21,7 @@ All parsed rates (both currencies):
 | Service | Currency | Amount | Per |
 |---|---|---|---|
 | Per 1,000 words scanned | USD | 0.39 | 1000 words scanned |
+| Per 1,000 words scanned | POINTS | 13000 | 1000 words scanned |
 
 **Last Checked:** 2026-10-05T02:12:35.244664+00:00
 

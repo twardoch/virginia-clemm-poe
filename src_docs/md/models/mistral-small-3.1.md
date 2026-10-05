@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/mistral-small-3.1.md
+---
+
 # [mistral-small-3.1](https://poe.com/mistral-small-3.1){ .md-button .md-button--primary }
+
+**Tier 3:** 67 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

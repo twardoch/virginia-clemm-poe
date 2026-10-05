@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Zai-GLM-5.3.md
+---
+
 # [Zai-GLM-5.3](https://poe.com/Zai-GLM-5.3){ .md-button .md-button--primary }
+
+**Tier 0:** 0 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

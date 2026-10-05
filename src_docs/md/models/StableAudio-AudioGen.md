@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/StableAudio-AudioGen.md
+---
+
 # [StableAudio-AudioGen](https://poe.com/StableAudio-AudioGen){ .md-button .md-button--primary }
+
+**Tier 4:** 100 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Sync-Lipsync.md
+---
+
 # [Sync-Lipsync](https://poe.com/Sync-Lipsync){ .md-button .md-button--primary }
+
+**Tier 7:** ≈ 46,668 points · per 10 seconds video (assumed 5s clip)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

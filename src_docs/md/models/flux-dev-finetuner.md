@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/flux-dev-finetuner.md
+---
+
 # [flux-dev-finetuner](https://poe.com/flux-dev-finetuner){ .md-button .md-button--primary }
+
+**Tier 7:** 56,667 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

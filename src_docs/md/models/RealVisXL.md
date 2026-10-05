@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/RealVisXL.md
+---
+
 # [RealVisXL](https://poe.com/RealVisXL){ .md-button .md-button--primary }
+
+**Tier 3:** 85 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

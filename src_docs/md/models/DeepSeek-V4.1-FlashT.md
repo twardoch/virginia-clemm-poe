@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/DeepSeek-V4.1-FlashT.md
+---
+
 # [DeepSeek-V4.1-FlashT](https://poe.com/DeepSeek-V4.1-FlashT){ .md-button .md-button--primary }
+
+**Tier 0:** 0 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

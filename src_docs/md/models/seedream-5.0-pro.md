@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/seedream-5.0-pro.md
+---
+
 # [seedream-5.0-pro](https://poe.com/seedream-5.0-pro){ .md-button .md-button--primary }
+
+**Tier 6:** From 1,250 points · per image
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -47,9 +55,9 @@ This bot supports optional parameters for additional customization.
 
 **Input Modalities:** text
 
-**Output Modalities:** text
+**Output Modalities:** image, text
 
-**Modality:** text->text
+**Modality:** text->image+text
 
 
 ## Technical Details

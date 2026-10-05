@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/OpenAI-TTS-1-HD.md
+---
+
 # [OpenAI-TTS-1-HD](https://poe.com/OpenAI-TTS-1-HD){ .md-button .md-button--primary }
+
+**Tier 7:** 6,600 points · per 4,000 characters
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -13,6 +21,7 @@ All parsed rates (both currencies):
 | Service | Currency | Amount | Per |
 |---|---|---|---|
 | Input (text) | USD | 0.050 | 1000 characters |
+| Input (text) | POINTS | 1650 | 1000 characters |
 
 **Last Checked:** 2026-10-05T02:09:34.194813+00:00
 

@@ -2,6 +2,16 @@
 
 # Virginia Clemm Poe - Development Plan
 
+## Theme and normalized catalogue — 2026-10-05
+
+Use the shared FontLab theme assets on MaterialX without global FontLab chrome.
+Normalize saved prices into point references with documented token/character/media
+quantities and matched currency conversion. Generate a tier for every bot, widen
+the catalogue, remove empty headings, and combine Modality/Creator/Tier filters.
+Rebuild without rescraping, verify all assignments and rendered interactions,
+republish the committed main/docs site, then compare live artifacts and repeat
+the browser acceptance check.
+
 ## Pricing correction — 2026-10-05
 
 Parse current website tables, Markdown rate cards, and explicit prose with exact

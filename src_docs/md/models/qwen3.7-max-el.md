@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/qwen3.7-max-el.md
+---
+
 # [qwen3.7-max-el](https://poe.com/qwen3.7-max-el){ .md-button .md-button--primary }
+
+**Tier 5:** 301 points · 1,000 tokens (500 input + 500 output) + message fee
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

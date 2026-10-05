@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/flux-2-dev.md
+---
+
 # [flux-2-dev](https://poe.com/flux-2-dev){ .md-button .md-button--primary }
+
+**Tier 5:** 500 points · per image
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

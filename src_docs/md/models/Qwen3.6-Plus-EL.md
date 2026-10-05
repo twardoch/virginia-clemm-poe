@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Qwen3.6-Plus-EL.md
+---
+
 # [Qwen3.6-Plus-EL](https://poe.com/Qwen3.6-Plus-EL){ .md-button .md-button--primary }
+
+**Tier 5:** 558.5 points · 1,000 tokens (500 input + 500 output) + message fee
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

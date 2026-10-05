@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Hidream-E1-Full.md
+---
+
 # [Hidream-E1-Full](https://poe.com/Hidream-E1-Full){ .md-button .md-button--primary }
+
+**Tier 6:** 1,700 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

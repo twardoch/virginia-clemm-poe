@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Segment-Anything-v2.md
+---
+
 # [Segment-Anything-v2](https://poe.com/Segment-Anything-v2){ .md-button .md-button--primary }
+
+**Tier 4:** 284 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

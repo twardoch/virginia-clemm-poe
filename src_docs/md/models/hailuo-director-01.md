@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/hailuo-director-01.md
+---
+
 # [hailuo-director-01](https://poe.com/hailuo-director-01){ .md-button .md-button--primary }
+
+**Tier 7:** ≈ 33,334 points · per 10 seconds video (assumed 5s clip)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

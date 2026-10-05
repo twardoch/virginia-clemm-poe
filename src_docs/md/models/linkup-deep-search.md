@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/linkup-deep-search.md
+---
+
 # [linkup-deep-search](https://poe.com/linkup-deep-search){ .md-button .md-button--primary }
+
+**Tier 6:** 2,667 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Face-Retoucher.md
+---
+
 # [Face-Retoucher](https://poe.com/Face-Retoucher){ .md-button .md-button--primary }
+
+**Tier 2:** 29 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

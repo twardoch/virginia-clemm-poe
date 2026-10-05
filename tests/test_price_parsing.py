@@ -21,6 +21,8 @@ from virginia_clemm_poe.pricing import parse_price_text, parse_rate_card, parse_
         ("0 points/message", "points", "0", "1", "message"),
         ("850 points ($0.026) / megapixel", "usd", "0.026", "1", "megapixel"),
         ("[usd_milli_cents=1000] points / 1k characters", "usd", "0.01", "1000", "characters"),
+        ("3334 ($0.10) / 1000 characters", "points", "3334", "1000", "characters"),
+        ("60000 points ($1.82) / million video tokens", "points", "60000", "1000000", "tokens"),
     ],
 )
 def test_price_text_retains_currency_decimal_and_unit(text, currency, amount, quantity, unit):
@@ -94,6 +96,15 @@ def test_label_denominators_and_positive_exponents_are_preserved():
     )
 
 
+def test_video_duration_and_cost_per_second_headers_define_denominators():
+    result = parse_rate_card("| Resolution | Duration | Points |\n|---|---|---|\n| 720p | 5s | 100 ($0.003) |")
+    assert all(r["unit"] == "second" and r["quantity"] == "5" for r in result["rates"]), (
+        "Video duration column defines rate denominator"
+    )
+    result = parse_rate_card("| Resolution | Cost/Second |\n|---|---|\n| 480p | 1910 ($0.058) |")
+    assert all(r["unit"] == "second" for r in result["rates"]), "Column heading must preserve per-second billing"
+
+
 def test_every_observed_rate_card_retains_the_catalogue_coverage():
     folder = Path(__file__).resolve().parents[1] / "issues/330-pricing-evidence"
     evidence = list(folder.glob("*.json"))
@@ -107,3 +118,16 @@ def test_every_observed_rate_card_retains_the_catalogue_coverage():
                 parsed.update(parse_rate_card(card.get("rateMenuMarkdown", "")))
         known += bool(parsed.get("rates"))
     assert known == 483, "The parser must recover every disclosed rate in the full dated snapshot"
+
+
+def test_cards_without_blank_lines_and_duration_sections_keep_their_units():
+    result = parse_rate_card(
+        "Cost overview:\n| Service | Rate |\n|---|---|\n| Image Output | 85 points ($0.0026) / message |"
+    )
+    assert all(r["label"] == "Image Output" for r in result["rates"]), (
+        "Missing blank lines must not discard service labels"
+    )
+    result = parse_rate_card("**10 seconds:**\n\n| Resolution | Cost |\n|---|---|\n| 720p | 100 ($0.003) |")
+    assert all(r["unit"] == "second" and r["quantity"] == "10" for r in result["rates"]), (
+        "Duration headings apply to the following table"
+    )

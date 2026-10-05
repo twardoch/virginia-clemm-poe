@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/SD3.5L-Inpaint.md
+---
+
 # [SD3.5L-Inpaint](https://poe.com/SD3.5L-Inpaint){ .md-button .md-button--primary }
+
+**Tier 6:** 1,842 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

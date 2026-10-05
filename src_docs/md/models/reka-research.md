@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/reka-research.md
+---
+
 # [reka-research](https://poe.com/reka-research){ .md-button .md-button--primary }
+
+**Tier 5:** 334 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -13,6 +21,7 @@ All parsed rates (both currencies):
 | Service | Currency | Amount | Per |
 |---|---|---|---|
 | Total Cost | USD | 0.010 | 1 message |
+| Total Cost | POINTS | 334 | 1 message |
 
 **Last Checked:** 2026-10-05T02:11:51.816114+00:00
 

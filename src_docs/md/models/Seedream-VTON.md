@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Seedream-VTON.md
+---
+
 # [Seedream-VTON](https://poe.com/Seedream-VTON){ .md-button .md-button--primary }
+
+**Tier 9:** Not disclosed · No numeric rate published
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/gpt-6.1-sol.md
+---
+
 # [gpt-6.1-sol](https://poe.com/gpt-6.1-sol){ .md-button .md-button--primary }
+
+**Tier 4:** 200.5 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

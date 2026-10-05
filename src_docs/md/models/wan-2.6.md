@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/wan-2.6.md
+---
+
 # [wan-2.6](https://poe.com/wan-2.6){ .md-button .md-button--primary }
+
+**Tier 7:** From 7,500 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -13,16 +21,22 @@ All parsed rates (both currencies):
 
 | Service | Currency | Amount | Per |
 |---|---|---|---|
+| 720P | USD | 0.10 | 1 second |
 | 720P | USD | 0.09 | 1 second |
 | 720P | POINTS | 3000 | 1 second |
+| 1080P | USD | 0.15 | 1 second |
 | 1080P | USD | 0.138 | 1 second |
 | 1080P | POINTS | 4600 | 1 second |
+| 720P | USD | 0.050 | 1 second |
 | 720P | USD | 0.045 | 1 second |
 | 720P | POINTS | 1500 | 1 second |
+| 720P | USD | 0.0250 | 1 second |
 | 720P | USD | 0.0225 | 1 second |
 | 720P | POINTS | 750 | 1 second |
+| 1080P | USD | 0.0750 | 1 second |
 | 1080P | USD | 0.0690 | 1 second |
 | 1080P | POINTS | 2300 | 1 second |
+| 1080P | USD | 0.03750 | 1 second |
 | 1080P | USD | 0.03450 | 1 second |
 | 1080P | POINTS | 1150 | 1 second |
 

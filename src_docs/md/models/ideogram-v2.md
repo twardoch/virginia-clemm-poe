@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/ideogram-v2.md
+---
+
 # [ideogram-v2](https://poe.com/ideogram-v2){ .md-button .md-button--primary }
+
+**Tier 6:** 1,900 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

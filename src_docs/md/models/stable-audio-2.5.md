@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/stable-audio-2.5.md
+---
+
 # [stable-audio-2.5](https://poe.com/stable-audio-2.5){ .md-button .md-button--primary }
+
+**Tier 8:** 22,667 points · rate: Generation
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -13,6 +21,7 @@ All parsed rates (both currencies):
 | Service | Currency | Amount | Per |
 |---|---|---|---|
 | Generation | USD | 0.69 | 1 generation |
+| Generation | POINTS | 22667 | 1 generation |
 
 **Last Checked:** 2026-10-05T02:11:59.347033+00:00
 

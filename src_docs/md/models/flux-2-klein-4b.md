@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/flux-2-klein-4b.md
+---
+
 # [flux-2-klein-4b](https://poe.com/flux-2-klein-4b){ .md-button .md-button--primary }
+
+**Tier 5:** 467 points · per image
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

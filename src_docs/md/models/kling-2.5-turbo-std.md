@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/kling-2.5-turbo-std.md
+---
+
 # [kling-2.5-turbo-std](https://poe.com/kling-2.5-turbo-std){ .md-button .md-button--primary }
+
+**Tier 7:** 14,000 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -38,9 +46,9 @@ Supported image file format: jpeg, png, webp
 
 **Input Modalities:** text, image
 
-**Output Modalities:** text
+**Output Modalities:** text, video
 
-**Modality:** text,image->text
+**Modality:** text+image->text+video
 
 
 ## Technical Details

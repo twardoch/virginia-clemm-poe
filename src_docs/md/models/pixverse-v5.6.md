@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/pixverse-v5.6.md
+---
+
 # [pixverse-v5.6](https://poe.com/pixverse-v5.6){ .md-button .md-button--primary }
+
+**Tier 7:** From 25,667 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -15,28 +23,50 @@ All parsed rates (both currencies):
 
 | Service | Currency | Amount | Per |
 |---|---|---|---|
-| 360p | USD | 0.81 | 1 360p |
-| 360p | USD | 0.35 | 1 360p |
-| 540p | USD | 0.81 | 1 540p |
-| 540p | USD | 0.35 | 1 540p |
-| 720p | USD | 0.91 | 1 720p |
-| 720p | USD | 0.45 | 1 720p |
-| 1080p | USD | 1.52 | 1 1080p |
-| 1080p | USD | 0.76 | 1 1080p |
-| 360p | USD | 1.62 | 1 360p |
-| 360p | USD | 0.71 | 1 360p |
-| 540p | USD | 1.62 | 1 540p |
-| 540p | USD | 0.71 | 1 540p |
-| 720p | USD | 1.82 | 1 720p |
-| 720p | USD | 0.91 | 1 720p |
-| 1080p | USD | 3.03 | 1 1080p |
-| 1080p | USD | 1.52 | 1 1080p |
-| 360p | USD | 1.78 | 1 360p |
-| 360p | USD | 0.78 | 1 360p |
-| 540p | USD | 1.78 | 1 540p |
-| 540p | USD | 0.78 | 1 540p |
-| 720p | USD | 2.00 | 1 720p |
-| 720p | USD | 1.00 | 1 720p |
+| Video Output (360p; 5 seconds:) | USD | 0.81 | 5 second |
+| Video Output (360p; 5 seconds:) | POINTS | 26667 | 5 second |
+| Video Output (360p; 5 seconds:) | USD | 0.35 | 5 second |
+| Video Output (360p; 5 seconds:) | POINTS | 11667 | 5 second |
+| Video Output (540p; 5 seconds:) | USD | 0.81 | 5 second |
+| Video Output (540p; 5 seconds:) | POINTS | 26667 | 5 second |
+| Video Output (540p; 5 seconds:) | USD | 0.35 | 5 second |
+| Video Output (540p; 5 seconds:) | POINTS | 11667 | 5 second |
+| Video Output (720p; 5 seconds:) | USD | 0.91 | 5 second |
+| Video Output (720p; 5 seconds:) | POINTS | 30000 | 5 second |
+| Video Output (720p; 5 seconds:) | USD | 0.45 | 5 second |
+| Video Output (720p; 5 seconds:) | POINTS | 15000 | 5 second |
+| Video Output (1080p; 5 seconds:) | USD | 1.52 | 5 second |
+| Video Output (1080p; 5 seconds:) | POINTS | 50000 | 5 second |
+| Video Output (1080p; 5 seconds:) | USD | 0.76 | 5 second |
+| Video Output (1080p; 5 seconds:) | POINTS | 25000 | 5 second |
+| Video Output (360p; 8 seconds:) | USD | 1.62 | 8 second |
+| Video Output (360p; 8 seconds:) | POINTS | 53334 | 8 second |
+| Video Output (360p; 8 seconds:) | USD | 0.71 | 8 second |
+| Video Output (360p; 8 seconds:) | POINTS | 23334 | 8 second |
+| Video Output (540p; 8 seconds:) | USD | 1.62 | 8 second |
+| Video Output (540p; 8 seconds:) | POINTS | 53334 | 8 second |
+| Video Output (540p; 8 seconds:) | USD | 0.71 | 8 second |
+| Video Output (540p; 8 seconds:) | POINTS | 23334 | 8 second |
+| Video Output (720p; 8 seconds:) | USD | 1.82 | 8 second |
+| Video Output (720p; 8 seconds:) | POINTS | 60000 | 8 second |
+| Video Output (720p; 8 seconds:) | USD | 0.91 | 8 second |
+| Video Output (720p; 8 seconds:) | POINTS | 30000 | 8 second |
+| Video Output (1080p; 8 seconds:) | USD | 3.03 | 8 second |
+| Video Output (1080p; 8 seconds:) | POINTS | 100000 | 8 second |
+| Video Output (1080p; 8 seconds:) | USD | 1.52 | 8 second |
+| Video Output (1080p; 8 seconds:) | POINTS | 50000 | 8 second |
+| Video Output (360p; 10 seconds:) | USD | 1.78 | 10 second |
+| Video Output (360p; 10 seconds:) | POINTS | 58667 | 10 second |
+| Video Output (360p; 10 seconds:) | USD | 0.78 | 10 second |
+| Video Output (360p; 10 seconds:) | POINTS | 25667 | 10 second |
+| Video Output (540p; 10 seconds:) | USD | 1.78 | 10 second |
+| Video Output (540p; 10 seconds:) | POINTS | 58667 | 10 second |
+| Video Output (540p; 10 seconds:) | USD | 0.78 | 10 second |
+| Video Output (540p; 10 seconds:) | POINTS | 25667 | 10 second |
+| Video Output (720p; 10 seconds:) | USD | 2.00 | 10 second |
+| Video Output (720p; 10 seconds:) | POINTS | 66000 | 10 second |
+| Video Output (720p; 10 seconds:) | USD | 1.00 | 10 second |
+| Video Output (720p; 10 seconds:) | POINTS | 33000 | 10 second |
 
 **Last Checked:** 2026-10-05T02:11:09.367447+00:00
 

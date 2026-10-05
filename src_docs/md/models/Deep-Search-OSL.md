@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Deep-Search-OSL.md
+---
+
 # [Deep-Search-OSL](https://poe.com/Deep-Search-OSL){ .md-button .md-button--primary }
+
+**Tier 6:** 1,200 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

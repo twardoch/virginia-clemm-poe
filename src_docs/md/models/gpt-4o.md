@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/gpt-4o.md
+---
+
 # [gpt-4o](https://poe.com/gpt-4o){ .md-button .md-button--primary }
+
+**Tier 5:** From 328 points · per 1024×1024 image
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -18,10 +26,13 @@ All parsed rates (both currencies):
 
 | Service | Currency | Amount | Per |
 |---|---|---|---|
+| Input | USD | 2.50 | 1000000 tokens |
 | Input | USD | 2.25 | 1000000 tokens |
 | Input | POINTS | 75 | 1000 tokens |
+| Output (text) | USD | 10.00 | 1000000 tokens |
 | Output (text) | USD | 9.0 | 1000000 tokens |
 | Output (text) | POINTS | 300 | 1000 tokens |
+| Input (text) | USD | 5.00 | 1000000 tokens |
 | Input (text) | USD | 4.53 | 1000000 tokens |
 | Input (text) | POINTS | 151 | 1000 tokens |
 | Input (images) | USD | 9.03 | 1000000 tokens |
@@ -63,9 +74,9 @@ All parsed rates (both currencies):
 
 **Input Modalities:** text, image
 
-**Output Modalities:** text
+**Output Modalities:** image, text
 
-**Modality:** text,image->text
+**Modality:** text+image->image+text
 
 
 ## Technical Details

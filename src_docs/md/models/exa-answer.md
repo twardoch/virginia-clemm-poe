@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/exa-answer.md
+---
+
 # [exa-answer](https://poe.com/exa-answer){ .md-button .md-button--primary }
+
+**Tier 4:** 267 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/minimax-m2.1.md
+---
+
 # [minimax-m2.1](https://poe.com/minimax-m2.1){ .md-button .md-button--primary }
+
+**Tier 2:** 25 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

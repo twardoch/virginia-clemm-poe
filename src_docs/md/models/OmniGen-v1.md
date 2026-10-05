@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/OmniGen-v1.md
+---
+
 # [OmniGen-v1](https://poe.com/OmniGen-v1){ .md-button .md-button--primary }
+
+**Tier 7:** 4,250 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

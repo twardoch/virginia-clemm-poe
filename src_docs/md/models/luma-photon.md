@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/luma-photon.md
+---
+
 # [luma-photon](https://poe.com/luma-photon){ .md-button .md-button--primary }
+
+**Tier 5:** 634 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/minimax-h3-n.md
+---
+
 # [minimax-h3-n](https://poe.com/minimax-h3-n){ .md-button .md-button--primary }
+
+**Tier 0:** 0 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

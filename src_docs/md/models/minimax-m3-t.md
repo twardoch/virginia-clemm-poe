@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/minimax-m3-t.md
+---
+
 # [minimax-m3-t](https://poe.com/minimax-m3-t){ .md-button .md-button--primary }
+
+**Tier 4:** 200 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

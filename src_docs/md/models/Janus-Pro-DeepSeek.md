@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Janus-Pro-DeepSeek.md
+---
+
 # [Janus-Pro-DeepSeek](https://poe.com/Janus-Pro-DeepSeek){ .md-button .md-button--primary }
+
+**Tier 6:** 1,000 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -13,6 +21,7 @@ All parsed rates (both currencies):
 | Service | Currency | Amount | Per |
 |---|---|---|---|
 | Any message | USD | 0.030 | 1 message |
+| Any message | POINTS | 1000 | 1 message |
 
 **Last Checked:** 2026-10-05T02:09:15.791639+00:00
 

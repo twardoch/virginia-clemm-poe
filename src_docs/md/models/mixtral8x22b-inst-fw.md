@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/mixtral8x22b-inst-fw.md
+---
+
 # [mixtral8x22b-inst-fw](https://poe.com/mixtral8x22b-inst-fw){ .md-button .md-button--primary }
+
+**Tier 4:** 120 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/seedream-4.0.md
+---
+
 # [seedream-4.0](https://poe.com/seedream-4.0){ .md-button .md-button--primary }
+
+**Tier 6:** 1,000 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

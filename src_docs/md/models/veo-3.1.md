@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/veo-3.1.md
+---
+
 # [veo-3.1](https://poe.com/veo-3.1){ .md-button .md-button--primary }
+
+**Tier 7:** 133,330 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

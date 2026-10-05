@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/gpt-image-1-mini.md
+---
+
 # [gpt-image-1-mini](https://poe.com/gpt-image-1-mini){ .md-button .md-button--primary }
+
+**Tier 4:** From 167 points · per 1024×1024 image
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

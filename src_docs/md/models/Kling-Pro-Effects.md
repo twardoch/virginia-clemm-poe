@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Kling-Pro-Effects.md
+---
+
 # [Kling-Pro-Effects](https://poe.com/Kling-Pro-Effects){ .md-button .md-button--primary }
+
+**Tier 7:** 33,340 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/wan-animate.md
+---
+
 # [wan-animate](https://poe.com/wan-animate){ .md-button .md-button--primary }
+
+**Tier 7:** 25,000 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

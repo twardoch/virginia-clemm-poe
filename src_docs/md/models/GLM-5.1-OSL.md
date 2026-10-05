@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/GLM-5.1-OSL.md
+---
+
 # [GLM-5.1-OSL](https://poe.com/GLM-5.1-OSL){ .md-button .md-button--primary }
+
+**Tier 4:** 175 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

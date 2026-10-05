@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/DeepSeek-V3.2-Exp.md
+---
+
 # [DeepSeek-V3.2-Exp](https://poe.com/DeepSeek-V3.2-Exp){ .md-button .md-button--primary }
+
+**Tier 4:** 130 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

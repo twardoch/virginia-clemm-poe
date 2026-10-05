@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Dia-TTS.md
+---
+
 # [Dia-TTS](https://poe.com/Dia-TTS){ .md-button .md-button--primary }
+
+**Tier 5:** 834 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/perplexity-sonar-rsn-pro.md
+---
+
 # [perplexity-sonar-rsn-pro](https://poe.com/perplexity-sonar-rsn-pro){ .md-button .md-button--primary }
+
+**Tier 5:** 880 points · 1,000 tokens (500 input + 500 output) + message fee
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -17,10 +25,15 @@ All parsed rates (both currencies):
 | Service | Currency | Amount | Per |
 |---|---|---|---|
 | Base Fee (Low Context) | USD | 0.015 | 1 base fee (low context) |
+| Base Fee (Low Context) | POINTS | 480 | 1 base fee (low context) |
 | Base Fee (Medium Context) | USD | 0.024 | 1 base fee (medium context) |
+| Base Fee (Medium Context) | POINTS | 800 | 1 base fee (medium context) |
 | Base Fee (High Context) | USD | 0.034 | 1 base fee (high context) |
+| Base Fee (High Context) | POINTS | 1120 | 1 base fee (high context) |
 | Input Tokens | USD | 0.0048 | 1000 tokens |
+| Input Tokens | POINTS | 160 | 1000 tokens |
 | Output Tokens | USD | 0.019 | 1000 tokens |
+| Output Tokens | POINTS | 640 | 1000 tokens |
 
 **Last Checked:** 2026-10-05T02:11:54.847266+00:00
 

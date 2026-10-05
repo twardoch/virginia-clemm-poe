@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Moondream-Next.md
+---
+
 # [Moondream-Next](https://poe.com/Moondream-Next){ .md-button .md-button--primary }
+
+**Tier 6:** 1,700 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Search-OSL.md
+---
+
 # [Search-OSL](https://poe.com/Search-OSL){ .md-button .md-button--primary }
+
+**Tier 8:** From 1 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

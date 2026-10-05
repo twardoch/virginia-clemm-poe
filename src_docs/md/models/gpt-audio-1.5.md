@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/gpt-audio-1.5.md
+---
+
 # [gpt-audio-1.5](https://poe.com/gpt-audio-1.5){ .md-button .md-button--primary }
+
+**Tier 5:** 344 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -16,9 +24,13 @@ All parsed rates (both currencies):
 | Service | Currency | Amount | Per |
 |---|---|---|---|
 | Input (text) | USD | 0.0042 | 1000 tokens |
+| Input (text) | POINTS | 138 | 1000 tokens |
 | Output (text) | USD | 0.017 | 1000 tokens |
+| Output (text) | POINTS | 550 | 1000 tokens |
 | Input (audio) | USD | 0.053 | 1000 tokens |
+| Input (audio) | POINTS | 1760 | 1000 tokens |
 | Output (audio) | USD | 0.11 | 1000 tokens |
+| Output (audio) | POINTS | 3520 | 1000 tokens |
 
 **Last Checked:** 2026-10-05T02:11:16.692927+00:00
 

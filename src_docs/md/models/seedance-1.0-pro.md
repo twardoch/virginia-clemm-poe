@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/seedance-1.0-pro.md
+---
+
 # [seedance-1.0-pro](https://poe.com/seedance-1.0-pro){ .md-button .md-button--primary }
+
+**Tier 7:** ≈ 18,000.14 points · per 10 seconds video (assumed 720p, 24 fps)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -12,8 +20,8 @@ All parsed rates (both currencies):
 
 | Service | Currency | Amount | Per |
 |---|---|---|---|
-| Video Output | USD | 2.53 | 1 tokens |
-| Video Output | POINTS | 83334 | 1 tokens |
+| Video Output | USD | 2.53 | 1000000 tokens |
+| Video Output | POINTS | 83334 | 1000000 tokens |
 
 **Last Checked:** 2026-10-05T02:12:10.805414+00:00
 

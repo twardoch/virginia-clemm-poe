@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/perplexity-adv-deep-research.md
+---
+
 # [perplexity-adv-deep-research](https://poe.com/perplexity-adv-deep-research){ .md-button .md-button--primary }
+
+**Tier 6:** 1,300.5 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -16,9 +24,13 @@ All parsed rates (both currencies):
 | Service | Currency | Amount | Per |
 |---|---|---|---|
 | Input Tokens | USD | 0.013 | 1000 tokens |
+| Input Tokens | POINTS | 434 | 1000 tokens |
 | Output Tokens | USD | 0.066 | 1000 tokens |
+| Output Tokens | POINTS | 2167 | 1000 tokens |
 | Web Search Call | USD | 0.013 | 1 call |
+| Web Search Call | POINTS | 434 | 1 call |
 | URL Fetch Call | USD | 0.0013 | 1 call |
+| URL Fetch Call | POINTS | 44 | 1 call |
 
 **Last Checked:** 2026-10-05T02:11:03.893890+00:00
 

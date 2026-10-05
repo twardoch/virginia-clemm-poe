@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/MiMo-V2.5-Pro-EL.md
+---
+
 # [MiMo-V2.5-Pro-EL](https://poe.com/MiMo-V2.5-Pro-EL){ .md-button .md-button--primary }
+
+**Tier 4:** 267 points · 1,000 tokens (500 input + 500 output) + message fee
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

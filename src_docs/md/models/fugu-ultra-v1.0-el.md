@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/fugu-ultra-v1.0-el.md
+---
+
 # [fugu-ultra-v1.0-el](https://poe.com/fugu-ultra-v1.0-el){ .md-button .md-button--primary }
+
+**Tier 5:** 875 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Flux-CN-Inpainting.md
+---
+
 # [Flux-CN-Inpainting](https://poe.com/Flux-CN-Inpainting){ .md-button .md-button--primary }
+
+**Tier 6:** 2,125 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

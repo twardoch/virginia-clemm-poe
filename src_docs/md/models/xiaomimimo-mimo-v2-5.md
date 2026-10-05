@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/xiaomimimo-mimo-v2-5.md
+---
+
 # [xiaomimimo-mimo-v2-5](https://poe.com/xiaomimimo-mimo-v2-5){ .md-button .md-button--primary }
+
+**Tier 1:** 9 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

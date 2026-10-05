@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/retro-diffusion-core.md
+---
+
 # [retro-diffusion-core](https://poe.com/retro-diffusion-core){ .md-button .md-button--primary }
+
+**Tier 5:** From 334 points · per image
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

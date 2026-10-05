@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/perplexity-pro-search.md
+---
+
 # [perplexity-pro-search](https://poe.com/perplexity-pro-search){ .md-button .md-button--primary }
+
+**Tier 6:** 1,994 points · 1,000 tokens (500 input + 500 output) + message fee
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -17,10 +25,15 @@ All parsed rates (both currencies):
 | Service | Currency | Amount | Per |
 |---|---|---|---|
 | Base Fee (Low Context) | USD | 0.037 | 1 base fee (low context) |
+| Base Fee (Low Context) | POINTS | 1214 | 1 base fee (low context) |
 | Base Fee (Medium Context) | USD | 0.047 | 1 base fee (medium context) |
+| Base Fee (Medium Context) | POINTS | 1560 | 1 base fee (medium context) |
 | Base Fee (High Context) | USD | 0.058 | 1 base fee (high context) |
+| Base Fee (High Context) | POINTS | 1907 | 1 base fee (high context) |
 | Input Tokens | USD | 0.0079 | 1000 tokens |
+| Input Tokens | POINTS | 260 | 1000 tokens |
 | Output Tokens | USD | 0.039 | 1000 tokens |
+| Output Tokens | POINTS | 1300 | 1000 tokens |
 
 **Last Checked:** 2026-10-05T02:11:54.624372+00:00
 

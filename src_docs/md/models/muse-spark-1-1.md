@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/muse-spark-1-1.md
+---
+
 # [muse-spark-1-1](https://poe.com/muse-spark-1-1){ .md-button .md-button--primary }
+
+**Tier 3:** 92 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

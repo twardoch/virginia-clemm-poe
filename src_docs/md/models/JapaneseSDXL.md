@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/JapaneseSDXL.md
+---
+
 # [JapaneseSDXL](https://poe.com/JapaneseSDXL){ .md-button .md-button--primary }
+
+**Tier 3:** 80 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

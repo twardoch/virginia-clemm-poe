@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/CassetteAI-SFXGen.md
+---
+
 # [CassetteAI-SFXGen](https://poe.com/CassetteAI-SFXGen){ .md-button .md-button--primary }
+
+**Tier 5:** 334 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

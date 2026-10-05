@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/pixel-artist-bot.md
+---
+
 # [pixel-artist-bot](https://poe.com/pixel-artist-bot){ .md-button .md-button--primary }
+
+**Tier 3:** 85 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

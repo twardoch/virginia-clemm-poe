@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/pearl-gemma-4-31b.md
+---
+
 # [pearl-gemma-4-31b](https://poe.com/pearl-gemma-4-31b){ .md-button .md-button--primary }
+
+**Tier 4:** 100 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

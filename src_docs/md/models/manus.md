@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/manus.md
+---
+
 # [manus](https://poe.com/manus){ .md-button .md-button--primary }
+
+**Tier 8:** From 47,667 points · rate: Lite profile
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -16,10 +24,16 @@ All parsed rates (both currencies):
 |---|---|---|---|
 | Lite profile | USD | 1.44 | 1 lite profile |
 | Lite profile | USD | 2.63 | 1 lite profile |
+| Lite profile | POINTS | 47667 | 1 lite profile |
+| Lite profile | POINTS | 86667 | 1 lite profile |
 | Standard profile | USD | 2.89 | 1 standard profile |
 | Standard profile | USD | 5.25 | 1 standard profile |
+| Standard profile | POINTS | 95334 | 1 standard profile |
+| Standard profile | POINTS | 173334 | 1 standard profile |
 | Max profile | USD | 5.25 | 1 max profile |
 | Max profile | USD | 9.19 | 1 max profile |
+| Max profile | POINTS | 173334 | 1 max profile |
+| Max profile | POINTS | 303334 | 1 max profile |
 
 **Last Checked:** 2026-10-05T02:10:55.718317+00:00
 

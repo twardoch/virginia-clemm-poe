@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/qwen3.8-27b.md
+---
+
 # [qwen3.8-27b](https://poe.com/qwen3.8-27b){ .md-button .md-button--primary }
+
+**Tier 9:** Not disclosed · No numeric rate published
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

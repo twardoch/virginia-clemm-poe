@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Theme, point estimates and tiers — 2026-10-05
+- Switch to MaterialX with FontLab theme 2026 CDN assets and native project navigation/search without FontLab menu/footer.
+- Expand the catalogue to the right edge; replace empty model headings with compact links and hide its ToC.
+- Normalize saved rates to points per message/image, 1,000 total tokens, 4,000 characters, 1024×1024 image, or 10 seconds of video. Label USD conversion and media assumptions; preserve original observations and zeros.
+- Assign all 501 models to Tiers 0–9 and add combined Modality, Creator and Tier filters. Require explicit zero points and dollars for Tier 0.
+- Reparse saved rate cards locally, preserving bare point amounts, video duration/header units and million-token denominators. No rescrape is performed.
+- Share estimates/tiers between pages, exported site JSON and the browser. Lock the build dependencies and verify desktop/mobile interactions.
+
 ### Pricing correction — 2026-10-05
 - Refreshed all 501 public rate cards; numeric website prices now cover 483 bots. The previous table displayed numeric prices for only 159.
 - Parse all tables, Markdown cards, explicit prose fees, USD/points pairs, decimal and scientific values, ranges, denominators, image quality matrices, and Poe milli-cent markers. Exclude discounts, obsolete prices, and promotional free allowances.

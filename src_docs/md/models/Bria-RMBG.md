@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Bria-RMBG.md
+---
+
 # [Bria-RMBG](https://poe.com/Bria-RMBG){ .md-button .md-button--primary }
+
+**Tier 5:** 600 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

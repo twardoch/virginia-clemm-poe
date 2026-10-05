@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/gpt-5.md
+---
+
 # [gpt-5](https://poe.com/gpt-5){ .md-button .md-button--primary }
+
+**Tier 4:** 169 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

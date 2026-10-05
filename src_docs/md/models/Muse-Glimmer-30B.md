@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Muse-Glimmer-30B.md
+---
+
 # [Muse-Glimmer-30B](https://poe.com/Muse-Glimmer-30B){ .md-button .md-button--primary }
+
+**Tier 0:** 0 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

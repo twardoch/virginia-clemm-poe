@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/seedance-2.0-pro-el.md
+---
+
 # [seedance-2.0-pro-el](https://poe.com/seedance-2.0-pro-el){ .md-button .md-button--primary }
+
+**Tier 7:** From 42,860 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

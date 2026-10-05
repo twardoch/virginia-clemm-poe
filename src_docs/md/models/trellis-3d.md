@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/trellis-3d.md
+---
+
 # [trellis-3d](https://poe.com/trellis-3d){ .md-button .md-button--primary }
+
+**Tier 5:** 567 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

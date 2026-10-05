@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/grok-imagine-image-2.md
+---
+
 # [grok-imagine-image-2](https://poe.com/grok-imagine-image-2){ .md-button .md-button--primary }
+
+**Tier 6:** From 1,600 points · per image
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -45,9 +53,9 @@ This bot supports optional parameters for additional customization.
 
 **Input Modalities:** text
 
-**Output Modalities:** text
+**Output Modalities:** image, text
 
-**Modality:** text->text
+**Modality:** text->image+text
 
 
 ## Technical Details

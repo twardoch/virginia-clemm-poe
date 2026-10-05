@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/grok-4.20-multi-agent.md
+---
+
 # [grok-4.20-multi-agent](https://poe.com/grok-4.20-multi-agent){ .md-button .md-button--primary }
+
+**Tier 3:** 63 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

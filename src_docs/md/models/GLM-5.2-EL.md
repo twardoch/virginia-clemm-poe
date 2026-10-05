@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/GLM-5.2-EL.md
+---
+
 # [GLM-5.2-EL](https://poe.com/GLM-5.2-EL){ .md-button .md-button--primary }
+
+**Tier 5:** 431 points · 1,000 tokens (500 input + 500 output) + message fee
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

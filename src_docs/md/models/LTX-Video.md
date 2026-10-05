@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/LTX-Video.md
+---
+
 # [LTX-Video](https://poe.com/LTX-Video){ .md-button .md-button--primary }
+
+**Tier 6:** ≈ 2,268 points · per 10 seconds video (assumed 5s clip)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

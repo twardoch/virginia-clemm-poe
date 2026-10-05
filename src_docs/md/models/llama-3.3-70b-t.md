@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/llama-3.3-70b-t.md
+---
+
 # [llama-3.3-70b-t](https://poe.com/llama-3.3-70b-t){ .md-button .md-button--primary }
+
+**Tier 4:** 130 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

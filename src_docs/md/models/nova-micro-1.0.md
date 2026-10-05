@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/nova-micro-1.0.md
+---
+
 # [nova-micro-1.0](https://poe.com/nova-micro-1.0){ .md-button .md-button--primary }
+
+**Tier 1:** 4 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

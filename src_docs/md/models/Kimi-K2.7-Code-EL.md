@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Kimi-K2.7-Code-EL.md
+---
+
 # [Kimi-K2.7-Code-EL](https://poe.com/Kimi-K2.7-Code-EL){ .md-button .md-button--primary }
+
+**Tier 4:** 250 points · 1,000 tokens (500 input + 500 output) + message fee
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

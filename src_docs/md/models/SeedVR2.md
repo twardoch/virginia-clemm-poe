@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/SeedVR2.md
+---
+
 # [SeedVR2](https://poe.com/SeedVR2){ .md-button .md-button--primary }
+
+**Tier 3:** ≈ 68 points · per 1024×1024 image (1.048576 MP, billed as 2 MP)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Video-Generator-Pro.md
+---
+
 # [Video-Generator-Pro](https://poe.com/Video-Generator-Pro){ .md-button .md-button--primary }
+
+**Tier 7:** ≈ 12,000 points · per 10 seconds video (assumed 5s clip)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -31,9 +39,9 @@ You can provide the bot a reference image and Video-Generator-Pro will generate 
 
 **Input Modalities:** Unknown
 
-**Output Modalities:** Unknown
+**Output Modalities:** video
 
-**Modality:** unknown
+**Modality:** unknown->video
 
 
 ## Technical Details

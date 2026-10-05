@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Topaz-Video-Upscale.md
+---
+
 # [Topaz-Video-Upscale](https://poe.com/Topaz-Video-Upscale){ .md-button .md-button--primary }
+
+**Tier 7:** ≈ 53,334 points · per 10 seconds video (assumed 5s clip)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/svi-2.0-pro.md
+---
+
 # [svi-2.0-pro](https://poe.com/svi-2.0-pro){ .md-button .md-button--primary }
+
+**Tier 7:** From 19,100 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -15,10 +23,14 @@ All parsed rates (both currencies):
 
 | Service | Currency | Amount | Per |
 |---|---|---|---|
-| 480p | USD | 0.058 | 1 480p |
-| 720p | USD | 0.17 | 1 720p |
+| Video Output (480p) | USD | 0.058 | 1 second |
+| Video Output (480p) | POINTS | 1910 | 1 second |
+| Video Output (720p) | USD | 0.17 | 1 second |
+| Video Output (720p) | POINTS | 5530 | 1 second |
 | Fast | USD | 0.066 | 1 fast |
+| Fast | POINTS | 2167 | 1 fast |
 | Quality | USD | 0.13 | 1 quality |
+| Quality | POINTS | 4334 | 1 quality |
 
 **Last Checked:** 2026-10-05T02:12:06.428255+00:00
 

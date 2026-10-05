@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/linkup-standard.md
+---
+
 # [linkup-standard](https://poe.com/linkup-standard){ .md-button .md-button--primary }
+
+**Tier 4:** 267 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

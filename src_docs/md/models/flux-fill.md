@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/flux-fill.md
+---
+
 # [flux-fill](https://poe.com/flux-fill){ .md-button .md-button--primary }
+
+**Tier 5:** 992 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -29,9 +37,9 @@ All parsed rates (both currencies):
 
 **Input Modalities:** text
 
-**Output Modalities:** text
+**Output Modalities:** image, text
 
-**Modality:** text->text
+**Modality:** text->image+text
 
 
 ## Technical Details

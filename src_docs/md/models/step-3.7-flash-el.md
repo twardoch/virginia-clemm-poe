@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/step-3.7-flash-el.md
+---
+
 # [step-3.7-flash-el](https://poe.com/step-3.7-flash-el){ .md-button .md-button--primary }
+
+**Tier 4:** 190 points · 1,000 tokens (500 input + 500 output) + message fee
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

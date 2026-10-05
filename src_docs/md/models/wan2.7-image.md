@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/wan2.7-image.md
+---
+
 # [wan2.7-image](https://poe.com/wan2.7-image){ .md-button .md-button--primary }
+
+**Tier 6:** From 1,000 points · per image
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

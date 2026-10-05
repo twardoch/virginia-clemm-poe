@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/runway-gen-4.5.md
+---
+
 # [runway-gen-4.5](https://poe.com/runway-gen-4.5){ .md-button .md-button--primary }
+
+**Tier 7:** From 100,000 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

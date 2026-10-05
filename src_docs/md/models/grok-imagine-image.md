@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/grok-imagine-image.md
+---
+
 # [grok-imagine-image](https://poe.com/grok-imagine-image){ .md-button .md-button--primary }
+
+**Tier 5:** 667 points · per image
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

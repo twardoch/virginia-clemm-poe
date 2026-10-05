@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/gpt-image-1.5.md
+---
+
 # [gpt-image-1.5](https://poe.com/gpt-image-1.5){ .md-button .md-button--primary }
+
+**Tier 4:** From 262 points · per 1024×1024 image
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -17,8 +25,10 @@ All parsed rates (both currencies):
 
 | Service | Currency | Amount | Per |
 |---|---|---|---|
+| Input (text) | USD | 5.00 | 1000000 tokens |
 | Input (text) | USD | 4.53 | 1000000 tokens |
 | Input (text) | POINTS | 151 | 1000 tokens |
+| Input (images) | USD | 8.00 | 1000000 tokens |
 | Input (images) | USD | 7.22 | 1000000 tokens |
 | Input (images) | POINTS | 241 | 1000 tokens |
 | High fidelity editing | USD | 0.06 | 1 high fidelity editing |

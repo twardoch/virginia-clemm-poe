@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/flux-2-pro.md
+---
+
 # [flux-2-pro](https://poe.com/flux-2-pro){ .md-button .md-button--primary }
+
+**Tier 6:** ≈ 1,048.576 points · per 1024×1024 image (1.048576 MP)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

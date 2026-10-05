@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/CassetteAI-VidSFXGen.md
+---
+
 # [CassetteAI-VidSFXGen](https://poe.com/CassetteAI-VidSFXGen){ .md-button .md-button--primary }
+
+**Tier 7:** ≈ 3,334 points · per 10 seconds video (assumed 5s clip)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

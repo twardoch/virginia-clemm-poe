@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/lyria.md
+---
+
 # [lyria](https://poe.com/lyria){ .md-button .md-button--primary }
+
+**Tier 8:** 1,400 points · rate: Input (text)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

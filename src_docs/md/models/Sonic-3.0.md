@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Sonic-3.0.md
+---
+
 # [Sonic-3.0](https://poe.com/Sonic-3.0){ .md-button .md-button--primary }
+
+**Tier 4:** 200 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

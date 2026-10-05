@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/kling-v3-motion-ctrl.md
+---
+
 # [kling-v3-motion-ctrl](https://poe.com/kling-v3-motion-ctrl){ .md-button .md-button--primary }
+
+**Tier 7:** From 46,670 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -13,8 +21,10 @@ All parsed rates (both currencies):
 
 | Service | Currency | Amount | Per |
 |---|---|---|---|
-| Standard (720p) | USD | 0.14 | 1 second |
-| Pro (1080p) | USD | 0.18 | 1 second |
+| Video Output (Standard (720p)) | USD | 0.14 | 1 second |
+| Video Output (Standard (720p)) | POINTS | 4667 | 1 second |
+| Video Output (Pro (1080p)) | USD | 0.18 | 1 second |
+| Video Output (Pro (1080p)) | POINTS | 6000 | 1 second |
 
 **Last Checked:** 2026-10-05T02:11:01.155464+00:00
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/sketch-to-image.md
+---
+
 # [sketch-to-image](https://poe.com/sketch-to-image){ .md-button .md-button--primary }
+
+**Tier 5:** 992 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

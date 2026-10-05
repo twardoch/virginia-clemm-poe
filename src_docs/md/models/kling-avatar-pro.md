@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/kling-avatar-pro.md
+---
+
 # [kling-avatar-pro](https://poe.com/kling-avatar-pro){ .md-button .md-button--primary }
+
+**Tier 7:** 38,340 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -33,9 +41,9 @@ Audio: MP3, WAV
 
 **Input Modalities:** text, image, audio
 
-**Output Modalities:** text
+**Output Modalities:** text, video
 
-**Modality:** text,image,audio->text
+**Modality:** text+image+audio->text+video
 
 
 ## Technical Details

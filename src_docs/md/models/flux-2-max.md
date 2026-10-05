@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/flux-2-max.md
+---
+
 # [flux-2-max](https://poe.com/flux-2-max){ .md-button .md-button--primary }
+
+**Tier 6:** From ≈ 2,382.576 points · per 1024×1024 image (1.048576 MP)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

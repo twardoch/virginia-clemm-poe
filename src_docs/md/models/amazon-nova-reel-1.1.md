@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/amazon-nova-reel-1.1.md
+---
+
 # [amazon-nova-reel-1.1](https://poe.com/amazon-nova-reel-1.1){ .md-button .md-button--primary }
+
+**Tier 7:** 48,000 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -13,6 +21,7 @@ All parsed rates (both currencies):
 | Service | Currency | Amount | Per |
 |---|---|---|---|
 | Per second of video | USD | 0.15 | 1 second |
+| Per second of video | POINTS | 4800 | 1 second |
 
 **Last Checked:** 2026-10-05T02:11:32.621388+00:00
 

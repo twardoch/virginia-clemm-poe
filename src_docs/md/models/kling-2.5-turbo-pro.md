@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/kling-2.5-turbo-pro.md
+---
+
 # [kling-2.5-turbo-pro](https://poe.com/kling-2.5-turbo-pro){ .md-button .md-button--primary }
+
+**Tier 7:** 23,340 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

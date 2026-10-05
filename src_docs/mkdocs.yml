@@ -3,13 +3,13 @@
 site_name: Virginia Clemm Poe
 site_description: A Python package providing programmatic access to Poe.com model data with pricing information
 site_author: Adam Twardoch
-site_url: https://twardoch.github.io/virginia-clemm-poe/
+site_url: https://code.twardoch.com/virginia-clemm-poe/
 
 repo_name: twardoch/virginia-clemm-poe
 repo_url: https://github.com/twardoch/virginia-clemm-poe
 
 theme:
-  name: material
+  name: materialx
   features:
     - navigation.tabs
     - navigation.sections
@@ -49,14 +49,25 @@ plugins:
 use_directory_urls: false
 
 extra_javascript:
-  - https://code.jquery.com/jquery-3.6.0.min.js
+  - https://i.fontlab.com/fltheme26/1.0.0/basecoat.js
+  - https://i.fontlab.com/fltheme26/1.0.0/theme.js
+  - catalogue.js
 
 extra_css:
-  - https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css
+  - https://i.fontlab.com/fltheme26/1.0.0/components.css
+  - https://i.fontlab.com/fltheme26/1.0.0/theme.css
+  - catalogue.css
 
 markdown_extensions:
   - admonition
   - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.highlight:
@@ -73,6 +84,7 @@ nav:
   - Models:
     - Models: models/index.md
     - Table: table.html
+    - Pricing method: pricing-method.md
   - Tools:
     - Intro: chapter1-introduction.md
     - Install: chapter2-installation.md

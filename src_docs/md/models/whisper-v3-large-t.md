@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/whisper-v3-large-t.md
+---
+
 # [whisper-v3-large-t](https://poe.com/whisper-v3-large-t){ .md-button .md-button--primary }
+
+**Tier 4:** 100 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

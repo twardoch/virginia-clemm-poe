@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/qwen3-coder-480b-n.md
+---
+
 # [qwen3-coder-480b-n](https://poe.com/qwen3-coder-480b-n){ .md-button .md-button--primary }
+
+**Tier 4:** 240 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

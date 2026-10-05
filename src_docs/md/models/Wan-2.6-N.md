@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Wan-2.6-N.md
+---
+
 # [Wan-2.6-N](https://poe.com/Wan-2.6-N){ .md-button .md-button--primary }
+
+**Tier 0:** 0 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

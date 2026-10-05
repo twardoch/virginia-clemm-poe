@@ -38,9 +38,20 @@ The [interactive catalogue](https://code.twardoch.com/virginia-clemm-poe/models/
 opens cheapest first. Website prices are parsed from every rendered table, raw
 Markdown rate cards, and explicit prose rates. Numeric records retain both
 currencies, units, ranges, and sources; failed refreshes retain dated observations.
-Text comparisons use 1,000 input + 1,000 output tokens plus a disclosed message fee.
-Media prices show their unit and lowest tier. Currencies stay separate, and
-undisclosed or usage-dependent prices appear last. Model pages list all rates.
+Comparison prefers disclosed points per message/image; otherwise it uses 1,000
+total tokens (500 input + 500 output), 4,000 characters, one 1024×1024 image or
+10 seconds of video. Dollar-only costs use a labelled estimate from matched
+points/dollar observations. Every bot has a tier from 0 (explicitly free in both
+currencies) to 9 (unknown). Filter by output Modality, Creator and Tier.
+Model pages retain original rates and show the estimate and assumptions.
+See the [pricing method](src_docs/md/pricing-method.md).
+
+Documentation uses MaterialX with the shared [FontLab theme 2026](https://i.fontlab.com/fltheme26/)
+assets and native navigation/search, without FontLab's global menu or footer.
+To rebuild without rescraping: `uv sync --locked`, then
+`uv run python src_docs/update_docs.py` (Node 22+ is also required).
+Generated site JSON adds `point_estimate`, `pricing_tier`, and conversion metadata;
+the packaged source observations remain unchanged.
 
 ## Installation
 

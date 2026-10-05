@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Hailuo-Speech-02.md
+---
+
 # [Hailuo-Speech-02](https://poe.com/Hailuo-Speech-02){ .md-button .md-button--primary }
+
+**Tier 7:** From 8,000 points · per 4,000 characters
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

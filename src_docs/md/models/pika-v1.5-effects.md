@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/pika-v1.5-effects.md
+---
+
 # [pika-v1.5-effects](https://poe.com/pika-v1.5-effects){ .md-button .md-button--primary }
+
+**Tier 7:** ≈ 31,000 points · per 10 seconds video (assumed 5s clip)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -36,9 +44,9 @@ Optional parameters:
 
 **Input Modalities:** text
 
-**Output Modalities:** text
+**Output Modalities:** text, video
 
-**Modality:** text->text
+**Modality:** text->text+video
 
 
 ## Technical Details

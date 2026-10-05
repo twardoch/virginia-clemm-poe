@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/TurboTextToVideo.md
+---
+
 # [TurboTextToVideo](https://poe.com/TurboTextToVideo){ .md-button .md-button--primary }
+
+**Tier 4:** ≈ 284 points · per 10 seconds video (assumed 5s clip)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/mistral-large-2.md
+---
+
 # [mistral-large-2](https://poe.com/mistral-large-2){ .md-button .md-button--primary }
+
+**Tier 4:** 200 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

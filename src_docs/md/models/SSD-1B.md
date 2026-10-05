@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/SSD-1B.md
+---
+
 # [SSD-1B](https://poe.com/SSD-1B){ .md-button .md-button--primary }
+
+**Tier 4:** 160 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

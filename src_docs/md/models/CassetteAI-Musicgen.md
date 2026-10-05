@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/CassetteAI-Musicgen.md
+---
+
 # [CassetteAI-Musicgen](https://poe.com/CassetteAI-Musicgen){ .md-button .md-button--primary }
+
+**Tier 8:** 12 points · per second
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

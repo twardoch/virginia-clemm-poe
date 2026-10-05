@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Flux-Kontext-Multi.md
+---
+
 # [Flux-Kontext-Multi](https://poe.com/Flux-Kontext-Multi){ .md-button .md-button--primary }
+
+**Tier 6:** 2,667 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

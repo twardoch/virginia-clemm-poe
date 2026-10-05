@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/gemini-2.5-pro-tts.md
+---
+
 # [gemini-2.5-pro-tts](https://poe.com/gemini-2.5-pro-tts){ .md-button .md-button--primary }
+
+**Tier 4:** From 100 points · 1,000 input tokens only
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -14,7 +22,9 @@ All parsed rates (both currencies):
 | Service | Currency | Amount | Per |
 |---|---|---|---|
 | Input (text tokens) | USD | 0.0030 | 1000 tokens |
+| Input (text tokens) | POINTS | 100 | 1000 tokens |
 | Output (audio tokens) | USD | 0.061 | 1000 tokens |
+| Output (audio tokens) | POINTS | 2000 | 1000 tokens |
 
 **Last Checked:** 2026-10-05T02:12:00.953154+00:00
 

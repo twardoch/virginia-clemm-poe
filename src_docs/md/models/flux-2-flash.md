@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/flux-2-flash.md
+---
+
 # [flux-2-flash](https://poe.com/flux-2-flash){ .md-button .md-button--primary }
+
+**Tier 4:** 167 points · per image
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

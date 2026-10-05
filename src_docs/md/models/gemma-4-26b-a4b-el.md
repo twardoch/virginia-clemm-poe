@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/gemma-4-26b-a4b-el.md
+---
+
 # [gemma-4-26b-a4b-el](https://poe.com/gemma-4-26b-a4b-el){ .md-button .md-button--primary }
+
+**Tier 1:** 6 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

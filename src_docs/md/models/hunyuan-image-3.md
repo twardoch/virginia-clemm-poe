@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/hunyuan-image-3.md
+---
+
 # [hunyuan-image-3](https://poe.com/hunyuan-image-3){ .md-button .md-button--primary }
+
+**Tier 7:** 4,334 points · per image
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -13,6 +21,7 @@ All parsed rates (both currencies):
 | Service | Currency | Amount | Per |
 |---|---|---|---|
 | 1 Image | USD | 0.13 | 1 image |
+| 1 Image | POINTS | 4334 | 1 image |
 
 **Last Checked:** 2026-10-05T02:11:25.562993+00:00
 

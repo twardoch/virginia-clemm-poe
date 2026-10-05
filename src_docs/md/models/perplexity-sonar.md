@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/perplexity-sonar.md
+---
+
 # [perplexity-sonar](https://poe.com/perplexity-sonar){ .md-button .md-button--primary }
+
+**Tier 5:** 480 points · 1,000 tokens (500 input + 500 output) + message fee
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -16,9 +24,13 @@ All parsed rates (both currencies):
 | Service | Currency | Amount | Per |
 |---|---|---|---|
 | Base Fee (Low Context) | USD | 0.012 | 1 base fee (low context) |
+| Base Fee (Low Context) | POINTS | 400 | 1 base fee (low context) |
 | Base Fee (Medium Context) | USD | 0.019 | 1 base fee (medium context) |
+| Base Fee (Medium Context) | POINTS | 640 | 1 base fee (medium context) |
 | Base Fee (High Context) | USD | 0.029 | 1 base fee (high context) |
+| Base Fee (High Context) | POINTS | 960 | 1 base fee (high context) |
 | Input & Output Tokens | USD | 0.0024 | 1000 tokens |
+| Input & Output Tokens | POINTS | 80 | 1000 tokens |
 
 **Last Checked:** 2026-10-05T02:11:52.549012+00:00
 

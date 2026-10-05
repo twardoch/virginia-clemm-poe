@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/qwen3.5-omni-plus.md
+---
+
 # [qwen3.5-omni-plus](https://poe.com/qwen3.5-omni-plus){ .md-button .md-button--primary }
+
+**Tier 6:** ≈ 2,722.24 points · per 10 seconds video (assumed 5,792 tokens/s, 720p)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -60,9 +68,9 @@ This bot supports optional parameters for additional customization.
 
 **Input Modalities:** text, video, audio
 
-**Output Modalities:** text
+**Output Modalities:** image, text, video
 
-**Modality:** text,video,audio->text
+**Modality:** text+video+audio->image+text+video
 
 
 ## Technical Details

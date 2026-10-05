@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/gpt-4o-search.md
+---
+
 # [gpt-4o-search](https://poe.com/gpt-4o-search){ .md-button .md-button--primary }
+
+**Tier 4:** 187.5 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

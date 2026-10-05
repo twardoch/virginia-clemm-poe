@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Kling-Avatar-Std.md
+---
+
 # [Kling-Avatar-Std](https://poe.com/Kling-Avatar-Std){ .md-button .md-button--primary }
+
+**Tier 7:** 18,740 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -29,9 +37,9 @@ All parsed rates (both currencies):
 
 **Input Modalities:** Unknown
 
-**Output Modalities:** Unknown
+**Output Modalities:** video
 
-**Modality:** unknown
+**Modality:** unknown->video
 
 
 ## Technical Details

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/hy3-n.md
+---
+
 # [hy3-n](https://poe.com/hy3-n){ .md-button .md-button--primary }
+
+**Tier 9:** Not disclosed · No numeric rate published
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

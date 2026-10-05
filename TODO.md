@@ -2,6 +2,12 @@
 
 # Virginia Clemm Poe - Development Tasks
 
+- [x] Apply FontLab theme 2026 without FontLab global menu/footer.
+- [x] Normalize saved prices and assign all models to Tiers 0–9.
+- [x] Widen the table, remove empty headings, and combine Modality/Creator/Tier filters.
+- [x] Verify local rendering, all filter values, prices, native navigation and dark mode.
+- [ ] Republish and verify live hashes and browser acceptance without rescraping.
+
 ## Pricing correction — 2026-10-05
 
 - [x] Collect public rate evidence for every bot and normalize all disclosed numeric prices.

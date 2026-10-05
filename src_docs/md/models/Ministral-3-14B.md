@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Ministral-3-14B.md
+---
+
 # [Ministral-3-14B](https://poe.com/Ministral-3-14B){ .md-button .md-button--primary }
+
+**Tier 2:** 20 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

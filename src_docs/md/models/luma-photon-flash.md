@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/luma-photon-flash.md
+---
+
 # [luma-photon-flash](https://poe.com/luma-photon-flash){ .md-button .md-button--primary }
+
+**Tier 4:** 167 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

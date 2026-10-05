@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/assistant.md
+---
+
 # [assistant](https://poe.com/assistant){ .md-button .md-button--primary }
+
+**Tier 6:** ≈ 2,580 points · per 1024×1024 image (assumed 1290 output tokens)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -60,9 +68,9 @@ For non-subscribers:
 
 **Input Modalities:** text, image, video
 
-**Output Modalities:** text
+**Output Modalities:** image, text
 
-**Modality:** text,image,video->text
+**Modality:** text+image+video->image+text
 
 
 ## Technical Details

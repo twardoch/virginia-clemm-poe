@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/DeepSeek-V4-Flash-EL.md
+---
+
 # [DeepSeek-V4-Flash-EL](https://poe.com/DeepSeek-V4-Flash-EL){ .md-button .md-button--primary }
+
+**Tier 1:** 7.5 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

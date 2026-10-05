@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/flux-pro-1.1-t.md
+---
+
 # [flux-pro-1.1-t](https://poe.com/flux-pro-1.1-t){ .md-button .md-button--primary }
+
+**Tier 6:** 1,000 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

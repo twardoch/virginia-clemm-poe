@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Deep-Search-Pro.md
+---
+
 # [Deep-Search-Pro](https://poe.com/Deep-Search-Pro){ .md-button .md-button--primary }
+
+**Tier 6:** 1,800 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

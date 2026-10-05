@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/code-saver.md
+---
+
 # [code-saver](https://poe.com/code-saver){ .md-button .md-button--primary }
+
+**Tier 8:** From 1 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/MMAudio-v2.md
+---
+
 # [MMAudio-v2](https://poe.com/MMAudio-v2){ .md-button .md-button--primary }
+
+**Tier 4:** 290 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -32,9 +40,9 @@ All parsed rates (both currencies):
 
 **Input Modalities:** Unknown
 
-**Output Modalities:** Unknown
+**Output Modalities:** video
 
-**Modality:** unknown
+**Modality:** unknown->video
 
 
 ## Technical Details

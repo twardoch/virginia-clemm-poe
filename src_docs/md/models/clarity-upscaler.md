@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/clarity-upscaler.md
+---
+
 # [clarity-upscaler](https://poe.com/clarity-upscaler){ .md-button .md-button--primary }
+
+**Tier 5:** ≈ 891.2896 points · per 1024×1024 image (1.048576 MP)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/ling-3-0-flash.md
+---
+
 # [ling-3-0-flash](https://poe.com/ling-3-0-flash){ .md-button .md-button--primary }
+
+**Tier 1:** 4 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

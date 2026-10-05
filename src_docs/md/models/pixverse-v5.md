@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/pixverse-v5.md
+---
+
 # [pixverse-v5](https://poe.com/pixverse-v5){ .md-button .md-button--primary }
+
+**Tier 7:** From 15,334 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -15,13 +23,20 @@ All parsed rates (both currencies):
 
 | Service | Currency | Amount | Per |
 |---|---|---|---|
-| 360p | USD | 0.23 | 1 360p |
-| 360p | USD | 0.46 | 1 360p |
-| 540p | USD | 0.23 | 1 540p |
-| 540p | USD | 0.46 | 1 540p |
-| 720p | USD | 0.31 | 1 720p |
-| 720p | USD | 0.62 | 1 720p |
-| 1080p | USD | 0.62 | 1 1080p |
+| Video Output (360p; 5s) | USD | 0.23 | 5 second |
+| Video Output (360p; 5s) | POINTS | 7667 | 5 second |
+| Video Output (360p; 8s) | USD | 0.46 | 8 second |
+| Video Output (360p; 8s) | POINTS | 15334 | 8 second |
+| Video Output (540p; 5s) | USD | 0.23 | 5 second |
+| Video Output (540p; 5s) | POINTS | 7667 | 5 second |
+| Video Output (540p; 8s) | USD | 0.46 | 8 second |
+| Video Output (540p; 8s) | POINTS | 15334 | 8 second |
+| Video Output (720p; 5s) | USD | 0.31 | 5 second |
+| Video Output (720p; 5s) | POINTS | 10223 | 5 second |
+| Video Output (720p; 8s) | USD | 0.62 | 8 second |
+| Video Output (720p; 8s) | POINTS | 20445 | 8 second |
+| Video Output (1080p; 5s) | USD | 0.62 | 5 second |
+| Video Output (1080p; 5s) | POINTS | 20445 | 5 second |
 
 **Last Checked:** 2026-10-05T02:12:23.371630+00:00
 

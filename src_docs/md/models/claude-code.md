@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/claude-code.md
+---
+
 # [claude-code](https://poe.com/claude-code){ .md-button .md-button--primary }
+
+**Tier 9:** Usage based · Charged at called bots’ rates
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

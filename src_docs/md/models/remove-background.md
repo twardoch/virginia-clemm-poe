@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/remove-background.md
+---
+
 # [remove-background](https://poe.com/remove-background){ .md-button .md-button--primary }
+
+**Tier 3:** 34 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

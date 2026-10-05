@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Mistral-7B-OSL.md
+---
+
 # [Mistral-7B-OSL](https://poe.com/Mistral-7B-OSL){ .md-button .md-button--primary }
+
+**Tier 2:** 10 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

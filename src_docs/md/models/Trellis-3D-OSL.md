@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Trellis-3D-OSL.md
+---
+
 # [Trellis-3D-OSL](https://poe.com/Trellis-3D-OSL){ .md-button .md-button--primary }
+
+**Tier 7:** ≈ 12,000 points · per 10 seconds video (assumed 5s clip)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
@@ -29,9 +37,9 @@ All parsed rates (both currencies):
 
 **Input Modalities:** Unknown
 
-**Output Modalities:** Unknown
+**Output Modalities:** video
 
-**Modality:** unknown
+**Modality:** unknown->video
 
 
 ## Technical Details

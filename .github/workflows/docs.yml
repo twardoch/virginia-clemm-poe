@@ -38,18 +38,23 @@ jobs:
     
     - name: Install dependencies
       run: |
-        pip install --upgrade pip
-        pip install mkdocs mkdocs-material mkdocstrings[python] pymdown-extensions loguru
+        pip install --upgrade pip uv
+        uv sync --locked
+
+    - name: Set up Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22'
     
     - name: Update documentation data
       run: |
         cd src_docs
-        python update_docs.py
+        uv run python update_docs.py
     
     - name: Build MkDocs site
       run: |
         cd src_docs
-        mkdocs build --clean --strict
+        uv run mkdocs build --clean --strict
     
     - name: Add .nojekyll file
       run: |

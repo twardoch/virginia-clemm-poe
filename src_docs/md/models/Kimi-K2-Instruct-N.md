@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/Kimi-K2-Instruct-N.md
+---
+
 # [Kimi-K2-Instruct-N](https://poe.com/Kimi-K2-Instruct-N){ .md-button .md-button--primary }
+
+**Tier 4:** 210 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

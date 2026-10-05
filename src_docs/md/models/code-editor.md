@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/code-editor.md
+---
+
 # [code-editor](https://poe.com/code-editor){ .md-button .md-button--primary }
+
+**Tier 9:** Not disclosed · No numeric rate published
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

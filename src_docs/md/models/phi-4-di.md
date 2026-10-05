@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/phi-4-di.md
+---
+
 # [phi-4-di](https://poe.com/phi-4-di){ .md-button .md-button--primary }
+
+**Tier 2:** 10 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

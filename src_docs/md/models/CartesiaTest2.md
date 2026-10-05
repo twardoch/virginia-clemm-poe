@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/CartesiaTest2.md
+---
+
 # [CartesiaTest2](https://poe.com/CartesiaTest2){ .md-button .md-button--primary }
+
+**Tier 0:** 0 points · per message
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

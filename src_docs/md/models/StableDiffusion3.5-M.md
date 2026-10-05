@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/StableDiffusion3.5-M.md
+---
+
 # [StableDiffusion3.5-M](https://poe.com/StableDiffusion3.5-M){ .md-button .md-button--primary }
+
+**Tier 5:** 425 points · per message (image output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/kling-2.0-master.md
+---
+
 # [kling-2.0-master](https://poe.com/kling-2.0-master){ .md-button .md-button--primary }
+
+**Tier 7:** 60,000 points · per 10 seconds video
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 

@@ -1,4 +1,12 @@
+---
+this_file: src_docs/md/models/qwen3-max-n.md
+---
+
 # [qwen3-max-n](https://poe.com/qwen3-max-n){ .md-button .md-button--primary }
+
+**Tier 4:** 176.5 points · 1,000 tokens (500 input + 500 output)
+
+[Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
