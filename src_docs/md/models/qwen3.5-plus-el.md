@@ -21,9 +21,9 @@ this_file: src_docs/md/models/qwen3.5-plus-el.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.36/1M tokens · 12 points/1k tokens |
+| Input Text | 12 points/1k tokens |
+| Bot Message | 167 points/message |
 | Output (Text) | $2.23/1M tokens · 74 points/1k tokens |
-| Bot Message | $0.0051/message · 167 points/message |
 
 All parsed rates (both currencies):
 
@@ -36,14 +36,15 @@ All parsed rates (both currencies):
 | Bot message | USD | 0.0051 | 1 message |
 | Bot message | POINTS | 167 | 1 message |
 
-**Last Checked:** 2026-10-05T02:10:45.090466+00:00
+**Last Checked:** 2026-10-22 13:22:02.520780
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
-**Description:** Qwen3.5-Plus is a state-of-the-art multimodal model featuring a hybrid architecture designed for efficient deep thinking and robust visual understanding. It supports text, image, and video inputs within a massive 1M token context window, delivering performance comparable to leading global models across diverse tasks.
+**Description:** This model is retiring on 2027-01-19. Please switch to: https://poe.com/Qwen3.8-Flash-EL
+Qwen3.5-Plus is a state-of-the-art multimodal model featuring a hybrid architecture designed for efficient deep thinking and robust visual understanding. It supports text, image, and video inputs within a massive 1M token context window, delivering performance comparable to leading global models across diverse tasks.
 This model is served by Alibaba Cloud Int. from Singapore.
 
 Notes:
@@ -54,6 +55,8 @@ Notes:
 - Built-in tool calls are not supported with video attachments
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -77,4 +80,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** qwen3.5-plus-el
 
-**API Last Updated:** 2026-10-05 01:48:43.415471
+**API Last Updated:** 2026-10-22 13:58:59.074122

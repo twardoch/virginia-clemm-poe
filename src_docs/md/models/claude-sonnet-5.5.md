@@ -21,7 +21,7 @@ this_file: src_docs/md/models/claude-sonnet-5.5.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $2.02/1M tokens · 67 points/1k tokens |
+| Input Text | 67 points/1k tokens |
 | Output (Text) | $10.10/1M tokens · 334 points/1k tokens |
 | Output | $0.010/search · 334 points/search |
 
@@ -36,14 +36,16 @@ All parsed rates (both currencies):
 | Output | USD | 0.010 | 1 search |
 | Output | POINTS | 334 | 1 search |
 
-**Last Checked:** 2026-10-05T02:10:23.259237+00:00
+**Last Checked:** 2026-10-22 13:19:20.051569
 
 
 ## Bot Information
 
-**Creator:** anthropic
+**Creator:** @anthropic
 
 **Description:** Anthropic's Claude Sonnet 5.5 for fast everyday work, coding, and document creation, with a 1M-token context window, image understanding, adjustable reasoning effort, and web search.
+
+**Extra:** Powered by a server managed by @anthropic. Learn more
 
 
 ## Architecture
@@ -67,4 +69,4 @@ All parsed rates (both currencies):
 
 **Root:** claude-sonnet-5.5
 
-**API Last Updated:** 2026-10-05 01:48:43.414814
+**API Last Updated:** 2026-10-22 13:58:59.073529

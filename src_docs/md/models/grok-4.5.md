@@ -21,7 +21,7 @@ this_file: src_docs/md/models/grok-4.5.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $2.02/1M tokens · 67 points/1k tokens |
+| Input Text | 67 points/1k tokens |
 | Output (Text) | $6.06/1M tokens · 200 points/1k tokens |
 | Output | $0.0051/search · 167 points/search |
 
@@ -36,14 +36,16 @@ All parsed rates (both currencies):
 | Output | USD | 0.0051 | 1 search |
 | Output | POINTS | 167 | 1 search |
 
-**Last Checked:** 2026-10-05T02:10:29.273160+00:00
+**Last Checked:** 2026-10-22 13:20:18.734588
 
 
 ## Bot Information
 
-**Creator:** xAI
+**Creator:** @xAI
 
 **Description:** xAI's prior smartest model (before Grok-4.6) with frontier performance on coding, knowledge work, and STEM.
+
+**Extra:** Powered by a server managed by @xAI. Learn more
 
 
 ## Architecture
@@ -67,4 +69,4 @@ All parsed rates (both currencies):
 
 **Root:** grok-4.5
 
-**API Last Updated:** 2026-10-05 01:48:43.415045
+**API Last Updated:** 2026-10-22 13:58:59.073773

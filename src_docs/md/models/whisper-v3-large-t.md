@@ -20,7 +20,7 @@ this_file: src_docs/md/models/whisper-v3-large-t.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.0030/message · 100 points/message |
+| Total Cost | 100 points/message |
 
 All parsed rates (both currencies):
 
@@ -29,14 +29,16 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.0030 | 1 message |
 | Total cost | POINTS | 100 | 1 message |
 
-**Last Checked:** 2026-10-05T02:11:58.787798+00:00
+**Last Checked:** 2026-10-22 13:30:25.445493
 
 
 ## Bot Information
 
-**Creator:** togetherai
+**Creator:** @togetherai
 
 **Description:** Whisper v3 Large is a state-of-the-art automatic speech recognition and translation model developed by OpenAI, offering 10–20% lower error rates than its predecessor, Whisper large-v2. It supports transcription and translation across numerous languages, with improvements in handling diverse audio inputs, including noisy conditions and long-form audio files.
+
+**Extra:** Powered by a server managed by @togetherai. Learn more
 
 
 ## Architecture
@@ -60,4 +62,4 @@ All parsed rates (both currencies):
 
 **Root:** whisper-v3-large-t
 
-**API Last Updated:** 2026-10-05 01:48:43.416993
+**API Last Updated:** 2026-10-22 13:58:59.075989

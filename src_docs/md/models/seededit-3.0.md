@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.030 | 1 message |
 | Image Output | POINTS | 1000 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:32.090497+00:00
+**Last Checked:** 2026-10-22 13:34:36.713950
 
 
 ## Bot Information
 
-**Creator:** Bytedance
+**Creator:** @Bytedance
 
 **Description:** SeedEdit 3.0 is an image editing model independently developed by ByteDance. It excels in accurately following editing instructions and effectively preserving image content, especially excelling in handling real images. Please send an image with a prompt to edit the image.
+
+**Extra:** Powered by a server managed by @Bytedance. Learn more
 
 
 ## Architecture
@@ -54,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** seededit-3.0
 
-**API Last Updated:** 2026-10-05 01:48:43.417264
+**API Last Updated:** 2026-10-22 13:58:59.076504

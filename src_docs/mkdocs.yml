@@ -39,7 +39,7 @@ theme:
     code: Roboto Mono
 
 plugins:
-  - search
+  - materialx/search
   - mkdocstrings:
       handlers:
         python:

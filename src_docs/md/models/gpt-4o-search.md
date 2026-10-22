@@ -21,7 +21,7 @@ this_file: src_docs/md/models/gpt-4o-search.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $2.27/1M tokens · 75 points/1k tokens |
+| Input Text | 75 points/1k tokens |
 | Output (Text) | $9.09/1M tokens · 300 points/1k tokens |
 | Output (Message) | $0.032/message · 1050 points/message |
 | Output | $0.023/search · 750 points/search |
@@ -39,14 +39,16 @@ All parsed rates (both currencies):
 | Output | USD | 0.023 | 1 search |
 | Output | POINTS | 750 | 1 search |
 
-**Last Checked:** 2026-10-05T02:11:51.422698+00:00
+**Last Checked:** 2026-10-22 13:29:36.202370
 
 
 ## Bot Information
 
-**Creator:** openai
+**Creator:** @openai
 
 **Description:** OpenAI's fine-tuned model for searching the web for real-time information. For less expensive messages, consider https://poe.com/GPT-4o-mini-Search. Uses medium search context size, currently in preview, supports 128k tokens of context. Does not support image search.
+
+**Extra:** Powered by OpenAI: gpt-4o-search-preview. Learn more
 
 
 ## Architecture
@@ -70,4 +72,4 @@ All parsed rates (both currencies):
 
 **Root:** gpt-4o-search
 
-**API Last Updated:** 2026-10-05 01:48:43.416873
+**API Last Updated:** 2026-10-22 13:58:59.075857

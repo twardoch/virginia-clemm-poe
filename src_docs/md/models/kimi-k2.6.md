@@ -21,7 +21,7 @@ this_file: src_docs/md/models/kimi-k2.6.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.96/1M tokens · 32 points/1k tokens |
+| Input Text | 32 points/1k tokens |
 | Output (Text) | $4.04/1M tokens · 134 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,14 +33,16 @@ All parsed rates (both currencies):
 | Output (text) | USD | 4.04 | 1000000 tokens |
 | Output (text) | POINTS | 134 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:29.524802+00:00
+**Last Checked:** 2026-10-22 13:44:06.091253
 
 
 ## Bot Information
 
-**Creator:** moonshotai
+**Creator:** @moonshotai
 
 **Description:** Moonshot AI Kimi K2.6 is a model for long-horizon coding, design-oriented development, and vision-enabled tasks.
+
+**Extra:** Powered by a server managed by @moonshotai. Learn more
 
 
 ## Architecture
@@ -64,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** kimi-k2.6
 
-**API Last Updated:** 2026-10-05 01:48:43.418613
+**API Last Updated:** 2026-10-22 13:58:59.077557

@@ -14,7 +14,7 @@ this_file: src_docs/md/models/Claude-Fable-5.1.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $10.10/1M tokens · 334 points/1k tokens |
+| Input Text | 334 points/1k tokens |
 | Output (Text) | $50.51/1M tokens · 1667 points/1k tokens |
 | Output | $0.010/search · 334 points/search |
 
@@ -29,25 +29,27 @@ All parsed rates (both currencies):
 | Output | USD | 0.010 | 1 search |
 | Output | POINTS | 334 | 1 search |
 
-**Last Checked:** 2026-10-05T02:08:34.910505+00:00
+**Last Checked:** 2026-10-22 12:59:46.169529
 
 
 ## Bot Information
 
-**Creator:** anthropic
+**Creator:** @anthropic
 
 **Description:** Anthropic's Claude Fable 5.1 is built for demanding reasoning and long-horizon agentic work, extending Claude Fable 5 with stronger long-running agentic coding, multistep research, and document, spreadsheet, and slide work.
 
 Its 1M-token context window and image understanding suit large codebases, extensive documents, and multimodal analysis. Adaptive thinking is always on, steerable from low to max effort.
 
+**Extra:** Powered by a server managed by @anthropic. Learn more
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details

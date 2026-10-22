@@ -23,23 +23,25 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.076 | 1 message |
 | Image Output | POINTS | 2500 | 1 message |
 
-**Last Checked:** 2026-10-05T02:08:45.617107+00:00
+**Last Checked:** 2026-10-22 13:01:30.387561
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Given an image of a person and an image of a garment, creates a new image of the person wearing the garment. The person should be the first uploaded image and the garment should be the second uploaded image.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** image
 
-**Modality:** text->image
+**Modality:** unknown->image
 
 
 ## Technical Details

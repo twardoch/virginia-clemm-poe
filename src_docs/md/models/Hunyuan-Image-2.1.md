@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.086 | 1 message |
 | Image Output | POINTS | 2834 | 1 message |
 
-**Last Checked:** 2026-10-05T02:09:09.132977+00:00
+**Last Checked:** 2026-10-22 13:06:24.778614
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Hunyuan Image 2.1 is a high quality, highly efficient text-to-image model. Send a prompt to generate an image. 
 
@@ -38,14 +38,16 @@ Negative prompt (examples: blur, low resolution, poor quality) to set negative p
 
 Notes: This bot does not accept attachment.
 
+**Extra:** Powered by a server managed by @fal. Learn more
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** image
 
-**Modality:** text->image
+**Modality:** unknown->image
 
 
 ## Technical Details

@@ -23,23 +23,25 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.0026 | 1 message |
 | Image Output | POINTS | 85 | 1 message |
 
-**Last Checked:** 2026-10-05T02:09:43.952398+00:00
+**Last Checked:** 2026-10-22 13:11:15.207258
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Generate photo-realistic pictures with RealVisXL 4.0
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** image
 
-**Modality:** text->image
+**Modality:** unknown->image
 
 
 ## Technical Details

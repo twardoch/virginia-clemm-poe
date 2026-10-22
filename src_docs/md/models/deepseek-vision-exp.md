@@ -21,7 +21,7 @@ this_file: src_docs/md/models/deepseek-vision-exp.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.44/1M tokens · 15 points/1k tokens |
+| Input Text | 15 points/1k tokens |
 | Output (Text) | $1.33/1M tokens · 44 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,19 +33,23 @@ All parsed rates (both currencies):
 | Output (text) | USD | 1.33 | 1000000 tokens |
 | Output (text) | POINTS | 44 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:48.827848+00:00
+**Last Checked:** 2026-10-22 13:47:07.599581
 
 
 ## Bot Information
 
-**Creator:** novitaai
+**Creator:** @novitaai
 
-**Description:** DeepSeek V4 Flash Vision Exp is an experimental vision-enabled version of DeepSeek V4 Flash 0731(opens in new tab) from DeepSeek, adding image understanding while matching the base model on text capabilities including agents, reasoning, and world knowledge. It is a sparse mixture-of-experts model with 13B active parameters out of 284B total.
+**Description:** Try https://poe.com/DeepSeek-V4.1-Flash-1017 for the first-party DeepSeek bot.
+
+DeepSeek V4 Flash Vision Exp is an experimental vision-enabled version of DeepSeek V4 Flash 0731(opens in new tab) from DeepSeek, adding image understanding while matching the base model on text capabilities including agents, reasoning, and world knowledge. It is a sparse mixture-of-experts model with 13B active parameters out of 284B total.
 
 It is suited for document and chart understanding, visual question answering, and multimodal agent workflows that interleave text and images.
 
 File Support: Text, Markdown, Image and PDF files
 Context window: 1M tokens
+
+**Extra:** Powered by a server managed by @novitaai. Learn more
 
 
 ## Architecture
@@ -69,4 +73,4 @@ Context window: 1M tokens
 
 **Root:** deepseek-vision-exp
 
-**API Last Updated:** 2026-10-05 01:48:43.419085
+**API Last Updated:** 2026-10-22 13:58:59.077961

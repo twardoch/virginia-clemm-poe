@@ -14,7 +14,7 @@ this_file: src_docs/md/models/GPT-5.5-Pro.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $27.27/1M tokens · 900 points/1k tokens |
+| Input Text | 900 points/1k tokens |
 | Output (Text) | $163.64/1M tokens · 5400 points/1k tokens |
 | Output | $0.0091/search · 300 points/search |
 
@@ -29,23 +29,25 @@ All parsed rates (both currencies):
 | Output | USD | 0.0091 | 1 search |
 | Output | POINTS | 300 | 1 search |
 
-**Last Checked:** 2026-10-05T02:08:59.646002+00:00
+**Last Checked:** 2026-10-22 13:03:52.682369
 
 
 ## Bot Information
 
-**Creator:** openai
+**Creator:** @openai
 
 **Description:** A smarter, more precise version of GPT-5.5 that leverages additional compute to think harder and provide consistently better answers. Designed to tackle your toughest problems, this model operates with the highest reasoning capability to ensure maximum accuracy on complex agentic, coding, and research tasks.
+
+**Extra:** Powered by OpenAI: gpt-5.5-pro. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details

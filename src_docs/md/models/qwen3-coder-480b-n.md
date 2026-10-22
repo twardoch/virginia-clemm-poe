@@ -20,7 +20,7 @@ this_file: src_docs/md/models/qwen3-coder-480b-n.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.0073/message · 240 points/message |
+| Total Cost | 240 points/message |
 
 All parsed rates (both currencies):
 
@@ -29,14 +29,16 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.0073 | 1 message |
 | Total cost | POINTS | 240 | 1 message |
 
-**Last Checked:** 2026-10-05T02:11:41.693471+00:00
+**Last Checked:** 2026-10-22 13:28:39.690525
 
 
 ## Bot Information
 
-**Creator:** novitaai
+**Creator:** @novitaai
 
-**Description:** Qwen3-Coder-480B-A35B-Instruct is a cutting-edge open coding model from Qwen, matching Claude Sonnet’s performance in agentic programming, browser automation, and core development tasks. With native 256K context (extendable to 1M tokens via YaRN), it excels at repository-scale analysis and features specialized function-call support for platforms like Qwen Code and CLINE—making it ideal for complex, real-world development workflows.
+**Description:** Try https://poe.com/Qwen3-Coder-Next for the first-party Qwen bot.
+
+Qwen3-Coder-480B-A35B-Instruct is a cutting-edge open coding model from Qwen, matching Claude Sonnet’s performance in agentic programming, browser automation, and core development tasks. With native 256K context (extendable to 1M tokens via YaRN), it excels at repository-scale analysis and features specialized function-call support for platforms like Qwen Code and CLINE—making it ideal for complex, real-world development workflows.
 
 File Support: Text, Markdown and PDF files
 Context window: 262k tokens
@@ -65,4 +67,4 @@ Context window: 262k tokens
 
 **Root:** qwen3-coder-480b-n
 
-**API Last Updated:** 2026-10-05 01:48:43.416603
+**API Last Updated:** 2026-10-22 13:58:59.075662

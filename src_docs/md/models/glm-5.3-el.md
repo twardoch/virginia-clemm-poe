@@ -21,9 +21,9 @@ this_file: src_docs/md/models/glm-5.3-el.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $1.41/1M tokens · 47 points/1k tokens |
+| Input Text | 47 points/1k tokens |
+| Bot Message | 200 points/message |
 | Output (Text) | $4.44/1M tokens · 147 points/1k tokens |
-| Bot Message | $0.0061/message · 200 points/message |
 
 All parsed rates (both currencies):
 
@@ -36,16 +36,18 @@ All parsed rates (both currencies):
 | Bot message | USD | 0.0061 | 1 message |
 | Bot message | POINTS | 200 | 1 message |
 
-**Last Checked:** 2026-10-05T02:13:42.242512+00:00
+**Last Checked:** 2026-10-22 13:45:48.245069
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** GLM 5.3 is Z.ai's flagship coding and agentic model, built on the same base as GLM 5.2 with post-training gains in complex software engineering and long-horizon agent work. It accepts text input with a 1M token context, always-on reasoning at low, high, or max effort, native web search, and function calling.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -69,4 +71,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** glm-5.3-el
 
-**API Last Updated:** 2026-10-05 01:48:43.418892
+**API Last Updated:** 2026-10-22 13:58:59.077834

@@ -19,7 +19,7 @@ this_file: src_docs/md/models/linkup-standard.md
 
 | Type | Cost |
 |------|------|
-| Bot Message | $0.0081/message · 267 points/message |
+| Bot Message | 267 points/message |
 
 All parsed rates (both currencies):
 
@@ -28,12 +28,12 @@ All parsed rates (both currencies):
 | Bot message | USD | 0.0081 | 1 message |
 | Bot message | POINTS | 267 | 1 message |
 
-**Last Checked:** 2026-10-05T02:11:53.744120+00:00
+**Last Checked:** 2026-10-22 13:29:52.601090
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Linkup Standard is an AI-powered search bot that provides detailed overviews and answers sourced from the web, helping you find high-quality information quickly and accurately. Results are faster compared to its Deep search counterpart. 
 Linkup's technology ranks #1 globally for factual accuracy, achieving state-of-the-art scores on OpenAI’s SimpleQA benchmark. 
@@ -50,6 +50,8 @@ Parameter controls available:
 5. Citation options: Toggle enable inline citation to include inline citations in the response text (Default: `on`). Toggle include sources list to include a list of sources in the response (Default: `on`)
 
 Learn more: https://www.linkup.so/
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -73,4 +75,4 @@ Learn more: https://www.linkup.so/
 
 **Root:** linkup-standard
 
-**API Last Updated:** 2026-10-05 01:48:43.416922
+**API Last Updated:** 2026-10-22 13:58:59.075900

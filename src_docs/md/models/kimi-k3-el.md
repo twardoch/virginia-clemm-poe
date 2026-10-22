@@ -21,9 +21,9 @@ this_file: src_docs/md/models/kimi-k3-el.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $3.03/1M tokens · 100 points/1k tokens |
+| Input Text | 100 points/1k tokens |
+| Bot Message | 67 points/message |
 | Output (Text) | $15.15/1M tokens · 500 points/1k tokens |
-| Bot Message | $0.0020/message · 67 points/message |
 
 All parsed rates (both currencies):
 
@@ -36,16 +36,18 @@ All parsed rates (both currencies):
 | Bot message | USD | 0.0020 | 1 message |
 | Bot message | POINTS | 67 | 1 message |
 
-**Last Checked:** 2026-10-05T02:13:21.843668+00:00
+**Last Checked:** 2026-10-22 13:42:38.097173
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Kimi K3 is Moonshot AI's flagship reasoning model with a 1M token context, built for software engineering, deep reasoning, and knowledge work. It supports text, image, and video input with native web search.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -69,4 +71,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** kimi-k3-el
 
-**API Last Updated:** 2026-10-05 01:48:43.418331
+**API Last Updated:** 2026-10-22 13:58:59.077378

@@ -23,18 +23,20 @@ All parsed rates (both currencies):
 | Video Generation | USD | 0.12 | 1 second |
 | Video Generation | POINTS | 3834 | 1 second |
 
-**Last Checked:** 2026-10-05T02:12:31.078829+00:00
+**Last Checked:** 2026-10-22 13:34:27.929311
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Create lifelike avatar videos featuring realistic humans, animals, cartoons, or stylized characters. Simply upload an image and an audio file to generate a video of your character speaking.
 
 Supported file formats:
 Images: JPEG, PNG, WEBP
 Audio: MP3, WAV
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -58,4 +60,4 @@ Audio: MP3, WAV
 
 **Root:** kling-avatar-pro
 
-**API Last Updated:** 2026-10-05 01:48:43.417257
+**API Last Updated:** 2026-10-22 13:58:59.076488

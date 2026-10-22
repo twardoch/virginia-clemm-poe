@@ -26,12 +26,12 @@ All parsed rates (both currencies):
 | Full song | USD | 0.08 | 1 message |
 | Full song | POINTS | 2667 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:24.460201+00:00
+**Last Checked:** 2026-10-22 13:33:35.221397
 
 
 ## Bot Information
 
-**Creator:** google
+**Creator:** @google
 
 **Description:** Google DeepMind’s Lyria 3 is an advanced AI music generation model that creates high-fidelity, up to three-minute tracks from text or image prompts, with detailed control over vocals, style, and composition.
 
@@ -40,6 +40,8 @@ Full song: Turn it on to generate a full-length track (up to 3 minutes).
 
 Notes:
 Lyria blocks prompts that name specific artists or songs (artist-intent and recitation checks).
+
+**Extra:** Powered by a server managed by @google. Learn more
 
 
 ## Architecture
@@ -63,4 +65,4 @@ Lyria blocks prompts that name specific artists or songs (artist-intent and reci
 
 **Root:** lyria-3
 
-**API Last Updated:** 2026-10-05 01:48:43.417214
+**API Last Updated:** 2026-10-22 13:58:59.076390

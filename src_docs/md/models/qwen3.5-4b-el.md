@@ -21,7 +21,7 @@ this_file: src_docs/md/models/qwen3.5-4b-el.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.040/1M tokens · 2 points/1k tokens |
+| Input Text | 2 points/1k tokens |
 | Output (Text) | $0.071/1M tokens · 3 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,18 +33,20 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.071 | 1000000 tokens |
 | Output (text) | POINTS | 3 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:12.728830+00:00
+**Last Checked:** 2026-10-22 13:41:31.655475
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Qwen3.5 4B is a low-cost multimodal reasoning model with 256K context, image and video input, function tools, and structured output.
 
 Weight Precision: FP8
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -68,4 +70,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** qwen3.5-4b-el
 
-**API Last Updated:** 2026-10-05 01:48:43.418113
+**API Last Updated:** 2026-10-22 13:58:59.077148

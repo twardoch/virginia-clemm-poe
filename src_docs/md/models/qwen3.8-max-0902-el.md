@@ -21,7 +21,7 @@ this_file: src_docs/md/models/qwen3.8-max-0902-el.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $2.02/1M tokens · 67 points/1k tokens |
+| Input Text | 67 points/1k tokens |
 | Output (Text) | $6.06/1M tokens · 200 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,16 +33,18 @@ All parsed rates (both currencies):
 | Output (text) | USD | 6.06 | 1000000 tokens |
 | Output (text) | POINTS | 200 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:49.953175+00:00
+**Last Checked:** 2026-10-22 13:47:11.651533
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Qwen3.8 Max 0902 is the upgraded September 2026 snapshot of Alibaba's flagship Qwen3.8 Max, with stronger coding, steadier multi-tool agent work, and sharper chart and document understanding. It accepts text, image, and video input with a 1M token context, and supports deep thinking, function calling, and structured JSON output.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -66,4 +68,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** qwen3.8-max-0902-el
 
-**API Last Updated:** 2026-10-05 01:48:43.419105
+**API Last Updated:** 2026-10-22 13:58:59.077975

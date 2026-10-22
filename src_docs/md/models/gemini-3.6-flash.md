@@ -21,7 +21,7 @@ this_file: src_docs/md/models/gemini-3.6-flash.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.76/1M tokens · 25 points/1k tokens |
+| Input Text | 25 points/1k tokens |
 | Output (Text) | $3.79/1M tokens · 125 points/1k tokens |
 | Output | $0.014/search · 467 points/search |
 
@@ -36,14 +36,16 @@ All parsed rates (both currencies):
 | Output | USD | 0.014 | 1 search |
 | Output | POINTS | 467 | 1 search |
 
-**Last Checked:** 2026-10-05T02:10:29.921519+00:00
+**Last Checked:** 2026-10-22 13:20:22.684193
 
 
 ## Bot Information
 
-**Creator:** google
+**Creator:** @google
 
 **Description:** Google’s token-efficient workhorse model for coding, knowledge work, and multimodal tasks. Get advanced reasoning at Flash speed, analyze text, images, audio, and video, and work with up to 1M tokens of context.
+
+**Extra:** Powered by a server managed by @google. Learn more
 
 
 ## Architecture
@@ -67,4 +69,4 @@ All parsed rates (both currencies):
 
 **Root:** gemini-3.6-flash
 
-**API Last Updated:** 2026-10-05 01:48:43.415063
+**API Last Updated:** 2026-10-22 13:58:59.073789

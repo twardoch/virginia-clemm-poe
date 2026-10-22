@@ -412,11 +412,11 @@ wheels = [
 
 [[package]]
 name = "filelock"
-version = "3.16.1"
+version = "3.32.7"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/9d/db/3ef5bb276dae18d6ec2124224403d1d67bccdbefc17af4cc8f553e341ab1/filelock-3.16.1.tar.gz", hash = "sha256:c249fbfcd5db47e5e2d6d62198e565475ee65e4831e2561c8e313fa7eb961435", size = 18037, upload-time = "2024-09-17T19:02:01.779Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/0f/59/e19834834cb01a32febfbb0f8a23a9088088f5d45991824ff2bc3b5e8acb/filelock-3.32.7.tar.gz", hash = "sha256:37b8a3d9811b0f9aef7e5ec5c71bb320de52df51e6ca9bcd6f5ad81187660da7", size = 225154, upload-time = "2026-09-16T00:24:20.907Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b9/f8/feced7779d755758a52d1f6635d990b8d98dc0a29fa568bbe0625f18fdf3/filelock-3.16.1-py3-none-any.whl", hash = "sha256:2082e5703d51fbf98ea75855d9d5527e33d8ff23099bec374a134febee6946b0", size = 16163, upload-time = "2024-09-17T19:02:00.268Z" },
+    { url = "https://files.pythonhosted.org/packages/15/df/31098c5aeb4d966b553641472bd55fcf5fdfac953549894b8a765ba44e91/filelock-3.32.7-py3-none-any.whl", hash = "sha256:65ff0d0190ea42038b32bda4b77834fb05be2cad4c5b9b01aa4dfb3614536e52", size = 100157, upload-time = "2026-09-16T00:24:19.543Z" },
 ]
 
 [[package]]
@@ -1093,9 +1093,10 @@ wheels = [
 
 [[package]]
 name = "playwrightauthor"
-version = "1.0.23"
+version = "1.0.25"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
+    { name = "filelock" },
     { name = "fire" },
     { name = "html2text" },
     { name = "httpx" },
@@ -1108,9 +1109,9 @@ dependencies = [
     { name = "rich" },
     { name = "tomli-w" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/89/39/2e12c694002c17faa4b3dab9d62e458679bad8984686ee4d2e18522e59c9/playwrightauthor-1.0.23.tar.gz", hash = "sha256:f313b16fd1143aba7f178fc1acc4d1fe122868df9fb6c862b6012a846decd695", size = 1305038, upload-time = "2026-07-31T22:29:04.944Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/58/64/14572814782891a1fd5b503a1d4e9a582b07de4f302f67e717285a870f45/playwrightauthor-1.0.25.tar.gz", hash = "sha256:25e1c0e525f881467c60a2ffbda89568ba672dacee3f86b1c428e7e8da8bb581", size = 964864, upload-time = "2026-10-22T14:17:27.393Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/5a/6b/87dd625a9e4c0ceac773c7d8b0c9f6b61becf474f7ff5607e1e93e7f65ce/playwrightauthor-1.0.23-py3-none-any.whl", hash = "sha256:a2b96b5e60aded1c3e94aaeb5e295ee15e6b4aba5307795a3cb78b94867f74cf", size = 85372, upload-time = "2026-07-31T22:29:01.908Z" },
+    { url = "https://files.pythonhosted.org/packages/9c/cc/b08d908fe3eeb75a9c01d0bc34b493df4b8ffd3c06f8efbbc3e187c6967a/playwrightauthor-1.0.25-py3-none-any.whl", hash = "sha256:bbeaf2bbcb4004747ee7a2f5dc11e95b07fd2d0fc761fa5d15f7ec3101c96f9a", size = 98046, upload-time = "2026-10-22T14:17:24.915Z" },
 ]
 
 [[package]]
@@ -1584,10 +1585,11 @@ wheels = [
 
 [[package]]
 name = "safety"
-version = "3.6.0"
+version = "3.8.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "authlib" },
+    { name = "certifi" },
     { name = "click" },
     { name = "dparse" },
     { name = "filelock" },
@@ -1596,25 +1598,23 @@ dependencies = [
     { name = "marshmallow" },
     { name = "nltk" },
     { name = "packaging" },
-    { name = "psutil" },
     { name = "pydantic" },
-    { name = "requests" },
     { name = "ruamel-yaml" },
     { name = "safety-schemas" },
-    { name = "setuptools" },
     { name = "tenacity" },
     { name = "tomlkit" },
+    { name = "truststore" },
     { name = "typer" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/04/c0/832778e8f53e922f1939455cab4149339ca66c4f06e3c67599511d857279/safety-3.6.0.tar.gz", hash = "sha256:a820f827699f83d3d5c2faab24c0ac4d094911931503180847d97942c0a6f7e3", size = 291056, upload-time = "2025-07-09T11:49:52.384Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/c2/7b/8e1d580c5178f0736b806b7199827e61e2a2569eec5b49ec75da6273bbdf/safety-3.8.1.tar.gz", hash = "sha256:e646123b976bbb6707cfaacae8c926e2f886b744a60e0f410e8610a3a4eaf7be", size = 412947, upload-time = "2026-05-29T15:09:33.355Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/45/12/7f7dfcd6975011e73573ac8acdd301b29f976d27e6149d8448051ad62189/safety-3.6.0-py3-none-any.whl", hash = "sha256:9cddbfd7a578b35e4d29df4fb6e3808425ed792a09d81400a5b7f4b4535ef666", size = 285260, upload-time = "2025-07-09T11:49:50.994Z" },
+    { url = "https://files.pythonhosted.org/packages/4b/f5/498db84333a644835e572c0d96cfa705bf9871f863289a7845082d54755e/safety-3.8.1-py3-none-any.whl", hash = "sha256:953c1c3c60c873f53a6cc250b2a9c4b38bb6ef45f0625990e43f20bff916c965", size = 340521, upload-time = "2026-05-29T15:09:31.622Z" },
 ]
 
 [[package]]
 name = "safety-schemas"
-version = "0.0.14"
+version = "0.0.16"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "dparse" },
@@ -1623,9 +1623,9 @@ dependencies = [
     { name = "ruamel-yaml" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/04/40/e5107b3e456ca4b78d1c0d5bd07be3377e673cc54949b18e5f3aed345067/safety_schemas-0.0.14.tar.gz", hash = "sha256:49953f7a59e919572be25595a8946f9cbbcd2066fe3e160c9467d9d1d6d7af6a", size = 53216, upload-time = "2025-04-15T22:15:50.793Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/c2/ef/0e07dfdb4104c4e42ae9fc6e8a0da7be2d72ac2ee198b32f7500796de8f3/safety_schemas-0.0.16.tar.gz", hash = "sha256:3bb04d11bd4b5cc79f9fa183c658a6a8cf827a9ceec443a5ffa6eed38a50a24e", size = 54815, upload-time = "2025-09-16T14:35:31.973Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/1f/7f/f3d1ac7eb0a6546eda3e82c0487233cea0774e511239769945dbd1dd01de/safety_schemas-0.0.14-py3-none-any.whl", hash = "sha256:0bf6fc4aa5e474651b714cc9e427c862792946bf052b61d5c7bec4eac4c0f254", size = 39268, upload-time = "2025-04-15T22:15:49.317Z" },
+    { url = "https://files.pythonhosted.org/packages/84/a2/7840cc32890ce4b84668d3d9dfe15a48355b683ae3fb627ac97ac5a4265f/safety_schemas-0.0.16-py3-none-any.whl", hash = "sha256:6760515d3fd1e6535b251cd73014bd431d12fe0bfb8b6e8880a9379b5ab7aa44", size = 39292, upload-time = "2025-09-16T14:35:32.84Z" },
 ]
 
 [[package]]
@@ -1743,6 +1743,15 @@ wheels = [
 ]
 
 [[package]]
+name = "truststore"
+version = "0.10.5"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/ee/9f/c5201d42a484c061e528825fc8e2d565f5abd50a4ced6fb7d29c4ec99b2b/truststore-0.10.5.tar.gz", hash = "sha256:30d36967ccaded5cbb38d602c433f53600036c79d502f4533a49b60a03bbefcd", size = 28091, upload-time = "2026-10-12T22:27:31.808Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/51/e9/3a7820be2bb0fe53b6bc9c3be26d3d1158004e4c3ab953aa6840b955b1e9/truststore-0.10.5-py3-none-any.whl", hash = "sha256:9aaaedaefaf06d8b206278cf8b5012bc897f485a874503501e12d776df78951c", size = 19017, upload-time = "2026-10-12T22:27:30.377Z" },
+]
+
+[[package]]
 name = "typer"
 version = "0.16.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1841,7 +1850,7 @@ requires-dist = [
     { name = "markdown", specifier = ">=3.8" },
     { name = "mkdocs-materialx", specifier = "==10.1.8" },
     { name = "mkdocstrings", extras = ["python"], specifier = ">=0.30.0" },
-    { name = "playwrightauthor", specifier = ">=1.0.23" },
+    { name = "playwrightauthor", specifier = ">=1.0.25" },
     { name = "properdocs", specifier = "==1.6.7" },
     { name = "psutil", specifier = ">=5.9.0" },
     { name = "pydantic", specifier = ">=2.5.0" },

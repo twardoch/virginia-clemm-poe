@@ -23,15 +23,17 @@ All parsed rates (both currencies):
 | Per Minute of Audio | USD | 0.030 | 1 minute |
 | Per Minute of Audio | POINTS | 1000 | 1 minute |
 
-**Last Checked:** 2026-10-05T02:09:35.039634+00:00
+**Last Checked:** 2026-10-22 13:09:23.145552
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Try the following improved speech-to-text technology: https://poe.com/Deepgram-Nova-3
 Whisper-1 is an automatic speech recognition (ASR) system trained on 680,000 hours of multilingual and multitask supervised data collected from the web. 25mb max upload.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture

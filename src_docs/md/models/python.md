@@ -20,7 +20,7 @@ this_file: src_docs/md/models/python.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.000030/message · 1 point/message |
+| Total Cost | $0.000030/message |
 
 All parsed rates (both currencies):
 
@@ -29,14 +29,16 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.000030 | 1 message |
 | Total cost | POINTS | 1 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:53.590308+00:00
+**Last Checked:** 2026-10-22 13:38:24.815732
 
 
 ## Bot Information
 
-**Creator:** poe
+**Creator:** @poe
 
 **Description:** Executes Python code (version 3.11) from the user message and outputs the results. If there are code blocks in the user message (surrounded by triple backticks), then only the code blocks will be executed. These libraries are imported into this bot's run-time automatically -- numpy, pandas, requests, matplotlib, scikit-learn, torch, PyYAML, tensorflow, scipy, pytest -- along with ~150 of the most widely used Python libraries.
+
+**Extra:** Powered by Poe and third party model providers. Learn more
 
 
 ## Architecture
@@ -60,4 +62,4 @@ All parsed rates (both currencies):
 
 **Root:** python
 
-**API Last Updated:** 2026-10-05 01:48:43.417847
+**API Last Updated:** 2026-10-22 13:58:59.076969

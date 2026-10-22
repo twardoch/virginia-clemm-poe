@@ -21,7 +21,7 @@ this_file: src_docs/md/models/fugu-ultra-v1.1-el.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $5.05/1M tokens · 167 points/1k tokens |
+| Input Text | 167 points/1k tokens |
 | Output (Text) | $30.30/1M tokens · 1000 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,12 +33,12 @@ All parsed rates (both currencies):
 | Output (text) | USD | 30.30 | 1000000 tokens |
 | Output (text) | POINTS | 1000 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:25.030988+00:00
+**Last Checked:** 2026-10-22 13:43:12.409185
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Fugu Ultra v1.1 is Sakana AI's multi-agent conductor with a 1M token context window, built for hard reasoning, coding, and research. It accepts text and image input and coordinates expert agents to produce one answer.
 
@@ -47,6 +47,8 @@ Notes:
 - The full answer arrives at once rather than token by token (ie. streaming is not available), because the model finishes its internal work before it replies.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -70,4 +72,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** fugu-ultra-v1.1-el
 
-**API Last Updated:** 2026-10-05 01:48:43.418470
+**API Last Updated:** 2026-10-22 13:58:59.077448

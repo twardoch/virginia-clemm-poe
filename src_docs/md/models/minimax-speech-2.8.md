@@ -20,7 +20,7 @@ this_file: src_docs/md/models/minimax-speech-2.8.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.0061/message · 200 points/message |
+| Total Cost | 200 points/message |
 
 All parsed rates (both currencies):
 
@@ -29,14 +29,16 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.0061 | 1 message |
 | Total cost | POINTS | 200 | 1 message |
 
-**Last Checked:** 2026-10-05T02:10:55.411318+00:00
+**Last Checked:** 2026-10-22 13:23:14.137246
 
 
 ## Bot Information
 
-**Creator:** novitaai
+**Creator:** @novitaai
 
 **Description:** MiniMax Speech 2.8 is a premium text-to-speech model delivering studio-quality audio with enhanced clarity and naturalness. With support for multiple voice presets, emotional tones, and fine-grained audio controls, it produces broadcast-ready speech synthesis for professional applications.
+
+**Extra:** Powered by a server managed by @novitaai. Learn more
 
 
 ## Architecture
@@ -60,4 +62,4 @@ All parsed rates (both currencies):
 
 **Root:** minimax-speech-2.8
 
-**API Last Updated:** 2026-10-05 01:48:43.415743
+**API Last Updated:** 2026-10-22 13:58:59.074456

@@ -23,16 +23,18 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.030 | 1 message |
 | Image Output | POINTS | 1000 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:09.970171+00:00
+**Last Checked:** 2026-10-22 13:31:46.945153
 
 
 ## Bot Information
 
-**Creator:** Bytedance
+**Creator:** @Bytedance
 
 **Description:** Seedream 3.0 by ByteDance is a bilingual (Chinese and English) text-to-image model that excels at text-to-image generation.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @Bytedance. Learn more
 
 
 ## Architecture
@@ -56,4 +58,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** seedream-3.0
 
-**API Last Updated:** 2026-10-05 01:48:43.417091
+**API Last Updated:** 2026-10-22 13:58:59.076191

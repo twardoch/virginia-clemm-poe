@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Any message | USD | 0.030 | 1 message |
 | Any message | POINTS | 1000 | 1 message |
 
-**Last Checked:** 2026-10-05T02:09:15.791639+00:00
+**Last Checked:** 2026-10-22 13:06:56.763766
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Janus-Pro is a novel autoregressive framework that unifies multimodal understanding and generation. This bot operates on the Janus Pro 7b model.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture

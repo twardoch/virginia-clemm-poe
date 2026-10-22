@@ -23,24 +23,26 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.0086 | 1 message |
 | Image Output | POINTS | 284 | 1 message |
 
-**Last Checked:** 2026-10-05T02:09:53.748957+00:00
+**Last Checked:** 2026-10-22 13:13:40.225329
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Creates a black and white mask segmenting out an object based on a given input point.
 Send an image with a prompt like (x,y), where x and y are the x and y coordinates of the point in the image. (x and y are numbers, greater than 0 and lesser than the max width/height of the image).
 
+**Extra:** Powered by a server managed by @fal. Learn more
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** image
 
-**Modality:** text->image
+**Modality:** unknown->image
 
 
 ## Technical Details

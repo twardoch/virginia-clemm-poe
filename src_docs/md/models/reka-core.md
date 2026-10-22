@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Total Cost | USD | 0.025 | 1 message |
 | Total Cost | POINTS | 834 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:46.665376+00:00
+**Last Checked:** 2026-10-22 13:37:13.866793
 
 
 ## Bot Information
 
-**Creator:** reka
+**Creator:** @reka
 
 **Description:** Reka's largest and most capable multimodal language model. Works with text, images, and video inputs. 8k context length.
+
+**Extra:** Powered by a server managed by @reka. Learn more
 
 
 ## Architecture
@@ -54,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** reka-core
 
-**API Last Updated:** 2026-10-05 01:48:43.417531
+**API Last Updated:** 2026-10-22 13:58:59.076793

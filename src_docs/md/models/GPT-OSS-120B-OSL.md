@@ -14,7 +14,7 @@ this_file: src_docs/md/models/GPT-OSS-120B-OSL.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $1.52 / 1M tokens · 50 points / 1K tokens |
+| Input Text | 50 points / 1K tokens |
 | Output (Text) | $4.55 / 1M tokens · 150 points / 1K tokens |
 
 All parsed rates (both currencies):
@@ -26,23 +26,25 @@ All parsed rates (both currencies):
 | Output (text) | USD | 4.55 | 1000000 tokens |
 | Output (text) | POINTS | 150 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:09:04.749346+00:00
+**Last Checked:** 2026-10-22 13:05:15.337395
 
 
 ## Bot Information
 
-**Creator:** OpenSourceLab
+**Creator:** @OpenSourceLab
 
 **Description:** OpenAI's open-weight model with apache 2.0 license. It offers advanced chain-of-thought reasoning and was developed with community feedback. This chatbot is specialized in chat conversations and can process file attachments like TXT, PDF, DOCX, CSV, JSON, PY, MD, HTML, YAML. Other non-text formats like Images, audio, video and binaries are not supported. Context window: 128,000 tokens
+
+**Extra:** Powered by a server managed by @OpenSourceLab. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details

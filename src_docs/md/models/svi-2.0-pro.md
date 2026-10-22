@@ -32,12 +32,12 @@ All parsed rates (both currencies):
 | Quality | USD | 0.13 | 1 quality |
 | Quality | POINTS | 4334 | 1 quality |
 
-**Last Checked:** 2026-10-05T02:12:06.428255+00:00
+**Last Checked:** 2026-10-22 13:31:18.519806
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Stable Video Infinity 2.0 Pro, powered by WAN 2.2, generates seamlessly extending, theoretically infinite-length videos from still images while maintaining consistent character IDs. It uses advanced temporal coherence and generative scene expansion to maintain visual consistency, allowing endless, smooth motion and evolving visuals without looping or abrupt transitions.
 
@@ -65,6 +65,8 @@ Parameter controls available:
 3. Text-to-Video Settings
 - t2v quality \[fast or quality\]: Generation mode for text-to-video (Default: quality)
 
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
+
 
 ## Architecture
 
@@ -87,4 +89,4 @@ Parameter controls available:
 
 **Root:** svi-2.0-pro
 
-**API Last Updated:** 2026-10-05 01:48:43.417065
+**API Last Updated:** 2026-10-22 13:58:59.076100

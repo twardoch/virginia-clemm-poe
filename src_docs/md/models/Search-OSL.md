@@ -22,14 +22,16 @@ All parsed rates (both currencies):
 |---|---|---|---|
 | Message cost | POINTS | From 1 | 1 message |
 
-**Last Checked:** 2026-10-05T02:09:48.100745+00:00
+**Last Checked:** 2026-10-22 13:11:54.439697
 
 
 ## Bot Information
 
-**Creator:** OpenSourceLab
+**Creator:** @OpenSourceLab
 
 **Description:** This AI search engine combines live web search with  real-time data, applies advanced reasoning, and returns results while preserving its advantage in high-throughput and fast inference.
+
+**Extra:** Runs inside Poe's protected environment. Learn more
 
 
 ## Architecture

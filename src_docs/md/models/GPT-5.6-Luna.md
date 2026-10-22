@@ -14,7 +14,7 @@ this_file: src_docs/md/models/GPT-5.6-Luna.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.18/1M tokens · 6 points/1k tokens |
+| Input Text | 6 points/1k tokens |
 | Output (Text) | $1.09/1M tokens · 36 points/1k tokens |
 | Output | $0.0091/search · 300 points/search |
 
@@ -29,23 +29,25 @@ All parsed rates (both currencies):
 | Output | USD | 0.0091 | 1 search |
 | Output | POINTS | 300 | 1 search |
 
-**Last Checked:** 2026-10-05T02:09:00.227069+00:00
+**Last Checked:** 2026-10-22 13:03:56.450691
 
 
 ## Bot Information
 
-**Creator:** openai
+**Creator:** @openai
 
 **Description:** OpenAI’s GPT-5.6 Luna for fast, efficient work on focused tasks. For the newer model, use GPT-6-Luna.
+
+**Extra:** Powered by a server managed by @openai. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details

@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Video Output | USD | 0.34 | 1 message |
 | Video Output | POINTS | 11334 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:55.605710+00:00
+**Last Checked:** 2026-10-22 13:38:32.748775
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Open state-of-the-art video generation model with high-fidelity motion and strong prompt adherence. Supports both text-to-video and image-to-video. Generates 5 second video.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -54,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** mochi-preview
 
-**API Last Updated:** 2026-10-05 01:48:43.417878
+**API Last Updated:** 2026-10-22 13:58:59.076993

@@ -30,17 +30,19 @@ All parsed rates (both currencies):
 | 720P | USD | 0.610 | 1 second |
 | 720P | POINTS | 20333 | 1 second |
 
-**Last Checked:** 2026-10-05T02:11:21.027008+00:00
+**Last Checked:** 2026-10-22 13:25:55.792777
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Seedance 2.0 Fast is the speed-optimized version of Seedance 2.0, designed to generate cinematic videos with native audio sync, camera control, and stable motion more quickly. It is a strong choice for rapid iteration and high-volume production because it is built to deliver faster results at a lower cost than the standard version.
 This model is served from Malaysia.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -64,4 +66,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** seedance-2.0-fast-el
 
-**API Last Updated:** 2026-10-05 01:48:43.416111
+**API Last Updated:** 2026-10-22 13:58:59.074998

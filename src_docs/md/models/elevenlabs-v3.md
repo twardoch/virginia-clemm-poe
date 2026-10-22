@@ -14,7 +14,7 @@ this_file: src_docs/md/models/elevenlabs-v3.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.075 / 1k characters · 2.5 points / character |
+| Input Text | 2.5 points / character |
 
 All parsed rates (both currencies):
 
@@ -24,12 +24,12 @@ All parsed rates (both currencies):
 | Input (text) | USD | 0.075 | 1000 characters |
 | Input (text) | POINTS | 2.5 | 1 characters |
 
-**Last Checked:** 2026-10-05T02:11:15.550379+00:00
+**Last Checked:** 2026-10-22 13:25:11.780600
 
 
 ## Bot Information
 
-**Creator:** elevenlabsco
+**Creator:** @elevenlabsco
 
 **Description:** ElevenLabs v3 is a cutting-edge text-to-speech model that brings scripts to life with remarkable realism and performance-level control. Unlike traditional TTS systems, it allows creators to shape the emotional tone, pacing, and soundscape of their audio through the use of inline audio tags. These tags are enclosed in square brackets and act as stage directions—guiding how a line is spoken or what sound effects are inserted—without being spoken aloud. This enables rich, expressive narration and dialogue for applications like audiobooks, games, podcasts, and interactive media. Whether you’re aiming for a tense whisper, a sarcastic remark, or a dramatic soundscape full of explosions and ambient effects, v3 gives you granular control directly in the text prompt. This bot will also run text-to-speech on PDF attachments / URL links.
 
@@ -111,4 +111,4 @@ Prompt input cannot exceed 5,000 characters.
 
 **Root:** elevenlabs-v3
 
-**API Last Updated:** 2026-10-05 01:48:43.416002
+**API Last Updated:** 2026-10-22 13:58:59.074838

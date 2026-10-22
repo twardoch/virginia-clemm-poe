@@ -14,7 +14,7 @@ this_file: src_docs/md/models/OpenAI-TTS-1.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | 825 ($0.025) points / 1K characters |
+| Input Text | 825 ($0.025) points / 1K characters |
 
 All parsed rates (both currencies):
 
@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | Input (text) | USD | 0.025 | 1000 characters |
 | Input (text) | POINTS | 825 | 1000 characters |
 
-**Last Checked:** 2026-10-05T02:09:34.127723+00:00
+**Last Checked:** 2026-10-22 13:09:15.197604
 
 
 ## Bot Information
 
-**Creator:** binaai
+**Creator:** @binaai
 
 **Description:** OpenAI's tts-1 model, brought to Poe as a server bot! This model speaks the text in the latest message and outputs audio. Learn more at https://platform.openai.com/docs/models/tts-1.
 
@@ -36,6 +36,8 @@ Optional parameters:
 - voice: the name of the voice to use: "alloy", "ash", "coral", "echo", "fable", "nova", "onyx", "sage", or "shimmer" (default: sage)
 - speed: the multiplier for how fast you want the audio to be. Ranges from 0.25x to 4x
 - response_format: the file format of the generated audio
+
+**Extra:** Powered by a server managed by @binaai. Learn more
 
 
 ## Architecture

@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Deep Research (per message) | USD | 0.036 | 1 message |
 | Deep Research (per message) | POINTS | 1800 | 1 message |
 
-**Last Checked:** 2026-10-05T02:08:38.928111+00:00
+**Last Checked:** 2026-10-22 13:00:35.867774
 
 
 ## Bot Information
 
-**Creator:** OpenSourceLab
+**Creator:** @OpenSourceLab
 
 **Description:** Deep-Search-Pro combines Brave AI with Relace Search and extended real-time web search. This agent executes commands, cites sources, scrapes websites at scale and delivers a  source breakdown while preserving its hallmark speed advantage. Deep-Search-Pro doesn't accept file attachments.
+
+**Extra:** Powered by a server managed by @OpenSourceLab. Learn more
 
 
 ## Architecture

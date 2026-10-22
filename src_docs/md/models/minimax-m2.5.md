@@ -21,7 +21,7 @@ this_file: src_docs/md/models/minimax-m2.5.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.30/1M tokens · 10 points/1k tokens |
+| Input Text | 10 points/1k tokens |
 | Output (Text) | $1.21/1M tokens · 40 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,14 +33,16 @@ All parsed rates (both currencies):
 | Output (text) | USD | 1.21 | 1000000 tokens |
 | Output (text) | POINTS | 40 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:28.175149+00:00
+**Last Checked:** 2026-10-22 13:44:02.157814
 
 
 ## Bot Information
 
-**Creator:** minimax
+**Creator:** @minimax
 
 **Description:** MiniMax M2.5 is a reasoning model for end-to-end development of complex full-stack systems across web, mobile, desktop, APIs, and databases.
+
+**Extra:** Powered by a server managed by @minimax. Learn more
 
 
 ## Architecture
@@ -64,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** minimax-m2.5
 
-**API Last Updated:** 2026-10-05 01:48:43.418577
+**API Last Updated:** 2026-10-22 13:58:59.077539

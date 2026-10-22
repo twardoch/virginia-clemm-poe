@@ -21,7 +21,7 @@ this_file: src_docs/md/models/gpt-4.1-mini.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.36/1M tokens · 12 points/1k tokens |
+| Input Text | 12 points/1k tokens |
 | Output (Text) | $1.45/1M tokens · 48 points/1k tokens |
 | Output | $0.023/search · 750 points/search |
 
@@ -36,12 +36,12 @@ All parsed rates (both currencies):
 | Output | USD | 0.023 | 1 search |
 | Output | POINTS | 750 | 1 search |
 
-**Last Checked:** 2026-10-05T02:11:36.154284+00:00
+**Last Checked:** 2026-10-22 13:27:44.139101
 
 
 ## Bot Information
 
-**Creator:** openai
+**Creator:** @openai
 
 **Description:** GPT-4.1 mini is a small, fast & affordable model that matches or beats GPT-4o in many intelligence and vision-related tasks. Supports 1M tokens of context.
 
@@ -69,4 +69,4 @@ All parsed rates (both currencies):
 
 **Root:** gpt-4.1-mini
 
-**API Last Updated:** 2026-10-05 01:48:43.416435
+**API Last Updated:** 2026-10-22 13:58:59.075479

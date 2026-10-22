@@ -14,8 +14,8 @@ this_file: src_docs/md/models/GPT-Image-2.5-Flare.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $5.05/1M tokens · 167 points/1k tokens |
-| Input (Image) | $8.08/1M tokens · 267 points/1k tokens |
+| Input Text | 167 points/1k tokens |
+| Input Image | 267 points/1k tokens |
 | Output (Text) | $30.30/1M tokens · 1000 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -29,23 +29,25 @@ All parsed rates (both currencies):
 | Output (text) | USD | 30.30 | 1000000 tokens |
 | Output (text) | POINTS | 1000 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:09:03.737056+00:00
+**Last Checked:** 2026-10-22 13:05:07.401956
 
 
 ## Bot Information
 
-**Creator:** openai
+**Creator:** @openai
 
 **Description:** OpenAI's fast image generation and editing model, designed for high-quality results with lower latency and rapid creative iteration.
+
+**Extra:** Powered by a server managed by @openai. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details

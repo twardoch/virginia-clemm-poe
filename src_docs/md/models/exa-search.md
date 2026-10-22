@@ -32,12 +32,12 @@ All parsed rates (both currencies):
 | Code Search | USD | 0.0061 | 1000 tokens |
 | Code Search | POINTS | 200 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:11:29.858144+00:00
+**Last Checked:** 2026-10-22 13:27:01.961621
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Utilize Exa's technology for searching web pages, finding similar web pages, crawling, and more.
 Note: This endpoint does not return an LLM-style response (visit the following if you want an LLM-style response: https://poe.com/Exa-Answer or https://poe.com/Exa-Research). File upload is not supported. 
@@ -86,6 +86,8 @@ Parameter Controls Available:
 7. Code Search Controls (code operation)
    - `--code_tokens Response Length. Set maximum length of code search results. Select from Dynamic (Optimal), 5000 tokens (Standard), 10000 tokens (Extended), 20000 tokens (Maximum). This is set to Dynamic as default.
 
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
+
 
 ## Architecture
 
@@ -108,4 +110,4 @@ Parameter Controls Available:
 
 **Root:** exa-search
 
-**API Last Updated:** 2026-10-05 01:48:43.416265
+**API Last Updated:** 2026-10-22 13:58:59.075266

@@ -14,7 +14,7 @@ this_file: src_docs/md/models/mistral-small-4.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.15/1M tokens · 5 points/1K tokens |
+| Input Text | 5 points/1K tokens |
 | Output (Text) | $0.60/1M tokens · 20 points/1K tokens |
 | Standard Web Search | $0.084/call · 2800 points/call |
 | Premium Web Search | $0.140/call · 4667 points/call |
@@ -38,12 +38,12 @@ All parsed rates (both currencies):
 | Image Generation | USD | 0.280 | 1 image |
 | Image Generation | POINTS | 9333 | 1 image |
 
-**Last Checked:** 2026-10-05T02:10:44.230117+00:00
+**Last Checked:** 2026-10-22 13:21:58.407628
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Mistral Small 4 is a powerful hybrid model capable of acting as both a general instruction model and a reasoning model. It unifies the capabilities of three different model families—Instruct, Reasoning (previously called Magistral), and Devstral—into a single, unified model.
 
@@ -54,6 +54,8 @@ Notes:
 - Supported input modalities: Text, Image, Documents
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -77,4 +79,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** mistral-small-4
 
-**API Last Updated:** 2026-10-05 01:48:43.415432
+**API Last Updated:** 2026-10-22 13:58:59.074112

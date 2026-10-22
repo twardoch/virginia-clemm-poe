@@ -14,7 +14,7 @@ this_file: src_docs/md/models/TML-Inkling-Small.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.00/message · 0 points/message |
+| Total Cost | 0 points/message |
 
 All parsed rates (both currencies):
 
@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.00 | 1 message |
 | Total cost | POINTS | 0 | 1 message |
 
-**Last Checked:** 2026-10-05T02:10:06.892453+00:00
+**Last Checked:** 2026-10-22 13:15:59.882874
 
 
 ## Bot Information
 
-**Creator:** togetherai
+**Creator:** @togetherai
 
 **Description:** Inkling-Small is Thinking Machines Lab's compact open-weights model, trained with the same recipe as Inkling at roughly a quarter of its size: a Mixture-of-Experts transformer with 276B total parameters and 12B active per token. Like its larger sibling, it reasons natively over text, images, and audio in a shared hidden space, varies its thinking effort to balance cost against quality, and supports a context window of up to 1M tokens. The smaller footprint translates into faster inference and lower serving cost, and Thinking Machines Lab reports it matches Inkling's per-task results on terminal-based coding work at roughly a fifth of the cost. Available on Together AI.
 

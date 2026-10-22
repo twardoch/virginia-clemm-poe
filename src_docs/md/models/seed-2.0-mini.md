@@ -21,7 +21,7 @@ this_file: src_docs/md/models/seed-2.0-mini.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.13/1M tokens · 5 points/1k tokens |
+| Input Text | 5 points/1k tokens |
 | Output (Text) | $0.51/1M tokens · 17 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,12 +33,12 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.51 | 1000000 tokens |
 | Output (text) | POINTS | 17 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:10:51.783041+00:00
+**Last Checked:** 2026-10-22 13:22:45.239348
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Seed-2.0-Mini from Bytedance targets latency-sensitive, high-concurrency, and cost-sensitive scenarios, emphasizing fast response and flexible inference deployment. It supports 256k context, four reasoning effort modes, and multimodal understanding (including image and video), and is optimized for lightweight tasks where cost and speed take priority.
 This model is served from Malaysia.
@@ -54,6 +54,8 @@ Parameter controls available:
 - Web Search: Enable real-time web search for up-to-date information (default: false).
 - Image Detail \[low, high, xhigh\]: Quality for image understanding. Higher = more accurate but uses more tokens (default: high).
 - Video FPS \[0.2-5\]: Frame sampling rate for video input. Higher = more frames analyzed, more accurate, more tokens (default: 1).
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -77,4 +79,4 @@ Parameter controls available:
 
 **Root:** seed-2.0-mini
 
-**API Last Updated:** 2026-10-05 01:48:43.415625
+**API Last Updated:** 2026-10-22 13:58:59.074276

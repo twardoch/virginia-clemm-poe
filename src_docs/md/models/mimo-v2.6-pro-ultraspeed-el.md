@@ -21,7 +21,7 @@ this_file: src_docs/md/models/mimo-v2.6-pro-ultraspeed-el.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $4.39/1M tokens · 145 points/1k tokens |
+| Input Text | 145 points/1k tokens |
 | Output (Text) | $8.79/1M tokens · 290 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,16 +33,18 @@ All parsed rates (both currencies):
 | Output (text) | USD | 8.79 | 1000000 tokens |
 | Output (text) | POINTS | 290 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:54.421694+00:00
+**Last Checked:** 2026-10-22 13:47:54.506483
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** MiMo V2.6 Pro UltraSpeed serves Xiaomi's trillion-parameter flagship at substantially higher output speed. It accepts text, image, and video input with a 1M token context, and supports reasoning and function calling.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -66,4 +68,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** mimo-v2.6-pro-ultraspeed-el
 
-**API Last Updated:** 2026-10-05 01:48:43.419389
+**API Last Updated:** 2026-10-22 13:58:59.078058

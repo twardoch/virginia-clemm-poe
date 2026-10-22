@@ -9,6 +9,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.38] — 2026-10-22
+
+- Ship the refreshed 492-bot catalogue, including all available creator
+  descriptions, disclaimers, API metadata and 473 observed website prices.
+  Nineteen bots have no disclosed numeric rate; four have no creator description
+  and retain their original disclaimers. Rebuild every model page and site JSON.
+- Require session-capable PlaywrightAuthor 1.0.25 for the new browser commands.
+- Build docs with the active Python environment instead of an unrelated global MkDocs.
+- Restore the native search UI using MaterialX's namespaced search plugin and
+  verify catalogue counts against the current data instead of a fixed 501.
+
+
 ### Issue 340 — final verification scope (2026-10-22)
 
 - VCP340-5: Complete the user-selected live verification and direct review gate.

@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Video Generation | USD | 0.057 | 1 second |
 | Video Generation | POINTS | 1874 | 1 second |
 
-**Last Checked:** 2026-10-05T02:09:20.785566+00:00
+**Last Checked:** 2026-10-22 13:07:28.094534
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Kling AI Avatar Standard: Endpoint for creating avatar videos with realistic humans, animals, cartoons, or stylized characters. Send an image and an audio file to generate a video with the character talking.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture

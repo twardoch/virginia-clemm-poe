@@ -23,17 +23,19 @@ All parsed rates (both currencies):
 | Audio Output | USD | 0.051 | 1000 characters |
 | Audio Output | POINTS | 1667 | 1000 characters |
 
-**Last Checked:** 2026-10-05T02:12:01.545914+00:00
+**Last Checked:** 2026-10-22 13:30:45.846882
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Orpheus TTS is a state-of-the-art, Llama-based Speech-LLM designed for high-quality, empathetic text-to-speech generation. Send a text prompt to voice it. 
 
 Optional parameters:
 Choose from one of the available voices (`tara`, `leah`, `jess`, `leo`, `dan`,`mia`, `zac`, `zoe`). Officially supported sound effects are: <laugh>, <chuckle>, <sigh>, <cough>, <sniffle>, <groan>, <yawn>, <gasp>, and <giggle>.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -57,4 +59,4 @@ Choose from one of the available voices (`tara`, `leah`, `jess`, `leo`, `dan`,`m
 
 **Root:** orpheus-tts
 
-**API Last Updated:** 2026-10-05 01:48:43.417015
+**API Last Updated:** 2026-10-22 13:58:59.076036

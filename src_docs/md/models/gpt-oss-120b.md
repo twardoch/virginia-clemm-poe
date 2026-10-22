@@ -21,7 +21,7 @@ this_file: src_docs/md/models/gpt-oss-120b.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.15/1M tokens · 5 points/1k tokens |
+| Input Text | 5 points/1k tokens |
 | Output (Text) | $0.61/1M tokens · 20 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,16 +33,16 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.61 | 1000000 tokens |
 | Output (text) | POINTS | 20 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:24.780690+00:00
+**Last Checked:** 2026-10-22 13:43:08.317427
 
 
 ## Bot Information
 
-**Creator:** openai
+**Creator:** @openai
 
 **Description:** GPT-OSS-120B is OpenAI's open-weight general-purpose model with reasoning and tool-use support.
 
-**Extra:** Powered by a server managed by @novitaai. Learn more
+**Extra:** Powered by a server managed by @openai. Learn more
 
 
 ## Architecture
@@ -66,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** gpt-oss-120b
 
-**API Last Updated:** 2026-10-05 01:48:43.418439
+**API Last Updated:** 2026-10-22 13:58:59.077434

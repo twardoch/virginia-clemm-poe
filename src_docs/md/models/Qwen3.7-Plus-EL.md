@@ -14,9 +14,9 @@ this_file: src_docs/md/models/Qwen3.7-Plus-EL.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.40/1M tokens · 14 points/1k tokens |
+| Input Text | 14 points/1k tokens |
+| Bot Message | 200 points/message |
 | Output (Text) | $1.62/1M tokens · 54 points/1k tokens |
-| Bot Message | $0.0061/message · 200 points/message |
 
 All parsed rates (both currencies):
 
@@ -29,12 +29,12 @@ All parsed rates (both currencies):
 | Bot message | USD | 0.0061 | 1 message |
 | Bot message | POINTS | 200 | 1 message |
 
-**Last Checked:** 2026-10-05T02:09:42.626535+00:00
+**Last Checked:** 2026-10-22 13:10:44.518093
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Among the Qwen3.7 series, the cost-effective Plus model builds on its robust text capabilities while delivering a comprehensive upgrade to its vision‑language abilities, all while preserving its full‑stack agent‑level intelligence for coding, tool use, and productivity workflows. Its key distinguishing feature is multi‑modal interactive hybrid agent capabilities, enabling it to perceive real‑world scenes, read screens and interact with GUIs, generate code based on visual references, and perform end‑to‑end navigation within mobile apps.
 This model is served by Alibaba Cloud Int. from Singapore.
@@ -47,14 +47,16 @@ Notes:
 
 This bot supports optional parameters for additional customization.
 
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details

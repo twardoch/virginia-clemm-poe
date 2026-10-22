@@ -23,17 +23,19 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.056 | 1 message |
 | Image Output | POINTS | 1842 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:14.117102+00:00
+**Last Checked:** 2026-10-22 13:32:36.070168
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Stability.ai's StableDiffusion3.5 Large, hosted by @fal, is the Stable Diffusion family's most powerful image generation model both in terms of image quality and prompt adherence. 
 
 Optional parameters:
 Aspect to select an aspect ratio. Valid aspect ratios are 16:9, 4:3, 1:1, 3:4, 9:16.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -57,4 +59,4 @@ Aspect to select an aspect ratio. Valid aspect ratios are 16:9, 4:3, 1:1, 3:4, 9
 
 **Root:** stablediffusion3.5-l
 
-**API Last Updated:** 2026-10-05 01:48:43.417136
+**API Last Updated:** 2026-10-22 13:58:59.076260

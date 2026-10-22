@@ -32,12 +32,12 @@ All parsed rates (both currencies):
 | Quality | USD | 0.13 | 1 quality |
 | Quality | POINTS | 4334 | 1 quality |
 
-**Last Checked:** 2026-10-05T02:11:09.541404+00:00
+**Last Checked:** 2026-10-22 13:24:32.188742
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** MOSS Video and Audio (MOVA) is an open-source foundation model developed by OpenMOSS that generates synchronized, high-fidelity video and audio in a single end-to-end inference step. Built on a 32-billion parameter Mixture-of-Experts (MoE) architecture, it employs an asymmetric dual-tower design to achieve precise lip-synchronization and eliminate the error accumulation found in traditional cascaded systems. 
 
@@ -65,6 +65,8 @@ Parameter controls available:
 - Seed \[number\] for reproducibility, omit for random
 - Negative prompt "your negative prompt" leave blank for optimized default
 
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
+
 
 ## Architecture
 
@@ -87,4 +89,4 @@ Parameter controls available:
 
 **Root:** moss-video-and-audio
 
-**API Last Updated:** 2026-10-05 01:48:43.415922
+**API Last Updated:** 2026-10-22 13:58:59.074701

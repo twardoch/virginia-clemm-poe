@@ -26,12 +26,12 @@ All parsed rates (both currencies):
 | Video Output with audio | USD | 0.14 | 1 second |
 | Video Output with audio | POINTS | 4667 | 1 second |
 
-**Last Checked:** 2026-10-05T02:11:26.801703+00:00
+**Last Checked:** 2026-10-22 13:26:41.182198
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Generate high-quality videos with native audio from text and images using Kling 2.6 Pro. 
 
@@ -41,6 +41,8 @@ Optional parameters:
 - Set aspect ratio. Select from (16:9, 1:1, 9:16). It is set to 16:9 aspect ratio as default.
 - Set Duration. Select from (5 seconds or 10 seconds) to specify video length in seconds. Set to 5 seconds as default.
 - Silent Mode. Toggle `on` to use silent mode for video generation. This will generate a video without audio, decreasing the cost.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -64,4 +66,4 @@ Optional parameters:
 
 **Root:** kling-2.6-pro
 
-**API Last Updated:** 2026-10-05 01:48:43.416232
+**API Last Updated:** 2026-10-22 13:58:59.075195

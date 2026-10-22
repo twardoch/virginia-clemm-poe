@@ -14,10 +14,10 @@ this_file: src_docs/md/models/App-Generator-Pro.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $2.02/1M tokens · 67 points/1k tokens |
+| Input Text | 67 points/1k tokens |
+| Bot Message | 7500 points/message |
 | Output (Text) | $10.10/1M tokens · 334 points/1k tokens |
 | Output | $0.010/search · 334 points/search |
-| Bot Message | $0.23/message · 7500 points/message |
 
 All parsed rates (both currencies):
 
@@ -32,23 +32,25 @@ All parsed rates (both currencies):
 | Bot message | USD | 0.23 | 1 message |
 | Bot message | POINTS | 7500 | 1 message |
 
-**Last Checked:** 2026-10-05T02:08:29.796516+00:00
+**Last Checked:** 2026-10-22 12:57:57.899506
 
 
 ## Bot Information
 
-**Creator:** OpenSourceLab
+**Creator:** @OpenSourceLab
 
 **Description:** Coding agent that generates, debugs and tests HTML apps within a sophisticated workflow. The agent uses templates and smart prompts for agentic coding. Great for productivity, coding and design apps or games. Popular budget version: https://poe.com/App-Generator
+
+**Extra:** Powered by Claude-Sonnet-5.5, a model that is hosted by Poe and third party model providers. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details

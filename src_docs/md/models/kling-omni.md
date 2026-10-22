@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | Video Output | USD | 0.11 | 1 second |
 | Video Output | POINTS | 3734 | 1 second |
 
-**Last Checked:** 2026-10-05T02:11:14.498879+00:00
+**Last Checked:** 2026-10-22 13:25:03.843408
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Bot for Kling Omni Image-to-Video inference. Send one image for image-to-video generation and two images for first-to-last frame video generation. 
 
@@ -39,6 +39,8 @@ Notes:
 Accepted file type: jpeg, png, webp, heic, heif. 
 This bot does not accept video files.
 Prompt is required after attaching images to generate video.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -62,4 +64,4 @@ Prompt is required after attaching images to generate video.
 
 **Root:** kling-omni
 
-**API Last Updated:** 2026-10-05 01:48:43.415982
+**API Last Updated:** 2026-10-22 13:58:59.074807

@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.0010 | 1 message |
 | Image Output | POINTS | 34 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:51.246263+00:00
+**Last Checked:** 2026-10-22 13:38:07.988638
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Remove background from your images
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -54,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** remove-background
 
-**API Last Updated:** 2026-10-05 01:48:43.417745
+**API Last Updated:** 2026-10-22 13:58:59.076879

@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.010 | 1 message |
 | Image Output | POINTS | 334 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:44.624677+00:00
+**Last Checked:** 2026-10-22 13:37:05.636679
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Stable Diffusion v3 Medium - by fal.ai
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -54,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** stablediffusion3-2b
 
-**API Last Updated:** 2026-10-05 01:48:43.417464
+**API Last Updated:** 2026-10-22 13:58:59.076770

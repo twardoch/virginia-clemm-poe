@@ -26,12 +26,12 @@ All parsed rates (both currencies):
 | Quality (FP16) | USD | 0.21 | 1000 characters |
 | Quality (FP16) | POINTS | 6976 | 1000 characters |
 
-**Last Checked:** 2026-10-05T02:08:57.744410+00:00
+**Last Checked:** 2026-10-22 13:03:35.136291
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** GLM-TTS is a high-quality, LLM-based text-to-speech system that supports zero-shot voice cloning from 3–10 seconds of audio and text-to-speech synthesis. It provides controllable, emotion-expressive speech via multi-reward reinforcement learning, with phoneme-level control and strong performance on the seed-tts-eval benchmark.
 
@@ -62,6 +62,8 @@ Parameter controls available:
 - `--seed \[1-999999\]` for reproducible results (leave empty for random)
 - `--use_cache true` (default) or `--use_cache false` to disable caching
 - '-optimize_input true' (default) or '--optimize_input false' to skip text optimization
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture

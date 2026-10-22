@@ -14,9 +14,9 @@ this_file: src_docs/md/models/Kimi-K2.7-Code-EL.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.96/1M tokens · 32 points/1k tokens |
+| Input Text | 32 points/1k tokens |
+| Bot Message | 167 points/message |
 | Output (Text) | $4.04/1M tokens · 134 points/1k tokens |
-| Bot Message | $0.0051/message · 167 points/message |
 
 All parsed rates (both currencies):
 
@@ -29,25 +29,27 @@ All parsed rates (both currencies):
 | Bot message | USD | 0.0051 | 1 message |
 | Bot message | POINTS | 167 | 1 message |
 
-**Last Checked:** 2026-10-05T02:09:19.279572+00:00
+**Last Checked:** 2026-10-22 13:07:16.837206
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Kimi K2.7 Code is Moonshot's trillion-parameter agentic coding model with 256K context, always-on reasoning, and text, image, and video input. Supports tools, and built-in web search.
 
 This bot supports optional parameters for additional customization.
 
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details

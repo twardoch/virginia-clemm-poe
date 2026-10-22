@@ -26,26 +26,28 @@ All parsed rates (both currencies):
 | Video Output with audio | USD | 0.25 | 1 second |
 | Video Output with audio | POINTS | 8400 | 1 second |
 
-**Last Checked:** 2026-10-05T02:09:21.985396+00:00
+**Last Checked:** 2026-10-22 13:07:40.017657
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Kling v3 Standard Video bot, capable of text to video and image to video. Send a text prompt for text to video, and optionally up to two images for start frame and end frame functionality. 
 Check parameter controls for further details.
 
 Note: Generations may take upwards of 20 minutes to complete.
 
+**Extra:** Powered by a server managed by @fal. Learn more
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** video
 
-**Modality:** text->video
+**Modality:** unknown->video
 
 
 ## Technical Details

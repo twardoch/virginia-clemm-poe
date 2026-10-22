@@ -14,7 +14,7 @@ this_file: src_docs/md/models/gpt-image-1-mini.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $1.8 /1M tokens · 60 points/1k tokens |
+| Input Text | 60 points/1k tokens |
 | Input (Images) | $2.25 /1M tokens · 75 points/1k tokens |
 | High Fidelity Editing | $0.012 · 400 points |
 | Low | 167 points ($0.005) · 200 points ($0.006) · 200 points ($0.006) |
@@ -50,12 +50,12 @@ All parsed rates (both currencies):
 | Image Output (high; 2:3 (1024x1536)) | USD | 0.052 | 1 image |
 | Image Output (high; 2:3 (1024x1536)) | POINTS | 1734 | 1 image |
 
-**Last Checked:** 2026-10-05T02:12:16.506938+00:00
+**Last Checked:** 2026-10-22 13:32:40.105216
 
 
 ## Bot Information
 
-**Creator:** openai
+**Creator:** @openai
 
 **Description:** OpenAI's model that powers image generation in ChatGPT, offering exceptional prompt adherence, level of detail, and quality. It supports editing, restyling, and combining images attached to the latest user query. 
 
@@ -63,6 +63,8 @@ Optional parameters:
 - Aspect ratio of the output image (options: 1:1, 3:2, 2:3). 
 - Quality. Image resolution (options: high, medium, low).
 - Mask. Indicates that the last attached image is a mask for in-painting (editing specific regions). The mask must match the dimensions of the base image, with transparent (zero-alpha) areas showing which parts to edit.
+
+**Extra:** Powered by a server managed by @openai. Learn more
 
 
 ## Architecture
@@ -86,4 +88,4 @@ Optional parameters:
 
 **Root:** gpt-image-1-mini
 
-**API Last Updated:** 2026-10-05 01:48:43.417143
+**API Last Updated:** 2026-10-22 13:58:59.076272

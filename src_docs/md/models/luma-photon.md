@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.019 | 1 message |
 | Image Output | POINTS | 634 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:31.904189+00:00
+**Last Checked:** 2026-10-22 13:34:32.313513
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Luma Photon delivers industry-specific visual excellence, crafting images that align perfectly with professional standards - not just generic AI art. From marketing to creative design, each generation is purposefully tailored to your industry's unique requirements. 
 
@@ -36,6 +36,8 @@ Optional parameters:
 Aspect ratio to change the aspect ratio of your generations (1:1, 16:9, 9:16, 4:3, 3:4, 21:9, 9:21 are supported). 
 
 Note: Prompt input cannot exceed 5,000 characters.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -59,4 +61,4 @@ Note: Prompt input cannot exceed 5,000 characters.
 
 **Root:** luma-photon
 
-**API Last Updated:** 2026-10-05 01:48:43.417260
+**API Last Updated:** 2026-10-22 13:58:59.076496

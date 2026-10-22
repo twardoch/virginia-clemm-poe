@@ -14,7 +14,7 @@ this_file: src_docs/md/models/CartesiaTest2.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.00/message · 0 points/message |
+| Total Cost | 0 points/message |
 
 All parsed rates (both currencies):
 
@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.00 | 1 message |
 | Total cost | POINTS | 0 | 1 message |
 
-**Last Checked:** 2026-10-05T02:08:31.847959+00:00
+**Last Checked:** 2026-10-22 12:59:25.925592
 
 
 ## Bot Information
 
-**Creator:** cartesiateam
+**Creator:** @cartesiateam
 
 **Description:** Unknown
+
+**Extra:** Powered by a server managed by @cartesiateam. Learn more
 
 
 ## Architecture

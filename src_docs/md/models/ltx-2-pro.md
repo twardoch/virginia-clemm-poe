@@ -29,12 +29,12 @@ All parsed rates (both currencies):
 | Video Output 2160p | USD | 0.24 | 1 second |
 | Video Output 2160p | POINTS | 8000 | 1 second |
 
-**Last Checked:** 2026-10-05T02:12:27.735363+00:00
+**Last Checked:** 2026-10-22 13:34:00.580568
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** LTX-2 Pro is an advanced video generation model by Lightricks designed for professional‑grade results. It offers high‑quality, realistic video generation at exceptional speed and supports outputs up to 2K resolution. Perfect for both text‑to‑video and image‑to‑video creation, it delivers cinematic detail and smooth performance.
 
@@ -47,6 +47,8 @@ Set the fps of the generated video to one of 25 or 50. This is set to 25 by defa
 Notes: 
 Duration and resolution values will change the price. 
 File attachment accepted: jpeg, png, webp
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -70,4 +72,4 @@ File attachment accepted: jpeg, png, webp
 
 **Root:** ltx-2-pro
 
-**API Last Updated:** 2026-10-05 01:48:43.417235
+**API Last Updated:** 2026-10-22 13:58:59.076439

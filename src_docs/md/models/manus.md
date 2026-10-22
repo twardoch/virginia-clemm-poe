@@ -35,12 +35,12 @@ All parsed rates (both currencies):
 | Max profile | POINTS | 173334 | 1 max profile |
 | Max profile | POINTS | 303334 | 1 max profile |
 
-**Last Checked:** 2026-10-05T02:10:55.718317+00:00
+**Last Checked:** 2026-10-22 13:23:18.159030
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Manus is an autonomous AI agent that executes tasks. It can take a high-level prompt, break it into subtasks, interact with tools/APIs, and deliver end-to-end results (like reports, code, websites, images, and more) without you managing each step.
 
@@ -49,6 +49,8 @@ Notes:
 - Responses may take several minutes to complete, depending on complexity. 
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -72,4 +74,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** manus
 
-**API Last Updated:** 2026-10-05 01:48:43.415751
+**API Last Updated:** 2026-10-22 13:58:59.074481

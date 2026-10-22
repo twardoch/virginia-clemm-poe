@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.026 | 1 megapixel |
 | Image Output | POINTS | 850 | 1 megapixel |
 
-**Last Checked:** 2026-10-05T02:12:25.533236+00:00
+**Last Checked:** 2026-10-22 13:33:43.428627
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Upscales images with high fidelity to the original image. 
 
@@ -37,6 +37,8 @@ Upscale_factor (value is a number between 1 and 4) to set the upscaled images' s
 Creativity and Clarity can be set between 0 and 1 to alter the faithfulness to the original image and the sharpness, respectively.
 
 Note: This bot supports .jpg, .png, bmp, gif and tiff images.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -60,4 +62,4 @@ Note: This bot supports .jpg, .png, bmp, gif and tiff images.
 
 **Root:** clarity-upscaler
 
-**API Last Updated:** 2026-10-05 01:48:43.417221
+**API Last Updated:** 2026-10-22 13:58:59.076408

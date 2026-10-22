@@ -21,7 +21,7 @@ this_file: src_docs/md/models/mistral-small-3.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.10/1M tokens · 4 points/1k tokens |
+| Input Text | 4 points/1k tokens |
 | Output (Text) | $0.30/1M tokens · 10 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,14 +33,16 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.30 | 1000000 tokens |
 | Output (text) | POINTS | 10 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:12:40.970612+00:00
+**Last Checked:** 2026-10-22 13:36:11.807208
 
 
 ## Bot Information
 
-**Creator:** mistral
+**Creator:** @mistral
 
 **Description:** Mistral Small 3 is a pre-trained and instructed model catered to the ‘80%’ of generative AI tasks--those that require robust language and instruction following performance, with very low latency. Released under an Apache 2.0 license and comparable to Llama-3.3-70B and Qwen2.5-32B-Instruct.
+
+**Extra:** Powered by Mistral. Learn more
 
 
 ## Architecture
@@ -64,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** mistral-small-3
 
-**API Last Updated:** 2026-10-05 01:48:43.417387
+**API Last Updated:** 2026-10-22 13:58:59.076672

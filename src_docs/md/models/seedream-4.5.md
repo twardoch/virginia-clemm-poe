@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.040 | 1 message |
 | Image Output | POINTS | 1334 | 1 message |
 
-**Last Checked:** 2026-10-05T02:11:11.541957+00:00
+**Last Checked:** 2026-10-22 13:24:44.124831
 
 
 ## Bot Information
 
-**Creator:** Bytedance
+**Creator:** @Bytedance
 
 **Description:** Seedream-4.5 is ByteDance's latest and best text-to-image model, capable of impressive high fidelity image generation, with great text-rendering ability. Seedream-4.5 can also take in  multiple images as references and combine them together or edit them to return an output. Pass `--aspect` to set the aspect ratio for the model (One of `16:9`, `4:3`, `1:1`, `3:4`, `9:16`).
+
+**Extra:** Powered by a server managed by @Bytedance. Learn more
 
 
 ## Architecture
@@ -54,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** seedream-4.5
 
-**API Last Updated:** 2026-10-05 01:48:43.415932
+**API Last Updated:** 2026-10-22 13:58:59.074730

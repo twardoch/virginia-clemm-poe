@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Video Generation | USD | 0.14 | 1 second |
 | Video Generation | POINTS | 4667 | 1 second |
 
-**Last Checked:** 2026-10-05T02:12:30.059871+00:00
+**Last Checked:** 2026-10-22 13:34:18.364017
 
 
 ## Bot Information
 
-**Creator:** Bytedance
+**Creator:** @Bytedance
 
 **Description:** OmniHuman, by Bytedance, generates video using an image of a human figure paired with an audio file. It produces vivid, high-quality videos where the character’s emotions and movements maintain a strong correlation with the audio. Send an image including a human figure with a visible face, and an audio, and the bot will return a video. The maximum audio length accepted is 30 seconds.
+
+**Extra:** Powered by a server managed by @Bytedance. Learn more
 
 
 ## Architecture
@@ -54,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** omnihuman
 
-**API Last Updated:** 2026-10-05 01:48:43.417250
+**API Last Updated:** 2026-10-22 13:58:59.076472

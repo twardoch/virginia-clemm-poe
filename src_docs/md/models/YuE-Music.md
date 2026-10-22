@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | Music Output | USD | 1.52 | 1 message |
 | Music Output | POINTS | 50000 | 1 message |
 
-**Last Checked:** 2026-10-05T02:10:14.486524+00:00
+**Last Checked:** 2026-10-22 13:17:26.726036
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** YuE is a groundbreaking series of open-source foundation models designed for music generation, specifically for transforming lyrics into full songs (lyrics2song). It can generate a complete song, that includes both a catchy vocal track and accompaniment track.
 
@@ -44,6 +44,8 @@ line 2
 -
 ```
 You can control genre/ song voices, etc. by describing it with --genres.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture

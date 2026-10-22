@@ -23,23 +23,25 @@ All parsed rates (both currencies):
 | Video Output | USD | 0.43 | 1 message |
 | Video Output | POINTS | 14167 | 1 message |
 
-**Last Checked:** 2026-10-05T02:09:06.482520+00:00
+**Last Checked:** 2026-10-22 13:06:13.127227
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Hailuo Live, the latest model from Minimax, sets a new standard for bringing still images to life. From breathtakingly vivid motion to finely tuned expressions, this state-of-the-art model enables your characters to captivate, move, and shine like never before. It excels in bring art and drawings to life, exceptional realism without morphing, emotional range, and unparalleled character consistency. Generates 5 second video.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** video
 
-**Modality:** text->video
+**Modality:** unknown->video
 
 
 ## Technical Details

@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | Video Output | USD | 0.042 | 1 second |
 | Video Output | POINTS | 1400 | 1 second |
 
-**Last Checked:** 2026-10-05T02:12:19.096680+00:00
+**Last Checked:** 2026-10-22 13:32:52.586957
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Generate high-quality videos from images using Kling 2.5 Turbo Standard. 
 
@@ -40,6 +40,8 @@ Optional parameters:
 Note: Only Image to Video is supported, aspect ratio is inferred automatically from the image and cannot be set.
 
 Supported image file format: jpeg, png, webp
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -63,4 +65,4 @@ Supported image file format: jpeg, png, webp
 
 **Root:** kling-2.5-turbo-std
 
-**API Last Updated:** 2026-10-05 01:48:43.417153
+**API Last Updated:** 2026-10-22 13:58:59.076306

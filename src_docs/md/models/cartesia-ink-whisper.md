@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | Output (audio) | USD | 0.13 | 1 hour |
 | Output (audio) | POINTS | 4200 | 1 hour |
 
-**Last Checked:** 2026-10-05T02:11:44.509799+00:00
+**Last Checked:** 2026-10-22 13:28:51.800509
 
 
 ## Bot Information
 
-**Creator:** cartesiateam
+**Creator:** @cartesiateam
 
 **Description:** Transcribe audio files using Speech-to-Text with the Cartesia Ink Whisper model.
 
@@ -136,6 +136,8 @@ Javanese (jw)
 Sundanese (su)
 Cantonese (yue)
 
+**Extra:** Powered by a server managed by @cartesiateam. Learn more
+
 
 ## Architecture
 
@@ -158,4 +160,4 @@ Cantonese (yue)
 
 **Root:** cartesia-ink-whisper
 
-**API Last Updated:** 2026-10-05 01:48:43.416675
+**API Last Updated:** 2026-10-22 13:58:59.075702

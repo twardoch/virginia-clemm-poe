@@ -8,21 +8,13 @@ this_file: src_docs/md/models/GitHub.md
 
 [Comparison method and assumptions](../pricing-method.md).
 
-## Pricing
-
-### Website Pricing
-
-| Type | Cost |
-|------|------|
-
-**Last Checked:** 2026-10-05T02:09:05.710987+00:00
-
-
 ## Bot Information
 
-**Creator:** opentools
+**Creator:** @opentools
 
 **Description:** Unknown
+
+**Extra:** Powered by a server managed by @opentools. Learn more
 
 
 ## Architecture

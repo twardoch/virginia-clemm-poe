@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Total Cost | USD | 0.00081 | 1 message |
 | Total Cost | POINTS | 27 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:46.784305+00:00
+**Last Checked:** 2026-10-22 13:37:18.295619
 
 
 ## Bot Information
 
-**Creator:** reka
+**Creator:** @reka
 
 **Description:** Reka's efficient and capable 21B multimodal model optimized for fast workloads and amazing quality. Works with text, images and video inputs.
+
+**Extra:** Powered by a server managed by @reka. Learn more
 
 
 ## Architecture
@@ -54,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** reka-flash
 
-**API Last Updated:** 2026-10-05 01:48:43.417536
+**API Last Updated:** 2026-10-22 13:58:59.076801

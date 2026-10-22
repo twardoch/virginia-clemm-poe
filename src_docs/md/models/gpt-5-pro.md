@@ -21,7 +21,7 @@ this_file: src_docs/md/models/gpt-5-pro.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $13.64/1M tokens · 450 points/1k tokens |
+| Input Text | 450 points/1k tokens |
 | Output (Text) | $109.09/1M tokens · 3600 points/1k tokens |
 | Output | $0.0091/search · 300 points/search |
 
@@ -36,12 +36,12 @@ All parsed rates (both currencies):
 | Output | USD | 0.0091 | 1 search |
 | Output | POINTS | 300 | 1 search |
 
-**Last Checked:** 2026-10-05T02:11:18.489198+00:00
+**Last Checked:** 2026-10-22 13:25:31.514823
 
 
 ## Bot Information
 
-**Creator:** openai
+**Creator:** @openai
 
 **Description:** OpenAI’s latest flagship model with significantly improved coding skills, long context (400k tokens), and improved instruction following. Supports native vision, and generally has more intelligence than GPT-4.1.
 
@@ -72,4 +72,4 @@ GPT-5-Pro thinks long and hard. When using this bot through the API, consider in
 
 **Root:** gpt-5-pro
 
-**API Last Updated:** 2026-10-05 01:48:43.416045
+**API Last Updated:** 2026-10-22 13:58:59.074898

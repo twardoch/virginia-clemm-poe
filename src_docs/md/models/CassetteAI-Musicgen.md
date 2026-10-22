@@ -23,23 +23,25 @@ All parsed rates (both currencies):
 | Audio Output | USD | 0.00035 | 1 second |
 | Audio Output | POINTS | 12 | 1 second |
 
-**Last Checked:** 2026-10-05T02:08:32.685382+00:00
+**Last Checked:** 2026-10-22 12:59:30.163404
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** CassetteAI’s model generates a 44.1 kHz professional quality, 30-second stereo audio sample in under 2 seconds and a full 3-minute track in under 10 seconds.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** audio
 
-**Modality:** text->audio
+**Modality:** unknown->audio
 
 
 ## Technical Details

@@ -21,7 +21,7 @@ this_file: src_docs/md/models/gpt-5.1.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $1.14/1M tokens · 38 points/1k tokens |
+| Input Text | 38 points/1k tokens |
 | Output (Text) | $9.09/1M tokens · 300 points/1k tokens |
 | Output | $0.0091/search · 300 points/search |
 
@@ -36,16 +36,18 @@ All parsed rates (both currencies):
 | Output | USD | 0.0091 | 1 search |
 | Output | POINTS | 300 | 1 search |
 
-**Last Checked:** 2026-10-05T02:11:17.729515+00:00
+**Last Checked:** 2026-10-22 13:25:27.534949
 
 
 ## Bot Information
 
-**Creator:** openai
+**Creator:** @openai
 
 **Description:** OpenAI’s flagship general‑purpose model, built for advanced reasoning, comprehension, and creativity. It delivers robust performance across text and code, with significant improvements in factual accuracy, long‑context understanding, and multilingual fluency. Ideal for research, content creation, analysis, and problem‑solving in any domain. 
 
 Supports 400k of input context window.
+
+**Extra:** Powered by OpenAI: gpt-5.1. Learn more
 
 
 ## Architecture
@@ -69,4 +71,4 @@ Supports 400k of input context window.
 
 **Root:** gpt-5.1
 
-**API Last Updated:** 2026-10-05 01:48:43.416029
+**API Last Updated:** 2026-10-22 13:58:59.074881

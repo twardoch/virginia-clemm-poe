@@ -20,7 +20,7 @@ this_file: src_docs/md/models/tako.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.030/message · 1000 points/message |
+| Total Cost | 1000 points/message |
 
 All parsed rates (both currencies):
 
@@ -29,14 +29,16 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.030 | 1 message |
 | Total cost | POINTS | 1000 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:51.396201+00:00
+**Last Checked:** 2026-10-22 13:38:12.205884
 
 
 ## Bot Information
 
-**Creator:** trytako
+**Creator:** @trytako
 
 **Description:** Tako is a bot that transforms your questions about stocks, sports, economics or politics into interactive, shareable knowledge cards from trusted sources. Tako's knowledge graph is built exclusively from authoritative, real-time data providers, and is embeddable in your apps, research and storytelling. You can adjust the specificity threshold by typing `--specificity 30` (or a value between 0 - 100) at the end of your query/question; the default is 60.
+
+**Extra:** Powered by a server managed by @trytako. Learn more
 
 
 ## Architecture
@@ -60,4 +62,4 @@ All parsed rates (both currencies):
 
 **Root:** tako
 
-**API Last Updated:** 2026-10-05 01:48:43.417766
+**API Last Updated:** 2026-10-22 13:58:59.076889

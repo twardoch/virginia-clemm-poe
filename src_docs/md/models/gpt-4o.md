@@ -14,7 +14,7 @@ this_file: src_docs/md/models/gpt-4o.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $4.53 /1M tokens · 151 points/1k tokens |
+| Input Text | 151 points/1k tokens |
 | Output (Text) | $9.0 /1M tokens · 300 points/1k tokens |
 | Input (Images) | $9.03 /1M tokens · 301 points/1k tokens |
 | High Fidelity Editing | $0.06 · 2000 points |
@@ -58,12 +58,12 @@ All parsed rates (both currencies):
 | Image Output (high; 2:3 (1024x1536)) | USD | 0.22 | 1 image |
 | Image Output (high; 2:3 (1024x1536)) | POINTS | 7488 | 1 image |
 
-**Last Checked:** 2026-10-05T02:11:33.891098+00:00
+**Last Checked:** 2026-10-22 13:27:27.613214
 
 
 ## Bot Information
 
-**Creator:** openai
+**Creator:** @openai
 
 **Description:** OpenAI's GPT-4o answers user prompts in a natural, engaging & tailored writing with strong overall world knowledge. Uses GPT-Image-1 to create and edit images conversationally. For fine-grained image generation control (e.g. image quality), use https://poe.com/GPT-Image-1. Supports context window of 128k tokens.
 
@@ -91,4 +91,4 @@ All parsed rates (both currencies):
 
 **Root:** gpt-4o
 
-**API Last Updated:** 2026-10-05 01:48:43.416368
+**API Last Updated:** 2026-10-22 13:58:59.075407

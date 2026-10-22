@@ -21,7 +21,7 @@ this_file: src_docs/md/models/gemma-4-31b-n.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.14/1M tokens · 5 points/1k tokens |
+| Input Text | 5 points/1k tokens |
 | Output (Text) | $0.40/1M tokens · 14 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,12 +33,12 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.40 | 1000000 tokens |
 | Output (text) | POINTS | 14 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:10:53.458945+00:00
+**Last Checked:** 2026-10-22 13:22:57.705807
 
 
 ## Bot Information
 
-**Creator:** novitaai
+**Creator:** @novitaai
 
 **Description:** Gemma 4 31B is engineered to tackle the most demanding enterprise workloads and complex reasoning tasks. With an expansive 256K-token context window, the 31B model can effortlessly ingest entire codebases, and massive sets of images in a single prompt. It boasts state-of-the-art vision-language capabilities, allowing developers to freely interleave text and images. It excels at parsing UI screens, comprehending complex charts, and executing multilingual OCR or handwriting recognition. Combined with native structured Function Calling, robust code generation, and out-of-the-box fluency in 35+ languages, Gemma 4 31B is the ultimate foundation for building sophisticated, autonomous AI agents and heavy-duty multimodal analysis pipelines.
 
@@ -46,6 +46,8 @@ File Support: Text, Markdown, Image and PDF files
 Context window: 262k tokens
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @novitaai. Learn more
 
 
 ## Architecture
@@ -69,4 +71,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** gemma-4-31b-n
 
-**API Last Updated:** 2026-10-05 01:48:43.415679
+**API Last Updated:** 2026-10-22 13:58:59.074346

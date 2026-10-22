@@ -20,7 +20,7 @@ this_file: src_docs/md/models/solar-pro-2.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.0021/message · 70 points/message |
+| Total Cost | 70 points/message |
 
 All parsed rates (both currencies):
 
@@ -29,14 +29,16 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.0021 | 1 message |
 | Total cost | POINTS | 70 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:50.214280+00:00
+**Last Checked:** 2026-10-22 13:37:49.216531
 
 
 ## Bot Information
 
-**Creator:** upstage
+**Creator:** @upstage
 
 **Description:** Solar Pro 2 is Upstage's latest frontier-scale LLM. With just 31B parameters, it delivers top-tier performance through world-class multilingual support, advanced reasoning, and real-world tool use. Especially in Korean, it outperforms much larger models across critical benchmarks. Built for the next generation of practical LLMs, Solar Pro 2 proves that smaller models can still lead. Supports a context length of 64k tokens.
+
+**Extra:** Powered by an open source model hosted by Poe. Learn more
 
 
 ## Architecture
@@ -60,4 +62,4 @@ All parsed rates (both currencies):
 
 **Root:** solar-pro-2
 
-**API Last Updated:** 2026-10-05 01:48:43.417737
+**API Last Updated:** 2026-10-22 13:58:59.076860

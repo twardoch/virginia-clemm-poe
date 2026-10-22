@@ -35,16 +35,18 @@ All parsed rates (both currencies):
 | Search Queries | USD | 0.012 | 1 query |
 | Search Queries | POINTS | 400 | 1 query |
 
-**Last Checked:** 2026-10-05T02:11:55.839767+00:00
+**Last Checked:** 2026-10-22 13:30:04.481327
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Perplexity Deep Research is a research-focused model designed for multi-step retrieval, synthesis, and reasoning across complex topics. It autonomously searches, reads, and evaluates sources, refining its approach as it gathers information. This enables comprehensive report generation across domains like finance, technology, health, and current events. Context Length: 128k
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -68,4 +70,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** perplexity-deep-research
 
-**API Last Updated:** 2026-10-05 01:48:43.416935
+**API Last Updated:** 2026-10-22 13:58:59.075931

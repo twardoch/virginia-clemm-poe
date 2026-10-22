@@ -22,14 +22,16 @@ All parsed rates (both currencies):
 |---|---|---|---|
 | Message cost | POINTS | From 1 | 1 message |
 
-**Last Checked:** 2026-10-05T02:10:14.307053+00:00
+**Last Checked:** 2026-10-22 13:17:09.179121
 
 
 ## Bot Information
 
-**Creator:** OpenSourceLab
+**Creator:** @OpenSourceLab
 
 **Description:** Get instant answers thought AI-powered search. Combining speed, reasoning and accuracy. Find what you need, quickly and easily. Web-Search-AI is based on an AI-powered search engine with internet scraping capabilities. To enable source mode use the `--source` flag. To activate deep thinking mode, use the flag `--deep`. Add `--tool` for Poe bot search. Tools and data analysis will cost additional points.
+
+**Extra:** Runs inside Poe's protected environment. Learn more
 
 
 ## Architecture

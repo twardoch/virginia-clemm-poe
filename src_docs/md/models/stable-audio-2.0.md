@@ -26,12 +26,12 @@ All parsed rates (both currencies):
 | Per Step Cost | USD | 0.0021 | 1 step cost |
 | Per Step Cost | POINTS | 69 | 1 step cost |
 
-**Last Checked:** 2026-10-05T02:11:59.907516+00:00
+**Last Checked:** 2026-10-22 13:30:34.011506
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Stable Audio 2.0 generates audio up to 3 minutes long from text prompts, supporting text-to-audio and audio-to-audio transformations with customizable settings like duration, steps, CFG scale, and more. It is ideal for creative professionals seeking detailed and extended outputs from simple prompts.
 
@@ -52,6 +52,8 @@ Parameter controls available:
 
 4. Transformation control (only for audio-to-audio)
 - Strength \[0-1\]`: How much to change/transform (0.3-0.7 typical)
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -75,4 +77,4 @@ Parameter controls available:
 
 **Root:** stable-audio-2.0
 
-**API Last Updated:** 2026-10-05 01:48:43.417003
+**API Last Updated:** 2026-10-22 13:58:59.076013

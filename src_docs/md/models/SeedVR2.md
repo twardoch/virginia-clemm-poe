@@ -23,23 +23,25 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.0010 | 1 megapixel |
 | Image Output | POINTS | 34 | 1 megapixel |
 
-**Last Checked:** 2026-10-05T02:09:50.524106+00:00
+**Last Checked:** 2026-10-22 13:12:13.342732
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Upscale images with SeedVR2. Supports jpeg, png, webp.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** image
 
-**Modality:** text->image
+**Modality:** unknown->image
 
 
 ## Technical Details

@@ -23,23 +23,25 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.040 | 1 message |
 | Image Output | POINTS | 1334 | 1 message |
 
-**Last Checked:** 2026-10-05T02:08:30.879155+00:00
+**Last Checked:** 2026-10-22 12:58:48.529477
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Bria GenFill enables high-quality object addition or visual transformation. Trained exclusively on licensed data for safe and risk-free commercial use.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** image
 
-**Modality:** text->image
+**Modality:** unknown->image
 
 
 ## Technical Details

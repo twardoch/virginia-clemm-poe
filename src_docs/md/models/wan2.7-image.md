@@ -26,12 +26,12 @@ All parsed rates (both currencies):
 | Wan 2.7 Image Pro | USD | 0.075 | 1 image |
 | Wan 2.7 Image Pro | POINTS | 2500 | 1 image |
 
-**Last Checked:** 2026-10-05T02:11:07.216347+00:00
+**Last Checked:** 2026-10-22 13:24:19.936818
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Wan2.7 Image is Alibaba's Wan 2.7 series image generation and editing model, supporting text-to-image, image editing, interactive editing with bounding boxes, and cohesive image set generation from a single prompt. The Pro variant supports up to 4K output resolution with enhanced quality, while the Standard variant offers faster generation at lower cost.
 
@@ -50,6 +50,8 @@ Attachments (Image Editing Mode):
 - Supported operations: style transfer, object placement, graffiti/texture application, scene blending, background replacement, multi-reference composition, and more.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -73,4 +75,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** wan2.7-image
 
-**API Last Updated:** 2026-10-05 01:48:43.415912
+**API Last Updated:** 2026-10-22 13:58:59.074668

@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.030 | 1 message |
 | Image Output | POINTS | 992 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:38.338528+00:00
+**Last Checked:** 2026-10-22 13:35:49.787384
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Given an image and a mask (separate images), fills in the region of the image given by the mask as per the prompt. The base image should be the first image attached and the black-and-white mask should be the second image; a text prompt is required and should specify what you want the model to inpaint in the white area of the mask.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -54,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** flux-fill
 
-**API Last Updated:** 2026-10-05 01:48:43.417324
+**API Last Updated:** 2026-10-22 13:58:59.076608

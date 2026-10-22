@@ -14,7 +14,7 @@ this_file: src_docs/md/models/Minimax-M2.7-T.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.00/message · 0 points/message |
+| Total Cost | 0 points/message |
 
 All parsed rates (both currencies):
 
@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.00 | 1 message |
 | Total cost | POINTS | 0 | 1 message |
 
-**Last Checked:** 2026-10-05T02:09:27.737722+00:00
+**Last Checked:** 2026-10-22 13:08:20.858159
 
 
 ## Bot Information
 
-**Creator:** togetherai
+**Creator:** @togetherai
 
 **Description:** MiniMax-M2.7 is MiniMax's first model deeply participating in its own evolution. M2.7 is capable of building complex agent harnesses and completing highly elaborate productivity tasks, leveraging Agent Teams, complex Skills, and dynamic tool search. M2.7 delivers outstanding real-world programming capabilities spanning log analysis, bug troubleshooting, refactoring, code security, and machine learning.
 

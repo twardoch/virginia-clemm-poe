@@ -47,12 +47,12 @@ All parsed rates (both currencies):
 | Map (with Instructions) | USD | 0.019 | 10 pages |
 | Map (with Instructions) | POINTS | 640 | 10 pages |
 
-**Last Checked:** 2026-10-05T02:10:08.361209+00:00
+**Last Checked:** 2026-10-22 13:16:09.679439
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Utilize Tavily's technology to search web pages and to crawl, extract, and map URLs.
 Note: File upload is not supported.
@@ -115,6 +115,8 @@ Parameter controls available:
 - `--map_exclude_domains "regex"`: Regex patterns for domains to exclude
 - `--map_allow_external true`: Include external domain links
 - `--map_timeout \[10-150\]`: Max time to wait for map operation (seconds)
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture

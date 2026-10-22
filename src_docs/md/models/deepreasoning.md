@@ -21,9 +21,9 @@ this_file: src_docs/md/models/deepreasoning.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $5.05/1M tokens · 167 points/1k tokens |
+| Input Text | 167 points/1k tokens |
+| Bot Message | 334 points/message |
 | Output (Text) | $10.10/1M tokens · 334 points/1k tokens |
-| Bot Message | $0.010/message · 334 points/message |
 
 All parsed rates (both currencies):
 
@@ -36,18 +36,20 @@ All parsed rates (both currencies):
 | Bot message | USD | 0.010 | 1 message |
 | Bot message | POINTS | 334 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:39.896989+00:00
+**Last Checked:** 2026-10-22 13:36:02.345718
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** DeepReasoning (previously DeepClaude) is a high-performance LLM inference that combines DeepSeek R1's Chain of Thought (CoT) reasoning capabilities with Anthropic Claude's creative and code generation prowess. It provides a unified interface for leveraging the strengths of both models while maintaining complete control over your data. Learn more: https://deepclaude.com/
 
 Supported file type upload: PDF, TXT, PNG, JPG, JPEG
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -71,4 +73,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** deepreasoning
 
-**API Last Updated:** 2026-10-05 01:48:43.417350
+**API Last Updated:** 2026-10-22 13:58:59.076636

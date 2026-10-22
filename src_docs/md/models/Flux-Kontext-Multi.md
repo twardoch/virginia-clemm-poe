@@ -23,23 +23,25 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.081 | 1 message |
 | Image Output | POINTS | 2667 | 1 message |
 
-**Last Checked:** 2026-10-05T02:08:54.060370+00:00
+**Last Checked:** 2026-10-22 13:03:00.869001
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Experimental version of FLUX.1 Kontext \[max\] with multi image handling capabilities. Send two images with a prompt to combine them, merge styles, etc.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** image
 
-**Modality:** text->image
+**Modality:** unknown->image
 
 
 ## Technical Details

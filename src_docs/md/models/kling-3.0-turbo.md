@@ -26,12 +26,12 @@ All parsed rates (both currencies):
 | 1080P | USD | 0.225 | 1 second |
 | 1080P | POINTS | 7500 | 1 second |
 
-**Last Checked:** 2026-10-05T02:13:17.252782+00:00
+**Last Checked:** 2026-10-22 13:42:04.950738
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Kling 3.0 Turbo is a fast video generation model that produces high-quality videos with synchronized native audio, at 720p or 1080p resolution. It supports Text-to-Video and Image-to-Video, with multi-shot prompting for up to 6 sequential scenes in a single clip.
 
@@ -55,6 +55,8 @@ Input Limits & Requirements
 
 This bot supports optional parameters for additional customization.
 
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
+
 
 ## Architecture
 
@@ -77,4 +79,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** kling-3.0-turbo
 
-**API Last Updated:** 2026-10-05 01:48:43.418228
+**API Last Updated:** 2026-10-22 13:58:59.077273

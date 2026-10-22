@@ -21,7 +21,7 @@ this_file: src_docs/md/models/deepseek-v4-pro-0813-el.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $1.33/1M tokens · 44 points/1k tokens |
+| Input Text | 44 points/1k tokens |
 | Output (Text) | $4.00/1M tokens · 132 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,16 +33,18 @@ All parsed rates (both currencies):
 | Output (text) | USD | 4.00 | 1000000 tokens |
 | Output (text) | POINTS | 132 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:42.233883+00:00
+**Last Checked:** 2026-10-22 13:45:44.278183
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** DeepSeek V4 Pro 0813 is the official DeepSeek Pro release with stronger agent, coding, and tool-use performance. It accepts text input with a 1M token context, hybrid thinking, and function calling.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -66,4 +68,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** deepseek-v4-pro-0813-el
 
-**API Last Updated:** 2026-10-05 01:48:43.418875
+**API Last Updated:** 2026-10-22 13:58:59.077817

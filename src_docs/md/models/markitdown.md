@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Markdown conversion | USD | 0.0030 | 1 markdown conversion |
 | Markdown conversion | POINTS | 100 | 1 markdown conversion |
 
-**Last Checked:** 2026-10-05T02:12:54.180132+00:00
+**Last Checked:** 2026-10-22 13:38:28.714571
 
 
 ## Bot Information
 
-**Creator:** opentools
+**Creator:** @opentools
 
 **Description:** Convert anything to Markdown: URLs, PDFs, Word, Excel, images (EXIF metadata), audio (EXIF metadata and transcription), and more. This bot wraps Microsoft’s MarkItDown MCP server (https://github.com/microsoft/markitdown).
+
+**Extra:** Powered by a server managed by @opentools. Learn more
 
 
 ## Architecture
@@ -54,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** markitdown
 
-**API Last Updated:** 2026-10-05 01:48:43.417856
+**API Last Updated:** 2026-10-22 13:58:59.076985

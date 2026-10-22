@@ -22,12 +22,12 @@ All parsed rates (both currencies):
 |---|---|---|---|
 | Message cost | POINTS | From 1 | 1 message |
 
-**Last Checked:** 2026-10-05T02:09:11.457228+00:00
+**Last Checked:** 2026-10-22 13:06:52.974110
 
 
 ## Bot Information
 
-**Creator:** OpenSourceLab
+**Creator:** @OpenSourceLab
 
 **Description:** Hyperrealistic photo and image generator for professional use. Adjust numerous aspects, such as colors, composition, lighting, textures or specific details like object positioning, perspective and depth.  It can also transform images (image to image), which will consume additional points.
 
@@ -76,6 +76,8 @@ Examples:
 - Facebook/Instagram Ad: `--resize 1080x1080` `--brightness 12` `--contrast 28` `--saturation 22` `--sharpen 4`
 - E-Commerce Ad: `--brightness 8` `--contrast 18` `--saturation 12` `--filter clean`
 - Cinematic Brand ad: `--contrast 25` `--saturation -10` `--colorize teal` `--filter cinematic`
+
+**Extra:** Runs inside Poe's protected environment. Learn more
 
 
 ## Architecture

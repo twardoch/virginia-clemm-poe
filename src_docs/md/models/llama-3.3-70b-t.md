@@ -20,7 +20,7 @@ this_file: src_docs/md/models/llama-3.3-70b-t.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.0039/message · 130 points/message |
+| Total Cost | 130 points/message |
 
 All parsed rates (both currencies):
 
@@ -29,14 +29,16 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.0039 | 1 message |
 | Total cost | POINTS | 130 | 1 message |
 
-**Last Checked:** 2026-10-05T02:11:48.487163+00:00
+**Last Checked:** 2026-10-22 13:29:07.801563
 
 
 ## Bot Information
 
-**Creator:** togetherai
+**Creator:** @togetherai
 
 **Description:** Llama 3.3 70B – with similar performance as Llama 3.1 405B while being faster and much smaller! Llama 3.3 70B is a new open source model that delivers leading performance and quality across text-based use cases such as synthetic data generation at a fraction of the inference cost, improving over Llama 3.1 70B.
+
+**Extra:** Powered by a server managed by @togetherai. Learn more
 
 
 ## Architecture
@@ -60,4 +62,4 @@ All parsed rates (both currencies):
 
 **Root:** llama-3.3-70b-t
 
-**API Last Updated:** 2026-10-05 01:48:43.416796
+**API Last Updated:** 2026-10-22 13:58:59.075775

@@ -21,7 +21,7 @@ this_file: src_docs/md/models/mimo-v2.6-flash-el.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.14/1M tokens · 5 points/1k tokens |
+| Input Text | 5 points/1k tokens |
 | Output (Text) | $0.28/1M tokens · 10 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,16 +33,18 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.28 | 1000000 tokens |
 | Output (text) | POINTS | 10 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:55.549537+00:00
+**Last Checked:** 2026-10-22 13:47:58.576662
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** MiMo V2.6 Flash is Xiaomi's low-cost reasoning model for high-frequency and large-scale workloads. It accepts text, image, and video input with a 1M token context, and supports reasoning, function calling, and native web search.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -66,4 +68,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** mimo-v2.6-flash-el
 
-**API Last Updated:** 2026-10-05 01:48:43.419426
+**API Last Updated:** 2026-10-22 13:58:59.078072

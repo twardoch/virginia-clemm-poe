@@ -23,17 +23,19 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.081 | 1 message |
 | Image Output | POINTS | 2667 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:07.756100+00:00
+**Last Checked:** 2026-10-22 13:31:30.745400
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** FLUX.1 Kontext \[max\] is a new premium model from Black Forest Labs that brings maximum performance across all aspects. Send a prompt to generate an image, or send an image along with an instruction to edit the image.  
 
 Optional parameters:
 Set the aspect ratio for text-to-image-generation. Available aspect ratio (21:9, 16:9, 4:3, 1:1, 3:4, 9:16, & 9:21)
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -57,4 +59,4 @@ Set the aspect ratio for text-to-image-generation. Available aspect ratio (21:9,
 
 **Root:** flux-kontext-max
 
-**API Last Updated:** 2026-10-05 01:48:43.417076
+**API Last Updated:** 2026-10-22 13:58:59.076123

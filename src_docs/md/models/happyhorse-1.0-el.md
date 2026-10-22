@@ -26,12 +26,12 @@ All parsed rates (both currencies):
 | 1080P | USD | 0.24 | 1 second |
 | 1080P | POINTS | 8000 | 1 second |
 
-**Last Checked:** 2026-10-05T02:13:08.039420+00:00
+**Last Checked:** 2026-10-22 13:41:06.012549
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** HappyHorse 1.0 is a video generation model, capable of creating high-fidelity, motion-smooth videos from text, images, or by editing existing videos. It supports four generation modes: Text-to-Video (T2V), Image-to-Video (I2V), Reference-to-Video (R2V), and Video Edit.
 
@@ -51,6 +51,8 @@ Attachments:
 - Videos are validated (MP4/MOV, ≤100 MB, 3–15s) and auto-transcoded/trimmed if needed.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -74,4 +76,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** happyhorse-1.0-el
 
-**API Last Updated:** 2026-10-05 01:48:43.417991
+**API Last Updated:** 2026-10-22 13:58:59.077055

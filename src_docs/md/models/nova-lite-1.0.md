@@ -21,7 +21,7 @@ this_file: src_docs/md/models/nova-lite-1.0.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.070/1M tokens · 3 points/1k tokens |
+| Input Text | 3 points/1k tokens |
 | Output (Text) | $0.28/1M tokens · 10 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,12 +33,12 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.28 | 1000000 tokens |
 | Output (text) | POINTS | 10 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:11:25.494366+00:00
+**Last Checked:** 2026-10-22 13:26:33.386139
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Amazon Nova Lite is a low‑cost multimodal foundation model from Amazon that can process text, images, and video and is optimized for speed and affordability. It offers a context window of 300,000 tokens, allowing handling of very large inputs in a single request (including up to ~30 minutes of video).
 
@@ -66,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** nova-lite-1.0
 
-**API Last Updated:** 2026-10-05 01:48:43.416220
+**API Last Updated:** 2026-10-22 13:58:59.075168

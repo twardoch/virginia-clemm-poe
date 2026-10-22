@@ -23,23 +23,25 @@ All parsed rates (both currencies):
 | Audio Output | USD | 0.0030 | 1 message |
 | Audio Output | POINTS | 100 | 1 message |
 
-**Last Checked:** 2026-10-05T02:09:56.690763+00:00
+**Last Checked:** 2026-10-22 13:14:07.287572
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Generate audio effects using prompts using StableAudio.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** audio
 
-**Modality:** text->audio
+**Modality:** unknown->audio
 
 
 ## Technical Details

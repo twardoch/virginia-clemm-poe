@@ -14,10 +14,10 @@ this_file: src_docs/md/models/Transcribe-Audio.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.30/1M tokens · 10 points/1k tokens |
+| Input Text | 10 points/1k tokens |
+| Bot Message | 750 points/message |
 | Output (Text) | $2.53/1M tokens · 84 points/1k tokens |
 | Output | $0.014/search · 467 points/search |
-| Bot Message | $0.023/message · 750 points/message |
 
 All parsed rates (both currencies):
 
@@ -32,23 +32,25 @@ All parsed rates (both currencies):
 | Bot message | USD | 0.023 | 1 message |
 | Bot message | POINTS | 750 | 1 message |
 
-**Last Checked:** 2026-10-05T02:10:10.144823+00:00
+**Last Checked:** 2026-10-22 13:16:17.837916
 
 
 ## Bot Information
 
-**Creator:** OpenSourceLab
+**Creator:** @OpenSourceLab
 
 **Description:** Transcribes MP4, WAV, FLAC or MP3 audio files into plain text automatically to get searchable, editable text content to enhance productivity and accessibility of your content. Perfect for meetings, podcasts, lectures, podcast editing, lecture notes, audio document conversion, transcription services for content creators and research material. After processing, you can review the transcribed text. For best results, ensure the audio file contains clear speech and is in a supported format.
+
+**Extra:** Powered by Gemini-3.5-Flash-Lite, a model that is hosted by Poe and third party model providers. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details

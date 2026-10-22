@@ -71,14 +71,16 @@ All parsed rates (both currencies):
 | Zoom / Pan | USD | 0.51 | 1 pan |
 | Zoom / Pan | POINTS | 16800 | 1 pan |
 
-**Last Checked:** 2026-10-05T02:09:25.828705+00:00
+**Last Checked:** 2026-10-22 13:08:04.662041
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Midjourney generates high-quality images and videos from text prompts, supporting features like text-to-image creation, image-to-image transformations, image-to-video conversion, upscaling, style variations, and more.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture

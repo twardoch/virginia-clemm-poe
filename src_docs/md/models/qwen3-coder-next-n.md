@@ -1,8 +1,8 @@
 ---
-this_file: src_docs/md/models/qwen3-coder-next-n.md
+this_file: src_docs/md/models/Qwen3-Coder-Next-N.md
 ---
 
-# [qwen3-coder-next-n](https://poe.com/qwen3-coder-next-n){ .md-button .md-button--primary }
+# [Qwen3-Coder-Next-N](https://poe.com/Qwen3-Coder-Next-N){ .md-button .md-button--primary }
 
 **Tier 2:** 28.5 points · 1,000 tokens (500 input + 500 output)
 
@@ -10,18 +10,11 @@ this_file: src_docs/md/models/qwen3-coder-next-n.md
 
 ## Pricing
 
-### API Pricing (USD)
-
-| Type | Cost |
-|------|------|
-| Prompt | $2.02E-7/token |
-| Completion | $0.0000015152/token |
-
 ### Website Pricing
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.20/1M tokens · 7 points/1k tokens |
+| Input Text | 7 points/1k tokens |
 | Output (Text) | $1.52/1M tokens · 50 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,39 +26,43 @@ All parsed rates (both currencies):
 | Output (text) | USD | 1.52 | 1000000 tokens |
 | Output (text) | POINTS | 50 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:11:02.271270+00:00
+**Last Checked:** 2026-10-22 13:10:33.315850
 
 
 ## Bot Information
 
-**Creator:** novitaai
+**Creator:** @novitaai
 
-**Description:** Qwen3-Coder-Next is an open-weight language model specifically engineered for coding agents and local development environments. This highly efficient model delivers exceptional performance with only 3B activated parameters out of 80B total parameters, achieving results comparable to models with 10-20x more active parameters while maintaining remarkable cost-effectiveness for agent deployment. Through its sophisticated training methodology, Qwen3-Coder-Next excels in advanced agentic capabilities including long-horizon reasoning, complex tool usage, and robust recovery from execution failures, ensuring reliable performance across dynamic coding tasks. The model's versatility is further enhanced by its 256k context length and adaptability to various scaffold templates, enabling seamless integration with diverse CLI/IDE platforms such as Claude Code, Qwen Code, Qoder, Kilo, Trae, and Cline, making it an ideal solution for comprehensive development environments.
+**Description:** Try https://poe.com/Qwen3-Coder-Next for the first-party Qwen bot.
+
+Qwen3-Coder-Next is an open-weight language model specifically engineered for coding agents and local development environments. This highly efficient model delivers exceptional performance with only 3B activated parameters out of 80B total parameters, achieving results comparable to models with 10-20x more active parameters while maintaining remarkable cost-effectiveness for agent deployment. Through its sophisticated training methodology, Qwen3-Coder-Next excels in advanced agentic capabilities including long-horizon reasoning, complex tool usage, and robust recovery from execution failures, ensuring reliable performance across dynamic coding tasks. The model's versatility is further enhanced by its 256k context length and adaptability to various scaffold templates, enabling seamless integration with diverse CLI/IDE platforms such as Claude Code, Qwen Code, Qoder, Kilo, Trae, and Cline, making it an ideal solution for comprehensive development environments.
 
 Optional parameters:
 Set temperature to control randomness in the response: Set number from 1 to 2.  This is set to 0.7 by default. Lower values make the output more focused and deterministic.
 Set max output tokens: Set number from 1 to 65536. This is set to 65536 by default.
 
+**Extra:** Powered by a server managed by @novitaai. Learn more
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details
 
-**Model ID:** `qwen3-coder-next-n`
+**Model ID:** `Qwen3-Coder-Next-N`
 
-**Object Type:** model
+**Object Type:** bot
 
-**Created:** 1770157079067
+**Created:** Unknown
 
-**Owned By:** Novita AI
+**Owned By:** novitaai
 
-**Root:** qwen3-coder-next-n
+**Root:** Qwen3-Coder-Next-N
 
-**API Last Updated:** 2026-10-05 01:48:43.415872
+**API Last Updated:** Not listed in API

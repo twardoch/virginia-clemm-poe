@@ -14,7 +14,7 @@ this_file: src_docs/md/models/Claude-Sonnet-5.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $2.02/1M tokens · 67 points/1k tokens |
+| Input Text | 67 points/1k tokens |
 | Output (Text) | $10.10/1M tokens · 334 points/1k tokens |
 | Output | $0.010/search · 334 points/search |
 
@@ -29,25 +29,27 @@ All parsed rates (both currencies):
 | Output | USD | 0.010 | 1 search |
 | Output | POINTS | 334 | 1 search |
 
-**Last Checked:** 2026-10-05T02:08:36.805024+00:00
+**Last Checked:** 2026-10-22 12:59:57.648733
 
 
 ## Bot Information
 
-**Creator:** anthropic
+**Creator:** @anthropic
 
 **Description:** Claude Sonnet 5 is Anthropic's previous-generation Sonnet model for coding, tool use, and knowledge work. For the newer model, try Claude Sonnet 5.5: https://poe.com/Claude-Sonnet-5.5.
 
 This bot supports optional parameters for advanced customization.
 
+**Extra:** Powered by a server managed by @anthropic. Learn more
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details

@@ -21,7 +21,7 @@ this_file: src_docs/md/models/gpt-4o-mini.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.14/1M tokens · 5 points/1k tokens |
+| Input Text | 5 points/1k tokens |
 | Output (Text) | $0.55/1M tokens · 18 points/1k tokens |
 | Output | $0.023/search · 750 points/search |
 
@@ -36,14 +36,16 @@ All parsed rates (both currencies):
 | Output | USD | 0.023 | 1 search |
 | Output | POINTS | 750 | 1 search |
 
-**Last Checked:** 2026-10-05T02:11:44.897737+00:00
+**Last Checked:** 2026-10-22 13:28:55.967147
 
 
 ## Bot Information
 
-**Creator:** openai
+**Creator:** @openai
 
 **Description:** This intelligent small model from OpenAI is significantly smarter, cheaper, and just as fast as GPT-3.5 Turbo.
+
+**Extra:** Powered by OpenAI: gpt-4o-mini-2024-07-18. Learn more
 
 
 ## Architecture
@@ -67,4 +69,4 @@ All parsed rates (both currencies):
 
 **Root:** gpt-4o-mini
 
-**API Last Updated:** 2026-10-05 01:48:43.416688
+**API Last Updated:** 2026-10-22 13:58:59.075717

@@ -22,14 +22,16 @@ All parsed rates (both currencies):
 |---|---|---|---|
 | Message Cost | POINTS | 200 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:30.817861+00:00
+**Last Checked:** 2026-10-22 13:34:23.582600
 
 
 ## Bot Information
 
-**Creator:** OpenSourceLab
+**Creator:** @OpenSourceLab
 
 **Description:** Deep search engine that integrates Brave AI with real-time web search. This research assistant executes commands, validates facts and scrapes websites at scale while preserving its hallmark speed and intelligence advantage. Deep-AI-Search doesn't accept file attachments.
+
+**Extra:** Powered by a server managed by @OpenSourceLab. Learn more
 
 
 ## Architecture
@@ -53,4 +55,4 @@ All parsed rates (both currencies):
 
 **Root:** deep-ai-search
 
-**API Last Updated:** 2026-10-05 01:48:43.417253
+**API Last Updated:** 2026-10-22 13:58:59.076480

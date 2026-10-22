@@ -14,7 +14,7 @@ this_file: src_docs/md/models/Gemma-4-31B-T.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.00/message · 0 points/message |
+| Total Cost | 0 points/message |
 
 All parsed rates (both currencies):
 
@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.00 | 1 message |
 | Total cost | POINTS | 0 | 1 message |
 
-**Last Checked:** 2026-10-05T02:09:05.631908+00:00
+**Last Checked:** 2026-10-22 13:05:41.285872
 
 
 ## Bot Information
 
-**Creator:** togetherai
+**Creator:** @togetherai
 
 **Description:** Gemma 4 models are designed to deliver frontier-level performance at each size, targeting deployment scenarios on consumer GPUs and workstations. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding. Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages.
 

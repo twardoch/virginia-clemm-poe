@@ -21,7 +21,7 @@ this_file: src_docs/md/models/gemini-3.5-flash-lite.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.30/1M tokens · 10 points/1k tokens |
+| Input Text | 10 points/1k tokens |
 | Output (Text) | $2.53/1M tokens · 84 points/1k tokens |
 | Output | $0.014/search · 467 points/search |
 
@@ -36,14 +36,16 @@ All parsed rates (both currencies):
 | Output | USD | 0.014 | 1 search |
 | Output | POINTS | 467 | 1 search |
 
-**Last Checked:** 2026-10-05T02:10:26.258782+00:00
+**Last Checked:** 2026-10-22 13:19:36.712663
 
 
 ## Bot Information
 
-**Creator:** google
+**Creator:** @google
 
 **Description:** Google’s fastest, most cost-efficient Gemini 3.5 model, built for high-volume work. Analyze text, images, audio, and video, adjust reasoning effort, search the web for current information, and work with up to 1M tokens of context.
+
+**Extra:** Powered by a server managed by @google. Learn more
 
 
 ## Architecture
@@ -67,4 +69,4 @@ All parsed rates (both currencies):
 
 **Root:** gemini-3.5-flash-lite
 
-**API Last Updated:** 2026-10-05 01:48:43.414928
+**API Last Updated:** 2026-10-22 13:58:59.073638

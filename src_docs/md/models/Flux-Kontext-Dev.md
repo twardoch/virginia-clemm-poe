@@ -23,23 +23,25 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.021 | 1 megapixel |
 | Image Output | POINTS | 709 | 1 megapixel |
 
-**Last Checked:** 2026-10-05T02:08:53.395270+00:00
+**Last Checked:** 2026-10-22 13:02:57.074556
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** FLUX.1 Kontext \[dev\] is a new developer model from Black Forest Labs, especially for image editing. Send an image along with an instruction to edit the image. Priced based on number of output megapixels, rounded up.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** image
 
-**Modality:** text->image
+**Modality:** unknown->image
 
 
 ## Technical Details

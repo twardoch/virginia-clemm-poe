@@ -26,12 +26,12 @@ All parsed rates (both currencies):
 | Audio + Video Output | USD | 0.15 | 1 second |
 | Audio + Video Output | POINTS | 5000 | 1 second |
 
-**Last Checked:** 2026-10-05T02:12:26.612612+00:00
+**Last Checked:** 2026-10-22 13:33:51.796532
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Google's Veo 3.1 Fast is a fast version of Veo 3.1.
 
@@ -42,6 +42,8 @@ Set negative prompt option `blur`, `low resolution`, `poor quality`. (only for T
 Set the duration `4s`, `6s`, `8s`, default `8s`. `4s` and `6s` are only supported for text-to-video generation
 
 Note: Pass a single image for image to video tasks. Pass two images for a first-frame-to-last-frame video generation task.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -65,4 +67,4 @@ Note: Pass a single image for image to video tasks. Pass two images for a first-
 
 **Root:** veo-v3.1-fast
 
-**API Last Updated:** 2026-10-05 01:48:43.417228
+**API Last Updated:** 2026-10-22 13:58:59.076424

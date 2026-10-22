@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Total Cost | USD | 0.0006 | 1 message |
 | Total Cost | POINTS | 200 | 1 message |
 
-**Last Checked:** 2026-10-05T02:09:29.583531+00:00
+**Last Checked:** 2026-10-22 13:08:36.004210
 
 
 ## Bot Information
 
-**Creator:** OpenSourceLab
+**Creator:** @OpenSourceLab
 
 **Description:** Multimodal open source model released in April 2026 under a modified MIT License. The model has 128B parameters and is optimized for agentic workflows, coding and strong system prompt adherence. Great for role playing and small coding projects. Context window: 256k tokens
+
+**Extra:** Powered by a server managed by @OpenSourceLab. Learn more
 
 
 ## Architecture

@@ -23,17 +23,19 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.021 | 1 message |
 | Image Output | POINTS | 709 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:08.892670+00:00
+**Last Checked:** 2026-10-22 13:31:38.559715
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** FLUX-Krea is a version of FLUX Dev tuned for superior aesthetics. 
 
 Optional parameters:
 Select an aspect ratio. Valid aspect ratios are 16:9, 4:3, 1:1, 3:4, 9:16.  Send an image to have this model reimagine/regenerate it via FLUX Krea Redux.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -57,4 +59,4 @@ Select an aspect ratio. Valid aspect ratios are 16:9, 4:3, 1:1, 3:4, 9:16.  Send
 
 **Root:** flux-krea
 
-**API Last Updated:** 2026-10-05 01:48:43.417082
+**API Last Updated:** 2026-10-22 13:58:59.076174

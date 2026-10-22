@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.16 | 1 message |
 | Image Output | POINTS | 5334 | 1 message |
 
-**Last Checked:** 2026-10-05T02:08:54.337533+00:00
+**Last Checked:** 2026-10-22 13:03:04.585432
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Outpainting bot based upon Flux-1.1-Pro. Given an image and a prompt, can expand the borders of an image according to your prompt. Use --horizontal and one of "left", "center", or "right" to set the horizontal position of the input image within the final image, and use --vertical with "top"," bottom", or "center" to set the vertical position of the image in the final image.
 
@@ -36,14 +36,16 @@ For more precise image placement, you can use --h_pos and --v_pos by sending num
 
 Decide the amount to be outpainted with --scale (a number between 0.0 and 1.0, including 0.0 and 1.0). 0.0 implies a very low expansion while 1.0 denotes a very large expansion.
 
+**Extra:** Powered by a server managed by @fal. Learn more
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** image
 
-**Modality:** text->image
+**Modality:** unknown->image
 
 
 ## Technical Details

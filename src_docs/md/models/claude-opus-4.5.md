@@ -21,7 +21,7 @@ this_file: src_docs/md/models/claude-opus-4.5.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $4.29/1M tokens · 142 points/1k tokens |
+| Input Text | 142 points/1k tokens |
 | Output (Text) | $21.46/1M tokens · 709 points/1k tokens |
 | Output | $0.010/search · 334 points/search |
 
@@ -36,14 +36,16 @@ All parsed rates (both currencies):
 | Output | USD | 0.010 | 1 search |
 | Output | POINTS | 334 | 1 search |
 
-**Last Checked:** 2026-10-05T02:11:12.949589+00:00
+**Last Checked:** 2026-10-22 13:24:51.958632
 
 
 ## Bot Information
 
-**Creator:** anthropic
+**Creator:** @anthropic
 
 **Description:** Claude Opus 4.5 from Anthropic, supports customizable thinking budget (up to 64k tokens) and 200k context window.
+
+**Extra:** Powered by Anthropic: claude-opus-4-5-20251101. Learn more
 
 
 ## Architecture
@@ -67,4 +69,4 @@ All parsed rates (both currencies):
 
 **Root:** claude-opus-4.5
 
-**API Last Updated:** 2026-10-05 01:48:43.415950
+**API Last Updated:** 2026-10-22 13:58:59.074752

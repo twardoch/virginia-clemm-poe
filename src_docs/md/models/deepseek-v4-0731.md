@@ -21,7 +21,7 @@ this_file: src_docs/md/models/deepseek-v4-0731.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.14/1M tokens · 5 points/1k tokens |
+| Input Text | 5 points/1k tokens |
 | Output (Text) | $0.28/1M tokens · 10 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,17 +33,21 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.28 | 1000000 tokens |
 | Output (text) | POINTS | 10 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:43.394830+00:00
+**Last Checked:** 2026-10-22 13:45:56.311957
 
 
 ## Bot Information
 
-**Creator:** novitaai
+**Creator:** @novitaai
 
-**Description:** DeepSeek V4 Flash 0731 is a sparse mixture-of-experts model from DeepSeek, with 13B active parameters out of 284B total. This re-post-trained revision is suited for coding, reasoning, and agent workflows.
+**Description:** Try https://poe.com/DeepSeek-V4.1-Flash-1017 for the first-party DeepSeek bot.
+
+DeepSeek V4 Flash 0731 is a sparse mixture-of-experts model from DeepSeek, with 13B active parameters out of 284B total. This re-post-trained revision is suited for coding, reasoning, and agent workflows.
 
 File Support: Text, Markdown and PDF files
 Context window: 1M tokens
+
+**Extra:** Powered by a server managed by @novitaai. Learn more
 
 
 ## Architecture
@@ -67,4 +71,4 @@ Context window: 1M tokens
 
 **Root:** deepseek-v4-0731
 
-**API Last Updated:** 2026-10-05 01:48:43.418913
+**API Last Updated:** 2026-10-22 13:58:59.077859

@@ -20,7 +20,7 @@ this_file: src_docs/md/models/gemma-4-31b.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.00/message · 0 points/message |
+| Total Cost | 0 points/message |
 
 All parsed rates (both currencies):
 
@@ -29,14 +29,16 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.00 | 1 message |
 | Total cost | POINTS | 0 | 1 message |
 
-**Last Checked:** 2026-10-05T02:10:43.115709+00:00
+**Last Checked:** 2026-10-22 13:21:50.475125
 
 
 ## Bot Information
 
-**Creator:** google
+**Creator:** @google
 
 **Description:** Google's most capable open model, delivering frontier-class reasoning and multimodal understanding in a 31 billion parameter dense architecture. Gemma 4 supports a 256K token context window, understands over 140 languages, and accepts both text and image inputs. It features built-in chain-of-thought reasoning for complex multi-step tasks, strong coding and math performance, and function calling support. Released under the Apache 2.0 license, Gemma 4 31B offers competitive performance with leading proprietary models while being fully open-weight. This bot may experience degraded performance due to high traffic to this model.
+
+**Extra:** Powered by Google: gemma-4-31b-it. Learn more
 
 
 ## Architecture
@@ -60,4 +62,4 @@ All parsed rates (both currencies):
 
 **Root:** gemma-4-31b
 
-**API Last Updated:** 2026-10-05 01:48:43.415341
+**API Last Updated:** 2026-10-22 13:58:59.074078

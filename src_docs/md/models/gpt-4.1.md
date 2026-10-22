@@ -21,7 +21,7 @@ this_file: src_docs/md/models/gpt-4.1.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $1.82/1M tokens · 60 points/1k tokens |
+| Input Text | 60 points/1k tokens |
 | Output (Text) | $7.27/1M tokens · 240 points/1k tokens |
 | Output | $0.023/search · 750 points/search |
 
@@ -36,12 +36,12 @@ All parsed rates (both currencies):
 | Output | USD | 0.023 | 1 search |
 | Output | POINTS | 750 | 1 search |
 
-**Last Checked:** 2026-10-05T02:11:35.990945+00:00
+**Last Checked:** 2026-10-22 13:27:40.119020
 
 
 ## Bot Information
 
-**Creator:** openai
+**Creator:** @openai
 
 **Description:** OpenAI’s GPT-4.1 significantly improves on past models in terms of its coding skills, long context (1M tokens), and improved instruction following. Supports native vision, and generally has more intelligence than GPT-4o. Provides a 75% chat history cache discount.
 
@@ -69,4 +69,4 @@ All parsed rates (both currencies):
 
 **Root:** gpt-4.1
 
-**API Last Updated:** 2026-10-05 01:48:43.416418
+**API Last Updated:** 2026-10-22 13:58:59.075460

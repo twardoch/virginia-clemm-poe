@@ -8,21 +8,13 @@ this_file: src_docs/md/models/code-editor.md
 
 [Comparison method and assumptions](../pricing-method.md).
 
-## Pricing
-
-### Website Pricing
-
-| Type | Cost |
-|------|------|
-
-**Last Checked:** 2026-10-05T02:21:42.064399+00:00
-
-
 ## Bot Information
 
-**Creator:** poe_tools
+**Creator:** @poe_tools
 
 **Description:** Official code editor for Poe Scripting using Python, used to connect multiple Poe bots and create AI workflows. Guide and tips: https://creator.poe.com/docs/script-bots/poe-python-reference
+
+**Extra:** Powered by Poe. Learn more
 
 
 ## Architecture
@@ -46,4 +38,4 @@ this_file: src_docs/md/models/code-editor.md
 
 **Root:** code-editor
 
-**API Last Updated:** 2026-10-05 01:48:43.417913
+**API Last Updated:** 2026-10-22 13:58:59.077017

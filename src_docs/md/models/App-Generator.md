@@ -14,10 +14,10 @@ this_file: src_docs/md/models/App-Generator.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.10/1M tokens · 4 points/1k tokens |
+| Input Text | 4 points/1k tokens |
+| Bot Message | 750 points/message |
 | Output (Text) | $0.51/1M tokens · 17 points/1k tokens |
 | Output | $0.010/search · 334 points/search |
-| Bot Message | $0.023/message · 750 points/message |
 
 All parsed rates (both currencies):
 
@@ -32,23 +32,25 @@ All parsed rates (both currencies):
 | Bot message | USD | 0.023 | 1 message |
 | Bot message | POINTS | 750 | 1 message |
 
-**Last Checked:** 2026-10-05T02:08:29.671286+00:00
+**Last Checked:** 2026-10-22 12:57:53.460718
 
 
 ## Bot Information
 
-**Creator:** OpenSourceLab
+**Creator:** @OpenSourceLab
 
 **Description:** Agentic web app developer made for creating canvas web apps, powered by a massive context window, it refines and polishes your app. App-Generator does multi-step-reasoning to preview, debug and refine complete HTML applications in real time. This bot is updated frequently to ensure you’re always using the most efficient, modern, and cost-effective AI available.
+
+**Extra:** Powered by GPT-6-Luna, a model that is hosted by Poe and third party model providers. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details

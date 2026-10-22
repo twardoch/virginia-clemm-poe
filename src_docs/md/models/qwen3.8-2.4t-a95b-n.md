@@ -21,7 +21,7 @@ this_file: src_docs/md/models/qwen3.8-2.4t-a95b-n.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $2.02/1M tokens · 67 points/1k tokens |
+| Input Text | 67 points/1k tokens |
 | Output (Text) | $6.06/1M tokens · 200 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,17 +33,21 @@ All parsed rates (both currencies):
 | Output (text) | USD | 6.06 | 1000000 tokens |
 | Output (text) | POINTS | 200 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:47.708104+00:00
+**Last Checked:** 2026-10-22 13:46:20.690344
 
 
 ## Bot Information
 
-**Creator:** novitaai
+**Creator:** @novitaai
 
-**Description:** Qwen3.8 2.4T A95B is an open-weight sparse mixture-of-experts model from Qwen and the open-weight variant of Qwen3.8 Max, with 95 billion active parameters out of 2.4 trillion total. It is suited for coding, research, complex reasoning, and agentic workflows.Text-only.
+**Description:** Try https://poe.com/Qwen3.8-2.4T-A95B-Alibaba for the first-party Qwen bot.
+
+Qwen3.8 2.4T A95B is an open-weight sparse mixture-of-experts model from Qwen and the open-weight variant of Qwen3.8 Max, with 95 billion active parameters out of 2.4 trillion total. It is suited for coding, research, complex reasoning, and agentic workflows.Text-only.
 
 File Support: Text, Markdown and PDF files
 Context window: 1M tokens
+
+**Extra:** Powered by a server managed by @novitaai. Learn more
 
 
 ## Architecture
@@ -67,4 +71,4 @@ Context window: 1M tokens
 
 **Root:** qwen3.8-2.4t-a95b-n
 
-**API Last Updated:** 2026-10-05 01:48:43.419052
+**API Last Updated:** 2026-10-22 13:58:59.077931

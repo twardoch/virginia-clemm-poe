@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Video Output | USD | 0.43 | 1 message |
 | Video Output | POINTS | 14167 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:35.671473+00:00
+**Last Checked:** 2026-10-22 13:35:30.043432
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Best-in-class text and image to video model by MiniMax.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -54,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** hailuo-ai
 
-**API Last Updated:** 2026-10-05 01:48:43.417286
+**API Last Updated:** 2026-10-22 13:58:59.076560

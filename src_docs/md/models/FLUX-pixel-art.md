@@ -10,7 +10,7 @@ this_file: src_docs/md/models/FLUX-pixel-art.md
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Generate pixel art images with FLUX.1 \[dev\]
 

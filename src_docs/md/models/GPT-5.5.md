@@ -14,7 +14,7 @@ this_file: src_docs/md/models/GPT-5.5.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $4.55/1M tokens · 150 points/1k tokens |
+| Input Text | 150 points/1k tokens |
 | Output (Text) | $27.27/1M tokens · 900 points/1k tokens |
 | Output | $0.0091/search · 300 points/search |
 
@@ -29,23 +29,25 @@ All parsed rates (both currencies):
 | Output | USD | 0.0091 | 1 search |
 | Output | POINTS | 300 | 1 search |
 
-**Last Checked:** 2026-10-05T02:08:59.245398+00:00
+**Last Checked:** 2026-10-22 13:03:48.239495
 
 
 ## Bot Information
 
-**Creator:** openai
+**Creator:** @openai
 
 **Description:** GPT-5.5 is OpenAI's smartest and most intuitive model, built for agentic coding, computer use, knowledge work, and early scientific research. It handles complex multi-step tasks with less guidance, figures out what needs to happen next on unclear problems, and matches GPT-5.4 per-token latency while delivering a much higher level of intelligence. Achieves state-of-the-art accuracy on Terminal-Bench 2.0 and SWE-Bench Pro, solving more tasks end-to-end in a single pass than previous models. Supports 400k tokens of input context and native vision.
+
+**Extra:** Powered by OpenAI: gpt-5.5. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details

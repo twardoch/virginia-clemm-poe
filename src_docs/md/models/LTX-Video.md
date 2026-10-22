@@ -23,23 +23,25 @@ All parsed rates (both currencies):
 | Video Output | USD | 0.034 | 1 message |
 | Video Output | POINTS | 1134 | 1 message |
 
-**Last Checked:** 2026-10-05T02:09:22.965053+00:00
+**Last Checked:** 2026-10-22 13:07:48.391193
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Generate high quality videos quickly using LTX-Video-v0.95. Send an image with your prompt for an image-to-video functionality.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** video
 
-**Modality:** text->video
+**Modality:** unknown->video
 
 
 ## Technical Details

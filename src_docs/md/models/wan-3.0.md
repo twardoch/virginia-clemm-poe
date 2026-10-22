@@ -34,12 +34,12 @@ All parsed rates (both currencies):
 | Prime | USD | 0.560 | 1 second |
 | Prime | POINTS | 18667 | 1 second |
 
-**Last Checked:** 2026-10-05T02:13:43.374145+00:00
+**Last Checked:** 2026-10-22 13:45:52.359534
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Wan 3.0 generates video clips of 2 to 30 seconds with synchronized native audio, with Standard and Prime (faster) tiers.
 
@@ -49,6 +49,8 @@ Generation modes
 - Reference mode: combine up to 10 images, 5 video clips, and 5 audio clips, and address them in your prompt as Image 1, Video 1, Audio 1
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -72,4 +74,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** wan-3.0
 
-**API Last Updated:** 2026-10-05 01:48:43.418899
+**API Last Updated:** 2026-10-22 13:58:59.077847

@@ -21,38 +21,37 @@ this_file: src_docs/md/models/glm-5.3-flash.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.15/1M tokens · 5 points/1k tokens |
+| Input Text | 5 points/1k tokens |
 | Output (Text) | $0.51/1M tokens · 17 points/1k tokens |
 
 All parsed rates (both currencies):
 
 | Service | Currency | Amount | Per |
 |---|---|---|---|
-| Input (text) | USD | 0.15 | 1000000 tokens |
-| Input (text) | POINTS | 5 | 1000 tokens |
+| Input | USD | 0.15 | 1000000 tokens |
+| Input | POINTS | 5 | 1000 tokens |
 | Output (text) | USD | 0.51 | 1000000 tokens |
 | Output (text) | POINTS | 17 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:44.491914+00:00
+**Last Checked:** 2026-10-22 13:46:00.264988
 
 
 ## Bot Information
 
-**Creator:** novitaai
+**Creator:** @zai
 
-**Description:** GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while reducing compute overhead.
+**Description:** Z.ai’s efficient GLM 5.3 Flash model for coding, text, and image understanding, with a 1M-token context window.
 
-File Support: Text, Markdown, Image, Video and PDF files
-Context window: 1M tokens
+**Extra:** Powered by a server managed by @zai. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text, image, video
+**Input Modalities:** text, image
 
 **Output Modalities:** text
 
-**Modality:** text,image,video->text
+**Modality:** text,image->text
 
 
 ## Technical Details
@@ -61,10 +60,10 @@ Context window: 1M tokens
 
 **Object Type:** model
 
-**Created:** 1787764343541
+**Created:** 1792604057086
 
-**Owned By:** Novita AI
+**Owned By:** Z.ai
 
 **Root:** glm-5.3-flash
 
-**API Last Updated:** 2026-10-05 01:48:43.418930
+**API Last Updated:** 2026-10-22 13:58:59.074924

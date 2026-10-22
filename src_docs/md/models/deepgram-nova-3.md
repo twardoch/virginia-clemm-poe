@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | Transcription | USD | 0.014 | 1 transcription |
 | Transcription | POINTS | 474 | 1 transcription |
 
-**Last Checked:** 2026-10-05T02:12:02.066732+00:00
+**Last Checked:** 2026-10-22 13:30:49.859040
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Transcribe audio files using Speech-to-Text technology with the Deepgram Nova-3 model, featuring multi-language support and advanced customizable settings.
 
@@ -64,6 +64,8 @@ Dutch
 
 \[4\] Key Terms. Enter important terms to improve recognition accuracy, separated by commas. English only, Limited to 500 tokens total.
 
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
+
 
 ## Architecture
 
@@ -86,4 +88,4 @@ Dutch
 
 **Root:** deepgram-nova-3
 
-**API Last Updated:** 2026-10-05 01:48:43.417019
+**API Last Updated:** 2026-10-22 13:58:59.076044

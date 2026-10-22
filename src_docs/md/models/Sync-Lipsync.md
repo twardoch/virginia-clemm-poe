@@ -23,24 +23,26 @@ All parsed rates (both currencies):
 | Video Output | USD | 0.71 | 1 message |
 | Video Output | POINTS | 23334 | 1 message |
 
-**Last Checked:** 2026-10-05T02:10:06.046544+00:00
+**Last Checked:** 2026-10-22 13:15:51.820719
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Generate realistic lipsync animations from audio using advanced algorithms for high-quality synchronization. 
 Attach the video file first and the audio file second, and it will match the audio track to the video!
 
+**Extra:** Powered by a server managed by @fal. Learn more
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** video
 
-**Modality:** text->video
+**Modality:** unknown->video
 
 
 ## Technical Details

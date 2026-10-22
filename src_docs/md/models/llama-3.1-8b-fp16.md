@@ -20,7 +20,7 @@ this_file: src_docs/md/models/llama-3.1-8b-fp16.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.0015/message · 50 points/message |
+| Total Cost | 50 points/message |
 
 All parsed rates (both currencies):
 
@@ -29,14 +29,16 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.0015 | 1 message |
 | Total cost | POINTS | 50 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:52.171804+00:00
+**Last Checked:** 2026-10-22 13:38:16.751230
 
 
 ## Bot Information
 
-**Creator:** hyperbolic
+**Creator:** @hyperbolic
 
 **Description:** The smallest and fastest member of the Llama 3.1 family, offering exceptional efficiency and rapid response times with 128K context length.
+
+**Extra:** Powered by a server managed by @hyperbolic. Learn more
 
 
 ## Architecture
@@ -60,4 +62,4 @@ All parsed rates (both currencies):
 
 **Root:** llama-3.1-8b-fp16
 
-**API Last Updated:** 2026-10-05 01:48:43.417791
+**API Last Updated:** 2026-10-22 13:58:59.076946

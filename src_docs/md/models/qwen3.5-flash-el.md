@@ -21,9 +21,9 @@ this_file: src_docs/md/models/qwen3.5-flash-el.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.091/1M tokens · 3 points/1k tokens |
+| Input Text | 3 points/1k tokens |
+| Bot Message | 334 points/message |
 | Output (Text) | $0.37/1M tokens · 13 points/1k tokens |
-| Bot Message | $0.010/message · 334 points/message |
 
 All parsed rates (both currencies):
 
@@ -36,12 +36,12 @@ All parsed rates (both currencies):
 | Bot message | USD | 0.010 | 1 message |
 | Bot message | POINTS | 334 | 1 message |
 
-**Last Checked:** 2026-10-05T02:10:47.165778+00:00
+**Last Checked:** 2026-10-22 13:22:12.151425
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** The Qwen3.5 native vision-language Flash models are built on a hybrid architecture that integrates a linear attention mechanism with a sparse mixture-of-experts model, achieving higher inference efficiency. Compared to the 3 series, these models deliver a leap forward in performance for both pure text and multimodal tasks, offering fast response times while balancing inference speed and overall performance.
 This model is served by Alibaba Cloud Int. from Singapore.
@@ -53,6 +53,8 @@ Notes:
 - Built-in tool calls are not supported with video attachments
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -76,4 +78,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** qwen3.5-flash-el
 
-**API Last Updated:** 2026-10-05 01:48:43.415505
+**API Last Updated:** 2026-10-22 13:58:59.074163

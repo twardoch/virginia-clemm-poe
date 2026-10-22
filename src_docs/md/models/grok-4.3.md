@@ -21,7 +21,7 @@ this_file: src_docs/md/models/grok-4.3.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $1.26/1M tokens · 42 points/1k tokens |
+| Input Text | 42 points/1k tokens |
 | Output (Text) | $2.53/1M tokens · 84 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,18 +33,20 @@ All parsed rates (both currencies):
 | Output (text) | USD | 2.53 | 1000000 tokens |
 | Output (text) | POINTS | 84 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:10:31.010745+00:00
+**Last Checked:** 2026-10-22 13:20:30.656445
 
 
 ## Bot Information
 
-**Creator:** xAI
+**Creator:** @xAI
 
 **Description:** Grok-4.3 is a reasoning model from xAI designed for agentic workflows, instruction-following tasks, and applications requiring high factual accuracy. It accepts text and image inputs with text output, and supports a large 1M-token context window, making it useful for long-document analysis, deep research, and multi-step problem solving.
 
 Reasoning is always active and cannot be disabled or configured by effort level.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @xAI. Learn more
 
 
 ## Architecture
@@ -68,4 +70,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** grok-4.3
 
-**API Last Updated:** 2026-10-05 01:48:43.415101
+**API Last Updated:** 2026-10-22 13:58:59.073830

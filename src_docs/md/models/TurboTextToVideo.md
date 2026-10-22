@@ -23,23 +23,25 @@ All parsed rates (both currencies):
 | Video Output | USD | 0.0043 | 1 message |
 | Video Output | POINTS | 142 | 1 message |
 
-**Last Checked:** 2026-10-05T02:10:11.132034+00:00
+**Last Checked:** 2026-10-22 13:16:39.773898
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Generate beautiful videos from your prompts, like Sora.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** video
 
-**Modality:** text->video
+**Modality:** unknown->video
 
 
 ## Technical Details

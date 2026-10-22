@@ -21,8 +21,8 @@ this_file: src_docs/md/models/gemini-3.5-flash.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $1.52/1M tokens · 50 points/1k tokens |
-| Input (Image) | $1.52/1M tokens · 50 points/1k tokens |
+| Input Text | 50 points/1k tokens |
+| Input Image | 50 points/1k tokens |
 | Input (Video) | $0.000088/second · 3 points/second |
 | Output (Text) | $9.09/1M tokens · 300 points/1k tokens |
 | Output | $0.014/search · 467 points/search |
@@ -42,14 +42,16 @@ All parsed rates (both currencies):
 | Output | USD | 0.014 | 1 search |
 | Output | POINTS | 467 | 1 search |
 
-**Last Checked:** 2026-10-05T02:10:33.264516+00:00
+**Last Checked:** 2026-10-22 13:20:46.766967
 
 
 ## Bot Information
 
-**Creator:** google
+**Creator:** @google
 
 **Description:** Gemini 3.5 Flash is Google’s latest Flash-family AI model, built for frontier intelligence with fast, reliable action. It delivers major upgrades in agentic workflows, coding, long-horizon reasoning, multimodal understanding, and rich interactive UI/graphics generation while retaining the Flash series’ focus on speed, low latency, and cost efficiency. Optimized for multi-step tool use and subagent orchestration through platforms like Google Antigravity and the Gemini API. Serves the latest gemini-3.5-flash release.
+
+**Extra:** Powered by Google: gemini-3.5-flash. Learn more
 
 
 ## Architecture
@@ -73,4 +75,4 @@ All parsed rates (both currencies):
 
 **Root:** gemini-3.5-flash
 
-**API Last Updated:** 2026-10-05 01:48:43.415175
+**API Last Updated:** 2026-10-22 13:58:59.073901

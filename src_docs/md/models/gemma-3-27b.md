@@ -19,7 +19,7 @@ this_file: src_docs/md/models/gemma-3-27b.md
 
 | Type | Cost |
 |------|------|
-| Bot Message | $0.0041/message · 134 points/message |
+| Bot Message | 134 points/message |
 
 All parsed rates (both currencies):
 
@@ -28,14 +28,16 @@ All parsed rates (both currencies):
 | Bot message | USD | 0.0041 | 1 message |
 | Bot message | POINTS | 134 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:40.617880+00:00
+**Last Checked:** 2026-10-22 13:36:07.356365
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities, including structured outputs and function calling. Gemma 3 27B is Google's latest open source model, successor to Gemma 2
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -59,4 +61,4 @@ All parsed rates (both currencies):
 
 **Root:** gemma-3-27b
 
-**API Last Updated:** 2026-10-05 01:48:43.417366
+**API Last Updated:** 2026-10-22 13:58:59.076654

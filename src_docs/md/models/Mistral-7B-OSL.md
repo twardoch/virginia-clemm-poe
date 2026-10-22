@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Total Cost | USD | 0.0003 | 1 message |
 | Total Cost | POINTS | 10 | 1 message |
 
-**Last Checked:** 2026-10-05T02:09:29.019945+00:00
+**Last Checked:** 2026-10-22 13:08:32.234450
 
 
 ## Bot Information
 
-**Creator:** OpenSourceLab
+**Creator:** @OpenSourceLab
 
-**Description:** Mistral-7B-Instruct-v0.2 is an open-source 7-billion-parameter model released by Mistral AI in December 2023 under the Apache 2.0 License. The instruction-tuned model is optimized for conversational use cases, instruction following, and efficient inference. Context window: 32k tokens
+**Description:** Mistral-7B-Instruct-v0.2 is an open-source model released by Mistral AI in December 2023 under the Apache 2.0 License. The instruction-tuned model has 7-billion-parameter and is optimized for conversational use cases, instruction following, and efficient inference. Context window: 32k tokens
+
+**Extra:** Powered by a server managed by @OpenSourceLab. Learn more
 
 
 ## Architecture

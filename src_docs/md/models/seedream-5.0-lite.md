@@ -23,17 +23,19 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.035 | 1 message |
 | Image Output | POINTS | 1167 | 1 message |
 
-**Last Checked:** 2026-10-05T02:10:59.985548+00:00
+**Last Checked:** 2026-10-22 13:23:41.891636
 
 
 ## Bot Information
 
-**Creator:** Bytedance
+**Creator:** @Bytedance
 
 **Description:** Seedream 5.0 Lite is ByteDance's latest text-to-image model with greater intelligence. Seedream 5.0 Lite can also take in  multiple images as references and combine them together or edit them to return an output. 
 
 Optional parameters:
 Set the aspect ratio for the model (One of `16:9`, `4:3`, `1:1`, `3:4`, `9:16`).
+
+**Extra:** Powered by a server managed by @Bytedance. Learn more
 
 
 ## Architecture
@@ -57,4 +59,4 @@ Set the aspect ratio for the model (One of `16:9`, `4:3`, `1:1`, `3:4`, `9:16`).
 
 **Root:** seedream-5.0-lite
 
-**API Last Updated:** 2026-10-05 01:48:43.415848
+**API Last Updated:** 2026-10-22 13:58:59.074592

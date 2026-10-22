@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | Audio Output | USD | 0.030 | 1 message |
 | Audio Output | POINTS | 1000 | 1 message |
 
-**Last Checked:** 2026-10-05T02:11:57.073131+00:00
+**Last Checked:** 2026-10-22 13:30:12.307332
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Generate music from text prompts using the MiniMax model, which leverages advanced AI techniques to create high-quality, diverse musical compositions. 
 
@@ -38,7 +38,9 @@ Both prompt/lyrics and style must be sent over for best quality.
 The prompt supports \[intro\]\[verse\]\[chorus\]\[bridge\]\[outro\] sections.
 
 Optional parameters:
-Set music style to set the style of the generated music - for example, rock and roll, hip-hop, etc.  
+Set music style to set the style of the generated music - for example, rock and roll, hip-hop, etc.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -62,4 +64,4 @@ Set music style to set the style of the generated music - for example, rock and 
 
 **Root:** hailuo-music-v1.5
 
-**API Last Updated:** 2026-10-05 01:48:43.416958
+**API Last Updated:** 2026-10-22 13:58:59.075956

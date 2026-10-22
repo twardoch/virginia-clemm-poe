@@ -23,23 +23,25 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.018 | 1 message |
 | Image Output | POINTS | 600 | 1 message |
 
-**Last Checked:** 2026-10-05T02:08:31.695316+00:00
+**Last Checked:** 2026-10-22 12:59:07.113639
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Remove backgrounds cleanly from your images using Bria's RMBG 2.0 model
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** image
 
-**Modality:** text->image
+**Modality:** unknown->image
 
 
 ## Technical Details

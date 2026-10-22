@@ -23,23 +23,25 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.0026 | 1 message |
 | Image Output | POINTS | 85 | 1 message |
 
-**Last Checked:** 2026-10-05T02:10:20.007177+00:00
+**Last Checked:** 2026-10-22 13:18:21.566694
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Generates pixel-art style images with fal.ai SDXL APIs
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** image
 
-**Modality:** text->image
+**Modality:** unknown->image
 
 
 ## Technical Details

@@ -21,7 +21,7 @@ this_file: src_docs/md/models/nova-micro-1.0.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.040/1M tokens · 2 points/1k tokens |
+| Input Text | 2 points/1k tokens |
 | Output (Text) | $0.16/1M tokens · 6 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,12 +33,12 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.16 | 1000000 tokens |
 | Output (text) | POINTS | 6 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:11:24.374446+00:00
+**Last Checked:** 2026-10-22 13:26:29.472339
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Amazon Nova Micro is a text-only foundation model in the Amazon Nova family, designed for ultra‑low latency and very low cost, optimized for tasks like summarization, translation, and interactive chat. It supports a context window of 128,000 tokens, enabling handling of large text inputs in a single request.
 
@@ -66,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** nova-micro-1.0
 
-**API Last Updated:** 2026-10-05 01:48:43.416203
+**API Last Updated:** 2026-10-22 13:58:59.075146

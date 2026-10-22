@@ -20,7 +20,7 @@ this_file: src_docs/md/models/ideogram-v2.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.058/message · 1900 points/message |
+| Total Cost | 1900 points/message |
 
 All parsed rates (both currencies):
 
@@ -29,12 +29,12 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.058 | 1 message |
 | Total cost | POINTS | 1900 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:12.195525+00:00
+**Last Checked:** 2026-10-22 13:32:13.872427
 
 
 ## Bot Information
 
-**Creator:** ideogramai
+**Creator:** @ideogramai
 
 **Description:** Latest image model from Ideogram, with industry leading capabilities in generating realistic images, graphic design, typography, and more.
 
@@ -43,6 +43,8 @@ Set aspect ratio. Select from (10:16, 16:10, 9:16, 16:9, 3:2, 2:3, 4:3, 3:4, 1:1
 Set style. Select from General, Realistic, Design, Render 3D, Anime. This is set to General by default.
 
 Notes: Supported file type: JPEG, WebP and PNG. Powered by Ideogram.
+
+**Extra:** Powered by a server managed by @ideogramai. Learn more
 
 
 ## Architecture
@@ -66,4 +68,4 @@ Notes: Supported file type: JPEG, WebP and PNG. Powered by Ideogram.
 
 **Root:** ideogram-v2
 
-**API Last Updated:** 2026-10-05 01:48:43.417120
+**API Last Updated:** 2026-10-22 13:58:59.076226

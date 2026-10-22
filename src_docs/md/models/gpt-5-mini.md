@@ -21,7 +21,7 @@ this_file: src_docs/md/models/gpt-5-mini.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.23/1M tokens · 8 points/1k tokens |
+| Input Text | 8 points/1k tokens |
 | Output (Text) | $1.82/1M tokens · 60 points/1k tokens |
 | Output | $0.0091/search · 300 points/search |
 
@@ -36,12 +36,12 @@ All parsed rates (both currencies):
 | Output | USD | 0.0091 | 1 search |
 | Output | POINTS | 300 | 1 search |
 
-**Last Checked:** 2026-10-05T02:11:22.029385+00:00
+**Last Checked:** 2026-10-22 13:26:03.716987
 
 
 ## Bot Information
 
-**Creator:** openai
+**Creator:** @openai
 
 **Description:** GPT-5 mini is a small, fast & affordable model that matches or beats GPT-4.1 in many intelligence and vision-related tasks. Supports 400k tokens of context. Provides a 90% chat history cache discount.
 
@@ -69,4 +69,4 @@ All parsed rates (both currencies):
 
 **Root:** gpt-5-mini
 
-**API Last Updated:** 2026-10-05 01:48:43.416150
+**API Last Updated:** 2026-10-22 13:58:59.075030

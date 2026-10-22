@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Total Cost | USD | 0.0003 | 1 message |
 | Total Cost | POINTS | 10 | 1 message |
 
-**Last Checked:** 2026-10-05T02:09:28.703573+00:00
+**Last Checked:** 2026-10-22 13:08:28.471601
 
 
 ## Bot Information
 
-**Creator:** OpenSourceLab
+**Creator:** @OpenSourceLab
 
 **Description:** Ministral-3-8B a fast, edge-optimized AI model from the Ministral-3 family, provides robust language and multimodal vision capabilities in a compact footprint. It offers native function calling, PDF processing, and JSON output. Ministral-3-8B is fully open-source under the permissive Apache 2.0 license, which allows commercial and non-commercial use, modification, and distribution. Context window: 256K tokens.
+
+**Extra:** Powered by a server managed by @OpenSourceLab. Learn more
 
 
 ## Architecture

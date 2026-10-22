@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Total Cost | USD | 0.010 | 1 message |
 | Total Cost | POINTS | 334 | 1 message |
 
-**Last Checked:** 2026-10-05T02:11:51.816114+00:00
+**Last Checked:** 2026-10-22 13:29:40.151882
 
 
 ## Bot Information
 
-**Creator:** reka
+**Creator:** @reka
 
 **Description:** Reka Research is a state-of-the-art agentic AI that answers complex questions by browsing the web. It excels at synthesizing information from multiple sources, performing work that usually takes hours in minutes
+
+**Extra:** Powered by a server managed by @reka. Learn more
 
 
 ## Architecture
@@ -54,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** reka-research
 
-**API Last Updated:** 2026-10-05 01:48:43.416885
+**API Last Updated:** 2026-10-22 13:58:59.075870

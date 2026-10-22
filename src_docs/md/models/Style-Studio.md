@@ -8,21 +8,13 @@ this_file: src_docs/md/models/Style-Studio.md
 
 [Comparison method and assumptions](../pricing-method.md).
 
-## Pricing
-
-### Website Pricing
-
-| Type | Cost |
-|------|------|
-
-**Last Checked:** 2026-10-05T02:21:36.124095+00:00
-
-
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Change the style of your photos using SeedEdit!
+
+**Extra:** Powered by Poe. Learn more
 
 
 ## Architecture

@@ -19,7 +19,7 @@ this_file: src_docs/md/models/grok-imagine-video.md
 
 | Type | Cost |
 |------|------|
-| Input (Image) | $0.0020/image · 67 points/image |
+| Input Image | 67 points/image |
 | Output (Video) | $0.051/second · 1667 points/second |
 
 All parsed rates (both currencies):
@@ -31,14 +31,16 @@ All parsed rates (both currencies):
 | Output (video) | USD | 0.051 | 1 second |
 | Output (video) | POINTS | 1667 | 1 second |
 
-**Last Checked:** 2026-10-05T02:10:58.848023+00:00
+**Last Checked:** 2026-10-22 13:23:34.241358
 
 
 ## Bot Information
 
-**Creator:** xAI
+**Creator:** @xAI
 
 **Description:** Create artistic and creative videos with Grok Imagine Video. Supports text to video, image to video (single jpeg/png/webp attachment), and video editing (single mp4 video attachment). Check parameter controls for all supported controls (duration and aspect_ratio).
+
+**Extra:** Powered by a server managed by @xAI. Learn more
 
 
 ## Architecture
@@ -62,4 +64,4 @@ All parsed rates (both currencies):
 
 **Root:** grok-imagine-video
 
-**API Last Updated:** 2026-10-05 01:48:43.415824
+**API Last Updated:** 2026-10-22 13:58:59.074550

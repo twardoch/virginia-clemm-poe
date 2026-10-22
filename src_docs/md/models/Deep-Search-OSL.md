@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Total Cost | USD | 0.036 | 1 message |
 | Total Cost | POINTS | 1200 | 1 message |
 
-**Last Checked:** 2026-10-05T02:08:38.834538+00:00
+**Last Checked:** 2026-10-22 13:00:32.098409
 
 
 ## Bot Information
 
-**Creator:** OpenSourceLab
+**Creator:** @OpenSourceLab
 
 **Description:** This AI search engine combines live web search with real-time data, applies advanced reasoning, and returns results while preserving its advantage in high-quality throughput.
+
+**Extra:** Powered by a server managed by @OpenSourceLab. Learn more
 
 
 ## Architecture

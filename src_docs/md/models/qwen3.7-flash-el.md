@@ -21,7 +21,7 @@ this_file: src_docs/md/models/qwen3.7-flash-el.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.030/1M tokens · 1 point/1k tokens |
+| Input Text | $0.030/1M tokens |
 | Output (Text) | $0.13/1M tokens · 5 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,12 +33,12 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.13 | 1000000 tokens |
 | Output (text) | POINTS | 5 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:26.201841+00:00
+**Last Checked:** 2026-10-22 13:43:35.398653
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Qwen3.7 Flash is a fast vision-language model for text, image, and video input, built for multimodal reasoning, agentic tool use, and long-context work.
 
@@ -46,6 +46,8 @@ Notes:
 - Context Window: 1,000,000
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -69,4 +71,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** qwen3.7-flash-el
 
-**API Last Updated:** 2026-10-05 01:48:43.418515
+**API Last Updated:** 2026-10-22 13:58:59.077479

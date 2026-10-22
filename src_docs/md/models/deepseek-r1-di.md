@@ -20,7 +20,7 @@ this_file: src_docs/md/models/deepseek-r1-di.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.0061/message · 200 points/message |
+| Total Cost | 200 points/message |
 
 All parsed rates (both currencies):
 
@@ -29,16 +29,18 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.0061 | 1 message |
 | Total cost | POINTS | 200 | 1 message |
 
-**Last Checked:** 2026-10-05T02:11:49.087219+00:00
+**Last Checked:** 2026-10-22 13:29:11.657110
 
 
 ## Bot Information
 
-**Creator:** deepinfra
+**Creator:** @deepinfra
 
 **Description:** Top open-source reasoning LLM rivaling OpenAI's o1 model; delivers top-tier performance across math, code, and reasoning tasks at a fraction of the cost. All data you provide this bot will not be used in training, and is sent only to DeepInfra, a US-based company. Bot does not accept attachment.
 
 Supports 64k tokens of input context and 8k tokens of output context. Quantization: FP8 (official).
+
+**Extra:** Powered by a server managed by @deepinfra. Learn more
 
 
 ## Architecture
@@ -62,4 +64,4 @@ Supports 64k tokens of input context and 8k tokens of output context. Quantizati
 
 **Root:** deepseek-r1-di
 
-**API Last Updated:** 2026-10-05 01:48:43.416811
+**API Last Updated:** 2026-10-22 13:58:59.075789

@@ -38,12 +38,12 @@ All parsed rates (both currencies):
 | Advanced Template to Video Output | USD | 0.51 | 1 video |
 | Advanced Template to Video Output | POINTS | 16667 | 1 video |
 
-**Last Checked:** 2026-10-05T02:12:28.981838+00:00
+**Last Checked:** 2026-10-22 13:34:08.606984
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** The Vidu Video Generation Bot creates videos using images and text prompts. You can generate videos in four modes: 
 (1) Image-to-Video: send 1 image with a prompt, 
@@ -56,6 +56,8 @@ Number of images required varies by template: `dynasty_dress` and `shop_frame` a
 The bot supports aspect ratios (16:9, 1:1, 9:16), set movement amplitude, and accepts PNG, JPEG, and WEBP formats. 
 Tasks are mutually exclusive (e.g., you cannot combine start-to-end frame and reference-to-video).
 Duration is limited to 5 seconds.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -79,4 +81,4 @@ Duration is limited to 5 seconds.
 
 **Root:** vidu
 
-**API Last Updated:** 2026-10-05 01:48:43.417243
+**API Last Updated:** 2026-10-22 13:58:59.076455

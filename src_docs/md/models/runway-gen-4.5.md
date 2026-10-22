@@ -29,18 +29,20 @@ All parsed rates (both currencies):
 | 10 seconds | USD | 3.0 | 10 second |
 | 10 seconds | POINTS | 100000 | 10 second |
 
-**Last Checked:** 2026-10-05T02:11:01.299216+00:00
+**Last Checked:** 2026-10-22 13:23:49.760888
 
 
 ## Bot Information
 
-**Creator:** runwayml
+**Creator:** @runwayml
 
 **Description:** Runway Gen 4.5 is an advanced video model that generates cinematic, high‑fidelity video from natural language and images. It offers fine‑grained control over motion, camera behavior, composition, and style, producing physically realistic and temporally consistent scenes.
 
 Optional parameters:
 Set aspect ratio. Select from (21:9, 16:9, 4:3, 1:1, 3:4, 9:16). It is set to 16:9 aspect ratio as default.
 Set Duration. Select from (5 seconds, 8 seconds, 10 seconds) to specify video length in seconds. Set to 5 seconds as default.
+
+**Extra:** Powered by a server managed by @runwayml. Learn more
 
 
 ## Architecture
@@ -64,4 +66,4 @@ Set Duration. Select from (5 seconds, 8 seconds, 10 seconds) to specify video le
 
 **Root:** runway-gen-4.5
 
-**API Last Updated:** 2026-10-05 01:48:43.415856
+**API Last Updated:** 2026-10-22 13:58:59.074619

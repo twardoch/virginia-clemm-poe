@@ -21,7 +21,7 @@ this_file: src_docs/md/models/qwen3.8-27b-el.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.17/1M tokens · 6 points/1k tokens |
+| Input Text | 6 points/1k tokens |
 | Output (Text) | $0.51/1M tokens · 17 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,18 +33,20 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.51 | 1000000 tokens |
 | Output (text) | POINTS | 17 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:41.133023+00:00
+**Last Checked:** 2026-10-22 13:45:39.924641
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Qwen3.8 27B is Alibaba's open multimodal reasoner. It accepts text, image, and video input with a 256K token context, and supports function calling, structured JSON output, and thinking on by default.
 
 Weight Precision: NVFP4
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -68,4 +70,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** qwen3.8-27b-el
 
-**API Last Updated:** 2026-10-05 01:48:43.418858
+**API Last Updated:** 2026-10-22 13:58:59.077802

@@ -26,12 +26,12 @@ All parsed rates (both currencies):
 | 1080P | USD | 0.150 | 1 second |
 | 1080P | POINTS | 5000 | 1 second |
 
-**Last Checked:** 2026-10-05T02:11:10.560779+00:00
+**Last Checked:** 2026-10-22 13:24:40.145077
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Wan 2.7 is Alibaba's latest multimodal video generation model, capable of creating high-fidelity videos from text, images, video references, or by editing existing videos. It supports four generation modes: Text-to-Video (T2V), Image-to-Video (I2V), Video Edit, and Reference-to-Video (R2V).
 
@@ -52,6 +52,8 @@ Attachments:
 - Images are automatically resized to fit limits (240–8,000px per side). HEIC/HEIF images are auto-converted. Videos are validated (MP4/MOV, ≤100 MB) and auto-trimmed if exceeding the mode's max duration.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -75,4 +77,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** wan-2.7
 
-**API Last Updated:** 2026-10-05 01:48:43.415929
+**API Last Updated:** 2026-10-22 13:58:59.074720

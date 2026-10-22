@@ -34,12 +34,12 @@ All parsed rates (both currencies):
 | Input image | USD | 0.003 | 1 image |
 | Input image | POINTS | 100 | 1 image |
 
-**Last Checked:** 2026-10-05T02:13:37.593612+00:00
+**Last Checked:** 2026-10-22 13:45:19.708186
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Qwen Image 3.0 supports image generation and editing with Base and Pro variants, multilingual typography, multi-image references, and controllable 1K or 2K output.
 
@@ -49,6 +49,8 @@ Generation & Editing
 - Generate one to six images per request
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -72,4 +74,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** qwen-image-3.0-el
 
-**API Last Updated:** 2026-10-05 01:48:43.418810
+**API Last Updated:** 2026-10-22 13:58:59.077754

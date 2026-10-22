@@ -21,7 +21,7 @@ this_file: src_docs/md/models/qwen3-vl-235b-a22b-t.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.99/1M tokens · 33 points/1k tokens |
+| Input Text | 33 points/1k tokens |
 | Output (Text) | $3.99/1M tokens · 132 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,14 +33,16 @@ All parsed rates (both currencies):
 | Output (text) | USD | 3.99 | 1000000 tokens |
 | Output (text) | POINTS | 132 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:11:40.547772+00:00
+**Last Checked:** 2026-10-22 13:28:13.063980
 
 
 ## Bot Information
 
-**Creator:** novitaai
+**Creator:** @novitaai
 
-**Description:** qwen/qwen3-vl-235b-a22b-thinking powered by Novita AI
+**Description:** Try https://poe.com/Qwen3.8-27B-Alibaba for the first-party Qwen bot.
+
+qwen/qwen3-vl-235b-a22b-thinking powered by Novita AI
 
 File Support: Text, Markdown, Image, Video and PDF files
 Context window: 131k tokens
@@ -69,4 +71,4 @@ Context window: 131k tokens
 
 **Root:** qwen3-vl-235b-a22b-t
 
-**API Last Updated:** 2026-10-05 01:48:43.416564
+**API Last Updated:** 2026-10-22 13:58:59.075611

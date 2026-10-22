@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Video Output | USD | 0.0026 | 1 message |
 | Video Output | POINTS | 85 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:44.416797+00:00
+**Last Checked:** 2026-10-22 13:36:47.204491
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Animates given portraits with the motion's in the video. Powered by fal.ai
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -54,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** liveportrait
 
-**API Last Updated:** 2026-10-05 01:48:43.417460
+**API Last Updated:** 2026-10-22 13:58:59.076763

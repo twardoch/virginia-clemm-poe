@@ -22,7 +22,7 @@ this_file: src_docs/md/models/nano-banana-2-lite.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.25/1M tokens · 9 points/1k tokens |
+| Input Text | 9 points/1k tokens |
 | Output (Text) | $1.52/1M tokens · 50 points/1k tokens |
 | Output (Image) | $30.30/1M tokens · 1000 points/1k tokens |
 
@@ -30,23 +30,25 @@ All parsed rates (both currencies):
 
 | Service | Currency | Amount | Per |
 |---|---|---|---|
-| Input | USD | 0.25 | 1000000 tokens |
-| Input | POINTS | 9 | 1000 tokens |
+| Input (text) | USD | 0.25 | 1000000 tokens |
+| Input (text) | POINTS | 9 | 1000 tokens |
 | Output (text) | USD | 1.52 | 1000000 tokens |
 | Output (text) | POINTS | 50 | 1000 tokens |
 | Output (image) | USD | 30.30 | 1000000 tokens |
 | Output (image) | POINTS | 1000 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:10:25.501911+00:00
+**Last Checked:** 2026-10-22 13:19:32.702126
 
 
 ## Bot Information
 
-**Creator:** google
+**Creator:** @google
 
 **Description:** Google's fastest, most efficient Gemini Image model, delivering high-speed generation and editing at the lowest cost yet. It maintains strong character consistency, precise visual editing, and real-world knowledge—accelerated for rapid-fire creative exploration with dramatically reduced latency.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @google. Learn more
 
 
 ## Architecture
@@ -70,4 +72,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** nano-banana-2-lite
 
-**API Last Updated:** 2026-10-05 01:48:43.414908
+**API Last Updated:** 2026-10-22 13:58:59.073618

@@ -23,23 +23,25 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.013 | 1 message |
 | Image Output | POINTS | 425 | 1 message |
 
-**Last Checked:** 2026-10-05T02:09:57.737886+00:00
+**Last Checked:** 2026-10-22 13:14:11.276060
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Stable Diffusion 3.5 Medium is a Multimodal Diffusion Transformer with improvements (MMDiT-X) text-to-image model that features improved performance in image quality, typography, complex prompt understanding, and resource-efficiency.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** image
 
-**Modality:** text->image
+**Modality:** unknown->image
 
 
 ## Technical Details

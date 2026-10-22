@@ -21,7 +21,7 @@ this_file: src_docs/md/models/glm-5.3-flash-el.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.076/1M tokens · 3 points/1k tokens |
+| Input Text | 3 points/1k tokens |
 | Output (Text) | $0.25/1M tokens · 9 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,16 +33,18 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.25 | 1000000 tokens |
 | Output (text) | POINTS | 9 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:46.625323+00:00
+**Last Checked:** 2026-10-22 13:46:08.099556
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** GLM 5.3 Flash is Z.ai's natively multimodal flash model, a 320B-A18B mixture-of-experts released under the MIT license that approaches the larger GLM 5.3 on coding and agentic work. It accepts text, image, and video input with a 1M token context, always-on reasoning at low, high, or max effort, native web search, and function calling.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -66,4 +68,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** glm-5.3-flash-el
 
-**API Last Updated:** 2026-10-05 01:48:43.419000
+**API Last Updated:** 2026-10-22 13:58:59.077904

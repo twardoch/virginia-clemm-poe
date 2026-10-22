@@ -21,7 +21,7 @@ this_file: src_docs/md/models/seed-2.0-pro.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.63/1M tokens · 21 points/1k tokens |
+| Input Text | 21 points/1k tokens |
 | Output (Text) | $3.79/1M tokens · 125 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,12 +33,12 @@ All parsed rates (both currencies):
 | Output (text) | USD | 3.79 | 1000000 tokens |
 | Output (text) | POINTS | 125 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:10:54.605937+00:00
+**Last Checked:** 2026-10-22 13:23:09.729429
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Seed 2.0 Pro is a flagship all-purpose general model designed for complex reasoning and long-chain task execution in the Agent era. It emphasizes multimodal understanding, long-context reasoning, structured generation, and tool-augmented execution. It delivers outstanding performance in handling complex instructions and multi-constraint execution, and can reliably address scenarios such as multi-step complex planning, sophisticated visual-text reasoning, video content understanding, and high-difficulty analysis.
 This model is served from Malaysia.
@@ -57,6 +57,8 @@ Parameter controls available:
 - Web Search: Enable real-time web search for up-to-date information (default: false).
 - Image Detail \[low, high, xhigh\]: Quality for image understanding. Higher = more accurate but uses more tokens (default: high).
 - Video FPS \[0.2-5\]: Frame sampling rate for video input. Higher = more frames analyzed, more accurate, more tokens (default: 1).
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -80,4 +82,4 @@ Parameter controls available:
 
 **Root:** seed-2.0-pro
 
-**API Last Updated:** 2026-10-05 01:48:43.415700
+**API Last Updated:** 2026-10-22 13:58:59.074432

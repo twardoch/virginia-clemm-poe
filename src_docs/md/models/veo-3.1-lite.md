@@ -26,12 +26,12 @@ All parsed rates (both currencies):
 | 1080p | USD | 0.08 | 1 second |
 | 1080p | POINTS | 2400 | 1 second |
 
-**Last Checked:** 2026-10-05T02:10:57.814430+00:00
+**Last Checked:** 2026-10-22 13:23:30.120962
 
 
 ## Bot Information
 
-**Creator:** google
+**Creator:** @google
 
 **Description:** Google’s Veo 3.1 Lite is the most cost-efficient model in the Veo 3.1 family, delivering high-quality video generation with native audio at a fraction of the cost. It supports both text-to-video and image-to-video workflows, with synchronized dialogue, sound effects, and ambient audio. While optimized for affordability, it still benefits from the Veo 3.1 generation’s improved prompt adherence and cinematic understanding.
 
@@ -41,6 +41,8 @@ Note: 1080p requires 8s duration
 Reference mode: Use up to 3 input images as references for video generation
 Reference images require 8s duration
 Please only upload photos that you own or have the right to use. Otherwise, the bot will return an error.
+
+**Extra:** Powered by a server managed by @google. Learn more
 
 
 ## Architecture
@@ -64,4 +66,4 @@ Please only upload photos that you own or have the right to use. Otherwise, the 
 
 **Root:** veo-3.1-lite
 
-**API Last Updated:** 2026-10-05 01:48:43.415793
+**API Last Updated:** 2026-10-22 13:58:59.074537

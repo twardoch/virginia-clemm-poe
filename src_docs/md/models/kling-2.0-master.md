@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Video Output | USD | 0.18 | 1 second |
 | Video Output | POINTS | 6000 | 1 second |
 
-**Last Checked:** 2026-10-05T02:12:34.057473+00:00
+**Last Checked:** 2026-10-22 13:34:48.560380
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Generate high-quality videos from text or images using Kling 2.0 Master. Use `--negative_prompt` to send a negative prompt, and `--cfg_scale` to send a classifier-free guidance scale between 0.0 and 1.0 (inclusive). Use `--aspect` to set the aspect ratio (One of `16:9`, `9:16` and `1:1`). Use `--duration` to set either 5 or 10 second video.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -54,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** kling-2.0-master
 
-**API Last Updated:** 2026-10-05 01:48:43.417275
+**API Last Updated:** 2026-10-22 13:58:59.076527

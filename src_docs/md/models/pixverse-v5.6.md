@@ -68,12 +68,12 @@ All parsed rates (both currencies):
 | Video Output (720p; 10 seconds:) | USD | 1.00 | 10 second |
 | Video Output (720p; 10 seconds:) | POINTS | 33000 | 10 second |
 
-**Last Checked:** 2026-10-05T02:11:09.367447+00:00
+**Last Checked:** 2026-10-22 13:24:27.737944
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** PixVerse v5.6 is capable of creating high-quality videos from text prompts alone or by animating uploaded images (1 or 2 frames). It supports resolutions up to 1080p, multiple aspect ratios, durations of 5–10 seconds, optional synchronized audio, and the ability to control style presets, thinking mode, negative prompts, and seed-based reproducibility.
 
@@ -98,6 +98,8 @@ Input Limits & Requirements:
 - Prompt length: 2,048 characters max (both positive and negative prompt)
 - Image inputs: JPEG, PNG, WEBP, or HEIC only. Max 20MB per file. Images below 300x300 are automatically upscaled; images above 4000x4000 are automatically downscaled.
 
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
+
 
 ## Architecture
 
@@ -120,4 +122,4 @@ Input Limits & Requirements:
 
 **Root:** pixverse-v5.6
 
-**API Last Updated:** 2026-10-05 01:48:43.415919
+**API Last Updated:** 2026-10-22 13:58:59.074687

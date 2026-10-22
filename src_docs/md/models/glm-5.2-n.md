@@ -21,7 +21,7 @@ this_file: src_docs/md/models/glm-5.2-n.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $1.41/1M tokens · 47 points/1k tokens |
+| Input Text | 47 points/1k tokens |
 | Output (Text) | $4.44/1M tokens · 147 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,17 +33,21 @@ All parsed rates (both currencies):
 | Output (text) | USD | 4.44 | 1000000 tokens |
 | Output (text) | POINTS | 147 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:23.676400+00:00
+**Last Checked:** 2026-10-22 13:43:00.397226
 
 
 ## Bot Information
 
-**Creator:** novitaai
+**Creator:** @novitaai
 
-**Description:** GLM-5.2 is Z.AI's latest flagship model, meticulously engineered for long-horizon autonomous tasks. Capable of working continuously on a single assignment for up to 8 hours, it autonomously manages the entire workflow—from initial planning and execution to iterative optimization and the delivery of production-grade results. With coding and agentic capabilities that rival leading proprietary frontier models, it excels particularly in sustained execution, complex engineering optimization, and real-world development scenarios. Its context window has been expanded from 200K to 1M tokens, making it an ideal foundational model for powering advanced autonomous agents and long-horizon coding assistants.
+**Description:** Try https://poe.com/GLM-5.3 for the first-party GLM bot.
+
+GLM-5.2 is Z.AI's latest flagship model, meticulously engineered for long-horizon autonomous tasks. Capable of working continuously on a single assignment for up to 8 hours, it autonomously manages the entire workflow—from initial planning and execution to iterative optimization and the delivery of production-grade results. With coding and agentic capabilities that rival leading proprietary frontier models, it excels particularly in sustained execution, complex engineering optimization, and real-world development scenarios. Its context window has been expanded from 200K to 1M tokens, making it an ideal foundational model for powering advanced autonomous agents and long-horizon coding assistants.
 
 File Support: Text, Markdown and PDF files
 Context window: 1M tokens
+
+**Extra:** Powered by a server managed by @novitaai. Learn more
 
 
 ## Architecture
@@ -67,4 +71,4 @@ Context window: 1M tokens
 
 **Root:** glm-5.2-n
 
-**API Last Updated:** 2026-10-05 01:48:43.418366
+**API Last Updated:** 2026-10-22 13:58:59.077405

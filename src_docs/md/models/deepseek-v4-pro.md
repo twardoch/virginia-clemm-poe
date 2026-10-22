@@ -21,7 +21,7 @@ this_file: src_docs/md/models/deepseek-v4-pro.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $1.33/1M tokens · 44 points/1k tokens |
+| Input Text | 44 points/1k tokens |
 | Output (Text) | $4.00/1M tokens · 132 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,14 +33,16 @@ All parsed rates (both currencies):
 | Output (text) | USD | 4.00 | 1000000 tokens |
 | Output (text) | POINTS | 132 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:32.899473+00:00
+**Last Checked:** 2026-10-22 13:44:37.243276
 
 
 ## Bot Information
 
-**Creator:** deepseek
+**Creator:** @deepseek
 
 **Description:** DeepSeek V4 Pro is DeepSeek’s text model with long-context efficiency, reasoning, and tool-use capabilities.
+
+**Extra:** Powered by a server managed by @deepseek. Learn more
 
 
 ## Architecture
@@ -64,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** deepseek-v4-pro
 
-**API Last Updated:** 2026-10-05 01:48:43.418725
+**API Last Updated:** 2026-10-22 13:58:59.077622

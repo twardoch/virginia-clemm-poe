@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | Video Output | USD | 2.53 | 1000000 tokens |
 | Video Output | POINTS | 83334 | 1000000 tokens |
 
-**Last Checked:** 2026-10-05T02:12:10.805414+00:00
+**Last Checked:** 2026-10-22 13:31:56.012445
 
 
 ## Bot Information
 
-**Creator:** Bytedance
+**Creator:** @Bytedance
 
 **Description:** Seedance is a video generation model with text-to-video and image-to-video capabilities. It achieves breakthroughs in semantic understanding and prompt following. 
 
@@ -38,6 +38,8 @@ Resolution (one of `480p`,`720p`,`1080p` to set the video resolution.
 Duration` (3 to 12) sets the video duration.
 
 Notes: Number of video tokens calculated for pricing is approximately: `height * width * fps * duration / 1024).
+
+**Extra:** Powered by a server managed by @Bytedance. Learn more
 
 
 ## Architecture
@@ -61,4 +63,4 @@ Notes: Number of video tokens calculated for pricing is approximately: `height *
 
 **Root:** seedance-1.0-pro
 
-**API Last Updated:** 2026-10-05 01:48:43.417094
+**API Last Updated:** 2026-10-22 13:58:59.076199

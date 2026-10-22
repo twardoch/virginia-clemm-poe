@@ -23,23 +23,25 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.052 | 1 message |
 | Image Output | POINTS | 1700 | 1 message |
 
-**Last Checked:** 2026-10-05T02:09:08.168972+00:00
+**Last Checked:** 2026-10-22 13:06:21.150726
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Hidream-E1 can edit images with great fidelity given natural language instructions. Send an image along with a text prompt to edit it. Use `--negative_prompt` to set the negative prompt for generation.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** image
 
-**Modality:** text->image
+**Modality:** unknown->image
 
 
 ## Technical Details

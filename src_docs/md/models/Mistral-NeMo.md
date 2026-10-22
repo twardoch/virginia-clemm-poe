@@ -14,7 +14,7 @@ this_file: src_docs/md/models/Mistral-NeMo.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.15 / 1M tokens · 13 points / 1K tokens |
+| Input Text | 13 points / 1K tokens |
 | Output (Text) | $0.35 / 1M tokens · 65 points / 1K tokens |
 
 All parsed rates (both currencies):
@@ -26,23 +26,25 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.35 | 1000000 tokens |
 | Output (text) | POINTS | 65 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:09:29.940113+00:00
+**Last Checked:** 2026-10-22 13:08:39.804562
 
 
 ## Bot Information
 
-**Creator:** OpenSourceLab
+**Creator:** @OpenSourceLab
 
-**Description:** Mistral and NVIDIA collaborated to create a multimodal, open-source model with 12B parameter, designed for extensive multilingual conversations and file processing. You can set optional parameters like temperature and verbosity in the settings. Supported file types: DOCX, TXT, XLSX, TSX, CSV, PDF, HTML, JSON, CSS, WEBP, JPG, HEIC, GIF and PNG. Unsupported file types: ODS, RTF, XLS, JS, PY, AVIF, HEIF, MP4, WEBM, WAV and MP3, STL, OBJ. Context window: 128K tokens
+**Description:** Mistral and NVIDIA collaborated to create a multimodal, open-source model with 12B parameter, designed for extensive multilingual conversations and file processing. You can set optional parameters like temperature and verbosity in the settings. The model is less censored in sensitive topics like role playing and controversial discussions.  Supported file types: DOCX, TXT, XLSX, TSX, CSV, PDF, HTML, JSON, CSS, WEBP, JPG, HEIC, GIF and PNG. Unsupported file types: ODS, RTF, XLS, JS, PY, AVIF, HEIF, MP4, WEBM, WAV and MP3, STL, OBJ. Context window: 128K tokens
+
+**Extra:** Powered by a server managed by @OpenSourceLab. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details

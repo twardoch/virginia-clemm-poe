@@ -14,9 +14,9 @@ this_file: src_docs/md/models/GLM-5.2-EL.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $1.41/1M tokens · 47 points/1k tokens |
+| Input Text | 47 points/1k tokens |
+| Bot Message | 334 points/message |
 | Output (Text) | $4.44/1M tokens · 147 points/1k tokens |
-| Bot Message | $0.010/message · 334 points/message |
 
 All parsed rates (both currencies):
 
@@ -29,25 +29,27 @@ All parsed rates (both currencies):
 | Bot message | USD | 0.010 | 1 message |
 | Bot message | POINTS | 334 | 1 message |
 
-**Last Checked:** 2026-10-05T02:08:56.321447+00:00
+**Last Checked:** 2026-10-22 13:03:19.734546
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** GLM-5.2 is Z.ai's flagship reasoning and coding model with a 1M token context and 128K output. Adjustable reasoning effort, built-in web search, function calling, and JSON structured output.
 
 This bot supports optional parameters for additional customization.
 
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details

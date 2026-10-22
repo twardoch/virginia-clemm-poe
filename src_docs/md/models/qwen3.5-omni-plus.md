@@ -35,12 +35,12 @@ All parsed rates (both currencies):
 | Web Search | USD | 0.015 | 1 message |
 | Web Search | POINTS | 500 | 1 message |
 
-**Last Checked:** 2026-10-05T02:10:48.420686+00:00
+**Last Checked:** 2026-10-22 13:22:20.283993
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Qwen3.5-Omni Plus is the flagship variant of Qwen's latest omni-modal model, supporting text, image, audio, and video understanding and interaction. It handles up to 3 hours of audio and 1 hour of video input, with audio input in 90+ languages and speech output in 30+ languages across 55 voice timbres.
 This model is served by Alibaba Cloud Int. from Singapore.
@@ -62,6 +62,8 @@ Output:
 - Audio output: 29 languages, 7 dialects
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -85,4 +87,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** qwen3.5-omni-plus
 
-**API Last Updated:** 2026-10-05 01:48:43.415538
+**API Last Updated:** 2026-10-22 13:58:59.074195

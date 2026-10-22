@@ -21,7 +21,7 @@ this_file: src_docs/md/models/glm-4.6.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.61/1M tokens · 20 points/1k tokens |
+| Input Text | 20 points/1k tokens |
 | Output (Text) | $2.22/1M tokens · 74 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,16 +33,16 @@ All parsed rates (both currencies):
 | Output (text) | USD | 2.22 | 1000000 tokens |
 | Output (text) | POINTS | 74 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:31.833705+00:00
+**Last Checked:** 2026-10-22 13:44:33.341444
 
 
 ## Bot Information
 
-**Creator:** zai
+**Creator:** @zai
 
 **Description:** Z.ai GLM 4.6 is a coding-focused model for large codebases, multi-file analysis, and agentic engineering workflows.
 
-**Extra:** Powered by a server managed by @novitaai. Learn more
+**Extra:** Powered by a server managed by @zai. Learn more
 
 
 ## Architecture
@@ -66,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** glm-4.6
 
-**API Last Updated:** 2026-10-05 01:48:43.418691
+**API Last Updated:** 2026-10-22 13:58:59.077602

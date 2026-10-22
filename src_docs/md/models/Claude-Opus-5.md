@@ -14,7 +14,7 @@ this_file: src_docs/md/models/Claude-Opus-5.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $5.05/1M tokens · 167 points/1k tokens |
+| Input Text | 167 points/1k tokens |
 | Output (Text) | $25.25/1M tokens · 834 points/1k tokens |
 | Output | $0.010/search · 334 points/search |
 
@@ -29,23 +29,25 @@ All parsed rates (both currencies):
 | Output | USD | 0.010 | 1 search |
 | Output | POINTS | 334 | 1 search |
 
-**Last Checked:** 2026-10-05T02:08:35.844937+00:00
+**Last Checked:** 2026-10-22 12:59:50.130124
 
 
 ## Bot Information
 
-**Creator:** anthropic
+**Creator:** @anthropic
 
 **Description:** Anthropic’s Claude Opus 5 for coding and professional knowledge work. For the newer model, use Claude-Opus-5.5.
+
+**Extra:** Powered by a server managed by @anthropic. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details

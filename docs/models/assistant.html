@@ -956,28 +956,40 @@
 </thead>
 <tbody>
 <tr>
-<td>Input(Text)</td>
-<td>Up to $0.51/1M tokens · Up to 17 points/1k tokens</td>
+<td>Input Text</td>
+<td>Up to 17 points/1k tokens</td>
 </tr>
 <tr>
-<td>Input(Image)</td>
-<td>Up to $0.40/1M tokens · Up to 14 points/1k tokens</td>
-</tr>
-<tr>
-<td>Text Output</td>
-<td>Up to $27.27/1M tokens · Up to 900 points/1k tokens</td>
-</tr>
-<tr>
-<td>Input (Text)</td>
-<td>$0.51/1M tokens · 17 points/1k tokens</td>
+<td>Input Image</td>
+<td>Up to 17 points/1k tokens</td>
 </tr>
 <tr>
 <td>Output (Text)</td>
-<td>$3.03/1M tokens · 100 points/1k tokens</td>
+<td>Up to $3.03/1M tokens · Up to 100 points/1k tokens</td>
+</tr>
+<tr>
+<td>Input (Video)</td>
+<td>Up to $0.00028/second · Up to 10 points/second</td>
+</tr>
+<tr>
+<td>Input (Audio)</td>
+<td>Up to $0.00013/second · Up to 5 points/second</td>
+</tr>
+<tr>
+<td>Web Search</td>
+<td>Up to $0.014/search · Up to 467 points/search</td>
+</tr>
+<tr>
+<td>Cached Input (When Available)</td>
+<td>Up to $0.40/1M tokens · Up to 14 points/1k tokens</td>
+</tr>
+<tr>
+<td>Cache Write Surcharge</td>
+<td>Up to $1.01/1M tokens · Up to 34 points/1k tokens</td>
 </tr>
 <tr>
 <td>Output (Image)</td>
-<td>$60.61/1M tokens · 2000 points/1k tokens</td>
+<td>Up to $60.61/1M tokens · Up to 2000 points/1k tokens</td>
 </tr>
 </tbody>
 </table>
@@ -993,73 +1005,205 @@
 </thead>
 <tbody>
 <tr>
-<td>Input(text)</td>
+<td>Input (text)</td>
 <td>USD</td>
-<td>0.51</td>
+<td>0.81</td>
 <td>1000000 tokens</td>
 </tr>
 <tr>
-<td>Input(text)</td>
+<td>Input (text)</td>
 <td>POINTS</td>
-<td>17</td>
+<td>27</td>
 <td>1000 tokens</td>
 </tr>
 <tr>
-<td>Input(image)</td>
+<td>Output (text)</td>
+<td>USD</td>
+<td>3.64</td>
+<td>1000000 tokens</td>
+</tr>
+<tr>
+<td>Output (text)</td>
+<td>POINTS</td>
+<td>120</td>
+<td>1000 tokens</td>
+</tr>
+<tr>
+<td>Input (image)</td>
+<td>USD</td>
+<td>0.81</td>
+<td>1000000 tokens</td>
+</tr>
+<tr>
+<td>Input (image)</td>
+<td>POINTS</td>
+<td>27</td>
+<td>1000 tokens</td>
+</tr>
+<tr>
+<td>Input (video)</td>
+<td>USD</td>
+<td>0.000057</td>
+<td>1 second</td>
+</tr>
+<tr>
+<td>Input (video)</td>
+<td>POINTS</td>
+<td>2</td>
+<td>1 second</td>
+</tr>
+<tr>
+<td>Input (audio)</td>
+<td>USD</td>
+<td>0.000026</td>
+<td>1 second</td>
+</tr>
+<tr>
+<td>Input (audio)</td>
+<td>POINTS</td>
+<td>1</td>
+<td>1 second</td>
+</tr>
+<tr>
+<td>Web search</td>
+<td>USD</td>
+<td>0.014</td>
+<td>1 search</td>
+</tr>
+<tr>
+<td>Web search</td>
+<td>POINTS</td>
+<td>467</td>
+<td>1 search</td>
+</tr>
+<tr>
+<td>Cached input (when available)</td>
+<td>USD</td>
+<td>0.081</td>
+<td>1000000 tokens</td>
+</tr>
+<tr>
+<td>Cached input (when available)</td>
+<td>POINTS</td>
+<td>3</td>
+<td>1000 tokens</td>
+</tr>
+<tr>
+<td>Cache write surcharge</td>
+<td>USD</td>
+<td>0.051</td>
+<td>1000000 tokens</td>
+</tr>
+<tr>
+<td>Cache write surcharge</td>
+<td>POINTS</td>
+<td>2</td>
+<td>1000 tokens</td>
+</tr>
+<tr>
+<td>Input (text)</td>
+<td>USD</td>
+<td>4.04</td>
+<td>1000000 tokens</td>
+</tr>
+<tr>
+<td>Input (text)</td>
+<td>POINTS</td>
+<td>134</td>
+<td>1000 tokens</td>
+</tr>
+<tr>
+<td>Output (text)</td>
+<td>USD</td>
+<td>18.18</td>
+<td>1000000 tokens</td>
+</tr>
+<tr>
+<td>Output (text)</td>
+<td>POINTS</td>
+<td>600</td>
+<td>1000 tokens</td>
+</tr>
+<tr>
+<td>Input (image)</td>
+<td>USD</td>
+<td>4.04</td>
+<td>1000000 tokens</td>
+</tr>
+<tr>
+<td>Input (image)</td>
+<td>POINTS</td>
+<td>134</td>
+<td>1000 tokens</td>
+</tr>
+<tr>
+<td>Input (video)</td>
+<td>USD</td>
+<td>0.00028</td>
+<td>1 second</td>
+</tr>
+<tr>
+<td>Input (video)</td>
+<td>POINTS</td>
+<td>10</td>
+<td>1 second</td>
+</tr>
+<tr>
+<td>Input (audio)</td>
+<td>USD</td>
+<td>0.00013</td>
+<td>1 second</td>
+</tr>
+<tr>
+<td>Input (audio)</td>
+<td>POINTS</td>
+<td>5</td>
+<td>1 second</td>
+</tr>
+<tr>
+<td>Web search</td>
+<td>USD</td>
+<td>0.014</td>
+<td>1 search</td>
+</tr>
+<tr>
+<td>Web search</td>
+<td>POINTS</td>
+<td>467</td>
+<td>1 search</td>
+</tr>
+<tr>
+<td>Cached input (when available)</td>
 <td>USD</td>
 <td>0.40</td>
 <td>1000000 tokens</td>
 </tr>
 <tr>
-<td>Input(image)</td>
+<td>Cached input (when available)</td>
 <td>POINTS</td>
 <td>14</td>
 <td>1000 tokens</td>
 </tr>
 <tr>
-<td>Text output</td>
+<td>Cache write surcharge</td>
 <td>USD</td>
-<td>3.03</td>
+<td>1.01</td>
 <td>1000000 tokens</td>
 </tr>
 <tr>
-<td>Text output</td>
+<td>Cache write surcharge</td>
 <td>POINTS</td>
-<td>100</td>
+<td>34</td>
 <td>1000 tokens</td>
 </tr>
 <tr>
-<td>Input</td>
-<td>USD</td>
-<td>4.55</td>
-<td>1000000 tokens</td>
-</tr>
-<tr>
-<td>Input</td>
-<td>POINTS</td>
-<td>150</td>
-<td>1000 tokens</td>
-</tr>
-<tr>
-<td>Text output</td>
-<td>USD</td>
-<td>27.27</td>
-<td>1000000 tokens</td>
-</tr>
-<tr>
-<td>Text output</td>
-<td>POINTS</td>
-<td>900</td>
-<td>1000 tokens</td>
-</tr>
-<tr>
-<td>Input</td>
+<td>Input (text)</td>
 <td>USD</td>
 <td>0.51</td>
 <td>1000000 tokens</td>
 </tr>
 <tr>
-<td>Input</td>
+<td>Input (text)</td>
 <td>POINTS</td>
 <td>17</td>
 <td>1000 tokens</td>
@@ -1074,6 +1218,18 @@
 <td>Output (text)</td>
 <td>POINTS</td>
 <td>100</td>
+<td>1000 tokens</td>
+</tr>
+<tr>
+<td>Input (image)</td>
+<td>USD</td>
+<td>0.51</td>
+<td>1000000 tokens</td>
+</tr>
+<tr>
+<td>Input (image)</td>
+<td>POINTS</td>
+<td>17</td>
 <td>1000 tokens</td>
 </tr>
 <tr>
@@ -1088,11 +1244,23 @@
 <td>2000</td>
 <td>1000 tokens</td>
 </tr>
+<tr>
+<td>Web search</td>
+<td>USD</td>
+<td>0.014</td>
+<td>1 search</td>
+</tr>
+<tr>
+<td>Web search</td>
+<td>POINTS</td>
+<td>467</td>
+<td>1 search</td>
+</tr>
 </tbody>
 </table>
-<p><strong>Last Checked:</strong> 2026-10-05T02:10:20.865073+00:00</p>
+<p><strong>Last Checked:</strong> 2026-10-22 13:19:03.247422</p>
 <h2 id="bot-information">Bot Information<a class="headerlink" href="#bot-information" title="Permanent link">&para;</a></h2>
-<p><strong>Creator:</strong> poe</p>
+<p><strong>Creator:</strong> @poe</p>
 <p><strong>Description:</strong> General-purpose assistant. Write, code, ask for real-time information, create images, and more.</p>
 <p>Queries are automatically routed based on the task and subscription status.</p>
 <p>For subscribers:
@@ -1103,6 +1271,7 @@
 - General queries: @GPT-5.4-Nano
 - Image generation: @Nano-Banana-2
 - Video-input tasks: @Gemini-3-Flash</p>
+<p><strong>Extra:</strong> Powered by third party model providers. Learn more</p>
 <h2 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permanent link">&para;</a></h2>
 <p><strong>Input Modalities:</strong> text, image, video</p>
 <p><strong>Output Modalities:</strong> image, text</p>
@@ -1113,7 +1282,7 @@
 <p><strong>Created:</strong> 1694610718936</p>
 <p><strong>Owned By:</strong> Poe</p>
 <p><strong>Root:</strong> assistant</p>
-<p><strong>API Last Updated:</strong> 2026-10-05 01:48:43.414683</p>
+<p><strong>API Last Updated:</strong> 2026-10-22 13:58:59.073362</p>
 
 
 

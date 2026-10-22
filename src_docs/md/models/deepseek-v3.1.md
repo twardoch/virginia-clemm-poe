@@ -21,7 +21,7 @@ this_file: src_docs/md/models/deepseek-v3.1.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.21/1M tokens · 7 points/1k tokens |
+| Input Text | 7 points/1k tokens |
 | Output (Text) | $0.80/1M tokens · 27 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,16 +33,16 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.80 | 1000000 tokens |
 | Output (text) | POINTS | 27 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:26.019595+00:00
+**Last Checked:** 2026-10-22 13:43:31.420673
 
 
 ## Bot Information
 
-**Creator:** deepseek
+**Creator:** @deepseek
 
 **Description:** DeepSeek V3.1 is a long-context model for coding, tool use, and agentic tasks.
 
-**Extra:** Powered by a server managed by @fireworksai. Learn more
+**Extra:** Powered by a server managed by @deepseek. Learn more
 
 
 ## Architecture
@@ -66,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** deepseek-v3.1
 
-**API Last Updated:** 2026-10-05 01:48:43.418491
+**API Last Updated:** 2026-10-22 13:58:59.077464

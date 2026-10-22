@@ -4,7 +4,7 @@ this_file: src_docs/md/models/glm-5.3.md
 
 # [glm-5.3](https://poe.com/glm-5.3){ .md-button .md-button--primary }
 
-**Tier 3:** 97 points · 1,000 tokens (500 input + 500 output)
+**Tier 4:** 116 points · 1,000 tokens (500 input + 500 output)
 
 [Comparison method and assumptions](../pricing-method.md).
 
@@ -14,36 +14,35 @@ this_file: src_docs/md/models/glm-5.3.md
 
 | Type | Cost |
 |------|------|
-| Prompt | $0.0000014141/token |
-| Completion | $0.0000044444/token |
+| Prompt | $0.000001697/token |
+| Completion | $0.0000053333/token |
 
 ### Website Pricing
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $1.41/1M tokens · 47 points/1k tokens |
-| Output (Text) | $4.44/1M tokens · 147 points/1k tokens |
+| Input Text | 56 points/1k tokens |
+| Output (Text) | $5.33/1M tokens · 176 points/1k tokens |
 
 All parsed rates (both currencies):
 
 | Service | Currency | Amount | Per |
 |---|---|---|---|
-| Input (text) | USD | 1.41 | 1000000 tokens |
-| Input (text) | POINTS | 47 | 1000 tokens |
-| Output (text) | USD | 4.44 | 1000000 tokens |
-| Output (text) | POINTS | 147 | 1000 tokens |
+| Input (text) | USD | 1.70 | 1000000 tokens |
+| Input (text) | POINTS | 56 | 1000 tokens |
+| Output (text) | USD | 5.33 | 1000000 tokens |
+| Output (text) | POINTS | 176 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:48.808650+00:00
+**Last Checked:** 2026-10-22 13:47:30.117582
 
 
 ## Bot Information
 
-**Creator:** novitaai
+**Creator:** @zai
 
-**Description:** GLM-5.3 is Z.ai’s latest flagship model, delivering comprehensive advancements in complex software engineering and agent capabilities. It uses the same base model as GLM-5.2, with all improvements driven by post-training. 
+**Description:** Z.ai’s GLM 5.3 reasoning model for coding and complex text tasks, with a 1M-token context window.
 
-File Support: Text, Markdown and PDF files
-Context window: 1M tokens
+**Extra:** Powered by a server managed by @zai. Learn more
 
 
 ## Architecture
@@ -61,10 +60,10 @@ Context window: 1M tokens
 
 **Object Type:** model
 
-**Created:** 1788076039324
+**Created:** 1792604055049
 
-**Owned By:** Novita AI
+**Owned By:** Z.ai
 
 **Root:** glm-5.3
 
-**API Last Updated:** 2026-10-05 01:48:43.419069
+**API Last Updated:** 2026-10-22 13:58:59.077945

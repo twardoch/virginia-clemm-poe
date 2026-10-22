@@ -14,7 +14,7 @@ this_file: src_docs/md/models/LFM2.5-Reasoning.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $1.00 / 1M tokens · 50 points / 1K tokens |
+| Input Text | 50 points / 1K tokens |
 | Output (Text) | $3.00 / 1M tokens · 150 points / 1K tokens |
 
 All parsed rates (both currencies):
@@ -26,23 +26,25 @@ All parsed rates (both currencies):
 | Output (text) | USD | 3.00 | 1000000 tokens |
 | Output (text) | POINTS | 150 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:09:22.469256+00:00
+**Last Checked:** 2026-10-22 13:07:43.771194
 
 
 ## Bot Information
 
-**Creator:** OpenSourceLab
+**Creator:** @OpenSourceLab
 
-**Description:** Based on LFM2.5-2.6B that is a compact 2.6-billion-parameter model created by Liquid AI for local, device-native execution. The thinking/reasoning mode is enabled by default. Context window: 66k tokens
+**Description:** Based on the open-weight LFM2.5-2.6B model that is a compact 2.6-billion-parameter LLM created by Liquid AI for local, device-native execution. The thinking/reasoning mode is enabled by default and the model is less censored in sensitive topics like role playing and controversial discussions. Context window: 66k tokens
+
+**Extra:** Powered by a server managed by @OpenSourceLab. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details

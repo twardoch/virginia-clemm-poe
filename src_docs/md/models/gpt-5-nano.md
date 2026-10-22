@@ -21,7 +21,7 @@ this_file: src_docs/md/models/gpt-5-nano.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.045/1M tokens · 2 points/1k tokens |
+| Input Text | 2 points/1k tokens |
 | Output (Text) | $0.36/1M tokens · 12 points/1k tokens |
 | Output | $0.0091/search · 300 points/search |
 
@@ -36,12 +36,12 @@ All parsed rates (both currencies):
 | Output | USD | 0.0091 | 1 search |
 | Output | POINTS | 300 | 1 search |
 
-**Last Checked:** 2026-10-05T02:11:21.734794+00:00
+**Last Checked:** 2026-10-22 13:25:59.682170
 
 
 ## Bot Information
 
-**Creator:** openai
+**Creator:** @openai
 
 **Description:** GPT-5 nano is an extremely fast and cheap model, ideal for text/vision summarization/categorization tasks. Supports native vision and 400k input tokens of context. Provides a 90% chat history cache discount.
 
@@ -69,4 +69,4 @@ All parsed rates (both currencies):
 
 **Root:** gpt-5-nano
 
-**API Last Updated:** 2026-10-05 01:48:43.416128
+**API Last Updated:** 2026-10-22 13:58:59.075010

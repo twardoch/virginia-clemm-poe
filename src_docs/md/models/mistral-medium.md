@@ -21,7 +21,7 @@ this_file: src_docs/md/models/mistral-medium.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $2.73/1M tokens · 90 points/1k tokens |
+| Input Text | 90 points/1k tokens |
 | Output (Text) | $8.18/1M tokens · 270 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,14 +33,16 @@ All parsed rates (both currencies):
 | Output (text) | USD | 8.18 | 1000000 tokens |
 | Output (text) | POINTS | 270 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:11:47.955703+00:00
+**Last Checked:** 2026-10-22 13:29:03.935928
 
 
 ## Bot Information
 
-**Creator:** mistral
+**Creator:** @mistral
 
 **Description:** Mistral AI's medium-sized model. Supports a context window of 32k tokens (around 24,000 words) and is stronger than Mixtral-8x7b and Mistral-7b on benchmarks across the board.
+
+**Extra:** Powered by Mistral. Learn more
 
 
 ## Architecture
@@ -64,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** mistral-medium
 
-**API Last Updated:** 2026-10-05 01:48:43.416780
+**API Last Updated:** 2026-10-22 13:58:59.075761

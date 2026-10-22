@@ -21,9 +21,9 @@ this_file: src_docs/md/models/step-3.7-flash-el.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.20/1M tokens · 7 points/1k tokens |
+| Input Text | 7 points/1k tokens |
+| Bot Message | 167 points/message |
 | Output (Text) | $1.16/1M tokens · 39 points/1k tokens |
-| Bot Message | $0.0051/message · 167 points/message |
 
 All parsed rates (both currencies):
 
@@ -36,16 +36,18 @@ All parsed rates (both currencies):
 | Bot message | USD | 0.0051 | 1 message |
 | Bot message | POINTS | 167 | 1 message |
 
-**Last Checked:** 2026-10-05T02:13:20.438946+00:00
+**Last Checked:** 2026-10-22 13:42:30.144463
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** StepFun multimodal reasoning model with image and video input, tool calling, adjustable reasoning effort, and 256K context.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -69,4 +71,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** step-3.7-flash-el
 
-**API Last Updated:** 2026-10-05 01:48:43.418296
+**API Last Updated:** 2026-10-22 13:58:59.077338

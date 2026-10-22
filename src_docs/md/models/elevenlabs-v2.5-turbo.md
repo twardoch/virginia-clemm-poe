@@ -14,7 +14,7 @@ this_file: src_docs/md/models/elevenlabs-v2.5-turbo.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.03 / 1k characters · 1 point / character |
+| Input Text | $0.03 / 1k characters |
 
 All parsed rates (both currencies):
 
@@ -24,12 +24,12 @@ All parsed rates (both currencies):
 | Input (text) | USD | 0.03 | 1000 characters |
 | Input (text) | POINTS | 1 | 1 characters |
 
-**Last Checked:** 2026-10-05T02:12:00.528154+00:00
+**Last Checked:** 2026-10-22 13:30:37.973506
 
 
 ## Bot Information
 
-**Creator:** elevenlabsco
+**Creator:** @elevenlabsco
 
 **Description:** ElevenLabs' leading text-to-speech technology converts your text into natural-sounding speech, using the Turbo v2.5 model. Simply send a text prompt, and the bot will generate audio using your choice of available voices. If you link a URL or a PDF, it will do its best to read it aloud to you. The overall default voice is Jessica, an American-English female.
 
@@ -63,6 +63,8 @@ Japanese -- Alice
 
 Prompt input cannot exceed 40,000 characters.
 
+**Extra:** Powered by a server managed by @elevenlabsco. Learn more
+
 
 ## Architecture
 
@@ -85,4 +87,4 @@ Prompt input cannot exceed 40,000 characters.
 
 **Root:** elevenlabs-v2.5-turbo
 
-**API Last Updated:** 2026-10-05 01:48:43.417007
+**API Last Updated:** 2026-10-22 13:58:59.076021

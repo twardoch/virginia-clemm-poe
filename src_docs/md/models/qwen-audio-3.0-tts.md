@@ -26,12 +26,12 @@ All parsed rates (both currencies):
 | Flash (real-time) | USD | 0.015 | 1000 characters |
 | Flash (real-time) | POINTS | 500 | 1000 characters |
 
-**Last Checked:** 2026-10-05T02:13:38.919339+00:00
+**Last Checked:** 2026-10-22 13:45:27.892286
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Qwen Audio 3.0 TTS is Alibaba's speech synthesis model, available here in two tiers with over 1,000 shared voices, 16 languages, and 20 Chinese dialect regions. Direct the delivery in plain English, or drop inline tags straight into your text to change expression mid-sentence.
 
@@ -43,6 +43,8 @@ Notes
 - Languages: Arabic, Chinese, English, French, German, Indonesian, Italian, Japanese, Korean, Malay, Portuguese, Russian, Spanish, Tagalog, Thai, Vietnamese
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -66,4 +68,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** qwen-audio-3.0-tts
 
-**API Last Updated:** 2026-10-05 01:48:43.418818
+**API Last Updated:** 2026-10-22 13:58:59.077771

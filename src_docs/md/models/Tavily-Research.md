@@ -26,12 +26,12 @@ All parsed rates (both currencies):
 | Pro | USD | 2.77 | 1 pro |
 | Pro | POINTS | 91520 | 1 pro |
 
-**Last Checked:** 2026-10-05T02:10:07.268982+00:00
+**Last Checked:** 2026-10-22 13:16:04.987046
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Tavily Research performs comprehensive research on a given topic by conducting multiple searches, analyzing sources, and generating a detailed research report.
 
@@ -44,6 +44,8 @@ Parameter controls available:
 1. Research Settings
 - `--model \[mini|pro|auto\]`: Select the research model (default: auto)
 - `--citation_format \[numbered|mla|apa|chicago\]`: The format for citations in the research report (default: numbered)
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture

@@ -1,8 +1,8 @@
 ---
-this_file: src_docs/md/models/Qwen3.8-2.4T-A95B.md
+this_file: src_docs/md/models/qwen3.8-2.4t-a95b.md
 ---
 
-# [Qwen3.8-2.4T-A95B](https://poe.com/Qwen3.8-2.4T-A95B){ .md-button .md-button--primary }
+# [qwen3.8-2.4t-a95b](https://poe.com/qwen3.8-2.4t-a95b){ .md-button .md-button--primary }
 
 **Tier 0:** 0 points · per message
 
@@ -10,11 +10,18 @@ this_file: src_docs/md/models/Qwen3.8-2.4T-A95B.md
 
 ## Pricing
 
+### API Pricing (USD)
+
+| Type | Cost |
+|------|------|
+| Prompt | $0.0000020202/token |
+| Completion | $0.0000060606/token |
+
 ### Website Pricing
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.00/message · 0 points/message |
+| Total Cost | 0 points/message |
 
 All parsed rates (both currencies):
 
@@ -23,12 +30,12 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.00 | 1 message |
 | Total cost | POINTS | 0 | 1 message |
 
-**Last Checked:** 2026-10-05T02:09:42.920255+00:00
+**Last Checked:** 2026-10-22 13:10:48.501403
 
 
 ## Bot Information
 
-**Creator:** togetherai
+**Creator:** @togetherai
 
 **Description:** Qwen3.8 Max is the flagship of Qwen's 3.8 generation and the largest model the team has released, a sparse Mixture-of-Experts design with 2.4 trillion total parameters. Qwen describes it as the team's first multimodal model above one trillion parameters, built for coding, long-horizon agentic work, and multimodal reasoning. The model supports a 256K-token context window with up to 128K output tokens, and thinking is always enabled, with reasoning effort adjustable across low, high, and xhigh levels. Announced on July 19, 2026 at the World AI Conference in Shanghai, with Alibaba committing to an open-weight release. Available on Together AI.
 
@@ -37,23 +44,23 @@ All parsed rates (both currencies):
 
 ## Architecture
 
-**Input Modalities:** Unknown
+**Input Modalities:** text, image
 
-**Output Modalities:** Unknown
+**Output Modalities:** text
 
-**Modality:** unknown
+**Modality:** text,image->text
 
 
 ## Technical Details
 
-**Model ID:** `Qwen3.8-2.4T-A95B`
+**Model ID:** `qwen3.8-2.4t-a95b`
 
-**Object Type:** bot
+**Object Type:** model
 
-**Created:** Unknown
+**Created:** 1792604068084
 
-**Owned By:** togetherai
+**Owned By:** Alibaba
 
-**Root:** Qwen3.8-2.4T-A95B
+**Root:** qwen3.8-2.4t-a95b
 
-**API Last Updated:** Not listed in API
+**API Last Updated:** 2026-10-22 13:58:59.074310

@@ -26,12 +26,12 @@ All parsed rates (both currencies):
 | Audio + Video Output | USD | 0.40 | 1 second |
 | Audio + Video Output | POINTS | 13334 | 1 second |
 
-**Last Checked:** 2026-10-05T02:12:26.321814+00:00
+**Last Checked:** 2026-10-22 13:33:47.374004
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Google's Veo-3.1 is an improved version of Veo 3.
 
@@ -45,6 +45,8 @@ Notes:
 Pass a single image for image to video tasks. 
 Pass two images for a first-frame-to-last-frame video generation task. 
 Pass up to 3 images with reference for a reference-to-video task. Reference images will be directly used in the video generation.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -68,4 +70,4 @@ Pass up to 3 images with reference for a reference-to-video task. Reference imag
 
 **Root:** veo-v3.1
 
-**API Last Updated:** 2026-10-05 01:48:43.417224
+**API Last Updated:** 2026-10-22 13:58:59.076416

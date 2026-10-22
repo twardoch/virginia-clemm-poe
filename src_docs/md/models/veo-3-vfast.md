@@ -26,12 +26,12 @@ All parsed rates (both currencies):
 | Audio + Video Output | USD | 0.40 | 1 second |
 | Audio + Video Output | POINTS | 13334 | 1 second |
 
-**Last Checked:** 2026-10-05T02:12:28.623706+00:00
+**Last Checked:** 2026-10-22 13:34:04.624915
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Veo-3 Fast is a faster and more cost effective version of Google's Veo 3. 
 
@@ -40,6 +40,8 @@ Set the aspect ratio of the generated image (one of `16:9`, `1:1`, `9:16`).
 Toggle `on` the generate audio with your video at a higher cost. 
 Negative prompt on what to exclude e.g. `blur`, `low resolution`, `poor quality`. 
 Duration is limited to 7 seconds. This is a text to video generation model only.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -63,4 +65,4 @@ Duration is limited to 7 seconds. This is a text to video generation model only.
 
 **Root:** veo-3-vfast
 
-**API Last Updated:** 2026-10-05 01:48:43.417240
+**API Last Updated:** 2026-10-22 13:58:59.076447

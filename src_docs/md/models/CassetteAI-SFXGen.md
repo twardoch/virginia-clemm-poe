@@ -23,23 +23,25 @@ All parsed rates (both currencies):
 | Audio Output | USD | 0.010 | 1 message |
 | Audio Output | POINTS | 334 | 1 message |
 
-**Last Checked:** 2026-10-05T02:08:32.947134+00:00
+**Last Checked:** 2026-10-22 12:59:33.917885
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Sound Effects generator by CassetteAI. Send a prompt to generate a sound effect. Set the duration of the generated sound clip using --duration.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** audio
 
-**Modality:** text->audio
+**Modality:** unknown->audio
 
 
 ## Technical Details

@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.0051 | 1 image |
 | Image Output | POINTS | 167 | 1 image |
 
-**Last Checked:** 2026-10-05T02:12:03.259731+00:00
+**Last Checked:** 2026-10-22 13:30:57.613119
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Super-fast endpoint for Z-Image Turbo, hosted by fal.ai. Excels at portrait photos and realistic images.
 
@@ -37,6 +37,8 @@ Bot does not accept attachment.
 
 Optional parameters:
 - Set aspect ratio. Select from (16:9, 4:3, 1:1, 3:4, 9:16). It is set to 4:3 aspect ratio as default.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -60,4 +62,4 @@ Optional parameters:
 
 **Root:** z-image-lightning
 
-**API Last Updated:** 2026-10-05 01:48:43.417028
+**API Last Updated:** 2026-10-22 13:58:59.076058

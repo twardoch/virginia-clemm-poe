@@ -35,18 +35,20 @@ All parsed rates (both currencies):
 | Image input | USD | 0.050 | 1 image |
 | Image input | POINTS | 1667 | 1 image |
 
-**Last Checked:** 2026-10-05T02:13:38.756034+00:00
+**Last Checked:** 2026-10-22 13:45:23.540908
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Grok Imagine Image 2.0 generates images from a text prompt and edits up to five attached images from a plain-language instruction, with selectable quality, 1K or 2K output, and fifteen aspect ratios.
 
 With more than one image, refer to them in your prompt as IMAGE_0, IMAGE_1, and so on.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -70,4 +72,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** grok-imagine-image-2
 
-**API Last Updated:** 2026-10-05 01:48:43.418815
+**API Last Updated:** 2026-10-22 13:58:59.077763

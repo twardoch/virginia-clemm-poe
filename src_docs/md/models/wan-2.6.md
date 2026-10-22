@@ -40,12 +40,12 @@ All parsed rates (both currencies):
 | 1080P | USD | 0.03450 | 1 second |
 | 1080P | POINTS | 1150 | 1 second |
 
-**Last Checked:** 2026-10-05T02:12:19.726982+00:00
+**Last Checked:** 2026-10-22 13:32:56.977650
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Wan 2.6 is Alibaba’s multimodal video generation model built for cinematic, multi-shot storytelling—creating high-fidelity videos from text and/or images while keeping characters and style consistent across scenes. It also supports native audio-visual sync (including lip-sync) and can generate or align dialogue/music/SFX with the visuals, enabling “prompt-to-video” results that feel production-ready without heavy post work.
 
@@ -65,6 +65,8 @@ Multi-Shot Prompting
    - Ensure timestamps match your selected duration and use transition keywords like "Hard cut" or "Fade in" between shots.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -88,4 +90,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** wan-2.6
 
-**API Last Updated:** 2026-10-05 01:48:43.417156
+**API Last Updated:** 2026-10-22 13:58:59.076313

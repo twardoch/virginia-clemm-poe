@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | Total Cost | USD | 0.404 | 1 second |
 | Total Cost | POINTS | 13333 | 1 second |
 
-**Last Checked:** 2026-10-05T02:12:17.628147+00:00
+**Last Checked:** 2026-10-22 13:32:44.547233
 
 
 ## Bot Information
 
-**Creator:** google
+**Creator:** @google
 
 **Description:** Google’s Veo 3.1 is an updated version of the Veo family of models that features richer native audio, from natural conversations to synchronized sound effects, and offers greater narrative control with an improved understanding of cinematic styles. Enhanced image-to-video capabilities ensure better prompt adherence while delivering superior audio and visual quality and maintaining character consistency across multiple scenes.
 
@@ -41,6 +41,8 @@ Optional parameters:
 - Reference mode. Toggle to use input images (3 max) as reference for video generation
 
 For first & last frame video generation and references support, please use www.poe.com/Veo-v3.1
+
+**Extra:** Powered by a server managed by @google. Learn more
 
 
 ## Architecture
@@ -64,4 +66,4 @@ For first & last frame video generation and references support, please use www.p
 
 **Root:** veo-3.1
 
-**API Last Updated:** 2026-10-05 01:48:43.417146
+**API Last Updated:** 2026-10-22 13:58:59.076291

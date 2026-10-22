@@ -21,7 +21,7 @@ this_file: src_docs/md/models/inkling.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $1.01/1M tokens · 34 points/1k tokens |
+| Input Text | 34 points/1k tokens |
 | Output (Text) | $4.09/1M tokens · 135 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,14 +33,16 @@ All parsed rates (both currencies):
 | Output (text) | USD | 4.09 | 1000000 tokens |
 | Output (text) | POINTS | 135 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:10:27.878708+00:00
+**Last Checked:** 2026-10-22 13:19:48.616944
 
 
 ## Bot Information
 
-**Creator:** thinkymachines
+**Creator:** @thinkymachines
 
 **Description:** Inkling is Thinking Machines’ multimodal reasoning model, built for deep analysis, coding, and tool-driven work across text, images, and documents. It uses a 975B-parameter mixture-of-experts architecture with 41B active parameters and a 256K-token context window.
+
+**Extra:** Powered by a server managed by @thinkymachines. Learn more
 
 
 ## Architecture
@@ -64,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** inkling
 
-**API Last Updated:** 2026-10-05 01:48:43.414989
+**API Last Updated:** 2026-10-22 13:58:59.073699

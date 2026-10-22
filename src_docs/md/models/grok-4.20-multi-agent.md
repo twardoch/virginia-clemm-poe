@@ -21,7 +21,7 @@ this_file: src_docs/md/models/grok-4.20-multi-agent.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $1.26/1M tokens · 42 points/1k tokens |
+| Input Text | 42 points/1k tokens |
 | Output (Text) | $2.53/1M tokens · 84 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,16 +33,18 @@ All parsed rates (both currencies):
 | Output (text) | USD | 2.53 | 1000000 tokens |
 | Output (text) | POINTS | 84 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:10:43.921561+00:00
+**Last Checked:** 2026-10-22 13:21:54.467356
 
 
 ## Bot Information
 
-**Creator:** xAI
+**Creator:** @xAI
 
 **Description:** Realtime Multi-agent Research enables Grok to orchestrate multiple AI agents that work together in real time to perform deep, multi-step research tasks. Each agent specializes in a particular aspect of the research (searching the web, analyzing data, synthesizing findings) and they collaborate to deliver comprehensive, well-sourced answers.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @xAI. Learn more
 
 
 ## Architecture
@@ -66,4 +68,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** grok-4.20-multi-agent
 
-**API Last Updated:** 2026-10-05 01:48:43.415409
+**API Last Updated:** 2026-10-22 13:58:59.074096

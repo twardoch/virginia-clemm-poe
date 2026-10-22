@@ -26,12 +26,12 @@ All parsed rates (both currencies):
 | Output (audio tokens) | USD | 0.061 | 1000 tokens |
 | Output (audio tokens) | POINTS | 2000 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:12:00.953154+00:00
+**Last Checked:** 2026-10-22 13:30:41.836515
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Gemini‑2.5‑Pro‑TTS is Google’s highest‑quality text‑to‑speech model preview, designed for complex workflows like podcasts, audiobooks, and customer support; it delivers expressive, accent‑ and style‑controllable single‑ or multi‑speaker speech, supporting over 23 languages, and built for state‑of‑the‑art output with the most powerful model architecture.
 
@@ -42,6 +42,8 @@ Notes:
 - The model auto-detects the input language. The Language setting is a hint to help choose the right voice/accent, the model may override it if the text is in a different language.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -65,4 +67,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** gemini-2.5-pro-tts
 
-**API Last Updated:** 2026-10-05 01:48:43.417010
+**API Last Updated:** 2026-10-22 13:58:59.076029

@@ -23,15 +23,17 @@ All parsed rates (both currencies):
 | Video Generation | USD | 0.076 | 1 second |
 | Video Generation | POINTS | 2500 | 1 second |
 
-**Last Checked:** 2026-10-05T02:12:09.701461+00:00
+**Last Checked:** 2026-10-22 13:31:43.011774
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Wan Animate takes in an image and a video to generate another video where a character in the image replaces a character in the video(default), or the video character's motion is used to animate the character in the image. Pass --animate for the second functionality.
 The bot supports only four file types: JPEG, PNG, WebP, and MP4
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -55,4 +57,4 @@ The bot supports only four file types: JPEG, PNG, WebP, and MP4
 
 **Root:** wan-animate
 
-**API Last Updated:** 2026-10-05 01:48:43.417086
+**API Last Updated:** 2026-10-22 13:58:59.076183

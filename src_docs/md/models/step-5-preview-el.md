@@ -21,7 +21,7 @@ this_file: src_docs/md/models/step-5-preview-el.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $1.01/1M tokens · 34 points/1k tokens |
+| Input Text | 34 points/1k tokens |
 | Output (Text) | $2.73/1M tokens · 90 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,16 +33,18 @@ All parsed rates (both currencies):
 | Output (text) | USD | 2.73 | 1000000 tokens |
 | Output (text) | POINTS | 90 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:53.349670+00:00
+**Last Checked:** 2026-10-22 13:47:46.706577
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Step 5 Preview is StepFun's frontier reasoning model. It accepts text, image, and video input with a 1M token context, and supports parallel function calling, strict JSON Schema structured output, and adjustable reasoning effort.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -66,4 +68,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** step-5-preview-el
 
-**API Last Updated:** 2026-10-05 01:48:43.419221
+**API Last Updated:** 2026-10-22 13:58:59.078030

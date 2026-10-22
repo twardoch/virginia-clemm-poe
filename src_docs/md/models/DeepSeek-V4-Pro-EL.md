@@ -14,7 +14,7 @@ this_file: src_docs/md/models/DeepSeek-V4-Pro-EL.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $1.67/1M tokens · 55 points/1k tokens |
+| Input Text | 55 points/1k tokens |
 | Output (Text) | $3.33/1M tokens · 111 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -26,12 +26,12 @@ All parsed rates (both currencies):
 | Output (text) | USD | 3.33 | 1000000 tokens |
 | Output (text) | POINTS | 111 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:08:42.739127+00:00
+**Last Checked:** 2026-10-22 13:01:00.036682
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** DeepSeek V4 Pro is a flagship Mixture-of-Experts large language model with 1.6 trillion total parameters and 49 billion active parameters, natively supporting context lengths of up to 1M tokens. Excels at advanced mathematical reasoning, complex logical inference, specialized coding, and deep analysis of long-form text, well suited for cutting-edge research, sophisticated office workflows, and advanced AI agents.
 This model is served from Germany (Frankfurt).
@@ -43,14 +43,16 @@ Notes:
 
 This bot supports optional parameters for additional customization.
 
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details

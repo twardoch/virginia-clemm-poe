@@ -30,16 +30,18 @@ All parsed rates (both currencies):
 | 720P | USD | 0.359 | 1 second |
 | 720P | POINTS | 11967 | 1 second |
 
-**Last Checked:** 2026-10-05T02:13:18.710676+00:00
+**Last Checked:** 2026-10-22 13:42:18.126857
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Seedance 2.0 Mini is the fast, low-cost tier of ByteDance's Seedance 2.0 video model. It generates short cinematic clips with synchronized native audio, camera control, and stable motion from text, images, or video, at 480p and 720p. It is built for drafts, rapid iteration, and high-volume short-form video.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -63,4 +65,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** seedance-2.0-mini
 
-**API Last Updated:** 2026-10-05 01:48:43.418254
+**API Last Updated:** 2026-10-22 13:58:59.077303

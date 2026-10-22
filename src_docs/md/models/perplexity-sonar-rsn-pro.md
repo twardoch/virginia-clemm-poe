@@ -35,14 +35,16 @@ All parsed rates (both currencies):
 | Output Tokens | USD | 0.019 | 1000 tokens |
 | Output Tokens | POINTS | 640 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:11:54.847266+00:00
+**Last Checked:** 2026-10-22 13:30:00.462128
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** This model operates on the open-sourced uncensored R1-1776 model from Perplexity with web search capabilities. The Perplexity Sonar Rsn Pro Reasoning Model takes AI-powered answers to the next level, offering unmatched quality and precision. Outperforming leading search engines and LLMs, This model has demonstrated superior performance in the SimpleQA benchmark, making it the gold standard for high-quality answer generation. Context Length: 128k (max output token limit of 8k)
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -66,4 +68,4 @@ All parsed rates (both currencies):
 
 **Root:** perplexity-sonar-rsn-pro
 
-**API Last Updated:** 2026-10-05 01:48:43.416932
+**API Last Updated:** 2026-10-22 13:58:59.075923

@@ -26,12 +26,12 @@ All parsed rates (both currencies):
 | Dialect | USD | 0.015 | 1000 characters |
 | Dialect | POINTS | 489 | 1000 characters |
 
-**Last Checked:** 2026-10-05T02:09:55.653105+00:00
+**Last Checked:** 2026-10-22 13:13:48.978692
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** SoulX-Podcast is an open-source AI voice model developed by Soul AI Lab designed to generate realistic, long-form, multi-speaker podcast dialogues. It features advanced paralinguistic controls that simulate natural human elements like laughter and sighs, while supporting zero-shot voice cloning across Mandarin, English, and various Chinese dialects. 
 
@@ -61,6 +61,8 @@ Parameter controls available:
 4. Sampling Controls
 - `--top_k \[1-500\]`: Limits vocabulary to top K probable tokens (default 100)
 - `--top_p \[0.1-1.0\]`: Limits vocabulary to cumulative probability P (default 0.9)
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture

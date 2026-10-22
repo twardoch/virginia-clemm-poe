@@ -14,7 +14,7 @@ this_file: src_docs/md/models/gpt-audio.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | 138 ($0.0042) points / 1K tokens |
+| Input Text | 138 ($0.0042) points / 1K tokens |
 | Output (Text) | 550 ($0.017) points / 1K tokens |
 | Input (Audio) | 1760 ($0.053) points / 1K tokens |
 | Output (Audio) | 3520 ($0.11) points / 1K tokens |
@@ -32,12 +32,12 @@ All parsed rates (both currencies):
 | Output (audio) | USD | 0.11 | 1000 tokens |
 | Output (audio) | POINTS | 3520 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:11:17.280035+00:00
+**Last Checked:** 2026-10-22 13:25:23.665081
 
 
 ## Bot Information
 
-**Creator:** binaai
+**Creator:** @binaai
 
 **Description:** OpenAI's gpt-audio model, brought to Poe as a server bot! This model accepts text and audio inputs and can respond with natural-sounding speech. Learn more at https://platform.openai.com/docs/models/gpt-audio.
 
@@ -48,6 +48,8 @@ Optional parameters:
 - voice: the name of a voice for voice outputs: "alloy", "ash", "ballad", "cedar", "coral", "echo", "fable", "marin", "nova", "onyx", "sage", or "shimmer" (default: marin)
 -  model_snapshot: select a specific model version
 - auto_max_tokens: Let the model decide the max number of tokens to output (enabled by default). Disable this option to manually specify a token limit between 10 and 16,384 using the max_tokens parameter.
+
+**Extra:** Powered by a server managed by @binaai. Learn more
 
 
 ## Architecture
@@ -71,4 +73,4 @@ Optional parameters:
 
 **Root:** gpt-audio
 
-**API Last Updated:** 2026-10-05 01:48:43.416015
+**API Last Updated:** 2026-10-22 13:58:59.074870

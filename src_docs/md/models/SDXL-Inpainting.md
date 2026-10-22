@@ -23,23 +23,25 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.052 | 1 message |
 | Image Output | POINTS | 1700 | 1 message |
 
-**Last Checked:** 2026-10-05T02:09:46.345482+00:00
+**Last Checked:** 2026-10-22 13:11:40.533307
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Inpainting bot based on the SDXL model. Given an image and a mask (separate images), fills in the region of the image given by the mask as per the prompt. The base image should be the first image attached and the black-and-white mask should be the second image; a text prompt is required and should specify what you want the model to inpaint in the white area of the mask.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** image
 
-**Modality:** text->image
+**Modality:** unknown->image
 
 
 ## Technical Details

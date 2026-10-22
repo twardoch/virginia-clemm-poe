@@ -21,7 +21,7 @@ this_file: src_docs/md/models/gemma-4-26b-a4b-el.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.051/1M tokens · 2 points/1k tokens |
+| Input Text | 2 points/1k tokens |
 | Output (Text) | $0.29/1M tokens · 10 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,18 +33,20 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.29 | 1000000 tokens |
 | Output (text) | POINTS | 10 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:11.742322+00:00
+**Last Checked:** 2026-10-22 13:41:23.560065
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Gemma 4 26B A4B is a Google open multimodal model with 256K context, text, image, and video input, tools, and structured output.
 
 Weight Precision: FP8
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -68,4 +70,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** gemma-4-26b-a4b-el
 
-**API Last Updated:** 2026-10-05 01:48:43.418080
+**API Last Updated:** 2026-10-22 13:58:59.077111

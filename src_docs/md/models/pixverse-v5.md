@@ -38,12 +38,12 @@ All parsed rates (both currencies):
 | Video Output (1080p; 5s) | USD | 0.62 | 5 second |
 | Video Output (1080p; 5s) | POINTS | 20445 | 5 second |
 
-**Last Checked:** 2026-10-05T02:12:23.371630+00:00
+**Last Checked:** 2026-10-22 13:33:27.247777
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Pixverse v5 offers advanced creative tools with three main features: 
 1. Text-to-Video, which transforms written prompts into cinematic, high-detail video clips with fluid motion and accurate visual interpretation;
@@ -68,6 +68,8 @@ Parameter Controls and Usage:
 - Only 0, 1, or 2 image attachments are supported.
 - Attachments must be images (PNG/JPEG/WEBP/TIFF/BMP/HEIC/GIF).
 
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
+
 
 ## Architecture
 
@@ -90,4 +92,4 @@ Parameter Controls and Usage:
 
 **Root:** pixverse-v5
 
-**API Last Updated:** 2026-10-05 01:48:43.417207
+**API Last Updated:** 2026-10-22 13:58:59.076372

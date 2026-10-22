@@ -21,7 +21,7 @@ this_file: src_docs/md/models/glm-5.2.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $1.52/1M tokens · 50 points/1k tokens |
+| Input Text | 50 points/1k tokens |
 | Output (Text) | $4.55/1M tokens · 150 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,14 +33,16 @@ All parsed rates (both currencies):
 | Output (text) | USD | 4.55 | 1000000 tokens |
 | Output (text) | POINTS | 150 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:22.529972+00:00
+**Last Checked:** 2026-10-22 13:42:56.487086
 
 
 ## Bot Information
 
-**Creator:** zai
+**Creator:** @zai
 
 **Description:** GLM 5.2 is Z.AI's flagship open-weight model for long-horizon coding and agentic engineering.
+
+**Extra:** Powered by a server managed by @zai. Learn more
 
 
 ## Architecture
@@ -64,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** glm-5.2
 
-**API Last Updated:** 2026-10-05 01:48:43.418349
+**API Last Updated:** 2026-10-22 13:58:59.077391

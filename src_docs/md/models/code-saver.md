@@ -22,14 +22,16 @@ All parsed rates (both currencies):
 |---|---|---|---|
 | Message cost | POINTS | From 1 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:56.765356+00:00
+**Last Checked:** 2026-10-22 13:39:29.683275
 
 
 ## Bot Information
 
-**Creator:** poe_tools
+**Creator:** @poe_tools
 
 **Description:** A system bot that handles Poe scripts in chat.
+
+**Extra:** Runs inside Poe's protected environment. Learn more
 
 
 ## Architecture
@@ -53,4 +55,4 @@ All parsed rates (both currencies):
 
 **Root:** code-saver
 
-**API Last Updated:** 2026-10-05 01:48:43.417909
+**API Last Updated:** 2026-10-22 13:58:59.077008

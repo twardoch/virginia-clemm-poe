@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.030 | 1 message |
 | Image Output | POINTS | 992 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:47.992890+00:00
+**Last Checked:** 2026-10-22 13:37:37.286105
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Takes in sketches and converts them to colored images.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -54,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** sketch-to-image
 
-**API Last Updated:** 2026-10-05 01:48:43.417589
+**API Last Updated:** 2026-10-22 13:58:59.076810

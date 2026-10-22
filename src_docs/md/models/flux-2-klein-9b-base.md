@@ -14,8 +14,8 @@ this_file: src_docs/md/models/flux-2-klein-9b-base.md
 
 | Type | Cost |
 |------|------|
-| Image Input | 367 points ($0.011) / image input |
 | Image Output | 367 points ($0.011) / image |
+| Image Input | 367 points ($0.011) / image input |
 
 All parsed rates (both currencies):
 
@@ -26,17 +26,19 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.011 | 1 image |
 | Image Output | POINTS | 367 | 1 image |
 
-**Last Checked:** 2026-10-05T02:12:04.476496+00:00
+**Last Checked:** 2026-10-22 13:31:05.559972
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Text-to-image generation and image editing with Flux 2 \[klein\] 9B Base from Black Forest Labs. Enhanced realism, crisper text rendering within images, and native editing capabilities. Send up to 3 images (jpeg/ png/ webp) to use for image editing or as references.
 
 Optional parameters:
 - Set aspect ratio. Select from (16:9, 4:3, 1:1, 3:4, 9:16). It is set to 4:3 aspect ratio as default.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -60,4 +62,4 @@ Optional parameters:
 
 **Root:** flux-2-klein-9b-base
 
-**API Last Updated:** 2026-10-05 01:48:43.417035
+**API Last Updated:** 2026-10-22 13:58:59.076075

@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Total Cost | USD | 0.18 | 1 video |
 | Total Cost | POINTS | 6000 | 1 video |
 
-**Last Checked:** 2026-10-05T02:10:10.249068+00:00
+**Last Checked:** 2026-10-22 13:16:21.480827
 
 
 ## Bot Information
 
-**Creator:** OpenSourceLab
+**Creator:** @OpenSourceLab
 
 **Description:** Trellis-3D is an open-source AI model designed to generate high-quality 3D assets from text or image prompts. It is fully open-sourced under the MIT license and developed by the Microsoft Research team. This bot generates 3D assets with textures and colors in GLB format, when you provide it a reference image. The generated model appears in a 3D canvas preview, where you can rotate, zoom, and inspect geometry in real time. This makes the tool ideal for rapid prototyping, learning 3D geometry, debugging OBJ files, and creating lightweight 3D assets.
+
+**Extra:** Powered by a server managed by @OpenSourceLab. Learn more
 
 
 ## Architecture

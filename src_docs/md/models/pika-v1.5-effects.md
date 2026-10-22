@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | Video Output | USD | 0.47 | 1 video |
 | Video Output | POINTS | 15500 | 1 video |
 
-**Last Checked:** 2026-10-05T02:11:32.642624+00:00
+**Last Checked:** 2026-10-22 13:27:22.699242
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Apply surprising, mind blowing effects to your photo with Pika-v1.5 Effects. Attach an image and be amazed by the effects like "cakeify," "crush" and "crumble", open the parameter controls shelf for a full list of effects.
 
@@ -38,6 +38,8 @@ Cake-ify, Crumble, Crush, Decapitate, Deflate, Dissolve, Explode, Eye-pop, Infla
 Optional parameters:
 - Seed. Random seed number for reproducible generation with fixed seed
 - Negative prompt. Type things to avoid in generated images
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -61,4 +63,4 @@ Optional parameters:
 
 **Root:** pika-v1.5-effects
 
-**API Last Updated:** 2026-10-05 01:48:43.416327
+**API Last Updated:** 2026-10-22 13:58:59.075396

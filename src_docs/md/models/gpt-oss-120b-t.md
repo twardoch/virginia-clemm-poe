@@ -20,7 +20,7 @@ this_file: src_docs/md/models/gpt-oss-120b-t.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.0015/message · 50 points/message |
+| Total Cost | 50 points/message |
 
 All parsed rates (both currencies):
 
@@ -29,12 +29,12 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.0015 | 1 message |
 | Total cost | POINTS | 50 | 1 message |
 
-**Last Checked:** 2026-10-05T02:11:31.185913+00:00
+**Last Checked:** 2026-10-22 13:27:10.106251
 
 
 ## Bot Information
 
-**Creator:** togetherai
+**Creator:** @togetherai
 
 **Description:** OpenAI's GPT-OSS-120B delivers sophisticated chain-of-thought reasoning capabilities in a fully open model. Built with community feedback and released under Apache 2.0, this 120B parameter model provides transparency, customization, and deployment flexibility for organizations requiring complete data security & privacy control.
 
@@ -62,4 +62,4 @@ All parsed rates (both currencies):
 
 **Root:** gpt-oss-120b-t
 
-**API Last Updated:** 2026-10-05 01:48:43.416301
+**API Last Updated:** 2026-10-22 13:58:59.075297

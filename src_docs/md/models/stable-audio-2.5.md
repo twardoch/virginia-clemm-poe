@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | Generation | USD | 0.69 | 1 generation |
 | Generation | POINTS | 22667 | 1 generation |
 
-**Last Checked:** 2026-10-05T02:11:59.347033+00:00
+**Last Checked:** 2026-10-22 13:30:30.077805
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Stable Audio 2.5 generates high-quality audio up to 3 minutes long from text prompts, supporting text-to-audio, audio-to-audio transformations, and inpainting with customizable settings like duration, steps, CFG scale, and more. It is Ideal for music production, cinematic sound design, and remixing. 
 
@@ -54,6 +54,8 @@ Parameter controls available:
    - Mask start time \[seconds\] start time of the uploaded audio to modify
    - Mask end time \[seconds\] end time of the uploaded audio to modify
 
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
+
 
 ## Architecture
 
@@ -76,4 +78,4 @@ Parameter controls available:
 
 **Root:** stable-audio-2.5
 
-**API Last Updated:** 2026-10-05 01:48:43.416999
+**API Last Updated:** 2026-10-22 13:58:59.076001

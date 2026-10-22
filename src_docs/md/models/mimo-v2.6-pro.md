@@ -21,7 +21,7 @@ this_file: src_docs/md/models/mimo-v2.6-pro.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.44/1M tokens · 15 points/1k tokens |
+| Input Text | 15 points/1k tokens |
 | Output (Text) | $0.88/1M tokens · 29 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,17 +33,19 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.88 | 1000000 tokens |
 | Output (text) | POINTS | 29 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:55.911772+00:00
+**Last Checked:** 2026-10-22 13:48:02.984266
 
 
 ## Bot Information
 
-**Creator:** novitaai
+**Creator:** @novitaai
 
 **Description:** MiMo V2.6 Pro is Xiaomi's flagship open-source reasoning model for complex projects, long-horizon agent tasks, cybersecurity, research, and high-value professional work. It natively understands text, images, video, and audio, supports a 1M-token context window and up to 128K output tokens, and provides controllable deep thinking, tool calling, JSON mode, streaming, and prompt caching.
 
 File Support: Text, Markdown, Image, Video and PDF files
 Context window: 1M tokens
+
+**Extra:** Powered by a server managed by @novitaai. Learn more
 
 
 ## Architecture
@@ -67,4 +69,4 @@ Context window: 1M tokens
 
 **Root:** mimo-v2.6-pro
 
-**API Last Updated:** 2026-10-05 01:48:43.419452
+**API Last Updated:** 2026-10-22 13:58:59.078091

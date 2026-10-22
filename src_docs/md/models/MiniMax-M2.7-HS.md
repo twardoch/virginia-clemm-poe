@@ -14,7 +14,7 @@ this_file: src_docs/md/models/MiniMax-M2.7-HS.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.61/1M tokens · 20 points/1k tokens |
+| Input Text | 20 points/1k tokens |
 | Output (Text) | $2.42/1M tokens · 80 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -26,25 +26,28 @@ All parsed rates (both currencies):
 | Output (text) | USD | 2.42 | 1000000 tokens |
 | Output (text) | POINTS | 80 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:09:26.795632+00:00
+**Last Checked:** 2026-10-22 13:08:08.540748
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
-**Description:** MiniMax-M2.7-highspeed is a fast, "agent-first" AI model optimized for coding and complex, long-horizon workflows. Delivering ~100 tokens/second—roughly 2x faster than standard models—it offers the same advanced performance as the base M2.7, achieving near-SOTA results in software engineering tasks.
+**Description:** This model is retiring on 2026-11-17. Please switch to: https://poe.com/MiniMax-M3.1-Flash
+MiniMax-M2.7-highspeed is a fast, "agent-first" AI model optimized for coding and complex, long-horizon workflows. Delivering ~100 tokens/second—roughly 2x faster than standard models—it offers the same advanced performance as the base M2.7, achieving near-SOTA results in software engineering tasks.
 
 Context Window: 204,800
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details

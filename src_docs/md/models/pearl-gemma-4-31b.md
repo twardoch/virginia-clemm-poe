@@ -20,7 +20,7 @@ this_file: src_docs/md/models/pearl-gemma-4-31b.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.0030/message · 100 points/message |
+| Total Cost | 100 points/message |
 
 All parsed rates (both currencies):
 
@@ -29,14 +29,16 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.0030 | 1 message |
 | Total cost | POINTS | 100 | 1 message |
 
-**Last Checked:** 2026-10-05T02:13:13.432616+00:00
+**Last Checked:** 2026-10-22 13:41:35.684092
 
 
 ## Bot Information
 
-**Creator:** togetherai
+**Creator:** @togetherai
 
 **Description:** Gemma 4 31B-it-Pearl is Pearl Research Labs' instruction-tuned checkpoint of Google's Gemma 4 31B, optimized for the Pearl Network's Proof of Useful Work protocol. It delivers capabilities similar tothe base Gemma 4 31B — text input, 256K context, function calling, JSON mode — at a 25%+ discount through Together AI's exclusive Pearl Network integration.
+
+**Extra:** Powered by a server managed by @togetherai. Learn more
 
 
 ## Architecture
@@ -60,4 +62,4 @@ All parsed rates (both currencies):
 
 **Root:** pearl-gemma-4-31b
 
-**API Last Updated:** 2026-10-05 01:48:43.418134
+**API Last Updated:** 2026-10-22 13:58:59.077163

@@ -23,23 +23,25 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.13 | 1 message |
 | Image Output | POINTS | 4250 | 1 message |
 
-**Last Checked:** 2026-10-05T02:09:33.326809+00:00
+**Last Checked:** 2026-10-22 13:09:11.449457
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** This bot generates or combines images based on a given prompt and up to two images. To request an image, encapsulate the subject(s) in the prompt with <| and |> tags. For example, to create an image of a specific cat wearing a specific hat, input: "<|cat|> wearing a <|hat|>" while attaching the cat image as the first file and the hat image as the second. You can provide a maximum of two subjects, and the bot will blend them into a cohesive visual creation.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** image
 
-**Modality:** text->image
+**Modality:** unknown->image
 
 
 ## Technical Details

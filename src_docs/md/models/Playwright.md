@@ -8,21 +8,13 @@ this_file: src_docs/md/models/Playwright.md
 
 [Comparison method and assumptions](../pricing-method.md).
 
-## Pricing
-
-### Website Pricing
-
-| Type | Cost |
-|------|------|
-
-**Last Checked:** 2026-10-05T02:09:36.022025+00:00
-
-
 ## Bot Information
 
-**Creator:** opentools
+**Creator:** @opentools
 
 **Description:** Helps you look at a given website URL and write Playwright tests in TypeScript
+
+**Extra:** Powered by a server managed by @opentools. Learn more
 
 
 ## Architecture

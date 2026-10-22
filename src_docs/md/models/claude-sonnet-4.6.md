@@ -21,7 +21,7 @@ this_file: src_docs/md/models/claude-sonnet-4.6.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $2.58/1M tokens · 85 points/1k tokens |
+| Input Text | 85 points/1k tokens |
 | Output (Text) | $12.88/1M tokens · 425 points/1k tokens |
 | Output | $0.010/search · 334 points/search |
 
@@ -36,16 +36,18 @@ All parsed rates (both currencies):
 | Output | USD | 0.010 | 1 search |
 | Output | POINTS | 334 | 1 search |
 
-**Last Checked:** 2026-10-05T02:10:52.129708+00:00
+**Last Checked:** 2026-10-22 13:22:49.223423
 
 
 ## Bot Information
 
-**Creator:** anthropic
+**Creator:** @anthropic
 
 **Description:** Claude Sonnet 4.6 from Anthropic is built for high-quality conversations, advanced coding, and agentic workflows at scale. It excels at iterative development and navigating complex codebases, supports end-to-end project management with memory, and produces polished documents. The model also enables confident computer use for web QA and workflow automation, along with financial modeling, compliance review, and accurate data summarization. It features a 1M token context window for handling extensive projects and long-form content with ease.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by Anthropic: claude-sonnet-4-6. Learn more
 
 
 ## Architecture
@@ -69,4 +71,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** claude-sonnet-4.6
 
-**API Last Updated:** 2026-10-05 01:48:43.415643
+**API Last Updated:** 2026-10-22 13:58:59.074294

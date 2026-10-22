@@ -21,7 +21,7 @@ this_file: src_docs/md/models/deepseek-v4-pro-0813.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $1.33/1M tokens · 44 points/1k tokens |
+| Input Text | 44 points/1k tokens |
 | Output (Text) | $4.00/1M tokens · 132 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,17 +33,19 @@ All parsed rates (both currencies):
 | Output (text) | USD | 4.00 | 1000000 tokens |
 | Output (text) | POINTS | 132 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:45.598653+00:00
+**Last Checked:** 2026-10-22 13:46:04.231432
 
 
 ## Bot Information
 
-**Creator:** novitaai
+**Creator:** @novitaai
 
 **Description:** deepseek/deepseek-v4-pro-0813 powered by Novita AI
 
 File Support: Text, Markdown and PDF files
 Context window: 1M tokens
+
+**Extra:** Powered by a server managed by @novitaai. Learn more
 
 
 ## Architecture
@@ -67,4 +69,4 @@ Context window: 1M tokens
 
 **Root:** deepseek-v4-pro-0813
 
-**API Last Updated:** 2026-10-05 01:48:43.418966
+**API Last Updated:** 2026-10-22 13:58:59.077890

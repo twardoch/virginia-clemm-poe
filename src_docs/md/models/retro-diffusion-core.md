@@ -36,12 +36,12 @@ All parsed rates (both currencies):
 | Animations | USD | 0.10 | 1 animations |
 | Animations | POINTS | 3334 | 1 animations |
 
-**Last Checked:** 2026-10-05T02:12:13.230636+00:00
+**Last Checked:** 2026-10-22 13:32:32.231585
 
 
 ## Bot Information
 
-**Creator:** retrodiffusion
+**Creator:** @retrodiffusion
 
 **Description:** Generate true game ready pixel art in seconds at any resolution between 16x16 and 512x512 across the various styles. Create 48x48 walking animations of sprites using the "animation_four_angle_walking" style! First 50 basic image requests worth of points free! Check out more settings below 👇
 
@@ -60,6 +60,8 @@ Settings:
 - Strength. Controls how strong the image generation is. 0.0 for small changes, 1.0 for big changes
 
 Additional notes: All styles have a size range of 48x48 -> 512x512, except for the "mc" styles, which have a size range of 16x16 -> 128x128, and the "animation_four_angle_walking" style, which will only create 48x48 animations.
+
+**Extra:** Powered by a server managed by @retrodiffusion. Learn more
 
 
 ## Architecture
@@ -83,4 +85,4 @@ Additional notes: All styles have a size range of 48x48 -> 512x512, except for t
 
 **Root:** retro-diffusion-core
 
-**API Last Updated:** 2026-10-05 01:48:43.417132
+**API Last Updated:** 2026-10-22 13:58:59.076249

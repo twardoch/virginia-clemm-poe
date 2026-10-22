@@ -14,8 +14,8 @@ this_file: src_docs/md/models/flux-2-turbo.md
 
 | Type | Cost |
 |------|------|
-| Image Input | 250 points ($0.0076) / image input |
 | Image Output | 250 points ($0.0076) / image |
+| Image Input | 250 points ($0.0076) / image input |
 
 All parsed rates (both currencies):
 
@@ -26,17 +26,19 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.0076 | 1 image |
 | Image Output | POINTS | 250 | 1 image |
 
-**Last Checked:** 2026-10-05T02:12:07.596084+00:00
+**Last Checked:** 2026-10-22 13:31:26.506999
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Fast, open-weight image generation model (32B parameters), derived from the FLUX.2 base model. Send up to 3 images (jpeg/ png/ webp) to use for image editing or as references.
 
 Optional parameters:
 Set aspect ratio: 16:9, 4:3, 1:1, 3:4, 9:16
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -60,4 +62,4 @@ Set aspect ratio: 16:9, 4:3, 1:1, 3:4, 9:16
 
 **Root:** flux-2-turbo
 
-**API Last Updated:** 2026-10-05 01:48:43.417072
+**API Last Updated:** 2026-10-22 13:58:59.076116

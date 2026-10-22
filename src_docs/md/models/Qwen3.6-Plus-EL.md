@@ -14,9 +14,9 @@ this_file: src_docs/md/models/Qwen3.6-Plus-EL.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.51/1M tokens · 17 points/1k tokens |
+| Input Text | 17 points/1k tokens |
+| Bot Message | 500 points/message |
 | Output (Text) | $3.03/1M tokens · 100 points/1k tokens |
-| Bot Message | $0.015/message · 500 points/message |
 
 All parsed rates (both currencies):
 
@@ -29,12 +29,12 @@ All parsed rates (both currencies):
 | Bot message | USD | 0.015 | 1 message |
 | Bot message | POINTS | 500 | 1 message |
 
-**Last Checked:** 2026-10-05T02:09:41.837952+00:00
+**Last Checked:** 2026-10-22 13:10:40.694833
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** The Qwen3.6 native vision-language Plus series models demonstrate exceptional performance on par with the current state-of-the-art models, with a significant improvement in overall results compared to the 3.5 series. The models have been markedly enhanced in code-related capabilities such as agentic coding, front-end programming, and Vibe coding, as well as in multi-modal general object recognition, OCR, and object localization.
 This model is served by Alibaba Cloud Int. from Singapore.
@@ -47,14 +47,16 @@ Notes:
 
 This bot supports optional parameters for additional customization.
 
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details

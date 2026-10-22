@@ -14,7 +14,7 @@ this_file: src_docs/md/models/Nemotron-3-Super.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.00 / 1M tokens · 0 points / 1K tokens |
+| Input Text | 0 points / 1K tokens |
 | Output (Text) | $0.00 / 1M tokens · 0 points / 1K tokens |
 
 All parsed rates (both currencies):
@@ -26,23 +26,25 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.00 | 1000000 tokens |
 | Output (text) | POINTS | 0 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:09:32.342075+00:00
+**Last Checked:** 2026-10-22 13:08:59.688143
 
 
 ## Bot Information
 
-**Creator:** OpenSourceLab
+**Creator:** @OpenSourceLab
 
 **Description:** Nemotron-3-Super is an open-weight model released under the proprietary NVIDIA Open Model License. Its strength lies in multilingual idiom translation with cultural nuance, creating syntactically perfect SQL queries from vague prompts or generating LaTeX equations. Context window: 1M tokens
+
+**Extra:** Powered by a server managed by @OpenSourceLab. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details

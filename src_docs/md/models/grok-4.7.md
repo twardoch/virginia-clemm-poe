@@ -21,7 +21,7 @@ this_file: src_docs/md/models/grok-4.7.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $2.02/1M tokens · 67 points/1k tokens |
+| Input Text | 67 points/1k tokens |
 | Output (Text) | $6.06/1M tokens · 200 points/1k tokens |
 | Output | $0.0051/search · 167 points/search |
 
@@ -36,14 +36,16 @@ All parsed rates (both currencies):
 | Output | USD | 0.0051 | 1 search |
 | Output | POINTS | 167 | 1 search |
 
-**Last Checked:** 2026-10-05T02:10:21.934480+00:00
+**Last Checked:** 2026-10-22 13:19:07.257841
 
 
 ## Bot Information
 
-**Creator:** xAI
+**Creator:** @xAI
 
 **Description:** Grok 4.7 is xAI’s frontier model for coding and professional knowledge work, built to handle longer, harder tasks and check its work more carefully. In xAI’s xhigh evaluations, it scored 46.3% on CursorBench 4.0 and 1,695 Elo on GDPval.
+
+**Extra:** Powered by a server managed by @xAI. Learn more
 
 
 ## Architecture
@@ -67,4 +69,4 @@ All parsed rates (both currencies):
 
 **Root:** grok-4.7
 
-**API Last Updated:** 2026-10-05 01:48:43.414734
+**API Last Updated:** 2026-10-22 13:58:59.073422

@@ -1,8 +1,8 @@
 ---
-this_file: src_docs/md/models/flux-schnell-t.md
+this_file: src_docs/md/models/Flux-Schnell-T.md
 ---
 
-# [flux-schnell-t](https://poe.com/flux-schnell-t){ .md-button .md-button--primary }
+# [Flux-Schnell-T](https://poe.com/Flux-Schnell-T){ .md-button .md-button--primary }
 
 **Tier 3:** 70 points · per message
 
@@ -10,17 +10,11 @@ this_file: src_docs/md/models/flux-schnell-t.md
 
 ## Pricing
 
-### API Pricing (USD)
-
-| Type | Cost |
-|------|------|
-| Request | $0.0021/request |
-
 ### Website Pricing
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.0021/message · 70 points/message |
+| Total Cost | 70 points/message |
 
 All parsed rates (both currencies):
 
@@ -29,36 +23,38 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.0021 | 1 message |
 | Total cost | POINTS | 70 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:49.156474+00:00
+**Last Checked:** 2026-10-22 13:03:12.353630
 
 
 ## Bot Information
 
-**Creator:** togetherai
+**Creator:** @togetherai
 
 **Description:** Lightning-fast AI image generation model that excels in producing high-quality visuals in just seconds. Great for quick prototyping or real-time use cases. This is the fastest version of FLUX.1. 
 The bot does not support any attachments.
 
+**Extra:** Powered by a server managed by @togetherai. Learn more
+
 
 ## Architecture
 
-**Input Modalities:** text, image
+**Input Modalities:** Unknown
 
-**Output Modalities:** image
+**Output Modalities:** Unknown
 
-**Modality:** text,image->image
+**Modality:** unknown
 
 
 ## Technical Details
 
-**Model ID:** `flux-schnell-t`
+**Model ID:** `Flux-Schnell-T`
 
-**Object Type:** model
+**Object Type:** bot
 
-**Created:** 1730862046687
+**Created:** Unknown
 
-**Owned By:** Together AI
+**Owned By:** togetherai
 
-**Root:** flux-schnell-t
+**Root:** Flux-Schnell-T
 
-**API Last Updated:** 2026-10-05 01:48:43.417684
+**API Last Updated:** Not listed in API

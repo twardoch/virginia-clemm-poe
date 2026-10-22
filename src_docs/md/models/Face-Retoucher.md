@@ -23,23 +23,25 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.00086 | 1 message |
 | Image Output | POINTS | 29 | 1 message |
 
-**Last Checked:** 2026-10-05T02:08:51.570009+00:00
+**Last Checked:** 2026-10-22 13:02:30.565148
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Face-Retoucher automatically retouches faces to remove blemishes and make skin smooth. Works best on complete portraits of faces, rather than partial shots.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** image
 
-**Modality:** text->image
+**Modality:** unknown->image
 
 
 ## Technical Details

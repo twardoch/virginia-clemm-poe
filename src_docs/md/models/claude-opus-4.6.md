@@ -21,7 +21,7 @@ this_file: src_docs/md/models/claude-opus-4.6.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $4.29/1M tokens · 142 points/1k tokens |
+| Input Text | 142 points/1k tokens |
 | Output (Text) | $21.46/1M tokens · 709 points/1k tokens |
 | Output | $0.010/search · 334 points/search |
 
@@ -36,16 +36,18 @@ All parsed rates (both currencies):
 | Output | USD | 0.010 | 1 search |
 | Output | POINTS | 334 | 1 search |
 
-**Last Checked:** 2026-10-05T02:10:50.788493+00:00
+**Last Checked:** 2026-10-22 13:22:36.718494
 
 
 ## Bot Information
 
-**Creator:** anthropic
+**Creator:** @anthropic
 
 **Description:** Claude Opus 4.6 is Anthropic’s most advanced AI model, built for deep reasoning, complex coding, and long‑running autonomous tasks. It excels at planning, debugging, and working across large codebases, and supports a 1M‑token context window for understanding massive amounts of information. Designed for professional knowledge work, it combines state‑of‑the‑art performance with strong safety and reliability.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by Anthropic: claude-opus-4-6. Learn more
 
 
 ## Architecture
@@ -69,4 +71,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** claude-opus-4.6
 
-**API Last Updated:** 2026-10-05 01:48:43.415586
+**API Last Updated:** 2026-10-22 13:58:59.074243

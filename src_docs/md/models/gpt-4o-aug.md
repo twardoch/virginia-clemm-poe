@@ -21,7 +21,7 @@ this_file: src_docs/md/models/gpt-4o-aug.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $2.27/1M tokens · 75 points/1k tokens |
+| Input Text | 75 points/1k tokens |
 | Output (Text) | $9.09/1M tokens · 300 points/1k tokens |
 | Output | $0.023/search · 750 points/search |
 
@@ -36,14 +36,16 @@ All parsed rates (both currencies):
 | Output | USD | 0.023 | 1 search |
 | Output | POINTS | 750 | 1 search |
 
-**Last Checked:** 2026-10-05T02:12:50.204923+00:00
+**Last Checked:** 2026-10-22 13:37:45.262236
 
 
 ## Bot Information
 
-**Creator:** openai
+**Creator:** @openai
 
-**Description:** OpenAI's most powerful model, GPT-4o, using the August 2024 model snapshot. Stronger than GPT-3.5 in quantitative questions (math and physics), creative writing, and many other challenging tasks. 
+**Description:** OpenAI's most powerful model, GPT-4o, using the August 2024 model snapshot. Stronger than GPT-3.5 in quantitative questions (math and physics), creative writing, and many other challenging tasks.
+
+**Extra:** Powered by OpenAI: gpt-4o-2024-08-06. Learn more
 
 
 ## Architecture
@@ -67,4 +69,4 @@ All parsed rates (both currencies):
 
 **Root:** gpt-4o-aug
 
-**API Last Updated:** 2026-10-05 01:48:43.417711
+**API Last Updated:** 2026-10-22 13:58:59.076838

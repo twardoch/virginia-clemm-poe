@@ -21,7 +21,7 @@ this_file: src_docs/md/models/o3-pro.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $18.18/1M tokens · 600 points/1k tokens |
+| Input Text | 600 points/1k tokens |
 | Output (Text) | $72.73/1M tokens · 2400 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,12 +33,12 @@ All parsed rates (both currencies):
 | Output (text) | USD | 72.73 | 1000000 tokens |
 | Output (text) | POINTS | 2400 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:11:34.851968+00:00
+**Last Checked:** 2026-10-22 13:27:31.964818
 
 
 ## Bot Information
 
-**Creator:** openai
+**Creator:** @openai
 
 **Description:** o3-pro is a well-rounded and powerful model across domains, with more capability than https://poe.com/o3 at the cost of higher price and lower speed. It is especially capable at math, science, coding, visual reasoning tasks, technical writing, and instruction-following. Use it to think through multi-step problems that involve analysis across text, code, and images. 
 
@@ -69,4 +69,4 @@ Set reasoning effort: Select from `low`, `medium`, `high`. Medium reasoning effo
 
 **Root:** o3-pro
 
-**API Last Updated:** 2026-10-05 01:48:43.416381
+**API Last Updated:** 2026-10-22 13:58:59.075420

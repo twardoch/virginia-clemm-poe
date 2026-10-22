@@ -4,29 +4,21 @@ this_file: src_docs/md/models/script-bot-creator.md
 
 # [script-bot-creator](https://poe.com/script-bot-creator){ .md-button .md-button--primary }
 
-**Tier 9:** Usage based · Charged at called bots’ rates
+**Tier 9:** Not disclosed · No numeric rate published
 
 [Comparison method and assumptions](../pricing-method.md).
 
-## Pricing
-
-### Website Pricing
-
-| Type | Cost |
-|------|------|
-
-**Last Checked:** 2026-10-05T02:10:34.820170+00:00
-
-
 ## Bot Information
 
-**Creator:** poe_tools
+**Creator:** @poe_tools
 
 **Description:** Specializes in building workflows that combine bots on Poe. Powered by Claude Code. Guide and tips: https://creator.poe.com/docs/script-bots/quick-start
 
 Note: Script-Bot-Creator cannot access messages sent to or from other bots.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Runs inside Poe's protected environment. Learn more
 
 
 ## Architecture
@@ -50,4 +42,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** script-bot-creator
 
-**API Last Updated:** 2026-10-05 01:48:43.415221
+**API Last Updated:** 2026-10-22 13:58:59.073968

@@ -23,16 +23,18 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.076 | 1 message |
 | Image Output | POINTS | 2500 | 1 message |
 
-**Last Checked:** 2026-10-05T02:11:08.363981+00:00
+**Last Checked:** 2026-10-22 13:24:23.789428
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Qwen-Image-2-Pro is Alibaba's latest image generation model. This model can edit images (png/jpeg/webp, maximum of 3 images).
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -56,4 +58,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** qwen-image-2-pro
 
-**API Last Updated:** 2026-10-05 01:48:43.415915
+**API Last Updated:** 2026-10-22 13:58:59.074678

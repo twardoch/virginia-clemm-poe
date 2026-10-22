@@ -14,7 +14,7 @@ this_file: src_docs/md/models/MiMo-V2-Flash.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.10/1M tokens · 4 points/1k tokens |
+| Input Text | 4 points/1k tokens |
 | Output (Text) | $0.30/1M tokens · 10 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -26,27 +26,31 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.30 | 1000000 tokens |
 | Output (text) | POINTS | 10 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:09:24.835019+00:00
+**Last Checked:** 2026-10-22 13:08:00.286538
 
 
 ## Bot Information
 
-**Creator:** novitaai
+**Creator:** @novitaai
 
-**Description:** Xiaomi MiMo-V2-Flash is a proprietary MoE model developed by Xiaomi, designed for extreme inference efficiency with 309B total parameters (15B active). By incorporating an innovative Hybrid attention architecture and multi-layer MTP inference acceleration, it ranks among the top 2 global open-source models across multiple Agent benchmarks. Its coding capabilities surpass all open-source models and rival the industry-leading closed-source model, Claude 4.5 Sonnet—yet at only 2.5% of the inference cost and with 2x the generation speed, successfully pushing the limits of both model performance and efficiency.
+**Description:** Try https://poe.com/MiMo-V2.6-Flash-Xiaomi for the first-party MiMo bot.
+
+Xiaomi MiMo-V2-Flash is a proprietary MoE model developed by Xiaomi, designed for extreme inference efficiency with 309B total parameters (15B active). By incorporating an innovative Hybrid attention architecture and multi-layer MTP inference acceleration, it ranks among the top 2 global open-source models across multiple Agent benchmarks. Its coding capabilities surpass all open-source models and rival the industry-leading closed-source model, Claude 4.5 Sonnet—yet at only 2.5% of the inference cost and with 2x the generation speed, successfully pushing the limits of both model performance and efficiency.
 
 Context window: 262k tokens
 
 This bot supports optional parameters for additional customization.
 
+**Extra:** Powered by a server managed by @novitaai. Learn more
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details

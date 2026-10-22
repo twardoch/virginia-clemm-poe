@@ -1,8 +1,8 @@
 ---
-this_file: src_docs/md/models/Seedream-5.0-Flash.md
+this_file: src_docs/md/models/seedream-5.0-flash.md
 ---
 
-# [Seedream-5.0-Flash](https://poe.com/Seedream-5.0-Flash){ .md-button .md-button--primary }
+# [seedream-5.0-flash](https://poe.com/seedream-5.0-flash){ .md-button .md-button--primary }
 
 **Tier 6:** 1,000 points · per image
 
@@ -26,12 +26,12 @@ All parsed rates (both currencies):
 | Layer decomposition | USD | 0.030 | 1 image |
 | Layer decomposition | POINTS | 1000 | 1 image |
 
-**Last Checked:** 2026-10-05T02:09:51.549011+00:00
+**Last Checked:** 2026-10-22 13:48:15.463694
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Seedream 5.0 Flash creates and edits images quickly from text prompts and up to 10 reference images.
 
@@ -44,26 +44,28 @@ Generation & Editing
 
 This bot supports optional parameters for additional customization.
 
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
+
 
 ## Architecture
 
-**Input Modalities:** Unknown
+**Input Modalities:** text
 
-**Output Modalities:** image
+**Output Modalities:** image, text
 
-**Modality:** unknown->image
+**Modality:** text->image+text
 
 
 ## Technical Details
 
-**Model ID:** `Seedream-5.0-Flash`
+**Model ID:** `seedream-5.0-flash`
 
-**Object Type:** bot
+**Object Type:** model
 
-**Created:** Unknown
+**Created:** 1790695936031
 
-**Owned By:** empiriolabsai
+**Owned By:** EmpirioLabs AI
 
-**Root:** Seedream-5.0-Flash
+**Root:** seedream-5.0-flash
 
-**API Last Updated:** Not listed in API
+**API Last Updated:** 2026-10-22 13:58:59.078136

@@ -14,8 +14,8 @@ this_file: src_docs/md/models/flux-2-klein-4b.md
 
 | Type | Cost |
 |------|------|
-| Image Input | 34 points ($0.0010) / image input |
 | Image Output | 467 points ($0.014) / image |
+| Image Input | 34 points ($0.0010) / image input |
 
 All parsed rates (both currencies):
 
@@ -26,17 +26,19 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.014 | 1 image |
 | Image Output | POINTS | 467 | 1 image |
 
-**Last Checked:** 2026-10-05T02:12:05.247498+00:00
+**Last Checked:** 2026-10-22 13:31:09.979677
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Text-to-image generation and Image Editing with Flux 2 \[klein\] 4B Distilled from Black Forest Labs. Enhanced realism, crisper text generation, and native editing capabilities. Send up to 3 images (jpeg/png/webp) to use for image editing or as references.
 
 Optional parameters:
 Set aspect ratio. Supported aspect ratios - 16:9, 4:3, 1:1, 3:4, 9:16
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -60,4 +62,4 @@ Set aspect ratio. Supported aspect ratios - 16:9, 4:3, 1:1, 3:4, 9:16
 
 **Root:** flux-2-klein-4b
 
-**API Last Updated:** 2026-10-05 01:48:43.417058
+**API Last Updated:** 2026-10-22 13:58:59.076086

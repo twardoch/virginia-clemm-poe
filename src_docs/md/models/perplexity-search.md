@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | Search Request | USD | 0.0061 | 1 message |
 | Search Request | POINTS | 200 | 1 message |
 
-**Last Checked:** 2026-10-05T02:11:06.092719+00:00
+**Last Checked:** 2026-10-22 13:24:16.132599
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Utilize Perplexity's technology for real-time web search with filtering by domain, language, date and more.
 Note: This endpoint does not return an LLM-style response. File upload is not supported.
@@ -54,6 +54,8 @@ Parameter Controls Available:
    - `last_updated_before_filter` (MM/DD/YYYY): Only return results last updated before this date
    - `display_server_time`: Toggle to include the server timestamp in the response
 
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
+
 
 ## Architecture
 
@@ -76,4 +78,4 @@ Parameter Controls Available:
 
 **Root:** perplexity-search
 
-**API Last Updated:** 2026-10-05 01:48:43.415907
+**API Last Updated:** 2026-10-22 13:58:59.074659

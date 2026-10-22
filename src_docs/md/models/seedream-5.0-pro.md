@@ -35,12 +35,12 @@ All parsed rates (both currencies):
 | Extra input image after first | USD | 0.005 | 1 image |
 | Extra input image after first | POINTS | 167 | 1 image |
 
-**Last Checked:** 2026-10-05T02:13:19.757336+00:00
+**Last Checked:** 2026-10-22 13:42:26.295239
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Seedream 5.0 Pro creates premium images from text prompts and reference images, with strong detail, composition, and multi-reference fusion. Use it for product concepts, style exploration, image edits, and polished visual assets across 1K and 2K output.
 
@@ -49,6 +49,8 @@ Input limits
 - One generated image is returned per request
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -72,4 +74,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** seedream-5.0-pro
 
-**API Last Updated:** 2026-10-05 01:48:43.418276
+**API Last Updated:** 2026-10-22 13:58:59.077325

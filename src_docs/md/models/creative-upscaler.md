@@ -23,23 +23,25 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.0043 | 1 message |
 | Image Output | POINTS | 142 | 1 message |
 
-**Last Checked:** 2026-10-05T02:10:16.484817+00:00
+**Last Checked:** 2026-10-22 13:17:35.290876
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Upscale images using the creative upscaler present in fal. Not intended for high fidelity situations. Adds HDR lighting and a bunch of other stuff as well.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** image
 
-**Modality:** text->image
+**Modality:** unknown->image
 
 
 ## Technical Details

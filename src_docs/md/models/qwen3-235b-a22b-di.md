@@ -20,7 +20,7 @@ this_file: src_docs/md/models/qwen3-235b-a22b-di.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.0019/message · 63 points/message |
+| Total Cost | 63 points/message |
 
 All parsed rates (both currencies):
 
@@ -29,12 +29,12 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.0019 | 1 message |
 | Total cost | POINTS | 63 | 1 message |
 
-**Last Checked:** 2026-10-05T02:11:42.440378+00:00
+**Last Checked:** 2026-10-22 13:28:35.597069
 
 
 ## Bot Information
 
-**Creator:** deepinfra
+**Creator:** @deepinfra
 
 **Description:** Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support.
 
@@ -64,4 +64,4 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 
 **Root:** qwen3-235b-a22b-di
 
-**API Last Updated:** 2026-10-05 01:48:43.416619
+**API Last Updated:** 2026-10-22 13:58:59.075648

@@ -39,12 +39,12 @@ All parsed rates (both currencies):
 | Text / Image + Sound | USD | 0.53 | 1 second |
 | Text / Image + Sound | POINTS | 17500 | 1 second |
 
-**Last Checked:** 2026-10-05T02:11:13.391087+00:00
+**Last Checked:** 2026-10-22 13:24:55.966240
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Kling O3 is a versatile AI video generation model capable of creating high-quality videos in Standard or Pro modes, with resolution varying by aspect ratio. It supports multiple workflows including Text-to-Video, Image-to-Video, Reference-to-Video, and Video Editing, with advanced features like native sound generation and multi-scene transitions.
 
@@ -66,6 +66,8 @@ Input Limits & Requirements
 - Video Edit: Exactly 1 video, no images
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -89,4 +91,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** kling-o3
 
-**API Last Updated:** 2026-10-05 01:48:43.415957
+**API Last Updated:** 2026-10-22 13:58:59.074778

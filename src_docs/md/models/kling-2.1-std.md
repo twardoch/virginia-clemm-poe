@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | Video Output | USD | 0.051 | 1 second |
 | Video Output | POINTS | 1667 | 1 second |
 
-**Last Checked:** 2026-10-05T02:12:33.390137+00:00
+**Last Checked:** 2026-10-22 13:34:44.663519
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Kling 2.1 Standard is a cost-efficient endpoint for the Kling 2.1 model, delivering high-quality image-to-video generation. 
 
@@ -38,6 +38,8 @@ Optional parameters:
 - Set Duration. Select from (5 seconds or 10 seconds) to specify video length in seconds. Set to 5 seconds as default
 
 Note: This bot can only process 1 image at a time.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -61,4 +63,4 @@ Note: This bot can only process 1 image at a time.
 
 **Root:** kling-2.1-std
 
-**API Last Updated:** 2026-10-05 01:48:43.417272
+**API Last Updated:** 2026-10-22 13:58:59.076519

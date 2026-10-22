@@ -14,7 +14,7 @@ this_file: src_docs/md/models/gpt-image-1.5.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $4.53 /1M tokens · 151 points/1k tokens |
+| Input Text | 151 points/1k tokens |
 | Input (Images) | $7.22 /1M tokens · 241 points/1k tokens |
 | High Fidelity Editing | $0.06 · 2000 points |
 | Low | 262 points ($0.0078) · 385 points ($0.011) · 393 points ($0.012) |
@@ -52,12 +52,12 @@ All parsed rates (both currencies):
 | Image Output (high; 2:3 (1024x1536)) | USD | 0.18 | 1 image |
 | Image Output (high; 2:3 (1024x1536)) | POINTS | 5990 | 1 image |
 
-**Last Checked:** 2026-10-05T02:11:02.851506+00:00
+**Last Checked:** 2026-10-22 13:23:53.717860
 
 
 ## Bot Information
 
-**Creator:** openai
+**Creator:** @openai
 
 **Description:** OpenAI's frontier image generation model in ChatGPT as of December 2025, offering exceptional prompt adherence, world knowledge, precise edits, facial preservation, level of detail, and overall quality with improved latency/generation times. It supports editing, restyling, and combining images attached to the latest user query. For a conversational image generation and editing experience use: https://poe.com/GPT-5.2
 
@@ -66,6 +66,8 @@ Set aspect ratio, with options 3:2, 1:1 and 2:3.
 Set quality to low, medium and high. Default is set to high.
 Enable use mask by toggling it on or by typing 'use_mask' in the prompt. This option is turned off by default.
 Disable high fidelity by toggling it off or by typing 'use_high_fidelity'. This option is turned on by default.
+
+**Extra:** Powered by a server managed by @openai. Learn more
 
 
 ## Architecture
@@ -89,4 +91,4 @@ Disable high fidelity by toggling it off or by typing 'use_high_fidelity'. This 
 
 **Root:** gpt-image-1.5
 
-**API Last Updated:** 2026-10-05 01:48:43.415879
+**API Last Updated:** 2026-10-22 13:58:59.074629

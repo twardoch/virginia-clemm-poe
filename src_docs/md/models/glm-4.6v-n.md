@@ -21,7 +21,7 @@ this_file: src_docs/md/models/glm-4.6v-n.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.30/1M tokens · 10 points/1k tokens |
+| Input Text | 10 points/1k tokens |
 | Output (Text) | $0.91/1M tokens · 30 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,14 +33,16 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.91 | 1000000 tokens |
 | Output (text) | POINTS | 30 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:11:19.593553+00:00
+**Last Checked:** 2026-10-22 13:25:51.387804
 
 
 ## Bot Information
 
-**Creator:** novitaai
+**Creator:** @novitaai
 
-**Description:** GLM-4.6V represents a significant multimodal advancement in the GLM series, achieving state-of-the-art visual understanding accuracy for models of its parameter scale. Notably, it's the first visual model to natively integrate Function Call capabilities directly into its architecture, creating a seamless pathway from visual perception to executable actions. This breakthrough establishes a unified technical foundation for deploying multimodal agents in real-world business applications.
+**Description:** For text and image tasks, try https://poe.com/GLM-5.3-Flash-Zai.
+
+GLM-4.6V represents a significant multimodal advancement in the GLM series, achieving state-of-the-art visual understanding accuracy for models of its parameter scale. Notably, it's the first visual model to natively integrate Function Call capabilities directly into its architecture, creating a seamless pathway from visual perception to executable actions. This breakthrough establishes a unified technical foundation for deploying multimodal agents in real-world business applications.
 
 File Support: Text, Markdown, Image and PDF files
 Context window: 131k tokens
@@ -49,6 +51,8 @@ Optional parameters:
 Enable Thinking - Toggle this on for the model to think before providing a response. This is disabled by default
 Temperature - Controls randomness in the response. Lower values make the output more focused and deterministic. Select from 0 to 2 range. This is set to 0.7 by default.
 Max Output Tokens: Maximum number of tokens to generate in the response. This can be set from 1 to 32768. Set to Max token at 32768 by default.
+
+**Extra:** Powered by a server managed by @novitaai. Learn more
 
 
 ## Architecture
@@ -72,4 +76,4 @@ Max Output Tokens: Maximum number of tokens to generate in the response. This ca
 
 **Root:** glm-4.6v-n
 
-**API Last Updated:** 2026-10-05 01:48:43.416067
+**API Last Updated:** 2026-10-22 13:58:59.074980

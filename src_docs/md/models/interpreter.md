@@ -22,14 +22,16 @@ All parsed rates (both currencies):
 |---|---|---|---|
 | Message cost | POINTS | From 1 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:56.644791+00:00
+**Last Checked:** 2026-10-22 13:39:01.246723
 
 
 ## Bot Information
 
-**Creator:** poe_tools
+**Creator:** @poe_tools
 
 **Description:** Interpreter for Poe Python
+
+**Extra:** Runs inside Poe's protected environment. Learn more
 
 
 ## Architecture
@@ -53,4 +55,4 @@ All parsed rates (both currencies):
 
 **Root:** interpreter
 
-**API Last Updated:** 2026-10-05 01:48:43.417905
+**API Last Updated:** 2026-10-22 13:58:59.077001

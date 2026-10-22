@@ -32,12 +32,12 @@ All parsed rates (both currencies):
 | Image input | USD | 0.050 | 1 image |
 | Image input | POINTS | 1667 | 1 image |
 
-**Last Checked:** 2026-10-05T02:13:14.998904+00:00
+**Last Checked:** 2026-10-22 13:41:48.400904
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Grok Imagine Video 1.5 supports text-to-video, image-to-video, and reference-to-video generation with up to seven reference images for consistent characters, up to 15 seconds at 1080p.
 
@@ -45,6 +45,8 @@ Notes:
 - Attach 2 to 7 images to keep those characters consistent in a new scene, up to 720p. Refer to them in your prompt as <IMAGE_1>, <IMAGE_2>, and so on
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -68,4 +70,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** grok-imgn-video-1.5
 
-**API Last Updated:** 2026-10-05 01:48:43.418179
+**API Last Updated:** 2026-10-22 13:58:59.077211

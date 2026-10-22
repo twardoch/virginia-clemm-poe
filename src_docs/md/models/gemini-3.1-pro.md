@@ -21,8 +21,8 @@ this_file: src_docs/md/models/gemini-3.1-pro.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $2.02/1M tokens · 67 points/1k tokens |
-| Input (Image) | $2.02/1M tokens · 67 points/1k tokens |
+| Input Text | 67 points/1k tokens |
+| Input Image | 67 points/1k tokens |
 | Input (Video) | $0.00014/second · 5 points/second |
 | Input (Audio) | $0.000065/second · 3 points/second |
 | Output (Text) | $12.12/1M tokens · 400 points/1k tokens |
@@ -45,16 +45,20 @@ All parsed rates (both currencies):
 | Output | USD | 0.014 | 1 search |
 | Output | POINTS | 467 | 1 search |
 
-**Last Checked:** 2026-10-05T02:10:33.716855+00:00
+**Last Checked:** 2026-10-22 13:21:42.300979
 
 
 ## Bot Information
 
-**Creator:** google
+**Creator:** @google
 
-**Description:** Gemini 3.1 Pro is a state-of-the-art model for complex problem-solving, advanced reasoning, creative coding, and ambitious agentic workflows, delivering top benchmark results including a verified score of 77.1% on the ARC-AGI-2 benchmark (more than double the reasoning performance of Gemini 3 Pro).
+**Description:** For Google’s latest model, try Gemini 4 Argon: https://poe.com/Gemini-4-Argon
+
+Gemini 3.1 Pro is a state-of-the-art model for complex problem-solving, advanced reasoning, creative coding, and ambitious agentic workflows, delivering top benchmark results including a verified score of 77.1% on the ARC-AGI-2 benchmark (more than double the reasoning performance of Gemini 3 Pro).
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by Google: gemini-3.1-pro-preview. Learn more
 
 
 ## Architecture
@@ -78,4 +82,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** gemini-3.1-pro
 
-**API Last Updated:** 2026-10-05 01:48:43.415193
+**API Last Updated:** 2026-10-22 13:58:59.074040

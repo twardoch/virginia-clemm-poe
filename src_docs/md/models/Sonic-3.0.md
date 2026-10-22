@@ -14,7 +14,7 @@ this_file: src_docs/md/models/Sonic-3.0.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.0061/message · 200 points/message |
+| Total Cost | 200 points/message |
 
 All parsed rates (both currencies):
 
@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.0061 | 1 message |
 | Total cost | POINTS | 200 | 1 message |
 
-**Last Checked:** 2026-10-05T02:09:54.614364+00:00
+**Last Checked:** 2026-10-22 13:13:44.189101
 
 
 ## Bot Information
 
-**Creator:** cartesiateam
+**Creator:** @cartesiateam
 
 **Description:** Generates audio based on your prompt using the latest Cartesia's Sonic 3.0 text-to-speech model in your voice of choice.
 Supports 10k characters.
@@ -235,6 +235,8 @@ Oleh - Professional Guy
 -- Vietnamese --
 Minh - Conversational Partner
 Xia - Calm Companion
+
+**Extra:** Powered by a server managed by @cartesiateam. Learn more
 
 
 ## Architecture

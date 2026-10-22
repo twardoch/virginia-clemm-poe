@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Finetuning | USD | 1.72 | 1 message |
 | Finetuning | POINTS | 56667 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:37.304913+00:00
+**Last Checked:** 2026-10-22 13:35:41.974723
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Fine-tune the FLUX dev model with your own pictures! Upload 8-12 of them (same subject, only one subject in the picture, ideally from different poses and backgrounds) and wait ~2-5 minutes to create your own finetuned bot that will generate pictures of this subject in whatever setting you want.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -54,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** flux-dev-finetuner
 
-**API Last Updated:** 2026-10-05 01:48:43.417315
+**API Last Updated:** 2026-10-22 13:58:59.076592

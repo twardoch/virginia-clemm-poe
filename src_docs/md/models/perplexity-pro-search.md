@@ -35,12 +35,12 @@ All parsed rates (both currencies):
 | Output Tokens | USD | 0.039 | 1000 tokens |
 | Output Tokens | POINTS | 1300 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:11:54.624372+00:00
+**Last Checked:** 2026-10-22 13:29:56.577169
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Perplexity Pro Search turns Sonar Pro into a full agentic researcher that autonomously chains web searches, and fetches full pages while streaming its live reasoning. It dynamically adapts its strategy for complex queries, far beyond standard Sonar Pro's single search. 
 
@@ -74,6 +74,8 @@ Parameter controls available:
    - Image format filter e.g. jpg,png,webp restricts to specific formats (gif, jpg, png, webp supported)
    - Return videos includes embedded video previews (YouTube videos render as iframes)
 
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
+
 
 ## Architecture
 
@@ -96,4 +98,4 @@ Parameter controls available:
 
 **Root:** perplexity-pro-search
 
-**API Last Updated:** 2026-10-05 01:48:43.416928
+**API Last Updated:** 2026-10-22 13:58:59.075912

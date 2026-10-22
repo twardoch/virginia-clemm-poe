@@ -1,8 +1,8 @@
 ---
-this_file: src_docs/md/models/gpt-6.1-sol.md
+this_file: src_docs/md/models/GPT-6.1-Sol.md
 ---
 
-# [gpt-6.1-sol](https://poe.com/gpt-6.1-sol){ .md-button .md-button--primary }
+# [GPT-6.1-Sol](https://poe.com/GPT-6.1-Sol){ .md-button .md-button--primary }
 
 **Tier 4:** 200.5 points · 1,000 tokens (500 input + 500 output)
 
@@ -10,18 +10,11 @@ this_file: src_docs/md/models/gpt-6.1-sol.md
 
 ## Pricing
 
-### API Pricing (USD)
-
-| Type | Cost |
-|------|------|
-| Prompt | $0.0000020202/token |
-| Completion | $0.000010101/token |
-
 ### Website Pricing
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $2.02/1M tokens · 67 points/1k tokens |
+| Input Text | 67 points/1k tokens |
 | Output (Text) | $10.10/1M tokens · 334 points/1k tokens |
 | Output | $0.010/search · 334 points/search |
 
@@ -36,35 +29,37 @@ All parsed rates (both currencies):
 | Output | USD | 0.010 | 1 search |
 | Output | POINTS | 334 | 1 search |
 
-**Last Checked:** 2026-10-05T02:10:24.076280+00:00
+**Last Checked:** 2026-10-22 13:05:03.624724
 
 
 ## Bot Information
 
-**Creator:** openai
+**Creator:** @openai
 
 **Description:** OpenAI’s GPT-6.1 Sol for complex coding, reasoning, and professional work.
+
+**Extra:** Powered by a server managed by @openai. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text, image
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text,image->text
+**Modality:** unknown
 
 
 ## Technical Details
 
-**Model ID:** `gpt-6.1-sol`
+**Model ID:** `GPT-6.1-Sol`
 
-**Object Type:** model
+**Object Type:** bot
 
-**Created:** 1790702517392
+**Created:** Unknown
 
-**Owned By:** OpenAI
+**Owned By:** openai
 
-**Root:** gpt-6.1-sol
+**Root:** GPT-6.1-Sol
 
-**API Last Updated:** 2026-10-05 01:48:43.414840
+**API Last Updated:** Not listed in API

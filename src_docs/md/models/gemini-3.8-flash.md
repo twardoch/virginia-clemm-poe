@@ -21,7 +21,7 @@ this_file: src_docs/md/models/gemini-3.8-flash.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.76/1M tokens · 25 points/1k tokens |
+| Input Text | 25 points/1k tokens |
 | Output (Text) | $3.79/1M tokens · 125 points/1k tokens |
 | Output | $0.014/search · 467 points/search |
 
@@ -36,14 +36,16 @@ All parsed rates (both currencies):
 | Output | USD | 0.014 | 1 search |
 | Output | POINTS | 467 | 1 search |
 
-**Last Checked:** 2026-10-05T02:10:24.293546+00:00
+**Last Checked:** 2026-10-22 13:19:24.071426
 
 
 ## Bot Information
 
-**Creator:** google
+**Creator:** @google
 
 **Description:** Google’s fast, cost-efficient workhorse model for coding and agents. Gemini 3.8 Flash delivers strong reasoning at Flash speed, with a 1M-token context window, web search, and adjustable thinking levels.
+
+**Extra:** Powered by a server managed by @google. Learn more
 
 
 ## Architecture
@@ -67,4 +69,4 @@ All parsed rates (both currencies):
 
 **Root:** gemini-3.8-flash
 
-**API Last Updated:** 2026-10-05 01:48:43.414867
+**API Last Updated:** 2026-10-22 13:58:59.073550

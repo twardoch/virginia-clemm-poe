@@ -21,7 +21,7 @@ this_file: src_docs/md/models/mistral-large-2.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $3.03/1M tokens · 100 points/1k tokens |
+| Input Text | 100 points/1k tokens |
 | Output (Text) | $9.09/1M tokens · 300 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,14 +33,16 @@ All parsed rates (both currencies):
 | Output (text) | USD | 9.09 | 1000000 tokens |
 | Output (text) | POINTS | 300 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:12:45.749468+00:00
+**Last Checked:** 2026-10-22 13:37:09.837753
 
 
 ## Bot Information
 
-**Creator:** mistral
+**Creator:** @mistral
 
 **Description:** Mistral's latest text generation model (Mistral-Large-2407) with top-tier reasoning capabilities. It can be used for complex multilingual reasoning tasks, including text understanding, transformation, and code generation. This bot has the full 128k context window supported by the model.
+
+**Extra:** Powered by Mistral. Learn more
 
 
 ## Architecture
@@ -64,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** mistral-large-2
 
-**API Last Updated:** 2026-10-05 01:48:43.417524
+**API Last Updated:** 2026-10-22 13:58:59.076781

@@ -23,16 +23,18 @@ All parsed rates (both currencies):
 | Video Output | USD | 0.086 | 1 second |
 | Video Output | POINTS | 2834 | 1 second |
 
-**Last Checked:** 2026-10-05T02:12:39.436365+00:00
+**Last Checked:** 2026-10-22 13:35:58.237548
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Kling-1.5-Pro video generation bot, hosted by fal.ai. For best results, upload an image attachment. 
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -56,4 +58,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** kling-1.5-pro
 
-**API Last Updated:** 2026-10-05 01:48:43.417334
+**API Last Updated:** 2026-10-22 13:58:59.076627

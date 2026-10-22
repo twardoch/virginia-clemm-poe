@@ -26,12 +26,12 @@ All parsed rates (both currencies):
 | Output (audio tokens) | USD | 0.030 | 1000 tokens |
 | Output (audio tokens) | POINTS | 1000 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:39.944848+00:00
+**Last Checked:** 2026-10-22 13:45:36.124645
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Gemini‑2.5‑Flash‑TTS is Google’s low‐latency text‑to‑speech model that converts text input into audio output, supporting both single‑ and multi‑speaker voices with controllable style, accent, and expressive tone — ideal for applications like podcasts, audiobooks, and conversational voice systems.
 
@@ -42,6 +42,8 @@ Notes:
 - The model auto-detects the input language. The Language setting is a hint to help choose the right voice/accent, the model may override it if the text is in a different language.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -65,4 +67,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** gemini-2.5-flash-tts
 
-**API Last Updated:** 2026-10-05 01:48:43.418826
+**API Last Updated:** 2026-10-22 13:58:59.077788

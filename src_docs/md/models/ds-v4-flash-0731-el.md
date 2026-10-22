@@ -21,7 +21,7 @@ this_file: src_docs/md/models/ds-v4-flash-0731-el.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.43/1M tokens · 15 points/1k tokens |
+| Input Text | 15 points/1k tokens |
 | Output (Text) | $1.28/1M tokens · 43 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,16 +33,18 @@ All parsed rates (both currencies):
 | Output (text) | USD | 1.28 | 1000000 tokens |
 | Output (text) | POINTS | 43 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:33.989650+00:00
+**Last Checked:** 2026-10-22 13:45:00.076709
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** DeepSeek V4 Flash 0731 is a 284B MoE reasoning model with 13B active parameters, a 1M context window, strong agentic coding, function calling, and reasoning support.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -66,4 +68,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** ds-v4-flash-0731-el
 
-**API Last Updated:** 2026-10-05 01:48:43.418758
+**API Last Updated:** 2026-10-22 13:58:59.077653

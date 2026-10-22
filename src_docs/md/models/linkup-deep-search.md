@@ -19,7 +19,7 @@ this_file: src_docs/md/models/linkup-deep-search.md
 
 | Type | Cost |
 |------|------|
-| Bot Message | $0.081/message · 2667 points/message |
+| Bot Message | 2667 points/message |
 
 All parsed rates (both currencies):
 
@@ -28,12 +28,12 @@ All parsed rates (both currencies):
 | Bot message | USD | 0.081 | 1 message |
 | Bot message | POINTS | 2667 | 1 message |
 
-**Last Checked:** 2026-10-05T02:11:53.459391+00:00
+**Last Checked:** 2026-10-22 13:29:48.608602
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Linkup Deep Search is an AI-powered search bot that continues to search iteratively if it hasn't found sufficient information on the first attempt. Results are slower compared to its Standard search counterpart, but often yield to more comprehensive results.
 Linkup's technology ranks #1 globally for factual accuracy, achieving state-of-the-art scores on OpenAI’s SimpleQA benchmark. 
@@ -50,6 +50,8 @@ Parameter controls available:
 5. Citation options: Toggle enable inline citation to include inline citations in the response text (Default: `on`). Toggle include sources list to include a list of sources in the response (Default: `on`)
 
 Learn more: https://www.linkup.so/
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -73,4 +75,4 @@ Learn more: https://www.linkup.so/
 
 **Root:** linkup-deep-search
 
-**API Last Updated:** 2026-10-05 01:48:43.416903
+**API Last Updated:** 2026-10-22 13:58:59.075886

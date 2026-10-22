@@ -26,16 +26,18 @@ All parsed rates (both currencies):
 | Research analysis | POINTS | 200 | 1 search |
 | Research response | POINTS | 150 | 1 search |
 
-**Last Checked:** 2026-10-05T02:11:50.740038+00:00
+**Last Checked:** 2026-10-22 13:29:32.145964
 
 
 ## Bot Information
 
-**Creator:** gptrdev
+**Creator:** @gptrdev
 
 **Description:** GPT Researcher is an agent that conducts deep research on any topic and generates a comprehensive report with citations. GPT Researcher is powered by Tavily's search engine.
 
 GPTR is based on the popular open source project: https://github.com/assafelovic/gpt-researcher -- by integrating Tavily search, it is optimized for curation and ranking of trusted research sources. Learn more at https://gptr.dev or https://tavily.com
+
+**Extra:** Powered by a server managed by @gptrdev. Learn more
 
 
 ## Architecture
@@ -59,4 +61,4 @@ GPTR is based on the popular open source project: https://github.com/assafelovic
 
 **Root:** gpt-researcher
 
-**API Last Updated:** 2026-10-05 01:48:43.416860
+**API Last Updated:** 2026-10-22 13:58:59.075845

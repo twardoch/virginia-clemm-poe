@@ -26,16 +26,18 @@ All parsed rates (both currencies):
 | Video Output (Pro (1080p)) | USD | 0.18 | 1 second |
 | Video Output (Pro (1080p)) | POINTS | 6000 | 1 second |
 
-**Last Checked:** 2026-10-05T02:11:01.155464+00:00
+**Last Checked:** 2026-10-22 13:23:45.841261
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Kling v3 Motion Control uses Kuaishou's Kling 3.0 model to transfer motion from a reference video onto a character from a reference image, generating a new video where the subject performs the movements with high fidelity and temporal consistency with support for Standard (720p) and Pro (1080p) quality tiers.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -59,4 +61,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** kling-v3-motion-ctrl
 
-**API Last Updated:** 2026-10-05 01:48:43.415852
+**API Last Updated:** 2026-10-22 13:58:59.074608

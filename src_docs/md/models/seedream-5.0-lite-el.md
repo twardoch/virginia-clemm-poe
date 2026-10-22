@@ -23,17 +23,19 @@ All parsed rates (both currencies):
 | Seedream 5.0 Lite | USD | 0.0350 | 1 image |
 | Seedream 5.0 Lite | POINTS | 1167 | 1 image |
 
-**Last Checked:** 2026-10-05T02:13:04.893141+00:00
+**Last Checked:** 2026-10-22 13:40:57.241622
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Seedream 5.0 Lite is ByteDance’s unified multimodal image-generation model, designed to think through prompts before rendering and offering stronger understanding, reasoning, and image quality. It supports both text-to-image and image-to-image creation, with features like high-resolution output, and consistent results for detailed scenes, editing, and branded visuals.
 This model is served from Malaysia.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -57,4 +59,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** seedream-5.0-lite-el
 
-**API Last Updated:** 2026-10-05 01:48:43.417956
+**API Last Updated:** 2026-10-22 13:58:59.077024

@@ -19,7 +19,7 @@ this_file: src_docs/md/models/exa-answer.md
 
 | Type | Cost |
 |------|------|
-| Bot Message | $0.0081/message · 267 points/message |
+| Bot Message | 267 points/message |
 
 All parsed rates (both currencies):
 
@@ -28,12 +28,12 @@ All parsed rates (both currencies):
 | Bot message | USD | 0.0081 | 1 message |
 | Bot message | POINTS | 267 | 1 message |
 
-**Last Checked:** 2026-10-05T02:11:29.240536+00:00
+**Last Checked:** 2026-10-22 13:26:57.933188
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Get a quick LLM-style answer to a question informed by Exa search results. 
 
@@ -44,6 +44,8 @@ Audio and video file upload is not supported.
 
 Parameter Controls Available:
 - Include source text snippets. Toggle `on` to show text snippets under each source citation. This is set to `off` by default.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -67,4 +69,4 @@ Parameter Controls Available:
 
 **Root:** exa-answer
 
-**API Last Updated:** 2026-10-05 01:48:43.416259
+**API Last Updated:** 2026-10-22 13:58:59.075246

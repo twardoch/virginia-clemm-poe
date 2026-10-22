@@ -44,12 +44,12 @@ All parsed rates (both currencies):
 | Video Effects/Video Transition Output (1080p) | USD | 0.32 | 1 second |
 | Video Effects/Video Transition Output (1080p) | POINTS | 10667 | 1 second |
 
-**Last Checked:** 2026-10-05T02:09:35.243231+00:00
+**Last Checked:** 2026-10-22 13:09:40.278805
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Pixverse v4.5 is a video generation model capable of generating high quality videos in under a minute. 
 
@@ -63,14 +63,16 @@ Set the resolution (360p,540p,720p or 1080p).
 Effect to set the video generation effect, provided 1 image is given (Options: `Kiss_Me_AI`, `Kiss`, `Muscle_Surge`, `Warmth_of_Jesus`, `Anything,_Robot`, `The_Tiger_Touch`, `Hug`, `Holy_Wings`, `Hulk`, `Venom`, `Microwave`). Use `--style` to set the video generation style (for text-to-video,image-to-video, and transition only, options: `anime`, `3d_animation`, `clay`, `comic`, `cyberpunk`).  
 Seed to set the seed and Aspect ratio to set the aspect ratio (16:9, 4:3, 1:1, 3:4, 9:16).
 
+**Extra:** Powered by a server managed by @fal. Learn more
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** video
 
-**Modality:** text->video
+**Modality:** unknown->video
 
 
 ## Technical Details

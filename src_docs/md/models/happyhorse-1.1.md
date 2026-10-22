@@ -26,12 +26,12 @@ All parsed rates (both currencies):
 | 1080P | USD | 0.18 | 1 second |
 | 1080P | POINTS | 6000 | 1 second |
 
-**Last Checked:** 2026-10-05T02:13:17.538034+00:00
+**Last Checked:** 2026-10-22 13:42:08.939536
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** HappyHorse 1.1, from Alibaba, supports text-to-video, image-to-video, and reference-to-video from up to nine images, all with synchronized native audio. It has sharper visual quality, smoother motion, and stronger character consistency across clips, at 720p or 1080p for 3 to 15 seconds.
 
@@ -46,6 +46,8 @@ Input limits
 - No video or audio input.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -69,4 +71,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** happyhorse-1.1
 
-**API Last Updated:** 2026-10-05 01:48:43.418233
+**API Last Updated:** 2026-10-22 13:58:59.077281

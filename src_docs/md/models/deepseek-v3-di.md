@@ -20,7 +20,7 @@ this_file: src_docs/md/models/deepseek-v3-di.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.0044/message · 145 points/message |
+| Total Cost | 145 points/message |
 
 All parsed rates (both currencies):
 
@@ -29,16 +29,18 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.0044 | 1 message |
 | Total cost | POINTS | 145 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:42.109120+00:00
+**Last Checked:** 2026-10-22 13:36:15.840929
 
 
 ## Bot Information
 
-**Creator:** deepinfra
+**Creator:** @deepinfra
 
 **Description:** Deepseek-v3 – the new top open-source LLM. Achieves state-of-the-art performance in tasks such as coding, mathematics, and reasoning. All data you submit to this bot is governed by the Poe privacy policy and is only sent to DeepInfra, a US-based company.
 
 Supports 64k tokens of input context and 8k tokens of output context. Quantization: FP8 (official).
+
+**Extra:** Powered by a server managed by @deepinfra. Learn more
 
 
 ## Architecture
@@ -62,4 +64,4 @@ Supports 64k tokens of input context and 8k tokens of output context. Quantizati
 
 **Root:** deepseek-v3-di
 
-**API Last Updated:** 2026-10-05 01:48:43.417405
+**API Last Updated:** 2026-10-22 13:58:59.076702

@@ -10,7 +10,7 @@ this_file: src_docs/md/models/FLUX-anime.md
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Generate anime styled pictures with FLUX.1-schnell
 

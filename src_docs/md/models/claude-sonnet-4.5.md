@@ -21,7 +21,7 @@ this_file: src_docs/md/models/claude-sonnet-4.5.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $2.58/1M tokens · 85 points/1k tokens |
+| Input Text | 85 points/1k tokens |
 | Output (Text) | $12.88/1M tokens · 425 points/1k tokens |
 | Output | $0.010/search · 334 points/search |
 
@@ -36,12 +36,12 @@ All parsed rates (both currencies):
 | Output | USD | 0.010 | 1 search |
 | Output | POINTS | 334 | 1 search |
 
-**Last Checked:** 2026-10-05T02:10:59.699822+00:00
+**Last Checked:** 2026-10-22 13:23:38.053922
 
 
 ## Bot Information
 
-**Creator:** anthropic
+**Creator:** @anthropic
 
 **Description:** Claude Sonnet 4.5 represents a major leap forward in AI capability and alignment. It is the most advanced model released by Anthropic to date, distinguished by dramatic improvements in reasoning, mathematics, and real-world coding. Supports 200k tokens of context - Anthropic retired the 1M-token beta for this model on 2026-04-30 (platform.claude.com/docs/en/release-notes/api).
 
@@ -69,4 +69,4 @@ All parsed rates (both currencies):
 
 **Root:** claude-sonnet-4.5
 
-**API Last Updated:** 2026-10-05 01:48:43.415841
+**API Last Updated:** 2026-10-22 13:58:59.074568

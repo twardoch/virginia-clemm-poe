@@ -20,7 +20,7 @@ this_file: src_docs/md/models/deepseek-r1-turbo-di.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.015/message · 500 points/message |
+| Total Cost | 500 points/message |
 
 All parsed rates (both currencies):
 
@@ -29,16 +29,18 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.015 | 1 message |
 | Total cost | POINTS | 500 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:22.285409+00:00
+**Last Checked:** 2026-10-22 13:33:18.195354
 
 
 ## Bot Information
 
-**Creator:** deepinfra
+**Creator:** @deepinfra
 
 **Description:** Top open-source reasoning LLM rivaling OpenAI's o1 model; delivers top-tier performance across math, code, and reasoning tasks at a fraction of the cost. Turbo model is quantized to achieve higher speeds. All data you provide this bot will not be used in training, and is sent only to DeepInfra, a US-based company.
 
 Supports 32k tokens of input context and 8k tokens of output context. Quantization: FP4 (turbo).
+
+**Extra:** Powered by a server managed by @deepinfra. Learn more
 
 
 ## Architecture
@@ -62,4 +64,4 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 
 **Root:** deepseek-r1-turbo-di
 
-**API Last Updated:** 2026-10-05 01:48:43.417193
+**API Last Updated:** 2026-10-22 13:58:59.076352

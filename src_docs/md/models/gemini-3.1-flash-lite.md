@@ -21,7 +21,7 @@ this_file: src_docs/md/models/gemini-3.1-flash-lite.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.25/1M tokens · 9 points/1k tokens |
+| Input Text | 9 points/1k tokens |
 | Output (Text) | $1.52/1M tokens · 50 points/1k tokens |
 | Output | $0.014/search · 467 points/search |
 
@@ -36,16 +36,18 @@ All parsed rates (both currencies):
 | Output | USD | 0.014 | 1 search |
 | Output | POINTS | 467 | 1 search |
 
-**Last Checked:** 2026-10-05T02:10:41.919279+00:00
+**Last Checked:** 2026-10-22 13:21:38.333932
 
 
 ## Bot Information
 
-**Creator:** google
+**Creator:** @google
 
 **Description:** Gemini 3.1 Flash Lite Preview is the fastest and cheapest model in the Gemini 3.1 family. It provides multimodal understanding and intelligence similar to or better than Gemini 2.5 Flash at a low price that makes it perfect for high volume workloads. Supports 1M tokens of context
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by Google: gemini-3.1-flash-lite. Learn more
 
 
 ## Architecture
@@ -69,4 +71,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** gemini-3.1-flash-lite
 
-**API Last Updated:** 2026-10-05 01:48:43.415282
+**API Last Updated:** 2026-10-22 13:58:59.074023

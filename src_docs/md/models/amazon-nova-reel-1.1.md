@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | Per second of video | USD | 0.15 | 1 second |
 | Per second of video | POINTS | 4800 | 1 second |
 
-**Last Checked:** 2026-10-05T02:11:32.621388+00:00
+**Last Checked:** 2026-10-22 13:27:18.191902
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Amazon Nova Reel 1.1 is an advanced AI video generation model that creates up to 2-minute multi-shot videos from text and optional image prompts, offering improved video quality, latency, and visual consistency compared to its predecessor.
 
@@ -56,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** amazon-nova-reel-1.1
 
-**API Last Updated:** 2026-10-05 01:48:43.416323
+**API Last Updated:** 2026-10-22 13:58:59.075337

@@ -22,34 +22,35 @@ this_file: src_docs/md/models/nano-banana-2.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.51/1M tokens · 17 points/1k tokens |
+| Input Text | 17 points/1k tokens |
 | Output (Text) | $3.03/1M tokens · 100 points/1k tokens |
 | Output (Image) | $60.61/1M tokens · 2000 points/1k tokens |
-| Output | $0.014/search · 467 points/search |
 
 All parsed rates (both currencies):
 
 | Service | Currency | Amount | Per |
 |---|---|---|---|
-| Input | USD | 0.51 | 1000000 tokens |
-| Input | POINTS | 17 | 1000 tokens |
+| Input (text) | USD | 0.51 | 1000000 tokens |
+| Input (text) | POINTS | 17 | 1000 tokens |
 | Output (text) | USD | 3.03 | 1000000 tokens |
 | Output (text) | POINTS | 100 | 1000 tokens |
 | Output (image) | USD | 60.61 | 1000000 tokens |
 | Output (image) | POINTS | 2000 | 1000 tokens |
-| Output | USD | 0.014 | 1 search |
-| Output | POINTS | 467 | 1 search |
 
-**Last Checked:** 2026-10-05T02:10:30.399400+00:00
+**Last Checked:** 2026-10-22 13:20:59.097747
 
 
 ## Bot Information
 
-**Creator:** google
+**Creator:** @google
 
-**Description:** Google's latest image model combines Pro-level intelligence with lightning-fast generation. It features advanced world knowledge, precise text rendering, strong subject consistency, and 4K production-ready outputs.
+**Description:** Try Google’s newer Gemini Nano Banana 2.1 for image generation and editing: https://poe.com/Nano-Banana-2.1
+
+Google’s Nano Banana 2 image model combines Pro-level intelligence with lightning-fast generation. It features advanced world knowledge, precise text rendering, strong subject consistency, and 4K production-ready outputs.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @google. Learn more
 
 
 ## Architecture
@@ -73,4 +74,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** nano-banana-2
 
-**API Last Updated:** 2026-10-05 01:48:43.415081
+**API Last Updated:** 2026-10-22 13:58:59.073951

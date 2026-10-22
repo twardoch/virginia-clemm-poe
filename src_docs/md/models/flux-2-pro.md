@@ -14,8 +14,8 @@ this_file: src_docs/md/models/flux-2-pro.md
 
 | Type | Cost |
 |------|------|
-| Image Input | 500 points ($0.015) / Megapixel |
 | Image Output | 1000 points ($0.030) / First Output Megapixel |
+| Image Input | 500 points ($0.015) / Megapixel |
 
 All parsed rates (both currencies):
 
@@ -26,17 +26,19 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.030 | 1 megapixel |
 | Image Output | POINTS | 1000 | 1 megapixel |
 
-**Last Checked:** 2026-10-05T02:11:26.956445+00:00
+**Last Checked:** 2026-10-22 13:26:45.026505
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Flux.2 \[Pro\] is Black Forest Labs' state-of-the-art model with multi-reference support, fine-grained text rendering, and other features. Supports structured JSON prompts, and allows use of hex colour codes within the prompt for precise colouring.  Send images (Up to 8 images) in jpeg/png/webp format for editing. Total megapixels (input + output) should not exceed 9 megapixels.
 
 Optional parameter:
 Set aspect ratio. Select from (16:9, 4:3, 1:1, 3:4, 9:16). It is set to 4:3 aspect ratio as default.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -60,4 +62,4 @@ Set aspect ratio. Select from (16:9, 4:3, 1:1, 3:4, 9:16). It is set to 4:3 aspe
 
 **Root:** flux-2-pro
 
-**API Last Updated:** 2026-10-05 01:48:43.416237
+**API Last Updated:** 2026-10-22 13:58:59.075205

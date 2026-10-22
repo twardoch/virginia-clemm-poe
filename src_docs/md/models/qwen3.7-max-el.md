@@ -21,9 +21,9 @@ this_file: src_docs/md/models/qwen3.7-max-el.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $2.53/1M tokens · 84 points/1k tokens |
+| Input Text | 84 points/1k tokens |
+| Bot Message | 134 points/message |
 | Output (Text) | $7.58/1M tokens · 250 points/1k tokens |
-| Bot Message | $0.0041/message · 134 points/message |
 
 All parsed rates (both currencies):
 
@@ -36,12 +36,12 @@ All parsed rates (both currencies):
 | Bot message | USD | 0.0041 | 1 message |
 | Bot message | POINTS | 134 | 1 message |
 
-**Last Checked:** 2026-10-05T02:13:13.860060+00:00
+**Last Checked:** 2026-10-22 13:41:39.584885
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Qwen3.7 Max is a next‑generation flagship model designed for the agent‑centric era, with its core strengths lying in the breadth and depth of its agent‑level capabilities: it excels at programming, office and productivity tasks, and long‑term autonomous execution.
 This model is served by Alibaba Cloud Int. from Singapore.
@@ -51,6 +51,8 @@ Notes:
 - Text only input
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -74,4 +76,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** qwen3.7-max-el
 
-**API Last Updated:** 2026-10-05 01:48:43.418155
+**API Last Updated:** 2026-10-22 13:58:59.077178

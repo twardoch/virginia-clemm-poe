@@ -23,23 +23,25 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.0026 | 1 message |
 | Image Output | POINTS | 85 | 1 message |
 
-**Last Checked:** 2026-10-05T02:08:28.271457+00:00
+**Last Checked:** 2026-10-22 12:57:49.559738
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Generate anime-themed images from your prompts using the Animagine XL 3.1.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** image
 
-**Modality:** text->image
+**Modality:** unknown->image
 
 
 ## Technical Details

@@ -21,7 +21,7 @@ this_file: src_docs/md/models/nova-lite-2.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.38/1M tokens · 13 points/1k tokens |
+| Input Text | 13 points/1k tokens |
 | Output (Text) | $3.19/1M tokens · 106 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,12 +33,12 @@ All parsed rates (both currencies):
 | Output (text) | USD | 3.19 | 1000000 tokens |
 | Output (text) | POINTS | 106 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:11:30.395162+00:00
+**Last Checked:** 2026-10-22 13:27:05.972851
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Amazon Nova 2 Lite is a fast, cost-effective multimodal reasoning model from Amazon that can process text, images, documents, and video, designed for everyday workloads like chatbots, document processing, and business automation. It offers a 1 million token context window, enabling very large, complex inputs in a single request, including long documents and extended video clips (~90 minutes).
 
@@ -49,6 +49,8 @@ Notes:
 Parameter controls available:
 - Enable Extended thinking. Enable step-by-step reasoning (default: on).
 - Set reasoning effort: Select from  low (faster), medium (balanced) , high (deep analysis). Default: medium (balanced)
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -72,4 +74,4 @@ Parameter controls available:
 
 **Root:** nova-lite-2
 
-**API Last Updated:** 2026-10-05 01:48:43.416279
+**API Last Updated:** 2026-10-22 13:58:59.075277

@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | Video Output | USD | 1.01 | 1000000 tokens |
 | Video Output | POINTS | 33334 | 1000000 tokens |
 
-**Last Checked:** 2026-10-05T02:12:29.621453+00:00
+**Last Checked:** 2026-10-22 13:34:13.035060
 
 
 ## Bot Information
 
-**Creator:** Bytedance
+**Creator:** @Bytedance
 
 **Description:** Seedance Pro Fast is a faster version of Seedance 1.0 Pro that balances speed, quality and cost. Seedance is a video generation model with text-to-video and image-to-video capabilities. It achieves breakthroughs in semantic understanding and prompt following.
 
@@ -40,6 +40,8 @@ Set video duration (3s to 12s). Set to `5s` as default.
 Notes:
 Number of video tokens calculated for pricing is approximately: `height * width * fps * duration / 1024).
 File attachment accepted: jpeg, png, webp
+
+**Extra:** Powered by a server managed by @Bytedance. Learn more
 
 
 ## Architecture
@@ -63,4 +65,4 @@ File attachment accepted: jpeg, png, webp
 
 **Root:** seedance-1.0-pro-fast
 
-**API Last Updated:** 2026-10-05 01:48:43.417247
+**API Last Updated:** 2026-10-22 13:58:59.076464

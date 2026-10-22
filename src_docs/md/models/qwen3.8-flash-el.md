@@ -21,7 +21,7 @@ this_file: src_docs/md/models/qwen3.8-flash-el.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.16/1M tokens · 6 points/1k tokens |
+| Input Text | 6 points/1k tokens |
 | Output (Text) | $0.47/1M tokens · 16 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,16 +33,18 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.47 | 1000000 tokens |
 | Output (text) | POINTS | 16 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:46.658065+00:00
+**Last Checked:** 2026-10-22 13:46:12.135618
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Qwen3.8 Flash is Alibaba's fast multimodal Qwen3.8 model, built for coding, agent, and vision workloads. It accepts text, image, and video input with a 1M token context, and supports deep thinking, function calling, and structured JSON output.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -66,4 +68,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** qwen3.8-flash-el
 
-**API Last Updated:** 2026-10-05 01:48:43.419016
+**API Last Updated:** 2026-10-22 13:58:59.077918

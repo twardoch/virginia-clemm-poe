@@ -14,7 +14,7 @@ this_file: src_docs/md/models/MiniMax-M3-EL.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.30/1M tokens · 10 points/1k tokens |
+| Input Text | 10 points/1k tokens |
 | Output (Text) | $1.21/1M tokens · 40 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -26,12 +26,12 @@ All parsed rates (both currencies):
 | Output (text) | USD | 1.21 | 1000000 tokens |
 | Output (text) | POINTS | 40 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:09:27.018823+00:00
+**Last Checked:** 2026-10-22 13:08:12.909964
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** MiniMax M3 is a multimodal reasoning model for coding, agents, and long documents. Supports text, image, and video input, tools, prompt caching, and adaptive thinking.
 
@@ -41,14 +41,16 @@ Notes:
 
 This bot supports optional parameters for additional customization.
 
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details

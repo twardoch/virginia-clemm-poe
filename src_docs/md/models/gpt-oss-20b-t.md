@@ -20,7 +20,7 @@ this_file: src_docs/md/models/gpt-oss-20b-t.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.00045/message · 15 points/message |
+| Total Cost | 15 points/message |
 
 All parsed rates (both currencies):
 
@@ -29,12 +29,12 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.00045 | 1 message |
 | Total cost | POINTS | 15 | 1 message |
 
-**Last Checked:** 2026-10-05T02:11:31.605128+00:00
+**Last Checked:** 2026-10-22 13:27:14.231804
 
 
 ## Bot Information
 
-**Creator:** togetherai
+**Creator:** @togetherai
 
 **Description:** OpenAI's GPT-OSS-20B provides powerful chain-of-thought reasoning in an efficient 20B parameter model. Designed for single-GPU deployment while maintaining sophisticated reasoning capabilities, this Apache 2.0 licensed model offers the perfect balance of performance and resource efficiency for diverse applications.
 
@@ -62,4 +62,4 @@ All parsed rates (both currencies):
 
 **Root:** gpt-oss-20b-t
 
-**API Last Updated:** 2026-10-05 01:48:43.416317
+**API Last Updated:** 2026-10-22 13:58:59.075318

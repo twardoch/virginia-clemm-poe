@@ -21,7 +21,7 @@ this_file: src_docs/md/models/claude-haiku-4.5.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.86/1M tokens · 29 points/1k tokens |
+| Input Text | 29 points/1k tokens |
 | Output (Text) | $4.29/1M tokens · 142 points/1k tokens |
 | Output | $0.010/search · 334 points/search |
 
@@ -36,14 +36,18 @@ All parsed rates (both currencies):
 | Output | USD | 0.010 | 1 search |
 | Output | POINTS | 334 | 1 search |
 
-**Last Checked:** 2026-10-05T02:10:51.115461+00:00
+**Last Checked:** 2026-10-22 13:26:07.913915
 
 
 ## Bot Information
 
-**Creator:** anthropic
+**Creator:** @anthropic
 
-**Description:** Claude Haiku 4.5 is Anthropic’s fastest and most efficient model, delivering near-frontier intelligence at a fraction of the cost and latency of larger Claude models. Matching Claude Sonnet 4’s performance across reasoning, coding, and computer-use tasks, Haiku 4.5 brings frontier-level capability to real-time and high-volume applications. It introduces extended thinking to the Haiku line, and scores >73% on SWE-bench verified, ranking among the world's best coding models. Supports 200k tokens of context.
+**Description:** For the latest Haiku model, try Claude-Haiku-5.5: https://poe.com/Claude-Haiku-5.5
+
+Claude Haiku 4.5 is an earlier-generation Anthropic model for fast coding and everyday tasks, with extended thinking and a 200k-token context window.
+
+**Extra:** Powered by Anthropic: claude-haiku-4-5-20251001. Learn more
 
 
 ## Architecture
@@ -67,4 +71,4 @@ All parsed rates (both currencies):
 
 **Root:** claude-haiku-4.5
 
-**API Last Updated:** 2026-10-05 01:48:43.415607
+**API Last Updated:** 2026-10-22 13:58:59.075054

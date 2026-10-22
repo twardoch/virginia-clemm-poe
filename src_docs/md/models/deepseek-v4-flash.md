@@ -21,7 +21,7 @@ this_file: src_docs/md/models/deepseek-v4-flash.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.44/1M tokens · 15 points/1k tokens |
+| Input Text | 15 points/1k tokens |
 | Output (Text) | $1.33/1M tokens · 44 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,14 +33,16 @@ All parsed rates (both currencies):
 | Output (text) | USD | 1.33 | 1000000 tokens |
 | Output (text) | POINTS | 44 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:32.925111+00:00
+**Last Checked:** 2026-10-22 13:44:56.143050
 
 
 ## Bot Information
 
-**Creator:** deepseek
+**Creator:** @deepseek
 
 **Description:** DeepSeek V4 Flash is a text model in DeepSeek’s V4 family with reasoning and tool-use capabilities.
+
+**Extra:** Powered by a server managed by @deepseek. Learn more
 
 
 ## Architecture
@@ -64,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** deepseek-v4-flash
 
-**API Last Updated:** 2026-10-05 01:48:43.418741
+**API Last Updated:** 2026-10-22 13:58:59.077639

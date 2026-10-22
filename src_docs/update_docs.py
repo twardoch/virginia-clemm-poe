@@ -239,6 +239,8 @@ def main() -> None:
     logger.info("📋 Copying JSON data to docs directory")
     dest_json = docs_data_dir / "poe_bots.json"
     dest_json.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    # Keep the legacy public data URL synchronized with the current catalogue.
+    (docs_data_dir / "poe_models.json").write_bytes(dest_json.read_bytes())
     logger.success(f"Copied JSON data to: {dest_json}")
 
     # Generate individual model pages
@@ -308,7 +310,7 @@ def main() -> None:
     try:
         # Change to src_docs directory and run mkdocs build
         result = subprocess.run(
-            ["mkdocs", "build", "--clean", "--strict"], cwd=src_docs_dir, capture_output=True, text=True, check=True
+            [sys.executable, "-m", "mkdocs", "build", "--clean", "--strict"], cwd=src_docs_dir, capture_output=True, text=True, check=True
         )
         logger.success("✅ MkDocs site built successfully")
         if result.stdout:

@@ -25,12 +25,12 @@ All parsed rates (both currencies):
 | Image Input/Output | USD | 0.030 | 1 megapixel |
 | Image Input/Output | POINTS | 1000 | 1 megapixel |
 
-**Last Checked:** 2026-10-05T02:12:03.001891+00:00
+**Last Checked:** 2026-10-22 13:30:53.678935
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Flux.2 \[Max\] is Black Forest Labs' latest, state-of-the-art model with multi-reference support, fine-grained text rendering, and other features. 
 
@@ -40,6 +40,8 @@ Send images (Up to 8 images) in jpeg/png/webp format for editing.
 
 Optional parameters:
 - Set aspect ratio. Select from (16:9, 4:3, 1:1, 3:4, 9:16). It is set to 4:3 aspect ratio as default.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -63,4 +65,4 @@ Optional parameters:
 
 **Root:** flux-2-max
 
-**API Last Updated:** 2026-10-05 01:48:43.417023
+**API Last Updated:** 2026-10-22 13:58:59.076051

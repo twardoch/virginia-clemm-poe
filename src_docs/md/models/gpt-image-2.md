@@ -21,8 +21,8 @@ this_file: src_docs/md/models/gpt-image-2.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $5.05/1M tokens · 167 points/1k tokens |
-| Input (Image) | $8.08/1M tokens · 267 points/1k tokens |
+| Input Text | 167 points/1k tokens |
+| Input Image | 267 points/1k tokens |
 | Output (Text) | $30.30/1M tokens · 1000 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -36,12 +36,12 @@ All parsed rates (both currencies):
 | Output (text) | USD | 30.30 | 1000000 tokens |
 | Output (text) | POINTS | 1000 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:10:34.328863+00:00
+**Last Checked:** 2026-10-22 13:20:55.103242
 
 
 ## Bot Information
 
-**Creator:** openai
+**Creator:** @openai
 
 **Description:** OpenAI’s state-of-the-art image generation model as of April 21, 2026, designed for fast, high-quality image generation and editing with strong prompt adherence and flexible image sizes. It supports generating, editing, restyling, and combining images attached to the latest user query.
 
@@ -50,6 +50,8 @@ Optional Parameters:
 Set aspect ratio, with options 3:2, 1:1, and 2:3.
 Set quality to low, medium, and high.
 Enable use mask by toggling it on or by typing use_mask in the prompt. This option is turned off by default.
+
+**Extra:** Powered by a server managed by @openai. Learn more
 
 
 ## Architecture
@@ -73,4 +75,4 @@ Enable use mask by toggling it on or by typing use_mask in the prompt. This opti
 
 **Root:** gpt-image-2
 
-**API Last Updated:** 2026-10-05 01:48:43.415213
+**API Last Updated:** 2026-10-22 13:58:59.073935

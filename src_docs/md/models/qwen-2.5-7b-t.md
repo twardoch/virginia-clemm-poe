@@ -1,8 +1,8 @@
 ---
-this_file: src_docs/md/models/qwen-2.5-7b-t.md
+this_file: src_docs/md/models/Qwen-2.5-7B-T.md
 ---
 
-# [qwen-2.5-7b-t](https://poe.com/qwen-2.5-7b-t){ .md-button .md-button--primary }
+# [Qwen-2.5-7B-T](https://poe.com/Qwen-2.5-7B-T){ .md-button .md-button--primary }
 
 **Tier 3:** 75 points · per message
 
@@ -10,17 +10,11 @@ this_file: src_docs/md/models/qwen-2.5-7b-t.md
 
 ## Pricing
 
-### API Pricing (USD)
-
-| Type | Cost |
-|------|------|
-| Request | $0.0023/request |
-
 ### Website Pricing
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.0023/message · 75 points/message |
+| Total Cost | 75 points/message |
 
 All parsed rates (both currencies):
 
@@ -29,35 +23,37 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.0023 | 1 message |
 | Total cost | POINTS | 75 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:53.167180+00:00
+**Last Checked:** 2026-10-22 13:10:16.237451
 
 
 ## Bot Information
 
-**Creator:** togetherai
+**Creator:** @togetherai
 
 **Description:** Qwen 2.5 7B from Alibaba. Excels in coding, math, instruction following, natural language understanding, and has great multilangual support with more than 29 languages.
+
+**Extra:** Powered by a server managed by @togetherai. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details
 
-**Model ID:** `qwen-2.5-7b-t`
+**Model ID:** `Qwen-2.5-7B-T`
 
-**Object Type:** model
+**Object Type:** bot
 
-**Created:** 1730863674687
+**Created:** Unknown
 
-**Owned By:** Together AI
+**Owned By:** togetherai
 
-**Root:** qwen-2.5-7b-t
+**Root:** Qwen-2.5-7B-T
 
-**API Last Updated:** 2026-10-05 01:48:43.417823
+**API Last Updated:** Not listed in API

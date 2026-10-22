@@ -26,14 +26,16 @@ All parsed rates (both currencies):
 | Audio Generation | USD | 0.00086 | 1 second |
 | Audio Generation | POINTS | 29 | 1 second |
 
-**Last Checked:** 2026-10-05T02:09:24.145485+00:00
+**Last Checked:** 2026-10-22 13:07:56.004552
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** MMAudio generates synchronized audio given text and/or video inputs. Send a prompt to generate an audio corresponding to it, or send a video with the prompt to generate audio for it. Use `--duration` to set the duration of the generated audio, or the portion of the video to add an audio to (WARNING: for adding audio to videos, please set the duration properly to avoid adding audio to only a portion of the video or being overcharged). Send a negative prompt with `--negative_prompt` to refine the generation.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture

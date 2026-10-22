@@ -14,7 +14,7 @@ this_file: src_docs/md/models/DeepSeek-V3.2-Exp.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.0039/message · 130 points/message |
+| Total Cost | 130 points/message |
 
 All parsed rates (both currencies):
 
@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.0039 | 1 message |
 | Total cost | POINTS | 130 | 1 message |
 
-**Last Checked:** 2026-10-05T02:08:39.914203+00:00
+**Last Checked:** 2026-10-22 13:00:40.213277
 
 
 ## Bot Information
 
-**Creator:** novitaai
+**Creator:** @novitaai
 
-**Description:** DeepSeek-V3.2-Exp is an experimental model introducing the groundbreaking DeepSeek Sparse Attention (DSA) mechanism for enhanced long-context processing efficiency.
+**Description:** Try https://poe.com/DeepSeek-V4.1-Flash-1017 for the first-party DeepSeek bot.
+
+DeepSeek-V3.2-Exp is an experimental model introducing the groundbreaking DeepSeek Sparse Attention (DSA) mechanism for enhanced long-context processing efficiency.
 
 Built on V3.1-Terminus, DSA achieves fine-grained sparse attention while maintaining identical output quality. This delivers substantial computational efficiency improvements without compromising accuracy.
 

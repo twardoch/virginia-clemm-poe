@@ -20,7 +20,7 @@ this_file: src_docs/md/models/qwen3.7-max-t.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.0061/message · 200 points/message |
+| Total Cost | 200 points/message |
 
 All parsed rates (both currencies):
 
@@ -29,14 +29,16 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.0061 | 1 message |
 | Total cost | POINTS | 200 | 1 message |
 
-**Last Checked:** 2026-10-05T02:13:14.461013+00:00
+**Last Checked:** 2026-10-22 13:41:43.901688
 
 
 ## Bot Information
 
-**Creator:** togetherai
+**Creator:** @togetherai
 
 **Description:** Qwen3.7-Max is Qwen's flagship proprietary model built for the agent era, combining frontier reasoning with deep, generalizable agentic capabilities across coding, office automation, and long-horizon task execution. It leads on Terminal-Bench 2.0-Terminus (69.7) and achieves 92.4% GPQA Diamond, 80.4% SWE-Bench Verified, and 97.1% HMMT 2026 Feb. According to Qwen, the model maintained coherent execution across a ~35-hour autonomous session, generalizing across agent scaffolds without framework-specific tuning. Available on Together AI with a 1M token context window.
+
+**Extra:** Powered by a server managed by @togetherai. Learn more
 
 
 ## Architecture
@@ -60,4 +62,4 @@ All parsed rates (both currencies):
 
 **Root:** qwen3.7-max-t
 
-**API Last Updated:** 2026-10-05 01:48:43.418171
+**API Last Updated:** 2026-10-22 13:58:59.077195

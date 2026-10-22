@@ -14,7 +14,7 @@ this_file: src_docs/md/models/GLM-5.1-OSL.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $1.00 / 1M tokens · 50 points / 1K tokens |
+| Input Text | 50 points / 1K tokens |
 | Output (Text) | $6.00 / 1M tokens · 300 points / 1K tokens |
 
 All parsed rates (both currencies):
@@ -26,23 +26,25 @@ All parsed rates (both currencies):
 | Output (text) | USD | 6.00 | 1000000 tokens |
 | Output (text) | POINTS | 300 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:08:55.928676+00:00
+**Last Checked:** 2026-10-22 13:03:16.053924
 
 
 ## Bot Information
 
-**Creator:** OpenSourceLab
+**Creator:** @OpenSourceLab
 
-**Description:** Powerful open-source large language model built for agentic coding or autonomous task execution and optimized for refactoring large codebases, debugging runtime error logs, and multi-file project execution. Supported files are PDF, CSS, CSV, JSON, JPG, PNG, WEBP, JS, PY, HTML, XLSX and DOCX. This bot can't process HEIC, AVIF, MP4, MP3, WAV, OBJ, XLS and STL formats.
+**Description:** Legacy open-source large language model from Ziphu AI built for agentic coding or autonomous task execution and optimized for refactoring large codebases, debugging runtime error logs, and extended with multi-file processing. Supported files are PDF, CSS, CSV, JSON, JPG, PNG, WEBP, JS, PY, HTML, XLSX and DOCX. This bot can't process HEIC, AVIF, MP4, MP3, WAV, OBJ, XLS and STL formats.
+
+**Extra:** Powered by a server managed by @OpenSourceLab. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details

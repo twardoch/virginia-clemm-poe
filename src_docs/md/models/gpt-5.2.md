@@ -21,7 +21,7 @@ this_file: src_docs/md/models/gpt-5.2.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $1.59/1M tokens · 53 points/1k tokens |
+| Input Text | 53 points/1k tokens |
 | Output (Text) | $12.73/1M tokens · 420 points/1k tokens |
 | Output | $0.0091/search · 300 points/search |
 
@@ -36,16 +36,18 @@ All parsed rates (both currencies):
 | Output | USD | 0.0091 | 1 search |
 | Output | POINTS | 300 | 1 search |
 
-**Last Checked:** 2026-10-05T02:10:56.569078+00:00
+**Last Checked:** 2026-10-22 13:23:22.023063
 
 
 ## Bot Information
 
-**Creator:** openai
+**Creator:** @openai
 
 **Description:** GPT-5.2 is a state-of-the-art AI model from OpenAI designed for real work across writing, analysis, coding, and problem solving. It handles long contexts and multi-step tasks better than earlier versions, and it’s tuned to give accurate responses with fewer errors. Supports 400k tokens of context, and native vision.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by OpenAI: gpt-5.2. Learn more
 
 
 ## Architecture
@@ -69,4 +71,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** gpt-5.2
 
-**API Last Updated:** 2026-10-05 01:48:43.415767
+**API Last Updated:** 2026-10-22 13:58:59.074492

@@ -35,14 +35,16 @@ All parsed rates (both currencies):
 | Output Tokens | USD | 0.036 | 1000 tokens |
 | Output Tokens | POINTS | 1200 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:15.475725+00:00
+**Last Checked:** 2026-10-22 13:41:52.551597
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Sonar Pro by Perplexity is an advanced AI model that enhances real-time, web-connected search capabilities with double the citations and a larger context window. It's designed for complex queries, providing in-depth, nuanced answers and extended extensibility, making it ideal for enterprises and developers needing robust search solutions. Context Length: 200k (max output token limit of 8k)
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -66,4 +68,4 @@ All parsed rates (both currencies):
 
 **Root:** perplexity-sonar-pro
 
-**API Last Updated:** 2026-10-05 01:48:43.418188
+**API Last Updated:** 2026-10-22 13:58:59.077225

@@ -40,12 +40,12 @@ All parsed rates (both currencies):
 | 4K | USD | 3.452 | 1 second |
 | 4K | POINTS | 115070 | 1 second |
 
-**Last Checked:** 2026-10-05T02:11:18.868887+00:00
+**Last Checked:** 2026-10-22 13:25:35.517442
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Seedance 2.0 Pro is a multimodal AI video generation model built for cinematic, high-quality output from text, images, audio, and video inputs, with strong motion stability, native audio-video generation, and consistent character handling. It is best suited for creators who want more control over references, editing, pacing, and polished storytelling across multiple assets in one workflow.
 This model is served from Malaysia.
@@ -53,6 +53,8 @@ This model is served from Malaysia.
 Note: 4K videos may fail to render, it's recommended to download them and play them locally.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -76,4 +78,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** seedance-2.0-pro-el
 
-**API Last Updated:** 2026-10-05 01:48:43.416053
+**API Last Updated:** 2026-10-22 13:58:59.074913

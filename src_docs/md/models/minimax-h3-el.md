@@ -26,12 +26,12 @@ All parsed rates (both currencies):
 | 2K | USD | 0.26 | 1 second |
 | 2K | POINTS | 8667 | 1 second |
 
-**Last Checked:** 2026-10-05T02:13:35.093556+00:00
+**Last Checked:** 2026-10-22 13:45:08.035555
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** MiniMax H3 is a multimodal video generation model that produces 4 to 15 second clips at 768p or 2K, 24 fps, each with a native stereo audio track. It supports Text-to-Video, Image-to-Video, First/Last Frame, and Reference-to-Video, auto-detected from your attachments or set manually.
 
@@ -44,6 +44,8 @@ Input Limits & Requirements
 - Reference-to-Video: max 9 images, 3 videos, and 3 audio clips, 12 files total
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -67,4 +69,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** minimax-h3-el
 
-**API Last Updated:** 2026-10-05 01:48:43.418785
+**API Last Updated:** 2026-10-22 13:58:59.077684

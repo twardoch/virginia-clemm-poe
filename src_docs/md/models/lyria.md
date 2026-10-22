@@ -14,7 +14,7 @@ this_file: src_docs/md/models/lyria.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | 1400 points per generated song |
+| Input Text | 1400 points per generated song |
 
 All parsed rates (both currencies):
 
@@ -22,12 +22,12 @@ All parsed rates (both currencies):
 |---|---|---|---|
 | Input (text) | POINTS | 1400 | 1 generated song |
 
-**Last Checked:** 2026-10-05T02:12:25.254817+00:00
+**Last Checked:** 2026-10-22 13:33:39.163644
 
 
 ## Bot Information
 
-**Creator:** google
+**Creator:** @google
 
 **Description:** Google DeepMind's Lyria 2 delivers high-quality audio generation, capable of creating diverse soundscapes and musical pieces from text prompts.
 
@@ -39,6 +39,8 @@ Notes:
 Lyria blocks prompts that name specific artists or songs (artist-intent and recitation checks)
 This bot does not support attachments. 
 This bot accepts input prompts of up to 480 tokens.
+
+**Extra:** Powered by a server managed by @google. Learn more
 
 
 ## Architecture
@@ -62,4 +64,4 @@ This bot accepts input prompts of up to 480 tokens.
 
 **Root:** lyria
 
-**API Last Updated:** 2026-10-05 01:48:43.417218
+**API Last Updated:** 2026-10-22 13:58:59.076398

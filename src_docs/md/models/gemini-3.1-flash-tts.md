@@ -26,12 +26,12 @@ All parsed rates (both currencies):
 | Output (audio tokens) | USD | 0.053 | 1000 tokens |
 | Output (audio tokens) | POINTS | 1734 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:13:39.922234+00:00
+**Last Checked:** 2026-10-22 13:45:32.312143
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Gemini 3.1 Flash TTS is Google’s most controllable text-to-speech model yet, designed to turn text into natural-sounding audio with precise control over style, tone, pace, and delivery. It uses new Audio Tags to make voices feel more expressive and customizable for narration, assistants, and other voice experiences.
 
@@ -50,6 +50,8 @@ Expressive Audio Tags:
 - Example: "\[whispers\] I have a secret. \[normal pace\] But first, let me explain."
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -73,4 +75,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** gemini-3.1-flash-tts
 
-**API Last Updated:** 2026-10-05 01:48:43.418822
+**API Last Updated:** 2026-10-22 13:58:59.077780

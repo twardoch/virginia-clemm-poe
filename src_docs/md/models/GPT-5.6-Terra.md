@@ -14,7 +14,7 @@ this_file: src_docs/md/models/GPT-5.6-Terra.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $1.82/1M tokens · 60 points/1k tokens |
+| Input Text | 60 points/1k tokens |
 | Output (Text) | $10.91/1M tokens · 360 points/1k tokens |
 | Output | $0.0091/search · 300 points/search |
 
@@ -29,23 +29,25 @@ All parsed rates (both currencies):
 | Output | USD | 0.0091 | 1 search |
 | Output | POINTS | 300 | 1 search |
 
-**Last Checked:** 2026-10-05T02:09:01.168698+00:00
+**Last Checked:** 2026-10-22 13:04:18.554898
 
 
 ## Bot Information
 
-**Creator:** openai
+**Creator:** @openai
 
 **Description:** A balanced GPT-5.6 model for everyday work, coding, analysis, research, and problem solving. It offers strong general-purpose intelligence while keeping cost lower than flagship-tier models.
+
+**Extra:** Powered by a server managed by @openai. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details

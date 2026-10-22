@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | 1 Image | USD | 0.13 | 1 image |
 | 1 Image | POINTS | 4334 | 1 image |
 
-**Last Checked:** 2026-10-05T02:11:25.562993+00:00
+**Last Checked:** 2026-10-22 13:26:37.285562
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Hunyuan Image 3.0 is Tencent’s next‑generation open‑source text-to-image model that uses a large multimodal Mixture-of-Experts architecture to unify image understanding and generation in one system. It produces high-fidelity, often photorealistic images with strong prompt adherence, multilingual text rendering, and intelligent world-knowledge reasoning that can enrich sparse prompts with appropriate visual details.
 
@@ -55,6 +55,8 @@ Parameter controls available:
    - Negative prompt. Type things to avoid in generated images
    - Seed. Random seed number for reproducible generation with fixed seed (e.g., 42)
 
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
+
 
 ## Architecture
 
@@ -77,4 +79,4 @@ Parameter controls available:
 
 **Root:** hunyuan-image-3
 
-**API Last Updated:** 2026-10-05 01:48:43.416228
+**API Last Updated:** 2026-10-22 13:58:59.075186

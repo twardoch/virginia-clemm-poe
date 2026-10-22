@@ -21,8 +21,8 @@ this_file: src_docs/md/models/gemini-3-flash.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.40/1M tokens · 14 points/1k tokens |
-| Input (Image) | $0.40/1M tokens · 14 points/1k tokens |
+| Input Text | 14 points/1k tokens |
+| Input Image | 14 points/1k tokens |
 | Input (Video) | $0.000028/second · 1 point/second |
 | Input (Audio) | $0.000013/second · 1 point/second |
 | Output (Text) | $2.42/1M tokens · 80 points/1k tokens |
@@ -45,16 +45,18 @@ All parsed rates (both currencies):
 | Output | USD | 0.014 | 1 search |
 | Output | POINTS | 467 | 1 search |
 
-**Last Checked:** 2026-10-05T02:10:56.777410+00:00
+**Last Checked:** 2026-10-22 13:23:26.158888
 
 
 ## Bot Information
 
-**Creator:** google
+**Creator:** @google
 
 **Description:** Building on the reasoning capabilities of Gemini 3 Pro, Gemini 3 Flash is a powerful but affordable and performant model. It has exceptional world knowledge, multimodal understanding and reasoning capabilities at a fraction of the cost of equivalent models (as of December 2025).
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by Google: gemini-3-flash-preview. Learn more
 
 
 ## Architecture
@@ -78,4 +80,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** gemini-3-flash
 
-**API Last Updated:** 2026-10-05 01:48:43.415784
+**API Last Updated:** 2026-10-22 13:58:59.074517

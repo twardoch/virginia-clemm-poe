@@ -21,7 +21,7 @@ this_file: src_docs/md/models/gpt-oss-120b-cs.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.35/1M tokens · 12 points/1k tokens |
+| Input Text | 12 points/1k tokens |
 | Output (Text) | $0.76/1M tokens · 25 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,12 +33,12 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.76 | 1000000 tokens |
 | Output (text) | POINTS | 25 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:11:38.207804+00:00
+**Last Checked:** 2026-10-22 13:27:52.643518
 
 
 ## Bot Information
 
-**Creator:** cerebrasai
+**Creator:** @cerebrasai
 
 **Description:** World’s fastest inference for GPT OSS 120B with Cerebras. OpenAI's GPT-OSS-120B delivers sophisticated chain-of-thought reasoning capabilities in a fully open model. The bot does not accept video, ppt, docx and excel files.
 
@@ -66,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** gpt-oss-120b-cs
 
-**API Last Updated:** 2026-10-05 01:48:43.416499
+**API Last Updated:** 2026-10-22 13:58:59.075514

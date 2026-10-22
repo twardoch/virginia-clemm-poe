@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | Audio Output | USD | 0.025 | 1 message |
 | Audio Output | POINTS | 834 | 1 message |
 
-**Last Checked:** 2026-10-05T02:08:44.600138+00:00
+**Last Checked:** 2026-10-22 13:01:18.787306
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Dia-TTS generates realistic dialogue (e.g. an audio file with two speakers) from transcripts. Please use the following format:
 * pre-fix the person that is speaking with \[S1\] or \[S2\]
@@ -39,14 +39,16 @@ For example:
 \[S1\] Dia is an open weights text to dialogue model. \[S2\] You get full control over scripts and voices. \[S1\] Wow. Amazing. (laughs) \[S2\] Try it now on Poe.
 ```
 
+**Extra:** Powered by a server managed by @fal. Learn more
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** audio
 
-**Modality:** text->audio
+**Modality:** unknown->audio
 
 
 ## Technical Details

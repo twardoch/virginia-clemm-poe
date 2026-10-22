@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Video Output | USD | 0.081 | 1 second |
 | Video Output | POINTS | 2667 | 1 second |
 
-**Last Checked:** 2026-10-05T02:12:21.993984+00:00
+**Last Checked:** 2026-10-22 13:33:14.271374
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** MiniMax Hailuo-02 Pro Video Generation model: Advanced image-to-video generation model with 1080p resolution. Send a prompt with an image for image-to-video, and just a prompt for text-to-video generation. Generates 5 second video.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -54,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** hailuo-02-pro
 
-**API Last Updated:** 2026-10-05 01:48:43.417170
+**API Last Updated:** 2026-10-22 13:58:59.076343

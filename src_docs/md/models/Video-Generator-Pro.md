@@ -23,16 +23,18 @@ All parsed rates (both currencies):
 | Total Cost | USD | 0.18 | 1 video |
 | Total Cost | POINTS | 6000 | 1 video |
 
-**Last Checked:** 2026-10-05T02:10:12.140350+00:00
+**Last Checked:** 2026-10-22 13:16:47.922723
 
 
 ## Bot Information
 
-**Creator:** OpenSourceLab
+**Creator:** @OpenSourceLab
 
 **Description:** Premium video generator with synchronized audio and speech. This bot delivers great results for everyday creative projects. Ideal for content creators, marketers, educators and hobbyists who want quick and high quality output for YouTube.
 
 You can provide the bot a reference image and Video-Generator-Pro will generate a matching video sequence. If you want spoken dialogue, simply enclose the speech in quotation marks and the video generator will embed the voice into the generated clip.
+
+**Extra:** Powered by a server managed by @OpenSourceLab. Learn more
 
 
 ## Architecture

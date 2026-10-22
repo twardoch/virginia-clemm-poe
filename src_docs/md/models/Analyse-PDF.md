@@ -4,7 +4,7 @@ this_file: src_docs/md/models/Analyse-PDF.md
 
 # [Analyse-PDF](https://poe.com/Analyse-PDF){ .md-button .md-button--primary }
 
-**Tier 6:** 1,771 points · 1,000 tokens (500 input + 500 output) + message fee
+**Tier 6:** 1,760.5 points · 1,000 tokens (500 input + 500 output) + message fee
 
 [Comparison method and assumptions](../pricing-method.md).
 
@@ -14,41 +14,43 @@ this_file: src_docs/md/models/Analyse-PDF.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.18/1M tokens · 6 points/1k tokens |
-| Output (Text) | $1.09/1M tokens · 36 points/1k tokens |
-| Output | $0.0091/search · 300 points/search |
-| Bot Message | $0.053/message · 1750 points/message |
+| Input Text | 4 points/1k tokens |
+| Bot Message | 1750 points/message |
+| Output (Text) | $0.51/1M tokens · 17 points/1k tokens |
+| Output | $0.010/search · 334 points/search |
 
 All parsed rates (both currencies):
 
 | Service | Currency | Amount | Per |
 |---|---|---|---|
-| Input | USD | 0.18 | 1000000 tokens |
-| Input | POINTS | 6 | 1000 tokens |
-| Output (text) | USD | 1.09 | 1000000 tokens |
-| Output (text) | POINTS | 36 | 1000 tokens |
-| Output | USD | 0.0091 | 1 search |
-| Output | POINTS | 300 | 1 search |
+| Input | USD | 0.10 | 1000000 tokens |
+| Input | POINTS | 4 | 1000 tokens |
+| Output (text) | USD | 0.51 | 1000000 tokens |
+| Output (text) | POINTS | 17 | 1000 tokens |
+| Output | USD | 0.010 | 1 search |
+| Output | POINTS | 334 | 1 search |
 | Bot message | USD | 0.053 | 1 message |
 | Bot message | POINTS | 1750 | 1 message |
 
-**Last Checked:** 2026-10-05T02:08:28.269738+00:00
+**Last Checked:** 2026-10-22 12:57:31.310967
 
 
 ## Bot Information
 
-**Creator:** OpenSourceLab
+**Creator:** @OpenSourceLab
 
 **Description:** Extracts key points and presents them in an easy-to-digest format. No need to wade through lengthy PDF to find key information. Analyse-PDF will automatically analyse your PDF file. The maximum file size is 50 MB.
+
+**Extra:** Powered by GPT-6-Luna, a model that is hosted by Poe and third party model providers. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details

@@ -20,7 +20,7 @@ this_file: src_docs/md/models/ideogram-v2a.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.039/message · 1300 points/message |
+| Total Cost | 1300 points/message |
 
 All parsed rates (both currencies):
 
@@ -29,12 +29,12 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.039 | 1 message |
 | Total cost | POINTS | 1300 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:36.317249+00:00
+**Last Checked:** 2026-10-22 13:35:34.043861
 
 
 ## Bot Information
 
-**Creator:** ideogramai
+**Creator:** @ideogramai
 
 **Description:** Fast, affordable text-to-image model, optimized for graphic design and photography. For faster and more cost-effective generations, use https://poe.com/Ideogram-v2A-Turbo.
 Note: Supported file type: JPEG, WebP and PNG.
@@ -42,6 +42,8 @@ Note: Supported file type: JPEG, WebP and PNG.
 Optional parameters:
 Aspect to set the aspect ratio. Valid aspect ratios are 10:16, 16:10, 9:16, 16:9, 3:2, 2:3, 4:3, 3:4, & 1:1.
 Style to specify a style (one of `GENERAL`, `REALISTIC`, `DESIGN`, `3D RENDER` and `ANIME` default: `GENERAL`.)
+
+**Extra:** Powered by a server managed by @ideogramai. Learn more
 
 
 ## Architecture
@@ -65,4 +67,4 @@ Style to specify a style (one of `GENERAL`, `REALISTIC`, `DESIGN`, `3D RENDER` a
 
 **Root:** ideogram-v2a
 
-**API Last Updated:** 2026-10-05 01:48:43.417302
+**API Last Updated:** 2026-10-22 13:58:59.076569

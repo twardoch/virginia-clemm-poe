@@ -14,7 +14,7 @@ this_file: src_docs/md/models/Gemma-4-26B.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.13/1M tokens · 5 points/1k tokens |
+| Input Text | 5 points/1k tokens |
 | Output (Text) | $0.40/1M tokens · 14 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -26,23 +26,25 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.40 | 1000000 tokens |
 | Output (text) | POINTS | 14 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:09:04.750411+00:00
+**Last Checked:** 2026-10-22 13:05:37.487848
 
 
 ## Bot Information
 
-**Creator:** OpenSourceLab
+**Creator:** @OpenSourceLab
 
 **Description:** Gemma-4-26B is an open-source model released under the Apache 2.0 license. It can process and analyze large codebases, extensive documentation, and long-form datasets while maintaining strong contextual understanding. Its native function-calling capabilities and strong tool-use performance makes it well suited for building autonomous agents, intelligent assistants, and workflow automation systems. Context window: 256K tokens
+
+**Extra:** Powered by a server managed by @OpenSourceLab. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details

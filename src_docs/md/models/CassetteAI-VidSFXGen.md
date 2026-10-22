@@ -23,23 +23,25 @@ All parsed rates (both currencies):
 | Video Output | USD | 0.051 | 1 message |
 | Video Output | POINTS | 1667 | 1 message |
 
-**Last Checked:** 2026-10-05T02:08:33.940914+00:00
+**Last Checked:** 2026-10-22 12:59:37.650368
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** CassetteAI Video SFX generator can generate sound effects for a video. To use, send a video with your message.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** video
 
-**Modality:** text->video
+**Modality:** unknown->video
 
 
 ## Technical Details

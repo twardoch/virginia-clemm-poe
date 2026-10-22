@@ -21,7 +21,7 @@ this_file: src_docs/md/models/gpt-5.4.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $2.27/1M tokens · 75 points/1k tokens |
+| Input Text | 75 points/1k tokens |
 | Output (Text) | $13.64/1M tokens · 450 points/1k tokens |
 | Output | $0.0091/search · 300 points/search |
 
@@ -36,16 +36,18 @@ All parsed rates (both currencies):
 | Output | USD | 0.0091 | 1 search |
 | Output | POINTS | 300 | 1 search |
 
-**Last Checked:** 2026-10-05T02:10:31.453235+00:00
+**Last Checked:** 2026-10-22 13:20:34.503189
 
 
 ## Bot Information
 
-**Creator:** openai
+**Creator:** @openai
 
 **Description:** GPT-5.4 is the most capable AI model from OpenAI, built for advanced real-world tasks across coding, computer use, deep research, complex document understanding, and multi-step problem solving. It outperforms previous versions on agentic workflows and tool use, delivering stronger reasoning, higher accuracy, and more reliable results on complex tasks.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by OpenAI: gpt-5.4. Learn more
 
 
 ## Architecture
@@ -69,4 +71,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** gpt-5.4
 
-**API Last Updated:** 2026-10-05 01:48:43.415120
+**API Last Updated:** 2026-10-22 13:58:59.073846

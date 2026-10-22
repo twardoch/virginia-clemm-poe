@@ -21,7 +21,7 @@ this_file: src_docs/md/models/gpt-5.4-mini.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.68/1M tokens · 23 points/1k tokens |
+| Input Text | 23 points/1k tokens |
 | Output (Text) | $4.09/1M tokens · 135 points/1k tokens |
 | Output | $0.0091/search · 300 points/search |
 
@@ -36,16 +36,18 @@ All parsed rates (both currencies):
 | Output | USD | 0.0091 | 1 search |
 | Output | POINTS | 300 | 1 search |
 
-**Last Checked:** 2026-10-05T02:10:32.618044+00:00
+**Last Checked:** 2026-10-22 13:20:42.388203
 
 
 ## Bot Information
 
-**Creator:** openai
+**Creator:** @openai
 
 **Description:** GPT‑5.4 Mini is a fast, affordable general‑purpose model designed for production assistants, coding support, document analysis, and multimodal reasoning. With a 400k‑token context window, it handles complex inputs and scalable workflows with strong reliability. 
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by OpenAI: gpt-5.4-mini. Learn more
 
 
 ## Architecture
@@ -69,4 +71,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** gpt-5.4-mini
 
-**API Last Updated:** 2026-10-05 01:48:43.415157
+**API Last Updated:** 2026-10-22 13:58:59.073884

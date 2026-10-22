@@ -32,12 +32,12 @@ All parsed rates (both currencies):
 | URL Fetch Call | USD | 0.0013 | 1 call |
 | URL Fetch Call | POINTS | 44 | 1 call |
 
-**Last Checked:** 2026-10-05T02:11:03.893890+00:00
+**Last Checked:** 2026-10-22 13:24:11.557440
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Perplexity Advanced Deep Research is designed for institutional-grade inquiry, leveraging the powerful reasoning of Claude Opus 4.6 to deliver sophisticated analysis and maximum depth. With enhanced tool access and extensive source coverage, it is the ideal choice for complex tasks requiring rigorous, comprehensive research.
 
@@ -65,6 +65,8 @@ Parameter controls available:
 - Latitude \[decimal\]: Latitude (must be provided with longitude and country)
 - Longitude \[decimal\]: Longitude (must be provided with latitude and country)
 
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
+
 
 ## Architecture
 
@@ -87,4 +89,4 @@ Parameter controls available:
 
 **Root:** perplexity-adv-deep-research
 
-**API Last Updated:** 2026-10-05 01:48:43.415886
+**API Last Updated:** 2026-10-22 13:58:59.074649

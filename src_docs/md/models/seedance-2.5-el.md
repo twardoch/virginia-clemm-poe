@@ -35,12 +35,12 @@ All parsed rates (both currencies):
 | 1080P | USD | 0.680 | 1 second |
 | 1080P | POINTS | 22667 | 1 second |
 
-**Last Checked:** 2026-10-05T02:13:35.250133+00:00
+**Last Checked:** 2026-10-22 13:45:11.876880
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Seedance 2.5 is ByteDance's next-generation video model. It generates a coherent clip of up to 30 seconds in a single request, draws on up to 50 reference assets at once, and edits or extends video you already have.
 
@@ -60,6 +60,8 @@ Input limits
 - Audio: WAV or MP3, 2 to 30 seconds each and 30 seconds in total, under 15 MB each.
 
 This bot supports optional parameters for additional customization.
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -83,4 +85,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** seedance-2.5-el
 
-**API Last Updated:** 2026-10-05 01:48:43.418789
+**API Last Updated:** 2026-10-22 13:58:59.077692

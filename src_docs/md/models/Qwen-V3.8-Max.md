@@ -14,7 +14,7 @@ this_file: src_docs/md/models/Qwen-V3.8-Max.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $2.02/1M tokens · 67 points/1k tokens |
+| Input Text | 67 points/1k tokens |
 | Output (Text) | $6.06/1M tokens · 200 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -26,26 +26,28 @@ All parsed rates (both currencies):
 | Output (text) | USD | 6.06 | 1000000 tokens |
 | Output (text) | POINTS | 200 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:09:38.602176+00:00
+**Last Checked:** 2026-10-22 13:10:25.171104
 
 
 ## Bot Information
 
-**Creator:** novitaai
+**Creator:** @novitaai
 
 **Description:** A 2.4T-parameter MoE flagship for coding and knowledge work. Programs autonomously for days to deliver complete projects end to end, with native visual understanding across planning, execution, and verification, plus deep semantic analysis of ultra-long documents and video.
 
 File Support: Text, Markdown, Image, Video and PDF files
 Context window: 1M tokens
 
+**Extra:** Powered by a server managed by @novitaai. Learn more
+
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text->text
+**Modality:** unknown
 
 
 ## Technical Details

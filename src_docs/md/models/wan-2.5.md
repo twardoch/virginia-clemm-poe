@@ -29,12 +29,12 @@ All parsed rates (both currencies):
 | Video Output (1080p) | USD | 0.15 | 1 second |
 | Video Output (1080p) | POINTS | 5000 | 1 second |
 
-**Last Checked:** 2026-10-05T02:12:24.263859+00:00
+**Last Checked:** 2026-10-22 13:33:31.213224
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Wan-2.5 Video Generation bot. Has text-to-video and image-to-video capabilities. Optionally, send an audio file (mp3) to guide the video generation. 
 
@@ -42,6 +42,8 @@ Optional Parameters:
 Control the output's resolution. Select from 480p, 720p or 1080p defaults to 720. Pricing varies on the basis of resolution.
 Aspect ratio. Select from 16:9, 1:1, 9:16 defaults to 16:9 aspect ratio.
 Duration. Select video duration either 5 seconds or 10 seconds. Defaults to 5 seconds.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -65,4 +67,4 @@ Duration. Select video duration either 5 seconds or 10 seconds. Defaults to 5 se
 
 **Root:** wan-2.5
 
-**API Last Updated:** 2026-10-05 01:48:43.417211
+**API Last Updated:** 2026-10-22 13:58:59.076380

@@ -14,7 +14,7 @@ this_file: src_docs/md/models/OpenAI-TTS-1-HD.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | 1650 ($0.050) points / 1K characters |
+| Input Text | 1650 ($0.050) points / 1K characters |
 
 All parsed rates (both currencies):
 
@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | Input (text) | USD | 0.050 | 1000 characters |
 | Input (text) | POINTS | 1650 | 1000 characters |
 
-**Last Checked:** 2026-10-05T02:09:34.194813+00:00
+**Last Checked:** 2026-10-22 13:09:19.431573
 
 
 ## Bot Information
 
-**Creator:** binaai
+**Creator:** @binaai
 
 **Description:** OpenAI's tts-1-hd model, brought to Poe as a server bot! This model speaks the text in the latest message and outputs audio. Learn more at https://platform.openai.com/docs/models/tts-1-hd.
 
@@ -38,6 +38,8 @@ Optional parameters:
 - response_format: the file format of the generated audio
 
 This bot has higher quality output than https://poe.com/OpenAI-TTS-1, but it is also more expensive.
+
+**Extra:** Powered by a server managed by @binaai. Learn more
 
 
 ## Architecture

@@ -14,8 +14,8 @@ this_file: src_docs/md/models/grok-imagine-image.md
 
 | Type | Cost |
 |------|------|
-| Image Input | 67 points ($0.0020) / image input |
 | Image Output | 667 points ($0.020) / image output |
+| Image Input | 67 points ($0.0020) / image input |
 
 All parsed rates (both currencies):
 
@@ -26,14 +26,16 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.020 | 1 image |
 | Image Output | POINTS | 667 | 1 image |
 
-**Last Checked:** 2026-10-05T02:10:54.199664+00:00
+**Last Checked:** 2026-10-22 13:23:05.776211
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Create creative and artistic images with Grok Imagine Image. Supports text-to-image and image-editing (single image of jpeg/png/webp format). Set aspect ratio via parameter controls.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
@@ -57,4 +59,4 @@ All parsed rates (both currencies):
 
 **Root:** grok-imagine-image
 
-**API Last Updated:** 2026-10-05 01:48:43.415685
+**API Last Updated:** 2026-10-22 13:58:59.074363

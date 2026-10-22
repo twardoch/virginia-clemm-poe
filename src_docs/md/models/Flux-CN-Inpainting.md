@@ -23,23 +23,25 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.064 | 1 message |
 | Image Output | POINTS | 2125 | 1 message |
 
-**Last Checked:** 2026-10-05T02:08:53.108103+00:00
+**Last Checked:** 2026-10-22 13:02:52.672513
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Flux-Dev based Inpainting bot using the Flux-Inpainting ControlNet for precise inpainting.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** image
 
-**Modality:** text->image
+**Modality:** unknown->image
 
 
 ## Technical Details

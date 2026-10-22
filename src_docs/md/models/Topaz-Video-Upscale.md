@@ -23,23 +23,25 @@ All parsed rates (both currencies):
 | Video Output | USD | 0.81 | 1 message |
 | Video Output | POINTS | 26667 | 1 message |
 
-**Last Checked:** 2026-10-05T02:10:09.223639+00:00
+**Last Checked:** 2026-10-22 13:16:14.036309
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Professional-grade video upscaling using Topaz technology. Enhance your videos with high-quality upscaling. Attach a video to upscale it.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture
 
-**Input Modalities:** text
+**Input Modalities:** Unknown
 
 **Output Modalities:** video
 
-**Modality:** text->video
+**Modality:** unknown->video
 
 
 ## Technical Details

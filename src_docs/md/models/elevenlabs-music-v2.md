@@ -28,12 +28,12 @@ All parsed rates (both currencies):
 | Output (message) | USD | 1.43 | 1 message |
 | Output (message) | POINTS | 47334 | 1 message |
 
-**Last Checked:** 2026-10-05T02:11:57.120744+00:00
+**Last Checked:** 2026-10-22 13:30:16.463041
 
 
 ## Bot Information
 
-**Creator:** elevenlabsco
+**Creator:** @elevenlabsco
 
 **Description:** ElevenLabs Music v2 is an advanced AI music generation model that creates original songs, instrumentals, and tracks with vocals from text prompts. Describe the music you want—genre, mood, tempo, key signature, instruments, or lyrics—and the model composes a royalty-free track tailored to your needs.
 
@@ -44,6 +44,8 @@ Key capabilities:
 - Multilingual lyrics and vocals (English, Spanish, French, German, Japanese, and more)
 
 Generated tracks are trained on licensed data and cleared for commercial use. Music length ranges from 3 seconds to 5 minutes.
+
+**Extra:** Powered by a server managed by @elevenlabsco. Learn more
 
 
 ## Architecture
@@ -67,4 +69,4 @@ Generated tracks are trained on licensed data and cleared for commercial use. Mu
 
 **Root:** elevenlabs-music-v2
 
-**API Last Updated:** 2026-10-05 01:48:43.416973
+**API Last Updated:** 2026-10-22 13:58:59.075967

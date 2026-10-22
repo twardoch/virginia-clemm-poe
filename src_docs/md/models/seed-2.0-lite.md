@@ -21,7 +21,7 @@ this_file: src_docs/md/models/seed-2.0-lite.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $0.32/1M tokens · 11 points/1k tokens |
+| Input Text | 11 points/1k tokens |
 | Output (Text) | $2.53/1M tokens · 84 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,12 +33,12 @@ All parsed rates (both currencies):
 | Output (text) | USD | 2.53 | 1000000 tokens |
 | Output (text) | POINTS | 84 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:10:47.401108+00:00
+**Last Checked:** 2026-10-22 13:22:16.006848
 
 
 ## Bot Information
 
-**Creator:** empiriolabsai
+**Creator:** @empiriolabsai
 
 **Description:** Seed 2.0 Lite is a balanced model designed for high-frequency enterprise workloads, optimizing for both capability and cost. Its overall performance surpasses the previous-generation ByteDance-Seed-1.8. It is well-suited for production tasks such as unstructured information processing, text content creation, search and recommendation, and data analysis. The model supports long-context processing, multi-source information fusion, multi-step instruction execution, and high-fidelity structured outputs—delivering stable quality while significantly reducing cost.
 This model is served from Malaysia.
@@ -57,6 +57,8 @@ Parameter controls available:
 - Web Search: Enable real-time web search for up-to-date information (default: false).
 - Image Detail \[low, high, xhigh\]: Quality for image understanding. Higher = more accurate but uses more tokens (default: high).
 - Video FPS \[0.2-5\]: Frame sampling rate for video input. Higher = more frames analyzed, more accurate, more tokens (default: 1).
+
+**Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
 
 ## Architecture
@@ -80,4 +82,4 @@ Parameter controls available:
 
 **Root:** seed-2.0-lite
 
-**API Last Updated:** 2026-10-05 01:48:43.415530
+**API Last Updated:** 2026-10-22 13:58:59.074180

@@ -21,7 +21,7 @@ this_file: src_docs/md/models/qwen3-max-n.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $2.13/1M tokens · 71 points/1k tokens |
+| Input Text | 71 points/1k tokens |
 | Output (Text) | $8.54/1M tokens · 282 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,17 +33,21 @@ All parsed rates (both currencies):
 | Output (text) | USD | 8.54 | 1000000 tokens |
 | Output (text) | POINTS | 282 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:11:40.234385+00:00
+**Last Checked:** 2026-10-22 13:28:43.727707
 
 
 ## Bot Information
 
-**Creator:** novitaai
+**Creator:** @novitaai
 
-**Description:** Qwen/qwen3-max, Enhanced with specialized upgrades in agent programming and tool calling. This official release achieves domain SOTA performance, supporting more complex agent scenarios.
+**Description:** Try https://poe.com/Qwen3.8-Max-0902 for the first-party Qwen bot.
+
+Qwen/qwen3-max, Enhanced with specialized upgrades in agent programming and tool calling. This official release achieves domain SOTA performance, supporting more complex agent scenarios.
 
 File Support: Text, Markdown and PDF files
 Context window: 262k tokens
+
+**Extra:** Powered by a server managed by @novitaai. Learn more
 
 
 ## Architecture
@@ -67,4 +71,4 @@ Context window: 262k tokens
 
 **Root:** qwen3-max-n
 
-**API Last Updated:** 2026-10-05 01:48:43.416548
+**API Last Updated:** 2026-10-22 13:58:59.075675

@@ -14,7 +14,7 @@ this_file: src_docs/md/models/Nemotron-3-Ultra.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.00/message · 0 points/message |
+| Total Cost | 0 points/message |
 
 All parsed rates (both currencies):
 
@@ -23,12 +23,12 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.00 | 1 message |
 | Total cost | POINTS | 0 | 1 message |
 
-**Last Checked:** 2026-10-05T02:09:33.145240+00:00
+**Last Checked:** 2026-10-22 13:09:03.921569
 
 
 ## Bot Information
 
-**Creator:** togetherai
+**Creator:** @togetherai
 
 **Description:** NVIDIA Nemotron 3 Ultra is a 550B parameter (55B activated) open reasoning model built for long-running autonomous agents handling orchestration and complex tasks across coding, deep research, and enterprise workflows. Its hybrid Mamba-Transformer MoE architecture combines Latent MoE — which calls 4 experts at the inference cost of 1 — with Multi-Token Prediction for reduced generation time on long sequences, and Token Budget support for optimal accuracy with minimum reasoning token output. The model supports a 1M token context window and is fully open under the NVIDIA Open Model License with open weights, training data, and recipes.
 

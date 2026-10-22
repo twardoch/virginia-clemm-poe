@@ -9,7 +9,11 @@ import fire
 from playwright.sync_api import sync_playwright
 
 
-def verify(url: str = "http://127.0.0.1:8765", output: str = "/tmp/poe-catalogue-verification.json") -> None:
+def verify(
+    url: str = "http://127.0.0.1:8765",
+    output: str = "/tmp/poe-catalogue-verification.json",
+    expected_count: int | None = None,
+) -> None:
     """Check rendered content, all filters, themes, responsive width and page errors."""
     errors = []
     report = {"url": url, "checks": []}
@@ -22,16 +26,19 @@ def verify(url: str = "http://127.0.0.1:8765", output: str = "/tmp/poe-catalogue
         frame.locator("tbody tr").first.wait_for()
         data = page.request.get(url.rstrip("/") + "/data/poe_bots.json").json()
         models = data["data"]
-        assert len(models) == 501, "Saved catalogue must contain every bot"
+        if expected_count is None:
+            source = Path(__file__).resolve().parents[1] / "src/virginia_clemm_poe/data/poe_bots.json"
+            expected_count = len(json.loads(source.read_text())["data"])
+        assert len(models) == expected_count, "Saved catalogue must contain every refreshed bot"
         assert frame.locator("tbody tr").count() == len(models), "All models must render"
         assert page.locator("fontlab-menu, fontlab-footer").count() == 0, "FontLab chrome must be absent"
         assert not page.locator(".md-sidebar--secondary").is_visible(), "Catalogue must not display a side ToC"
         assert page.locator("article h2, article h3").count() == 0, "Empty model headings must be removed"
-        assert page.locator(".poe-model-links a").count() == 501, "Model links remain available"
+        assert page.locator(".poe-model-links a").count() == expected_count, "Model links remain available"
         assert page.evaluate("Boolean(window.FLTheme)"), "Shared CDN theme must initialize"
         width = page.locator(".poe-catalogue").bounding_box()
         assert width["x"] + width["width"] >= 1570, "Table must reach the right page edge"
-        report["checks"].append("501 models, shared theme without global chrome, wide iframe, no side ToC")
+        report["checks"].append(f"{expected_count} models, shared theme without global chrome, wide iframe, no side ToC")
         inner = page.frames[1]
         assert inner.evaluate(
             "modelsData.every(m => JSON.stringify(m.point_estimate) === JSON.stringify(PoePrices.cost(m)) && m.pricing_tier === PoePrices.tier(m))"

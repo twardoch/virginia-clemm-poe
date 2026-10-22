@@ -20,7 +20,7 @@ this_file: src_docs/md/models/flux-pro-1.1-t.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | $0.030/message · 1000 points/message |
+| Total Cost | 1000 points/message |
 
 All parsed rates (both currencies):
 
@@ -29,14 +29,16 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.030 | 1 message |
 | Total cost | POINTS | 1000 | 1 message |
 
-**Last Checked:** 2026-10-05T02:12:49.042306+00:00
+**Last Checked:** 2026-10-22 13:37:41.276976
 
 
 ## Bot Information
 
-**Creator:** togetherai
+**Creator:** @togetherai
 
 **Description:** The best state of the art image model from BFL. FLUX 1.1 Pro generates images six times faster than its predecessor, FLUX 1 Pro, while also improving image quality, prompt adherence, and output diversity. The bot does not support any attachments.
+
+**Extra:** Powered by a server managed by @togetherai. Learn more
 
 
 ## Architecture
@@ -60,4 +62,4 @@ All parsed rates (both currencies):
 
 **Root:** flux-pro-1.1-t
 
-**API Last Updated:** 2026-10-05 01:48:43.417645
+**API Last Updated:** 2026-10-22 13:58:59.076820

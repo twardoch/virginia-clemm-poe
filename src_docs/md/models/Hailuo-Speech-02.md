@@ -26,12 +26,12 @@ All parsed rates (both currencies):
 | Turbo Output | USD | 0.061 | 1000 characters |
 | Turbo Output | POINTS | 2000 | 1000 characters |
 
-**Last Checked:** 2026-10-05T02:09:07.313925+00:00
+**Last Checked:** 2026-10-22 13:06:17.348807
 
 
 ## Bot Information
 
-**Creator:** fal
+**Creator:** @fal
 
 **Description:** Generate speech from text prompts using the MiniMax Speech-02 model. 
 
@@ -45,6 +45,8 @@ Set Language boost. Select language available. Default. None.
 Set Voice for the audio generation. Default: Wise Woman.
 
 Please check the UI for allowed values for each parameter.
+
+**Extra:** Powered by a server managed by @fal. Learn more
 
 
 ## Architecture

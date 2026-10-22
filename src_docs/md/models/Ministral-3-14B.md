@@ -23,14 +23,16 @@ All parsed rates (both currencies):
 | Total Cost | USD | 0.0006 | 1 message |
 | Total Cost | POINTS | 20 | 1 message |
 
-**Last Checked:** 2026-10-05T02:09:27.979819+00:00
+**Last Checked:** 2026-10-22 13:08:24.645966
 
 
 ## Bot Information
 
-**Creator:** OpenSourceLab
+**Creator:** @OpenSourceLab
 
 **Description:** Fast, edge-optimized AI model from the Ministral-3 family that provides robust language and multimodal image capabilities in a compact footprint. It is specifically designed to run on a wide range of hardware, making it highly suitable for efficient, private local inference. The model offers native function calling, JSON output, and robust multilingual support across 40+ languages. Context window: 256K tokens
+
+**Extra:** Powered by a server managed by @OpenSourceLab. Learn more
 
 
 ## Architecture

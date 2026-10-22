@@ -21,7 +21,7 @@ this_file: src_docs/md/models/kimi-k3.md
 
 | Type | Cost |
 |------|------|
-| Input (Text) | $3.03/1M tokens · 100 points/1k tokens |
+| Input Text | 100 points/1k tokens |
 | Output (Text) | $15.15/1M tokens · 500 points/1k tokens |
 
 All parsed rates (both currencies):
@@ -33,14 +33,16 @@ All parsed rates (both currencies):
 | Output (text) | USD | 15.15 | 1000000 tokens |
 | Output (text) | POINTS | 500 | 1000 tokens |
 
-**Last Checked:** 2026-10-05T02:10:22.931357+00:00
+**Last Checked:** 2026-10-22 13:19:11.354983
 
 
 ## Bot Information
 
-**Creator:** moonshotai
+**Creator:** @moonshotai
 
 **Description:** Kimi’s flagship model for long-horizon coding and end-to-end knowledge work, with a 1M-token context window.
+
+**Extra:** Powered by a server managed by @moonshotai. Learn more
 
 
 ## Architecture
@@ -64,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** kimi-k3
 
-**API Last Updated:** 2026-10-05 01:48:43.414785
+**API Last Updated:** 2026-10-22 13:58:59.073482
