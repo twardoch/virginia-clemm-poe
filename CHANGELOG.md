@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Correct six case-only generated model-page paths in Git so all current model
+  IDs resolve on case-sensitive website hosting.
+
+
 ## [1.0.38] — 2026-10-22
 
 - Ship the refreshed 492-bot catalogue, including all available creator
