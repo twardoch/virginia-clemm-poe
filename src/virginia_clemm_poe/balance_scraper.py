@@ -10,6 +10,8 @@ from typing import Any
 from loguru import logger
 from playwright.async_api import Dialog, Page
 
+from .browser_auth import POINTS_SELECTOR, SETTINGS_URL
+
 
 async def scrape_balance_from_page(page: Page) -> dict[str, Any]:
     """Scrape balance information from an authenticated Poe page.
@@ -33,7 +35,7 @@ async def scrape_balance_from_page(page: Page) -> dict[str, Any]:
     try:
         # Navigate to settings page where balance is shown
         logger.info("Navigating to Poe settings to get balance...")
-        await page.goto("https://poe.com/settings", wait_until="networkidle")
+        await page.goto(SETTINGS_URL, wait_until="domcontentloaded", timeout=30000)
         await asyncio.sleep(2)  # Let page fully load
 
         # Check if we're on the settings page
@@ -49,6 +51,7 @@ async def scrape_balance_from_page(page: Page) -> dict[str, Any]:
         try:
             # Look for the specific element that contains the points value
             selectors = [
+                POINTS_SELECTOR,
                 # The exact class from the HTML you provided
                 ".SettingsComputePointsSection_value__LY8w1",
                 # Fallback selectors
@@ -120,9 +123,6 @@ async def scrape_balance_from_page(page: Page) -> dict[str, Any]:
             try:
                 # Execute JavaScript to get page text and search for patterns
                 page_text = await page.evaluate("() => document.body.innerText")
-
-                # Log a sample of the page text for debugging
-                logger.debug(f"Page text sample (first 500 chars): {page_text[:500]}")
 
                 # Look for various patterns that might indicate compute points
                 import re

@@ -1,0 +1,42 @@
+{
+  "finished_at": "2026-10-22T13:56:50.185518+00:00",
+  "mode": "headless",
+  "engine": "chrome",
+  "profile": "poe-primary",
+  "sample": [
+    {
+      "id": "glm-5.3-zai",
+      "has_scraped_pricing": false,
+      "has_bot_info": false,
+      "pricing_error": "Error: Locator.evaluate: Timeout 15000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"button\", name=\"Rates\", exact=True)\n"
+    },
+    {
+      "id": "Analyse-PDF",
+      "has_scraped_pricing": true,
+      "has_bot_info": true,
+      "pricing_error": null
+    },
+    {
+      "id": "AnimagineXL",
+      "has_scraped_pricing": true,
+      "has_bot_info": true,
+      "pricing_error": null
+    }
+  ],
+  "passed": false,
+  "initial_full_batch": {
+    "bot_count": 497,
+    "scraped_prices": 476,
+    "undisclosed": 20,
+    "rendering_timeouts": 1
+  },
+  "after_sample": {
+    "bot_count": 497,
+    "unique_ids": 497,
+    "scraped_prices": 476,
+    "missing_bot_info": 1
+  },
+  "original_dataset_unchanged": true,
+  "full_headed_parity_verified": false,
+  "recovered_output_sha256": "f4d8ac9e291d5d79838b43f355da9742ec150d2b57dce54c3b7a5ce3aab51837"
+}

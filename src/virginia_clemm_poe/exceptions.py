@@ -108,3 +108,19 @@ class NetworkError(VirginiaPoeError):
     This includes connection timeouts, DNS failures, or other
     network connectivity issues.
     """
+
+
+class BrowserEngineUnavailable(BrowserManagerError):
+    """The installed browser library lacks the required session API."""
+
+    code = "ENGINE_UNAVAILABLE"
+
+
+class PoeAuthenticationRequired(AuthenticationError):
+    """An unattended profile needs a separate explicit login command."""
+
+    code = "AUTH_REQUIRED"
+
+    def __init__(self, engine: str, profile: str):
+        self.command = f"virginia-clemm-poe login --browser-engine={engine} --browser-profile={profile}"
+        super().__init__(f"Poe authorization required. Run: {self.command}")

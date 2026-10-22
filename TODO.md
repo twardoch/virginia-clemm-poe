@@ -1,5 +1,11 @@
 # this_file: TODO.md
 
+## Issue 340
+
+Verified tasks moved to CHANGELOG.md. Additional matrix coverage is recorded in PLAN.md.
+
+---
+
 # Virginia Clemm Poe - Development Tasks
 
 - [x] Apply FontLab theme 2026 without FontLab global menu/footer.

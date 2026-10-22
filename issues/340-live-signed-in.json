@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-10-22T12:52:57.591864+00:00",
+  "engine": "chrome",
+  "profile": "poe-primary",
+  "mode": "headless",
+  "live_authorization": true,
+  "private_http_export_written": true,
+  "balance_numeric": true,
+  "browser_restart_reuse": true,
+  "account_values_omitted": true
+}

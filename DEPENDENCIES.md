@@ -17,3 +17,13 @@ MaterialX 10.1.8 and PyMdown Extensions 11.0.1. MaterialX replaces stock Materia
 the four FontLab theme assets load from the CDN without its global chrome.
 Node 22+ executes the same price/tier implementation for static model pages and
 browser comparisons. The locked environment is reused by the documentation CI.
+
+Issue 340 uses the paired, session-capable PlaywrightAuthor checkout for owned
+persistent contexts and OS-backed profile leases. No new direct VCP runtime
+package is introduced. BrowserManager feature-detects older PlaywrightAuthor
+installations and reports ENGINE_UNAVAILABLE. The existing published minimum
+version does not guarantee the unreleased session API; development and acceptance
+must install the paired checkout or both locally built wheels. A future paired
+release must set the minimum to the actual published session-capable version.
+Playwright remains the Page/Context API; Beautiful Soup and existing HTTP/cache
+paths are retained. Atomic private exports use standard-library tempfile/os/json.

@@ -19,6 +19,7 @@ from loguru import logger
 from playwright.async_api import Browser, BrowserContext, Dialog, Page
 
 from .browser_manager import BrowserManager
+from .browser_settings import BrowserSettings, browser_settings
 from .config import (
     BROWSER_OPERATION_TIMEOUT_SECONDS,
     DEFAULT_DEBUG_PORT,
@@ -31,7 +32,6 @@ from .utils.crash_recovery import (
 )
 from .utils.logger import log_performance_metric
 from .utils.memory import (
-    MemoryManagedOperation,
     get_global_memory_monitor,
 )
 from .utils.timeout import (
@@ -43,7 +43,9 @@ from .utils.timeout import (
 class BrowserConnection:
     """Represents a pooled browser connection with usage tracking and session reuse support."""
 
-    def __init__(self, browser: Browser, context: BrowserContext, manager: BrowserManager):
+    def __init__(
+        self, browser: Browser | None, context: BrowserContext, manager: BrowserManager, *, owns_manager: bool = True
+    ):
         """Initialize a browser connection.
 
         Args:
@@ -51,6 +53,7 @@ class BrowserConnection:
             context: The browser context
             manager: The browser manager that created this connection
         """
+        self.owns_manager = owns_manager
         self.browser = browser
         self.context = context
         self.manager = manager
@@ -82,12 +85,6 @@ class BrowserConnection:
         Returns:
             A page instance, either reused or newly created
         """
-        if reuse_session and self.supports_session_reuse:
-            # Use playwrightauthor's get_page() for session reuse
-            logger.debug("Using session reuse via browser.get_page()")
-            return await self.browser.get_page()
-        # Create a new page the traditional way
-        logger.debug("Creating new page without session reuse")
         return await self.context.new_page()
 
     async def health_check(self) -> bool:
@@ -156,6 +153,8 @@ class BrowserConnection:
         try:
             # Mark as unhealthy to prevent reuse
             self.is_healthy = False
+            if not self.owns_manager:
+                return
 
             # Close browser context first (will close all pages)
             if self.context:
@@ -203,6 +202,7 @@ class BrowserPool:
         debug_port: int = DEFAULT_DEBUG_PORT,
         verbose: bool = False,
         reuse_sessions: bool = True,
+        settings: BrowserSettings | None = None,
     ):
         """Initialize the browser pool.
 
@@ -214,12 +214,18 @@ class BrowserPool:
             verbose: Enable verbose logging
             reuse_sessions: Enable session reuse for maintaining authentication state
         """
+        if max_size <= 0:
+            raise ValueError("max_size must be positive")
+        self._semaphore = asyncio.Semaphore(max_size)
         self.max_size = max_size
         self.max_age_seconds = max_age_seconds
         self.max_idle_seconds = max_idle_seconds
         self.debug_port = debug_port
         self.verbose = verbose
         self.reuse_sessions = reuse_sessions
+        self.settings = settings or browser_settings()
+        self._manager = BrowserManager(debug_port=debug_port, verbose=verbose, settings=self.settings)
+        self._loose_pages: list[Page] = []
 
         self._pool: deque[BrowserConnection] = deque()
         self._active_connections: set[BrowserConnection] = set()
@@ -241,21 +247,27 @@ class BrowserPool:
         """Stop the pool and close all connections."""
         self._closed = True
 
-        if self._cleanup_task:
-            self._cleanup_task.cancel()
-            with suppress(asyncio.CancelledError):
-                await self._cleanup_task
+        try:
+            if self._cleanup_task:
+                self._cleanup_task.cancel()
+                with suppress(asyncio.CancelledError):
+                    await self._cleanup_task
 
-        # Close all connections
-        async with self._lock:
-            all_connections = list(self._pool) + list(self._active_connections)
-            self._pool.clear()
-            self._active_connections.clear()
+            # Close all connections
+            async with self._lock:
+                all_connections = list(self._pool) + list(self._active_connections)
+                self._pool.clear()
+                self._active_connections.clear()
 
-        close_tasks = [conn.close() for conn in all_connections]
-        if close_tasks:
-            await asyncio.gather(*close_tasks, return_exceptions=True)
+            close_tasks = [conn.close() for conn in all_connections]
+            if close_tasks:
+                await asyncio.gather(*close_tasks, return_exceptions=True)
 
+            for page in self._loose_pages:
+                await self._close_page_safely(page)
+            self._loose_pages.clear()
+        finally:
+            await self._manager.close()
         logger.info("Browser pool stopped")
 
     async def _cleanup_loop(self) -> None:
@@ -308,77 +320,13 @@ class BrowserPool:
                 logger.debug(f"Cleaned up {len(to_remove)} stale connections")
 
     async def _create_connection(self) -> BrowserConnection:
-        """Create a new browser connection with memory monitoring and crash recovery.
-
-        Returns:
-            New browser connection
-
-        Raises:
-            BrowserManagerError: If connection creation fails after recovery attempts
-        """
-
-        async def _do_create_connection() -> BrowserConnection:
-            """Internal function to create connection with recovery."""
-            async with MemoryManagedOperation(f"create_browser_connection_{self._connections_created}"):
-                start_time = time.time()
-                self._connections_created += 1
-
-                manager = BrowserManager(
-                    debug_port=self.debug_port, verbose=self.verbose, reuse_session=self.reuse_sessions
-                )
-                try:
-                    browser = await manager.get_browser()
-                    context = browser.contexts[0] if browser.contexts else await browser.new_context()
-
-                    if not context:
-                        raise BrowserManagerError("No browser context available")
-
-                    connection = BrowserConnection(browser, context, manager)
-
-                    # Log performance metric
-                    creation_time = time.time() - start_time
-                    log_performance_metric(
-                        "browser_connection_created",
-                        creation_time,
-                        "seconds",
-                        {
-                            "pool_size": len(self._pool),
-                            "connections_created": self._connections_created,
-                            "connection_failures": self._connection_failures,
-                            "memory_mb": self._memory_monitor.get_memory_usage_mb(),
-                        },
-                    )
-
-                    logger.debug(f"Created new browser connection #{self._connections_created} in {creation_time:.2f}s")
-
-                    # Increment operation count for memory monitoring
-                    self._memory_monitor.increment_operation_count()
-
-                    return connection
-
-                except Exception as e:
-                    self._connection_failures += 1
-                    await manager.close()
-
-                    # Detect crash type and log appropriately
-                    crash_type = CrashDetector.detect_crash_type(e, "create_connection")
-                    logger.warning(f"Browser connection creation failed ({crash_type.value}): {e}")
-
-                    raise BrowserManagerError(f"Failed to create browser connection: {e}") from e
-
-        async def cleanup_on_failure() -> None:
-            """Cleanup function for crash recovery."""
-            logger.debug("Running cleanup after connection creation failure")
-            # Force memory cleanup on repeated failures
-            if self._connection_failures > 2:
-                await self._memory_monitor.cleanup_memory(force=True)
-
+        """Lease a task connection from one shared identity/session, without auth retries."""
         try:
-            return await self._crash_recovery.recover_with_backoff(
-                _do_create_connection, "browser_connection_creation", cleanup_on_failure
-            )
-        except Exception as e:
-            logger.error(f"Failed to create browser connection after recovery attempts: {e}")
+            session = await self._manager.get_session()
+            self._connections_created += 1
+            return BrowserConnection(session.browser, session.context, self._manager, owns_manager=False)
+        except BaseException:
+            self._connection_failures += 1
             raise
 
     async def _get_connection_from_pool(self) -> tuple[BrowserConnection | None, bool]:
@@ -488,7 +436,7 @@ class BrowserPool:
                 logger.debug(f"Returned connection to pool (pool_size={len(self._pool)})")
             else:
                 # Close unhealthy or old connection
-                asyncio.create_task(connection.close())
+                await connection.close()
                 logger.debug("Closed connection instead of returning to pool")
 
     async def get_reusable_page(self) -> Page:
@@ -522,33 +470,11 @@ class BrowserPool:
         if self._closed:
             raise BrowserManagerError("Browser pool is closed")
 
-        # Get or create a browser manager with session reuse
-        manager = BrowserManager(debug_port=self.debug_port, verbose=self.verbose, reuse_session=True)
-
-        try:
-            # Use the manager's get_page() method which leverages playwrightauthor's session reuse
-            page = await manager.get_page()
-
-            # Set timeouts on the page
-            page.set_default_timeout(PAGE_ELEMENT_TIMEOUT_MS)
-            page.set_default_navigation_timeout(45000)
-
-            # Log performance metric
-            log_performance_metric(
-                "session_reuse_page_acquired",
-                1,
-                "count",
-                {
-                    "pool_size": len(self._pool),
-                    "active_connections": len(self._active_connections),
-                },
-            )
-
-            return page
-
-        except Exception as e:
-            logger.error(f"Failed to get reusable page: {e}")
-            raise BrowserManagerError(f"Failed to get page with session reuse: {e}") from e
+        page = await self._manager.get_page()
+        page.set_default_timeout(PAGE_ELEMENT_TIMEOUT_MS)
+        page.set_default_navigation_timeout(45000)
+        self._loose_pages.append(page)
+        return page
 
     @asynccontextmanager
     async def acquire_page(self) -> AsyncIterator[Page]:
@@ -615,7 +541,11 @@ class BrowserPool:
                 except Exception as e:
                     logger.warning(f"Error closing connection during cleanup: {e}")
 
+        await asyncio.wait_for(self._semaphore.acquire(), timeout=BROWSER_OPERATION_TIMEOUT_SECONDS)
+
         try:
+            if self._closed:
+                raise BrowserManagerError("Browser pool is closed")
             # Use timeout for the entire page acquisition process
             async with GracefulTimeout(
                 BROWSER_OPERATION_TIMEOUT_SECONDS,
@@ -644,11 +574,11 @@ class BrowserPool:
                 yield page
 
         finally:
-            # Clean up page
-            await self._close_page_safely(page)
-
-            # Return connection to pool or close it
-            await self._return_or_close_connection(connection)
+            try:
+                await self._close_page_safely(page)
+                await self._return_or_close_connection(connection)
+            finally:
+                self._semaphore.release()
 
     async def get_stats(self) -> dict[str, Any]:
         """Get pool statistics.
@@ -686,36 +616,30 @@ class BrowserPool:
         }
 
 
-# Global pool instance
-_global_pool: BrowserPool | None = None
+# Loop-scoped identity pools; callers explicitly close them before leaving the loop.
+_pools: dict[tuple[asyncio.AbstractEventLoop, BrowserSettings], BrowserPool] = {}
 
 
 async def get_global_pool(
-    max_size: int = 3, debug_port: int = DEFAULT_DEBUG_PORT, verbose: bool = False
+    max_size: int = 3,
+    debug_port: int = DEFAULT_DEBUG_PORT,
+    verbose: bool = False,
+    settings: BrowserSettings | None = None,
 ) -> BrowserPool:
-    """Get or create the global browser pool.
-
-    Args:
-        max_size: Maximum pool size
-        debug_port: Chrome DevTools port
-        verbose: Enable verbose logging
-
-    Returns:
-        The global browser pool instance
-    """
-    global _global_pool
-
-    if _global_pool is None or _global_pool._closed:
-        _global_pool = BrowserPool(max_size=max_size, debug_port=debug_port, verbose=verbose)
-        await _global_pool.start()
-
-    return _global_pool
+    """Return the current loop's pool for exactly one engine/profile/mode identity."""
+    selected = settings or browser_settings()
+    key = (asyncio.get_running_loop(), selected)
+    pool = _pools.get(key)
+    if pool is None or pool._closed:
+        pool = BrowserPool(max_size=max_size, debug_port=debug_port, verbose=verbose, settings=selected)
+        await pool.start()
+        _pools[key] = pool
+    return pool
 
 
 async def close_global_pool() -> None:
-    """Close the global browser pool."""
-    global _global_pool
-
-    if _global_pool is not None:
-        await _global_pool.stop()
-        _global_pool = None
+    """Close this event loop's pools without affecting other loops or identities."""
+    loop = asyncio.get_running_loop()
+    for key in [key for key in _pools if key[0] is loop]:
+        pool = _pools.pop(key)
+        await pool.stop()

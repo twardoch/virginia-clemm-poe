@@ -83,23 +83,33 @@ priced_models = api.get_bots_with_pricing()
 print(f"Found {len(priced_models)} models with pricing")
 ```
 
-#### Programmatic Session Reuse
+#### Browser identity and unattended commands
 
-```python
-from virginia_clemm_poe.browser_pool import BrowserPool
+Commands default to Chrome for Testing, profile `poe-primary`, mode `auto`.
+Auto runs headlessly and raises `AUTH_REQUIRED` (exit 3) when a fresh Poe settings
+probe cannot verify authorization. Only explicit `login` / `balance --login` opens
+an interactive browser; it leaves OAuth redirects, popups and MFA to you.
 
-# Use session reuse for authenticated scraping
-async def scrape_with_session_reuse():
-    pool = BrowserPool(reuse_sessions=True)
-    await pool.start()
-    
-    # Get a page with existing authenticated session
-    page = await pool.get_reusable_page()
-    await page.goto("https://poe.com/some-protected-page")
-    # Already logged in
-    
-    await pool.stop()
+```bash
+virginia-clemm-poe login --browser-engine=chrome --browser-profile=poe-primary
+virginia-clemm-poe balance --browser-engine=chrome --browser-profile=poe-primary
+virginia-clemm-poe update --browser-mode=auto
 ```
+
+Use `--browser-engine=chromium` or `firefox` for installed Playwright browsers;
+profiles are separate per engine. `VCP_BROWSER_ENGINE`, `VCP_BROWSER_PROFILE`,
+`VCP_BROWSER_MODE`, and `VCP_BROWSER_EXECUTABLE_PATH` provide defaults, overridden
+by command flags. `--browser-executable=PATH` selects an installed CfT binary.
+A session-capable PlaywrightAuthor is required; older installations return
+`ENGINE_UNAVAILABLE` instead of opening a fallback window. Local development can
+install the paired checkout with `uv pip install -e ../playwrightauthor`.
+
+Browser pools share one authorized context and create one tab per task. HTTP
+cookie exports and balance caches are separate, private and scoped to the same
+engine/profile. Exports are never injected into another browser identity.
+`logout` clears that HTTP export/cache; persistent browser sign-in is retained.
+Existing browser profiles and legacy unscoped exports are not migrated.
+See [issue 340 verification](issues/340-poe-verification.md) for tested scope.
 
 ### Command Line Interface
 
@@ -133,38 +143,8 @@ virginia-clemm-poe list
 virginia-clemm-poe list --with-pricing
 ```
 
-```
-NAME
-    virginia-clemm-poe - Poe.com model data management CLI
+Use `virginia-clemm-poe COMMAND --help` for current command options.
 
-SYNOPSIS
-    virginia-clemm-poe COMMAND
-
-DESCRIPTION
-    Tool for accessing and maintaining Poe.com model information with pricing data.
-    Use 'virginia-clemm-poe COMMAND --help' for detailed command info.
-
-    Quick Start:
-        1. virginia-clemm-poe setup     # Install browser
-        2. virginia-clemm-poe update    # Fetch model data  
-        3. virginia-clemm-poe search    # Query models
-
-    Common Workflows:
-        - Initial Setup: setup → update → search
-        - Regular Use: search (data cached locally)
-        - Maintenance: status → update (if needed)
-        - Troubleshooting: doctor → follow recommendations
-
-COMMANDS
-    cache       Monitor cache performance
-    clear_cache Clear cache and stored data
-    doctor      Diagnose and fix issues
-    list        List all available models
-    search      Find models by name or ID
-    setup       Install Chrome browser for scraping
-    status      Check system health and data freshness
-    update      Fetch latest model data from Poe
-```
 
 ## Data and API reference
 

@@ -1,121 +1,114 @@
 # this_file: src/virginia_clemm_poe/browser_manager.py
-"""Browser management using playwrightauthor with Chrome for Testing.
+"""One owned persistent context per Poe engine/account identity."""
 
-This module provides optimized browser management that leverages playwrightauthor's
-session reuse capabilities and Chrome for Testing support for reliable automation.
-"""
+from __future__ import annotations
 
-import contextlib
+import asyncio
+from typing import TYPE_CHECKING, cast
 
-from loguru import logger
-from playwright.async_api import Browser as PlaywrightBrowser, Page
-from playwrightauthor import AsyncBrowser
+import playwrightauthor
+from playwright.async_api import Browser, BrowserContext, Page
 
+if TYPE_CHECKING:
+    from playwrightauthor.sessions import AsyncBrowserSession as OwnedSession
+
+AsyncBrowserSession = getattr(playwrightauthor, "AsyncBrowserSession", None)
+
+from .browser_auth import probe_poe_context
+from .browser_settings import BrowserSettings, browser_settings
 from .config import DEFAULT_DEBUG_PORT
-from .exceptions import BrowserManagerError
+from .exceptions import BrowserEngineUnavailable, PoeAuthenticationRequired
 
 
 class BrowserManager:
-    """Manages browser lifecycle using playwrightauthor with session reuse.
+    """Serialize session startup and create task pages in its authorized context."""
 
-    This class leverages playwrightauthor's Chrome for Testing management and
-    session reuse features for optimal performance. It supports both creating
-    new browser instances and reusing existing browser sessions.
-    """
-
-    def __init__(self, debug_port: int = DEFAULT_DEBUG_PORT, verbose: bool = False, reuse_session: bool = True):
-        """Initialize the browser manager.
-
-        Args:
-            debug_port: Port for Chrome DevTools Protocol.
-            verbose: Enable verbose logging.
-            reuse_session: Whether to reuse existing browser sessions (recommended).
-        """
+    def __init__(
+        self,
+        debug_port: int = DEFAULT_DEBUG_PORT,
+        verbose: bool = False,
+        reuse_session: bool = True,
+        *,
+        settings: BrowserSettings | None = None,
+    ):
+        # Kept for source compatibility; native sessions allocate no CDP port.
         self.debug_port = debug_port
         self.verbose = verbose
         self.reuse_session = reuse_session
-        self._browser: PlaywrightBrowser | None = None
-        self._browser_ctx: AsyncBrowser | None = None
+        self.settings = settings or browser_settings()
+        self._session: OwnedSession | None = None
+        self._lock = asyncio.Lock()
 
-    async def get_browser(self) -> PlaywrightBrowser:
-        """Gets a browser instance using playwrightauthor.
+    async def get_session(self) -> OwnedSession:
+        """Start at most once; failed startup never becomes a cached session."""
+        async with self._lock:
+            if self._session is None:
+                if AsyncBrowserSession is None:
+                    raise BrowserEngineUnavailable(
+                        "Install a session-capable PlaywrightAuthor or the paired local checkout before browser operations."
+                    )
+                options = self.settings
+                session = cast(
+                    "OwnedSession",
+                    AsyncBrowserSession(
+                        engine=options.engine,
+                        profile=options.profile,
+                        mode=options.mode,
+                        executable_path=options.executable_path,
+                        profile_root=options.profile_root,
+                        service="Poe",
+                        verbose=self.verbose,
+                        suppress_dialog=options.mode != "interactive",
+                        auth_probe=probe_poe_context if options.mode == "auto" else None,
+                    ),
+                )
+                try:
+                    await session.__aenter__()
+                except Exception as error:
+                    if getattr(error, "code", None) == "AUTH_REQUIRED":
+                        raise PoeAuthenticationRequired(options.engine, options.profile) from error
+                    raise
+                self._session = session
+            return self._session
 
-        This method connects to Chrome for Testing, either launching a new instance
-        or connecting to an existing one for session reuse.
+    async def get_browser(self) -> Browser | None:
+        """Compatibility accessor; callers must not assume a native browser handle exists."""
+        return cast(Browser | None, (await self.get_session()).browser)
 
-        Returns:
-            A connected browser instance.
-
-        Raises:
-            BrowserManagerError: If the browser fails to launch or connect.
-        """
-        if self._browser is None or not self._browser.is_connected():
-            try:
-                # Use playwrightauthor AsyncBrowser with session reuse
-                self._browser_ctx = AsyncBrowser(verbose=self.verbose)
-                self._browser = await self._browser_ctx.__aenter__()
-
-                if self.verbose:
-                    logger.info("Connected to Chrome for Testing via playwrightauthor")
-
-            except Exception as e:
-                raise BrowserManagerError(f"Failed to get browser: {e}") from e
-        return self._browser
+    async def get_context(self) -> BrowserContext:
+        """Expose the required persistent context, independent of the engine."""
+        return cast(BrowserContext, (await self.get_session()).context)
 
     async def get_page(self) -> Page:
-        """Gets a page using playwrightauthor's session reuse feature.
-
-        This method leverages the browser's get_page() method which reuses
-        existing browser contexts and pages instead of creating new ones. This
-        maintains authenticated sessions across script runs without re-login.
-
-        Returns:
-            A page instance from the reused browser context.
-
-        Raises:
-            BrowserManagerError: If unable to get a page.
-        """
-        try:
-            browser = await self.get_browser()
-
-            # Use the browser's get_page() method for session reuse
-            # This is attached to the browser object by playwrightauthor
-            page = await browser.get_page()
-
-            if self.verbose:
-                logger.info("Reused existing browser page for session persistence")
-
-            return page
-
-        except Exception as e:
-            raise BrowserManagerError(f"Failed to get page: {e}") from e
+        """Each call creates its own task tab; existing human tabs are never reused."""
+        return cast(Page, await (await self.get_session()).new_page())
 
     @staticmethod
     async def setup_chrome() -> bool:
-        """Ensures Chrome is installed using playwrightauthor.
-
-        Returns:
-            True if setup is successful.
-        """
-        try:
-            # Playwrightauthor handles setup automatically
-            return True
-        except Exception:
+        """Verify/install CfT without launching a window or claiming a sign-in."""
+        if AsyncBrowserSession is None:
             return False
+        from loguru import logger
+        from playwrightauthor.browser.finder import find_chrome_executable
+        from playwrightauthor.browser.installer import install_from_lkgv
+
+        if await asyncio.to_thread(find_chrome_executable, logger) is None:
+            await asyncio.to_thread(install_from_lkgv, logger)
+        return await asyncio.to_thread(find_chrome_executable, logger) is not None
 
     async def close(self) -> None:
-        """Closes the browser connection."""
-        if self._browser_ctx:
-            with contextlib.suppress(Exception):
-                await self._browser_ctx.__aexit__(None, None, None)
-        self._browser = None
-        self._browser_ctx = None
+        """The session owns context/driver teardown and cancellation-safe lease release."""
+        async with self._lock:
+            if self._session is not None:
+                session = self._session
+                try:
+                    await session.close()
+                finally:
+                    self._session = None
 
     async def __aenter__(self) -> "BrowserManager":
-        """Async context manager entry."""
-        await self.get_browser()
+        await self.get_session()
         return self
 
-    async def __aexit__(self, exc_type, exc_val, exc_tb) -> None:
-        """Async context manager exit."""
+    async def __aexit__(self, *exc: object) -> None:
         await self.close()

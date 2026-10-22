@@ -3,17 +3,24 @@
 """Poe session management with cookie extraction and balance checking."""
 
 import json
-from datetime import datetime, timedelta
+import time
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
-from typing import Any, Optional
+from typing import TYPE_CHECKING, Any, Optional
+from urllib.parse import urlsplit
 
 import httpx
 from loguru import logger
 from playwright.async_api import Browser, BrowserContext, Page
 
+from .browser_settings import BrowserSettings
 from .exceptions import APIError, AuthenticationError
+from .private_store import write_private_json
 from .utils.paths import get_data_dir
 from .utils.timeout import with_retries
+
+if TYPE_CHECKING:
+    from poe_api_wrapper import AsyncPoeApi
 
 
 class PoeSessionManager:
@@ -25,13 +32,18 @@ class PoeSessionManager:
     POE_LOGIN_URL = "https://poe.com/login"
     BALANCE_CACHE_DURATION_MINUTES = 5  # Cache balance for 5 minutes
 
-    def __init__(self, cookies_dir: Path | None = None):
+    def __init__(self, cookies_dir: Path | None = None, *, settings: BrowserSettings | None = None):
         """Initialize session manager with optional custom cookies directory."""
-        self.cookies_dir = cookies_dir or get_data_dir() / "cookies"
-        self.cookies_dir.mkdir(parents=True, exist_ok=True)
+        self.identity = {"engine": settings.engine, "profile": settings.profile} if settings else None
+        base = get_data_dir() / "cookies"
+        self.cookies_dir = cookies_dir or (base / settings.engine / settings.profile if settings else base)
+        self.cookies_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        self.cookies_dir.chmod(0o700)
         self.cookies_path = self.cookies_dir / self.COOKIES_FILE
         self.balance_cache_path = self.cookies_dir / self.BALANCE_CACHE_FILE
         self.cookies: dict[str, Any] = {}
+        self.cookie_metadata: dict[str, dict[str, Any]] = {}
+        self.provenance: dict[str, Any] = {"source": "legacy-unscoped"}
         self._load_cookies()
         self._balance_cache: dict[str, Any] | None = None
         self._load_balance_cache()
@@ -40,9 +52,18 @@ class PoeSessionManager:
         """Load cookies from disk if available."""
         if self.cookies_path.exists():
             try:
+                self.cookies_path.chmod(0o600)
                 with open(self.cookies_path) as f:
                     data = json.load(f)
-                    self.cookies = data.get("cookies", {})
+                    provenance = data.get("provenance", {"source": "legacy-unscoped"})
+                    if self.identity and provenance.get("identity") != self.identity:
+                        raise ValueError("Cookie export identity does not match the selected profile")
+                    self.provenance = provenance
+                    self.cookie_metadata = data.get("cookie_metadata", {})
+                    self.cookies = {
+                        name: value for name, value in data.get("cookies", {}).items() if isinstance(value, str)
+                    }
+                    self._discard_expired_cookies()
                     saved_at = data.get("saved_at")
                     if saved_at:
                         logger.debug(f"Loaded Poe cookies saved at {saved_at}")
@@ -50,15 +71,30 @@ class PoeSessionManager:
                 logger.warning(f"Failed to load cookies: {e}")
                 self.cookies = {}
 
+    def _discard_expired_cookies(self) -> None:
+        """Expiry metadata is authoritative when present; unknown expiry is not authorization."""
+        for name in list(self.cookies):
+            expiry = self.cookie_metadata.get(name, {}).get("expires", -1)
+            if isinstance(expiry, (int, float)) and 0 < expiry <= time.time():
+                self.cookies.pop(name)
+
     def _save_cookies(self) -> None:
-        """Save cookies to disk."""
-        try:
-            data = {"cookies": self.cookies, "saved_at": datetime.utcnow().isoformat()}
-            with open(self.cookies_path, "w") as f:
-                json.dump(data, f, indent=2)
-            logger.debug(f"Saved Poe cookies to {self.cookies_path}")
-        except Exception as e:
-            logger.error(f"Failed to save cookies: {e}")
+        """Save a private HTTP export; failures propagate rather than claiming persistence."""
+        self._discard_expired_cookies()
+        provenance = dict(self.provenance)
+        if self.identity:
+            provenance["identity"] = self.identity
+        write_private_json(
+            self.cookies_path,
+            {
+                "cookies": self.cookies,
+                "cookie_metadata": self.cookie_metadata,
+                "provenance": provenance,
+                "saved_at": datetime.now(UTC).isoformat(),
+            },
+        )
+        self._balance_cache = None
+        self.balance_cache_path.unlink(missing_ok=True)
 
     def _load_balance_cache(self) -> None:
         """Load cached balance data from disk if available and not expired."""
@@ -66,12 +102,16 @@ class PoeSessionManager:
             try:
                 with open(self.balance_cache_path) as f:
                     cache_data = json.load(f)
+                if self.identity and cache_data.get("identity") != self.identity:
+                    return
 
                 # Check if cache is expired
                 cached_at = cache_data.get("cached_at")
                 if cached_at:
                     cache_time = datetime.fromisoformat(cached_at)
-                    if datetime.utcnow() - cache_time < timedelta(minutes=self.BALANCE_CACHE_DURATION_MINUTES):
+                    if cache_time.tzinfo is None:
+                        cache_time = cache_time.replace(tzinfo=UTC)
+                    if datetime.now(UTC) - cache_time < timedelta(minutes=self.BALANCE_CACHE_DURATION_MINUTES):
                         self._balance_cache = cache_data.get("balance")
                         logger.debug(f"Loaded cached balance from {cached_at}")
                     else:
@@ -84,80 +124,38 @@ class PoeSessionManager:
     def _save_balance_cache(self, balance_data: dict[str, Any]) -> None:
         """Save balance data to cache."""
         try:
-            cache_data = {"balance": balance_data, "cached_at": datetime.utcnow().isoformat()}
-            with open(self.balance_cache_path, "w") as f:
-                json.dump(cache_data, f, indent=2)
+            cache_data = {
+                "balance": balance_data,
+                "cached_at": datetime.now(UTC).isoformat(),
+                "identity": self.identity,
+            }
+            self._balance_cache = balance_data
+            write_private_json(self.balance_cache_path, cache_data)
             logger.debug(f"Saved balance cache to {self.balance_cache_path}")
         except Exception as e:
             logger.error(f"Failed to save balance cache: {e}")
 
     async def extract_cookies_from_browser(self, context: BrowserContext) -> dict[str, str]:
-        """Extract Poe session cookies from browser context.
-
-        Args:
-            context: Playwright browser context with active Poe session
-
-        Returns:
-            Dictionary with essential Poe cookies (p-b, p-lat, m-b, etc.)
-        """
-        try:
-            # Get cookies from all relevant URLs
-            # Poe uses both poe.com and quora.com domains
-            all_cookies = []
-
-            # Get cookies from multiple URLs to ensure we get all domains
-            for url in ["https://poe.com", "https://www.poe.com", "https://quora.com", "https://www.quora.com"]:
-                try:
-                    url_cookies = await context.cookies(url)
-                    all_cookies.extend(url_cookies)
-                    logger.debug(f"Got {len(url_cookies)} cookies from {url}")
-                except Exception as e:
-                    logger.debug(f"Could not get cookies from {url}: {e}")
-
-            # Filter for Poe-related cookies
-            poe_cookies = {}
-            # m-b is the main cookie for internal API, p-b for external
-            essential_cookies = ["m-b", "p-b", "p-lat", "__cf_bm", "cf_clearance"]
-            optional_cookies = ["poe-formkey", "__stripe_mid", "__stripe_sid", "m-lat", "m-uid"]
-            all_wanted = essential_cookies + optional_cookies
-
-            # Look for cookies by name, regardless of domain
-            for cookie in all_cookies:
-                name = cookie.get("name", "")
-                if name in all_wanted:
-                    # Don't duplicate cookies
-                    if name not in poe_cookies:
-                        poe_cookies[name] = cookie["value"]
-                        logger.debug(f"Extracted cookie: {name} from domain {cookie.get('domain', 'unknown')}")
-
-            # Also check for any cookie that starts with 'p-' or 'm-'
-            for cookie in all_cookies:
-                name = cookie.get("name", "")
-                if (name.startswith(("p-", "m-"))) and name not in poe_cookies:
-                    poe_cookies[name] = cookie["value"]
-                    logger.debug(f"Extracted additional cookie: {name}")
-
-            # Validate we have minimum required cookies
-            # We need either m-b (for internal API) or p-b (for external API)
-            if "m-b" in poe_cookies or "p-b" in poe_cookies:
-                logger.info(f"Successfully extracted {len(poe_cookies)} Poe cookies")
-                if "m-b" in poe_cookies:
-                    logger.debug("Found m-b cookie for internal API access")
-                if "p-b" in poe_cookies:
-                    logger.debug("Found p-b cookie for external API access")
-                self.cookies = poe_cookies
-                self._save_cookies()
-                return poe_cookies
-            # Log what we did find for debugging
-            logger.warning(f"Missing essential cookies. Found: {list(poe_cookies.keys())}")
-            logger.debug(f"All cookie names seen: {[c.get('name') for c in all_cookies]}")
+        """Export only unexpired Poe/Quora HTTP cookies from this caller's context."""
+        wanted = {"m-b", "p-b", "p-lat", "m-lat", "m-uid", "poe-formkey", "__cf_bm", "cf_clearance"}
+        cookies, metadata = {}, {}
+        for url in ("https://poe.com", "https://www.poe.com", "https://quora.com", "https://www.quora.com"):
+            for cookie in await context.cookies(url):
+                name, domain = cookie.get("name"), cookie.get("domain", "").lstrip(".")
+                expiry = cookie.get("expires", -1)
+                if domain not in {"poe.com", "www.poe.com", "quora.com", "www.quora.com"} or name not in wanted:
+                    continue
+                if isinstance(expiry, (int, float)) and 0 < expiry <= time.time():
+                    continue
+                if name not in cookies:
+                    cookies[name] = cookie["value"]
+                    metadata[name] = {"domain": cookie.get("domain"), "expires": expiry}
+        if not ({"m-b", "p-b"} & cookies.keys()):
             raise AuthenticationError("Missing essential Poe cookies (m-b or p-b)")
-
-        except AuthenticationError:
-            raise
-        except Exception as e:
-            logger.error(f"Failed to extract cookies: {e}")
-            raise
+        self.cookies, self.cookie_metadata = cookies, metadata
+        self.provenance = {"source": "browser-context"}
+        self._save_cookies()
+        return cookies
 
     async def login_with_browser(self, browser: Browser) -> dict[str, str]:
         """Open Poe login page and wait for user to log in.
@@ -168,27 +166,22 @@ class PoeSessionManager:
         Returns:
             Extracted cookies after successful login
         """
-        context = await browser.new_context()
-        page = await context.new_page()
+        from .browser_auth import probe_poe_context, wait_for_poe_login
 
-        try:
-            logger.info("Opening Poe login page...")
-            await page.goto(self.POE_LOGIN_URL)
-
-            # Wait for user to log in (detect by looking for logged-in indicators)
-            logger.info("Please log in to Poe.com in the browser window...")
-
-            # Wait for successful login (check for specific elements that appear when logged in)
-            await page.wait_for_selector(
-                "button[aria-label='User menu']",  # User menu button appears when logged in
-                timeout=300000,  # 5 minute timeout for login
+        contexts = browser.contexts
+        if len(contexts) != 1:
+            raise AuthenticationError(
+                "Pass a browser with exactly one explicitly selected persistent context for login."
             )
-
-            logger.info("Login detected, extracting cookies...")
+        context = next(iter(contexts))
+        page = await context.new_page()
+        try:
+            if not await probe_poe_context(context):
+                await page.goto(self.POE_LOGIN_URL, wait_until="domcontentloaded")
+                await wait_for_poe_login(page)
             return await self.extract_cookies_from_browser(context)
-
         finally:
-            await context.close()
+            await page.close()
 
     async def extract_from_existing_playwright_session(self, page: Page) -> dict[str, str]:
         """Extract cookies from an existing PlaywrightAuthor browser session.
@@ -199,16 +192,9 @@ class PoeSessionManager:
         Returns:
             Extracted Poe cookies
         """
-        # Navigate to Poe if not already there
-        current_url = page.url
-        if "poe.com" not in current_url:
-            logger.info("Navigating to Poe.com to extract cookies...")
-            await page.goto("https://poe.com")
-            await page.wait_for_load_state("networkidle")
-
-        # Extract cookies from the browser context
-        context = page.context
-        return await self.extract_cookies_from_browser(context)
+        if urlsplit(page.url).hostname not in {"poe.com", "www.poe.com"}:
+            raise AuthenticationError("Select an already authorized Poe page before exporting HTTP cookies.")
+        return await self.extract_cookies_from_browser(page.context)
 
     async def get_account_balance(
         self,
@@ -471,12 +457,16 @@ class PoeSessionManager:
 
     def has_valid_cookies(self) -> bool:
         """Check if we have the minimum required cookies."""
-        # We need either m-b (internal API) or p-b (external API)
+        self._discard_expired_cookies()
+        # Cookie material is not proof of current authorization.
         return "m-b" in self.cookies or "p-b" in self.cookies
 
     def clear_cookies(self) -> None:
         """Clear stored cookies and delete cookies file."""
         self.cookies = {}
+        self.cookie_metadata = {}
+        self._balance_cache = None
+        self.balance_cache_path.unlink(missing_ok=True)
         if self.cookies_path.exists():
             self.cookies_path.unlink()
             logger.info("Cleared stored Poe cookies")

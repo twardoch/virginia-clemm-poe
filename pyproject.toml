@@ -52,6 +52,13 @@ source="vcs"
 [tool.hatch.build.hooks.vcs]
 version-file="src/virginia_clemm_poe/_version.py"
 
+[tool.hatch.build.targets.sdist]
+include=[
+    "/src", "/tests", "/src_docs", "/scripts/verify_owned_pool.py",
+    "/scripts/verify_catalogue.py", "/README.md", "/LICENSE",
+    "/CHANGELOG.md", "/DEPENDENCIES.md", "/pyproject.toml", "/test.sh",
+]
+
 [tool.hatch.metadata]
 allow-direct-references=true
 

@@ -24,6 +24,7 @@ from .bots import (
     UnifiedPricing,
 )
 from .browser_pool import BrowserPool, get_global_pool
+from .browser_settings import BrowserSettings, browser_settings
 from .config import (
     DATA_FILE_PATH,
     DEFAULT_DEBUG_PORT,
@@ -54,11 +55,13 @@ class BotUpdater:
         debug_port: int = DEFAULT_DEBUG_PORT,
         verbose: bool = False,
         session_manager: PoeSessionManager | None = None,
+        settings: BrowserSettings | None = None,
     ):
         self.api_key = api_key
         self.debug_port = debug_port
         self.verbose = verbose
-        self.session_manager = session_manager or PoeSessionManager()
+        self.browser_settings = settings or browser_settings()
+        self.session_manager = session_manager or PoeSessionManager(settings=self.browser_settings)
         # Browser manager is no longer needed - using pool instead
 
         if verbose:
@@ -705,8 +708,11 @@ class BotUpdater:
         return bots, failed
 
     def _merge_vendor_bots(
-        self, api_bots: list[PoeBot], vendor_bots: list[PoeBot],
-        existing: BotCollection | None, failed: set[str],
+        self,
+        api_bots: list[PoeBot],
+        vendor_bots: list[PoeBot],
+        existing: BotCollection | None,
+        failed: set[str],
     ) -> list[PoeBot]:
         """Union API and vendor bots, keeping API metadata and prior scraped details."""
         previous = {bot.id.casefold(): bot for bot in existing.data} if existing else {}
@@ -896,7 +902,9 @@ class BotUpdater:
 
         # Merge with existing data and persist immediately (captures removals)
         merged_bots = self._merge_bots(api_bots, existing_collection)
-        pool = await get_global_pool(max_size=3, debug_port=self.debug_port, verbose=self.verbose)
+        pool = await get_global_pool(
+            max_size=3, debug_port=self.debug_port, verbose=self.verbose, settings=self.browser_settings
+        )
         vendor_bots, failed_vendors = await self._discover_vendor_bots(pool)
         merged_bots = self._merge_vendor_bots(merged_bots, vendor_bots, existing_collection, failed_vendors)
         collection = BotCollection(object=api_data["object"], data=merged_bots)
@@ -977,22 +985,9 @@ class BotUpdater:
         Returns:
             Dictionary of extracted cookies after successful login
         """
-        # Get a browser from the pool for login
-        pool = await get_global_pool(max_size=1, debug_port=self.debug_port, verbose=self.verbose)
+        from .api import login_to_poe
 
-        async with pool.acquire_page() as page:
-            # Navigate to Poe login
-            await page.goto("https://poe.com/login")
-            logger.info("Please log in to Poe.com in the browser window...")
-
-            # Wait for login (detect by user menu button)
-            await page.wait_for_selector(
-                "button[aria-label='User menu']",
-                timeout=300000,  # 5 minutes
-            )
-
-            logger.info("Login successful, extracting cookies...")
-            return await self.extract_cookies_from_browser(page)
+        return await login_to_poe(settings=self.browser_settings)
 
     async def get_enhanced_model_data(self) -> BotCollection | None:
         """Get bot data with enhanced information using poe-api-wrapper.

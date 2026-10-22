@@ -1,0 +1,57 @@
+{
+  "started_at": "2026-10-22T13:58:58.473114+00:00",
+  "finished_at": "2026-10-22T14:09:27.073150+00:00",
+  "mode": "interactive headed",
+  "scope": "normal incremental update seeded from completed headless catalogue; temporary verification output",
+  "exit_code": 0,
+  "validated_bots": 492,
+  "unique_ids": 492,
+  "removed_since_headless": [
+    "Qwen3.8-2.4T-A95B",
+    "glm-5.3-flash-zai",
+    "glm-5.3-zai",
+    "llama-3.3-70b-n",
+    "llama-4-maverick-meta",
+    "qwen3.5-397b-a17b",
+    "qwen3.8-2.4t-a95b-alibaba",
+    "qwen3.8-27b"
+  ],
+  "added_since_headless": [
+    "Qwen3.8-2.4T-A95B_togetherai",
+    "llama-4-maverick",
+    "qwen3.8-2.4t-a95b"
+  ],
+  "previous_scraped_prices_retained_unchanged": 470,
+  "new_scraped_price_ids": [
+    "Qwen3.8-2.4T-A95B_togetherai",
+    "qwen3.8-2.4t-a95b",
+    "llama-4-maverick"
+  ],
+  "total_scraped_prices": 473,
+  "undisclosed_price_ids": [
+    "FLUX-anime",
+    "FLUX-pixel-art",
+    "GitHub",
+    "HunyuanVideo",
+    "Playwright",
+    "Restyler-Deprecated",
+    "Seedream-VTON",
+    "Style-Studio",
+    "StyleMaker",
+    "imgsys.org",
+    "z9340pub",
+    "ztest-9233",
+    "script-bot-creator",
+    "canvas-creator",
+    "claude-code",
+    "code-editor",
+    "hy3-n",
+    "ling-3.0-flash-fin",
+    "aplomb-1"
+  ],
+  "scraping_failures": [],
+  "missing_bot_info_ids": [],
+  "original_dataset_unchanged": true,
+  "full_forced_headed_headless_parity_verified": false,
+  "output_sha256": "ca9af865b54f8c56f3ab06cf5f457e2690042a3af95b2693b39a04b060c06e71"
+}

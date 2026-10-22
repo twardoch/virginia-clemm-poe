@@ -11,9 +11,10 @@ from rich.console import Console
 from rich.table import Table
 
 from . import api
+from .browser_commands import run_browser_command
 from .browser_manager import BrowserManager
+from .browser_settings import browser_settings
 from .config import DATA_FILE_PATH, DEFAULT_DEBUG_PORT
-from .poe_session import PoeSessionManager
 from .updater import BotUpdater
 from .utils.logger import configure_logger, log_operation, log_user_action
 
@@ -559,6 +560,10 @@ class Cli:
         force: bool = False,
         debug_port: int = DEFAULT_DEBUG_PORT,
         verbose: bool = False,
+        browser_engine: str | None = None,
+        browser_profile: str | None = None,
+        browser_mode: str | None = None,
+        browser_executable: str | None = None,
     ) -> None:
         """Fetch latest bot data from Poe - run weekly or when new bots appear.
 
@@ -669,10 +674,11 @@ class Cli:
 
         # Run update
         async def run_update() -> None:
-            updater = BotUpdater(api_key, debug_port=debug_port, verbose=verbose)
+            selected = browser_settings(browser_engine, browser_profile, browser_mode, browser_executable)
+            updater = BotUpdater(api_key, debug_port=debug_port, verbose=verbose, settings=selected)
             await updater.update_all(force=force, update_info=update_info, update_pricing=update_pricing)
 
-        asyncio.run(run_update())
+        run_browser_command(run_update())
 
     def _validate_data_exists(self) -> bool:
         """Check if bot data file exists.
@@ -1000,7 +1006,15 @@ class Cli:
                     console.print(f"{status} {bot.id}")
 
     def balance(
-        self, login: bool = False, refresh: bool = False, no_browser: bool = False, verbose: bool = False
+        self,
+        login: bool = False,
+        refresh: bool = False,
+        no_browser: bool = False,
+        verbose: bool = False,
+        browser_engine: str | None = None,
+        browser_profile: str | None = None,
+        browser_mode: str | None = None,
+        browser_executable: str | None = None,
     ) -> None:
         """Check Poe account balance and compute points - monitor your usage.
 
@@ -1063,41 +1077,14 @@ class Cli:
         console.print("[bold blue]Poe Account Balance[/bold blue]\n")
 
         async def run_balance() -> None:
-            session_manager = PoeSessionManager()
-
-            # Check if we need to login
-            if login or not session_manager.has_valid_cookies():
-                if not login:
-                    console.print("[yellow]No valid session found. Please login first.[/yellow]")
-                    console.print("Use: virginia-clemm-poe balance --login")
-                    return
-
-                console.print("[bold]Opening browser for Poe login...[/bold]")
-
-                # Use browser to both login and get balance
-                from virginia_clemm_poe.browser_pool import get_global_pool
-
-                pool = await get_global_pool(max_size=1)
-                async with pool.acquire_page() as page:
-                    try:
-                        # Login or extract cookies using the same page
-                        cookies = await api.login_to_poe(page=page)
-                        console.print(f"[green]✓ Successfully logged in and extracted {len(cookies)} cookies[/green]\n")
-
-                        # Get balance using the same browser page for scraping
-                        session_manager = api.get_session_manager()
-                        balance_info = await session_manager.get_account_balance(page=page, force_refresh=True)
-
-                    except Exception as e:
-                        console.print(f"[red]✗ Login failed: {e}[/red]")
-                        return
-            else:
-                # Get balance without browser login
-                try:
-                    balance_info = await api.get_account_balance(use_browser=not no_browser, force_refresh=refresh)
-                except Exception as e:
-                    console.print(f"[red]✗ Failed to get balance: {e}[/red]")
-                    return
+            selected = browser_settings(browser_engine, browser_profile, browser_mode, browser_executable)
+            if login:
+                await api.login_to_poe(settings=selected)
+            balance_info = await api.get_account_balance(
+                use_browser=not no_browser,
+                force_refresh=refresh or login,
+                settings=selected,
+            )
 
             # Display balance information
             console.print("[bold]Account Information:[/bold]")
@@ -1134,9 +1121,15 @@ class Cli:
             # Timestamp
             console.print(f"\n[dim]Last updated: {balance_info.get('timestamp', 'Unknown')}[/dim]")
 
-        asyncio.run(run_balance())
+        run_browser_command(run_balance())
 
-    def login(self, verbose: bool = False) -> None:
+    def login(
+        self,
+        verbose: bool = False,
+        browser_engine: str | None = None,
+        browser_profile: str | None = None,
+        browser_executable: str | None = None,
+    ) -> None:
         """Login to Poe interactively - authenticate for balance checking.
 
         Open an interactive browser window for manual Poe authentication.
@@ -1170,25 +1163,15 @@ class Cli:
         console.print("[bold blue]Poe Interactive Login[/bold blue]\n")
 
         async def run_login() -> None:
-            try:
-                console.print("[bold]Opening browser for Poe login...[/bold]")
-                cookies = await api.login_to_poe()
+            selected = browser_settings(browser_engine, browser_profile, executable_path=browser_executable)
+            cookies = await api.login_to_poe(settings=selected)
+            console.print(f"[green]Login verified; saved {len(cookies)} Poe HTTP cookies.[/green]")
 
-                console.print("\n[green]✓ Successfully logged in![/green]")
-                console.print(f"[green]Extracted {len(cookies)} session cookies[/green]")
+        run_browser_command(run_login())
 
-                # Show available commands
-                console.print("\n[bold]You can now use:[/bold]")
-                console.print("  virginia-clemm-poe balance    # Check compute points")
-
-            except Exception as e:
-                console.print(f"[red]✗ Login failed: {e}[/red]")
-                if "TimeoutError" in str(e.__class__.__name__):
-                    console.print("Login timed out after 5 minutes")
-
-        asyncio.run(run_login())
-
-    def logout(self, verbose: bool = False) -> None:
+    def logout(
+        self, verbose: bool = False, browser_engine: str | None = None, browser_profile: str | None = None
+    ) -> None:
         """Logout from Poe - clear stored session cookies.
 
         Clear all stored Poe session cookies and authentication data.
@@ -1208,14 +1191,10 @@ class Cli:
 
         console.print("[bold blue]Poe Logout[/bold blue]\n")
 
-        session_manager = PoeSessionManager()
-
-        if session_manager.has_valid_cookies():
-            session_manager.clear_cookies()
-            console.print("[green]✓ Successfully logged out[/green]")
-            console.print("Session cookies have been cleared")
-        else:
-            console.print("[yellow]No active session to clear[/yellow]")
+        selected = browser_settings(browser_engine, browser_profile)
+        api.get_session_manager(selected).clear_cookies()
+        console.print(f"[green]Cleared the HTTP cookie export and balance cache for {selected.profile}.[/green]")
+        console.print("Persistent browser sign-in is retained; sign out in that profile when needed.")
 
 
 def main() -> None:

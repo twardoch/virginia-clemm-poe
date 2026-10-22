@@ -2,12 +2,12 @@
 
 """Public API for Virginia Clemm Poe."""
 
-import asyncio
 import json
 
 from loguru import logger
 
 from .bots import BotCollection, PoeBot
+from .browser_settings import BrowserSettings, browser_settings
 from .config import DATA_FILE_PATH
 from .exceptions import AuthenticationError
 from .poe_session import PoeSessionManager
@@ -16,16 +16,20 @@ _collection: BotCollection | None = None
 _session_manager: PoeSessionManager | None = None
 
 
-def get_session_manager() -> PoeSessionManager:
-    """Get or create the global session manager instance.
+_identity_session_managers: dict[tuple[str, str], PoeSessionManager] = {}
 
-    Returns:
-        PoeSessionManager: Singleton session manager for cookie/balance operations
-    """
+
+def get_session_manager(settings: BrowserSettings | None = None) -> PoeSessionManager:
+    """Keep HTTP exports scoped to engine/account; retain explicit legacy access."""
     global _session_manager
-    if _session_manager is None:
-        _session_manager = PoeSessionManager()
-    return _session_manager
+    if settings is None:
+        if _session_manager is None:
+            _session_manager = PoeSessionManager()
+        return _session_manager
+    key = (settings.engine, settings.profile)
+    if key not in _identity_session_managers:
+        _identity_session_managers[key] = PoeSessionManager(settings=settings)
+    return _identity_session_managers[key]
 
 
 def load_bots(force_reload: bool = False) -> BotCollection:
@@ -112,7 +116,8 @@ def load_bots(force_reload: bool = False) -> BotCollection:
 
         # Validate data if validation module is available
         try:
-            from .utils.validation import validate_bot_data, check_data_consistency
+            from .utils.validation import check_data_consistency, validate_bot_data
+
             is_valid, errors = validate_bot_data(collection_data)
             if not is_valid:
                 logger.warning(f"Data validation found {len(errors)} schema issues")
@@ -568,6 +573,7 @@ async def get_account_balance(
     use_browser: bool = True,
     use_cache: bool = True,
     force_refresh: bool = False,
+    settings: BrowserSettings | None = None,
 ) -> dict:
     """Get Poe account balance and compute points information.
 
@@ -618,163 +624,52 @@ async def get_account_balance(
         - Automatically launches browser for scraping if API returns no data
         - Balance data is cached for 5 minutes to reduce API calls
     """
-    session_manager = get_session_manager()
+    session_manager = get_session_manager(settings or browser_settings())
 
-    # First try without browser
-    result = await session_manager.get_account_balance(
-        use_api_key=use_api_key, api_key=api_key, use_cache=use_cache, force_refresh=force_refresh
-    )
-
-    # If we got no data and browser is allowed, try with browser
+    # HTTP/cache first. Never inject an unscoped HTTP cookie export into a profile.
+    try:
+        result = await session_manager.get_account_balance(
+            use_api_key=use_api_key, api_key=api_key, use_cache=use_cache, force_refresh=force_refresh
+        )
+    except AuthenticationError:
+        if not use_browser:
+            raise
+        result = {"compute_points_available": None}
     if use_browser and result.get("compute_points_available") is None:
-        logger.info("API returned no balance data, launching browser for scraping...")
+        from .browser_pool import get_global_pool
 
-        # Import here to avoid circular dependency
-        from virginia_clemm_poe.browser_pool import get_global_pool
-
-        # Launch browser with stored cookies for scraping
-        pool = await get_global_pool(max_size=1)
+        pool = await get_global_pool(max_size=1, settings=settings or browser_settings())
         async with pool.acquire_page() as page:
-            # Load cookies into browser
-            if session_manager.has_valid_cookies():
-                # Navigate to Poe with cookies
-                await page.goto("https://poe.com")
-
-                # Set cookies in browser context
-                context = page.context
-                cookie_list = []
-                for name, value in session_manager.cookies.items():
-                    cookie_list.append({"name": name, "value": value, "domain": ".poe.com", "path": "/"})
-                await context.add_cookies(cookie_list)
-
-                # Reload page with cookies
-                await page.reload()
-                await page.wait_for_load_state("networkidle")
-
-            # Get balance using browser scraping
             result = await session_manager.get_account_balance(page=page, force_refresh=True)
-
     return result
 
 
-async def login_to_poe(page=None) -> dict[str, str]:
-    """Open browser for manual Poe login and extract session cookies.
+async def login_to_poe(
+    page=None,
+    *,
+    settings: BrowserSettings | None = None,
+    timeout_seconds: float = 300,
+) -> dict[str, str]:
+    """Explicit interactive sign-in in the persistent Poe profile.
 
-    Opens an interactive browser window where the user can manually log in to Poe.
-    After successful login, extracts and stores the session cookies for future use
-    with balance checking and other authenticated operations.
-
-    Args:
-        page: Optional existing Playwright page to use. If not provided, creates new one
-
-    Returns:
-        dict[str, str]: Extracted cookies including essential ones:
-            - p-b: Primary session token
-            - p-lat: Session latitude token
-            - m-b: Message token
-            - cf_clearance: Cloudflare clearance token
-            - __cf_bm: Cloudflare bot management token
-
-    Raises:
-        AuthenticationError: If login fails or essential cookies missing
-        TimeoutError: If user doesn't complete login within 5 minutes
-
-    Examples:
-        ```python
-        # Perform interactive login
-        cookies = await login_to_poe()
-        print(f"Successfully extracted {len(cookies)} cookies")
-
-        # Now can check balance
-        balance = await get_account_balance()
-        print(f"Points available: {balance['compute_points_available']}")
-        ```
-
-    Note:
-        - Opens a browser window that stays open until login completes
-        - User must manually enter credentials and complete any 2FA
-        - Cookies are automatically saved for future sessions
-        - Uses PlaywrightAuthor's browser if available
+    The user's login tab is navigated to /login at most once. Redirects, OAuth
+    popups and MFA are observed without repeatedly navigating them to a bot URL.
     """
-    session_manager = get_session_manager()
+    from dataclasses import replace
 
-    # If no page provided, create one
-    if not page:
-        from .browser_pool import get_global_pool
+    from .browser_auth import probe_poe_context, wait_for_poe_login
+    from .browser_manager import BrowserManager
 
-        pool = await get_global_pool(max_size=1)
-        async with pool.acquire_page() as new_page:
-            return await login_to_poe(page=new_page)
-
-    # Use the provided page
-    # Try to access a bot page to check if we're logged in
-    # This is a better test than looking for UI elements
-    logger.info("Checking if already logged in to Poe...")
-    test_model_url = "https://poe.com/Claude-3-Opus"  # Use a known bot
-
-    try:
-        # Navigate to a bot page - this requires authentication
-        await page.goto(test_model_url, wait_until="networkidle", timeout=10000)
-
-        # Check if we can see the bot page content (not redirected to login)
-        current_url = page.url
-
-        if "/login" not in current_url and "poe.com/Claude" in current_url:
-            # We're on the bot page, so we're logged in!
-            logger.info("Already logged in to Poe (detected via bot page access)")
-            logger.info("Extracting existing session cookies...")
-
-            # Extract cookies from the authenticated session
-            cookies = await session_manager.extract_from_existing_playwright_session(page)
-
-            if cookies and "p-b" in cookies:
-                logger.info(f"Successfully extracted {len(cookies)} cookies from existing session")
-                return cookies
-            logger.warning("Could not extract valid cookies, proceeding to login...")
-
-    except Exception as e:
-        logger.debug(f"Not logged in or couldn't access bot page: {e}")
-
-    # If we're here, we need to login
-    logger.info("Not logged in, navigating to login page...")
-    await page.goto("https://poe.com/login")
-    logger.info("Please log in to Poe.com in the browser window...")
-    logger.info("(Keep the browser open until login is complete)")
-
-    # Wait for successful login - check by trying to access a bot page again
-    login_confirmed = False
-    start_time = asyncio.get_event_loop().time()
-    timeout_seconds = 300  # 5 minutes
-
-    while not login_confirmed and (asyncio.get_event_loop().time() - start_time) < timeout_seconds:
-        try:
-            # Periodically check if we can access authenticated content
-            await asyncio.sleep(2)  # Check every 2 seconds
-
-            # Try to navigate to a bot page
-            await page.goto(test_model_url, wait_until="domcontentloaded", timeout=5000)
-            current_url = page.url
-
-            if "/login" not in current_url and "poe.com/Claude" in current_url:
-                login_confirmed = True
-                logger.info("Login successful! Extracting cookies...")
-                cookies = await session_manager.extract_from_existing_playwright_session(page)
-
-                if cookies and "p-b" in cookies:
-                    return cookies
-                raise AuthenticationError("Login succeeded but could not extract valid cookies")
-
-        except Exception as e:
-            # Still waiting for login
-            if "Target page, context or browser has been closed" in str(e):
-                raise AuthenticationError(
-                    "Browser was closed before login completed. Please try again and keep the browser open."
-                )
-            # Continue waiting
-
-    if not login_confirmed:
-        raise TimeoutError("Login timed out after 5 minutes. Please try again.")
-    return None
+    selected = settings or browser_settings()
+    if page is None:
+        async with BrowserManager(settings=replace(selected, mode="interactive")) as manager:
+            owned_page = await manager.get_page()
+            return await login_to_poe(page=owned_page, settings=selected, timeout_seconds=timeout_seconds)
+    session_manager = get_session_manager(selected)
+    if not await probe_poe_context(page.context):
+        await page.goto("https://poe.com/login", wait_until="domcontentloaded", timeout=30000)
+        await wait_for_poe_login(page, timeout_seconds)
+    return await session_manager.extract_cookies_from_browser(page.context)
 
 
 async def extract_poe_cookies(page) -> dict[str, str]:
@@ -817,7 +712,7 @@ async def extract_poe_cookies(page) -> dict[str, str]:
     return await session_manager.extract_from_existing_playwright_session(page)
 
 
-def has_valid_poe_session() -> bool:
+def has_valid_poe_session(settings: BrowserSettings | None = None) -> bool:
     """Check if valid Poe session cookies are available.
 
     Returns:
@@ -832,11 +727,11 @@ def has_valid_poe_session() -> bool:
             print("Please login first using login_to_poe()")
         ```
     """
-    session_manager = get_session_manager()
+    session_manager = get_session_manager(settings)
     return session_manager.has_valid_cookies()
 
 
-def clear_poe_session() -> None:
+def clear_poe_session(settings: BrowserSettings | None = None) -> None:
     """Clear stored Poe session cookies.
 
     Removes all stored Poe session cookies and deletes the cookies file.
@@ -852,5 +747,5 @@ def clear_poe_session() -> None:
         cookies = await login_to_poe()
         ```
     """
-    session_manager = get_session_manager()
+    session_manager = get_session_manager(settings)
     session_manager.clear_cookies()

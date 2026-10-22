@@ -1,3 +1,5 @@
+# this_file: CHANGELOG.md
+
 # Changelog
 
 All notable changes to this project will be documented in this file.
@@ -6,6 +8,94 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+### Issue 340 — final verification scope (2026-10-22)
+
+- VCP340-5: Complete the user-selected live verification and direct review gate.
+  The headed incremental fallback exits successfully: 492 valid unique bots,
+  473 scraped prices, 19 undisclosed rates, no scraping failures or missing bot
+  information. Catalogue discovery removed eight IDs and added three between
+  runs; this includes removal of the headless timeout ID. All 470 previously
+  priced bots still present retain their scraped pricing unchanged. The three
+  added bots have prices. Temporary verification output preserves the original
+  dataset; no site deployment or package publication is performed.
+
+
+- Final direct regression: PlaywrightAuthor 159 passed / 24 skipped; Poe 228
+  passed. Seven new PlaywrightAuthor modules and five Poe integration modules
+  pass targeted type checks. Pricing JavaScript tests pass; all 31 browser
+  examples skip without their explicit live opt-in.
+- Full headless Poe verification saved 497 valid unique bot records: 476 scraped
+  prices, 20 undisclosed rates and one rendering timeout. The three-bot headless
+  sample updated two bots and repeated the timeout for `glm-5.3-zai`.
+- The user selected traditional headed fallback on sample failure, then commit
+  and push. The fallback uses the complete headless catalogue as input to a
+  normal incremental update, retrying its 21 entries without scraped prices.
+  Full forced headed/headless parity and unmeasured provider/hardware coverage
+  remain separate follow-up work; no universal browser/provider claim is made.
+
+
+### Issue 340 — live signed-in compatibility (2026-10-22)
+
+- Follow Poe's current subscription settings tab and inline available-points row;
+  recognize its current settings account UI during passive login observation.
+- Verified manual-login persistence, fresh headless authorization, scoped HTTP
+  export and normal refreshed CLI balance with Chrome for Testing / poe-primary.
+  Account values are omitted from the evidence. Full-update parity remains open.
+- Give timed-out browser commands an actionable message instead of an empty error.
+- Preserve a clean-wheel focus-check failure separately from later passing source
+  samples; no whole focus/noninterference claim is made.
+
+### Issue 340 — verified Poe session integration (2026-10-22)
+
+- Expose engine/profile/mode settings and command flags with VCP_BROWSER_*
+  environment defaults; unattended commands default to chrome/poe-primary/auto.
+  Setup verifies or installs CfT without launching it. Missing session-capable
+  PlaywrightAuthor reports ENGINE_UNAVAILABLE; the paired checkout is required
+  until a session-capable release is published.
+- Each pool holds one owned persistent context and each job receives its own tab.
+  Identity/loop-scoped pools, bounded acquisition and cancellation cleanup prevent
+  competing profile writers; closing a task connection never closes other jobs.
+- Separate explicit interactive login from headless balance/update. Login enters
+  /login once and passively observes account pages/popups, preserving OAuth/MFA
+  navigation. A fresh settings response plus numeric account-points UI verifies
+  authorization. No legacy bot URL or cookie-name test is used as login proof.
+- Return structured AUTH_REQUIRED (exit 3) with a matching login command, and
+  distinguish explicit provider refusal. HTTP/cache-first balance paths retain
+  priority; HTTP cookie exports are never injected into browser profiles.
+- Scope HTTP exports and balance caches by engine/profile, record cookie expiry
+  and provenance, exclude expired/foreign-domain values, and write private 0600
+  exports atomically within 0700 directories. Save failures propagate and preserve
+  prior bytes. New exports invalidate old balance caches. Logout clears only the
+  selected HTTP export/cache, with persistent browser sign-in stated explicitly.
+- Verification: full Python suite passes (220 tests); 18 JavaScript tests and 14
+  vendor tests pass, vendor coverage 100%. New adapter/settings/auth/command/store
+  modules have focused coverage above 90%. F/I lint passes on changed files;
+  targeted mypy passes with the paired PWA source on MYPYPATH. Broad repository
+  coverage/type gates are not claimed clean.
+- Real macOS arm64 browsers pass the Poe adapter/pool against intercepted fixture
+  responses on CfT, Chromium and Firefox: shared context, distinct tabs, job
+  cancellation, subsequent jobs, and unauthenticated auto rejection. Latest run:
+  105 focus/window samples pass. A separate live anonymous Poe probe returns
+  AUTH_REQUIRED without credentials or an interactive login attempt.
+- Paired local wheels build and install cleanly; new module bytes and private-data
+  exclusions are audited. The source archive previously included local work/OMC
+  records; explicit sdist selection excludes them. No artifacts are published.
+- VCP340-1/2/3/4 implementation tasks move from PLAN/TODO into this record.
+  VCP340-5 retains real signed-in login/balance/full-update/provider/Intel and
+  remaining focus acceptance. Fixture interception and logged-out live behaviour
+  do not prove those gates. See `issues/340-poe-verification.md` and JSON evidence.
+
+### Issue 340 — architecture analysis (2026-10-22)
+
+- Compare all three concatenated reports and select true headless Chrome with
+  explicit interactive sign-in, isolated identities and context-based sessions.
+  Record implementation and acceptance criteria in PLAN.md and flat issue tasks
+  in TODO.md. Poe runtime integration remains pending; no authentication or full
+  unattended update is claimed verified.
+- Baseline: 190 Python tests, 18 JavaScript checks and 14 vendor tests pass via
+  `./test.sh` using local test version `0.0.0`. Vendor coverage is 100%; the
+  separate Hatch run fails the existing 85% total-coverage gate at 56.52%.
 
 ### Theme, point estimates and tiers — 2026-10-05
 - Switch to MaterialX with FontLab theme 2026 CDN assets and native project navigation/search without FontLab menu/footer.

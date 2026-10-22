@@ -1,0 +1,44 @@
+{
+  "checked_at": "2026-10-22T12:45:32.604309+00:00",
+  "playwright_version": "1.64.0",
+  "engines": [
+    {
+      "engine": "chrome",
+      "browser_version": "150.0.7871.24",
+      "shared_owned_context": true,
+      "distinct_job_tabs": true,
+      "cancelled_job_tab_closed": true,
+      "remaining_jobs_survive": true,
+      "unauthenticated_auto_rejected": true
+    },
+    {
+      "engine": "chromium",
+      "browser_version": "156.0.8078.4",
+      "shared_owned_context": true,
+      "distinct_job_tabs": true,
+      "cancelled_job_tab_closed": true,
+      "remaining_jobs_survive": true,
+      "unauthenticated_auto_rejected": true
+    },
+    {
+      "engine": "firefox",
+      "browser_version": "157.0",
+      "shared_owned_context": true,
+      "distinct_job_tabs": true,
+      "cancelled_job_tab_closed": true,
+      "remaining_jobs_survive": true,
+      "unauthenticated_auto_rejected": true
+    }
+  ],
+  "samples": 114,
+  "observation_errors": [],
+  "focus_unchanged": false,
+  "no_visible_browser_windows": true,
+  "scope": "real browser and adapter, intercepted fixture service responses",
+  "not_verified": [
+    "live Poe login/balance/update",
+    "real OAuth/MFA/provider refusal",
+    "Intel hardware",
+    "typing target and Spaces"
+  ]
+}

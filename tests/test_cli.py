@@ -162,7 +162,7 @@ class TestCliUpdate:
     @patch("virginia_clemm_poe.__main__.console", new_callable=Mock)
     def test_update_with_api_key(self, mock_console, mock_logger, mock_env_get, mock_updater_class):
         """Test successful update with API key."""
-        mock_env_get.return_value = "test-api-key"
+        mock_env_get.side_effect = lambda name, default=None: "test-api-key" if name == "POE_API_KEY" else default
         mock_updater = Mock()
         mock_updater.update_all = AsyncMock()
         mock_updater_class.return_value = mock_updater
@@ -170,7 +170,10 @@ class TestCliUpdate:
         self.cli.update(all=True, force=False, verbose=False)
 
         mock_logger.assert_called_once_with(False)
-        mock_updater_class.assert_called_once_with("test-api-key", debug_port=9222, verbose=False)
+        mock_updater_class.assert_called_once()
+        assert mock_updater_class.call_args.args == ("test-api-key",)
+        assert mock_updater_class.call_args.kwargs["settings"].profile == "poe-primary"
+        assert mock_updater_class.call_args.kwargs["debug_port"] == 9222
         # Verify the updater's update_all method was called
         mock_updater.update_all.assert_called_once_with(force=False, update_info=True, update_pricing=True)
 
@@ -409,10 +412,15 @@ class TestCliDoctor:
     @patch("virginia_clemm_poe.__main__.console", new_callable=Mock)
     def test_check_python_version(self, mock_console):
         from types import SimpleNamespace
+
         for minor, colour in [(12, "green"), (11, "red")]:
             with patch("sys.version_info", SimpleNamespace(major=3, minor=minor, micro=0)):
                 self.cli.status()
-            expected = f"[{colour}]✓ Python 3.12.0[/{colour}]" if minor == 12 else "[red]✗ Python 3.11.0 (3.12+ required)[/red]"
+            expected = (
+                f"[{colour}]✓ Python 3.12.0[/{colour}]"
+                if minor == 12
+                else "[red]✗ Python 3.11.0 (3.12+ required)[/red]"
+            )
             mock_console.print.assert_any_call(expected)
 
     @patch("virginia_clemm_poe.__main__.console", new_callable=Mock)
