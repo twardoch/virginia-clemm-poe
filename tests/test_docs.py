@@ -75,3 +75,36 @@ def test_explicit_saved_output_media_extends_filter_metadata():
         "Saved output media must be discoverable in modality filters"
     )
     assert model["comparison_modalities_source"] == "saved_rate_card", "Derived metadata retains provenance"
+
+
+def test_database_status_uses_latest_saved_observation_in_utc():
+    from src_docs.update_docs import render_database_status
+
+    status = render_database_status({"data": [
+        {"api_last_updated": "2026-10-22T16:10:00+02:00"},
+        {"pricing": {"scraped": {"checked_at": "2026-10-22 14:07:50.806556"}}},
+    ]})
+    assert 'datetime="2026-10-22T14:10:00Z"' in status, "Compare actual instants across timestamp formats"
+    assert "22 October 2026, 14:10 UTC" in status, "Display an explicit date and timezone"
+    assert "2 bots" in status and "1 with website prices" in status, "Display saved catalogue coverage"
+
+
+def test_database_status_without_observations_does_not_invent_a_date():
+    from src_docs.update_docs import render_database_status
+
+    status = render_database_status({"data": [{"api_last_updated": None, "pricing": None}]})
+    assert "Not recorded" in status and "<time" not in status, "Never use a rebuild time as data freshness"
+
+
+def test_homepage_database_status_rebuild_replaces_one_block(tmp_path):
+    from src_docs.update_docs import update_homepage_status
+
+    home = tmp_path / "index.md"
+    home.write_text("# Virginia Clemm Poe \n\nExisting content.\n")
+    update_homepage_status(home, '<p class="database-status">Old date</p>')
+    update_homepage_status(home, '<p class="database-status">New date</p>')
+    first = home.read_text()
+    update_homepage_status(home, '<p class="database-status">New date</p>')
+    assert home.read_text() == first, "Rebuild must be idempotent"
+    assert first.count('class="database-status"') == 1 and "Old date" not in first, "Replace stale status"
+    assert first.startswith("# Virginia Clemm Poe") and "Existing content." in first, "Preserve the authored homepage"

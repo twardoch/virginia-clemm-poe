@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Show the database update date, timezone, bot count and website-price count on
+  the homepage and model catalogue. Derive freshness from saved API/pricing
+  observations so rebuilding the website never invents a new update date.
+
+
 - Correct six case-only generated model-page paths in Git so all current model
   IDs resolve on case-sensitive website hosting.
 

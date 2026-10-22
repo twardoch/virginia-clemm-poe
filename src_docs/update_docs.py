@@ -4,9 +4,11 @@
 """Build the catalogue from saved poe_bots.json observations without rescraping."""
 
 import json
+import re
 import shutil
 import subprocess
 import sys
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
@@ -205,6 +207,39 @@ def add_saved_modalities(model: dict[str, Any]) -> None:
             model["comparison_modalities_source"] = "saved_rate_card"
 
 
+def render_database_status(data: dict[str, Any]) -> str:
+    """Show saved observation freshness, independent of site rebuild time."""
+    models = data.get("data", [])
+    observations = []
+    for model in models:
+        scraped = (model.get("pricing") or {}).get("scraped") or {}
+        for value in (model.get("api_last_updated"), scraped.get("checked_at")):
+            if value:
+                observed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+                observations.append(observed.replace(tzinfo=UTC) if observed.tzinfo is None else observed.astimezone(UTC))
+    date = "Not recorded"
+    if observations:
+        latest = max(observations).replace(microsecond=0)
+        date = f'<time datetime="{latest.isoformat().replace("+00:00", "Z")}">{latest:%d %B %Y, %H:%M UTC}</time>'
+    priced = sum(bool((model.get("pricing") or {}).get("scraped")) for model in models)
+    return (
+        f'<p class="database-status"><strong>Database updated:</strong> {date}'
+        f' · {len(models)} bots · {priced} with website prices.<br>'
+        '<small>Latest saved API or pricing observation; individual checks may be older.</small></p>'
+    )
+
+
+def update_homepage_status(path: Path, status: str) -> None:
+    """Replace the generated status while retaining the authored homepage."""
+    text = path.read_text()
+    pattern = r'<p class="database-status">.*?</p>'
+    if re.search(pattern, text, flags=re.DOTALL):
+        text = re.sub(pattern, lambda match: status, text, count=1, flags=re.DOTALL)
+    else:
+        text = re.sub(r"^# .+\n", lambda match: f"{match.group()}\n{status}\n", text, count=1, flags=re.MULTILINE)
+    path.write_text(text)
+
+
 def main() -> None:
     """Main function to update documentation."""
     logger.info("🚀 Starting documentation update process")
@@ -229,6 +264,8 @@ def main() -> None:
 
     # Load models data
     data = load_bots_data(src_models_json)
+    database_status = render_database_status(data)
+    update_homepage_status(docs_md_dir / "index.md", database_status)
     models = data.get("data", [])
     for model in models:
         normalize_saved_rates(model)
@@ -290,6 +327,7 @@ def main() -> None:
     logger.info("📑 Generating models index page")
     models_index_path = docs_models_dir / "index.md"
     models_index_content = ["---\nthis_file: src_docs/md/models/index.md\nhide:\n  - toc\n---\n\n# Models Database\n\n"]
+    models_index_content.append(database_status + "\n\n")
     models_index_content.append(
         '<iframe class="poe-catalogue" src="../table.html" title="Poe model prices and filters" loading="eager"></iframe>\n\n'
     )

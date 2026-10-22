@@ -6,6 +6,8 @@ hide:
 
 # Models Database
 
+<p class="database-status"><strong>Database updated:</strong> <time datetime="2026-10-22T14:07:50Z">22 October 2026, 14:07 UTC</time> · 492 bots · 473 with website prices.<br><small>Latest saved API or pricing observation; individual checks may be older.</small></p>
+
 <iframe class="poe-catalogue" src="../table.html" title="Poe model prices and filters" loading="eager"></iframe>
 
 Browse model details:
