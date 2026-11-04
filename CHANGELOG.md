@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.40] — 2026-11-04
+
+- Remove two obsolete lowercase Kimi page/source index entries retained on the
+  case-insensitive development filesystem. Canonical files are unchanged.
+- Record successful live v1.0.39 verification: all 540 deployed files match the
+  local build; all 471 model pages and every catalogue interaction pass.
+
 ## [1.0.39] — 2026-11-04
 
 - Refresh 506 candidates into a 471-bot catalogue containing all 99 issue 341

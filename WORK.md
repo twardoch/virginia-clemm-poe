@@ -29,10 +29,18 @@ native navigation/search and zero page errors. No dependency or generation added
 Evidence: `issues/341-verification.md`, `341-refresh.json`, `341-site-checks.json`
 and a 540-file site hash manifest. Original source snapshot remains outside the
 repository; the previous issue 342 report now links its immutable source commit.
-Publication is the remaining step: run the requested `uvx gitnextver` without a
-stash/pull cycle, preserving unrelated raw browser records, then verify the tag,
-remote dataset, Pages deployment and live catalogue. No standalone Git command
-was used. Current source SHA-256:
+Published v1.0.39 at bfe1099290fd4c2c8ef7bd02ded657aecca6621c using the
+requested release tool. Pages and documentation workflows pass. All 540 live
+files, including all 471 model pages, match the local build; normal public-URL
+browser acceptance repeats every local check with zero page errors. General CI
+still fails; local Hatch's known coverage gap is documented above.
+
+The remote-tree audit identified a lowercase Kimi alias retained by macOS index
+stat behavior despite canonical files on disk. Removed exactly those two index
+entries through the release tool's installed GitPython API, after preserving the
+index and asserting every other entry and both canonical file hashes unchanged.
+The cleanup patch includes that removal and the completed live verification.
+No standalone Git command was used. Current source SHA-256:
 `a21465d7e294fe21458f906c54f6b63f25ee63fd74ad23b0044311cc8f712704`.
 
 ## Issue 342: saved-price report — 2026-11-03

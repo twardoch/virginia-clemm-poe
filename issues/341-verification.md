@@ -26,6 +26,8 @@ For the 15 missing numeric prices, reviewed all rate dialogs/public rate cards. 
 
 Source JSON SHA-256: `a21465d7e294fe21458f906c54f6b63f25ee63fd74ad23b0044311cc8f712704`. [Full public observations and rechecks](341-refresh.json). [Rendered catalogue checks](341-site-checks.json). [Site SHA-256 manifest](341-site-hashes.json).
 
+Published v1.0.39 and verified all 540 live files plus the normal public catalogue. [Live results](341-live-verification.json). A subsequent index cleanup removes the obsolete lowercase Kimi page/source aliases; canonical payloads remain unchanged.
+
 ## Removed or consolidated handles
 
 | Previous handle | Result |

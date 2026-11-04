@@ -1,12 +1,5 @@
 # this_file: PLAN.md
 
-## Issue 341 — catalogue refresh, 2026-11-04
-
-Implementation and local acceptance are complete; see CHANGELOG.md and
-issues/341-verification.md. Remaining: run `uvx gitnextver`, verify the pushed
-version and source dataset, then compare deployed site hashes and repeat browser
-acceptance on the normal public URL. Preserve unrelated raw browser records.
-
 ## Issue 340: decision and acceptance contract — 2026-10-22
 
 Scope: run authenticated automation without interrupting macOS work, with explicit

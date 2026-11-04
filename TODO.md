@@ -6,7 +6,7 @@
 - [x] Rescrape every candidate and verify removals against live evidence.
 - [x] Audit requested handles, prices, errors and generated catalogue parity.
 - [x] Pass regression, strict site build and rendered catalogue checks.
-- [ ] Run `uvx gitnextver` and verify release/site results.
+- [x] Run `uvx gitnextver` and verify release/site results.
 
 ## Issue 340
 
