@@ -52,7 +52,7 @@ All parsed rates (both currencies):
 | Image Output (high; 2:3 (1024x1536)) | USD | 0.18 | 1 image |
 | Image Output (high; 2:3 (1024x1536)) | POINTS | 5990 | 1 image |
 
-**Last Checked:** 2026-10-22 13:23:53.717860
+**Last Checked:** 2026-11-04T16:43:40.925959
 
 
 ## Bot Information
@@ -91,4 +91,4 @@ Disable high fidelity by toggling it off or by typing 'use_high_fidelity'. This 
 
 **Root:** gpt-image-1.5
 
-**API Last Updated:** 2026-10-22 13:58:59.074629
+**API Last Updated:** 2026-11-04T16:58:23.008248

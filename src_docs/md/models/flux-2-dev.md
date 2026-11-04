@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.015 | 1 image |
 | Image Output | POINTS | 500 | 1 image |
 
-**Last Checked:** 2026-10-22 13:26:53.558811
+**Last Checked:** 2026-11-04T16:45:02.788205
 
 
 ## Bot Information
@@ -62,4 +62,4 @@ Set aspect ratio. Select from (16:9, 4:3, 1:1, 3:4, 9:16). It is set to 4:3 aspe
 
 **Root:** flux-2-dev
 
-**API Last Updated:** 2026-10-22 13:58:59.075233
+**API Last Updated:** 2026-11-04T16:58:23.008447

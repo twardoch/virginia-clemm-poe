@@ -31,7 +31,7 @@ All parsed rates (both currencies):
 | Output (video) | USD | 0.051 | 1 second |
 | Output (video) | POINTS | 1667 | 1 second |
 
-**Last Checked:** 2026-10-22 13:23:34.241358
+**Last Checked:** 2026-11-04T16:46:48.498816
 
 
 ## Bot Information
@@ -64,4 +64,4 @@ All parsed rates (both currencies):
 
 **Root:** grok-imagine-video
 
-**API Last Updated:** 2026-10-22 13:58:59.074550
+**API Last Updated:** 2026-11-04T16:58:23.008224

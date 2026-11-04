@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | Quality (FP16) | USD | 0.21 | 1000 characters |
 | Quality (FP16) | POINTS | 6976 | 1000 characters |
 
-**Last Checked:** 2026-10-22 13:03:35.136291
+**Last Checked:** 2026-11-04T16:26:43.438797
 
 
 ## Bot Information

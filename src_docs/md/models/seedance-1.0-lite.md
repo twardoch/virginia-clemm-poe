@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Video Output | USD | 1.82 | 1000000 tokens |
 | Video Output | POINTS | 60000 | 1000000 tokens |
 
-**Last Checked:** 2026-10-22 13:32:05.444967
+**Last Checked:** 2026-11-04T16:50:34.472822
 
 
 ## Bot Information
@@ -63,4 +63,4 @@ Notes: Number of video tokens calculated for pricing is approximately: `height *
 
 **Root:** seedance-1.0-lite
 
-**API Last Updated:** 2026-10-22 13:58:59.076208
+**API Last Updated:** 2026-11-04T16:58:23.008774

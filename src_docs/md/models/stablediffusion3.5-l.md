@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.056 | 1 message |
 | Image Output | POINTS | 1842 | 1 message |
 
-**Last Checked:** 2026-10-22 13:32:36.070168
+**Last Checked:** 2026-11-04T16:47:26.079489
 
 
 ## Bot Information
@@ -59,4 +59,4 @@ Aspect to select an aspect ratio. Valid aspect ratios are 16:9, 4:3, 1:1, 3:4, 9
 
 **Root:** stablediffusion3.5-l
 
-**API Last Updated:** 2026-10-22 13:58:59.076260
+**API Last Updated:** 2026-11-04T16:58:23.008799

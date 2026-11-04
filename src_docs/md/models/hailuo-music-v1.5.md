@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Audio Output | USD | 0.030 | 1 message |
 | Audio Output | POINTS | 1000 | 1 message |
 
-**Last Checked:** 2026-10-22 13:30:12.307332
+**Last Checked:** 2026-11-04T16:46:29.599884
 
 
 ## Bot Information
@@ -64,4 +64,4 @@ Set music style to set the style of the generated music - for example, rock and 
 
 **Root:** hailuo-music-v1.5
 
-**API Last Updated:** 2026-10-22 13:58:59.075956
+**API Last Updated:** 2026-11-04T16:58:23.008672

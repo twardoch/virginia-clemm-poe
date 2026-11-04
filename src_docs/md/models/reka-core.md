@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Total Cost | USD | 0.025 | 1 message |
 | Total Cost | POINTS | 834 | 1 message |
 
-**Last Checked:** 2026-10-22 13:37:13.866793
+**Last Checked:** 2026-11-04T16:53:05.222412
 
 
 ## Bot Information
@@ -56,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** reka-core
 
-**API Last Updated:** 2026-10-22 13:58:59.076793
+**API Last Updated:** 2026-11-04T16:58:23.009028

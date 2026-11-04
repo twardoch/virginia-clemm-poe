@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.026 | 1 megapixel |
 | Image Output | POINTS | 850 | 1 megapixel |
 
-**Last Checked:** 2026-10-22 13:33:43.428627
+**Last Checked:** 2026-11-04T16:51:20.690257
 
 
 ## Bot Information
@@ -62,4 +62,4 @@ Note: This bot supports .jpg, .png, bmp, gif and tiff images.
 
 **Root:** clarity-upscaler
 
-**API Last Updated:** 2026-10-22 13:58:59.076408
+**API Last Updated:** 2026-11-04T16:58:23.008878

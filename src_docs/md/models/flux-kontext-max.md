@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.081 | 1 message |
 | Image Output | POINTS | 2667 | 1 message |
 
-**Last Checked:** 2026-10-22 13:31:30.745400
+**Last Checked:** 2026-11-04T16:50:22.600052
 
 
 ## Bot Information
@@ -59,4 +59,4 @@ Set the aspect ratio for text-to-image-generation. Available aspect ratio (21:9,
 
 **Root:** flux-kontext-max
 
-**API Last Updated:** 2026-10-22 13:58:59.076123
+**API Last Updated:** 2026-11-04T16:58:23.008752

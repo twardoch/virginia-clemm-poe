@@ -43,7 +43,7 @@ from .types import PoeApiResponse
 from .utils.cache import cached, get_api_cache, get_scraping_cache
 from .utils.logger import log_api_request, log_browser_operation, log_performance_metric
 from .utils.memory import MemoryManagedOperation
-from .vendors import load_vendors, scrape_profile
+from .vendors import load_extra_bots, load_vendors, scrape_profile
 
 
 class BotUpdater:
@@ -334,13 +334,14 @@ class BotUpdater:
             if tasks:
                 await asyncio.gather(*tasks)
             pricing = parse_rate_tables(html)
-            if not pricing:
-                for card in cards:
-                    pricing.update(parse_rate_card(card))
+            for card in cards:
+                parsed = parse_rate_card(card)
+                if len(parsed.get("rates", [])) >= len(pricing.get("rates", [])):
+                    pricing.update(parsed)
             if cards:
                 pricing["rate_card"] = cards[-1]
             if not pricing.get("rates"):
-                return None, "Creator has not disclosed a numeric rate"
+                return None, "Rates dialog contains no numeric pricing"
             return pricing, None
         finally:
             page.remove_listener("response", on_response)
@@ -906,6 +907,7 @@ class BotUpdater:
             max_size=3, debug_port=self.debug_port, verbose=self.verbose, settings=self.browser_settings
         )
         vendor_bots, failed_vendors = await self._discover_vendor_bots(pool)
+        vendor_bots.extend(load_extra_bots())
         merged_bots = self._merge_vendor_bots(merged_bots, vendor_bots, existing_collection, failed_vendors)
         collection = BotCollection(object=api_data["object"], data=merged_bots)
         self._save_collection(collection)

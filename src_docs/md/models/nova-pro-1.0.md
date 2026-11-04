@@ -30,7 +30,7 @@ All parsed rates (both currencies):
 | Output | USD | 0.012 | 1 output |
 | Output | POINTS | 400 | 1 output |
 
-**Last Checked:** 2026-10-22 13:26:21.406474
+**Last Checked:** 2026-11-04T16:42:48.510976
 
 
 ## Bot Information
@@ -67,4 +67,4 @@ Note that if enabled, costs may increase. Check the rate card for more informati
 
 **Root:** nova-pro-1.0
 
-**API Last Updated:** 2026-10-22 13:58:59.075118
+**API Last Updated:** 2026-11-04T16:58:23.008415

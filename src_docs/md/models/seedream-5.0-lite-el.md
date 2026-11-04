@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Seedream 5.0 Lite | USD | 0.0350 | 1 image |
 | Seedream 5.0 Lite | POINTS | 1167 | 1 image |
 
-**Last Checked:** 2026-10-22 13:40:57.241622
+**Last Checked:** 2026-11-04T16:48:33.408153
 
 
 ## Bot Information
@@ -59,4 +59,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** seedream-5.0-lite-el
 
-**API Last Updated:** 2026-10-22 13:58:59.077024
+**API Last Updated:** 2026-11-04T16:58:23.009107

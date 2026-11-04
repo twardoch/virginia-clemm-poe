@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Video Output | USD | 0.011 | 1000 tokens |
 | Video Output | POINTS | 374 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:22:28.882698
+**Last Checked:** 2026-11-04T16:41:09.808455
 
 
 ## Bot Information
@@ -58,4 +58,4 @@ Cost estimate - $0.115 per second (10300 tokens per second) at 480p, $0.24752 pe
 
 **Root:** seedance-2-fast
 
-**API Last Updated:** 2026-10-22 13:58:59.074222
+**API Last Updated:** 2026-11-04T16:58:23.007278

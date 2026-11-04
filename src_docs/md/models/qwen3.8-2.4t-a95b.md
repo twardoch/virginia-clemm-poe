@@ -4,7 +4,7 @@ this_file: src_docs/md/models/qwen3.8-2.4t-a95b.md
 
 # [qwen3.8-2.4t-a95b](https://poe.com/qwen3.8-2.4t-a95b){ .md-button .md-button--primary }
 
-**Tier 0:** 0 points · per message
+**Tier 4:** 133.5 points · 1,000 tokens (500 input + 500 output)
 
 [Comparison method and assumptions](../pricing-method.md).
 
@@ -21,25 +21,28 @@ this_file: src_docs/md/models/qwen3.8-2.4t-a95b.md
 
 | Type | Cost |
 |------|------|
-| Total Cost | 0 points/message |
+| Input Text | 67 points/1k tokens |
+| Output (Text) | $6.06/1M tokens · 200 points/1k tokens |
 
 All parsed rates (both currencies):
 
 | Service | Currency | Amount | Per |
 |---|---|---|---|
-| Total cost | USD | 0.00 | 1 message |
-| Total cost | POINTS | 0 | 1 message |
+| Input | USD | 2.02 | 1000000 tokens |
+| Input | POINTS | 67 | 1000 tokens |
+| Output (text) | USD | 6.06 | 1000000 tokens |
+| Output (text) | POINTS | 200 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:10:48.501403
+**Last Checked:** 2026-11-04T16:41:20.188626
 
 
 ## Bot Information
 
-**Creator:** @togetherai
+**Creator:** @alibaba
 
-**Description:** Qwen3.8 Max is the flagship of Qwen's 3.8 generation and the largest model the team has released, a sparse Mixture-of-Experts design with 2.4 trillion total parameters. Qwen describes it as the team's first multimodal model above one trillion parameters, built for coding, long-horizon agentic work, and multimodal reasoning. The model supports a 256K-token context window with up to 128K output tokens, and thinking is always enabled, with reasoning effort adjustable across low, high, and xhigh levels. Announced on July 19, 2026 at the World AI Conference in Shanghai, with Alibaba committing to an open-weight release. Available on Together AI.
+**Description:** Alibaba’s Qwen 3.8 2.4T-A95B model for reasoning, coding, and image understanding, with a 262K-token context window.
 
-**Extra:** Powered by a server managed by @togetherai. Learn more
+**Extra:** Powered by a server managed by @alibaba. Learn more
 
 
 ## Architecture
@@ -63,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** qwen3.8-2.4t-a95b
 
-**API Last Updated:** 2026-10-22 13:58:59.074310
+**API Last Updated:** 2026-11-04T16:58:23.007312

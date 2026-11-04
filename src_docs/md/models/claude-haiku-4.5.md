@@ -36,7 +36,7 @@ All parsed rates (both currencies):
 | Output | USD | 0.010 | 1 search |
 | Output | POINTS | 334 | 1 search |
 
-**Last Checked:** 2026-10-22 13:26:07.913915
+**Last Checked:** 2026-11-04T16:44:43.005710
 
 
 ## Bot Information
@@ -71,4 +71,4 @@ Claude Haiku 4.5 is an earlier-generation Anthropic model for fast coding and ev
 
 **Root:** claude-haiku-4.5
 
-**API Last Updated:** 2026-10-22 13:58:59.075054
+**API Last Updated:** 2026-11-04T16:58:23.008401

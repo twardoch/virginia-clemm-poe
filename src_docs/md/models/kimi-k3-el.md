@@ -36,7 +36,7 @@ All parsed rates (both currencies):
 | Bot message | USD | 0.0020 | 1 message |
 | Bot message | POINTS | 67 | 1 message |
 
-**Last Checked:** 2026-10-22 13:42:38.097173
+**Last Checked:** 2026-11-04T16:51:09.329384
 
 
 ## Bot Information
@@ -71,4 +71,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** kimi-k3-el
 
-**API Last Updated:** 2026-10-22 13:58:59.077378
+**API Last Updated:** 2026-11-04T16:58:23.009243

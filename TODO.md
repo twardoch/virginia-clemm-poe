@@ -1,5 +1,13 @@
 # this_file: TODO.md
 
+## Issue 341
+
+- [x] Refresh API/vendors and include all 99 requested handles.
+- [x] Rescrape every candidate and verify removals against live evidence.
+- [x] Audit requested handles, prices, errors and generated catalogue parity.
+- [x] Pass regression, strict site build and rendered catalogue checks.
+- [ ] Run `uvx gitnextver` and verify release/site results.
+
 ## Issue 340
 
 Verified tasks moved to CHANGELOG.md. Additional matrix coverage is recorded in PLAN.md.

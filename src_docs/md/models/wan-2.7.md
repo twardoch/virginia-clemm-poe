@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | 1080P | USD | 0.150 | 1 second |
 | 1080P | POINTS | 5000 | 1 second |
 
-**Last Checked:** 2026-10-22 13:24:40.145077
+**Last Checked:** 2026-11-04T16:43:57.418071
 
 
 ## Bot Information
@@ -77,4 +77,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** wan-2.7
 
-**API Last Updated:** 2026-10-22 13:58:59.074720
+**API Last Updated:** 2026-11-04T16:58:23.008281

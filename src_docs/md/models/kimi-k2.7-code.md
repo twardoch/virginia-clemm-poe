@@ -1,21 +1,14 @@
 ---
-this_file: src_docs/md/models/kimi-k2.7-code.md
+this_file: src_docs/md/models/Kimi-K2.7-Code.md
 ---
 
-# [kimi-k2.7-code](https://poe.com/kimi-k2.7-code){ .md-button .md-button--primary }
+# [Kimi-K2.7-Code](https://poe.com/Kimi-K2.7-Code){ .md-button .md-button--primary }
 
 **Tier 3:** 83 points · 1,000 tokens (500 input + 500 output)
 
 [Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
-
-### API Pricing (USD)
-
-| Type | Cost |
-|------|------|
-| Prompt | $9.596E-7/token |
-| Completion | $0.0000040404/token |
 
 ### Website Pricing
 
@@ -33,7 +26,7 @@ All parsed rates (both currencies):
 | Output (text) | USD | 4.04 | 1000000 tokens |
 | Output (text) | POINTS | 134 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:44:10.524192
+**Last Checked:** 2026-11-04T16:29:14.470735
 
 
 ## Bot Information
@@ -47,23 +40,23 @@ All parsed rates (both currencies):
 
 ## Architecture
 
-**Input Modalities:** text, image
+**Input Modalities:** Unknown
 
-**Output Modalities:** text
+**Output Modalities:** Unknown
 
-**Modality:** text,image->text
+**Modality:** unknown
 
 
 ## Technical Details
 
-**Model ID:** `kimi-k2.7-code`
+**Model ID:** `Kimi-K2.7-Code`
 
-**Object Type:** model
+**Object Type:** bot
 
-**Created:** 1784856218152
+**Created:** Unknown
 
-**Owned By:** Moonshot AI
+**Owned By:** moonshotai
 
-**Root:** kimi-k2.7-code
+**Root:** Kimi-K2.7-Code
 
-**API Last Updated:** 2026-10-22 13:58:59.077572
+**API Last Updated:** Not listed in API

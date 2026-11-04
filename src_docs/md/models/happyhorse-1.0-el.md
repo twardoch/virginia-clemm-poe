@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | 1080P | USD | 0.24 | 1 second |
 | 1080P | POINTS | 8000 | 1 second |
 
-**Last Checked:** 2026-10-22 13:41:06.012549
+**Last Checked:** 2026-11-04T16:55:19.518572
 
 
 ## Bot Information
@@ -76,4 +76,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** happyhorse-1.0-el
 
-**API Last Updated:** 2026-10-22 13:58:59.077055
+**API Last Updated:** 2026-11-04T16:58:23.009117

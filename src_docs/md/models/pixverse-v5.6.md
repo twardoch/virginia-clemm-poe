@@ -68,7 +68,7 @@ All parsed rates (both currencies):
 | Video Output (720p; 10 seconds:) | USD | 1.00 | 10 second |
 | Video Output (720p; 10 seconds:) | POINTS | 33000 | 10 second |
 
-**Last Checked:** 2026-10-22 13:24:27.737944
+**Last Checked:** 2026-11-04T16:43:52.145149
 
 
 ## Bot Information
@@ -122,4 +122,4 @@ Input Limits & Requirements:
 
 **Root:** pixverse-v5.6
 
-**API Last Updated:** 2026-10-22 13:58:59.074687
+**API Last Updated:** 2026-11-04T16:58:23.008271

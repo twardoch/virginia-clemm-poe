@@ -4,48 +4,38 @@ this_file: src_docs/md/models/mimo-v2.6-pro.md
 
 # [mimo-v2.6-pro](https://poe.com/mimo-v2.6-pro){ .md-button .md-button--primary }
 
-**Tier 2:** 22 points · 1,000 tokens (500 input + 500 output)
+**Tier 2:** 20 points · 1,000 tokens (500 input + 500 output)
 
 [Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
 
-### API Pricing (USD)
-
-| Type | Cost |
-|------|------|
-| Prompt | $4.394E-7/token |
-| Completion | $8.788E-7/token |
-
 ### Website Pricing
 
 | Type | Cost |
 |------|------|
-| Input Text | 15 points/1k tokens |
-| Output (Text) | $0.88/1M tokens · 29 points/1k tokens |
+| Input Text | 13 points/1k tokens |
+| Output (Text) | $0.79/1M tokens · 27 points/1k tokens |
 
 All parsed rates (both currencies):
 
 | Service | Currency | Amount | Per |
 |---|---|---|---|
-| Input (text) | USD | 0.44 | 1000000 tokens |
-| Input (text) | POINTS | 15 | 1000 tokens |
-| Output (text) | USD | 0.88 | 1000000 tokens |
-| Output (text) | POINTS | 29 | 1000 tokens |
+| Input | USD | 0.39 | 1000000 tokens |
+| Input | POINTS | 13 | 1000 tokens |
+| Output (text) | USD | 0.79 | 1000000 tokens |
+| Output (text) | POINTS | 27 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:48:02.984266
+**Last Checked:** 2026-11-04T16:44:03.532495
 
 
 ## Bot Information
 
-**Creator:** @novitaai
+**Creator:** @xiaomi
 
-**Description:** MiMo V2.6 Pro is Xiaomi's flagship open-source reasoning model for complex projects, long-horizon agent tasks, cybersecurity, research, and high-value professional work. It natively understands text, images, video, and audio, supports a 1M-token context window and up to 128K output tokens, and provides controllable deep thinking, tool calling, JSON mode, streaming, and prompt caching.
+**Description:** Xiaomi’s MiMo V2.6 Pro model for reasoning and coding, with text, image, audio, and video input and a 1M-token context window.
 
-File Support: Text, Markdown, Image, Video and PDF files
-Context window: 1M tokens
-
-**Extra:** Powered by a server managed by @novitaai. Learn more
+**Extra:** Powered by a server managed by @xiaomi. Learn more
 
 
 ## Architecture
@@ -69,4 +59,4 @@ Context window: 1M tokens
 
 **Root:** mimo-v2.6-pro
 
-**API Last Updated:** 2026-10-22 13:58:59.078091
+**API Last Updated:** Not listed in API

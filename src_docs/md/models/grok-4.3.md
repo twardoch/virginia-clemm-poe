@@ -28,12 +28,12 @@ All parsed rates (both currencies):
 
 | Service | Currency | Amount | Per |
 |---|---|---|---|
-| Input (text) | USD | 1.26 | 1000000 tokens |
-| Input (text) | POINTS | 42 | 1000 tokens |
+| Input | USD | 1.26 | 1000000 tokens |
+| Input | POINTS | 42 | 1000 tokens |
 | Output (text) | USD | 2.53 | 1000000 tokens |
 | Output (text) | POINTS | 84 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:20:30.656445
+**Last Checked:** 2026-11-04T16:40:14.591172
 
 
 ## Bot Information
@@ -70,4 +70,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** grok-4.3
 
-**API Last Updated:** 2026-10-22 13:58:59.073830
+**API Last Updated:** 2026-11-04T16:58:23.007139

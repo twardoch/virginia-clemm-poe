@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.030 | 1 message |
 | Image Output | POINTS | 992 | 1 message |
 
-**Last Checked:** 2026-10-22 13:37:37.286105
+**Last Checked:** 2026-11-04T16:49:26.735375
 
 
 ## Bot Information
@@ -56,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** sketch-to-image
 
-**API Last Updated:** 2026-10-22 13:58:59.076810
+**API Last Updated:** 2026-11-04T16:58:23.009035

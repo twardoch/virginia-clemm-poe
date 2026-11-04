@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | Research analysis | POINTS | 200 | 1 search |
 | Research response | POINTS | 150 | 1 search |
 
-**Last Checked:** 2026-10-22 13:29:32.145964
+**Last Checked:** 2026-11-04T16:43:51.504702
 
 
 ## Bot Information
@@ -61,4 +61,4 @@ GPTR is based on the popular open source project: https://github.com/assafelovic
 
 **Root:** gpt-researcher
 
-**API Last Updated:** 2026-10-22 13:58:59.075845
+**API Last Updated:** 2026-11-04T16:58:23.008616

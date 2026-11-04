@@ -33,7 +33,7 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.30 | 1000000 tokens |
 | Output (text) | POINTS | 10 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:36:11.807208
+**Last Checked:** 2026-11-04T16:47:09.177759
 
 
 ## Bot Information
@@ -66,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** mistral-small-3
 
-**API Last Updated:** 2026-10-22 13:58:59.076672
+**API Last Updated:** 2026-11-04T16:58:23.008983

@@ -32,7 +32,7 @@ All parsed rates (both currencies):
 | Input & Output Tokens | USD | 0.0024 | 1000 tokens |
 | Input & Output Tokens | POINTS | 80 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:29:44.027293
+**Last Checked:** 2026-11-04T16:43:56.661850
 
 
 ## Bot Information
@@ -67,4 +67,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** perplexity-sonar
 
-**API Last Updated:** 2026-10-22 13:58:59.075877
+**API Last Updated:** 2026-11-04T16:58:23.008635

@@ -44,7 +44,7 @@ All parsed rates (both currencies):
 | Video Effects/Video Transition Output (1080p) | USD | 0.32 | 1 second |
 | Video Effects/Video Transition Output (1080p) | POINTS | 10667 | 1 second |
 
-**Last Checked:** 2026-10-22 13:09:40.278805
+**Last Checked:** 2026-11-04T16:30:37.474742
 
 
 ## Bot Information

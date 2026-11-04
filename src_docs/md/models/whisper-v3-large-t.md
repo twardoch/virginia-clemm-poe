@@ -29,7 +29,7 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.0030 | 1 message |
 | Total cost | POINTS | 100 | 1 message |
 
-**Last Checked:** 2026-10-22 13:30:25.445493
+**Last Checked:** 2026-11-04T16:46:34.781599
 
 
 ## Bot Information
@@ -62,4 +62,4 @@ All parsed rates (both currencies):
 
 **Root:** whisper-v3-large-t
 
-**API Last Updated:** 2026-10-22 13:58:59.075989
+**API Last Updated:** 2026-11-04T16:58:23.008687

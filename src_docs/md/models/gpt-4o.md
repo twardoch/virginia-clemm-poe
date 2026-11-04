@@ -58,7 +58,7 @@ All parsed rates (both currencies):
 | Image Output (high; 2:3 (1024x1536)) | USD | 0.22 | 1 image |
 | Image Output (high; 2:3 (1024x1536)) | POINTS | 7488 | 1 image |
 
-**Last Checked:** 2026-10-22 13:27:27.613214
+**Last Checked:** 2026-11-04T16:48:36.963204
 
 
 ## Bot Information
@@ -91,4 +91,4 @@ All parsed rates (both currencies):
 
 **Root:** gpt-4o
 
-**API Last Updated:** 2026-10-22 13:58:59.075407
+**API Last Updated:** 2026-11-04T16:58:23.008483

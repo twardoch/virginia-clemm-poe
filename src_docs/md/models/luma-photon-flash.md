@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.0051 | 1 message |
 | Image Output | POINTS | 167 | 1 message |
 
-**Last Checked:** 2026-10-22 13:32:18.159438
+**Last Checked:** 2026-11-04T16:50:39.726290
 
 
 ## Bot Information
@@ -61,4 +61,4 @@ Note: Prompt input cannot exceed 5,000 characters.
 
 **Root:** luma-photon-flash
 
-**API Last Updated:** 2026-10-22 13:58:59.076239
+**API Last Updated:** 2026-11-04T16:58:23.008790

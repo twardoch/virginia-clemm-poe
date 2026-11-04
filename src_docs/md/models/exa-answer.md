@@ -28,7 +28,7 @@ All parsed rates (both currencies):
 | Bot message | USD | 0.0081 | 1 message |
 | Bot message | POINTS | 267 | 1 message |
 
-**Last Checked:** 2026-10-22 13:26:57.933188
+**Last Checked:** 2026-11-04T16:48:25.909247
 
 
 ## Bot Information
@@ -69,4 +69,4 @@ Parameter Controls Available:
 
 **Root:** exa-answer
 
-**API Last Updated:** 2026-10-22 13:58:59.075246
+**API Last Updated:** 2026-11-04T16:58:23.008451

@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Video Generation | USD | 0.14 | 1 second |
 | Video Generation | POINTS | 4667 | 1 second |
 
-**Last Checked:** 2026-10-22 13:34:18.364017
+**Last Checked:** 2026-11-04T16:48:10.527768
 
 
 ## Bot Information
@@ -56,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** omnihuman
 
-**API Last Updated:** 2026-10-22 13:58:59.076472
+**API Last Updated:** 2026-11-04T16:58:23.008904

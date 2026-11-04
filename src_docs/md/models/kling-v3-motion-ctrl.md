@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | Video Output (Pro (1080p)) | USD | 0.18 | 1 second |
 | Video Output (Pro (1080p)) | POINTS | 6000 | 1 second |
 
-**Last Checked:** 2026-10-22 13:23:45.841261
+**Last Checked:** 2026-11-04T16:46:53.874010
 
 
 ## Bot Information
@@ -61,4 +61,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** kling-v3-motion-ctrl
 
-**API Last Updated:** 2026-10-22 13:58:59.074608
+**API Last Updated:** 2026-11-04T16:58:23.008241

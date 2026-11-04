@@ -25,7 +25,7 @@ All parsed rates (both currencies):
 | Image Input/Output | USD | 0.030 | 1 megapixel |
 | Image Input/Output | POINTS | 1000 | 1 megapixel |
 
-**Last Checked:** 2026-10-22 13:30:53.678935
+**Last Checked:** 2026-11-04T16:50:02.325797
 
 
 ## Bot Information
@@ -65,4 +65,4 @@ Optional parameters:
 
 **Root:** flux-2-max
 
-**API Last Updated:** 2026-10-22 13:58:59.076051
+**API Last Updated:** 2026-11-04T16:58:23.008719

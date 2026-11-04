@@ -36,7 +36,7 @@ All parsed rates (both currencies):
 | Output | USD | 0.0091 | 1 search |
 | Output | POINTS | 300 | 1 search |
 
-**Last Checked:** 2026-10-22 13:25:31.514823
+**Last Checked:** 2026-11-04T16:47:50.196863
 
 
 ## Bot Information
@@ -72,4 +72,4 @@ GPT-5-Pro thinks long and hard. When using this bot through the API, consider in
 
 **Root:** gpt-5-pro
 
-**API Last Updated:** 2026-10-22 13:58:59.074898
+**API Last Updated:** 2026-11-04T16:58:23.008355

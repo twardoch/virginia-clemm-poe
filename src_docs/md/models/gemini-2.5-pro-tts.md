@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | Output (audio tokens) | USD | 0.061 | 1000 tokens |
 | Output (audio tokens) | POINTS | 2000 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:30:41.836515
+**Last Checked:** 2026-11-04T16:49:51.795822
 
 
 ## Bot Information
@@ -67,4 +67,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** gemini-2.5-pro-tts
 
-**API Last Updated:** 2026-10-22 13:58:59.076029
+**API Last Updated:** 2026-11-04T16:58:23.008706

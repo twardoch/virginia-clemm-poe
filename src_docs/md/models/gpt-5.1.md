@@ -36,7 +36,7 @@ All parsed rates (both currencies):
 | Output | USD | 0.0091 | 1 search |
 | Output | POINTS | 300 | 1 search |
 
-**Last Checked:** 2026-10-22 13:25:27.534949
+**Last Checked:** 2026-11-04T16:44:20.022885
 
 
 ## Bot Information
@@ -71,4 +71,4 @@ Supports 400k of input context window.
 
 **Root:** gpt-5.1
 
-**API Last Updated:** 2026-10-22 13:58:59.074881
+**API Last Updated:** 2026-11-04T16:58:23.008348

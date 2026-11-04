@@ -36,7 +36,7 @@ All parsed rates (both currencies):
 | Output (text) | USD | 30.30 | 1000000 tokens |
 | Output (text) | POINTS | 1000 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:20:55.103242
+**Last Checked:** 2026-11-04T16:40:25.370373
 
 
 ## Bot Information
@@ -75,4 +75,4 @@ Enable use mask by toggling it on or by typing use_mask in the prompt. This opti
 
 **Root:** gpt-image-2
 
-**API Last Updated:** 2026-10-22 13:58:59.073935
+**API Last Updated:** 2026-11-04T16:58:23.007176

@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | Wan 2.7 Image Pro | USD | 0.075 | 1 image |
 | Wan 2.7 Image Pro | POINTS | 2500 | 1 image |
 
-**Last Checked:** 2026-10-22 13:24:19.936818
+**Last Checked:** 2026-11-04T16:47:13.982441
 
 
 ## Bot Information
@@ -75,4 +75,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** wan2.7-image
 
-**API Last Updated:** 2026-10-22 13:58:59.074668
+**API Last Updated:** 2026-11-04T16:58:23.008261

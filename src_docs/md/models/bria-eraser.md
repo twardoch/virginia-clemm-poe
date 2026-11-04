@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.040 | 1 message |
 | Image Output | POINTS | 1334 | 1 message |
 
-**Last Checked:** 2026-10-22 13:35:53.923803
+**Last Checked:** 2026-11-04T16:52:26.899426
 
 
 ## Bot Information
@@ -56,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** bria-eraser
 
-**API Last Updated:** 2026-10-22 13:58:59.076616
+**API Last Updated:** 2026-11-04T16:58:23.008963

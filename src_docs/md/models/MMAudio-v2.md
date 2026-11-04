@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | Audio Generation | USD | 0.00086 | 1 second |
 | Audio Generation | POINTS | 29 | 1 second |
 
-**Last Checked:** 2026-10-22 13:07:56.004552
+**Last Checked:** 2026-11-04T16:29:38.848981
 
 
 ## Bot Information

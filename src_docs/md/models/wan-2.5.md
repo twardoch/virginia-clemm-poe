@@ -29,7 +29,7 @@ All parsed rates (both currencies):
 | Video Output (1080p) | USD | 0.15 | 1 second |
 | Video Output (1080p) | POINTS | 5000 | 1 second |
 
-**Last Checked:** 2026-10-22 13:33:31.213224
+**Last Checked:** 2026-11-04T16:51:15.546211
 
 
 ## Bot Information
@@ -67,4 +67,4 @@ Duration. Select video duration either 5 seconds or 10 seconds. Defaults to 5 se
 
 **Root:** wan-2.5
 
-**API Last Updated:** 2026-10-22 13:58:59.076380
+**API Last Updated:** 2026-11-04T16:58:23.008869

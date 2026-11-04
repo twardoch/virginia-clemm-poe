@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | Turbo Output | USD | 0.061 | 1000 characters |
 | Turbo Output | POINTS | 2000 | 1000 characters |
 
-**Last Checked:** 2026-10-22 13:06:17.348807
+**Last Checked:** 2026-11-04T16:28:46.217880
 
 
 ## Bot Information

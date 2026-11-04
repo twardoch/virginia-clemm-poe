@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.020 | 1 image |
 | Image Output | POINTS | 667 | 1 image |
 
-**Last Checked:** 2026-10-22 13:23:05.776211
+**Last Checked:** 2026-11-04T16:46:38.205554
 
 
 ## Bot Information
@@ -59,4 +59,4 @@ All parsed rates (both currencies):
 
 **Root:** grok-imagine-image
 
-**API Last Updated:** 2026-10-22 13:58:59.074363
+**API Last Updated:** 2026-11-04T16:58:23.008189

@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Video Output | USD | 0.045 | 1 second |
 | Video Output | POINTS | 1500 | 1 second |
 
-**Last Checked:** 2026-10-22 13:33:10.320771
+**Last Checked:** 2026-11-04T16:45:47.061162
 
 
 ## Bot Information
@@ -59,4 +59,4 @@ Set Duration. Select from (6 seconds or 10 seconds) to specify video length in s
 
 **Root:** hailuo-02-standard
 
-**API Last Updated:** 2026-10-22 13:58:59.076335
+**API Last Updated:** 2026-11-04T16:58:23.008828

@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Per 1,000 words scanned | USD | 0.39 | 1000 words scanned |
 | Per 1,000 words scanned | POINTS | 13000 | 1000 words scanned |
 
-**Last Checked:** 2026-10-22 13:35:11.413220
+**Last Checked:** 2026-11-04T16:48:29.420756
 
 
 ## Bot Information
@@ -77,4 +77,4 @@ Parameter controls available:
 
 **Root:** gptzero
 
-**API Last Updated:** 2026-10-22 13:58:59.076542
+**API Last Updated:** 2026-11-04T16:58:23.008935

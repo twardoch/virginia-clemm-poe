@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Video Generation | USD | 0.076 | 1 second |
 | Video Generation | POINTS | 2500 | 1 second |
 
-**Last Checked:** 2026-10-22 13:31:43.011774
+**Last Checked:** 2026-11-04T16:50:28.453044
 
 
 ## Bot Information
@@ -57,4 +57,4 @@ The bot supports only four file types: JPEG, PNG, WebP, and MP4
 
 **Root:** wan-animate
 
-**API Last Updated:** 2026-10-22 13:58:59.076183
+**API Last Updated:** 2026-11-04T16:58:23.008763

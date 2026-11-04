@@ -26,14 +26,14 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.27 | 1000000 tokens |
 | Output (text) | POINTS | 9 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:01:15.075677
+**Last Checked:** 2026-11-04T16:24:35.715555
 
 
 ## Bot Information
 
 **Creator:** @OpenSourceLab
 
-**Description:** Based on the DeepSeek-V4.1 family that are MIT-licensed open-weights models. DeepSeek-V4.1-OSL can process PDF, TXT, HTML, DOCX, XLSX, CSS and PY files. This bot can't process RTF, WEBM, MP4, PNG, JPG, HEIC and MP3. Maximum file size is 50 MB. Users can adjust the temperature and verbosity of the responses in the settings. Context window: 1M tokens
+**Description:** Based on the DeepSeek-V4.1 family that are MIT-licensed open-weights models. DeepSeek-V4.1-OSL can process PDF, TXT, HTML, DOCX, XLSX, CSS and PY files. Users can adjust the temperature and verbosity of the responses in the settings. This bot can't process RTF, WEBM, MP4, PNG, JPG, HEIC and MP3. Maximum file size is 50 MB. Context window: 1M tokens
 
 Previous version: https://poe.com/DeepSeek-V4-OSL
 

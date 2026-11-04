@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Transcription | USD | 0.014 | 1 transcription |
 | Transcription | POINTS | 474 | 1 transcription |
 
-**Last Checked:** 2026-10-22 13:30:49.859040
+**Last Checked:** 2026-11-04T16:46:45.913710
 
 
 ## Bot Information
@@ -88,4 +88,4 @@ Dutch
 
 **Root:** deepgram-nova-3
 
-**API Last Updated:** 2026-10-22 13:58:59.076044
+**API Last Updated:** 2026-11-04T16:58:23.008715

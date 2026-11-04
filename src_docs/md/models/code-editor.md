@@ -38,4 +38,4 @@ this_file: src_docs/md/models/code-editor.md
 
 **Root:** code-editor
 
-**API Last Updated:** 2026-10-22 13:58:59.077017
+**API Last Updated:** 2026-11-04T16:58:23.009104

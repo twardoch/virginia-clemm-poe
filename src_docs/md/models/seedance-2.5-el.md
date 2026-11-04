@@ -35,7 +35,7 @@ All parsed rates (both currencies):
 | 1080P | USD | 0.680 | 1 second |
 | 1080P | POINTS | 22667 | 1 second |
 
-**Last Checked:** 2026-10-22 13:45:11.876880
+**Last Checked:** 2026-11-04T16:51:49.769834
 
 
 ## Bot Information
@@ -85,4 +85,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** seedance-2.5-el
 
-**API Last Updated:** 2026-10-22 13:58:59.077692
+**API Last Updated:** 2026-11-04T16:58:23.009355

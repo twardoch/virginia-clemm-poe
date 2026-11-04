@@ -4,7 +4,7 @@ this_file: src_docs/md/models/gemini-3.6-flash.md
 
 # [gemini-3.6-flash](https://poe.com/gemini-3.6-flash){ .md-button .md-button--primary }
 
-**Tier 3:** 75 points · 1,000 tokens (500 input + 500 output)
+**Tier 4:** 150 points · 1,000 tokens (500 input + 500 output)
 
 [Comparison method and assumptions](../pricing-method.md).
 
@@ -14,29 +14,29 @@ this_file: src_docs/md/models/gemini-3.6-flash.md
 
 | Type | Cost |
 |------|------|
-| Prompt | $7.576E-7/token |
-| Completion | $0.0000037879/token |
+| Prompt | $0.0000015152/token |
+| Completion | $0.0000075758/token |
 
 ### Website Pricing
 
 | Type | Cost |
 |------|------|
-| Input Text | 25 points/1k tokens |
-| Output (Text) | $3.79/1M tokens · 125 points/1k tokens |
+| Input Text | 50 points/1k tokens |
+| Output (Text) | $7.58/1M tokens · 250 points/1k tokens |
 | Output | $0.014/search · 467 points/search |
 
 All parsed rates (both currencies):
 
 | Service | Currency | Amount | Per |
 |---|---|---|---|
-| Input | USD | 0.76 | 1000000 tokens |
-| Input | POINTS | 25 | 1000 tokens |
-| Output (text) | USD | 3.79 | 1000000 tokens |
-| Output (text) | POINTS | 125 | 1000 tokens |
+| Input | USD | 1.52 | 1000000 tokens |
+| Input | POINTS | 50 | 1000 tokens |
+| Output (text) | USD | 7.58 | 1000000 tokens |
+| Output (text) | POINTS | 250 | 1000 tokens |
 | Output | USD | 0.014 | 1 search |
 | Output | POINTS | 467 | 1 search |
 
-**Last Checked:** 2026-10-22 13:20:22.684193
+**Last Checked:** 2026-11-04T16:42:18.262113
 
 
 ## Bot Information
@@ -69,4 +69,4 @@ All parsed rates (both currencies):
 
 **Root:** gemini-3.6-flash
 
-**API Last Updated:** 2026-10-22 13:58:59.073789
+**API Last Updated:** 2026-11-04T16:58:23.007123

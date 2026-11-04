@@ -33,7 +33,7 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.61 | 1000000 tokens |
 | Output (text) | POINTS | 20 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:22:25.057145
+**Last Checked:** 2026-11-04T16:46:22.925933
 
 
 ## Bot Information
@@ -66,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** gemma-4-26b-a4b
 
-**API Last Updated:** 2026-10-22 13:58:59.074206
+**API Last Updated:** 2026-11-04T16:58:23.007273

@@ -32,7 +32,7 @@ All parsed rates (both currencies):
 | Quality | USD | 0.13 | 1 quality |
 | Quality | POINTS | 4334 | 1 quality |
 
-**Last Checked:** 2026-10-22 13:24:32.188742
+**Last Checked:** 2026-11-04T16:47:19.650065
 
 
 ## Bot Information
@@ -89,4 +89,4 @@ Parameter controls available:
 
 **Root:** moss-video-and-audio
 
-**API Last Updated:** 2026-10-22 13:58:59.074701
+**API Last Updated:** 2026-11-04T16:58:23.008274

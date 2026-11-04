@@ -29,7 +29,7 @@ All parsed rates (both currencies):
 | Bot message | USD | 0.015 | 1 message |
 | Bot message | POINTS | 500 | 1 message |
 
-**Last Checked:** 2026-10-22 13:10:40.694833
+**Last Checked:** 2026-11-04T16:31:29.069900
 
 
 ## Bot Information

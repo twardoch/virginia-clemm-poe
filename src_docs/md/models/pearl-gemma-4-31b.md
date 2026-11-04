@@ -29,7 +29,7 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.0030 | 1 message |
 | Total cost | POINTS | 100 | 1 message |
 
-**Last Checked:** 2026-10-22 13:41:35.684092
+**Last Checked:** 2026-11-04T16:48:49.265438
 
 
 ## Bot Information
@@ -62,4 +62,4 @@ All parsed rates (both currencies):
 
 **Root:** pearl-gemma-4-31b
 
-**API Last Updated:** 2026-10-22 13:58:59.077163
+**API Last Updated:** 2026-11-04T16:58:23.009177

@@ -29,7 +29,7 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.015 | 1 message |
 | Total cost | POINTS | 500 | 1 message |
 
-**Last Checked:** 2026-10-22 13:41:10.442481
+**Last Checked:** 2026-11-04T16:48:38.685263
 
 
 ## Bot Information
@@ -62,4 +62,4 @@ All parsed rates (both currencies):
 
 **Root:** deepseek-v4-pro-t
 
-**API Last Updated:** 2026-10-22 13:58:59.077064
+**API Last Updated:** 2026-11-04T16:58:23.009121

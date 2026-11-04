@@ -26,6 +26,8 @@ This link points to a static copy of the data file updated by the CLI tool. It d
 - **Session Reuse**: Reuse authenticated browser sessions across runs
 
 Vendor handles are packaged in `src/virginia_clemm_poe/data/good_vendors.txt`.
+Explicit public handles missing from discovery are listed in
+`src/virginia_clemm_poe/data/extra_bots.txt` and use the same metadata/pricing scraper.
 Every update scrolls each vendor's Created list and scrapes discovered bots through
 the normal info/pricing flow. `vendor_profile` records where a bot was discovered.
 API metadata wins for matching bots; website-only bots have no API pricing or API

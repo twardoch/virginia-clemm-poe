@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | Flash (real-time) | USD | 0.015 | 1000 characters |
 | Flash (real-time) | POINTS | 500 | 1000 characters |
 
-**Last Checked:** 2026-10-22 13:45:27.892286
+**Last Checked:** 2026-11-04T16:57:14.992316
 
 
 ## Bot Information
@@ -68,4 +68,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** qwen-audio-3.0-tts
 
-**API Last Updated:** 2026-10-22 13:58:59.077771
+**API Last Updated:** 2026-11-04T16:58:23.009372

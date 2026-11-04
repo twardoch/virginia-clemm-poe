@@ -24,7 +24,7 @@ All parsed rates (both currencies):
 | Total cost | USD | 1.42 | 1 message |
 | Total cost | POINTS | 47334 | 1 message |
 
-**Last Checked:** 2026-10-22 13:30:20.927806
+**Last Checked:** 2026-11-04T16:44:13.351125
 
 
 ## Bot Information
@@ -62,4 +62,4 @@ Note: Prompt input cannot exceed 2,000 characters.
 
 **Root:** elevenlabs-music
 
-**API Last Updated:** 2026-10-22 13:58:59.075979
+**API Last Updated:** 2026-11-04T16:58:23.008682

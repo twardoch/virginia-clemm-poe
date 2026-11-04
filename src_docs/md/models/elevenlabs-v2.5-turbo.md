@@ -24,7 +24,7 @@ All parsed rates (both currencies):
 | Input (text) | USD | 0.03 | 1000 characters |
 | Input (text) | POINTS | 1 | 1 characters |
 
-**Last Checked:** 2026-10-22 13:30:37.973506
+**Last Checked:** 2026-11-04T16:46:40.131207
 
 
 ## Bot Information
@@ -87,4 +87,4 @@ Prompt input cannot exceed 40,000 characters.
 
 **Root:** elevenlabs-v2.5-turbo
 
-**API Last Updated:** 2026-10-22 13:58:59.076021
+**API Last Updated:** 2026-11-04T16:58:23.008702

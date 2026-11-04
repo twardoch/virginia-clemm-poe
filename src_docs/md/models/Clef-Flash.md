@@ -29,7 +29,7 @@ All parsed rates (both currencies):
 | Input (file) | USD | 0.00000416 | 1 kb |
 | Input (file) | POINTS | 0.16 | 1 kb |
 
-**Last Checked:** 2026-10-22 13:00:01.907691
+**Last Checked:** 2026-11-04T16:24:07.202293
 
 
 ## Bot Information
@@ -38,7 +38,7 @@ All parsed rates (both currencies):
 
 **Description:** Clef-flash evaluates your input state alongside a schema of typed questions and returns a calibrated probability for every allowed option. This ultra-low-latency, open-weight decision model serves as a drop-in, Jev alternative tailored for high-volume, real-time pipelines. It supports PDF and XLSX files. Clef-Flash does not support video and audio attachments.
 
-Developed by Cloudflare and released on October 1, 2026, Clef-flash is a 9-billion parameter model built on a post-trained Qwen3.5-9B backbone. Unlike traditional language models that sequentially generate free-form sentences, it processes requests via a non-autoregressive, prefill-only forward pass, scoring permitted choices in parallel through a joint decision head.
+Developed by Cloudflare and released on October 1, 2026, Clef-Flash is a 9-billion parameter model built on a post-trained Qwen3.5-9B backbone. Unlike traditional language models that sequentially generate free-form sentences, it processes requests via a non-autoregressive, prefill-only forward pass, scoring permitted choices in parallel through a joint decision head.
 
 **Extra:** Powered by a server managed by @OpenSourceLab. Learn more
 

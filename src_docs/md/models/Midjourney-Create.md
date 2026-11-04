@@ -71,7 +71,7 @@ All parsed rates (both currencies):
 | Zoom / Pan | USD | 0.51 | 1 pan |
 | Zoom / Pan | POINTS | 16800 | 1 pan |
 
-**Last Checked:** 2026-10-22 13:08:04.662041
+**Last Checked:** 2026-11-04T16:29:39.482669
 
 
 ## Bot Information

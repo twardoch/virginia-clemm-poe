@@ -35,7 +35,7 @@ All parsed rates (both currencies):
 | Extra input image after first | USD | 0.005 | 1 image |
 | Extra input image after first | POINTS | 167 | 1 image |
 
-**Last Checked:** 2026-10-22 13:42:26.295239
+**Last Checked:** 2026-11-04T16:51:00.588838
 
 
 ## Bot Information
@@ -74,4 +74,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** seedream-5.0-pro
 
-**API Last Updated:** 2026-10-22 13:58:59.077325
+**API Last Updated:** 2026-11-04T16:58:23.009226

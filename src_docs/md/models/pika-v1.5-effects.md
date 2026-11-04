@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Video Output | USD | 0.47 | 1 video |
 | Video Output | POINTS | 15500 | 1 video |
 
-**Last Checked:** 2026-10-22 13:27:22.699242
+**Last Checked:** 2026-11-04T16:45:17.299081
 
 
 ## Bot Information
@@ -63,4 +63,4 @@ Optional parameters:
 
 **Root:** pika-v1.5-effects
 
-**API Last Updated:** 2026-10-22 13:58:59.075396
+**API Last Updated:** 2026-11-04T16:58:23.008479

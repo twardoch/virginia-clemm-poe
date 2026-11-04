@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.010 | 1 message |
 | Image Output | POINTS | 334 | 1 message |
 
-**Last Checked:** 2026-10-22 13:37:05.636679
+**Last Checked:** 2026-11-04T16:47:34.889756
 
 
 ## Bot Information
@@ -56,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** stablediffusion3-2b
 
-**API Last Updated:** 2026-10-22 13:58:59.076770
+**API Last Updated:** 2026-11-04T16:58:23.009017

@@ -36,7 +36,7 @@ All parsed rates (both currencies):
 | Bot message | USD | 0.0051 | 1 message |
 | Bot message | POINTS | 167 | 1 message |
 
-**Last Checked:** 2026-10-22 13:41:19.213356
+**Last Checked:** 2026-11-04T16:55:24.973096
 
 
 ## Bot Information
@@ -76,4 +76,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** deepseek-v4-pro-e
 
-**API Last Updated:** 2026-10-22 13:58:59.077097
+**API Last Updated:** 2026-11-04T16:58:23.009133

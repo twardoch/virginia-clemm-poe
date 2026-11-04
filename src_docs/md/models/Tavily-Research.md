@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | Pro | USD | 2.77 | 1 pro |
 | Pro | POINTS | 91520 | 1 pro |
 
-**Last Checked:** 2026-10-22 13:16:04.987046
+**Last Checked:** 2026-11-04T16:35:31.972460
 
 
 ## Bot Information

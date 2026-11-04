@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Video Output | USD | 0.34 | 1 message |
 | Video Output | POINTS | 11334 | 1 message |
 
-**Last Checked:** 2026-10-22 13:38:32.748775
+**Last Checked:** 2026-11-04T16:53:43.988366
 
 
 ## Bot Information
@@ -56,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** mochi-preview
 
-**API Last Updated:** 2026-10-22 13:58:59.076993
+**API Last Updated:** 2026-11-04T16:58:23.009093

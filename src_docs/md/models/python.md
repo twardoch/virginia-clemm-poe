@@ -29,7 +29,7 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.000030 | 1 message |
 | Total cost | POINTS | 1 | 1 message |
 
-**Last Checked:** 2026-10-22 13:38:24.815732
+**Last Checked:** 2026-11-04T16:47:58.485550
 
 
 ## Bot Information
@@ -62,4 +62,4 @@ All parsed rates (both currencies):
 
 **Root:** python
 
-**API Last Updated:** 2026-10-22 13:58:59.076969
+**API Last Updated:** 2026-11-04T16:58:23.009084

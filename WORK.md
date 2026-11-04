@@ -1,5 +1,204 @@
 # this_file: WORK.md
 
+## Issue 341 — 2026-11-04
+
+Refreshed 506 live candidates across the API, all 28 vendor profiles, every old
+bot and all 99 requested handles. Final catalogue: 471 active bots, 456 numeric
+website prices, 15 reviewed dialogs/cards without a numeric rate. Added 14 bots;
+removed 33 unavailable/private bots and two duplicate aliases, each with a
+separate live recheck. Retained two still-public MiMo bots absent from discovery.
+The packaged explicit list includes those two, G5-LM and Qwen3.8-27B.
+
+Discovery now uses hydrated canonical handles instead of display-name aliases.
+The scraper prefers complete public rate cards over partial HTML tables, retains
+additional USD prices/duration units and labels missing numeric pricing without
+claiming that its creator withheld it. Points balances do not become rates.
+Captured account-dialog text was removed from temporary output; public evidence
+contains only bot metadata, public rate cards and availability/price results.
+
+Verification: `UV_NO_SYNC=1 ./test.sh` passes 236 Python and 18 JavaScript checks;
+vendor tests: 17 pass, 100% module coverage. `uvx hatch test` passes 236 tests but
+fails the existing global coverage gate: 65.23%, required 85%. Focused F/I lint
+passes. Strict clean MkDocs build passes. All 471 raw/served prices and dates
+agree after reparsing captured disclosures; exact canonical page inventory and
+stale-page removal pass. Real headless scraper smoke passes for GPT-Image-1.5
+(26 rates) and Pixverse-v5.6 (44 rates), exactly matching saved corrected prices.
+Browser acceptance passes all filters, currencies, sorting, themes, mobile layout,
+native navigation/search and zero page errors. No dependency or generation added.
+
+Evidence: `issues/341-verification.md`, `341-refresh.json`, `341-site-checks.json`
+and a 540-file site hash manifest. Original source snapshot remains outside the
+repository; the previous issue 342 report now links its immutable source commit.
+Publication is the remaining step: run the requested `uvx gitnextver` without a
+stash/pull cycle, preserving unrelated raw browser records, then verify the tag,
+remote dataset, Pages deployment and live catalogue. No standalone Git command
+was used. Current source SHA-256:
+`a21465d7e294fe21458f906c54f6b63f25ee63fd74ad23b0044311cc8f712704`.
+
+## Issue 342: saved-price report — 2026-11-03
+
+Created `issues/342-results.md` with cheapest-first comparisons for all 116
+distinct listed bots and five additional handles linked in descriptions. Used
+the package JSON's 22 October observations, preserved billing units and included
+mandatory message/base fees. Documented missing records, inconsistent image
+output labels, token-priced media, duration-specific video rates and agent costs.
+
+Verification: independent saved-artifact audit passes for 121/121 handles,
+all 112 ranked rows' source rates and five tables' ascending order. Existing
+Python tests: 231 passed; the hatch
+command fails its coverage gate (64.97%, required 85%). JavaScript pricing tests:
+18 passed. No live pricing refresh or generation; source JSON remains unchanged.
+
+## Issue 340: authoritative continuation checkpoint — 2026-10-22
+
+This turn made progress: optional Camoufox sessions and foreground session CLI
+implemented; PA340-4/5 moved to PWA CHANGELOG. Review reproduced and fixed an
+async startup cancellation race, unowned-profile status and custom-root stop hints.
+PWA regression: 159 pass/24 skip; VCP: 228 pass. Targeted mypy/Ruff pass.
+Real CLI run/status/stop passes; paired installed wheel async native smoke passes;
+optional installed-wheel Cloak/Camoufox sync-to-async restart/device smoke passes.
+Clean-wheel Playwright 1.64 focus recheck passes 122 samples; earlier failure kept.
+
+One long-running job is still active: exec session 30649, full forced live Poe
+update using poe-primary/CfT and POE_API_KEY loaded only from authorized ~/.env.
+Poll this same handle; do not restart it because a poll expires. Latest observed:
+246 info updates, 231 numeric-pricing updates, 15 unavailable numeric rates out
+of 497 requested bots. Output is temporary under the system tempfile directory
+(poe340-live-update- prefix; exact path is recorded on completion).
+Log: /tmp/340-live-update.log. Results file issues/340-live-update.json is written
+only after terminal success and original dataset hash verification. No full-run
+completion/parity claim yet.
+
+Remaining current-issue tasks: PA340-6 and VCP340-5, including full update audit,
+headed comparison, provider/hardware/typing/Spaces matrix and final acceptance.
+No visible test browsers should open without explicit coordination after the
+user-reported dialog loop; default tests and examples gating are fixed.
+Goal/ledger remain active. The code-review skill stub points to unavailable MCP
+content; direct review is documented in playwrightauthor/issues/340-direct-review.md.
+
+
+## Issue 340: Poe integration checkpoint — 2026-10-22
+
+This turn made substantive progress: VCP340-1/2/3/4 implemented and moved to VCP
+CHANGELOG after local verification. The original whole goal remains active.
+PWA optional engines/CLI/final gates and VCP340-5 are still open.
+
+Poe now uses one session per pool identity and separate job tabs, explicit engine/
+profile/mode controls, headless auto authorization with a matching login command,
+passive interactive login and scoped private HTTP exports. Cookie injection into
+browser contexts was removed. Pool stop cancellation releases its owned session.
+Explicit setup verifies/installs CfT without opening a browser. HTTP export/cache
+is engine/profile-scoped; old unscoped files and browser profiles are retained.
+
+Verification: 228 Python regression tests, 18 JavaScript checks, 14 vendor tests
+pass; vendor 100%. New-module focused coverage is 91.81% (38 tests). Changed-file F/I lint
+and targeted mypy pass with paired PWA on MYPYPATH. Real macOS arm64 CfT/Chromium/
+Firefox pass adapter/pool/probe checks with intercepted fixture service responses,
+including job cancellation and unauthenticated auto rejection. Source-environment focus/window
+run passes 109 samples (earlier 105/108). A clean-wheel Playwright 1.64 run
+passed three-engine behavior but failed focus stability across 114 samples;
+no browser windows were visible. Its cause remains unresolved. Live anonymous Chromium Poe settings probe
+returns AUTH_REQUIRED; no credentials or interactive login were used.
+Evidence: virginia-clemm-poe/issues/340-poe-verification.md and adjacent JSON files.
+
+VCP environment uses the paired editable PWA checkout, not published 1.0.23.
+Use `.venv/bin/python` for its tests; unqualified uv run can resync the old package.
+Paired wheel tests use local-only PWA 1.0.23+issue340 and VCP 0.0.0; no publication.
+An initial VCP sdist included .omc/work records; explicit source selection fixes
+that. Final paired build/payload/clean-install checks are recorded in the audit.
+
+The user selected poe-primary with Chrome for Testing and completed manual
+login. The initial observer timed out because Poe moved points to the subscription
+tab and changed the account UI. Current selectors are corrected; a fresh headless
+probe, scoped export, browser restart and normal balance --refresh all succeed.
+Account values are omitted from issues/340-live-signed-in.json. POE_API_KEY is
+loaded only into the live-update child from the user-authorized ~/.env.
+Full forced update is running against temporary output; original dataset is
+hash-checked for preservation. Latest observed progress: 40 bot-info updates,
+39 pricing updates and one pricing extraction failure; not a full-run result. Process handle 30649; log /tmp/340-live-update.log.
+Do not claim full-update success until that handle terminates and output is audited. Independent remaining work:
+PWA optional Camoufox/Cloak compatibility and capability decisions, session CLI
+run/login/status/stop, then full signed-in provider/balance/update/hardware gates
+and direct cleanup/code review. Intel/typing/Spaces and the earlier unexplained
+legacy focus anomaly remain unresolved. Native goal and OMC G001 stay active.
+
+## Issue 340: context-session checkpoint — 2026-10-22
+
+This turn made substantive progress: implemented and tested profile leases,
+legacy CDP identity checks, additive sync/async context sessions and native
+Chrome/Chromium/Firefox support. PA340-2/3 moved to PlaywrightAuthor CHANGELOG.
+Poe's runtime adapter is still unchanged; its five issue tasks remain open.
+
+Fresh evidence: 137 PWA tests pass/24 skip; 34 focused tests yield 92.14% new-module
+coverage. Changed-file Ruff and targeted new-module mypy pass. Full-tree mypy
+still reports 17 existing errors. Real macOS arm64 runs pass all three native
+engines for browser restart persistence, same-profile exclusion, different-profile
+cookie/shutdown isolation, task-tab independence and OS lease recovery after an
+owner is killed. Latest focus/window runs pass 96 and 94 samples. Evidence:
+`playwrightauthor/issues/340-native-sessions.json` and the session-verification
+report (paths relative to the multi-repo workspace).
+
+Native persistent contexts were selected for new CfT sessions as well as native
+Chromium/Firefox because they own browser teardown directly; legacy APIs retain
+CDP. New profiles are engine-specific and no old identity is migrated. Async
+shutdown is shielded until resource cleanup finishes; nested sync contexts share
+one driver per thread. Startup rejects unverified occupied debug ports and live
+profile writers instead of launching into their identity. A real smoke initially
+caught nested sync-driver use and a session-cookie test assumption; both were
+corrected and rerun. See verification report for exact limitations.
+
+Build/clean-install and byte-level wheel audit pass using local version 0.0.0.
+An initial sdist included .omc records; explicit source selection now excludes
+local runtime data. New dependency filelock uses OS locks (installed 4.2.4,
+minimum 3.20). No artifact published, no existing profile copied, no git command.
+
+Next: complete optional-engine compatibility/capability decisions and session
+CLI (PA340-4/5), then migrate Poe's adapter/pool/settings/login/cookie paths using
+the local PWA checkout. All real provider/Poe, Intel, typing/Spaces acceptance
+and final whole-goal reviews remain open. The earlier legacy focus anomaly is
+still unexplained. OMC G001 remains in progress; native goal remains active.
+
+## Issue 340 checkpoint — 2026-10-22
+
+The previous goal turn produced substantive progress: all three reports analyzed,
+both PLAN/TODO pairs written, legacy launch defects fixed with red/green tests.
+PA340-1's verified code repairs moved to PlaywrightAuthor CHANGELOG. Poe has no
+runtime integration changes yet. Native active goal remains active; OMC ledger
+`.omc/ultragoal/plans/issue-340` records G001 in progress because full
+noninterference acceptance is not established.
+
+Fresh verification:
+- PlaywrightAuthor Hatch: 103 passed, 24 skipped with local version override.
+- Changed-source/test/smoke Ruff checks pass; full-tree mypy reports 17 errors.
+- Poe `./test.sh`: 190 Python, 18 JavaScript, 14 vendor tests pass; vendor 100%.
+- Poe Hatch: tests pass; total coverage 56.52% fails unchanged 85% threshold.
+- Real macOS arm64 CfT 150.0.7871.24 disposable-profile smoke passes actual sync
+  and async CDP/navigation, new tabs, screenshot and owned-process shutdown.
+  Latest 29 focus/window samples pass; preceding successful run had 32 samples.
+  First run detected a focus change without retaining the changed application;
+  subsequent passes do not resolve that observation or prove Spaces/typing state.
+  Evidence: playwrightauthor/issues/340-headless-launch.json. No real provider
+  login, Poe balance/update, Firefox/Camoufox or Intel acceptance has run.
+
+Next: PA340-2 exact profile/engine/mode attachment checks and OS-released leases;
+then PA340-3 context session API and failure/cancellation cleanup. Inspect native
+persistent-context launch versus managed CDP ownership before selecting the
+simplest safe implementation. Keep existing Browser/AsyncBrowser defaults.
+Use docs and tests before API changes, and integrate Poe against the local
+PlaywrightAuthor checkout (not the older published dependency). No package added
+in this checkpoint; no release/push/profile migration performed.
+
+# this_file: WORK.md
+
+## Issue 340 — 2026-10-22
+
+Analysis and implementation sequence recorded in PLAN.md and TODO.md. Initial
+`uvx hatch test` cannot build either checkout because VCS version metadata is
+unavailable. Repeating with SETUPTOOLS_SCM_PRETEND_VERSION=0.0.0 for local tests.
+No live provider or macOS focus acceptance has passed yet.
+
+# this_file: WORK.md
+
 # Work Progress - Virginia Clemm Poe
 
 ## Theme, normalized points and tiers — 2026-10-05
@@ -598,3 +797,23 @@ Working on completing Phase 4.2b Documentation Excellence tasks for comprehensiv
 - Updated the updater workflow to remove bots missing from the API, persist the dataset after each bot update, and store progress immediately after an API merge so repeated runs continue where they left off.
 - Added focused regression tests for the new updater behaviour (`tests/test_updater.py`) and collection ordering (`tests/test_bots.py`).
 - **Testing:** Unable to obtain a passing `pytest` run locally because the repository enforces a global coverage gate (85%) that fails before tests execute; manual reasoning used to validate new code paths.
+
+## Final delivery checkpoint — 2026-10-22
+
+Fresh suites: PWA 159 passed/24 skipped; Poe 228 passed. Headless full output has 497 valid unique bots, 476 prices, 20 undisclosed and one timeout. Three-bot sample repeated that timeout and succeeded on two other bots. Per explicit user steering, full headed fallback now runs in owned session 91773; no extra modal. Commit/push authorized for both repos; preserve unrelated deletion and private logs.
+
+Headed incremental fallback 54047 finished exit 0: 492 valid bots, 473 prices, 19 undisclosed, zero scrape failures, zero missing info. Discovery removed eight IDs including glm-5.3-zai and added three; 470 shared priced records retain exact scraped payloads. Safe summary committed separately from private raw paths. Final package audit and commit/push follow.
+
+Delivery complete: commits pushed and independently matched to remote main: a2dae95c41e35fdbb69cd94410592d9531d50f07. Private logs/raw reports and unrelated files remain local.
+
+## Publish refreshed prices — 2026-10-22
+Applied the already completed and audited headed catalogue to both runtime and packaged data, preserved all 492 bot info records, regenerated source/site data and all model pages. Four creator descriptions are absent in both old/current data; disclaimers retained. Old fixed 501 browser assertion now follows expected catalogue size. Corrected namespaced MaterialX search and invoke build via active Python. Python 228 passes. Release package must contain byte-identical refreshed data; publishing site and v1.0.38 with required PWA1.0.25.
+
+Published Poe 1.0.38 and PWA 1.0.25, independently verified public PyPI SHA256s, fresh public-index installed dataset hash and 492 model info records. main/tag v1.0.38 verified at 3bc5e30. Local full catalogue browser checks pass. Pages backend deployment remains waiting; pending-deployments has no reviewers and current_user_can_approve=false, environment already permits main. Normal and force cancellation of obsolete workflow rejected 409; no environment protection changed. Requested fresh Pages build.
+
+Live corrected prices and both catalogue downloads now match built JSON; live browser full catalogue checks pass. Full 499-file hash audit found six case-only model URL 404s; corrected Git index casing in f991797 and pushed, source archive already has canonical cases. 493 live artifacts match; six URL corrections await Pages. GitHub official unresolved incident q29p76qtnkyk reports Actions results/repository-update delays beginning 14:18 UTC. Leave queued deployment intact, no environment protections changed.
+
+## Visible database update date — 2026-10-22
+The homepage/catalogue omitted an aggregate freshness display although model detail pages retained individual check timestamps. Added a shared generated status based on max saved API/pricing observation normalized to UTC, unknown-date fallback, and idempotent homepage replacement. Three regression tests first failed for absent functions, then pass with implementation. Publish/rebuild both landing pages without rescraping or changing observations.
+
+Date fix 4c2fe87 committed/pushed and independently matched remote main. 231 Python tests pass, strict docs build passes, real headless browser verifies visible date/counts on both rebuilt pages. Canonical database SHA unchanged. Explicit Pages rebuild requested; live pages do not yet include the new status while the ongoing official GitHub Actions Results incident delays updates. No claim of completed live deployment.

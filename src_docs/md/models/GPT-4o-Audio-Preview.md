@@ -32,7 +32,7 @@ All parsed rates (both currencies):
 | Output (audio) | USD | 0.13 | 1000 tokens |
 | Output (audio) | POINTS | 4400 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:03:40.169319
+**Last Checked:** 2026-11-04T16:26:43.484637
 
 
 ## Bot Information

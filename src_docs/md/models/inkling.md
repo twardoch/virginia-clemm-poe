@@ -33,7 +33,7 @@ All parsed rates (both currencies):
 | Output (text) | USD | 4.09 | 1000000 tokens |
 | Output (text) | POINTS | 135 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:19:48.616944
+**Last Checked:** 2026-11-04T16:41:52.270333
 
 
 ## Bot Information
@@ -66,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** inkling
 
-**API Last Updated:** 2026-10-22 13:58:59.073699
+**API Last Updated:** 2026-11-04T16:58:23.007080

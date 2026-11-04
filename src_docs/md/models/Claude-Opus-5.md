@@ -29,7 +29,7 @@ All parsed rates (both currencies):
 | Output | USD | 0.010 | 1 search |
 | Output | POINTS | 334 | 1 search |
 
-**Last Checked:** 2026-10-22 12:59:50.130124
+**Last Checked:** 2026-11-04T16:24:01.899648
 
 
 ## Bot Information

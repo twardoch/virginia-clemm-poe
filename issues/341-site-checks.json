@@ -1,0 +1,26 @@
+{
+  "url": "http://127.0.0.1:8765",
+  "checks": [
+    "471 models, shared theme without global chrome, wide iframe, no side ToC",
+    "All ten tiers, all modalities, all creators, combined filters, search, currency and sorting",
+    "Dark-mode iframe sync, mobile width, native menu and search"
+  ],
+  "conversion": {
+    "pointsPerDollar": 33333.33333333333,
+    "observations": 980,
+    "source": "catalog matched website rates"
+  },
+  "tier_counts": {
+    "0": 24,
+    "1": 23,
+    "2": 45,
+    "3": 51,
+    "4": 78,
+    "5": 59,
+    "6": 62,
+    "7": 89,
+    "8": 25,
+    "9": 15
+  },
+  "page_errors": []
+}

@@ -33,7 +33,7 @@ All parsed rates (both currencies):
 | Output (text) | USD | 4.04 | 1000000 tokens |
 | Output (text) | POINTS | 134 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:44:06.091253
+**Last Checked:** 2026-11-04T16:56:49.019101
 
 
 ## Bot Information
@@ -66,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** kimi-k2.6
 
-**API Last Updated:** 2026-10-22 13:58:59.077557
+**API Last Updated:** 2026-11-04T16:58:23.009308

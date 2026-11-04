@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | 1 Image | USD | 0.13 | 1 image |
 | 1 Image | POINTS | 4334 | 1 image |
 
-**Last Checked:** 2026-10-22 13:26:37.285562
+**Last Checked:** 2026-11-04T16:42:53.625248
 
 
 ## Bot Information
@@ -79,4 +79,4 @@ Parameter controls available:
 
 **Root:** hunyuan-image-3
 
-**API Last Updated:** 2026-10-22 13:58:59.075186
+**API Last Updated:** 2026-11-04T16:58:23.008431

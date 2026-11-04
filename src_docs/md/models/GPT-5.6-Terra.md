@@ -29,14 +29,14 @@ All parsed rates (both currencies):
 | Output | USD | 0.0091 | 1 search |
 | Output | POINTS | 300 | 1 search |
 
-**Last Checked:** 2026-10-22 13:04:18.554898
+**Last Checked:** 2026-11-04T16:26:54.951643
 
 
 ## Bot Information
 
 **Creator:** @openai
 
-**Description:** A balanced GPT-5.6 model for everyday work, coding, analysis, research, and problem solving. It offers strong general-purpose intelligence while keeping cost lower than flagship-tier models.
+**Description:** OpenAI's GPT-5.6 Terra, a balanced previous-generation model for everyday work, coding, analysis, and research. For the newer model, try GPT-6.1-Terra: https://poe.com/GPT-6.1-Terra
 
 **Extra:** Powered by a server managed by @openai. Learn more
 

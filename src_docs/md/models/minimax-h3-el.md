@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | 2K | USD | 0.26 | 1 second |
 | 2K | POINTS | 8667 | 1 second |
 
-**Last Checked:** 2026-10-22 13:45:08.035555
+**Last Checked:** 2026-11-04T16:50:34.678243
 
 
 ## Bot Information
@@ -69,4 +69,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** minimax-h3-el
 
-**API Last Updated:** 2026-10-22 13:58:59.077684
+**API Last Updated:** 2026-11-04T16:58:23.009351

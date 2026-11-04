@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Total Cost | USD | 0.404 | 1 second |
 | Total Cost | POINTS | 13333 | 1 second |
 
-**Last Checked:** 2026-10-22 13:32:44.547233
+**Last Checked:** 2026-11-04T16:45:35.534431
 
 
 ## Bot Information
@@ -66,4 +66,4 @@ For first & last frame video generation and references support, please use www.p
 
 **Root:** veo-3.1
 
-**API Last Updated:** 2026-10-22 13:58:59.076291
+**API Last Updated:** 2026-11-04T16:58:23.008807

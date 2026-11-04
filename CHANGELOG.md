@@ -9,6 +9,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.39] — 2026-11-04
+
+- Refresh 506 candidates into a 471-bot catalogue containing all 99 issue 341
+  handles: 14 additions, 33 unavailable/private removals and two duplicate aliases.
+  Record fresh numeric website prices for 456 bots; review the remaining 15
+  missing numeric rates. Rebuild all canonical model pages and site data.
+- Package explicit discovery exceptions, including G5-LM, Qwen3.8-27B and two
+  still-public MiMo bots. Use hydrated canonical handles for profile display names.
+- Prefer complete public Markdown rate cards over partial HTML tables, preserving
+  USD prices, video durations and variable-call lower bounds. Keep account points
+  out of rates and use neutral wording when numeric pricing is absent.
+- Verification: 236 Python and 18 JavaScript tests pass; vendor coverage 100%.
+  Strict MkDocs, full package/site rate parity, real scraper smoke and rendered
+  catalogue checks pass. Global coverage remains below its existing gate:
+  65.23% versus 85%. Public evidence is in `issues/341-verification.md`.
+
+- Add `issues/342-results.md`, ranking the issue's bots by saved website prices
+  within comparable workloads, including mandatory fees and explicit missing or
+  ambiguous prices. Verify all 121 distinct mentioned handles and numeric table
+  ordering against the JSON. Python: 231 passed, coverage gate failed at 64.97%
+  (85% required); JavaScript pricing checks: 18 passed. That report remains a
+  historical comparison and links its immutable source snapshot.
+
 - Show the database update date, timezone, bot count and website-price count on
   the homepage and model catalogue. Derive freshness from saved API/pricing
   observations so rebuilding the website never invents a new update date.

@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | Audio + Video Output | USD | 0.15 | 1 second |
 | Audio + Video Output | POINTS | 5000 | 1 second |
 
-**Last Checked:** 2026-10-22 13:33:51.796532
+**Last Checked:** 2026-11-04T16:47:59.958691
 
 
 ## Bot Information
@@ -67,4 +67,4 @@ Note: Pass a single image for image to video tasks. Pass two images for a first-
 
 **Root:** veo-v3.1-fast
 
-**API Last Updated:** 2026-10-22 13:58:59.076424
+**API Last Updated:** 2026-11-04T16:58:23.008885

@@ -16,6 +16,7 @@ this_file: src_docs/md/models/Clef-OSL.md
 |------|------|
 | Input Text | 5 points/1k tokens |
 | Output (Text) | $0.40/1M tokens · 14 points/1k tokens |
+| Input (File) | $0.00000832/KB (64 est. tokens) · 0.32 points/KB |
 
 All parsed rates (both currencies):
 
@@ -25,8 +26,10 @@ All parsed rates (both currencies):
 | Input (text) | POINTS | 5 | 1000 tokens |
 | Output (text) | USD | 0.40 | 1000000 tokens |
 | Output (text) | POINTS | 14 | 1000 tokens |
+| Input (file) | USD | 0.00000832 | 1 kb |
+| Input (file) | POINTS | 0.32 | 1 kb |
 
-**Last Checked:** 2026-10-22 13:00:05.966460
+**Last Checked:** 2026-11-04T16:24:08.772361
 
 
 ## Bot Information

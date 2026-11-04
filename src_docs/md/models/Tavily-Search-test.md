@@ -47,7 +47,7 @@ All parsed rates (both currencies):
 | Map (with Instructions) | USD | 0.019 | 10 pages |
 | Map (with Instructions) | POINTS | 640 | 10 pages |
 
-**Last Checked:** 2026-10-22 13:16:09.679439
+**Last Checked:** 2026-11-04T16:33:13.749331
 
 
 ## Bot Information

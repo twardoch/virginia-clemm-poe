@@ -29,7 +29,7 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.0061 | 1 message |
 | Total cost | POINTS | 200 | 1 message |
 
-**Last Checked:** 2026-10-22 13:42:00.887291
+**Last Checked:** 2026-11-04T16:55:42.141810
 
 
 ## Bot Information
@@ -62,4 +62,4 @@ All parsed rates (both currencies):
 
 **Root:** minimax-m3-t
 
-**API Last Updated:** 2026-10-22 13:58:59.077254
+**API Last Updated:** 2026-11-04T16:58:23.009202

@@ -28,7 +28,7 @@ All parsed rates (both currencies):
 | Output (message) | USD | 1.43 | 1 message |
 | Output (message) | POINTS | 47334 | 1 message |
 
-**Last Checked:** 2026-10-22 13:30:16.463041
+**Last Checked:** 2026-11-04T16:49:35.184928
 
 
 ## Bot Information
@@ -69,4 +69,4 @@ Generated tracks are trained on licensed data and cleared for commercial use. Mu
 
 **Root:** elevenlabs-music-v2
 
-**API Last Updated:** 2026-10-22 13:58:59.075967
+**API Last Updated:** 2026-11-04T16:58:23.008677

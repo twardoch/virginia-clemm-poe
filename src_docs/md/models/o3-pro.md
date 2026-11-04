@@ -33,7 +33,7 @@ All parsed rates (both currencies):
 | Output (text) | USD | 72.73 | 1000000 tokens |
 | Output (text) | POINTS | 2400 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:27:31.964818
+**Last Checked:** 2026-11-04T16:43:17.728069
 
 
 ## Bot Information
@@ -69,4 +69,4 @@ Set reasoning effort: Select from `low`, `medium`, `high`. Medium reasoning effo
 
 **Root:** o3-pro
 
-**API Last Updated:** 2026-10-22 13:58:59.075420
+**API Last Updated:** 2026-11-04T16:58:23.008487

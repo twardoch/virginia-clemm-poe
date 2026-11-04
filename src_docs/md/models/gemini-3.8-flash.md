@@ -36,7 +36,7 @@ All parsed rates (both currencies):
 | Output | USD | 0.014 | 1 search |
 | Output | POINTS | 467 | 1 search |
 
-**Last Checked:** 2026-10-22 13:19:24.071426
+**Last Checked:** 2026-11-04T16:41:36.846566
 
 
 ## Bot Information
@@ -69,4 +69,4 @@ All parsed rates (both currencies):
 
 **Root:** gemini-3.8-flash
 
-**API Last Updated:** 2026-10-22 13:58:59.073550
+**API Last Updated:** 2026-11-04T16:58:23.007030

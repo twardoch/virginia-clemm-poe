@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.014 | 1 image |
 | Image Output | POINTS | 467 | 1 image |
 
-**Last Checked:** 2026-10-22 13:31:09.979677
+**Last Checked:** 2026-11-04T16:44:43.725257
 
 
 ## Bot Information
@@ -62,4 +62,4 @@ Set aspect ratio. Supported aspect ratios - 16:9, 4:3, 1:1, 3:4, 9:16
 
 **Root:** flux-2-klein-4b
 
-**API Last Updated:** 2026-10-22 13:58:59.076086
+**API Last Updated:** 2026-11-04T16:58:23.008735

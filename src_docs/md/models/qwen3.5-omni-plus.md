@@ -35,7 +35,7 @@ All parsed rates (both currencies):
 | Web Search | USD | 0.015 | 1 message |
 | Web Search | POINTS | 500 | 1 message |
 
-**Last Checked:** 2026-10-22 13:22:20.283993
+**Last Checked:** 2026-11-04T16:43:03.151751
 
 
 ## Bot Information
@@ -87,4 +87,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** qwen3.5-omni-plus
 
-**API Last Updated:** 2026-10-22 13:58:59.074195
+**API Last Updated:** 2026-11-04T16:58:23.007267

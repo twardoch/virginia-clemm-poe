@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | Audio + Video Output | USD | 0.40 | 1 second |
 | Audio + Video Output | POINTS | 13334 | 1 second |
 
-**Last Checked:** 2026-10-22 13:33:47.374004
+**Last Checked:** 2026-11-04T16:46:06.281513
 
 
 ## Bot Information
@@ -70,4 +70,4 @@ Pass up to 3 images with reference for a reference-to-video task. Reference imag
 
 **Root:** veo-v3.1
 
-**API Last Updated:** 2026-10-22 13:58:59.076416
+**API Last Updated:** 2026-11-04T16:58:23.008881

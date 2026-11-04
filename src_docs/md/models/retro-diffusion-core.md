@@ -36,7 +36,7 @@ All parsed rates (both currencies):
 | Animations | USD | 0.10 | 1 animations |
 | Animations | POINTS | 3334 | 1 animations |
 
-**Last Checked:** 2026-10-22 13:32:32.231585
+**Last Checked:** 2026-11-04T16:45:27.196549
 
 
 ## Bot Information
@@ -85,4 +85,4 @@ Additional notes: All styles have a size range of 48x48 -> 512x512, except for t
 
 **Root:** retro-diffusion-core
 
-**API Last Updated:** 2026-10-22 13:58:59.076249
+**API Last Updated:** 2026-11-04T16:58:23.008795

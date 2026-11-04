@@ -108,6 +108,7 @@ def test_failed_vendor_retains_previously_discovered_bots():
 @pytest.mark.asyncio
 async def test_sync_includes_vendor_bots_and_persists_their_pricing(monkeypatch, tmp_path):
     updater = BotUpdater("key")
+    monkeypatch.setattr(module, "load_extra_bots", lambda: [])
     discovered, _ = parse_profile(profile_html([{"handle": "Only-Web"}]), "anthropic")
     updater._fetch_and_parse_api_bots = AsyncMock(return_value=({"object": "list"}, []))
     updater._discover_vendor_bots = AsyncMock(return_value=(discovered, set()))
@@ -128,6 +129,45 @@ async def test_sync_includes_vendor_bots_and_persists_their_pricing(monkeypatch,
     saved = BotCollection.model_validate_json((tmp_path / "bots.json").read_text())
     assert saved.data[0].vendor_profile == "anthropic", "Vendor provenance must survive serialization"
     assert bot.has_api_pricing() is False, "Web pricing must not be represented as API pricing"
+
+
+def test_extra_bots_loads_unique_handles_without_inventing_api_metadata(monkeypatch, tmp_path):
+    path = tmp_path / "extra_bots.txt"
+    path.write_text("# Explicit handles\nG5-LM\n\nQwen3.8-27B\ng5-lm\n")
+    monkeypatch.setattr(vendors, "EXTRA_BOT_FILE", path)
+    bots = vendors.load_extra_bots()
+    assert [bot.id for bot in bots] == ["G5-LM", "Qwen3.8-27B"], "Deduplicate handles case-insensitively"
+    assert all(bot.created is None and bot.api_last_updated is None and bot.vendor_profile is None for bot in bots), (
+        "Explicit handles must not invent API or vendor provenance"
+    )
+    assert all(not bot.architecture.output_modalities for bot in bots), "Unknown modalities stay unknown"
+    path.write_text("https://poe.com/G5-LM\n")
+    with pytest.raises(ValueError, match="handles"):
+        vendors.load_extra_bots()
+    path.write_text("# No extra bots\n\n")
+    assert vendors.load_extra_bots() == [], "An empty explicit list must be supported"
+
+
+@pytest.mark.asyncio
+async def test_sync_scrapes_explicit_bots_outside_api_and_vendor_discovery(monkeypatch, tmp_path):
+    updater = BotUpdater("key")
+    path = tmp_path / "extra_bots.txt"
+    path.write_text("G5-LM\nQwen3.8-27B\n")
+    monkeypatch.setattr(vendors, "EXTRA_BOT_FILE", path)
+    updater._fetch_and_parse_api_bots = AsyncMock(return_value=({"object": "list"}, []))
+    updater._discover_vendor_bots = AsyncMock(return_value=([], set()))
+    updater.scrape_model_info = AsyncMock(return_value=({"Bot message": "10 points"}, BotInfo(creator="@zai"), None))
+    pool = MagicMock()
+    pool.acquire_page.return_value.__aenter__ = AsyncMock(return_value=MagicMock())
+    pool.acquire_page.return_value.__aexit__ = AsyncMock(return_value=False)
+    monkeypatch.setattr(module, "get_global_pool", AsyncMock(return_value=pool))
+    monkeypatch.setattr(module, "DATA_FILE_PATH", tmp_path / "bots.json")
+    collection = await updater.sync_bots(force=True)
+    assert {bot.id for bot in collection.data} == {"G5-LM", "Qwen3.8-27B"}, "Explicit bots must survive discovery"
+    assert all(bot.has_scraped_pricing() and not bot.has_api_pricing() for bot in collection.data), (
+        "Explicit bots must use the ordinary metadata/pricing scraper"
+    )
+    assert all(bot.bot_info.creator == "@zai" for bot in collection.data), "Scraped creator metadata must persist"
 
 
 @pytest.mark.asyncio
@@ -186,4 +226,15 @@ def test_rendered_created_panel_adds_paginated_bots():
     bots, count = parse_profile(html, "anthropic")
     assert len(bots) == count == 2 and bots[1].bot_info.description == "Page two", (
         "Rendered cards must extend hydration data"
+    )
+
+
+def test_profile_uses_hydrated_handle_instead_of_display_name_alias():
+    html = profile_html([{"handle": "muse-spark-1-1", "displayName": "Muse-Spark-1.1"}])
+    html += (
+        '<div id="profile-created-bots"><div data-bot-list-item><div class="botName">Muse-Spark-1.1</div></div></div>'
+    )
+    bots, expected = parse_profile(html, "anthropic")
+    assert [bot.id for bot in bots] == ["muse-spark-1-1"] and len(bots) == expected, (
+        "Display-name aliases must not duplicate canonical bots or falsely complete pagination"
     )

@@ -22,7 +22,7 @@ All parsed rates (both currencies):
 |---|---|---|---|
 | Message cost | POINTS | From 1 | 1 message |
 
-**Last Checked:** 2026-10-22 13:39:01.246723
+**Last Checked:** 2026-11-04T16:48:27.770460
 
 
 ## Bot Information
@@ -55,4 +55,4 @@ All parsed rates (both currencies):
 
 **Root:** interpreter
 
-**API Last Updated:** 2026-10-22 13:58:59.077001
+**API Last Updated:** 2026-11-04T16:58:23.009096

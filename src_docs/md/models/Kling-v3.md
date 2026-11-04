@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | Video Output with audio | USD | 0.25 | 1 second |
 | Video Output with audio | POINTS | 8400 | 1 second |
 
-**Last Checked:** 2026-10-22 13:07:40.017657
+**Last Checked:** 2026-11-04T16:29:26.746468
 
 
 ## Bot Information

@@ -16,7 +16,8 @@ this_file: src_docs/md/models/manus.md
 |------|------|
 | Lite Profile | 47667 ($1.44) - 86667 ($2.63) |
 | Standard Profile | 95334 ($2.89) - 173334 ($5.25) |
-| Max Profile | 173334 ($5.25) - 303334 ($9.19) |
+| Max Profile (Medium, High Or Extra Thinking) | 173334 ($5.25) - 303334 ($9.19) |
+| Max Profile, Ultra Thinking | 448067 ($13.58) - 784334 ($23.77) |
 
 All parsed rates (both currencies):
 
@@ -30,12 +31,16 @@ All parsed rates (both currencies):
 | Standard profile | USD | 5.25 | 1 standard profile |
 | Standard profile | POINTS | 95334 | 1 standard profile |
 | Standard profile | POINTS | 173334 | 1 standard profile |
-| Max profile | USD | 5.25 | 1 max profile |
-| Max profile | USD | 9.19 | 1 max profile |
-| Max profile | POINTS | 173334 | 1 max profile |
-| Max profile | POINTS | 303334 | 1 max profile |
+| Max profile (medium, high or extra thinking) | USD | 5.25 | 1 max profile (medium, high or extra thinking) |
+| Max profile (medium, high or extra thinking) | USD | 9.19 | 1 max profile (medium, high or extra thinking) |
+| Max profile (medium, high or extra thinking) | POINTS | 173334 | 1 max profile (medium, high or extra thinking) |
+| Max profile (medium, high or extra thinking) | POINTS | 303334 | 1 max profile (medium, high or extra thinking) |
+| Max profile, ultra thinking | USD | 13.58 | 1 max profile, ultra thinking |
+| Max profile, ultra thinking | USD | 23.77 | 1 max profile, ultra thinking |
+| Max profile, ultra thinking | POINTS | 448067 | 1 max profile, ultra thinking |
+| Max profile, ultra thinking | POINTS | 784334 | 1 max profile, ultra thinking |
 
-**Last Checked:** 2026-10-22 13:23:18.159030
+**Last Checked:** 2026-11-04T16:43:24.645686
 
 
 ## Bot Information
@@ -74,4 +79,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** manus
 
-**API Last Updated:** 2026-10-22 13:58:59.074481
+**API Last Updated:** 2026-11-04T16:58:23.008204

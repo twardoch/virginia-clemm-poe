@@ -33,7 +33,7 @@ All parsed rates (both currencies):
 | Output (text) | USD | 1.28 | 1000000 tokens |
 | Output (text) | POINTS | 43 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:45:00.076709
+**Last Checked:** 2026-11-04T16:51:43.511312
 
 
 ## Bot Information
@@ -68,4 +68,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** ds-v4-flash-0731-el
 
-**API Last Updated:** 2026-10-22 13:58:59.077653
+**API Last Updated:** 2026-11-04T16:58:23.009340

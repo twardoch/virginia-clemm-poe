@@ -29,7 +29,7 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.015 | 1 message |
 | Total cost | POINTS | 500 | 1 message |
 
-**Last Checked:** 2026-10-22 13:33:18.195354
+**Last Checked:** 2026-11-04T16:51:09.472423
 
 
 ## Bot Information
@@ -64,4 +64,4 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 
 **Root:** deepseek-r1-turbo-di
 
-**API Last Updated:** 2026-10-22 13:58:59.076352
+**API Last Updated:** 2026-11-04T16:58:23.008853

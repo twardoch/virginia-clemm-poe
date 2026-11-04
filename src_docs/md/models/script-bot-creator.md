@@ -42,4 +42,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** script-bot-creator
 
-**API Last Updated:** 2026-10-22 13:58:59.073968
+**API Last Updated:** 2026-11-04T16:58:23.007188

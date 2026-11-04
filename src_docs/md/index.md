@@ -4,7 +4,7 @@ this_file: src_docs/md/index.md
 
 # Virginia Clemm Poe 
 
-<p class="database-status"><strong>Database updated:</strong> <time datetime="2026-10-22T14:07:50Z">22 October 2026, 14:07 UTC</time> · 492 bots · 473 with website prices.<br><small>Latest saved API or pricing observation; individual checks may be older.</small></p>
+<p class="database-status"><strong>Database updated:</strong> <time datetime="2026-11-04T17:00:31Z">04 November 2026, 17:00 UTC</time> · 471 bots · 456 with website prices.<br><small>Latest saved API or pricing observation; individual checks may be older.</small></p>
 
 **Virginia Clemm Poe** is a Python package that provides programmatic access to comprehensive Poe.com model data with pricing information. It acts as a companion tool to the official Poe API by fetching, maintaining, and enriching model data through web scraping, with a special focus on capturing detailed pricing information not available through the API alone.
 

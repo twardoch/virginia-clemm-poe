@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.030 | 1 message |
 | Image Output | POINTS | 1000 | 1 message |
 
-**Last Checked:** 2026-10-22 13:31:46.945153
+**Last Checked:** 2026-11-04T16:45:03.031573
 
 
 ## Bot Information
@@ -58,4 +58,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** seedream-3.0
 
-**API Last Updated:** 2026-10-22 13:58:59.076191
+**API Last Updated:** 2026-11-04T16:58:23.008766

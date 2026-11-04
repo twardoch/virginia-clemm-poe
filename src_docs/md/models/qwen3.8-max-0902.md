@@ -33,7 +33,7 @@ All parsed rates (both currencies):
 | Output (text) | USD | 6.06 | 1000000 tokens |
 | Output (text) | POINTS | 200 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:28:00.827038
+**Last Checked:** 2026-11-04T16:43:28.410475
 
 
 ## Bot Information
@@ -66,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** qwen3.8-max-0902
 
-**API Last Updated:** 2026-10-22 13:58:59.075562
+**API Last Updated:** 2026-11-04T16:58:23.008546

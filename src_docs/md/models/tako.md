@@ -29,7 +29,7 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.030 | 1 message |
 | Total cost | POINTS | 1000 | 1 message |
 
-**Last Checked:** 2026-10-22 13:38:12.205884
+**Last Checked:** 2026-11-04T16:47:52.899290
 
 
 ## Bot Information
@@ -62,4 +62,4 @@ All parsed rates (both currencies):
 
 **Root:** tako
 
-**API Last Updated:** 2026-10-22 13:58:59.076889
+**API Last Updated:** 2026-11-04T16:58:23.009067

@@ -15,7 +15,8 @@ from virginia_clemm_poe.updater import BotUpdater
 
 
 @pytest.mark.asyncio
-async def test_rate_card_response_recovers_a_dialog_without_tables():
+@pytest.mark.parametrize("partial_table", [False, True])
+async def test_rate_card_response_recovers_a_dialog_without_tables(partial_table):
     page = MagicMock()
     handlers = {}
     page.on.side_effect = lambda event, handler: handlers.update({event: handler})
@@ -41,7 +42,13 @@ async def test_rate_card_response_recovers_a_dialog_without_tables():
     dialog = MagicMock()
     dialog.wait_for = AsyncMock()
     dialog.locator.return_value.first.wait_for = AsyncMock(side_effect=TimeoutError)
-    dialog.inner_html = AsyncMock(return_value="<p>No table</p>")
+    dialog.inner_html = AsyncMock(
+        return_value=(
+            "<table><tr><td>Bot message</td><td>1 point/message</td></tr></table>"
+            if partial_table
+            else "<p>No table</p>"
+        )
+    )
     page.locator.return_value = dialog
     page.keyboard.press = AsyncMock()
     pricing, error = await BotUpdater("key")._extract_pricing_table(page, "interpreter")
@@ -61,7 +68,8 @@ async def test_failed_refresh_retains_the_previous_observed_rate(sample_poe_mode
 
 
 @pytest.mark.asyncio
-async def test_rates_button_when_action_bar_class_changes_then_extracts_table():
+@pytest.mark.parametrize("show_rates", [True, False])
+async def test_rates_button_when_action_bar_class_changes_then_extracts_table(show_rates):
     page = MagicMock()
     button = MagicMock()
     button.click = AsyncMock()
@@ -69,11 +77,22 @@ async def test_rates_button_when_action_bar_class_changes_then_extracts_table():
     dialog = MagicMock()
     dialog.wait_for = AsyncMock()
     dialog.locator.return_value.first.wait_for = AsyncMock()
-    dialog.inner_html = AsyncMock(return_value="<table><tr><td>Bot message</td><td>10 points</td></tr></table>")
+    dialog.inner_html = AsyncMock(
+        return_value=(
+            "<table><tr><td>Bot message</td><td>10 points</td></tr></table>"
+            if show_rates
+            else "<h1>Points</h1><p>Available points</p><strong>123,456</strong>"
+        )
+    )
     page.locator.return_value = dialog
     page.keyboard.press = AsyncMock()
     updater = BotUpdater(api_key="test-key")
     pricing, error = await updater._extract_pricing_table(page, "test-bot")
+    if not show_rates:
+        assert pricing is None and error == "Rates dialog contains no numeric pricing", (
+            "Account points must not become a rate or a claim about the creator's disclosure"
+        )
+        return
     assert error is None, "Rates should work without a hardcoded action bar class"
     assert pricing["Bot message"] == "10 points", "The visible rates table should be parsed"
     assert pricing["rates"][0]["amount"] == "10", "The numeric rate should be preserved"

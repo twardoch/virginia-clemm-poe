@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | 3D Output | USD | 0.017 | 1 message |
 | 3D Output | POINTS | 567 | 1 message |
 
-**Last Checked:** 2026-10-22 13:35:38.026768
+**Last Checked:** 2026-11-04T16:48:35.160126
 
 
 ## Bot Information
@@ -56,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** trellis-3d
 
-**API Last Updated:** 2026-10-22 13:58:59.076582
+**API Last Updated:** 2026-11-04T16:58:23.008950

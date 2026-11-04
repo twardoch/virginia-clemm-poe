@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | Output (text) | USD | 1.20 | 1000000 tokens |
 | Output (text) | POINTS | 222 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:00:43.979566
+**Last Checked:** 2026-11-04T16:24:23.795713
 
 
 ## Bot Information

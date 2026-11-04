@@ -4,7 +4,7 @@ this_file: src_docs/md/models/deepseek-v4-pro-0813.md
 
 # [deepseek-v4-pro-0813](https://poe.com/deepseek-v4-pro-0813){ .md-button .md-button--primary }
 
-**Tier 3:** 88 points · 1,000 tokens (500 input + 500 output)
+**Tier 3:** 44 points · 1,000 tokens (500 input + 500 output)
 
 [Comparison method and assumptions](../pricing-method.md).
 
@@ -14,38 +14,35 @@ this_file: src_docs/md/models/deepseek-v4-pro-0813.md
 
 | Type | Cost |
 |------|------|
-| Prompt | $0.0000013333/token |
-| Completion | $0.000004/token |
+| Prompt | $6.667E-7/token |
+| Completion | $0.000002/token |
 
 ### Website Pricing
 
 | Type | Cost |
 |------|------|
-| Input Text | 44 points/1k tokens |
-| Output (Text) | $4.00/1M tokens · 132 points/1k tokens |
+| Input Text | 22 points/1k tokens |
+| Output (Text) | $2.00/1M tokens · 66 points/1k tokens |
 
 All parsed rates (both currencies):
 
 | Service | Currency | Amount | Per |
 |---|---|---|---|
-| Input (text) | USD | 1.33 | 1000000 tokens |
-| Input (text) | POINTS | 44 | 1000 tokens |
-| Output (text) | USD | 4.00 | 1000000 tokens |
-| Output (text) | POINTS | 132 | 1000 tokens |
+| Input (text) | USD | 0.67 | 1000000 tokens |
+| Input (text) | POINTS | 22 | 1000 tokens |
+| Output (text) | USD | 2.00 | 1000000 tokens |
+| Output (text) | POINTS | 66 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:46:04.231432
+**Last Checked:** 2026-11-04T16:43:45.862073
 
 
 ## Bot Information
 
-**Creator:** @novitaai
+**Creator:** @deepseek
 
-**Description:** deepseek/deepseek-v4-pro-0813 powered by Novita AI
+**Description:** DeepSeek V4 Pro, August 13 snapshot. A reasoning model for coding and complex text tasks with a 1M-token context window.
 
-File Support: Text, Markdown and PDF files
-Context window: 1M tokens
-
-**Extra:** Powered by a server managed by @novitaai. Learn more
+**Extra:** Powered by a server managed by @deepseek. Learn more
 
 
 ## Architecture
@@ -63,10 +60,10 @@ Context window: 1M tokens
 
 **Object Type:** model
 
-**Created:** 1786708273920
+**Created:** 1792604066115
 
-**Owned By:** Novita AI
+**Owned By:** DeepSeek
 
 **Root:** deepseek-v4-pro-0813
 
-**API Last Updated:** 2026-10-22 13:58:59.077890
+**API Last Updated:** 2026-11-04T16:58:23.008598

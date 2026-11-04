@@ -22,14 +22,14 @@ All parsed rates (both currencies):
 |---|---|---|---|
 | Message cost | POINTS | From 1 | 1 message |
 
-**Last Checked:** 2026-10-22 12:58:44.588171
+**Last Checked:** 2026-11-04T16:23:40.683398
 
 
 ## Bot Information
 
 **Creator:** @OpenSourceLab
 
-**Description:** This bot helps authors quickly create complete, professionally written books from a simple written request. It uses AI to transform ideas, concepts, and instructions into well-structured books with titles, chapters, subheadings, and engaging content. The finished book is provided as a PDF file, ready to download, read, and share.
+**Description:** This bot helps authors quickly create complete, professionally written books. It uses AI to transform ideas, concepts, and instructions into well-structured books with titles, chapters, subheadings, and engaging content. The finished book is provided as a PDF file, ready to download, read, and share.
 
 You can also revise and improve an existing book. Simply add your notes, comments, or requested changes directly inside the PDF file, then reupload it to the bot. The AI will use your feedback to update the book according to your instructions. This makes creating, editing, and improving books faster and easier without requiring advanced writing, editing, or formatting skills.
 

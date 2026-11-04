@@ -4,50 +4,38 @@ this_file: src_docs/md/models/mimo-v2.6-flash.md
 
 # [mimo-v2.6-flash](https://poe.com/mimo-v2.6-flash){ .md-button .md-button--primary }
 
-**Tier 1:** 7.5 points · 1,000 tokens (500 input + 500 output)
+**Tier 1:** 7 points · 1,000 tokens (500 input + 500 output)
 
 [Comparison method and assumptions](../pricing-method.md).
 
 ## Pricing
-
-### API Pricing (USD)
-
-| Type | Cost |
-|------|------|
-| Prompt | $1.414E-7/token |
-| Completion | $2.828E-7/token |
 
 ### Website Pricing
 
 | Type | Cost |
 |------|------|
 | Input Text | 5 points/1k tokens |
-| Output (Text) | $0.28/1M tokens · 10 points/1k tokens |
+| Output (Text) | $0.27/1M tokens · 9 points/1k tokens |
 
 All parsed rates (both currencies):
 
 | Service | Currency | Amount | Per |
 |---|---|---|---|
-| Input (text) | USD | 0.14 | 1000000 tokens |
-| Input (text) | POINTS | 5 | 1000 tokens |
-| Output (text) | USD | 0.28 | 1000000 tokens |
-| Output (text) | POINTS | 10 | 1000 tokens |
+| Input | USD | 0.13 | 1000000 tokens |
+| Input | POINTS | 5 | 1000 tokens |
+| Output (text) | USD | 0.27 | 1000000 tokens |
+| Output (text) | POINTS | 9 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:48:23.447206
+**Last Checked:** 2026-11-04T16:41:19.671499
 
 
 ## Bot Information
 
-**Creator:** @novitaai
+**Creator:** @xiaomi
 
-**Description:** Try https://poe.com/MiMo-V2.6-Flash-Xiaomi for the first-party MiMo bot.
+**Description:** Xiaomi’s efficient MiMo V2.6 Flash model for reasoning and coding, with text, image, audio, and video input and a 1M-token context window.
 
-MiMo V2.6 Flash is Xiaomi's cost-efficient open-source reasoning model for high-frequency calls and large-scale professional workflows. It combines native text, image, video, and audio understanding with a 1M-token context window and up to 128K output tokens, while supporting controllable deep thinking, tool calling, JSON mode, streaming, and prompt caching.
-
-File Support: Text, Markdown, Image, Video and PDF files
-Context window: 1M tokens
-
-**Extra:** Powered by a server managed by @novitaai. Learn more
+**Extra:** Powered by a server managed by @xiaomi. Learn more
 
 
 ## Architecture
@@ -71,4 +59,4 @@ Context window: 1M tokens
 
 **Root:** mimo-v2.6-flash
 
-**API Last Updated:** 2026-10-22 13:58:59.078164
+**API Last Updated:** Not listed in API

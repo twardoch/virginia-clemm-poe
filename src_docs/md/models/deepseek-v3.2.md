@@ -33,7 +33,7 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.38 | 1000000 tokens |
 | Output (text) | POINTS | 13 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:43:54.374626
+**Last Checked:** 2026-11-04T16:56:43.742861
 
 
 ## Bot Information
@@ -66,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** deepseek-v3.2
 
-**API Last Updated:** 2026-10-22 13:58:59.077495
+**API Last Updated:** 2026-11-04T16:58:23.009288

@@ -71,7 +71,7 @@ All parsed rates (both currencies):
 | Web search | USD | 0.014 | 1 search |
 | Web search | POINTS | 467 | 1 search |
 
-**Last Checked:** 2026-10-22 13:19:03.247422
+**Last Checked:** 2026-11-04T16:44:53.413002
 
 
 ## Bot Information
@@ -83,12 +83,12 @@ All parsed rates (both currencies):
 Queries are automatically routed based on the task and subscription status.
 
 For subscribers:
-- General queries: @GPT-5.5
+- General queries: @GPT-6.1-Sol
 - Image generation: @Nano-Banana-2
 - Video-input tasks: @Gemini-3.1-Pro
 
 For non-subscribers:
-- General queries: @GPT-5.4-Nano
+- General queries: @GPT-6-Luna
 - Image generation: @Nano-Banana-2
 - Video-input tasks: @Gemini-3-Flash
 
@@ -116,4 +116,4 @@ For non-subscribers:
 
 **Root:** assistant
 
-**API Last Updated:** 2026-10-22 13:58:59.073362
+**API Last Updated:** 2026-11-04T16:58:23.006957

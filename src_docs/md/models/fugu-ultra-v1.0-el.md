@@ -33,7 +33,7 @@ All parsed rates (both currencies):
 | Output (text) | USD | 45.45 | 1000000 tokens |
 | Output (text) | POINTS | 1500 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:42:13.884418
+**Last Checked:** 2026-11-04T16:55:48.342677
 
 
 ## Bot Information
@@ -73,4 +73,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** fugu-ultra-v1.0-el
 
-**API Last Updated:** 2026-10-22 13:58:59.077290
+**API Last Updated:** 2026-11-04T16:58:23.009216

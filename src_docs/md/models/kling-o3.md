@@ -39,7 +39,7 @@ All parsed rates (both currencies):
 | Text / Image + Sound | USD | 0.53 | 1 second |
 | Text / Image + Sound | POINTS | 17500 | 1 second |
 
-**Last Checked:** 2026-10-22 13:24:55.966240
+**Last Checked:** 2026-11-04T16:47:30.585970
 
 
 ## Bot Information
@@ -91,4 +91,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** kling-o3
 
-**API Last Updated:** 2026-10-22 13:58:59.074778
+**API Last Updated:** 2026-11-04T16:58:23.008310

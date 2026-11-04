@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Total Cost | USD | 0.18 | 1 video |
 | Total Cost | POINTS | 6000 | 1 video |
 
-**Last Checked:** 2026-10-22 13:16:21.480827
+**Last Checked:** 2026-11-04T16:33:19.043866
 
 
 ## Bot Information

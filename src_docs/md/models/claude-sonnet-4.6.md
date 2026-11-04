@@ -36,7 +36,7 @@ All parsed rates (both currencies):
 | Output | USD | 0.010 | 1 search |
 | Output | POINTS | 334 | 1 search |
 
-**Last Checked:** 2026-10-22 13:22:49.223423
+**Last Checked:** 2026-11-04T16:46:33.183202
 
 
 ## Bot Information
@@ -71,4 +71,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** claude-sonnet-4.6
 
-**API Last Updated:** 2026-10-22 13:58:59.074294
+**API Last Updated:** 2026-11-04T16:58:23.007305

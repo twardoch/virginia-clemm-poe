@@ -33,14 +33,14 @@ All parsed rates (both currencies):
 | Output (text) | USD | 15.15 | 1000000 tokens |
 | Output (text) | POINTS | 500 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:19:11.354983
+**Last Checked:** 2026-11-04T16:45:23.195970
 
 
 ## Bot Information
 
 **Creator:** @moonshotai
 
-**Description:** Kimi’s flagship model for long-horizon coding and end-to-end knowledge work, with a 1M-token context window.
+**Description:** For the newer model, try \[Kimi-K3.1-Pro\](https://poe.com/Kimi-K3.1-Pro). Kimi K3 supports long-horizon coding and end-to-end knowledge work with a 1M-token context window.
 
 **Extra:** Powered by a server managed by @moonshotai. Learn more
 
@@ -66,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** kimi-k3
 
-**API Last Updated:** 2026-10-22 13:58:59.073482
+**API Last Updated:** 2026-11-04T16:58:23.007110

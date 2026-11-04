@@ -33,7 +33,7 @@ All parsed rates (both currencies):
 | Output (text) | USD | 4.29 | 1000000 tokens |
 | Output (text) | POINTS | 142 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:20:50.531001
+**Last Checked:** 2026-11-04T16:45:39.209736
 
 
 ## Bot Information
@@ -66,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** muse-spark-1-1
 
-**API Last Updated:** 2026-10-22 13:58:59.073918
+**API Last Updated:** 2026-11-04T16:58:23.007171

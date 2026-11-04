@@ -40,4 +40,4 @@ Built on the Claude Agent SDK from Anthropic.
 
 **Root:** claude-code
 
-**API Last Updated:** 2026-10-22 13:58:59.074639
+**API Last Updated:** 2026-11-04T16:58:23.008251

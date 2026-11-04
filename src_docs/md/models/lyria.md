@@ -22,7 +22,7 @@ All parsed rates (both currencies):
 |---|---|---|---|
 | Input (text) | POINTS | 1400 | 1 generated song |
 
-**Last Checked:** 2026-10-22 13:33:39.163644
+**Last Checked:** 2026-11-04T16:47:54.704425
 
 
 ## Bot Information
@@ -64,4 +64,4 @@ This bot accepts input prompts of up to 480 tokens.
 
 **Root:** lyria
 
-**API Last Updated:** 2026-10-22 13:58:59.076398
+**API Last Updated:** 2026-11-04T16:58:23.008875

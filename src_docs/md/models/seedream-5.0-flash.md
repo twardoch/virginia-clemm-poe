@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | Layer decomposition | USD | 0.030 | 1 image |
 | Layer decomposition | POINTS | 1000 | 1 image |
 
-**Last Checked:** 2026-10-22 13:48:15.463694
+**Last Checked:** 2026-11-04T16:51:27.530947
 
 
 ## Bot Information
@@ -68,4 +68,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** seedream-5.0-flash
 
-**API Last Updated:** 2026-10-22 13:58:59.078136
+**API Last Updated:** 2026-11-04T16:58:23.009501

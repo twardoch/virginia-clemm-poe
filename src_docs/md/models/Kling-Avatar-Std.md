@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Video Generation | USD | 0.057 | 1 second |
 | Video Generation | POINTS | 1874 | 1 second |
 
-**Last Checked:** 2026-10-22 13:07:28.094534
+**Last Checked:** 2026-11-04T16:29:20.703432
 
 
 ## Bot Information

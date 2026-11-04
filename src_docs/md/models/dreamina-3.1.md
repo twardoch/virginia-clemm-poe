@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.030 | 1 message |
 | Image Output | POINTS | 1000 | 1 message |
 
-**Last Checked:** 2026-10-22 13:31:13.929821
+**Last Checked:** 2026-11-04T16:46:56.356989
 
 
 ## Bot Information
@@ -60,4 +60,4 @@ Aspect ratio. Valid aspect ratios are 16:9, 4:3, 1:1, 3:4, & 9:16.
 
 **Root:** dreamina-3.1
 
-**API Last Updated:** 2026-10-22 13:58:59.076093
+**API Last Updated:** 2026-11-04T16:58:23.008739

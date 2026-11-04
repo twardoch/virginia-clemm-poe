@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Per Minute of Audio | USD | 0.030 | 1 minute |
 | Per Minute of Audio | POINTS | 1000 | 1 minute |
 
-**Last Checked:** 2026-10-22 13:09:23.145552
+**Last Checked:** 2026-11-04T16:30:37.518534
 
 
 ## Bot Information

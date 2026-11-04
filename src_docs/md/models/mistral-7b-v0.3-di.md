@@ -29,7 +29,7 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.00015 | 1 message |
 | Total cost | POINTS | 5 | 1 message |
 
-**Last Checked:** 2026-10-22 13:36:28.239180
+**Last Checked:** 2026-11-04T16:49:00.134684
 
 
 ## Bot Information
@@ -66,4 +66,4 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 
 **Root:** mistral-7b-v0.3-di
 
-**API Last Updated:** 2026-10-22 13:58:59.076750
+**API Last Updated:** 2026-11-04T16:58:23.009008

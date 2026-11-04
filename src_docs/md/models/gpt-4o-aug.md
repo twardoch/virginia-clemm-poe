@@ -36,7 +36,7 @@ All parsed rates (both currencies):
 | Output | USD | 0.023 | 1 search |
 | Output | POINTS | 750 | 1 search |
 
-**Last Checked:** 2026-10-22 13:37:45.262236
+**Last Checked:** 2026-11-04T16:47:47.031510
 
 
 ## Bot Information
@@ -69,4 +69,4 @@ All parsed rates (both currencies):
 
 **Root:** gpt-4o-aug
 
-**API Last Updated:** 2026-10-22 13:58:59.076838
+**API Last Updated:** 2026-11-04T16:58:23.009050

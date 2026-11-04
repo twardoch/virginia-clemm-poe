@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.011 | 1 image |
 | Image Output | POINTS | 367 | 1 image |
 
-**Last Checked:** 2026-10-22 13:31:05.559972
+**Last Checked:** 2026-11-04T16:50:07.986479
 
 
 ## Bot Information
@@ -62,4 +62,4 @@ Optional parameters:
 
 **Root:** flux-2-klein-9b-base
 
-**API Last Updated:** 2026-10-22 13:58:59.076075
+**API Last Updated:** 2026-11-04T16:58:23.008731

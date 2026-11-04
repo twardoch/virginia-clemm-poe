@@ -36,7 +36,7 @@ All parsed rates (both currencies):
 | Output (video) | USD | 17.68 | 1000000 tokens |
 | Output (video) | POINTS | 584 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:19:28.075127
+**Last Checked:** 2026-11-04T16:45:03.633767
 
 
 ## Bot Information
@@ -69,4 +69,4 @@ All parsed rates (both currencies):
 
 **Root:** gemini-omni-1.1-flash
 
-**API Last Updated:** 2026-10-22 13:58:59.073591
+**API Last Updated:** 2026-11-04T16:58:23.007040

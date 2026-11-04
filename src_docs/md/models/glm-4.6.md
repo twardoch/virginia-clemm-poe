@@ -33,7 +33,7 @@ All parsed rates (both currencies):
 | Output (text) | USD | 2.22 | 1000000 tokens |
 | Output (text) | POINTS | 74 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:44:33.341444
+**Last Checked:** 2026-11-04T16:51:36.954161
 
 
 ## Bot Information
@@ -66,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** glm-4.6
 
-**API Last Updated:** 2026-10-22 13:58:59.077602
+**API Last Updated:** 2026-11-04T16:58:23.009320

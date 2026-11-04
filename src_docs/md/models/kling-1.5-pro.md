@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Video Output | USD | 0.086 | 1 second |
 | Video Output | POINTS | 2834 | 1 second |
 
-**Last Checked:** 2026-10-22 13:35:58.237548
+**Last Checked:** 2026-11-04T16:47:03.422251
 
 
 ## Bot Information
@@ -58,4 +58,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** kling-1.5-pro
 
-**API Last Updated:** 2026-10-22 13:58:59.076627
+**API Last Updated:** 2026-11-04T16:58:23.008966

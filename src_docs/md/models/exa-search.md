@@ -4,7 +4,7 @@ this_file: src_docs/md/models/exa-search.md
 
 # [exa-search](https://poe.com/exa-search){ .md-button .md-button--primary }
 
-**Tier 8:** 200 points · rate: Content (Text, Highlights, Summary)
+**Tier 8:** From 40 points · rate: Each Result Above 10
 
 [Comparison method and assumptions](../pricing-method.md).
 
@@ -14,77 +14,54 @@ this_file: src_docs/md/models/exa-search.md
 
 | Type | Cost |
 |------|------|
-| Search (1-25 Results) | 200 ($0.0061) per search |
-| Search (26-100 Results) | 1000 ($0.030) per search |
-| Content (Text, Highlights, Summary) | 200 ($0.0061) per page/feature |
-| Code Search | 200 ($0.0061) per 1k tokens |
+| Search, Auto (Up To 10 Results) | 280 ($0.0085) per search |
+| Search, Lite (Up To 10 Results) | 160 ($0.0048) per search |
+| Search, Deep Lite Or Deep (Up To 10 Results) | 480 ($0.015) per search |
+| Find Similar (Up To 10 Results) | 160 ($0.0048) per search |
+| Each Result Above 10 | 40 ($0.0012) per result |
+| Result Summary | 40 ($0.0012) per result |
+| Contents: Text, Highlights Or Summary (Each) | 40 ($0.0012) per page |
+| Code Search | 160 ($0.0048) per request |
 
 All parsed rates (both currencies):
 
 | Service | Currency | Amount | Per |
 |---|---|---|---|
-| Search (1-25 results) | USD | 0.0061 | 1 search |
-| Search (1-25 results) | POINTS | 200 | 1 search |
-| Search (26-100 results) | USD | 0.030 | 1 search |
-| Search (26-100 results) | POINTS | 1000 | 1 search |
-| Content (Text, Highlights, Summary) | USD | 0.0061 | 1 page |
-| Content (Text, Highlights, Summary) | POINTS | 200 | 1 page |
-| Code Search | USD | 0.0061 | 1000 tokens |
-| Code Search | POINTS | 200 | 1000 tokens |
+| Search, Auto (up to 10 results) | USD | 0.0085 | 1 search |
+| Search, Auto (up to 10 results) | POINTS | 280 | 1 search |
+| Search, Lite (up to 10 results) | USD | 0.0048 | 1 search |
+| Search, Lite (up to 10 results) | POINTS | 160 | 1 search |
+| Search, Deep Lite or Deep (up to 10 results) | USD | 0.015 | 1 search |
+| Search, Deep Lite or Deep (up to 10 results) | POINTS | 480 | 1 search |
+| Find Similar (up to 10 results) | USD | 0.0048 | 1 search |
+| Find Similar (up to 10 results) | POINTS | 160 | 1 search |
+| Each Result Above 10 | USD | 0.0012 | 1 result |
+| Each Result Above 10 | POINTS | 40 | 1 result |
+| Result Summary | USD | 0.0012 | 1 result |
+| Result Summary | POINTS | 40 | 1 result |
+| Contents: Text, Highlights or Summary (each) | USD | 0.0012 | 1 page |
+| Contents: Text, Highlights or Summary (each) | POINTS | 40 | 1 page |
+| Code Search | USD | 0.0048 | 1 message |
+| Code Search | POINTS | 160 | 1 message |
 
-**Last Checked:** 2026-10-22 13:27:01.961621
+**Last Checked:** 2026-11-04T16:43:05.026873
 
 
 ## Bot Information
 
 **Creator:** @empiriolabsai
 
-**Description:** Utilize Exa's technology for searching web pages, finding similar web pages, crawling, and more.
-Note: This endpoint does not return an LLM-style response (visit the following if you want an LLM-style response: https://poe.com/Exa-Answer or https://poe.com/Exa-Research). File upload is not supported. 
+**Description:** Exa-Search runs Exa's web search, similar-page search, page contents and code search, and returns the results directly. For a written answer, use https://poe.com/Exa-Answer or https://poe.com/Exa-Research. File upload is not supported.
 
-Parameter Controls Available:
-1. Operation Mode
-   - Default: Web Search
-   - Find Similar pages. For finding similar pages.
-   - Get page contents. For getting page contents.
-   - Code search. For code search.
+Operations
+- Web Search: Auto, Lite, Deep Lite or Deep, with category, domain and published-date filters
+- Find Similar Pages: pages like a URL you send
+- Get Page Contents: text, highlights or a summary for the URLs you send, one per line
+- Code Search: code examples and documentation for a query
 
-2. Search Settings (search operation)
-   - Search Type: Select from Auto (Intelligent), Instant (Sub-150ms), Neural (Embeddings), Deep Search (Exa 2.1) and Fast (Streamlined). Default: Auto (Intelligent)
-   - Show Full Content. Toggle to display full page content in results
-   - Include domains. Include comma-separated domains to include
-   - Include text. Input text that must appear (up to 5 words)
-   - Exclude text. Input text that must NOT appear (up to 5 words)
-  
-3. Common Search Settings (search & similar operations)
-   - Number of results: Select from 1 to 100 to set number of results to return. This is set to 10 by default.
-   - Category Filter: All Categories, Company, Research Paper, News, PDF, Github, Tweet, Personal Site, LinkedIn Profile, Financial Report. This is set to None by default
-   - Exclude domains. Include comma-separated domains to exclude
+Lite is the fastest and lowest priced search; it takes no summary, page age or subpages.
 
-4. Date Filters (search operation)
-   - Start Crawl Date. Results crawled after this date (ISO 8601)
-   - End Crawl Date. Results crawled before this date (ISO 8601)
-   - Start Published Date. Content published after this date (ISO 8601)
-   - End Published Date. Content published before this date (ISO 8601)
-
-5. Content Options (search, similar, & contents operations)
-   - Return Text. Toggle to fetch page text content (default: on)
-   - Max Characters. Set number to limit text length (empty = unlimited)
-   - Include HTML Tags. Toggle `on` to preserve HTML structure. (default: off)
-   - Return Highlights. Toggle `on` to get AI-selected key snippets. (default: off)
-   - Sentences per highlight. Set sentences per highlight from 1 to 10. (default: 3)
-   - Highlights per page. Set highlights per result from 1 to 10. (default: 3)
-   - Highlights query. Set text to guide highlight selection
-   - Return Summary. Toggle `on` to get AI-generated summaries. (default: off)
-   - Summary query. Set text to guide summary generation
-
-6. Advanced Options (search, similar, & contents operations)
-   - Livecrawl Mode: Fallback (Cache first), Never (Cache only), Always (Fresh Only), Preferred (Fresh Preferred). Default: Fallback
-   - Subpages to crawl. Set number of linked subpages to crawl from 0 to 10. (default: 0)
-   - Subpage Target. Set text to find specific subpages matching keyword
-
-7. Code Search Controls (code operation)
-   - `--code_tokens Response Length. Set maximum length of code search results. Select from Dynamic (Optimal), 5000 tokens (Standard), 10000 tokens (Extended), 20000 tokens (Maximum). This is set to Dynamic as default.
+This bot supports optional parameters for additional customization.
 
 **Extra:** Powered by a server managed by @empiriolabsai. Learn more
 
@@ -110,4 +87,4 @@ Parameter Controls Available:
 
 **Root:** exa-search
 
-**API Last Updated:** 2026-10-22 13:58:59.075266
+**API Last Updated:** 2026-11-04T16:58:23.008457

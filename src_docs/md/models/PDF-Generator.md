@@ -22,14 +22,14 @@ All parsed rates (both currencies):
 |---|---|---|---|
 | Message cost | POINTS | From 1 | 1 message |
 
-**Last Checked:** 2026-10-22 13:09:36.619529
+**Last Checked:** 2026-11-04T16:30:46.775504
 
 
 ## Bot Information
 
 **Creator:** @OpenSourceLab
 
-**Description:** This bot helps users quickly create professional PDF documents from a simple written request. It uses AI to turn ideas and instructions into a well-structured document with titles, headings, lists, and formatted text. The finished document will be provided as a PDF file, ready to download and use. This makes document creation faster and easier without requiring any technical or formatting skills.
+**Description:** This bot helps users quickly create professional PDF documents from a simple written request. It uses AI to turn ideas and instructions into a well-structured document with titles, headings, lists, and formatted text. The finished document will be provided as a PDF file, ready to download and use. This makes document creation faster and easier without requiring any technical or formatting skills. This script bot is open source you can copy and remix it without conditions.
 
 **Extra:** Runs inside Poe's protected environment. Learn more
 

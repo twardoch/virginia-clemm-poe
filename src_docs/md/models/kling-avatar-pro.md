@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Video Generation | USD | 0.12 | 1 second |
 | Video Generation | POINTS | 3834 | 1 second |
 
-**Last Checked:** 2026-10-22 13:34:27.929311
+**Last Checked:** 2026-11-04T16:46:23.196873
 
 
 ## Bot Information
@@ -60,4 +60,4 @@ Audio: MP3, WAV
 
 **Root:** kling-avatar-pro
 
-**API Last Updated:** 2026-10-22 13:58:59.076488
+**API Last Updated:** 2026-11-04T16:58:23.008912

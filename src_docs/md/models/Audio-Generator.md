@@ -22,14 +22,14 @@ All parsed rates (both currencies):
 |---|---|---|---|
 | Message cost | POINTS | From 1 | 1 message |
 
-**Last Checked:** 2026-10-22 12:58:11.864235
+**Last Checked:** 2026-11-04T16:23:25.886086
 
 
 ## Bot Information
 
 **Creator:** @OpenSourceLab
 
-**Description:** This bot helps users quickly create audio melodies from a simple written request. It uses AI to turn ideas into natural-sounding music and sound. The finished audio will be provided as an audio file, ready to download and use. This makes audio creation faster and easier without requiring any technical recording, editing, or production skills.
+**Description:** This bot helps users quickly create audio melodies from a simple written request. It uses AI to turn ideas into natural-sounding music and sound. The finished audio will be provided as an audio file, ready to download and use. This makes audio creation faster and easier without requiring any technical recording, editing, or production skills. This script bot is open source you can copy and remix it without conditions.
 
 **Extra:** Runs inside Poe's protected environment. Learn more
 

@@ -38,7 +38,7 @@ All parsed rates (both currencies):
 | Video Output (1080p; 5s) | USD | 0.62 | 5 second |
 | Video Output (1080p; 5s) | POINTS | 20445 | 5 second |
 
-**Last Checked:** 2026-10-22 13:33:27.247777
+**Last Checked:** 2026-11-04T16:47:49.342737
 
 
 ## Bot Information
@@ -92,4 +92,4 @@ Parameter Controls and Usage:
 
 **Root:** pixverse-v5
 
-**API Last Updated:** 2026-10-22 13:58:59.076372
+**API Last Updated:** 2026-11-04T16:58:23.008865

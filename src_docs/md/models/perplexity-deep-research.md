@@ -35,7 +35,7 @@ All parsed rates (both currencies):
 | Search Queries | USD | 0.012 | 1 query |
 | Search Queries | POINTS | 400 | 1 query |
 
-**Last Checked:** 2026-10-22 13:30:04.481327
+**Last Checked:** 2026-11-04T16:49:29.491208
 
 
 ## Bot Information
@@ -70,4 +70,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** perplexity-deep-research
 
-**API Last Updated:** 2026-10-22 13:58:59.075931
+**API Last Updated:** 2026-11-04T16:58:23.008661

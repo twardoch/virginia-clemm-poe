@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Search Request | USD | 0.0061 | 1 message |
 | Search Request | POINTS | 200 | 1 message |
 
-**Last Checked:** 2026-10-22 13:24:16.132599
+**Last Checked:** 2026-11-04T16:43:47.217131
 
 
 ## Bot Information
@@ -78,4 +78,4 @@ Parameter Controls Available:
 
 **Root:** perplexity-search
 
-**API Last Updated:** 2026-10-22 13:58:59.074659
+**API Last Updated:** 2026-11-04T16:58:23.008258

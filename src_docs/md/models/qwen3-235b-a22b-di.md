@@ -29,7 +29,7 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.0019 | 1 message |
 | Total cost | POINTS | 63 | 1 message |
 
-**Last Checked:** 2026-10-22 13:28:35.597069
+**Last Checked:** 2026-11-04T16:48:56.431588
 
 
 ## Bot Information
@@ -64,4 +64,4 @@ Supports 32k tokens of input context and 8k tokens of output context. Quantizati
 
 **Root:** qwen3-235b-a22b-di
 
-**API Last Updated:** 2026-10-22 13:58:59.075648
+**API Last Updated:** 2026-11-04T16:58:23.008559

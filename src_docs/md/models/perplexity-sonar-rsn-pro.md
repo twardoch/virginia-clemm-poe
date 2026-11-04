@@ -35,7 +35,7 @@ All parsed rates (both currencies):
 | Output Tokens | USD | 0.019 | 1000 tokens |
 | Output Tokens | POINTS | 640 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:30:00.462128
+**Last Checked:** 2026-11-04T16:46:23.837245
 
 
 ## Bot Information
@@ -68,4 +68,4 @@ All parsed rates (both currencies):
 
 **Root:** perplexity-sonar-rsn-pro
 
-**API Last Updated:** 2026-10-22 13:58:59.075923
+**API Last Updated:** 2026-11-04T16:58:23.008658

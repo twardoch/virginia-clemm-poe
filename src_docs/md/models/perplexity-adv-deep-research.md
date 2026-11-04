@@ -32,7 +32,7 @@ All parsed rates (both currencies):
 | URL Fetch Call | USD | 0.0013 | 1 call |
 | URL Fetch Call | POINTS | 44 | 1 call |
 
-**Last Checked:** 2026-10-22 13:24:11.557440
+**Last Checked:** 2026-11-04T16:41:52.646347
 
 
 ## Bot Information
@@ -89,4 +89,4 @@ Parameter controls available:
 
 **Root:** perplexity-adv-deep-research
 
-**API Last Updated:** 2026-10-22 13:58:59.074649
+**API Last Updated:** 2026-11-04T16:58:23.008255

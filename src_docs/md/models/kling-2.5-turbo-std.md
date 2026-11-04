@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Video Output | USD | 0.042 | 1 second |
 | Video Output | POINTS | 1400 | 1 second |
 
-**Last Checked:** 2026-10-22 13:32:52.586957
+**Last Checked:** 2026-11-04T16:50:51.109170
 
 
 ## Bot Information
@@ -65,4 +65,4 @@ Supported image file format: jpeg, png, webp
 
 **Root:** kling-2.5-turbo-std
 
-**API Last Updated:** 2026-10-22 13:58:59.076306
+**API Last Updated:** 2026-11-04T16:58:23.008814

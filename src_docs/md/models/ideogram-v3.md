@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.061 | 1 message |
 | Image Output | POINTS | 2000 | 1 message |
 
-**Last Checked:** 2026-10-22 13:32:09.843300
+**Last Checked:** 2026-11-04T16:45:11.981525
 
 
 ## Bot Information
@@ -64,4 +64,4 @@ Set style. Select the desired style preset. No style set as default.
 
 **Root:** ideogram-v3
 
-**API Last Updated:** 2026-10-22 13:58:59.076216
+**API Last Updated:** 2026-11-04T16:58:23.008777

@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | Dialect | USD | 0.015 | 1000 characters |
 | Dialect | POINTS | 489 | 1000 characters |
 
-**Last Checked:** 2026-10-22 13:13:48.978692
+**Last Checked:** 2026-11-04T16:33:53.375383
 
 
 ## Bot Information

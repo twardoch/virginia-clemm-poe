@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | Per Step Cost | USD | 0.0021 | 1 step cost |
 | Per Step Cost | POINTS | 69 | 1 step cost |
 
-**Last Checked:** 2026-10-22 13:30:34.011506
+**Last Checked:** 2026-11-04T16:44:18.558778
 
 
 ## Bot Information
@@ -77,4 +77,4 @@ Parameter controls available:
 
 **Root:** stable-audio-2.0
 
-**API Last Updated:** 2026-10-22 13:58:59.076013
+**API Last Updated:** 2026-11-04T16:58:23.008698

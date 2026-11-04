@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.021 | 1 message |
 | Image Output | POINTS | 709 | 1 message |
 
-**Last Checked:** 2026-10-22 13:31:38.559715
+**Last Checked:** 2026-11-04T16:47:07.635723
 
 
 ## Bot Information
@@ -59,4 +59,4 @@ Select an aspect ratio. Valid aspect ratios are 16:9, 4:3, 1:1, 3:4, 9:16.  Send
 
 **Root:** flux-krea
 
-**API Last Updated:** 2026-10-22 13:58:59.076174
+**API Last Updated:** 2026-11-04T16:58:23.008759

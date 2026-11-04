@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Video Output | USD | 0.43 | 1 message |
 | Video Output | POINTS | 14167 | 1 message |
 
-**Last Checked:** 2026-10-22 13:35:30.043432
+**Last Checked:** 2026-11-04T16:52:15.369278
 
 
 ## Bot Information
@@ -56,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** hailuo-ai
 
-**API Last Updated:** 2026-10-22 13:58:59.076560
+**API Last Updated:** 2026-11-04T16:58:23.008939

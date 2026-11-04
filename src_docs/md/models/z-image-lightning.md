@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.0051 | 1 image |
 | Image Output | POINTS | 167 | 1 image |
 
-**Last Checked:** 2026-10-22 13:30:57.613119
+**Last Checked:** 2026-11-04T16:44:35.045800
 
 
 ## Bot Information
@@ -62,4 +62,4 @@ Optional parameters:
 
 **Root:** z-image-lightning
 
-**API Last Updated:** 2026-10-22 13:58:59.076058
+**API Last Updated:** 2026-11-04T16:58:23.008722

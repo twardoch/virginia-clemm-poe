@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Input (text) | USD | 0.050 | 1000 characters |
 | Input (text) | POINTS | 1650 | 1000 characters |
 
-**Last Checked:** 2026-10-22 13:09:19.431573
+**Last Checked:** 2026-11-04T16:30:30.512649
 
 
 ## Bot Information

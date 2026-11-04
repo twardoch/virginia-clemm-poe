@@ -38,7 +38,7 @@ All parsed rates (both currencies):
 | Advanced Template to Video Output | USD | 0.51 | 1 video |
 | Advanced Template to Video Output | POINTS | 16667 | 1 video |
 
-**Last Checked:** 2026-10-22 13:34:08.606984
+**Last Checked:** 2026-11-04T16:51:37.006444
 
 
 ## Bot Information
@@ -81,4 +81,4 @@ Duration is limited to 5 seconds.
 
 **Root:** vidu
 
-**API Last Updated:** 2026-10-22 13:58:59.076455
+**API Last Updated:** 2026-11-04T16:58:23.008897

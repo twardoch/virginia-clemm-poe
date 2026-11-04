@@ -36,7 +36,7 @@ All parsed rates (both currencies):
 | Output | USD | 0.010 | 1 search |
 | Output | POINTS | 334 | 1 search |
 
-**Last Checked:** 2026-10-22 13:22:41.260611
+**Last Checked:** 2026-11-04T16:41:14.916064
 
 
 ## Bot Information
@@ -69,4 +69,4 @@ All parsed rates (both currencies):
 
 **Root:** claude-haiku-5.5
 
-**API Last Updated:** 2026-10-22 13:58:59.074259
+**API Last Updated:** 2026-11-04T16:58:23.007293

@@ -26,14 +26,14 @@ All parsed rates (both currencies):
 | 1080P | USD | 0.150 | 1 second |
 | 1080P | POINTS | 5000 | 1 second |
 
-**Last Checked:** 2026-10-22 13:10:56.016648
+**Last Checked:** 2026-11-04T16:31:35.043815
 
 
 ## Bot Information
 
 **Creator:** @OpenSourceLab
 
-**Description:** Cost-effective video generator based on Wan-2.7 (with synchronized audio). Ideal for content creators, marketers, educators and hobbyists who want quick quality video output without the heavy resource cost. Optionally you can upload a reference image to generate a video with Wan-2.7.
+**Description:** Cost-effective video generator based on Wan-2.7 (with synchronized audio). Ideal for content creators, marketers, educators and hobbyists who want quick quality video output without the heavy resource cost. Optionally you can upload a reference image to animate it.
 
 **Extra:** Powered by Wan-2.7, a model that is hosted by @empiriolabsai. Learn more
 

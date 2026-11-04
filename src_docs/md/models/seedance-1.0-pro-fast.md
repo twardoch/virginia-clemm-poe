@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Video Output | USD | 1.01 | 1000000 tokens |
 | Video Output | POINTS | 33334 | 1000000 tokens |
 
-**Last Checked:** 2026-10-22 13:34:13.035060
+**Last Checked:** 2026-11-04T16:46:17.343869
 
 
 ## Bot Information
@@ -65,4 +65,4 @@ File attachment accepted: jpeg, png, webp
 
 **Root:** seedance-1.0-pro-fast
 
-**API Last Updated:** 2026-10-22 13:58:59.076464
+**API Last Updated:** 2026-11-04T16:58:23.008901

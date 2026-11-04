@@ -33,7 +33,7 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.47 | 1000000 tokens |
 | Output (text) | POINTS | 16 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:46:12.135618
+**Last Checked:** 2026-11-04T16:52:14.592757
 
 
 ## Bot Information
@@ -68,4 +68,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** qwen3.8-flash-el
 
-**API Last Updated:** 2026-10-22 13:58:59.077918
+**API Last Updated:** 2026-11-04T16:58:23.009414

@@ -35,7 +35,7 @@ All parsed rates (both currencies):
 | Output Tokens | USD | 0.039 | 1000 tokens |
 | Output Tokens | POINTS | 1300 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:29:56.577169
+**Last Checked:** 2026-11-04T16:44:02.349863
 
 
 ## Bot Information
@@ -98,4 +98,4 @@ Parameter controls available:
 
 **Root:** perplexity-pro-search
 
-**API Last Updated:** 2026-10-22 13:58:59.075912
+**API Last Updated:** 2026-11-04T16:58:23.008654

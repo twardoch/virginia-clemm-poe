@@ -36,7 +36,7 @@ All parsed rates (both currencies):
 | Bot message | USD | 0.0051 | 1 message |
 | Bot message | POINTS | 167 | 1 message |
 
-**Last Checked:** 2026-10-22 13:42:30.144463
+**Last Checked:** 2026-11-04T16:55:57.025653
 
 
 ## Bot Information
@@ -71,4 +71,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** step-3.7-flash-el
 
-**API Last Updated:** 2026-10-22 13:58:59.077338
+**API Last Updated:** 2026-11-04T16:58:23.009231

@@ -29,7 +29,7 @@ All parsed rates (both currencies):
 | Video Output 2160p | USD | 0.24 | 1 second |
 | Video Output 2160p | POINTS | 8000 | 1 second |
 
-**Last Checked:** 2026-10-22 13:34:00.580568
+**Last Checked:** 2026-11-04T16:46:11.837016
 
 
 ## Bot Information
@@ -72,4 +72,4 @@ File attachment accepted: jpeg, png, webp
 
 **Root:** ltx-2-pro
 
-**API Last Updated:** 2026-10-22 13:58:59.076439
+**API Last Updated:** 2026-11-04T16:58:23.008891

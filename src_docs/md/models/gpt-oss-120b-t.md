@@ -29,7 +29,7 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.0015 | 1 message |
 | Total cost | POINTS | 50 | 1 message |
 
-**Last Checked:** 2026-10-22 13:27:10.106251
+**Last Checked:** 2026-11-04T16:48:31.782891
 
 
 ## Bot Information
@@ -62,4 +62,4 @@ All parsed rates (both currencies):
 
 **Root:** gpt-oss-120b-t
 
-**API Last Updated:** 2026-10-22 13:58:59.075297
+**API Last Updated:** 2026-11-04T16:58:23.008467

@@ -33,7 +33,7 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.51 | 1000000 tokens |
 | Output (text) | POINTS | 17 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:22:45.239348
+**Last Checked:** 2026-11-04T16:43:14.366442
 
 
 ## Bot Information
@@ -79,4 +79,4 @@ Parameter controls available:
 
 **Root:** seed-2.0-mini
 
-**API Last Updated:** 2026-10-22 13:58:59.074276
+**API Last Updated:** 2026-11-04T16:58:23.007299

@@ -38,7 +38,7 @@ All parsed rates (both currencies):
 | Image Generation | USD | 0.280 | 1 image |
 | Image Generation | POINTS | 9333 | 1 image |
 
-**Last Checked:** 2026-10-22 13:21:58.407628
+**Last Checked:** 2026-11-04T16:46:11.539607
 
 
 ## Bot Information
@@ -79,4 +79,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** mistral-small-4
 
-**API Last Updated:** 2026-10-22 13:58:59.074112
+**API Last Updated:** 2026-11-04T16:58:23.007238

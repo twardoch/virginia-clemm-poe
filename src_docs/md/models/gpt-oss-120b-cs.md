@@ -33,7 +33,7 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.76 | 1000000 tokens |
 | Output (text) | POINTS | 25 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:27:52.643518
+**Last Checked:** 2026-11-04T16:48:49.669540
 
 
 ## Bot Information
@@ -66,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** gpt-oss-120b-cs
 
-**API Last Updated:** 2026-10-22 13:58:59.075514
+**API Last Updated:** 2026-11-04T16:58:23.008538

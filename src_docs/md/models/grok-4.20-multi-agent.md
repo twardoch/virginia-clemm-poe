@@ -4,7 +4,7 @@ this_file: src_docs/md/models/grok-4.20-multi-agent.md
 
 # [grok-4.20-multi-agent](https://poe.com/grok-4.20-multi-agent){ .md-button .md-button--primary }
 
-**Tier 3:** 63 points · 1,000 tokens (500 input + 500 output)
+**Tier 4:** 133.5 points · 1,000 tokens (500 input + 500 output)
 
 [Comparison method and assumptions](../pricing-method.md).
 
@@ -14,26 +14,26 @@ this_file: src_docs/md/models/grok-4.20-multi-agent.md
 
 | Type | Cost |
 |------|------|
-| Prompt | $0.0000012626/token |
-| Completion | $0.0000025253/token |
+| Prompt | $0.0000020202/token |
+| Completion | $0.0000060606/token |
 
 ### Website Pricing
 
 | Type | Cost |
 |------|------|
-| Input Text | 42 points/1k tokens |
-| Output (Text) | $2.53/1M tokens · 84 points/1k tokens |
+| Input Text | 67 points/1k tokens |
+| Output (Text) | $6.06/1M tokens · 200 points/1k tokens |
 
 All parsed rates (both currencies):
 
 | Service | Currency | Amount | Per |
 |---|---|---|---|
-| Input (text) | USD | 1.26 | 1000000 tokens |
-| Input (text) | POINTS | 42 | 1000 tokens |
-| Output (text) | USD | 2.53 | 1000000 tokens |
-| Output (text) | POINTS | 84 | 1000 tokens |
+| Input | USD | 2.02 | 1000000 tokens |
+| Input | POINTS | 67 | 1000 tokens |
+| Output (text) | USD | 6.06 | 1000000 tokens |
+| Output (text) | POINTS | 200 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:21:54.467356
+**Last Checked:** 2026-11-04T16:42:51.539335
 
 
 ## Bot Information
@@ -68,4 +68,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** grok-4.20-multi-agent
 
-**API Last Updated:** 2026-10-22 13:58:59.074096
+**API Last Updated:** 2026-11-04T16:58:23.007233

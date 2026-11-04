@@ -33,7 +33,7 @@ All parsed rates (both currencies):
 | Output (text) | USD | 1.21 | 1000000 tokens |
 | Output (text) | POINTS | 40 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:43:04.325713
+**Last Checked:** 2026-11-04T16:49:19.584921
 
 
 ## Bot Information
@@ -66,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** minimax-m3
 
-**API Last Updated:** 2026-10-22 13:58:59.077419
+**API Last Updated:** 2026-11-04T16:58:23.009257

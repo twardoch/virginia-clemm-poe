@@ -33,7 +33,7 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.73 | 1000000 tokens |
 | Output (text) | POINTS | 24 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:29:23.443957
+**Last Checked:** 2026-11-04T16:49:12.427062
 
 
 ## Bot Information
@@ -66,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** llama-3.3-70b
 
-**API Last Updated:** 2026-10-22 13:58:59.075832
+**API Last Updated:** 2026-11-04T16:58:23.008610

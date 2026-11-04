@@ -26,14 +26,14 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.25 | 1000000 tokens |
 | Output (text) | POINTS | 9 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:03:31.269258
+**Last Checked:** 2026-11-04T16:26:43.391174
 
 
 ## Bot Information
 
 **Creator:** @OpenSourceLab
 
-**Description:** Latest open-source large language model from Ziphu AI built for agentic coding or autonomous task execution and optimized for refactoring large codebases, debugging runtime error logs, and extended with multi-file processing. Supported files are PDF, CSS, CSV, JSON, JPG, PNG, WEBP, JS, PY, HTML, HTM, TXT, XLSX, and DOCX. This bot can't process HEIC, AVIF, MP4, MP3, WAV, OBJ, XLS and STL formats.
+**Description:** Latest open-source large language model from Ziphu AI built for agentic coding or autonomous task execution and optimized for refactoring large codebases, deep web search, and extended with multi-file processing. Supported files are PDF, CSS, CSV, JSON, JPG, PNG, WEBP, JS, PY, HTML, HTM, TXT, XLSX, and DOCX. GLM-5.3-OSL can't process HEIC, AVIF, MP4, MP3, WAV, OBJ, XLS and STL formats.
 
 **Extra:** Powered by a server managed by @OpenSourceLab. Learn more
 

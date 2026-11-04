@@ -17,6 +17,7 @@ MAX_PROFILE_SCROLLS = 200
 MAX_STALLED_SCROLLS = 3
 
 VENDOR_FILE = Path(__file__).parent / "data" / "good_vendors.txt"
+EXTRA_BOT_FILE = Path(__file__).parent / "data" / "extra_bots.txt"
 
 
 def load_vendors() -> list[str]:
@@ -27,6 +28,27 @@ def load_vendors() -> list[str]:
     if any(not re.fullmatch(r"[A-Za-z0-9_]+", handle) for handle in handles):
         raise ValueError("Vendor file must contain Poe profile handles, not URLs")
     return list(dict.fromkeys(handles))
+
+
+def load_extra_bots() -> list[PoeBot]:
+    """Include explicit public bots missing from API and curated profile discovery."""
+    handles = {}
+    for line in EXTRA_BOT_FILE.read_text().splitlines():
+        handle = line.strip()
+        if not handle or handle.startswith("#"):
+            continue
+        if not re.fullmatch(r"[A-Za-z0-9_.-]+", handle):
+            raise ValueError("Extra bot file must contain Poe bot handles, not URLs")
+        handles.setdefault(handle.casefold(), handle)
+    return [
+        PoeBot(
+            id=handle,
+            owned_by="unknown",
+            root=handle,
+            architecture=Architecture(input_modalities=[], output_modalities=[], modality="unknown"),
+        )
+        for handle in handles.values()
+    ]
 
 
 def parse_profile(html: str, vendor: str) -> tuple[list[PoeBot], int]:
@@ -43,12 +65,16 @@ def parse_profile(html: str, vendor: str) -> tuple[list[PoeBot], int]:
         for node in nodes
         if node.get("handle") and node.get("deletionState", "not_deleted") == "not_deleted"
     }
+    handles = {node.get("displayName") or node["handle"]: node["handle"] for node in nodes if node.get("handle")}
     # Hydration contains only the first page; the rendered panel grows on scroll.
     for item in soup.select("#profile-created-bots [data-bot-list-item]"):
         name = item.select_one("[class*=botName]")
         description = item.select_one("[class*=botDescription]")
         if name:
-            found.setdefault(name.get_text(strip=True), description.get_text(strip=True) if description else None)
+            display_name = name.get_text(strip=True)
+            found.setdefault(
+                handles.get(display_name, display_name), description.get_text(strip=True) if description else None
+            )
     bots = [
         PoeBot(
             id=handle,

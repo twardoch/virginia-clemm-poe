@@ -29,7 +29,7 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.058 | 1 message |
 | Total cost | POINTS | 1900 | 1 message |
 
-**Last Checked:** 2026-10-22 13:32:13.872427
+**Last Checked:** 2026-11-04T16:47:18.080370
 
 
 ## Bot Information
@@ -68,4 +68,4 @@ Notes: Supported file type: JPEG, WebP and PNG. Powered by Ideogram.
 
 **Root:** ideogram-v2
 
-**API Last Updated:** 2026-10-22 13:58:59.076226
+**API Last Updated:** 2026-11-04T16:58:23.008783

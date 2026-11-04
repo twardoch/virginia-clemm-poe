@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Deep Research (per message) | USD | 0.036 | 1 message |
 | Deep Research (per message) | POINTS | 1800 | 1 message |
 
-**Last Checked:** 2026-10-22 13:00:27.991938
+**Last Checked:** 2026-11-04T16:24:13.406220
 
 
 ## Bot Information

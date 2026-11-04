@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Output (audio) | USD | 0.13 | 1 hour |
 | Output (audio) | POINTS | 4200 | 1 hour |
 
-**Last Checked:** 2026-10-22 13:28:51.800509
+**Last Checked:** 2026-11-04T16:43:34.327442
 
 
 ## Bot Information
@@ -160,4 +160,4 @@ Cantonese (yue)
 
 **Root:** cartesia-ink-whisper
 
-**API Last Updated:** 2026-10-22 13:58:59.075702
+**API Last Updated:** 2026-11-04T16:58:23.008564

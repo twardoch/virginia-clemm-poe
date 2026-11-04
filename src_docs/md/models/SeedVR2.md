@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.0010 | 1 megapixel |
 | Image Output | POINTS | 34 | 1 megapixel |
 
-**Last Checked:** 2026-10-22 13:12:13.342732
+**Last Checked:** 2026-11-04T16:32:32.720611
 
 
 ## Bot Information

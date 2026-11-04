@@ -29,7 +29,7 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.039 | 1 message |
 | Total cost | POINTS | 1300 | 1 message |
 
-**Last Checked:** 2026-10-22 13:35:34.043861
+**Last Checked:** 2026-11-04T16:46:53.181242
 
 
 ## Bot Information
@@ -67,4 +67,4 @@ Style to specify a style (one of `GENERAL`, `REALISTIC`, `DESIGN`, `3D RENDER` a
 
 **Root:** ideogram-v2a
 
-**API Last Updated:** 2026-10-22 13:58:59.076569
+**API Last Updated:** 2026-11-04T16:58:23.008943

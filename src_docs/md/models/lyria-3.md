@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | Full song | USD | 0.08 | 1 message |
 | Full song | POINTS | 2667 | 1 message |
 
-**Last Checked:** 2026-10-22 13:33:35.221397
+**Last Checked:** 2026-11-04T16:46:00.452870
 
 
 ## Bot Information
@@ -65,4 +65,4 @@ Lyria blocks prompts that name specific artists or songs (artist-intent and reci
 
 **Root:** lyria-3
 
-**API Last Updated:** 2026-10-22 13:58:59.076390
+**API Last Updated:** 2026-11-04T16:58:23.008872

@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.0010 | 1 message |
 | Image Output | POINTS | 34 | 1 message |
 
-**Last Checked:** 2026-10-22 13:38:07.988638
+**Last Checked:** 2026-11-04T16:53:33.130905
 
 
 ## Bot Information
@@ -56,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** remove-background
 
-**API Last Updated:** 2026-10-22 13:58:59.076879
+**API Last Updated:** 2026-11-04T16:58:23.009063

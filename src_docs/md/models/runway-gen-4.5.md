@@ -29,7 +29,7 @@ All parsed rates (both currencies):
 | 10 seconds | USD | 3.0 | 10 second |
 | 10 seconds | POINTS | 100000 | 10 second |
 
-**Last Checked:** 2026-10-22 13:23:49.760888
+**Last Checked:** 2026-11-04T16:41:45.724593
 
 
 ## Bot Information
@@ -66,4 +66,4 @@ Set Duration. Select from (5 seconds, 8 seconds, 10 seconds) to specify video le
 
 **Root:** runway-gen-4.5
 
-**API Last Updated:** 2026-10-22 13:58:59.074619
+**API Last Updated:** 2026-11-04T16:58:23.008244

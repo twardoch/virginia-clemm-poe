@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Finetuning | USD | 1.72 | 1 message |
 | Finetuning | POINTS | 56667 | 1 message |
 
-**Last Checked:** 2026-10-22 13:35:41.974723
+**Last Checked:** 2026-11-04T16:52:21.320955
 
 
 ## Bot Information
@@ -56,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** flux-dev-finetuner
 
-**API Last Updated:** 2026-10-22 13:58:59.076592
+**API Last Updated:** 2026-11-04T16:58:23.008953

@@ -1,0 +1,5 @@
+# Explicit public bots absent from API and curated vendor Created lists (issue 341).
+G5-LM
+mimo-v2.6-flash
+mimo-v2.6-pro
+Qwen3.8-27B

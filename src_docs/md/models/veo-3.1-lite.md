@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | 1080p | USD | 0.08 | 1 second |
 | 1080p | POINTS | 2400 | 1 second |
 
-**Last Checked:** 2026-10-22 13:23:30.120962
+**Last Checked:** 2026-11-04T16:43:30.264113
 
 
 ## Bot Information
@@ -66,4 +66,4 @@ Please only upload photos that you own or have the right to use. Otherwise, the 
 
 **Root:** veo-3.1-lite
 
-**API Last Updated:** 2026-10-22 13:58:59.074537
+**API Last Updated:** 2026-11-04T16:58:23.008220

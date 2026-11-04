@@ -34,7 +34,7 @@ All parsed rates (both currencies):
 | Input image | USD | 0.003 | 1 image |
 | Input image | POINTS | 100 | 1 image |
 
-**Last Checked:** 2026-10-22 13:45:19.708186
+**Last Checked:** 2026-11-04T16:50:39.731701
 
 
 ## Bot Information
@@ -74,4 +74,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** qwen-image-3.0-el
 
-**API Last Updated:** 2026-10-22 13:58:59.077754
+**API Last Updated:** 2026-11-04T16:58:23.009365

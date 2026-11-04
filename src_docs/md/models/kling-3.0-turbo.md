@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | 1080P | USD | 0.225 | 1 second |
 | 1080P | POINTS | 7500 | 1 second |
 
-**Last Checked:** 2026-10-22 13:42:04.950738
+**Last Checked:** 2026-11-04T16:49:02.556781
 
 
 ## Bot Information
@@ -79,4 +79,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** kling-3.0-turbo
 
-**API Last Updated:** 2026-10-22 13:58:59.077273
+**API Last Updated:** 2026-11-04T16:58:23.009208

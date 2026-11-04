@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | Video Output with audio | USD | 0.34 | 1 second |
 | Video Output with audio | POINTS | 11200 | 1 second |
 
-**Last Checked:** 2026-10-22 13:24:48.097830
+**Last Checked:** 2026-11-04T16:42:08.232057
 
 
 ## Bot Information
@@ -62,4 +62,4 @@ Note: Generations may take upwards of 20 minutes to complete.
 
 **Root:** kling-v3-pro
 
-**API Last Updated:** 2026-10-22 13:58:59.074740
+**API Last Updated:** 2026-11-04T16:58:23.008288

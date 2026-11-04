@@ -37,7 +37,7 @@ All parsed rates (both currencies):
 | Output (image) | USD | 30.30 | 1000000 tokens |
 | Output (image) | POINTS | 1000 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:19:32.702126
+**Last Checked:** 2026-11-04T16:39:50.868535
 
 
 ## Bot Information
@@ -72,4 +72,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** nano-banana-2-lite
 
-**API Last Updated:** 2026-10-22 13:58:59.073618
+**API Last Updated:** 2026-11-04T16:58:23.007051

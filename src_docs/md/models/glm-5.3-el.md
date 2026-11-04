@@ -36,7 +36,7 @@ All parsed rates (both currencies):
 | Bot message | USD | 0.0061 | 1 message |
 | Bot message | POINTS | 200 | 1 message |
 
-**Last Checked:** 2026-10-22 13:45:48.245069
+**Last Checked:** 2026-11-04T16:52:08.139626
 
 
 ## Bot Information
@@ -71,4 +71,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** glm-5.3-el
 
-**API Last Updated:** 2026-10-22 13:58:59.077834
+**API Last Updated:** 2026-11-04T16:58:23.009396

@@ -33,7 +33,7 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.59 | 1000000 tokens |
 | Output (text) | POINTS | 20 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:44:29.395738
+**Last Checked:** 2026-11-04T16:50:07.975017
 
 
 ## Bot Information
@@ -66,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** hy3
 
-**API Last Updated:** 2026-10-22 13:58:59.077586
+**API Last Updated:** 2026-11-04T16:58:23.009314

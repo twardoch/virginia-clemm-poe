@@ -29,7 +29,7 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.00030 | 1 message |
 | Total cost | POINTS | 10 | 1 message |
 
-**Last Checked:** 2026-10-22 13:28:59.945614
+**Last Checked:** 2026-11-04T16:49:01.645047
 
 
 ## Bot Information
@@ -64,4 +64,4 @@ Input token limit 128k, output token limit 8k. Quantization: FP16 (official).
 
 **Root:** llama-3.1-8b-di
 
-**API Last Updated:** 2026-10-22 13:58:59.075732
+**API Last Updated:** 2026-11-04T16:58:23.008574

@@ -49,4 +49,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** aplomb-1
 
-**API Last Updated:** 2026-10-22 13:58:59.078119
+**API Last Updated:** 2026-11-04T16:58:23.009495

@@ -33,7 +33,7 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.28 | 1000000 tokens |
 | Output (text) | POINTS | 10 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:26:33.386139
+**Last Checked:** 2026-11-04T16:48:12.364656
 
 
 ## Bot Information
@@ -66,4 +66,4 @@ All parsed rates (both currencies):
 
 **Root:** nova-lite-1.0
 
-**API Last Updated:** 2026-10-22 13:58:59.075168
+**API Last Updated:** 2026-11-04T16:58:23.008425

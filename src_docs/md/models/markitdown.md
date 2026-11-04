@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Markdown conversion | USD | 0.0030 | 1 markdown conversion |
 | Markdown conversion | POINTS | 100 | 1 markdown conversion |
 
-**Last Checked:** 2026-10-22 13:38:28.714571
+**Last Checked:** 2026-11-04T16:49:47.222394
 
 
 ## Bot Information
@@ -56,4 +56,4 @@ All parsed rates (both currencies):
 
 **Root:** markitdown
 
-**API Last Updated:** 2026-10-22 13:58:59.076985
+**API Last Updated:** 2026-11-04T16:58:23.009090

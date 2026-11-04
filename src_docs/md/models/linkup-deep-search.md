@@ -28,7 +28,7 @@ All parsed rates (both currencies):
 | Bot message | USD | 0.081 | 1 message |
 | Bot message | POINTS | 2667 | 1 message |
 
-**Last Checked:** 2026-10-22 13:29:48.608602
+**Last Checked:** 2026-11-04T16:46:18.204495
 
 
 ## Bot Information
@@ -75,4 +75,4 @@ Learn more: https://www.linkup.so/
 
 **Root:** linkup-deep-search
 
-**API Last Updated:** 2026-10-22 13:58:59.075886
+**API Last Updated:** 2026-11-04T16:58:23.008642

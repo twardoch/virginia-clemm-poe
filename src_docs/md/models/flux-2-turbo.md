@@ -26,7 +26,7 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.0076 | 1 image |
 | Image Output | POINTS | 250 | 1 image |
 
-**Last Checked:** 2026-10-22 13:31:26.506999
+**Last Checked:** 2026-11-04T16:47:02.475755
 
 
 ## Bot Information
@@ -62,4 +62,4 @@ Set aspect ratio: 16:9, 4:3, 1:1, 3:4, 9:16
 
 **Root:** flux-2-turbo
 
-**API Last Updated:** 2026-10-22 13:58:59.076116
+**API Last Updated:** 2026-11-04T16:58:23.008749

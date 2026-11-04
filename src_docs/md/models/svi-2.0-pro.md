@@ -32,7 +32,7 @@ All parsed rates (both currencies):
 | Quality | USD | 0.13 | 1 quality |
 | Quality | POINTS | 4334 | 1 quality |
 
-**Last Checked:** 2026-10-22 13:31:18.519806
+**Last Checked:** 2026-11-04T16:50:16.855546
 
 
 ## Bot Information
@@ -89,4 +89,4 @@ Parameter controls available:
 
 **Root:** svi-2.0-pro
 
-**API Last Updated:** 2026-10-22 13:58:59.076100
+**API Last Updated:** 2026-11-04T16:58:23.008742

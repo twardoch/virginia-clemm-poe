@@ -26,14 +26,14 @@ All parsed rates (both currencies):
 | Output (text) | USD | 1.80 | 1000000 tokens |
 | Output (text) | POINTS | 60 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:01:22.680877
+**Last Checked:** 2026-11-04T16:24:40.290609
 
 
 ## Bot Information
 
 **Creator:** @OpenSourceLab
 
-**Description:** Dolphin-Mistral-24B is an uncensored version of Mistral-Small-24B-Instruct-2501. It is a fine-tuned LLM that gives users greater control over alignment, unrestricted system prompts, and better model behavior. The model targets advanced use cases by removing many of the standard safety and alignment layers found in mainstream assistant models. Dolphin-Mistral-24B has a context of 128k. For best unrestricted responses activate reasoning in the settings.
+**Description:** Uncensored version of Mistral-Small-24B-Instruct-2501, that was released Jul 9, 2025. Dolphin-Mistral-24B is fine-tuned to give users greater control over alignment, system prompts, and AI behavior. The model targets advanced use cases by removing many of the standard safety and alignment layers found in mainstream assistant models. For maximum unrestricted results activate the reasoning in the settings. Dolphin-Mistral-24B has a context of 128k tokens.
 
 **Extra:** Powered by a server managed by @OpenSourceLab. Learn more
 

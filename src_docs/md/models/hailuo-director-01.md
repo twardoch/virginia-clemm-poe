@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Video Output | USD | 0.51 | 1 message |
 | Video Output | POINTS | 16667 | 1 message |
 
-**Last Checked:** 2026-10-22 13:33:22.729374
+**Last Checked:** 2026-11-04T16:45:55.220672
 
 
 ## Bot Information
@@ -60,4 +60,4 @@ For a more detailed guide, refer https://sixth-switch-2ac.notion.site/T2V-01-Dir
 
 **Root:** hailuo-director-01
 
-**API Last Updated:** 2026-10-22 13:58:59.076365
+**API Last Updated:** 2026-11-04T16:58:23.008862

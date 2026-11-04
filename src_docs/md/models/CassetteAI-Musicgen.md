@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Audio Output | USD | 0.00035 | 1 second |
 | Audio Output | POINTS | 12 | 1 second |
 
-**Last Checked:** 2026-10-22 12:59:30.163404
+**Last Checked:** 2026-11-04T16:23:45.878841
 
 
 ## Bot Information

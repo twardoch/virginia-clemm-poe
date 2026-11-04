@@ -29,7 +29,7 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.0061 | 1 message |
 | Total cost | POINTS | 200 | 1 message |
 
-**Last Checked:** 2026-10-22 13:41:14.812595
+**Last Checked:** 2026-11-04T16:50:28.515325
 
 
 ## Bot Information
@@ -62,4 +62,4 @@ All parsed rates (both currencies):
 
 **Root:** qwen3.6-plus-t
 
-**API Last Updated:** 2026-10-22 13:58:59.077083
+**API Last Updated:** 2026-11-04T16:58:23.009127

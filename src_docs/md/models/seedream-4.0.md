@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Image Output | USD | 0.030 | 1 message |
 | Image Output | POINTS | 1000 | 1 message |
 
-**Last Checked:** 2026-10-22 13:33:00.894038
+**Last Checked:** 2026-11-04T16:47:37.602656
 
 
 ## Bot Information
@@ -59,4 +59,4 @@ Set aspect ratio. Select from (One of `16:9`, `4:3`, `1:1`, `3:4`, `9:16`).
 
 **Root:** seedream-4.0
 
-**API Last Updated:** 2026-10-22 13:58:59.076320
+**API Last Updated:** 2026-11-04T16:58:23.008821

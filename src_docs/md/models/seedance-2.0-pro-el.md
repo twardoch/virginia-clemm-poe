@@ -40,7 +40,7 @@ All parsed rates (both currencies):
 | 4K | USD | 3.452 | 1 second |
 | 4K | POINTS | 115070 | 1 second |
 
-**Last Checked:** 2026-10-22 13:25:35.517442
+**Last Checked:** 2026-11-04T16:42:29.766478
 
 
 ## Bot Information
@@ -78,4 +78,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** seedance-2.0-pro-el
 
-**API Last Updated:** 2026-10-22 13:58:59.074913
+**API Last Updated:** 2026-11-04T16:58:23.008361

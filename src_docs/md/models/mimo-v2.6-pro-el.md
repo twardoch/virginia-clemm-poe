@@ -33,7 +33,7 @@ All parsed rates (both currencies):
 | Output (text) | USD | 0.88 | 1000000 tokens |
 | Output (text) | POINTS | 29 | 1000 tokens |
 
-**Last Checked:** 2026-10-22 13:47:50.564649
+**Last Checked:** 2026-11-04T16:57:56.079729
 
 
 ## Bot Information
@@ -68,4 +68,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** mimo-v2.6-pro-el
 
-**API Last Updated:** 2026-10-22 13:58:59.078044
+**API Last Updated:** 2026-11-04T16:58:23.009476

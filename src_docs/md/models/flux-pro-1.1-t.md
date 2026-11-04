@@ -29,7 +29,7 @@ All parsed rates (both currencies):
 | Total cost | USD | 0.030 | 1 message |
 | Total cost | POINTS | 1000 | 1 message |
 
-**Last Checked:** 2026-10-22 13:37:41.276976
+**Last Checked:** 2026-11-04T16:53:13.355315
 
 
 ## Bot Information
@@ -62,4 +62,4 @@ All parsed rates (both currencies):
 
 **Root:** flux-pro-1.1-t
 
-**API Last Updated:** 2026-10-22 13:58:59.076820
+**API Last Updated:** 2026-11-04T16:58:23.009039

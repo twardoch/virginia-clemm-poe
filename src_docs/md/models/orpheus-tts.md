@@ -23,7 +23,7 @@ All parsed rates (both currencies):
 | Audio Output | USD | 0.051 | 1000 characters |
 | Audio Output | POINTS | 1667 | 1000 characters |
 
-**Last Checked:** 2026-10-22 13:30:45.846882
+**Last Checked:** 2026-11-04T16:44:26.739591
 
 
 ## Bot Information
@@ -59,4 +59,4 @@ Choose from one of the available voices (`tara`, `leah`, `jess`, `leo`, `dan`,`m
 
 **Root:** orpheus-tts
 
-**API Last Updated:** 2026-10-22 13:58:59.076036
+**API Last Updated:** 2026-11-04T16:58:23.008712

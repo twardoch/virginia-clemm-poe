@@ -36,7 +36,7 @@ All parsed rates (both currencies):
 | Output | USD | 0.010 | 1 search |
 | Output | POINTS | 334 | 1 search |
 
-**Last Checked:** 2026-10-22 13:22:36.718494
+**Last Checked:** 2026-11-04T16:46:28.095866
 
 
 ## Bot Information
@@ -71,4 +71,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** claude-opus-4.6
 
-**API Last Updated:** 2026-10-22 13:58:59.074243
+**API Last Updated:** 2026-11-04T16:58:23.007286

@@ -34,7 +34,7 @@ All parsed rates (both currencies):
 | Prime | USD | 0.560 | 1 second |
 | Prime | POINTS | 18667 | 1 second |
 
-**Last Checked:** 2026-10-22 13:45:52.359534
+**Last Checked:** 2026-11-04T16:57:25.996315
 
 
 ## Bot Information
@@ -74,4 +74,4 @@ This bot supports optional parameters for additional customization.
 
 **Root:** wan-3.0
 
-**API Last Updated:** 2026-10-22 13:58:59.077847
+**API Last Updated:** 2026-11-04T16:58:23.009403
