@@ -1,0 +1,11 @@
+{
+  "started_at": "2026-10-22T13:58:58.473114+00:00",
+  "finished_at": "2026-10-22T14:09:27.073150+00:00",
+  "mode": "interactive headed",
+  "bot_count": 492,
+  "original_dataset_unchanged": true,
+  "all_requested": true,
+  "scope": "normal incremental headed update seeded from complete headless catalogue",
+  "parity_verified": false,
+  "output_file": "/var/folders/fc/gkjnc37546bccstx9gbv8yb40000gn/T/poe340-headed-parity-bmypfc_j/poe_bots.json"
+}
